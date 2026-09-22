@@ -48,6 +48,8 @@
   ],
   "handover_files": {
     "master_brief": ".muse by meta/README.md",
+    "handover_prompt_root": "MUSE_HANDOVER_PROMPT.md",
+    "handover_prompt_vault": ".muse by meta/HANDOVER_PROMPT.md",
     "agent_specs": ".muse by meta/AGENT_SWARM_SPECIFICATION.md",
     "theory_compendium": ".muse by meta/THEORY_AND_MATHEMATICAL_FOUNDATIONS.md",
     "experiment_ledger": ".muse by meta/COMPREHENSIVE_EXPERIMENT_LEDGER.md",
