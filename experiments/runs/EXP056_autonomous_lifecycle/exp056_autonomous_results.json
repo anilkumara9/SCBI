@@ -1,0 +1,421 @@
+{
+  "metadata": {
+    "experiment": "EXP056",
+    "title": "Autonomous Closed-Loop Basis Lifecycle Verification",
+    "timestamp": "2026-09-21T05:14:57.894144",
+    "model": "EleutherAI/pythia-160m",
+    "target_block": 7,
+    "alpha": 0.25,
+    "rank": 2,
+    "headroom_recovery_eta": 0.2857142857142859,
+    "verdict": "SELECTION_BOTTLENECK_ACTIVE"
+  },
+  "accuracies": {
+    "base": 0.6,
+    "scpm_oracle": 0.74,
+    "unsup_selected": 0.64,
+    "rand_candidate": 0.62
+  },
+  "instances": [
+    {
+      "id": 0,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 1,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 2,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 3,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 4,
+      "corr_base": 0,
+      "corr_oracle": 0,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 5,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 6,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 7,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 8,
+      "corr_base": 0,
+      "corr_oracle": 0,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 9,
+      "corr_base": 0,
+      "corr_oracle": 0,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 10,
+      "corr_base": 0,
+      "corr_oracle": 0,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 11,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 12,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 13,
+      "corr_base": 0,
+      "corr_oracle": 0,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 14,
+      "corr_base": 0,
+      "corr_oracle": 0,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 15,
+      "corr_base": 0,
+      "corr_oracle": 1,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 16,
+      "corr_base": 0,
+      "corr_oracle": 1,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 17,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 18,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 19,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 20,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 21,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 22,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 23,
+      "corr_base": 0,
+      "corr_oracle": 0,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 24,
+      "corr_base": 0,
+      "corr_oracle": 0,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 25,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 26,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 27,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 28,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 0,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 29,
+      "corr_base": 0,
+      "corr_oracle": 0,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 30,
+      "corr_base": 0,
+      "corr_oracle": 1,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 31,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 32,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 33,
+      "corr_base": 0,
+      "corr_oracle": 0,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 34,
+      "corr_base": 0,
+      "corr_oracle": 1,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 35,
+      "corr_base": 0,
+      "corr_oracle": 1,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 36,
+      "corr_base": 0,
+      "corr_oracle": 0,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 37,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 38,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 39,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 40,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 41,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 42,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 43,
+      "corr_base": 0,
+      "corr_oracle": 0,
+      "corr_unsup": 1,
+      "corr_rand": 0,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 44,
+      "corr_base": 0,
+      "corr_oracle": 0,
+      "corr_unsup": 0,
+      "corr_rand": 0,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 45,
+      "corr_base": 0,
+      "corr_oracle": 1,
+      "corr_unsup": 0,
+      "corr_rand": 1,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 46,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_second"
+    },
+    {
+      "id": 47,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_top"
+    },
+    {
+      "id": 48,
+      "corr_base": 0,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "high_norm"
+    },
+    {
+      "id": 49,
+      "corr_base": 1,
+      "corr_oracle": 1,
+      "corr_unsup": 1,
+      "corr_rand": 1,
+      "selected_cand": "pca_top"
+    }
+  ]
+}

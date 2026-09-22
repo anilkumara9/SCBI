@@ -1,0 +1,63 @@
+{
+  "experiment_id": "EXP047",
+  "timestamp": "2026-09-12 02:09:15",
+  "model": "EleutherAI/pythia-160m",
+  "pre_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+  "post_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+  "hash_invariant": true,
+  "calibration_manifest": {
+    "locked_tau_commit": 6.197146801141547,
+    "calib_best_utility": 0.4318000000000002,
+    "n_calib": 30
+  },
+  "manifest_hash": "aaf7b8556034beff0353e8ef68aae4ba660da2c1c63fee8ce0f97619fbf7d26b",
+  "sample_size_test": 100,
+  "n_viable_test": 0,
+  "scorecard": {
+    "pi_always_empty": {
+      "accuracy": 0.56,
+      "corruptions": 0,
+      "mean_utility": 0.5100000000000001
+    },
+    "pi_always_r": {
+      "accuracy": 0.56,
+      "corruptions": 0,
+      "mean_utility": 0.5074999999999998
+    },
+    "pi_passive_diag": {
+      "accuracy": 0.56,
+      "corruptions": 0,
+      "mean_utility": 0.5100000000000001
+    },
+    "pi_active_probe": {
+      "accuracy": 0.56,
+      "corruptions": 0,
+      "mean_utility": 0.4899300000000001,
+      "commits": 21,
+      "rollbacks": 79,
+      "commit_rate": 0.21
+    },
+    "pi_oracle": {
+      "accuracy": 0.56,
+      "corruptions": 0,
+      "mean_utility": 0.5100000000000001
+    }
+  },
+  "auc_metrics": {
+    "auc_kappa": 0.5,
+    "auc_delta_m12": 0.5,
+    "auc_passive_score": 0.5,
+    "auc_passive_delta_z": 0.5
+  },
+  "statistical_tests": {
+    "mcnemar_b": 0,
+    "mcnemar_c": 0,
+    "mcnemar_p": 1.0,
+    "delta_utility": -0.020070000000000032,
+    "ci_95": [
+      -0.021429999999999984,
+      -0.018709999999999984
+    ]
+  },
+  "tri_state_outcome": "Outcome 4: Active Probing Refuted"
+}

@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "experiment_id": "EXP038",
+    "date": "2026-09-12",
+    "model": "EleutherAI/pythia-160m",
+    "pre_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+    "post_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+    "hash_invariant": true,
+    "n_conf": 50,
+    "base_acc": 0.6
+  },
+  "diagnostics_summary": {
+    "delta_s_clause": {
+      "gain_mean": -18.29137420654297,
+      "corr_mean": -23.17530568440755,
+      "p_val": 0.8
+    },
+    "inst_28": {
+      "delta_s_context": 0.000610649585723877,
+      "delta_s_clause": -15.421890258789062,
+      "delta_s_traj": 0.0904573118314147
+    }
+  },
+  "controllers": {
+    "Baseline": {
+      "accuracy": 0.6,
+      "delta_m": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "mean_delta_logp": 0.0,
+      "rescued_b": 0,
+      "corrupted_c": 0,
+      "mcnemar_p": 1.0,
+      "mean_evals": 1.0,
+      "flop_eff": 0.0
+    },
+    "G_contrastive": {
+      "accuracy": 0.74,
+      "delta_m": 0.14,
+      "ci_95": [
+        0.06,
+        0.24
+      ],
+      "mean_delta_logp": 0.1088083791732788,
+      "rescued_b": 7,
+      "corrupted_c": 0,
+      "mcnemar_p": 0.0078125,
+      "mean_evals": 1.0,
+      "flop_eff": 0.1088083791732788
+    },
+    "Fixed_T1": {
+      "accuracy": 0.66,
+      "delta_m": 0.06000000000000005,
+      "ci_95": [
+        0.0,
+        0.14
+      ],
+      "mean_delta_logp": 0.011169650554656983,
+      "rescued_b": 3,
+      "corrupted_c": 0,
+      "mcnemar_p": 0.125,
+      "mean_evals": 1.0,
+      "flop_eff": 0.011169650554656983
+    },
+    "Fixed_T2": {
+      "accuracy": 0.64,
+      "delta_m": 0.040000000000000036,
+      "ci_95": [
+        -0.06,
+        0.14049999999999957
+      ],
+      "mean_delta_logp": -0.017051984071731568,
+      "rescued_b": 5,
+      "corrupted_c": 3,
+      "mcnemar_p": 0.36328125,
+      "mean_evals": 2.0,
+      "flop_eff": -0.008525992035865784
+    },
+    "Kinematic_Rollback": {
+      "accuracy": 0.66,
+      "delta_m": 0.06000000000000005,
+      "ci_95": [
+        -0.04,
+        0.16
+      ],
+      "mean_delta_logp": 0.009593625068664551,
+      "rescued_b": 5,
+      "corrupted_c": 2,
+      "mcnemar_p": 0.2265625,
+      "mean_evals": 2.0,
+      "flop_eff": 0.004796812534332276
+    },
+    "Composite_Kin_Context": {
+      "accuracy": 0.68,
+      "delta_m": 0.08000000000000007,
+      "ci_95": [
+        0.0,
+        0.18
+      ],
+      "mean_delta_logp": -0.00024355411529541015,
+      "rescued_b": 5,
+      "corrupted_c": 1,
+      "mcnemar_p": 0.109375,
+      "mean_evals": 2.0,
+      "flop_eff": -0.00012177705764770507
+    },
+    "Composite_Kin_Clause": {
+      "accuracy": 0.66,
+      "delta_m": 0.06000000000000005,
+      "ci_95": [
+        0.0,
+        0.14
+      ],
+      "mean_delta_logp": -0.0024577653408050537,
+      "rescued_b": 3,
+      "corrupted_c": 0,
+      "mcnemar_p": 0.125,
+      "mean_evals": 2.0,
+      "flop_eff": -0.0012288826704025268
+    },
+    "Switching_Controller": {
+      "accuracy": 0.66,
+      "delta_m": 0.06000000000000005,
+      "ci_95": [
+        0.0,
+        0.14
+      ],
+      "mean_delta_logp": 0.028265417814254762,
+      "rescued_b": 3,
+      "corrupted_c": 0,
+      "mcnemar_p": 0.125,
+      "mean_evals": 2.98,
+      "flop_eff": 0.00948503953498482
+    }
+  }
+}

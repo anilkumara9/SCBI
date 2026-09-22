@@ -1,0 +1,25 @@
+=== EXP050 Execution Started at 2026-09-21T05:08:26.705610 ===
+[05:08:26] Initializing EXP050 Cross-Task Generalization Battery...
+[05:08:26] Using compute device: cpu
+[05:08:28] Verifying pre-run model parameter hash...
+[05:08:29] Pre-hash:  54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+[05:08:29] Pre-run hash match confirmed (Delta_theta = 0).
+[05:08:29] 
+--- Evaluating Task: T1_distractor_suppression (N=50) ---
+[05:08:41] [T1_distractor_suppression] Base=60.0%, G_contrastive=74.0% (Delta_M=+14.0 pp)
+[05:08:41]                 Rand=60.0%, Rescues=7, Corruptions=0, p=0.00781, 95% CI=[+6.0, +24.0]
+[05:08:41] 
+--- Evaluating Task: T2_template_permutation (N=50) ---
+[05:08:51] [T2_template_permutation] Base=54.0%, G_contrastive=56.0% (Delta_M=+2.0 pp)
+[05:08:51]                 Rand=54.0%, Rescues=1, Corruptions=0, p=0.50000, 95% CI=[+0.0, +6.0]
+[05:08:51] 
+--- Evaluating Task: T3_domain_transfer (N=50) ---
+[05:09:02] [T3_domain_transfer] Base=52.0%, G_contrastive=52.0% (Delta_M=+0.0 pp)
+[05:09:02]                 Rand=52.0%, Rescues=1, Corruptions=1, p=0.75000, 95% CI=[-6.0, +6.0]
+[05:09:02] 
+Verifying post-run model parameter hash...
+[05:09:03] Post-hash: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+[05:09:03] Backbone immutability verified: Delta_theta = 0.
+[05:09:03] 
+Final Generalization Verdict: >>> TASK_SPECIFIC_OR_LIMITED <<<
+[05:09:03] Saved complete results to C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\../../experiments/runs/EXP050_cross_task_generalization\exp050_cross_task_results.json

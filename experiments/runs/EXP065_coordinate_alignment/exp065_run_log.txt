@@ -1,0 +1,71 @@
+===========================================================================
+EXP065: Temporary Coordinate Alignment Operator
+Preregistered Protocol: EXP065_TEMPORARY_COORDINATE_ALIGNMENT_SPEC.md
+===========================================================================
+Loading model & tokenizer: EleutherAI/pythia-160m...
+Pre-experiment parameter SHA-256: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+
+[1] Constructing Multi-Vocabulary Support Set & Extracting B_agg at Layer 10...
+B_agg constructed across K=5 support vocabularies (norm = 1.0000).
+
+===========================================================================
+[2] STAGE A: ALIGNMENT DISCOVERY IN SUPPORT SPACE
+===========================================================================
+Vocab V2_Biblical  | Raw Cosine = +0.7379 | Aligned Cosine = -0.0640 | Delta = -0.8019
+Vocab V3_Greek     | Raw Cosine = +0.7144 | Aligned Cosine = +0.0217 | Delta = -0.6927
+Vocab V4_Roman     | Raw Cosine = +0.6996 | Aligned Cosine = +0.0023 | Delta = -0.6973
+Vocab V5_Modern    | Raw Cosine = +0.7224 | Aligned Cosine = +0.0527 | Delta = -0.6697
+Stage A Summary: Mean Raw Cosine = +0.7186 | Mean Aligned Cosine = +0.0032
+
+===========================================================================
+[3] CONSTRUCTING DIFFICULTY-CALIBRATED NOVEL BENCHMARK (N=60)
+===========================================================================
+
+===========================================================================
+[4] BASELINE EVALUATION ON DIFFICULTY-CALIBRATED BENCHMARK (N=60)
+===========================================================================
+Baseline Accuracy: 68.33% (41/60 correct, 19 errors available for rescue).
+CONFIRMED: Baseline difficulty successfully calibrated within pre-registered 40%-70% window!
+
+===========================================================================
+[5] STAGE B: CONFIRMATORY EVALUATION ACROSS THE 6 CONDITIONS
+===========================================================================
+Evaluating Condition 1: Static Basis Baseline (B_agg)...
+Evaluating Condition 2: Aligned Dynamic Basis (Role-Procrustes)...
+Evaluating Condition 3: Same-Layer Output Bridge Control (Layer 10)...
+Evaluating Condition 4: Random Orthogonal Rotation Control (5 Seeds)...
+Evaluating Condition 5: Dynamic Orthogonal Complement Control...
+Evaluating Condition 6: Dynamic Wrong-Task Control...
+
+===========================================================================
+[6] STAGE C: COMPUTATIONAL SPECIFICITY & ROBUSTNESS
+===========================================================================
+Evaluating Specificity Test 1: Premise Reversal...
+
+=====================================================================================
+EXP065 SUMMARY SCORECARD: TEMPORARY COORDINATE ALIGNMENT (N=60)
+=====================================================================================
+Condition                        | Acc Base | Acc Mod  | Delta_M   | b (res) | c (crp) | Exact p  | Delta_Marg
+---------------------------------------------------------------------------------------------------------
+Static_B_agg                     |    68.3% |    68.3% |     +0.0% |       0 |       0 |   1.0000 |    -0.0137
+Aligned_Dynamic_Basis            |    68.3% |    68.3% |     +0.0% |       0 |       0 |   1.0000 |    -0.0461
+Same_Layer_Output_Bridge         |    68.3% |    85.0% |    +16.7% |      10 |       0 |   0.0020 |    +0.7639
+Random_Rotation_Control (5-Seed Mean) |    68.3% |    68.3% |     +0.0% |     0.0 |     0.0 |   1.0000 |    +0.0055
+Dynamic_B_perp                   |    68.3% |    68.3% |     +0.0% |       0 |       0 |   1.0000 |    +0.0380
+Dynamic_B_wrong                  |    68.3% |    68.3% |     +0.0% |       0 |       0 |   1.0000 |    -0.0211
+
+Stage C Controls:
+Dynamic_Aligned_Polarity_Reversal |    33.3% |    33.3% |     +0.0% |       0 |       0 |   1.0000 |    +0.0454
+Dynamic_Aligned_Synonym_Substitution |    68.3% |    68.3% |     +0.0% |       0 |       0 |   1.0000 |    -0.0464
+
+=====================================================================================
+EPISTEMOLOGICAL CLAIM ADJUDICATION
+=====================================================================================
+Criterion 1 (Causal Transfer via Alignment):      NOT MET (Delta_M = +0.0pp, p = 1.0000 vs Static +0.0pp)
+Criterion 2 (Rotation Specificity vs Random):     NOT MET (Aligned Delta_M +0.0pp vs Random +0.0pp)
+Criterion 3 (Continuous Decision Margin Leverage): NOT MET (Delta_Margin = -0.0461 vs Static -0.0137)
+
+Post-experiment parameter SHA-256: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+VERIFIED: Model parameters remained strictly frozen throughout experiment (Delta theta = 0).
+
+Structured results written to: experiments\runs\EXP065_coordinate_alignment\exp065_results.json

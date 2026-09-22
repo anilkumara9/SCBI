@@ -1,0 +1,19 @@
+# Core Machine Learning & Foundation Model Framework
+torch>=2.0.0
+transformers>=4.36.0
+datasets>=2.16.0
+accelerate>=0.26.0
+
+# Numerical, Statistical & Data Analysis
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+scikit-learn>=1.2.0
+
+# Visualization & Experiment Config
+matplotlib>=3.7.0
+pyyaml>=6.0
+safetensors>=0.4.0
+
+# Testing & Reproducibility
+pytest>=7.4.0

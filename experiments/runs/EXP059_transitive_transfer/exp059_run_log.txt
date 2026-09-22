@@ -1,0 +1,42 @@
+=== EXP059 Execution Started at 2026-09-21T06:10:27.629620+00:00 ===
+[06:10:27] Initializing EXP059 Transitive Relational Transfer...
+[06:10:27] Using compute device: cpu
+[06:10:30] Pre-run model hash verified: Delta_theta = 0.
+[06:10:30] Loaded 120 instances across 5 domains in BENCH-006.
+[06:10:30] Phase 1: Generating candidate interventions from Domain 0 (16 valid, 8 control)...
+[06:10:33] Evaluating candidates on Domain 0 grounded margin utility...
+[06:10:34] Candidate 'contrastive_vector': Mean Valid Margin = +0.056
+[06:10:35] Candidate 'subspace_projection': Mean Valid Margin = +0.070
+[06:10:36] Candidate 'soft_conceptor': Mean Valid Margin = +0.030
+[06:10:36] Selected winning intervention for transfer: 'subspace_projection' (Margin = +0.070)
+[06:11:32] 
+================ EXP059 TRANSITIVE TRANSFER RESULTS SUMMARY ================
+[06:11:32] 
+[Domain 0 - Discovery Split] Base: 50.0%, Selected: 50.0% (Delta_M = +0.0 pp)
+[06:11:32] 
+--- Breakdown Across Held-Out Disjoint Domains ---
+[06:11:32] domain1_heldout_names   : Base=43.8%, Transferred=50.0% (Delta=+6.2 pp) | Rev=43.8%, Orth=43.8%
+[06:11:32] domain2_biochemical     : Base=62.5%, Transferred=62.5% (Delta=+0.0 pp) | Rev=62.5%, Orth=62.5%
+[06:11:32] domain3_industrial      : Base=50.0%, Transferred=50.0% (Delta=+0.0 pp) | Rev=50.0%, Orth=50.0%
+[06:11:32] domain4_symbolic        : Base=50.0%, Transferred=50.0% (Delta=+0.0 pp) | Rev=50.0%, Orth=50.0%
+[06:11:32] 
+[Aggregate Held-Out Disjoint Domains (N=64)]
+[06:11:32] Base Accuracy:           51.6% (33/64)
+[06:11:32] Transferred Intervention:53.1% (34/64) [Delta_M = +1.6 pp, Rescues=1, Corr=0, p=0.5000]
+[06:11:32] Causal Reversed Control: 51.6% (33/64)
+[06:11:32] Causal Orthogonal Control:51.6% (33/64)
+[06:11:32] Headroom Retention Ratio (tau): 0.0%
+[06:11:32] 
+[H2 Relation Specificity] Valid Margin Delta: +0.029 | Control Margin Delta: +0.206 | Specificity Gap: -0.176
+[06:11:33] 
+Backbone immutability verified: Delta_theta = 0.
+[06:11:33] 
+--- Hypothesis Falsification Ledger ---
+[06:11:33] H1 (Causal Intervention on Discovery):  FALSIFIED (Delta_d0 = +0.0 pp)
+[06:11:33] H2 (Relation Specificity vs Controls):  FALSIFIED (Gap = -0.176)
+[06:11:33] H3 (Surface Invariance on Disjoint):    FALSIFIED (Delta_heldout = +1.6 pp, tau = 0.0%, p = 0.5000)
+[06:11:33] H4 (Causal Necessity under Perturb):    CONFIRMED (Transferred 53.1% vs Rev 51.6% / Orth 51.6%)
+[06:11:33] H5 (Reusability on Held-Out):           CONFIRMED
+[06:11:33] 
+Final Pre-Registered Audit Verdict: >>> TRANSITIVE_INTERVENTION_INEFFECTIVE <<<
+[06:11:33] Saved complete audit results to C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\../../experiments/runs/EXP059_transitive_transfer\exp059_transfer_results.json

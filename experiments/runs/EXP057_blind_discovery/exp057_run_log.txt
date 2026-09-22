@@ -1,0 +1,27 @@
+=== EXP057 Execution Started at 2026-09-21T05:30:00.424280 ===
+[05:30:00] Initializing EXP057 Blind Task-Geometry Discovery...
+[05:30:00] Using compute device: cpu
+[05:30:03] Pre-run model hash verified: Delta_theta = 0.
+[05:30:03] Generated 120 instances across 6 hidden geometries in BENCH-005.
+[05:33:57] 
+================ EXP057 BLIND GEOMETRY DISCOVERY SUMMARY (N=120) ================
+[05:33:57] Base Accuracy:            45.0% (54/120)
+[05:33:57] Random Basis (Ctrl 1):    45.8% (55/120)
+[05:33:57] Prompt PCA   (Ctrl 2):    40.8% (49/120)
+[05:33:57] SCPM Autonomous (Blind):  40.8% (49/120) [Delta_M=-4.2 pp, Rescues=0, Corr=5, p=1.0000]
+[05:33:57] Oracle Span Reference:    40.0% (48/120)
+[05:33:57] Representation Discovery Gap (RDG): -0.8 percentage points
+[05:33:57] Geometry Inference Match Rate:     19.2% (Chance expectation = 16.7%)
+[05:33:57] 
+--- Breakdown by Geometry (N=20 each) ---
+[05:33:57] HIERARCHY   : Base=20.0%, PCA=20.0%, Auto=20.0%, Oracle=15.0%
+[05:33:57] TEMPORAL    : Base=50.0%, PCA=25.0%, Auto=25.0%, Oracle=50.0%
+[05:33:57] CAUSAL      : Base=100.0%, PCA=100.0%, Auto=100.0%, Oracle=100.0%
+[05:33:57] INTERACTION : Base=25.0%, PCA=25.0%, Auto=25.0%, Oracle=0.0%
+[05:33:57] EXCLUSION   : Base=0.0%, PCA=0.0%, Auto=0.0%, Oracle=0.0%
+[05:33:57] DISTRACTOR  : Base=75.0%, PCA=75.0%, Auto=75.0%, Oracle=75.0%
+[05:33:57] 
+Backbone immutability verified: Delta_theta = 0.
+[05:33:57] 
+Final Audit Verdict: >>> DISCOVERY_BOTTLENECK_PERSISTS <<<
+[05:33:57] Saved complete results to C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\../../experiments/runs/EXP057_blind_discovery\exp057_discovery_results.json

@@ -1,0 +1,108 @@
+===========================================================================
+EXP064: Lexical-Invariant Internal-State Basis Construction
+Preregistered Protocol: EXP064_LEXICAL_INVARIANT_INTERNAL_BASIS_SPEC.md
+===========================================================================
+Loading model & tokenizer: EleutherAI/pythia-160m...
+Pre-experiment parameter SHA-256: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+
+[1] Constructing Multi-Vocabulary Support Set (N_base=30, K=5 vocabularies)...
+Constructed 5 vocabularies x 30 support instances = 150 total realizations.
+Effective experimental unit locked: N_base = 30 support base instances (augmentations do not increase degrees of freedom).
+
+[2] Extracting internal hidden states at Layer 10 across all vocabularies...
+
+===========================================================================
+[3] PRE-INTERVENTION DIAGNOSTIC: CROSS-VOCABULARY REPRESENTATION ALIGNMENT
+===========================================================================
+Pairwise Directional Cosine Matrix across K=5 support vocabularies:
+               | V1_Anglo  | V2_Biblic | V3_Greek  | V4_Roman  | V5_Modern
+--------------------------------------------------------------------------
+V1_Anglo       |   +1.0000 |   +0.7379 |   +0.7144 |   +0.6996 |   +0.7224
+V2_Biblical    |   +0.7379 |   +1.0000 |   +0.8418 |   +0.8663 |   +0.8447
+V3_Greek       |   +0.7144 |   +0.8418 |   +1.0000 |   +0.8285 |   +0.8327
+V4_Roman       |   +0.6996 |   +0.8663 |   +0.8285 |   +1.0000 |   +0.8384
+V5_Modern      |   +0.7224 |   +0.8447 |   +0.8327 |   +0.8384 |   +1.0000
+
+Empirical Random Null Distribution (R^768): mean = +0.000184, std = 0.035961
+Observed Off-Diagonal Cosines (n=10 pairs):
+  Mean Cosine:  +0.7927 +/- 0.0618
+  Range:        [+0.6996, +0.8663]
+  t-statistic:  38.4605 (p = 2.697469e-11)
+
+Pre-Intervention Alignment Thresholds:
+  Strong Alignment (>= 0.40):         MET
+  Moderate Alignment (0.15 - 0.40):   NOT MET
+  Orthogonal Disconnect (< 0.10):     NOT MET
+LEVEL A CLASSIFICATION (Cross-Vocabulary Alignment): PASSED
+
+===========================================================================
+[4] CONSTRUCTING CANDIDATE INTERNAL BASIS FAMILIES & CONTROLS
+===========================================================================
+Basis Vector Geometry & Similarities:
+  cos(B_single_SVD, B_pool):         +0.8019
+  cos(B_single_centroid, B_agg):     +0.8484
+  cos(B_pool, B_agg):                -0.9986
+  cos(B_agg, B_perp):                +0.0000 (strictly zero check)
+  cos(B_agg, B_wrong_task):          +0.3223
+
+===========================================================================
+[5] CONSTRUCTING HELD-OUT CONFIRMATORY DATASET (N=60 INDEPENDENT INSTANCES)
+===========================================================================
+Generated N=60 independent confirmatory held-out instances on unseen vocabulary (Planetary + Elemental).
+
+===========================================================================
+[6] BASELINE EVALUATION ON HELD-OUT UNSEEN VOCABULARY (N=60)
+===========================================================================
+Baseline Novel Vocabulary Accuracy: 95.00% (57/60)
+
+===========================================================================
+[7] EVALUATING THE 8 MANDATORY COMPARATIVE CONDITIONS ON NOVEL VOCABULARY
+===========================================================================
+Evaluating Condition 1: B_single_SVD...
+Evaluating Condition 2: B_single_centroid (EXP063 Internal Basis)...
+Evaluating Condition 3: B_pool (Pooled Multi-Vocab SVD)...
+Evaluating Condition 4: B_agg (Normalized Multi-Vocab Aggregation)...
+Evaluating Condition 5: B_random (5-Seed Random Null)...
+Evaluating Condition 6: B_perp (Orthogonal Complement)...
+Evaluating Condition 7: B_wrong_task (Unrelated Lexical Recall)...
+Evaluating Condition 8: Same-Layer Output Bridge Control (v_output at Layer 10)...
+
+===========================================================================
+[8] EVALUATING COUNTERFACTUAL SPECIFICITY CONTROLS FOR B_agg
+===========================================================================
+Evaluating Specificity Control: Premise Reversal...
+Evaluating Specificity Control: Query Polarity Reversal...
+
+=====================================================================================
+EXP064 SUMMARY OF RESULTS: NOVEL VOCABULARY CAUSAL TRANSFER (N=60)
+=====================================================================================
+Condition                    | Acc Base | Acc Mod  | Delta_M   | b (res) | c (crp) | Exact p  | Delta_Marg | D_KL   
+--------------------------------------------------------------------------------------------------------------
+B_single_SVD                 |    95.0% |    95.0% |     +0.0% |       0 |       0 |   1.0000 |    +0.0243 |  0.0003
+B_single_centroid            |    95.0% |    95.0% |     +0.0% |       0 |       0 |   1.0000 |    -0.0270 |  0.0003
+B_pool                       |    95.0% |    95.0% |     +0.0% |       0 |       0 |   1.0000 |    +0.0106 |  0.0003
+B_agg                        |    95.0% |    95.0% |     +0.0% |       0 |       0 |   1.0000 |    -0.0118 |  0.0003
+B_random (5-Seed Mean)       |    95.0% |    95.0% |     +0.0% |     0.0 |     0.0 |   1.0000 |    +0.0001 |  0.0003
+B_perp                       |    95.0% |    95.0% |     +0.0% |       0 |       0 |   1.0000 |    -0.0110 |  0.0003
+B_wrong_task                 |    95.0% |    95.0% |     +0.0% |       0 |       0 |   1.0000 |    +0.0061 |  0.0004
+Same_Layer_Output_Bridge     |    95.0% |   100.0% |     +5.0% |       3 |       0 |   0.2500 |    +0.7619 |  0.0118
+B_agg_Premise_Reversal       |    56.7% |    58.3% |     +1.7% |       1 |       0 |   1.0000 |    +0.0144 |  0.0003
+B_agg_Polarity_Reversal      |     8.3% |     8.3% |     +0.0% |       0 |       0 |   1.0000 |    +0.0112 |  0.0003
+B_single_Premise_Reversal    |    56.7% |    58.3% |     +1.7% |       1 |       0 |   1.0000 |    +0.0295 |  0.0003
+
+=====================================================================================
+EPISTEMOLOGICAL CLAIM ADJUDICATION (LEVELS A, B, C)
+=====================================================================================
+Level A (Cross-Vocabulary Alignment):      PASSED (mean cosine = +0.7927, p = 2.70e-11)
+Level B (Cross-Vocabulary Causal Transfer): FAILED (B_agg Delta_M = +0.0pp, p = 1.0000 vs B_single +0.0pp)
+Level C (Lexically Invariant Control):      FAILED
+
+=====================================================================================
+PRE-REGISTERED SCIENTIFIC FORK DECISION FOR EXP065
+=====================================================================================
+Outcome 2: Cross-Vocabulary Linear Aggregation Failed (Delta_M <= 0 or not superior to single-vocab). EXP065 formalizes a Temporary Coordinate Alignment Operator (A_k: h_k -> h_tilde_k -> B).
+
+Post-experiment parameter SHA-256: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+VERIFIED: Model parameters remained strictly frozen throughout experiment (Delta theta = 0).
+
+Structured results written to: experiments\runs\EXP064_lexical_invariant_basis\exp064_results.json

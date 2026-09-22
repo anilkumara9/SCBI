@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "experiment": "EXP029b",
+    "model_name": "EleutherAI/pythia-160m",
+    "target_layer": 4,
+    "parameter_sha256": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+    "n_instances": 50,
+    "seed": 84
+  },
+  "baseline_accuracy": 0.6,
+  "standard_l4_accuracy": 0.68,
+  "angle_sweep_results": {
+    "0": {
+      "accuracy": 0.68,
+      "delta_m": 0.08000000000000007,
+      "mean_delta_logp": 0.03472342014312744
+    },
+    "30": {
+      "accuracy": 0.66,
+      "delta_m": 0.06000000000000005,
+      "mean_delta_logp": 0.03719499707221985
+    },
+    "60": {
+      "accuracy": 0.64,
+      "delta_m": 0.040000000000000036,
+      "mean_delta_logp": 0.025280133485794068
+    },
+    "90": {
+      "accuracy": 0.62,
+      "delta_m": 0.020000000000000018,
+      "mean_delta_logp": 0.006087992191314697
+    }
+  },
+  "attention_clamping_results": {
+    "accuracy": 0.6,
+    "delta_m": 0.0,
+    "headroom_retention_pct": 0.0,
+    "mean_delta_logp": -0.005714068412780762
+  },
+  "unembedding_orthogonal_results": {
+    "accuracy": 0.68,
+    "delta_m": 0.08000000000000007,
+    "headroom_retention_pct": 100.0,
+    "mean_delta_logp": 0.03328813195228577
+  }
+}

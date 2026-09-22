@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "experiment": "EXP018-A",
+    "model": "gpt2 (124M)",
+    "layer": 8,
+    "alpha": 0.25,
+    "generator": "G4_sparse",
+    "ranks_tested": [
+      2,
+      4,
+      8
+    ],
+    "n_dev": 20,
+    "dev_seed": 123,
+    "total_forwards": 320,
+    "elapsed_seconds": 206.41,
+    "pre_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "post_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "hash_identical": true
+  },
+  "identity": {
+    "M_Identity": 0.65,
+    "Pref_Identity": 0.9
+  },
+  "ranks": {
+    "2": {
+      "M_Oracle": 0.8,
+      "Delta_M": 0.15,
+      "M_RandCand": 0.6,
+      "M_RandOrtho": 0.6,
+      "Spread_Cand": 0.2,
+      "Spread_Ortho": 0.2,
+      "Pref_Oracle": 0.95,
+      "Mean_Displacement": 0.1247,
+      "Mean_KL": 0.0971,
+      "Mean_Top10_Overlap": 0.8525,
+      "Delta_Margin": -0.0144,
+      "Delta_Logp": -0.2742,
+      "Target_Rank_Shift": -0.575,
+      "Locality": 0.3374,
+      "Diversity": 0.9513,
+      "Stability": 0.4947
+    },
+    "4": {
+      "M_Oracle": 0.75,
+      "Delta_M": 0.1,
+      "M_RandCand": 0.45,
+      "M_RandOrtho": 0.65,
+      "Spread_Cand": 0.3,
+      "Spread_Ortho": 0.1,
+      "Pref_Oracle": 0.95,
+      "Mean_Displacement": 0.1473,
+      "Mean_KL": 0.1293,
+      "Mean_Top10_Overlap": 0.8225,
+      "Delta_Margin": -0.0232,
+      "Delta_Logp": -0.3904,
+      "Target_Rank_Shift": -1.2125,
+      "Locality": 0.4032,
+      "Diversity": 0.9396,
+      "Stability": 0.4108
+    },
+    "8": {
+      "M_Oracle": 0.7,
+      "Delta_M": 0.05,
+      "M_RandCand": 0.45,
+      "M_RandOrtho": 0.65,
+      "Spread_Cand": 0.25,
+      "Spread_Ortho": 0.05,
+      "Pref_Oracle": 0.95,
+      "Mean_Displacement": 0.1705,
+      "Mean_KL": 0.1405,
+      "Mean_Top10_Overlap": 0.835,
+      "Delta_Margin": -0.0232,
+      "Delta_Logp": -0.3798,
+      "Target_Rank_Shift": -1.325,
+      "Locality": 0.4987,
+      "Diversity": 0.9084,
+      "Stability": 0.3696
+    }
+  }
+}

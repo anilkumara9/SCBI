@@ -1,0 +1,291 @@
+{
+  "metadata": {
+    "experiment": "EXP058",
+    "title": "Basis Reconfiguration & Cross-Domain Transfer",
+    "timestamp": "2026-09-21T05:36:09.485353",
+    "model": "EleutherAI/pythia-160m",
+    "target_block": 7,
+    "alpha": 0.25,
+    "rank": 2,
+    "retention_ratio_tau": 0.0,
+    "verdict": "TRANSFER_WEAK_OR_SPECIFIC"
+  },
+  "accuracies": {
+    "base": 0.6,
+    "matched_transfer": 0.5333333333333333,
+    "mismatched_transfer": 0.6,
+    "native_inferred": 0.4666666666666667
+  },
+  "instances": [
+    {
+      "id": 0,
+      "prompt": "Incident log: Extreme drought produced w...",
+      "target": "wildfire",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    },
+    {
+      "id": 1,
+      "prompt": "Geology log: Subduction friction produce...",
+      "target": "earthquake",
+      "corr_base": 0,
+      "corr_matched": 0,
+      "corr_mismatched": 0,
+      "corr_native": 0
+    },
+    {
+      "id": 2,
+      "prompt": "Hydrology study: Heavy rainfall produced...",
+      "target": "flooding",
+      "corr_base": 1,
+      "corr_matched": 0,
+      "corr_mismatched": 1,
+      "corr_native": 0
+    },
+    {
+      "id": 3,
+      "prompt": "Physics lab: High current produced melti...",
+      "target": "melting",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    },
+    {
+      "id": 4,
+      "prompt": "Metallurgy test: Chemical exposure produ...",
+      "target": "corrosion",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    },
+    {
+      "id": 5,
+      "prompt": "Atmospheric survey: Rapid cooling produc...",
+      "target": "fog",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    },
+    {
+      "id": 6,
+      "prompt": "Mechanics test: High friction produced f...",
+      "target": "fracture",
+      "corr_base": 0,
+      "corr_matched": 0,
+      "corr_mismatched": 0,
+      "corr_native": 0
+    },
+    {
+      "id": 7,
+      "prompt": "Combustion run: High pressure produced d...",
+      "target": "detonation",
+      "corr_base": 1,
+      "corr_matched": 0,
+      "corr_mismatched": 0,
+      "corr_native": 0
+    },
+    {
+      "id": 8,
+      "prompt": "Acoustics test: Sonic resonance produced...",
+      "target": "vibration",
+      "corr_base": 0,
+      "corr_matched": 0,
+      "corr_mismatched": 0,
+      "corr_native": 0
+    },
+    {
+      "id": 9,
+      "prompt": "Chemistry log: Acid reaction produced fu...",
+      "target": "fumes",
+      "corr_base": 0,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    },
+    {
+      "id": 10,
+      "prompt": "Cryogenics run: Rapid depressurization p...",
+      "target": "freezing",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    },
+    {
+      "id": 11,
+      "prompt": "Optics experiment: Laser focus produced ...",
+      "target": "ionization",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 0
+    },
+    {
+      "id": 12,
+      "prompt": "Materials run: Repeated stress produced ...",
+      "target": "fatigue",
+      "corr_base": 0,
+      "corr_matched": 0,
+      "corr_mismatched": 0,
+      "corr_native": 0
+    },
+    {
+      "id": 13,
+      "prompt": "Oceanography log: Wind shear produced su...",
+      "target": "surging",
+      "corr_base": 0,
+      "corr_matched": 0,
+      "corr_mismatched": 0,
+      "corr_native": 0
+    },
+    {
+      "id": 14,
+      "prompt": "Electrical test: Sudden surge produced a...",
+      "target": "arcing",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    },
+    {
+      "id": 15,
+      "prompt": "Incident log: Extreme drought produced w...",
+      "target": "wildfire",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    },
+    {
+      "id": 16,
+      "prompt": "Geology log: Subduction friction produce...",
+      "target": "earthquake",
+      "corr_base": 0,
+      "corr_matched": 0,
+      "corr_mismatched": 0,
+      "corr_native": 0
+    },
+    {
+      "id": 17,
+      "prompt": "Hydrology study: Heavy rainfall produced...",
+      "target": "flooding",
+      "corr_base": 1,
+      "corr_matched": 0,
+      "corr_mismatched": 1,
+      "corr_native": 0
+    },
+    {
+      "id": 18,
+      "prompt": "Physics lab: High current produced melti...",
+      "target": "melting",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    },
+    {
+      "id": 19,
+      "prompt": "Metallurgy test: Chemical exposure produ...",
+      "target": "corrosion",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    },
+    {
+      "id": 20,
+      "prompt": "Atmospheric survey: Rapid cooling produc...",
+      "target": "fog",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    },
+    {
+      "id": 21,
+      "prompt": "Mechanics test: High friction produced f...",
+      "target": "fracture",
+      "corr_base": 0,
+      "corr_matched": 0,
+      "corr_mismatched": 0,
+      "corr_native": 0
+    },
+    {
+      "id": 22,
+      "prompt": "Combustion run: High pressure produced d...",
+      "target": "detonation",
+      "corr_base": 1,
+      "corr_matched": 0,
+      "corr_mismatched": 0,
+      "corr_native": 0
+    },
+    {
+      "id": 23,
+      "prompt": "Acoustics test: Sonic resonance produced...",
+      "target": "vibration",
+      "corr_base": 0,
+      "corr_matched": 0,
+      "corr_mismatched": 0,
+      "corr_native": 0
+    },
+    {
+      "id": 24,
+      "prompt": "Chemistry log: Acid reaction produced fu...",
+      "target": "fumes",
+      "corr_base": 0,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    },
+    {
+      "id": 25,
+      "prompt": "Cryogenics run: Rapid depressurization p...",
+      "target": "freezing",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    },
+    {
+      "id": 26,
+      "prompt": "Optics experiment: Laser focus produced ...",
+      "target": "ionization",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 0
+    },
+    {
+      "id": 27,
+      "prompt": "Materials run: Repeated stress produced ...",
+      "target": "fatigue",
+      "corr_base": 0,
+      "corr_matched": 0,
+      "corr_mismatched": 0,
+      "corr_native": 0
+    },
+    {
+      "id": 28,
+      "prompt": "Oceanography log: Wind shear produced su...",
+      "target": "surging",
+      "corr_base": 0,
+      "corr_matched": 0,
+      "corr_mismatched": 0,
+      "corr_native": 0
+    },
+    {
+      "id": 29,
+      "prompt": "Electrical test: Sudden surge produced a...",
+      "target": "arcing",
+      "corr_base": 1,
+      "corr_matched": 1,
+      "corr_mismatched": 1,
+      "corr_native": 1
+    }
+  ]
+}

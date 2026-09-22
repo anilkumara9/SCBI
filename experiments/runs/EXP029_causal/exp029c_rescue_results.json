@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "experiment": "EXP029c",
+    "model_name": "EleutherAI/pythia-160m",
+    "parameter_sha256": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+    "n_instances": 50,
+    "seed": 84
+  },
+  "baseline_accuracy": 0.6,
+  "layer_2_rescue": {
+    "standard_alpha025": {
+      "accuracy": 0.66,
+      "delta_m": 0.06000000000000005,
+      "mean_delta_logp": 0.07454067468643188
+    },
+    "gain_gamma_75": {
+      "accuracy": 0.62,
+      "delta_m": 0.020000000000000018,
+      "mean_delta_logp": 0.19201557636260985
+    },
+    "gain_gamma_50": {
+      "accuracy": 0.54,
+      "delta_m": -0.05999999999999994,
+      "mean_delta_logp": -0.025653192996978758
+    }
+  },
+  "layer_8_rescue": {
+    "standard_alpha025": {
+      "accuracy": 0.74,
+      "delta_m": 0.14,
+      "mean_delta_logp": 0.1088083791732788
+    },
+    "scaled_alpha050": {
+      "accuracy": 0.72,
+      "delta_m": 0.12,
+      "mean_delta_logp": 0.04630512833595276
+    },
+    "scaled_alpha100": {
+      "accuracy": 0.52,
+      "delta_m": -0.07999999999999996,
+      "mean_delta_logp": -0.8440068590641022
+    }
+  }
+}

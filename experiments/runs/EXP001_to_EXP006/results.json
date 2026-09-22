@@ -1,0 +1,50 @@
+{
+    "metadata": {
+        "num_samples": 100,
+        "hidden_dim": 32,
+        "seq_len": 8,
+        "candidate_count": 4,
+        "subspace_rank": 2,
+        "lambda_entropy": 0.1,
+        "dataset_seed": 42,
+        "candidate_seed": 137,
+        "experiment_seed": 4096,
+        "wall_clock_time_seconds": 0.6979,
+        "prefix_forward_passes_per_instance": 1,
+        "selected_suffix_forward_passes_per_instance": 1,
+        "total_model_forward_operations_per_instance": 2,
+        "parameter_hash_before": "fd34194f430f09fb8cf23bb6101f5ed6c5f4d6364c21301c6bc64af15955d8dd",
+        "parameter_hash_after": "fd34194f430f09fb8cf23bb6101f5ed6c5f4d6364c21301c6bc64af15955d8dd",
+        "buffer_hash_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "buffer_hash_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "checksums_match": true,
+        "requires_grad_all_false": true,
+        "model_training_false": true
+    },
+    "metrics": {
+        "EXP001_frozen_baseline_accuracy": 0.28,
+        "EXP002_fixed_projection_accuracy": 0.33,
+        "EXP003_random_selection_accuracy": 0.29,
+        "EXP004_scbi_evaluator_accuracy": 0.33,
+        "EXP005_oracle_selection_accuracy": 0.5,
+        "matched_baseline_accuracy": 0.28,
+        "selection_regret_scbi": 0.17,
+        "selection_regret_random": 0.21,
+        "regret_difference": 0.03999999999999998,
+        "mean_candidate_pool_diversity": 0.5971250262170672,
+        "evaluator_top1_agreement_rate": 0.83,
+        "mean_spearman_rank_correlation": -0.03293217373563077,
+        "delta_scbi_vs_random": 0.04,
+        "ci95_scbi_vs_random": [
+            -0.02,
+            0.10024999999999978
+        ],
+        "wilcoxon_p_scbi_vs_random": 0.2059032107320684,
+        "delta_scbi_vs_matched": 0.05,
+        "ci95_scbi_vs_matched": [
+            -0.00024999999999977265,
+            0.12
+        ],
+        "wilcoxon_p_scbi_vs_matched": 0.0955807045456294
+    }
+}

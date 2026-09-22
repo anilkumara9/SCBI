@@ -1,0 +1,186 @@
+{
+    "metadata": {
+        "experiment_id": "EXP009",
+        "num_samples": 100,
+        "num_discriminatory_instances": 35,
+        "wall_clock_time_seconds": 0.6439,
+        "checksums_match": true
+    },
+    "suffix_response_surface_features": {
+        "suffix_entropy": {
+            "mean_R_instance": 0.5095,
+            "ci95_cluster_bootstrap": [
+                0.3738,
+                0.6453
+            ],
+            "within_instance_perm_p": 0.8892,
+            "direction": "-"
+        },
+        "suffix_prob_margin": {
+            "mean_R_instance": 0.4952,
+            "ci95_cluster_bootstrap": [
+                0.3738,
+                0.619
+            ],
+            "within_instance_perm_p": 0.9432,
+            "direction": "+"
+        },
+        "suffix_logit_norm": {
+            "mean_R_instance": 0.5381,
+            "ci95_cluster_bootstrap": [
+                0.4119,
+                0.6595
+            ],
+            "within_instance_perm_p": 0.5458,
+            "direction": "+"
+        },
+        "suffix_logit_variance": {
+            "mean_R_instance": 0.5024,
+            "ci95_cluster_bootstrap": [
+                0.3786,
+                0.6286
+            ],
+            "within_instance_perm_p": 0.9808,
+            "direction": "+"
+        },
+        "suffix_js_to_ensemble": {
+            "mean_R_instance": 0.5071,
+            "ci95_cluster_bootstrap": [
+                0.381,
+                0.631
+            ],
+            "within_instance_perm_p": 0.9206,
+            "direction": "-"
+        },
+        "suffix_mean_peer_js": {
+            "mean_R_instance": 0.5143,
+            "ci95_cluster_bootstrap": [
+                0.3928,
+                0.6357
+            ],
+            "within_instance_perm_p": 0.8304,
+            "direction": "-"
+        },
+        "suffix_view_curvature": {
+            "mean_R_instance": 0.4071,
+            "ci95_cluster_bootstrap": [
+                0.2905,
+                0.531
+            ],
+            "within_instance_perm_p": 0.1336,
+            "direction": "-"
+        },
+        "norm_layer_l0": {
+            "mean_R_instance": 0.4429,
+            "ci95_cluster_bootstrap": [
+                0.3048,
+                0.5857
+            ],
+            "within_instance_perm_p": 0.344,
+            "direction": "+"
+        },
+        "norm_layer_l1": {
+            "mean_R_instance": 0.6286,
+            "ci95_cluster_bootstrap": [
+                0.5262,
+                0.731
+            ],
+            "within_instance_perm_p": 0.038,
+            "direction": "+"
+        },
+        "var_layer_l0": {
+            "mean_R_instance": 0.4333,
+            "ci95_cluster_bootstrap": [
+                0.2999,
+                0.5738
+            ],
+            "within_instance_perm_p": 0.2686,
+            "direction": "+"
+        },
+        "var_layer_l1": {
+            "mean_R_instance": 0.6452,
+            "ci95_cluster_bootstrap": [
+                0.5452,
+                0.7452
+            ],
+            "within_instance_perm_p": 0.0192,
+            "direction": "+"
+        },
+        "retained_energy": {
+            "mean_R_instance": 0.481,
+            "ci95_cluster_bootstrap": [
+                0.3571,
+                0.6048
+            ],
+            "within_instance_perm_p": 0.765,
+            "direction": "+"
+        },
+        "removed_energy": {
+            "mean_R_instance": 0.481,
+            "ci95_cluster_bootstrap": [
+                0.3571,
+                0.6071
+            ],
+            "within_instance_perm_p": 0.7648,
+            "direction": "-"
+        },
+        "representation_variance": {
+            "mean_R_instance": 0.5095,
+            "ci95_cluster_bootstrap": [
+                0.3786,
+                0.6381
+            ],
+            "within_instance_perm_p": 0.888,
+            "direction": "+"
+        }
+    },
+    "diagnostic_information_classifier_loio": {
+        "model_X_intermediate_only": {
+            "features": [
+                "retained_energy",
+                "removed_energy",
+                "representation_variance"
+            ],
+            "out_of_fold_ranking_R": 0.4571,
+            "ci95_cluster_bootstrap": [
+                0.3333,
+                0.5857
+            ]
+        },
+        "model_Z_suffix_output_only": {
+            "features": [
+                "suffix_entropy",
+                "suffix_prob_margin",
+                "suffix_logit_norm",
+                "suffix_logit_variance",
+                "suffix_js_to_ensemble",
+                "suffix_mean_peer_js",
+                "suffix_view_curvature"
+            ],
+            "out_of_fold_ranking_R": 0.4905,
+            "ci95_cluster_bootstrap": [
+                0.3571,
+                0.631
+            ]
+        },
+        "model_combined_X_and_Z": {
+            "features": [
+                "retained_energy",
+                "removed_energy",
+                "representation_variance",
+                "suffix_entropy",
+                "suffix_prob_margin",
+                "suffix_logit_norm",
+                "suffix_logit_variance",
+                "suffix_js_to_ensemble",
+                "suffix_mean_peer_js",
+                "suffix_view_curvature"
+            ],
+            "out_of_fold_ranking_R": 0.5119,
+            "ci95_cluster_bootstrap": [
+                0.381,
+                0.6405
+            ]
+        }
+    }
+}

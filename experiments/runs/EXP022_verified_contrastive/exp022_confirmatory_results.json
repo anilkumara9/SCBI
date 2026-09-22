@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "experiment": "EXP022",
+    "model": "gpt2 (124M)",
+    "layer": 8,
+    "block_idx": 7,
+    "subspace_rank": 2,
+    "alpha": 0.25,
+    "n_conf": 100,
+    "seed": 42,
+    "total_forwards": 1000,
+    "elapsed_seconds": 223.34,
+    "pre_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "post_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "hash_identical": true
+  },
+  "magnitude_audit": {
+    "max_abs_frob_diff": 8.568167686462402e-08,
+    "mean_abs_frob_diff": 2.6579946279525756e-08,
+    "audit_threshold": 1e-06,
+    "frob_matching_verified": true,
+    "mean_l12_diff": 0.017501888759434224,
+    "frob_A_O0": 0.035648,
+    "frob_A_O5": 0.035648,
+    "l12_A_O0": 0.045859,
+    "l12_A_O5": 0.028357,
+    "frob_A_RandOrtho": 0.012186
+  },
+  "performance": {
+    "M_Identity": 0.65,
+    "Pref_Identity": 0.79,
+    "O0_linear": {
+      "M_Oracle": 0.76,
+      "Delta_M_Oracle": 0.11,
+      "M_RandCand": 0.66,
+      "M_TopCand": 0.7,
+      "Pref_Oracle": 0.91,
+      "Pref_RandCand": 0.87,
+      "Delta_logp": 0.008,
+      "Mean_KL": 0.0336,
+      "Top10_Overlap": 0.911,
+      "Per_Cand_Acc": [
+        0.7,
+        0.69,
+        0.68,
+        0.68
+      ]
+    },
+    "O5_contrast_hard": {
+      "M_Oracle": 0.78,
+      "Delta_M_Oracle": 0.13,
+      "M_RandCand": 0.7,
+      "M_TopCand": 0.65,
+      "Pref_Oracle": 0.98,
+      "Pref_RandCand": 0.94,
+      "Delta_logp": 0.0468,
+      "Delta_Margin": 0.0238,
+      "Mean_Rank_Shift": 0.06,
+      "Mean_KL": 0.0771,
+      "Top10_Overlap": 0.911,
+      "Disp_d_pos": 0.5561,
+      "Disp_d_neg": 0.0,
+      "Mean_Gate_Active": 0.0852,
+      "Mean_Scale_Factor_s": 3.9701,
+      "Per_Cand_Acc": [
+        0.65,
+        0.7,
+        0.7,
+        0.69
+      ]
+    },
+    "M_RandOrtho": 0.66
+  },
+  "statistical_inference": {
+    "primary_endpoint_gate1": {
+      "metric": "Delta M (O5_Oracle - Identity)",
+      "delta_m": 0.13,
+      "contingency_table": {
+        "ties_both_correct_a": 65,
+        "wins_o5_only_b": 13,
+        "losses_identity_only_c": 0,
+        "ties_both_fail_d": 22,
+        "n_discordant": 13
+      },
+      "p_exact_one_sided": 0.00012,
+      "p_exact_two_sided": 0.00024,
+      "ci95_delta_m": [
+        0.07,
+        0.2
+      ],
+      "gate1_passed": true
+    },
+    "secondary_mechanistic_h_mech": {
+      "hypothesis": "H_mech: Delta log p(y_correct) > 0",
+      "mean_delta_logp": 0.0468,
+      "ci95_delta_logp": [
+        0.0097,
+        0.0902
+      ],
+      "ci_excludes_zero": true,
+      "h_mech_supported": true
+    },
+    "secondary_margin": {
+      "mean_delta_margin": 0.0238,
+      "ci95_delta_margin": [
+        0.0099,
+        0.0396
+      ]
+    }
+  },
+  "output_space_competition_diagnostic": {
+    "description": "Classification of instance outcomes into Clean Win, Distractor Bias, and Third-Token Intrusion",
+    "counts": {
+      "Identity": {
+        "clean_win": 65,
+        "distractor_bias": 21,
+        "third_token_intrusion": 14
+      },
+      "O0_linear": {
+        "clean_win": 70,
+        "distractor_bias": 11,
+        "third_token_intrusion": 19
+      },
+      "O5_contrast_hard": {
+        "clean_win": 65,
+        "distractor_bias": 12,
+        "third_token_intrusion": 23
+      }
+    },
+    "proportions": {
+      "Identity": {
+        "clean_win": 0.65,
+        "distractor_bias": 0.21,
+        "third_token_intrusion": 0.14
+      },
+      "O0_linear": {
+        "clean_win": 0.7,
+        "distractor_bias": 0.11,
+        "third_token_intrusion": 0.19
+      },
+      "O5_contrast_hard": {
+        "clean_win": 0.65,
+        "distractor_bias": 0.12,
+        "third_token_intrusion": 0.23
+      }
+    },
+    "distractor_svd_decay": [
+      92.9167,
+      82.7539,
+      75.4015,
+      69.6472
+    ]
+  }
+}

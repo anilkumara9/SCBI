@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "experiment": "EXP017-A",
+    "model": "gpt2 (124M)",
+    "generator": "G4_sparse",
+    "total_budget": 0.25,
+    "n_dev": 20,
+    "dev_seed": 123,
+    "total_forwards": 1140,
+    "elapsed_seconds": 1389.74,
+    "pre_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "post_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "hash_identical": true
+  },
+  "identity": {
+    "M_Identity": 0.65,
+    "Pref_Identity": 0.9
+  },
+  "configurations": {
+    "6_8_M1_independent": {
+      "layers": [
+        6,
+        8
+      ],
+      "mechanism": "M1_independent",
+      "alpha_per_layer": 0.125,
+      "M_Oracle": 0.7,
+      "Delta_M": 0.05,
+      "Sum_Single_Delta": 0.2,
+      "Cross_Layer_Synergy": -0.15,
+      "Pref_Oracle": 0.9,
+      "Delta_Margin": -0.0168,
+      "Delta_Logp": -0.2462,
+      "Target_Rank_Shift": -0.5125,
+      "Mean_KL": 0.0811,
+      "Mean_Top10_Overlap": 0.8625
+    },
+    "6_8_M2_sequential": {
+      "layers": [
+        6,
+        8
+      ],
+      "mechanism": "M2_sequential",
+      "alpha_per_layer": 0.125,
+      "M_Oracle": 0.75,
+      "Delta_M": 0.1,
+      "Sum_Single_Delta": 0.2,
+      "Cross_Layer_Synergy": -0.1,
+      "Pref_Oracle": 0.95,
+      "Delta_Margin": -0.013,
+      "Delta_Logp": -0.2344,
+      "Target_Rank_Shift": -0.4625,
+      "Mean_KL": 0.0792,
+      "Mean_Top10_Overlap": 0.865
+    },
+    "8_10_M1_independent": {
+      "layers": [
+        8,
+        10
+      ],
+      "mechanism": "M1_independent",
+      "alpha_per_layer": 0.125,
+      "M_Oracle": 0.7,
+      "Delta_M": 0.05,
+      "Sum_Single_Delta": 0.25,
+      "Cross_Layer_Synergy": -0.2,
+      "Pref_Oracle": 0.9,
+      "Delta_Margin": -0.0098,
+      "Delta_Logp": -0.1661,
+      "Target_Rank_Shift": -0.1875,
+      "Mean_KL": 0.0458,
+      "Mean_Top10_Overlap": 0.8887
+    },
+    "8_10_M2_sequential": {
+      "layers": [
+        8,
+        10
+      ],
+      "mechanism": "M2_sequential",
+      "alpha_per_layer": 0.125,
+      "M_Oracle": 0.7,
+      "Delta_M": 0.05,
+      "Sum_Single_Delta": 0.25,
+      "Cross_Layer_Synergy": -0.2,
+      "Pref_Oracle": 0.9,
+      "Delta_Margin": -0.0085,
+      "Delta_Logp": -0.1464,
+      "Target_Rank_Shift": -0.15,
+      "Mean_KL": 0.0425,
+      "Mean_Top10_Overlap": 0.9037
+    },
+    "4_8_M1_independent": {
+      "layers": [
+        4,
+        8
+      ],
+      "mechanism": "M1_independent",
+      "alpha_per_layer": 0.125,
+      "M_Oracle": 0.7,
+      "Delta_M": 0.05,
+      "Sum_Single_Delta": 0.15,
+      "Cross_Layer_Synergy": -0.1,
+      "Pref_Oracle": 0.95,
+      "Delta_Margin": -0.0253,
+      "Delta_Logp": -0.3768,
+      "Target_Rank_Shift": -0.75,
+      "Mean_KL": 0.0931,
+      "Mean_Top10_Overlap": 0.86
+    },
+    "4_8_M2_sequential": {
+      "layers": [
+        4,
+        8
+      ],
+      "mechanism": "M2_sequential",
+      "alpha_per_layer": 0.125,
+      "M_Oracle": 0.7,
+      "Delta_M": 0.05,
+      "Sum_Single_Delta": 0.15,
+      "Cross_Layer_Synergy": -0.1,
+      "Pref_Oracle": 0.95,
+      "Delta_Margin": -0.0253,
+      "Delta_Logp": -0.393,
+      "Target_Rank_Shift": -0.825,
+      "Mean_KL": 0.0983,
+      "Mean_Top10_Overlap": 0.8575
+    },
+    "4_6_8_10_M1_independent": {
+      "layers": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "mechanism": "M1_independent",
+      "alpha_per_layer": 0.0625,
+      "M_Oracle": 0.7,
+      "Delta_M": 0.05,
+      "Sum_Single_Delta": 0.3,
+      "Cross_Layer_Synergy": -0.25,
+      "Pref_Oracle": 0.9,
+      "Delta_Margin": -0.0188,
+      "Delta_Logp": -0.258,
+      "Target_Rank_Shift": -0.525,
+      "Mean_KL": 0.0586,
+      "Mean_Top10_Overlap": 0.875
+    },
+    "4_6_8_10_M2_sequential": {
+      "layers": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "mechanism": "M2_sequential",
+      "alpha_per_layer": 0.0625,
+      "M_Oracle": 0.65,
+      "Delta_M": 0.0,
+      "Sum_Single_Delta": 0.3,
+      "Cross_Layer_Synergy": -0.3,
+      "Pref_Oracle": 0.9,
+      "Delta_Margin": -0.0165,
+      "Delta_Logp": -0.2558,
+      "Target_Rank_Shift": -0.5875,
+      "Mean_KL": 0.0572,
+      "Mean_Top10_Overlap": 0.8812
+    }
+  }
+}

@@ -1,0 +1,39 @@
+experiment:
+  id: "EXP001"
+  name: "minimal_subspace_projection_prototype"
+  hypothesis_id: "H-001"
+  version: "1.0.0"
+
+model:
+  name: "Qwen/Qwen2.5-0.5B-Instruct"
+  device: "cpu" # Default fallback for lightweight local verification; can be overridden to cuda
+  torch_dtype: "float32"
+  target_layer: 8 # Mid-network residual stream layer
+
+protocol:
+  candidate_count: 4
+  subspace_rank: 2
+  seeds: [42, 137, 1024, 2048, 4096]
+  evaluation_metric: "exact_match"
+  lambda_entropy: 0.1
+
+baselines:
+  greedy:
+    enabled: true
+    forward_passes: 1
+  compute_matched_sampling:
+    enabled: true
+    samples_n: 4 # Matched to candidate_count K=4
+
+ablations:
+  ablation_1_random_selection: true
+  ablation_2_static_basis: true
+  ablation_3_null_objective: true
+  ablation_4_budget_curve:
+    k_values: [1, 2, 4, 8]
+  ablation_5_zero_state: true
+
+logging:
+  output_dir: "experiments/runs/EXP001"
+  save_raw_predictions: true
+  verify_parameter_hash: true

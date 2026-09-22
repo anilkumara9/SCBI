@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "experiment": "EXP023-B",
+    "model": "gpt2 (124M)",
+    "benchmark": "BENCH-002-NL",
+    "conf_seed": 84,
+    "n_conf": 100,
+    "layer": 8,
+    "alpha": 0.25,
+    "rank": 2,
+    "candidate_count": 4,
+    "total_forwards": 1400,
+    "elapsed_seconds": 255.97,
+    "pre_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "post_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "hash_identical": true
+  },
+  "performance_comparison": {
+    "M_Identity": 0.64,
+    "M_Fixed_V0": 0.62,
+    "M_Random_Cand": 0.66,
+    "M_ECF_Autonomous": 0.71,
+    "M_Oracle_UpperBound": 0.72,
+    "M_RandOrtho_Control": 0.64,
+    "Delta_M_ECF_vs_Identity": 0.07,
+    "Delta_M_ECF_vs_Random": 0.05,
+    "Delta_M_ECF_vs_Fixed": 0.09,
+    "Headroom_Recovery_Ratio": 0.875,
+    "Pref_Identity": 0.87,
+    "Pref_ECF": 0.93,
+    "Pref_Oracle": 0.97,
+    "Mean_Delta_logp_ECF": 0.2018,
+    "Mean_Delta_Margin_ECF": 0.0642,
+    "Mean_Rank_Shift_ECF": 0.24,
+    "Mean_KL_ECF": 0.1416,
+    "Top10_Overlap_ECF": 0.868,
+    "Selected_Candidate_Distribution": [
+      23,
+      40,
+      16,
+      21
+    ]
+  },
+  "statistical_inference": {
+    "primary_endpoint_autonomous_scbi": {
+      "metric": "Delta M (M_ECF - M_Identity)",
+      "delta_m": 0.07,
+      "contingency_table": {
+        "ties_both_correct_a": 64,
+        "wins_ecf_only_b": 7,
+        "losses_identity_only_c": 0,
+        "ties_both_fail_d": 29,
+        "n_discordant": 7
+      },
+      "p_exact_one_sided": 0.00781,
+      "p_exact_two_sided": 0.01562,
+      "ci95_delta_m": [
+        0.03,
+        0.12
+      ],
+      "autonomous_scbi_confirmed": true
+    },
+    "secondary_mechanistic_h_mech": {
+      "hypothesis": "H_mech: Delta log p(y_correct)_ECF > 0",
+      "mean_delta_logp": 0.2018,
+      "ci95_delta_logp": [
+        0.1487,
+        0.2597
+      ],
+      "ci_excludes_zero": true,
+      "h_mech_supported": true
+    },
+    "secondary_margin": {
+      "mean_delta_margin": 0.0642,
+      "ci95_delta_margin": [
+        0.0463,
+        0.0834
+      ]
+    }
+  },
+  "evaluator_diagnostics": {
+    "mean_spearman_rho": 0.492,
+    "mean_kendall_tau": 0.45,
+    "oracle_candidate_agreement": 0.84,
+    "positive_correlation_fraction": 0.77
+  },
+  "output_space_competition_diagnostic": {
+    "proportions": {
+      "Identity": {
+        "clean_win": 0.64,
+        "distractor_bias": 0.13,
+        "third_token_intrusion": 0.23
+      },
+      "ECF_Autonomous": {
+        "clean_win": 0.71,
+        "distractor_bias": 0.07,
+        "third_token_intrusion": 0.22
+      },
+      "Oracle_UpperBound": {
+        "clean_win": 0.71,
+        "distractor_bias": 0.04,
+        "third_token_intrusion": 0.25
+      }
+    }
+  }
+}

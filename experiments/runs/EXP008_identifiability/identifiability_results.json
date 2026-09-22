@@ -1,0 +1,152 @@
+{
+    "metadata": {
+        "experiment_id": "EXP008",
+        "num_samples": 100,
+        "num_discriminatory_instances": 35,
+        "num_pairwise_comparisons": 115,
+        "wall_clock_time_seconds": 2.2084,
+        "checksums_match": true
+    },
+    "feature_identifiability_matrix": {
+        "retained_energy": {
+            "is_unsupervised": true,
+            "pairwise_ranking_accuracy_R": 0.4783,
+            "oriented_ranking_accuracy": 0.5217,
+            "ci95_R": [
+                0.3911,
+                0.5739
+            ],
+            "permutation_p_value": 0.2225,
+            "within_instance_effect_size_dz": -0.1149,
+            "mean_pairwise_diff": -0.0067
+        },
+        "removed_energy": {
+            "is_unsupervised": true,
+            "pairwise_ranking_accuracy_R": 0.5217,
+            "oriented_ranking_accuracy": 0.5217,
+            "ci95_R": [
+                0.4348,
+                0.6087
+            ],
+            "permutation_p_value": 0.4045,
+            "within_instance_effect_size_dz": 0.078,
+            "mean_pairwise_diff": 0.0026
+        },
+        "effective_rank": {
+            "is_unsupervised": true,
+            "pairwise_ranking_accuracy_R": 0.487,
+            "oriented_ranking_accuracy": 0.513,
+            "ci95_R": [
+                0.4,
+                0.5739
+            ],
+            "permutation_p_value": 0.376,
+            "within_instance_effect_size_dz": 0.0807,
+            "mean_pairwise_diff": 0.0211
+        },
+        "representation_variance": {
+            "is_unsupervised": true,
+            "pairwise_ranking_accuracy_R": 0.5043,
+            "oriented_ranking_accuracy": 0.5043,
+            "ci95_R": [
+                0.4087,
+                0.5915
+            ],
+            "permutation_p_value": 0.5055,
+            "within_instance_effect_size_dz": -0.0641,
+            "mean_pairwise_diff": -0.0014
+        },
+        "token_uniformity": {
+            "is_unsupervised": true,
+            "pairwise_ranking_accuracy_R": 0.4435,
+            "oriented_ranking_accuracy": 0.5565,
+            "ci95_R": [
+                0.3565,
+                0.5304
+            ],
+            "permutation_p_value": 0.283,
+            "within_instance_effect_size_dz": -0.103,
+            "mean_pairwise_diff": -0.0092
+        },
+        "mean_distance_to_peers": {
+            "is_unsupervised": true,
+            "pairwise_ranking_accuracy_R": 0.5478,
+            "oriented_ranking_accuracy": 0.5478,
+            "ci95_R": [
+                0.4522,
+                0.6348
+            ],
+            "permutation_p_value": 0.0895,
+            "within_instance_effect_size_dz": 0.1623,
+            "mean_pairwise_diff": 0.0192
+        },
+        "distractor_energy_removed": {
+            "is_unsupervised": false,
+            "pairwise_ranking_accuracy_R": 0.5217,
+            "oriented_ranking_accuracy": 0.5217,
+            "ci95_R": [
+                0.4346,
+                0.6087
+            ],
+            "permutation_p_value": 0.1885,
+            "within_instance_effect_size_dz": 0.1221,
+            "mean_pairwise_diff": 0.0256
+        },
+        "premise_energy_retained": {
+            "is_unsupervised": false,
+            "pairwise_ranking_accuracy_R": 0.4783,
+            "oriented_ranking_accuracy": 0.5217,
+            "ci95_R": [
+                0.3913,
+                0.5739
+            ],
+            "permutation_p_value": 0.4005,
+            "within_instance_effect_size_dz": 0.0781,
+            "mean_pairwise_diff": 0.0109
+        },
+        "signal_to_distractor_ratio": {
+            "is_unsupervised": false,
+            "pairwise_ranking_accuracy_R": 0.5217,
+            "oriented_ranking_accuracy": 0.5217,
+            "ci95_R": [
+                0.4348,
+                0.6261
+            ],
+            "permutation_p_value": 0.275,
+            "within_instance_effect_size_dz": 0.1032,
+            "mean_pairwise_diff": 0.1279
+        },
+        "correct_logit": {
+            "is_unsupervised": false,
+            "pairwise_ranking_accuracy_R": 0.9478,
+            "oriented_ranking_accuracy": 0.9478,
+            "ci95_R": [
+                0.9043,
+                0.9826
+            ],
+            "permutation_p_value": 0.0,
+            "within_instance_effect_size_dz": 1.586,
+            "mean_pairwise_diff": 0.3353
+        },
+        "margin_to_incorrect": {
+            "is_unsupervised": false,
+            "pairwise_ranking_accuracy_R": 1.0,
+            "oriented_ranking_accuracy": 1.0,
+            "ci95_R": [
+                1.0,
+                1.0
+            ],
+            "permutation_p_value": 0.0,
+            "within_instance_effect_size_dz": 2.0124,
+            "mean_pairwise_diff": 0.4678
+        }
+    },
+    "subspace_geometry_analysis": {
+        "mean_dist_correct_to_correct": 0.6345,
+        "mean_dist_correct_to_incorrect": 0.6262,
+        "mean_dist_incorrect_to_incorrect": 0.5694,
+        "n_pairs_correct_correct": 43,
+        "n_pairs_correct_incorrect": 115,
+        "n_pairs_incorrect_incorrect": 52
+    }
+}

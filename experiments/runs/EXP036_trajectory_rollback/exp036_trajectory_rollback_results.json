@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "experiment_id": "EXP036",
+    "date": "2026-09-12",
+    "model": "EleutherAI/pythia-160m",
+    "pre_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+    "post_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+    "hash_invariant": true,
+    "n_conf": 50,
+    "base_acc": 0.6
+  },
+  "diagnostic_metrics": {
+    "d_2": {
+      "gain_mean": 0.12860001623630524,
+      "corr_mean": 0.13381577283143997,
+      "neut_mean": 0.1272673148247931,
+      "p_val": 0.8
+    },
+    "rho_2": {
+      "gain_mean": 0.8951511681079865,
+      "corr_mean": 0.7618384460608164,
+      "neut_mean": 0.7709732116924392,
+      "p_val": 0.8
+    },
+    "delta_entropy": {
+      "gain_mean": 0.051432132720947266,
+      "corr_mean": -0.09137447675069173,
+      "neut_mean": 0.03792635069953071,
+      "p_val": 0.2
+    }
+  },
+  "controllers": {
+    "Baseline": {
+      "accuracy": 0.6,
+      "delta_m": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "mean_delta_logp": 0.0,
+      "rescued_b": 0,
+      "corrupted_c": 0,
+      "mcnemar_p": 1.0
+    },
+    "G_contrastive": {
+      "accuracy": 0.74,
+      "delta_m": 0.14,
+      "ci_95": [
+        0.06,
+        0.24
+      ],
+      "mean_delta_logp": 0.1088083791732788,
+      "rescued_b": 7,
+      "corrupted_c": 0,
+      "mcnemar_p": 0.0078125
+    },
+    "Fixed_T1": {
+      "accuracy": 0.66,
+      "delta_m": 0.06000000000000005,
+      "ci_95": [
+        0.0,
+        0.14
+      ],
+      "mean_delta_logp": 0.011169650554656983,
+      "rescued_b": 3,
+      "corrupted_c": 0,
+      "mcnemar_p": 0.125
+    },
+    "Fixed_T2": {
+      "accuracy": 0.64,
+      "delta_m": 0.040000000000000036,
+      "ci_95": [
+        -0.06,
+        0.14049999999999957
+      ],
+      "mean_delta_logp": -0.017051984071731568,
+      "rescued_b": 5,
+      "corrupted_c": 3,
+      "mcnemar_p": 0.36328125
+    },
+    "Rollback_rho_0.0": {
+      "accuracy": 0.64,
+      "delta_m": 0.040000000000000036,
+      "ci_95": [
+        -0.08,
+        0.16
+      ],
+      "mean_delta_logp": -0.017051984071731568,
+      "rescued_b": 5,
+      "corrupted_c": 3,
+      "mcnemar_p": 0.36328125
+    },
+    "Rollback_rho_0.1": {
+      "accuracy": 0.64,
+      "delta_m": 0.040000000000000036,
+      "ci_95": [
+        -0.08,
+        0.14
+      ],
+      "mean_delta_logp": -0.017051984071731568,
+      "rescued_b": 5,
+      "corrupted_c": 3,
+      "mcnemar_p": 0.36328125
+    },
+    "Rollback_rho_0.2": {
+      "accuracy": 0.64,
+      "delta_m": 0.040000000000000036,
+      "ci_95": [
+        -0.06,
+        0.14
+      ],
+      "mean_delta_logp": -0.014277864694595337,
+      "rescued_b": 5,
+      "corrupted_c": 3,
+      "mcnemar_p": 0.36328125
+    },
+    "Rollback_rho_0.3": {
+      "accuracy": 0.64,
+      "delta_m": 0.040000000000000036,
+      "ci_95": [
+        -0.06,
+        0.16
+      ],
+      "mean_delta_logp": -0.0028594708442687988,
+      "rescued_b": 5,
+      "corrupted_c": 3,
+      "mcnemar_p": 0.36328125
+    },
+    "Rollback_rho_0.4": {
+      "accuracy": 0.66,
+      "delta_m": 0.06000000000000005,
+      "ci_95": [
+        -0.04,
+        0.16
+      ],
+      "mean_delta_logp": -0.004155590534210205,
+      "rescued_b": 5,
+      "corrupted_c": 2,
+      "mcnemar_p": 0.2265625
+    },
+    "Rollback_disp_0.12": {
+      "accuracy": 0.64,
+      "delta_m": 0.040000000000000036,
+      "ci_95": [
+        -0.06,
+        0.14
+      ],
+      "mean_delta_logp": -0.005630149841308594,
+      "rescued_b": 4,
+      "corrupted_c": 2,
+      "mcnemar_p": 0.34375
+    },
+    "Rollback_disp_0.13": {
+      "accuracy": 0.64,
+      "delta_m": 0.040000000000000036,
+      "ci_95": [
+        -0.06,
+        0.14
+      ],
+      "mean_delta_logp": -0.00010078191757202148,
+      "rescued_b": 4,
+      "corrupted_c": 2,
+      "mcnemar_p": 0.34375
+    },
+    "Rollback_disp_0.14": {
+      "accuracy": 0.66,
+      "delta_m": 0.06000000000000005,
+      "ci_95": [
+        -0.04,
+        0.16
+      ],
+      "mean_delta_logp": 0.004088168144226074,
+      "rescued_b": 5,
+      "corrupted_c": 2,
+      "mcnemar_p": 0.2265625
+    },
+    "Rollback_disp_0.15": {
+      "accuracy": 0.66,
+      "delta_m": 0.06000000000000005,
+      "ci_95": [
+        -0.04,
+        0.16049999999999956
+      ],
+      "mean_delta_logp": -0.014325640201568603,
+      "rescued_b": 5,
+      "corrupted_c": 2,
+      "mcnemar_p": 0.2265625
+    }
+  }
+}

@@ -1,0 +1,90 @@
+=== EXP060 Execution Started at 2026-09-21T06:21:47.177181+00:00 ===
+[06:21:47] Initializing EXP060 Relational Capability Ladder...
+[06:21:47] Using compute device: cpu
+[06:21:50] Pre-run model SHA-256: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+[06:21:50] Verified frozen model parameter immutability.
+[06:21:50] Loaded 180 total benchmark instances across 6 levels.
+[06:21:50] Extracting base layer 7 prompt activations across all levels...
+[06:22:08] 
+======================================================================
+EVALUATING LEVEL 0: level0_lexical_recall (N=30)
+======================================================================
+[06:22:27] Level 0 Summary (level0_lexical_recall):
+[06:22:27]   Base Accuracy:       40.0%
+[06:22:27]   Oracle Accuracy:     20.0% (Delta_M = -20.0 pp, b=3, c=9, p=0.9807)
+[06:22:27]   Autonomous Accuracy: 20.0% (Delta_M = -20.0 pp, b=3, c=9, p=0.9807)
+[06:22:27]   Representation Discovery Gap (RDG): NON_INTERPRETABLE (Oracle <= Base)
+[06:22:27]   Mean Delta Log-P:    Oracle=-3.9752 | Auto=-4.0468
+[06:22:27]   Target First Acc:    80.0% | Target Second Acc: 0.0%
+[06:22:27]   Permutation Test:    N/A (Standard ordering)
+[06:22:27]   Diagnostic Verdict:  REPRESENTATION_INTERVENTION_CEILING (Latent computation absent or unsteerable)
+[06:22:27] 
+======================================================================
+EVALUATING LEVEL 1: level1_direct_relational (N=30)
+======================================================================
+[06:22:45] Level 1 Summary (level1_direct_relational):
+[06:22:45]   Base Accuracy:       43.3%
+[06:22:45]   Oracle Accuracy:     43.3% (Delta_M = +0.0 pp, b=4, c=4, p=0.6367)
+[06:22:45]   Autonomous Accuracy: 36.7% (Delta_M = -6.7 pp, b=4, c=6, p=0.8281)
+[06:22:45]   Representation Discovery Gap (RDG): NON_INTERPRETABLE (Oracle <= Base)
+[06:22:45]   Mean Delta Log-P:    Oracle=-8.5268 | Auto=-8.6134
+[06:22:45]   Target First Acc:    56.2% | Target Second Acc: 28.6%
+[06:22:45]   Permutation Test:    Canonical Order: 46.7% | Reversed Premise Order: 40.0%
+[06:22:45]   Diagnostic Verdict:  REPRESENTATION_INTERVENTION_CEILING (Latent computation absent or unsteerable)
+[06:22:45] 
+======================================================================
+EVALUATING LEVEL 2: level2_2hop_transitive (N=30)
+======================================================================
+[06:23:13] Level 2 Summary (level2_2hop_transitive):
+[06:23:13]   Base Accuracy:       33.3%
+[06:23:13]   Oracle Accuracy:     70.0% (Delta_M = +36.7 pp, b=11, c=0, p=0.0005)
+[06:23:13]   Autonomous Accuracy: 70.0% (Delta_M = +36.7 pp, b=11, c=0, p=0.0005)
+[06:23:13]   Representation Discovery Gap (RDG): +0.0 pp
+[06:23:13]   Mean Delta Log-P:    Oracle=-8.2643 | Auto=-8.3683
+[06:23:13]   Target First Acc:    53.3% | Target Second Acc: 13.3%
+[06:23:13]   Permutation Test:    Canonical Order: 46.7% | Reversed Premise Order: 20.0%
+[06:23:13]   Diagnostic Verdict:  AUTONOMOUS_CAPABILITY_CONFIRMED (Both recoverable and discoverable)
+[06:23:13] 
+======================================================================
+EVALUATING LEVEL 3: level3_3hop_transitive (N=30)
+======================================================================
+[06:23:42] Level 3 Summary (level3_3hop_transitive):
+[06:23:42]   Base Accuracy:       43.3%
+[06:23:42]   Oracle Accuracy:     80.0% (Delta_M = +36.7 pp, b=13, c=2, p=0.0037)
+[06:23:42]   Autonomous Accuracy: 80.0% (Delta_M = +36.7 pp, b=13, c=2, p=0.0037)
+[06:23:42]   Representation Discovery Gap (RDG): +0.0 pp
+[06:23:42]   Mean Delta Log-P:    Oracle=-8.2901 | Auto=-8.3941
+[06:23:42]   Target First Acc:    80.0% | Target Second Acc: 6.7%
+[06:23:42]   Permutation Test:    Canonical Order: 60.0% | Reversed Premise Order: 26.7%
+[06:23:42]   Diagnostic Verdict:  AUTONOMOUS_CAPABILITY_CONFIRMED (Both recoverable and discoverable)
+[06:23:42] 
+======================================================================
+EVALUATING LEVEL 4: level4_distractor_resistant (N=30)
+======================================================================
+[06:24:16] Level 4 Summary (level4_distractor_resistant):
+[06:24:16]   Base Accuracy:       86.7%
+[06:24:16]   Oracle Accuracy:     70.0% (Delta_M = -16.7 pp, b=0, c=5, p=1.0000)
+[06:24:16]   Autonomous Accuracy: 70.0% (Delta_M = -16.7 pp, b=0, c=5, p=1.0000)
+[06:24:16]   Representation Discovery Gap (RDG): NON_INTERPRETABLE (Oracle <= Base)
+[06:24:16]   Mean Delta Log-P:    Oracle=-7.9173 | Auto=-8.0210
+[06:24:16]   Target First Acc:    73.3% | Target Second Acc: 100.0%
+[06:24:16]   Permutation Test:    N/A (Standard ordering)
+[06:24:16]   Diagnostic Verdict:  REPRESENTATION_INTERVENTION_CEILING (Latent computation absent or unsteerable)
+[06:24:16] 
+======================================================================
+EVALUATING LEVEL 5: level5_compositional_transfer (N=30)
+======================================================================
+[06:25:48] Level 5 Summary (level5_compositional_transfer):
+[06:25:48]   Base Accuracy:       46.7%
+[06:25:48]   Oracle Accuracy:     40.0% (Delta_M = -6.7 pp, b=3, c=5, p=0.8555)
+[06:25:48]   Autonomous Accuracy: 40.0% (Delta_M = -6.7 pp, b=3, c=5, p=0.8555)
+[06:25:48]   Representation Discovery Gap (RDG): NON_INTERPRETABLE (Oracle <= Base)
+[06:25:48]   Mean Delta Log-P:    Oracle=-0.9449 | Auto=-1.0410
+[06:25:48]   Target First Acc:    60.0% | Target Second Acc: 33.3%
+[06:25:48]   Permutation Test:    Canonical Order: 80.0% | Reversed Premise Order: 13.3%
+[06:25:48]   Diagnostic Verdict:  REPRESENTATION_INTERVENTION_CEILING (Latent computation absent or unsteerable)
+[06:25:49] 
+Post-run model SHA-256: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+[06:25:49] Delta_theta = 0 confirmed post-experiment.
+[06:25:49] 
+EXP060 execution completed. Full results saved to: C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\../../experiments/runs/EXP060_capability_ladder\exp060_results.json

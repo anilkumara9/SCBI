@@ -1,0 +1,44 @@
+# Python Caches & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments & Packages
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Large Model Weights, Checkpoints & Tensors (Section 24, 25)
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+checkpoints/
+experiments/checkpoints/*
+!experiments/checkpoints/.gitkeep
+
+# Experiment Run Raw Heavy Outputs (Section 24)
+experiments/runs/*/tensors/
+experiments/runs/*/weights/
+
+# Secrets & Credentials (Section 33)
+.env
+*.key
+*token*
+*.pem
+wandb/
+
+# OS & Editor specific
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

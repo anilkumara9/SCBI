@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "experiment": "EXP032",
+    "model_name": "EleutherAI/pythia-160m",
+    "parameter_sha256": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+    "target_layer": 8,
+    "alpha": 0.25,
+    "n_instances": 50,
+    "seed": 84,
+    "baseline_accuracy": 0.6,
+    "random_baseline_accuracy": 0.6
+  },
+  "generators": {
+    "G_contrastive": {
+      "accuracy": 0.74,
+      "delta_m_pp": 14.000000000000002,
+      "delta_m_ci95_pp": [
+        6.0,
+        24.0
+      ],
+      "mean_delta_logp": 0.1088083791732788,
+      "mcnemar_vs_base": {
+        "b": 7,
+        "c": 0,
+        "p_value": 0.0078125
+      },
+      "spread_vs_random_pp": 14.000000000000002
+    },
+    "G_cov_token_top": {
+      "accuracy": 0.66,
+      "delta_m_pp": 6.000000000000005,
+      "delta_m_ci95_pp": [
+        0.0,
+        14.0
+      ],
+      "mean_delta_logp": -0.014483009576797485,
+      "mcnemar_vs_base": {
+        "b": 3,
+        "c": 0,
+        "p_value": 0.125
+      },
+      "spread_vs_random_pp": 6.000000000000005
+    },
+    "G_cov_token_mid": {
+      "accuracy": 0.6,
+      "delta_m_pp": 0.0,
+      "delta_m_ci95_pp": [
+        -6.0,
+        6.0
+      ],
+      "mean_delta_logp": -0.09177188754081726,
+      "mcnemar_vs_base": {
+        "b": 1,
+        "c": 1,
+        "p_value": 0.75
+      },
+      "spread_vs_random_pp": 0.0
+    },
+    "G_cov_token_tail": {
+      "accuracy": 0.58,
+      "delta_m_pp": -2.0000000000000018,
+      "delta_m_ci95_pp": [
+        -6.0,
+        0.0
+      ],
+      "mean_delta_logp": -0.08405329585075379,
+      "mcnemar_vs_base": {
+        "b": 0,
+        "c": 1,
+        "p_value": 1.0
+      },
+      "spread_vs_random_pp": -2.0000000000000018
+    },
+    "G_cov_prompt": {
+      "accuracy": 0.56,
+      "delta_m_pp": -3.9999999999999925,
+      "delta_m_ci95_pp": [
+        -10.0,
+        0.0
+      ],
+      "mean_delta_logp": -0.0973936915397644,
+      "mcnemar_vs_base": {
+        "b": 0,
+        "c": 2,
+        "p_value": 1.0
+      },
+      "spread_vs_random_pp": -3.9999999999999925
+    },
+    "G_cov_residual": {
+      "accuracy": 0.62,
+      "delta_m_pp": 2.0000000000000018,
+      "delta_m_ci95_pp": [
+        -6.0,
+        10.0
+      ],
+      "mean_delta_logp": -0.032309906482696535,
+      "mcnemar_vs_base": {
+        "b": 3,
+        "c": 2,
+        "p_value": 0.5
+      },
+      "spread_vs_random_pp": 2.0000000000000018
+    },
+    "G_random": {
+      "accuracy": 0.6,
+      "delta_m_pp": 0.0,
+      "delta_m_ci95_pp": [
+        0.0,
+        0.0
+      ],
+      "mean_delta_logp": 0.0025167381763458252,
+      "mcnemar_vs_base": {
+        "b": 0,
+        "c": 0,
+        "p_value": 1.0
+      },
+      "spread_vs_random_pp": 0.0
+    }
+  },
+  "tri_state_resolution": {
+    "status": "OUTCOME_3_UNSUPERVISED_GEOMETRY_REFUTED_OR_INSUFFICIENT",
+    "description": "Unlabeled variance axes do not align with task-critical intervention directions; explicit semantic contrast remains necessary."
+  }
+}

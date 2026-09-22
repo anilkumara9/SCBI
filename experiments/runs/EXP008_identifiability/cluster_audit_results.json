@@ -1,0 +1,134 @@
+{
+    "cluster_audited_features": {
+        "retained_energy": {
+            "is_unsupervised": true,
+            "R_pre_registered": 0.481,
+            "R_post_oriented": 0.519,
+            "ci95_cluster_bootstrap": [
+                0.3571,
+                0.6024
+            ],
+            "within_instance_perm_p": 0.7625,
+            "preregistered_direction": "+"
+        },
+        "removed_energy": {
+            "is_unsupervised": true,
+            "R_pre_registered": 0.481,
+            "R_post_oriented": 0.519,
+            "ci95_cluster_bootstrap": [
+                0.3571,
+                0.6048
+            ],
+            "within_instance_perm_p": 0.7559,
+            "preregistered_direction": "-"
+        },
+        "effective_rank": {
+            "is_unsupervised": true,
+            "R_pre_registered": 0.4786,
+            "R_post_oriented": 0.5214,
+            "ci95_cluster_bootstrap": [
+                0.3381,
+                0.6167
+            ],
+            "within_instance_perm_p": 0.7325,
+            "preregistered_direction": "+"
+        },
+        "representation_variance": {
+            "is_unsupervised": true,
+            "R_pre_registered": 0.5095,
+            "R_post_oriented": 0.5095,
+            "ci95_cluster_bootstrap": [
+                0.3786,
+                0.6381
+            ],
+            "within_instance_perm_p": 0.8919,
+            "preregistered_direction": "+"
+        },
+        "token_uniformity": {
+            "is_unsupervised": true,
+            "R_pre_registered": 0.5548,
+            "R_post_oriented": 0.5548,
+            "ci95_cluster_bootstrap": [
+                0.4357,
+                0.6762
+            ],
+            "within_instance_perm_p": 0.367,
+            "preregistered_direction": "-"
+        },
+        "mean_distance_to_peers": {
+            "is_unsupervised": true,
+            "R_pre_registered": 0.5595,
+            "R_post_oriented": 0.5595,
+            "ci95_cluster_bootstrap": [
+                0.4357,
+                0.6833
+            ],
+            "within_instance_perm_p": 0.3401,
+            "preregistered_direction": "+"
+        },
+        "distractor_energy_removed": {
+            "is_unsupervised": false,
+            "R_pre_registered": 0.5333,
+            "R_post_oriented": 0.5333,
+            "ci95_cluster_bootstrap": [
+                0.4071,
+                0.6571
+            ],
+            "within_instance_perm_p": 0.5995,
+            "preregistered_direction": "+"
+        },
+        "premise_energy_retained": {
+            "is_unsupervised": false,
+            "R_pre_registered": 0.4786,
+            "R_post_oriented": 0.5214,
+            "ci95_cluster_bootstrap": [
+                0.3476,
+                0.6071
+            ],
+            "within_instance_perm_p": 0.7408,
+            "preregistered_direction": "+"
+        },
+        "signal_to_distractor_ratio": {
+            "is_unsupervised": false,
+            "R_pre_registered": 0.5262,
+            "R_post_oriented": 0.5262,
+            "ci95_cluster_bootstrap": [
+                0.4,
+                0.6476
+            ],
+            "within_instance_perm_p": 0.6755,
+            "preregistered_direction": "+"
+        },
+        "correct_logit": {
+            "is_unsupervised": false,
+            "R_pre_registered": 0.95,
+            "R_post_oriented": 0.95,
+            "ci95_cluster_bootstrap": [
+                0.8952,
+                0.9929
+            ],
+            "within_instance_perm_p": 0.0,
+            "preregistered_direction": "+"
+        },
+        "margin_to_incorrect": {
+            "is_unsupervised": false,
+            "R_pre_registered": 1.0,
+            "R_post_oriented": 1.0,
+            "ci95_cluster_bootstrap": [
+                1.0,
+                1.0
+            ],
+            "within_instance_perm_p": 0.0,
+            "preregistered_direction": "+"
+        }
+    },
+    "clustered_geometry_test": {
+        "n_instances_with_multiple_correct": 21,
+        "mean_Delta_D": -0.0084,
+        "ci95_Delta_D_cluster": [
+            -0.0679,
+            0.0607
+        ],
+        "wilcoxon_p": 1.0
+    }
+}

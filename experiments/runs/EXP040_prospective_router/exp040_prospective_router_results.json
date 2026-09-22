@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "experiment_id": "EXP040",
+    "date": "2026-09-12",
+    "model": "EleutherAI/pythia-160m",
+    "pre_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+    "post_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+    "hash_invariant": true,
+    "seed_calib": 123,
+    "seed_test": 84,
+    "n_instances": 50,
+    "base_acc": 0.6
+  },
+  "router_parameters": {
+    "w_g1": [
+      -0.12655332264863242,
+      -0.04032896106341191,
+      0.10849522198768634,
+      0.013339763564097029,
+      -0.06485650523117412,
+      -0.020616590680642748
+    ],
+    "b_g1": 0.32694308381937176,
+    "w_g2": [
+      -0.0812793381959362,
+      -0.05358336187373306,
+      0.10604195233646986,
+      -0.007136342704753018,
+      -0.03000019312075405,
+      -0.022263783543537124
+    ],
+    "b_g2": 0.32534129102588283,
+    "w_g3": [
+      -0.04755340092767809,
+      -0.0459773689530063,
+      0.12619096820884904,
+      0.05522083280170721,
+      -0.05754612721978846,
+      -0.015666705556303954
+    ],
+    "b_g3": 0.000158392626840538
+  },
+  "controllers": {
+    "Baseline (Unintervened)": {
+      "accuracy": 0.6,
+      "delta_m": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "mean_delta_logp": 0.0,
+      "rescued_b": 0,
+      "corrupted_c": 0,
+      "mcnemar_p": 1.0,
+      "evals_per_inst": 1.0
+    },
+    "G_contrastive (Supervised Ref)": {
+      "accuracy": 0.74,
+      "delta_m": 0.14,
+      "ci_95": [
+        0.06,
+        0.24
+      ],
+      "mean_delta_logp": 0.1088083791732788,
+      "rescued_b": 7,
+      "corrupted_c": 0,
+      "mcnemar_p": 0.0078125,
+      "evals_per_inst": 1.0
+    },
+    "Static G_1 (Trajectory Flow)": {
+      "accuracy": 0.66,
+      "delta_m": 0.06000000000000005,
+      "ci_95": [
+        0.0,
+        0.14
+      ],
+      "mean_delta_logp": 0.011169650554656983,
+      "rescued_b": 3,
+      "corrupted_c": 0,
+      "mcnemar_p": 0.125,
+      "evals_per_inst": 1.0
+    },
+    "Static G_2 (Contextual Perturb)": {
+      "accuracy": 0.64,
+      "delta_m": 0.040000000000000036,
+      "ci_95": [
+        -0.04,
+        0.12
+      ],
+      "mean_delta_logp": 0.017257955074310303,
+      "rescued_b": 3,
+      "corrupted_c": 1,
+      "mcnemar_p": 0.3125,
+      "evals_per_inst": 1.0
+    },
+    "Static G_3 (Attention Relational)": {
+      "accuracy": 0.64,
+      "delta_m": 0.040000000000000036,
+      "ci_95": [
+        0.0,
+        0.1
+      ],
+      "mean_delta_logp": -0.050804754495620726,
+      "rescued_b": 2,
+      "corrupted_c": 0,
+      "mcnemar_p": 0.25,
+      "evals_per_inst": 1.0
+    },
+    "Oracle Multi-Generator Bound": {
+      "accuracy": 0.7,
+      "delta_m": 0.09999999999999998,
+      "ci_95": [
+        0.02,
+        0.2
+      ],
+      "mean_delta_logp": 0.12173806190490723,
+      "rescued_b": 5,
+      "corrupted_c": 0,
+      "mcnemar_p": 0.03125,
+      "evals_per_inst": 1.0
+    },
+    "Prospective Router (Frozen phi*)": {
+      "accuracy": 0.68,
+      "delta_m": 0.08000000000000007,
+      "ci_95": [
+        0.02,
+        0.16
+      ],
+      "mean_delta_logp": 0.0009618568420410157,
+      "rescued_b": 4,
+      "corrupted_c": 0,
+      "mcnemar_p": 0.0625,
+      "evals_per_inst": 1.0
+    }
+  }
+}

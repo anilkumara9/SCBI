@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "experiment": "EXP023-A",
+    "n_dev": 20,
+    "seed": 123,
+    "layer": 8,
+    "alpha": 0.25,
+    "rank": 2,
+    "candidate_count": 4,
+    "total_forwards": 260,
+    "elapsed_seconds": 26.55,
+    "pre_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "post_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "hash_identical": true
+  },
+  "performance_comparison": {
+    "M_Identity": 0.65,
+    "M_Fixed_V0": 0.65,
+    "M_Random": 0.7,
+    "M_ECF_Autonomous": 0.7,
+    "M_Oracle_UpperBound": 0.7,
+    "Delta_M_ECF_vs_Identity": 0.05,
+    "Delta_M_ECF_vs_Random": 0.0,
+    "Delta_M_ECF_vs_Fixed": 0.05,
+    "Headroom_Recovery_Ratio": 1.0,
+    "Pref_Identity": 0.9,
+    "Pref_Fixed_V0": 0.9,
+    "Pref_Random": 1.0,
+    "Pref_ECF": 0.95,
+    "Pref_Oracle": 1.0,
+    "Mean_Delta_logp_ECF": 0.1575,
+    "Mean_Delta_Margin_ECF": 0.0632
+  },
+  "evaluator_ranking_diagnostics": {
+    "mean_spearman_rho": 0.47,
+    "mean_kendall_tau": 0.4667,
+    "oracle_agreement_rate": 0.8,
+    "positive_correlation_fraction": 0.7
+  }
+}

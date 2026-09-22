@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "experiment": "EXP054",
+    "title": "Parameter Scaling Substitution Test",
+    "timestamp": "2026-09-21T05:13:20.299068",
+    "verdict": "SCALING_SUBSTITUTION_SUPPORTED"
+  },
+  "models": {
+    "pythia-70m": {
+      "params_m": 70,
+      "acc_base": 0.54,
+      "acc_scpm": 0.58,
+      "delta_m": 0.039999999999999925,
+      "rescues_b": 2,
+      "corruptions_c": 0,
+      "mcnemar_p": 0.25,
+      "hash_invariant": true
+    },
+    "pythia-160m": {
+      "params_m": 160,
+      "acc_base": 0.6,
+      "acc_scpm": 0.74,
+      "delta_m": 0.14,
+      "rescues_b": 7,
+      "corruptions_c": 0,
+      "mcnemar_p": 0.0078125,
+      "hash_invariant": true
+    },
+    "pythia-410m": {
+      "params_m": 410,
+      "acc_base": 0.72,
+      "acc_scpm": 0.7,
+      "delta_m": -0.020000000000000018,
+      "rescues_b": 0,
+      "corruptions_c": 1,
+      "mcnemar_p": 1.0,
+      "hash_invariant": true
+    }
+  }
+}

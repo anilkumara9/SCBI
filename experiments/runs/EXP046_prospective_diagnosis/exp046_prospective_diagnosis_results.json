@@ -1,0 +1,48 @@
+{
+  "experiment_id": "EXP046",
+  "timestamp": "2026-09-12 02:02:39",
+  "model_name": "EleutherAI/pythia-160m",
+  "pre_param_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+  "post_param_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+  "diagnostic_manifest_hash": "bf30e16fea8ae6e84d1eec17666fe770cde6749ab0d01c824fa540d09931504d",
+  "sample_size": 100,
+  "metrics": {
+    "pi_always_empty": {
+      "accuracy": 0.56,
+      "mean_utility": 0.5100000000000001,
+      "corruptions": 0
+    },
+    "pi_always_R": {
+      "accuracy": 0.56,
+      "mean_utility": 0.5074999999999998,
+      "corruptions": 0
+    },
+    "pi_always_S": {
+      "accuracy": 0.42,
+      "mean_utility": 0.14999999999999997,
+      "corruptions": 17
+    },
+    "pi_diagnostic": {
+      "accuracy": 0.42,
+      "mean_utility": 0.14999999999999997,
+      "corruptions": 17
+    },
+    "pi_oracle": {
+      "accuracy": 0.59,
+      "mean_utility": 0.5385000000000002,
+      "corruptions": 0
+    }
+  },
+  "ablation_auc": {
+    "D_full": 0.5,
+    "D_output": 0.5,
+    "D_geom": 0.5,
+    "D_attn": 0.5
+  },
+  "hypothesis_resolutions": {
+    "H_select_utility_superiority": false,
+    "H_ROC_discrimination": false
+  },
+  "resolution": "OUTCOME_4_PROSPECTIVE_DIAGNOSIS_REFUTED",
+  "verdict": "REFUTED: Neither utility superiority nor discrimination threshold was achieved."
+}

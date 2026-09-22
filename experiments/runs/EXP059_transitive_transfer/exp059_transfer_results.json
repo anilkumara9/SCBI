@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "experiment": "EXP059",
+    "title": "Transitive Relational Transfer Across Disjoint Surface Domains",
+    "timestamp": "2026-09-21T06:11:33.904227+00:00",
+    "model": "EleutherAI/pythia-160m",
+    "target_block": 7,
+    "alpha": 0.25,
+    "selected_operator": "subspace_projection",
+    "verdict": "TRANSITIVE_INTERVENTION_INEFFECTIVE",
+    "specificity_gap": -0.176,
+    "hypotheses": {
+      "H1_causal_intervention": false,
+      "H2_relation_specificity": false,
+      "H3_surface_invariance": false,
+      "H4_causal_necessity": "inconclusive",
+      "H5_reusability": "not_established"
+    },
+    "retention_ratio_tau": 0.0
+  },
+  "discovery_domain": {
+    "base_acc": 0.5,
+    "selected_acc": 0.5,
+    "delta_pp": 0.0
+  },
+  "heldout_aggregate": {
+    "base_acc": 0.515625,
+    "selected_acc": 0.53125,
+    "reversed_acc": 0.515625,
+    "orthogonal_acc": 0.515625,
+    "delta_pp": 1.5625,
+    "rescues": 1,
+    "corruptions": 0,
+    "p_mcnemar": 0.5
+  },
+  "domain_breakdown": {
+    "domain0_discovery_social": {
+      "valid_base": 0.5,
+      "valid_selected": 0.5
+    },
+    "domain1_heldout_names": {
+      "valid_base": 0.4375,
+      "valid_selected": 0.5
+    },
+    "domain2_biochemical": {
+      "valid_base": 0.625,
+      "valid_selected": 0.625
+    },
+    "domain3_industrial": {
+      "valid_base": 0.5,
+      "valid_selected": 0.5
+    },
+    "domain4_symbolic": {
+      "valid_base": 0.5,
+      "valid_selected": 0.5
+    }
+  }
+}

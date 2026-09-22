@@ -1,0 +1,52 @@
+==================================================================
+EXP062: Representation-vs-Decision Disambiguation Benchmark
+Pre-registered Falsification Protocol: EXP062_REPRESENTATION_VS_DECISION_SPEC.md
+==================================================================
+Loading model & tokenizer: EleutherAI/pythia-160m...
+Pre-experiment parameter SHA-256: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+Loaded 60 transitive instances (Levels 2 & 3) and 30 Level 5 instances.
+
+Evaluating unintervened baseline on Levels 2 & 3...
+Baseline Levels 2 & 3 Accuracy: 38.3% (23/60)
+
+Computing Representation Similarity Matrix (Identity Baseline)...
+Identity Baseline Cosine Similarities:
+  Same Target/Foil Pairs (S_base): 1.0000
+  Disjoint Entity Pairs (S_ent):   0.4368
+  Inverted Relation Pairs (S_inv): -1.0000
+  Random Gaussian Pairs (S_rand):  -0.0008 +/- 0.0349
+  Criterion S_ent > S_rand: True (Diff = 0.4376)
+
+Testing Condition 1: Target/Foil Relabeling ((A) vs (B))...
+Testing Condition 2: Entity-Name Permutation (Disjoint Names)...
+Testing Condition 3: Vocabulary Substitution ('outranks' -> 'is higher than')...
+Testing Condition 4: Premise Reordering (Swapping Clause Order)...
+Testing Condition 5: Query Polarity Reversal (Who is lower in rank?)...
+Testing Condition 6: Random Matched-Norm Direction...
+Testing Condition 7: Isolated Unembedding Contrast...
+Testing Condition 8: Within-Task Cross-Instance Swap (Instance j -> i)...
+Testing Condition 9: Mean Relational Vector Transfer...
+Testing Condition 10: Cross-Domain Transfer (Human -> Planetary L5)...
+Testing Condition 11: Relation-Inverted Negative Control...
+
+Post-experiment parameter SHA-256: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+Verification Confirmed: Delta_theta === 0 strictly preserved.
+
+================================================================================
+EXP062 COMPLETE SCORECARD ACROSS 11 DIAGNOSTIC CONDITIONS
+================================================================================
+Condition                           | Base   | Mod    | Delta_M  | b   | c   | Exact p  | Delta_Margin | KL    
+---------------------------------------------------------------------------------------------------------------
+1_Target_Foil_Relabeling            |  50.0% |  50.0% |   +0.0pp |   0 |   0 |   1.0000 |      +0.0080 | 0.0008
+2_Entity_Permutation_Transfer       |  11.7% |  11.7% |   +0.0pp |   0 |   0 |   1.0000 |      -0.0254 | 0.0017
+3_Vocabulary_Substitution           |  40.0% |  70.0% |  +30.0pp |  18 |   0 |   0.0000 |      +0.5218 | 0.0060
+4_Premise_Reordering                |  43.3% |  71.7% |  +28.3pp |  17 |   0 |   0.0000 |      +0.5142 | 0.0053
+5_Query_Polarity_Reversal           |  53.3% |  21.7% |  -31.7pp |   0 |  19 |   0.0000 |      -0.5117 | 0.0055
+6_Random_Matched_Norm               |  38.3% |  40.0% |   +1.7pp |   1 |   0 |   1.0000 |      -0.0077 | 0.0011
+7_Isolated_Unembedding_Contrast     | 100.0% | 100.0% |   +0.0pp |   0 |   0 |   1.0000 |      +0.5369 | 0.0007
+8_Cross_Instance_Swap               |  38.3% |  53.3% |  +15.0pp |   9 |   0 |   0.0039 |      +0.2404 | 0.0041
+9_Mean_Relational_Vector            |  38.3% |  56.7% |  +18.3pp |  11 |   0 |   0.0010 |      +0.3714 | 0.0037
+10_Cross_Domain_Planetary_Transfer  |  46.7% |  46.7% |   +0.0pp |   0 |   0 |   1.0000 |      -0.0382 | 0.0006
+11_Relation_Inverted_Control        |  63.3% |  45.0% |  -18.3pp |   0 |  11 |   0.0010 |      -0.5273 | 0.0053
+
+Saved raw data ledger to: experiments\runs\EXP062_representation_vs_decision\exp062_results.json

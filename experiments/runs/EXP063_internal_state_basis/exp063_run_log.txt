@@ -1,0 +1,95 @@
+==================================================================
+EXP063: Internal-State Basis Construction & Causal Transfer Ladder
+Pre-registered Protocol: EXP063_INTERNAL_STATE_BASIS_SPEC.md
+==================================================================
+Loading model & tokenizer: EleutherAI/pythia-160m...
+Pre-experiment parameter SHA-256: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+
+Constructing strictly partitioned datasets (Support N=30, Validation N=30, Heldout N=30)...
+Dataset generated: 30 support, 30 validation, 30 heldout.
+
+Extracting internal hidden states across candidate layers [2, 5, 7, 10] on D_support...
+
+Constructing Candidate Internal Basis Families across layers...
+
+======================================================================
+STAGE 1: VALIDATION SCREENING & CALIBRATION (D_val, N=30)
+======================================================================
+Baseline Validation Accuracy: 46.7% (14/30)
+Layer  2 | B_diff     | O1_amp | Delta_M =  +0.0pp (p=1.0000) | Rand Max = +33.3pp | Adv = -33.3pp
+Layer  2 | B_diff     | O2_inj | Delta_M =  +6.7pp (p=0.5000) | Rand Max =  +0.0pp | Adv =  +6.7pp
+Layer  2 | B_var      | O1_amp | Delta_M =  +6.7pp (p=0.5000) | Rand Max =  +0.0pp | Adv =  +6.7pp
+Layer  2 | B_var      | O2_inj | Delta_M =  -6.7pp (p=0.5000) | Rand Max =  +0.0pp | Adv =  -6.7pp
+Layer  2 | B_centroid | O1_amp | Delta_M =  -6.7pp (p=0.5000) | Rand Max = +33.3pp | Adv = -40.0pp
+Layer  2 | B_centroid | O2_inj | Delta_M =  +3.3pp (p=1.0000) | Rand Max =  +0.0pp | Adv =  +3.3pp
+Layer  5 | B_diff     | O1_amp | Delta_M = +10.0pp (p=0.2500) | Rand Max = +26.7pp | Adv = -16.7pp
+Layer  5 | B_diff     | O2_inj | Delta_M =  +6.7pp (p=0.5000) | Rand Max =  +6.7pp | Adv =  +0.0pp
+Layer  5 | B_var      | O1_amp | Delta_M = +10.0pp (p=0.2500) | Rand Max = +46.7pp | Adv = -36.7pp
+Layer  5 | B_var      | O2_inj | Delta_M =  -6.7pp (p=0.5000) | Rand Max =  +6.7pp | Adv = -13.3pp
+Layer  5 | B_centroid | O1_amp | Delta_M =  -6.7pp (p=0.5000) | Rand Max =  +0.0pp | Adv =  -6.7pp
+Layer  5 | B_centroid | O2_inj | Delta_M =  +6.7pp (p=0.5000) | Rand Max =  +6.7pp | Adv =  +0.0pp
+Layer  7 | B_diff     | O1_amp | Delta_M =  +6.7pp (p=0.5000) | Rand Max = +16.7pp | Adv = -10.0pp
+Layer  7 | B_diff     | O2_inj | Delta_M =  +6.7pp (p=0.5000) | Rand Max =  +0.0pp | Adv =  +6.7pp
+Layer  7 | B_var      | O1_amp | Delta_M = -16.7pp (p=0.0625) | Rand Max = +43.3pp | Adv = -60.0pp
+Layer  7 | B_var      | O2_inj | Delta_M = -13.3pp (p=0.1250) | Rand Max =  +0.0pp | Adv = -13.3pp
+Layer  7 | B_centroid | O1_amp | Delta_M = -16.7pp (p=0.0625) | Rand Max = +43.3pp | Adv = -60.0pp
+Layer  7 | B_centroid | O2_inj | Delta_M =  +6.7pp (p=0.5000) | Rand Max =  +0.0pp | Adv =  +6.7pp
+Layer 10 | B_diff     | O1_amp | Delta_M =  -6.7pp (p=0.5000) | Rand Max =  +0.0pp | Adv =  -6.7pp
+Layer 10 | B_diff     | O2_inj | Delta_M =  +6.7pp (p=0.5000) | Rand Max =  +0.0pp | Adv =  +6.7pp
+Layer 10 | B_var      | O1_amp | Delta_M =  +3.3pp (p=1.0000) | Rand Max =  +6.7pp | Adv =  -3.3pp
+Layer 10 | B_var      | O2_inj | Delta_M = -13.3pp (p=0.1250) | Rand Max =  +0.0pp | Adv = -13.3pp
+Layer 10 | B_centroid | O1_amp | Delta_M =  -6.7pp (p=0.5000) | Rand Max =  +6.7pp | Adv = -13.3pp
+Layer 10 | B_centroid | O2_inj | Delta_M = +13.3pp (p=0.1250) | Rand Max =  +0.0pp | Adv = +13.3pp
+
+======================================================================
+PROSPECTIVELY LOCKED CONFIGURATION FROM VALIDATION SCREENING
+======================================================================
+Locked Layer:    Layer 10
+Locked Family:   B_centroid
+Locked Operator: O2_inj
+Val Delta_M:     +13.3pp vs. Rand Max +0.0pp
+Val Advantage:   +13.3pp
+State Delta_H:   0.5000 vs. Rand Delta_H 0.5000
+
+======================================================================
+STAGE 2: CONFIRMATORY EVALUATION ON D_heldout ACROSS R2-R5
+======================================================================
+Baseline Held-Out Accuracy: 46.7% (14/30)
+Testing R2: Instance Transfer on D_heldout...
+Testing R3: Vocabulary Transfer (Novel Entity Names)...
+Testing R4: Structural Transfer (Synonym Substitution)...
+Testing R4: Structural Transfer (Premise Reordering)...
+Testing R5: Premise Reversal C < B < A...
+Testing R5: Query Polarity Reversal ('Who is lower?')...
+Testing Bridge Control: Output-Direction Intervention (v_output)...
+Testing Matched Orthogonal Complement Control (B_perp)...
+Testing Matched Random Subspace Distribution (K=5 Seeds)...
+Testing Wrong-Task Internal Basis Control (Level 0 Lexical Recall)...
+
+Post-experiment parameter SHA-256: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+Verification Confirmed: Delta_theta === 0 strictly preserved.
+
+================================================================================
+EXP063 CONFIRMATORY SCORECARD ACROSS CAUSAL LADDER & CONTROLS
+================================================================================
+Condition / Test                    | Base   | Mod    | Delta_M  | b   | c   | Exact p  | Delta_Margin | Delta_H 
+-----------------------------------------------------------------------------------------------------------------
+R2_Instance_Transfer                |  46.7% |  63.3% |  +16.7pp |   5 |   0 |   0.0625 |      +0.2605 |   0.5000
+R3_Vocabulary_Transfer              |  20.0% |  20.0% |   +0.0pp |   0 |   0 |   1.0000 |      +0.1057 |   0.5000
+R4_Synonym_Substitution             |  50.0% |  63.3% |  +13.3pp |   4 |   0 |   0.1250 |      +0.2587 |   0.5000
+R4_Premise_Reordering               |  36.7% |  46.7% |  +10.0pp |   3 |   0 |   0.2500 |      +0.2595 |   0.5000
+R5_Premise_Reversal                 |  90.0% |  73.3% |  -16.7pp |   0 |   5 |   0.0625 |      -0.2546 |   0.5000
+R5_Polarity_Reversal                |  43.3% |  36.7% |   -6.7pp |   0 |   2 |   0.5000 |      -0.2587 |   0.5000
+Bridge_Output_Direction_Control     |  46.7% |  70.0% |  +23.3pp |   7 |   0 |   0.0156 |      +0.5543 |   0.5000
+Control_B_perp                      |  46.7% |  46.7% |   +0.0pp |   0 |   0 |   1.0000 |      +0.0053 |   0.5000
+Control_Random_Subspace_Max         |  46.7% |  50.0% |   +3.3pp |   0 |   0 |   1.0000 |      +0.0000 |   0.5000
+Control_Wrong_Task_Level0           |  46.7% |  46.7% |   +0.0pp |   0 |   0 |   1.0000 |      +0.0149 |   0.5000
+
+================================================================================
+PRIMARY SCIENTIFIC COMPARISON: Delta_M(Internal) vs. Delta_M(Output Bridge)
+  Internal Basis (Locked B_centroid Layer 10): Delta_M = +16.7pp
+  Output Bridge Control (Unembedding Contrast Layer 7):          Delta_M = +23.3pp
+  Net Internal Advantage: -6.7pp
+================================================================================
+
+Saved raw data ledger to: experiments\runs\EXP063_internal_state_basis\exp063_results.json

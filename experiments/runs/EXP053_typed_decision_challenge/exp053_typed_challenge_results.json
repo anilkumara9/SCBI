@@ -1,0 +1,494 @@
+{
+  "metadata": {
+    "experiment": "EXP053",
+    "title": "Continuous Subspace Invention vs. Typed Decision Systems",
+    "timestamp": "2026-09-21T05:10:50.271252",
+    "model": "EleutherAI/pythia-160m",
+    "target_block": 7,
+    "alpha": 0.25,
+    "rank": 2,
+    "verdict": "ORTHOGONALITY_AND_SYNERGY_CONFIRMED"
+  },
+  "summary": {
+    "sys0_base": {
+      "accuracy": 0.6,
+      "delta_m": 0.0,
+      "rescues_b": 0,
+      "corruptions_c": 0,
+      "mcnemar_p": 1.0
+    },
+    "sys1_scpm": {
+      "accuracy": 0.74,
+      "delta_m": 0.14,
+      "rescues_b": 7,
+      "corruptions_c": 0,
+      "mcnemar_p": 0.0078125
+    },
+    "sys2_typed": {
+      "accuracy": 0.62,
+      "delta_m": 0.020000000000000018,
+      "rescues_b": 1,
+      "corruptions_c": 0,
+      "mcnemar_p": 0.5
+    },
+    "sys3_hybrid": {
+      "accuracy": 0.76,
+      "delta_m": 0.16000000000000003,
+      "rescues_b": 8,
+      "corruptions_c": 0,
+      "mcnemar_p": 0.00390625
+    }
+  },
+  "instances": [
+    {
+      "id": 0,
+      "target": "black",
+      "distractor": "red",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 1,
+      "target": "Paris",
+      "distractor": "Athens",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 2,
+      "target": "Thursday",
+      "distractor": "Wednesday",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 3,
+      "target": "astronomy",
+      "distractor": "history",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 4,
+      "target": "yellow",
+      "distractor": "beige",
+      "corr_base": 0,
+      "corr_scpm": 0,
+      "corr_typed": 0,
+      "corr_hybrid": 0
+    },
+    {
+      "id": 5,
+      "target": "black",
+      "distractor": "brick",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 6,
+      "target": "Cairo",
+      "distractor": "Prague",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 7,
+      "target": "Thursday",
+      "distractor": "Saturday",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 8,
+      "target": "biology",
+      "distractor": "philosophy",
+      "corr_base": 0,
+      "corr_scpm": 0,
+      "corr_typed": 0,
+      "corr_hybrid": 0
+    },
+    {
+      "id": 9,
+      "target": "silver",
+      "distractor": "navy",
+      "corr_base": 0,
+      "corr_scpm": 0,
+      "corr_typed": 0,
+      "corr_hybrid": 0
+    },
+    {
+      "id": 10,
+      "target": "wooden",
+      "distractor": "red",
+      "corr_base": 0,
+      "corr_scpm": 0,
+      "corr_typed": 0,
+      "corr_hybrid": 0
+    },
+    {
+      "id": 11,
+      "target": "Berlin",
+      "distractor": "Geneva",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 12,
+      "target": "Wednesday",
+      "distractor": "Saturday",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 13,
+      "target": "physics",
+      "distractor": "botany",
+      "corr_base": 0,
+      "corr_scpm": 0,
+      "corr_typed": 0,
+      "corr_hybrid": 0
+    },
+    {
+      "id": 14,
+      "target": "silver",
+      "distractor": "black",
+      "corr_base": 0,
+      "corr_scpm": 0,
+      "corr_typed": 0,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 15,
+      "target": "blue",
+      "distractor": "bronze",
+      "corr_base": 0,
+      "corr_scpm": 1,
+      "corr_typed": 0,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 16,
+      "target": "Paris",
+      "distractor": "Oslo",
+      "corr_base": 0,
+      "corr_scpm": 1,
+      "corr_typed": 0,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 17,
+      "target": "Tuesday",
+      "distractor": "Thursday",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 18,
+      "target": "chemistry",
+      "distractor": "history",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 19,
+      "target": "purple",
+      "distractor": "white",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 20,
+      "target": "golden",
+      "distractor": "bronze",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 21,
+      "target": "Tokyo",
+      "distractor": "London",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 22,
+      "target": "Tuesday",
+      "distractor": "Wednesday",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 23,
+      "target": "physics",
+      "distractor": "botany",
+      "corr_base": 0,
+      "corr_scpm": 0,
+      "corr_typed": 0,
+      "corr_hybrid": 0
+    },
+    {
+      "id": 24,
+      "target": "orange",
+      "distractor": "beige",
+      "corr_base": 0,
+      "corr_scpm": 0,
+      "corr_typed": 0,
+      "corr_hybrid": 0
+    },
+    {
+      "id": 25,
+      "target": "golden",
+      "distractor": "silver",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 26,
+      "target": "Cairo",
+      "distractor": "Athens",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 27,
+      "target": "Monday",
+      "distractor": "Saturday",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 28,
+      "target": "economics",
+      "distractor": "history",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 29,
+      "target": "silver",
+      "distractor": "brown",
+      "corr_base": 0,
+      "corr_scpm": 0,
+      "corr_typed": 0,
+      "corr_hybrid": 0
+    },
+    {
+      "id": 30,
+      "target": "wooden",
+      "distractor": "glass",
+      "corr_base": 0,
+      "corr_scpm": 1,
+      "corr_typed": 0,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 31,
+      "target": "Madrid",
+      "distractor": "Athens",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 32,
+      "target": "Friday",
+      "distractor": "Thursday",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 33,
+      "target": "physics",
+      "distractor": "literature",
+      "corr_base": 0,
+      "corr_scpm": 0,
+      "corr_typed": 0,
+      "corr_hybrid": 0
+    },
+    {
+      "id": 34,
+      "target": "purple",
+      "distractor": "black",
+      "corr_base": 0,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 35,
+      "target": "metal",
+      "distractor": "white",
+      "corr_base": 0,
+      "corr_scpm": 1,
+      "corr_typed": 0,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 36,
+      "target": "Rome",
+      "distractor": "Warsaw",
+      "corr_base": 0,
+      "corr_scpm": 0,
+      "corr_typed": 0,
+      "corr_hybrid": 0
+    },
+    {
+      "id": 37,
+      "target": "Thursday",
+      "distractor": "Monday",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 38,
+      "target": "physics",
+      "distractor": "philosophy",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 39,
+      "target": "yellow",
+      "distractor": "white",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 40,
+      "target": "leather",
+      "distractor": "silver",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 41,
+      "target": "Cairo",
+      "distractor": "London",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 42,
+      "target": "Friday",
+      "distractor": "Monday",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 43,
+      "target": "psychology",
+      "distractor": "history",
+      "corr_base": 0,
+      "corr_scpm": 0,
+      "corr_typed": 0,
+      "corr_hybrid": 0
+    },
+    {
+      "id": 44,
+      "target": "gold",
+      "distractor": "white",
+      "corr_base": 0,
+      "corr_scpm": 0,
+      "corr_typed": 0,
+      "corr_hybrid": 0
+    },
+    {
+      "id": 45,
+      "target": "leather",
+      "distractor": "red",
+      "corr_base": 0,
+      "corr_scpm": 1,
+      "corr_typed": 0,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 46,
+      "target": "Paris",
+      "distractor": "Lisbon",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 47,
+      "target": "Wednesday",
+      "distractor": "Saturday",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 48,
+      "target": "astronomy",
+      "distractor": "geology",
+      "corr_base": 0,
+      "corr_scpm": 1,
+      "corr_typed": 0,
+      "corr_hybrid": 1
+    },
+    {
+      "id": 49,
+      "target": "purple",
+      "distractor": "beige",
+      "corr_base": 1,
+      "corr_scpm": 1,
+      "corr_typed": 1,
+      "corr_hybrid": 1
+    }
+  ]
+}

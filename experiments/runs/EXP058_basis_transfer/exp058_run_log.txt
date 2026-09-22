@@ -1,0 +1,18 @@
+=== EXP058 Execution Started at 2026-09-21T05:35:51.400091 ===
+[05:35:51] Initializing EXP058 Basis Reconfiguration & Cross-Domain Transfer...
+[05:35:51] Using compute device: cpu
+[05:35:53] Pre-run model hash verified: Delta_theta = 0.
+[05:35:53] Inferring donor bases on Domain A (Biomedical)...
+[05:35:58] Evaluating transfer across 30 instances on Domain B (Physical / Climate)...
+[05:36:08] 
+================ EXP058 BASIS TRANSFER SUMMARY (N=30) ================
+[05:36:08] Base Accuracy (Domain B):          60.0% (18/30)
+[05:36:08] Matched Transfer (Causal -> Causal):53.3% (16/30) [Delta_M=-6.7 pp, Rescues=2, Corr=4, p=0.8906]
+[05:36:08] Mismatched Transfer (Hier -> Causal):60.0% (18/30) [Delta_M=+0.0 pp]
+[05:36:08] Native Inferred Basis (Domain B):  46.7% (14/30) [Delta_M=-13.3 pp]
+[05:36:08] Headroom Retention Ratio (tau):    0.0%
+[05:36:09] 
+Backbone immutability verified: Delta_theta = 0.
+[05:36:09] 
+Final Audit Verdict: >>> TRANSFER_WEAK_OR_SPECIFIC <<<
+[05:36:09] Saved complete results to C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\../../experiments/runs/EXP058_basis_transfer\exp058_transfer_results.json

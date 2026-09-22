@@ -1,0 +1,25 @@
+=== EXP054 Execution Started at 2026-09-21T05:10:59.891154 ===
+[05:10:59] Initializing EXP054 Parameter Scaling Substitution Test...
+[05:10:59] Using compute device: cpu
+[05:10:59] 
+--- Loading and Evaluating Model: EleutherAI/pythia-70m (70M params) ---
+[05:11:11] Pre-run hash: 810f018e42059c7ba5951bc92d90b39b0c091cd581c8013d1e510cab5a5215bf
+[05:11:24] [pythia-70m] Base: 54.0%, SCPM: 58.0% (Delta_M=+4.0 pp)
+[05:11:24] [pythia-70m] Rescues: 2, Corruptions: 0, McNemar p: 0.2500
+[05:11:24] 
+--- Loading and Evaluating Model: EleutherAI/pythia-160m (160M params) ---
+[05:11:26] Pre-run hash: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+[05:11:50] [pythia-160m] Base: 60.0%, SCPM: 74.0% (Delta_M=+14.0 pp)
+[05:11:50] [pythia-160m] Rescues: 7, Corruptions: 0, McNemar p: 0.0078
+[05:11:50] 
+--- Loading and Evaluating Model: EleutherAI/pythia-410m (410M params) ---
+[05:12:20] Pre-run hash: 4c242d9ac702a4029a674eacee84e0517cb6f79d794661dc3a3102bca5ed48dd
+[05:13:20] [pythia-410m] Base: 72.0%, SCPM: 70.0% (Delta_M=-2.0 pp)
+[05:13:20] [pythia-410m] Rescues: 0, Corruptions: 1, McNemar p: 1.0000
+[05:13:20] 
+================ SCALING SUBSTITUTION AUDIT ================
+[05:13:20] Pythia-160M + SCPM (160M params): 74.0%
+[05:13:20] Pythia-410M Base   (410M params): 72.0%
+[05:13:20] Substitution Margin: +2.0 pp
+[05:13:20] Result: Pythia-160M + SCPM successfully matches/exceeds Pythia-410M base capacity!
+[05:13:20] Saved complete results to C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\../../experiments/runs/EXP054_scaling_substitution\exp054_scaling_results.json

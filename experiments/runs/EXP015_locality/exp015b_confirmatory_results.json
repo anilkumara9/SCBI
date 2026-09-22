@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "protocol": "EXP015 Phase B",
+    "model": "gpt2 (124M)",
+    "pre_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "post_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "checksums_match": true,
+    "n_instances": 100,
+    "seed": 42,
+    "layer": 10,
+    "alpha": 0.25,
+    "rank": 2,
+    "m_identity": 0.65,
+    "pref_identity": 0.79,
+    "total_forwards": 900,
+    "wall_clock_seconds": 287.86243414878845
+  },
+  "results": {
+    "G4_sparse": {
+      "m_oracle": 0.7,
+      "m_random": 0.59,
+      "delta_oracle": 0.05,
+      "ci_delta": [
+        -0.01,
+        0.11
+      ],
+      "b_win": 8,
+      "c_loss": 3,
+      "p_exact": 0.11328125,
+      "spread": 0.10999999999999999,
+      "pref_oracle": 0.87,
+      "locality": 0.30121986387022354,
+      "diversity": 0.9675278050490949,
+      "stability": 0.5141371744389504,
+      "passed": false
+    },
+    "G0_temporal": {
+      "m_oracle": 0.71,
+      "m_random": 0.62,
+      "delta_oracle": 0.06,
+      "ci_delta": [
+        -0.01,
+        0.14
+      ],
+      "b_win": 11,
+      "c_loss": 5,
+      "p_exact": 0.1050567626953125,
+      "spread": 0.08999999999999997,
+      "pref_oracle": 0.87,
+      "locality": 0.46907889192685315,
+      "diversity": 0.7491884778548337,
+      "stability": 0.4947507206146089,
+      "passed": false
+    }
+  }
+}

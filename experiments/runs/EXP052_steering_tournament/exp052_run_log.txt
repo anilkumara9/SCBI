@@ -1,0 +1,20 @@
+=== EXP052 Execution Started at 2026-09-21T05:09:12.201980 ===
+[05:09:12] Initializing EXP052 Steering & Activation Intervention Tournament...
+[05:09:12] Using compute device: cpu
+[05:09:14] Pre-run model hash verified: Delta_theta = 0.
+[05:09:14] Computing offline steering vectors (RepE & CAA) on calibration split (Seed 42)...
+[05:09:17] RepE vector norm: 1.0000, CAA vector norm: 1.0000
+[05:09:17] 
+Evaluating tournament on evaluation split (Seed 84, N=50)...
+[05:09:55] 
+================ TOURNAMENT RESULTS (N=50) ================
+[05:09:55] BASE        : Acc=60.0% (ΔM=+0.0 pp) | Rescues=0 Corr=0 p=1.0000 | Latency=191.3ms
+[05:09:55] REPE        : Acc=58.0% (ΔM=-2.0 pp) | Rescues=4 Corr=5 p=0.7461 | Latency=188.4ms
+[05:09:55] CAA         : Acc=66.0% (ΔM=+6.0 pp) | Rescues=3 Corr=0 p=0.1250 | Latency=180.4ms
+[05:09:55] BEST_OF_4   : Acc=50.0% (ΔM=-10.0 pp) | Rescues=3 Corr=8 p=0.9673 | Latency=15.6ms
+[05:09:55] SCPM        : Acc=74.0% (ΔM=+14.0 pp) | Rescues=7 Corr=0 p=0.0078 | Latency=188.4ms
+[05:09:56] 
+Backbone immutability verified: Delta_theta = 0.
+[05:09:56] 
+Final Tournament Verdict: >>> SCPM_DOMINANCE_CONFIRMED <<<
+[05:09:56] Saved complete results to C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\../../experiments/runs/EXP052_steering_tournament\exp052_tournament_results.json

@@ -1,0 +1,15 @@
+=== EXP053 Execution Started at 2026-09-21T05:10:16.708237 ===
+[05:10:16] Initializing EXP053 Continuous Subspace vs Typed Decision Systems Challenge...
+[05:10:16] Using compute device: cpu
+[05:10:20] Pre-run model hash verified: Delta_theta = 0.
+[05:10:49] 
+================ TYPED DECISION CHALLENGE SUMMARY (N=50) ================
+[05:10:49] SYS0_BASE     : Acc=60.0% (Delta_M=+0.0 pp) | Rescues=0 Corr=0 p=1.0000
+[05:10:49] SYS1_SCPM     : Acc=74.0% (Delta_M=+14.0 pp) | Rescues=7 Corr=0 p=0.0078
+[05:10:49] SYS2_TYPED    : Acc=62.0% (Delta_M=+2.0 pp) | Rescues=1 Corr=0 p=0.5000
+[05:10:49] SYS3_HYBRID   : Acc=76.0% (Delta_M=+16.0 pp) | Rescues=8 Corr=0 p=0.0039
+[05:10:50] 
+Backbone immutability verified: Delta_theta = 0.
+[05:10:50] 
+Final Verdict: >>> ORTHOGONALITY_AND_SYNERGY_CONFIRMED <<<
+[05:10:50] Saved complete results to C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\../../experiments/runs/EXP053_typed_decision_challenge\exp053_typed_challenge_results.json

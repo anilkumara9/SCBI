@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "experiment": "EXP020-A",
+    "model": "gpt2 (124M)",
+    "layer": 8,
+    "alpha": 0.25,
+    "subspace_rank": 2,
+    "generator": "G4_sparse",
+    "operators_tested": [
+      "O0_linear",
+      "O3_norm_hard_gate",
+      "O4_norm_soft_sigmoid"
+    ],
+    "n_dev": 20,
+    "dev_seed": 123,
+    "total_forwards": 320,
+    "elapsed_seconds": 129.74,
+    "pre_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "post_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "hash_identical": true
+  },
+  "identity": {
+    "M_Identity": 0.65,
+    "Pref_Identity": 0.9
+  },
+  "energy_concentration": {
+    "mean_entropy_H": 2.8245,
+    "mean_entropy_ratio": 0.7827,
+    "mean_n_eff": 7.0352,
+    "mean_n_eff_ratio": 0.1895
+  },
+  "operators": {
+    "O0_linear": {
+      "M_Oracle": 0.8,
+      "Delta_M": 0.15,
+      "M_RandCand": 0.6,
+      "M_RandOrtho": 0.6,
+      "Pref_Oracle": 0.95,
+      "Mean_Gate_Budget_B": 1.0,
+      "Total_Intervention_A": 0.1316,
+      "Displacement_High": 0.1736,
+      "Displacement_Low": 0.1256,
+      "Downstream_Prop_L12": 0.2094,
+      "Mean_KL": 0.0971,
+      "Mean_Top10_Overlap": 0.8525,
+      "Delta_Margin": -0.0144,
+      "Delta_Logp": -0.2742,
+      "Target_Rank_Shift": -0.575
+    },
+    "O3_norm_hard_gate": {
+      "M_Oracle": 0.55,
+      "Delta_M": -0.1,
+      "M_RandCand": 0.25,
+      "M_RandOrtho": 0.65,
+      "Pref_Oracle": 1.0,
+      "Mean_Gate_Budget_B": 1.0,
+      "Total_Intervention_A": 0.3131,
+      "Displacement_High": 0.6853,
+      "Displacement_Low": 0.0,
+      "Downstream_Prop_L12": 0.3609,
+      "Mean_KL": 1.5509,
+      "Mean_Top10_Overlap": 0.5138,
+      "Delta_Margin": -0.0773,
+      "Delta_Logp": -2.6637,
+      "Target_Rank_Shift": -217.9
+    },
+    "O4_norm_soft_sigmoid": {
+      "M_Oracle": 0.8,
+      "Delta_M": 0.15,
+      "M_RandCand": 0.5,
+      "M_RandOrtho": 0.6,
+      "Pref_Oracle": 0.95,
+      "Mean_Gate_Budget_B": 1.0,
+      "Total_Intervention_A": 0.1843,
+      "Displacement_High": 0.1942,
+      "Displacement_Low": 0.1204,
+      "Downstream_Prop_L12": 0.2385,
+      "Mean_KL": 0.212,
+      "Mean_Top10_Overlap": 0.7863,
+      "Delta_Margin": -0.0276,
+      "Delta_Logp": -0.4719,
+      "Target_Rank_Shift": -1.9125
+    }
+  }
+}

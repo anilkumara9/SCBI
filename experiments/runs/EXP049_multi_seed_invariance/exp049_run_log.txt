@@ -1,0 +1,40 @@
+=== EXP049 Execution Started at 2026-09-21T05:06:50.594029 ===
+[05:06:50] Initializing EXP049 Multi-Seed Invariance Audit...
+[05:06:50] Using compute device: cpu
+[05:06:53] Verifying pre-run model parameter hash...
+[05:06:54] Pre-hash:  54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+[05:06:54] Canonical: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+[05:06:54] Pre-run hash match confirmed (Delta_theta = 0).
+[05:06:54] 
+--- Running Seed 42 (N=50) ---
+[05:07:38] Seed 42 Result: Base=56.0%, G_contrastive=60.0% (Delta_M=+4.0 pp)
+[05:07:38]                 Rand=56.0%, Rescues=5, Corruptions=3, p=0.36328, 95% CI=[-6.0, +16.0]
+[05:07:38] 
+--- Running Seed 168 (N=50) ---
+[05:07:50] Seed 168 Result: Base=58.0%, G_contrastive=66.0% (Delta_M=+8.0 pp)
+[05:07:50]                 Rand=58.0%, Rescues=4, Corruptions=0, p=0.06250, 95% CI=[+2.0, +16.0]
+[05:07:50] 
+--- Running Seed 256 (N=50) ---
+[05:08:01] Seed 256 Result: Base=66.0%, G_contrastive=78.0% (Delta_M=+12.0 pp)
+[05:08:01]                 Rand=68.0%, Rescues=6, Corruptions=0, p=0.01562, 95% CI=[+4.0, +22.0]
+[05:08:01] 
+--- Running Seed 512 (N=50) ---
+[05:08:12] Seed 512 Result: Base=60.0%, G_contrastive=64.0% (Delta_M=+4.0 pp)
+[05:08:12]                 Rand=60.0%, Rescues=2, Corruptions=0, p=0.25000, 95% CI=[+0.0, +10.0]
+[05:08:12] 
+================ POOLED AUDIT SUMMARY (N=200) ================
+[05:08:12] Pooled Baseline:      60.00% (120/200)
+[05:08:12] Pooled G_contrastive: 67.00% (134/200)
+[05:08:12] Pooled Random Ctrl:   60.50% (121/200)
+[05:08:12] Pooled Delta M:       +7.00 pp
+[05:08:12] Total Rescues (b):    17
+[05:08:12] Total Corruptions (c):3
+[05:08:12] Pooled McNemar p:     1.288414e-03
+[05:08:12] Pooled 95% CI:        [+3.00, +11.50] pp
+[05:08:12] 
+Verifying post-run model parameter hash...
+[05:08:13] Post-hash: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+[05:08:13] Backbone immutability verified: Delta_theta = 0.
+[05:08:13] 
+Final Pre-Registered Audit Verdict: >>> FALSIFIED_OR_WEAK <<<
+[05:08:13] Saved complete results to C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\../../experiments/runs/EXP049_multi_seed_invariance\exp049_multi_seed_results.json

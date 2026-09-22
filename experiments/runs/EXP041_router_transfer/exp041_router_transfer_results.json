@@ -1,0 +1,248 @@
+{
+  "metadata": {
+    "experiment_id": "EXP041",
+    "date": "2026-09-12",
+    "pythia_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+    "gpt2_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "router_source": "EXP040 (Pythia-160M, BENCH-002-NL, Seed 123)",
+    "router_parameters": {
+      "w_g1": [
+        -0.12655332264863242,
+        -0.04032896106341191,
+        0.10849522198768634,
+        0.013339763564097029,
+        -0.06485650523117412,
+        -0.020616590680642748
+      ],
+      "b_g1": 0.32694308381937176,
+      "w_g2": [
+        -0.0812793381959362,
+        -0.05358336187373306,
+        0.10604195233646986,
+        -0.007136342704753018,
+        -0.03000019312075405,
+        -0.022263783543537124
+      ],
+      "b_g2": 0.32534129102588283,
+      "w_g3": [
+        -0.04755340092767809,
+        -0.0459773689530063,
+        0.12619096820884904,
+        0.05522083280170721,
+        -0.05754612721978846,
+        -0.015666705556303954
+      ],
+      "b_g3": 0.000158392626840538,
+      "feat_mean": [
+        1.2048194646835326,
+        1.876368646621704,
+        4.9537427427770435,
+        0.8956367111206055,
+        0.7174427318572998,
+        6.957891139984131
+      ],
+      "feat_std": [
+        0.027352636670470845,
+        0.2610292030640355,
+        2.722275535859267,
+        0.0032445344804314605,
+        0.04107747370809242,
+        2.755947866536366
+      ]
+    }
+  },
+  "part1_cross_task": {
+    "base_acc": 0.52,
+    "n_instances": 50,
+    "controllers": {
+      "Baseline (Unintervened)": {
+        "accuracy": 0.52,
+        "delta_m": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "mean_delta_logp": 0.0,
+        "rescued_b": 0,
+        "corrupted_c": 0,
+        "mcnemar_p": 1.0,
+        "evals_per_inst": 1.0
+      },
+      "G_contrastive (Supervised Ref)": {
+        "accuracy": 0.52,
+        "delta_m": 0.0,
+        "ci_95": [
+          -0.06,
+          0.06
+        ],
+        "mean_delta_logp": -0.08820411443710327,
+        "rescued_b": 1,
+        "corrupted_c": 1,
+        "mcnemar_p": 0.75,
+        "evals_per_inst": 1.0
+      },
+      "Static G_1 (Trajectory Flow)": {
+        "accuracy": 0.46,
+        "delta_m": -0.06,
+        "ci_95": [
+          -0.14,
+          0.0
+        ],
+        "mean_delta_logp": -0.02347572684288025,
+        "rescued_b": 0,
+        "corrupted_c": 3,
+        "mcnemar_p": 1.0,
+        "evals_per_inst": 1.0
+      },
+      "Static G_2 (Contextual Perturb)": {
+        "accuracy": 0.48,
+        "delta_m": -0.040000000000000036,
+        "ci_95": [
+          -0.1,
+          0.0
+        ],
+        "mean_delta_logp": -0.04367606997489929,
+        "rescued_b": 0,
+        "corrupted_c": 2,
+        "mcnemar_p": 1.0,
+        "evals_per_inst": 1.0
+      },
+      "Static G_3 (Attention Relational)": {
+        "accuracy": 0.44,
+        "delta_m": -0.08000000000000002,
+        "ci_95": [
+          -0.16,
+          -0.02
+        ],
+        "mean_delta_logp": -0.16802028059959412,
+        "rescued_b": 0,
+        "corrupted_c": 4,
+        "mcnemar_p": 1.0,
+        "evals_per_inst": 1.0
+      },
+      "Oracle Multi-Generator Bound": {
+        "accuracy": 0.52,
+        "delta_m": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "mean_delta_logp": 0.1020054805278778,
+        "rescued_b": 0,
+        "corrupted_c": 0,
+        "mcnemar_p": 1.0,
+        "evals_per_inst": 1.0
+      },
+      "Frozen Router (Transfer phi*)": {
+        "accuracy": 0.48,
+        "delta_m": -0.040000000000000036,
+        "ci_95": [
+          -0.1,
+          0.0
+        ],
+        "mean_delta_logp": -0.04367606997489929,
+        "rescued_b": 0,
+        "corrupted_c": 2,
+        "mcnemar_p": 1.0,
+        "evals_per_inst": 1.0
+      }
+    }
+  },
+  "part2_cross_architecture": {
+    "base_acc": 0.64,
+    "n_instances": 50,
+    "controllers": {
+      "Baseline (Unintervened)": {
+        "accuracy": 0.64,
+        "delta_m": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "mean_delta_logp": 0.0,
+        "rescued_b": 0,
+        "corrupted_c": 0,
+        "mcnemar_p": 1.0,
+        "evals_per_inst": 1.0
+      },
+      "G_contrastive (Supervised Ref)": {
+        "accuracy": 0.7,
+        "delta_m": 0.05999999999999994,
+        "ci_95": [
+          0.0,
+          0.12
+        ],
+        "mean_delta_logp": 0.03162681430578232,
+        "rescued_b": 3,
+        "corrupted_c": 0,
+        "mcnemar_p": 0.125,
+        "evals_per_inst": 1.0
+      },
+      "Static G_1 (Trajectory Flow)": {
+        "accuracy": 0.56,
+        "delta_m": -0.07999999999999996,
+        "ci_95": [
+          -0.18,
+          0.0004999999999995453
+        ],
+        "mean_delta_logp": -0.14525040447711945,
+        "rescued_b": 1,
+        "corrupted_c": 5,
+        "mcnemar_p": 0.984375,
+        "evals_per_inst": 1.0
+      },
+      "Static G_2 (Contextual Perturb)": {
+        "accuracy": 0.56,
+        "delta_m": -0.07999999999999996,
+        "ci_95": [
+          -0.18,
+          0.02
+        ],
+        "mean_delta_logp": 0.09657212257385255,
+        "rescued_b": 1,
+        "corrupted_c": 5,
+        "mcnemar_p": 0.984375,
+        "evals_per_inst": 1.0
+      },
+      "Static G_3 (Attention Relational)": {
+        "accuracy": 0.64,
+        "delta_m": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ],
+        "mean_delta_logp": -0.004458805918693543,
+        "rescued_b": 0,
+        "corrupted_c": 0,
+        "mcnemar_p": 1.0,
+        "evals_per_inst": 1.0
+      },
+      "Oracle Multi-Generator Bound": {
+        "accuracy": 0.68,
+        "delta_m": 0.040000000000000036,
+        "ci_95": [
+          0.0,
+          0.1
+        ],
+        "mean_delta_logp": 0.156374688744545,
+        "rescued_b": 2,
+        "corrupted_c": 0,
+        "mcnemar_p": 0.25,
+        "evals_per_inst": 1.0
+      },
+      "Frozen Router (Transfer phi*)": {
+        "accuracy": 0.56,
+        "delta_m": -0.07999999999999996,
+        "ci_95": [
+          -0.16,
+          0.0
+        ],
+        "mean_delta_logp": -0.12215450584888458,
+        "rescued_b": 1,
+        "corrupted_c": 5,
+        "mcnemar_p": 0.984375,
+        "evals_per_inst": 1.0
+      }
+    }
+  }
+}

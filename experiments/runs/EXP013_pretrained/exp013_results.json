@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "protocol": "EXP013",
+    "model": "gpt2 (124M)",
+    "pre_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "post_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "checksums_match": true,
+    "dataset": "BENCH-002-NL",
+    "n_instances": 100,
+    "layers": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "rank": 2,
+    "compute": {
+      "total_forwards": 7600,
+      "total_tokens": 11124,
+      "candidate_eval_count": 2500,
+      "wall_clock_seconds": 1031.526757478714
+    }
+  },
+  "design_a": {
+    "2": {
+      "n_total": 100,
+      "n_disc_top1": 0,
+      "n_disc_pref": 60,
+      "primary_endpoint_delta": 0.0,
+      "primary_endpoint_delta_ci": [
+        0.0,
+        0.0
+      ],
+      "primary_endpoint_wilcoxon_p": 1.0,
+      "m_identity": 0.65,
+      "m_fixed_k1": 0.0,
+      "m_rand_proj": 0.67,
+      "m_rand_select": 0.0,
+      "m_rand_select_ci": [
+        0.0,
+        0.0
+      ],
+      "m_energy": 0.0,
+      "m_ecf": 0.0,
+      "m_ecf_ci": [
+        0.0,
+        0.0
+      ],
+      "m_oracle": 0.0,
+      "pref_identity": 0.79,
+      "pref_fixed_k1": 0.29,
+      "pref_rand_proj": 0.81,
+      "pref_rand_select": 0.39,
+      "pref_energy": 0.49,
+      "pref_ecf": 0.46,
+      "pref_oracle": 0.71,
+      "delta_pref": 0.07,
+      "wilcoxon_p_pref": 1.0,
+      "pairwise_r_top1": 0.5,
+      "pairwise_r_pref": 0.5138888888888888,
+      "pairwise_r_pref_ci": [
+        0.4180555555555555,
+        0.6097569444444443
+      ],
+      "mean_candidate_diversity": 0.7308594082174473
+    },
+    "4": {
+      "n_total": 100,
+      "n_disc_top1": 0,
+      "n_disc_pref": 71,
+      "primary_endpoint_delta": 0.0,
+      "primary_endpoint_delta_ci": [
+        0.0,
+        0.0
+      ],
+      "primary_endpoint_wilcoxon_p": 1.0,
+      "m_identity": 0.65,
+      "m_fixed_k1": 0.0,
+      "m_rand_proj": 0.65,
+      "m_rand_select": 0.0,
+      "m_rand_select_ci": [
+        0.0,
+        0.0
+      ],
+      "m_energy": 0.0,
+      "m_ecf": 0.0,
+      "m_ecf_ci": [
+        0.0,
+        0.0
+      ],
+      "m_oracle": 0.0,
+      "pref_identity": 0.79,
+      "pref_fixed_k1": 0.53,
+      "pref_rand_proj": 0.83,
+      "pref_rand_select": 0.42,
+      "pref_energy": 0.44,
+      "pref_ecf": 0.47,
+      "pref_oracle": 0.79,
+      "delta_pref": 0.04999999999999999,
+      "wilcoxon_p_pref": 1.0,
+      "pairwise_r_top1": 0.5,
+      "pairwise_r_pref": 0.4776995305164319,
+      "pairwise_r_pref_ci": [
+        0.3955399061032863,
+        0.5622065727699529
+      ],
+      "mean_candidate_diversity": 0.7551040243062017
+    },
+    "6": {
+      "n_total": 100,
+      "n_disc_top1": 1,
+      "n_disc_pref": 74,
+      "primary_endpoint_delta": 0.0,
+      "primary_endpoint_delta_ci": [
+        0.0,
+        0.0
+      ],
+      "primary_endpoint_wilcoxon_p": 1.0,
+      "m_identity": 0.65,
+      "m_fixed_k1": 0.01,
+      "m_rand_proj": 0.64,
+      "m_rand_select": 0.0,
+      "m_rand_select_ci": [
+        0.0,
+        0.0
+      ],
+      "m_energy": 0.0,
+      "m_ecf": 0.0,
+      "m_ecf_ci": [
+        0.0,
+        0.0
+      ],
+      "m_oracle": 0.01,
+      "pref_identity": 0.79,
+      "pref_fixed_k1": 0.65,
+      "pref_rand_proj": 0.81,
+      "pref_rand_select": 0.54,
+      "pref_energy": 0.73,
+      "pref_ecf": 0.57,
+      "pref_oracle": 0.88,
+      "delta_pref": 0.029999999999999916,
+      "wilcoxon_p_pref": 1.0,
+      "pairwise_r_top1": 0.0,
+      "pairwise_r_pref": 0.5123873873873874,
+      "pairwise_r_pref_ci": [
+        0.4358108108108108,
+        0.5867117117117117
+      ],
+      "mean_candidate_diversity": 0.7699959707482884
+    },
+    "8": {
+      "n_total": 100,
+      "n_disc_top1": 5,
+      "n_disc_pref": 66,
+      "primary_endpoint_delta": 0.030000000000000002,
+      "primary_endpoint_delta_ci": [
+        0.0,
+        0.07
+      ],
+      "primary_endpoint_wilcoxon_p": 1.0,
+      "m_identity": 0.65,
+      "m_fixed_k1": 0.05,
+      "m_rand_proj": 0.62,
+      "m_rand_select": 0.02,
+      "m_rand_select_ci": [
+        0.0,
+        0.05
+      ],
+      "m_energy": 0.0,
+      "m_ecf": 0.05,
+      "m_ecf_ci": [
+        0.01,
+        0.1
+      ],
+      "m_oracle": 0.05,
+      "pref_identity": 0.79,
+      "pref_fixed_k1": 0.65,
+      "pref_rand_proj": 0.83,
+      "pref_rand_select": 0.57,
+      "pref_energy": 0.67,
+      "pref_ecf": 0.62,
+      "pref_oracle": 0.92,
+      "delta_pref": 0.050000000000000044,
+      "wilcoxon_p_pref": 1.0,
+      "pairwise_r_top1": 1.0,
+      "pairwise_r_pref": 0.48358585858585856,
+      "pairwise_r_pref_ci": [
+        0.39520202020202017,
+        0.5707070707070707
+      ],
+      "mean_candidate_diversity": 0.7704164322762337
+    },
+    "10": {
+      "n_total": 100,
+      "n_disc_top1": 15,
+      "n_disc_pref": 54,
+      "primary_endpoint_delta": 0.07,
+      "primary_endpoint_delta_ci": [
+        0.02,
+        0.12
+      ],
+      "primary_endpoint_wilcoxon_p": 1.0,
+      "m_identity": 0.65,
+      "m_fixed_k1": 0.11,
+      "m_rand_proj": 0.62,
+      "m_rand_select": 0.09,
+      "m_rand_select_ci": [
+        0.04,
+        0.15
+      ],
+      "m_energy": 0.06,
+      "m_ecf": 0.16,
+      "m_ecf_ci": [
+        0.09,
+        0.24
+      ],
+      "m_oracle": 0.18,
+      "pref_identity": 0.79,
+      "pref_fixed_k1": 0.7,
+      "pref_rand_proj": 0.78,
+      "pref_rand_select": 0.79,
+      "pref_energy": 0.77,
+      "pref_ecf": 0.82,
+      "pref_oracle": 0.98,
+      "delta_pref": 0.029999999999999916,
+      "wilcoxon_p_pref": 1.0,
+      "pairwise_r_top1": 0.8444444444444446,
+      "pairwise_r_pref": 0.5787037037037036,
+      "pairwise_r_pref_ci": [
+        0.49070216049382714,
+        0.6636188271604937
+      ],
+      "mean_candidate_diversity": 0.7491884778548337
+    }
+  },
+  "design_b": {
+    "m_identity": 0.65,
+    "m_rand_select": 0.02,
+    "m_energy": 0.0,
+    "m_ecf": 0.13,
+    "m_oracle": 0.19,
+    "delta": 0.11,
+    "p_value": 1.0
+  }
+}

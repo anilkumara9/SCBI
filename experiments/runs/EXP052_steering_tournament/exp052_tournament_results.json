@@ -1,0 +1,506 @@
+{
+  "metadata": {
+    "experiment": "EXP052",
+    "title": "Inference-Time Steering & Activation Intervention Tournament",
+    "timestamp": "2026-09-21T05:09:56.846642",
+    "model": "EleutherAI/pythia-160m",
+    "target_block": 7,
+    "alpha": 0.25,
+    "rank": 2,
+    "verdict": "SCPM_DOMINANCE_CONFIRMED"
+  },
+  "summary": {
+    "base": {
+      "accuracy": 0.6,
+      "delta_m": 0.0,
+      "rescues_b": 0,
+      "corruptions_c": 0,
+      "mcnemar_p": 1.0,
+      "mean_latency_ms": 191.34997000000112
+    },
+    "repe": {
+      "accuracy": 0.58,
+      "delta_m": -0.020000000000000018,
+      "rescues_b": 4,
+      "corruptions_c": 5,
+      "mcnemar_p": 0.74609375,
+      "mean_latency_ms": 188.37366600003406
+    },
+    "caa": {
+      "accuracy": 0.66,
+      "delta_m": 0.06000000000000005,
+      "rescues_b": 3,
+      "corruptions_c": 0,
+      "mcnemar_p": 0.125,
+      "mean_latency_ms": 180.39483599998675
+    },
+    "best_of_4": {
+      "accuracy": 0.5,
+      "delta_m": -0.09999999999999998,
+      "rescues_b": 3,
+      "corruptions_c": 8,
+      "mcnemar_p": 0.96728515625,
+      "mean_latency_ms": 15.583496000003834
+    },
+    "scpm": {
+      "accuracy": 0.74,
+      "delta_m": 0.14,
+      "rescues_b": 7,
+      "corruptions_c": 0,
+      "mcnemar_p": 0.0078125,
+      "mean_latency_ms": 188.44988400000602
+    }
+  },
+  "instances": [
+    {
+      "id": 0,
+      "target": "black",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 1,
+      "target": "Paris",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 2,
+      "target": "Thursday",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 0,
+      "scpm": 1
+    },
+    {
+      "id": 3,
+      "target": "astronomy",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 4,
+      "target": "yellow",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 0
+    },
+    {
+      "id": 5,
+      "target": "black",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 6,
+      "target": "Cairo",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 7,
+      "target": "Thursday",
+      "base": 1,
+      "repe": 0,
+      "caa": 1,
+      "best_of_4": 0,
+      "scpm": 1
+    },
+    {
+      "id": 8,
+      "target": "biology",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 0
+    },
+    {
+      "id": 9,
+      "target": "silver",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 0
+    },
+    {
+      "id": 10,
+      "target": "wooden",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 1,
+      "scpm": 0
+    },
+    {
+      "id": 11,
+      "target": "Berlin",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 12,
+      "target": "Wednesday",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 0,
+      "scpm": 1
+    },
+    {
+      "id": 13,
+      "target": "physics",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 0
+    },
+    {
+      "id": 14,
+      "target": "silver",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 0
+    },
+    {
+      "id": 15,
+      "target": "blue",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 1
+    },
+    {
+      "id": 16,
+      "target": "Paris",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 1
+    },
+    {
+      "id": 17,
+      "target": "Tuesday",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 18,
+      "target": "chemistry",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 19,
+      "target": "purple",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 20,
+      "target": "golden",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 21,
+      "target": "Tokyo",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 22,
+      "target": "Tuesday",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 23,
+      "target": "physics",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 0
+    },
+    {
+      "id": 24,
+      "target": "orange",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 0
+    },
+    {
+      "id": 25,
+      "target": "golden",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 26,
+      "target": "Cairo",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 27,
+      "target": "Monday",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 28,
+      "target": "economics",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 0,
+      "scpm": 1
+    },
+    {
+      "id": 29,
+      "target": "silver",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 0
+    },
+    {
+      "id": 30,
+      "target": "wooden",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 31,
+      "target": "Madrid",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 32,
+      "target": "Friday",
+      "base": 1,
+      "repe": 0,
+      "caa": 1,
+      "best_of_4": 0,
+      "scpm": 1
+    },
+    {
+      "id": 33,
+      "target": "physics",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 0
+    },
+    {
+      "id": 34,
+      "target": "purple",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 35,
+      "target": "metal",
+      "base": 0,
+      "repe": 1,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 1
+    },
+    {
+      "id": 36,
+      "target": "Rome",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 0
+    },
+    {
+      "id": 37,
+      "target": "Thursday",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 38,
+      "target": "physics",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 39,
+      "target": "yellow",
+      "base": 1,
+      "repe": 0,
+      "caa": 1,
+      "best_of_4": 0,
+      "scpm": 1
+    },
+    {
+      "id": 40,
+      "target": "leather",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 41,
+      "target": "Cairo",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 42,
+      "target": "Friday",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 0,
+      "scpm": 1
+    },
+    {
+      "id": 43,
+      "target": "psychology",
+      "base": 0,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 0,
+      "scpm": 0
+    },
+    {
+      "id": 44,
+      "target": "gold",
+      "base": 0,
+      "repe": 0,
+      "caa": 0,
+      "best_of_4": 0,
+      "scpm": 0
+    },
+    {
+      "id": 45,
+      "target": "leather",
+      "base": 0,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 0,
+      "scpm": 1
+    },
+    {
+      "id": 46,
+      "target": "Paris",
+      "base": 1,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 47,
+      "target": "Wednesday",
+      "base": 1,
+      "repe": 0,
+      "caa": 1,
+      "best_of_4": 1,
+      "scpm": 1
+    },
+    {
+      "id": 48,
+      "target": "astronomy",
+      "base": 0,
+      "repe": 1,
+      "caa": 1,
+      "best_of_4": 0,
+      "scpm": 1
+    },
+    {
+      "id": 49,
+      "target": "purple",
+      "base": 1,
+      "repe": 0,
+      "caa": 1,
+      "best_of_4": 0,
+      "scpm": 1
+    }
+  ]
+}

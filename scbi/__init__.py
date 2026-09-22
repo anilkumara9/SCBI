@@ -1,0 +1,3 @@
+"""
+SCBI root package.
+"""

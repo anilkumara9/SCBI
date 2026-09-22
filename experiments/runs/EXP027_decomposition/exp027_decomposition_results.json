@@ -1,0 +1,323 @@
+{
+  "metadata": {
+    "experiment": "EXP027",
+    "date": "2026-09-11",
+    "n_instances": 100,
+    "seed": 84,
+    "alpha": 0.25,
+    "rank": 2,
+    "dev_mode": false
+  },
+  "gpt2_reference": {
+    "layer": 8,
+    "n_instances": 100,
+    "M_Identity": 0.64,
+    "M_Oracle": 0.72,
+    "M_Random": 0.64,
+    "M_ECF": 0.7,
+    "Oracle_Headroom": 0.07999999999999996,
+    "Candidate_Spread": 0.07999999999999996,
+    "Selection_Regret": 0.020000000000000018,
+    "ECF_Oracle_Agreement": 0.16,
+    "Candidate_Accuracies": [
+      0.62,
+      0.67,
+      0.66,
+      0.68
+    ],
+    "Candidate_Mean_Delta_LogP": [
+      0.03338436655700207,
+      0.12900263927876948,
+      0.08692621998488903,
+      0.13884273417294024
+    ],
+    "Separability": {
+      "mean_d_premise": -260.0737629699707,
+      "mean_d_distractor": -12.976546397209168,
+      "mean_d_question": -27.200057582855223,
+      "gate_rate_premise": 0.0,
+      "gate_rate_distractor": 0.26696459800004957,
+      "gate_rate_question": 0.010201797485351563,
+      "selectivity_index": 0.26696459800004957
+    },
+    "Operator": {
+      "mean_frobenius_displacement": 0.035666807107627395,
+      "mean_kl_divergence": 0.052715079767804124,
+      "mean_top10_overlap": 0.914,
+      "mean_delta_logp": 0.03338436655700207,
+      "mean_delta_margin": 0.00907986129670462
+    },
+    "Evaluator": {
+      "spearman_rho": 0.834,
+      "kendall_tau": 0.7800000000000001
+    },
+    "param_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d"
+  },
+  "pythia_reference_layer8": {
+    "layer": 8,
+    "n_instances": 100,
+    "M_Identity": 0.59,
+    "M_Oracle": 0.59,
+    "M_Random": 0.57,
+    "M_ECF": 0.59,
+    "Oracle_Headroom": 0.0,
+    "Candidate_Spread": 0.020000000000000018,
+    "Selection_Regret": 0.0,
+    "ECF_Oracle_Agreement": 0.78,
+    "Candidate_Accuracies": [
+      0.56,
+      0.59,
+      0.56,
+      0.59
+    ],
+    "Candidate_Mean_Delta_LogP": [
+      -0.36823795437812806,
+      -0.003497511148452759,
+      -0.27981105804443357,
+      -6.346702575683594e-06
+    ],
+    "Separability": {
+      "mean_d_premise": -33.705054149627685,
+      "mean_d_distractor": -5.416738721132279,
+      "mean_d_question": -6.006842060089111,
+      "gate_rate_premise": 0.0,
+      "gate_rate_distractor": 0.030560773387551306,
+      "gate_rate_question": 0.010247612036764622,
+      "selectivity_index": 0.030560773387551306
+    },
+    "Operator": {
+      "mean_frobenius_displacement": 0.039979980513453486,
+      "mean_kl_divergence": 0.2711668985601136,
+      "mean_top10_overlap": 0.966,
+      "mean_delta_logp": -0.36823795437812806,
+      "mean_delta_margin": -0.007347673642165162
+    },
+    "Evaluator": {
+      "spearman_rho": 0.23800966398427006,
+      "kendall_tau": 0.19140025568153043
+    }
+  },
+  "pythia_depth_profile": {
+    "layer_2": {
+      "layer": 2,
+      "n_instances": 100,
+      "M_Identity": 0.59,
+      "M_Oracle": 0.68,
+      "M_Random": 0.6,
+      "M_ECF": 0.64,
+      "Oracle_Headroom": 0.09000000000000008,
+      "Candidate_Spread": 0.08000000000000007,
+      "Selection_Regret": 0.040000000000000036,
+      "ECF_Oracle_Agreement": 0.96,
+      "Candidate_Accuracies": [
+        0.64,
+        0.63,
+        0.61,
+        0.57
+      ],
+      "Candidate_Mean_Delta_LogP": [
+        0.07445828914642334,
+        0.005083263516426086,
+        0.07727153241634369,
+        0.011270042657852173
+      ],
+      "Separability": {
+        "mean_d_premise": -7.296370911598205,
+        "mean_d_distractor": 0.11228013240266592,
+        "mean_d_question": -1.8446456328034402,
+        "gate_rate_premise": 0.12132385969161988,
+        "gate_rate_distractor": 0.41623943492770193,
+        "gate_rate_question": 0.07894563160836697,
+        "selectivity_index": 0.2949155752360821
+      },
+      "Operator": {
+        "mean_frobenius_displacement": 0.07384954314678907,
+        "mean_kl_divergence": 0.013867029955144971,
+        "mean_top10_overlap": 0.9390000000000004,
+        "mean_delta_logp": 0.07445828914642334,
+        "mean_delta_margin": 0.017362741221440957
+      },
+      "Evaluator": {
+        "spearman_rho": 0.0,
+        "kendall_tau": 0.0
+      }
+    },
+    "layer_4": {
+      "layer": 4,
+      "n_instances": 100,
+      "M_Identity": 0.59,
+      "M_Oracle": 0.71,
+      "M_Random": 0.62,
+      "M_ECF": 0.62,
+      "Oracle_Headroom": 0.12,
+      "Candidate_Spread": 0.08999999999999997,
+      "Selection_Regret": 0.08999999999999997,
+      "ECF_Oracle_Agreement": 0.91,
+      "Candidate_Accuracies": [
+        0.62,
+        0.6,
+        0.65,
+        0.6
+      ],
+      "Candidate_Mean_Delta_LogP": [
+        0.09210246980190277,
+        0.04581831812858581,
+        0.03353785395622253,
+        -0.0021614354848861696
+      ],
+      "Separability": {
+        "mean_d_premise": -50.42595336914062,
+        "mean_d_distractor": 0.35673608027631415,
+        "mean_d_question": -2.876235747337341,
+        "gate_rate_premise": 0.07064494021236896,
+        "gate_rate_distractor": 0.45506288707256315,
+        "gate_rate_question": 0.051418301723897455,
+        "selectivity_index": 0.3844179468601942
+      },
+      "Operator": {
+        "mean_frobenius_displacement": 0.028028305601328612,
+        "mean_kl_divergence": 0.04628163608140312,
+        "mean_top10_overlap": 0.9180000000000003,
+        "mean_delta_logp": 0.09210246980190277,
+        "mean_delta_margin": 0.0012379224281175993
+      },
+      "Evaluator": {
+        "spearman_rho": 0.0,
+        "kendall_tau": 0.0
+      }
+    },
+    "layer_6": {
+      "layer": 6,
+      "n_instances": 100,
+      "M_Identity": 0.59,
+      "M_Oracle": 0.67,
+      "M_Random": 0.57,
+      "M_ECF": 0.53,
+      "Oracle_Headroom": 0.08000000000000007,
+      "Candidate_Spread": 0.10000000000000009,
+      "Selection_Regret": 0.14,
+      "ECF_Oracle_Agreement": 0.86,
+      "Candidate_Accuracies": [
+        0.53,
+        0.61,
+        0.58,
+        0.62
+      ],
+      "Candidate_Mean_Delta_LogP": [
+        -0.13973251461982727,
+        0.12334172904491425,
+        0.011537445783615112,
+        0.0446831214427948
+      ],
+      "Separability": {
+        "mean_d_premise": -48.243620738983154,
+        "mean_d_distractor": -2.611137931346893,
+        "mean_d_question": -5.293070063591004,
+        "gate_rate_premise": 0.025582987144589425,
+        "gate_rate_distractor": 0.2468600904941559,
+        "gate_rate_question": 0.017333333753049372,
+        "selectivity_index": 0.22127710334956646
+      },
+      "Operator": {
+        "mean_frobenius_displacement": 0.053690617121756073,
+        "mean_kl_divergence": 0.11056006742175668,
+        "mean_top10_overlap": 0.8860000000000002,
+        "mean_delta_logp": -0.13973251461982727,
+        "mean_delta_margin": 0.007001251017063623
+      },
+      "Evaluator": {
+        "spearman_rho": 0.0,
+        "kendall_tau": 0.0
+      }
+    },
+    "layer_10": {
+      "layer": 10,
+      "n_instances": 100,
+      "M_Identity": 0.59,
+      "M_Oracle": 0.64,
+      "M_Random": 0.57,
+      "M_ECF": 0.51,
+      "Oracle_Headroom": 0.050000000000000044,
+      "Candidate_Spread": 0.07000000000000006,
+      "Selection_Regret": 0.13,
+      "ECF_Oracle_Agreement": 0.87,
+      "Candidate_Accuracies": [
+        0.51,
+        0.5,
+        0.58,
+        0.53
+      ],
+      "Candidate_Mean_Delta_LogP": [
+        -0.18111448228359223,
+        -0.2251504111289978,
+        -0.1960752475261688,
+        -0.1928718376159668
+      ],
+      "Separability": {
+        "mean_d_premise": -39.38165521621704,
+        "mean_d_distractor": 1.095286792659317,
+        "mean_d_question": 2.678623425848782,
+        "gate_rate_premise": 0.12438499324023723,
+        "gate_rate_distractor": 0.5348130269348621,
+        "gate_rate_question": 0.6492245647311211,
+        "selectivity_index": 0.4104280336946249
+      },
+      "Operator": {
+        "mean_frobenius_displacement": 0.061670442633330824,
+        "mean_kl_divergence": 0.049322664137580435,
+        "mean_top10_overlap": 0.8910000000000001,
+        "mean_delta_logp": -0.18111448228359223,
+        "mean_delta_margin": -0.02646207767742453
+      },
+      "Evaluator": {
+        "spearman_rho": 0.0,
+        "kendall_tau": 0.0
+      }
+    },
+    "layer_11": {
+      "layer": 11,
+      "n_instances": 100,
+      "M_Identity": 0.59,
+      "M_Oracle": 0.61,
+      "M_Random": 0.54,
+      "M_ECF": 0.53,
+      "Oracle_Headroom": 0.020000000000000018,
+      "Candidate_Spread": 0.06999999999999995,
+      "Selection_Regret": 0.07999999999999996,
+      "ECF_Oracle_Agreement": 0.92,
+      "Candidate_Accuracies": [
+        0.53,
+        0.53,
+        0.55,
+        0.55
+      ],
+      "Candidate_Mean_Delta_LogP": [
+        -0.15540999054908752,
+        -0.17706754446029663,
+        -0.1499844866991043,
+        -0.17596361339092254
+      ],
+      "Separability": {
+        "mean_d_premise": -18.33081986904144,
+        "mean_d_distractor": 7.645567733645439,
+        "mean_d_question": 6.365210093259812,
+        "gate_rate_premise": 0.6032858428359031,
+        "gate_rate_distractor": 0.831185654103756,
+        "gate_rate_question": 0.759239357560873,
+        "selectivity_index": 0.22789981126785278
+      },
+      "Operator": {
+        "mean_frobenius_displacement": 0.09054818227887154,
+        "mean_kl_divergence": 0.03295309425753658,
+        "mean_top10_overlap": 0.9030000000000001,
+        "mean_delta_logp": -0.15540999054908752,
+        "mean_delta_margin": -0.016928932489827277
+      },
+      "Evaluator": {
+        "spearman_rho": 0.0,
+        "kendall_tau": 0.0
+      }
+    }
+  },
+  "pythia_param_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936"
+}

@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "experiment": "EXP029a",
+    "model_name": "EleutherAI/pythia-160m",
+    "parameter_sha256": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+    "timestamp": "2026-09-11T17:31:50.884818+00:00",
+    "n_calib": 20,
+    "n_probe": 50
+  },
+  "profiles": {
+    "0": {
+      "layer": 0,
+      "normalized_depth": 0.0,
+      "participation_ratio": 28.902681620610455,
+      "jacobian_receptivity": 14.467393429555878,
+      "s_representation": 0.21075136891603305,
+      "unembedding_alignment": 0.02325062363408506,
+      "unembedding_margin": 0.11461871027946473
+    },
+    "1": {
+      "layer": 1,
+      "normalized_depth": 0.08333333333333333,
+      "participation_ratio": 4.345066241085961,
+      "jacobian_receptivity": 13.131373383097422,
+      "s_representation": 0.029899305229633,
+      "unembedding_alignment": 0.025780028346925974,
+      "unembedding_margin": 0.16463325887918473
+    },
+    "2": {
+      "layer": 2,
+      "normalized_depth": 0.16666666666666666,
+      "participation_ratio": 1.545235715419835,
+      "jacobian_receptivity": 16.699263277554117,
+      "s_representation": 0.031534288842728235,
+      "unembedding_alignment": 0.026112874280661346,
+      "unembedding_margin": 0.1349764683842659
+    },
+    "3": {
+      "layer": 3,
+      "normalized_depth": 0.25,
+      "participation_ratio": 1.0774071337503053,
+      "jacobian_receptivity": 16.25165432433692,
+      "s_representation": 0.06963721475306857,
+      "unembedding_alignment": 0.022824811888858675,
+      "unembedding_margin": 0.056044243574142456
+    },
+    "4": {
+      "layer": 4,
+      "normalized_depth": 0.3333333333333333,
+      "participation_ratio": 1.0695526577326835,
+      "jacobian_receptivity": 20.389755286707896,
+      "s_representation": 0.012068798559276443,
+      "unembedding_alignment": 0.025645751426927745,
+      "unembedding_margin": 0.0914459240436554
+    },
+    "5": {
+      "layer": 5,
+      "normalized_depth": 0.4166666666666667,
+      "participation_ratio": 1.0717777076289206,
+      "jacobian_receptivity": 19.322825205370094,
+      "s_representation": 0.0,
+      "unembedding_alignment": 0.029069480681791902,
+      "unembedding_margin": 0.26420892715454103
+    },
+    "6": {
+      "layer": 6,
+      "normalized_depth": 0.5,
+      "participation_ratio": 1.075852755149111,
+      "jacobian_receptivity": 16.79070770841788,
+      "s_representation": 0.0,
+      "unembedding_alignment": 0.026573531264439225,
+      "unembedding_margin": 0.3362792408466339
+    },
+    "7": {
+      "layer": 7,
+      "normalized_depth": 0.5833333333333334,
+      "participation_ratio": 1.0881263694816967,
+      "jacobian_receptivity": 23.444917920942967,
+      "s_representation": 0.0,
+      "unembedding_alignment": 0.02940942675806582,
+      "unembedding_margin": 0.48352804899215696
+    },
+    "8": {
+      "layer": 8,
+      "normalized_depth": 0.6666666666666666,
+      "participation_ratio": 1.1243953055858615,
+      "jacobian_receptivity": 22.022056971744888,
+      "s_representation": 0.0,
+      "unembedding_alignment": 0.05133116208948195,
+      "unembedding_margin": 1.1252884697914123
+    },
+    "9": {
+      "layer": 9,
+      "normalized_depth": 0.75,
+      "participation_ratio": 1.2602113841416904,
+      "jacobian_receptivity": 21.37404601146399,
+      "s_representation": 0.0896612532397362,
+      "unembedding_alignment": 0.049269977500662206,
+      "unembedding_margin": 1.3129457747936248
+    },
+    "10": {
+      "layer": 10,
+      "normalized_depth": 0.8333333333333334,
+      "participation_ratio": 2.2242163227475404,
+      "jacobian_receptivity": 33.040051393748286,
+      "s_representation": 0.34480049718503275,
+      "unembedding_alignment": 0.05000916613265872,
+      "unembedding_margin": 1.5124852657318115
+    },
+    "11": {
+      "layer": 11,
+      "normalized_depth": 0.9166666666666666,
+      "participation_ratio": 2.2912519121613375,
+      "jacobian_receptivity": 14.86438993403021,
+      "s_representation": 0.0,
+      "unembedding_alignment": 0.011860208958387375,
+      "unembedding_margin": 1.1739019775390624
+    }
+  }
+}

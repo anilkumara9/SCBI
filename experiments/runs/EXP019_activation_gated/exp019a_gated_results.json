@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "experiment": "EXP019-A",
+    "model": "gpt2 (124M)",
+    "layer": 8,
+    "alpha": 0.25,
+    "subspace_rank": 2,
+    "generator": "G4_sparse",
+    "operators_tested": [
+      "O0_linear",
+      "O1_hard_gate",
+      "O2_soft_sigmoid"
+    ],
+    "n_dev": 20,
+    "dev_seed": 123,
+    "total_forwards": 320,
+    "elapsed_seconds": 156.0,
+    "pre_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "post_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "hash_identical": true
+  },
+  "identity": {
+    "M_Identity": 0.65,
+    "Pref_Identity": 0.9
+  },
+  "operators": {
+    "O0_linear": {
+      "M_Oracle": 0.8,
+      "Delta_M": 0.15,
+      "M_RandCand": 0.6,
+      "M_RandOrtho": 0.6,
+      "Pref_Oracle": 0.95,
+      "Mean_Gate_Budget_B": 1.0,
+      "Total_Intervention_A": 0.1316,
+      "Displacement_High": 0.1736,
+      "Displacement_Low": 0.1256,
+      "Mean_KL": 0.0971,
+      "Mean_Top10_Overlap": 0.8525,
+      "Delta_Margin": -0.0144,
+      "Delta_Logp": -0.2742,
+      "Target_Rank_Shift": -0.575
+    },
+    "O1_hard_gate": {
+      "M_Oracle": 0.7,
+      "Delta_M": 0.05,
+      "M_RandCand": 0.65,
+      "M_RandOrtho": 0.65,
+      "Pref_Oracle": 0.9,
+      "Mean_Gate_Budget_B": 0.2535,
+      "Total_Intervention_A": 0.0793,
+      "Displacement_High": 0.1736,
+      "Displacement_Low": 0.0,
+      "Mean_KL": 0.0507,
+      "Mean_Top10_Overlap": 0.8962,
+      "Delta_Margin": -0.0103,
+      "Delta_Logp": -0.1742,
+      "Target_Rank_Shift": -0.175
+    },
+    "O2_soft_sigmoid": {
+      "M_Oracle": 0.7,
+      "Delta_M": 0.05,
+      "M_RandCand": 0.55,
+      "M_RandOrtho": 0.6,
+      "Pref_Oracle": 0.9,
+      "Mean_Gate_Budget_B": 0.4986,
+      "Total_Intervention_A": 0.0927,
+      "Displacement_High": 0.0971,
+      "Displacement_Low": 0.0605,
+      "Mean_KL": 0.0433,
+      "Mean_Top10_Overlap": 0.8987,
+      "Delta_Margin": -0.0075,
+      "Delta_Logp": -0.1509,
+      "Target_Rank_Shift": -0.25
+    }
+  }
+}

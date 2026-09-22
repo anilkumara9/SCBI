@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "experiment": "EXP016-A",
+    "model": "gpt2 (124M)",
+    "generator": "G4_sparse",
+    "operator": "P_0.25",
+    "n_dev": 20,
+    "dev_seed": 123,
+    "total_forwards": 420,
+    "elapsed_seconds": 261.23,
+    "pre_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "post_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "hash_identical": true
+  },
+  "identity_accuracy": 0.65,
+  "layers": {
+    "4": {
+      "M_Oracle": 0.65,
+      "Delta_M": 0.0,
+      "M_RandCand": 0.35,
+      "M_RandOrtho": 0.65,
+      "Spread_Cand": 0.3,
+      "Spread_Ortho": 0.0,
+      "Mean_Displacement": 0.1395,
+      "Mean_KL": 0.1982,
+      "Mean_Top10_Overlap": 0.7888,
+      "Locality": 0.3778,
+      "Diversity": 0.8837,
+      "Stability": 0.476
+    },
+    "6": {
+      "M_Oracle": 0.7,
+      "Delta_M": 0.05,
+      "M_RandCand": 0.45,
+      "M_RandOrtho": 0.6,
+      "Spread_Cand": 0.25,
+      "Spread_Ortho": 0.1,
+      "Mean_Displacement": 0.1369,
+      "Mean_KL": 0.1603,
+      "Mean_Top10_Overlap": 0.81,
+      "Locality": 0.3737,
+      "Diversity": 0.9235,
+      "Stability": 0.4801
+    },
+    "8": {
+      "M_Oracle": 0.8,
+      "Delta_M": 0.15,
+      "M_RandCand": 0.65,
+      "M_RandOrtho": 0.65,
+      "Spread_Cand": 0.15,
+      "Spread_Ortho": 0.15,
+      "Mean_Displacement": 0.1247,
+      "Mean_KL": 0.0971,
+      "Mean_Top10_Overlap": 0.8525,
+      "Locality": 0.3374,
+      "Diversity": 0.9513,
+      "Stability": 0.4947
+    },
+    "10": {
+      "M_Oracle": 0.75,
+      "Delta_M": 0.1,
+      "M_RandCand": 0.6,
+      "M_RandOrtho": 0.65,
+      "Spread_Cand": 0.15,
+      "Spread_Ortho": 0.1,
+      "Mean_Displacement": 0.111,
+      "Mean_KL": 0.054,
+      "Mean_Top10_Overlap": 0.8912,
+      "Locality": 0.3008,
+      "Diversity": 0.9678,
+      "Stability": 0.5132
+    }
+  }
+}

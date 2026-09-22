@@ -1,0 +1,1268 @@
+{
+  "metadata": {
+    "experiment": "EXP057",
+    "title": "Blind Task-Geometry Discovery",
+    "timestamp": "2026-09-21T05:33:57.536674",
+    "model": "EleutherAI/pythia-160m",
+    "target_block": 7,
+    "alpha": 0.25,
+    "rank": 2,
+    "total_instances": 120,
+    "rdg_percentage_points": -0.8333333333333304,
+    "geom_match_rate": 19.166666666666668,
+    "verdict": "DISCOVERY_BOTTLENECK_PERSISTS"
+  },
+  "accuracies": {
+    "base": 0.45,
+    "rand_basis": 0.4583333333333333,
+    "prompt_pca": 0.4083333333333333,
+    "scpm_autonomous": 0.4083333333333333,
+    "oracle_span": 0.4
+  },
+  "breakdown": {
+    "hierarchy": {
+      "base": 4,
+      "rand_basis": 5,
+      "prompt_pca": 4,
+      "scpm_autonomous": 4,
+      "oracle_span": 3
+    },
+    "temporal": {
+      "base": 10,
+      "rand_basis": 10,
+      "prompt_pca": 5,
+      "scpm_autonomous": 5,
+      "oracle_span": 10
+    },
+    "causal": {
+      "base": 20,
+      "rand_basis": 20,
+      "prompt_pca": 20,
+      "scpm_autonomous": 20,
+      "oracle_span": 20
+    },
+    "interaction": {
+      "base": 5,
+      "rand_basis": 5,
+      "prompt_pca": 5,
+      "scpm_autonomous": 5,
+      "oracle_span": 0
+    },
+    "exclusion": {
+      "base": 0,
+      "rand_basis": 0,
+      "prompt_pca": 0,
+      "scpm_autonomous": 0,
+      "oracle_span": 0
+    },
+    "distractor": {
+      "base": 15,
+      "rand_basis": 15,
+      "prompt_pca": 15,
+      "scpm_autonomous": 15,
+      "oracle_span": 15
+    }
+  },
+  "instances": [
+    {
+      "id": 0,
+      "geometry": "hierarchy",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 1,
+      "geometry": "hierarchy",
+      "selected_geometry": "temporal",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 2,
+      "geometry": "hierarchy",
+      "selected_geometry": "temporal",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 3,
+      "geometry": "hierarchy",
+      "selected_geometry": "interaction",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 4,
+      "geometry": "hierarchy",
+      "selected_geometry": "interaction",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 5,
+      "geometry": "hierarchy",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 6,
+      "geometry": "hierarchy",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 7,
+      "geometry": "hierarchy",
+      "selected_geometry": "interaction",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 8,
+      "geometry": "hierarchy",
+      "selected_geometry": "temporal",
+      "corr_base": 0,
+      "corr_rand": 1,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 9,
+      "geometry": "hierarchy",
+      "selected_geometry": "hierarchy",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 10,
+      "geometry": "hierarchy",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 0
+    },
+    {
+      "id": 11,
+      "geometry": "hierarchy",
+      "selected_geometry": "interaction",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 12,
+      "geometry": "hierarchy",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 13,
+      "geometry": "hierarchy",
+      "selected_geometry": "hierarchy",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 14,
+      "geometry": "hierarchy",
+      "selected_geometry": "interaction",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 15,
+      "geometry": "hierarchy",
+      "selected_geometry": "hierarchy",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 16,
+      "geometry": "hierarchy",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 17,
+      "geometry": "hierarchy",
+      "selected_geometry": "interaction",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 18,
+      "geometry": "hierarchy",
+      "selected_geometry": "interaction",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 19,
+      "geometry": "hierarchy",
+      "selected_geometry": "interaction",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 20,
+      "geometry": "temporal",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 21,
+      "geometry": "temporal",
+      "selected_geometry": "temporal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 22,
+      "geometry": "temporal",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 23,
+      "geometry": "temporal",
+      "selected_geometry": "causal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 1
+    },
+    {
+      "id": 24,
+      "geometry": "temporal",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 25,
+      "geometry": "temporal",
+      "selected_geometry": "temporal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 26,
+      "geometry": "temporal",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 27,
+      "geometry": "temporal",
+      "selected_geometry": "causal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 1
+    },
+    {
+      "id": 28,
+      "geometry": "temporal",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 29,
+      "geometry": "temporal",
+      "selected_geometry": "temporal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 30,
+      "geometry": "temporal",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 31,
+      "geometry": "temporal",
+      "selected_geometry": "causal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 1
+    },
+    {
+      "id": 32,
+      "geometry": "temporal",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 33,
+      "geometry": "temporal",
+      "selected_geometry": "temporal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 34,
+      "geometry": "temporal",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 35,
+      "geometry": "temporal",
+      "selected_geometry": "causal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 1
+    },
+    {
+      "id": 36,
+      "geometry": "temporal",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 37,
+      "geometry": "temporal",
+      "selected_geometry": "temporal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 38,
+      "geometry": "temporal",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 39,
+      "geometry": "temporal",
+      "selected_geometry": "causal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 1
+    },
+    {
+      "id": 40,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 41,
+      "geometry": "causal",
+      "selected_geometry": "interaction",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 42,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 43,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 44,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 45,
+      "geometry": "causal",
+      "selected_geometry": "interaction",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 46,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 47,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 48,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 49,
+      "geometry": "causal",
+      "selected_geometry": "interaction",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 50,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 51,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 52,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 53,
+      "geometry": "causal",
+      "selected_geometry": "interaction",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 54,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 55,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 56,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 57,
+      "geometry": "causal",
+      "selected_geometry": "interaction",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 58,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 59,
+      "geometry": "causal",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 60,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 0,
+      "corr_auto": 1,
+      "corr_oracle": 0
+    },
+    {
+      "id": 61,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 62,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 63,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 1,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 64,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 0,
+      "corr_auto": 1,
+      "corr_oracle": 0
+    },
+    {
+      "id": 65,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 66,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 67,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 1,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 68,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 0,
+      "corr_auto": 1,
+      "corr_oracle": 0
+    },
+    {
+      "id": 69,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 70,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 71,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 1,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 72,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 0,
+      "corr_auto": 1,
+      "corr_oracle": 0
+    },
+    {
+      "id": 73,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 74,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 75,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 1,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 76,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 0,
+      "corr_auto": 1,
+      "corr_oracle": 0
+    },
+    {
+      "id": 77,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 78,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 79,
+      "geometry": "interaction",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 1,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 80,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 81,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 82,
+      "geometry": "exclusion",
+      "selected_geometry": "hierarchy",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 83,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 84,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 85,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 86,
+      "geometry": "exclusion",
+      "selected_geometry": "hierarchy",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 87,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 88,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 89,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 90,
+      "geometry": "exclusion",
+      "selected_geometry": "hierarchy",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 91,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 92,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 93,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 94,
+      "geometry": "exclusion",
+      "selected_geometry": "hierarchy",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 95,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 96,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 97,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 98,
+      "geometry": "exclusion",
+      "selected_geometry": "hierarchy",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 99,
+      "geometry": "exclusion",
+      "selected_geometry": "exclusion",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 100,
+      "geometry": "distractor",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 101,
+      "geometry": "distractor",
+      "selected_geometry": "temporal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 102,
+      "geometry": "distractor",
+      "selected_geometry": "interaction",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 103,
+      "geometry": "distractor",
+      "selected_geometry": "hierarchy",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 104,
+      "geometry": "distractor",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 105,
+      "geometry": "distractor",
+      "selected_geometry": "temporal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 106,
+      "geometry": "distractor",
+      "selected_geometry": "interaction",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 107,
+      "geometry": "distractor",
+      "selected_geometry": "hierarchy",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 108,
+      "geometry": "distractor",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 109,
+      "geometry": "distractor",
+      "selected_geometry": "temporal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 110,
+      "geometry": "distractor",
+      "selected_geometry": "interaction",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 111,
+      "geometry": "distractor",
+      "selected_geometry": "hierarchy",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 112,
+      "geometry": "distractor",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 113,
+      "geometry": "distractor",
+      "selected_geometry": "temporal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 114,
+      "geometry": "distractor",
+      "selected_geometry": "interaction",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 115,
+      "geometry": "distractor",
+      "selected_geometry": "hierarchy",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 116,
+      "geometry": "distractor",
+      "selected_geometry": "exclusion",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 117,
+      "geometry": "distractor",
+      "selected_geometry": "temporal",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    },
+    {
+      "id": 118,
+      "geometry": "distractor",
+      "selected_geometry": "interaction",
+      "corr_base": 0,
+      "corr_rand": 0,
+      "corr_pca": 0,
+      "corr_auto": 0,
+      "corr_oracle": 0
+    },
+    {
+      "id": 119,
+      "geometry": "distractor",
+      "selected_geometry": "hierarchy",
+      "corr_base": 1,
+      "corr_rand": 1,
+      "corr_pca": 1,
+      "corr_auto": 1,
+      "corr_oracle": 1
+    }
+  ]
+}

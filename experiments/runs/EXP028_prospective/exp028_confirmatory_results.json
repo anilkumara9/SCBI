@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "experiment": "EXP028",
+    "phase": "Phase B (Confirmatory Benchmark)",
+    "model_name": "facebook/opt-125m",
+    "parameter_sha256": "da871cc495e4f6a99090cdeaf7db41c3d357549cff93213a09b75a20ca964acf",
+    "parameter_invariant": true,
+    "n_instances": 100,
+    "seed": 84,
+    "lock_checksum_verified": "dcd1bd020f4453a860fe504826576dd9fd9e66c674abd2ad9e9852748b29bc3b"
+  },
+  "tri_state_outcome": {
+    "status": "OUTCOME_1_PREDICTION_CONFIRMED",
+    "description": "Prospective stage prediction successfully identified an effective intervention layer with positive Oracle headroom that equals or exceeds the baseline heuristic."
+  },
+  "primary_prediction_layer_l_star": {
+    "layer": 7,
+    "results": {
+      "layer": 7,
+      "M_Identity": 0.77,
+      "M_Oracle": 0.83,
+      "M_Random": 0.78,
+      "M_ECF": 0.82,
+      "Oracle_Headroom": 0.05999999999999994,
+      "Oracle_Headroom_CI95": [
+        0.02,
+        0.11
+      ],
+      "Candidate_Spread": 0.04999999999999993,
+      "ECF_Headroom": 0.04999999999999993,
+      "ECF_Headroom_CI95": [
+        0.01,
+        0.1
+      ],
+      "McNemar_vs_Identity": {
+        "b_wins": 6,
+        "c_losses": 0,
+        "p_one_sided": 0.015625
+      },
+      "Mean_Delta_LogP_Oracle": 0.040491441935300826,
+      "Mean_Delta_LogP_Oracle_CI95": [
+        0.02030779458209872,
+        0.06512663104385137
+      ],
+      "Mean_Delta_LogP_ECF": 0.0831980762630701,
+      "Mean_Delta_LogP_ECF_CI95": [
+        0.0628506302908063,
+        0.10672858664765952
+      ],
+      "Selectivity_Index": 0.8623113270103931,
+      "Selectivity_Index_CI95": [
+        0.8400717798806727,
+        0.8840389410052448
+      ],
+      "Frobenius_Displacement": 0.009362708395346999,
+      "KL_Divergence": 0.005897691083955579,
+      "Top10_Overlap": 0.9610000000000002,
+      "Evaluator_Spearman_Rho": 0.6920000000000001,
+      "Evaluator_Kendall_Tau": 0.6199999999999999
+    }
+  },
+  "predeclared_baseline_layer_8": {
+    "layer": 8,
+    "results": {
+      "layer": 8,
+      "M_Identity": 0.77,
+      "M_Oracle": 0.83,
+      "M_Random": 0.79,
+      "M_ECF": 0.83,
+      "Oracle_Headroom": 0.05999999999999994,
+      "Oracle_Headroom_CI95": [
+        0.02,
+        0.11
+      ],
+      "Candidate_Spread": 0.039999999999999925,
+      "ECF_Headroom": 0.05999999999999994,
+      "ECF_Headroom_CI95": [
+        0.02,
+        0.11
+      ],
+      "McNemar_vs_Identity": {
+        "b_wins": 6,
+        "c_losses": 0,
+        "p_one_sided": 0.015625
+      },
+      "Mean_Delta_LogP_Oracle": 0.028205904215574264,
+      "Mean_Delta_LogP_Oracle_CI95": [
+        0.004581324605271221,
+        0.05549963153712451
+      ],
+      "Mean_Delta_LogP_ECF": 0.08512602843344212,
+      "Mean_Delta_LogP_ECF_CI95": [
+        0.061992364747449756,
+        0.11107140770182011
+      ],
+      "Selectivity_Index": 0.8450307600200176,
+      "Selectivity_Index_CI95": [
+        0.8232983866836876,
+        0.8659713897723704
+      ],
+      "Frobenius_Displacement": 0.008256201129406691,
+      "KL_Divergence": 0.006901077178190463,
+      "Top10_Overlap": 0.9660000000000002,
+      "Evaluator_Spearman_Rho": 0.7119999999999999,
+      "Evaluator_Kendall_Tau": 0.6600000000000001
+    }
+  },
+  "adjacent_layer_6": {
+    "layer": 6,
+    "results": {
+      "layer": 6,
+      "M_Identity": 0.77,
+      "M_Oracle": 0.84,
+      "M_Random": 0.78,
+      "M_ECF": 0.83,
+      "Oracle_Headroom": 0.06999999999999995,
+      "Oracle_Headroom_CI95": [
+        0.02,
+        0.12
+      ],
+      "Candidate_Spread": 0.05999999999999994,
+      "ECF_Headroom": 0.05999999999999994,
+      "ECF_Headroom_CI95": [
+        0.02,
+        0.11
+      ],
+      "McNemar_vs_Identity": {
+        "b_wins": 7,
+        "c_losses": 0,
+        "p_one_sided": 0.0078125
+      },
+      "Mean_Delta_LogP_Oracle": 0.03053942620754242,
+      "Mean_Delta_LogP_Oracle_CI95": [
+        0.006971229679882529,
+        0.05630138830095527
+      ],
+      "Mean_Delta_LogP_ECF": 0.09559071891009807,
+      "Mean_Delta_LogP_ECF_CI95": [
+        0.06985515034012497,
+        0.12358643813244997
+      ],
+      "Selectivity_Index": 0.795967033803463,
+      "Selectivity_Index_CI95": [
+        0.773464485064149,
+        0.8175872979387641
+      ],
+      "Frobenius_Displacement": 0.01027767252177,
+      "KL_Divergence": 0.012250003062654287,
+      "Top10_Overlap": 0.9530000000000003,
+      "Evaluator_Spearman_Rho": 0.7800000000000001,
+      "Evaluator_Kendall_Tau": 0.7066666666666667
+    }
+  },
+  "pairwise_test_l_star_vs_baseline": {
+    "contingency_table": {
+      "a_both_correct": 83,
+      "b_l_star_win": 0,
+      "c_base_win": 0,
+      "d_both_incorrect": 17
+    },
+    "mcnemar_b": 0,
+    "mcnemar_c": 0,
+    "mcnemar_p_one_sided": 1.0,
+    "mcnemar_p_two_sided": 1.0,
+    "mean_delta_logp_diff": 0.012285537719726562,
+    "wilcoxon_stat": 3283.0,
+    "wilcoxon_p_one_sided": 0.004576849285542263
+  }
+}

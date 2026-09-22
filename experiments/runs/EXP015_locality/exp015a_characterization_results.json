@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "protocol": "EXP015 Phase A",
+    "model": "gpt2 (124M)",
+    "pre_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "post_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "checksums_match": true,
+    "n_dev": 20,
+    "dev_seed": 123,
+    "layer": 10,
+    "alpha": 0.25,
+    "rank": 2,
+    "m_identity": 0.65,
+    "pref_identity": 0.9,
+    "total_forwards": 340,
+    "wall_clock_seconds": 73.57268714904785
+  },
+  "generators": {
+    "G0_temporal": {
+      "m_oracle": 0.8,
+      "m_random": 0.6,
+      "delta_oracle": 0.15000000000000002,
+      "spread": 0.20000000000000007,
+      "pref_oracle": 0.95,
+      "locality": 0.46945354933778766,
+      "diversity": 0.7488916543696896,
+      "stability": 0.4938677939280963
+    },
+    "G1_clusters": {
+      "m_oracle": 0.65,
+      "m_random": 0.6,
+      "delta_oracle": 0.0,
+      "spread": 0.050000000000000044,
+      "pref_oracle": 0.9,
+      "locality": 0.12216931595467242,
+      "diversity": 0.9774182632562575,
+      "stability": 0.5758737781306167
+    },
+    "G2_pca": {
+      "m_oracle": 0.6,
+      "m_random": 0.6,
+      "delta_oracle": -0.050000000000000044,
+      "spread": 0.0,
+      "pref_oracle": 0.9,
+      "locality": 0.23683156975127187,
+      "diversity": 0.9999999999999838,
+      "stability": 0.2885053205529671
+    },
+    "G4_sparse": {
+      "m_oracle": 0.75,
+      "m_random": 0.65,
+      "delta_oracle": 0.09999999999999998,
+      "spread": 0.09999999999999998,
+      "pref_oracle": 0.95,
+      "locality": 0.30083828474312874,
+      "diversity": 0.9678026568938554,
+      "stability": 0.5132195449034928
+    }
+  },
+  "recommended_generator": "G0_temporal"
+}

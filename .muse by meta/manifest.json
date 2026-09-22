@@ -1,0 +1,58 @@
+{
+  "project_name": "Self-Consistent Basis Invention (SCBI / SCPM)",
+  "framework": "Meta Muse Multi-Agent Autonomous Research Orchestrator",
+  "handover_timestamp": "2026-09-23T00:39:00Z",
+  "status": "HANDOVER_READY",
+  "primary_vision": "Revolutionize AI by establishing autonomous, test-time basis synthesis in frozen foundation models (Delta theta = 0), eliminating catastrophic forgetting and expensive fine-tuning.",
+  "inviolable_laws": {
+    "frozen_backbone": "Delta theta == 0 verified via SHA-256 pre and post run",
+    "zero_leakage": "Target labels, options, and answer tokens strictly isolated from basis generators and alignment frames",
+    "pre_registration": "All hypotheses, layers, samples, and metrics pre-registered before data inspection",
+    "headroom_standard": "Baseline accuracy must fall within 40%-70% to eliminate ceiling effects"
+  },
+  "verified_models": [
+    {
+      "model_id": "EleutherAI/pythia-160m",
+      "parameters": 162322944,
+      "hidden_dim": 768,
+      "num_layers": 12,
+      "target_layer": 10,
+      "sha256": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936"
+    },
+    {
+      "model_id": "EleutherAI/pythia-410m",
+      "parameters": 405081600,
+      "hidden_dim": 1024,
+      "num_layers": 24,
+      "target_layer": 20,
+      "sha256": "4c242d9ac702a4029a674eacee84e0517cb6f79d794661dc3a3102bca5ed48dd"
+    }
+  ],
+  "core_datasets_and_benchmarks": {
+    "support_sets": "5 disjoint vocabularies (Anglo, Biblical, Greek, Roman, Modern)",
+    "novel_benchmarks": "Difficulty-calibrated N=60 disjoint entities (Planetary and Elemental domains, 2-hop and 3-hop chains, premise permutations)",
+    "calibration_window": "40% - 70% baseline accuracy"
+  },
+  "key_findings": {
+    "geometric_alignment": "Demonstrated across support vocabularies (Stage A Procrustes delta_cos approx +0.13 to +0.79)",
+    "causal_boundary": "Aligned dynamic basis produces Delta M = 0.0 pp on novel vocabularies, while same-layer output bridge achieves Delta M = +16.7 pp (p = 0.0020)",
+    "central_theorem": "Representational alignment is not sufficient for causal interchangeability"
+  },
+  "agent_roles": [
+    "Muse Research Director",
+    "Muse Theory Agent",
+    "Muse Literature Agent",
+    "Muse Experiment Agent",
+    "Muse Implementation Agent",
+    "Muse Adversarial Reviewer"
+  ],
+  "handover_files": {
+    "master_brief": ".muse by meta/README.md",
+    "agent_specs": ".muse by meta/AGENT_SWARM_SPECIFICATION.md",
+    "theory_compendium": ".muse by meta/THEORY_AND_MATHEMATICAL_FOUNDATIONS.md",
+    "experiment_ledger": ".muse by meta/COMPREHENSIVE_EXPERIMENT_LEDGER.md",
+    "constitution": ".muse by meta/CONSTITUTION_AND_INVIOLABLE_LAWS.md",
+    "roadmap": ".muse by meta/ROADMAP_TO_REVOLUTIONIZE_AI.md",
+    "prompt_templates": ".muse by meta/PROMPT_TEMPLATES_FOR_MUSE.md"
+  }
+}

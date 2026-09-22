@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "experiment": "EXP016-B",
+    "model": "gpt2 (124M)",
+    "layer": 8,
+    "block_idx": 7,
+    "operator": "P_0.25",
+    "generator": "G4_sparse (native)",
+    "n_instances": 100,
+    "seed": 42,
+    "total_forwards": 600,
+    "elapsed_seconds": 427.77,
+    "pre_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "post_hash": "6c12f993878ad39ba4aa3b0ab58a7466f5a62651cda94464dab438339008ba1d",
+    "hash_identical": true
+  },
+  "performance": {
+    "M_Identity": 0.65,
+    "M_Oracle": 0.71,
+    "Delta_M_Oracle": 0.06,
+    "M_RandCand": 0.5,
+    "Delta_M_RandCand": -0.15,
+    "M_RandOrtho": 0.66,
+    "Spread_Oracle_RandCand": 0.21,
+    "Pref_Identity": 0.79,
+    "Pref_Oracle": 0.91,
+    "Pref_RandCand": 0.81,
+    "Pref_RandOrtho": 0.8
+  },
+  "statistical_inference": {
+    "contingency_table": {
+      "ties_both_correct_a": 61,
+      "wins_oracle_only_b": 10,
+      "losses_identity_only_c": 4,
+      "ties_both_fail_d": 25,
+      "n_discordant": 14
+    },
+    "p_exact_one_sided": 0.08978,
+    "p_exact_two_sided": 0.17957,
+    "ci95_delta_m": [
+      -0.01,
+      0.13
+    ],
+    "gate1_passed": false
+  },
+  "diagnostics": {
+    "mean_displacement": 0.1257,
+    "mean_kl_divergence": 0.1034,
+    "mean_top10_overlap": 0.846,
+    "mean_locality": 0.3387,
+    "mean_diversity": 0.9495,
+    "mean_stability": 0.4932
+  }
+}

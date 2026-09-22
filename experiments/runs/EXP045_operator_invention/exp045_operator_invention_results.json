@@ -1,0 +1,213 @@
+{
+  "experiment_id": "EXP045",
+  "timestamp": "2026-09-12 01:45:26",
+  "model_name": "EleutherAI/pythia-160m",
+  "pre_param_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+  "post_param_hash": "54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936",
+  "toolbox_manifest_hash": "01424ffac20c349591a0c78090f9c74621692f016234070da48d53ad864ec086",
+  "audited_toolbox": [
+    "G2_curv",
+    "G3_ortho",
+    "C2_curv_ortho",
+    "S1_entropy_gated",
+    "S3_context_sink_ortho"
+  ],
+  "classifications": {
+    "G1_traj_flow": {
+      "E_span": 0.0,
+      "E_comp": 0.0,
+      "classification": "Library-Equivalent",
+      "audit_b": 1,
+      "audit_c": 1,
+      "audit_dlogp": -0.0118,
+      "causally_safe": false
+    },
+    "G2_curv": {
+      "E_span": 0.0,
+      "E_comp": 0.0,
+      "classification": "Library-Equivalent",
+      "audit_b": 3,
+      "audit_c": 0,
+      "audit_dlogp": 0.0416,
+      "causally_safe": true
+    },
+    "G3_ortho": {
+      "E_span": 0.0,
+      "E_comp": 0.0,
+      "classification": "Library-Equivalent",
+      "audit_b": 0,
+      "audit_c": 0,
+      "audit_dlogp": 0.0268,
+      "causally_safe": true
+    },
+    "G4_attn": {
+      "E_span": 0.0,
+      "E_comp": 0.0,
+      "classification": "Library-Equivalent",
+      "audit_b": 0,
+      "audit_c": 1,
+      "audit_dlogp": -0.2187,
+      "causally_safe": false
+    },
+    "G5_late_cov": {
+      "E_span": 0.0,
+      "E_comp": 0.0,
+      "classification": "Library-Equivalent",
+      "audit_b": 0,
+      "audit_c": 1,
+      "audit_dlogp": -0.164,
+      "causally_safe": false
+    },
+    "C1_ortho_flow": {
+      "E_span": 0.0059,
+      "E_comp": 0.0,
+      "classification": "Library-Equivalent",
+      "audit_b": 1,
+      "audit_c": 1,
+      "audit_dlogp": 0.0053,
+      "causally_safe": false
+    },
+    "C2_curv_ortho": {
+      "E_span": 0.0019,
+      "E_comp": 0.0,
+      "classification": "Library-Equivalent",
+      "audit_b": 3,
+      "audit_c": 0,
+      "audit_dlogp": 0.0536,
+      "causally_safe": true
+    },
+    "S1_entropy_gated": {
+      "E_span": 0.0218,
+      "E_comp": 0.0216,
+      "classification": "Library-Equivalent",
+      "audit_b": 0,
+      "audit_c": 0,
+      "audit_dlogp": 0.0049,
+      "causally_safe": true
+    },
+    "S2_sparse_threshold": {
+      "E_span": 0.9596,
+      "E_comp": 0.9225,
+      "classification": "Structurally Novel",
+      "audit_b": 0,
+      "audit_c": 1,
+      "audit_dlogp": -0.0172,
+      "causally_safe": false
+    },
+    "S3_context_sink_ortho": {
+      "E_span": 0.9987,
+      "E_comp": 0.9982,
+      "classification": "Structurally Novel",
+      "audit_b": 0,
+      "audit_c": 0,
+      "audit_dlogp": 0.0001,
+      "causally_safe": true
+    }
+  },
+  "baseline_accuracy": 0.52,
+  "audited_oracle_bound": 0.52,
+  "scorecard": {
+    "G1_traj_flow": {
+      "classification": "Library-Equivalent",
+      "accuracy": 0.46,
+      "delta_pp": -6.0,
+      "b": 0,
+      "c": 3,
+      "mean_dlogp": -0.0235,
+      "mcnemar_p": 1.0,
+      "passes_structural_invention_threshold": false
+    },
+    "G2_curv": {
+      "classification": "Library-Equivalent",
+      "accuracy": 0.48,
+      "delta_pp": -4.0,
+      "b": 0,
+      "c": 2,
+      "mean_dlogp": -0.0709,
+      "mcnemar_p": 1.0,
+      "passes_structural_invention_threshold": false
+    },
+    "G3_ortho": {
+      "classification": "Library-Equivalent",
+      "accuracy": 0.52,
+      "delta_pp": 0.0,
+      "b": 0,
+      "c": 0,
+      "mean_dlogp": 0.0307,
+      "mcnemar_p": 1.0,
+      "passes_structural_invention_threshold": false
+    },
+    "G4_attn": {
+      "classification": "Library-Equivalent",
+      "accuracy": 0.4,
+      "delta_pp": -12.0,
+      "b": 0,
+      "c": 6,
+      "mean_dlogp": -0.1779,
+      "mcnemar_p": 1.0,
+      "passes_structural_invention_threshold": false
+    },
+    "G5_late_cov": {
+      "classification": "Library-Equivalent",
+      "accuracy": 0.48,
+      "delta_pp": -4.0,
+      "b": 0,
+      "c": 2,
+      "mean_dlogp": -0.0606,
+      "mcnemar_p": 1.0,
+      "passes_structural_invention_threshold": false
+    },
+    "C1_ortho_flow": {
+      "classification": "Library-Equivalent",
+      "accuracy": 0.46,
+      "delta_pp": -6.0,
+      "b": 0,
+      "c": 3,
+      "mean_dlogp": 0.0202,
+      "mcnemar_p": 1.0,
+      "passes_structural_invention_threshold": false
+    },
+    "C2_curv_ortho": {
+      "classification": "Library-Equivalent",
+      "accuracy": 0.48,
+      "delta_pp": -4.0,
+      "b": 0,
+      "c": 2,
+      "mean_dlogp": -0.0328,
+      "mcnemar_p": 1.0,
+      "passes_structural_invention_threshold": false
+    },
+    "S1_entropy_gated": {
+      "classification": "Library-Equivalent",
+      "accuracy": 0.52,
+      "delta_pp": 0.0,
+      "b": 0,
+      "c": 0,
+      "mean_dlogp": 0.0049,
+      "mcnemar_p": 1.0,
+      "passes_structural_invention_threshold": false
+    },
+    "S2_sparse_threshold": {
+      "classification": "Structurally Novel",
+      "accuracy": 0.48,
+      "delta_pp": -4.0,
+      "b": 0,
+      "c": 2,
+      "mean_dlogp": 0.0252,
+      "mcnemar_p": 1.0,
+      "passes_structural_invention_threshold": false
+    },
+    "S3_context_sink_ortho": {
+      "classification": "Structurally Novel",
+      "accuracy": 0.52,
+      "delta_pp": 0.0,
+      "b": 0,
+      "c": 0,
+      "mean_dlogp": -0.0003,
+      "mcnemar_p": 1.0,
+      "passes_structural_invention_threshold": false
+    }
+  },
+  "resolution": "OUTCOME_4_EXISTENCE_BOUNDARY_INVARIANT",
+  "verdict": "EXISTENCE BOUNDARY INVARIANT: No candidate operator (selected, composed, or structurally novel) achieved M >= 62.0% (b >= 5, c = 0, p <= 0.05). First-principles operator invention not demonstrated on this task domain."
+}

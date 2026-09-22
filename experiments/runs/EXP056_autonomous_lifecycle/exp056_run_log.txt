@@ -1,0 +1,16 @@
+=== EXP056 Execution Started at 2026-09-21T05:13:41.501539 ===
+[05:13:41] Initializing EXP056 Autonomous Closed-Loop Basis Lifecycle Verification...
+[05:13:41] Using compute device: cpu
+[05:13:45] Pre-run model hash verified: Delta_theta = 0.
+[05:14:57] 
+================ AUTONOMOUS LIFECYCLE SUMMARY (N=50) ================
+[05:14:57] BASE            : Acc=60.0% (Delta_M=+0.0 pp) | Rescues=0 Corr=0 p=1.0000
+[05:14:57] SCPM_ORACLE     : Acc=74.0% (Delta_M=+14.0 pp) | Rescues=7 Corr=0 p=0.0078
+[05:14:57] UNSUP_SELECTED  : Acc=64.0% (Delta_M=+4.0 pp) | Rescues=2 Corr=0 p=0.2500
+[05:14:57] RAND_CANDIDATE  : Acc=62.0% (Delta_M=+2.0 pp) | Rescues=2 Corr=1 p=0.5000
+[05:14:57] 
+Backbone immutability verified: Delta_theta = 0.
+[05:14:57] Headroom Recovery eta: 28.6% (+4.0 pp / +14.0 pp)
+[05:14:57] 
+Final Verdict: >>> SELECTION_BOTTLENECK_ACTIVE <<<
+[05:14:57] Saved complete results to C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\../../experiments/runs/EXP056_autonomous_lifecycle\exp056_autonomous_results.json

@@ -1,0 +1,102 @@
+[21:03:40] ================================================================================
+C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\run_exp048_regression_lock.py:60: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  print(f"[{datetime.utcnow().strftime('%H:%M:%S')}] {msg}", flush=True)
+[21:03:40] EXP048: Canonical Deterministic Regression Lock
+[21:03:40]   Model:    EleutherAI/pythia-160m
+[21:03:40]   Seed:     84  N: 50  Layer: 7
+[21:03:40]   Operator: G_contrastive = extract_subspace(h8[dist_indices], rank=2)
+[21:03:40] ================================================================================
+[21:03:40] Loading model...
+C:\Users\Anilkumar\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\file_download.py:945: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[21:03:43] Pre-hash: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+[21:03:43] Hash match: True [VERIFIED]
+[21:03:43] EXP043 reference: baseline=None G_contrastive=None b=None c=None p=None
+[21:03:43] Generated 50 BENCH-002-NL instances (Seed=84)
+[21:03:55] 
+================================================================================
+C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\run_exp048_regression_lock.py:60: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  print(f"[{datetime.utcnow().strftime('%H:%M:%S')}] {msg}", flush=True)
+[21:03:55]   N evaluated:          50 (0 skipped)
+[21:03:55]   Baseline accuracy:    0.6000 (30/50)
+[21:03:55]   G_contrastive acc:    0.7400 (37/50)
+[21:03:55]   Delta M:              +0.1400
+[21:03:55]   Rescues (b):          7
+[21:03:55]   Corruptions (c):      0
+[21:03:55]   McNemar p:            0.007812
+[21:03:55]   Mean delta log p:     +0.108808
+[21:03:55] 
+  --- Pre-Registered Acceptance Audit ---
+[21:03:55]   [PASS] Baseline == 60%:  0.6000
+[21:03:55]   [PASS] Interv >= 72%:    0.7400
+[21:03:55]   [PASS] b >= 6:           7
+[21:03:55]   [PASS] c = 0:            0
+[21:03:55]   [PASS] McNemar p <= 0.05:0.007812
+[21:03:55]   [MISMATCH] EXP043 baseline: EXP048=0.60 vs EXP043=None
+[21:03:55]   [MISMATCH] EXP043 b (+-1):  EXP048 b=7 vs EXP043 b=None
+[21:03:55]   [MISMATCH] EXP043 c:         EXP048 c=0 vs EXP043 c=None
+[21:03:55] 
+  >>> VERDICT: REGRESSION_LOCK_CONFIRMED
+[21:03:55] 
+  Post-hash: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\run_exp048_regression_lock.py:243: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "date": datetime.utcnow().strftime("%Y-%m-%d"),
+[21:03:55]   Delta_theta=0: True
+[21:03:55] 
+  --- Per-Instance Table ---
+[21:03:55]   ID  dom       target  base interv   b   c      dlp
+[21:03:55] -------------------------------------------------------
+     0    0        black     1      1   0   0  +0.0763
+     1    1        Paris     1      1   0   0  -0.0716
+     2    2     Thursday     1      1   0   0  +0.0741
+     3    3    astronomy     1      1   0   0  -0.0275
+     4    4       yellow     0      0   0   0  -0.1290
+     5    0        black     1      1   0   0  +0.0422
+     6    1        Cairo     1      1   0   0  +0.3147
+     7    2     Thursday     1      1   0   0  +0.1603
+     8    3      biology     0      0   0   0  +0.1725
+     9    4       silver     0      0   0   0  +0.3435
+    10    0       wooden     0      0   0   0  +0.1680
+    11    1       Berlin     1      1   0   0  +0.0608
+    12    2    Wednesday     1      1   0   0  -0.0350
+    13    3      physics     0      0   0   0  +0.2549
+    14    4       silver     0      0   0   0  +0.4032
+    15    0         blue     0      1   1   0  +0.3369
+    16    1        Paris     0      1   1   0  +0.5671
+    17    2      Tuesday     1      1   0   0  -0.0398
+    18    3    chemistry     1      1   0   0  -0.1292
+    19    4       purple     1      1   0   0  +0.0846
+    20    0       golden     1      1   0   0  +0.4186
+    21    1        Tokyo     1      1   0   0  -0.0329
+    22    2      Tuesday     1      1   0   0  -0.0768
+    23    3      physics     0      0   0   0  +0.0840
+    24    4       orange     0      0   0   0  -0.0880
+    25    0       golden     1      1   0   0  -0.2740
+    26    1        Cairo     1      1   0   0  +0.0388
+    27    2       Monday     1      1   0   0  +0.0767
+    28    3    economics     1      1   0   0  +0.3282
+    29    4       silver     0      0   0   0  +0.5082
+    30    0       wooden     0      1   1   0  +0.1694
+    31    1       Madrid     1      1   0   0  +0.1726
+    32    2       Friday     1      1   0   0  +0.1551
+    33    3      physics     0      0   0   0  -0.1264
+    34    4       purple     0      1   1   0  +0.3170
+    35    0        metal     0      1   1   0  +0.1142
+    36    1         Rome     0      0   0   0  +0.8745
+    37    2     Thursday     1      1   0   0  -0.0503
+    38    3      physics     1      1   0   0  -0.1122
+    39    4       yellow     1      1   0   0  +0.1041
+    40    0      leather     1      1   0   0  +0.1873
+    41    1        Cairo     1      1   0   0  -0.1837
+    42    2       Friday     1      1   0   0  -0.0529
+    43    3   psychology     0      0   0   0  -0.1121
+    44    4         gold     0      0   0   0  +0.1025
+    45    0      leather     0      1   1   0  +0.0463
+    46    1        Paris     1      1   0   0  -0.0131
+    47    2    Wednesday     1      1   0   0  +0.1153
+    48    3    astronomy     0      1   1   0  +0.0157
+    49    4       purple     1      1   0   0  +0.1075
+[21:03:55] 
+Saved: C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\../../experiments/runs/EXP048_regression_lock\exp048_regression_results.json
+[21:03:55] EXP048 DONE.

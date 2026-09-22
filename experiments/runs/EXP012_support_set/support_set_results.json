@@ -1,0 +1,112 @@
+{
+    "metadata": {
+        "experiment_id": "EXP012",
+        "num_samples": 100,
+        "num_discriminatory_instances": 52,
+        "dataset_seed": 555,
+        "candidate_seed": 333,
+        "alpha": 0.5,
+        "support_size": 4,
+        "wall_clock_time_seconds": 1.0972,
+        "checksums_match": true,
+        "strictly_independent_instances": true
+    },
+    "selection_performance_ladder": {
+        "Random": {
+            "mean_accuracy": 0.29,
+            "accuracy_ci95": [
+                0.2,
+                0.38
+            ],
+            "delta_vs_random": 0.0,
+            "ci95_delta_vs_random": [
+                0.0,
+                0.0
+            ],
+            "wilcoxon_p_vs_random": 1.0,
+            "oracle_recovery_ratio_RE": 0.0
+        },
+        "E_single": {
+            "mean_accuracy": 0.26,
+            "accuracy_ci95": [
+                0.17,
+                0.35
+            ],
+            "delta_vs_random": -0.03,
+            "ci95_delta_vs_random": [
+                -0.12,
+                0.06
+            ],
+            "wilcoxon_p_vs_random": 0.5127,
+            "oracle_recovery_ratio_RE": -0.125
+        },
+        "E_CF": {
+            "mean_accuracy": 0.21,
+            "accuracy_ci95": [
+                0.13,
+                0.29
+            ],
+            "delta_vs_random": -0.08,
+            "ci95_delta_vs_random": [
+                -0.18,
+                0.02
+            ],
+            "wilcoxon_p_vs_random": 0.1025,
+            "oracle_recovery_ratio_RE": -0.3333
+        },
+        "E_support": {
+            "mean_accuracy": 0.23,
+            "accuracy_ci95": [
+                0.15,
+                0.31
+            ],
+            "delta_vs_random": -0.06,
+            "ci95_delta_vs_random": [
+                -0.16,
+                0.03
+            ],
+            "wilcoxon_p_vs_random": 0.2207,
+            "oracle_recovery_ratio_RE": -0.25
+        },
+        "Oracle": {
+            "mean_accuracy": 0.53,
+            "accuracy_ci95": [
+                0.43,
+                0.63
+            ],
+            "delta_vs_random": 0.24,
+            "ci95_delta_vs_random": [
+                0.16,
+                0.3202
+            ],
+            "wilcoxon_p_vs_random": 0.0,
+            "oracle_recovery_ratio_RE": 1.0
+        }
+    },
+    "cluster_aware_pairwise_ranking": {
+        "E_single": {
+            "mean_R_instance": 0.4856,
+            "ci95_cluster_bootstrap": [
+                0.3942,
+                0.5737
+            ],
+            "within_instance_perm_p": 0.7676
+        },
+        "E_CF": {
+            "mean_R_instance": 0.4487,
+            "ci95_cluster_bootstrap": [
+                0.3365,
+                0.5641
+            ],
+            "within_instance_perm_p": 0.3018
+        },
+        "E_support": {
+            "mean_R_instance": 0.4936,
+            "ci95_cluster_bootstrap": [
+                0.3782,
+                0.6074
+            ],
+            "within_instance_perm_p": 0.9086
+        }
+    }
+}

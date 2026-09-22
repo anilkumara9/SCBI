@@ -1,0 +1,51 @@
+=== EXP061 Execution Started at 2026-09-21T06:33:12.196577+00:00 ===
+[06:33:12] Initializing EXP061 Mechanistic Dissection...
+[06:33:12] Using compute device: cpu
+[06:33:17] Pre-run model SHA-256: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+[06:33:17] Verified frozen model parameter immutability.
+[06:33:17] Selected 60 instances from Levels 2 & 3 of BENCH-007.
+[06:33:17] Extracting baseline outputs and representations...
+[06:33:44] 
+Executing 10-part mechanistic dissection on all 60 instances...
+[06:35:35] 
+Baseline Accuracy across Levels 2 & 3 (N=60): 38.3% (23/60)
+[06:35:35] ==========================================================================================
+[06:35:35] Condition                  | Acc    | Delta_M  | b   | c   | p-val   | Delta_T_Logit | Delta_F_Logit | KL_Div 
+[06:35:35] ==========================================================================================
+[06:35:35] Primary_Informed           |  40.0% |    +1.7% |   1 |   0 |  0.5000 |      +0.0754 |      -0.0753 |    0.00
+[06:35:35] Sign_Reversed              |  31.7% |    -6.7% |   0 |   4 |  1.0000 |      -0.0768 |      +0.0729 |    0.00
+[06:35:35] Random_Vector              |  40.0% |    +1.7% |   1 |   0 |  0.5000 |      -0.0001 |      -0.0016 |    0.00
+[06:35:35] Shuffled_Vector            |  38.3% |    +0.0% |   0 |   0 |  1.0000 |      -0.0016 |      -0.0029 |    0.00
+[06:35:35] Name_Swapped               |  31.7% |    -6.7% |   0 |   4 |  1.0000 |      -0.0768 |      +0.0729 |    0.00
+[06:35:35] Premise_Subject_Position   |  38.3% |    +0.0% |   0 |   0 |  1.0000 |      -0.0002 |      -0.0001 |    0.00
+[06:35:35] Uniform_All_Tokens         |  51.7% |   +13.3% |   8 |   0 |  0.0039 |      +0.1236 |      -0.1392 |    0.00
+[06:35:35] Orthogonal_Residual        |  38.3% |    +0.0% |   0 |   0 |  1.0000 |      -0.0001 |      -0.0017 |    0.00
+[06:35:35] ==========================================================================================
+[06:35:35] 
+======================================================================
+[06:35:35] DETAILED MECHANISTIC AUDIT OF PRIMARY INFORMED OPERATOR:
+[06:35:35] ======================================================================
+[06:35:35] 1. Target vs Foil Logit Shift:
+[06:35:35]    Delta Logit Target: +0.0754
+[06:35:35]    Delta Logit Foil:   -0.0753
+[06:35:35]    Mechanistic Nature: TARGET_AMPLIFICATION (Actively boosting correct target logit)
+[06:35:35] 
+2. Vocabulary Disruption:
+[06:35:35]    Mean KL Divergence: 0.0005
+[06:35:35]    Top-10 Overlap:     99.3%
+[06:35:35]    Mean Delta Log-P:   +0.0888
+[06:35:35] 
+3. Premise Reversal Sensitivity under Intervention:
+[06:35:35]    Canonical Premise Accuracy: 56.7% (Base: ~53.3%)
+[06:35:35]    Reversed Premise Accuracy:  23.3% (Base: ~23.3%)
+[06:35:35]    Premise Reversal Gap:       +33.3 pp
+[06:35:35] 
+4. Option Position Bias under Intervention:
+[06:35:35]    Target Queried 1st Accuracy: 66.7%
+[06:35:35]    Target Queried 2nd Accuracy: 13.3%
+[06:35:35]    Position Bias Gap:           +53.3 pp
+[06:35:36] 
+Post-run model SHA-256: 54c88fa4897785f2bd94b32d26de1f73f1052bcc42124d563d0cda96940de936
+[06:35:36] Delta_theta = 0 confirmed post-experiment.
+[06:35:36] 
+EXP061 execution completed. Results saved to: C:\Users\Anilkumar\OneDrive\Desktop\SCPM\experiments\scripts\../../experiments/runs/EXP061_dissection\exp061_results.json
