@@ -46,15 +46,15 @@ This folder is structured specifically so Meta Muse can instantiate autonomous s
 As Muse takes over, the research stands at a crucial, publication-defining inflection point:
 
 Across 66 rigorously controlled experiments (EXP001–EXP066) spanning **Pythia-160M** ($d=768$) and **Pythia-410M** ($d=1024$):
-1. **Geometric Representational Alignment is Real:**
-   Internal relational contrast directions across disjoint entity vocabularies exhibit robust geometric alignment under closed-form Procrustes rotation ($\Delta \cos \approx +0.13$ to $+0.79$).
+1. **Raw Geometric Similarity Is Real; the Procrustes Step Destroyed It (corrected 2026-09-23):**
+   Internal relational contrast directions across disjoint entity vocabularies exhibit high **raw** cosine similarity (EXP065: +0.72, EXP066: +0.69) with no rotation applied. The closed-form Procrustes rotation step **reduced** similarity to ≈ 0.00 ($\Delta \cos \approx -0.72$ / $-0.70$), i.e. it scrambled rather than aligned. The previously claimed range ($\Delta \cos \approx +0.13$ to $+0.79$) is retracted — see `reports/adversarial_audit_exp065_exp066.md`, Findings 1–2.
 2. **Static & Simple Dynamic Causal Transfer Fails at Internal Layers:**
    Injecting these aligned internal bases into intermediate residual streams yields zero accuracy rescue ($\Delta M = 0.0\text{ pp}, p = 1.0000$), even when benchmark headroom is fully unlocked ($56.7\%$ to $68.3\%$ baseline accuracy).
 3. **Causal Access to the Unembedding Head Exists:**
    The positive control (same-layer output bridge) consistently achieves massive behavioral steering ($\Delta M = +16.7\text{ pp}, p = 0.0020$).
-4. **The Central Scientific Discovery:**
-   $$\boxed{\textbf{Representational alignment is not sufficient for causal interchangeability.}}$$
-   Rotating an internal representation into the coordinate frame of a new entity vocabulary aligns its geometry in hidden space, but does **not** engage the downstream causal circuits of the frozen transformer unless the intervention directly addresses the downstream attention routing / projection subspaces.
+4. **The Central Scientific Discovery (reframed 2026-09-23):**
+   $$\boxed{\textbf{Raw cross-vocabulary geometric similarity does not yield causal transfer.}}$$
+   Relational contrast directions are already geometrically similar ($\approx$ 0.7 cosine) across disjoint entity vocabularies with no alignment applied — yet static injection of the aggregated basis rescues 0/26 errors under full headroom, while a same-layer output-bridge direction rescues 8/26 ($p = 0.0078$). The Procrustes-rotated condition cannot support a boundary claim because the rotation as implemented did not produce alignment (Finding 2 of the audit); the static-basis null is the clean evidence. Whether a *sound* alignment operator (same-space, full-rank — cf. proposed EXP067) would change this verdict remains `[OPEN]`.
 
 This boundary is our primary breakthrough asset for the forthcoming major publication. Muse's dual mandate is:
 - **Mandate 1:** Finalize the definitive manuscript documenting this cross-scale boundary result.

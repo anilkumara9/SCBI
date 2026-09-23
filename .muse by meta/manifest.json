@@ -34,9 +34,9 @@
     "calibration_window": "40% - 70% baseline accuracy"
   },
   "key_findings": {
-    "geometric_alignment": "Demonstrated across support vocabularies (Stage A Procrustes delta_cos approx +0.13 to +0.79)",
-    "causal_boundary": "Aligned dynamic basis produces Delta M = 0.0 pp on novel vocabularies, while same-layer output bridge achieves Delta M = +16.7 pp (p = 0.0020)",
-    "central_theorem": "Representational alignment is not sufficient for causal interchangeability"
+    "geometric_alignment": "CORRECTED 2026-09-23 per adversarial audit: raw cross-vocabulary cosine approx +0.70 with no rotation (EXP065 +0.7186, EXP066 +0.6852); the Procrustes rotation step REDUCED similarity to ~0.00 (delta_cos approx -0.72 / -0.70). The prior '+0.13 to +0.79' claim is retracted.",
+    "causal_boundary": "Static aggregated basis (raw cosine ~0.7) produces Delta M = 0.0 pp on novel vocabularies under full headroom, while same-layer output bridge achieves Delta M = +16.7 pp (EXP065, p = 0.0020) / +13.3 pp (EXP066, p = 0.0078). The Procrustes-rotated condition is excluded from the boundary claim: the rotation did not actually align (see geometric_alignment).",
+    "central_theorem": "REFRAMED 2026-09-23: raw cross-vocabulary geometric similarity (~0.7 cosine) does not yield causal transfer under static injection. Whether a sound (same-space, full-rank) alignment operator would change this verdict is open (cf. EXP067)."
   },
   "agent_roles": [
     "Muse Research Director",

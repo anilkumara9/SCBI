@@ -1,5 +1,30 @@
 # SCBI Formal Formulation Candidates
 
+## 0. Canonical Program Objective (adopted 2026-09-23, LOG-142)
+
+The program's formal objective, superseding the narrower "can SCPM improve
+accuracy" framing:
+
+$$
+\theta_{after}=\theta_{before}
+$$
+
+while temporary computational state evolves during inference:
+
+$$
+(B_t,z_t,C_t,M_t,\ldots)\;\to\;(B_{t+1},z_{t+1},C_{t+1},M_{t+1},\ldots).
+$$
+
+Organizing question: *what discovery would have to be true for a frozen model
+to become far more cognitively capable through inference-time computation?*
+
+This objective is mechanism-level (P1): the bar is qualitatively new
+computation, not a better benchmark score. All candidate formulations below
+are evaluated against it. Anchored definitions of B_t, z_t (and friends)
+are UNCHANGED — see `README_DEFINITIONS.md`; this section states the
+program objective, not new vocabulary, so Law #5's Definition Change
+Protocol is not triggered.
+
 ## 1. Purpose
 
 This document contains candidate mathematical formulations of SCBI.
