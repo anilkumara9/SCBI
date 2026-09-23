@@ -65,7 +65,7 @@ ever.
    `research/RESEARCH_LEAD_CHARTER.md`
    `research/TEAM_KNOWLEDGE_PROTOCOL.md`
    `research/MATH_STANDARDS_CHARTER.md`
-   `research/CHATGPT_MENTORSHIP_DIRECTIVE.md`
+   `research/MENTORSHIP_DIRECTIVE.md` (renamed from CHATGPT_MENTORSHIP_DIRECTIVE.md per LOG-194)
    `research/EXPERT_TRACKS.md`
    `research/TEAM_ROSTER_2026-09-23.md`
    `research/CEO_DIARY.md` (modified → new file? it is untracked;
