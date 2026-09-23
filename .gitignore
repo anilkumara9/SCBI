@@ -42,3 +42,12 @@ wandb/
 Thumbs.db
 .vscode/
 .idea/
+
+# Notebook checkpoints & execution byproducts
+.ipynb_checkpoints/
+*.ipynb
+
+# Local experiment scratch
+experiments/runs/*/scratch/
+*.npz
+*.pkl
