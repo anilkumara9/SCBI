@@ -1,0 +1,124 @@
+torch.use_deterministic_algorithms(True) enabled.
+================================================================================
+EXP077: Cone-vs-Line Geometry -- Is the Relational Concept Conical?
+Pre-registered protocol: experiments/protocols/EXP077_CONE_VS_LINE_PREREG_SPEC.md
+Model: EleutherAI/pythia-410m | d=1024 | target_layer=20 | alpha_grid=[0.25, 0.5, 1.0, 2.0] | rho=30.0deg K=8
+Protocol scope: IN-SCOPE (pythia-410m, layer 20) -- the ONLY registered config.
+================================================================================
+WARNING: --allow-cpu override accepted on a CPU-only machine. Expect many hours of runtime; a killed session mid-run is data per Law #8 -- keep the log.
+Device: cpu
+Loading model & tokenizer: EleutherAI/pythia-410m ...
+F2 tokenization: entity 'Alice' -> ids=[16922] single_token=True
+F2 tokenization: entity 'Bob' -> ids=[8679] single_token=True
+F2 tokenization: entity 'Charlie' -> ids=[16955] single_token=True
+F2 tokenization: entity 'David' -> ids=[5119] single_token=True
+F2 tokenization: entity 'Emma' -> ids=[25975] single_token=True
+F2 tokenization: entity 'Aaron' -> ids=[22234] single_token=True
+F2 tokenization: entity 'Joel' -> ids=[31513] single_token=True
+F2 tokenization: entity 'Gideon' -> ids=[49119] single_token=True
+F2 tokenization: entity 'Ruth' -> ids=[25635] single_token=True
+F2 tokenization: entity 'Abel' -> ids=[49919] single_token=True
+F2 tokenization: entity 'Ajax' -> ids=[47867] single_token=True
+F2 tokenization: entity 'Jason' -> ids=[16553] single_token=True
+F2 tokenization: entity 'Apollo' -> ids=[34197] single_token=True
+F2 tokenization: entity 'Paris' -> ids=[7785] single_token=True
+F2 tokenization: entity 'Atlas' -> ids=[34052] single_token=True
+F2 tokenization: entity 'Marcus' -> ids=[24336] single_token=True
+F2 tokenization: entity 'Julius' -> ids=[44402] single_token=True
+F2 tokenization: entity 'Augustus' -> ids=[48088] single_token=True
+F2 tokenization: entity 'Felix' -> ids=[36172] single_token=True
+F2 tokenization: entity 'Diana' -> ids=[33240] single_token=True
+F2 tokenization: entity 'Liam' -> ids=[44123] single_token=True
+F2 tokenization: entity 'Noah' -> ids=[32794] single_token=True
+F2 tokenization: entity 'Eli' -> ids=[19173] single_token=True
+F2 tokenization: entity 'Maya' -> ids=[41151] single_token=True
+F2 tokenization: entity 'Finn' -> ids=[22840] single_token=True
+F2 tokenization: entity 'Mars' -> ids=[13648] single_token=True
+F2 tokenization: entity 'Venus' -> ids=[36210] single_token=True
+F2 tokenization: entity 'Jupiter' -> ids=[34434] single_token=True
+F2 tokenization: entity 'Saturn' -> ids=[38876] single_token=True
+F2 tokenization: entity 'Mercury' -> ids=[36091] single_token=True
+F2 tokenization: entity 'Iron' -> ids=[17826] single_token=True
+F2 tokenization: entity 'Gold' -> ids=[7284] single_token=True
+F2 tokenization: entity 'Silver' -> ids=[16309] single_token=True
+F2 tokenization: entity 'Bronze' -> ids=[49134] single_token=True
+F2 tokenization: entity 'Steel' -> ids=[19727] single_token=True
+F2 guard PASSED: all 35 support/test entities are single-token.
+Pre-experiment parameter SHA-256: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+WARNING: registered-hash sanity check MISMATCH (expected EXP067 §2 value). Continuing -- the BINDING guard is the runtime pre/post match; this warning is recorded, not fatal.
+Environment manifest: {"torch": "2.14.0+cpu", "cuda_available": false, "cuda_device": null, "device": "cpu", "model": "EleutherAI/pythia-410m", "protocol_scope": "IN-SCOPE (pythia-410m, layer 20)", "expected_sha256_sanity": "4c242d9ac702a4029a674eacee84e0517cb6f79d794661dc3a3102bca5ed48dd", "sha256_sanity_match": false}
+
+[1] Support set: 5 vocabs x 30 contrast pairs ...
+Support contrast deltas: 5 x [30, 1024]; raw presentations: 300.
+v_hat (=B_agg) constructed (norm=1.0000).
+Continuity assertion input: cos(v_hat_1, v_hat_k) = ['1.0000', '0.6324', '0.7313', '0.5610', '0.6564']; mean = 0.7162 (floor 0.5).
+CONTINUITY ASSERTION PASSED.
+mu constructed over 300 presentations (norm=1.0000).
+v_hat^c constructed (norm=1.0000); renormalization ||v_hat_k - mu|| per k = ['1.4034', '1.4426', '1.5116', '1.4318', '1.4450'] (amplification logged, §3.2).
+B_perp (seed 9876) and B_wrong (Paris-capital contrast, as EXP066) constructed.
+
+[2] Cone (K=8, rho=30deg, seed 7701) + control cone (seed 7702) ...
+phi_j (deg): ['3.75', '7.50', '11.25', '15.00', '18.75', '22.50', '26.25', '30.00']
+Cone arm: 8 unit directions; min_j phi_j = 3.75deg > 0 (no direction coincides with v_hat).
+Control axis r: |cos(r, v_hat)| = 0.0188 (cap 0.5).
+Control arm: 8 unit directions around r (same rho, K, phi grid).
+Injection-norm guard PASSED (22 vectors, all > 0).
+
+[3] Benchmark: N=60 (30 planet + 30 element, EXP065-identical) ...
+Benchmark: 60 items.
+Anti-cheat assert PASSED: no benchmark prompt coincides with a support prompt.
+C8 bridge vectors: 60 per-item unembedding directions, min norm=0.5000 (all > 0).
+
+[C1_Unintervened_Baseline] ...
+C1 baseline accuracy: 0.6000 (36/60)
+Historical baselines (branch-(r) comparability rider, M3): {"EXP065": 0.6833, "EXP066": 0.5667}
+HEADROOM GATE PASSED.
+
+[C8_Output_Bridge] ...
+C8 output bridge: accuracy 0.8333 (50/60), delta_m=+23.33pp (b=14, c=0), p=0.000122
+BRIDGE GATE PASSED: positive control rescues.
+
+[C_alpha_0.25] ...
+C_alpha_0.25: acc=0.6000, delta_m=+0.00pp (b=0, c=0), p=1.000000, KL=0.0000
+
+[C_alpha_0.5] ...
+C_alpha_0.5: acc=0.6000, delta_m=+0.00pp (b=1, c=1), p=1.000000, KL=0.0002
+
+[C_alpha_1] ...
+C_alpha_1: acc=0.6167, delta_m=+1.67pp (b=2, c=1), p=1.000000, KL=0.0007
+
+[C_alpha_2] ...
+C_alpha_2: acc=0.6167, delta_m=+1.67pp (b=2, c=1), p=1.000000, KL=0.0030
+
+[C6_OffsetRemoved] ...
+C6 offset-removed (alpha=1.0): acc=0.6000, delta_m=+0.00pp (b=1, c=1), p=1.000000, KL=0.0004
+
+[C7_B_wrong] ...
+C7 B_wrong (alpha=1.0, reported only): acc=0.6167, delta_m=+1.67pp (b=1, c=0), p=1.000000
+
+[C9_Cone] best-of-8 x 60 items ...
+  C9_Cone: 15/60 items
+  C9_Cone: 30/60 items
+  C9_Cone: 45/60 items
+  C9_Cone: 60/60 items
+
+[C10_Control] best-of-8 x 60 items ...
+  C10_Control: 15/60 items
+  C10_Control: 30/60 items
+  C10_Control: 45/60 items
+  C10_Control: 60/60 items
+
+Angular endpoint: delta_m=+1.67pp (b=2, c=1), p=1.000000
+Control endpoint: delta_m=+0.00pp (b=0, c=0), p=1.000000
+
+Replication endpoint C3 vs C1 (alpha=0.50): delta_m=+0.00pp (b=1, c=1), p=1.000000
+Radial Holm display: p=[['1.0000', '1.0000', '1.0000', '1.0000']], rejected idx=[], S_H=[]
+
+Post-experiment parameter SHA-256: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+Frozen-backbone guard PASSED: pre/post parameter hashes match.
+Archive written: exp077_vectors.pt (137237 B)
+Results written: exp077_results.json (9180 B)
+
+================================================================================
+EXP077 COMPLETED. Next: run evaluate_exp077.py on exp077_results.json for the pre-registered ruling (branch (d)/(r)/(a)/(b)/(c)).
+================================================================================

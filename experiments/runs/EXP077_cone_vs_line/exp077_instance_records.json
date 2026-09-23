@@ -1,0 +1,1622 @@
+[
+  {
+    "item": 0,
+    "ent": "Mars",
+    "typ": "planet",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": true,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 1,
+    "ent": "Mars",
+    "typ": "planet",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": true,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 2,
+    "ent": "Mars",
+    "typ": "planet",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": true,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 3,
+    "ent": "Mars",
+    "typ": "planet",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": false,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 4,
+    "ent": "Mars",
+    "typ": "planet",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": false,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 5,
+    "ent": "Mars",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 6,
+    "ent": "Venus",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 7,
+    "ent": "Venus",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 8,
+    "ent": "Venus",
+    "typ": "planet",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": true,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 9,
+    "ent": "Venus",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 10,
+    "ent": "Venus",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 11,
+    "ent": "Venus",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 12,
+    "ent": "Jupiter",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 13,
+    "ent": "Jupiter",
+    "typ": "planet",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": false,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 14,
+    "ent": "Jupiter",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 15,
+    "ent": "Jupiter",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 16,
+    "ent": "Jupiter",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 17,
+    "ent": "Jupiter",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 18,
+    "ent": "Saturn",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 19,
+    "ent": "Saturn",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 20,
+    "ent": "Saturn",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 21,
+    "ent": "Saturn",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 22,
+    "ent": "Saturn",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 23,
+    "ent": "Saturn",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 24,
+    "ent": "Mercury",
+    "typ": "planet",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": false,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 25,
+    "ent": "Mercury",
+    "typ": "planet",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": false,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 1,
+      "K_C9": 1,
+      "R_C10": 0,
+      "O_C6": 1,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 1,
+      "A_alpha_1": 1,
+      "A_alpha_2": 1
+    }
+  },
+  {
+    "item": 26,
+    "ent": "Mercury",
+    "typ": "planet",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": true,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 27,
+    "ent": "Mercury",
+    "typ": "planet",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": true,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 28,
+    "ent": "Mercury",
+    "typ": "planet",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 29,
+    "ent": "Mercury",
+    "typ": "planet",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": true,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 30,
+    "ent": "Iron",
+    "typ": "element",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 1,
+      "K_C9": 1,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 1,
+      "A_alpha_2": 1
+    }
+  },
+  {
+    "item": 31,
+    "ent": "Iron",
+    "typ": "element",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": true,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 32,
+    "ent": "Iron",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 33,
+    "ent": "Iron",
+    "typ": "element",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": true,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 34,
+    "ent": "Iron",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 35,
+    "ent": "Iron",
+    "typ": "element",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": true,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 36,
+    "ent": "Gold",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 37,
+    "ent": "Gold",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 38,
+    "ent": "Gold",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 39,
+    "ent": "Gold",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 40,
+    "ent": "Gold",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 41,
+    "ent": "Gold",
+    "typ": "element",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": false,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 42,
+    "ent": "Silver",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 43,
+    "ent": "Silver",
+    "typ": "element",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": false,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 44,
+    "ent": "Silver",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 45,
+    "ent": "Silver",
+    "typ": "element",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": false,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 46,
+    "ent": "Silver",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": false,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 47,
+    "ent": "Silver",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 48,
+    "ent": "Bronze",
+    "typ": "element",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": false,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 49,
+    "ent": "Bronze",
+    "typ": "element",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": false,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 50,
+    "ent": "Bronze",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 51,
+    "ent": "Bronze",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 52,
+    "ent": "Bronze",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 53,
+    "ent": "Bronze",
+    "typ": "element",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": true,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 54,
+    "ent": "Steel",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 55,
+    "ent": "Steel",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 56,
+    "ent": "Steel",
+    "typ": "element",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": false,
+      "C8_bridge": false,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 57,
+    "ent": "Steel",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 58,
+    "ent": "Steel",
+    "typ": "element",
+    "correct": {
+      "C1": true,
+      "C2_a025": true,
+      "C3_a050": true,
+      "C4_a100": true,
+      "C5_a200": true,
+      "C6_offset": true,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": true,
+      "C10_control": true
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  },
+  {
+    "item": 59,
+    "ent": "Steel",
+    "typ": "element",
+    "correct": {
+      "C1": false,
+      "C2_a025": false,
+      "C3_a050": false,
+      "C4_a100": false,
+      "C5_a200": false,
+      "C6_offset": false,
+      "C7_Bwrong": true,
+      "C8_bridge": true,
+      "C9_cone": false,
+      "C10_control": false
+    },
+    "rescue_indicators": {
+      "L_C4": 0,
+      "K_C9": 0,
+      "R_C10": 0,
+      "O_C6": 0,
+      "A_alpha_0.25": 0,
+      "A_alpha_0.5": 0,
+      "A_alpha_1": 0,
+      "A_alpha_2": 0
+    }
+  }
+]
