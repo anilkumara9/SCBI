@@ -1,0 +1,887 @@
+{
+  "experiment": "C-A donor-transfer pre-registration (DRAFT LOG-150)",
+  "audit": "LOG-160 weight-only pre-audit (CPU, $0 GPU, zero forward passes)",
+  "date": "2026-09-23",
+  "model": "EleutherAI/pythia-410m (local snapshot 9879c9b5f8bea9051dcb0e68dff21493d67e9d4f)",
+  "load": "read-only; transformers 5.17.0 AutoModelForCausalLM, torch_dtype=torch.float32, local_files_only, trust_remote_code=False, model.eval(); note: file key embed_out.weight renamed to lm_head.weight in state_dict (values byte-identical)",
+  "sha256_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "sha256_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "sha256_archived": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "sha256_pre_eq_post_eq_archived": true,
+  "delta_theta": 0,
+  "unembedding_source": "model.get_output_embeddings().weight",
+  "W_U_shape": [
+    50304,
+    1024
+  ],
+  "W_U_dtype": "float32",
+  "F2_single_token": {
+    "passed": true,
+    "n_entities": 35
+  },
+  "donor_bank": {
+    "n": 20,
+    "formula": "sum-of-differences-then-normalize (spec \u00a74.1 pinned)",
+    "verbatim_table_matches_formula": true
+  },
+  "degeneracy": {
+    "g_D": 1.0617830595495654,
+    "floor": 0.25,
+    "verdict": "PASS"
+  },
+  "similarity_audit": {
+    "s_t": {
+      "min": -0.09179266542196274,
+      "median": -0.03541648015379906,
+      "max": 0.08170228451490402,
+      "mean": -0.038264158026625715,
+      "std": 0.03248203824521256
+    },
+    "s_f": {
+      "min": -0.03900475800037384,
+      "median": 0.010345320217311382,
+      "max": 0.08170228451490402,
+      "mean": -0.00390663215269645,
+      "std": 0.02833504056277356
+    },
+    "count_s_t_gt_s_f": 9,
+    "per_item": [
+      {
+        "id": "exp077_planet_2hop_0",
+        "t": "Mars",
+        "f": "Jupiter",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.08170228451490402
+      },
+      {
+        "id": "exp077_planet_2hop_1",
+        "t": "Venus",
+        "f": "Saturn",
+        "s_t": -0.09179266542196274,
+        "s_f": -0.03900475800037384
+      },
+      {
+        "id": "exp077_planet_2hop_2",
+        "t": "Jupiter",
+        "f": "Mercury",
+        "s_t": 0.08170228451490402,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_2hop_3",
+        "t": "Mars",
+        "f": "Mercury",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_2hop_4",
+        "t": "Mars",
+        "f": "Saturn",
+        "s_t": -0.048544637858867645,
+        "s_f": -0.03900475800037384
+      },
+      {
+        "id": "exp077_planet_2hop_5",
+        "t": "Venus",
+        "f": "Mercury",
+        "s_t": -0.09179266542196274,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_2hop_6",
+        "t": "Mars",
+        "f": "Saturn",
+        "s_t": -0.048544637858867645,
+        "s_f": -0.03900475800037384
+      },
+      {
+        "id": "exp077_planet_2hop_7",
+        "t": "Venus",
+        "f": "Mercury",
+        "s_t": -0.09179266542196274,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_2hop_8",
+        "t": "Mars",
+        "f": "Mercury",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_2hop_9",
+        "t": "Mars",
+        "f": "Mercury",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_2hop_10",
+        "t": "Mars",
+        "f": "Jupiter",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.08170228451490402
+      },
+      {
+        "id": "exp077_planet_2hop_11",
+        "t": "Venus",
+        "f": "Saturn",
+        "s_t": -0.09179266542196274,
+        "s_f": -0.03900475800037384
+      },
+      {
+        "id": "exp077_planet_2hop_12",
+        "t": "Jupiter",
+        "f": "Mercury",
+        "s_t": 0.08170228451490402,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_2hop_13",
+        "t": "Mars",
+        "f": "Mercury",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_2hop_14",
+        "t": "Mars",
+        "f": "Saturn",
+        "s_t": -0.048544637858867645,
+        "s_f": -0.03900475800037384
+      },
+      {
+        "id": "exp077_planet_3hop_0",
+        "t": "Mars",
+        "f": "Saturn",
+        "s_t": -0.048544637858867645,
+        "s_f": -0.03900475800037384
+      },
+      {
+        "id": "exp077_planet_3hop_1",
+        "t": "Venus",
+        "f": "Mercury",
+        "s_t": -0.09179266542196274,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_3hop_2",
+        "t": "Mars",
+        "f": "Mercury",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_3hop_3",
+        "t": "Mars",
+        "f": "Mercury",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_3hop_4",
+        "t": "Mars",
+        "f": "Mercury",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_3hop_5",
+        "t": "Mars",
+        "f": "Saturn",
+        "s_t": -0.048544637858867645,
+        "s_f": -0.03900475800037384
+      },
+      {
+        "id": "exp077_planet_3hop_6",
+        "t": "Venus",
+        "f": "Mercury",
+        "s_t": -0.09179266542196274,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_3hop_7",
+        "t": "Mars",
+        "f": "Mercury",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_3hop_8",
+        "t": "Mars",
+        "f": "Mercury",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_3hop_9",
+        "t": "Mars",
+        "f": "Mercury",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_3hop_10",
+        "t": "Mars",
+        "f": "Saturn",
+        "s_t": -0.048544637858867645,
+        "s_f": -0.03900475800037384
+      },
+      {
+        "id": "exp077_planet_3hop_11",
+        "t": "Venus",
+        "f": "Mercury",
+        "s_t": -0.09179266542196274,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_3hop_12",
+        "t": "Mars",
+        "f": "Mercury",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_3hop_13",
+        "t": "Mars",
+        "f": "Mercury",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_planet_3hop_14",
+        "t": "Mars",
+        "f": "Mercury",
+        "s_t": -0.048544637858867645,
+        "s_f": 0.010345320217311382
+      },
+      {
+        "id": "exp077_element_2hop_0",
+        "t": "Iron",
+        "f": "Silver",
+        "s_t": -0.03541648015379906,
+        "s_f": 0.02630380168557167
+      },
+      {
+        "id": "exp077_element_2hop_1",
+        "t": "Gold",
+        "f": "Bronze",
+        "s_t": -0.015161359682679176,
+        "s_f": 0.025209832936525345
+      },
+      {
+        "id": "exp077_element_2hop_2",
+        "t": "Silver",
+        "f": "Steel",
+        "s_t": 0.02630380168557167,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_2hop_3",
+        "t": "Iron",
+        "f": "Steel",
+        "s_t": -0.03541648015379906,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_2hop_4",
+        "t": "Iron",
+        "f": "Bronze",
+        "s_t": -0.03541648015379906,
+        "s_f": 0.025209832936525345
+      },
+      {
+        "id": "exp077_element_2hop_5",
+        "t": "Gold",
+        "f": "Steel",
+        "s_t": -0.015161359682679176,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_2hop_6",
+        "t": "Iron",
+        "f": "Bronze",
+        "s_t": -0.03541648015379906,
+        "s_f": 0.025209832936525345
+      },
+      {
+        "id": "exp077_element_2hop_7",
+        "t": "Gold",
+        "f": "Steel",
+        "s_t": -0.015161359682679176,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_2hop_8",
+        "t": "Iron",
+        "f": "Steel",
+        "s_t": -0.03541648015379906,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_2hop_9",
+        "t": "Iron",
+        "f": "Steel",
+        "s_t": -0.03541648015379906,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_2hop_10",
+        "t": "Iron",
+        "f": "Silver",
+        "s_t": -0.03541648015379906,
+        "s_f": 0.02630380168557167
+      },
+      {
+        "id": "exp077_element_2hop_11",
+        "t": "Gold",
+        "f": "Bronze",
+        "s_t": -0.015161359682679176,
+        "s_f": 0.025209832936525345
+      },
+      {
+        "id": "exp077_element_2hop_12",
+        "t": "Silver",
+        "f": "Steel",
+        "s_t": 0.02630380168557167,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_2hop_13",
+        "t": "Iron",
+        "f": "Steel",
+        "s_t": -0.03541648015379906,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_2hop_14",
+        "t": "Iron",
+        "f": "Bronze",
+        "s_t": -0.03541648015379906,
+        "s_f": 0.025209832936525345
+      },
+      {
+        "id": "exp077_element_3hop_0",
+        "t": "Iron",
+        "f": "Bronze",
+        "s_t": -0.03541648015379906,
+        "s_f": 0.025209832936525345
+      },
+      {
+        "id": "exp077_element_3hop_1",
+        "t": "Gold",
+        "f": "Steel",
+        "s_t": -0.015161359682679176,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_3hop_2",
+        "t": "Iron",
+        "f": "Steel",
+        "s_t": -0.03541648015379906,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_3hop_3",
+        "t": "Iron",
+        "f": "Steel",
+        "s_t": -0.03541648015379906,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_3hop_4",
+        "t": "Iron",
+        "f": "Steel",
+        "s_t": -0.03541648015379906,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_3hop_5",
+        "t": "Iron",
+        "f": "Bronze",
+        "s_t": -0.03541648015379906,
+        "s_f": 0.025209832936525345
+      },
+      {
+        "id": "exp077_element_3hop_6",
+        "t": "Gold",
+        "f": "Steel",
+        "s_t": -0.015161359682679176,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_3hop_7",
+        "t": "Iron",
+        "f": "Steel",
+        "s_t": -0.03541648015379906,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_3hop_8",
+        "t": "Iron",
+        "f": "Steel",
+        "s_t": -0.03541648015379906,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_3hop_9",
+        "t": "Iron",
+        "f": "Steel",
+        "s_t": -0.03541648015379906,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_3hop_10",
+        "t": "Iron",
+        "f": "Bronze",
+        "s_t": -0.03541648015379906,
+        "s_f": 0.025209832936525345
+      },
+      {
+        "id": "exp077_element_3hop_11",
+        "t": "Gold",
+        "f": "Steel",
+        "s_t": -0.015161359682679176,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_3hop_12",
+        "t": "Iron",
+        "f": "Steel",
+        "s_t": -0.03541648015379906,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_3hop_13",
+        "t": "Iron",
+        "f": "Steel",
+        "s_t": -0.03541648015379906,
+        "s_f": -0.027347855269908905
+      },
+      {
+        "id": "exp077_element_3hop_14",
+        "t": "Iron",
+        "f": "Steel",
+        "s_t": -0.03541648015379906,
+        "s_f": -0.027347855269908905
+      }
+    ]
+  },
+  "permutation_null": {
+    "procedure": "200 banks, |D|=20, drawn without replacement within bank from the 150-item same-template ('outranks') support pool (15 triples + 15 quads per vocab \u00d7 5 vocabs); (t,f)=(A,C) triples, (A,D) quads",
+    "seed": 20261123,
+    "null_statistic": "mean_j s_t(j)",
+    "null": {
+      "mean": -0.0340533097559819,
+      "std": 0.013495718754746897,
+      "p5": -0.05716235898435116,
+      "p50": -0.033559905365109444,
+      "p95": -0.012493993062525993
+    },
+    "observed_mean_s_t": -0.038264158026625715,
+    "observed_bank_percentile": 38.0,
+    "Q_null_at_observed_percentile": -0.038087012246251106,
+    "count_s_t_above_Q_null_p_obs": 32
+  },
+  "stratum_feasibility": {
+    "rule": "median split on s_t^{C3}(j); low = s_t <= median (ties->low)",
+    "median_s_t": -0.03541648015379906,
+    "low_stratum_size": 49,
+    "high_stratum_size": 11,
+    "C1_wrong_total": 26,
+    "low_stratum_headroom_n": 23,
+    "low_stratum_headroom_items": [
+      "exp077_planet_2hop_0",
+      "exp077_planet_2hop_6",
+      "exp077_planet_2hop_7",
+      "exp077_planet_2hop_8",
+      "exp077_planet_2hop_9",
+      "exp077_planet_2hop_10",
+      "exp077_planet_2hop_11",
+      "exp077_planet_2hop_14",
+      "exp077_planet_3hop_6",
+      "exp077_planet_3hop_8",
+      "exp077_planet_3hop_10",
+      "exp077_planet_3hop_11",
+      "exp077_planet_3hop_12",
+      "exp077_planet_3hop_14",
+      "exp077_element_2hop_9",
+      "exp077_element_2hop_10",
+      "exp077_element_2hop_13",
+      "exp077_element_2hop_14",
+      "exp077_element_3hop_5",
+      "exp077_element_3hop_7",
+      "exp077_element_3hop_9",
+      "exp077_element_3hop_10",
+      "exp077_element_3hop_13"
+    ],
+    "headroom_source": "EXP066 executed pythia-410m baseline (exp066_instance_evaluations.json base_correct): identical 60 items (all 60 prompt strings verified identical), identical strict-> decision rule, same frozen model; no new forward pass. NOTE: EXP077_cone_vs_line instance records NOT used \u2014 their uniform 6-per-(ent,typ) distribution contradicts the pinned construction's skewed target-entity coverage (different executed item set).",
+    "verdict": "PASS"
+  },
+  "donor_histogram": {
+    "pool": "25-entity support pool (5 vocabs \u00d7 5 entities)",
+    "per_entity": {
+      "Aaron": {
+        "n_t": 2,
+        "n_f": 0,
+        "n_t_minus_n_f": 2
+      },
+      "Abel": {
+        "n_t": 0,
+        "n_f": 2,
+        "n_t_minus_n_f": -2
+      },
+      "Ajax": {
+        "n_t": 2,
+        "n_f": 0,
+        "n_t_minus_n_f": 2
+      },
+      "Alice": {
+        "n_t": 2,
+        "n_f": 0,
+        "n_t_minus_n_f": 2
+      },
+      "Apollo": {
+        "n_t": 1,
+        "n_f": 1,
+        "n_t_minus_n_f": 0
+      },
+      "Atlas": {
+        "n_t": 0,
+        "n_f": 2,
+        "n_t_minus_n_f": -2
+      },
+      "Augustus": {
+        "n_t": 1,
+        "n_f": 1,
+        "n_t_minus_n_f": 0
+      },
+      "Bob": {
+        "n_t": 1,
+        "n_f": 0,
+        "n_t_minus_n_f": 1
+      },
+      "Charlie": {
+        "n_t": 1,
+        "n_f": 1,
+        "n_t_minus_n_f": 0
+      },
+      "David": {
+        "n_t": 0,
+        "n_f": 1,
+        "n_t_minus_n_f": -1
+      },
+      "Diana": {
+        "n_t": 0,
+        "n_f": 2,
+        "n_t_minus_n_f": -2
+      },
+      "Eli": {
+        "n_t": 1,
+        "n_f": 1,
+        "n_t_minus_n_f": 0
+      },
+      "Emma": {
+        "n_t": 0,
+        "n_f": 2,
+        "n_t_minus_n_f": -2
+      },
+      "Felix": {
+        "n_t": 0,
+        "n_f": 1,
+        "n_t_minus_n_f": -1
+      },
+      "Finn": {
+        "n_t": 0,
+        "n_f": 2,
+        "n_t_minus_n_f": -2
+      },
+      "Gideon": {
+        "n_t": 1,
+        "n_f": 1,
+        "n_t_minus_n_f": 0
+      },
+      "Jason": {
+        "n_t": 1,
+        "n_f": 0,
+        "n_t_minus_n_f": 1
+      },
+      "Joel": {
+        "n_t": 1,
+        "n_f": 0,
+        "n_t_minus_n_f": 1
+      },
+      "Julius": {
+        "n_t": 1,
+        "n_f": 0,
+        "n_t_minus_n_f": 1
+      },
+      "Liam": {
+        "n_t": 2,
+        "n_f": 0,
+        "n_t_minus_n_f": 2
+      },
+      "Marcus": {
+        "n_t": 2,
+        "n_f": 0,
+        "n_t_minus_n_f": 2
+      },
+      "Maya": {
+        "n_t": 0,
+        "n_f": 1,
+        "n_t_minus_n_f": -1
+      },
+      "Noah": {
+        "n_t": 1,
+        "n_f": 0,
+        "n_t_minus_n_f": 1
+      },
+      "Paris": {
+        "n_t": 0,
+        "n_f": 1,
+        "n_t_minus_n_f": -1
+      },
+      "Ruth": {
+        "n_t": 0,
+        "n_f": 1,
+        "n_t_minus_n_f": -1
+      }
+    },
+    "per_vocab_pattern": "n_t: e0\u00d72, e1\u00d71, e2\u00d71, e3\u00d70, e4\u00d70; n_f: e0\u00d70, e1\u00d70, e2\u00d71, e3\u00d71, e4\u00d72",
+    "claim_verified": "spec \u00a73.1 L4 histogram confirmed; a '10-entity pool' histogram cannot exist for entity-disjoint donors: test answer pool = 10 entities {Mars, Venus, Jupiter, Saturn, Mercury, Iron, Gold, Silver, Bronze, Steel}; donor pool = 25 support entities; the two pools are disjoint (verified)",
+    "donor_prompt_vs_test_prompt_overlap": []
+  },
+  "part2_log174": {
+    "dispatch": "LOG-174",
+    "note": "Part 2 extends Part 1 (LOG-160). CPU only, $0 GPU, zero forward passes. Every number [FACT -- computed].",
+    "sha256_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "sha256_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "delta_theta": 0,
+    "c4p_bank": {
+      "algorithm": "spec S5.1 pinned greedy similarity-matching: D(B)=mean_j(|s_t^B-s_t^C3|+|s_f^B-s_f^C3|); ties->lowest candidate index (deterministic, no RNG); stop when D<=0.05 or |B|=30",
+      "candidate_pool": {
+        "n_items": 150,
+        "ids": "ca_C4cand_{vk}_triple_{i} / ca_C4cand_{vk}_quad_{i}",
+        "tf_pairing": "(t,f)=(A,C) triples, (A,D) quads",
+        "distinct_tf_pairs": 30,
+        "duplicate_content_items": 120,
+        "note": "TRIPLES/QUADS_INDICES repeat tuples (idx 10-14 mirror 0-4), hence duplicate (t,f) content across item ids"
+      },
+      "n_selected": 1,
+      "D": 0.04656406188177837,
+      "delta": 0.05,
+      "branch_fired": "STOP-D<=delta (matching succeeded at step 1); the S5.1 demotion fallback did NOT fire",
+      "tie_break_note": "winner decided by lowest-candidate-index rule (a duplicate-content twin of the winner exists in the pool)",
+      "selected_ids": [
+        "ca_C4cand_V5_Modern_triple_1"
+      ],
+      "selected_pair": "(Noah, Maya) 'is next to' triple",
+      "singletons_with_D_le_delta": 7,
+      "g_D": 0.8609809349756752,
+      "floor": 0.25,
+      "degeneracy_verdict": "PASS",
+      "dev_abs_s_t": {
+        "min": 0.006681628546483789,
+        "median": 0.026718205434753558,
+        "max": 0.04354223006496813,
+        "mean": 0.024645156160878846
+      },
+      "dev_abs_s_f": {
+        "min": 0.005491340083414606,
+        "median": 0.02197461991577682,
+        "max": 0.06939434218854505,
+        "mean": 0.0219189057208995
+      },
+      "D_trajectory": [
+        {
+          "k": 1,
+          "D": 0.04656406188177837
+        }
+      ],
+      "reviewer_flag": "pinned rule licenses a singleton 'bank'; reviewer must rule whether a 1-donor C4' operationalizes the intended T3 contrast (spec pins no minimum bank size)"
+    },
+    "c5_bank": {
+      "construction": "donor d_i pair = (t_pi(i), f_i); seed_pinned=20261067; seed_final=20261069 (2 redraws: seeds 20261067, 20261068 had fixed points); fixed-point-free",
+      "permutation": [
+        16,
+        15,
+        10,
+        0,
+        9,
+        19,
+        2,
+        14,
+        4,
+        3,
+        6,
+        5,
+        13,
+        11,
+        7,
+        17,
+        18,
+        1,
+        12,
+        8
+      ],
+      "donor_pairs_t_pi_i_f_i": [
+        [
+          "Liam",
+          "Charlie"
+        ],
+        [
+          "Marcus",
+          "David"
+        ],
+        [
+          "Apollo",
+          "Emma"
+        ],
+        [
+          "Alice",
+          "Emma"
+        ],
+        [
+          "Jason",
+          "Gideon"
+        ],
+        [
+          "Liam",
+          "Ruth"
+        ],
+        [
+          "Charlie",
+          "Abel"
+        ],
+        [
+          "Augustus",
+          "Abel"
+        ],
+        [
+          "Aaron",
+          "Apollo"
+        ],
+        [
+          "Alice",
+          "Paris"
+        ],
+        [
+          "Gideon",
+          "Atlas"
+        ],
+        [
+          "Joel",
+          "Atlas"
+        ],
+        [
+          "Julius",
+          "Augustus"
+        ],
+        [
+          "Ajax",
+          "Felix"
+        ],
+        [
+          "Aaron",
+          "Diana"
+        ],
+        [
+          "Noah",
+          "Diana"
+        ],
+        [
+          "Eli",
+          "Eli"
+        ],
+        [
+          "Bob",
+          "Maya"
+        ],
+        [
+          "Marcus",
+          "Finn"
+        ],
+        [
+          "Ajax",
+          "Finn"
+        ]
+      ],
+      "multiset_preserved": true,
+      "prior_n_t_minus_n_f_identical_to_C3": true,
+      "constraint_verdict": "PASS",
+      "g_D": 1.0617830595495654,
+      "floor": 0.25,
+      "degeneracy_verdict": "PASS",
+      "cos_centroid_c5_c3": 0.9999999999999998,
+      "load_bearing_finding": "under pinned S4.1 identity b_D=normalize(sum_y W_U[y](n_t(y)-n_f(y))), identical (n_t-n_f) forces b_C5 == b_C3 exactly (cos=1.000000000000000). C5's intervention vector is geometrically identical to C3's: T1 and T5 mutually exclusive under pinned construction; S8 refutation clause would fire by construction whenever C3 rescues."
+    },
+    "c4p_stratum_analog": {
+      "rule": "median split on s_t^{C4'}(j); low = s_t <= median (ties->low)",
+      "note": "analog under the C4' centroid for the reviewer; the binding S4.4 gate is pinned to the C3 stratum (Part 1: PASS)",
+      "median_s_t": -0.008479731136195387,
+      "s_t_per_target_entity": {
+        "Mars": -0.005002408,
+        "Venus": -0.053171409,
+        "Jupiter": 0.102744769,
+        "Iron": -0.028734122,
+        "Gold": -0.008479731,
+        "Silver": -0.006090125
+      },
+      "low_size": 35,
+      "high_size": 25,
+      "C1_wrong_total": 26,
+      "low_headroom": 16,
+      "high_headroom": 10,
+      "headroom_gate_gte5": true,
+      "low_entities": {
+        "Venus": 7,
+        "Iron": 21,
+        "Gold": 7
+      },
+      "high_entities": {
+        "Mars": 21,
+        "Jupiter": 2,
+        "Silver": 2
+      }
+    },
+    "t4_readability": {
+      "structural": "s_t(j) depends only on the item's target entity under any bank centroid -> exactly 6 distinct s_t values -> any median split is necessarily an entity-group split, never a per-item gradient",
+      "C3_stratum": {
+        "low_entities": {
+          "Mars": 21,
+          "Venus": 7,
+          "Iron": 21
+        },
+        "low_size": 49,
+        "high_entities": {
+          "Gold": 7,
+          "Silver": 2,
+          "Jupiter": 2
+        },
+        "high_size": 11,
+        "low_headroom": 23,
+        "high_headroom": 3,
+        "independent_entity_observations_low": 3
+      },
+      "C4p_stratum": {
+        "low_entities": {
+          "Venus": 7,
+          "Iron": 21,
+          "Gold": 7
+        },
+        "low_size": 35,
+        "high_entities": {
+          "Mars": 21,
+          "Jupiter": 2,
+          "Silver": 2
+        },
+        "high_size": 25,
+        "low_headroom": 16,
+        "high_headroom": 10,
+        "independent_entity_observations_low": 3
+      },
+      "honest_limitation": "T4 licenses at most rescue on low-similarity target entities with n_entity=3 in the low stratum; the stratifying feature has zero within-entity variation; the spec's ~30/30 aside does not obtain. No re-registration made; Law #14 reviewer rules."
+    }
+  }
+}
