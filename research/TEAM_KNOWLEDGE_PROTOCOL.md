@@ -8,6 +8,11 @@ innovation mindset toward the goal.*
 
 Ephemeral agents inherit nothing unless it is written down and read.
 This protocol makes deep knowledge a job requirement, not a hope.
+Onboarding runs through the top-lab preamble:
+`research/BRIEFING_TEMPLATE.md` opens every worker-agent dispatch
+(LOG-218) — ambition × rigor, first principles, quantitative
+predictions, steelman, and the guards below are briefed in, never
+assumed.
 
 ## 1. The mandatory reading list
 
@@ -68,7 +73,11 @@ recorded in its report:
   original missed, a hidden assumption).
 - **One idea:** a mechanism the corpus suggests but never tested —
   with the question, why it matters, the cheapest falsifying
-  experiment, the kill criterion, and the free-tier cost.
+  experiment, the kill criterion, and the free-tier cost. The idea must
+  also answer, in writing (LOG-218): *"could this change what anyone
+  believes?"* — naming the belief and the observation that would
+  overturn it. If the honest answer is no, the idea goes back for a
+  bigger swing before it enters the sprint.
 
 Deep knowledge without new questions is trivia. The reading list exists
 to produce challenges and ideas, not compliance.

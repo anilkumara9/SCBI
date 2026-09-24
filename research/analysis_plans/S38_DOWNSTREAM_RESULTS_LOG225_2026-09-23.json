@@ -1,0 +1,143 @@
+{
+  "log": "LOG-225",
+  "run": "EXP066_pythia410m_replication",
+  "n_items": 60,
+  "n_rescued": 8,
+  "n_corrupted": 0,
+  "alpha": 0.5,
+  "target_layer": 20,
+  "downstream_blocks": [
+    21,
+    22,
+    23
+  ],
+  "delta_theta_0": {
+    "pre_hash_params_order": "4c242d9ac702a4029a674eacee84e0517cb6f79d794661dc3a3102bca5ed48dd",
+    "post_hash": "4c242d9ac702a4029a674eacee84e0517cb6f79d794661dc3a3102bca5ed48dd",
+    "match": true
+  },
+  "guards": {
+    "G2_prompt_identity": "60/60 byte-consistent",
+    "G3_delta_theta": "PASS",
+    "G5_no_forward_pass": "PASS (self-inspection)"
+  },
+  "epsilon_noise_floor_assumption": 0.0001,
+  "sanity": {
+    "mean_dm_hat": 0.42667610744635265,
+    "archived_delta_margin": 0.7492101669311524,
+    "archived_dL_t": 0.344762388865153,
+    "archived_dL_f": -0.40444777806599935
+  },
+  "stats_all": {
+    "n": 60,
+    "mean_residual": 0.3225340594847997,
+    "std_residual": 0.02912926810785308,
+    "min_residual": 0.21423164010047913,
+    "max_residual": 0.3779747486114502,
+    "mean_abs_residual": 0.3225340594847997,
+    "max_abs_residual": 0.3779747486114502,
+    "mean_abs_dm_hat": 0.42667610744635265,
+    "rel_mean_abs": 0.7559224757513588,
+    "frac_within_eps": 0.0,
+    "frac_within_10pct": 0.0,
+    "pos_frac": 1.0
+  },
+  "stats_rescued": {
+    "n": 8,
+    "mean_residual": 0.3333742246031761,
+    "std_residual": 0.010814565189520089,
+    "min_residual": 0.310261994600296,
+    "max_residual": 0.34577131271362305,
+    "mean_abs_residual": 0.3333742246031761,
+    "max_abs_residual": 0.34577131271362305,
+    "mean_abs_dm_hat": 0.41941312700510025,
+    "rel_mean_abs": 0.7948588232888623,
+    "frac_within_eps": 0.0,
+    "frac_within_10pct": 0.0,
+    "pos_frac": 1.0
+  },
+  "stats_other": {
+    "n": 52,
+    "mean_residual": 0.32086634177428025,
+    "std_residual": 0.030662717573273008,
+    "min_residual": 0.21423164010047913,
+    "max_residual": 0.3779747486114502,
+    "mean_abs_residual": 0.32086634177428025,
+    "max_abs_residual": 0.3779747486114502,
+    "mean_abs_dm_hat": 0.42779348905269915,
+    "rel_mean_abs": 0.7500496150252377,
+    "frac_within_eps": 0.0,
+    "frac_within_10pct": 0.0,
+    "pos_frac": 1.0
+  },
+  "corr_residual_rescued": 0.14596530742923813,
+  "corr_residual_dmhat": 0.3010559924131828,
+  "rescued_items": [
+    {
+      "key": "pythia410m_planet_2hop_6",
+      "t_id": 13648,
+      "f_id": 38876,
+      "dm_hat": 0.41327354311943054,
+      "dm_archived": 0.7235355377197266,
+      "residual": 0.310261994600296
+    },
+    {
+      "key": "pythia410m_planet_2hop_7",
+      "t_id": 36210,
+      "f_id": 36091,
+      "dm_hat": 0.3979620933532715,
+      "dm_archived": 0.7353935241699219,
+      "residual": 0.3374314308166504
+    },
+    {
+      "key": "pythia410m_planet_2hop_9",
+      "t_id": 13648,
+      "f_id": 36091,
+      "dm_hat": 0.4320531487464905,
+      "dm_archived": 0.7637166976928711,
+      "residual": 0.3316635489463806
+    },
+    {
+      "key": "pythia410m_planet_3hop_6",
+      "t_id": 36210,
+      "f_id": 36091,
+      "dm_hat": 0.3979620933532715,
+      "dm_archived": 0.7435760498046875,
+      "residual": 0.345613956451416
+    },
+    {
+      "key": "pythia410m_planet_3hop_11",
+      "t_id": 36210,
+      "f_id": 36091,
+      "dm_hat": 0.3979620933532715,
+      "dm_archived": 0.7437334060668945,
+      "residual": 0.34577131271362305
+    },
+    {
+      "key": "pythia410m_element_2hop_7",
+      "t_id": 7284,
+      "f_id": 19727,
+      "dm_hat": 0.46056628227233887,
+      "dm_archived": 0.7996540069580078,
+      "residual": 0.33908772468566895
+    },
+    {
+      "key": "pythia410m_element_2hop_10",
+      "t_id": 17826,
+      "f_id": 16309,
+      "dm_hat": 0.4178140461444855,
+      "dm_archived": 0.7464141845703125,
+      "residual": 0.328600138425827
+    },
+    {
+      "key": "pythia410m_element_3hop_5",
+      "t_id": 17826,
+      "f_id": 49134,
+      "dm_hat": 0.4377117156982422,
+      "dm_archived": 0.7662754058837891,
+      "residual": 0.3285636901855469
+    }
+  ],
+  "exp065": "Underdetermined: no per-item logit/margin archive exists (aggregates only)",
+  "exp077": "not decomposable: exp077_instance_records.json carries correctness only, no per-item logit/margin shifts"
+}

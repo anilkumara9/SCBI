@@ -1,0 +1,13 @@
+# K2 routing-vs-bypass execution dependencies (Kaggle / Colab free tier)
+#
+# NOTE: Kaggle notebooks and Google Colab already ship torch (+CUDA builds).
+# The `pip install -r requirements.txt` step below is mostly a no-op for torch
+# and ensures transformers/tokenizers/scipy are new enough. Lower bounds are
+# pinned rather than exact versions because free-tier images change over time;
+# exact pins would break installs. Record the installed versions from the run
+# log (the script logs an environment manifest into k2_results.json).
+torch>=2.2
+transformers>=4.44
+tokenizers>=0.19
+numpy>=1.26
+scipy>=1.13

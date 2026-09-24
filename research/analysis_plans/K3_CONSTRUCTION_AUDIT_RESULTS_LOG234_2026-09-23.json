@@ -1,0 +1,915 @@
+{
+  "log": "LOG-238",
+  "plan": "research/analysis_plans/K3_COMPLIANT_BRIDGE_PLAN_LOG234_2026-09-23.md",
+  "date": "2026-09-23",
+  "phase": "Phase-0 ONLY (CPU, $0, weight-algebra; zero forward passes)",
+  "outcome": "HALT_G4_FATAL",
+  "halt_step": "\u00a710 Phase-0 step 2 (G4 label/premise cross-check)",
+  "forward_passes": 0,
+  "rng_consumed": "none",
+  "env_manifest": {
+    "venv": "/home/hatch/workspace/.venv_smoke",
+    "python": "3.12.3",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "torch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "env_exact_per_8_1": true
+  },
+  "model": {
+    "name": "EleutherAI/pythia-410m",
+    "revision": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+    "load": {
+      "local_files_only": true,
+      "trust_remote_code": false,
+      "torch_dtype": "torch.float32",
+      "eval_mode": true
+    }
+  },
+  "delta_theta": {
+    "formulation": "run_exp077.py ll.166-172 verbatim: SHA-256 over concatenation of state_dict() tensors, sorted keys, CPU, float32 bytes",
+    "pre_hash": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "post_hash": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "archived_hash": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "archived_source": "C-A_PREAUDIT_2026-09-23.json `sha256_archived` (= v2 \u00a710 tri-match; LOG-3375)",
+    "pre_eq_archived": true,
+    "post_eq_pre_eq_archived": true
+  },
+  "bench_port": {
+    "source": "experiments/runs/exp077/run_exp077.py ll.586-636 (four loops, verbatim)",
+    "n_items": 60,
+    "quad_loop_subranges": {
+      "planet_2hop": [
+        0,
+        14
+      ],
+      "planet_3hop": [
+        15,
+        29
+      ],
+      "element_2hop": [
+        30,
+        44
+      ],
+      "element_3hop": [
+        45,
+        59
+      ]
+    },
+    "ids": [
+      "exp077_planet_2hop_0",
+      "exp077_planet_2hop_1",
+      "exp077_planet_2hop_2",
+      "exp077_planet_2hop_3",
+      "exp077_planet_2hop_4",
+      "exp077_planet_2hop_5",
+      "exp077_planet_2hop_6",
+      "exp077_planet_2hop_7",
+      "exp077_planet_2hop_8",
+      "exp077_planet_2hop_9",
+      "exp077_planet_2hop_10",
+      "exp077_planet_2hop_11",
+      "exp077_planet_2hop_12",
+      "exp077_planet_2hop_13",
+      "exp077_planet_2hop_14",
+      "exp077_planet_3hop_0",
+      "exp077_planet_3hop_1",
+      "exp077_planet_3hop_2",
+      "exp077_planet_3hop_3",
+      "exp077_planet_3hop_4",
+      "exp077_planet_3hop_5",
+      "exp077_planet_3hop_6",
+      "exp077_planet_3hop_7",
+      "exp077_planet_3hop_8",
+      "exp077_planet_3hop_9",
+      "exp077_planet_3hop_10",
+      "exp077_planet_3hop_11",
+      "exp077_planet_3hop_12",
+      "exp077_planet_3hop_13",
+      "exp077_planet_3hop_14",
+      "exp077_element_2hop_0",
+      "exp077_element_2hop_1",
+      "exp077_element_2hop_2",
+      "exp077_element_2hop_3",
+      "exp077_element_2hop_4",
+      "exp077_element_2hop_5",
+      "exp077_element_2hop_6",
+      "exp077_element_2hop_7",
+      "exp077_element_2hop_8",
+      "exp077_element_2hop_9",
+      "exp077_element_2hop_10",
+      "exp077_element_2hop_11",
+      "exp077_element_2hop_12",
+      "exp077_element_2hop_13",
+      "exp077_element_2hop_14",
+      "exp077_element_3hop_0",
+      "exp077_element_3hop_1",
+      "exp077_element_3hop_2",
+      "exp077_element_3hop_3",
+      "exp077_element_3hop_4",
+      "exp077_element_3hop_5",
+      "exp077_element_3hop_6",
+      "exp077_element_3hop_7",
+      "exp077_element_3hop_8",
+      "exp077_element_3hop_9",
+      "exp077_element_3hop_10",
+      "exp077_element_3hop_11",
+      "exp077_element_3hop_12",
+      "exp077_element_3hop_13",
+      "exp077_element_3hop_14"
+    ],
+    "targets": [
+      "Mars",
+      "Venus",
+      "Jupiter",
+      "Mars",
+      "Mars",
+      "Venus",
+      "Mars",
+      "Venus",
+      "Mars",
+      "Mars",
+      "Mars",
+      "Venus",
+      "Jupiter",
+      "Mars",
+      "Mars",
+      "Mars",
+      "Venus",
+      "Mars",
+      "Mars",
+      "Mars",
+      "Mars",
+      "Venus",
+      "Mars",
+      "Mars",
+      "Mars",
+      "Mars",
+      "Venus",
+      "Mars",
+      "Mars",
+      "Mars",
+      "Iron",
+      "Gold",
+      "Silver",
+      "Iron",
+      "Iron",
+      "Gold",
+      "Iron",
+      "Gold",
+      "Iron",
+      "Iron",
+      "Iron",
+      "Gold",
+      "Silver",
+      "Iron",
+      "Iron",
+      "Iron",
+      "Gold",
+      "Iron",
+      "Iron",
+      "Iron",
+      "Iron",
+      "Gold",
+      "Iron",
+      "Iron",
+      "Iron",
+      "Iron",
+      "Gold",
+      "Iron",
+      "Iron",
+      "Iron"
+    ],
+    "foils": [
+      "Jupiter",
+      "Saturn",
+      "Mercury",
+      "Mercury",
+      "Saturn",
+      "Mercury",
+      "Saturn",
+      "Mercury",
+      "Mercury",
+      "Mercury",
+      "Jupiter",
+      "Saturn",
+      "Mercury",
+      "Mercury",
+      "Saturn",
+      "Saturn",
+      "Mercury",
+      "Mercury",
+      "Mercury",
+      "Mercury",
+      "Saturn",
+      "Mercury",
+      "Mercury",
+      "Mercury",
+      "Mercury",
+      "Saturn",
+      "Mercury",
+      "Mercury",
+      "Mercury",
+      "Mercury",
+      "Silver",
+      "Bronze",
+      "Steel",
+      "Steel",
+      "Bronze",
+      "Steel",
+      "Bronze",
+      "Steel",
+      "Steel",
+      "Steel",
+      "Silver",
+      "Bronze",
+      "Steel",
+      "Steel",
+      "Bronze",
+      "Bronze",
+      "Steel",
+      "Steel",
+      "Steel",
+      "Steel",
+      "Bronze",
+      "Steel",
+      "Steel",
+      "Steel",
+      "Steel",
+      "Bronze",
+      "Steel",
+      "Steel",
+      "Steel",
+      "Steel"
+    ],
+    "ported_target_distribution_planet": {
+      "Mars": 21,
+      "Venus": 7,
+      "Jupiter": 2
+    },
+    "ported_target_distribution_element": {
+      "Iron": 21,
+      "Gold": 7,
+      "Silver": 2
+    }
+  },
+  "guards": {
+    "G3_delta_theta": "PASS",
+    "G4_label_premise_crosscheck": "FATAL",
+    "G5_no_forward_pass": "PASS",
+    "G6_single_token": "PASS",
+    "G1": "NOT_REACHED (halted at step 2)",
+    "G2": "NOT_REACHED (halted at step 2; E-K3-3 identity not attempted)",
+    "G7": "NOT_REACHED (halted at step 2)",
+    "G8": "N/A Phase-0 (Phase-1 pins; Phase 1 not released)",
+    "G9": "NOT_SATISFIED (Phase-1 release chain not invoked; Phase 1 NOT released)",
+    "G10": "N/A Phase-0 (0 forward passes)",
+    "G11": "N/A Phase-0 (Phase-1 method guard)"
+  },
+  "G4_evidence": {
+    "archive": "experiments/runs/EXP077_cone_vs_line/exp077_instance_records.json",
+    "archive_identity": "EXP077 smoke archive: (b,c)=(14,0) for C8_bridge vs C1 (in-repo JSON; cf. official GPU record 6/0 per LOG-128)",
+    "check": "index-aligned byte comparison of rebuilt (ent, typ) vs archived (ent, typ), 60/60",
+    "n_match": 12,
+    "n_mismatch": 48,
+    "first_mismatch": {
+      "index": 1,
+      "item_id": "exp077_planet_2hop_1",
+      "rebuilt": {
+        "ent": "Venus",
+        "typ": "planet"
+      },
+      "archived": {
+        "ent": "Mars",
+        "typ": "planet"
+      }
+    },
+    "all_mismatches": [
+      {
+        "index": 1,
+        "item_id": "exp077_planet_2hop_1",
+        "rebuilt": {
+          "ent": "Venus",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Mars",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 2,
+        "item_id": "exp077_planet_2hop_2",
+        "rebuilt": {
+          "ent": "Jupiter",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Mars",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 5,
+        "item_id": "exp077_planet_2hop_5",
+        "rebuilt": {
+          "ent": "Venus",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Mars",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 6,
+        "item_id": "exp077_planet_2hop_6",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Venus",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 8,
+        "item_id": "exp077_planet_2hop_8",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Venus",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 9,
+        "item_id": "exp077_planet_2hop_9",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Venus",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 10,
+        "item_id": "exp077_planet_2hop_10",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Venus",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 13,
+        "item_id": "exp077_planet_2hop_13",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Jupiter",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 14,
+        "item_id": "exp077_planet_2hop_14",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Jupiter",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 15,
+        "item_id": "exp077_planet_3hop_0",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Jupiter",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 16,
+        "item_id": "exp077_planet_3hop_1",
+        "rebuilt": {
+          "ent": "Venus",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Jupiter",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 17,
+        "item_id": "exp077_planet_3hop_2",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Jupiter",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 18,
+        "item_id": "exp077_planet_3hop_3",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Saturn",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 19,
+        "item_id": "exp077_planet_3hop_4",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Saturn",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 20,
+        "item_id": "exp077_planet_3hop_5",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Saturn",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 21,
+        "item_id": "exp077_planet_3hop_6",
+        "rebuilt": {
+          "ent": "Venus",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Saturn",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 22,
+        "item_id": "exp077_planet_3hop_7",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Saturn",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 23,
+        "item_id": "exp077_planet_3hop_8",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Saturn",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 24,
+        "item_id": "exp077_planet_3hop_9",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Mercury",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 25,
+        "item_id": "exp077_planet_3hop_10",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Mercury",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 26,
+        "item_id": "exp077_planet_3hop_11",
+        "rebuilt": {
+          "ent": "Venus",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Mercury",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 27,
+        "item_id": "exp077_planet_3hop_12",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Mercury",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 28,
+        "item_id": "exp077_planet_3hop_13",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Mercury",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 29,
+        "item_id": "exp077_planet_3hop_14",
+        "rebuilt": {
+          "ent": "Mars",
+          "typ": "planet"
+        },
+        "archived": {
+          "ent": "Mercury",
+          "typ": "planet"
+        }
+      },
+      {
+        "index": 31,
+        "item_id": "exp077_element_2hop_1",
+        "rebuilt": {
+          "ent": "Gold",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Iron",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 32,
+        "item_id": "exp077_element_2hop_2",
+        "rebuilt": {
+          "ent": "Silver",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Iron",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 35,
+        "item_id": "exp077_element_2hop_5",
+        "rebuilt": {
+          "ent": "Gold",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Iron",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 36,
+        "item_id": "exp077_element_2hop_6",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Gold",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 38,
+        "item_id": "exp077_element_2hop_8",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Gold",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 39,
+        "item_id": "exp077_element_2hop_9",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Gold",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 40,
+        "item_id": "exp077_element_2hop_10",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Gold",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 43,
+        "item_id": "exp077_element_2hop_13",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Silver",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 44,
+        "item_id": "exp077_element_2hop_14",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Silver",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 45,
+        "item_id": "exp077_element_3hop_0",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Silver",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 46,
+        "item_id": "exp077_element_3hop_1",
+        "rebuilt": {
+          "ent": "Gold",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Silver",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 47,
+        "item_id": "exp077_element_3hop_2",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Silver",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 48,
+        "item_id": "exp077_element_3hop_3",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Bronze",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 49,
+        "item_id": "exp077_element_3hop_4",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Bronze",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 50,
+        "item_id": "exp077_element_3hop_5",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Bronze",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 51,
+        "item_id": "exp077_element_3hop_6",
+        "rebuilt": {
+          "ent": "Gold",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Bronze",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 52,
+        "item_id": "exp077_element_3hop_7",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Bronze",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 53,
+        "item_id": "exp077_element_3hop_8",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Bronze",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 54,
+        "item_id": "exp077_element_3hop_9",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Steel",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 55,
+        "item_id": "exp077_element_3hop_10",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Steel",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 56,
+        "item_id": "exp077_element_3hop_11",
+        "rebuilt": {
+          "ent": "Gold",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Steel",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 57,
+        "item_id": "exp077_element_3hop_12",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Steel",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 58,
+        "item_id": "exp077_element_3hop_13",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Steel",
+          "typ": "element"
+        }
+      },
+      {
+        "index": 59,
+        "item_id": "exp077_element_3hop_14",
+        "rebuilt": {
+          "ent": "Iron",
+          "typ": "element"
+        },
+        "archived": {
+          "ent": "Steel",
+          "typ": "element"
+        }
+      }
+    ],
+    "archived_ent_distribution_planet": {
+      "Mars": 6,
+      "Venus": 6,
+      "Jupiter": 6,
+      "Saturn": 6,
+      "Mercury": 6
+    },
+    "archived_ent_distribution_element": {
+      "Iron": 6,
+      "Gold": 6,
+      "Silver": 6,
+      "Bronze": 6,
+      "Steel": 6
+    }
+  },
+  "descriptive_non_gating": {
+    "preaudit_per_item_agreement": {
+      "source": "experiments/protocols/C-A_PREAUDIT_2026-09-23.json similarity_audit.per_item (signed, attached to EXP081 v2)",
+      "check": "(id -> (t, f)) byte agreement vs ported (id -> (A, C))",
+      "n_match": 60,
+      "n_total": 60,
+      "label": "[OBSERVATION] \u2014 does not rescue G4 (Law #4); the port is byte-faithful to the pinned construction"
+    }
+  },
+  "endpoints": {
+    "E-K3-1_compliance": "NOT_EXECUTED (halted at \u00a710 step 2)",
+    "E-K3-2_nondegeneracy": "NOT_EXECUTED (halted at \u00a710 step 2)",
+    "E-K3-3_identity": "NOT_EXECUTED (halted at \u00a710 step 2)",
+    "E-K3-4_geometric_profile": "NOT_EXECUTED (halted at \u00a710 step 2)"
+  },
+  "verdict_table_7_1": [
+    {
+      "candidate": "(i) premise-rank bank",
+      "E-K3-1": "\u2014",
+      "E-K3-2": "\u2014",
+      "E-K3-3": "\u2014",
+      "guards": "FAIL (G4 FATAL)",
+      "verdict": "Refuted (integrity failure; halt; no claim licensed)"
+    },
+    {
+      "candidate": "(ii) donor centroid",
+      "E-K3-1": "\u2014",
+      "E-K3-2": "\u2014",
+      "E-K3-3": "\u2014",
+      "guards": "FAIL (G4 FATAL)",
+      "verdict": "Refuted (integrity failure; halt; no claim licensed)"
+    }
+  ],
+  "consequence_per_9": "REFUTED (either phase): no verdict; executor reports the integrity failure; CEO decides. The construction question is NOT answered (not Underdetermined \u2014 halted). GPU phase not reached; G9 chain untouched."
+}

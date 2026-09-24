@@ -1,0 +1,2055 @@
+{
+ "analysis": "S3-4 cone-arm-only flip-stability characterization (REDUCED; not the full Stage-0 gate)",
+ "log": "LOG-216",
+ "date": "2026-09-23",
+ "source": "/home/hatch/workspace/SCBI/experiments/runs/EXP077_cone_vs_line/exp077_instance_records.json",
+ "n_items": 60,
+ "alpha_grid": [
+  0.25,
+  0.5,
+  1.0,
+  2.0
+ ],
+ "baseline_arm": "C1",
+ "cone_arm_keys": {
+  "0.25": "C2_a025",
+  "0.5": "C3_a050",
+  "1.0": "C4_a100",
+  "2.0": "C5_a200"
+ },
+ "definitions": {
+  "flip": "correct(alpha_k) != correct(C1); a correctness flip implies a decision flip (sufficient, not necessary: wrong->wrong decision flips are invisible)",
+  "stable_flip": "flip(alpha_k) AND correct(alpha_{k+1}) == correct(alpha_k), k in {0.25,0.5,1.0}",
+  "unstable_flip": "flip(alpha_k) AND correct(alpha_{k+1}) != correct(alpha_k), k in {0.25,0.5,1.0}",
+  "indeterminate_persistence": "flip at alpha=2.0 (no alpha_{k+1}; stability unassessable)",
+  "alpha_star": "smallest alpha with a stable flip; 0 = abstain",
+  "headroom": "baseline C1 = wrong (room for a rescue flip)",
+  "caution": "Archive records correctness, not decisions D(alpha) = argmax f(x; alpha*v). All counts are lower bounds on true decision-flip activity."
+ },
+ "per_item": [
+  {
+   "item": 0,
+   "ent": "Mars",
+   "typ": "planet",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 1,
+   "ent": "Mars",
+   "typ": "planet",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 2,
+   "ent": "Mars",
+   "typ": "planet",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 3,
+   "ent": "Mars",
+   "typ": "planet",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 4,
+   "ent": "Mars",
+   "typ": "planet",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 5,
+   "ent": "Mars",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 6,
+   "ent": "Venus",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 7,
+   "ent": "Venus",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 8,
+   "ent": "Venus",
+   "typ": "planet",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 9,
+   "ent": "Venus",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 10,
+   "ent": "Venus",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 11,
+   "ent": "Venus",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 12,
+   "ent": "Jupiter",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 13,
+   "ent": "Jupiter",
+   "typ": "planet",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 14,
+   "ent": "Jupiter",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 15,
+   "ent": "Jupiter",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 16,
+   "ent": "Jupiter",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 17,
+   "ent": "Jupiter",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 18,
+   "ent": "Saturn",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 19,
+   "ent": "Saturn",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 20,
+   "ent": "Saturn",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 21,
+   "ent": "Saturn",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 22,
+   "ent": "Saturn",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 23,
+   "ent": "Saturn",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 24,
+   "ent": "Mercury",
+   "typ": "planet",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 25,
+   "ent": "Mercury",
+   "typ": "planet",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "stable",
+    "1.0": "stable",
+    "2.0": "indeterminate_persistence"
+   },
+   "stable_alphas": [
+    0.5,
+    1.0
+   ],
+   "stable_flip_directions": [
+    "rescue",
+    "rescue"
+   ],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": true,
+   "any_flip": true,
+   "alpha_star": 0.5,
+   "abstain": false
+  },
+  {
+   "item": 26,
+   "ent": "Mercury",
+   "typ": "planet",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 27,
+   "ent": "Mercury",
+   "typ": "planet",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 28,
+   "ent": "Mercury",
+   "typ": "planet",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 29,
+   "ent": "Mercury",
+   "typ": "planet",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 30,
+   "ent": "Iron",
+   "typ": "element",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": true,
+    "2.0": true
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "stable",
+    "2.0": "indeterminate_persistence"
+   },
+   "stable_alphas": [
+    1.0
+   ],
+   "stable_flip_directions": [
+    "rescue"
+   ],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": true,
+   "any_flip": true,
+   "alpha_star": 1.0,
+   "abstain": false
+  },
+  {
+   "item": 31,
+   "ent": "Iron",
+   "typ": "element",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 32,
+   "ent": "Iron",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 33,
+   "ent": "Iron",
+   "typ": "element",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 34,
+   "ent": "Iron",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 35,
+   "ent": "Iron",
+   "typ": "element",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 36,
+   "ent": "Gold",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 37,
+   "ent": "Gold",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 38,
+   "ent": "Gold",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 39,
+   "ent": "Gold",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 40,
+   "ent": "Gold",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 41,
+   "ent": "Gold",
+   "typ": "element",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 42,
+   "ent": "Silver",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 43,
+   "ent": "Silver",
+   "typ": "element",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 44,
+   "ent": "Silver",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 45,
+   "ent": "Silver",
+   "typ": "element",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 46,
+   "ent": "Silver",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "stable",
+    "1.0": "stable",
+    "2.0": "indeterminate_persistence"
+   },
+   "stable_alphas": [
+    0.5,
+    1.0
+   ],
+   "stable_flip_directions": [
+    "damage",
+    "damage"
+   ],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": true,
+   "any_flip": true,
+   "alpha_star": 0.5,
+   "abstain": false
+  },
+  {
+   "item": 47,
+   "ent": "Silver",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 48,
+   "ent": "Bronze",
+   "typ": "element",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 49,
+   "ent": "Bronze",
+   "typ": "element",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 50,
+   "ent": "Bronze",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 51,
+   "ent": "Bronze",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 52,
+   "ent": "Bronze",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 53,
+   "ent": "Bronze",
+   "typ": "element",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 54,
+   "ent": "Steel",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 55,
+   "ent": "Steel",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 56,
+   "ent": "Steel",
+   "typ": "element",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 57,
+   "ent": "Steel",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 58,
+   "ent": "Steel",
+   "typ": "element",
+   "baseline_C1_correct": true,
+   "headroom": false,
+   "cone_correct": {
+    "0.25": true,
+    "0.5": true,
+    "1.0": true,
+    "2.0": true
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  },
+  {
+   "item": 59,
+   "ent": "Steel",
+   "typ": "element",
+   "baseline_C1_correct": false,
+   "headroom": true,
+   "cone_correct": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "flip": {
+    "0.25": false,
+    "0.5": false,
+    "1.0": false,
+    "2.0": false
+   },
+   "classification": {
+    "0.25": "no_flip",
+    "0.5": "no_flip",
+    "1.0": "no_flip",
+    "2.0": "no_flip"
+   },
+   "stable_alphas": [],
+   "stable_flip_directions": [],
+   "unstable_alphas": [],
+   "indeterminate_persistence_at_2.0": false,
+   "any_flip": false,
+   "alpha_star": 0,
+   "abstain": true
+  }
+ ],
+ "aggregates": {
+  "n_items": 60,
+  "stable_flip_items": 3,
+  "stable_flip_rate": 0.05,
+  "stable_flip_rate_wilson95": [
+   0.01714919117914121,
+   0.13700734625099836
+  ],
+  "unstable_flip_items_any": 0,
+  "unstable_only_items": 0,
+  "unstable_only_rate": 0.0,
+  "indeterminate_only_items": 0,
+  "no_flip_items": 57,
+  "no_flip_rate": 0.95,
+  "per_alpha": {
+   "0.25": {
+    "flip_count": 0,
+    "stable_count": 0,
+    "unstable_count": 0,
+    "indeterminate_count": null
+   },
+   "0.5": {
+    "flip_count": 2,
+    "stable_count": 2,
+    "unstable_count": 0,
+    "indeterminate_count": null
+   },
+   "1.0": {
+    "flip_count": 3,
+    "stable_count": 3,
+    "unstable_count": 0,
+    "indeterminate_count": null
+   },
+   "2.0": {
+    "flip_count": 3,
+    "stable_count": 0,
+    "unstable_count": null,
+    "indeterminate_count": null
+   }
+  },
+  "alpha_star_distribution": {
+   "0.25": 0,
+   "0.5": 2,
+   "1.0": 1,
+   "2.0": 0
+  },
+  "abstentions": 57,
+  "abstention_rate": 0.95,
+  "headroom": {
+   "n_headroom_items": 24,
+   "n_nonheadroom_items": 36,
+   "stable_flip_rate_headroom": 0.08333333333333333,
+   "stable_flip_rate_headroom_wilson95": [
+    0.023158327842973492,
+    0.258492152014506
+   ],
+   "n_headroom_stable_items": 2,
+   "n_headroom_stable_rescue_items": 2,
+   "stable_flip_rate_nonheadroom": 0.027777777777777776,
+   "n_nonheadroom_stable_damage_items": 1
+  },
+  "rescue_flag_consistency": {
+   "mismatches_flag_vs_computed_rescue": 0,
+   "checked_cells": 240,
+   "note": "A_alpha_* flag vs (flip AND baseline-wrong AND now-correct)."
+  },
+  "corroboration": {
+   "source": "exp077_results.json radial aggregate (same grid)",
+   "delta_M": [
+    0.0,
+    0.0,
+    0.016666666666666666,
+    0.016666666666666666
+   ],
+   "p_values": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ },
+ "limits": [
+  "Bridge-vs-B_wrong stable-flip separation (SAH Stage-0 gate, p<0.1) NOT computable: per-alpha per-instance outcomes for C7_Bwrong/C8_bridge are absent from the archive.",
+  "Binary outcomes only: no margins, no logits, no per-item decision labels; wrong->wrong decision flips are unobservable.",
+  "This analysis does not license the GPU pilot gate; it is a characterization only.",
+  "Reduced scope only: cone arm (C2-C5) vs baseline C1. C6_offset/C9_cone/C10_control excluded."
+ ]
+}

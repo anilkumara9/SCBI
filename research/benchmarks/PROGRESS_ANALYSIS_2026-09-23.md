@@ -1,0 +1,11 @@
+# Progress Analysis — where SCBI stands vs the frontier (2026-09-23)
+
+*Standing Benchmark Analyst. One page. No softening.*
+
+**The frontier, summarized.** In 2025–2026 the field shipped working inference-time computation on frozen models: ∇-Reasoner (71.2→80.4% MATH-500, 10–40% fewer calls), Meta-Reasoner (+9–12% accuracy at −28–35% inference time, same budget), DEER (−19–80% chain-of-thought at +0.3–5.0% accuracy), Self-Refine (~+20% absolute across 7 tasks), Activation-LQR (closed-loop LQR steering with tracking-error bounds, SOTA behavioral modulation). The bar for "inference-time compute does something" is high, published, and rising.
+
+**SCBI, summarized.** Zero capability results. Every static steering family tested scores exactly 0.0pp (p=1.0); the only positive numbers (+5 to +16.67pp bridge rescues) were audited into the artifact column — label-assisted readout, demoted by CEO ruling. The QK-null-space mechanism was killed. Three experiments halted or were infeasible by construction. K1 (readout-tilt falsification, $0) is executing; its verdict is the next data point.
+
+**The gap.** Not a margin — an absence. On accuracy-at-matched-compute and on compute-saved, SCBI has no entry while the frontier has six. Our one lead is boundary science: the pre-registered, replicated demonstration that ~0.7 cross-vocabulary cosine similarity yields zero causal transfer under static injection, with the Procrustes failure retracted on record. That is real and publishable as a boundary result. It is not a capability and does not compete with any frontier row.
+
+**What closes it.** The §D2 six-condition bar: per-instance construction, transfer-validated evaluator, matched-compute wins over ∇-Reasoner / Activation-LQR / Meta-Reasoner / DEER / debate-MoA plus the pinned M15 comparators, conditional-computation proof, specificity gap — at powered N≈100+. The program's ordered bets toward that bar: K1 → K2 → Sprint-3 pilots → K3 → EXP080/081 → CLLC closed-loop pilot. The honest base rate, from the synthesis's own power analysis: at current N the program is a falsification-and-boundary program, and the NTDP is likelier to kill than to license. The scoreboard will record a beaten frontier the day the six conditions are met — and will say "not yet" every day until then.

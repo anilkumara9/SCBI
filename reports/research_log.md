@@ -3619,3 +3619,847 @@ The in-house Independent Scientific Mentor & Adversarial Reviewer (succeeding Ch
 
 ### LOG-197 — 2026-09-23: Law #7 Bridge-Leakage Audit Commissioned (Critical Path for EXP080/081)
 CEO order (LOG-197, pre-assigned): dispatch the Law #7 bridge-leakage audit of the output bridge. This gates EXP080/081's positive control and informs §H7's open CEO decision on the bridge's positive-control status across signed protocols. Chain of command: Research Lead dispatches; the no-blind-running chain holds — signed plan → Law #14 review → execution → verdict. **Sequence commissioned:** (1) track-8 specialist writes the FROZEN audit plan (endpoints, kill criteria, verdict mapping, CPU-first feasibility) after reading existing material — Cluster A §6 CHALLENGE (LOG-153/154 lineage), adopted REV2 §H6 (K1/K2/K3 battery + ordering semantics), Law #7 protocol text, C-A pre-audit worked example, G1 weight-only audit lineage — then PAUSES, touching no weights or code; (2) independent track-7 Law #14 review of the plan (reviewer ≠ author); (3) only SIGN/SIGN-WITH-FIXES (fixes applied) releases execution; (4) auditor reports verdict; CEO decides §H7. Audit question: is the bridge construction built from target/foil option-token unembedding rows (normalize(E[target] − E[foil]), label/option-informed), and if so, are the recorded "rescues" label-assisted readout artifacts rather than evidence of steerability? CPU/$0 first: construction-algebra + weight/code audit in the G1 style (read-only weights; no forward passes if avoidable); GPU only if the frozen plan proves CPU cannot answer AND the CEO clears it. Track 8 statistician discipline: exact endpoints, kill criteria, verdict mapping in the five permitted categories only (Supported / Not supported / Inconclusive / Underdetermined / Refuted), evidentiary level L1/L2/L3 per claim, FACT/INFERENCE/HYPOTHESIS/SPECULATION + 10-label on load-bearing claims.
+
+#### LOG-197 sub-entry — 2026-09-23: Law #14 Adversarial Review of the LOG-197 Audit Plan — SIGN-WITH-FIXES
+Independent track-7 Law #14 review (reviewer had no prior involvement in the Law #7 audit or plan; plan-writer's claims treated as untrusted). Target: research/analysis_plans/LAW7_BRIDGE_AUDIT_PLAN_LOG197_2026-09-23.md. Full report: reports/adversarial_review_law7_audit_plan_2026-09-23.md. **Disposition: SIGN-WITH-FIXES** — execution NOT released until fixes are applied and re-verified. **Verification performed (read-only; no weights, no GPU, nothing signed touched):** all four §3 code-trace line ranges re-checked against the runner scripts (all confirmed except EXP077's bridge-arm range, which is approximate: actual run-arm statements at ll. 768–772, header at 765–767); all (b,c,ΔM,p) numbers re-checked against primary JSONs/logs (EXP065 10/0/+16.67pp/0.001953125 aggregates-only ✓; EXP066 8/0/+13.33pp/0.0078125 ✓; EXP070 C7 10/0/+16.67pp/0.001953 per LOG-110, mirror-pending ✓; EXP077 smoke log line 70 ✓); venv pin verified on disk (torch 2.14.0+cpu, transformers 5.17.0, numpy 2.5.3 — exact match); HF snapshot path exists; Δθ=0 hash ec276abe… confirmed in G1_RESULTS JSON; zero banned verdict words ("promising/interesting/worth another experiment") by grep; EXP070 vector-consistency cell correctly marked Underdetermined (no exp070_vectors file anywhere in repo, verified by find). **Rulings:** (1) all eight required plan sections present; (2) E1 ε=1e-6 probative and safe; δ_min=0.05 "inherited-not-derived" RULED ACCEPTABLE (the §G1b margin is treatment-independent and frozen across comparisons by the LOG-191 correction; §H6 binds the battery to the §G1b protocol; the writer disclosed the adoption); exact 95% CI matches the §G1b universal rule; Inconclusive reachable at every level; (3) verdict hygiene clean; (4) battery scope preserved — explicit K1(a)/K2/K3 verdict ban, provenance question correctly distinguished from K1(a)'s geometric tilt; (5) Law #7 operational rule statically checkable; compliant-reconstruction sketch is description, not a build; (6) CPU-impossibility proofs genuine per endpoint; no GPU/forward-pass authorized; (7) §8 strictly a recommendation to the CEO per §H7; no signed-protocol edits proposed; (8) execution rigor complete (SHA-256 guards, artifact paths, Law #4 deviation discipline, exact venv pin). **Defects:** MAJOR F1 — §2 E3 check 2 / §9 step 6 conflate the EXP077 smoke archive with the official GPU record: the plan asks the executor to match "EXP077 official GPU: b=6,c=0,+10.00pp,p=0.03125" against "the primary JSONs," but the in-repo exp077_results.json is the CPU-smoke archive (b=14,c=0,+23.33pp,p=0.000122 — confirmed by direct read); the official numbers exist only in LOG-128 with notebook-output sha256 checksums (no in-repo official JSON). A verbatim executor would log a false record contradiction, with a spurious path to Q2=Refuted. This regresses on the LOG-156 standing finding that GPU-vs-smoke provenance must never be conflated. Related: E4 does not pin which record it analyzes, and the record choice is verdict-determinative (synthesis §G1b table: official CI [+0.0338,+0.2015] → cell (4) Inconclusive; smoke CI [+0.1444,+0.3544] → cell (1) meaningful). MINOR F2 — §10 disposition line omits INCONCLUSIVE. MINOR F3 — §3 EXP077 arm range approximate (self-corrects via §9 step 4 verbatim re-verification). **Required fixes (mechanical):** F1 — split EXP077 into (i) smoke record (in-repo JSON/log: 14/0/+23.33pp/0.000122) and (ii) official GPU record (6/0/+10pp/0.03125 per LOG-128, notebook mirror pending disclosed), add the never-cross-compare prohibition, pin E4's primary record to the official GPU numbers (smoke as labeled secondary [OBSERVATION] only) with the one-line cell-rationale, and qualify the E3 norm record as smoke-run; F2 — add INCONCLUSIVE to the §10 disposition line; F3 — tighten the line range (optional). **Next:** writer applies F1–F3; fixed lines return for targeted Law #14 re-verification before execution. Surprise noted for the process record: the writer anticipated most attacks (EXP070 downgrade, two-link E1/E2 honesty, δ_min disclosure, K1/K2/K3 ban); the single real defect is the one provenance lesson the program had already learned. No GPU; no weights touched; no signed artifacts modified.
+
+### LOG-198 — 2026-09-23: Direction Review + Innovation Sprint 3 Commissioned (CEO Directive, Parallel CPU-Only Track)
+CEO directive: the user challenged the program (nulls piling up, no discovery yet; expects industry-changing ambition). New parallel workstream, effective immediately, run as a separate CPU-only track alongside LOG-197 — the LOG-197 audit chain is NOT disturbed. Task: determine whether the Pythia-410m/layer-20/static-steering program is digging in the right place, and if not, where to dig. Two specialist agents dispatched in parallel: (1) track-5/track-6: PARADIGM AUDIT — is the current substrate fertile or a local minimum, argued from the five converging nulls + G1 kill + §H verdicts + field sweep; ends with explicit falsifiable STAY vs QUIT/PIVOT criteria; plus COMPUTE STRATEGY — max-signal-per-GPU-hour sequencing on ~25h free Kaggle, pilot-first, MDE-gated, shelving logic, and an honest ruling on whether shelving EXP068 (~93k passes) while grinding small nulls is the right call. Deliverable: research/innovation/PARADIGM_AUDIT_2026-09-23.md. (2) track-10/track-4: SPRINT 3 CANDIDATES — minimum 5 genuinely new approaches (not static geometry at L20, not §F re-skins), each with mechanism sketch (math before metaphor), novelty audit against the §D/Appendix V map (N1 default), unique-support observation, killer observation, cheapest discriminating experiment with forward-pass count + T4-hour estimate, and evidentiary level; no GPU without kill criteria and a Law #14-signed plan. Deliverable: research/innovation/SPRINT3_CANDIDATES_2026-09-23.md. Constraints: $0 CPU-only ideation; no experiments run; no new experiment numbers; every load-bearing claim labeled FACT/INFERENCE/HYPOTHESIS/SPECULATION + 10-label + L1/L2/L3. On both deliveries the Lead writes research/innovation/DIRECTION_DECISION_2026-09-23.md with the single recommended next experiment after the LOG-197 verdict lands (with why it beats the alternatives), and reports to the CEO in standup format. The user was promised intensity and honesty, not a breakthrough.
+
+#### LOG-197 sub-entry 2 — 2026-09-23: Fixes Routed to Plan-Writer; Targeted Re-verification Staged
+Law #14 review returned SIGN-WITH-FIXES (1 major: EXP077 smoke-vs-official record conflation in E3/E4; 2 minor: §10 disposition set, EXP077 line-range tightening). The Lead dispatched a fix agent to apply F1–F3 mechanically per the review's specified edits (no redesign, no other sections touched). On delivery, the fixed lines go to a targeted Law #14 re-verification before execution is released. Execution remains gated; no GPU; nothing signed touched.
+
+#### LOG-197 sub-entry 3 — 2026-09-23: Fixes Applied; Targeted Re-verification Dispatched
+Fix agent applied F1–F3 per the review's mechanical spec (six exact-match edits, read back): EXP077 fidelity check split into pinned smoke (in-repo b=14/c=0) vs official GPU (LOG-128 b=6/c=0, mirror-pending) records with never-cross-compare prohibition in both §2 E3 and §9 step 6(b); E4 primary record pinned to official GPU with §G1b-cell rationale; E3 check 1 norm record qualified as smoke-run-log; §10 disposition set completed with INCONCLUSIVE; EXP077 line range tightened. Fix agent reports no other sections touched. Targeted Law #14 re-verification of the fixed lines dispatched (narrow scope; also checks for out-of-spec alterations). Execution remains gated until the re-verification signs.
+
+#### LOG-197 sub-entry 4 — 2026-09-23: Targeted Re-verification of Fixes — SIGN; Execution Released
+Targeted Law #14 re-verification of the fixed lines only (reviewer = same independent track-7 reviewer; read-only, no weights, no GPU). Report appended as addendum to reports/adversarial_review_law7_audit_plan_2026-09-23.md. **All fix elements PASS:** §2 E3 check 1 norm record sourced to the smoke run log (log line 70) with the 0.5000 scale qualified as construction-generic from `run_exp077.py` l. 118; §2 E3 check 2 now pins TWO records — smoke in-repo (b=14, c=0, ΔM=+23.33pp, p=0.000122) and official GPU (b=6, c=0, ΔM=+10.00pp, p=0.03125 per LOG-128, sha256 hashes cited, mirror-pending disclosed) — with the never-cross-compare prohibition; §2 E4 primary record pinned to the official GPU for §G1b commensurability (smoke as labeled secondary [OBSERVATION] only) with the one-line cell-rationale; §9 step 6(b) carries the same two-record replacement + prohibition with EXP065/066/070 checks unchanged; §10 disposition line completed with INCONCLUSIVE; §3 EXP077 arm range tightened to ll. 765–772. **Scope discipline:** no substantive change outside the F1–F3 fix spec (spot-checked §2 E1/E2/E4, §4, §5, §6, §7, §8, §9 env pin/Δθ=0 guard, §10 checklist); the prohibition-sentence duplication in §2 and §9 was ruled acceptable (identical, non-ambiguous). **Consistency:** E3's two-record structure flows into E4's pinned primary; no remaining sentence conflates smoke with official or invites cross-comparison. **Disposition: SIGN.** The false E3-contradiction path and the spurious route to Q2=Refuted are eliminated. The Law #14 gate is cleared — the Research Lead may release the LOG-197 audit for execution under the frozen plan's §9 protocol. No GPU; no signed protocols or primary artifacts touched.
+
+#### LOG-197 sub-entry 5 — 2026-09-23: Targeted Re-verification SIGN — Execution Released
+Targeted Law #14 re-verification of the fixed lines: all items PASS (F1 five parts, F2, F3, scope discipline — zero out-of-spec alterations; prohibition-sentence duplication in §2/§9 ruled acceptable; E3→E4 consistency confirmed). Final disposition: **SIGN — execution released.** The original major defect (smoke/official conflation with its spurious path to Q2=Refuted) is structurally impossible under the fixed plan. Standing observation (not a defect): the official EXP077 record still rests on LOG-128 alone — notebook-output mirror retrieval remains a TODO. The Lead releases the Law #7 audit for execution under the frozen §9 protocol: CPU-only, read-only weights (Δθ=0 guards), no forward passes, no K1/K2/K3 verdicts, deviation = invalidated plan. Auditor's verdict will return as a recommendation for the CEO's §H7 decision.
+
+#### LOG-198 sub-entry — 2026-09-23: Paradigm Audit Delivered
+Track-5/track-6 agent delivered research/innovation/PARADIGM_AUDIT_2026-09-23.md (paradigm audit + compute strategy). Split verdict: Pythia-410m/L20/static program is a LOCAL MINIMUM for capability discovery (Not supported as discovery substrate) but FERTILE for boundary science (Supported as boundary substrate). STAY criteria: 5 ordered KEEP conditions (K1-survival → K2-routing → K3-compliant-rescue → EXP080 bin(ii)>0 → EXP081 transfer); QUIT/PIVOT: 5 named pivot triggers (P1–P5: substrate/scale/mechanism-family) + §H3 family-kill license. Key analytic finding: no currently planned run at N≤80 can license a Level-2 verdict (L2 MDE 11.25–20pp > 2·δ_min everywhere) — L2/L3 ambition is blocked by registration order, not the 25h budget; a powered N=100 re-registration costs ~1,000 passes. Honest ruling on EXP068: shelving is right; should NOT be run as-signed even if its gate passed (dead-room pool, N=45 underpowered, no conditionality probe) — replacement big bets: DPRS output-room loop (needs EXP080 bin(ii)>0) or CLLC closed-loop pilot. Sequencing table: 9 rows; full licensed sequence ~1.6h; ~23h held in reserve for powered re-registrations only verdicts can license. Open uncertainties recorded: bridge c=0 signature (K1's test), raw 0.7 cosine vs centring ($0 anisotropy analysis), CLLC pilot cost estimate, SVF/A-LQR cited per field-sweep verification status (not independently re-verified). Sprint 3 candidates (sibling agent) still in flight; the Lead's DIRECTION_DECISION file follows on both deliveries.
+
+#### LOG-198 sub-entry 2 — 2026-09-23: Sprint 3 Candidates Delivered; Direction Decision Written — Package Complete
+Track-10/track-4 agent delivered research/innovation/SPRINT3_CANDIDATES_2026-09-23.md: 6 candidates (S3-1 ARP attention-response verifier; S3-2 LOM operator library; S3-3 DUG doubt-gated escalation; S3-4 SAH stability-hysteresis α control; S3-5 ACG adaptive computational graphs; S3-6 AAR adversarial attack-survival selection), each with mechanism sketch (math-first), novelty audit (all N1; SVF marked UNVERIFIED where cited), unique-support + killer boxes, cheapest discriminating experiment with forward-pass counts and T4-hours, and evidentiary level; graveyard-checked against Sprint 1/2 (S3-4 vs demoted D3, S3-6 vs killed naive self-critique); no GPU without kill criteria + Law #14-signed plan. Total pilot cost ≈0.05 T4-h; S3-1/S3-3/S3-4 have $0 archived-data pilot gates (feasibility checks flagged: attention snapshots, residual snapshots, α-sweep ledger). Lead's key dependency finding: S3-1 and S3-4 use bridge=known-causal as their archived positive class — their Stage-0 pilots' interpretation is conditional on K1's verdict; feasibility checks may proceed in parallel at $0. The Lead wrote research/innovation/DIRECTION_DECISION_2026-09-23.md reconciling both deliverables. **The one recommendation:** after the LOG-197 verdict lands (+ CEO §H7 ruling), run **K1 — the $0 readout-tilt falsification** — first, because it is the adopted battery's first gate, its verdict re-prices the entire program (tilt → P1 pivot to closed-loop; survival → licenses K2/K3/Sprint-3 pilots), it gates the Sprint 3 pilots' positive-class integrity, and it beats EXP080/081 (GPU, downstream), K2 (conditional on K1), CLLC (the pivot target — premature before K1), and more static geometry (dead room). Ordered action list: K1 → K2 pilot → Sprint 3 Stage-0s → K3 → EXP080 → EXP081 → CLLC 160m pilot; EXP068 stays shelved (Lead concurs: do not run as-signed even if gate passed; replacement big bets: CLLC pilot or DPRS output-room loop gated on EXP080 bin(ii)>0). MDE headline adopted: nothing at N≤80 licenses L2 — the program is honestly a falsification/boundary program until a verdict licenses a powered (N≈100) re-registration; ~23h reserve held. LOG-198 package complete: PARADIGM_AUDIT_2026-09-23.md + SPRINT3_CANDIDATES_2026-09-23.md + DIRECTION_DECISION_2026-09-23.md. No GPU; no weights; LOG-197 chain undisturbed (its executor running separately).
+
+---
+
+## LOG-199 — Law #15 enacted: the worth-it gate (2026-09-23, CEO directive)
+
+**Decision.** New standing law, effective immediately. No experiment runs, no
+code is written, and no approach is pursued unless it answers four questions
+in writing BEFORE work starts: (1) precise question; (2) decision changed —
+name it: KILL / CONTINUE / PIVOT; (3) why this is the cheapest possible way
+(CPU-first, proof-before-GPU, fewest passes — show the count); (4)
+mathematical license (theorem → prediction → breaking point, per the
+foundations-first standard). Anything that cannot answer all four does not
+start; anything that stops earning its keep is culled at the Friday cull —
+no zombie workstreams. Code standards are binding: every script/notebook
+smoke-tested, seeded, hashed, logged; evaluators carry their own tests
+(EXP070's 18/18 is the bar); dead code deleted, not archived; no untested
+code reaches the user's GPU; Track 7 may kill any artifact that fails these
+bars, no appeal except to the CEO.
+
+**Recorded:** `research/RESEARCH_OPERATING_SYSTEM.md` §1 (standing-law bullet)
+and §8 (full text).
+
+**Retroactive audit** (`research/LAW15_RETROACTIVE_AUDIT_2026-09-23.md`):
+EXP080 PASS (all four on record; queued, gated); EXP081 PASS (all four on
+record; queued, gated); LOG-197 PASS (all four on record; executing);
+EXP068 FAIL — as-signed design fails Q3 (not the cheapest way; ~93k passes,
+underpowered, dead-room pool) and Q4 (E-validity conjecture, no computable
+breaking point). LOG-198 shelving now grounded in Law #15: the as-signed
+design is retired (not parked); its question re-asked via the cheaper
+replacement bets (CLLC pilot / DPRS-readout, conditional on EXP080 bin (ii)>0).
+No zombie workstreams remain.
+
+**Reverses if:** the CEO repeals the law or narrows its scope.
+
+---
+
+## LOG-197 — Law #7 bridge-leakage audit: EXECUTION COMPLETE (2026-09-23)
+
+**Report:** `research/analysis_plans/LAW7_BRIDGE_AUDIT_REPORT_LOG197_2026-09-23.md`
+(+ machine-readable twin `LAW7_BRIDGE_AUDIT_RESULTS_LOG197_2026-09-23.json`).
+Executed per the frozen §9 protocol, verbatim. Δθ=0 guard: pre/post SHA-256
+`ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed`, matching
+the archived manifest. Zero forward passes; weight-tensor reads only.
+
+**Endpoints:**
+- E1 (construction-algebra identity): PASS — 240/240 per-item checks,
+  min |cos| = 1.0000000 ≥ 1−1e-6, norm rel. err 1.192e-07 ≤ 1e-5.
+- E2 (code-trace provenance): CONFIRMED — 37/37 line assertions, exactly one
+  `make_bridge_vec` per runner, no label-free fallback path.
+- E3 (artifact consistency): CONSISTENT — (b,c,ΔM,p) fidelity PASS vs primary
+  JSONs for EXP065/066/077-smoke; EXP077 per-item norms rebuilt-vs-archived
+  max |diff| = 1.192e-07. EXP070 vector cell stays Underdetermined (notebook
+  mirror pending) — does not block Q1 per the frozen mapping.
+- E4 (Tango 1998 score CIs, §G1b): EXP065/066/070 cell 1; EXP077 official cell 4
+  (Inconclusive, held); smoke secondary cell 1 (non-verdict-bearing).
+  (Method note: the binding "exact" CI is Tango's score interval — verified by
+  reproducing all five synthesis-table rows to 4dp; Clopper–Pearson/Wilson/
+  Jeffreys all fail to reproduce the table.)
+
+**Verdicts:** Q1 (construction provenance) = **Supported** — the bridge, as
+implemented and executed in EXP065/066/070/077, is built from target/foil
+option-token unembedding rows: option-informed on the letter of Law #7
+(L0 instrument provenance). Law #7 compliance: **non-compliant on the letter.**
+Q2 (rescue attribution) = **Supported** — narrow L1: the rescues are a
+label-assisted readout artifact; steerability NOT licensed.
+
+**Auditor's §8 recommendation:** DEMOTE (recommended) — retain at most as a
+rescue-capability control ("the apparatus can detect causal effects"),
+explicitly relabeled "rescue control (known-answer direction), NOT a mechanism
+control"; revoke/replace its positive-control status for EXP080/081's
+autonomous-mechanism questions. Conditional on K1: if K1 confirms readout bias,
+demotion is mandatory; if K1 exonerates, the CEO may revisit.
+
+**Self-caught surprise (executor):** EXP065 and EXP070 executed on
+**pythia-160m**, not 410m (runner-pinned). E1 is therefore an algebraic
+self-consistency check of the documented formula, not a numeric measurement of
+the executed 160m vectors — recorded plainly in the report. CORRECTION OWED:
+program records describing EXP065/066/070 as Pythia-410m evidence must be
+amended to 160m.
+
+**Open:** CEO §H7 decision on the DEMOTE recommendation (brief at
+`research/analysis_plans/LOG197_H7_DECISION_BRIEF_2026-09-23.md`).
+EXP080/081 remain GPU-dark until the §H7 ruling + CEO GPU clearance.
+
+---
+
+## LOG-203 — Law #14 review of the addendum batch: SIGN-WITH-FIXES → all fixes applied, clean SIGN (2026-09-23)
+
+**Review:** `reports/adversarial_review_addendum_batch_2026-09-23.md` (Track 7).
+One combined pass over LOG-200 (license standard), LOG-201 (architecture
+analysis), LOG-202 (playbook + ledger), LOG-199 (Law #15 audit). All four:
+SIGN-WITH-FIXES, 8 required fixes, 3 notes, zero rejects. No fabricated
+citations (all four cited papers live-verified), no signed files edited,
+numbers reconcile.
+
+**Fixes applied by the Lead (this entry):**
+- F-200-1: retracted the false "three orders of magnitude above float32
+  roundoff" gloss (1e-6/1.2e-7 ≈ 8.4×) via dated addendum to the standard's
+  §A.5 — the tolerance itself (ε=1e-6, 240/240) is unaffected.
+- F-200-2: §A.5 now names the run pin (160m for EXP065/070, 410m for
+  EXP066/077) — E1 is 410m-matrix self-consistency for the 160m runs, not
+  byte-copies of executed numerics.
+- F-201-1: architecture analysis now carries the substrate-attribution table
+  (EXP065/070 = 160m/L10, one block from readout; EXP066/077 = 410m/L20);
+  §1.2/§1.5 channel arithmetic re-scoped; the convenience verdict is
+  strengthened by the 83.33%-fractional-depth inheritance receipt.
+- F-202-1: quota ledger now carries its Law #15 block (Q4 honestly n/a).
+- F-202-2: "20 UNVERIFIED" counting method documented (definitional line excluded).
+- F-202-3: Sprint-3 booking 0.10 → 0.13 (headroom rule); ledger/playbook
+  totals updated (booked ≈2.26h, reserve ≈27.74h).
+- F-199-1: Law #15 records added for K1/K2/K3, CLLC pilot, Sprint-3 pilots
+  (dated follow-up section; endpoints grounded in the adopted synthesis §H6).
+- F-199-2: EXP081 Q1 corrected to the signed F1 agreement bar (Law #9 bans
+  margins as decision endpoints).
+- N-202-1 (nit, fixed): 93k-passes/~13h tension resolved with wall-clock rationale.
+
+**Disposition:** all four artifacts now clean SIGN. The addendum loops are
+closed: foundations-first standard (awaits CEO ratification of §A.6),
+architecture analysis, compute playbook + ledger, Law #15 audit — each signed
+and logged. Remaining open items are CEO decisions only: §H7 ruling, GPU
+spend order, §A.6 ratification, user-action request.
+
+## LOG-204 — CEO rulings: §H7, GPU order, §A.6, user actions (2026-09-23)
+
+**Context.** LOG-197 executed (Q1=Supported, Q2=Supported-narrow-L1; auditor recommends DEMOTE). LOG-198 direction decision, Law #15 (LOG-199), foundations/architecture/compute addendum batch — all Law #14 clean SIGN (LOG-203). All loops closed; only CEO decisions were open. Ruled as follows.
+
+**Ruling 1 — §H7: DEMOTE the bridge.** Working status effective immediately: the bridge is retained ONLY as a rescue-capability control ("the apparatus can detect causal effects," the EXP070 LOG-110 license), relabeled "rescue control (known-answer direction), NOT a mechanism control." Its positive-control status for autonomous-mechanism questions is REVOKED across all signed protocols. Formal lock-in is conditional on K1 per the decision brief: K1-confirms-tilt → demotion mandatory and irreversible; K1-exonerates → CEO revisits. Consequence: the program now holds ZERO positive signals for autonomous steering — stated plainly, not softened. EXP080/081's control story to be repaired via §A.6 addenda (ruling 3).
+
+**Ruling 2 — GPU order: approve the LOG-198 sequence.** K1 ($0 CPU) runs immediately; then K2 pilot → Sprint-3 Stage-0 pilots (S3-4, S3-1, S3-3) → K3 → EXP080 → EXP081 → CLLC 160m pilot if P1/P2 fires. EXP068 retired as-signed (concur with audit + Lead: unmet gate, dead search pool, underpowered test phase). GPU stays dark until K1 rules AND CEO GPU clearance. Rationale: no GPU spend before the $0 gate that can dissolve the question — the compute discipline forbids it.
+
+**Ruling 3 — §A.6: RATIFIED.** License addenda (not re-registration) for EXP080/081's control relabeling following the §H7 demotion. Each addendum drafted as paperwork and Law-#14-reviewed BEFORE any GPU clearance. Signed-protocol immutability preserved; the demotion propagates without bureaucratic re-registration.
+
+**Ruling 4 — user actions.** CEO bundles one clear request: (a) Google Colab GPU enablement on the user's Google account, (b) Lightning AI free-tier signup (no card), (c) Hugging Face account verification. No agent touches credentials; account changes are user-reserved.
+
+**Material correction absorbed.** EXP065/070 ran on pythia-160m/L10, not 410m/L20 (executor self-report). Program records amended; the "static geometry is dead" claim now rests on the 160m/L10 substrate per the architecture analysis. Paper draft must reflect this before any external use.
+
+**Program status (honest).** Until a verdict licenses a powered re-registration, this is a falsification-and-boundary program — the L2/L3 ambition is blocked by registration order, not the ~23h GPU reserve, which stays reserved. Intensity and honesty, as promised: K1 is the next honest headline the program can earn.
+
+### LOG-211 — 2026-09-23: Substrate-correction absorption verified; paper-draft flag recorded (Research Lead)
+
+**Verification sweep** (CEO task (d), LOG-204 ruling 4): every program record checked for the EXP065/070 substrate misattribution (pythia-160m/L10, not 410m/L20 — LOG-197 executor self-report). **Result: the correction is already absorbed everywhere it matters; zero remaining misattributions found.**
+- `.muse by meta/COMPREHENSIVE_EXPERIMENT_LEDGER.md`: EXP063/064/065 all record `pythia-160m`, Layer 10 (corrected with user approval 2026-09-23).
+- Signed protocols `EXP065_TEMPORARY_COORDINATE_ALIGNMENT_SPEC.md` and `EXP070_ORACLE_CEILING_PREREG_SPEC.md`: both pin `EleutherAI/pythia-160m` (untouched — signed artifacts, already correct).
+- Adopted synthesis REV2: correctly attributes EXP065→160m, EXP066→410m (l.57); architecture analysis carries the substrate-attribution table (F-201-1); license standard names run pins (F-200-2).
+- `reports/paper_draft.md`: EXP065 correctly labeled Pythia-160M at every checked site (ll.234, 327, 351, 380, 460); no EXP070 substrate claim exists (paper predates EXP070); all 410m mentions refer to EXP066/077/G1, which are genuinely 410m.
+- Sweep for any line coupling "410" with EXP065/070 (excluding 066/077): no misattribution — only cross-scale-replication recommendations and already-correct records.
+
+**Paper-draft flag (pending update, recorded — not applied):** before any external use, the paper must (a) carry the EXP065/070 = 160m/L10 substrate pin wherever the "static geometry is dead" claim's evidence base is described, (b) absorb the LOG-197 Q1/Q2 verdicts and the LOG-204 §H7 demotion (bridge = rescue control, known-answer direction, NOT a mechanism control), and (c) note the program holds zero positive signals for autonomous steering. This flag already exists in LOG-204; LOG-211 records the verification that (a)'s factual basis is clean. No signed or adopted artifact was edited in this sweep.
+
+#### LOG-208 — 2026-09-23: S3 Stage-0 feasibility inventory complete — S3-1/S3-3 $0 gates FAIL (data absent), S3-4 partial (Research Lead)
+
+**Manifest:** `research/innovation/S3_FEASIBILITY_INVENTORY_LOG208_2026-09-23.md` (track-6, read-only, $0; zero interpretation by design). Method: full `experiments/runs/` scan + repo-wide filename/content search for attention/residual/snapshot/logit artifacts + JSON key-schema reads.
+
+**Findings [OBSERVATION]:**
+- **S3-1 (ARP):** NO per-layer attention snapshots anywhere in the archives → the $0 archived-data pilot gate fails.
+- **S3-3 (DUG):** NO mid-layer residual snapshots anywhere → the $0 gate fails.
+- **S3-4 (SAH):** PARTIAL ledger — `EXP077_cone_vs_line/exp077_instance_records.json` holds per-instance α ∈ {0.25, 0.5, 1.0, 2.0} with binary outcomes for the cone arm (60 items); bridge (C8) and B_wrong (C7) arms have single fixed-α records only, no sweep.
+- Repo-wide: exactly one `.pt` file (`exp077_vectors.pt`, static intervention vectors only); no `.npz`/`.safetensors`; no raw logit vectors in any archive (EXP066 holds only booleans + margin-shift scalars); no tensor archives of any kind.
+- Gap flagged by the specialist: artifacts outside the repo tree (e.g., unsynced Kaggle outputs from the EXP077 GPU run) are not covered by this inventory.
+
+**Consequence (Lead framing for CEO ruling):** per the recorded Law #15 decision, missing data ⇒ re-scope or drop before design. S3-1 and S3-3 cannot run as $0 archived-data Stage-0 pilots; options: (i) re-scope as GPU snapshot-collection pilots (new Law #15 four answers + CEO clearance required — cost changes from $0 to GPU passes), or (ii) drop from Stage-0, retain in the idea backlog. S3-4 can proceed only on a cone-arm-only α analysis unless GPU collection is licensed for the missing arms. Note these pilots' *interpretation* was already gated on K1 (positive-class integrity); their *feasibility* now fails independently. The LOG-198 ordered action list needs a CEO ruling on whether Sprint-3 Stage-0s stay in sequence behind re-scoped designs or yield their slot. No GPU spent; no signed artifacts touched.
+
+#### LOG-209 — 2026-09-23: §A.6 license addenda drafted for EXP080/081; Law #14 review dispatched (Research Lead)
+
+**Deliverables (new dated files; signed protocols byte-untouched):** `experiments/protocols/EXP080_LICENSE_ADDENDUM_LOG209_2026-09-23.md` (153 lines), `experiments/protocols/EXP081_LICENSE_ADDENDUM_LOG209_2026-09-23.md` (169 lines). Drafter pauses for review.
+
+**Recovered licenses (both graded IN-HOUSE-PROOF, reviewer to verify):** EXP080 — superset lemma (c=0 by construction), L2 = McNemar collapse to one-sided binomial + oracle-as-upper-bound, L3 = bin(ii)=0 ⇒ (d)/(e) collapse to "bridge ceiling, not pool ceiling" reporting only; EXP081 — §4.1 regrouping identity (JSON cos = 0.9999999999999998), L2 licenses the C5 deletion, L3 names the identity's own refutation condition + F1 fragility rule.
+
+**§A.6 point-5 finding (transition as finding generator, working as designed):** the ratified sketch over-read EXP081's L3 as "agreement < ⌈5n_d/6⌉ ⇒ transfer claim dead"; the signed spec (§5.1 + LOG-182 F1) pins the T3 flag as descriptive-only (tie-break-fragile, never deciding) — the addendum reports the signed text and issues the correction explicitly. Transfer claim dies only via §8 outcomes (b)/(c). No grade downgrade.
+
+**§H7 relabeling (LOG-204 ruling 1):** EXP080 C7 → "rescue control (known-answer direction), NOT a mechanism control" (surviving: §7 C3-vs-C7 secondary, §9(c) contingency); EXP081 C2 → same relabel (surviving: strictly T2 procedure-validity). Honest admissions on record: EXP080 tests no autonomous-mechanism question (label-informed Level-1 ceiling); EXP081 has no label-free positive control for transfer (license earned conjunctively via T1–T5). H_ceiling-G2 / H_transfer noted as CONJECTURE-UNDER-TEST (weakest-grade ceiling ⇒ cheapest experiment only — which both are).
+
+**Next:** LOG-210 Law #14 review dispatched (independent track-7; verdict answers to the CEO). Addenda are clearance preconditions, not clearance itself — EXP080/081 remain gated on the Law-#7 audit + CEO GPU clearance, and GPU stays dark until K1 rules. No GPU; no signed artifacts touched.
+
+#### LOG-210 — 2026-09-23: Law #14 review of the §A.6 addenda — SIGN-WITH-FIXES, fixes applied (Research Lead)
+
+**Report:** `reports/adversarial_review_addenda_law14_2026-09-23.md` (independent track-7; recompute-don't-trust). **Disposition: SIGN-WITH-FIXES → both fixes applied, review lines filled (LOG-210, 2026-09-23).**
+
+**Fixes (mechanical, applied):** F1 — EXP080 L2: "one-sided binomial" relabeled "b-only binomial under the signed spec's doubled two-sided exact convention (p = 2^{1−b})" (numbers were right; label was loose — pure one-sided would move the (c)/(d) boundary); confirmed against the §6.1 grid and the LOG-171 re-derivation. F2 — EXP081 L1: the ‖S_C5−S_C3‖ = 0.000e+00 figure re-cited to signed §5.2/§R0.1 as [FACT] (only the cos is JSON-locatable). Neither grade-affecting.
+
+**Verified:** both IN-HOUSE-PROOF grades honest and grade-conservative (PROVEN-LEMMA explicitly declined — no per-step M2.2 proof attack on record); §A.6 point-5 correction faithful to signed §5.1 (transfer claim dies only via §8 (b)/(c)); §H7 relabel verbatim in both, surviving roles match signed text, no smuggled mechanism authority; weakest-grade ceiling ⇒ 1,320/660 passes only; L1–L4 complete, M5.2/M5.3/M5.4 partitions hold; signed protocols byte-untouched.
+
+**Status:** on CEO acceptance, the addenda are released as GPU-clearance preconditions per LOG-204 ruling 3 (clearance itself still requires K1's verdict + CEO GPU clearance). Task (c) complete. No GPU; no signed artifacts touched.
+
+#### LOG-205 — 2026-09-23: K1 frozen plan written; Law #14 review dispatched (Research Lead)
+
+**Deliverable:** `research/analysis_plans/K1_READOUT_TILT_PLAN_LOG205_2026-09-23.md` (440 lines, frozen; writer paused per the no-blind-running chain — no execution, weights untouched). Contents: Law #15 four answers on record; endpoints (a) per-item cos(bridge, target unembedding row) vs 0.9 bar with Clopper–Pearson CI and ≥0.9-majority kill rule, (b) f/r flip diagnostic per the adopted §H6 reading, (c1) swapped-construction geometric persistence, (c2) swapped-scoring identity, D1 archived logit-shift diagnostic; full Mathematical License (L1 readout-linearity + construction identity, L2 threshold prediction with non-vacuity derivation, L3 breaking points, L4 six-assumption inventory; self-graded IN-HOUSE-PROOF geometric / CONJECTURE-UNDER-TEST causal); exhaustive five-category verdict table with per-run + ≥1-run program aggregation rule; Δθ=0 guard with archived pre_hash cross-checks; exact env pin; pre-registered consequences (confirm→§H7 demotion locks + P1 fires + K3 stands down; exonerate→CEO revisits §H7, K2/Sprint-3/K3 licensed; Inconclusive→HOLD with [OPEN]); knowledge-protocol challenge + idea.
+
+**Two writer-flagged judgment calls for LOG-206 (explicitly ordered in the review brief):** (1) the adopted (c) spec as literally written is ARITHMETICALLY VACUOUS under binary argmax scoring (vacuity lemma proved in-plan, §5.1) — writer operationalized (c1) as swapped-construction persistence; reviewer must rule faithful-operationalization vs design-change-needing-CEO-signoff, no deferral. (2) The (b) tension: adopted mapping (f≥r/2 strengthens tilt) vs L1 predicting f=0 for pure tilt — writer kept the adopted mapping per Law #4 and rested the kill on (a)/(c1); reviewer must rule on the posture. Run pins verified in-plan (160m for 065/070, 410m for 066/077); EXP070 excluded from vector tests (UNVERIFIED).
+
+**Next:** LOG-206 Law #14 review dispatched (independent track-7); verdict may be SIGN / SIGN-WITH-FIXES / REJECT / ESCALATE-TO-CEO on the two judgment calls. Execution only after SIGN. No GPU; $0 CPU.
+
+#### LOG-206 — 2026-09-23: Law #14 review of the K1 plan — ESCALATE-TO-CEO (narrowly scoped; Research Lead)
+
+**Report:** `reports/adversarial_review_k1_plan_2026-09-23.md` (independent track-7; everything recomputed from primary sources — scoring code, archived JSONs, the algebra). **Disposition: ESCALATE-TO-CEO on point 1 (design change).** The reviewer is explicit: the plan minus (c1) is SIGN-ready; the escalation is narrow.
+
+**Rulings:**
+1. **Vacuity proof CORRECT** (verified from scoring code: `chosen = A if logits[toks_A] > logits[toks_C] else C`; EXP065/066 same binary structure). The adopted (c) as literally written is hypothesis-independent vacuous — cannot discriminate anything.
+2. **(c1) = DESIGN CHANGE → CEO must decide.** Three reasons: (a) measurand + decision rule both changed (behavioral ΔM under CI+δ_min → geometric cosine-persistence under 0.9/majority-CI), and the "binding, from §H6" attribution is false; (b) reviewer derived that (a) and (c1) are near-mutually-exclusive per item (opposite row-dominance conditions) — a (c1)-alone firing shows foil-suppression tilt, not "persistence" of the (a) property, so the plan's rationale is geometrically inaccurate for the case its own OR-kill fires on; (c) it expands the kill surface past a mentor-adopted battery. **Reviewer's recommendation: STRIKE (c) as discriminating** — rest K1 on (a)+(b)+(c2)+D1; foil-suppression deserves its own fresh pre-registration, not smuggling as "(c1)".
+3. **(b) posture:** verbatim-keep is the correct Law #4 posture; (b) survives as diagnostic; kill-resting-on-(a) is honest given the double disclosure. But the adopted (b) reading is backwards vs the L1 license (pure tilt predicts f=0 exactly) — it must be **re-registered before bearing weight in any future tilt verdict**.
+4. Grade discipline PASS (grades match rubric; L1 and §3 algebra recompute clean); 3 minor L4 gaps enumerated. Run pins PASS (160m/L10, 410m/L20, 410m/L20; EXP070 Underdetermined). Standard battery PASS (kill bars bite: ≥39/60 for KILL, ≤21/60 for ruled-out). One mechanical M5.2 gap (verdict-table row 5, two cells uncovered) — fix enumerated.
+
+**Queued behind the CEO's ruling:** mechanical fixes F-V1/F-T1/F-G1–G3/F-S1 (+F-C1 only if (c1) is adopted) → targeted re-verification of diffs → SIGN → execution. Per Law #15 Q2: ESCALATE, not SIGN — the $0 execution releases on the CEO's (c1) decision.
+
+**CEO decision required (three options, verbatim from the review):** (i) adopt (c1) with rewritten rationale; (ii) direct a different repair; or (iii) strike (c) as discriminating (reviewer-recommended). I have not touched the frozen plan — it stays frozen until the ruling. No GPU; $0 CPU.
+
+## LOG-212 — CEO ruling on the LOG-206 K1 escalation + batch dispositions (2026-09-23)
+
+**Escalation.** The LOG-206 Law #14 review of the K1 frozen plan returned ESCALATE-TO-CEO with three verified findings: (1) the vacuity proof is CORRECT — adopted (c) as literally written is hypothesis-independent vacuous, settled fact; (2) (c1) is a DESIGN CHANGE, not a faithful operationalization (measurand + decision rule changed; false "binding from §H6" attribution; (a)/(c1) near-mutually-exclusive per item — a (c1)-alone firing shows foil-suppression tilt, not persistence of the (a) property; expands the kill surface past the mentor-adopted battery); (3) the plan minus (c1) is SIGN-ready, and the adopted (b) reading is backwards vs the L1 license — it must be re-registered before bearing weight in any future tilt verdict.
+
+**Ruling: option (iii) — STRIKE (c) as discriminating.** K1 rests on (a)+(b)+(c2)+D1. Rationale: the program's own law — a design change becomes a new experiment number, never a silent edit; adopting (c1) with a rewritten rationale would smuggle an expanded kill surface past the mentor-adopted battery. The foil-suppression tilt phenomenon the reviewer derived is genuinely interesting and earns its OWN fresh pre-registration (new experiment number, Law #15 four answers, Law #14 review) — not a footnote inside K1. The (b) re-registration requirement is recorded as a standing correction: no future tilt verdict may lean on the adopted (b) reading until re-registered.
+
+**Disposition — LOG-210 (§A.6 addenda): ACCEPTED.** SIGN-WITH-FIXES → fixes applied → released as GPU-clearance preconditions. (Clearance itself still needs K1's verdict + CEO GPU clearance.)
+
+**Disposition — Sprint-3 $0 gates (LOG-208):** S3-1/S3-3 FAIL (no archived attention snapshots / mid-layer residuals) → BACKLOG pending K1's verdict (if K1 confirms tilt, their positive class is poisoned; re-scoping now would be wasted motion). S3-4 cone-arm-only CPU analysis MAY PROCEED now ($0, prejudges nothing); its missing arms wait on the same K1 verdict, not on GPU.
+
+**Orders.** New Lead instance: apply the queued mechanical fixes minus (c1), targeted re-verification of diffs, SIGN → execute K1. Fresh-pre-register the foil-suppression tilt experiment. GPU stays dark. $0.
+
+## LOG-216 — S3-4 cone-arm-only flip-stability characterization: COMPLETE (2026-09-23)
+
+**Report:** `research/analysis_plans/S34_CONEARM_ANALYSIS_LOG216_2026-09-23.md` (+ JSON twin, executor script). $0 CPU; archived EXP077 records only; no weights, no forward passes.
+
+**Findings [OBSERVATION]:** 57/60 items no flip; 3 stable flips (5.0%, Wilson 95% CI [1.7%, 13.7%]) — all step-function trajectories (flip once, stay flipped); 0 unstable flips. α*: 0.5 → 2 headroom rescues (Mercury, Iron), 1.0 → 1 headroom rescue; 57 abstentions; 1 stable damage (Silver, α*=0.5). Rescue-flag consistency: 0 mismatches / 240 cells.
+**Killer-box sub-check:** headroom stable-flip rate 2/24 = 8.3% [2.3%, 25.8%] — the ≈0 kill condition is NOT met on the cone arm (verdict: Not supported on the sub-check). SAH overall: **Underdetermined** (one-arm characterization, not a verdict).
+**Uncomputable (stated):** the Stage-0 gate (bridge-vs-B_wrong stable-flip separation, p<0.1) — per-α records for C7_Bwrong/C8_bridge absent. Binary outcomes only; all counts are lower bounds. Nothing here licenses the GPU pilot gate.
+
+## LOG-214 — EXP082 foil-suppression tilt: FROZEN pre-registration drafted (2026-09-23)
+
+**Plan:** `research/analysis_plans/EXP082_FOILSUPPRESSION_TILT_PLAN_LOG214_2026-09-23.md` — FROZEN, DO NOT EXECUTE before Law #14 SIGN (LOG-215, pre-assigned). EXP082 verified next-free (minted LOG-182).
+**Design:** fresh battery per CEO ruling LOG-212 — own rationale (foil-suppression tilt: b̂ ≈ −ŵ_f driving the foil logit down, geometrically distinct from and near-mutually-exclusive with target-boost per item), own Law #15 answers (PIVOT if Supported — does NOT override K1 or decide §H7; KILL the foil-suppression hypothesis if exonerated; $0 CPU, 0 forward passes), L1–L4 license (foil-suppression lemma + 0.484 mirror bound + joint-firing lemma both-fire ⟹ cosθ ≤ −0.62; A2 undischarged, causal grade CONJECTURE-UNDER-TEST), boxed 2×2 {(a)}×{(f)} partition, K1(a)-mirrored endpoints with recomputed kill bars (≥39/60 fires; ≤21/60 ruled out), five verdict categories, guards G1–G6 (G4 = joint-lemma check, FATAL). Standing (b)-correction honored (adopted reading unused; flip counts as [OBSERVATION] only, zero decision weight). Inherits nothing from K1.
+**Next:** LOG-215 Law #14 review dispatched.
+
+## LOG-215 — Law #14 review of EXP082: SIGN-WITH-FIXES (2026-09-23)
+
+**Verdict:** SIGN-WITH-FIXES. Reviewer recomputed from primary sources: all three lemmas (foil-suppression, 0.484 mirror bound √(0.19/0.81)=0.484322, joint-firing cosθ ≤ −0.62), kill bars (38/60→CP lower 0.4990 no-fire; 39/60→0.5160 fires; 21/60→upper 0.4840 ruled-out; 22/60→0.5010 no-fire), flip counts and aggregate shifts verified in archives, EXP065/066 pre_hash==post_hash verified, jurisdiction PASS (own rationale/license, (c1) not resurrected, no §H7 decision, no K1 override), (b)-correction PASS, grade discipline PASS (IN-HOUSE-PROOF pending this review; causal upshot capped CONJECTURE-UNDER-TEST), Law #15 PASS, verdict-table exhaustiveness PASS.
+**Fixes (mechanical):** F1 — both-fire cell vacuous-pass (N_bothfire reporting + N_bothfire=0 → Inconclusive-on-antipodal); F2 — assumption numbering (A5 retired); F3 — §5 over-(ii) heading retitled "a relational (t−f) readout structure".
+**Status:** all three fixes applied by Lead 2026-09-23; targeted diff re-verification dispatched as LOG-215b. EXP082 releases for $0 execution on LOG-215b SIGN.
+
+## LOG-215b — EXP082 diff re-verification: SIGN (2026-09-23)
+
+All three LOG-215 fixes verified present and faithful; no collateral edits in §5 BOX, §7 table, L4 block, §10 steps. **EXP082 RELEASED for $0 execution** (zero forward passes; guards G1–G6 stand). Executor dispatched.
+
+## LOG-218 — Top-lab standard amendment enacted (2026-09-23, on the user's direct order)
+
+**Form:** Operating System amendment ("Standard of work", §9) — NOT a new numbered law; the 15 laws stand. Prospective, not retroactive.
+**Contents:**
+1. Double bar AMBITION × RIGOR on every deliverable. Rigor unchanged. Ambition scored: every proposal answers in writing, before work starts — "could this change what anyone believes?" — naming the belief and the observation that would overturn it. Merely-incremental proposals are sent back.
+2. First principles, always — no authority/analogy/literature-suggests without a mechanistic or mathematical reduction. "Because X lab does it" is never a reason.
+3. Quantitative predictions before experiments — direction + magnitude + breaking point in writing, before compute.
+4. Steelman requirement — every proposal contains its strongest counterargument at full strength, answered or conceded; reviews grade the steelman; weak steelman fails the review.
+5. Briefing template — `research/BRIEFING_TEMPLATE.md` now opens every worker-agent dispatch from here on (ambition × rigor, first principles, quantitative predictions, steelman, knowledge protocol, reporting standards, hard guards). Referenced in TEAM_KNOWLEDGE_PROTOCOL §1 (onboarding) and §2 (the one-idea obligation now carries the belief-change question).
+6. No coasting on process — Friday cull asks two questions: "did we falsify something?" AND "did we attempt anything ambitious?" Pure-process weeks are failed weeks, logged as such.
+**Track 7:** canonical checklist created at `research/TRACK7_REVIEW_CHECKLIST.md` — rigor bar R1–R6 + ambition bar A1–A5 (belief-change test, steelman grade, first principles, quantitative prediction, non-incrementality). Kill experiments pass A1 by construction (a clean kill changes program beliefs).
+**Current batch:** signed in-flight batteries (K1, EXP082) execute as signed — the ambition bar gates what we start next, backlog re-activations, and post-verdict "what now" decisions, never a reason to stop a signed run. K1/EXP082 verdicts will be graded against the double bar on arrival; their successor proposals must pass A1 before any new work starts.
+
+## LOG-219 — Campaign mode + frontier benchmarking directive enacted (2026-09-23, standing user order)
+
+**Form:** Operating System amendment (§10 "Campaign mode — the lab never idles") + standing artifacts + scheduled heartbeat. Not a new numbered law; the 15 laws stand.
+**Campaign mode:** completion of any workstream is immediately followed by the next ordered action (same cycle — a handoff ending in "awaiting orders" is a defect); blocks escalate to the CEO same-cycle with 2–3 options + recommendation; Monday-ideas / Wednesday-adversarial / Friday-cull run continuously as scheduled sessions (crons: `scbi-monday-ideas` Mon ~09:40 IST, `scbi-wednesday-adversarial` Wed ~09:40 IST, `scbi-friday-cull` Fri ~17:40 IST — all owned by goal:scbi-research-program, reporting to the CEO ops channel). Daily 08:40 health check stays the anomaly watch.
+**Track 9 (benchmark scientist) activated:** standing repo-resident frontier scoreboard at `research/benchmarks/FRONTIER_SCOREBOARD.md` — best published numbers for inference-time computation / steering / capability amplification, every record Law-#3-verified (task, model, effect size + CI/N, compute budget, venue/status, source). Every SCBI verdict plotted against the frontier on the same axes with the same honesty standards; updates with each verdict; shown to the user alongside results. No cherry-picking: if we trail, the board says so. Stale board (>7 days after a verdict, or 30 days without a literature re-check) = anomaly. Scoreboard v1 in build (LOG-220); first version reported next standup.
+**Innovation as standing workstream:** live backlog at `research/innovation/CANDIDATE_BACKLOG.md` (seeded: S3-1..S3-6 with statuses; S3-1/S3-3 backlogged pending K1; S3-4 reduced characterization done LOG-216). Standing rule: every null or kill produces ≥1 new falsifiable candidate ("what did this death teach us"), logged before the workstream closes; deaths-owe-candidates table tracks the debt (K1 and EXP082 verdicts each owe ≥1 on arrival). Monday reviews the backlog; Friday culls entries without kill criteria or costed pilots.
+**Lead's standing orders:** report completions promptly; escalate blocks same-cycle with options; never let the lab sit idle awaiting orders; every completion handoff ends with the next dispatched action or an explicit escalation.
+
+## LOG-217 — EXP082 executed: EXP082-EXONERATED (foil-suppression Not supported) (2026-09-23)
+
+**Verdict (verbatim, §7):** all three primary runs **Not supported — foil-suppression reading killed ((a) cell recorded)**; program-level **EXP082-EXONERATED**. EXP070 Underdetermined (excluded).
+**Numbers [FACT]:** (f) k_f = 0/60 on every run, CP 95% CI [0.0000, 0.0596] (upper < 0.5) — ruled out; (a)-contrast k_a = 0/60 everywhere — ruled out; N_bothfire = 0; mean/max d_i: EXP065 0.1579/0.1738, EXP066 0.6394/0.6885, EXP077 0.6394/0.6885; mean cosθ: 0.9503 / 0.2775 / 0.2775. Not a single item reached the 0.9 bar on either endpoint. All six guards PASS; $0; 0 forward passes (code-inspected).
+**Plan-premise defects (assets, quarantined as [OBSERVATION]):** D1 — §8 pinned the wrong `get_hash` formulation; each run's own runner formulation reproduces archived hashes exactly (Δθ=0 intact, verified). D2 — EXP077 smoke bench ≠ official bench (entity-grouped records vs 21/7/2/0/0 construction); smoke confined to its verifiable aggregate (b,c)=(14,0) role.
+**Consequence (pre-registered §9):** the foil-suppression hypothesis is KILLED. The bridge is neither target-directed nor foil-directed on any item of any run — yet rescues +10pp. The static directional-readout story is dead; the rescue must come from elsewhere (downstream transformation, or suppression of the actual competitor token).
+**Death-debt (LOG-219):** PAID — S3-7 spoiler-suppression candidate logged to backlog; LOG-221 analysis dispatched same cycle.
+**Artifacts:** `research/analysis_plans/EXP082_REPORT_LOG217_2026-09-23.md`, `EXP082_RESULTS_LOG217_2026-09-23.json`, `EXP082_execute_LOG217_2026-09-23.py`.
+
+## LOG-213 — K1 executed: K1-EXONERATED (readout tilt Not supported) (2026-09-23)
+
+**Verdict (verbatim, §7):** all three primary runs **Not supported** ((a)-RULED-OUT: k=0/60, CP 95% CI [0.0000, 0.0596] on EXP065/066/077-official); program-level **K1-EXONERATED**. EXP070 Underdetermined. (b) diagnostic: EXP065 weakens, EXP066 weakens, EXP077 neutral — recorded, never fires the kill. All guards G1–G5 PASS; A8 min_i‖W_U[t_i]−W_U[f_i]‖₂ = 0.784649; $0; 0 forward passes (independent code inspection).
+**Headline [FACT]:** not one of 180 bridge directions reaches the 0.9 target-row bar. The bridge is geometrically a relational (t−f) direction, not a target-row boost.
+**Execution discoveries (assets, flagged for Law #14):** G3 hash-function correction (plan pinned the wrong formulation; each run's own runner formulation reproduces archived hashes — Δθ=0 intact); G2 smoke-bench anomaly (smoke bench ≠ official bench; scoped to verifiable aggregate role).
+**Pre-registered consequences (§9, EXONERATED branch):** LOG-204 §H7 demotion does NOT lock in — CEO revisits §H7; K2 pilot LICENSED (GPU minutes, awaiting CEO GPU clearance); Sprint-3 Stage-0 pilots LICENSED (positive class intact — S3-1/S3-3 unblocked pending Monday double-bar re-check); K3's CPU compliant-bridge construction audit proceeds; §H6 ordering resumes. No pivot fires. EXP080/EXP081 remain gated on Law #7 audit + CEO GPU clearance (unchanged).
+**Combined with EXP082:** both directional tilts dead (target-boost 0/60, foil-suppression 0/60); the relational (t−f) direction is the live mechanism; the rescue (+10pp) must be attributed to the relational readout effect or downstream transformation.
+**Death-debt (LOG-219):** PAID — S3-8 downstream-amplification test logged; LOG-222 analysis dispatched same cycle. K2 pre-registration commissioned as LOG-223.
+**Artifacts:** `research/analysis_plans/K1_REPORT_LOG213_2026-09-23.md`, `K1_RESULTS_LOG213_2026-09-23.json`, `K1_execute_LOG213_2026-09-23.py`.
+
+## LOG-221 — S3-7 spoiler-suppression archived-record analysis: Underdetermined (2026-09-23)
+
+**Verdict: Underdetermined.** No predicted-token labels exist in any archive: EXP077 records carry per-arm correctness booleans only (14/60 bridge-rescued identified, no token ids); EXP066 margin scalars encode no token identity (8/60 rescued); EXP065 aggregate-only. The foil-vs-third-token tabulation is not computable — the pre-registered "labels absent" branch fired, as priced.
+**Honest ambition accounting:** the analyst reported this changes what nobody believes — schema QA, not discovery; the assumption is now a verified [FACT], and the instrumentation spec is the asset.
+**Steelman (conceded):** even a labels-present third-token majority would not license the mechanism — binary records can't show margins; suppression vs re-routing observationally identical; baseline error distribution is a fact about the baseline, not the bridge. Any future S3-7 pre-registration must carry a CAUSAL endpoint: competitor-logit-drop (bridge vs random-rotation control) on rescued items.
+**Backlog:** S3-7 flipped to QUEUED with the instrumentation spec attached (per-item per-arm top-5 tokens+logits, baseline top-1 competitor identity, margin decomposition, Δθ=0 hashes; Law #7 audit applies). $0, 0 forward passes, nothing invented.
+**Artifacts:** `research/analysis_plans/S37_SPOILER_ANALYSIS_LOG221_2026-09-23.md` + JSON twin.
+
+## LOG-222 — Standing Benchmark Analyst hired: frontier scoreboard v1 (2026-09-23)
+
+**Hire.** Dedicated Benchmark Analyst role created per user authorization (standing appointment; re-hired each verdict cycle). Reports to the Research Lead. Web access authorized, no per-step approval.
+
+**Deliverables** (new, `research/benchmarks/`):
+- `FRONTIER_SCOREBOARD_v1_2026-09-23.md` — 12-row board: CAA, ∇-Reasoner, Activation-LQR, Meta-Reasoner, DEER, Self-Refine, NoisyCoconut, RISER, LTPO, LatentMAS, STARS, PPLM. Task, model, effect with the paper's own uncertainty, N, compute budget, Δθ=0 status, per-row verification provenance. Two honest axes (accuracy-at-matched-compute; compute-saved); rows that can't share an axis aren't forced onto one.
+- `SCBI_VS_FRONTIER_2026-09-23.md` — every SCBI verdict plotted; bridge rows carry the LOG-197/204 artifact reclassification. Gap stated plainly: no capability entry vs six frontier systems. "What beating requires": the §D2 six conditions + powered N≈100+.
+- `UPDATE_PROTOCOL_2026-09-23.md` — re-hire spec: trigger (each verdict + monthly sweep), inputs, update procedure (new dated files, never in-place edits), standup report format, binding anti-cherry-picking rules.
+- `PROGRESS_ANALYSIS_2026-09-23.md` — one-page honest assessment.
+
+**Law #3 verification (fresh fetches, 2026-09-23):** CAA (arXiv:2312.06681 — abstract gives no quantitative effect sizes; cell marked accordingly), ∇-Reasoner (arXiv:2603.04948 — ">20% accuracy improvement", 10–40% fewer calls; 80.4% MATH-500 figure rests on LOG-185), Activation-LQR (arXiv:2604.19018 — qualitative SOTA claims + tracking bounds; no hard numbers in abstract), Meta-Reasoner (arXiv:2502.19918 — +9–12% / −28–35% confirmed), DEER (arXiv:2504.15895 — −19.1–80.1% / +0.3–5.0% confirmed), Self-Refine (arXiv:2303.17651 — ~+20% absolute confirmed). Secondary rows carry the synthesis LOG-185 record as stated provenance. LTPO/LatentMAS effect sizes marked not-extracted (next re-hire's job).
+
+**Law #15 (analyst's four answers):** Q: how far is SCBI from the frontier and what closes the gap? Decision changed: program prioritization. Cheapest path: $0 literature arithmetic (no GPU). License: comparison bookkeeping honestly labeled, no new theorem claimed.
+
+## LOG-220 — Frontier scoreboard v1 built at the §10-mandated path (Track 9, 2026-09-23)
+
+**Deliverable:** `research/benchmarks/FRONTIER_SCOREBOARD.md` (v1.0, ~440 lines) — the standing repo-resident scoreboard owned by Track 9 per LOG-219 / operating-system §10. $0; no GPU; read-only web fetches only.
+
+**Reading done (knowledge protocol §1):** `research/TEAM_KNOWLEDGE_PROTOCOL.md`; `research/synthesis/SYNTHESIS_A_J_REV2_2026-09-23.md` §D1 (prior-art map), §B5–B6, Appendix V (Law #3 record); `reports/research_log.md` tail (LOG-168→LOG-222); `research/RESEARCH_OPERATING_SYSTEM.md` §10 (LOG-219); `research/TRACK7_REVIEW_CHECKLIST.md`; `AGENTS.md`.
+
+**Frontier extraction (20 records):** diff-in-means steering (CAA/ActAdd/RepE/ITI), Activation-LQR, Steering Vector Fields, ∇-Reasoner, Meta-Reasoner, LTPO, NoisyCoconut, LatentMAS, RISER, PPLM, Self-Refine, DEER, STARS, ToT, self-consistency, LLM-Monkeys, rStar-Math. Each row: task · model(s) · effect size with CI/N as reported · compute budget · **label-use class (None / Train-probes / Per-item — new Law-#7 scoreboard axis)** · transfer tested · Δθ=0 compliance · venue/status · verification · exact source.
+
+**Law #3 verification this cycle (fresh fetches 2026-09-23):** VERIFIED — SVF (arXiv:2602.01654, Li/Li/Huang, preprint Feb 3 2026 — mechanism; upgraded from UNVERIFIED; no headline numbers in abstract), RISER (ACL Anthology 2026.findings-acl.226, Findings ACL 2026; 3.4–6.5% avg zero-shot, 2–3× token efficiency vs CoT; trained router → Δθ=0-excluded adjacent), ITI (arXiv:2306.03341; Alpaca TruthfulQA 32.5%→65.1%), ToT (arXiv:2305.10601; Game of 24 4%→74%), self-consistency (arXiv:2203.11171, ICLR 2023; GSM8K +17.9%, PaLM-540B 56.5%→74.4%), LLM-Monkeys (arXiv:2407.21787; SWE-bench Lite 15.9%→56% @250 samples), rStar-Math (arXiv:2501.04519; MATH 58.8%→90.0%, +4.5 over o1-preview; Δθ=0-excluded — self-evolution trains), RepE (arXiv:2310.01405 — mechanism; headline numbers secondary-reported, marked). Inherited from Appendix V (not re-fetched): CAA, ActAdd, PPLM, Self-Refine, DEER, STARS, A-LQR (mechanism), Meta-Reasoner (mechanism), LTPO, LatentMAS, NoisyCoconut. PARTIALLY VERIFIED: ∇-Reasoner (mechanism verified; 80.4%/Qwen/GRPO/venue rest on LOG-185). **Tally: 19 VERIFIED + 1 PARTIAL + 0 UNVERIFIED.** Venue-only claims rest on LOG-185 with provenance split declared; abstract-absent numbers marked, not invented.
+
+**SCBI plotted on the same axes (§3):** boundary I1 (cosine ~0.7 → ΔM=0); EXP077 five static rooms dead (ΔM=0, p=1.0, N=60, 410m/L20); bridge rescue +10pp official (Per-item; §H7 demotion UNDER CEO RE-REVIEW after K1-EXONERATED — corrected from the task brief's "in flight" status); EXP048/049/056/057/058 P2 observations with exact (b,c,p); G1 QK-sentence Refuted; **K1-EXONERATED (LOG-213: (a) 0/60, CP CI [0.0000,0.0596]) and EXP082-EXONERATED (LOG-217: (f) 0/60, same CI; N_bothfire=0) rows added — both directional-readout hypotheses dead; live mechanism = relational (t−f) readout effect, still label-informed**; S3-7 Underdetermined (LOG-221). Program status restated: zero positive signals for autonomous steering (unchanged — K1 exonerated the tilt account, not the label-use fact).
+
+**"Beating it" (§4):** per-family exact observations, each binding the §D2 five conditions + matched compute + the §2.1 rule (a Per-item construction can never beat a None-class row). The only row where the frontier is also at zero — label-free autonomous steering — is named as the program's actual race.
+
+**Consolidation:** the LOG-222 sibling analyst's dated files (`FRONTIER_SCOREBOARD_v1_2026-09-23.md`, `SCBI_VS_FRONTIER_2026-09-23.md`, `UPDATE_PROTOCOL_2026-09-23.md`, `PROGRESS_ANALYSIS_2026-09-23.md`) are preserved as historical records; this file is the single standing board at the §10-mandated path, with a consolidation rule (§5.6) and changelog. Superset of the sibling's 12 rows (20 records; LatentMAS +14.6%/70.8–83.7% extracted from App. V11, which the sibling had marked not-extracted).
+
+**Top-lab bar (§6, in-file):** steelman (cross-scale comparison objection — answered, partially conceded), one challenge (demotion logic applied evenly dissolves Family A's headline — defended via the Train-probes vs Per-item distinction; residual risk conceded), one idea (STARS gain-then-collapse depth sweep of the static operator: N=60×5 depths=300 passes, ~10 min T4, $0; kill criterion f(k)=0 ∀k falsifies the regime-untested rescue; non-monotonic f(k) licenses stabilizer search; belief changed: "single-application tests exhaust the static operator").
+
+**Licenses / does not license:** licenses the standing board as the program's comparison instrument and the update protocol (same-cycle verdict rows; 30-day literature re-check; stale-board = anomaly). Does NOT license any capability claim; does not decide §H7 (CEO's revisit); does not override the sibling's dated snapshots (preserved).
+
+**Next:** scoreboard v1 goes to the user in the next standup; K2 pre-registration (LOG-223) and the CEO's §H7 revisit are the next board-moving events.
+
+## LOG-220 — Frontier scoreboard v1 complete (Track 9, 2026-09-23)
+
+**Artifact:** `research/benchmarks/FRONTIER_SCOREBOARD.md` (v1.0, 446 lines) — the standing board per LOG-219 §10.
+**Headline gap [INFERENCE]:** on every published axis the frontier holds working verified numbers and SCBI holds a boundary map — we trail by *category*, not margin. Program holds zero positive signals for autonomous steering. The one axis where the frontier is also at zero — **label-free autonomous steering** — is the program's actual race.
+**Coverage:** 20 frontier rows (task/model/effect/CI-N/compute/label-use-class/transfer/Δθ=0/venue/verification/source); SCBI plotted on the same axes with all demotions stated; per-family "what would constitute beating it"; update protocol (same-cycle verdict rows, 30-day lit re-check, stale = anomaly).
+**New instrument:** Law-#7 label-use-class column (None / Train-probes / Per-item) with the binding rule that a Per-item construction can never beat a None-class row.
+**Verification (Law #3):** 19 VERIFIED / 1 PARTIAL (∇-Reasoner venue+headline rest on LOG-185) / 0 UNVERIFIED. Steering Vector Fields upgraded to VERIFIED (arXiv:2602.01654); RISER verified (ACL Anthology 2026.findings-acl.226). Nothing fabricated.
+**Steelman (conceded):** even application of the demotion logic would dissolve ITI's +32.6pp (label-trained probes) — defended via Train-probes vs Per-item (ITI's probes transfer to held-out items; the bridge never faced one); conceded the rule cuts both ways. **$0, no GPU, no signed artifacts touched.**
+
+## LOG-225 — S3-8 downstream-amplification test: Supported (2026-09-23) [NUMBERING REPAIR]
+
+**Numbering repair [FACT]:** the S3-8 analysis was dispatched as LOG-222, but LOG-222 was already assigned to the Standing Benchmark Analyst hire (line 3936) — a LOG-083/087-class collision. The analysis and its three artifacts are renumbered LOG-225 (files renamed, content references updated); the frozen K2 plan's S3-8 dependency reference "LOG-222" now reads LOG-225 (the frozen plan itself is untouched; the renumber is conveyed to the LOG-224 reviewer). LOG-222 remains the Benchmark Analyst hire. LOG-223 (K2 pre-reg) and LOG-224 (K2 review) are unaffected.
+**Verdict: Supported (EXP066).** The direct L1 readout shift explains only ~57% of the bridge's end-to-end margin shift. Per-item residuals r_i = Δm_i(archived) − Δm̂_i(L1): mean **+0.322534** (std 0.0291, range [+0.2142, +0.3780]), positive on **60/60 items**, 0 within the 1e-4 noise floor, 0 within 10% of |Δm̂|. Rescued (n=8): mean residual +0.333374 (std 0.0108); downstream gain g=Δm/Δm̂: **mean 1.797, std 0.052, range [1.736, 1.869]** — the circuit adds +0.32 margin units, a ×1.8 multiplicative gain on the injected (t−f) direction. The analyst's written pre-compute prediction (residuals≈0) was falsified at 7.6× the pre-registered breaking point. EXP065 Underdetermined (aggregates only); EXP077 not decomposable (correctness-only records). $0, 0 forward passes, weights read-only, Δθ=0.
+**Supersession note:** K1's D1 [INFERENCE] ("readout projection quantitatively exhausts the effect") is superseded in absolute terms — the ratio form cancelled absolute scale; the absolute decomposition shows 57% exhaustion. D1's observation stands; the exhaustion inference is retracted. (Recorded here; the filled K1 §7 table is not edited.)
+**Steelman (conceded):** the ×1.8 gain is confounded — attention re-routing vs LN/MLP gain unresolved; verdict holds on the pre-registered terms ("downstream transformation real"), and the attention attribution is K2's question, which this licenses rather than answers.
+**K2 consequence:** recommendation **PROCEED** — there is a real, large downstream transformation to hunt. The K2 plan's stated S3-8 dependency resolves toward premise-confirmed: K2 is now scoped as an attribution pilot (which component amplifies), not a whether-downstream-matters pilot. Conveyed to the LOG-224 reviewer; final clearance remains SIGN + CEO GPU clearance.
+**Backlog:** S3-8 verdict recorded (Supported); S3-9 gain-tomography candidate logged (g(α) on an α grid over the 8 rescued items, ~80 passes; kill criterion g varying >20% kills the linear-amplifier story).
+**Artifacts:** `research/analysis_plans/S38_DOWNSTREAM_ANALYSIS_LOG225_2026-09-23.md` + JSON twin + executor.
+
+## LOG-224 — K2 plan Law #14 review: SIGN-WITH-FIXES (2026-09-23)
+
+**Verdict: SIGN-WITH-FIXES** (6 fixes; none escalates). Rigor R1 conditional-pass → PASS pending fixes; R2–R6 PASS; ambition A1–A5 all PASS. The lemma survived a from-scratch re-derivation; kill bars recomputed and verified (L1 MDE b=6, Tango paired-proportion CI on Δ̂M_b−Δ̂M_a, §G1b faithful); the narrow routing-Refuted cell is sound; pin-divergence → Inconclusive forced.
+**Material finding [FACT]:** the plan's §3.1 conflates the EXP077 smoke and official benches — the official bench (b=6) has no in-repo per-item archive (standing LOG-197 TODO); the file the plan cites is the smoke archive (b=14, +23.33pp). The 410m pin is not executable as specified. **CEO bench decision: pin the SMOKE bench** (executable today, $0 pre-work; `exp077_instance_records.json` + `exp077_vectors.pt` per-item vectors exist; b=14 rescue anchor gives more headroom; the official bench becomes a post-K2-P replication option once its per-item records are mirrored in-repo).
+**Ruling: (d) arm CUT — K2-P = exactly 180 passes** (60×3). Reasons: the adopted §H6 battery is 60×3; (d) serves only an [OBSERVATION]-only diagnostic that cannot touch the licensed question; budget discipline. Zero-extra-pass top-5 logit archiving retained for all arms (free, preserves S3-7 optionality).
+**S3-8 follow-ups:** (a) STAND AS-IS — S3-8 (LOG-225) Supported discharges the §7 pre-execution gate (iii) toward PROCEED; the plan already priced the "residuals large" branch; the plan does not cite K1's D1 exhaustion reading. (b) S3-9 gain tomography STAYS QUEUED — out of §H6 jurisdiction, distinct verdict space; may run in parallel or after. (c) ×1.8 gain confound: no bar/cell change; gloss conformance only — a cell-2 verdict reads "final-position-local (readout + local downstream gain)," NOT "pure direct readout shift."
+**Fixes:** 1) bench pin + conformed anchors; 2) (d) cut; 3) dependency read LOG-222→LOG-225 (frozen, no text change); 4) gloss conformance (verdict-reading instruction); 5) G8 disjointness exclusion (entity position == final position); 6) "Tango (score) CI" terminology.
+**Next:** drafter produces REV1 with the CEO bench decision + fixes 1/2/5/6; targeted re-check of changed sections only as LOG-224b (pre-assigned). DO NOT EXECUTE before SIGN and CEO GPU clearance.
+
+## LOG-223/224b — K2 REV1 written, targeted re-check dispatched (2026-09-23)
+
+**REV1:** `research/analysis_plans/K2_ROUTING_BYPASS_PLAN_LOG223_REV1_2026-09-23.md` — implements all six LOG-224 fixes; frozen LOG-223 plan untouched; nothing else moved. (1) 410m pin = SMOKE bench, exact artifact paths, rescue anchor b=14/c=0/Δm=+0.233333/p=0.0001220703125; (c)-gate b_c≥6 stands with non-vacuousness justification; official bench replication-only. (2) (d) cut — K2-P exactly 180 passes (60×3), G4 on the 180 branch; free top-5 logit archiving retained, non-verdict-driving. (3) Dependency discharged — LOG-225 Supported → gate (iii) PROCEED; K2 re-scoped as attribution pilot. (4) Glosses conformed; binding cell-2 reading: "no upstream δ transport; rescue is final-position-local (readout + local downstream gain)." (5) G8/G10 disjointness exclusion pre-registered. (6) "Tango (score) two-sided 95% CI."
+**Drafter's challenge (banked):** smoke-pin headroom (b=14) > official (b=6) → a smoke-pin cell-2 verdict is PROVISIONAL-pending official-bench replication before the P2 pivot settles (§7). Sixth steelman: smoke headroom flatters the final-position-local account — answered (contrast is relative, headroom cuts both ways) + conceded (provisional-pending-replication).
+**Drafter's idea (banked as candidate):** per-block attribution follow-up grammar — bridge at block-23 output, final-position only; if the residual over the L1 prediction collapses vs the L20 injection, the ×1.8 amplifier sits in blocks 21–23; 8 rescued items × 1 arm = 8 passes, $0. Queued as a candidate, not folded into K2.
+**Next:** LOG-224b targeted re-check of changed sections only (dispatched; scope: diff-fidelity, Fix 1–6 conformance, sixth steelman grade, cell-2 binding language, lemma-proof sufficiency for pilot SIGN). DO NOT EXECUTE before SIGN and CEO GPU clearance.
+
+## LOG-224b — K2 REV1 targeted re-check: SIGN-WITH-FIXES (2026-09-23)
+
+**Verdict: SIGN-WITH-FIXES** — 4 text-only fix items (F1–F4), no design change. Diff-fidelity PASS (168 changed lines, all within the six fixes); Fix 2/5/6 PASS; sixth steelman PASS at full strength; §7 provisional-pending-replication is binding.
+**Retraction recorded [FACT]:** LOG-224's "per-item vectors exist" claim is RETRACTED — byte-level parse of `exp077_vectors.pt` shows 18 tensors (v_hat, v_hat_c, mu 1×1024; v_hats/v_hat_c_ks ×5; u_list/q_list 8×1024; r_vec, B_wrong, B_perp_basis); ZERO 60-item per-item C8 vectors. Only per-item norms were archived (`exp077_results.json → injection_vector_norms`, all = α=0.5). The REV1 draft misattributed verification to the LOG-224 reviewer — corrected in this record: the LOG-224 reviewer never byte-checked the file; the LOG-224b reviewer is the first to check. Correction applied to the plan record (F1), not just the text.
+**Caveat (license honesty):** the per-item norm fingerprint is a weak identity check (any unit×α vector passes it); the honest license for K2 vector identity is deterministic-reconstruction + live (c)-gate — revised G1 must say exactly that, implying no archive-grade verification.
+**Fixes for REV2:** F1 — correct the four false per-item-archive claims; rewrite G1 as construction-identity: (a) rebuild per-item b_K2 = α·normalize(E[t]−E[f]) from pinned model + pinned tokenizer + in-repo deterministic benchmark construction (`run_exp077.py` §3 constants); (b) per-item norm matches run-logged C8 norms (rel. err ≤ 1e-5); (c) target/foil token mapping logged per item (feeds G2); (d) identity chain = E1+E2 source link + EXP077 run-log F1 guard record. Grade [INFERENCE], not [FACT]. Same treatment for the K2-S row (EXP065 has no vector archive either — results.json + run_log.txt only). F2 — G10 exclusion floor: >6 exclusions (>10%) → Underdetermined with cause; ≤6 → bars apply at actual N. F3 — drop or source the unverifiable "acc 0.5667" in steelman-6. F4 — attach the standalone lemma-proof document (required for [THEOREM] promotion, NOT for pilot SIGN; lemma stays [PROPOSITION]).
+**Ruling:** the inline §5 proof suffices for pilot SIGN (IN-HOUSE-PROOF scope; lemma re-derived from scratch with no hole); no program-level belief change may cite it as [THEOREM] until the standalone proof passes Law #14.
+**Next:** REV2 dispatched; targeted re-check of revised text as LOG-224c (pre-assigned). DO NOT EXECUTE before SIGN and CEO GPU clearance.
+
+## LOG-224c — K2 REV2 written, final targeted re-check dispatched (2026-09-23)
+
+**REV2:** `research/analysis_plans/K2_ROUTING_BYPASS_PLAN_LOG223_REV2_2026-09-23.md` + standalone lemma-proof `research/analysis_plans/K2_CONFINEMENT_LEMMA_PROOF_LOG224c_2026-09-23.md` ([PROPOSITION], "DO NOT CITE AS [THEOREM]" banner). All four LOG-224b fixes implemented: F1 — G1 as construction-identity graded [INFERENCE], honest license = deterministic-reconstruction + live (c)-gate, misattribution retracted; F2 — G10 exclusion floor binding; F3 — unverifiable figure dropped; F4 — proof document attached (required for [THEOREM] promotion, not for pilot SIGN). Ambition bar unchanged.
+**Drafter's challenge (banked):** construction-identity's weakest dependency pin is the tokenizer's HF revision/config checksum — proposed pre-execution control: log tokenizer config checksum + HF revision at vector-build time in the K2 runner. In the LOG-224c reviewer's scope to SIGN or reject.
+**Drafter's idea (banked as pre-execution gate candidate):** $0 CPU identity dry run — rebuild b_K2 CPU-side before GPU clearance, byte-compare vs archive + run-logged norms; converts part of the [INFERENCE] into a byte-level check, reserving only per-item C8 vectors as pure reconstruction. In the LOG-224c reviewer's scope to rule (pre-execution gate vs redundant with (c)-gate).
+**Next:** LOG-224c targeted re-check of revised text only (dispatched). DO NOT EXECUTE before SIGN and CEO GPU clearance.
+
+## LOG-224c — K2 REV2 targeted re-check: SIGN (targeted) (2026-09-23)
+
+**Verdict: SIGN (targeted).** All four LOG-224b fixes implemented exactly; diff-fidelity clean (96 diff lines, no design moved); proof document graded [PROPOSITION] with the do-not-cite-as-[THEOREM] banner, skim-consistent. The K2 routing-vs-bypass battery (REV2) is **cleared for CEO GPU clearance**.
+**Ruling 6 — tokenizer checksum + HF revision logging: SIGNED** as a pre-execution checklist item in the K2 execution bundle (closes the weakest pin in construction-identity; $0 CPU, zero design change; a missing log is a recorded deviation, not an INVALID). Bundle-writing precision: checksum = sha256 of the resolved tokenizer payload as loaded; HF revision = exact commit SHA.
+**Ruling 7 — $0 CPU identity dry run: belongs as a PRE-EXECUTION GATE** (not redundant with the (c)-gate — different failure modes: the (c)-gate catches broken implementations; the dry run catches deterministically-wrong-but-still-rescuing vectors, e.g. silent tokenizer-revision drift). Gate: (i) two independent CPU rebuilds of per-item b_K2 byte-identical; (ii) norms match run-logged C8 norms ≤1e-5; (iii) tokenizer checksum + revision logged. Failure blocks GPU clearance with cause. **Honesty correction:** the "byte-compare vs archive" phrasing is corrected — no per-item archive exists; the honest form is rebuild-vs-rebuild byte-identity + norm-compare vs run-logged norms. Strengthens the [INFERENCE]; does not promote to [FACT].
+**Chain complete:** LOG-223 (frozen) → LOG-224 (SIGN-WITH-FIXES) → REV1 → LOG-224b (SIGN-WITH-FIXES) → REV2 → LOG-224c (SIGN). The battery is 180 passes (60×3), pythia-410m/L20/α=0.5, smoke bench, kill bars L>0.05/U<0.05, cell-2 verdict provisional-pending official-bench replication.
+**Next:** K2 execution bundle build (CPU, $0) with the two signed pre-execution items; then the GPU clearance decision goes to the user (their Kaggle resource). DO NOT EXECUTE before CEO GPU clearance.
+
+## LOG-226 — K2 execution bundle built (Track-4, CPU only) (2026-09-23)
+
+**Bundle:** `experiments/runs/K2_routing_bypass/` — 10 files. Single entry point `run_k2.py`
+(`python3 run_k2.py` = CPU pre-execution only, exits 3 at the clearance gate;
+`python3 run_k2.py --ceo-gpu-clearance` = GPU phase). Kaggle-ready via RUNBOOK
+`git clone` cell (repo-layout-relative archive paths). Authoritative evaluator
+`evaluate_k2.py` re-derives the ruling from the results JSON (runner verdict is
+display only). Static `manifest.json` with SHA-256 of all 9 code/doc files.
+**Tests: 62/62 pass** (`test_k2.py`; seeded, deterministic, CPU-only, stdlib-only).
+**BUILD ONLY — no GPU executed, no model weights loaded in this session
+(torch/transformers absent on this machine). Δθ=0 enforced by pre/post
+state-dict SHA-256 (G3).**
+**Read for this build:** `AGENTS.md`; `research/TEAM_KNOWLEDGE_PROTOCOL.md`;
+K2 REV2 plan (full); `reports/research_log.md` (LOG-224b/224c); `exp077/run_exp077.py`
+(full); EXP077 smoke records + archive metadata; `experiments/README.md`;
+`research/analysis_plans/K1_REPORT_LOG213_2026-09-23.md` (Tango convention cross-check).
+**Endpoint validation [FACT]:** the bundle's Tango (score) CI reproduces the program's
+four archived K1 Tango lower bounds exactly (0.0931/0.0651/0.0338/0.1444 — independent
+implementation, different agent); McNemar p matches scipy binomtest; 95% CI Monte-Carlo
+coverage in [0.925, 0.975]; the real smoke archive re-derives b=14/c=0/p=0.0001220703125/
+ΔM=+0.2333 through this bundle's endpoint code. All six verdict rows (1, 2, 2r, 3, 4, 5)
+fire on synthetic data; G10 6-vs-7 floor, gate-A pass/fail, checklist-B
+complete/deviation, G1/G3/G4/G5 predicates all tested.
+**Signed pre-execution items implemented:** gate A (two independent CPU rebuilds
+byte-identical + norms ≤1e-5 vs run-logged C8 norms + tokenizer checksum/revision
+logged; FAIL blocks GPU clearance with cause); checklist B (missing log = recorded
+deviation, not INVALID; build-time reference revision
+`9879c9b5f8bea9051dcb0e68dff21493d67e9d4f` is warn-only). G6 EXP070 excluded;
+G9 = localization-ratio diagnostic (adopted operationalization, never verdict-bearing);
+G4 binds to 3×N_actual; (b)-masks restricted to the premise substring (R2).
+**ESCALATED DEFECT D1 (implemented exactly as written, NOT silently fixed):** row 1's
+conjunct `U(Δ̂M_a) < 0.05` ("the final-position channel demonstrably flat") is
+UNSATISFIABLE for a flat arm at N=60 under the protocol's own Tango (score) CI —
+the narrowest possible Tango 95% upper bound at N=60 is z²/(n+z²) = 0.0602 > δ_min
+= 0.05 (zero discordant pairs; any discordants widen it). Row 1 as written can only
+fire when arm (a) is materially NEGATIVE (≥4 flips). The evaluator tests document
+this property. CEO / Law #14 decision required (amend the bar, the CI, δ_min, or N —
+a design change needs a protocol revision, not a bundle edit).
+**Residual gap D2:** literal G2 (target/foil token match vs recorded target/foil) is
+uncheckable — the pinned archive records `ent`/`typ` but no target/foil strings or
+prompts; the adopted ent/typ cross-check + single-token guard is the strongest
+faithful substitute.
+**Challenge (banked):** construction-identity's norm fingerprint is weak — any unit
+vector scaled to α=0.5 passes it. The true implementation license rests on
+deterministic reconstruction (gate-A byte-identity) plus the live all-position
+positive-control gate (G5), with the anchor cross-checks (M5.1/M5.2) as the
+backstop. The bundle enforces all three.
+**Idea (banked, not part of K2):** after K2 adjudicates routing vs final-position
+locality, localize the ×1.8 downstream gain by injecting at later block outputs under
+the same position masks. Cheapest falsifier: block-23-output, final-position-only
+injection — if residual gain over the L1 readout prediction collapses, amplification
+lies in blocks 21–23.
+**Could this change what anyone believes?** Yes — a correct K2 bundle is the
+instrument that decides whether the output bridge's rescue requires inter-position
+transport through downstream attention (routing Supported) or is final-position-local
+(readout + local downstream gain). A broken bundle changes nothing except wasting
+the user's Kaggle quota and trust; the 62 CPU tests exist to prevent exactly that.
+**Next:** CEO GPU-clearance decision (user's Kaggle resource). **DO NOT EXECUTE on
+GPU before CEO GPU clearance.**
+
+## LOG-226 — K2 execution bundle built (62/62 tests pass) + protocol defect D1 escalated (2026-09-23)
+
+**Bundle:** `experiments/runs/K2_routing_bypass/` — 6 modules + `test_k2.py` (62/62 CPU evaluator tests pass, seeded/deterministic/stdlib-only), `py_compile` clean, secrets/EXP070 scan clean, Kaggle-ready single entry point (`run_k2.py` exits 3 at the clearance gate by default; GPU phase only with `--ceo-gpu-clearance`), `RUNBOOK.md`, `BUILD_NOTES.md`, `requirements.txt`, `manifest.json` (SHA-256 of all files). Ends with DO NOT EXECUTE before CEO GPU clearance.
+**Independent validation:** the bundle's Tango CI reproduces the program's four archived K1 Tango lower bounds exactly (0.0931/0.0651/0.0338/0.1444 — independent implementation, different agent); McNemar p matches scipy; 95% CI Monte-Carlo coverage verified; the real smoke archive re-derives b=14/c=0/p=0.0001220703125/ΔM=+0.2333 through this bundle's code; all six verdict rows fire on synthetic data.
+**Escalated defect D1 [FACT] (protocol-level, builder did not silently fix):** REV2 row 1 requires U(Δ̂M_a) < 0.05 ("the final-position channel demonstrably flat"), but under the protocol's own two-sided 95% CI the narrowest possible upper bound at N=60 is z²/(n+z²) = **0.0602 > 0.05** (exact CP for 0/60 gives 0.0596 — also > 0.05). A *flat* arm (a) always fails the bar; row 1 as written can only fire when arm (a) is materially *negative*. The routing-Supported cell is unreachable as intended. The bundle implements the bar literally; the tests document the property.
+**CEO assessment:** D1 is genuine and blocks honest adjudication — the pilot's headline routing verdict cannot be delivered by a protocol whose flatness bar is unsatisfiable. This is a Law #14 design question (verdict semantics), not a bundle defect. GPU clearance stays on hold pending the repair — the battery must be able to deliver both headline verdicts before any pass is spent.
+**Next:** targeted Law #14 ruling on D1 (LOG-227, pre-assigned): repair the flatness bar (options: satisfiable bound, one-sided interval, N increase with cost, or accept-and-rescope with exhaustiveness re-verified) while keeping routing-Supported reachable. Seven documented ambiguity resolutions in BUILD_NOTES.md (R1–R7) are in the LOG-227 reviewer's scope to confirm or overturn.
+
+## LOG-227 — Law #14 ruling on D1: RULE FOR OPTION (a) (2026-09-23)
+
+**Ruling:** D1 genuine (arithmetic recomputed from scratch). Repair = **(a)**: row 1's flatness conjunct becomes `U_1s(Δ̂M_a) < 0.05` — one-sided 95% upper bound from the Tango (score) interval family (z=1.6449), the one-directional form of the protocol's per-arm diagnostic CI. δ_min=0.05 unchanged; primary contrast stays two-sided 95% per §G1b; five verdict categories untouched. Satisfiability: narrowest one-sided Tango upper at N=60 = 2.7057/62.7057 = **0.0432 < 0.05** (exact-binomial cross-check 0.0487 < 0.05). The bar bites: b=c=1 fires (≈0.0379), b=c=2 fails (≈0.0536). Robust to the G10 floor (N=54: 0.0477 < 0.05 — the CP form would break at 0.0539, hence the Tango pin).
+**Law #4 compliance:** pre-execution repair; hypothesis untouched (H_routing predicts Δ̂M_a ≈ 0 — the conjunct always meant "rule out material positive (a)-effect"); the two-sided bar was an instrument-specification error, documented as a new revision. **C1–C3 all satisfied.**
+**Rejected:** (b) second δ=0.10 — guts semantics (b_a=2 at +3.33pp counts as "demonstrably flat"); (c) N≥73 — most expensive, most fragile (margin 7×10⁻⁶, breaks the frozen bench pin, G10 exclusions re-break it); (d) accept-and-rescope — concedes answerability and leaves exhaustiveness broken (intended headline case falls through the table entirely).
+**Row-3 companion fix (required):** widen observation text to the catch-all — "No row-1/2/2r pattern: contrast CI straddles, OR the contrast clears but the per-arm conjuncts fail" — verdict stays Inconclusive, closes the pre-existing exhaustiveness gap the repair makes live.
+**R1–R7: CONFIRM all seven, OVERTURN none.** Residual gap escalated as **D2**: literal G2 is unimplementable against the archive schema (no target/foil strings in the archive) — recorded as a known defect, not a blocker for this repair.
+**Fix items:** protocol → new frozen REV3 (REV2 untouched) with the replacement text + justification + row-3 widening; bundle → F1 (implement repaired bar in evaluate_k2.py, replace don't supplement), F2 (six new evaluator tests incl. row-3 catch-all), F3 (BUILD_NOTES + manifest hashes). REV3 returns for Law #14 targeted SIGN (LOG-228, pre-assigned) before CEO GPU clearance.
+
+## LOG-223/228 — K2 REV3 written, targeted SIGN dispatched (2026-09-23)
+
+**REV3:** `research/analysis_plans/K2_ROUTING_BYPASS_PLAN_LOG223_REV3_2026-09-23.md` (279 lines) — implements the LOG-227 ruling exactly: row-1 flatness → `U_1s(Δ̂M_a) < 0.05` (one-sided 95% Tango, z=1.6449) with the verbatim [JUSTIFICATION — LOG-227 repair of D1]; row-3 widened to the catch-all (contrast clears but conjuncts fail → Inconclusive, HELD never culled); Law-#4 compliance recorded; seventh steelman (significance-shopping) at full strength with the bite-check answer + escalation clause; gate references → LOG-228. Frozen LOG-223, REV1, REV2 untouched.
+**Drafter's challenge (banked for LOG-228):** the one-sided repair makes row 1 directionally exclusive — clean routing answerable, partial-leakage routing worlds (e.g., b_a=4, c_a=0) land in the row-3 catch-all → Inconclusive, never Supported. The LOG-228 reviewer rules whether this partition is intended.
+**Drafter's idea (banked as process proposal):** standing design rule — every per-arm "demonstrably flat" conjunct one-sided from the start — proposed as a TRACK7_REVIEW_CHECKLIST pre-registration lint. LOG-228 opines; adoption is a CEO/Track-7 decision.
+**Next:** LOG-228 targeted SIGN (dispatched; scope: ruling conformance, row-3 widening, seventh steelman, diff-fidelity, the directional-exclusion partition, the lint opinion, gate integrity). The bundle repair chain (F1–F3) runs in parallel. DO NOT EXECUTE before SIGN and CEO GPU clearance.
+
+## LOG-226 — Bundle repair STOPPED: LOG-227's ruling arithmetic does not reproduce (2026-09-23)
+
+**Implementer STOP [FACT]:** the LOG-227 ruling names the repaired bar as "one-sided 95% upper bound from the Tango (score) interval family (z=1.6449)" but its recomputed numbers (0.0379/0.0536) are the q-pinned score form (variance at the unconstrained MLE q̂=s/n) — NOT true Tango (constrained MLE q̃(δ)), which is what the ruling names, what R4 confirmed, and what the program validated against the K1 archive. Under the bundle's pinned, K1-validated `tango_ci`: N=60 zero-discordants → 0.043147 (fires, cosmetic slip vs ruling's 0.0432); **b=c=1 → 0.056009 (FAILS — verdict flip vs ruling's ≈0.0379 fires)**; b=c=2 → 0.067926 (fails); N=54 flat → 0.047712 (fires). The ruling's prose and its numbers specify two different intervals. The implementer changed nothing (no fudge, no silent interval swap) and escalated per the explicit guard. Baseline suite still 62/62; bundle untouched.
+**Consequence [HYPOTHESIS]:** under true Tango the repaired bar fires only at s=0 at N=60 — a single discordant pair each way kills row 1 — arguably less reachable than the ruling's bite table implies. The ruling's intent (keep routing-Supported reachable) needs re-examination under the true interval.
+**Implementer's recommendation:** the clarification rides with the LOG-228 targeted SIGN on REV3 — rule (i) true one-sided Tango with the corrected bite table (0.0431/0.0560/0.0679/0.0477; b=c=1 fails), or (ii) re-specify as the q-pinned score form (ruling's numbers) with explicit specification + fresh validation, keeping the K1-validated Tango column uncontaminated. D2 recorded as instructed, no attempt to close it.
+**CEO action:** fed into the running LOG-228 review as additional scope — the reviewer rules on the interval identity before SIGN.
+
+## LOG-228 — K2 REV3 targeted SIGN: SIGN-WITH-FIXES (2026-09-23)
+
+**Verdict: SIGN-WITH-FIXES** (7 fixes; REV4 returns for targeted re-check — no full re-review). A SIGN on REV3's current text is not available (it embeds the defective bite table). Not escalated: the interval question is determinate and within reviewer authority.
+**Interval ruling (binding):** the flatness conjunct IS **true one-sided Tango** — option (i). The LOG-227 ruling's name controls; its numbers were an implementation-arithmetic error (0.0379/0.0536 are the q-pinned form δ_up = z√s/√(n(n+z²)), verified 0.037923/0.053634 — not Tango). Option (ii) rejected: adopting the q-pinned form now, after seeing true Tango's output, to preserve desired numbers is interval-shopping — the exact conduct Law #9 and the seventh steelman exist to catch. Corrected bite table (true Tango): N=60 s=0 → 0.0431 FIRES; b=c=1 → ≈0.057 FAILS; b=c=2 → ≈0.068 FAILS; N=54 s=0 → 0.0477 FIRES.
+**Reachability re-argued:** option (a)'s intent survives — s_a=0 fires (0.0431 < 0.05), is observable, and is the expected outcome under clean routing; row 1 non-vacuous; C1–C3 hold. The knife-edge (fires only at s=0) is a mathematical fact about N=60/δ_min=0.05/95% in the validated interval family. If the program wants b=c=1 to fire, that is a redesign under a new LOG, not a text fix.
+**Partition ruled INTENDED:** clean routing (s_a=0) answerable; everything else — even net-zero discordance b_a=c_a=1 — fails flatness → row-3 catch-all → Inconclusive. Modal routing-world outcome is Inconclusive (HELD, never culled), priced openly.
+**7 REV4 fixes:** (1) interval identity binding (true one-sided 95% Tango, constrained-MLE variance, z=1.6449); (2) bite-table correction (exact 4dp pinned by the bundle's validated tango_ci); (3) steelman-7 re-priced — the correction moves the bar AGAINST the protocol (opposite of significance-shopping); (4) partition intended; (5) Law #4 restated; (6) §10 pinning + F1–F3 now UNBLOCKED (F1 = expose one-sided upper from already-validated true-Tango code; F2 pins corrected table incl. b=c=1 FAILS + row-3 catch-all); (7) banner.
+**Lint opinion adopted (CEO):** the reviewer's amended lint — "flatness bars: one-sided, direction stated, interval family named, bite table recomputed from the named implementation and independently reproduced" — added to TRACK7_REVIEW_CHECKLIST.md. Bare one-sided wording would not have prevented this STOP.
+**Next:** REV4 drafting dispatched; targeted re-check pre-assigned LOG-229; F1–F3 bundle chain resumes after REV4 text (implementer's no-fudge STOP logged as the guard working as designed).
+
+## LOG-223/229 — K2 REV4 written, targeted SIGN dispatched (2026-09-23)
+
+**REV4:** `research/analysis_plans/K2_ROUTING_BYPASS_PLAN_LOG223_REV4_2026-09-23.md` (297 lines) — implements all 7 LOG-228 fixes: interval identity binding (true one-sided 95% Tango, q-pinned form rejected by name as interval-shopping); bite table corrected to the named interval (0.0431 FIRES / 0.0560 FAILS / 0.0679 FAILS / 0.0477 FIRES); steelman-7 re-priced (s=0-only firing; correction moves the bar against the protocol); partition ruled INTENDED and priced openly (modal routing-world outcome = Inconclusive, HELD never culled); Law #4 restated; §10 pinning with F1–F3 unblocked; banner naming LOG-229 SIGN + CEO GPU clearance. Frozen LOG-223, REV1–REV3 untouched.
+**Drafter's challenge (in LOG-229 scope):** the one-sided Tango call is a new surface — the K1 archive validated the two-sided form; the exact 4dp values come from the bundle's own tango_ci (self-consistency, not independent reproduction). LOG-229 must independently cross-check the four canonical (N,s) points from scratch before SIGN.
+**Drafter's idea adopted (CEO):** bite-table-diff discipline added to TRACK7_REVIEW_CHECKLIST.md — any revision touching an interval bar must carry canonical (N,s) points recomputed from the named implementation, diffed against the bundle AND an independent reproduction before SIGN.
+**Next:** LOG-229 targeted SIGN (dispatched). The bundle F1–F3 chain resumes after REV4 text SIGN (it is unblocked by the ruling but the text gate comes first). DO NOT EXECUTE before SIGN and CEO GPU clearance.
+
+## LOG-229 — K2 REV4 targeted SIGN: SIGN-WITH-FIXES (2026-09-23)
+
+**Verdict: SIGN-WITH-FIXES** (targeted; 2 fixes — 1 substantive-mechanical, 1 minor). Drafter returns with corrections; no full re-review, no escalation.
+**The cross-check caught a real defect:** the reviewer's independent three-method recomputation of the one-sided Tango call confirms 3 of 4 canonical points but finds b=c=1 = **0.056902 (not 0.056009)** — a transcription slip in LOG-226's report (the z that would produce 0.056009 is 1.6275, not a standard quantile). The bundle code is correct; the text misquotes it. Verdict direction unchanged (still FAILS) — mechanical correction, not a redesign. Under the bite-table-diff discipline, a canonical point that doesn't match the named implementation blocks SIGN.
+**Annotation (append-only; frozen LOG-226 entry not rewritten):** LOG-226's reported b=c=1 value 0.056009 is SUPERSEDED by 0.056902 (independently reproduced by three methods to 6dp).
+**Fix conformance:** 7/7 present; steelman-7 strong; partition INTENDED; ambition intact (both Supported cells still change program belief; Inconclusive HELD not culled; row 1 reachable — s_a=0 is the clean-routing prediction).
+**Bite-table-diff discipline:** REV4 text carries canonical (N,s) points; the bundle's F2 tests are self-consistency, not independent reproduction — the reviewer's three-method cross-check IS the independent reproduction; protocol-text SIGN can rest on it, stated explicitly.
+**Diff-fidelity:** one unauthorized cosmetic edit found (REV2-changelog "Revision record" rewording, immaterial) → minor fix to revert.
+**Irony recorded:** the LOG-226 STOP was designed to catch exactly this shape of error, and the discipline it spawned caught a second instance of it — in the correction itself. The system is working.
+**2 fixes:** (1) 0.056009 → 0.056902 (exact) and 0.0560 → 0.0569 (4dp) everywhere in REV4 (9 locations; no verdict text changes); (2) revert the REV2-changelog line to REV3's exact wording.
+**Next:** drafter applies the 2 fixes; mechanical re-confirmation pre-assigned LOG-230; then the F1–F3 bundle chain resumes (unblocked). DO NOT EXECUTE before SIGN and CEO GPU clearance.
+
+## LOG-230 — K2 REV4 mechanical re-confirmation: CONFIRM (2026-09-23)
+
+**Verdict: CONFIRM (mechanical).** Both LOG-229 fixes applied exactly: 0.056902/0.0569 at all 9 locations (0.056009 only in the changelog entry recording the correction); canonical quadruple 0.043147/0.056902/0.067926/0.047712 uniform at all 4 instances; REV2-changelog line byte-identical to REV3's; nothing else moved; values match the independent three-method reproduction to 4dp. **The K2 protocol text (REV4) is SIGNED.**
+**Caveat recorded:** the pre-fix REV4 was not preserved (untracked file, no backup), so the check was a scope-complete grep audit rather than a byte-diff — exhausts the LOG-229 fix scope.
+**Next:** the F1–F3 bundle chain resumes (unblocked per the LOG-228 ruling): F1 = expose one-sided upper from the validated true-Tango code (replace, don't supplement); F2 = pin the corrected table (headline row-1 fires; b=c=1 FAILS; all six rows fire; row-3 catch-all → Inconclusive); F3 = BUILD_NOTES + manifest hashes. D2 stays a recorded known defect. DO NOT EXECUTE before CEO GPU clearance.
+
+## LOG-226 — K2 bundle F1–F3 repair chain COMPLETE (2026-09-23)
+
+**[FACT]:** implemented the signed REV4 text (`research/analysis_plans/K2_ROUTING_BYPASS_PLAN_LOG223_REV4_2026-09-23.md`, LOG-230 CONFIRM) exactly as written — no re-derivation, no interval family added. Baseline suite was 62/62; final suite **84/84 PASS** (CPU-only, seeded, stdlib-only). No GPU used; Δθ=0; the DO NOT EXECUTE banner and `--ceo-gpu-clearance` gate are intact.
+
+**F1 (k2_endpoints.py, evaluate_k2.py):** new `tango_one_sided_upper` solves Z(δ) = −z_0.95 (z=1.6449) through the SAME constrained-MLE score machinery (`tango_score_z`) as the K1-validated two-sided path — one interval family, not two; the q-pinned score form is not introduced anywhere. `paired_contrast_stats` records now carry `tango_U_1s`; the row-1 conjunct in `adjudicate_verdict` REPLACES (does not supplement) `arm_a["tango_U"] < 0.05` with `arm_a["tango_U_1s"] < 0.05`. The two-sided per-arm CI stays as the reported diagnostic (REV4 §3.4). Row-3 is now the explicit REV4 catch-all with a recorded `row3_reason`: `contrast_clears_row1_flatness_fails` / `contrast_clears_row2_rescue_presence_fails` / `contrast_straddle`. `evaluate_k2.py` exposes `tango_U_1s` in the authoritative ruling record and prints the flatness-bar outcome (verified end-to-end on synthetic records: flat arm-(a) → row 1, U_1s=0.0431 CLEARS).
+
+**F2 (test_k2.py):** new `test_rev4_flatness_bar` pins the corrected bite table to 6dp (0.043147 / 0.056902 / 0.067926 / 0.047712) and 4dp forms (0.0431 / 0.0569 / 0.0679 / 0.0477) from the code path itself: (i) flat arm-(a) 0/60 fires row 1 (contrast L > 0.05, b_b ≥ 6); (ii) b=c=1 does NOT fire row 1 (U_1s=0.0569 ≥ 0.05) and lands in the named flatness-fail catch-all; (iii) all six rows fire on synthetic data (row 5 via `guards_evaluate`); (iv) b=c=2 → row 3 with `contrast_clears_row1_flatness_fails`; (v) N=54 exclusion-floor flat fires row 1 (U_1s=0.0477). The old negative-arm row-1 world is kept as an extra check (still fires — the conjunct is directional). The stale "D1 bar defect" framing in `test_kill_bars` is retitled as a two-sided regression property.
+
+**F3 (BUILD_NOTES.md, manifest.json):** D1 rewritten as RESOLVED by REV3 per LOG-227 / CORRECTED per LOG-228/229 (true one-sided Tango, canonical quadruple, the 0.056009 → 0.056902 transcription slip recorded); R4 gets the REV4 addendum; §2 records the one-sided canonical values + the row-3 widening; test count updated 62 → 84. D2 retained as a recorded known defect (§4), not fixed per instruction. `manifest.json`: SHA-256 bumped for the four changed files; protocol pointer updated to the signed REV4 file (sha256 23433964…); evaluator count 84/84.
+
+**Licenses nothing beyond the build:** the corrected bar fires only at s_a=0 (N=60) — the knife-edge is implemented as signed, with no reachability engineering attempted. The next gate is CEO GPU clearance, not this agent.
+
+## LOG-226 — K2 F1–F3 bundle chain: COMPLETE, 84/84 (2026-09-23)
+
+**Headline [FACT]:** the signed REV4 text is implemented exactly — no mismatch, no fudge. The four canonical one-sided Tango values were reproduced from the bundle's own validated code path to 6dp before any code changed (0.043147/0.056902/0.067926/0.047712 — all MATCH). Final evaluator suite **84/84 PASS** (was 62/62), seeded/deterministic/CPU-only/stdlib-only.
+**Files changed** (`experiments/runs/K2_routing_bypass/`): `k2_endpoints.py` (new `tango_one_sided_upper` through the same constrained-MLE score machinery — one interval family; row-1 conjunct REPLACED with `tango_U_1s < 0.05`; row-3 explicit catch-all with recorded `row3_reason`); `evaluate_k2.py` (authoritative ruling exposes `tango_U_1s` + `row3_reason`; end-to-end smoke-tested: flat arm-(a) world → row 1, U_1s=0.0431 CLEARS); `test_k2.py` (new `test_rev4_flatness_bar`: canonical pinning, row-1 fires, b=c=1 does NOT fire → catch-all, all six rows fire, b=c=2 → catch-all, N=54 floor fires); `BUILD_NOTES.md` (D1 RESOLVED; D2 stays recorded known defect); `manifest.json` (hashes bumped; protocol pointer → signed REV4, SIGNED LOG-230).
+**Readiness [INFERENCE]:** code-complete for the REV4 protocol. The knife-edge is implemented as signed, with no reachability engineering. The next gate is CEO GPU clearance — not the builder's.
+**Builder's challenge (banked):** G10 "actual-N accounting is sufficient" is untested against selection — if exclusions correlate with entity complexity and complexity with difficulty, the N=54 sample is selected and the CI's sampling model breaks. Cheapest falsifier ($0, CPU): proxy exclusion-likelihood by entity token-length on the archived smoke records, test correlation with baseline correctness.
+**Builder's idea (banked):** mine the catch-all — report any row-3 GPU outcome with its named sub-branch PLUS the distance to the nearest cell boundary (e.g., discordant pairs that would need to vanish for flatness to clear). $0, all numbers already in the evaluator; makes HELD outcomes quantitatively comparable across re-registrations.
+**DO NOT EXECUTE banner intact; GPU phase only with --ceo-gpu-clearance. No GPU touched; Δθ=0.**
+
+## LOG-231 — EXP082 verdict-name conflict resolved from the signed primary artifact (2026-09-23)
+
+**Conflict:** one handoff described EXP082 as "killed/dead and plotted"; a later handoff called it "EXONERATED."
+**Resolution [FACT]:** the signed primary artifact (`research/analysis_plans/EXP082_REPORT_LOG217_2026-09-23.md`, LOG-217) contains no contradiction. Per-run verdicts: all three primary runs **Not supported — foil-suppression reading killed** ((f) k=0/60, CI [0.0000,0.0596]; (a)-contrast 0/60; N_bothfire=0). The plan's §7 pre-registered program-level aggregation rule ("all primary runs Not supported → EXONERATED") yields the program verdict **EXP082-EXONERATED (foil-suppression Not supported)**. "Killed/dead" describes the *hypothesis* (foil-suppression-tilt, dead for these runs); "EXONERATED" is the *program verdict's pre-registered aggregation name*. Both handoffs described the same result. The scoreboard rows (FRONTIER_SCOREBOARD.md l.203; SCBI_VS_FRONTIER_v2 l.10) already carry the correct term. No artifact edited; terminology clarified for the record. [INTERPRETATION] Standing rule restated: cite the §7 aggregation name (EXONERATED) for the program verdict and "killed" only for the hypothesis.
+
+## LOG-232 — §H7 decision brief drafted for CEO acceptance: recommend NARROW (2026-09-23)
+
+**Trigger:** LOG-204 ruling 1 conditional — K1-exonerates → CEO revisits §H7. K1-EXONERATED (LOG-213) + EXP082-EXONERATED (LOG-217) have landed.
+**Deliverable:** `research/analysis_plans/H7_DECISION_BRIEF_LOG232_2026-09-23.md` — DRAFTED for CEO acceptance; not a decision until the CEO signs.
+**Reasoning [INFERENCE]:** REVERSE ruled out — Q1 (bridge option-informed by construction, Law #7 letter, LOG-197 Supported) is a construction fact no verdict can alter; a positive control for autonomous steering must be label-free. KEEP-verbatim ruled out — the tilt account was a stated demotion ground (the "mandatory and irreversible" branch was conditioned on K1 confirming tilt), and K1/EXP082 killed both directional tilts (0/60 every run); retaining a killed ground would be theory preservation. **NARROW is the unique honest option:** demotion stands on Q1 alone ("rescue control (known-answer direction), NOT a mechanism control"; positive-control status stays REVOKED); the tilt-artifact layer is retired; the rescue's mechanism is now OPEN (live candidates: relational (t−f) readout effect, still label-informed; downstream transformation per S3-8); full reversal stays contingent on K3 finding a compliant construction that rescues.
+**Consequences on acceptance:** EXP080/081 §A.6 addenda unchanged (already encode the narrowed status — no re-registration); scoreboard bridge row flag resolves from "under CEO re-review" to "narrowed demotion stands"; paper-draft flag substance unchanged (must not cite tilt as a demotion ground); §H6 ordering unchanged. Does not license rescues as capability evidence; does not upgrade the bridge to any mechanism control; does not pre-judge K3.
+**Note:** the adopted synthesis (mentor ADOPT, LOG-195) marks §H7 as the CEO's open decision — the mentor may adversarially review this brief, but the decision itself is CEO-reserved.
+
+## LOG-233 — G10 selection-audit: banked challenge structurally bounded, token-length proxy infeasible (2026-09-23)
+
+**Law #15 record.** 1. Precise question: can K2's G10 exclusions select the actual-N sample on difficulty, breaking the CI's sampling model (builder's banked challenge, LOG-226)? 2. Decision changed: DEMOTE the banked challenge from "untested threat" to "structurally bounded / proxy infeasible" — no protocol action (signed K2 protocol immutable). 3. Cheapest: $0 code-structure audit, 0 forward passes (builder's suggested correlation test proved infeasible before any compute). 4. Mathematical license: pre-treatment exclusion ⇒ selection independent of response (definitional); variance-zero proxy ⇒ no correlation estimable (algebraic). **Prediction:** exclusion causes are functions of (prompt strings, tokenizer) only. **Breaking point:** any exclusion cause depending on post-treatment quantities would have sustained the challenge. Grade: IN-HOUSE-PROOF on the code facts; INFERENCE on the statistical reading; [OBSERVATION]-grade design-stage analysis, not a verdict.
+**Findings [FACT]:** (a) `run_k2.py` exclusion causes — G2 label cross-check mismatch, G8 entity-mapping failure (offset-mapping/encode mismatch, entity string absent, empty mask), G10 disjointness (entity span includes final position) — are all deterministic functions of (prompt string, tokenizer), evaluated CPU-side before any forward pass (`run_k2.py` ll.391–465). Exclusion is pre-treatment: it cannot depend on item difficulty or model response. (b) The suggested token-length proxy is infeasible: the smoke bench's F2 guard forced all 35 support/test entities single-token (`exp077_run_log.txt`), and the K2 bench reuses the same novel vocabularies (`NOVEL_VOCAB_PLANET/ELEMENT`, `run_k2.py` ll.93–94) — zero variance, no correlation estimable. (c) The CI's sampling model is therefore not threatened by response-dependent selection; the included set defines the estimand population, and the >6-exclusion floor already converts heavy exclusion into Underdetermined.
+**[OPEN] residual:** whether the disjointness-excluded subset (entity at final position, a template-layout property) is difficulty-atypical is untestable without K2 difficulty data (GPU-dark); no mechanism links template layout to difficulty — recorded, not assumed away. **Death-debt note:** the banked "mine the catch-all" idea (report distance to nearest cell boundary on row-3 outcomes) remains open and cheap — re-banked for the K2 GPU-outcome analysis.
+No GPU; no signed artifacts touched; no weights loaded (code read only).
+
+**LOG-234 pre-assigned:** K3 CPU compliant-bridge construction-audit frozen-plan workstream (writer commissioned this cycle; Law #14 review follows; no execution before SIGN).
+
+## LOG-234 — K3 frozen plan delivered; Law #14 review dispatched (2026-09-23)
+
+**Deliverable:** `research/analysis_plans/K3_COMPLIANT_BRIDGE_PLAN_LOG234_2026-09-23.md` — FROZEN, DO NOT EXECUTE before Law #14 SIGN. Writer paused per the no-blind-running chain; no code run, no weights, no forward passes.
+**Plan shape:** Phase 0 (CPU, $0) pins two compliant constructions — (i) bank-level premise-rank direction over the 30 3-hop items, (ii) signed EXP081 v2 donor centroid reused verbatim — each under statically-checkable Law #7 rules (C-a–C-e), g ≥ 0.25 non-degeneracy floor, construction-identity guards. Phase-0 KILL rule: no Supported candidate → construction question Underdetermined, GPU phase INFEASIBLE, narrowed §H7 demotion hardens to permanent. Phase 1 (GPU ≤240 passes, cap 400) only after SIGN + Phase-0 report + re-verification SIGN + CEO GPU clearance: C1/C2 (concurrent option-informed bridge)/K3i/K3ii, McNemar exact + Tango 95% CI, §G1b cells. Verdicts: ≥1 compliant candidate in cell (1) → CONTINUE; all candidates NULL while C2 in cell (1) → KILL (re-scope to label-assisted steering; EXP081 GPU stood down); else Inconclusive/HOLD. License: IN-HOUSE-PROOF Phase-0 algebra, CONJECTURE-UNDER-TEST Phase-1 causal upshot; L0/L1-narrow, no L2/L3 crossing.
+**Author-flagged review targets:** §3.1 (C-e) and §12's challenge (rank-relation-informedness — new design decisions by the author); verify the no-data-contact claim on candidate (i)'s geometry via corpus search pre-SIGN.
+
+**LOG-235 pre-assigned:** independent track-7 Law #14 review of the K3 frozen plan (reviewer ≠ author).
+
+## LOG-235 — Law #14 review of the K3 frozen plan: SIGN-WITH-FIXES (2026-09-23)
+
+**Report:** `reports/adversarial_review_k3_plan_2026-09-23.md` (independent track-7; reviewer ≠ author). **Verdict: SIGN-WITH-FIXES** — 4 mechanical fixes (F3-class wording/table precision; no design-level defect).
+**Fixes:** F-235-1 (§3.1 C-a/C-b + §4 E-K3-1) — compliance rule reworded to the per-item role-relative reading (the as-written cross-item rule would spuriously FAIL candidate (i) on the shared 10-entity pool); role-free-row / answer-key-role-mapping rationale stated once; descriptive cross-item collision count added to E-K3-1. F-235-2 (§7.2) — unmapped {≥1 candidate RESCUES, C2 NULL} cell added → Inconclusive/HOLD. F-235-3 (§5) — "exactly EXP081's T1 comparison" → "same arm pairing; K3's own §5 cells" (v2's signed T1 uses the F1 agreement rule). F-235-4 (§5) — v2 token-prior-direction confound ("usually-right minus usually-wrong") named explicitly in the K3ii CONTINUE caveat (Law #2).
+**Author-flagged points independently verified:** rank-relation-informedness genuinely Law-#7-compliant on the letter (§12 discloses the challenge honestly); no-data-contact on candidate (i) confirmed via corpus search (G1's b_mean is a different, option-informed object); Phase-0 "Underdetermined" sound (not a disguised negative); Phase-1 KILL vs undischarged A2 no overreach (concurrent C2 discharges procedure validity); donor reuse genuinely compliant per signed v2 §3.3 (identity anchors verified: g=1.0617830595495654, max |cos|=0.0918<0.1, 20-donor C3 bank, disjoint pools).
+**Standard checks:** all sections present; endpoints exact; guards FATAL where claimed; env pin exact; no GPU before the §8 G9 chain; no signed-protocol edits; EXP070 excluded; smoke/official split respected; §H7 not pre-decided; five verdicts only; L0–L3 separate.
+**Next:** Lead applies the 4 fixes; targeted re-verification pre-assigned LOG-236.
+
+## LOG-236 — K3 fixes applied by Lead; targeted re-verification dispatched (2026-09-23)
+
+**[FACT]:** all four LOG-235 fixes applied to `research/analysis_plans/K3_COMPLIANT_BRIDGE_PLAN_LOG234_2026-09-23.md` at the specified locations: F-235-1 (C-a/C-b per-item rewording + rationale paragraph + E-K3-1 collision-count report line); F-235-2 (new §7.2 row → Inconclusive/HOLD); F-235-3 (arm-pairing rewording); F-235-4 (token-prior confound in K3ii CONTINUE caveat). FROZEN/DO NOT EXECUTE banner intact. Independent track-7 re-verifier dispatched as LOG-236 (fix-faithfulness + scope-discipline + no-contradiction checks; addendum to the LOG-235 report; SIGN releases Phase-0 execution). No GPU; no weights; no signed artifacts touched.
+
+**LOG-236 pre-assigned** (above). Next free: LOG-237.
+
+## LOG-236 — K3 fix re-verification: REVISE (one fix defective) (2026-09-23)
+
+**Report addendum** (independent track-7): F-235-1, F-235-3, F-235-4 VERIFIED faithful; **F-235-2 PRESENT BUT DEFECTIVE** — the new {≥1 candidate RESCUES, C2 cell 4 or p ≥ 0.05} → HOLD row overlaps pre-existing row 1 ({≥1 candidate RESCUES, "any with p < 0.05"} → CONTINUE), because C2-in-cell-4 has p < 0.05 under §5's cell definitions; no precedence rule resolves it (only guards-fail has stated precedence) — breaks the §6 L3 outcome-partition claim. **Minimal repair specified (F3-class, one cell):** narrow row 1's C2 condition to "cell 1 (L > 0.05)" (mirroring row 3's wording). Plan NOT released for Phase-0 until repaired. Collateral edits: none detected (quotation-matched; plan untracked in git so no byte-diff baseline — standing note). Banner intact.
+**Lead action:** one-cell repair applied to §7.2 row 1 exactly as specified. **Targeted re-verification dispatched as LOG-237** (exhaustiveness + mutual exclusivity of the §7.2 table, scope discipline, banner). No GPU; no weights.
+
+**Next free: LOG-238.**
+
+## LOG-237 — K3 one-cell repair re-verified: SIGN — Phase-0 released (2026-09-23)
+
+**Report addendum** (independent track-7): repair present verbatim ("cell 1 (L > 0.05)"); §7.2 table re-checked pairwise against §5 cell definitions (cell 1: Tango L > 0.05; cell 4: p < 0.05, L ≤ 0.05; NULL: p ≥ 0.05 — exhaustive exclusive partition): rows 1/2 and 3/4 split cleanly on C2; {1,2} vs {3,4} exclusive on candidate arms; row 5 exclusive via "none RESCUES"/"≥1 CELL-4"; guards-fail precedence intact; nothing stranded — §6 L3 outcome-partition claim holds. No collateral edits (quotation-matched; untracked-file byte-diff limitation restated). Banner intact.
+**Verdict: SIGN — K3 Phase-0 RELEASED for execution under the §10 protocol.** Phase 1 remains gated on the §8 G9 chain.
+**Next:** Phase-0 executor dispatched as LOG-238 (pre-assigned). **Next free: LOG-239.**
+
+## LOG-238 — K3 Phase-0 executor: HALT on FATAL G4 (plan-premise defect D1); re-registration commissioned (2026-09-23)
+
+**Verdict-first [FACT]:** HALT — no verdict. Phase-0 halted at §10 step 2 on FATAL G4 (label/premise cross-check). Per the plan's §7.1 guard-fail row both candidates land **Refuted (integrity failure; halt; no claim licensed)**; per §9 no verdict is licensed — the construction question is NOT answered (a halt, not Underdetermined, not a negative). E-K3-1–E-K3-4 never executed. GPU phase not reached; §8 G9 chain untouched. $0 spent, 0 forward passes, GPU dark.
+**Step record:** §10 step 1 PASS (env exact; pinned pythia-410m @ 9879c9b5… loaded read-only; G3 pre-hash == archived ec276abe…); §10 step 2 G4 FATAL — rebuilt (ent,typ) vs smoke `exp077_instance_records.json`: 12/60 matches, 48 mismatches (first at index 1: rebuilt Venus/planet vs archived Mars/planet). Post-halt: G3 post == pre == archived (Δθ=0 confirmed); G5 self-scan PASS (0 forward-pass call sites); executor exited 42.
+**D1 — plan-premise defect (asset, not failure):** G4 pinned the pre-MAJOR-3-repair smoke archive (entity-grouped 6/entity, (b,c)=(14,0)) against the post-repair bench (planet targets 21/7/2/0/0) — unsatisfiable as written. The executor's port is proven faithful: 60/60 byte-agreement with the signed `C-A_PREAUDIT_2026-09-23.json` per-item (id,t,f) records ([OBSERVATION], non-gating per Law #4). The outlier is the archive, not the port. Root cause: the plan mis-scoped LOG-197's "byte-identical 60/60" sentence (covers the runners' current definitions, not the smoke archive). Same defect class as LOG-197 F1 (smoke/official conflation) and EXP082 D1 (hash-formulation pin nobody recomputed).
+**Process lesson (standing):** Law #14 review signed a G4 pin nobody recomputed against the actual archive. Proposed standing gate (for CEO): pre-registration checklists must recompute at least one archive-anchored pin (hash, byte-identity, or cross-check) before SIGN — the EXP079 "probe-feasibility algebra" proposal and EXP082 D1 point at the same gap.
+**Deliverables (new files; nothing signed/adopted touched; halt preserved per Law #8):** `research/analysis_plans/K3_construction_audit_execute_LOG234_2026-09-23.py`, `K3_CONSTRUCTION_AUDIT_RESULTS_LOG234_2026-09-23.json` (twin: env, hashes, guard outcomes, all 48 mismatches, endpoints NOT_EXECUTED), `K3_PHASE0_HALT_REPORT_LOG238_2026-09-23.md`.
+**Follow-up commissioned:** re-registered K3 Phase-0 plan (new number K3-Phase0-R1, Law #4) with G4 repointed to the signed pre-audit JSON per-item records — writer dispatched as LOG-239 (pre-assigned); Law #14 review pre-assigned LOG-240. Nothing downstream moves on this halt: §H7 demotion status, EXP081's queue, Sprint-3 pilots all unchanged. No "repair" of the smoke archive (Law #8); G4 not weakened.
+
+**LOG-239 pre-assigned** (R1 plan writer). **LOG-240 pre-assigned** (R1 Law #14 review). **Next free: LOG-241.**
+
+## LOG-239 — K3-Phase0-R1 re-registered frozen plan delivered; Law #14 review dispatched (2026-09-23)
+
+**Deliverable:** `research/analysis_plans/K3_PHASE0_R1_PLAN_LOG239_2026-09-23.md` — FROZEN, DO NOT EXECUTE before Law #14 SIGN (LOG-240). Writer paused; no code, no weights, no GPU.
+**Delta vs signed LOG-234 (declared):** sole substantive change = G4 (§8, §10 step 2) repointed from the pre-repair smoke archive to the signed `experiments/protocols/C-A_PREAUDIT_2026-09-23.json` `similarity_audit.per_item` 60×(id,t,f) records (expected 60/60, FATAL-on-mismatch unchanged); §2 D1-lesson note permanently bars the smoke archive as a cross-check source; executor must recompute the 60/60 itself (Law #3, binding). Law #4 chain cited (LOG-234 → LOG-238 halt → R1); LOG-238 halt preserved as superseded-on-passage, never deleted.
+**Next:** independent track-7 Law #14 review dispatched as LOG-240 (pre-assigned) — delta-only review: carry-over fidelity, G4 satisfiability (field-name match check — a mismatch would be a second D1-class defect), G4 not weakened, Law #4 chain, banner. SIGN releases R1 Phase-0 execution.
+
+**Next free: LOG-241.**
+
+## LOG-240 — Law #14 review of K3-Phase0-R1: SIGN — R1 Phase-0 released (2026-09-23)
+
+**Report:** `reports/adversarial_review_k3_r1_plan_2026-09-23.md` (independent track-7, delta-only review). **Verdict: SIGN.**
+**Carry-over fidelity:** machine diff vs the signed LOG-234 plan = 11 hunks, every one accounted for (re-registration numbering, Law #4 chain blockquote, §2 repoint, D1-lesson note, filename renames, §6 L4 A1 discharge repoint, §8 G4 rewrite + recompute, §9 "superseded halt" consequence, §10 step 2 repoint). All endpoints, guards G1–G11, §7 tables, pins, tolerances, license text byte-identical — the inherited LOG-235/236/237 SIGN stands.
+**G4 satisfiability:** `experiments/protocols/C-A_PREAUDIT_2026-09-23.json` exists; `similarity_audit.per_item` = 60 records, fields (id,t,f) match the plan's specification exactly (no second D1-class defect); plan's example record byte-identical to the artifact's first record; index-aligned comparison executable. The JSON's "signed" status rests on its attachment as binding computed values to the LOG-182-signed EXP081 v2 spec (verified in spec text).
+**No weakening:** D1-lesson bar binding and repeated (§2, §8, §10); FATAL-on-mismatch retained; recompute requirement binding imperative in both §8 and §10. Banner names LOG-240; five permitted verdicts only.
+**Caveats (recorded):** N1 — the §9 "superseded halt" consequence goes slightly beyond the brief's delta list (declared in-document, non-gating, Law #8-consistent; LOG-238 Refuted-per-candidate cells stand) — not a scope violation. N2 — "signed" status basis recorded above.
+**Result: K3-Phase0-R1 RELEASED for Phase-0 execution** under its §10 protocol; Phase 1 remains gated on the §8 G9 chain.
+**Next:** R1 Phase-0 executor dispatched as LOG-241 (pre-assigned). **Next free: LOG-242.**
+
+## LOG-241 — K3-Phase0-R1 executor: Phase-0 executed; PROCEED (2026-09-23)
+
+**Verdict-first [FACT]:** Phase-0 completed under the LOG-240-signed R1 plan (Phase-0 §10 steps 1–6 worked verbatim). **Both candidates Supported:** candidate (i) premise-rank bank (E-K3-1 PASS, g = 1.922505 ≥ 0.25, identity pass); candidate (ii) donor centroid C3 (E-K3-1 PASS, g = 1.061783 ≥ 0.25, audit-value match 7.45e-9 ≤ 1e-6, |g−1.061783| = 9.56e-8 ≤ 1e-4). Guards G1–G7 all PASS: G4 recomputed 60/60 index-aligned byte-exact (id,t,f) vs the signed pre-audit JSON (Law #3 — nothing inherited from LOG-238); G3 Δθ=0 pre == post == archived `ec276abe…e0ed`; G5 zero forward-invocation occurrences. No 0.9-bar firing on either candidate (k = 0/60 both; CP95 [0.0000, 0.0596]) — no Phase-1 caveat attaches. Cross-item collision count 60/60 descriptive [OBSERVATION], non-gating (LOG-235 F-235-1). **Program aggregation (pre-registered §7.1): PROCEED** — both candidates advance to the §8 G9 release chain. No verdict on H_compliant; Phase 1 does not exist until G9 releases it. $0 spent, 0 forward passes, GPU dark.
+**Deliverables:** `research/analysis_plans/K3_construction_audit_execute_LOG239_LOG241_2026-09-23.py`, `K3_CONSTRUCTION_AUDIT_RESULTS_LOG239_LOG241_2026-09-23.json` (twin), `K3_PHASE0_REPORT_LOG241_2026-09-23.md`. LOG-238 halt converts to superseded (halt report preserved, untouched — Law #8).
+**Process note:** the LOG-241 worker finalized before its backgrounded executor finished; the Lead recovered the terminal artifacts from disk (process 1877 had exited; twin + report on disk). Standing lesson: workers that background an exec must not report completion before the terminal result is filed; a disk check (script + twin + report present) is the completion criterion.
+**G9 status:** plan SIGN ✓ · Phase-0 report ✓ · Law #14 re-verification SIGN — **dispatched as LOG-242 (pre-assigned)** · CEO GPU clearance — outstanding · BK-04 booking — outstanding.
+**Next:** on LOG-242 SIGN, the Phase-1 decision packet goes to the CEO (GPU clearance + booking). **Next free: LOG-243.**
+
+## LOG-242 — Law #14 review of the K3 Phase-0 R1 report: SIGN — Phase-1 packet to the CEO (2026-09-23)
+
+**Report:** `reports/adversarial_review_k3_phase0_report_2026-09-23.md` (independent track-7). **Verdict: SIGN.**
+**§10 fidelity:** executor implements plan steps 1–6 in order, tolerances byte-identical; zero deviations. **Numbers all verify:** g_P=1.922505, g_D=1.061783; G4 60/60; 0/60 both 0.9-bars, CP95 [0.0000,0.0596] recomputed independently via scipy; E-K3-3(b) 7.45e-9 / 9.56e-8; every E-K3-4 table value matches recomputation to 6dp. (Reviewer's own first g recompute used the wrong formula — self-caught and corrected; the plan's norm-of-sum definition is the correct one.)
+**Guards:** G1–G7 PASS; G8/G10/G11 correctly N/A; G9 correctly NOT SATISFIED. **PROCEED** is the pre-registered §7.1 mapping; no H_compliant verdict, no Phase-1 pre-licensing, no L2/L3 crossing, five permitted verdicts only, no banned language. **LOG-238 halt conversion lawful** (G4 60/60 recomputed; halt report preserved; smoke archive untouched). §5 promotion claim honest ("toward PROVEN-LEMMA"; weakest grade stays CONJECTURE-UNDER-TEST). Cosmetic-only notes (twin key naming, truncated platform string) — no fixes required.
+**G9 ledger (crisp):** 3/5 satisfied — plan SIGN (LOG-240) ✓, Phase-0 report ✓, re-verification SIGN ✓. **Outstanding:** (4) CEO GPU clearance, (5) BK-04 booking confirmed. Phase 1 remains non-existent.
+**CEO packet:** K3 Phase-1 causal rescue screen — arms C1 (Law-#7-compliant candidates) / C2 (concurrent option-informed bridge, procedure-validity control) / K3i / K3ii, ≤240 expected passes (hard cap 400), McNemar exact + Tango 95% CIs, δ_min=0.05. Licensed readings: ≥1 compliant candidate clears rescue while C2 meaningful → CONTINUE (autonomous-mechanism reading survives this falsifier only); all compliant NULL while C2 clearly rescues → KILL (re-scope to label-assisted steering); C2 NULL → Inconclusive/HOLD regardless. Compute-order note: K2 comes first (K1 → K2 → Sprint-3 → K3 → EXP080 → EXP081); user's free-GPU account actions (Colab T4, Lightning AI, HF verify) still pending. Recommendation for the CEO: conditional clearance — K3 Phase-1 released only after K2 executes and Sprint-3 pilots clear, booking BK-04 on the first available free lane.
+**Benchmark Analyst re-hire ledger:** trigger list = {final CEO §H7 decision, K2 verdict, K3 Phase-0/Phase-1 verdict}. K3 Phase-0 verdict (PROCEED, both Supported) now banked as one trigger satisfied; re-hire fires when the rest land.
+
+**Next free: LOG-243.**
+
+## LOG-243 — S3-1/S3-3 Stage-0 archived-gate feasibility audit: INFEASIBLE — archived approach KILLED, pivoted to Stage-0b (2026-09-23)
+
+**Law #15 four answers (written before work started):**
+1. **Precise question:** Can S3-1's ARP fingerprint gate (permutation test on bridge vs B_agg/B_wrong fingerprint separation) and S3-3's DUG doubt-AUC gate (AUC(d(x), rescuable(x)) > 0.6) be computed from $0 archived records?
+2. **Decision changed:** KILL / PIVOT on the archived-Stage-0 approach for both candidates. If feasible → CONTINUE to $0 archived analyses. If infeasible → KILL the archived gates as written; PIVOT both candidates to their Stage-0b live-pass pilots (0.003 / 0.005 T4-h, GPU-budgeted). The downstream workstream that lives or dies: S3-1/S3-3's BACKLOG→QUEUED promotion (both gated on K1, which has landed — LOG-213/217).
+3. **Cheapest test:** schema walk over all intervention archives (EXP065/066/077 results + instance records, K1/EXP082/S38 result twins, EXP077 vectors.pt), 0 forward passes, CPU-only. No cheaper decision exists — the question is purely about archive contents.
+4. **Mathematical license:** definitional dependence. ARP's R(δ;x) requires {h_l(x;δ), h_l(x;0)} per-layer residual tensors and e_l requires {A_l(x;δ), A_l(x;0)} attention tensors; DUG's D_layer requires readout(h_lmid) and readout(h_L). Prediction: if no archive schema contains per-layer tensors, both gates are uncomputable. Breaking point: the schema check itself — tensors present or absent.
+
+**[FACT] Execution:** walked 8 archive artifacts + 1 tensor file. Richest per-item records anywhere: binary correct/incorrect per arm, margin-shift scalars, end-to-end logit deltas (EXP065/066/077); direction norms/cosines (EXP082); archived end-to-end logit shifts (S38). `exp077_vectors.pt` holds only single-layer (L20, d=1024) direction vectors (v_hat, mu, B_wrong, B_perp_basis, u/q lists) — no per-layer residuals, no attention tensors. **Zero per-layer activation/attention snapshots exist in any archive.** Both gates uncomputable as written.
+
+**Verdict: archived Stage-0 KILLED for S3-1 and S3-3 (infeasible, not falsified). PIVOT recorded:** both candidates re-scoped to their Stage-0b live pilots — S3-1: 240 live passes (60×4 conditions) ≈ 0.003 T4-h; S3-3: 60 live doubt-probe passes ≈ 0.005 T4-h (pilot gate AUC > 0.6 before any further spend). Stage-0b pilots require Law-#14-signed plans + CEO GPU clearance; they join the GPU queue behind K2/Sprint-3/K3/EXP080/EXP081 (no reordering). Note: S3-1's gate question is additionally stale — its framing ("separate rescue from readout tilt") predates K1/EXP082 killing both directional tilts; any Stage-0b pre-registration must re-frame the separation target (rescue vs relational-readout baseline), else it tests a dead distinction.
+**Death-debt (LOG-219):** the killed approach owes its pivot — PAID here (Stage-0b re-scoping logged to backlog). $0 spent, 0 forward passes, no signed artifacts touched.
+**Backlog:** S3-1/S3-3 rows updated (archived gate → KILLED LOG-243; Stage-0b pilots QUEUED, GPU-gated, costed).
+
+**Next free: LOG-244.**
+
+## LOG-244 — S3-9 gain tomography: Law #15 four answers + belief-change recorded; candidate promotable to QUEUED (2026-09-23)
+
+**Context [FACT]:** S3-8 (LOG-225) Supported: on EXP066 rescued items the L1 direct-readout shift explains only ~57%; mean residual +0.3225 (60/60 positive), ×1.8 downstream gain (g mean 1.797, rescued n=8). S3-9 was logged as the cheapest open quantitative question from that positive but was "candidate only, not licensed — needs Law-15 four answers + belief-change statement before it can queue." This entry supplies them. CPU-only design work; the pilot itself still needs a pre-registered plan + Law #14 SIGN + CEO GPU clearance. No execution licensed here.
+**Law #15 four answers:**
+1. **Precise question:** Over the 8 EXP066 rescued items, is the downstream gain g(α) = (end-to-end margin shift)/(L1-predicted direct-readout shift) invariant across injection strengths α on a pre-registered grid (e.g., α ∈ {0.25, 0.5, 1.0, 2.0})? Measurand: per-item relative variation (max−min)/mean of g across α, aggregated over the 8 items.
+2. **Decision changed:** PIVOT vs CONTINUE on the mechanism model that K2 must attribute. Pre-registered: variation > 20% → linear-amplifier story **Not supported** (PIVOT to strength-dependent routing model; K2's attribution target becomes routing dynamics). Variation ≤ 20% → linear gain **Supported** (CONTINUE with fixed-gain model; K2's attribution target is where the fixed gain is applied). Threshold 0.20 chosen to exceed the LOG-225 ε noise floor by an order of magnitude while staying sensitive to genuine routing.
+3. **Cheapest test:** fold into K2's battery as add-on arms — K2 already runs α=0.5 on the same items; 3–4 extra α values × 8 rescued items ≈ 24–32 added passes, zero standalone launch overhead. Standalone fallback ≈ 80 passes ≈ 0.0005 T4-h. No weight-only or archived route: archives carry single-α data only (EXP066 α=1.0; EXP077's α grid has correctness binaries but no margin/logit scalars — "not decomposable," LOG-225).
+4. **Mathematical license:** under H_lin (linear amplifier), the downstream map on the perturbation is α-independent along the injection ray: ΔM(α) = α·c·ΔM_L1(1) ⇒ g(α) ≡ c, so CV_α[g] ≈ 0 up to the LOG-225 noise floor. Under H_route, downstream blocks reallocate attention as a function of perturbation magnitude ⇒ g(α) varies systematically (predicted direction: growth/inflection with α). Breaking point: the 20% bar — flat within it, H_lin survives as K2's working model; broken, the linear story is dead.
+**Steelman (strongest argument against):** an α grid confounds downstream nonlinearity with injection-layer saturation — varying g(α) could reflect local readout saturation, not routing. Mitigation (pre-register): the ratio g(α) = ΔM(α)/ΔM_L1(α) normalizes injection-layer saturation to first order since both numerator and denominator are measured on the same grid. Residual caveat: downstream-mediated saturation not excluded — record, don't assume away. Power caveat: n=8 rescued items ⇒ wide CIs; license as pilot gate (authorizes full K2-integrated tomography), never a terminal verdict.
+**Belief-change statement:** that the ×1.8 downstream gain is a fixed linear property of the downstream blocks rather than strength-dependent routing — it decides whether K2's attribution target is a *where*-question (which layer applies the fixed gain) or a *how*-question (routing dynamics), i.e., what K2 is licensed to conclude.
+**Recommendation (not a decision):** FOLD into K2's battery rather than standalone; fold-vs-standalone stays with the K2 review/CEO clearance per backlog.
+**Backlog:** S3-9 row updated — four answers + belief-change recorded (LOG-244); status → QUEUED pending K2/CEO fold decision. No GPU, no code, no signed artifacts touched.
+
+**Frontier scoreboard note:** no scoreboard-triggering verdict landed this cycle — LOG-243 kills a design approach (no pre-registered axis; not a plotted verdict class) and LOG-244 is a design gate. Re-hire trigger set stands unchanged: {CEO §H7 decision, K2 verdict, K3 Phase-1 verdict}, with K3 Phase-0 PROCEED banked (LOG-242). Update protocol remains ready; no spurious re-hire.
+
+**Next free: LOG-245.**
+
+## LOG-245 — Program health audit: scientific integrity CLEAN; LOG-numbering collisions found and disambiguated (2026-09-23)
+
+**Scope [FACT]:** full-capacity correctness check ordered by the CEO: (1) log tail-consistency, (2) signed-protocol immutability, (3) verdict→artifact traceability for LOG-230→LOG-244, (4) Laws #2/#4/#6/#8/#11/#12/#14/#15 on recent work. $0, CPU only, no weights touched, no signed artifacts edited.
+
+**Headline: scientific integrity is CLEAN. One process defect found: LOG-number collisions (record-keeping, not science).**
+
+**Finding 1 — LOG numbering [FACT]:** three genuine collisions where distinct entries share one number:
+- LOG-220 ×2 (ll.3950/3972): both frontier-scoreboard v1 records. Disambiguated: LOG-220(i) = "built at the §10-mandated path" (long record, 20 rows, Law #3 tally); LOG-220(ii) = "complete" (summary record).
+- LOG-226 ×5 (ll.4031/4091/4115/4157/4169): K2 bundle build chain. Disambiguated: LOG-226(i) = bundle built (10 files); LOG-226(ii) = 62/62 + D1 escalated; LOG-226(iii) = repair STOPPED (ruling arithmetic); LOG-226(iv) = F1–F3 repair chain COMPLETE; LOG-226(v) = 84/84 final.
+- LOG-236 ×2 (ll.4216/4222): LOG-236(i) = K3 fixes applied; LOG-236(ii) = fix re-verification REVISE.
+False positives excluded: LOG-215b, LOG-223/224b, LOG-224b, LOG-224c are deliberate suffixed sub-entries, not collisions. Out-of-order jumps (227→223 etc.) are the suffixed-chain convention, documented. History is append-only: past entries are NOT renumbered (per LOG-225 repair precedent); the disambiguated citations above are the standing references.
+
+**Finding 2 — signed-protocol immutability [FACT]:** K2 REV4 file sha256 `2343396429429ef3…` matches the bundle manifest's pinned protocol pointer byte-for-byte — unedited after LOG-230 CONFIRM. K3-Phase0-R1 plan and K3 results JSON untracked-but-present with mtimes predating their sign entries. LOG-230's own caveat (pre-fix REV4 not preserved; scope-complete grep audit instead of byte-diff) stands as recorded — an honest limitation, not a violation.
+
+**Finding 3 — verdict traceability LOG-230→244 [FACT]:** every verdict-bearing entry traces to a primary artifact, all present: LOG-230→REV4 plan file; LOG-231→EXP082_REPORT_LOG217; LOG-232→H7_DECISION_BRIEF_LOG232; LOG-234/235→K3 frozen plan + review addendum; LOG-236(i/ii)→fix chain; LOG-237→SIGN; LOG-238→halt record (lawfulness judged in LOG-242); LOG-239/240→R1 plan + review; LOG-241→results JSON + report; LOG-242→review addendum; LOG-243/244→design gates (no numbers asserted). Spot-check: g_P=1.9225049092763826 / g_D=1.0617830956141696 in the results JSON round to the LOG-241/242 claims (1.922505/1.061783); G4 60/60 and K3 hashes pre==post==archived (`ec276abe…e0ed`) verified.
+
+**Finding 4 — law compliance [FACT]:** Law #2: all sampled numbers trace to raw artifacts; no invented numbers found. Law #4: no post-hoc hypothesis shifts; K3-R1 was a new registration, not an edit. Law #6: Δθ=0 holds — hash pre==post==archived; no GPU runs. Law #8: nulls preserved (LOG-243 kill logged with pivot; EXP082 hypothesis-kill preserved alongside EXONERATED verdict). Law #11: [FACT]/[OBSERVATION]/[INTERPRETATION]/[HYPOTHESIS] tags in use. Law #12: chronological log maintained. Law #14: LOG-242 independent review SIGN with self-caught wrong-formula recomputation; K3 Phase-1 got conditional (not blanket) clearance. Law #15: LOG-243/244 carry the four answers.
+
+**Negative checks:** no softened null found; no missing retraction found (EXP065/066 Procrustes retraction, G1 QK-sentence retraction, K1-D1 supersession all on record); no unlicensed claim found (LOG-242 explicitly: "No verdict on H_compliant; Phase 1 does not exist"; LOG-243/244 license nothing for execution); EXP082 verdict-name conflict resolved at LOG-231 from the signed artifact.
+
+**Verdict: AUDIT CLEAN on scientific integrity.** The program is not going wrong. The numbering collisions are a process defect now repaired by disambiguation; recommendation: briefs must keep pre-assigning LOG numbers per the LOG-093 fix to prevent recurrence.
+
+**Next free: LOG-246.**
+
+## LOG-246 — CLLC pivot formalization: closed-loop control priced as a bet, not a hope (2026-09-23)
+
+**Deliverable:** `research/theory/CLLC_FORMALIZATION_2026-09-23.md` — draft theory document (not a signed protocol). $0, CPU only, no weights touched, no signed artifacts edited.
+
+**What was done [FACT]:** formalized closed-loop inference-time control of a frozen backbone in control-theoretic terms — state $s_\ell$ (residual stream), observation $y_\ell = Cs_\ell$ (probe bank, $r \ll d$), controller $\pi_\ell : y \mapsto u_\ell$ (additive injection), objective $J = \varphi(s_L) + \lambda\sum\|u_\ell\|^2$. Four structural facts derived: (F1) full actuation ($B_\ell = I_d$ — controllability never binding); (F2) determinism (no process noise); (F3) partial observability; (F4) manifold-bounded control authority (Mahalanobis radius $\rho_{\max}$).
+
+**Core result [THEOREM, proof sketch on record]:** no-feedback-benefit under ray-linearity — if the downstream objective is affine in the injection on the budget set, the optimal closed-loop cost equals the optimal open-loop cost (deterministic LQ; feedback corrections vanish along the optimal path). Corollary: feedback can win only via (A) nonlinearity correction, (B) per-instance adaptive gain, (C) model-error replanning; (D) layer distribution is achievable open-loop and must be controlled for, not credited to feedback.
+
+**Key connection [INFERENCE]:** S3-9 (α-invariance of the ×1.8 gain) is CLLC's mathematical gate — it premise-checks the Theorem at L20. Ray-linearity ⇒ same-layer feedback predicted ≈ useless; nonlinearity ⇒ channel (A) live.
+
+**Predictions with breaking points:** P1 — feedback gain bounded by measured gain variation ($2\times$ bound breach kills the channel analysis); P2 — $\cap$-shaped performance vs budget, collapse past $4\times$ natural Mahalanobis scale (monotone rise falsifies the manifold model); P3 — observability saturation by probe rank $r \le 8$ ($r{=}1$ saturating ⇒ simplify; no saturation by 32 ⇒ revise); P4 — CLLC benefit monotone in per-layer nonlinearity $\nu_\ell$ (best-layer-is-most-linear kills channel A).
+
+**Pre-registration skeleton EXP-CLLC-01 (draft):** 6 arms × 60 items ≈ 360 passes + ~800 calibration ≈ 0.01 T4-h; arms isolate each channel — (a) open-loop best, (b) open-loop multi-layer (D), (b2) adaptive open-loop (B, cheaper), (c)/(d) closed-loop scalar/rank-8 probe (A+C), (e) permuted-probe negative control (budget-confound check). Pre-registered kills: (c)≤(a)→KILL feedback; (b2)=(c)→KILL feedback machinery, keep open-loop adaptivity; (b)>(a),(c)=(b)→PIVOT open-loop multi-layer; (e)>(a)→HALT redesign. Trigger: K2's P2 gate fires. Licenses nothing until Law #14 review + CEO GPU clearance.
+
+**Prior-art boundary [FACT]:** Activation-LQR (Apr 2026) is open-loop trajectory optimization — the direct prior. CLLC's novelty is feedback specifically; the (b)-vs-(c) contrast is the single experiment that earns it. If (c)=(b), re-scope to open-loop multi-layer.
+
+**Steelman (strongest case against, recorded in-document):** (1) adaptive open-loop (b2) is strictly cheaper than feedback and the most likely killer; (2) 20 layers of feedback = 20 compounding manifold-departure risks vs one careful injection; (3) budget dilution vs concentration; (4) zero evidence adaptivity (not direction quality/label-dependence) is the missing ingredient — a CLLC win would inherit the Law #7 demotion; (5) novelty fragility vs A-LQR; (6) closed-loop harder to hold to the 84/84 seeded/deterministic bar. Honest ordering: (b2) must die before (c) is tested.
+
+**Law #15 four answers:** (1) can feedback beat open-loop at matched budget, through which channel, with what breaking points; (2) PIVOT — registers the battery for instant launch on P2, or KILLS feedback-before-GPU if the Theorem's premises hold; (3) cheapest = this $0 formalization → S3-9 (24–32 passes, queued) → EXP-CLLC-01 (0.01 T4-h) only after P2 fires; (4) license = deterministic optimal control (theorem + proof sketch), full-actuation analysis, four predictions each with a breaking point.
+
+**What it licenses:** CLLC as a priced, registered-ready pivot battery — not a hope. Does not license: GPU execution, any CLLC efficacy claim, any capability/H-level claim, any §H7 change. P2 has not fired.
+
+**Frontier scoreboard note:** no scoreboard-triggering verdict — LOG-245 is a process audit (clean), LOG-246 is a theory draft. Re-hire trigger set unchanged: {CEO §H7 decision, K2 verdict, K3 Phase-1 verdict}; K3 Phase-0 PROCEED banked (LOG-242).
+
+**Next free: LOG-247.**
+
+## LOG-247 — CLLC formalization revised per reviewer's five corrections (2026-09-23)
+
+**Context:** the user reviewed `research/theory/CLLC_FORMALIZATION_2026-09-23.md` (LOG-246 draft) and issued five binding corrections. Applied by the CEO directly to the draft (not a signed protocol; history preserved in git).
+
+**Correction 1 — prior-art boundary [FACT].** The LOG-246 draft mischaracterized Activation-LQR as open-loop trajectory optimization. Our own literature verification (`research/literature/mentor_citations_verification_2026-09-23.md`) records it as closed-loop feedback control of frozen activations using layer-wise Jacobians and online state feedback — the reviewer's correction is confirmed against our own records. "Feedback over activation steering" therefore cannot be CLLC's novelty boundary. Reframed: CLLC's possible contribution is a *cheap, Jacobian-free, partially observed, low-rank feedback controller competitive with existing closed-loop controllers while using less computational/model information*. EXP-CLLC-01 skeleton restructured to 7 arms: (A) best fixed open-loop, (B) open-loop multi-layer, (B2) per-instance adaptive open-loop, (C) CLLC Jacobian-free feedback, (C8) CLLC rank-8 probe, (D) actual Activation-LQR, (E) permuted-observation negative control. Critical comparisons are (C)-vs-(B2) and (C)-vs-(D); (C)>(B) alone is explicitly insufficient and licenses no claim. Kill/continue criteria rewritten around these contrasts (incl. "cheaper-but-weaker is not a contribution"). Cost updated: 7×60=420 passes + ~800 calibration ≈ 0.011 T4-h, $0.
+
+**Correction 2 — S3-9 renamed.** "Premise verification" → "linearity diagnostic": a finite α grid cannot prove exact ray-linearity, only bound observed deviation. P1 demoted from quantitative bound to *heuristic prediction*; a theorem-backed bound requires explicit Lipschitz/curvature assumptions, not derived here.
+
+**Correction 3 — OOD language.** "Behavior undefined off-manifold" replaced with "out-of-distribution and empirically unsupported relative to the fitted natural-activation distribution" (F4, P2). The transformer remains mathematically defined everywhere.
+
+**Correction 4 — actuation language.** $B_\ell = I_d$ now reads "direct actuation is not the injection-point bottleneck" — it does not imply constrained useful reachability can never bind (F1, §9 Q4).
+
+**Correction 5 — autonomy classification.** A successful CLLC result is classified as "inference-time activation control" only — not evidence for autonomous cognitive discovery — unless a later experiment removes the externally specified direction/reference. Recorded in §8 and §11.
+
+**Kept per reviewer:** deterministic ray-linearity theorem, adaptive-open-loop killer ordered before feedback, budget matching, permuted-probe negative control, explicit kill criteria, refusal of capability claims before evidence.
+
+**Revised core question (§0, §9):** "Can a cheap, Jacobian-free, partially observed feedback controller improve frozen-model inference over both optimized open-loop and adaptive open-loop control, at matched compute, information, and intervention budget, and does it offer any advantage over existing closed-loop activation control such as Activation-LQR?"
+
+**What this licenses:** the corrected CLLC battery as a designed, pre-registered-ready instrument with an honest novelty boundary. Does not license: GPU execution, any CLLC efficacy claim, any capability/H-level/autonomy claim, any §H7 change. P2 has not fired.
+
+**Next free: LOG-248.**
+
+## LOG-248 — P1 bound derivation: theorem-backed conditional bound + proven identifiability gap (2026-09-24)
+
+**Context:** reviewer challenge from LOG-247 — derive P1's quantitative bound from explicit approximation/Lipschitz/curvature assumptions or keep it heuristic. Attempted on CPU, $0, no weights touched, no signed artifacts edited.
+
+**Result [THEOREM] (succeeds conditionally):** for the practical gap δ = (affine-based open-loop cost) − (optimal feedback cost), proved 0 ≤ δ ≤ 2ε where ε = sup_U|D−D̄| over the joint Mahalanobis budget set (2ε sandwich via policy-wise model-error bound + LOG-246 §3 ray-linearity theorem), and the curvature corollary δ ≤ κR² under κ-bounded Hessian (Taylor with integral remainder). The bound tightens quadratically as budget R shrinks.
+
+**Result [PROPOSITION] (impossibility — as valuable as the bound):** S3-9's 1-D α-grid cannot identify ε or κ off the measured ray, for a proven reason — explicit adversarial bump construction: D₂ matches D₁ exactly on the ray to all orders (invisible at any grid resolution) while δ(D₂) ≥ M for arbitrary M. Therefore no numerical P1 bound is derivable from S3-9 alone; the "ray-representative error" conjecture is recorded as untestable and verdict-ineligible.
+
+**P1 upgraded:** from "heuristic prediction" to "theorem-backed conditional bound with a specified missing measurement." Missing measurement priced: curvature diagnostic via randomized Hessian power iteration over the injection-schedule space (~150 passes ≈ 0.002 T4-h), GPU-gated, queued behind K2. Operational breaking point once κ̂ is measured: pilot (C)-arm gain > κ̂R² kills the §3 channel analysis.
+
+**Law #15:** (1) can P1's heuristic become theorem-backed, and what must be measured to instantiate it; (2) CONTINUE — form upgraded, missing measurement specified and priced; (3) cheapest = this $0 derivation now → curvature diagnostic (~0.002 T4-h) after K2; (4) license = approximate-DP perturbation theory (2ε sandwich) + Taylor remainder + adversarial identifiability construction. Steelman recorded: bound vacuous if κ̂ huge; upper-bound only (certifies feedback-futility, not open-loop success); optimal-policy vs specific-law gap; LayerNorm smoothness caveat; conservative domain (full U vs v̂-schedules).
+
+**What this licenses:** P1's upgraded quantitative feedback-futility criterion; the curvature diagnostic as a priced queued measurement; S3-9's continued role as necessary-but-insufficient ray diagnostic. Does not license: any numerical breaking point before κ̂ is measured; any verdict from the ray-representative conjecture; GPU execution; any CLLC efficacy/capability claim.
+
+**Next free: LOG-249.**
+
+## LOG-249 — Prior-art verification sweep on closed-loop activation control: CLLC narrowed novelty CONFIRMED, one UNVERIFIED prior flagged (2026-09-24)
+
+**Motivation:** LOG-247 caught our own draft mischaracterizing Activation-LQR (called it open-loop; it is closed-loop with Jacobians). This sweep asks whether other priors are mischaracterized and — critically — whether any existing method already implements CLLC's narrowed novelty claim: Jacobian-free, partially-observed, low-rank feedback control of frozen-model activations.
+
+**Precise question:** does any prior in our literature records already do Jacobian-free closed-loop activation control? **Decision:** KILL vs CONFIRM CLLC's narrowed novelty boundary before any GPU spend.
+
+**Per-method verdicts [records-based; web search unavailable this turn — browser_search returned terminal 401, per recovery rule the sweep proceeds on records only]:**
+
+1. **Activation-LQR** (Skifstad, Yang & Chou, ICML 2026; arXiv:2604.19018) — VERIFIED (abstract quoted verbatim in `research/literature/mentor_citations_verification_2026-09-23.md`): layer-wise Jacobians, LTV linearization, LQR feedback controllers steering activations to semantic setpoints in closed loop. **Closed-loop but Jacobian-based** — uses full model Jacobians computed from frozen weights. Does not implement Jacobian-free control. No kill. Characterization in LOG-247 stands correct.
+2. **PPLM** (Dathathri et al., ICLR 2020) — VERIFIED: per-instance hidden-state updates via backpropagated gradients from an external attribute classifier. Gradient-based with external evaluator; not Jacobian-free, not a feedback law. No kill.
+3. **∇-Reasoner** (Wang et al., ICLR 2026; arXiv:2603.04948) — VERIFIED (abstract): test-time gradient descent on token logits, frozen model, reward-model-guided. Gradient-based, logit-level, not activation feedback control. No kill.
+4. **DEER** (Yang et al., 2025; arXiv:2504.15895) — VERIFIED: training-free confidence-gated dynamic early exit of CoT (19.1–80.1% length reduction). Inference-time adaptation of compute, not activation feedback control. No kill.
+5. **Meta-Reasoner** (Sui et al., Findings ACL 2026; arXiv:2502.19918) — per records: contextual multi-armed bandits over reasoning strategies (backtrack/change decomposition/restart). Strategy routing, not activation control. No kill.
+6. **Self-Refine** (Madaan et al., NeurIPS 2023) — VERIFIED: text-level generate→critique→refine loop. Output-space, not activation-space feedback. No kill.
+7. **RISER** (Findings ACL 2026) — per records: dynamic vector composition with a trained external router. Not closed-loop activation feedback. No kill.
+8. **Steering Vector Fields (Feb 2026)** — **UNVERIFIED** in our records (cited per internal Sept-2026 sweep note only; primary source never retrieved; Cluster B could not place it). Its mechanism description ("steering to vector fields") is adjacent enough that it *could* bear on the novelty boundary. Web verification was blocked this turn. **Flagged as mandatory verification before CLLC is registered as a novelty-bearing pivot** — assigned to the literature program.
+
+**No other mischaracterizations found:** every checked record (A-LQR, ∇-Reasoner, DEER, Meta-Reasoner, PPLM, Self-Refine) matches its characterization in our files; the LOG-247 error was the only one of its class.
+
+**Verdict on CLLC's novelty boundary: CONFIRMED (not killed).** No verified prior implements Jacobian-free, partially-observed, low-rank feedback control of frozen-model activations. The (C)-vs-(B2) and (C)-vs-(D) contrasts in EXP-CLLC-01 stand as the earning experiments. **Condition:** Steering Vector Fields must be verified against its primary source before the novelty claim is registered — an UNVERIFIED adjacent prior is a live threat, not a cleared one.
+
+**Law #15:** (1) does any prior already do Jacobian-free closed-loop activation control; (2) KILL vs CONFIRM CLLC's narrowed novelty boundary; (3) cheapest = this $0 records sweep now → primary-source verification of Steering Vector Fields when web access recovers; (4) license = per-method mechanism comparison against the three novelty attributes (Jacobian-free ∧ partially-observed ∧ low-rank feedback). Steelman: the sweep is records-bounded — a 2024–2026 Jacobian-free method could exist outside our records; the web half of the method was not executable this turn, so the CONFIRM is conditional on records, not exhaustive.
+
+**What this licenses:** CLLC's narrowed novelty boundary survives to registration-review (Law #14) — conditional on Steering Vector Fields verification. Does not license: GPU execution, any CLLC efficacy claim, any capability/H-level claim.
+
+**Next free: LOG-250.**
+
+## LOG-250 — AMBITION SPRINT: 7 ranked candidates, 22-entry cull list, 4 queue guards (2026-09-24)
+
+**Mandate:** user's renewed order — the team works at maximum ambition, generating genuinely new ideas aimed at a discovery that changes how the AI industry sees LLMs. Falsification discipline kept on: no idea earns anything by ambition alone. Coordinator fanned out to 4 specialists in parallel (theory, literature/adjacent-fields, experiment design, adversarial), then synthesized.
+
+**Specialist deliverables** (all $0, CPU only, no weights touched, no signed artifacts edited):
+- `research/proposals/AMBITION_SPRINT_THEORY_2026-09-24.md` — 5 candidates (M1 OSAI, M2 JPI, M3 RCPA, M4 EAR, M5 LRI), each with a Law #15 packet.
+- `research/proposals/AMBITION_SPRINT_LITERATURE_2026-09-24.md` — 5 translated candidates (TNA, TTLRA, PWAR, EOC, RHMPC) from non-normal dynamics, attractor networks, MPC, predictive coding, edge-of-chaos; 6 drafted-and-cut with graveyard hygiene. SVF verification: NOT achieved (browser.search 401); SVF stays UNVERIFIED.
+- `research/proposals/AMBITION_SPRINT_EXPDESIGN_2026-09-24.md` — cheap-kill toolkit grounded on program-measured anchors (22 fwd/s @410m → T4-h ≈ passes/79200; cheapest pilot 60 passes ≈ 0.0008 T4-h), mandatory negative-control battery, pre-registration skeleton with the asymmetric verdict rule (pilots KILL or HOLD, never license capability claims), 5 class designs (B.1–B.5), 2 own candidates (X1 residual recurrence, X2 Newton-vs-gradient duel).
+- `research/proposals/AMBITION_SPRINT_ADVERSARIAL_2026-09-24.md` — 16-entry cull list, 12-point survival criteria, 3 live-bet stress tests, 12 Law #14 pre-commit traps.
+- Synthesis: `research/proposals/AMBITION_SPRINT_SYNTHESIS_2026-09-24.md` (this entry's parent document).
+
+**Ranked candidates (7), coordinator merges noted (M5+X1+TTLRA → frozen-map iteration lane; M2+TNA → dynamical-amplifier lane):**
+1. **R1 RCPA** (relational cross-position amplification, 0.0015 T4-h) — predicts EXP077's null as a theorem; label-free, output-side. Kill: flip-rate(r̂) ≤ flip-rate(random).
+2. **R2 Newton-vs-gradient duel** (0.0015 T4-h) — kills the second-order feedback family at the door; offensive use of the LOG-248 bound. Kill: median(ΔM_Newton − ΔM_GD) ≤ 0.
+3. **R3 dynamical-amplifier lane** (TNA+JPI; $0 CPU Henrici screen → 0.0045 T4-h) — first mathematical home (Kreiss theorem) for the ×1.8 downstream gain. Kill: rank-indifferent gain, or ĉ < 0.1 decision-orthogonality.
+4. **R4 EOC** (edge-of-chaos gain scheduling, 0.0038 T4-h) — sharpest breaking point (dose-response on |λ̂|). Kill: scheduler ≤ best fixed gain or no |λ̂| dose-response.
+5. **R5 EAR** (ephemeral attention registers, 0.004 T4-h) — ablation-verified circuit-addressed scratch memory. Kill: no head above random control or ablation-indifference.
+6. **R6 frozen-map iteration lane** (X1+M5+TTLRA, 0.0008 T4-h) — self-killing by its own math; honest prior is divergence. Kill: L̂ ≥ 1 or flat step-2.
+7. **R7 OSAI** (output-side attractor iteration, 0.091 T4-h — most expensive; high-variance bet). Kill: L̂ ≥ 1 or fixed-point accuracy ≤ baseline.
+
+**HELD (not culled):** PWAR (weakest license — analogical; runs only piggybacked on EOC's pilot); RHMPC (0.0068 T4-h, most expensive; H=1 ablation likely retains gain; runs only after R1–R6 report).
+
+**Cull list: 22 distinct entries** — 16 adversarial (wider static search; fine-tuning; Procrustes 2.0; QK-subspace targeting; smarter bridge; tilt 2.0; oracle loops; curvature-from-the-ray [killed by the LOG-248 impossibility result]; autonomous unsupervised steering; paid-API verifier; 7B scaling; test-set-fitted directions; inter-instance latent exchange; CoT wrapper = capability; gradient steering as autonomous discovery; re-running signed batteries with tweaked bars) + 6 literature (self-generated task vectors; TTT-style activation gradients; SAE steering [queued, not killed]; Hopfield trace memory [S3-2 overlap]; program-synthesis verifier; gated working-memory maintenance [M1 overlap]). None may enter the queue without a new falsifying test the cited kill doesn't cover.
+
+**Guards found (CEO decisions required, not more theory):**
+- **G1 — K2 row-4 strand:** one outcome pattern strands both licensed futures with no pre-registered exit. Recommended: pre-register before K2 executes that row 4 stands the position-masking approach down (not re-registered) and re-scopes to whole-trajectory instruments.
+- **G2 — Curvature diagnostic:** 150 passes queued as a "priced measurement" but has no pre-registered interpretation rule (no κ̂ vacuity/abort threshold, no covering protocol). Recommended: no GPU until it has its own Law #14-reviewed interpretation rule; until then it is a queued proposal, not a measurement.
+- **G3 — CLLC efficiency cell:** (C)>(B2)-but-(C)<(D) has no operationalized "strictly less information/compute" — a between-the-arms outcome would be decided by reviewer discretion. Recommended: operationalize (forward-pass-equivalents incl. JVP costs) and pre-register the threshold before EXP-CLLC-01 is signed.
+- **G4 — Record correction PROPOSED (user sign-off required, not applied):** `research/innovation/PARADIGM_AUDIT_2026-09-23.md` (A1) labels Steering Vector Fields "verified-live" and asserts content — contradicts the adopted REV2 synthesis (LOG-195), which marks SVF UNVERIFIED with no content claim. Full-repo grep confirms no arXiv ID/author/venue for SVF in the records. Binding status = REV2. Sprint 1 New Idea 1 must cite SVF as unverified inspiration until the V-record re-fetch rule is satisfied.
+
+**Coordinator's promotion recommendation:** R1 RCPA → QUEUED (promotable to Law #14 review and signed pre-registration, not licensed to execute). Reasons: cheapest tier with the sharpest kill; the only candidate predicting an existing null as a theorem (pays the LOG-219 debt); label-free by construction; output-side; built-in anti-re-skin check. All seven default to N1 (Known Combination) and are currently Underdetermined (untested) — the sprint produced priced, falsifiable questions, not answers. Total kill-first diagnostics for R1–R6: ≈ 0.018 T4-h (~1.5 min on 2×T4).
+
+**What this licenses:** the 7 ranked candidates as QUEUED-track proposals pending Law #14 review and signed pre-registration; the 22-entry cull list as standing rejections; the 4 guards as CEO decisions. Does not license: GPU execution of any candidate; any efficacy/capability claim; any change to signed artifacts (G4 proposed, not applied).
+
+**Next free: LOG-251.**

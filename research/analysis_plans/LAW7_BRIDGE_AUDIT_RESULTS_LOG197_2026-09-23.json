@@ -1,0 +1,176 @@
+{
+  "audit": "LOG-197 Law #7 bridge-leakage audit",
+  "plan": "research/analysis_plans/LAW7_BRIDGE_AUDIT_PLAN_LOG197_2026-09-23.md (frozen, Law #14 SIGN)",
+  "env": {
+    "torch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "numpy": "2.5.3",
+    "venv": "/home/hatch/workspace/.venv_smoke",
+    "snapshot": "/home/hatch/.cache/huggingface/hub/models--EleutherAI--pythia-410m/snapshots/9879c9b5f8bea9051dcb0e68dff21493d67e9d4f"
+  },
+  "hash": {
+    "archived": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "match": true
+  },
+  "E2": {
+    "line_assertions_pass": "37/37",
+    "single_bridge_def_per_runner": {
+      "EXP065": [
+        485
+      ],
+      "EXP066": [
+        391
+      ],
+      "EXP070": [
+        659
+      ],
+      "EXP077": [
+        725
+      ]
+    },
+    "model_pins": {
+      "EXP065": "EleutherAI/pythia-160m (l.77)",
+      "EXP066": "EleutherAI/pythia-410m (l.78)",
+      "EXP070": "EleutherAI/pythia-160m (l.83)",
+      "EXP077": "EleutherAI/pythia-410m (l.101)"
+    },
+    "note": "Executed EXP065/EXP070 bridges were built from pythia-160m rows; the frozen protocol's single-model load (pythia-410m, \u00a79 step 2) is followed verbatim. E1's first link is executor self-consistency (disclosed in-plan); the as-executed claim rides on E2 (traced path incl. model pin) + E3 (records)."
+  },
+  "E1": {
+    "EXP065": {
+      "min_cos": 0.9999998807907104,
+      "cos_pass": true,
+      "max_norm_relerr": 1.1920928955078125e-07,
+      "norm_pass": true,
+      "min_norm": 0.9999999403953552,
+      "max_norm": 1.0000001192092896
+    },
+    "EXP066": {
+      "min_cos": 0.9999998807907104,
+      "cos_pass": true,
+      "max_norm_relerr": 1.1920928955078125e-07,
+      "norm_pass": true,
+      "min_norm": 0.9999999403953552,
+      "max_norm": 1.0000001192092896
+    },
+    "EXP070": {
+      "min_cos": 0.9999998807907104,
+      "cos_pass": true,
+      "max_norm_relerr": 1.1920928955078125e-07,
+      "norm_pass": true,
+      "min_norm": 0.4999999701976776,
+      "max_norm": 0.5000000596046448
+    },
+    "EXP077": {
+      "min_cos": 0.9999998807907104,
+      "cos_pass": true,
+      "max_norm_relerr": 1.1920928955078125e-07,
+      "norm_pass": true,
+      "min_norm": 0.4999999701976776,
+      "max_norm": 0.5000000596046448
+    }
+  },
+  "E1_item_identity": "verbatim label-string identity 60/60 across all four runners",
+  "E3": {
+    "EXP065": {
+      "b": 10,
+      "c": 0,
+      "delta_m": 0.16666666666666666,
+      "p": 0.001953125
+    },
+    "EXP066": {
+      "b": 8,
+      "c": 0,
+      "delta_m": 0.13333333333333333,
+      "p": 0.0078125
+    },
+    "EXP077_smoke": {
+      "b": 14,
+      "c": 0,
+      "delta_m": 0.23333333333333334,
+      "p": 0.0001220703125,
+      "per_item_norm_max_abs_diff": 1.1920928955078125e-07
+    },
+    "EXP070_cited": {
+      "b": 10,
+      "c": 0,
+      "delta_m_pp": 16.67,
+      "p": 0.001953,
+      "source": "reports/research_log.md LOG-110; primary mirror pending",
+      "vector_consistency": "Underdetermined"
+    },
+    "EXP077_official_cited": {
+      "b": 6,
+      "c": 0,
+      "delta_m_pp": 10.0,
+      "p": 0.03125,
+      "source": "reports/research_log.md LOG-128; notebook mirror pending"
+    }
+  },
+  "E4": {
+    "EXP065": {
+      "b": 10,
+      "c": 0,
+      "N": 60,
+      "delta_hat": 0.16666666666666666,
+      "L": 0.09313176979091486,
+      "U": 0.28031613163701125,
+      "cell": 1,
+      "verdict_bearing": true
+    },
+    "EXP066": {
+      "b": 8,
+      "c": 0,
+      "N": 60,
+      "delta_hat": 0.13333333333333333,
+      "L": 0.06513856704535557,
+      "U": 0.24165159676598014,
+      "cell": 1,
+      "verdict_bearing": true
+    },
+    "EXP070": {
+      "b": 10,
+      "c": 0,
+      "N": 60,
+      "delta_hat": 0.16666666666666666,
+      "L": 0.09313176979091486,
+      "U": 0.28031613163701125,
+      "cell": 1,
+      "verdict_bearing": true
+    },
+    "EXP077_official": {
+      "b": 6,
+      "c": 0,
+      "N": 60,
+      "delta_hat": 0.1,
+      "L": 0.03381096345559898,
+      "U": 0.2014946472409202,
+      "cell": 4,
+      "verdict_bearing": true
+    },
+    "EXP077_smoke_secondary": {
+      "b": 14,
+      "c": 0,
+      "N": 60,
+      "delta_hat": 0.23333333333333334,
+      "L": 0.14439561736556078,
+      "U": 0.35436270377690315,
+      "cell": 1,
+      "verdict_bearing": false
+    }
+  },
+  "E4_params": {
+    "method": "Tango (1998) score CI, two-sided 95%",
+    "delta_min": 0.05,
+    "note": "reproduces binding \u00a7G1b table to 4dp on all five rows"
+  },
+  "deviations": [
+    {
+      "id": "D1",
+      "class": "table-precision correction (F3-class, non-blocking)",
+      "detail": "Frozen plan \u00a73 lists EXP070 encoding as ll. 754-755 / _c7_fn ll. 753-756 / C7 arm ll. 752-757; actual: tt l.755, ft l.756, _c7_fn def ll. 754-757, C7 arm ll. 753-758. Substantive claims confirmed verbatim; corrected lines recorded. Not a bundle deviation: no tolerance/endpoint/env/margin changed."
+    }
+  ]
+}

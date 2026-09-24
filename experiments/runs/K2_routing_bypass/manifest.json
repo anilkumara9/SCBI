@@ -1,0 +1,53 @@
+{
+  "bundle": "K2 routing-vs-bypass execution bundle",
+  "build_log": "LOG-226",
+  "built": "2026-09-23",
+  "protocol": {
+    "path": "research/analysis_plans/K2_ROUTING_BYPASS_PLAN_LOG223_REV4_2026-09-23.md",
+    "sha256": "2343396429429ef3cd9513e88363477f67822cf0b5d33192509faf489b5cab1d",
+    "status": "SIGNED (LOG-230 CONFIRM)"
+  },
+  "config": {
+    "model": "EleutherAI/pythia-410m",
+    "layer": 20,
+    "alpha": 0.5,
+    "n_items": 60,
+    "n_arms": 3,
+    "passes_per_pin": 180,
+    "delta_min": 0.05,
+    "norm_rel_tol": 1e-05,
+    "tokenizer_revision_reference": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+    "seeds": {
+      "torch": 20260923,
+      "numpy": 20260923
+    }
+  },
+  "pinned_archives": {
+    "exp077_instance_records.json": "47281cd3dc243369be0aa5be2345663b752cdb4a329a16a37f08da5717230585",
+    "exp077_results.json": "c0d5c28d075fe74488fd1e33b93b730907577e41e1b53959d61be7d2d8bb90f7",
+    "exp077_vectors.pt": "8793e4d0baea844f9ae6afbec7970770d161b3f827bc234d3597286b66810cb9"
+  },
+  "entry_point": "python3 run_k2.py [--ceo-gpu-clearance]",
+  "evaluator_tests": {
+    "command": "python3 test_k2.py",
+    "passed": "84/84",
+    "properties": "seeded, deterministic, CPU-only, stdlib-only"
+  },
+  "authoritative_evaluator": "python3 evaluate_k2.py",
+  "file_hashes": {
+    "run_k2.py": "1ecca67fec7b6b2769f7b61206b2145ee5aa943c6a596b7afa1785e728694c7f",
+    "k2_endpoints.py": "49b23147405193b037d2061fa5de9f3f883680bb6936773fca82483f7911cfc0",
+    "k2_guards.py": "1bc1a9ab625c0a7ec9ceb47d477489a9ac0b52a10a15d0072af8ab5c5f82f4e2",
+    "k2_vectors.py": "b116b2768b97f7b7185d20d6bbc2076d2e714409bde2330017fd45e91da94151",
+    "evaluate_k2.py": "22ae0b298d9a30239829f025cfd90a8d1030789ca06f0ffc6b3f81332bfaf474",
+    "test_k2.py": "c79d602e299de5176aae575476015b4796f15d9bc98d57af823aa4df2c8d953a",
+    "requirements.txt": "7196fc84c56098dbfed28c3d1c5763b0cab96724a99a5b39a66b93c51976446f",
+    "RUNBOOK.md": "f8382ce1f94768a740407a17b64a2b152c677731b350f70d174e2d5eed8f2361",
+    "BUILD_NOTES.md": "61662ebbdad96ca5ac862c059e0a7cd3f7594d86ee990ed13bc8d509d3b0a5c3"
+  },
+  "notes": [
+    "BUILD ONLY: no GPU execution in this build session.",
+    "manifest.json itself is excluded from file_hashes (self-reference).",
+    "F1-F3 repair chain applied (LOG-226): row-1 flatness bar = true one-sided 95% Tango upper (z=1.6449) per signed REV4 (LOG-230 CONFIRM); row-3 catch-all explicit; row-1 two-sided bar retired to a diagnostic regression property."
+  ]
+}
