@@ -48,3 +48,30 @@ The bundle faithfully implements the signed protocol and the launch chain is air
 ## Constraints honored
 
 $0 CPU; read-only on weights, signed files, and EXP092 artifacts. No bundle, protocol, or review files modified by this review. No real execution performed.
+
+---
+
+## Addendum — LOG-4348: Narrow re-verification of F1 (binding)
+
+**Verdict: SIGN** — the EXP093 bundle is cleared for CEO execution clearance.
+
+This was a check of the single LOG-4345 required fix (F1), not a re-adjudication. All other LOG-4345 findings stand.
+
+**F1 — VERIFIED applied exactly as specified.** `stratum_stats` in `experiments/runs/EXP093_l11_causal/score_exp093.py` now computes `delta = (nP - nB) / len(idx)` and `"delta_N": (nN - nB) / len(idx)` — integer count differences before dividing. Grep across the bundle confirms no other bar comparison uses float-subtracted accuracies (the only remaining `acc_P -` textual match is the fix's own explanatory comment; `inject.py`'s `delta` is an unrelated injection vector; `run_exp093.py` only prints; the `acc_P > acc_B > acc_N` monotonicity comparison is float-safe per review O2).
+
+**Suites re-run independently — 21/21 OK, smoke 17/17 PASS, torch never imported.**
+
+**Independent six-scenario verdict probe (reviewer-written, independent synthetic data, independent of the builder's probe) — ALL PASS:**
+- Exactly-at-bar (nP−nB=6 on n=60, b=6/c=0, p=0.03125, strict mono): delta computes as exactly `0.1` (`== 0.1` True, `>= 0.10` True) → **CONTINUE**. The LOG-4345 defect is dead at the reachable boundary.
+- Above-bar CONTINUE → CONTINUE. KILL → KILL. PIVOT(a) (A-first-only bars, aggregate delta fails) → PIVOT(a). PIVOT(b) (N-vs-B significant only, delta sub-bar) → PIVOT(b). PIVOT(c) (C-first-only bars) → PIVOT(c). 12/180 ties → RunInvalid raised.
+- Note: the reviewer's first probe draft misrouted PIVOT(a)/(c) to PIVOT(b) due to a probe-construction error (B split assumed 18/18 per stratum but built as 36/24); the bundle behaved correctly on the malformed input. Rebuilt scenarios with consistent per-stratum splits all route per §5.
+
+**Integrity check (load-bearing) — PASS:**
+- Draft `experiments/protocols/EXP093_L11_CAUSAL_PREREG_DRAFT.md`: SHA-256 recomputed `33434fe34e8f56512dbbf5b9339509736e60462a94a1a96a10f0b90b5fae7378` — byte-identical to the LOG-4342-reviewed content. No divergence.
+- Signed `experiments/protocols/EXP093_L11_CAUSAL_PREREG_SIGNED.md`: recomputed under the header's self-referential blanking rule (64-char digest value after `**SHA-256 (this signed file):** ` replaced by empty string) → `3e0f269b9f2c5170d2b6ed37b2bd03f39f8eeb344914e8bb1f904709ad13db93` — exact match.
+
+**LOG-4347 flag (thread-count provenance) — adjudication stands, no erratum required for SIGN.** The LOG-4345 review already ruled the bundle's THREAD_PIN=2 acceptable: the signed §6 G4 registers "pins torch intra-op thread count to the EXP092 extraction value, records it in the run meta, and asserts it before condition B," the bundle implements exactly this, and any mismatch is RUN-INVALID (fail-safe), never silent. LOG-4347 confirmed the referenced EXP092 value does not exist in the record — but the fail-safe property is what matters: thread count affects only numerical determinism of the G4 baseline reproduction; a divergent environment triggers RUN-INVALID, never a wrong CONTINUE/KILL. No verdict can be wrongly affected, so the fail-safe suffices and no Law #4 erratum is required for SIGN. Recommendation (non-blocking): the execution report should record the pinned value as a bundle assumption in run meta, which the bundle already does.
+
+**Constraints honored:** $0 CPU; read-only on weights, signed files, EXP092 artifacts. No bundle, protocol, or review files modified by this re-verification beyond this append-only addendum. No real execution performed.
+
+**Next in launch chain:** CEO CPU execution clearance → real execution (~10–15 CPU-min, $0).

@@ -8853,3 +8853,19 @@ $0 GPU; CPU-only; no weights, no signed files, no EXP092 artifacts touched; no n
 - Six-scenario verdict probe on independent synthetic data (`/tmp/exp093_f1_probe.py`, numpy-only): CONTINUE-at-bar (delta == 0.1 exactly, p=0.03125, mono) → **CONTINUE** ✓; CONTINUE-above-bar → CONTINUE ✓; KILL → KILL ✓; PIVOT(a) → PIVOT(a) ✓; PIVOT(b) → PIVOT(b) ✓; PIVOT(c) → PIVOT(c) ✓; 12/180 ties → RUN-INVALID raised ✓. All six scenarios route correctly.
 
 **Next in launch chain:** independent Law #14 re-verification of F1 (a check, per LOG-4345) → SIGN → CEO CPU clearance → real execution (~10–15 CPU-min, $0).
+
+## LOG-4348 — 2026-09-25 — Independent Law #14 re-verification of EXP093 bundle F1: SIGN (binding)
+
+**Act:** Independent Law #14 reviewer (binding; reports to the founder). Narrow re-verification of the single LOG-4345 required fix (F1) applied at LOG-4346 (commit `b3f7969`). Review addendum appended to `experiments/protocols/REVIEWS/EXP093_LAW14_BUNDLE_REVIEW_2026-09-25.md` (append-only).
+
+**F1 verified:** `score_exp093.py::stratum_stats` computes `delta = (nP - nB) / len(idx)` and `delta_N = (nN - nB) / len(idx)` — integer count differences before dividing, exactly as specified. Bundle-wide grep: no other bar comparison uses float-subtracted accuracies.
+
+**Suites re-run independently:** 21/21 OK; smoke 17/17 PASS, torch never imported.
+
+**Independent six-scenario probe (reviewer-written, independent synthetic data):** ALL PASS — exactly-at-bar (nP−nB=6, delta computes exactly `0.1`, p=0.03125, strict mono) → CONTINUE; above-bar → CONTINUE; KILL → KILL; PIVOT(a) → PIVOT(a); PIVOT(b) → PIVOT(b); PIVOT(c) → PIVOT(c); 12/180 ties → RunInvalid. (First probe draft misrouted (a)/(c) due to a reviewer scenario-construction error; bundle behaved correctly; rebuilt scenarios route per §5.)
+
+**Integrity check (load-bearing):** draft SHA-256 `33434fe34e8f56512dbbf5b9339509736e60462a94a1a96a10f0b90b5fae7378` — byte-identical to LOG-4342-reviewed content. Signed protocol verifies under the header blanking rule → `3e0f269b9f2c5170d2b6ed37b2bd03f39f8eeb344914e8bb1f904709ad13db93` — exact match.
+
+**LOG-4347 thread-count flag:** adjudication from LOG-4345 stands — fail-safe RUN-INVALID suffices; no erratum required for SIGN (a divergent environment cannot produce a wrong verdict, only RUN-INVALID). Non-blocking: execution report should record the pinned value as a bundle assumption (bundle already does).
+
+**Verdict: SIGN — EXP093 bundle cleared for CEO execution clearance.** $0 CPU; read-only on weights, signed files, EXP092 artifacts; no real execution performed.
