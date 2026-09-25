@@ -7947,3 +7947,175 @@ change to a registered endpoint/verdict/cost/mapping → new experiment number.
 **Protocol digest (closes LOG-328 process-gap observation):** sha256 of `experiments/protocols/EXP086_R3_AMPLIFIER_PREREG_SIGNED.md` = `6fe122a0230d9dfc58a01d14c15da77f5e995e6beeae8c1f2e71af32943498f6` (mtime 2026-09-24 11:43:35 UTC, predates the repair waves — no drift; signed file untouched). Stale DRAFT-era body wording is governed by LOG-329/330 errata, not edited here.
 
 **Deviations (all logged, none load-bearing):** (1) No RUNBOOK.md exists in the EXP086 bundle (dispatch brief assumed the K2 pattern) — executed per BUILD_NOTES + signed protocol instead. (2) `accelerate` missing from the bundle's requirements.txt (`device_map="cpu"` requires it under transformers 5.x); installed in the execution venv — mechanical environment gap, no bundle code changed; first attempt failed loudly with ValueError before any weight access. (3) HF download: the sandbox's NO_PROXY (bracketed IPv6 literals) crashed the venv httpx's proxy parsing; retried with NO_PROXY/no_proxy unset (proxy itself retained and required for egress); the xet-read-token endpoint stalled mid-fetch — session killed, file completed via direct fetch and header-verified byte-complete. (4) The runner's env manifest records torch_version/numpy_version as None (cosmetic bundle gap; actual versions above). $0, CPU only, no GPU contact.
+
+## LOG-332 — RELEASE-READINESS AUDIT (founder-ordered speed sweep, 2026-09-25)
+
+CEO-commissioned health sweep + release staging. All checks report actual
+command output; nothing invented.
+
+### 1. Integrity — PASS
+SHA-256 of the three signed protocol files recomputed and compared
+character-for-character against the digests recorded in
+experiments/protocols/ERRATUM_*_STALE_WATERMARK_2026-09-24.md and LOG-330:
+- EXP086_R3_AMPLIFIER_PREREG_SIGNED.md: 6fe122a0230d9dfc58a01d14c15da77f5e995e6beeae8c1f2e71af32943498f6 — MATCH
+- EXP087_TRANSLATION_SIGNATURE_PREREG_SIGNED.md: 32c27415b20fa0d07adb4fffb61127859c5e726fbfecff642a89e91fc1358d23 — MATCH
+- EXP088_RECIRCULATION_PREREG_SIGNED.md: a1ff45520cb5691cbd1283323fb08d5006e11cb4824610a00db7c7fc06d68d40 — MATCH
+No mismatch. No CRITICAL finding.
+
+### 2. Signed-file immutability — CONFIRMED (known process gap restated)
+`git ls-files experiments/protocols/ | grep -ci signed` = 0: all four signed
+files (EXP084/086/087/088) remain UNTRACKED — the LOG-328 process gap stands.
+Immutability rests on digest + mtime + review attestation, per LOG-330.
+mtimes: EXP084 2026-09-24 07:40, EXP086 11:43, EXP088 11:44, EXP087 12:05 —
+all predate the LOG-327/331 repair and execution waves. No signed file was
+modified after signing; `sha256sum` output above is byte-identical to the
+adjudication-time digests. Remedy remains LOG-329 Order 5 (digests at signing
++ git-commit going forward).
+
+### 3. Bundle health — ALL PASS (fast checks; 16-min mock harnesses not rerun)
+Presence of BUILD_NOTES.md + manifest.json + test files, plus
+`python3 -m py_compile` on every top-level .py:
+- K2_routing_bypass: BUILD_NOTES OK, manifest OK, test_k2.py present; py_compile 6/6 PASS
+- EXP083_rcpa_pilot: BUILD_NOTES OK, manifest OK, test_exp083.py + smoke_test.py; py_compile 7/7 PASS
+- EXP084_newton_duel: BUILD_NOTES OK, manifest OK, test_exp084.py + smoke_test.py + mock_harness.py; py_compile 8/8 PASS
+- EXP086_amplifier: BUILD_NOTES OK, manifest OK, test_exp086.py + smoke_test.py + mock_harness.py; py_compile 9/9 PASS
+- EXP088_recirculation: BUILD_NOTES OK, manifest OK, test_exp088.py + smoke_test.py + mock_harness.py; py_compile PASS
+- EXP087_translation_signature: IN PROGRESS (build agent active at audit time) —
+  2 modules present (exp087_benchmark.py, exp087_guards.py), py_compile 2/2 PASS;
+  BUILD_NOTES.md + manifest.json + tests not yet written. NOT a failure.
+Prior full-suite counts on record (from builder logs, not rerun here): K2 84/84,
+EXP083 92/92, EXP084 74/74, EXP086 104/104 (+16/16 smoke, 32/32 mock).
+
+### 4. Research-log contiguity — CONTIGUOUS
+LOG numbers 326, 327, 328, 329, 330, 331 all present exactly once. No gaps,
+no duplicates. Highest = LOG-331 before this entry.
+
+### 5. Release staged — COMMITTED LOCALLY, NOT PUSHED
+`git add -A` (100 files; .gitignore excluded __pycache__/, .venv/,
+*.safetensors, experiments/runs/*/weights/ — verified zero forbidden paths
+staged). One local commit: ff14560 "research(cycle): LOG-326-331 — EXP086
+Stage-A execution, errata, signed protocols and bundles". Working tree clean.
+NO PUSH PERFORMED — pushing requires the founder's fresh write token.
+
+### Founder action items
+1. PUSH: supply a fresh GitHub write token; the exact command is
+   `git push origin main` (run from ~/workspace/SCBI). Token is used once and
+   deleted — never stored.
+2. GPU: the K2 → EXP083 → EXP084 → EXP086-Stage-B → EXP088 queue still awaits
+   the founder's Kaggle runs. K2 first (~0.002 T4-hours).
+3. EXP087 bundle build is in progress; its independent Law #14 bundle review
+   follows automatically on completion.
+
+## LOG-333 — K2 Kaggle notebook built: K2_kaggle_run.ipynb (founder-ordered speed sweep, 2026-09-25)
+
+Friction-removal for the program's critical path (GPU execution on the founder's
+Kaggle). One .ipynb the founder uploads, sets GPU T4 x2, and runs top-to-bottom.
+
+Built: `experiments/runs/K2_routing_bypass/K2_kaggle_run.ipynb` (17 cells,
+nbformat-valid, all code cells compile-checked). Every cell traces to a
+RUNBOOK/REV2 section, cited in the markdown cells:
+
+- Step 1 (RUNBOOK §1, §5): clone https://github.com/anilkumara9/SCBI.git
+  (URL + branch `main` verified from local git config — not guessed), verify
+  bundle + pinned-archive layout.
+- Step 2 (RUNBOOK §5): pip install requirements; print torch/transformers versions.
+- Step 3 (RUNBOOK §5): evaluator tests, exit-code gated. Manifest (LOG-226)
+  records 84/84 — the RUNBOOK's "62/62" is stale (see below).
+- Step 4 (RUNBOOK §2 items 1–6; REV2 §4): Phase-0 CPU gates with
+  `--out-dir outputs` (real run_k2.py flag; all artifacts land in outputs/).
+  Verifies log marker "PRE-EXECUTION COMPLETE. GPU phase NOT started." +
+  k2_preexec_report.json outcome PREEXEC_PASS + Gate A verdict PASS; any failure
+  raises a loud STOP and blocks the GPU phase.
+- Step 5 (RUNBOOK §0): explicit CUDA check with T4 x2 instructions; --allow-cpu
+  is NOT used (runner marks it strongly discouraged).
+- Step 6 (RUNBOOK §2 items 7–9; REV2 §3.2–3.4): GPU phase with
+  --ceo-gpu-clearance (CEO clearance granted, launch-licensed queue); 180
+  passes; verifies k2_results.json exists.
+- Step 7 (RUNBOOK §3): evaluate_k2.py with explicit --results/--records paths;
+  ruling reported verbatim; RUNBOOK §4 row-1 defect caveat included.
+- Step 8 (RUNBOOK §3): SHA-256 of the 4 send-back files printed.
+
+RUNBOOK ambiguities resolved (code-checked, not invented):
+1. §5 "exits 3 with GPU_CLEARANCE_REQUIRED" — FALSE in the built bundle: the
+   clearance gate does a bare `return` (exit 0). The notebook asserts on the
+   log marker + preexec report instead of the exit code.
+2. §5 "62/62" tests — stale; the LOG-226 manifest records 84/84. The notebook
+   gates on exit code 0 and cites the manifest.
+3. §3 lists 3 send-back files; the notebook adds k2_preexec_report.json (gate
+   evidence) as a 4th and says so.
+
+Also wrote: `experiments/runs/K2_routing_bypass/KAGGLE_QUICKSTART.md`
+(10-line plain-language run card). No credentials, no tokens, no GPU executed
+here — authoring only, $0 CPU.
+
+## LOG-334 — Frontier-adaptation analysis: CLM-8B (Contrastive-LM) — ADAPT verdict (2026-09-25)
+
+Frontier-Adaptation analyst report on CLM-8B (released 2026-09-24; primary source: HF model card
+Contrastive-LM/CLM-v0.1-8B, read directly; citation Kwok et al. 2026, Notion Blog, no arXiv paper found).
+
+Mechanism: two small projection heads (state head + action head) on a FROZEN Qwen3-8B encoder, trained
+with bidirectional InfoNCE; inference = last-token-pooled embeddings, dot-product scoring, softmax over
+candidates (typed Noul/Choice/Score outputs). Single frozen encoder run twice (primary source); the
+"two encoders" phrasing in press is functional, not two backbones. Reported: up to 9x lower latency vs
+proprietary Jev (UNVERIFIED, Jev inaccessible), 13x at ~1k candidates via state/action caching; verifier
+heads 81.6% DeepSWE / 87.6% Terminal-Bench 2.1 on held-out subsets (need fine-tuning, not zero-shot).
+
+SCBI mapping: VINDICATES EXP077's output-side finding (transferable signal lives output-side; CLM never
+touches the forward pass). Does NOT rescue the bridge (LOG-204 demotion stands — bridge was
+known-answer injection; CLM scores novel candidates). THREATENS the static-injection direction
+(EXP065/066/070/077/082 lineage), not the frozen-backbone constitution. Brutal caveats logged: at its
+core a well-engineered probe; if the effect needs 60M+ training pairs it is unexecutable at $0; the 9x
+is partly textbook matmul-vs-decode; candidate-set-relative probabilities cannot propose, only judge.
+
+Law #15 sketch (NOT pre-registered): cheapest falsifying test = zero-shot cosine state-vs-option scoring
+over frozen EXP077 artifacts (60 items, Pythia-410m/layer-20); bar >=38/60 (63.3%, binomial p~0.037);
+<=37/60 KILLS the free-lunch version. Cost $0 CPU ~1h.
+
+Delta-theta adjudication: heads are trained weights; defensible SCBI reading = LLM backbone frozen,
+heads are inference-time scoring apparatus (Law #7 applies in full). Any future pre-reg must state this
+license explicitly.
+
+Full analysis: research/frontier_adaptations/CLM8B_ADAPTATION_2026-09-25.md
+
+## LOG-335 — EXP089 pre-registration DRAFT written: zero-shot contrastive-style scoring over frozen representations (CLM-8B free-lunch falsifier) (2026-09-25)
+
+Draft: experiments/protocols/EXP089_CLM8B_ADAPTATION_PREREG_DRAFT.md (DRAFT watermark, UNSIGNED — licenses nothing).
+
+Design (from LOG-334's Law #15 sketch, with one material correction): zero-shot cosine state-vs-option scoring over frozen Pythia-410m/layer-20 final-token embeddings on EXP077's registered N=60 benchmark. State = premise sentences only (question + option list excluded); actions = bare entity names A/C; decision = argmax cosine.
+
+CORRECTION to the memo's §5: artifact inspection (read-only) showed exp077_vectors.pt does NOT contain per-item embeddings — it holds 18 tensors (sixteen 1024-dim direction vectors + two basis blocks; hashes recorded in the draft). The executor re-extracts per-item embeddings from the frozen LOG-331 weight snapshot (state_dict SHA-256 matches EXP077's own recorded hashes).
+
+Registered bar: >=38/60 CONTINUE (exact one-sided binomial P(X>=38)=0.0260 — supersedes the memo's ≈0.037 approximation); <=37/60 KILL the free-lunch version. Pre-registered positional-confound diagnostic: 30/30 A-first vs C-first phrasing split (asserted); aggregate>=38 with opposite phrasing tilts -> PIVOT (redesign, new experiment number), not CONTINUE.
+
+Scope fence: Δθ=0 only — no trainable heads, no weight updates; any CONTINUE toward trained apparatus needs a new experiment number + founder license. Budget $0 CPU ~1-2h. Brutal caveats bannered in the draft (probe-at-heart; 9x UNVERIFIED and untested; scoring judges but never proposes).
+
+## LOG-336 — Law #14 independent review of EXP089 pre-registration DRAFT: SIGN-WITH-FIXES (2026-09-25)
+
+Review: experiments/protocols/REVIEWS/EXP089_LAW14_REVIEW_2026-09-25.md (binding; reviewer reports to the founder directly).
+
+Verdict: SIGN-WITH-FIXES. The draft's core design survives adversarial review and may be signed once six fixes are applied.
+
+Independently verified (all passed): (V1) binomial bar exact — P(X>=38|n=60,p=0.5)=0.0259, draft's 0.0260 correct, bar sharp (P>=37=0.0462); (V2) all four EXP077 artifact SHA-256 hashes match character-for-character (recomputed read-only); (V3) memo's false assumption confirmed false by byte-level structural proof — exp077_vectors.pt is 137,237 bytes total, so it cannot hold 60x1024 float32 per-item embeddings (245,760 bytes); the draft's re-extraction revision is sound; (V4) phrasing balance is exactly 30/30 from the builder source (planet i<8 x2, element i<7 x2) — G3 satisfiable, no RUN-INVALID-by-construction; (V5) bar is NON-VACUOUS — recency and primacy biases both predict opposite phrasing tilts (caught by the PIVOT diagnostic), edge-salience is neutral, and any both-tilts-correct mechanism must track the semantic answer; (V6) Δθ=0 scope fence holds with no back door — forward-only scoring, G2 hash guards, bundle refusal clause, CONTINUE licenses only a proposal under a new number + founder license; (V7) benchmark entities are common single words — G1 single-token assert satisfiable.
+
+Required fixes: F1 (LOAD-BEARING) pre-register an instrument-health gate — anisotropy-deaf instrument (max-min cosine < 1e-4 across 120 values) yields RUN-INVALID, not KILL, so a KILL means "instrument worked, found nothing"; F2 (LOAD-BEARING) close the §7.1 boundary gap — aggregate>=38 with a phrasing at exactly 0.5 is unspecified; make the tree total (recommend: strict >0.5 required on both, else PIVOT); F3 soften the §7 KILL attribution ("must come from 60M-pair training") to [INTERPRETATION] — licensed inference is only "free-lunch version dies; shelved pending training resources"; F4 pin model.eval() + torch.no_grad() explicitly (Law #13); F5 state full artifact paths (§4 omits the directory: artifacts live in experiments/runs/EXP077_cone_vs_line/, code in experiments/runs/exp077/); F6 correct §5 Law #7 wording — both option names DO appear in the premise (1:1 balanced, verified against builder); the protection is balance + diagnostic, not exclusion.
+
+Applying F1–F6 to the unsigned draft is a documented revision (no new experiment number). The draft licenses nothing until the full launch chain completes.
+
+## LOG-337 — Applied binding Law #14 fixes F1–F6 to EXP089 DRAFT pre-registration (2026-09-25)
+
+Revision agent applied the LOG-336 SIGN-WITH-FIXES verdict (experiments/protocols/REVIEWS/EXP089_LAW14_REVIEW_2026-09-25.md) to the unsigned draft experiments/protocols/EXP089_CLM8B_ADAPTATION_PREREG_DRAFT.md. Documented revision of an unsigned draft — no new experiment number; DRAFT watermark retained; registered bar (≥38/60, P=0.0260) and Δθ=0 scope fence unchanged.
+
+F1 (load-bearing): G4 instrument-health gate added in §6 and §8 — if max−min < 1e-4 across the 120 cosine values, the run is RUN-INVALID (instrument deaf), never KILL; margin distribution reported regardless.
+F2 (load-bearing): §7.1 decision tree made total — CONTINUE requires strict acc_Afirst > 0.5 AND acc_Cfirst > 0.5; ANY aggregate-≥38 outcome failing that (including exactly 0.5) → PIVOT, CONTINUE withheld.
+F3: §7 KILL attribution softened — licensed inference is "free-lunch version dies; shelved pending training resources"; the 60M-pair attribution is tagged [INTERPRETATION].
+F4: §6 now pins model.eval() + torch.no_grad() explicitly (Law #13), not relying on HF defaults.
+F5: §4 now states full relative paths — artifacts in experiments/runs/EXP077_cone_vs_line/, builder code in experiments/runs/exp077/.
+F6: §5 Law #7 wording corrected — both option names DO appear in the premise 1:1 balanced; protection is balance + §7.1 diagnostic, not exclusion.
+
+All six fixes verified present by marker grep. Launch-chain position: draft revised → awaiting re-verification/confirmation and signing (CEO), then bundle build → independent bundle review → execution clearance → execution. Still licenses nothing.
+
+## LOG-338 — EXP089 SIGNED (CEO, 2026-09-25)
+
+Signed experiments/protocols/EXP089_CLM8B_ADAPTATION_PREREG_SIGNED.md.
+SHA-256: 87f2c47b7cbcec3db98cd88d7240b95ce7f49af9039aa0ae4ec251a2714c24cb
+Signing basis: LOG-334 → LOG-335 → LOG-336 (Law #14 SIGN-WITH-FIXES, F1–F6) → LOG-337 (all six applied, CEO-verified). Registered bar: ≥38/60 (P=0.0260) → CONTINUE; ≤37/60 → KILL free-lunch version; aggregate-≥38 without strict >0.5 on both phrasing splits → PIVOT; G4 instrument-deaf → RUN-INVALID. Scope fence: Δθ=0, zero-shot only; trained heads need a new number + founder license. Inner draft-status line superseded per LOG-329 lesson (no retained stale text). Licensed: execution-bundle build (CPU) may proceed. CPU execution, ~1–2h, $0.
