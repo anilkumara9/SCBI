@@ -8472,3 +8472,17 @@ $0 CPU for the investigation logic (one model load for the decisive replication,
 **Weights-integrity caveat (§6 G1): RESOLVED.** The draft's fail-safe posture (disclosed mismatch, runtime refusal, execution withheld) was correct; the parallel investigation (LOG-4321, `f8014fd`) found the relocated snapshot byte-intact — the mismatch was a procedural artifact (drafter hashed raw safetensors incl. non-persistent buffers instead of the loaded state_dict); the LOG-331 pin `ec276abe…` was reproduced exactly from the relocated snapshot. No draft change needed; the normal launch chain is no longer gated on weights integrity.
 
 Both fixes to be re-verified by this office before signing. Untouched: EXP091's ADOPTED KILL, LOG-204 bridge demotion, H1 closure.
+
+## LOG-4324 — EXP092 v2.1: LOG-4323 SIGN-WITH-FIXES applied, verified by execution (2026-09-25)
+
+**Role:** Pre-registration agent (30-day campaign). **Mission:** apply the two load-bearing fixes from the binding SIGN-WITH-FIXES review (LOG-4323) to the EXP092 v2 draft; every fix verified BY EXECUTION; draft stays UNSIGNED (signing only after reviewer re-verification).
+
+**FIX 1 (parity-rule contradiction):** Appendix-A sentence corrected to "planetary A-first iff i even; elemental A-first iff i odd" (was swapped). Bench rebuilt from corrected spec: strata (Planetary,A-first)=16, (Planetary,C-first)=14, (Elemental,A-first)=14, (Elemental,C-first)=16 — matches §4 exactly. All 60 prompts byte-identical to the independent reviewer's verified parity-B reconstruction (60/60 match).
+
+**FIX 2 (unreproducible bench pin):** Registered the exact canonical serialization — item schema {id,prompt,A,C,ent,typ,hop,domain,phrasing,tuple}; json.dumps(bench, sort_keys=True, separators=(",",":"), ensure_ascii=True).encode("utf-8") → SHA-256. Registered the option-order rule (target first iff A-first). Old pin 2996ac8b…3ac3e RETIRED (not derivable from any registered spec); new pin recomputed from the reference implementation: 9be8162633fe19aa2a924440d8ba158c1cc4e734c1f2a554a01a27e459f47fc4. Reference implementation cited and committed: experiments/runs/EXP092_ibl/reference_implementation.py — also pins the G2 oracle/permutation code (analytic expected-accuracy tie-break, deterministic; random.Random(9207+b) per permutation b).
+
+**Execution proof:** verify_g0() — 60/60 unique (domain,tuple), 20/20 targets ×3/domain, 30/30 A-first/C-first, strata == §4 table, pin recomputes (stable across runs). g2_diagnostic() — oracle = 0.0607, permutation p = 0.5312 (B=10,000, seed 9207), NOT significant → G2 gate PASS. (v2.0's p=0.567 from the unpinned implementation is superseded; both ≫ 0.05, conclusion unchanged.)
+
+**Informational (non-design):** §6 G1 weights-integrity caveat recorded RESOLVED per LOG-4321 + the v2 review §4 ruling (relocated snapshot byte-intact; drafter hashed raw safetensors file instead of loaded state_dict). No design change.
+
+**Next:** independent Law #14 re-verification of the two fixes (this office's check, per the LOG-4323 ruling), then signing. Draft: experiments/protocols/EXP092_IBL_PREREG_DRAFT_V2.md (v2.1, UNSIGNED).
