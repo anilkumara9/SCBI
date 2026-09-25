@@ -8486,3 +8486,16 @@ Both fixes to be re-verified by this office before signing. Untouched: EXP091's 
 **Informational (non-design):** §6 G1 weights-integrity caveat recorded RESOLVED per LOG-4321 + the v2 review §4 ruling (relocated snapshot byte-intact; drafter hashed raw safetensors file instead of loaded state_dict). No design change.
 
 **Next:** independent Law #14 re-verification of the two fixes (this office's check, per the LOG-4323 ruling), then signing. Draft: experiments/protocols/EXP092_IBL_PREREG_DRAFT_V2.md (v2.1, UNSIGNED).
+
+## LOG-4325 — EXP092 v2.1: independent Law #14 re-verification → SIGN (2026-09-25)
+
+**Role:** Independent Law #14 Reviewer (reports directly to the founder; binding). **Mission:** re-verify the two load-bearing fixes from the LOG-4323 SIGN-WITH-FIXES ruling (applied at LOG-4324, commit `93f00b0`), by execution, not by trust.
+
+**FIX 1 (parity-rule sentence): VERIFIED.** Bench rebuilt from the corrected Appendix-A sentence ("planetary A-first iff i even; elemental A-first iff i odd"): strata (Planetary,A-first)=16, (Planetary,C-first)=14, (Elemental,A-first)=14, (Elemental,C-first)=16 — matches §4 exactly. 60/60 prompts byte-identical to the review's verified parity-B reconstruction (recovered from `/tmp/exp092_v2_review/reconstruct.py`). G1′ (240/240) and Appendix C (20/20) carry over.
+
+**FIX 2 (bench pin reproducibility): VERIFIED.** Pin recomputed from the cited reference implementation (`experiments/runs/EXP092_ibl/reference_implementation.py`): `9be8162633fe19aa2a924440d8ba158c1cc4e734c1f2a554a01a27e459f47fc4` — exact match to the registered pin. Old pin `2996ac8b…3ac3e` retired on the record (§0 changelog, §6 G0 note). G2 diagnostic re-run from the pinned reference code: oracle = 0.0607, permutation p = 0.5312 (B=10,000, `random.Random(9207+b)`) — NOT significant → gate PASS. G0 assertions all pass (60/60 unique (domain,tuple), 20/20 targets ×3/domain, 30/30 phrasing, strata == §4).
+
+**Changelog audit:** diffed `5ff9509` (v2.0) against `93f00b0` (v2.1) — every change accounted for; the §0 v2.0→v2.1 changelog accurately records both fixes and the pin retirement; no silent design changes; the only new file is the cited reference implementation.
+
+**Verdict: SIGN (binding).** EXP092 v2.1 is cleared for signing. Next in the launch chain: signing → bundle build → independent bundle review → CEO clearance → execution. Untouched: EXP091's ADOPTED KILL (LOG-361/362), the LOG-204 bridge demotion, the H1 closure (LOG-4317). Addendum appended to `experiments/protocols/REVIEWS/EXP092_LAW14_REVIEW_V2_2026-09-25.md`.
+
