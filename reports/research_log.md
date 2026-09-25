@@ -8499,3 +8499,47 @@ Both fixes to be re-verified by this office before signing. Untouched: EXP091's 
 
 **Verdict: SIGN (binding).** EXP092 v2.1 is cleared for signing. Next in the launch chain: signing → bundle build → independent bundle review → CEO clearance → execution. Untouched: EXP091's ADOPTED KILL (LOG-361/362), the LOG-204 bridge demotion, the H1 closure (LOG-4317). Addendum appended to `experiments/protocols/REVIEWS/EXP092_LAW14_REVIEW_V2_2026-09-25.md`.
 
+
+## LOG-4326 — Independent Law #14 Stage-B bundle review, EXP086: SIGN-WITH-FIXES (binding, 2026-09-25)
+
+**Role:** Independent Law #14 bundle reviewer (reports directly to the founder; binding; CEO cannot override/suppress/recall). **Scope:** Stage-B implementation only (`experiments/runs/EXP086_amplifier/`, 2026-09-25 wave) vs the signed protocol (digest self-verified `6fe122a0…93498f6` — matches). Stage A out of scope (executed LOG-331).
+
+**Verdict: SIGN-WITH-FIXES.** Three protocol-fidelity defects + one false documentation claim + unrecorded binding interpretations. All mechanical; none requires re-registration. Bundle NOT licensed for CEO GPU clearance until fixes are applied and independently re-verified. Full review: `experiments/runs/EXP086_amplifier/law14_stageb_review_2026-09-25.md`.
+
+**F1 (load-bearing): F2 sign rule not applied to the treatment.** `run_full_loop` computes sign-flipped `vs` (run_exp086.py:801-806) but uses them only for the ĉ diagnostic (where `abs()` moots the sign); `_resolve_direction` injects the UNSIGNED cached vectors. Injected v̂₁/v̂₂/v̂₃ + Stage-2 permuted arm carry arbitrary numerical sign — exactly what F2 forbids. Deeper: under the signed +gap rule the linear term is gap-increasing (flips must be nonlinear); under arbitrary sign, linear gap-decrease flips are possible — a win under current code would not be the signed test. Fix: write signed directions back for injection.
+
+**F2 (load-bearing): power iteration does 2 JVPs + 1 VJP per iteration (4 fwd-equiv) vs registered 1 JVP + 1 VJP (3 fwd-equiv).** The extra Rayleigh-quotient JVP (line 549) is unbudgeted: actual worst-case ≈9540 fwd-equiv vs the 7380 hard ceiling (+29%); the PassBudget counter charges only 108/item. Fix: Rayleigh quotient from the already-computed JVP (ρ_t=‖Jw_t‖², textbook diagnostic) — zero extra passes, exact protocol match. Charging 144/item instead would exceed the signed budget → re-registration; JVP elimination is the only signed-compatible fix.
+
+**F3: probe rebuild not verbatim — 1/60 prompts differs.** Programmatic diff vs `run_exp077.py`'s exact construction block: line 262 uses `if i < 8:` where EXP077 uses `if i < 7:` (element-3hop). Item 52 (`exp077_element_3hop_7`) gets the "outranks" premise instead of "is lower than". Undisclosed; protocol §6.1 demands verbatim + loud logging of deviations. Fix: one-character change + re-run probe-identity diff (must be 0 diffs).
+
+**F4: EXP084-D1 deviation note rests on a false premise.** BUILD_NOTES + code comment claim EXP084 uses "DIFFERENT index tuples (a 15-cycle rotation set)"; programmatic diff shows EXP084's tuples are IDENTICAL to EXP077's. Conclusion (follow EXP077) stands; the false claim about EXP084 must be removed.
+
+**F5: unrecorded binding interpretations** — (a) ĉ/E over non-aborted items only (material to V5 kill row; protocol D6 silent); (b) rank-validity median-of-non-aborted aggregation (record as binding); (c) `converged` flag is diagnostic-only, the σ̂₁/σ̂₂ ratio governs aborts (BUILD_NOTES sentence "converged=False → runner ABORTS item" is FALSE); (d) headroom verified at runtime from live baseline (protocol says "at build from archived records" — the runtime check is the more valid feasibility gate).
+
+**F6:** manifest seed formula (`100*item`) ≠ code (`1000*i`); both unique — doc fix.
+
+**Advisory (non-blocking):** A1 `torch.use_deterministic_algorithms(True)` × untested GPU default-attention path (CPU test used "eager") — recommend GPU pre-flight; A2 no per-item checkpointing (mid-run halt loses all per-item data; zero-discordant contrast → uncaught `NonTestableDataError` instead of a writing INVALID); A3 Stage-2 permuted donors include aborted items' degenerate v̂₁ (anti-conservative for V7); A4 Tango fallback bracket unbracketed-risk (low; cross-checked).
+
+**Verified clean:** verdict precedence 14/14 independent probes (V1–V4 INVALID, V5≻V7, V6≻V11, V7 CONTINUE, V7b≻V8 HELD, stage-2 gate → `InvalidRunError`, V8 PIVOT, V9/V10/V11/V12 HELD — exact §9 order); JVP/VJP/deflation math correct; convergence criterion faithful; Δθ=0 sound (requires_grad_(False), no optimizer, pre/post hash); Law #7 clean (labels only at correctness endpoint; n̂ label-free); budget line-items charge exactly per protocol; CLI gates + `--weights`-required (no network fallback); lazy torch imports; B_agg unit-norm-validated at load; probe tuples verbatim (mod F3). Test evidence re-run: test_exp086.py 104/104, smoke_test.py 16/16.
+
+**Upgrade-to-SIGN conditions:** F1–F6 discharged + torch-free suites green + probe-identity diff clean, all independently re-verified by execution. No protocol edit permitted. Review modified no files.
+
+## LOG-4327 — EXP086 LAW #14 FIXES APPLIED: 6/6 required fixes, re-verified (2026-09-25)
+
+**Binding review:** LOG-4326 (independent Law #14 Stage-B review) returned SIGN-WITH-FIXES. All 6 required mechanical fixes applied to the bundle; none required re-registration.
+
+**F1 — Sign rule now in the treatment.** Added `Backend.apply_sign_rule(item_idx, n_hat)`; `TorchBackend` flips the cached v̂_r in place by sign(<v̂_r,n̂>); `MockBackend` mirrors the path (no-op for spec-table outcomes, returns signed v̂_1). `run_full_loop` calls it before any injection. Injected v1/v2/v3/permuted arms now carry signed directions.
+
+**F2 — Budget honest.** Rayleigh quotient computed as ||Jw||² from the iteration's own JVP — zero extra passes. Removed the unbudgeted second JVP (was 4 fwd-equiv/iter, worst-case ≈9,540 vs 7,380 ceiling). Now 3 fwd-equiv/iter = 108/item as registered.
+
+**F3 — Probe verbatim.** Element 3-hop phrasing threshold `i<8` → `i<7` (was 1/60 prompts wrong). Post-fix programmatic diff: **0/60 prompt diffs** vs EXP077's exact construction (vocabularies, index tuples, target_first parity, thresholds).
+
+**F4 — False claim retracted.** The "EXP084-D1 deviation" note was wrong: programmatic diff proves EXP084's `_BENCH_TRIPLES`/`_BENCH_QUADS` are byte-identical to EXP077's (15/15, 15/15). Retracted from BUILD_NOTES and manifest.
+
+**F5 — Binding interpretations recorded.** (1) ĉ over non-aborted items only; (2) rank-validity = median of non-aborted σ̂₁/σ̂₃; (3) `converged` flag diagnostic-only (corrects false "aborts item" claims in BUILD_NOTES and docstring); (4) headroom at runtime; (5) sign rule covers permuted-v̂₁ donor too.
+
+**F6 — Manifest seed schedule** corrected to `20260924 + 1000*item + norm` (matches `exp086_rng.item_norm_seed`).
+
+**Re-verification (post-fix):** test_exp086.py 104/104; smoke_test.py 16/16; mock verdict scenarios 13/13; adversarial precedence probes 7/7 (V5>V7, V5 boundary, V6, V1, V7b, stage-2 InvalidRunError gate, V8/V9 paths).
+
+**Status:** Bundle awaits independent re-verification of the fixes for the SIGN to lift. CEO GPU clearance + stage-2 signoff + GPU venue remain user-gated.

@@ -20,13 +20,15 @@ implements the full Stage-B TorchBackend per the signed §4/§6 construction.
 - **Probe rebuild** (`build_benchmark_items`, module-level, torch-free):
   verbatim EXP077 construction from `experiments/runs/exp077/run_exp077.py`
   TRIPLES_INDICES/QUADS_INDICES (the code that PRODUCED the archive;
-  matches EXP065). **EXP084-D1 deviation note:** EXP084's build_benchmark
-  claims "verbatim" but uses different index tuples; EXP086 does NOT follow
-  EXP084. The archive contains no prompt strings, so the prompt SET rests
-  on this construction code; the archive is the SHA-256 integrity pin +
-  60-record probe-set definition (R5d). No per-index ent/typ alignment is
-  asserted (archive record order ≠ construction order; such a check would
-  be spurious).
+  matches EXP065). **F4 correction (Law #14 Stage-B review 2026-09-25):**
+  the earlier "EXP084-D1 deviation" note was WRONG — programmatic diff
+  proves EXP084's `_BENCH_TRIPLES`/`_BENCH_QUADS` are byte-identical to
+  EXP077's `TRIPLES_INDICES`/`QUADS_INDICES` (15/15 triples, 15/15 quads).
+  The "15-cycle rotation set" claim was a visual-comparison error and is
+  retracted. EXP086 follows EXP077 (which EXP084 also follows).
+  Post-F3-fix verification: 0/60 prompt diffs vs EXP077's exact construction
+  block (vocabularies, index tuples, target_first parity, and i<8/i<7
+  phrasing thresholds all match).
 - **Correctness** (protocol §4 sketch, binding): greedy argmax over the full
   vocabulary at the answer position vs the labeled target token. Labels
   touch ONLY this endpoint (Law #7).
@@ -39,8 +41,11 @@ implements the full Stage-B TorchBackend per the signed §4/§6 construction.
 - **Deflated power iteration** (`power_iteration`): ranks 1..3; (I−V̂V̂ᵀ)
   projection before/after each JᵀJ application; 12-iter cap (G.PI_MAX_ITER);
   converged when Rayleigh-quotient relative change < 1e-3 for 3 consecutive
-  iterations (G.PI_STALL_TOL/WINDOW); else converged=False → runner ABORTS
-  item (§6.4). Seeded random init per (item, rank).
+  iterations (G.PI_STALL_TOL/WINDOW); else converged=False, which is
+  DIAGNOSTIC-ONLY — the runner does NOT abort the item (F5 correction, Law
+  #14 Stage-B review 2026-09-25; the earlier "→ runner ABORTS" was wrong).
+  The only item-abort is σ̂₁/σ̂₂ < 1.1 (G.should_abort_item). Seeded random
+  init per (item, rank).
 - **Decision normal** (`decision_normal_vjp`): ∇_δ(z_top1−z_top2)|₀, unit
   vector. Label-free (D5). Loud halt on degenerate gradient.
 - **Injection** (`inject_and_eval`): resolves v1/v2/v3 (per-item cache),
@@ -58,7 +63,8 @@ snapshot, CPU):
 - build_probe: item 0 (Mars/Jupiter), t_tok=13648, f_tok=34434, seq 29.
 - baseline_forward: correct=False, ‖h‖=59.69. (1 item; NOT a headroom test.)
 - power_iteration: σ̂=[106.49, 76.18, 52.53], n_iters=[12,6,12],
-  converged=True; all v̂ unit-norm, finite. (335s CPU.)
+  converged=True (diagnostic-only; does NOT abort items — F5 correction);
+  all v̂ unit-norm, finite. (335s CPU.)
 - decision_normal_vjp: ‖n̂‖=1.000000. inject_and_eval (vrand_0, bagg):
   resolves, injects, returns correctness. Δθ=0 pre/post.
 - NOTE: full power_iteration + VJP in one CPU process OOM-killed (resource
@@ -94,6 +100,42 @@ snapshot, CPU):
 4. Rank-validity aggregation (§5 "median" vs BUILD_NOTES "under-specified"):
    the runner uses median-of-non-aborted-items per the protocol text;
    flagged for the Law #14 reviewer (no silent reinterpretation).
+
+### Law #14 Stage-B review fixes (2026-09-25) — SIGN-WITH-FIXES → applied
+The independent reviewer returned SIGN-WITH-FIXES with 6 required mechanical
+fixes (review: law14_stageb_review_2026-09-25.md; LOG-4326). All applied;
+none required re-registration:
+- **F1**: §4 F2 sign rule now applied IN the treatment cache
+  (`Backend.apply_sign_rule` → `TorchBackend` flips cached v̂_r in place;
+  `run_full_loop` calls it before any injection). Injected v1/v2/v3 arms
+  carry signed directions; the unsigned cache is never injected.
+- **F2**: Rayleigh quotient now computed as ||Jw||² from the iteration's own
+  JVP — zero extra passes. The prior extra JVP on w_new was unbudgeted
+  (4 fwd-equiv/iter vs the registered 3; worst-case ≈9,540 vs 7,380 ceiling).
+  Budget now honest: 3 fwd-equiv/iter × 3 ranks × 12 = 108/item.
+- **F3**: element 3-hop phrasing threshold `i < 8` → `i < 7` (was 1/60 prompts
+  wrong). Post-fix: 0/60 prompt diffs vs EXP077's exact construction.
+- **F4**: the "EXP084-D1 deviation" note was FALSE — programmatic diff proves
+  EXP084's tuples are byte-identical to EXP077's. Claim retracted above.
+- **F5**: binding interpretations now recorded (below); BUILD_NOTES/docstring
+  false claims corrected.
+- **F6**: manifest seed schedule corrected to `20260924 + 1000*item + norm`
+  (code: exp086_rng.item_norm_seed).
+
+### Binding interpretations (F5 — recorded, not silently assumed)
+1. **ĉ denominator**: mean |<v̂₁,n̂>| over NON-ABORTED items only. Aborted
+   items have no v̂₁/n̂ (power iteration aborted → no decision normal), so
+   they cannot contribute. Material to the V5 kill row.
+2. **Rank-validity aggregation**: median of σ̂₁/σ̂₃ over non-aborted items
+   (protocol §5 text). The BUILD_NOTES under-specification note is superseded
+   by this recorded reading — no silent reinterpretation.
+3. **converged flag**: diagnostic-only. Does NOT abort items (corrects the
+   earlier BUILD_NOTES and power_iteration docstring claims).
+4. **Headroom**: verified at RUNTIME by the runner (G.check_headroom), not
+   "at build" (corrects the earlier BUILD_NOTES phrasing).
+5. **Sign rule scope**: applies to the v1/v2/v3 treatment arms AND the
+   permuted-v̂₁ donor (which resolves from the same signed cache). The
+   vrand and bagg arms are unaffected (isotropic / fixed anchor).
 
 ## LOG-327 repair wave (2026-09-24) — repair of LOG-326 F1 + note corrections
 Independent Law #14 bundle review (LOG-326: SIGN-WITH-FIXES) returned two

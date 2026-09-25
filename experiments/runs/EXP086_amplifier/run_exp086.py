@@ -157,6 +157,17 @@ class Backend:
         """n̂ = grad_{h}(z_top1 - z_top2), unit vector. 1 VJP = 2 fwd-equiv."""
         raise NotImplementedError
 
+    def apply_sign_rule(self, item_idx, n_hat):
+        """§4 F2: v̂_r <- sign(<v̂_r, n̂>) v̂_r, applied to the TREATMENT vectors.
+
+        Must be called after power_iteration + decision_normal_vjp and before
+        any inject_and_eval with v1/v2/v3. The injected arms must carry the
+        signed directions — not the arbitrary-sign power-iteration cache
+        (F1 fix, Law #14 Stage-B review 2026-09-25). Returns signed v̂_1
+        (for the ĉ diagnostic).
+        """
+        raise NotImplementedError
+
     def inject_and_eval(self, probe, h, direction, eps_frac):
         """Inject eps_frac*||h|| * direction at the answer position; re-run.
 
@@ -259,7 +270,7 @@ def build_benchmark_items():
                           _BENCH_ELEMENTS[iC], _BENCH_ELEMENTS[iD])
         target_first = (i % 2 == 0)
         q_opts = f"{A} or {D_ent}" if target_first else f"{D_ent} or {A}"
-        if i < 8:
+        if i < 7:
             p = (f"Premise: {A} outranks {B}. {B} outranks {C}. "
                  f"{C} outranks {D_ent}. "
                  f"Question: Who is higher in rank, {q_opts}? Answer:")
@@ -494,8 +505,11 @@ class TorchBackend(Backend):
         f(delta) = last-position logits with layer-20 output += delta.
         Deflation: project (I - V̂V̂ᵀ) before and after each JᵀJ application.
         Converged when the Rayleigh quotient's relative change < 1e-3 for 3
-        consecutive iterations (12-iteration cap); else converged=False and
-        the runner ABORTS the item (§6.4).
+        consecutive iterations (12-iteration cap); else converged=False, which
+        is DIAGNOSTIC-ONLY and does not abort the item (F5 correction, Law #14
+        Stage-B review 2026-09-25). The only item-abort is σ̂₁/σ̂₂ < 1.1
+        (G.should_abort_item, §6.4). The Rayleigh quotient is computed as
+        ||Jw||² from the iteration's own JVP — zero extra passes (F2 fix).
 
         -> dict(v=[v1,v2,v3], s=[σ̂1,σ̂2,σ̂3], rayleigh=[traj...],
                 n_iters=[...], converged=bool).
@@ -531,9 +545,22 @@ class TorchBackend(Backend):
                                 "power_iteration: deflated w is zero "
                                 f"(item {i}, rank {r+1}). Loud halt.")
                         w = w / wn
-                    # J w  (1 fwd-equiv)
+                    # J w  (1 JVP)
                     _f0, Jw = torch.autograd.functional.jvp(f, delta0, w)
-                    # J^T (J w)  (1 bwd ~= 2 fwd-equiv)
+                    # Rayleigh quotient rho = w^T J^T J w = ||Jw||^2.
+                    # F2 fix (Law #14 Stage-B review 2026-09-25): computed from
+                    # the already-available Jw — ZERO extra passes. The prior
+                    # code ran a second JVP on w_new for this, which was
+                    # unbudgeted (4 fwd-equiv/iter vs the registered 3).
+                    rho = float((Jw.norm(p=2) ** 2))
+                    traj.append(rho)
+                    if rho_prev is not None and rho_prev > 0:
+                        rel = abs(rho - rho_prev) / rho_prev
+                        consec = consec + 1 if rel < G.PI_STALL_TOL else 0
+                    else:
+                        consec = 0
+                    rho_prev = rho
+                    # J^T (J w)  (1 VJP)
                     _f0b, JTJw_t = torch.autograd.functional.vjp(
                         f, delta0, Jw)
                     JTJw = JTJw_t.reshape(-1)
@@ -544,19 +571,7 @@ class TorchBackend(Backend):
                         raise RuntimeError(
                             "power_iteration: J^TJw degenerate "
                             f"(item {i}, rank {r+1}, iter {t}). Loud halt.")
-                    w_new = JTJw / nrm
-                    # Rayleigh quotient rho = ||J w_new||^2 (w_new unit)
-                    _f1, Jw_new = torch.autograd.functional.jvp(
-                        f, delta0, w_new)
-                    rho = float((Jw_new.norm(p=2) ** 2))
-                    traj.append(rho)
-                    if rho_prev is not None and rho_prev > 0:
-                        rel = abs(rho - rho_prev) / rho_prev
-                        consec = consec + 1 if rel < G.PI_STALL_TOL else 0
-                    else:
-                        consec = 0
-                    rho_prev = rho
-                    w = w_new
+                    w = JTJw / nrm
                     if consec >= G.PI_STALL_WINDOW:
                         it_done = t + 1
                         break
@@ -605,6 +620,29 @@ class TorchBackend(Backend):
                 f"decision_normal_vjp: degenerate gradient (item {probe['i']})."
                 " Loud halt.")
         return (g / nrm).detach()
+
+    def apply_sign_rule(self, item_idx, n_hat):
+        """§4 F2, applied IN the treatment cache (F1 fix).
+
+        Flips each cached v̂_r by sign(<v̂_r, n̂>) so that _resolve_direction
+        (hence every injected v1/v2/v3 arm) carries the signed treatment.
+        The unsigned power-iteration output is never injected. Loud halt if
+        the cache is missing (power iteration must precede). Returns the
+        signed v̂_1 tensor for the ĉ diagnostic.
+        """
+        self._setup()
+        nl = n_hat.detach().tolist()
+        for r in (1, 2, 3):
+            key = (item_idx, r)
+            if key not in self._v_cache:
+                raise RuntimeError(
+                    f"apply_sign_rule: no cached v̂_{r} for item {item_idx} "
+                    "(power iteration must precede sign rule). Loud halt.")
+            v = self._v_cache[key]
+            vl = v.detach().tolist()
+            s = 1.0 if sum(a * b for a, b in zip(vl, nl)) >= 0 else -1.0
+            self._v_cache[key] = (v * s).detach().clone()
+        return self._v_cache[(item_idx, 1)]
 
     def _resolve_direction(self, probe, direction):
         """Resolve a direction tag to a unit (1024,) tensor. Loud on any
@@ -798,12 +836,11 @@ def run_full_loop(backend, budget, out_dir, log=print):
         else:
             n_hat = backend.decision_normal_vjp(probe, h)
             budget.charge(2, f"decision-normal VJP item {i}")
-            # sign rule §4 F2: v̂_r <- sign(<v̂_r, n̂>) v̂_r
-            vs = []
-            for r in range(3):
-                sgn = 1.0 if _dot(v[r], n_hat) >= 0 else -1.0
-                vs.append([sgn * float(x) for x in v[r]])
-            alpha = abs(_dot(vs[0], n_hat))
+            # sign rule §4 F2 (F1 fix): flip the TREATMENT vectors inside the
+            # backend cache BEFORE any injection, so the v1/v2/v3 arms carry
+            # signed directions. Returns signed v̂_1 for the ĉ diagnostic.
+            v1_signed = backend.apply_sign_rule(i, n_hat)
+            alpha = abs(_dot(v1_signed, n_hat))
             alphas.append(alpha)
             rec["alpha"] = alpha
             rec["arms"] = {}

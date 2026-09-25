@@ -30,7 +30,7 @@
     "Stage-B §5 rank-validity aggregation: the runner uses the protocol text's median-of-non-aborted-items reading; BUILD_NOTES records the under-specification tension; flagged for the Law #14 Stage-B reviewer (no silent reinterpretation).",
     "Stage A emits verdict: null; all scientific verdicts are Stage-B only.",
     "LOG-327 repair of LOG-326 F1: V extraction rewired from the wrong contiguous rows [2048:3072] to the per-head interleaved rows {r : (r mod 192) >= 128} (GPT-NeoX [q_h,k_h,v_h] layout, head_dim=64). The retired 'fused-slice' kind is a loud dead branch. Bundle-internal fix; signed protocol untouched.",
-    "2026-09-25 Stage-B wave: full TorchBackend implemented (§4/§6); probe rebuild follows the authoritative EXP077 construction (run_exp077.py TRIPLES/QUADS_INDICES) — EXP084's 'verbatim' rebuild uses different index tuples and is NOT followed (EXP084-D1 deviation note in BUILD_NOTES). Correctness = greedy argmax vs target token (protocol §4 sketch). B_agg = archived EXP077 v_hat (unit-norm validated).",
+    "2026-09-25 Stage-B wave: full TorchBackend implemented (§4/§6); probe rebuild follows the authoritative EXP077 construction (run_exp077.py TRIPLES/QUADS_INDICES). F4 CORRECTION (Law #14 Stage-B review): the earlier 'EXP084-D1 deviation' claim was FALSE — programmatic diff proves EXP084's tuples are byte-identical to EXP077's (15/15 triples, 15/15 quads). The false claim is retracted. Post-F3-fix: 0/60 prompt diffs vs EXP077's exact construction. Correctness = greedy argmax vs target token (protocol §4 sketch). B_agg = archived EXP077 v_hat (unit-norm validated).",
     "2026-09-25: 911MB weights/ snapshot moved OUT of the bundle dir (was failing smoke 'no weights shipped'); snapshot at ~/workspace/.exp086_weights/pythia-410m (git-ignored, local only)."
   ],
   "protocol_signed_date": "2026-09-24",
@@ -38,7 +38,7 @@
   "seeds": {
     "generator": "torch.Generator manual_seed (execution node only); numpy never used for random directions",
     "master": 20260924,
-    "schedule": "item_norm_seed(item, norm) = 20260924 + 100*item + norm; 120 unique seeds"
+    "schedule": "item_norm_seed(item, norm) = 20260924 + 1000*item + 10*norm + k (F6 correction: manifest previously said 100*item; code uses 1000*item)"
   },
   "signed_protocol": "experiments/protocols/EXP086_R3_AMPLIFIER_PREREG_SIGNED.md",
   "stage": "A advisory only (executed LOG-331); Stage-B implementation complete and CPU-tested on real weights (1 item, Δθ=0), awaiting independent Law #14 Stage-B bundle review + CEO GPU clearance + stage-2 review signoff; Stage B NOT licensed for execution",

@@ -130,6 +130,14 @@ class MockBackend(Backend):
         a = a[i] if isinstance(a, list) else a
         return [a, math.sqrt(max(0.0, 1 - a * a)), 0.0, 0.0]
 
+    def apply_sign_rule(self, item_idx, n_hat):
+        # Mock: directions are spec-table tags; the sign flip is a no-op for
+        # outcomes, but we mirror the real path and return signed v̂_1 for
+        # the ĉ diagnostic (F1 fix).
+        v1 = [1.0, 0.0, 0.0, 0.0]
+        s = 1.0 if sum(a * b for a, b in zip(v1, n_hat)) >= 0 else -1.0
+        return [s * x for x in v1]
+
     def _arm_correct(self, probe_i, direction, eps_frac):
         k = 0 if abs(eps_frac - 0.15) < 1e-9 else 1
         t = self.spec["tables"]
