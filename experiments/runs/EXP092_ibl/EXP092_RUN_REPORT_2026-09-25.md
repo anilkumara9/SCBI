@@ -100,3 +100,62 @@ $0. ~4 minutes wall time (CPU). 60 forward passes, 24 layers each. Δθ=0.
 
 ---
 *Execution agent, reporting to CEO Nova. Verdict reported as the registered decision tree produced it. Independent Law #14 verdict review commissioned next (required before adoption).*
+
+---
+
+## ERRATUM — appended 2026-09-25 per binding independent Law #14 verdict review (LOG-4338)
+
+This section is append-only: no existing report text above was modified. It implements
+the binding corrections C1 and C2 from LOG-4338 (review:
+`experiments/protocols/REVIEWS/EXP092_LAW14_VERDICT_REVIEW_2026-09-25.md`) and records
+the caveat O1. None alters the adopted CONTINUE verdict, the S set, l* = 11, or the
+licensed claim.
+
+### C1 — Guard-label erratum: mapping executed checks to signed-protocol §6 guard names
+
+The report's guard table (§"Guard outcomes") and the bundle's extraction meta label
+the 30/30 phrasing-balance check as **"G3"**. Per the signed protocol §6, the
+30/30 A-first/C-first phrasing assertion is part of **G0 (bench provenance)**
+(line 131: "20/20 targets at exactly 3 occurrences/domain; 30/30 A-first/C-first"),
+while **G3 is the mode stamp** (line 135: `mode` ∈ {mock, real}). The labeling
+drift originates in the bundle itself (`extract_layer_embeddings.py` stamps
+`"G3": "pass (30/30 asserted on real bench builder)"` in
+`out/exp092_extraction_meta.json`).
+
+Corrected mapping — substance unchanged: every protocol guard fired and passed in
+the registered order; only the labels drifted.
+
+| Report/meta label | Protocol-correct guard (§6) | Check executed |
+|---|---|---|
+| "G0 bench provenance" | G0 | Bench pin recompute `9be8162633fe19aa…`; 60/60 unique (domain,tuple); strata match §4 — PASS |
+| "G3 phrasing balance" (report) / `"G3": "pass (30/30…)"` (meta) | **G0** — phrasing is a G0 assertion, not G3 | 30/30 A-first/C-first on the real bench builder, pre-weight-access — PASS |
+| "G1′ tokenizer cover" | G1′ | 240/240 real-tokenizer offset-mapping cover, before weight access — PASS |
+| "G2 oracle diagnostic" | G2 | oracle=0.0607, p=0.5312, bench-pin-bound — PASS |
+| "Signed-protocol digest" | Launch-chain assertion (runner `assert_signed_protocol()`) | SIGNED file digest `75e744ad…` asserted before execution — PASS |
+| "G1 Δθ=0 (pre)" / "G1 Δθ=0 (post)" | G1 | pre=post=`ec276abe…`, **Δθ=0** — PASS |
+| "G4 null-spread" | G4 | per-layer permutation-null spread 0.20–0.25, non-zero; instrument responsive — PASS |
+| "Tie rule" | §3 tie rule | Armed; no exact distance ties — not triggered |
+| (unlabeled in the table; fired) | **G3 (mode stamp)** | `mode: "real"` stamped in `out/exp092_extraction_meta.json` and `out/exp092_report.json` — PASS |
+
+### C2 — S1 (Ross kNN-MI) specification retired
+
+Per LOG-4338 §3, the Ross mixed kNN-MI as specified (k=3, m_i neighbor counting,
+balanced labels, tie-free continuous embeddings) is a **mathematical constant**
+(MI = ψ(60) − ψ(4) = 4.082639989633465 bits identically — for any k, not just k=3)
+and cannot serve its intended diagnostic role. **S1 in its current specification
+is retired from future pre-registrations.** Any successor MI diagnostic must ship
+a degeneracy analysis and a constant-data null unit test before it is allowed to
+be informative. (S1 was registered non-binding; the EXP092 verdict is unaffected.)
+
+### O1 — Recorded caveat: phrasing asymmetry of the layer-11 signal
+
+Independent reviewer's breakdown (LOG-4338): layer-11 LOO 1-NN accuracy is
+A-first 16/30 (53.3%) vs C-first 4/30 (13.3%). The licensed CONTINUE stands
+(registered global statistic; the stratified null already blocks on phrasing),
+but the "redirect the readout program to l*=11" consequence **carries this
+caveat**: the information is concentrated in A-first (forward-chaining)
+phrasing, and a layer-11 readout will inherit this phrasing sensitivity. The
+asymmetry is consistent with answer-computation modulated by reasoning
+difficulty (cf. S2's 60% output-side lean), not with a positional confound
+(foil-prediction rejected in the review's shortcut analysis) — that reading is
+interpretive, not licensed.

@@ -8701,3 +8701,37 @@ Untouched by this ruling: EXP091's ADOPTED KILL (LOG-361/362), the LOG-204 bridg
 **Constraints honored:** $0 compute, CPU only, no GPU contact, no real extraction run, bundle code untouched by this review (verify-only), no signed-protocol edits.
 
 **Launch-chain next step:** no change — CEO execution clearance already granted at LOG-4332; FIX 1 stands discharged. Reviewer: Independent Law #14 Review Office (reports to the founder; binding).
+
+## LOG-4338 — 2026-09-25 — EXP092 (IBL) real-execution verdict review: ADOPT-WITH-CORRECTIONS (binding, independent Law #14)
+
+**Role:** Independent Law #14 Reviewer (reports directly to the founder; binding — cannot be overridden or suppressed by the CEO).
+**Scope:** verdict review of the reported EXP092 CONTINUE (LOG-4336). Recomputed everything from primary artifacts with reviewer-written code (no bundle imports). $0 CPU; read-only on weights and signed files; no bundle, protocol, or weight file modified.
+
+**BINDING VERDICT: ADOPT-WITH-CORRECTIONS — the CONTINUE is adopted as a licensed program result.**
+
+**Independent recomputation (exact agreement):** per-layer LOO 1-NN accuracies and stratified-permutation p-values match `out/exp092_report.json` to 0.00e+00 on all 24 layers. Layer 11: acc 0.3333 (20/60), p = 0.000999 < α_B = 0.0020833, effect +0.2000 ≥ 0.10. S = {1, 11, 12, 13, 14, 15, 17, 18} — all 8 meet both bars; layer 2 (+0.0992) and layer 0 (+0.0833) correctly excluded, layer 15 (exactly +0.1000) correctly included. Layer 20: acc 0.15, p = 0.0659 — not significant, correctly excluded. §5 TOTAL tree applied correctly → CONTINUE, l* = 11. S2 recomputed (0.60 / −0.001819) — matches.
+
+**Guard audit (from extraction log, in order):** G0 (pin `9be81626…`) → G2 (oracle 0.0607/p=0.5312) → G3 (30/30) → G1′ (240/240 real tokenizer, before weight access) → signed-protocol digest (`75e744ad…` recomputed by reviewer, matches) → G1 pre/post `ec276abe…` identical (**Δθ=0**) → G4 (null spread 0.20–0.25). All fired-and-passed in registered order. CEO clearance LOG-4332 verified (names exact command, CPU-only). Launch chain complete.
+
+**S1 degeneracy confirmed:** bit-identical 4.082639989633465 is mathematically inevitable — reviewer proves MI = ψ(60) − ψ(4) exactly given balanced labels (all N_y = 3) and zero ties (all m_i = 4); ψ(3) terms cancel. The estimator is vacuous by construction for ANY k in this regime, not just uninformative here. Non-binding → verdict unaffected.
+
+**Shortcut scrutiny (reviewer's own analysis):** neural 1-NN vs G2-oracle predictions agree 6.67%; 0/20 neural-correct items are oracle-correct; correct items have LOWER mention-overlap (1.65 vs 1.77); first-mentioned-entity hypothesis rejected (C-first foil-prediction only 10%). The v1 confound stays dead. Report does not overclaim — no superhuman/conscious/capability language; "target-entity identifiability" is exactly what was measured.
+
+**Binding corrections:** C1 — run-report guard table mislabels G3 (protocol §6: G3 = mode stamp; phrasing-balance is a G0 assertion; substance intact) → append erratum mapping checks to protocol guard names, no silent protocol edit. C2 — S1 (Ross kNN-MI) retired as specified; any successor MI diagnostic needs a degeneracy analysis + constant-data unit test before pre-registration.
+**Recorded observation O1:** layer-11 signal is phrasing-asymmetric (A-first 16/30 = 53.3%, C-first 4/30 = 13.3%). Verdict unaffected (global statistic + stratified null), but the "redirect readout to l*=11" consequence must carry this caveat.
+
+**Licensed claim (adopted):** "Frozen Pythia-410m layer 11 carries significant task information (1-NN LOO, Bonferroni-significant, ≥10pp above null q95) on the EXP092-B bench." Novelty N1. No capability claim licensed.
+
+Full review: `experiments/protocols/REVIEWS/EXP092_LAW14_VERDICT_REVIEW_2026-09-25.md`.
+
+## LOG-4339 — 2026-09-25 — EXP092 LOG-4338 binding corrections applied (implementation agent, reporting to CEO Nova)
+
+**Context:** Independent Law #14 verdict review returned ADOPT-WITH-CORRECTIONS (binding, LOG-4338) on EXP092's reported CONTINUE. The verdict is adopted; two corrections were binding and are now applied.
+
+**C1 — guard-label erratum:** appended an append-only erratum section to `experiments/runs/EXP092_ibl/EXP092_RUN_REPORT_2026-09-25.md` mapping executed checks to signed-protocol §6 guard names. The report/meta labeled the 30/30 phrasing check "G3"; per §6 it is a G0 assertion (phrasing), while G3 is the mode stamp — which fired separately (`mode: "real"` in the extraction meta and scorer report). Substance unchanged: every protocol guard fired and passed in order.
+
+**C2 — S1 specification retired:** the Ross kNN-MI as specified is a mathematical constant on ties-free balanced data (MI = ψ(60) − ψ(4), any k) — retired from future pre-registrations. Process lesson added to `~/AGENTS.md` standing conventions (no duplicate found): successor MI diagnostics need a degeneracy analysis + constant-data unit test before pre-registration.
+
+**O1 — caveat carried:** layer-11 signal is A-first 53.3% vs C-first 13.3%; the licensed "redirect readout to l*=11" carries this phrasing-sensitivity caveat. Verdict, S set {1,11,12,13,14,15,17,18}, l*=11, and the licensed claim are unaltered.
+
+**Constraints honored:** append-only erratum (no existing report text modified); no signed-protocol or review-file edits; $0 CPU; read-only on weights. Committed locally (no push per standing rule).
