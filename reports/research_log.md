@@ -8905,3 +8905,17 @@ No change to the decision-loop injection (`run_conditions_real`), scoring, or an
 **Suites:** 21/21 unit (`test_exp093.py`, torch-free) OK; 2/2 hook-order regression OK; 17/17 smoke OK.
 
 **Licensed claim:** the G5 probe defect is repaired and the repair is demonstrated by execution on the real model path. The bundle is NOT cleared for re-execution by this lane — that requires independent Law #14 re-verification of the repair plus fresh CEO clearance. EXP092 CONTINUE stands; KILL remains the registered prior for the re-run.
+
+## LOG-4351 — 2026-09-25 — Independent Law #14 re-verification of EXP093 G5 probe repair: SIGN (binding)
+
+**Target:** commit `b5da3c5` (LOG-4350 repair). Independent reviewer; verdict binding and non-overridable.
+
+**Diff audit:** 7 files changed; the only production-code change is `inject.py::verify_g5_real` (+25/−3): capture hook now registered after the injection hook's re-attach, registration order asserted via the module's ordered `_forward_hooks` registry (violation → RunInvalid), null-safe `finally` cleanup. `score_exp093.py`, `run_exp093.py` (decision-loop injection), and every signed protocol file byte-identical (empty diff). `test_exp093.py` docstring-only.
+
+**Independent real-path reproduction** (own script, fresh process, pinned venv torch 2.14.0+cpu / transformers 5.17.0, frozen LOG-331 snapshot, read-only, no_grad): G1 pre-hash `ec276abe3902fab0…` MATCH; G5 gate=PASS — criterion (i) rel_err = 4.295e-07 ≤ 1e-6, (ii) 0.0, (iii) bit-match True; G1 post-hash unchanged (Δθ=0).
+
+**Suites re-run:** 21/21 unit OK; 2/2 hook-order regression OK; 17/17 smoke OK. Regression test proven genuine: pre-fix `inject.py` fails it with RunInvalid rel 1.000e+00 (exact LOG-4349 signature); fixed code passes.
+
+**Signed protocol digest:** recomputed under the self-referential blanking rule → `3e0f269b9f2c5170d2b6ed37b2bd03f39f8eeb344914e8bb1f904709ad13db93` exact match. No signed file touched.
+
+**Binding verdict: SIGN.** The G5 probe repair is verified. Re-execution requires fresh CEO CPU execution clearance (launch chain); this SIGN covers the repair only. KILL remains the registered prior for the re-run. Review: `experiments/protocols/REVIEWS/EXP093_LAW14_REPAIR_REVERIFICATION_2026-09-25.md`.
