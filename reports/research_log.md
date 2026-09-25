@@ -8255,3 +8255,31 @@ Launch-chain position: draft revised → awaiting signing (CEO), then bundle bui
 Signed experiments/protocols/EXP090_CLM8B_ADAPTATION_V2_PREREG_SIGNED.md.
 SHA-256: 440dd6a53ab88a199c88a57e629768aa9414cc1f9d907b33e2ab6019aa79c0ab
 Signing basis: LOG-334 → LOG-335/336/337/338 (EXP089) → LOG-344/345 (§6 unsatisfiable, binding) → LOG-347 (EXP090 draft) → LOG-348 (Law #14 SIGN-WITH-FIXES, §0 substitution accepted) → LOG-349 (F1/F2 applied, CEO-verified, caveat 6 verbatim). Registered bar: ≥38/60 (P=0.0260) → CONTINUE; ≤37/60 → KILL free-lunch version; §7.1 total tree; G4 instrument-deaf → RUN-INVALID. Scope fence: Δθ=0, zero-shot only. DRAFT WATERMARK marked superseded per LOG-329 lesson. Licensed: execution-bundle build (CPU) may proceed. CPU execution, ~1–2h, $0.
+
+## LOG-351 — EXP090 execution bundle BUILT + TESTED (2026-09-25)
+
+Bundle: experiments/runs/EXP090_clm8b_falsifier_v2/ (adapted from the EXP089 bundle, LOG-346; single design change per the signed protocol).
+Signed protocol: experiments/protocols/EXP090_CLM8B_ADAPTATION_V2_PREREG_SIGNED.md (digest 440dd6a5…01b, recomputed and verified; IMMUTABLE, untouched).
+
+Files: benchmark_exp090.py (verbatim-ported N=60 builder; byte-identity vs the LOG-345-reviewed EXP089 builder VERIFIED by execution, pinned by test), extract_state_embeddings.py (G1/G2/G3 + §6 provenance pin asserted before any weight access, mock and real modes), score_exp090.py (§7.1 total tree + G4 gate + exact binomial tail + mode stamp), run_exp090.py (digest guard vs 440dd6a5…, forbidden-flag refusal, --ceo-clearance gate), test_exp090.py, BUILD_NOTES.md, manifest.json.
+
+Tests: 36/36 PASS (numpy-only). New §6-contract tests: struck byte-reproduction guard absent; archive provenance pin passes on the real archive (47281cd3…0585) and REFUSES on tampered archive (RUN-INVALID, no embeddings written); builder deterministic; byte-identity vs EXP089 builder pinned.
+
+Design note: implementer caught and fixed its own transcription bug during adaptation (3-hop items first written with "C": C instead of verbatim "C": D_ent — caught by the byte-identity check, fixed before testing).
+
+Constraints held: $0 CPU; synthetic/mock tests only — no real execution; weights (LOG-331 snapshot) and EXP077 artifacts read-only (archive hash recomputed 47281cd3…0585, character-identical); both signed protocols untouched (digests recomputed: EXP090 440dd6a5…01b, EXP089 87f2c47b…4c24cb).
+
+Launch-chain position: bundle built → awaiting independent Law #14 bundle review → CEO execution clearance → execution. Real-execution command: python3 run_exp090.py --out-dir out --ceo-clearance (from the bundle dir). No known blockers: the §6 contract is satisfiable.
+
+## LOG-352 — Independent Law #14 bundle review of EXP090: SIGN (2026-09-25)
+
+Review: experiments/protocols/REVIEWS/EXP090_LAW14_BUNDLE_REVIEW_2026-09-25.md (binding; reviewer reports to the founder directly).
+Target: experiments/runs/EXP090_clm8b_falsifier_v2/ (LOG-351). Signed protocol SHA-256 recomputed 440dd6a53ab88a199c88a57e629768aa9414cc1f9d907b33e2ab6019aa79c0ab — byte-identical to LOG-350; signed file untouched.
+
+Verdict: SIGN. The bundle faithfully implements the signed protocol; clear for the CEO's execution-clearance decision. No fixes required. No endpoint/verdict/cost/mapping change — no new experiment number.
+
+Independently verified (all my own executions): test_exp090.py 36/36 PASS; §6 repaired bench contract (builder byte-identical to LOG-345-reviewed EXP089 builder, deterministic, struck guard absent from code, archive pin 47281cd3…0585 passes on real archive / refuses on tampered); G1/G2/G3/G4 guards; §7.1 TOTAL tree (38/60 clean → CONTINUE, 37/60 → KILL, split-at-0.5 and opposite tilts → PIVOT); bar sharpness recomputed (P(X≥38)=0.0259469→0.0260; P(X≥37)=0.0462); Law #13 pins; refusal gates (digest guard vs 440dd6a5…, forbidden flags, --ceo-clearance); mode stamp; Law #7 1:1 balance. Lineage attack: no EXP089-ism leaks (digest guard is EXP090's; all artifact names exp090_*); the self-caught 3-hop "C": D_ent transcription bug genuinely fixed. Real execution NOT licensed until CEO execution clearance. $0 CPU; no weights or EXP077 artifacts modified (read-only).
+
+## LOG-353 — CEO EXECUTION CLEARANCE GRANTED: EXP090 (CPU-only, 2026-09-25)
+
+Launch chain complete for EXP090: signed pre-registration (LOG-350; digest 440dd6a5…01b, byte-identical at LOG-352) → independent Law #14 draft review (LOG-348, SIGN-WITH-FIXES F1–F2, §0 substitution accepted) → repair wave (LOG-349, both applied, caveat 6 verbatim) → execution bundle (LOG-351, 36/36 tests) → independent bundle review (LOG-352, SIGN, no fixes). CEO execution clearance GRANTED — CPU-only, ~1–2h, $0. No GPU clearance required or granted. Real-execution command: python3 run_exp090.py --out-dir out --ceo-clearance (from experiments/runs/EXP090_clm8b_falsifier_v2/). Registered outcomes: ≥38/60 + both splits >0.5 → CONTINUE; ≤37/60 → KILL free-lunch version; split failures → PIVOT; G4 deaf → RUN-INVALID.
