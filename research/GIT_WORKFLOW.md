@@ -83,7 +83,26 @@ Standing rule; amendable only by the founder.
 5. If the remote moved, rebase — ask the CEO if there is a conflict you do not
    fully understand.
 
-## 6. What "constantly" means in practice
+## 6. Concurrency rules (adopted 2026-09-25 after two live incidents)
+
+Two incidents on 2026-09-25: (a) a stale duplicate lane edited the EXP093 draft
+after it was signed — caught itself, reverted, draft verified byte-identical
+(LOG-4347); (b) a branch-creating agent switched the shared working tree
+mid-commit under a concurrent fix agent — repaired, no data loss.
+
+- The shared working tree is single-threaded for branch operations. Workers
+  NEVER run `git checkout` / `git switch` while other agents are active.
+  Branch cuts are serialized through the CEO.
+- Parallel branch work uses `git worktree` (one worktree per agent), never
+  branch-switching in the shared tree.
+- Dispatch hygiene: before dispatching any lane, check `subagent.list` and the
+  research log for an already-running or already-completed lane covering the
+  same task. A duplicate dispatch is a defect — the dispatcher stands down
+  instead.
+- Sequential commits to `main` by different agents are fine; interleaved
+  branch switches are not.
+
+## 7. What "constantly" means in practice
 
 The lab pushes branch-by-branch through the day as units complete; `main`
 advances PR-by-PR after review. Anyone opening GitHub sees live branches, open
