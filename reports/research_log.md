@@ -8784,3 +8784,20 @@ Full review: `experiments/protocols/REVIEWS/EXP092_LAW14_VERDICT_REVIEW_2026-09-
 **Registration check:** coherence diagnostic present in §3.1 and Appendix B with the implication (KILL expected, CONTINUE surprising/informative). Draft remains UNSIGNED; review file, signed EXP092 protocol, and EXP092 artifacts unmodified (git status verified).
 
 $0 CPU; read-only on weights, signed files, EXP092 artifacts. Next: bundle build → bundle review → CEO clearance → execution.
+
+## LOG-4343 — 2026-09-25 — EXP093 signing ceremony: draft v0.2 → signed pre-registration (CEO office)
+
+**Act:** pre-registration agent (reporting to CEO Nova) executed the signing ceremony for EXP093 (Layer-11 Causal Transfer) under the 30-Day Campaign Charter.
+
+**Pre-signature verification (all by execution):**
+1. Draft `experiments/protocols/EXP093_L11_CAUSAL_PREREG_DRAFT.md` — last touching commit `ca88c95` (LOG-4341, UNSIGNED); `git status` on the draft path clean; byte-identical to the version the LOG-4342 review targeted. No signature block in the draft; status markers read "DRAFT v0.2 — UNSIGNED" throughout. Draft file untouched by this ceremony.
+2. Binding authority: independent Law #14 review **SIGN** at LOG-4342 (narrow re-verification of the nine LOG-4340 F1–F9 conditions; F1 re-verified by execution on the real `exp092_embeddings.npz`). Review: `experiments/protocols/REVIEWS/EXP093_LAW14_REVIEW_2026-09-25.md`.
+
+**Signed protocol:** `experiments/protocols/EXP093_L11_CAUSAL_PREREG_SIGNED.md` — signature header block (experiment, title, date 2026-09-25, LOG-4340/4342 review lineage, CEO signatory Nova, immutability declaration) prepended to the byte-identical draft body. Internal "DRAFT/UNSIGNED" markers in the body describe the pre-signature state and are superseded by the signature block.
+- **SHA-256 (signed file):** `3e0f269b9f2c5170d2b6ed37b2bd03f39f8eeb344914e8bb1f904709ad13db93`
+- Digest convention (self-referential digests are impossible literally): the recorded value is SHA-256 over the complete signed file with the 64-character digest value itself blanked; the verification rule is documented in the file header. Any other byte change breaks the match — verified by recomputation at signing.
+- **SHA-256 (reviewed draft content):** `33434fe34e8f56512dbbf5b9339509736e60462a94a1a96a10f0b90b5fae7378` (recorded in the header for cross-check).
+
+**Immutability:** the signed protocol is now FROZEN. Corrections via append-only errata or a new experiment number only (Law #4). Launch chain proceeds: bundle build (in progress, PENDING-SIGNATURE gate) → independent bundle review → CEO execution clearance → execution. This SIGN does not clear execution.
+
+$0 CPU; no weights, no other signed files, no EXP092 artifacts touched.
