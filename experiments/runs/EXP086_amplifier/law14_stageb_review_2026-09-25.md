@@ -390,3 +390,52 @@ non-blocking.
 *Reviewer independence note: this addendum was appended; the original review
 above is untouched. No bundle, protocol, or other file was modified in the
 course of this re-verification.*
+
+---
+
+## Addendum 2 — Narrow re-verification of the LOG-4333 conditions (LOG-4335): **SIGN**
+
+**Reviewer:** Independent Law #14 Reviewer (reporting directly to the founder; binding).
+**Date:** 2026-09-25.
+**Target:** the two documentation corrections from the LOG-4333 REJECT ruling, applied at LOG-4334 (commit `5827de6`).
+
+This was a check, not a re-adjudication. All three named conditions hold, verified by execution:
+
+**Condition 1 — F4 comment corrected: VERIFIED.**
+`run_exp086.py:199–204` now carries an explicit RETRACTION NOTE: the earlier
+"DEVIATION NOTE (EXP084-D1 class)" claiming EXP084's `build_benchmark` uses
+"DIFFERENT index tuples (a '15-cycle rotation set')" is stated as FALSE and
+RETRACTED, citing the programmatic diff (EXP084's `_BENCH_TRIPLES`/`_BENCH_QUADS`
+byte-identical to EXP077's `TRIPLES_INDICES`/`QUADS_INDICES`, 15/15 triples,
+15/15 quads). The claim appears in the comment only as the quoted object of
+the retraction — no live assertion remains.
+
+**Condition 2 — F6 manifest formula matches code: VERIFIED (by execution).**
+The manifest schedule now reads `item_norm_seed(item, norm_idx) = 20260924 +
+1000*item + norm_idx`, against `exp086_rng.py:29` (`return MASTER_SEED + 1000
+* i + norm_idx`, `MASTER_SEED = 20260924`). Executed directly:
+`item_norm_seed(0,0)=20260924`, `(0,1)=20260925`, `(7,0)=20267924`,
+`(59,1)=20319925` — all match the manifest formula; `seed_schedule()` yields
+120 pairwise-distinct seeds.
+
+**Condition 3 — no lingering live copies: VERIFIED.**
+Directory-wide grep for "15-cycle"/"rotation set" over
+`experiments/runs/EXP086_amplifier/` returns 6 occurrences, all in retraction
+contexts: this review file's own evidence quotes (lines 132, 360–361 —
+append-only record, untouched), `BUILD_NOTES.md:27` (the retraction note),
+`run_exp086.py:200,204` (the retraction note itself, quoting the claim it
+retracts). No live assertion of the false claim survives.
+
+**Binding verdict: SIGN.** The LOG-4326 upgrade conditions are met. The
+EXP086 Stage-B bundle is cleared for the GPU pre-flight chain. CEO GPU
+clearance and stage-2 review signoff remain user-gated; this SIGN does not
+authorize execution. The A1–A4 advisories stand as non-blocking GPU
+pre-flight items.
+
+Untouched by this ruling: EXP091's ADOPTED KILL (LOG-361/362), the LOG-204
+bridge demotion, the H1 closure (LOG-4317), EXP092's chain (LOG-4319–4331),
+the LOG-4321 weights-integrity clearance.
+
+*Reviewer independence note: this addendum was appended; the original review
+and the LOG-4333 addendum above are untouched. No bundle, protocol, or other
+file was modified in the course of this re-verification.*
