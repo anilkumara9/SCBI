@@ -1,0 +1,48 @@
+{
+  "experiment": "EXP090",
+  "bundle": "experiments/runs/EXP090_clm8b_falsifier_v2/",
+  "signed_protocol": "experiments/protocols/EXP090_CLM8B_ADAPTATION_V2_PREREG_SIGNED.md",
+  "signed_protocol_sha256": "440dd6a53ab88a199c88a57e629768aa9414cc1f9d907b33e2ab6019aa79c0ab",
+  "lineage": {
+    "supersedes_for_execution": "EXP089 (signed protocol 87f2c47b\u20264c24cb, immutable; \u00a76 ruled CONFIRMED UNSATISFIABLE at LOG-345)",
+    "modules_adapted_from": "experiments/runs/EXP089_clm8b_falsifier/",
+    "single_design_change": "\u00a76 bench contract: deterministic builder output (verbatim port, byte-identity pinned) + archive provenance pin; byte-reproduction guard STRUCK"
+  },
+  "file_sha256": {
+    "benchmark_exp090.py": "b5a74fd28b11eee5f23daa5ff302ddd683246029b98583c8af35a065cb03c8b5",
+    "extract_state_embeddings.py": "d1d2e66338d7f5c07ad154868a8b0911b713bc439ae65b092d88b70d2ef2827a",
+    "score_exp090.py": "5e2853829e5de4f89e0a4db5bf060fa29fb2800eb0abae5d010d683dce9bfae6",
+    "run_exp090.py": "e9ff49ff5a5fc76522fe9d50022cdeb5ab552618388a638c39d88525d0dd441c",
+    "test_exp090.py": "44965bb8eb1b5f31a70fda3ca6f46d8714e9abc0f449e07197425dc2baa08e2f",
+    "BUILD_NOTES.md": "ad1ea685f631378a41d16f5486df83dd30c7312e8ed509d74b23f4d9e29599ef"
+  },
+  "tests": {
+    "command": "python3 -m unittest test_exp090",
+    "ran": 36,
+    "passed": 36,
+    "requires": [
+      "numpy"
+    ],
+    "torch_required": false
+  },
+  "budget": {
+    "cost_usd": 0,
+    "compute": "CPU-only",
+    "est_wallclock_h": "1-2"
+  },
+  "guards": [
+    "G1 single-token",
+    "G2 state_dict hash pre/post (ec276abe\u2026e0ed)",
+    "G3 phrasing 30/30",
+    "G4 instrument deafness -> RUN-INVALID",
+    "\u00a76 archive provenance pin (47281cd3\u20260585) -> RUN-INVALID",
+    "signed-protocol digest guard",
+    "forbidden-flag refusal",
+    "--ceo-clearance gate",
+    "report mode stamp (mock/real)"
+  ],
+  "known_blocker": null,
+  "real_execution_command": "python3 run_exp090.py --out-dir out --ceo-clearance",
+  "real_execution_licensed": false,
+  "real_execution_note": "awaits independent bundle review + CEO execution clearance; \u00a76 contract satisfiable \u2014 no known blockers"
+}
