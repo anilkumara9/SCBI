@@ -8678,3 +8678,26 @@ Untouched by this ruling: EXP091's ADOPTED KILL (LOG-361/362), the LOG-204 bridg
 **Full run report:** `experiments/runs/EXP092_ibl/EXP092_RUN_REPORT_2026-09-25.md` (per-layer table, guard log, S1 anomaly analysis, raw-data paths). Primary artifacts: `experiments/runs/EXP092_ibl/out/exp092_embeddings.npz`, `exp092_report.json`, `exp092_extraction_log.txt`, `exp092_extraction_meta.json`.
 
 **Status:** verdict reported as the registered tree produced it. Independent Law #14 verdict review required before adoption (commissioned next).
+
+---
+
+## LOG-4337 — 2026-09-25 — EXP092 FIX 1: second independent Law #14 re-verification corroborates SIGN (binding)
+
+*(Renumbered from a duplicate LOG-4334: the dispatcher wrote this entry while the EXP086 Stage-B F4/F6 fix already held LOG-4334. Number assigned from a stale highest-LOG read; corrected by the CEO office. Substance unchanged.)*
+
+**Context:** LOG-4331 already recorded an independent Law #14 SIGN for LOG-4329's FIX 1 and LOG-4332 granted CEO execution clearance on its basis. This office was dispatched to re-verify FIX 1 independently by execution, re-running every check itself rather than trusting LOG-4330 or LOG-4331. **Verdict: SIGN — FIX 1 fully discharges LOG-4329's single upgrade condition; LOG-4331 corroborated.**
+
+**Evidence (every number below from a command this office executed this run):**
+1. Signed-protocol digest recomputed: `sha256sum experiments/protocols/EXP092_IBL_PREREG_SIGNED.md` → `75e744ad9bae98cc86c0443823bd27b197a9c17fc106ba984e5870cf1bdb347c` — exact match to `protocol_pin.py` `SIGNED_PROTOCOL_DIGEST`. Protocol untouched; working tree shows no modification to the signed protocol, `run_exp092.py`, or `protocol_pin.py`.
+2. `test_exp092.py` re-run: `Ran 52 tests in 11.240s — OK` (49 prior + 3 new `TestExtractionCliClearance`).
+3. `smoke_test.py` re-run: `smoke: 11/11 checks passed` (exit 0).
+4. Reviewer bypass probe from a real shell — `python3 extract_layer_embeddings.py --out-dir /tmp/exp092_probe_noclear` (no clearance): **exit 2**, `REFUSAL: real extraction requires --ceo-clearance (CEO). Use --mock for synthetic tests.` on stderr, out-dir never created, zero weight access. Bypass CLOSED.
+5. `--mock` probe: **exit 0**, mock embeddings written, stderr empty — mock path unchanged.
+6. `--ceo-clearance --snapshot /tmp/exp092_bogus_snapshot`: **exit 3**, `RUN-INVALID: torch is not installed — real extraction cannot run. Install CPU torch + transformers, or use --mock.` on stderr — clearance gate passed (no refusal), RUN-INVALID reached with zero weight access (weight loading at `extract_layer_embeddings.py:241` never reached). Note: in this torch-less environment the RUN-INVALID fires at the torch-import guard before the snapshot-existence check; the verified properties (exit 3, gate passed, no weights touched) are what LOG-4329's upgrade condition requires.
+7. Diff audit of the fix commit (`git diff 45776e3 bf9e1ab -- experiments/runs/EXP092_ibl/`): exactly 3 files, 80 insertions, 0 deletions — `extract_layer_embeddings.py` (module docstring note + `--ceo-clearance` arg + gate check first in `main()`), `test_exp092.py` (3 new tests + 1 import line), `BUILD_NOTES.md` (choice rationale). `extract_mock` byte-untouched; the gate fires before any guard and before any weight access.
+
+**Non-blocking observations (not defects):** (a) `BUILD_NOTES.md` claims the refusal wording mirrors `run_exp092.py` "exactly" — the wording differs by one word ("real extraction" vs "real execution"); semantics, flag name, exit code, and placement are identical. (b) The new test's comment ("bogus snapshot then fires RUN-INVALID") overclaims the firing point in torch-less environments, where the torch-import guard fires first; the test's assertion (exit 3, gate passed, no weights touched) is environment-independent and passes.
+
+**Constraints honored:** $0 compute, CPU only, no GPU contact, no real extraction run, bundle code untouched by this review (verify-only), no signed-protocol edits.
+
+**Launch-chain next step:** no change — CEO execution clearance already granted at LOG-4332; FIX 1 stands discharged. Reviewer: Independent Law #14 Review Office (reports to the founder; binding).
