@@ -1,0 +1,12 @@
+{
+  "mode": "real",
+  "n": 60,
+  "dim": 1024,
+  "layer": 20,
+  "snapshot": "/home/hatch/workspace/SCBI/experiments/runs/EXP086_amplifier/weights/pythia-410m",
+  "G1'": "pass (i: 240/240 in-prompt occurrences single-token, real tokenizer; ii: all 10 action texts single-token)",
+  "G2": "pass (pre/post hash ec276abe3902fab0\u2026, \u0394\u03b8=0 verified)",
+  "G3": "pass (30/30 asserted on real benchmark builder)",
+  "provenance_pin": "pass (\u00a76 archive hash asserted)",
+  "embeddings": "exp091_embeddings.npz"
+}

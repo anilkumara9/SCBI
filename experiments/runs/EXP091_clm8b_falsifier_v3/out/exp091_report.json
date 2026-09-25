@@ -1,0 +1,440 @@
+{
+  "verdict": "KILL",
+  "n_correct": 31,
+  "n_total": 60,
+  "accuracy": 0.5166666666666667,
+  "acc_Afirst": 0.5,
+  "acc_Cfirst": 0.5333333333333333,
+  "binomial_p_upper_tail": 0.44871091349571524,
+  "g4_spread": 0.0802726149559021,
+  "ties_broken_toward_foil": 0,
+  "margin_mean": 0.0006809572378794353,
+  "margin_median": 0.0007813870906829834,
+  "margin_min": 4.565715789794922e-05,
+  "margin_max": 0.0013840794563293457,
+  "cosA_mean": 0.19021657357613245,
+  "cosC_mean": 0.19046381016572317,
+  "per_item": [
+    {
+      "id": "exp077_planet_2hop_0",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.21842560172080994,
+      "cosC": 0.2197493612766266
+    },
+    {
+      "id": "exp077_planet_2hop_1",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.22611987590789795,
+      "cosC": 0.22493146359920502
+    },
+    {
+      "id": "exp077_planet_2hop_2",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.2198265939950943,
+      "cosC": 0.21940694749355316
+    },
+    {
+      "id": "exp077_planet_2hop_3",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.21998223662376404,
+      "cosC": 0.2209426760673523
+    },
+    {
+      "id": "exp077_planet_2hop_4",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.2204056829214096,
+      "cosC": 0.22120483219623566
+    },
+    {
+      "id": "exp077_planet_2hop_5",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.21408075094223022,
+      "cosC": 0.21317486464977264
+    },
+    {
+      "id": "exp077_planet_2hop_6",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.22402632236480713,
+      "cosC": 0.22487325966358185
+    },
+    {
+      "id": "exp077_planet_2hop_7",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.2197878360748291,
+      "cosC": 0.21889503300189972
+    },
+    {
+      "id": "exp077_planet_2hop_8",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.19806772470474243,
+      "cosC": 0.19901137053966522
+    },
+    {
+      "id": "exp077_planet_2hop_9",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.19887395203113556,
+      "cosC": 0.19976983964443207
+    },
+    {
+      "id": "exp077_planet_2hop_10",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.20686279237270355,
+      "cosC": 0.20823785662651062
+    },
+    {
+      "id": "exp077_planet_2hop_11",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.20800302922725677,
+      "cosC": 0.2069450318813324
+    },
+    {
+      "id": "exp077_planet_2hop_12",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.20436298847198486,
+      "cosC": 0.2040138989686966
+    },
+    {
+      "id": "exp077_planet_2hop_13",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.20869724452495575,
+      "cosC": 0.20961681008338928
+    },
+    {
+      "id": "exp077_planet_2hop_14",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.19676631689071655,
+      "cosC": 0.1974235475063324
+    },
+    {
+      "id": "exp077_planet_3hop_0",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.21692293882369995,
+      "cosC": 0.21766677498817444
+    },
+    {
+      "id": "exp077_planet_3hop_1",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.19473960995674133,
+      "cosC": 0.19395160675048828
+    },
+    {
+      "id": "exp077_planet_3hop_2",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.18257412314414978,
+      "cosC": 0.18335551023483276
+    },
+    {
+      "id": "exp077_planet_3hop_3",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.20103874802589417,
+      "cosC": 0.20199862122535706
+    },
+    {
+      "id": "exp077_planet_3hop_4",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.2013247013092041,
+      "cosC": 0.2022285908460617
+    },
+    {
+      "id": "exp077_planet_3hop_5",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.21692293882369995,
+      "cosC": 0.21766677498817444
+    },
+    {
+      "id": "exp077_planet_3hop_6",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.19473960995674133,
+      "cosC": 0.19395160675048828
+    },
+    {
+      "id": "exp077_planet_3hop_7",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.18257412314414978,
+      "cosC": 0.18335551023483276
+    },
+    {
+      "id": "exp077_planet_3hop_8",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.1923540085554123,
+      "cosC": 0.19320663809776306
+    },
+    {
+      "id": "exp077_planet_3hop_9",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.19430609047412872,
+      "cosC": 0.19514353573322296
+    },
+    {
+      "id": "exp077_planet_3hop_10",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.19501745700836182,
+      "cosC": 0.1958438754081726
+    },
+    {
+      "id": "exp077_planet_3hop_11",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.20489501953125,
+      "cosC": 0.2040306031703949
+    },
+    {
+      "id": "exp077_planet_3hop_12",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.17613723874092102,
+      "cosC": 0.1768319308757782
+    },
+    {
+      "id": "exp077_planet_3hop_13",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.1923540085554123,
+      "cosC": 0.19320663809776306
+    },
+    {
+      "id": "exp077_planet_3hop_14",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.19430609047412872,
+      "cosC": 0.19514353573322296
+    },
+    {
+      "id": "exp077_element_2hop_0",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.19358401000499725,
+      "cosC": 0.19370649755001068
+    },
+    {
+      "id": "exp077_element_2hop_1",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.17935337126255035,
+      "cosC": 0.1805553287267685
+    },
+    {
+      "id": "exp077_element_2hop_2",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.1803138256072998,
+      "cosC": 0.1801401674747467
+    },
+    {
+      "id": "exp077_element_2hop_3",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.19742240011692047,
+      "cosC": 0.19732992351055145
+    },
+    {
+      "id": "exp077_element_2hop_4",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.18951022624969482,
+      "cosC": 0.18908792734146118
+    },
+    {
+      "id": "exp077_element_2hop_5",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.17921891808509827,
+      "cosC": 0.1805434376001358
+    },
+    {
+      "id": "exp077_element_2hop_6",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.18638573586940765,
+      "cosC": 0.18608532845973969
+    },
+    {
+      "id": "exp077_element_2hop_7",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.1833386868238449,
+      "cosC": 0.18472276628017426
+    },
+    {
+      "id": "exp077_element_2hop_8",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.17726701498031616,
+      "cosC": 0.17688606679439545
+    },
+    {
+      "id": "exp077_element_2hop_9",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.18636147677898407,
+      "cosC": 0.1860169768333435
+    },
+    {
+      "id": "exp077_element_2hop_10",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.18601088225841522,
+      "cosC": 0.18572033941745758
+    },
+    {
+      "id": "exp077_element_2hop_11",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.17737962305545807,
+      "cosC": 0.17865024507045746
+    },
+    {
+      "id": "exp077_element_2hop_12",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.17488110065460205,
+      "cosC": 0.1748354434967041
+    },
+    {
+      "id": "exp077_element_2hop_13",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.1801793873310089,
+      "cosC": 0.1799153834581375
+    },
+    {
+      "id": "exp077_element_2hop_14",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.19168347120285034,
+      "cosC": 0.19129636883735657
+    },
+    {
+      "id": "exp077_element_3hop_0",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.17437812685966492,
+      "cosC": 0.1740194857120514
+    },
+    {
+      "id": "exp077_element_3hop_1",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.17973361909389496,
+      "cosC": 0.1811104416847229
+    },
+    {
+      "id": "exp077_element_3hop_2",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.1836676299571991,
+      "cosC": 0.18343102931976318
+    },
+    {
+      "id": "exp077_element_3hop_3",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.1884072721004486,
+      "cosC": 0.18822802603244781
+    },
+    {
+      "id": "exp077_element_3hop_4",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.18088965117931366,
+      "cosC": 0.18080662190914154
+    },
+    {
+      "id": "exp077_element_3hop_5",
+      "correct": true,
+      "phrasing": "A-first",
+      "cosA": 0.17437812685966492,
+      "cosC": 0.1740194857120514
+    },
+    {
+      "id": "exp077_element_3hop_6",
+      "correct": false,
+      "phrasing": "A-first",
+      "cosA": 0.17973361909389496,
+      "cosC": 0.1811104416847229
+    },
+    {
+      "id": "exp077_element_3hop_7",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.15990614891052246,
+      "cosC": 0.15959537029266357
+    },
+    {
+      "id": "exp077_element_3hop_8",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.14606007933616638,
+      "cosC": 0.14584726095199585
+    },
+    {
+      "id": "exp077_element_3hop_9",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.16567103564739227,
+      "cosC": 0.16540181636810303
+    },
+    {
+      "id": "exp077_element_3hop_10",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.1706494688987732,
+      "cosC": 0.17039549350738525
+    },
+    {
+      "id": "exp077_element_3hop_11",
+      "correct": false,
+      "phrasing": "C-first",
+      "cosA": 0.15049658715724945,
+      "cosC": 0.1517479419708252
+    },
+    {
+      "id": "exp077_element_3hop_12",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.15990614891052246,
+      "cosC": 0.15959537029266357
+    },
+    {
+      "id": "exp077_element_3hop_13",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.14606007933616638,
+      "cosC": 0.14584726095199585
+    },
+    {
+      "id": "exp077_element_3hop_14",
+      "correct": true,
+      "phrasing": "C-first",
+      "cosA": 0.16567103564739227,
+      "cosC": 0.16540181636810303
+    }
+  ],
+  "mode": "real"
+}

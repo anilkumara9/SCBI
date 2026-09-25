@@ -1,0 +1,9 @@
+[extract] §6 provenance pin OK: exp077_instance_records.json hash matches the recorded archive.
+[extract] loading frozen snapshot: /home/hatch/workspace/SCBI/experiments/runs/EXP086_amplifier/weights/pythia-410m
+[extract] G1'(i) pass: 240/240 A/C occurrences single-token in-prompt (real tokenizer, offset-mapping cover check).
+[extract] model.eval() set; requires_grad_(False) on all parameters.
+[extract] G2 pre-extraction hash OK: ec276abe3902fab0…
+[extract] benchmark verified: 60 items, G3 30/30, provenance pinned.
+[extract] G1'(ii) pass: all 10 action texts (' '+entity) single-token: Bronze=49134, Gold=7284, Iron=17826, Jupiter=34434, Mars=13648, Mercury=36091, Saturn=38876, Silver=16309, Steel=19727, Venus=36210.
+[extract] 180 forward passes complete (60 state + 60 A + 60 C). Final-token hidden states; action texts in spaced single-token form.
+[extract] G2 post-extraction hash OK: ec276abe3902fab0… (Δθ=0 verified)
