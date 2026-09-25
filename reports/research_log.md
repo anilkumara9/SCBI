@@ -8442,3 +8442,19 @@ Binding verdict: REJECT. The EXP092 (IBL) draft may not proceed to signing. Load
 - The v2 draft agent's transparency note (prompt-injection caution on a grep result, no action taken) is acknowledged; no impact on this investigation.
 
 $0 CPU for the investigation logic (one model load for the decisive replication, read-only). No signed protocols touched.
+
+## LOG-4322 — EXP086 STAGE-B READINESS: TorchBackend implemented, CPU-tested, Law #14 review commissioned (2026-09-25)
+
+**Role:** GPU-queue readiness agent (30-day campaign). **Mission:** make EXP086 Stage B honestly launch-ready or document blockers.
+
+**Finding:** Stage B was NOT launch-ready. The bundle was Stage-A-only; `TorchBackend` methods were `_no()` stubs raising RuntimeError. Implemented the full Stage-B backend per signed §4/§6 (protocol digest re-verified: `6fe122a0230d9dfc58a01d14c15da77f5e995e6beeae8c1f2e71af32943498f6`).
+
+**Implemented (run_exp086.py):** lazy torch/transformers; hook-based JVP/VJP (f(δ) at layer 20, final token); deflated power iteration ranks 1–3 (12-cap, Rayleigh rel-change <1e-3 ×3); decision-normal VJP (label-free); matched-norm injection (v1/v2/v3, seeded vrand, B_agg anchor, permuted); verbatim probe rebuild from the authoritative EXP077 construction (run_exp077.py TRIPLES/QUADS_INDICES — EXP084's "verbatim" uses different tuples, NOT followed; EXP084-D1 note in BUILD_NOTES); greedy-argmax correctness (protocol §4 sketch); B_agg = archived EXP077 v_hat (unit-norm validated); `--run` requires `--weights` (refuses network-download fallback).
+
+**CPU readiness test (real Pythia-410m, read-only, Δθ=0):** 1 item — power iteration converged (σ̂=[106.49,76.18,52.53], n_iters=[12,6,12]); VJP/injection verified; pre-hash `ec276abe3902fab0…` matches LOG-331. (OOM in combined run = CPU resource limit, not code bug; GPU node has headroom. CPU flash-attn backward unimplemented → test used attn_implementation="eager".)
+
+**Verification:** test_exp086.py 104/104; smoke 16/16 (after moving 911MB weights/ out of bundle — cleared by LOG-4321 investigation); 13/13 mock verdict scenarios; 7 adversarial precedence probes (V5>V7 KILL, V6>V11 KILL, V1 INVALID, V7b>Held, stage-2 loud halt, V8 PIVOT, V9 HELD); CLI exit codes; gate 5 (Stage B zero-coupling to Stage A).
+
+**Blockers:** (1) Independent Law #14 Stage-B bundle review — COMMISSIONED (subagent, reports to founder, binding); (2) CEO GPU clearance; (3) stage-2 review signoff; (4) GPU venue — all user-gated. Queue: K2 → EXP083 → EXP084 → EXP086 Stage B.
+
+**Design decision flagged for reviewer:** rank-validity aggregation uses protocol §5's median reading despite BUILD_NOTES under-specification note — no silent reinterpretation.

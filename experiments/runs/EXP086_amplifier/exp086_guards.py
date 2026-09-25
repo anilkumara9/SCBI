@@ -68,10 +68,19 @@ N_ITEMS_BUDGET = N_ITEMS * FWD_EQUIV_PER_ITEM          # 7260
 STAGE2_FWD_EQUIV = 120
 TOTAL_FWD_EQUIV_BUDGET = N_ITEMS_BUDGET + STAGE2_FWD_EQUIV  # 7380
 
+# Deflated power iteration (§4): 12-iteration cap per vector; converged when
+# the Rayleigh quotient's relative change < 1e-3 for 3 consecutive iterations.
+PI_MAX_ITER = 12
+PI_STALL_TOL = 1e-3
+PI_STALL_WINDOW = 3
+
 # Probe-set pin (§6.1, G4): EXP077 60-record archive, sha256 verified on disk
 # 2026-09-24 (matches the EXP084 signed protocol's recorded pin)
 RECORDS_REL = ("..", "EXP077_cone_vs_line", "exp077_instance_records.json")
 RECORDS_SHA256 = ("47281cd3dc243369be0aa5be2345663b752cdb4a329a16a37f08da5717230585")
+
+# B_agg historical anchor: archived EXP077 static-semantic direction.
+BAGG_REL = ("..", "EXP077_cone_vs_line", "exp077_vectors.pt")
 
 # Tango 95% CI z (two-sided 95% -> 1.959963984540054)
 Z_95 = 1.959963984540054
@@ -176,6 +185,13 @@ def crash_guard(mode, bundle_dir=None):
                 f"crash-guard: probe archive sha256 mismatch: got {digest}, "
                 f"signed pin {RECORDS_SHA256}"
             )
+        # 4b. B_agg anchor archive present (content validated at backend init;
+        # torch-free here, so existence only).
+        bagg_path = os.path.join(here, *BAGG_REL)
+        if not os.path.exists(bagg_path):
+            raise CrashGuardError(
+                f"crash-guard: B_agg anchor archive missing: {bagg_path}"
+            )
         try:
             recs = json.load(open(records_path))
         except Exception as e:
@@ -200,6 +216,9 @@ def crash_guard(mode, bundle_dir=None):
         "SIGMA_RATIO_RANK_VALID": (SIGMA_RATIO_RANK_VALID, 1.2),
         "CHAT_BAR": (CHAT_BAR, 0.1),
         "DELTA_MIN": (DELTA_MIN, 0.05),
+        "PI_MAX_ITER": (PI_MAX_ITER, 12),
+        "PI_STALL_TOL": (PI_STALL_TOL, 1e-3),
+        "PI_STALL_WINDOW": (PI_STALL_WINDOW, 3),
     }
     for name, (got, want) in pins.items():
         if got != want:

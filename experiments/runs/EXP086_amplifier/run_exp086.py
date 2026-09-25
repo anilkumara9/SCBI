@@ -32,6 +32,7 @@ their clearance flags (verified by the smoke test).
 import argparse
 import hashlib
 import json
+import math
 import os
 import platform
 import subprocess
@@ -172,6 +173,110 @@ class Backend:
         raise NotImplementedError
 
 
+# ---------------------------------------------------------------------------
+# EXP077 §3 verbatim probe rebuild (torch-free; testable on the build machine)
+# ---------------------------------------------------------------------------
+# Pinned to the EXP065/EXP077 construction (see
+# experiments/scripts/run_exp065_temporary_coordinate_alignment.py §3 and
+# experiments/runs/exp077/run_exp077.py TRIPLES_INDICES/QUADS_INDICES — the
+# code that PRODUCED the EXP077 archive). Fixed indices 0..59:
+#   0..14  planet 2-hop, 15..29 planet 3-hop,
+#   30..44 element 2-hop, 45..59 element 3-hop.
+# target = head entity A; foil = tail entity (C for 2-hop, D for 3-hop).
+#
+# DEVIATION NOTE (EXP084-D1 class): EXP084's run_exp084.py build_benchmark
+# claims a "verbatim" rebuild but uses DIFFERENT index tuples (a 15-cycle
+# rotation set). EXP086 does NOT follow EXP084; it follows the authoritative
+# EXP077 construction below. The EXP077 archive itself contains no prompt
+# strings (only ent/typ/correct per record), so bit-identity of the prompt
+# SET rests on this construction code, and the archive serves as the
+# SHA-256 integrity pin + 60-record probe-set definition (protocol R5d).
+
+_BENCH_PLANETS = ["Mars", "Venus", "Jupiter", "Saturn", "Mercury"]
+_BENCH_ELEMENTS = ["Iron", "Gold", "Silver", "Bronze", "Steel"]
+_BENCH_TRIPLES = [
+    (0, 1, 2), (1, 2, 3), (2, 3, 4), (0, 2, 4), (0, 1, 3),
+    (1, 3, 4), (0, 2, 3), (1, 2, 4), (0, 3, 4), (0, 1, 4),
+    (0, 1, 2), (1, 2, 3), (2, 3, 4), (0, 2, 4), (0, 1, 3),
+]
+_BENCH_QUADS = [
+    (0, 1, 2, 3), (1, 2, 3, 4), (0, 1, 3, 4), (0, 2, 3, 4), (0, 1, 2, 4),
+    (0, 1, 2, 3), (1, 2, 3, 4), (0, 1, 3, 4), (0, 2, 3, 4), (0, 1, 2, 4),
+    (0, 1, 2, 3), (1, 2, 3, 4), (0, 1, 3, 4), (0, 2, 3, 4), (0, 1, 2, 4),
+]
+
+
+def build_benchmark_items():
+    """Rebuild the 60 EXP077 probe items verbatim (prompt/target/foil/ent/typ).
+
+    Torch-free: returns plain dicts. The backend's build_probe() pins the
+    tokenizer-dependent fields (input_ids, t_tok, f_tok) on the execution node
+    and asserts ent/typ alignment with the archived EXP077 records.
+    """
+    bench = []
+    for i, (iA, iB, iC) in enumerate(_BENCH_TRIPLES):
+        A, B, C = (_BENCH_PLANETS[iA], _BENCH_PLANETS[iB], _BENCH_PLANETS[iC])
+        target_first = (i % 2 == 1)
+        q_opts = f"{A} or {C}" if target_first else f"{C} or {A}"
+        if i < 8:
+            p = (f"Premise: {A} outranks {B}. {B} outranks {C}. "
+                 f"Question: Who is higher in rank, {q_opts}? Answer:")
+        else:
+            p = (f"Premise: {C} is lower than {B}. {B} is lower than {A}. "
+                 f"Question: Who is higher in rank, {q_opts}? Answer:")
+        bench.append({"id": f"exp077_planet_2hop_{i}", "prompt": p,
+                      "target": A, "foil": C, "ent": A, "typ": "planet"})
+    for i, (iA, iB, iC, iD) in enumerate(_BENCH_QUADS):
+        A, B, C, D_ent = (_BENCH_PLANETS[iA], _BENCH_PLANETS[iB],
+                          _BENCH_PLANETS[iC], _BENCH_PLANETS[iD])
+        target_first = (i % 2 == 1)
+        q_opts = f"{A} or {D_ent}" if target_first else f"{D_ent} or {A}"
+        if i < 8:
+            p = (f"Premise: {A} outranks {B}. {B} outranks {C}. "
+                 f"{C} outranks {D_ent}. "
+                 f"Question: Who is higher in rank, {q_opts}? Answer:")
+        else:
+            p = (f"Premise: {D_ent} is lower than {C}. {C} is lower than {B}. "
+                 f"{B} is lower than {A}. "
+                 f"Question: Who is higher in rank, {q_opts}? Answer:")
+        bench.append({"id": f"exp077_planet_3hop_{i}", "prompt": p,
+                      "target": A, "foil": D_ent, "ent": A, "typ": "planet"})
+    for i, (iA, iB, iC) in enumerate(_BENCH_TRIPLES):
+        A, B, C = (_BENCH_ELEMENTS[iA], _BENCH_ELEMENTS[iB],
+                   _BENCH_ELEMENTS[iC])
+        target_first = (i % 2 == 0)
+        q_opts = f"{A} or {C}" if target_first else f"{C} or {A}"
+        if i < 7:
+            p = (f"Premise: {A} outranks {B}. {B} outranks {C}. "
+                 f"Question: Who is higher in rank, {q_opts}? Answer:")
+        else:
+            p = (f"Premise: {C} is lower than {B}. {B} is lower than {A}. "
+                 f"Question: Who is higher in rank, {q_opts}? Answer:")
+        bench.append({"id": f"exp077_element_2hop_{i}", "prompt": p,
+                      "target": A, "foil": C, "ent": A, "typ": "element"})
+    for i, (iA, iB, iC, iD) in enumerate(_BENCH_QUADS):
+        A, B, C, D_ent = (_BENCH_ELEMENTS[iA], _BENCH_ELEMENTS[iB],
+                          _BENCH_ELEMENTS[iC], _BENCH_ELEMENTS[iD])
+        target_first = (i % 2 == 0)
+        q_opts = f"{A} or {D_ent}" if target_first else f"{D_ent} or {A}"
+        if i < 8:
+            p = (f"Premise: {A} outranks {B}. {B} outranks {C}. "
+                 f"{C} outranks {D_ent}. "
+                 f"Question: Who is higher in rank, {q_opts}? Answer:")
+        else:
+            p = (f"Premise: {D_ent} is lower than {C}. {C} is lower than {B}. "
+                 f"{B} is lower than {A}. "
+                 f"Question: Who is higher in rank, {q_opts}? Answer:")
+        bench.append({"id": f"exp077_element_3hop_{i}", "prompt": p,
+                      "target": A, "foil": D_ent, "ent": A, "typ": "element"})
+    assert len(bench) == 60, f"expected 60 bench items, got {len(bench)}"
+    return bench
+
+
+# Module-level verbatim rebuild (torch-free; asserted at import).
+_BENCH = build_benchmark_items()
+
+
 class TorchBackend(Backend):
     """EXECUTION-NODE ONLY (torch + transformers + weights). UNTESTED on the
     CPU build machine (torch absent); must pass the Law #14 bundle review
@@ -198,7 +303,7 @@ class TorchBackend(Backend):
       deviation note (EXP084-D1 class) is loudly logged by load_probe_set.
     """
 
-    def __init__(self, weights_path, device="cuda"):
+    def __init__(self, weights_path, device="cuda", attn_implementation=None):
         try:
             import torch  # noqa: F401
         except ImportError:
@@ -208,44 +313,358 @@ class TorchBackend(Backend):
             )
         self.weights_path = weights_path
         self.device = device
+        # attn_implementation: None = environment default (GPU node). The CPU
+        # readiness test passes "eager" because torch's CPU flash-attention
+        # backward is unimplemented (jvp/vjp require a differentiable attn).
+        self._attn_implementation = attn_implementation
+        self._torch = None
         self._model = None
+        self._tokenizer = None
+        self._layer = None          # gpt_neox.layers[20]
+        self._b_agg = None          # historical B_agg anchor (unit vector)
+        self._v_cache = {}          # (item_idx, rank) -> unit v̂_r tensor
 
-    def load_state_dict_readonly(self):
+    # -- lazy, execution-node-only setup ---------------------------------
+    def _setup(self):
+        """Load model/tokenizer/B_agg once. Loud halt on any defect."""
         import torch
-        from transformers import AutoModelForCausalLM
+        from transformers import AutoModelForCausalLM, AutoTokenizer
+        if self._model is not None:
+            return
+        torch.use_deterministic_algorithms(True)
+        dev = self.device
+        if dev == "cuda" and not torch.cuda.is_available():
+            raise RuntimeError(
+                "TorchBackend: device='cuda' requested but CUDA is not "
+                "available on this node. Refusing to silently run a GPU-budgeted "
+                "pilot on the wrong device."
+            )
+        try:
+            torch.set_default_device(dev)
+        except Exception:
+            pass  # older torch: fall back to explicit .to() calls below
         model = AutoModelForCausalLM.from_pretrained(
-            self.weights_path, torch_dtype=torch.float32, device_map="cpu")
+            self.weights_path, torch_dtype=torch.float32, trust_remote_code=False,
+            attn_implementation=self._attn_implementation)
+        try:
+            model.to(dev)
+        except Exception:
+            pass
         model.eval()
         for p in model.parameters():
             p.requires_grad_(False)
+        tok = AutoTokenizer.from_pretrained(self.weights_path,
+                                            trust_remote_code=False)
+        self._torch = torch
         self._model = model
-        return model.state_dict()
+        self._tokenizer = tok
+        self._layer = model.gpt_neox.layers[G.LAYER_INDEX]
+        self._b_agg = self._load_b_agg()
 
-    # Stage-B methods: full implementations are execution-node code and are
-    # intentionally NOT stubbed here beyond the interface — the bundle review
-    # must verify them against §4/§6 before CEO clearance. Any call on the
-    # build machine raises loudly.
-    def stage2_derangement(self, n):
-        return R.derangement(n, R.MASTER_SEED)
+    def _load_b_agg(self):
+        """Load the historical B_agg anchor: archived EXP077 v_hat.
 
-    def _no(self, name):
-        raise RuntimeError(
-            f"TorchBackend.{name}: execution-node only (no torch here).")
+        Provenance: experiments/runs/EXP077_cone_vs_line/exp077_vectors.pt,
+        key 'v_hat' — the killed static-semantic family direction from the
+        EXP077 pilot (same model, same layer, same space). Validated loud:
+        shape (1024,), unit norm, finite.
+        """
+        import torch
+        p = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                         "..", "EXP077_cone_vs_line", "exp077_vectors.pt")
+        if not os.path.exists(p):
+            raise RuntimeError(
+                f"TorchBackend: B_agg archive missing: {p}. Refusing.")
+        d = torch.load(p, map_location="cpu", weights_only=True)
+        v = d["v_hat"].to(torch.float32).flatten()
+        if tuple(v.shape) != (G.D_MODEL,):
+            raise RuntimeError(
+                f"TorchBackend: B_agg shape {tuple(v.shape)} != "
+                f"({G.D_MODEL},). Refusing.")
+        n = float(v.norm(p=2))
+        if not (0.999 <= n <= 1.001):
+            raise RuntimeError(
+                f"TorchBackend: B_agg not unit-norm (||v||={n}). Refusing.")
+        if bool(torch.isnan(v).any()) or bool(torch.isinf(v).any()):
+            raise RuntimeError("TorchBackend: B_agg has NaN/Inf. Refusing.")
+        return (v / v.norm(p=2)).to(self.device)
+
+    # -- hook machinery ----------------------------------------------------
+    @staticmethod
+    def _take_out(output):
+        return output[0] if isinstance(output, tuple) else output
+
+    def _logits_with_delta(self, input_ids, delta):
+        """Full-model last-position logits with layer-20 output perturbed.
+
+        Adds `delta` (a (1024,) tensor, requires_grad allowed) at the answer
+        (final) position only, via a forward hook. Returns logits[0,-1,:].
+        The hook preserves the layer's tuple output structure.
+        """
+        torch = self._torch
+        layer = self._layer
+
+        def hook(module, inputs, output):
+            o = self._take_out(output)
+            pad = torch.zeros_like(o)
+            pad[:, -1, :] = delta.to(o.dtype)
+            new_o = o + pad
+            if isinstance(output, tuple):
+                return (new_o,) + tuple(output[1:])
+            return new_o
+
+        handle = layer.register_forward_hook(hook)
+        try:
+            out = self._model(input_ids=input_ids)
+        finally:
+            handle.remove()
+        return out.logits[0, -1, :]
+
+    def _capture_h_and_logits(self, input_ids):
+        """One clean forward: (h: (1024,) residual at layer 20 / answer pos,
+        logits: (V,) last-position logits)."""
+        captured = {}
+
+        def hook(module, inputs, output):
+            o = self._take_out(output)
+            captured["h"] = o[0, -1, :].detach().clone()
+
+        handle = self._layer.register_forward_hook(hook)
+        try:
+            out = self._model(input_ids=input_ids)
+        finally:
+            handle.remove()
+        return captured["h"], out.logits[0, -1, :]
+
+    # -- Stage-B interface ---------------------------------------------------
+    def load_state_dict_readonly(self):
+        self._setup()
+        return self._model.state_dict()
 
     def build_probe(self, record, i):
-        self._no("build_probe")
+        """Pin the verbatim probe: tokenize the rebuilt prompt.
+
+        The record is accepted as the protocol-pinned probe-set definition
+        (SHA-256 verified by load_probe_set); the prompt strings come from
+        the authoritative EXP077 construction (_BENCH). NOTE: no per-index
+        ent/typ alignment is asserted — the archived records carry no prompt
+        strings and their record order does not match construction order, so
+        a per-index check would be spurious. The probe SET (60 prompts) is
+        what the construction guarantees.
+        """
+        self._setup()
+        item = _BENCH[i]
+        input_ids = self._tokenizer(item["prompt"], return_tensors="pt"
+                                    ).input_ids.to(self.device)
+        t_ids = self._tokenizer.encode(" " + item["target"])
+        f_ids = self._tokenizer.encode(" " + item["foil"])
+        if len(t_ids) != 1 or len(f_ids) != 1:
+            raise RuntimeError(
+                f"build_probe: target/foil not single tokens at index {i} "
+                f"(target={t_ids}, foil={f_ids}). Refusing: correctness "
+                "endpoint requires single-token options.")
+        return {"i": i, "id": item["id"], "prompt": item["prompt"],
+                "target": item["target"], "foil": item["foil"],
+                "input_ids": input_ids, "t_tok": t_ids[0], "f_tok": f_ids[0]}
 
     def baseline_forward(self, probe):
-        self._no("baseline_forward")
+        """-> (correct: bool, logits: list[float], h: vector). 1 fwd.
+
+        Correctness (protocol §4 sketch, binding): greedy-decoded answer
+        (argmax over the full vocabulary at the answer position) vs the
+        probe's labeled correct option. Labels touch ONLY this endpoint.
+        """
+        self._setup()
+        torch = self._torch
+        with torch.no_grad():
+            h, logits = self._capture_h_and_logits(probe["input_ids"])
+        if bool(torch.isnan(h).any()) or bool(torch.isinf(h).any()):
+            raise RuntimeError(
+                f"baseline_forward: h has NaN/Inf on item {probe['i']}. "
+                "Refusing.")
+        correct = bool(int(torch.argmax(logits)) == probe["t_tok"])
+        return correct, [float(x) for x in logits.detach().cpu()], h
 
     def power_iteration(self, probe, h):
-        self._no("power_iteration")
+        """Deflated power iteration on J^T J for ranks 1..3 (protocol §4).
+
+        J(x) = dz/dh_l is never materialized: each iteration is 1 JVP
+        (torch.autograd.functional.jvp, ~1 fwd) + 1 VJP
+        (torch.autograd.functional.vjp, ~1 bwd ~= 2 fwd-equiv), applied to
+        f(delta) = last-position logits with layer-20 output += delta.
+        Deflation: project (I - V̂V̂ᵀ) before and after each JᵀJ application.
+        Converged when the Rayleigh quotient's relative change < 1e-3 for 3
+        consecutive iterations (12-iteration cap); else converged=False and
+        the runner ABORTS the item (§6.4).
+
+        -> dict(v=[v1,v2,v3], s=[σ̂1,σ̂2,σ̂3], rayleigh=[traj...],
+                n_iters=[...], converged=bool).
+        """
+        self._setup()
+        torch = self._torch
+        d = G.D_MODEL
+        input_ids = probe["input_ids"]
+        i = probe["i"]
+
+        def f(delta):
+            return self._logits_with_delta(input_ids, delta)
+
+        delta0 = torch.zeros(d, device=self.device)
+        V_prev = torch.zeros((d, 0), device=self.device)
+        vs, sigmas, trajs, n_iters = [], [], [], []
+        all_converged = True
+        with torch.enable_grad():
+            for r in range(3):
+                gen = torch.Generator(device="cpu")
+                gen.manual_seed(G.MASTER_SEED + 90000 + i * 10 + r)
+                w = torch.randn(d, generator=gen, device=self.device,
+                                dtype=torch.float32)
+                w = w / w.norm(p=2)
+                traj, consec, rho_prev = [], 0, None
+                it_done = G.PI_MAX_ITER
+                for t in range(G.PI_MAX_ITER):
+                    if V_prev.shape[1] > 0:
+                        w = w - V_prev @ (V_prev.T @ w)
+                        wn = w.norm(p=2)
+                        if float(wn) == 0.0:
+                            raise RuntimeError(
+                                "power_iteration: deflated w is zero "
+                                f"(item {i}, rank {r+1}). Loud halt.")
+                        w = w / wn
+                    # J w  (1 fwd-equiv)
+                    _f0, Jw = torch.autograd.functional.jvp(f, delta0, w)
+                    # J^T (J w)  (1 bwd ~= 2 fwd-equiv)
+                    _f0b, JTJw_t = torch.autograd.functional.vjp(
+                        f, delta0, Jw)
+                    JTJw = JTJw_t.reshape(-1)
+                    if V_prev.shape[1] > 0:
+                        JTJw = JTJw - V_prev @ (V_prev.T @ JTJw)
+                    nrm = float(JTJw.norm(p=2))
+                    if nrm == 0.0 or not math.isfinite(nrm):
+                        raise RuntimeError(
+                            "power_iteration: J^TJw degenerate "
+                            f"(item {i}, rank {r+1}, iter {t}). Loud halt.")
+                    w_new = JTJw / nrm
+                    # Rayleigh quotient rho = ||J w_new||^2 (w_new unit)
+                    _f1, Jw_new = torch.autograd.functional.jvp(
+                        f, delta0, w_new)
+                    rho = float((Jw_new.norm(p=2) ** 2))
+                    traj.append(rho)
+                    if rho_prev is not None and rho_prev > 0:
+                        rel = abs(rho - rho_prev) / rho_prev
+                        consec = consec + 1 if rel < G.PI_STALL_TOL else 0
+                    else:
+                        consec = 0
+                    rho_prev = rho
+                    w = w_new
+                    if consec >= G.PI_STALL_WINDOW:
+                        it_done = t + 1
+                        break
+                converged_r = consec >= G.PI_STALL_WINDOW
+                all_converged = all_converged and converged_r
+                sigma = math.sqrt(rho_prev) if rho_prev and rho_prev > 0 else 0.0
+                if not math.isfinite(sigma):
+                    raise RuntimeError(
+                        "power_iteration: non-finite sigma "
+                        f"(item {i}, rank {r+1}). Loud halt.")
+                v = w / w.norm(p=2)
+                vs.append(v.detach())
+                sigmas.append(sigma)
+                trajs.append(traj)
+                n_iters.append(it_done)
+                self._v_cache[(i, r + 1)] = v.detach().clone()
+                V_prev = torch.cat([V_prev, v.reshape(-1, 1)], dim=1)
+        return {"v": vs, "s": sigmas, "rayleigh": trajs,
+                "n_iters": n_iters, "converged": all_converged}
 
     def decision_normal_vjp(self, probe, h):
-        self._no("decision_normal_vjp")
+        """n̂ = grad_{h_l}(z_top1 − z_top2)(h_l(x)), unit vector (protocol D5).
+
+        Label-free: top-2 indices are taken at the unperturbed point; the
+        scalar (z_i1 − z_i2) is differentiated w.r.t. the perturbation delta.
+        1 VJP = 2 fwd-equiv. Loud halt if the gradient is degenerate.
+        """
+        self._setup()
+        torch = self._torch
+        input_ids = probe["input_ids"]
+
+        def f(delta):
+            return self._logits_with_delta(input_ids, delta)
+
+        with torch.enable_grad():
+            delta = torch.zeros(G.D_MODEL, device=self.device,
+                                requires_grad=True)
+            logits = f(delta)
+            top2 = torch.topk(logits, 2)
+            i1, i2 = int(top2.indices[0]), int(top2.indices[1])
+            s = logits[i1] - logits[i2]
+            g = torch.autograd.grad(s, delta)[0].reshape(-1)
+        nrm = float(g.norm(p=2))
+        if nrm == 0.0 or not math.isfinite(nrm):
+            raise RuntimeError(
+                f"decision_normal_vjp: degenerate gradient (item {probe['i']})."
+                " Loud halt.")
+        return (g / nrm).detach()
+
+    def _resolve_direction(self, probe, direction):
+        """Resolve a direction tag to a unit (1024,) tensor. Loud on any
+        unresolvable tag."""
+        torch = self._torch
+        i = probe["i"]
+        if direction in ("v1", "v2", "v3"):
+            key = (i, int(direction[1]))
+            if key not in self._v_cache:
+                raise RuntimeError(
+                    f"inject_and_eval: direction {direction} not computed for "
+                    f"item {i} (power iteration must precede injection). "
+                    "Loud halt.")
+            return self._v_cache[key]
+        if direction.startswith("vrand_"):
+            k = int(direction.split("_", 1)[1])
+            if k not in (0, 1):
+                raise RuntimeError(
+                    f"inject_and_eval: bad vrand norm index {k}. Loud halt.")
+            return R.generate_v_rand(i, k).to(self.device)
+        if direction == "bagg":
+            return self._b_agg
+        if isinstance(direction, tuple) and direction[0] == "permuted":
+            _, j, _k = direction
+            key = (j, 1)
+            if key not in self._v_cache:
+                raise RuntimeError(
+                    "inject_and_eval: permuted source item "
+                    f"{j} has no cached v1. Loud halt.")
+            return self._v_cache[key]
+        raise RuntimeError(
+            f"inject_and_eval: unresolvable direction {direction!r}. Loud halt.")
 
     def inject_and_eval(self, probe, h, direction, eps_frac):
-        self._no("inject_and_eval")
+        """Inject eps_frac*||h|| * direction at the answer position; re-run.
+
+        -> (correct: bool, logits: list[float]). 1 fwd. Correctness uses the
+        same greedy endpoint as baseline_forward.
+        """
+        self._setup()
+        torch = self._torch
+        dvec = self._resolve_direction(probe, direction)
+        hnorm = float(h.norm(p=2))
+        if hnorm == 0.0 or not math.isfinite(hnorm):
+            raise RuntimeError(
+                f"inject_and_eval: degenerate ||h|| on item {probe['i']}. "
+                "Loud halt.")
+        eps = eps_frac * hnorm
+        delta = (eps * dvec / dvec.norm(p=2)).to(self.device)
+        with torch.no_grad():
+            logits = self._logits_with_delta(probe["input_ids"], delta)
+        if bool(torch.isnan(logits).any()) or bool(torch.isinf(logits).any()):
+            raise RuntimeError(
+                f"inject_and_eval: NaN/Inf logits on item {probe['i']} "
+                f"(direction={direction!r}). Loud halt.")
+        correct = bool(int(torch.argmax(logits)) == probe["t_tok"])
+        return correct, [float(x) for x in logits.detach().cpu()]
+
+    def stage2_derangement(self, n):
+        return R.derangement(n, R.MASTER_SEED)
 
 
 # ---------------------------------------------------------------------------
@@ -654,7 +1073,17 @@ def cmd_run(args):
               "(signed §15; queue behind K2 -> EXP083 -> EXP084).",
               file=sys.stderr)
         return 2
-    backend = TorchBackend(args.weights or G.MODEL_ID)
+    if not args.weights:
+        print("REFUSED (exit 2): --run requires --weights pointing at a "
+              "read-only LOCAL weights snapshot. Refusing to fall back to a "
+              "HuggingFace hub ID (would attempt a network download).",
+              file=sys.stderr)
+        return 2
+    if not os.path.isdir(args.weights):
+        print(f"REFUSED (exit 2): --weights is not a directory: {args.weights}",
+              file=sys.stderr)
+        return 2
+    backend = TorchBackend(args.weights)
     budget = G.PassBudget()
     results, (verdict, evidentiary, detail) = run_full_loop(
         backend, budget, args.out, log=print)

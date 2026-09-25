@@ -1,5 +1,100 @@
 # EXP086 Lane-3 build notes (LOG-315, 2026-09-24)
 
+## Stage-B implementation wave (2026-09-25) — GPU-queue readiness
+The bundle was a Stage-A-only readiness build (see "Design decisions"
+below). The 30-day campaign's GPU-queue readiness lane required closing the
+Stage-B implementation gap honestly or documenting the blocker. This wave
+implements the full Stage-B TorchBackend per the signed §4/§6 construction.
+
+### What was implemented (run_exp086.py TorchBackend)
+- **Model loading** (`_setup`): lazy torch/transformers import; float32;
+  `.eval()`; all params `requires_grad_(False)`; deterministic algorithms;
+  loud refusal if CUDA requested but unavailable. Optional
+  `attn_implementation` (test-only; the CPU readiness test uses "eager"
+  because torch-CPU flash-attention backward is unimplemented — GPU node
+  uses the default).
+- **B_agg anchor** (`_load_b_agg`): loads `v_hat` from
+  `../EXP077_cone_vs_line/exp077_vectors.pt` (the killed static-semantic
+  family direction; same model/layer/space). Loud validation: shape
+  (1024,), unit norm, finite. Crash-guard checks file existence (4b).
+- **Probe rebuild** (`build_benchmark_items`, module-level, torch-free):
+  verbatim EXP077 construction from `experiments/runs/exp077/run_exp077.py`
+  TRIPLES_INDICES/QUADS_INDICES (the code that PRODUCED the archive;
+  matches EXP065). **EXP084-D1 deviation note:** EXP084's build_benchmark
+  claims "verbatim" but uses different index tuples; EXP086 does NOT follow
+  EXP084. The archive contains no prompt strings, so the prompt SET rests
+  on this construction code; the archive is the SHA-256 integrity pin +
+  60-record probe-set definition (R5d). No per-index ent/typ alignment is
+  asserted (archive record order ≠ construction order; such a check would
+  be spurious).
+- **Correctness** (protocol §4 sketch, binding): greedy argmax over the full
+  vocabulary at the answer position vs the labeled target token. Labels
+  touch ONLY this endpoint (Law #7).
+- **h capture** (`_capture_h_and_logits`): forward hook on
+  `gpt_neox.layers[20]`, residual stream at the final token. Tuple output
+  structure preserved.
+- **JVP/VJP** (`_logits_with_delta`): f(δ) = last-position logits with
+  layer-20 output += δ (δ at final position only). JVP via
+  `torch.autograd.functional.jvp`, VJP via `.vjp`. J never materialized.
+- **Deflated power iteration** (`power_iteration`): ranks 1..3; (I−V̂V̂ᵀ)
+  projection before/after each JᵀJ application; 12-iter cap (G.PI_MAX_ITER);
+  converged when Rayleigh-quotient relative change < 1e-3 for 3 consecutive
+  iterations (G.PI_STALL_TOL/WINDOW); else converged=False → runner ABORTS
+  item (§6.4). Seeded random init per (item, rank).
+- **Decision normal** (`decision_normal_vjp`): ∇_δ(z_top1−z_top2)|₀, unit
+  vector. Label-free (D5). Loud halt on degenerate gradient.
+- **Injection** (`inject_and_eval`): resolves v1/v2/v3 (per-item cache),
+  vrand_{0,1} (seeded, R.generate_v_rand), bagg (anchor), (permuted, j, k)
+  (item j's v1). eps = eps_frac·‖h‖. Loud on unresolvable tags, degenerate
+  ‖h‖, NaN/Inf logits.
+- **cmd_run hardening**: `--run` now requires `--weights` (local dir);
+  refuses (exit 2) if missing (would otherwise fall back to a HF hub ID
+  and attempt a network download) or not a directory.
+
+### CPU readiness test results (real weights, read-only, Δθ=0 verified)
+`readiness_cpu_test.py` + `readiness_minimal_test.py` (1 item, Pythia-410m
+snapshot, CPU):
+- Model loads; pre-hash `ec276abe3902fab0…` matches LOG-331 frozen hash.
+- build_probe: item 0 (Mars/Jupiter), t_tok=13648, f_tok=34434, seq 29.
+- baseline_forward: correct=False, ‖h‖=59.69. (1 item; NOT a headroom test.)
+- power_iteration: σ̂=[106.49, 76.18, 52.53], n_iters=[12,6,12],
+  converged=True; all v̂ unit-norm, finite. (335s CPU.)
+- decision_normal_vjp: ‖n̂‖=1.000000. inject_and_eval (vrand_0, bagg):
+  resolves, injects, returns correctness. Δθ=0 pre/post.
+- NOTE: full power_iteration + VJP in one CPU process OOM-killed (resource
+  limit, not a code bug); verified separately in fresh processes. GPU node
+  (16GB T4) has headroom. CPU flash-attention backward is unimplemented in
+  torch — the test used attn_implementation="eager"; GPU uses default.
+
+### Verification counts (this wave, actual runs)
+- test_exp086.py: 104/104 pass.
+- smoke_test.py: 16/16 pass (after moving the 911MB weights/ snapshot OUT
+  of the bundle dir — it was failing the "no weights shipped" check; the
+  snapshot lives at ~/workspace/.exp086_weights/pythia-410m, git-ignored).
+- Verdict precedence adversarial probes (7): V5 preempts V7 → KILL; V6
+  preempts V11 → KILL; V1 preempts → INVALID; V7b before V8 → HELD;
+  stage-2 gate → InvalidRunError (loud halt); V8 → PIVOT; V9 straddle →
+  HELD. All pass. (Boundary: V5 needs exceedance STRICTLY < 0.10.)
+- Mock harness 13/13 verdict scenarios pass (0.35s). The trailing Stage-A
+  synthetic eigendecomposition checks (~48×1024×1024, ~16min CPU) were not
+  re-run to completion this wave (pre-existing slowness, Stage-A already
+  executed at LOG-331); the 13 decision-path scenarios are the
+  Stage-B-relevant coverage.
+- CLI: --smoke→0; --run (no/one flag)→2; no args→2; bogus→2.
+- Signed protocol digest re-verified:
+  6fe122a0230d9dfc58a01d14c15da77f5e995e6beeae8c1f2e71af32943498f6.
+- Gate 5: run_full_loop has zero references to Stage-A/Henrici/He —
+  Stage B consumes no Stage-A outputs (advisory-only, non-binding, per §5).
+
+### Remaining blockers (honest)
+1. **Independent Law #14 Stage-B bundle review** — not yet commissioned
+   (this wave's code is new and unreviewed). Required before CEO clearance.
+2. **CEO GPU clearance + stage-2 review signoff** — user-gated.
+3. **GPU execution** — user-gated (Kaggle/Colab).
+4. Rank-validity aggregation (§5 "median" vs BUILD_NOTES "under-specified"):
+   the runner uses median-of-non-aborted-items per the protocol text;
+   flagged for the Law #14 reviewer (no silent reinterpretation).
+
 ## LOG-327 repair wave (2026-09-24) — repair of LOG-326 F1 + note corrections
 Independent Law #14 bundle review (LOG-326: SIGN-WITH-FIXES) returned two
 required fixes; both applied here, full suite re-run green:
