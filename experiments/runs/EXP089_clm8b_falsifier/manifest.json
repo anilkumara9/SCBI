@@ -1,0 +1,49 @@
+{
+  "experiment": "EXP089",
+  "bundle": "experiments/runs/EXP089_clm8b_falsifier/",
+  "signed_protocol": "experiments/protocols/EXP089_CLM8B_ADAPTATION_PREREG_SIGNED.md",
+  "signed_protocol_sha256": "87f2c47b7cbcec3db98cd88d7240b95ce7f49af9039aa0ae4ec251a2714c24cb",
+  "file_sha256": {
+    "benchmark_exp089.py": "9046f8a5ba6cf821473e884e595ff724ff8020f78485959f4f8e84616beca9ea",
+    "extract_state_embeddings.py": "60663bdf39463a04ee3d7ce784b274b8e9559751517f5881a7943ce30e37d501",
+    "score_exp089.py": "52daa988882dcc27451deda7e7403f70f684a307379f0bd4a2d50804da14d776",
+    "run_exp089.py": "e0e4a6db4ab667a6aef9638c9e55fa6c6218f7bba5891efb32a2439f56398235",
+    "test_exp089.py": "8687f2adc9915464af6591bb0fb12f1c5f249ce7032e2f1162d9373d922f69fe",
+    "BUILD_NOTES.md": "66336528ba23af9e383315440230b73cdf99cab18a16b896bc83256ff4a8ac3c"
+  },
+  "tests": {
+    "command": "python3 -m unittest test_exp089",
+    "ran": 28,
+    "passed": 28,
+    "requires": [
+      "numpy"
+    ],
+    "torch_required": false
+  },
+  "budget": {
+    "cost_usd": 0,
+    "compute": "CPU-only",
+    "est_wallclock_h": "1-2"
+  },
+  "guards": [
+    "G1 single-token",
+    "G2 state_dict hash pre/post (ec276abe\u2026e0ed)",
+    "G3 phrasing 30/30",
+    "G4 instrument deafness -> RUN-INVALID",
+    "signed-protocol digest guard",
+    "forbidden-flag refusal",
+    "--ceo-clearance gate",
+    "(ent,typ) archive byte-match -> RUN-INVALID"
+  ],
+  "known_blocker": {
+    "summary": "protocol \u00a76 (ent,typ) byte-match unsatisfiable: repo repaired builder != smoke archive (12/60 match); real execution exits RUN-INVALID",
+    "precedent": [
+      "LOG-3994 (CEO: pin SMOKE bench)",
+      "LOG-4238 (G4 FATAL, same mismatch)"
+    ],
+    "needs": "CEO/Mentor adjudication (new experiment number or recovered smoke-bench prompts)"
+  },
+  "real_execution_command": "python3 run_exp089.py --out-dir out --ceo-clearance",
+  "real_execution_licensed": false,
+  "real_execution_note": "awaits independent bundle review + CEO execution clearance; expected first outcome under current repo state: RUN-INVALID (blocker above)"
+}

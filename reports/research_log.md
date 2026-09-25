@@ -8183,3 +8183,37 @@ VERDICT: SIGN — the EXP087 bundle is clear for the CEO's GPU-clearance decisio
 Launch chain complete for EXP087: signed pre-registration (LOG-324; digest 32c27415…1358d23, byte-identical at LOG-342) → independent Law #14 bundle review (LOG-340, SIGN-WITH-FIXES F1–F3) → repair wave (LOG-341, all applied) → independent re-verification (LOG-342, SIGN) → startup smoke test (8/8 pass, --execute refusal verified). CEO clearance GRANTED for free-GPU execution.
 
 Budget: 180 measurement passes + 300 B_agg construction passes (LOG-340 observation: the archive holds no B_agg; reconstruction is the only constructible route). Queue position: behind K2 → EXP083 → EXP084 → EXP086 Stage B → EXP088; no pre-emption. Execution still requires the founder's Kaggle runs. Verdict expectations per signed protocol: R5 envelope breach → RUN-INVALID (withheld, rerun); R1–R4 break → CONTINUE; all hold → KILL.
+
+## LOG-344 — EXP089 execution bundle built + tested; protocol-level blocker found (2026-09-25)
+
+Bundle: experiments/runs/EXP089_clm8b_falsifier/ — benchmark_exp089.py (N=60 builder ported VERBATIM from experiments/runs/exp077/run_exp077.py + state_text_of/G3/archive-match helpers), extract_state_embeddings.py (frozen LOG-331 snapshot, layer 20, G1/G2/G3, lazy torch, --mock), score_exp089.py (pure-numpy cosine scoring, §7.1 TOTAL tree, G4 gate, exact binomial tail), run_exp089.py (CLI: --mock, --ceo-clearance, forbidden-flag + signed-protocol-digest refusals), test_exp089.py (28/28 PASS, numpy-only), BUILD_NOTES.md, manifest.json. No weights touched; synthetic/mock tests only; $0.
+
+Tests pin: verdict boundaries (38/60→CONTINUE, 37/60→KILL, split-tie 15/30→PIVOT, opposite tilts→PIVOT), bar sharpness (exact P(X≥38)=0.0259469…, registers 0.0260 at 3dp; P(X≥37)=0.0462), G4 deaf→RUN-INVALID, tie→foil, G1/G2 guard logic, runner refusals, mock end-to-end.
+
+MATERIAL FINDING [FACT]: the signed protocol §6 executor contract is unsatisfiable — the repo's repaired builder yields 12/60 (ent,typ) matches vs the smoke exp077_instance_records.json (first mismatch index 1: rebuilt Venus/planet vs archived Mars/planet). Forensics: the archive (Mars×6, Venus×6, …) was produced by the pre-repair benchmark builder; no retained code reproduces it (original zip 286c9576… superseded, not on disk; on-disk zip 936dbce4… embeds the repaired runner ea740625…, bench block byte-identical to repo). This independently reproduces the adjudicated LOG-3994 (CEO: pin SMOKE bench) / LOG-4238 (G4 FATAL, same mismatch) provenance break. The bundle implements the protocol-mandated guard faithfully: real execution exits RUN-INVALID (exit 3) until CEO/Mentor adjudication (new experiment number or recovered smoke-bench prompts). Mock mode documents its archive-check skip (mock makes no archive claim). Real-execution command (post bundle-review + CEO clearance): python3 run_exp089.py --out-dir out --ceo-clearance.
+
+## LOG-345 — Independent Law #14 bundle review of EXP089: SIGN-WITH-FIXES (2026-09-25)
+
+Review: experiments/protocols/REVIEWS/EXP089_LAW14_BUNDLE_REVIEW_2026-09-25.md (binding; reviewer reports to the founder directly).
+
+Verdict: SIGN-WITH-FIXES on bundle faithfulness. Signed protocol SHA-256 recomputed byte-identical (87f2c47b…4c24cb); signed file untouched.
+
+Independently verified (all by the reviewer's own executions): 28/28 tests PASS; G1 single-token guard; G2 hash algorithm byte-identical to EXP077's get_hash (sorted keys/CPU/float32/tobytes); G3 exactly 30/30 phrasing; G4 instrument-deafness gate fires RUN-INVALID before any verdict; §7.1 tree total (38/60 clean→CONTINUE, 37/60→KILL, split-at-0.5/opposite-tilts→PIVOT); bar sharp (P(X≥38)=0.0259469→0.0260; P(X≥37)=0.0462); tie-toward-foil; state text excludes question/options with 1:1 A/C balance (Law #7 holds); Law #13 pins present; refusal gates (forbidden flags, no-clearance, digest guard) all test-confirmed.
+
+§6 BLOCKER RULING (binding): the protocol's byte-match contract is genuinely UNSATISFIABLE — reviewer's own run: 12/60 (ent,typ) matches, first mismatch index 1 (Venus/planet rebuilt vs Mars/planet archived); archive hash authentic (matches §4 record); no pre-repair builder retained anywhere on disk. The signed protocol cannot execute a real run as written; the bundle faithfully implements the mandated RUN-INVALID refusal. Requires CEO/Mentor adjudication → new experiment number per the constitution.
+
+Required precision fixes (no endpoint/verdict/cost/mapping change; no new number): F1 stamp execution mode ("mock"/"real") into exp089_report.json; F2 pin device_map="cpu" explicitly in from_pretrained. Advisory: cleanest §6 repair is a new number defining the bench as the hash-pinned archived records (47281cd3…0585).
+
+Real execution NOT licensed. $0 CPU; no weights/artifacts modified (read-only; hashes re-verified).
+
+## LOG-346 — EXP089 repair wave: applied binding Law #14 bundle-review fixes F1–F2 (2026-09-25)
+
+Repair agent applied the LOG-345 SIGN-WITH-FIXES verdict's two precision fixes to experiments/runs/EXP089_clm8b_falsifier/ (bundle code only; signed protocol 87f2c47b… recomputed byte-identical, untouched).
+
+F1 (apparatus integrity on disk): run_exp089.py now captures the extraction meta and stamps report["mode"] = "mock"|"real" into exp089_report.json; score_exp089.py:main reads the colocated exp089_extraction_meta.json (falls back to "unknown") and stamps the same. A mock-run KILL is now distinguishable on disk from a real-run KILL — the authoritative verdict artifact was previously ambiguous.
+
+F2 (registered contract literal): device_map="cpu" pinned explicitly in the AutoModelForCausalLM.from_pretrained call in extract_state_embeddings.py extract_real() (signed protocol §6 registers it; the bundle had relied on the transformers CPU default; substance identical, runners already refuse GPU flags).
+
+Tests: test_exp089.py re-run — 31/31 PASS (28 original + 3 new TestModeStamp: scorer stamps "mock" with meta present, "unknown" without meta, runner stamps "mock" end-to-end). No endpoint/verdict/cost/mapping change — no new experiment number. $0 CPU; no weights or EXP077 artifacts touched (read-only). Bundle lineage clean for carry-forward to EXP090.
+
+License state: real execution NOT licensed (CEO clearance outstanding, and the §6 protocol-level blocker from LOG-345 stands — a real run will exit RUN-INVALID on the byte-match guard until adjudication via a new experiment number).
