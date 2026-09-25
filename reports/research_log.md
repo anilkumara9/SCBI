@@ -8869,3 +8869,19 @@ $0 GPU; CPU-only; no weights, no signed files, no EXP092 artifacts touched; no n
 **LOG-4347 thread-count flag:** adjudication from LOG-4345 stands — fail-safe RUN-INVALID suffices; no erratum required for SIGN (a divergent environment cannot produce a wrong verdict, only RUN-INVALID). Non-blocking: execution report should record the pinned value as a bundle assumption (bundle already does).
 
 **Verdict: SIGN — EXP093 bundle cleared for CEO execution clearance.** $0 CPU; read-only on weights, signed files, EXP092 artifacts; no real execution performed.
+
+## LOG-4349 — 2026-09-25 — EXP093 real execution: RUN-INVALID (G5 probe defect on the real path)
+
+**Act:** Execution agent (CEO clearance issued on the binding LOG-4348 SIGN). Real run: `run_exp093.py --out-dir out --ceo-clearance`, CPU-only, $0, frozen LOG-331 snapshot read-only.
+
+**Pre-run:** 21/21 unit tests pass; 17/17 smoke checks pass; signed digest `3e0f269b…` verified; draft byte-identical `33434fe3…`.
+
+**Guard sequence (from `out/exp093_real_stdout.log`):** G0 pass (bench pin `9be81626…`, 60/60, strata match); G1′ inherited + real-tokenizer cover re-executed 240/240; G2 pass on the real archived `.npz` (60/60 ‖r_i‖>1e-9, min 1.3352; mean_cos_u=−0.0160; prenorm [0.0246,0.0444]); threads pinned to 2 and asserted; G1 pre-run state-dict hash **OK** (`ec276abe…` == LOG-331 pin); G5 criterion (iii) bit-match **pass**; **G5 criterion (i) FAIL** — rel_err = 1.000e+00 > 1e-6 → RUN-INVALID (exit 3). The decision loop never started; no verdict, no statistics.
+
+**Diagnosis (bundle defect, not a measurement):** `inject.py::verify_g5_real` registers the capture hook `_capture` *before* re-attaching the injection hook. PyTorch runs forward hooks in registration order with chaining, so the capture always records the pre-injection residual — `resid_inj` is byte-identical to `resid_clean` and criterion (i) computes ‖−αv‖/‖αv‖ = 1.000e+00 exactly, the algebraic signature of a no-op capture. Confirmed with a /tmp toy-model probe of hook-ordering semantics (no weights involved). The mock path never exercised this (direct function calls — no hook ordering), which is why 21/21 + 17/17 passed: the real torch probe path was executed for the first time in this run. The decision-loop injection itself (`run_conditions_real`, single hook per item) is unaffected — only the G5 probe is defective.
+
+**Weight integrity:** `model.eval()` + `requires_grad_(False)`, all passes under `torch.no_grad()`, no optimizer; G1 pre passed; abort at G5 preceded any mutation-capable code path. Δθ = 0 stands.
+
+**Why not fixed here:** execution license covers running and reporting, not bundle repair. Same class as the F1 defect — requires a repair lane plus independent re-verification by execution on the real model (the separation of duties that caught v0.1 and F1). Recommended repair: register the capture hook *after* attaching the injection hook so `_capture` records the injected residual; then demonstrate criterion (i) rel ≤ 1e-6 on the real model, re-run suites, re-run the real execution. No protocol change needed — the registered G5 criteria are correct; the probe implementation was wrong.
+
+**Licensed claim:** the EXP093 bundle's real-path G5 probe cannot pass as written (hook-ordering defect); real execution is blocked until the probe is repaired and re-verified. EXP092 CONTINUE stands; the layer-11 causal question remains open; KILL remains the registered prior for the re-run. A RUN-INVALID is withheld, never a verdict. Report: `experiments/runs/EXP093_l11_causal/EXP093_RUN_REPORT_2026-09-25.md`; raw log: `experiments/runs/EXP093_l11_causal/out/exp093_real_stdout.log`.

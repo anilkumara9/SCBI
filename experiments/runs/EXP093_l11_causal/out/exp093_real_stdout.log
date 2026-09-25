@@ -1,0 +1,12 @@
+[run] G0 pass: bench pin 9be8162633fe19aa…, 60/60 unique tuples, strata match §2.
+[run] G1' inherited (bench-pin byte-identity with EXP092-B; EXP092 real-tokenizer cover 240/240 stands).
+[run] G2 pass (archived .npz (read-only)): 60/60 ||r_i|| > 1e-9 (min=1.3352), 60/60 v unit-norm, coherence mean_cos_u=-0.0160, prenorm=[0.0246,0.0444].
+[run] torch intra-op threads pinned: 2
+[run] loading tokenizer: /home/hatch/workspace/.exp086_weights/pythia-410m
+[run] G1' pass: 240/240 in-prompt occurrences single-token (real tokenizer, offset-mapping cover check).
+[run] loading frozen model: /home/hatch/workspace/.exp086_weights/pythia-410m
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   8%|▊         | 24/292 [00:00<00:01, 226.18it/s]Loading weights:  16%|█▌        | 47/292 [00:00<00:01, 136.03it/s]Loading weights:  22%|██▏       | 63/292 [00:00<00:01, 129.55it/s]Loading weights:  26%|██▋       | 77/292 [00:00<00:01, 119.29it/s]Loading weights:  31%|███       | 90/292 [00:00<00:02, 96.72it/s] Loading weights:  35%|███▍      | 101/292 [00:00<00:02, 95.09it/s]Loading weights:  38%|███▊      | 111/292 [00:01<00:02, 79.53it/s]Loading weights:  43%|████▎     | 126/292 [00:01<00:01, 92.19it/s]Loading weights:  47%|████▋     | 136/292 [00:01<00:01, 87.62it/s]Loading weights:  50%|█████     | 146/292 [00:01<00:01, 82.76it/s]Loading weights:  54%|█████▍    | 158/292 [00:01<00:01, 85.66it/s]Loading weights:  60%|█████▉    | 174/292 [00:01<00:01, 97.65it/s]Loading weights:  66%|██████▌   | 192/292 [00:01<00:00, 112.69it/s]Loading weights:  70%|██████▉   | 204/292 [00:01<00:00, 114.13it/s]Loading weights:  74%|███████▍  | 216/292 [00:02<00:00, 102.71it/s]Loading weights:  78%|███████▊  | 227/292 [00:02<00:00, 103.19it/s]Loading weights:  82%|████████▏ | 240/292 [00:02<00:00, 98.44it/s] Loading weights:  86%|████████▌ | 251/292 [00:02<00:00, 91.74it/s]Loading weights:  90%|█████████ | 264/292 [00:02<00:00, 92.90it/s]Loading weights:  94%|█████████▍| 274/292 [00:02<00:00, 77.52it/s]Loading weights:  99%|█████████▉| 290/292 [00:03<00:00, 81.77it/s]Loading weights: 100%|██████████| 292/292 [00:03<00:00, 96.80it/s]
+[run] model.eval() set; requires_grad_(False) on all parameters.
+[run] G1 pre-run hash OK: ec276abe3902fab0…
+RUN-INVALID: G5 FAIL [real probe (gpt_neox.layers[11])]: criterion (i) — hooked final-position residual differs from clean + alpha*v by rel 1.000e+00 > 1e-06 — RUN-INVALID (injection misplaced).
