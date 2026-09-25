@@ -8217,3 +8217,41 @@ F2 (registered contract literal): device_map="cpu" pinned explicitly in the Auto
 Tests: test_exp089.py re-run — 31/31 PASS (28 original + 3 new TestModeStamp: scorer stamps "mock" with meta present, "unknown" without meta, runner stamps "mock" end-to-end). No endpoint/verdict/cost/mapping change — no new experiment number. $0 CPU; no weights or EXP077 artifacts touched (read-only). Bundle lineage clean for carry-forward to EXP090.
 
 License state: real execution NOT licensed (CEO clearance outstanding, and the §6 protocol-level blocker from LOG-345 stands — a real run will exit RUN-INVALID on the byte-match guard until adjudication via a new experiment number).
+
+## LOG-347 — EXP090 pre-registration DRAFT: CLM-8B adaptation v2 (successor to EXP089) (2026-09-25)
+
+Draft: experiments/protocols/EXP090_CLM8B_ADAPTATION_V2_PREREG_DRAFT.md (DRAFT watermark, unsigned, licenses nothing). EXP090 (number verified free) succeeds EXP089, whose §6 executor contract was ruled CONFIRMED UNSATISFIABLE at LOG-345.
+
+Single design change (§6): the bench is the deterministic output of the verbatim port of the repaired EXP077 benchmark builder (experiments/runs/EXP089_clm8b_falsifier/benchmark_exp089.py:build_benchmark(), verified LOG-345: 28/28 tests, G3 30/30 on builder output). The EXP089 byte-for-value (ent,typ) reproduction guard is STRUCK as unsatisfiable. Replaced by a provenance pin: executor asserts SHA-256 of experiments/runs/EXP077_cone_vs_line/exp077_instance_records.json == 47281cd3dc243369be0aa5be2345663b752cdb4a329a16a37f08da5717230585 (recomputed read-only this session, character-identical to EXP089 §4 and LOG-345 records); mismatch → RUN-INVALID. Archive is provenance, not the item source.
+
+DRAFTING DISCLOSURE (§0): the CEO's brief directed the bench be defined as the hash-pinned archived records with the executor reading the 60 records directly. Drafting inspection proved that literal reading unsatisfiable: records contain only (item, ent, typ, correct, rescue_indicators) — no prompts, no foils — and their (ent,typ) multiset differs from the repaired builder's output (archive Jupiter/Saturn-heavy vs builder Mars-heavy; Counter comparison this session), so no deterministic matching rule can recover executable (prompt, A, C) items. This draft implements the closest satisfiable contract to the brief's intent; the deviation is flagged explicitly for Law #14 review, which may redirect.
+
+Unchanged from EXP089: precise question, Δθ=0 scope fence, Law #7 statement, registered bar ≥38/60 (P=0.0260) → CONTINUE / ≤37/60 → KILL free-lunch version, §7.1 TOTAL decision tree (strict >0.5 both phrasing splits), guards G1/G2/G3/G4 (instrument-deafness → RUN-INVALID), Law #13 pins, refusal gates, $0 CPU ~1–2h budget, brutal caveats (+ new caveat 6 on bench provenance). EXP089 remains on record, SUPERSEDED-BY-EXP090 for execution; its bundle modules are reused. Launch chain: draft → Law #14 review → signing → bundle build → bundle review → CEO clearance → execution.
+
+## LOG-348 — Law #14 independent review of EXP090 pre-registration DRAFT: SIGN-WITH-FIXES (2026-09-25)
+
+Review: experiments/protocols/REVIEWS/EXP090_LAW14_REVIEW_2026-09-25.md (binding; reviewer reports to the founder directly).
+
+Verdict: SIGN-WITH-FIXES. The draft's core design survives; two precision fixes required before signing (F1: correct the §0 multiset characterization — the archive is uniformly grouped, every entity x6, not "Jupiter/Saturn-heavy"; the repaired builder is Mars x21/Iron x21/Venus x7/Gold x7/Jupiter x2/Silver x2; F2: soften "guarantees" to "LOG-345-verified verbatim port implements"). Neither touches endpoint, verdict, cost, or mapping — no new experiment number.
+
+§0 deviation RULING (binding): the substitution is ACCEPTED; restructure is NOT required. The drafter's unsatisfiability finding was independently reproduced and confirmed (archived records lack prompts and foils — keys are [correct, ent, item, rescue_indicators, typ]; multisets differ; 12/60 positional match, first mismatch index 1 — fourth reproduction of the LOG-3994/4238 provenance break). The substituted contract is satisfiable by construction (builder executed: 60 items, deterministic) and non-vacuous (bar P(X>=38)=0.0259469 recomputed exactly; sharp — P(X>=37)=0.0462). Caveat 6 is LOAD-BEARING: it must survive signing verbatim; any "exactly the bench EXP077 ran" claim is unlicensed. The verdict licenses do not depend on EXP077 item-order identity — KILL/CONTINUE are claims about the geometry on a fixed registered bench. Restructure would produce the same 60 items under a new name while severing the Law #9 reuse justification — process theater, not science.
+
+Carry-over verified by normalized section diff: §1/§3/§5/§9 identical; §2/§4/§7/§8/§10/§11/§12 benign deltas only; §6 the single declared design change. No silent hypothesis shift. EXP089 remains on record, SUPERSEDED-BY-EXP090 for execution only (Law #8).
+
+All review reads were read-only; no weights, artifacts, or signed files modified.
+
+## LOG-349 — Applied binding Law #14 fixes F1–F2 to EXP090 DRAFT pre-registration (2026-09-25)
+
+Revision agent applied the LOG-348 SIGN-WITH-FIXES verdict (experiments/protocols/REVIEWS/EXP090_LAW14_REVIEW_2026-09-25.md) to the unsigned draft experiments/protocols/EXP090_CLM8B_ADAPTATION_V2_PREREG_DRAFT.md. Documented revision of an unsigned draft — no new experiment number; DRAFT watermark retained; registered bar (≥38/60, P=0.0260), Δθ=0 scope fence, and the §0 substitution unchanged; caveat 6 verified verbatim.
+
+F1 (record-accuracy): §0 disclosure corrected — the archive is NOT "Jupiter/Saturn-heavy"; it is uniformly grouped (Mars/Venus/Jupiter/Saturn/Mercury ×6 planet; Iron/Gold/Silver/Bronze/Steel ×6 element), vs the repaired builder at Mars×21, Iron×21, Venus×7, Gold×7, Jupiter×2, Silver×2. Figures independently verified this session by the revision agent's own Counter comparison (read-only): archive Counter confirms every entity ×6 (60 records, keys [correct, ent, item, rescue_indicators, typ] — no prompts, no foils); builder Counter confirms Mars×21/Iron×21/Venus×7/Gold×7/Jupiter×2/Silver×2. Conclusion unchanged (multisets differ; no matching rule).
+
+F2 (wording): §6 "the verbatim port guarantees the bench is the registered construction" → "the LOG-345-verified verbatim port implements the registered construction (same vocab lists, index arrays, prompt templates; only addition is the `phrasing` provenance field)."
+
+Launch-chain position: draft revised → awaiting signing (CEO), then bundle build → independent bundle review → CEO execution clearance → execution. Still licenses nothing.
+
+## LOG-350 — EXP090 SIGNED (CEO, 2026-09-25)
+
+Signed experiments/protocols/EXP090_CLM8B_ADAPTATION_V2_PREREG_SIGNED.md.
+SHA-256: 440dd6a53ab88a199c88a57e629768aa9414cc1f9d907b33e2ab6019aa79c0ab
+Signing basis: LOG-334 → LOG-335/336/337/338 (EXP089) → LOG-344/345 (§6 unsatisfiable, binding) → LOG-347 (EXP090 draft) → LOG-348 (Law #14 SIGN-WITH-FIXES, §0 substitution accepted) → LOG-349 (F1/F2 applied, CEO-verified, caveat 6 verbatim). Registered bar: ≥38/60 (P=0.0260) → CONTINUE; ≤37/60 → KILL free-lunch version; §7.1 total tree; G4 instrument-deaf → RUN-INVALID. Scope fence: Δθ=0, zero-shot only. DRAFT WATERMARK marked superseded per LOG-329 lesson. Licensed: execution-bundle build (CPU) may proceed. CPU execution, ~1–2h, $0.
