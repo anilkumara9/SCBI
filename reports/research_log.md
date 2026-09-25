@@ -8768,3 +8768,19 @@ Full review: `experiments/protocols/REVIEWS/EXP092_LAW14_VERDICT_REVIEW_2026-09-
 **Non-blocking recommendations:** R1 (anisotropy-alignment diagnostic) and R3 (correction-magnitude correlation) applied as non-binding secondaries (§4.3); R2 deferred to bundle-build discretion; R4 noted as a bundle-build checkpoint (§7).
 
 **Next:** independent Law #14 re-verification of F1–F9 (F1 by execution on the real `.npz`) → SIGN → bundle build. $0 CPU.
+
+---
+
+## LOG-4342 — 2026-09-25 — EXP093 draft v0.2: independent Law #14 narrow re-verification SIGN (binding)
+
+**Target:** `experiments/protocols/EXP093_L11_CAUSAL_PREREG_DRAFT.md` v0.2 (UNSIGNED, commit `ca88c95`), fixing the LOG-4340 SIGN-WITH-FIXES ruling's F1–F9. Review addendum appended to `experiments/protocols/REVIEWS/EXP093_LAW14_REVIEW_2026-09-25.md` (append-only; original review untouched).
+
+**Verdict: SIGN — all nine LOG-4340 upgrade conditions met; the EXP093 pre-registration is cleared for bundle build.** This SIGN does not clear execution — bundle review, CEO execution clearance, and the guard chain remain ahead.
+
+**F1 (execution, load-bearing):** recomputed the §3.1 LOO max-cosine construction on the real archived `exp092_embeddings.npz` (read-only, reviewer-written code, zero bundle imports). All registered values reproduced exactly: min_i ‖r_i‖ = 1.3352; all 60 ‖r_i‖ > 1e-9; all 60 v^{−i} unit-norm (min=max=1.0 to 10 decimals); mean pairwise cosine(u_i,u_j) = −0.0160; pre-normalization shared-direction norm ∈ [0.0246, 0.0444]; max pairwise cosine among v^{−i} = 0.9554. The v0.1 degenerate construction additionally confirmed zero on the real data (float64 max norm 0.000e+00) — the identity is analytic. Textual: §3.1 carries per-item normalization before averaging, the ‖r_i‖ > 1e-9 assertion, and the dated v0.1 correction note (error preserved, not erased); conforming edits in §1(1), §1(4), §5, G2, Appendix A all present.
+
+**F2–F9 (textual):** all verified — G4 margin tolerance 1e-4 with registered reference −0.0018 (full-precision −0.001819); explicit PIVOT(c) contrary-stratum arm with new-pre-registration requirement; PIVOT(b) N-vs-B routing to forensics not KILL; G5 acceptance criteria (i)/(ii)/(iii); KILL narrowed to the *shared* static family (per-item = EXP094+); CONTINUE claim carries Δ_A/Δ_C stratum breakdown + O1 caveat; torch thread pinning in G4 and §9; S2 tie rule `logp[:,0] > logp[:,1]` registered explicitly.
+
+**Registration check:** coherence diagnostic present in §3.1 and Appendix B with the implication (KILL expected, CONTINUE surprising/informative). Draft remains UNSIGNED; review file, signed EXP092 protocol, and EXP092 artifacts unmodified (git status verified).
+
+$0 CPU; read-only on weights, signed files, EXP092 artifacts. Next: bundle build → bundle review → CEO clearance → execution.
