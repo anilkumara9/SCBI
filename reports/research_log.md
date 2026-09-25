@@ -8816,3 +8816,13 @@ $0 CPU; no weights, no other signed files, no EXP092 artifacts touched.
 
 **Not done:** independent bundle review (Law #14) → CEO CPU clearance → real execution. No weights touched, no forward passes on the frozen model. $0 GPU.
 
+
+## LOG-4345 — 2026-09-25 — Independent Law #14 bundle review of EXP093: SIGN-WITH-FIXES (binding)
+
+**Act:** Independent Law #14 reviewer (binding; reports to the founder). Bundle: `experiments/runs/EXP093_l11_causal/` (LOG-4344 build, commit `259d3d8`). Review file: `experiments/protocols/REVIEWS/EXP093_LAW14_BUNDLE_REVIEW_2026-09-25.md`.
+
+**Verified by execution:** signed-protocol digest under the blanking rule matches `3e0f269b…` (tamper test refuses); direction builder reproduces all registered G2 measurements on the real `.npz` (min ‖r‖=1.3352, mean cos u=−0.0160, prenorm [0.0246,0.0444], max cos v=0.9554; 60/60; v0.1 degenerate construction absent); launch-chain gates airtight (no-clearance → exit 2 before any guard/weight access; `--gpu` → exit 2; inject.py library-only, no standalone weight path); all guards implemented in registered order; all six verdict scenarios route correctly on independent synthetic data; tie rule strict; suites re-run 21/21 + 17/17, torch never imported; zero forward passes, weights untouched.
+
+**One load-bearing fix (F1):** `stratum_stats` computes Δ as float `acc_P − acc_B`; the exactly-at-bar case (6/60 aggregate, 3/30 stratum) yields `0.09999999999999998 < 0.10` and misroutes a CONTINUE-worthy outcome. Fix: integer count-difference before dividing (`(nP−nB)/n`). One-directional (can only demote exact-bar), mechanical, no science change. Builder's three flagged items (THREAD_PIN=2 assumption, G4 fail-fast order, G5 single probe) all ACCEPTABLE per the registered protocol.
+
+**Conditions for SIGN:** apply F1, re-run suites + the six-scenario probe set; re-verification is a check. $0 CPU; read-only on weights, signed files, EXP092 artifacts.
