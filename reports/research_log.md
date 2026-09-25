@@ -8119,3 +8119,67 @@ All six fixes verified present by marker grep. Launch-chain position: draft revi
 Signed experiments/protocols/EXP089_CLM8B_ADAPTATION_PREREG_SIGNED.md.
 SHA-256: 87f2c47b7cbcec3db98cd88d7240b95ce7f49af9039aa0ae4ec251a2714c24cb
 Signing basis: LOG-334 → LOG-335 → LOG-336 (Law #14 SIGN-WITH-FIXES, F1–F6) → LOG-337 (all six applied, CEO-verified). Registered bar: ≥38/60 (P=0.0260) → CONTINUE; ≤37/60 → KILL free-lunch version; aggregate-≥38 without strict >0.5 on both phrasing splits → PIVOT; G4 instrument-deaf → RUN-INVALID. Scope fence: Δθ=0, zero-shot only; trained heads need a new number + founder license. Inner draft-status line superseded per LOG-329 lesson (no retained stale text). Licensed: execution-bundle build (CPU) may proceed. CPU execution, ~1–2h, $0.
+
+## LOG-339 — EXP087 execution bundle BUILT and tested on CPU (build agent, 2026-09-25)
+
+Built experiments/runs/EXP087_translation_signature/ per the signed protocol (experiments/protocols/EXP087_TRANSLATION_SIGNATURE_PREREG_SIGNED.md, SHA-256 32c27415b20fa0d07adb4fffb61127859c5e726fbfecff642a89e91fc1358d23 — verified untouched; erratum ERRATUM_EXP087_STALE_WATERMARK_2026-09-24.md + LOG-329 precedence rule honored: signed header + at-signing R5 resolution (mu-hat outside [0.649, 0.849] -> RUN-INVALID) = binding layer; draft's struck CONTINUE mapping rejected).
+
+Components: exp087_benchmark.py (verbatim 60-item benchmark, pinned order O, SHA-256 prompt hashing, G2 byte-identity check 60/60 vs EXP066 archive), exp087_guards.py (model/layer/N/alpha/R5-envelope pins, startup crash guard, frozen-backbone SHA-256 guard, dual-flag refusal gate: --bundle-review-signoff AND --ceo-gpu-clearance), exp087_rng.py (master seed 20260925, second seed prohibited), exp087_join.py (pinned K1 c_i join: O order, 60 unique keys, SHA-256 prompt identity, JoinError on any failure), exp087_statistics.py (mu-hat/envelope, positivity, rescue-set Hamming, subset, McNemar b/c, Pearson r + deterministic one-sided t p-value, 4-sigma LayerNorm diagnostic), exp087_verdicts.py (R5 precedence; headroom gate; R1-R4 -> CONTINUE; all-hold -> KILL), exp087_support.py (verbatim EXP066 B_agg construction, 150 support pairs; torch-free aggregation), run_exp087.py (--analyze CPU path / --mock / --execute; --execute refuses exit 2 without BOTH flags), test_exp087.py, smoke_test.py, mock_harness.py, BUILD_NOTES.md, manifest.json, requirements.txt.
+
+Grounding check (2026-09-25, real archive + real K1 c vector): mu_arch = 0.74921 (in envelope), r(pinned O pairing) = 0.49708 (R4 passes, p = 2.67e-05), r(sorted-key pairing) = -0.21388 — pairing is load-bearing, the pinned join exists to prevent exactly this failure.
+
+Actual test counts (nothing invented): test_exp087.py 59/59 pass; smoke_test.py 8/8 pass; mock_harness.py 8/8 scenarios (S1 KILL; S2-R1/S3-R2/S4-R3/S5-R4 CONTINUE by row; S6 R5 RUN-INVALID; S7 join-failure -> JoinError; S8 archived-data reproduction).
+
+§8 delegated items 3-5 resolved (LOG-329 Order 3): (3) no second seed for C1 — deterministic under pinned snapshot/environment, would exceed the 180-pass budget; (4) LayerNorm saturation 4-sigma rule = exact two-sided |dm_i - mu-hat| > 4*sample_std(ddof=1), DIAGNOSTIC ONLY, no verdict force; (5) KILL write-up venue = boundary-paper §5.4 addendum, documentation-only, no endpoint/cost/mapping change. All in BUILD_NOTES.md.
+
+PROVISIONAL build-lane interpretations flagged for independent review (NOT signed protocol text): (a) GROSS_CORRUPTION_BAR = 4 for guard §3(iii) "large deviation" (reviewer may accept/replace/strike; any positive count already maps via R1 -> CONTINUE); (b) execution-time pinned-join failure -> RUN-INVALID (apparatus) rather than R4 on mis-paired data; (c) headroom quantified as [0.40, 0.70] from the qualitative "headroom on both sides" requirement.
+
+LICENSE STATE: bundle construction CPU-only ($0 GPU, authorized under standing orders). GPU execution NOT LICENSED — independent Law #14 bundle review (independent of the build lane) must SIGN first, then CEO GPU clearance. Queue position behind K2 -> EXP083 -> EXP084 -> EXP086 Stage B -> EXP088 per the bundle policy. No execution of any kind performed or authorized by this build.
+
+## LOG-340 — Independent Law #14 BUNDLE review of EXP087: SIGN-WITH-FIXES (2026-09-25)
+
+Reviewer: Independent Scientific Mentor & Adversarial Reviewer (reports directly to the founder; binding).
+Review file: experiments/protocols/REVIEWS/EXP087_LAW14_BUNDLE_REVIEW_2026-09-25.md.
+Target: experiments/runs/EXP087_translation_signature/ (LOG-339 build, CPU, $0 GPU).
+
+Verdict: SIGN-WITH-FIXES. The bundle is faithful to the signed protocol in every registered endpoint, verdict row, guard, and budget. Three fixes required before CEO GPU-clearance consideration; none changes a registered endpoint/verdict/cost/mapping (no new experiment number).
+
+Binding adjudications: A1 GROSS_CORRUPTION_BAR=4 ACCEPTED (preserves registered R1 for c in {1,2,3}; RUN-INVALID only where the run demonstrably isn't the registered C2 arm); A2 execution-time join-failure → RUN-INVALID ACCEPTED (ratified); A3 headroom [0.40,0.70] + violation→RUN-INVALID ACCEPTED (band is protocol text, not provisional — record corrected).
+
+Required fixes: F1 pin the HF snapshot revision (9879c9b5f8bea9051dcb0e68dff21493d67e9d4f, LOG-331) in the --execute path's from_pretrained calls — without it a silent wrong-revision download runs to a verdict on the wrong weights, undetectable by the Δθ=0 or G2 guards; F2 log the FULL pre/post state-dict hash + pinned revision in the execution report JSON; F3 repair the false BUILD_NOTES claim about exp087_rng.require_single_seed (function doesn't exist; resolution itself is satisfied de-facto).
+
+Faithfulness verified by primary-source cross-check (not trust): bridge vector and broadcast hook are character-level verbatim vs the EXP066 runner; B_agg construction verbatim (5 vocabs, index tables, prompt templates, hidden_states[L+1] readout, aggregation math); G2 byte-identity passes; pinned join reproduces r=0.49708 (sorted-key gives -0.21388); R5 RUN-INVALID precedence dominates even co-occurring mechanism breaks; refusal gates exit 2 pre-weight-access; t p-value independently recomputed (one-sided p=2.671e-05 — the protocol's "5.3e-05" parenthetical is the two-sided value; bundle implements the registered one-sided rule correctly).
+
+Independent test reruns (this review): test_exp087.py 59/59, smoke_test.py 8/8, mock_harness.py 8/8. Signed protocol SHA-256 verified untouched (32c27415…1358d23).
+
+GPU execution NOT licensed. On F1–F3 application (verified by diff), the bundle is clear for the CEO's GPU clearance decision. Queue: behind K2 → EXP083 → EXP084 → EXP086 Stage B → EXP088.
+
+## LOG-341 — EXP087 repair wave: applied binding Law #14 bundle-review fixes F1–F3 (2026-09-25)
+
+Repair agent applied the LOG-340 SIGN-WITH-FIXES verdict (experiments/protocols/REVIEWS/EXP087_LAW14_BUNDLE_REVIEW_2026-09-25.md) to the bundle only. Signed protocol SHA-256 (32c27415b20fa0d07adb4fffb61127859c5e726fbfecff642a89e91fc1358d23) untouched — verified via git status (no modification).
+
+F1 (apparatus integrity): added G.MODEL_REVISION = "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f" (LOG-331 pinned snapshot) in exp087_guards.py; both --execute from_pretrained calls in run_exp087.py now pass revision=G.MODEL_REVISION. Blocks a silent wrong-revision download that would run to a verdict on the wrong weights — undetectable by the Δθ=0 guard (pre==post only) or G2 (prompts only). Changing the pin is a design change → NEW experiment number.
+F2 (precision): execute() now injects the FULL state_dict_hash_pre / state_dict_hash_post, model_id, model_revision, and delta_theta_zero into the report dict written by write_report — revision/pin failures are detectable post-hoc in the report JSON, not just as 16 hex chars on stdout.
+F3 (precision): repaired the false BUILD_NOTES §8-item-3 claim that exp087_rng.require_single_seed(1) "must be called on the execution path" — the function never existed (verified by repo-wide grep); enforcement is de-facto (single torch.manual_seed call on the execution path, verified exactly once). The no-second-seed resolution itself was always satisfied; only the documented mechanism was false.
+
+Binding adjudications recorded in BUILD_NOTES.md: A1 GROSS_CORRUPTION_BAR=4 ACCEPTED (binding; CEO may replace with written rationale); A2 execution-time join failure → RUN-INVALID ACCEPTED (ratified binding); A3 headroom [0.40,0.70] ACCEPTED with record correction (band is protocol §3 text, not provisional; only the violation mapping was build-lane).
+
+Re-ran all tests after repair (my own executions, 2026-09-25): test_exp087.py 59/59 pass; smoke_test.py 8/8 pass (incl. --execute refusal exit 2); mock_harness.py 8/8 scenarios pass (S1 KILL; S2–S5 CONTINUE by row; S6 R5 RUN-INVALID; S7 JoinError→RUN-INVALID; S8 archived r_pinned=0.49708, p=2.67e-05, r_sorted=-0.21388, μ̂_arch=0.74921 in envelope). No change to endpoint, verdict, cost, or mapping — no new experiment number. License state: GPU execution still NOT licensed; on this repair the bundle is clear for the CEO's GPU-clearance decision (queue: behind K2 → EXP083 → EXP084 → EXP086 Stage B → EXP088; no pre-emption).
+
+## LOG-342 — Independent re-verification of EXP087 repair wave: SIGN (2026-09-25)
+
+Re-verifier (reports to the founder directly; binding): the LOG-341 repair wave applying LOG-340 fixes F1–F3 was verified by fresh inspection and fresh execution — nothing taken on attestation.
+
+F1 CONFIRMED: exp087_guards.py:31 pins MODEL_REVISION = "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f"; both --execute from_pretrained calls (model line 159, tokenizer line 162) pass revision=G.MODEL_REVISION. F2 CONFIRMED: write_report injects model_id, model_revision, full state_dict_hash_pre/post, delta_theta_zero (run_exp087.py:247-251). F3 CONFIRMED: false require_single_seed "must be called" claim removed from BUILD_NOTES.md; de-facto enforcement documented; exactly one torch.manual_seed call in the bundle (line 151); repo-wide grep shows no code references the nonexistent function.
+
+Independent test reruns (re-verifier's own executions): test_exp087.py 59/59 pass; smoke_test.py 8/8 pass; mock_harness.py 8/8 scenarios pass (S1 KILL; S2–S5 CONTINUE by correct row; S6 R5 RUN-INVALID; S7 JoinError→RUN-INVALID; S8 archived reproduction r_pinned=0.49708, p=2.67e-05, r_sorted=-0.21388, mu_arch=0.74921 in envelope).
+
+Signed protocol SHA-256 recomputed: 32c27415b20fa0d07adb4fffb61127859c5e726fbfecff642a89e91fc1358d23 — byte-identical to LOG-330/LOG-340 records. Binding adjudications A1–A3 transcribed without exception. No endpoint/verdict/cost/mapping change — no new experiment number.
+
+VERDICT: SIGN — the EXP087 bundle is clear for the CEO's GPU-clearance decision. GPU execution remains NOT licensed until clearance. Queue on clearance: behind K2 → EXP083 → EXP084 → EXP086 Stage B → EXP088; no pre-emption. Re-verification note: experiments/protocols/REVIEWS/EXP087_REPAIR_REVERIFY_2026-09-25.md. $0 CPU; no weights touched.
+
+## LOG-343 — CEO GPU CLEARANCE GRANTED: EXP087 (2026-09-25)
+
+Launch chain complete for EXP087: signed pre-registration (LOG-324; digest 32c27415…1358d23, byte-identical at LOG-342) → independent Law #14 bundle review (LOG-340, SIGN-WITH-FIXES F1–F3) → repair wave (LOG-341, all applied) → independent re-verification (LOG-342, SIGN) → startup smoke test (8/8 pass, --execute refusal verified). CEO clearance GRANTED for free-GPU execution.
+
+Budget: 180 measurement passes + 300 B_agg construction passes (LOG-340 observation: the archive holds no B_agg; reconstruction is the only constructible route). Queue position: behind K2 → EXP083 → EXP084 → EXP086 Stage B → EXP088; no pre-emption. Execution still requires the founder's Kaggle runs. Verdict expectations per signed protocol: R5 envelope breach → RUN-INVALID (withheld, rerun); R1–R4 break → CONTINUE; all hold → KILL.
