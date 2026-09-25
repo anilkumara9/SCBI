@@ -77,9 +77,9 @@ def stratum_stats(correct_B, correct_P, correct_N, idx):
     B = np.asarray(correct_B, dtype=bool)[idx]
     P = np.asarray(correct_P, dtype=bool)[idx]
     N = np.asarray(correct_N, dtype=bool)[idx]
-    acc_B, _ = _acc(B)
-    acc_P, _ = _acc(P)
-    acc_N, _ = _acc(N)
+    acc_B, nB = _acc(B)
+    acc_P, nP = _acc(P)
+    acc_N, nN = _acc(N)
     b = int((~B & P).sum())   # B wrong -> P right
     c = int((B & ~P).sum())   # B right -> P wrong
     p = mcnemar_exact_p(b, c)
@@ -87,7 +87,11 @@ def stratum_stats(correct_B, correct_P, correct_N, idx):
     b_n = int((~B & N).sum())
     c_n = int((B & ~N).sum())
     p_n = mcnemar_exact_p(b_n, c_n)
-    delta = acc_P - acc_B
+    # F1 (LOG-4345): compute delta from integer count differences BEFORE
+    # dividing. acc_P - acc_B on float means gives 0.09999999999999998 at
+    # the exactly-at-bar case (nP-nB=6, n=60), which would misroute a
+    # CONTINUE-worthy outcome. (nP-nB)/n is exactly 0.1.
+    delta = (nP - nB) / len(idx)
     mono = bool(acc_P > acc_B > acc_N)
     return {
         "n": int(len(idx)),
@@ -95,7 +99,7 @@ def stratum_stats(correct_B, correct_P, correct_N, idx):
         "delta": delta,
         "mcnemar_b": b, "mcnemar_c": c, "mcnemar_p": p,
         "mcnemar_NvB_b": b_n, "mcnemar_NvB_c": c_n, "mcnemar_NvB_p": p_n,
-        "delta_N": acc_N - acc_B,
+        "delta_N": (nN - nB) / len(idx),
         "monotone": mono,
         "bars": bool(delta >= DELTA_BAR and p < ALPHA and mono),
     }
