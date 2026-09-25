@@ -8747,3 +8747,24 @@ Full review: `experiments/protocols/REVIEWS/EXP092_LAW14_VERDICT_REVIEW_2026-09-
 **F2–F9 (required):** F2 — G4's 1e-6 margin tolerance vs the 4-decimal reference −0.0018 (true −0.001819) is self-defeating → 1e-4 tolerance; F3 — C-first-only full significance is unhandled (neither KILL's condition nor licensed claim admits it) → explicit PIVOT(c) forensics arm, not KILL-with-note; F4 — significant N-vs-B with non-significant P-vs-B routes to PIVOT(b) forensics, not KILL; F5 — G5 acceptance criteria unregistered → register probe criteria (residual = unhooked + αv within rel. 1e-6; other positions < 1e-9; B bit-matches hook-free reference); F6 — KILL program consequence must read "*shared* static-injection family stands down at layer 11" (per-item directions survive as EXP094+); F7 — licensed CONTINUE claim must carry the stratum breakdown and the O1 phrasing caveat; F8 — G4 exact-reproduction needs torch thread-count pinning; F9 — register S2's tie rule (or assert zero ties) so exact 36/60 is well-defined.
 
 **Point-by-point:** Law #15 holds (10pp is a registered program convention, not a licensed prediction — the draft is explicit); v1 confounds are dead (LOG-4338 shortcut analysis); the −v arm is a genuine falsifier; O1 asymmetry handling is sound once F3 makes it total; the interpretation boundary is airtight (label-informed, steerability-only, LOG-204 cited, no hype-creep vector). Four non-blocking recommendations: R1 anisotropy-decomposition diagnostic, R2 α dose-response, R3 correction-magnitude correlation, R4 bundle-review checkpoint. No weights touched; $0 CPU; read-only on signed files and EXP092 artifacts. Committed locally (no push per standing rule).
+
+## LOG-4341 — 2026-09-25 — EXP093 draft v0.2 produced: LOG-4340 F1–F9 applied (pre-registration agent, reporting to CEO Nova)
+
+**Target:** `experiments/protocols/EXP093_L11_CAUSAL_PREREG_DRAFT.md` v0.2 (UNSIGNED — no signed protocol touched; review file and EXP092 artifacts read-only).
+
+**Fixes applied per the binding LOG-4340 SIGN-WITH-FIXES ruling:**
+- **F1:** §3.1's degenerate construction (identically-zero LOO mean of prototype residuals) replaced with the review's exact replacement text: the maximum-average-cosine shared correction direction (per-item normalization before averaging); ‖r_i‖>1e-9 assertion added; the v0.1 formula preserved on record in a dated correction note (error-preservation standard — not silently erased). Conforming edits: §1(1), §1(4) license paragraph, §5 CONTINUE claim wording, G2, Appendix A (top-PC rejected alternative).
+- **F2:** G4 margin tolerance 1e-6 → 1e-4 (registered reference −0.0018; full-precision −0.001819 per LOG-4338).
+- **F3:** explicit PIVOT(c) arm — C-first-only full significance → mechanism forensics (replaces the incoherent KILL-with-note parenthetical).
+- **F4:** wrong-sign N-vs-B significance routes to PIVOT(b) forensics, not KILL.
+- **F5:** G5 acceptance criteria registered ((i) relative 1e-6 on probe; (ii) <1e-9 elsewhere; (iii) condition-B logits bit-match).
+- **F6:** KILL program consequence narrowed to the *shared* static family (§5 and §1(2) conformed; per-item static directions remain EXP094+ material).
+- **F7:** §5 CONTINUE licensed claim carries the stratum breakdown (Δ_A = __, Δ_C = __) and the O1 caveat.
+- **F8:** torch intra-op thread count pinned to the EXP092 extraction value, recorded in run meta, asserted before condition B (G4 + §9).
+- **F9:** S2's tie rule registered explicitly (EXP092 scorer `s2_lm_baseline`: strict `logp[:,0] > logp[:,1]`; armed but not triggered in EXP092 — the 36/60 G4 target is well-defined under it).
+
+**Registered coherence diagnostic (from LOG-4340's execution verification):** mean pairwise cosine(u_i,u_j) = −0.0160; pre-normalization shared-direction norm ∈ [0.0246, 0.0444]; min_i ‖r_i‖ = 1.3352 — ~3% coherent. Registered implication: KILL is the expected outcome; a CONTINUE would be surprising and informative. Recorded in §3.1 and Appendix B.
+
+**Non-blocking recommendations:** R1 (anisotropy-alignment diagnostic) and R3 (correction-magnitude correlation) applied as non-binding secondaries (§4.3); R2 deferred to bundle-build discretion; R4 noted as a bundle-build checkpoint (§7).
+
+**Next:** independent Law #14 re-verification of F1–F9 (F1 by execution on the real `.npz`) → SIGN → bundle build. $0 CPU.
