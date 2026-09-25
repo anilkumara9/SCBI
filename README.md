@@ -2,7 +2,7 @@
 
 **A falsification-first research program asking whether a frozen language model can become more cognitively capable through inference-time computation alone.**
 
-- **Status:** active research · 70+ experiment runs · 249 research-log entries (as of 2026-09-25)
+- **Status:** active research · 70+ experiment runs · 251 research-log entries (as of 2026-09-25)
 - **License:** Apache-2.0
 - **Paper:** in preparation — boundary/negative-result workshop draft in `reports/paper_draft.md`
 
@@ -24,6 +24,32 @@ If you just landed on this repository, follow this path. Everything below is exp
 
 ---
 
+## Why this bet matters — and why the industry should care
+
+Training the biggest models is hitting walls:
+
+- **Cost.** Frontier training runs cost hundreds of millions of dollars, roughly 10× per generation.
+- **Data.** High-quality human text is finite; the field is approaching the data wall.
+- **Time and energy.** Months of datacenter-scale compute per run.
+
+Meanwhile a second scaling axis appeared: **inference-time compute**. Systems that "think longer" at inference gained real capability without any retraining. The bitter lesson keeps pointing the same way — methods that scale with compute win.
+
+SCBI asks the extreme version of that question: **how much of intelligence is already inside frozen weights, unlockable by better inference-time computation alone?**
+
+Formally, think of capability as $C(\theta, T)$ — $\theta$ the weights, $T$ the inference-time compute budget. The field has maximized $C$ by growing $\theta$ (ever-larger training). We fix $\theta = \theta_0$ and ask whether $\frac{\partial C}{\partial T} > 0$ in a *useful, general* way — not just longer chains of the same thought, but the model reorganizing its own representations mid-inference.
+
+**If the answer is ever "yes, substantially":**
+- 🔄 **Economics flip** — capability without retraining. Ship improvements as software, not as $100M training runs.
+- 👤 **Personalization without fine-tuning** — adapt per user and per task, at inference time.
+- 🔒 **Safety** — a frozen model is auditable; its weights are a fixed artifact you can inspect, not a moving target.
+- 🔬 **Science** — we'd finally learn what trained models *contain* versus what they can *express*.
+
+**If the answer is "no"** — and every result so far leans that way — that's boundary science with real value: it tells the industry where *not* to dig, and sharpens what training must actually provide. Either way, the answer is worth more than the cost of asking — and every test here costs $0.
+
+**Honest ledger (2026-09-25):** 251 LOG entries, zero capability gains, one genuine boundary lead (0.7 cosine similarity with zero causal transfer, replicated). The bet is alive; the evidence is strict.
+
+---
+
 ## What SCBI actually does
 
 A normal LLM run is: prompt in → frozen weights compute → answer out. SCBI inserts a loop in the middle: at inference time, the model reads its own internal activations, constructs *candidate* temporary representations, scores them, and — only if a registered selection rule accepts — injects the winner back into its own computation. Nothing is ever learned; the weights never move. The bet is that *how* a frozen model routes information at inference time might be a source of capability that training alone doesn't capture.
@@ -34,12 +60,20 @@ flowchart TD
     B --> C["Read internal activations<br/>which layer knows what?"]
     C --> D["Construct candidate<br/>temporary representations"]
     D --> E["Score candidates<br/>no test labels allowed"]
-    E --> F{"Registered<br/>selection rule:<br/>accept?"}
+    E --> F{"Registered selection rule:<br/>accept?"}
     F -- "yes" --> G["Inject into<br/>residual stream"]
     F -- "no" --> H["Leave computation<br/>untouched"]
     G --> I["Next inference step"]
     H --> I
     I --> J["Final prediction"]
+    classDef frozen fill:#1f6feb,stroke:#0d419d,color:#fff,stroke-width:2px
+    classDef action fill:#8957e5,stroke:#5a2ea6,color:#fff,stroke-width:2px
+    classDef decision fill:#9a6700,stroke:#6b4a00,color:#fff,stroke-width:2px
+    classDef neutral fill:#57606a,stroke:#424a53,color:#fff
+    class B,C frozen
+    class D,E,G action
+    class F decision
+    class A,H,I,J neutral
 ```
 
 Every box in that diagram is a falsifiable claim. Most of our experiments attack one box at a time: *is the information even there?* (localization), *does injecting it change anything?* (causality), *is the geometry we see the geometry that matters?* (mechanism).
@@ -56,7 +90,53 @@ Every experiment here is an attempt to answer that — or to kill a candidate an
 
 $$\boxed{\theta_t = \theta_0 \qquad \Delta\theta \equiv 0}$$
 
-Core SCBI experiments never update weights, biases, adapters, or normalization parameters. Every run verifies this with pre/post parameter hashes. If the weights moved, the run is invalid — no exceptions.
+$\theta$ is every parameter of the model — weights, biases, normalization terms. $t$ indexes inference steps. The equation says: *nothing learns, ever.* This rules out fine-tuning, adapters, prompt-tuning that touches weights, and any "temporary" update that isn't perfectly reversed. Every run verifies it by hashing all parameters before and after; any mismatch makes the run RUN-INVALID — not a result, a voided run.
+
+---
+
+## The math, carefully
+
+You don't need a PhD for this section — each object is given as **intuition first, then the formal bit**. These seven objects are everything our statistics rest on.
+
+### 1. The intervention — $h' = h + \alpha v$
+
+**Intuition:** we reach into the model's mid-thought activations and nudge them in a chosen direction, then watch whether its answer changes.
+
+**Formal:** $h$ is the residual-stream vector at layer $l$, final token position (dimension 1024 for Pythia-410m). $v$ is a unit direction ($\lVert v\rVert = 1$) — e.g. the "task direction" found by EXP092. $\alpha$ is a scalar strength. The hooked forward pass computes with $h + \alpha v$ instead of $h$. The **placebo** is $-v$ (sign flip): if $+v$ "works" but $-v$ works equally well, the effect is generic perturbation, not information — the claim dies.
+
+### 2. The probe — 1-NN leave-one-out (decodability)
+
+**Intuition:** can a dumb nearest-neighbor classifier read the answer out of a layer's activations? If yes, the information is *present* there.
+
+**Formal:** 60 items, each with a 1024-dim embedding and one of 20 labels. For each item, find the nearest of the other 59 by Euclidean distance, predict its label. Accuracy = correct / 60. Chance = 1/20 = **5%**. This measures *presence of information in the geometry* — it says nothing about whether the model uses it.
+
+### 3. The permutation test — "could luck do this?"
+
+**Intuition:** shuffle the labels randomly and re-score. If random labels score nearly as well, your "finding" is luck.
+
+**Formal:** shuffle the 60 labels, recompute 1-NN accuracy; repeat ~1000× → the **null distribution** (what luck alone produces). $p$ = fraction of shuffles scoring ≥ the real accuracy. $q_{95}$ = 95th percentile of the null = the **luck ceiling**. **Effect** = accuracy − $q_{95}$ = how far above luck. Layer 11: 33.3% vs luck ceiling 13.3% → effect **+20pp**, $p = 0.000999$ (about 1 shuffle in 1000 beats it).
+
+### 4. Bonferroni — "you took 24 shots"
+
+**Intuition:** if you test 24 layers, one of them will look "significant" by accident. The bar must account for 24 chances.
+
+**Formal:** family-wise threshold $0.05 / 24 \approx 0.00208$. A raw $p = 0.03$ on a single layer means nothing after 24 tries; layer 11's $p = 0.000999$ clears the corrected bar. Eight layers did.
+
+### 5. Cosine similarity — "how aligned are two directions?"
+
+**Intuition:** 1 = same direction, 0 = unrelated, −1 = opposite.
+
+**Formal:** $\cos(u,v) = \frac{u \cdot v}{\lVert u\rVert\lVert v\rVert}$. Our cross-vocabulary concept directions scored ≈ **0.7** — visually "aligned" — and transferred exactly nothing under injection. The number that launched the dissociation finding.
+
+### 6. The guards — "prove the apparatus worked"
+
+**Intuition:** before believing any measurement, prove the injection did exactly what you asked — to a part per million. If not, the run is void, not negative.
+
+**Formal (G5):** $\frac{\lVert r_{\text{hooked}} - (r_{\text{clean}} + \alpha v)\rVert}{\lVert \alpha v\rVert} \le 10^{-6}$. In words: after our hook runs, the residual must equal clean-plus-injection almost exactly. This guard caught the LOG-4349 hook-ordering bug — the probe measured the pre-injection state, the guard refused to bless it, and the run became RUN-INVALID instead of a false result. Guards are why our negatives are trustworthy.
+
+### 7. The decision rule — "bars written before data"
+
+Every experiment pre-registers numeric bars (e.g. *"CONTINUE iff some layer $l \ne 20$ has Bonferroni-significant $p_l$ AND effect ≥ 10pp"*). The verdict is then mechanical — no human judgment at the moment of truth. That's what makes a KILL a fact rather than an opinion.
 
 ---
 
@@ -64,17 +144,22 @@ Core SCBI experiments never update weights, biases, adapters, or normalization p
 
 ### 1. Decodability ≠ causality (the dissociation)
 
-This is the single most important idea in the repository, and the source of most of our results.
+The single most important idea in the repository, and the source of most of our results.
 
 ```mermaid
 flowchart LR
     subgraph GEO ["Representation geometry<br/>(what probes see)"]
-        G["cosine similarity ≈ 0.7<br/>directions look aligned ✓"]
+        G["cosine similarity ≈ 0.7<br/>directions look aligned"]
     end
     subgraph CAUSE ["Causal intervention<br/>(what injection does)"]
-        C["static injection<br/>Δ accuracy = 0 ✗"]
+        C["static injection<br/>Δ accuracy = 0"]
     end
     G -. "does NOT imply" .-> C
+    classDef geo fill:#1f6feb,stroke:#0d419d,color:#fff,stroke-width:2px
+    classDef cause fill:#8957e5,stroke:#5a2ea6,color:#fff,stroke-width:2px
+    class G geo
+    class C cause
+    linkStyle 0 stroke:#cf222e,stroke-width:3px
 ```
 
 A *probe* can read information out of a layer (decodability). That does **not** mean the model *uses* that information when deciding (causality). EXP065/EXP066 found ~0.7 cross-vocabulary cosine similarity that transferred exactly nothing under static injection. EXP092 found task information decodable at layer 11 — EXP093 exists solely to test whether injecting it *moves decisions*. Confusing these two is the field's most common error; our review process treats it as a blocking defect.
@@ -93,6 +178,13 @@ flowchart LR
     D --> E["Execution<br/>Δθ = 0 guarded"]
     E --> F["Independent verdict review<br/>KILL / CONTINUE /<br/>PIVOT / HALT / RUN-INVALID"]
     F --> G["Logged<br/>LOG-n entry"]
+    classDef doc fill:#57606a,stroke:#424a53,color:#fff
+    classDef review fill:#9a6700,stroke:#6b4a00,color:#fff,stroke-width:2px
+    classDef build fill:#1f6feb,stroke:#0d419d,color:#fff,stroke-width:2px
+    classDef verdict fill:#8957e5,stroke:#5a2ea6,color:#fff,stroke-width:2px
+    class A,G doc
+    class B,F review
+    class C,D,E build
 ```
 
 **Pre-registration** means the question, the exact decision rule, the statistical bars, and the compute budget are written down *before* execution — so we can't move the goalposts after seeing data. **Law #14** is our independent reviewer: it reports to the founder, not to the lab's CEO, its verdicts are binding, and it recomputes statistics from primary artifacts. Twice it has caught degenerate mathematics before a single flop was spent.
@@ -108,6 +200,16 @@ flowchart TD
     Q2 -- "null result" --> KI["KILL<br/>hypothesis dead;<br/>documented & kept"]
     Q2 -- "real effect,<br/>different mechanism" --> PI["PIVOT<br/>follow the evidence<br/>elsewhere"]
     Q1 -- "partially" --> HA["HALT<br/>stop this line;<br/>record why"]
+    classDef q fill:#9a6700,stroke:#6b4a00,color:#fff,stroke-width:2px
+    classDef good fill:#1a7f37,stroke:#0f5c26,color:#fff,stroke-width:2px
+    classDef bad fill:#cf222e,stroke:#8f1a22,color:#fff,stroke-width:2px
+    classDef pivot fill:#8957e5,stroke:#5a2ea6,color:#fff,stroke-width:2px
+    classDef halt fill:#57606a,stroke:#424a53,color:#fff,stroke-width:2px
+    class V,Q1,Q2 q
+    class CO good
+    class KI,RI bad
+    class PI pivot
+    class HA halt
 ```
 
 A KILL is a success here, not a failure — it permanently closes a wrong path and costs the field nothing to re-discover. Retractions are documented in-paper, never buried.
@@ -123,9 +225,19 @@ flowchart LR
     C --> D{"Do frozen-model<br/>decisions move?"}
     D -- "yes" --> E["CONTINUE:<br/>label-informed<br/>steerability is real"]
     D -- "no" --> F["KILL:<br/>decodable ≠ causal<br/>again"]
+    classDef scan fill:#1f6feb,stroke:#0d419d,color:#fff,stroke-width:2px
+    classDef inject fill:#8957e5,stroke:#5a2ea6,color:#fff,stroke-width:2px
+    classDef q fill:#9a6700,stroke:#6b4a00,color:#fff,stroke-width:2px
+    classDef good fill:#1a7f37,stroke:#0f5c26,color:#fff,stroke-width:2px
+    classDef bad fill:#cf222e,stroke:#8f1a22,color:#fff,stroke-width:2px
+    class A,B scan
+    class C inject
+    class D q
+    class E good
+    class F bad
 ```
 
-EXP093's registered prior is openly pessimistic — the per-item correction directions are only ~3% coherent, so KILL is the expected outcome. We pre-registered it anyway, because a surprising CONTINUE would be extremely informative. That's what "falsification-first" means in practice.
+EXP093's registered prior is openly pessimistic — the per-item correction directions are only ~3% coherent, so KILL is the expected outcome. We pre-registered it anyway, because a surprising CONTINUE would be extremely informative. That's what "falsification-first" means in practice. (First execution attempt: RUN-INVALID at LOG-4349 — the G5 guard caught a hook-ordering bug in the bundle's own probe before any measurement. Repair lane running; the question stays open.)
 
 ---
 
@@ -190,7 +302,7 @@ The adopted program synthesis rates our novelty as **N1**: the tested static mec
 
 ### In flight
 
-- **EXP093 (layer-11 causal transfer)** — the causal counterpart to EXP092's correlational result. Pre-registration signed; execution bundle built and under independent review; then ~15 CPU-minutes, $0, 180 forward passes.
+- **EXP093 (layer-11 causal transfer)** — the causal counterpart to EXP092's correlational result. First execution attempt returned RUN-INVALID (LOG-4349): the G5 guard caught a hook-ordering defect in the bundle's own verification probe before any measurement — the hypothesis was never tested. Repair lane running, then independent re-verification, then re-execution (~15 CPU-min, $0).
 
 ---
 
@@ -228,7 +340,7 @@ SCBI/
 │   └── runs/                # 70+ run directories: bundle + report + artifacts
 ├── evaluation/              # Metrics, statistical tests, ablations, failure analysis
 ├── reports/
-│   ├── research_log.md      # The chronological record: 249 LOG entries — every
+│   ├── research_log.md      # The chronological record: 251 LOG entries — every
 │   │                        # verdict, kill, halt, and retraction preserved
 │   ├── paper_draft.md       # Boundary/negative-result workshop paper (~5k words)
 │   └── mentor_adoption_gate_rev2_2026-09-23.md
@@ -262,7 +374,7 @@ When documents disagree: `theory/README_DEFINITIONS.md` → `theory/README.md` �
 | EXP089/090 | CLM-8B adaptation | Superseded / RUN-INVALID (tokenization) |
 | EXP091 | Layer-20 cosine readout | KILL (31/60, p = 0.449) |
 | EXP092 | Information-bottleneck localization | CONTINUE (layer 11, p = 0.000999) |
-| EXP093 | Layer-11 causal transfer | In flight (bundle under review) |
+| EXP093 | Layer-11 causal transfer | RUN-INVALID at first execution (G5 probe defect); repair lane running |
 | K2 | Routing-contrast bypass | First in GPU queue |
 | G1 | QK null-space mechanism | KILL (theorem false as stated) |
 
@@ -319,6 +431,9 @@ GPU experiments run on the founder's own free-tier hardware (Kaggle/Colab). Bund
 
 **How do I know you didn't cherry-pick?**
 Three mechanisms: (1) pre-registration with registered decision trees, (2) an independent reviewer that recomputes statistics from primary artifacts and can kill a result, (3) an append-only log where kills, halts, and retractions are preserved — including our own retracted claims.
+
+**What's the math I need to follow this?**
+The "math, carefully" section above covers all of it: the frozen constraint, the intervention, the probe, permutation tests, Bonferroni, cosine similarity, and the guards. High-school statistics plus basic linear algebra is enough.
 
 **Where should I contribute?**
 See [Contributing](#contributing-lab-workflow) below — topic branches, PRs for everything, review before merge.
