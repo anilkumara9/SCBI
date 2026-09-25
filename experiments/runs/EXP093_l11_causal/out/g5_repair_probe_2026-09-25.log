@@ -1,0 +1,6 @@
+[probe] bench: 60 items; v[0] norm=1.000000
+[probe] G1 pre-hash: ec276abe3902fab0… pin=ec276abe3902fab0…
+[probe] G5 gate=PASS criterion_i_rel_err=4.295e-07 criterion_ii_max_abs=0.000e+00 criterion_iii_bit_match=True
+[probe] G1 post-hash match: True (Δθ=0)
+[probe] REAL-PATH G5 PROBE: PASS
+(env: ~/workspace/.venvs/exp093 — torch 2.14.0+cpu, transformers 5.17.0, safetensors, accelerate; CPU, torch.no_grad, read-only weights)

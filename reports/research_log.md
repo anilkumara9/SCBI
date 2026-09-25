@@ -8885,3 +8885,23 @@ $0 GPU; CPU-only; no weights, no signed files, no EXP092 artifacts touched; no n
 **Why not fixed here:** execution license covers running and reporting, not bundle repair. Same class as the F1 defect — requires a repair lane plus independent re-verification by execution on the real model (the separation of duties that caught v0.1 and F1). Recommended repair: register the capture hook *after* attaching the injection hook so `_capture` records the injected residual; then demonstrate criterion (i) rel ≤ 1e-6 on the real model, re-run suites, re-run the real execution. No protocol change needed — the registered G5 criteria are correct; the probe implementation was wrong.
 
 **Licensed claim:** the EXP093 bundle's real-path G5 probe cannot pass as written (hook-ordering defect); real execution is blocked until the probe is repaired and re-verified. EXP092 CONTINUE stands; the layer-11 causal question remains open; KILL remains the registered prior for the re-run. A RUN-INVALID is withheld, never a verdict. Report: `experiments/runs/EXP093_l11_causal/EXP093_RUN_REPORT_2026-09-25.md`; raw log: `experiments/runs/EXP093_l11_causal/out/exp093_real_stdout.log`.
+
+## LOG-4350 — 2026-09-25 — EXP093 G5 probe repair lane: hook-ordering defect fixed, real-path re-verified
+
+**Context:** LOG-4349 RUN-INVALID — `inject.py::verify_g5_real` registered the capture hook before re-attaching the injection hook, so the capture recorded the pre-injection residual (criterion (i) rel_err = 1.000e+00 exactly). Repair lane authorized by the CEO; no protocol change (registered G5 criteria correct; probe implementation wrong).
+
+**Fix (`experiments/runs/EXP093_l11_causal/inject.py`, `verify_g5_real` only — minimal diff):**
+1. The capture hook `_capture` is now registered *after* the injection hook's re-attach, so it observes the post-injection residual.
+2. The probe asserts the registration order explicitly via the module's ordered hook registry (`layer._forward_hooks`: injection handle id must precede capture handle id; violation → RunInvalid).
+3. The `finally` block is null-safe for the capture handle; the hook-free reference run is now truly hook-free.
+No change to the decision-loop injection (`run_conditions_real`), scoring, or any signed file.
+
+**Regression tests (`test_exp093_hook_order.py`, new torch-only module — kept out of `test_exp093.py` so that module's torch-free invariant, asserted by `test_mock_end_to_end`, stands):**
+- `test_verify_g5_real_observes_post_injection_residual`: runs the REAL `verify_g5_real` against a toy torch model — FAILS on the pre-fix code (RunInvalid, rel 1.0; demonstrated via /tmp against the git-HEAD version), PASSES on the fixed code.
+- `test_capture_first_ordering_is_provably_blind`: replicates the old registration order on a toy layer; proves the defect mechanism (rel == 1.0 exactly; single-item batch like the real probe).
+
+**Real-path re-verification (frozen LOG-331 snapshot, CPU, read-only, torch.no_grad):** G1 pre-hash `ec276abe3902fab0…` MATCH; G5 gate=PASS — criterion (i) rel_err = **4.295e-07 ≤ 1e-6**, criterion (ii) 0.0, criterion (iii) bit-match True; G1 post-hash unchanged (Δθ=0). Environment note (load-bearing for future lanes): the G1 pin reproduces only under transformers 5.17.0 (torch 2.14.0+cpu); transformers 4.x (4.44.2, 4.57.6) loads a state-dict hashing to `2ca7f6bf…` instead — a library conversion change, not a weight change (file bytes verified identical, max abs diff 0.0 on overlapping keys). Venv: `~/workspace/.venvs/exp093`. Probe script + log: `experiments/runs/EXP093_l11_causal/out/g5_repair_probe_2026-09-25.{py,log}`.
+
+**Suites:** 21/21 unit (`test_exp093.py`, torch-free) OK; 2/2 hook-order regression OK; 17/17 smoke OK.
+
+**Licensed claim:** the G5 probe defect is repaired and the repair is demonstrated by execution on the real model path. The bundle is NOT cleared for re-execution by this lane — that requires independent Law #14 re-verification of the repair plus fresh CEO clearance. EXP092 CONTINUE stands; KILL remains the registered prior for the re-run.

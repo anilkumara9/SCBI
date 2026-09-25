@@ -5,6 +5,10 @@ registered measurements on the real archived .npz (read-only), McNemar exact
 values, the §5 TOTAL decision tree on all six verdict scenarios, the tie
 rule, G5 mock verification (+ misplacement failure), the PENDING-SIGNATURE
 launch-chain gate, forbidden flags, and the --mock end-to-end path.
+
+NOTE: torch-requiring tests live in test_exp093_hook_order.py (LOG-4349
+regression). This module must stay torch-free: test_mock_end_to-end asserts
+the mock path never imports torch.
 """
 
 import io

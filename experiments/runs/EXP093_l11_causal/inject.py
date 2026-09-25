@@ -248,14 +248,32 @@ def verify_g5_real(model, tokenizer, prompt_text, v, alpha=ALPHA):
         captured["resid"] = out[0].detach().cpu().to(torch.float64).numpy()
 
     layer, _ = TorchInjectionHook.resolve_module(model)
-    cap_handle = layer.register_forward_hook(_capture)
+    cap_handle = None
     try:
         with torch.no_grad():
             # hook-free reference logits
             hook.detach()
             ref_logits = model(ids).logits[0].detach().cpu()
-            # re-attach for the disabled/enabled runs
+            # Re-attach the injection hook FIRST, then register the capture
+            # hook AFTER it. PyTorch runs forward hooks in registration order
+            # with chaining (each hook receives the previous hook's output),
+            # so the capture hook must be registered after the injection hook
+            # to observe the post-injection residual. LOG-4349: the old code
+            # registered the capture hook before this re-attach, so capture
+            # always recorded the pre-injection residual and criterion (i)
+            # measured rel_err = 1.0 exactly (the algebraic signature of a
+            # no-op capture, not a misplaced injection).
             hook.attach(model, v)
+            cap_handle = layer.register_forward_hook(_capture)
+            # Assert the registration order explicitly: the injection hook's
+            # handle must precede the capture handle in the module's ordered
+            # hook registry. A violated order is a probe defect -> RUN-INVALID.
+            _order = list(layer._forward_hooks)
+            if _order.index(hook._handle.id) > _order.index(cap_handle.id):
+                raise RunInvalid(
+                    "G5 FAIL: probe internal error — capture hook registered "
+                    "before the injection hook; capture would record the "
+                    "pre-injection residual — RUN-INVALID.")
             hook.disable()
             logits_disabled = model(ids).logits[0].detach().cpu()
             # (iii) bit-match BEFORE any injection run
@@ -274,7 +292,8 @@ def verify_g5_real(model, tokenizer, prompt_text, v, alpha=ALPHA):
             model(ids)
             resid_inj = captured["resid"].copy()
     finally:
-        cap_handle.remove()
+        if cap_handle is not None:
+            cap_handle.remove()
         hook.detach()
 
     return verify_g5(

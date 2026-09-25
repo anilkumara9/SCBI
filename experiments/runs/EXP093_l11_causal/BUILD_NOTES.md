@@ -84,3 +84,49 @@ execution has occurred.**
   PIVOT(a) → PIVOT(b) → KILL (F3/F4).
 - Mock-mode margins are arbitrary synthetic values; the mock verdict
   (KILL on the seeded synthetic data) is a pipeline artifact, not a result.
+
+---
+
+## Repair note — G5 probe hook-ordering defect (LOG-4349 → repair lane, 2026-09-25)
+
+**Defect:** `inject.py::verify_g5_real` registered the capture hook *before*
+re-attaching the injection hook. PyTorch runs forward hooks in registration
+order with chaining, so the capture recorded the pre-injection residual and
+criterion (i) measured rel_err = 1.000e+00 exactly — the algebraic signature
+of a no-op capture. The real execution aborted RUN-INVALID at G5 (LOG-4349);
+the decision-loop injection (single hook per item in `run_exp093.py`) was
+never defective.
+
+**Fix (minimal, `inject.py` only):** the capture hook is now registered
+*after* the injection hook's re-attach, and the probe asserts the order
+explicitly via the module's ordered hook registry
+(`_forward_hooks`: injection handle id must precede capture handle id; a
+violated order raises RunInvalid). The `finally` block is null-safe for the
+capture handle. No change to the decision-loop injection, scoring, or any
+signed file.
+
+**Regression tests** (`test_exp093_hook_order.py`, torch-only, kept out of
+`test_exp093.py` so that module's torch-free invariant stands):
+- `test_verify_g5_real_observes_post_injection_residual` — runs the real
+  `verify_g5_real` against a toy torch model; FAILS on the pre-fix code
+  (RunInvalid, rel 1.0), PASSES on the fixed code.
+- `test_capture_first_ordering_is_provably_blind` — replicates the old
+  registration order on a toy layer; proves the mechanism (rel == 1.0).
+
+**Re-verification required before any re-run:** the fixed probe must
+demonstrate criterion (i) rel_err ≤ 1e-6 on the real model path (read-only
+weights, Δθ=0), plus green suites (21/21 unit, 2/2 hook-order, 17/17 smoke),
+plus independent Law #14 re-verification of the repair. Re-execution needs
+fresh CEO clearance — this repair lane does not re-run the experiment.
+
+**Re-verification result (repair lane, same day):** the fixed probe was
+executed against the frozen LOG-331 snapshot (venv torch 2.14.0+cpu,
+transformers 5.17.0 — the LOG-8436 pin; transformers 4.x loads hash to a
+different value, 2ca7f6bf…, due to a state-dict conversion change, so 5.17.0
+is required for the G1 guard): G1 pre-hash `ec276abe…` MATCH,
+criterion (i) rel_err = **4.295e-07 ≤ 1e-6** PASS,
+criterion (ii) 0.0 PASS, criterion (iii) bit-match PASS,
+G1 post-hash unchanged (Δθ=0). Suites: 21/21 unit (torch-free),
+2/2 hook-order regression, 17/17 smoke. Probe script + log preserved in
+`out/g5_repair_probe_2026-09-25.{py,log}`. Awaiting independent Law #14
+re-verification of the repair + fresh CEO clearance before any re-run.
