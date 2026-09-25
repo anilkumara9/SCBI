@@ -1,0 +1,12 @@
+# EXP091 execution-bundle requirements (CPU-only, $0).
+#
+# The LOG-331 deviation (accelerate missing) recurred at EXP090's launch and
+# killed the run before extraction. It is fixed here at build time: the
+# bundle MUST pin accelerate explicitly (transformers>=5 requires it whenever
+# device_map is passed to from_pretrained — and this bundle pins
+# device_map="cpu" literally per signed-protocol §6).
+numpy>=1.26
+torch>=2.0  # CPU wheel: pip install torch --index-url https://download.pytorch.org/whl/cpu
+transformers>=4.40
+safetensors>=0.4
+accelerate>=1.0.0  # LOG-331 deviation fix; required by transformers>=5 when device_map is passed
