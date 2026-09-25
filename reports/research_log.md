@@ -8919,3 +8919,21 @@ No change to the decision-loop injection (`run_conditions_real`), scoring, or an
 **Signed protocol digest:** recomputed under the self-referential blanking rule → `3e0f269b9f2c5170d2b6ed37b2bd03f39f8eeb344914e8bb1f904709ad13db93` exact match. No signed file touched.
 
 **Binding verdict: SIGN.** The G5 probe repair is verified. Re-execution requires fresh CEO CPU execution clearance (launch chain); this SIGN covers the repair only. KILL remains the registered prior for the re-run. Review: `experiments/protocols/REVIEWS/EXP093_LAW14_REPAIR_REVERIFICATION_2026-09-25.md`.
+
+## LOG-4352 — 2026-09-25 — Independent Law #14 verdict review of EXP093 real re-execution: KILL UPHELD (binding)
+
+**Target:** real EXP093 re-execution on the repaired bundle (`b5da3c5`); raw log `experiments/runs/EXP093_l11_causal/out/exp093_rerun_stdout_2026-09-25.log`; `out/exp093_report.json`.
+
+**Binding verdict: UPHOLD KILL.** Verified from primary artifacts, recomputed with reviewer-written code (no bundle imports):
+
+1. **Statistics recomputed:** aggregate/A-first/C-first acc = 0.6000/0.9667/0.2333 identical across B/P/N; Δ = 0.0000; McNemar b = c = 0 → p = 1.0 in all six tests (P-vs-B and N-vs-B × 3 strata); monotone False; bars False. §5 tree → KILL (no PIVOT branch reachable). b = c = 0 entails per-item decision identity across conditions, so the empty flip ledger is entailed, not trusted.
+2. **Guards all pass (raw log):** G0 bench pin match; G1′ 240/240; G2 60/60 (min 1.3352, coherence −0.0160); G1 pre/post `ec276abe…` = LOG-331 pin (Δθ = 0); G5 rel_err = 4.30e-07 ≤ 1e-6, bit-match True; G4 36/60 exactly, margin −0.001819 vs ref −0.0018.
+3. **Bars as registered:** DELTA_BAR = 0.10, ALPHA = 0.05 verbatim; `decide()` order matches the signed §5 tree; no post-hoc movement.
+4. **No signed file modified:** `git diff b5da3c5` on the run dir excluding `out/` is empty; protocol digest `3e0f269b…` intact.
+5. **Not a false negative:** perturbation_ratio = 0.0474 (real nudge, ~4.7% of residual norm); G5 proves exact delivery; mean margins shifted slightly (+0.0059 P / −0.0076 N) — the perturbation reached the logits but flipped zero decisions. Causal inertness, not measurement failure.
+
+**Licensed claim (scoped):** static injection of the shared layer-11 task direction does not move decisions on EXP092-B — information ≠ influence at layer 11; the layer-20 boundary generalizes. Falsifies "≥10pp causal transfer via a shared static direction at layer 11" only; per-item directions, gated/dynamic mechanisms, and multi-layer compositions remain EXP094+ material.
+
+**Non-blocking observation:** per-item margins are not persisted to disk (Law #13 gap for decision data; aggregates only). Future bundles should write the per-item margin CSV. Does not affect this verdict.
+
+Review: `experiments/protocols/REVIEWS/EXP093_LAW14_VERDICT_REVIEW_2026-09-25.md`.
