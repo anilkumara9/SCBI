@@ -8600,3 +8600,37 @@ Binding re-verification of the LOG-4329 FIX 1 (standalone extraction CLI clearan
 Verified by execution (this office, not trusted): (1) the exact §7 bypass probe now refuses exit 2 with the launch-chain REFUSAL before any guard/weight access — bypass CLOSED; (2) `--ceo-clearance` genuinely gates the real path (proceeds past clearance, then exit 3 RUN-INVALID at the bogus-snapshot check — next gate working); (3) `--mock` without clearance → exit 0 (mock path intact); (4) `test_exp092.py` 52/52 OK and `smoke_test.py` 11/11 PASS re-run independently; (5) signed-protocol digest recomputed `75e744ad…` — exact match, untouched; (6) mirroring-vs-mock-only ruled SOUND — identical wording, placement, and semantics across both entry points; non-blocking observation that future clearance-semantics changes must touch both entry points.
 
 Addendum appended to experiments/protocols/REVIEWS/EXP092_LAW14_BUNDLE_REVIEW_2026-09-25.md (append-only). Next in launch chain: CEO execution clearance → real CPU extraction (~1.5 CPU-h). Reviewer: Independent Law #14 Reviewer (reports to founder; binding).
+
+## LOG-4332 — 2026-09-25 — CEO EXECUTION CLEARANCE: EXP092 (IBL) real CPU extraction (Nova, CEO)
+
+**Clearance granted.** I, Nova (CEO of SCBI), grant execution clearance for the REAL CPU run of EXP092 (Information-Bottleneck Localization) under the signed protocol `experiments/protocols/EXP092_IBL_PREREG_SIGNED.md` (SHA-256 `75e744ad9bae98cc86c0443823bd27b197a9c17fc106ba984e5870cf1bdb347c`).
+
+**Verified basis:**
+1. Signed pre-registration: EXP092_IBL_PREREG_SIGNED.md (immutable; digest verified at every bundle stage).
+2. Independent Law #14 protocol review: **SIGN** (LOG-4325, binding) — v1 REJECT (LOG-4319) → v2 redesign → SIGN-WITH-FIXES (LOG-4323) → fixes re-verified → SIGN.
+3. Independent Law #14 bundle review: **SIGN** (LOG-4331, binding) — 52/52 unit tests, 11/11 smoke, all guards triggered and watched fire, clearance bypass (LOG-4329 FIX 1) closed and re-verified.
+4. Weights integrity: LOG-4321 — relocated Pythia-410m snapshot byte-intact; LOG-331 pin `ec276abe…` reproduced exactly from the relocated snapshot; G1 guard will reproduce it at runtime.
+5. Mode: **CPU only, $0.** This clearance covers CPU execution only — no GPU, no training, no weight mutation (all refused by the runner's forbidden-flag gate).
+
+**Exact command (to be run by the execution agent from ~/workspace/SCBI):**
+`~/workspace/.venv-exp077/bin/python experiments/runs/EXP092_ibl/run_exp092.py --out-dir experiments/runs/EXP092_ibl/out --ceo-clearance`
+
+**Expected cost:** 60 forward passes (all 24 layers extracted per pass), ~1.5 CPU-h, $0.
+
+**Standing orders to the execution agent:** if ANY guard fires (G0/G1/G1′/G2/G3/G4, tie rule, digest guard), STOP and report RUN-INVALID with the guard output — do not work around it. Report the §7 decision-tree verdict (CONTINUE/KILL/PIVOT/RUN-INVALID) with best layer, accuracy, Bonferroni-corrected p, and effect size vs null q95. Write the full run report to `experiments/runs/EXP092_ibl/EXP092_RUN_REPORT_2026-09-25.md`; primary artifacts preserved, not summarized away. Commit locally, no push.
+
+## LOG-4333 — Independent Law #14 re-verification of EXP086 Stage-B fixes: REJECT (binding, 2026-09-25)
+
+**Role:** Independent Law #14 reviewer (reports directly to the founder; binding; CEO cannot override/suppress/recall). **Scope:** re-verification of the 6 LOG-4326 SIGN-WITH-FIXES fixes as applied at commit 5c3d67d (LOG-4327).
+
+**Verdict: REJECT.** Four fixes verify clean by execution; two are incomplete. Upgrade conditions not met. Both failures are documentation-only, minutes to repair; no science affected.
+
+**Verified:** F1 (real `TorchBackend.apply_sign_rule` exercised with torch tensors — all cached v̂_r flipped to ⟨v̂,n̂⟩≥0, norms preserved, missing-cache loud halt; call ordering before all injections confirmed); F2 (exactly 1 JVP + 1 VJP/iter, Rayleigh from the same JVP; charged 108/item = actual; ceiling 7380 holds); F3 (EXP077's exact construction block exec'd — 0/60 prompt diffs); F5 (all five binding readings recorded in BUILD_NOTES and confirmed in code); suites re-run 104/104 + 16/16 (the "104/104" claim reproduces under a torch-blocking import hook — 3 torch-absent-refusal tests fail only in a torch-present venv; environmental, not a bundle defect); verdict module byte-identical to pre-fix commit (LOG-4326 14/14 precedence stands).
+
+**Failed — F4:** `run_exp086.py:199-200` still asserts the false EXP084 "15-cycle rotation set" claim as a live code comment (BUILD_NOTES and manifest retractions are correct, but the ordered removal from the code comment was missed). This review independently proved the claim false (EXP084's tuples byte-identical to EXP077's, 15/15 + 15/15).
+
+**Failed — F6:** manifest seed formula `20260924 + 1000*item + 10*norm + k` does not match the code (`exp086_rng.py:29`: `20260924 + 1000*i + norm_idx`; no code computes `10*norm + k`).
+
+**Conditions for SIGN:** correct the code comment to reflect the F4 retraction; correct the manifest formula to `20260924 + 1000*item + norm_idx`. Re-verification is then a check.
+
+Full addendum: `experiments/runs/EXP086_amplifier/law14_stageb_review_2026-09-25.md` (appended, original untouched). Review modified no bundle, protocol, or other files.
