@@ -8283,3 +8283,46 @@ Independently verified (all my own executions): test_exp090.py 36/36 PASS; §6 r
 ## LOG-353 — CEO EXECUTION CLEARANCE GRANTED: EXP090 (CPU-only, 2026-09-25)
 
 Launch chain complete for EXP090: signed pre-registration (LOG-350; digest 440dd6a5…01b, byte-identical at LOG-352) → independent Law #14 draft review (LOG-348, SIGN-WITH-FIXES F1–F2, §0 substitution accepted) → repair wave (LOG-349, both applied, caveat 6 verbatim) → execution bundle (LOG-351, 36/36 tests) → independent bundle review (LOG-352, SIGN, no fixes). CEO execution clearance GRANTED — CPU-only, ~1–2h, $0. No GPU clearance required or granted. Real-execution command: python3 run_exp090.py --out-dir out --ceo-clearance (from experiments/runs/EXP090_clm8b_falsifier_v2/). Registered outcomes: ≥38/60 + both splits >0.5 → CONTINUE; ≤37/60 → KILL free-lunch version; split failures → PIVOT; G4 deaf → RUN-INVALID.
+
+## LOG-354 — EXP090 REAL EXECUTION: RUN-INVALID (G1, by construction, 2026-09-25)
+
+Real execution of EXP090 (CEO clearance LOG-353; signed protocol 440dd6a5…01b; bundle review SIGN LOG-352). Command: `run_exp090.py --out-dir out --ceo-clearance` on /home/hatch/workspace/.venv-exp077/bin/python (torch 2.14.0+cpu, transformers 5.17.0, accelerate 1.15.0). Prior setup failures resolved: accelerate installed (LOG-331 deviation recurrence), requirements.txt updated.
+
+Pre-checks all passed: signed-protocol SHA-256 ✓, archive hash pin 47281cd3…0585 ✓, model.safetensors present (911MB), G2 pre-extraction hash ec276abe… ✓, benchmark 60 items / G3 30/30 / provenance pinned ✓.
+
+Verbatim outcome (exit code 3):
+`RUN-INVALID: G1 FAIL: target entity 'Mars' tokenizes to 2 tokens — RUN-INVALID (items are NOT silently dropped).`
+
+Executor forensics (read-only, real Pythia tokenizer): 7 of the 10 bench entities are multi-token — Bronze [39674,2721], Jupiter [43,29755], Mars [46,1032], Mercury [46,2269,1626], Saturn [20794,662], Steel [6812,293], Venus [39685,316]. The G1 failure is GENUINE, not a runner bug. No embeddings extracted, no report JSON written (extraction never started), weights untouched (read-only throughout). Primary artifact: experiments/runs/EXP090_clm8b_falsifier_v2/out/exp090_exec_stdout.log.
+
+Material finding: the protocol's G1 assumption ("benchmark entities are G1-satisfiable single words") was asserted by two independent Law #14 reviews (LOG-336 V6, LOG-345) from "common single words" WITHOUT running the real tokenizer — the EXP075 abort (11/35 multi-token) had already established the NeoX tokenizer splits common words. Like EXP079 (LOG-138), this RUN-INVALID is by construction, not bad luck: the registered bench cannot satisfy G1 under any execution. Verdict withheld per protocol; rerun requires a new experiment number with a satisfiable G1 contract (single-token entity set verified against the real tokenizer, or a span-readout design). $0 CPU.
+
+## LOG-355 — EXP091 pre-registration DRAFT (CLM-8B free-lunch falsifier, third attempt, 2026-09-25)
+
+Draft: experiments/protocols/EXP091_CLM8B_ADAPTATION_V3_PREREG_DRAFT.md (unsigned, DRAFT watermark, licenses nothing). EXP091 verified free before drafting.
+
+Succession: EXP089 (§6 unsatisfiable, LOG-345) → EXP090 (real execution RUN-INVALID at G1 bare-word gate, LOG-354) → EXP091. Single design change: G1 → G1' (in-context single-token verification) plus the action-text definition the guard constrains (spaced single-token form " "+A / " "+C — the entity's natural BPE form; bare "Mars" fragments to 2 tokens, which is what killed EXP090's run).
+
+G1' verified SATISFIABLE by real-tokenizer execution this session (drafter, read-only): 240/240 A/C occurrences across all 60 built prompts each covered by exactly one token (offset-mapping cover check); all 10 spaced entities single-token with ids recorded (ĠMars[13648], ĠVenus[36210], ĠJupiter[34434], ĠSaturn[38876], ĠMercury[36091], ĠIron[17826], ĠGold[7284], ĠSilver[16309], ĠBronze[49134], ĠSteel[19727]). Per-entity table: Mars 42/42, Venus 14/14, Jupiter 8/8, Saturn 16/16, Mercury 40/40, Iron 42/42, Gold 14/14, Silver 8/8, Bronze 16/16, Steel 40/40.
+
+Unchanged from EXP090: precise question, Δθ=0 fence, Law #7, bar ≥38/60 (P=0.0260) → CONTINUE / ≤37/60 → KILL, §7.1 TOTAL tree, G2/G3/G4, Law #13 pins, refusal gates, $0 CPU ~1–2h, all 6 brutal caveats (+ new caveat 7: G1' itself verified by execution).
+
+Registered §8 standing review rule (CEO, from LOG-354): tokenization-guard claims must be verified by EXECUTING THE REAL TOKENIZER during Law #14 review — never by word-commonness reasoning. Precedents: EXP075, LOG-336 V6, LOG-345.
+
+§0 flags the action-text coupling for Law #14 review (reviewer may redirect). Next: independent Law #14 review of the draft.
+
+## LOG-356 — Independent Law #14 review of EXP091 pre-registration DRAFT: SIGN (2026-09-25)
+
+Review: experiments/protocols/REVIEWS/EXP091_LAW14_REVIEW_2026-09-25.md (binding; reviewer reports to the founder directly). Draft sha256 at review: 1a1cf0746a0ac264….
+
+Verdict: SIGN — clear for the CEO's signing decision. No fixes required. No further experiment number triggered.
+
+Independently verified (all by execution, nothing on trust): (V1) G1' reproduced with the real Pythia tokenizer over all 60 built prompts — 240/240 A/C occurrences each covered by exactly one token, per-entity counts identical to the draft (Mars 42, Venus 14, Jupiter 8, Saturn 16, Mercury 40, Iron 42, Gold 14, Silver 8, Bronze 16, Steel 40); all 10 spaced entities single-token with ids character-identical to the draft table. The §8 standing rule is satisfied twice over (drafter + reviewer executed). (V2) §1/§3/§5/§7 byte-identical to EXP090 — no silent hypothesis shift; G2/G3/G4, Law #13 pins, refusal gates, mode stamp, $0 budget all present as registered.
+
+Binding ruling on the §0 action-text coupling: ACCEPTED as a legitimate part of the G1' repair (option a). The bare form was never coherently embeddable (final-token state of a 2-token fragment is not an entity representation); the spaced form is the same lexical item in its natural BPE form (identical token id to every in-prompt occurrence, by BPE determinism); treatment is symmetric across A/C; the falsification logic (§7 byte-identical) is untouched; the span-readout alternative would be the bigger design change. Interpretation bound noted on the record: the option token also occurs in the state text (1:1 balanced), so a CONTINUE evidences exploitable zero-shot decision signal, not "semantic alignment" specifically — already covered by §5 and caveat 1. Restructure rejected (cf. LOG-348).
+
+License state: draft licenses nothing. $0 CPU; all reads read-only.
+
+## LOG-357 — EXP091 pre-registration SIGNED (2026-09-25)
+
+Independent Law #14 review returned clean SIGN at LOG-356 (review: experiments/protocols/REVIEWS/EXP091_LAW14_REVIEW_2026-09-25.md) with zero required fixes; the §0 action-text coupling was ruled a legitimate part of the G1' repair (accepted as (a)), and the drafter's 240/240 in-prompt single-token table was independently reproduced. Signed copy produced from the DRAFT by banner-only replacement (diff verified: watermark blockquote → SIGNED banner; no scientific content altered): experiments/protocols/EXP091_CLM8B_ADAPTATION_V3_PREREG_SIGNED.md. SHA-256 digest (launch-chain identity): 747bb6a5722e8478f57b645cad93b9fd54902271bd3f8a64da9a4e24236f417b. EXP090 remains superseded for execution only; its signed protocol and digest 440dd6a5…01b untouched. Launch chain next: bundle build → independent bundle review → CEO execution clearance → execution (CPU-only, $0).
