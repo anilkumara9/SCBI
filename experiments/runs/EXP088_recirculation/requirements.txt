@@ -1,0 +1,21 @@
+# EXP088 execution-bundle dependencies (pinned).
+#
+# Two tiers:
+#   TIER 1 — build/test tier (this machine, CPU, $0). Everything the bundle's
+#   tests, mock harness, smoke test, and corpus builder need. Installed in
+#   the throwaway venv /tmp/exp088venv (NOT committed; recreate with the
+#   pins below).
+#   TIER 2 — GPU-node tier. Installed on the execution node by the CEO's
+#   GPU lane; NOT installed or needed here.
+#
+# --- TIER 1 (build/test; verified 2026-09-24, Python 3.12.3) ---
+tokenizers==0.23.2        # corpus builder: Pythia-410m tokenizer.json
+pyarrow==25.0.1           # corpus builder: Wikitext-103 validation parquet
+huggingface_hub==1.33.0   # corpus builder: pinned-URL fetches (pulled in by tooling)
+#
+# --- TIER 2 (GPU execution node only; the preflight refuses --run without) ---
+# torch                   # model loop (any CUDA build the node provides)
+# transformers            # Pythia-410m model + tokenizer classes
+#
+# The evaluator suite, mock harness, and smoke test need NOTHING beyond the
+# Python 3.12 standard library (they run on the system interpreter).

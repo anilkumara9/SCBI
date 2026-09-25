@@ -1,0 +1,9 @@
+# EXP084 bundle requirements
+#
+# CPU build machine (evaluator + smoke tests): Python 3.12 stdlib only.
+# No third-party packages required. torch/scipy/numpy are NOT used.
+#
+# GPU node (licensed execution only, after bundle review + CEO clearance):
+#   torch>=2.0 (torch-exclusive RNG; model forward/backward)
+#   transformers>=4.30 (EleutherAI/pythia-410m)
+# The runner refuses to execute without torch installed.

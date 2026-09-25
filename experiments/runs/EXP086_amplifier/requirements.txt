@@ -1,0 +1,10 @@
+# EXP086 R3 amplifier execution bundle — Stage-A readiness requirements.
+#
+# Stage A is an advisory, weight-only CPU screen on the execution node
+# (Kaggle). Stage B needs torch + transformers + the Pythia-410m weights;
+# those live on the execution node only and are NOT installed here.
+#
+# Evaluator suite (test_exp086.py) and startup smoke test (smoke_test.py)
+# run with this file's contents only.
+numpy>=1.24
+scipy>=1.10

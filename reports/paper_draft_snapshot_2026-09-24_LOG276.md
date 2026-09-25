@@ -1,7 +1,7 @@
 # Geometric Similarity without Causal Transfer: A Boundary Study of Static Steering on Frozen Language Models
 
 **Authors:** SCBI Research Consortium
-**Document status:** Working draft — 2026-09-24 (Phase 1 sign-off complete; adversarial review SIGNED; **LOG-276 revision: LOG-204 flag absorbed (§H7 rescue-control demotion + LOG-197 Q1/Q2 verdicts), substrate pins, §5.4 layer fix — re-review required before external use, Law #14**)
+**Document status:** Working draft — 2026-09-23 (Phase 1 sign-off complete; adversarial review SIGNED; **LOG-145 mechanism rewrite + EXP067/077 absorption — re-review required before external use, Law #14**)
 **Governing protocol:** `reports/README.md`, `AGENTS.md` (14 laws), `.agents/rules/00-core-research.md`
 **Epistemological labels** follow `AGENTS.md` §5. Every quantitative claim cites its primary artifact.
 
@@ -68,11 +68,8 @@ date (EXP064–EXP066) is far narrower: a **static** aggregated contrast-directi
 basis injected into the residual stream. The dynamic loop has never been executed —
 not once, on any model, in this program. Every claim in this paper is scoped to the
 tested static mechanism; the loop is discussed only as explicitly unvalidated future
-work (§10). Collapsing the two would repeat the hypothesis-shifting error our own
-adversarial audit flagged (Laws #4, #11). The program holds zero positive
-signals for autonomous steering (LOG-204): no loop has been executed, and the
-only intervention that moves decisions is the label-informed output bridge
-(rescue control, §7.3).
+work (§12). Collapsing the two would repeat the hypothesis-shifting error our own
+adversarial audit flagged (Laws #4, #11).
 
 **Why a boundary paper.** The most informative outcome of this program is not a new
 method — our literature audit (§2) establishes that the tested mechanism already
@@ -81,7 +78,7 @@ Steering vectors are known to be brittle: Tan et al. (2024) document unsteerable
 behaviors and out-of-distribution fragility for CAA itself, and Braun et al. (2025)
 show steering is unreliable precisely when the target behavior is not a coherent
 direction. Our contribution is to exhibit this failure in a controlled,
-headroom-verified, rescue-controlled setting — and to separate it, by forensic
+headroom-verified, positive-controlled setting — and to separate it, by forensic
 analysis, from a methods failure (an unsound alignment operator) that had been
 misreported as a scientific result.
 
@@ -89,9 +86,8 @@ misreported as a scientific result.
 
 1. **A defensible negative result (O1–O5, §5):** high raw cross-vocabulary cosine
    ($\approx 0.7$) with zero causal transfer under static injection at full
-   headroom, replicated across two model scales, with a same-layer rescue
-   control — a known-answer direction, not a mechanism control (CEO's LOG-204
-   §H7 ruling) — that rescues a substantial fraction of errors. Geometric similarity
+   headroom, replicated across two model scales, with a same-layer positive
+   control that rescues a substantial fraction of errors. Geometric similarity
    does not imply causal interchangeability — under static injection, at these
    scales, on this benchmark family.
 2. **A forensic correction (§4):** we retract our program's own prior summary
@@ -114,9 +110,8 @@ misreported as a scientific result.
 **What this paper is not.** It is not a methods paper; it claims no novel
 mechanism. It is not a claim about "superhuman" capabilities — our formalization
 document lists that as an explicit non-claim. It is not evidence that frozen
-models cannot be steered (our own rescue control steers them, via output
-space — a known-answer direction, not a mechanism control, per the LOG-204 §H7
-demotion, which stands pending CEO revisit and is not reversed here). It is a boundary stone: *here, and no further, under these conditions.*
+models cannot be steered (our own positive control steers them, via output
+space). It is a boundary stone: *here, and no further, under these conditions.*
 
 ---
 
@@ -387,24 +382,13 @@ which is why the "zero decision changes" statement is scoped to the eleven.
 
 KL divergence confirms only this condition meaningfully moves the output
 distribution ($0.028$ vs $\approx 0.0002$ for all basis conditions). This is
-an [OBSERVATION] of output-side steerability at the injection layer (L10 for
-Pythia-160M, L20 for Pythia-410M) — behavior *is*
+an [OBSERVATION] of output-side steerability at layer 20 — behavior *is*
 movable via output-space directions — but it is near-direct answer-logit
 steering, and whether it constitutes "causal access" rather than logit
-pushing is constrained by the reviews that have now ruled: the LOG-144
-review's REVISE landing (LOG-149); the Law #7 bridge-leakage audit's
-**Supported** Q1/Q2 verdicts — the bridge is built from each item's own
-target/foil option-token unembedding rows, so its rescues are licensed only
-as label-assisted readout steering at evidentiary level L1, not L2 or L3
-(LOG-197); and K1's exoneration of the readout-tilt charge (LOG-213),
-removing tilt from the demotion's evidentiary basis. Per the CEO's standing
-LOG-204 §H7 ruling, the bridge is carried as a **rescue control**
-(known-answer direction), NOT a mechanism control; the demotion stands and
-is not reversed here. The LOG-232 §H7 decision brief (drafted, pending CEO
-acceptance — explicitly not a decision) recommends the demotion stand on the
-Q1 verdict alone; the final CEO §H7 decision remains an outstanding program
-trigger.
-(EXP064's bridge:
+pushing is exactly what the three standing reviews are testing (LOG-149's
+REVISE landing; the synthesis Cluster A Law #7 option-leakage challenge; the
+synthesis Cluster C readout-tilt falsification). It must not be framed as a
+control validating any representation-synthesis mechanism. (EXP064's bridge:
 $+5.0$ pp, 3 rescues, $p = 0.25$, n.s. — directionally consistent,
 underpowered on its own.)
 
@@ -649,38 +633,17 @@ The competing live possibilities, honestly labeled — none promoted to
    interventional designs, not more projection-energy audits (G1 §6).
 
 **[INTERPRETATION]** (INFERENCE) Evidentiary status of the bridge's mechanism:
-**Underdetermined**; this paper claims no mechanism. [NOTE] All three
-standing attacks on the bridge have since ruled, and the bridge's recorded
-status has changed — this is the LOG-204 paper-draft flag (b), absorbed here.
-The Law #7 bridge-leakage audit (LOG-197, executed 2026-09-23) returned Q1
-**Supported**: the bridge, as implemented and executed in EXP065/066/070/077,
-is built from each item's own target/foil option-token unembedding rows —
-option-informed on the letter of Law #7 (construction provenance; evidentiary
-level L0 instrument provenance), with Law #7 compliance ruled
-**non-compliant on the letter** — such a construction cannot support an
-autonomous-mechanism claim. Q2 **Supported**: the licensed reading is narrow
-L1 — "the readout path is causally accessible to an option-informed direction
-(label-assisted readout steering)" — L1 ("can improve inference" via a
-label-informed direction) only, NOT L2, NOT L3. (EXP077 official sits in cell
-(4): Inconclusive — attribution suspended, not converted to a negative.) K1
-(LOG-213) exonerated the readout-tilt charge, removing tilt from the
-demotion's evidentiary basis. Per the standing CEO's LOG-204 §H7 ruling, the
-bridge is carried as a **rescue control** (known-answer direction), NOT a
-mechanism control; its positive-control status for autonomous-mechanism
-questions is **REVOKED**; the program holds zero positive signals for
-autonomous steering. The LOG-232 §H7 decision brief — drafted, pending CEO
-acceptance, explicitly not a decision until the CEO signs — recommends the
-demotion stand on Q1 alone, the tilt layer be retired as a demotion ground,
-and the rescue's mechanism be recorded as **OPEN** (live candidates:
-label-informed relational (t−f) readout effect; downstream transformation per
-S3-8), with full reversal contingent on K3 finding a compliant construction
-that rescues — and none of it is claimed here. The final CEO §H7 decision
-remains an outstanding program trigger; the mentor-adopted synthesis marks
-it [OPEN]. The
-question is therefore no longer "genuine output-side transfer or logit
-steering": it is the narrow L1 reading above, with the bridge's rescue
-licensing only the empirical observation, not any of the three hypotheses
-in this section. On the program's three evidentiary
+**Underdetermined**; this paper claims no mechanism. [NOTE] The bridge's
+positive-control status is under three standing attacks, and until they rule,
+its rescue licenses only the empirical observation, not any of the three
+hypotheses above: (1) the LOG-144 C-A entity-similarity review has LANDED as
+REVISE (LOG-149) — the 10-token answer pool makes donor/test answer-token
+overlap structural, with leakage as the null hypothesis; (2) the A–J
+synthesis's Cluster A filed a Law #7 option-leakage challenge against the
+bridge; (3) the synthesis's Cluster C proposed a readout-tilt label-shuffle
+falsification of the rescue. The question is no longer only "genuine
+output-side transfer or logit steering" but whether the bridge can serve as a
+validity-bearing positive control at all. On the program's three evidentiary
 levels ("can improve inference" ≠ "changes the computational strategy" ≠
 "creates qualitatively new capability"), the paper establishes only the
 first — for the bridge, empirically — and refuses the other two.
@@ -881,65 +844,7 @@ is the list of explanations we have now ruled out.*
 
 ---
 
-## 12. Revision Note — 2026-09-24 (LOG-276, executes the LOG-204 paper-draft flag)
-
-Before editing, the pre-rewrite draft was snapshotted to
-`reports/paper_draft_snapshot_2026-09-24_LOG276.md` (ROS §3 claim-hygiene —
-the LOG-156 process lesson). This revision executes the pending LOG-204
-paper-draft flag (recorded LOG-204, verification LOG-211) and the CEO's
-paper-revision dispatch:
-
-**Sections changed and evidence basis.**
-
-1. **§1 — "What this paper is not"** (3rd paragraph) and **§1 contribution
-   1:** "positive control" relabeled to **rescue control** (known-answer
-   direction, NOT a mechanism control) per the CEO's LOG-204 §H7 ruling,
-   explicitly noting the demotion stands pending CEO revisit and is not
-   reversed here. Added LOG-204 flag item (c): "the program holds zero
-   positive signals for autonomous steering — no loop has been executed,
-   and the only intervention that moves decisions is the label-informed
-   output bridge."
-2. **§5.4 — bridge observation:** fixed the substrate defect "output-side
-   steerability at layer 20" → "at the injection layer (L10 for
-   Pythia-160M, L20 for Pythia-410M)" — the prior wording wrongly covered
-   EXP065 (160M, layer 10) with the 410M layer pin. Replaced "exactly what
-   the three standing reviews are testing" with the landed verdicts:
-   LOG-149 REVISE, LOG-197 Q1/Q2 Supported, K1 exoneration (LOG-213), and
-   the standing LOG-204 demotion. This is the only model/layer defect
-   found in the full substrate sweep: §3.1 (l\* = 10 / 20, 83% depth),
-   §5.6 I3, §7.1 (G1: pythia-410m L20), §7.2/§9 item 10 (EXP077:
-   pythia-410m/layer-20), §8 (EXP067: Pythia-410M layer 20) all verified
-   correct; no EXP070 substrate claim exists in the draft.
-3. **§7.3 — bridge status:** absorbed the LOG-197 Q1/Q2 verdicts
-   (`research/analysis_plans/LAW7_BRIDGE_AUDIT_REPORT_LOG197_2026-09-23.md`):
-   Q1 **Supported** (bridge built from each item's target/foil
-   option-token unembedding rows — option-informed on the letter of Law
-   #7, L0 instrument provenance; Law #7 compliance non-compliant on the
-   letter); Q2 **Supported** (licensed reading narrow L1: label-assisted
-   readout steering, NOT L2, NOT L3; EXP077 official cell (4) Inconclusive).
-   K1 (LOG-213) exoneration removed tilt from the demotion's evidentiary
-   basis; the LOG-232 §H7 decision brief (drafted, pending CEO acceptance,
-   explicitly not a decision) recommends the tilt layer be retired as a
-   demotion ground with the demotion standing on Q1 alone — the final CEO
-   §H7 decision remains an outstanding program trigger ([OPEN] per the
-   mentor-adopted synthesis). The superseded "three standing attacks"
-   wording is preserved in the
-   §13 LOG-145 block below per retraction culture.
-4. **Retraction integrity (verified, not edited):** the Procrustes
-   retraction (§4 table: raw +0.7186 → aligned +0.0032 for EXP065;
-   +0.6852 → −0.0118 for EXP066; the false +0.1290 / +0.13-to-+0.79 claims
-   quoted only as retracted figures) and the G1 QK-null-space retraction
-   (§7.1) are intact; no surviving unqualified occurrence of the false
-   figures was found by grep. EXP067 (§8: Stage A halt, branch (a)) and
-   EXP077 (§7.2: branch (c) NEITHER, verbatim LOG-128 numbers) already
-   present and verified against the primary records — no re-edit needed.
-5. **Not added:** K2/EXP083/EXP084 (not executed); no signed protocol or
-   primary artifact touched; $0 CPU only.
-
-**Re-review status.** Per Law #14, this revision requires adversarial
-re-review before any external use — it is recorded here, not assumed.
-
-## 13. Revision Note — 2026-09-23 (LOG-145, authorized rewrite)
+## 12. Revision Note — 2026-09-23 (LOG-145, authorized rewrite)
 
 Per the program's retraction culture (research/RESEARCH_OPERATING_SYSTEM.md
 §3), this rewrite is recorded explicitly; superseded wording is preserved

@@ -1,0 +1,77 @@
+{
+  "bundle_stage": "implementation-bundle (evaluator tests + smoke test + mock harness; stage-2 model loop built, GPU-dark)",
+  "deterministic": "torch-exclusive seeds 20260924 / 20260924+i; greedy decoding",
+  "experiment": "EXP084",
+  "frozen_backbone": "Δθ ≡ 0 (SHA-256 pre/post guard; no optimizer step exists)",
+  "label_free": true,
+  "licensed": [
+    "evaluator test suite",
+    "startup smoke test",
+    "mock-model end-to-end harness (zero weights, zero torch, zero model passes)"
+  ],
+  "modules": {
+    "exp084_guards.py": "Newton definedness guard (§3), exclusion split, INVALID(iii)",
+    "exp084_rng.py": "Torch-exclusive RNG: per-item seeds, random directions, derangement (§4 F8)",
+    "exp084_spearman.py": "Exact Spearman permutation p-value via tabulated null (§5 conjunct e)",
+    "exp084_statistics.py": "Exact Wilcoxon signed-rank (§5), Hodges-Lehmann 95% CI (F10), NonTestableDataError tie/zero loud-halt taxonomy (LOG-268; docstrings repaired LOG-270 M2)",
+    "mock_harness.py": "Mock-model end-to-end harness: full run_full_loop orchestration on synthetic activation landscapes (8 scenario runs / 17 checks, zero torch/model passes)",
+    "run_exp084.py": "Stage-2 model loop (backend-neutral run_full_loop + TorchBackend sketch); CLI --run requires BOTH --ceo-gpu-clearance AND --stage2-review-signoff; hard pass ceiling; first-run P0 archive-then-halt via BaselinePrepassHalt (LOG-269 D2 binding, LOG-270 F1)"
+  },
+  "not_licensed": [
+    "GPU execution",
+    "model weight access",
+    "efficacy or capability claims",
+    "signed-artifact edits"
+  ],
+  "pass_budget": {
+    "backward": 72,
+    "forward": 240,
+    "forward_equiv": 384,
+    "smoke_budget": "<=12 (precedent; this smoke uses 0)"
+  },
+  "pins": {
+    "delta": 0.1,
+    "kappa_floor": 1e-06,
+    "layer_index": 20,
+    "master_seed": 20260924,
+    "min_defined_items": 12,
+    "model": "EleutherAI/pythia-410m",
+    "n_items": 24,
+    "rho": 1.0,
+    "sha256": "4c242d9ac702a4029a674eacee84e0517cb6f79d794661dc3a3102bca5ed48dd"
+  },
+  "protocol": "experiments/protocols/EXP084_R2_NEWTON_DUEL_PREREG_SIGNED.md",
+  "protocol_status": "SIGNED (Law #14 final SIGN LOG-264)",
+  "queue_position": "K2 -> EXP083 -> EXP084 (GPU-sequencing only)",
+  "tables": {
+    "dir": "exp084_spearman_tables/",
+    "method": "TRUE EXACT subset DP over S_n (deterministic full enumeration, NOT Monte Carlo)",
+    "n_range": [
+      1,
+      19
+    ],
+    "verification": "sum == n!; symmetry count[d]==count[Dmax-d]; odd D == 0; brute-force cross-check n<=8",
+    "n_20_24": "NOT precomputed (GPU-node build artifacts). Build BEFORE any EXP084 execution: python3 tools/build_spearman_tables_gpu.py --n 20 21 22 23 24 --out exp084_spearman_tables/ (NTT+Ryser, validated: selftest n=1..8 vs brute force; n=12 bit-identical to C table). Missing tables -> MissingSpearmanTableError loud halt, no verdict (LOG-266 Fix 3)."
+  },
+  "tests": {
+    "smoke_test.py": "Startup smoke test (0 model passes; Law #14 gate) + mock-harness section (17 checks)",
+    "test_exp084.py": "Evaluator suite: 74 tests (CPU, synthetic fixtures; +8 LOG-270: 6 first-run-baseline + 2 default-path F2 regression)"
+  },
+  "stage2_review": {
+    "log": "LOG-269",
+    "verdict": "SIGN-WITH-FIXES (independent Law #14 reviewer; binding)",
+    "fixes_applied": "LOG-270: F1 (first-run P0 archive-then-halt, BaselinePrepassHalt verdict-clean pre-pass), F2 (default RECORDS_REL one-level-up fix + untested-default regression test), M1 (stale 12/12 counts -> 17/17), M2 (stale 'zero differences are dropped' docstrings -> loud-halt policy)",
+    "signoff_flag": "NOT self-cleared by this repair. --stage2-review-signoff requires independent Law #14 re-verification of the fixes (LOG-269 binding pre-execution condition 1); CEO GPU clearance then gated on conditions 2-4 (GPU-node Spearman tables n=20..24, two-invocation P0 pre-pass ordering, D5 ||g0|| monitor)"
+  },
+  "probe_set_interpretation": {
+    "d1_binding": "LOG-269 D1: signed §2 'items 0–23 in archived order' is inexecutable as written (pinned archive has no prompt strings; entity-grouped order matches no in-repo builder). Binding stage-2 interpretation: verbatim EXP077 §3 rebuild, fixed indices 0–23 — outcome-independent. Zero delta to hypotheses/endpoints/arms/statistics/verdict rows/thresholds.",
+    "recorded": "Deviant path loudly logged by load_probe_set and recorded in every run record probe_set{records_sha256, alignment_24, alignment_60} (finish_run). Any paper/scoreboard use of EXP084 must carry the deviation note."
+  },
+  "d5_binding_monitor": "LOG-269 D5: per-item ||g0|| is logged as '[P0] item {i}: M0=... ||g0||=...' during the P0 arm. The first GPU run's log MUST be inspected for sane, nonzero ||g0|| norms before any verdict is treated as final. Zero gradient -> ApparatusError (loud); degenerate gradients -> F2 apparatus check fails -> INVALID/UNINFORMATIVE-PROXY, never a verdict.",
+  "title": "R2 repaired duel: scalar-curvature Newton vs gradient descent on the label-free top-2 margin proxy",
+  "tools": {
+    "tools/build_spearman_tables.py": "Table generation driver (n<=19; OOMs for n>=20)",
+    "tools/build_spearman_tables_gpu.py": "GPU-node NTT+Ryser table builder (n=20..24; binding pre-execution)",
+    "tools/gen_spearman_null.c": "Exact Spearman null DP (C, __int128, OpenMP)"
+  }
+}

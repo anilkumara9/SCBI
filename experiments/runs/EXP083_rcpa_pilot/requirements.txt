@@ -1,0 +1,10 @@
+# EXP083 bundle requirements.
+#
+# CPU build machine (evaluator tests + smoke test): stdlib only.
+# numpy is used ONLY for the conditional G-norm cross-check in
+# test_exp083.py (skipped if absent) — never in the bundle modules.
+#
+# GPU node (licensed execution, user's Kaggle): torch is required for the
+# ĝ_i generator (R5: torch is the sole ĝ_i generator library).
+torch
+numpy

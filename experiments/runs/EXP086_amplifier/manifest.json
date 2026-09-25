@@ -1,0 +1,56 @@
+{
+  "builder_role": "SCBI implementation agent (Lane 3)",
+  "built": "2026-09-24",
+  "bundle_kind": "Stage-A execution bundle (readiness only)",
+  "experiment": "EXP086",
+  "gpu": "NONE \u2014 CPU only, $0",
+  "guards": {
+    "abort_frac": ">50% power-iteration aborts -> INVALID V3",
+    "apparatus": "random dir must move >=80% of items (<=20% zero-lp) else INVALID V4",
+    "budget": "7260 forward passes stage-1 + 120 stage-2 equiv = 7380 hard ceiling",
+    "delta_theta": "state-dict sha256 before/after; mismatch -> INVALID V1",
+    "headroom": ">=15/60 wrong at baseline else INVALID V2",
+    "sigma_abort": "s1/s2 < 1.1 -> item aborted",
+    "sigma_rank_valid": "s1/s3 >= 1.2 per-item gate for rank test"
+  },
+  "lane": 3,
+  "log_number": "LOG-315/LOG-327",
+  "model": {
+    "d_model": 1024,
+    "id": "EleutherAI/pythia-410m",
+    "layer_index": 20,
+    "stage_a_block_kinds": {
+      "attention_dense_O_direct": 24,
+      "attention_qkv_fused_V_interleaved_rows_mod192_ge128": 24
+    },
+    "stage_a_blocks": 48
+  },
+  "notes": [
+    "Signed protocol retains stale body text ('DRAFT - unsigned', 'No runner build until fresh Law #14 re-review', \u00a715) that predates LOG-311 authorization. Signed header/LOG-311 governs this build. Reported for review; protocol not edited.",
+    "Stage-B \u00a75 rank-validity aggregation (per-item \u03c31/\u03c33>=1.2 -> dataset decision) is under-specified; this bundle does not implement a Stage-B runner.",
+    "Stage A emits verdict: null; all scientific verdicts are Stage-B only.",
+    "LOG-327 repair of LOG-326 F1: V extraction rewired from the wrong contiguous rows [2048:3072] to the per-head interleaved rows {r : (r mod 192) >= 128} (GPT-NeoX [q_h,k_h,v_h] layout, head_dim=64). The retired 'fused-slice' kind is a loud dead branch. Bundle-internal fix; signed protocol untouched."
+  ],
+  "protocol_signed_date": "2026-09-24",
+  "protocol_signed_log": "LOG-311",
+  "seeds": {
+    "generator": "torch.Generator manual_seed (execution node only); numpy never used for random directions",
+    "master": 20260924,
+    "schedule": "item_norm_seed(item, norm) = 20260924 + 100*item + norm; 120 unique seeds"
+  },
+  "signed_protocol": "experiments/protocols/EXP086_R3_AMPLIFIER_PREREG_SIGNED.md",
+  "stage": "A advisory only; no family verdict; Stage B NOT licensed",
+  "statistics": {
+    "ci": "Tango score-method 95% CI for paired difference, constrained-MLE root-finding",
+    "henrici": "He = sqrt(||W||_F^2 - sum|lam_i|^2)/||W||_F, CPU eigendecomposition, advisory only",
+    "mcnemar": "exact one-sided binomial on discordant pairs (b vs c)"
+  },
+  "tests": {
+    "evaluator_suite": "test_exp086.py: 104 tests, 104 pass",
+    "mock_harness": "mock_harness.py: 13 end-to-end synthetic scenarios (verdict coverage)",
+    "smoke_test": "smoke_test.py: 16 checks, 16 pass"
+  },
+  "title": "R3 amplifier intervention at Pythia-410m layer 20",
+  "verdict_table": "V1..V4 INVALID > V5 KILL (c_hat) > V6 KILL (primary excluded) > V7 CONTINUE > V7b HELD > V8 PIVOT > V9 HELD > V10 HELD > V11 HELD (rank undefined, fail-safe) > V12 HELD > UNCLASSIFIED/HELD",
+  "weight_access": "NONE \u2014 bundle ships no weights; Stage A gated behind --bundle-review-signoff; independent Law #14 review required before any weight touch"
+}
