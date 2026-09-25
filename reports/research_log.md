@@ -8592,3 +8592,11 @@ Verification by execution:
 - No real execution run (awaits independent re-verification of FIX 1 → CEO clearance).
 
 Next in launch chain: independent Law #14 re-verification of FIX 1 → CEO execution clearance → real CPU extraction (~1.5 CPU-h).
+
+## LOG-4331 — 2026-09-25 — EXP092 bundle FIX 1 re-verified: independent Law #14 SIGN (binding)
+
+Binding re-verification of the LOG-4329 FIX 1 (standalone extraction CLI clearance bypass), applied at LOG-4330. Verdict: **SIGN** — the bundle is cleared for CEO execution clearance.
+
+Verified by execution (this office, not trusted): (1) the exact §7 bypass probe now refuses exit 2 with the launch-chain REFUSAL before any guard/weight access — bypass CLOSED; (2) `--ceo-clearance` genuinely gates the real path (proceeds past clearance, then exit 3 RUN-INVALID at the bogus-snapshot check — next gate working); (3) `--mock` without clearance → exit 0 (mock path intact); (4) `test_exp092.py` 52/52 OK and `smoke_test.py` 11/11 PASS re-run independently; (5) signed-protocol digest recomputed `75e744ad…` — exact match, untouched; (6) mirroring-vs-mock-only ruled SOUND — identical wording, placement, and semantics across both entry points; non-blocking observation that future clearance-semantics changes must touch both entry points.
+
+Addendum appended to experiments/protocols/REVIEWS/EXP092_LAW14_BUNDLE_REVIEW_2026-09-25.md (append-only). Next in launch chain: CEO execution clearance → real CPU extraction (~1.5 CPU-h). Reviewer: Independent Law #14 Reviewer (reports to founder; binding).

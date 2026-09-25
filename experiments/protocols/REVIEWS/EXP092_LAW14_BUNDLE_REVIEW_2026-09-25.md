@@ -189,3 +189,29 @@ resolution, or any other program result.
 
 **Reviewer:** Independent Law #14 Reviewer. **Binding on the program.**
 **LOG-4329.** Committed locally (no push — pushes need the founder's token).
+
+---
+
+## Addendum — Re-verification of LOG-4329 FIX 1 (LOG-4331): **SIGN**
+
+**Reviewer:** Independent Law #14 Reviewer (reporting directly to the founder; binding).
+**Date:** 2026-09-25.
+**Target:** `experiments/runs/EXP092_ibl/extract_layer_embeddings.py` as committed at `bf9e1ab` (LOG-4330).
+
+The single load-bearing fix from the LOG-4329 SIGN-WITH-FIXES ruling was re-verified **by execution, not by trust**:
+
+1. **Bypass probe re-run (the exact probe from §7):** `python extract_layer_embeddings.py --out-dir /tmp/exp092_bypass_probe --snapshot /nonexistent_snapshot_xyz` (no clearance) → **exit 2**, `REFUSAL: real extraction requires --ceo-clearance (CEO). Use --mock for synthetic tests.` on stderr. The refusal fires in `main()` before any guard and before any weight access — the weight-loading stage is never reached. **Bypass CLOSED.**
+2. **Clearance gate is real, not decorative:** same probe with `--ceo-clearance` → proceeds past the clearance check, then **exit 3** (`RUN-INVALID: snapshot directory not found`) — the next gate working as designed. The flag genuinely gates the real path.
+3. **Mock path intact:** `--mock` without clearance → **exit 0**, embeddings written. The fix did not kill the legitimate mock path.
+4. **Test suites re-run independently:** `test_exp092.py` **52/52 OK** (49 prior + 3 new `TestExtractionCliClearance`); `smoke_test.py` **11/11 PASS**, zero failures. Counts confirmed, not trusted.
+5. **Signed protocol untouched:** digest recomputed = `75e744ad9bae98cc86c0443823bd27b197a9c17fc106ba984e5870cf1bdb347c` — exact match.
+6. **Mirroring vs mock-only — ruled SOUND.** The fix agent's rationale (BUILD_NOTES.md §LOG-4329 FIX 1): the standalone module CLI is a legitimate cleared-execution path (the CEO may invoke extraction directly); a mock-only restriction would have killed a licensed path; one consistent clearance mechanism across both entry points is less error-prone than two different ones. This office agrees: the refusal wording is byte-identical to `run_exp092.py`, the gate placement is identical (first check in `main()`, before any guard/weight access), and the semantics are identical (exit-2 refusal). No new risk is introduced beyond what the licensed runner already carries. **Non-blocking observation:** any future change to clearance semantics must be applied to both entry points; if they ever diverge, the module CLI should be removed rather than re-gated.
+
+### Binding verdict: **SIGN**
+
+FIX 1 is verified. The EXP092 bundle now implements the signed protocol's launch chain on every entry point. **The bundle is cleared for CEO execution clearance.** Next in the launch chain: CEO clearance → real CPU extraction (~1.5 CPU-h).
+
+Untouched by this ruling: EXP091's ADOPTED KILL (LOG-361/362), the LOG-204 bridge demotion, the H1 closure (LOG-4317), the LOG-4321 weights-integrity resolution, or any other program result.
+
+**Reviewer:** Independent Law #14 Reviewer. **Binding on the program.**
+**LOG-4331.** Committed locally (no push — pushes need the founder's token).
