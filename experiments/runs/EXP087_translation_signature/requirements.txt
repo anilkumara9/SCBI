@@ -1,0 +1,9 @@
+# EXP087 bundle requirements
+#
+# Bundle construction + CPU tests: stdlib only (no third-party installs).
+# The LICENSED execution path (--execute, GPU node) additionally needs:
+#   torch>=2.0 (CPU or CUDA build per node)
+#   transformers>=4.40
+#   accelerate>=0.30
+#   numpy>=1.24
+# These are NOT installed by the bundle build ($0 CPU; no weights touched).

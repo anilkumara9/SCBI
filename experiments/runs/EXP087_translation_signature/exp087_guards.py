@@ -23,6 +23,12 @@ import sys
 # ---------------------------------------------------------------------------
 
 MODEL_ID = "EleutherAI/pythia-410m"
+# Pinned HF snapshot revision (LOG-331; F1 repair LOG-340). The --execute
+# path MUST pass this revision to both from_pretrained calls: a silent
+# wrong-revision download would run to a verdict on the wrong weights,
+# undetectable by the Δθ=0 guard (pre==post only) or the G2 check (prompts
+# only). Changing this pin is a design change → NEW experiment number.
+MODEL_REVISION = "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f"
 LAYER_INDEX = 20              # 0-indexed residual stream (program-standard site)
 D_MODEL = 1024                # Pythia-410m hidden size
 N_ITEMS = 60                  # fixed benchmark size (§3)
