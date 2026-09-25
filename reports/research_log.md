@@ -8801,3 +8801,18 @@ $0 CPU; read-only on weights, signed files, EXP092 artifacts. Next: bundle build
 **Immutability:** the signed protocol is now FROZEN. Corrections via append-only errata or a new experiment number only (Law #4). Launch chain proceeds: bundle build (in progress, PENDING-SIGNATURE gate) → independent bundle review → CEO execution clearance → execution. This SIGN does not clear execution.
 
 $0 CPU; no weights, no other signed files, no EXP092 artifacts touched.
+
+## LOG-4344 — 2026-09-25 — EXP093 execution bundle built + signed-digest stamped (implementation)
+
+**Act:** implementation agent (CEO office) completed the EXP093 execution bundle per the LOG-4342 SIGN, after discovering the concurrent LOG-4343 lane had finished the signing ceremony mid-build.
+
+**Bundle** (`experiments/runs/EXP093_l11_causal/`, CPU-only): `protocol_pin.py` (bench/weights pins, THREAD_PIN=2), `direction_builder.py` (G2, numpy-only, read-only .npz; CLI added — the initial build omitted `main()`), `inject.py` (G5 verifier, mock model, real torch hook), `run_exp093.py` (entry point; signature→clearance gates before any guard/weight access), `score_exp093.py` (McNemar exact + §5 TOTAL tree CONTINUE→PIVOT(c)→PIVOT(a)→PIVOT(b)→KILL), `test_exp093.py`, `smoke_test.py`, `BUILD_NOTES.md`, `build_artifacts/direction_verification.json`.
+
+**Signing verification (independent, by execution):** found LOG-4343 had signed mid-build; verified SHA-256(signed file, 64-char digest value blanked per the signature-block rule) == `3e0f269b9f2c5170d2b6ed37b2bd03f39f8eeb344914e8bb1f904709ad13db93` (MATCH), and SHA-256(reviewed draft) == `33434fe3…b5fae7378` (draft untouched since ca88c95, the reviewed version). Stamped the digest into `protocol_pin.py`; the runner implements the blanking rule (literal raw-file hashes cannot reproduce a self-referential digest) and refuses on any byte tamper (one-byte tamper test in the suite).
+
+**Build-time execution only:** direction builder on the real archived `.npz` (read-only) — gate PASS, all registered measurements reproduced (min ‖r‖=1.3352, mean cos u=−0.0160, prenorm [0.0246,0.0444], max cos v=0.9554); 60/60 ‖r_i‖>1e-9; R4 not-bit-identical. Unit suite **21/21 pass** (incl. v0.1 degeneracy regression, all six verdict scenarios, tie rule, G5 misplacement failure, clearance-refusal, tamper-refusal); smoke **17/17 pass** (torch never imported). Mock pipeline end-to-end verdict: KILL (synthetic data, pipeline artifact, not a result).
+
+**Flags for independent bundle review:** THREAD_PIN=2 is an assumption (EXP092 had no thread metadata; build host nproc=2) — on other hosts this is RUN-INVALID until re-pinned; G4 evaluated after 60×B before P/N (fail-fast, draft does not order B vs P/N); G5 probe once on item 0 pre-loop.
+
+**Not done:** independent bundle review (Law #14) → CEO CPU clearance → real execution. No weights touched, no forward passes on the frozen model. $0 GPU.
+

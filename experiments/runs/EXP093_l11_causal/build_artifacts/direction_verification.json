@@ -1,0 +1,31 @@
+{
+ "abs_deviations": {
+  "max_pairwise_cosine_v": 3.786743311628982e-05,
+  "mean_pairwise_cosine_u": 7.869460960176905e-06,
+  "min_r_norm": 2.7384261420682066e-06,
+  "prenorm_max": 3.734858819416653e-05,
+  "prenorm_min": 1.9123601200640716e-05
+ },
+ "all_v_unit_norm": true,
+ "construction": "LOO maximum-average-cosine shared correction (v0.2)",
+ "experiment": "EXP093",
+ "gate": "PASS",
+ "guard": "G2",
+ "max_pairwise_cosine_v": 0.9553621325668837,
+ "mean_pairwise_cosine_u": -0.015992130539039823,
+ "min_r_norm": 1.335202738426142,
+ "npz": "exp092_embeddings.npz",
+ "prenorm_norm_range": [
+  0.02458087639879936,
+  0.04443734858819417
+ ],
+ "r4_not_bit_identical": true,
+ "r_assert": "60/60 ||r_i|| > 1e-09",
+ "registered": {
+  "max_pairwise_cosine_v": 0.9554,
+  "mean_pairwise_cosine_u": -0.016,
+  "min_r_norm": 1.3352,
+  "prenorm_max": 0.0444,
+  "prenorm_min": 0.0246
+ }
+}
