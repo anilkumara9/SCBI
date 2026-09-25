@@ -172,3 +172,10 @@ Score = (decision weight × kill-decisiveness) / cost. All $0; cost is CPU-hours
 - Summit filter applied to all seven: each candidate names a discovery that would have to be true (layer-localized task information; a usable transient amplifier; controllability as the transfer quantity; stability as signal; convergent layer dynamics; curvature-carried distinctions; iid noise) for frozen inference-time computation to gain capability.
 - No experiments executed in this sprint ($0 CPU, proposals only). Next step per candidate: signed pre-registration + independent Law #14 review (launch chain).
 - Dossier: `research/innovation/SPRINT_2026-09-25_SUMMIT.md` (this file).
+
+---
+
+## 9. Rejection annotation (appended 2026-09-25, LOG-4320 — append-only, original dossier untouched)
+
+- **IBL v1 REJECTED at LOG-4319** (independent Law #14 review, binding). One-line reason: the EXP091 bench had only 10 unique triples / 5 unique quads per construction with 50/60 items sharing a tuple, making the label deterministic from the tuple — an entity-set oracle could score very highly with zero relational information, and the permutation null could not calibrate this confound, so CONTINUE was biased and KILL unreachable.
+- **v2 draft**: `experiments/protocols/EXP092_IBL_PREREG_DRAFT_V2.md` (unsigned). Redesign: fresh 60-item bench with 60 unique ordered tuples (seed 1022), 10 entities/domain, K=20; entity-set oracle proven at chance (acc 0.0607, perm p=0.567, 10k perms); G1′ re-verified 240/240; 1-NN statistic, 10pp bar, Bonferroni 0.05/24, and TOTAL decision tree preserved with justification. Awaiting Law #14 re-review.
