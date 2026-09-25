@@ -8564,3 +8564,15 @@ Both fixes to be re-verified by this office before signing. Untouched: EXP091's 
 **Guard map:** G0 bench pin; G1 Δθ=0 via loaded-state-dict hash vs LOG-331 pin (pre/post); G1′ tokenizer cover before weight access; G2 oracle artifact; G3 mode stamp; G4 zero-null-spread RUN-INVALID; exact-tie RUN-INVALID (§3); signed-protocol digest guard. Layer 20 excluded from CONTINUE (routes to PIVOT) per §5.
 
 **Status:** Bundle ready for the independent Law #14 bundle review. Do NOT run real extraction before that review and CEO clearance.
+
+## LOG-4329 — Independent Law #14 bundle review: EXP092 execution bundle → SIGN-WITH-FIXES (binding, 2026-09-25)
+
+**Reviewer:** Independent Law #14 Reviewer (reports directly to the founder; binding). Review file: `experiments/protocols/REVIEWS/EXP092_LAW14_BUNDLE_REVIEW_2026-09-25.md`.
+
+**Verified by execution (not trusted):** test_exp092.py 49/49 OK and smoke_test.py 11/11 PASS re-run by the reviewer; signed-protocol digest recomputed — exact match `75e744ad…` (protocol untouched); every guard triggered and watched fire (G0 tamper → RUN-INVALID; G1 mismatch → RUN-INVALID; G1′ confirmed before any weight access; G2 missing/stale artifact → RUN-INVALID; G3 imbalance → RUN-INVALID; G4 zero-spread → RUN-INVALID; exact-tie → RUN-INVALID; digest mismatch → refused; layer-20-only → PIVOT, never CONTINUE); §5 decision tree byte-faithful to the protocol (CONTINUE/KILL/PIVOT TOTAL).
+
+**Both disclosed test-bug fixes ruled legitimate:** (A) G1 pass-branch patch-pin tests the comparison logic (the only thing a unit test can do; real pin verified at real extraction); (B) scheme-fidelity rewrite isolates the RNG scheme by using the same statistic in both arms — methodologically the correct comparison. S1 (Ross kNN-MI, PCA≤20, k=3) matches its registration; exact-tie rule sane (measure-zero on real floats, fail-safe direction). Bench/pins/tree constants have no runtime override path; `--snapshot` override is fail-safe via G1.
+
+**One load-bearing fix (FIX 1):** `extract_layer_embeddings.py`'s standalone CLI executes the full 60-forward-pass real extraction with NO `--ceo-clearance` gate (demonstrated by the reviewer — the bypass reaches weight-loading). The signed protocol's launch chain requires CEO clearance before execution; the designated runner enforces it, but this second entry point does not. Fix: require `--ceo-clearance` for non-mock extraction in the module CLI (exit 2 refusal otherwise), mirroring `run_exp092.py`, with a CLI test. Re-verification by this office required before CEO clearance.
+
+**Status:** bundle NOT yet cleared for CEO clearance. Fix → re-verify → clearance → execution.
