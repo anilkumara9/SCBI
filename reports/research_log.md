@@ -8826,3 +8826,30 @@ $0 CPU; no weights, no other signed files, no EXP092 artifacts touched.
 **One load-bearing fix (F1):** `stratum_stats` computes Δ as float `acc_P − acc_B`; the exactly-at-bar case (6/60 aggregate, 3/30 stratum) yields `0.09999999999999998 < 0.10` and misroutes a CONTINUE-worthy outcome. Fix: integer count-difference before dividing (`(nP−nB)/n`). One-directional (can only demote exact-bar), mechanical, no science change. Builder's three flagged items (THREAD_PIN=2 assumption, G4 fail-fast order, G5 single probe) all ACCEPTABLE per the registered protocol.
 
 **Conditions for SIGN:** apply F1, re-run suites + the six-scenario probe set; re-verification is a check. $0 CPU; read-only on weights, signed files, EXP092 artifacts.
+
+## LOG-4347 — 2026-09-25 — EXP093 draft v0.2 fix-application lane: independent drafter verification, concurrency finding, draft restored byte-identical
+
+**Task:** implementation agent (CEO office) tasked with applying LOG-4340 F1–F9 to the unsigned EXP093 draft and re-running the F1 verification by execution.
+
+**Independent F1 verification by execution (drafter, CPU-only, read-only on `experiments/runs/EXP092_ibl/out/exp092_embeddings.npz`, no weights, no signed files):** recomputed the §3.1 LOO max-cosine construction with independent code (float64). Every LOG-4340 registered number reproduced character-for-character: min_i ‖r_i‖ = 1.3352 (all 60 > 1e-9 — no degeneracy); mean pairwise cosine(u_i,u_j) = −0.0160; pre-normalization shared-direction norm ∈ [0.0246, 0.0444]; all 60 v^{−i} unit-norm (max deviation 1.2e-15); max pairwise cosine among v^{−i} = 0.9554. The v0.1 degenerate construction additionally confirmed exactly zero (float64 max norm 0.0) — the identity is analytic. This is a second independent execution confirmation alongside the LOG-4342 reviewer re-verification; it does not supersede or alter that ruling.
+
+**Concurrency finding:** mid-run, this lane discovered a concurrent pre-registration lane had already applied all nine fixes to the draft (F1 §3.1 replacement + correction note + §1(1)/§1(4)/G2/Appendix-A conforming edits; F2 G4 1e-4; F3 PIVOT(c); F4 PIVOT(b) N-vs-B routing; F5 G5 acceptance criteria; F6 KILL narrowed to the *shared* family; F7 stratum breakdown in the CONTINUE claim; F8 thread pinning in G4/§9; F9 S2 tie rule) — and the program had moved on: LOG-4342 (independent Law #14 narrow re-verification SIGN of v0.2, F1 by execution), LOG-4343 (signing ceremony → `EXP093_L11_CAUSAL_PREREG_SIGNED.md` frozen, digest `3e0f269b…bb93`), LOG-4344 (execution bundle built, digest stamped). This lane's initial read showed a partially-edited draft and it made four further edits (F8 wording honesty, F9 tie wording, Appendix B source note); upon finding the signing chain, all four edits were **reverted** — the draft is restored byte-identical to the reviewed content (SHA-256 `33434fe34e8f56512dbbf5b9339509736e60462a94a1a96a10f0b90b5fae7378` verified by recomputation). The signed protocol was never touched by this lane; per Law #4 it can now change only via append-only errata or a new experiment number.
+
+**Registered flag for the independent bundle review (not acted on — signed protocol is frozen):** the signed G4/§9 (F8) pins thread count "to the EXP092 extraction value." This lane checked the EXP092 record: `exp092_extraction_meta.json`, BUILD_NOTES.md, and the run report contain **no thread-count metadata** — the referenced value does not exist in the record. The bundle builder independently reached the same finding and flagged THREAD_PIN=2 as an assumption (LOG-4344). Left for the bundle review to adjudicate (re-pin rule, RUN-INVALID condition, or erratum); no unsigned-draft divergence was kept.
+
+**Supporting verification (drafter):** zero exact logit ties in the 60 archived EXP092 opt_logits; strict `>` reproduces 36/60; mean margin full precision −0.0018186569213867188 (4-decimal −0.0018; LOG-4338 full-precision −0.001819) — the G4 tie rule and F2 tolerance are satisfiable as written.
+
+$0 GPU; CPU-only; no weights, no signed files, no EXP092 artifacts touched; no numbers invented — all values either recomputed by execution above or cited character-for-character from LOG-4340/4342/4338.
+
+## LOG-4346 — 2026-09-25 — EXP093 bundle F1 fix applied (LOG-4345 binding SIGN-WITH-FIXES) — implementation lane
+
+**Task:** implementation agent (CEO office) applied the single required fix from the independent Law #14 bundle review (LOG-4345) to the EXP093 execution bundle. $0 CPU beyond tests; no real execution; no weight access; signed protocol, review file, and EXP092 artifacts untouched.
+
+**F1 — Δ bar computed with float subtraction (fixed in `score_exp093.py`, `stratum_stats`):** previously `delta = acc_P - acc_B` on float means → exactly-at-bar case (nP−nB=6 on n=60) yields `0.09999999999999998 < 0.10` and misroutes a CONTINUE-worthy outcome. Fixed per the review: `_acc` counts now retained (`nB`, `nP`, `nN`), `delta = (nP - nB) / len(idx)` and `"delta_N": (nN - nB) / len(idx)` — integer count difference before dividing. Grep confirmed no other bar comparison is done on float-subtracted accuracies anywhere in the bundle (`inject.py`'s `delta` is an unrelated injection vector; `run_exp093.py` only prints; monotone `acc_P > acc_B > acc_N` is float-safe per review O2). One-directional (can only demote exact-bar, never promote below-bar); no science change.
+
+**Re-verification by execution:**
+- Unit suite `test_exp093.py`: **21/21 pass**.
+- `smoke_test.py`: **17/17 checks pass**, torch never imported (0 model passes).
+- Six-scenario verdict probe on independent synthetic data (`/tmp/exp093_f1_probe.py`, numpy-only): CONTINUE-at-bar (delta == 0.1 exactly, p=0.03125, mono) → **CONTINUE** ✓; CONTINUE-above-bar → CONTINUE ✓; KILL → KILL ✓; PIVOT(a) → PIVOT(a) ✓; PIVOT(b) → PIVOT(b) ✓; PIVOT(c) → PIVOT(c) ✓; 12/180 ties → RUN-INVALID raised ✓. All six scenarios route correctly.
+
+**Next in launch chain:** independent Law #14 re-verification of F1 (a check, per LOG-4345) → SIGN → CEO CPU clearance → real execution (~10–15 CPU-min, $0).
