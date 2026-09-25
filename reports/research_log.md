@@ -8664,3 +8664,17 @@ Files changed: `experiments/runs/EXP086_amplifier/run_exp086.py`, `experiments/r
 Full addendum: `experiments/runs/EXP086_amplifier/law14_stageb_review_2026-09-25.md` (Addendum 2, appended; original review and LOG-4333 addendum untouched).
 
 Untouched by this ruling: EXP091's ADOPTED KILL (LOG-361/362), the LOG-204 bridge demotion, the H1 closure (LOG-4317), EXP092's chain (LOG-4319–4331), the LOG-4321 weights-integrity clearance.
+
+## LOG-4336 — 2026-09-25 — EXP092 (IBL) real execution: verdict CONTINUE (execution agent, CEO clearance LOG-4332)
+
+**Verdict: CONTINUE.** l* = layer 11: LOO 1-NN accuracy 0.3333 (K=20, chance 0.05), raw permutation p = 0.000999 < Bonferroni α 0.0020833, effect = +0.2000 (20pp above null q95 = 0.1333). Eight layers satisfy both registered bars (S = {1, 11, 12, 13, 14, 15, 17, 18}); layer 20 itself is at 0.15/p=0.066 (not significant, correctly excluded from CONTINUE).
+
+**Execution:** real CPU run under CEO clearance LOG-4332, signed protocol `75e744ad…` intact. All guards PASS in order: G0 (bench pin), G2 (oracle 0.0607/p=0.5312), G3 (30/30), G1′ (240/240 real-tokenizer, before weight access), G1 pre/post `ec276abe…` (Δθ=0 verified), G4 (null spread 0.20–0.25, instrument responsive). 60 forward passes, ~4 min wall, $0. No guard fired.
+
+**Secondaries (non-binding):** S1 (Ross kNN-MI) is degenerate in this regime — bit-identical 4.0826 bits at all 24 layers because with k=3 and no distance ties, m_i = 4 everywhere; carries zero layer information. Flagged in the run report. S2 (LM log-prob baseline): 36/60 = 0.60, mean margin −0.0018.
+
+**Licensed consequence:** per signed §5, the "misplaced information" hypothesis survives; redirect the readout program to l* = 11. This is a licensed CONTINUE of the IBL hypothesis — not a capability claim. Novelty remains N1.
+
+**Full run report:** `experiments/runs/EXP092_ibl/EXP092_RUN_REPORT_2026-09-25.md` (per-layer table, guard log, S1 anomaly analysis, raw-data paths). Primary artifacts: `experiments/runs/EXP092_ibl/out/exp092_embeddings.npz`, `exp092_report.json`, `exp092_extraction_log.txt`, `exp092_extraction_meta.json`.
+
+**Status:** verdict reported as the registered tree produced it. Independent Law #14 verdict review required before adoption (commissioned next).

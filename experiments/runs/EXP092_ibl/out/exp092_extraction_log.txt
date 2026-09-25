@@ -1,0 +1,10 @@
+[extract] G0 pass: bench pin 9be8162633fe19aa…, 60/60 unique tuples, strata match §4.
+[extract] G2 pass: oracle=0.0607, p=0.5312 (build-time diagnostic, bound to pin).
+[extract] G3 pass: 30/30 A-first/C-first.
+[extract] loading tokenizer: /home/hatch/workspace/.exp086_weights/pythia-410m
+[extract] G1' pass: 240/240 A/C occurrences single-token in-prompt (real tokenizer, offset-mapping cover check).
+[extract] loading frozen model: /home/hatch/workspace/.exp086_weights/pythia-410m
+[extract] model.eval() set; requires_grad_(False) on all parameters.
+[extract] G1 pre-extraction hash OK: ec276abe3902fab0…
+[extract] 60 forward passes complete (24 layers, final-token hidden states + option logits).
+[extract] G1 post-extraction hash OK: ec276abe3902fab0… (Δθ=0 verified)

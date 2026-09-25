@@ -1,0 +1,13 @@
+{
+  "mode": "real",
+  "n": 60,
+  "n_layers": 24,
+  "dim": 1024,
+  "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+  "G0": "pass (bench pin 9be8162633fe19aa\u2026)",
+  "G1": "pass (pre/post hash ec276abe3902fab0\u2026, \u0394\u03b8=0 verified)",
+  "G1'": "pass (240/240 in-prompt occurrences single-token, real tokenizer)",
+  "G2": "pass (oracle=0.0607, p=0.5312, gate PASS, bound to bench pin)",
+  "G3": "pass (30/30 asserted on real bench builder)",
+  "embeddings": "exp092_embeddings.npz"
+}
