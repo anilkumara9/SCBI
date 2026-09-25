@@ -8576,3 +8576,19 @@ Both fixes to be re-verified by this office before signing. Untouched: EXP091's 
 **One load-bearing fix (FIX 1):** `extract_layer_embeddings.py`'s standalone CLI executes the full 60-forward-pass real extraction with NO `--ceo-clearance` gate (demonstrated by the reviewer — the bypass reaches weight-loading). The signed protocol's launch chain requires CEO clearance before execution; the designated runner enforces it, but this second entry point does not. Fix: require `--ceo-clearance` for non-mock extraction in the module CLI (exit 2 refusal otherwise), mirroring `run_exp092.py`, with a CLI test. Re-verification by this office required before CEO clearance.
 
 **Status:** bundle NOT yet cleared for CEO clearance. Fix → re-verify → clearance → execution.
+
+## LOG-4330 — 2026-09-25 — EXP092 FIX 1 applied: standalone extraction CLI launch-chain gate (implementation agent, reporting to CEO Nova)
+
+Binding Law #14 bundle review (LOG-4329) returned SIGN-WITH-FIXES with one load-bearing defect: `extract_layer_embeddings.py`'s standalone CLI executed real extraction with no `--ceo-clearance` gate — a clearance bypass the reviewer demonstrated reaching the weight-loading stage.
+
+FIX 1 applied (bundle code only; signed protocol untouched):
+- `extract_layer_embeddings.py::main()`: non-mock extraction requires `--ceo-clearance`, refuses exit 2 otherwise — refusal wording mirrors `run_exp092.py` exactly; check fires before any guard, before any weight access. Mock mode unaffected. Choice rationale documented in BUILD_NOTES.md (mirroring keeps one consistent clearance mechanism across both entry points; mock-only restriction would have killed a legitimate cleared path).
+- New `TestExtractionCliClearance` (3 tests): exact reviewer bypass probe → exit 2; `--mock` → exit 0; `--ceo-clearance` + bogus snapshot → exit 3 (RUN-INVALID at snapshot check — gate passed, no weights touched).
+
+Verification by execution:
+- `test_exp092.py`: 52/52 OK (49 prior + 3 new).
+- `smoke_test.py`: 11/11 PASS.
+- Reviewer bypass probe from a real shell: exit 2, REFUSAL on stderr, snapshot stage never reached. Bypass CLOSED.
+- No real execution run (awaits independent re-verification of FIX 1 → CEO clearance).
+
+Next in launch chain: independent Law #14 re-verification of FIX 1 → CEO execution clearance → real CPU extraction (~1.5 CPU-h).

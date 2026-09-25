@@ -31,6 +31,7 @@ import reference_implementation as ref
 from protocol_pin import BENCH_PIN, SIGNED_PROTOCOL_DIGEST
 import protocol_pin
 import g1prime
+import extract_layer_embeddings as extract_cli
 from extract_layer_embeddings import (
     RunInvalid as ExtractRunInvalid,
     compute_state_dict_hash, guard_state_dict_hash,
@@ -496,6 +497,35 @@ class TestRunnerRefusals(unittest.TestCase):
         self.assertIn(rep["verdict"], ("CONTINUE", "KILL", "PIVOT"))
         self.assertEqual(len(rep["layers"]), 24)
         self.assertIn("S2", rep)
+
+
+class TestExtractionCliClearance(unittest.TestCase):
+    """LOG-4329 FIX 1: the standalone extraction CLI enforces the signed
+    protocol's launch chain (real extraction requires --ceo-clearance)."""
+
+    def test_real_mode_refuses_without_clearance(self):
+        # Exact reviewer bypass probe: no clearance -> exit 2 BEFORE any
+        # weight access (bogus snapshot proves the refusal precedes the
+        # snapshot/weight stage entirely).
+        with tempfile.TemporaryDirectory() as td:
+            rc = extract_cli.main(["--out-dir", td,
+                                   "--snapshot", "/nonexistent_snapshot_xyz"])
+        self.assertEqual(rc, 2)
+
+    def test_mock_needs_no_clearance(self):
+        with tempfile.TemporaryDirectory() as td:
+            rc = extract_cli.main(["--out-dir", td, "--mock"])
+        self.assertEqual(rc, 0)
+
+    def test_clearance_passes_gate_reaches_run_invalid(self):
+        # With --ceo-clearance the launch-chain gate passes; the bogus
+        # snapshot then fires RUN-INVALID (exit 3) — proving the refusal
+        # was the clearance gate (not a broken path) and that no weights
+        # were touched (no snapshot exists at that path).
+        with tempfile.TemporaryDirectory() as td:
+            rc = extract_cli.main(["--out-dir", td, "--ceo-clearance",
+                                   "--snapshot", "/nonexistent_snapshot_xyz"])
+        self.assertEqual(rc, 3)
 
 
 class TestMockExtraction(unittest.TestCase):

@@ -19,6 +19,12 @@ Guards (all FATAL -> RUN-INVALID):
       diagnostic itself runs at build time per the signed protocol §6.
   G3: phrasing-balance assert — exactly 30 A-first / 30 C-first.
 
+LAUNCH-CHAIN GATE (LOG-4329 FIX 1): the standalone module CLI enforces the
+signed protocol's launch chain — non-mock extraction requires
+--ceo-clearance and refuses with exit 2 otherwise (mirrors run_exp092.py).
+run_exp092.py is the designated licensed entry point; this module CLI is a
+second entry point and must not bypass clearance.
+
 What is extracted per prompt: final-token hidden states at all 24 layers
 (hidden_states[1..24]) + final-token logits over the vocabulary (for the S2
 LM log-prob baseline; only the two option-token logits are stored).
@@ -305,9 +311,19 @@ def main(argv=None):
     ap.add_argument("--out-dir", required=True)
     ap.add_argument("--mock", action="store_true",
                     help="synthetic embeddings; never touches weights")
+    ap.add_argument("--ceo-clearance", action="store_true",
+                    help="CEO execution clearance for REAL extraction "
+                         "(LOG-4329 FIX 1: the standalone module CLI enforces "
+                         "the signed protocol's launch chain)")
     ap.add_argument("--snapshot", default=None,
                     help="override snapshot dir (default: LOG-331 snapshot)")
     args = ap.parse_args(argv)
+    # Launch-chain gate FIRST: no clearance, no real extraction — before any
+    # guard, before any weight access (mirrors run_exp092.py).
+    if not args.mock and not args.ceo_clearance:
+        print("REFUSAL: real extraction requires --ceo-clearance (CEO). "
+              "Use --mock for synthetic tests.", file=sys.stderr)
+        return 2
     try:
         if args.mock:
             emb_path, _ = extract_mock(args.out_dir)

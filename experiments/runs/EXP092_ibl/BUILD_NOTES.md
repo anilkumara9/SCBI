@@ -22,6 +22,40 @@
 | `smoke_test.py` | 11 checks, 0 model passes |
 | `requirements.txt` | numpy/torch-CPU/transformers/safetensors/accelerate (accelerate pinned — LOG-331 lesson) |
 
+## Launch-chain gate (LOG-4329 FIX 1 — binding Law #14 bundle review)
+
+**Defect found by independent review:** `extract_layer_embeddings.py`'s
+standalone CLI executed the full 60-forward-pass real extraction with no
+`--ceo-clearance` gate — a second, ungated entry point bypassing the signed
+protocol's launch chain (the reviewer demonstrated it reaching the
+weight-loading stage with no refusal).
+
+**Fix applied:** non-mock extraction via the standalone module CLI now
+requires `--ceo-clearance` and refuses with exit 2 otherwise, mirroring
+`run_exp092.py`'s refusal wording exactly:
+`REFUSAL: real extraction requires --ceo-clearance (CEO). Use --mock for
+synthetic tests.` The check fires in `main()` before any guard, before any
+weight access.
+
+**Why mirroring, not mock-only restriction:** the standalone real-extraction
+path is a legitimate cleared-execution path (the CEO may invoke extraction
+directly rather than through the orchestrating runner); a mock-only
+restriction would have killed a licensed path. One consistent clearance
+mechanism across both entry points is less error-prone than two different
+ones. `run_exp092.py` remains the designated licensed entry point; this
+module CLI now enforces the identical launch chain.
+
+**Verification (executed):**
+- Reviewer's exact bypass probe
+  (`--out-dir X --snapshot /nonexistent_snapshot_xyz`, no clearance) →
+  **exit 2**, REFUSAL on stderr, snapshot stage never reached.
+- Same probe with `--ceo-clearance` → exit 3 (RUN-INVALID at snapshot
+  check; gate passed, no weights touched).
+- `--mock` without clearance → exit 0 (unaffected).
+- New tests `TestExtractionCliClearance` (3 tests): refusal / mock /
+  clearance-passes-gate. Full suite: `test_exp092.py` **52/52**,
+  `smoke_test.py` **11/11 PASS**.
+
 ## Verification (executed at build time)
 
 - `test_exp092.py`: **49/49 green** (numpy-only; no weights touched).
