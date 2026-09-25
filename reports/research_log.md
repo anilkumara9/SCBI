@@ -8458,3 +8458,17 @@ $0 CPU for the investigation logic (one model load for the decisive replication,
 **Blockers:** (1) Independent Law #14 Stage-B bundle review — COMMISSIONED (subagent, reports to founder, binding); (2) CEO GPU clearance; (3) stage-2 review signoff; (4) GPU venue — all user-gated. Queue: K2 → EXP083 → EXP084 → EXP086 Stage B.
 
 **Design decision flagged for reviewer:** rank-validity aggregation uses protocol §5's median reading despite BUILD_NOTES under-specification note — no silent reinterpretation.
+
+## LOG-4323 — Independent Law #14 review of EXP092 v2 (IBL) DRAFT: SIGN-WITH-FIXES (2026-09-25)
+
+**Reviewer:** Independent Law #14 Reviewer (reporting directly to the founder; binding). **Target:** `experiments/protocols/EXP092_IBL_PREREG_DRAFT_V2.md` (unsigned). **Review file:** `experiments/protocols/REVIEWS/EXP092_LAW14_REVIEW_V2_2026-09-25.md`.
+
+**Verdict: SIGN-WITH-FIXES** — the v1 confound (LOG-4319) is killed by proof, not assertion. This review independently reconstructed the EXP092-B bench from the registered Appendix-A tuples + EXP091 templates and verified by execution: 60/60 unique (domain,tuple); 20 targets × exactly 3/domain; 30/30 A-first/C-first; entity-set oracle (LOO max-overlap, random tie-break) = **0.0607 reproduced exactly**; stratified permutation null (10k perms) p = 0.527 (draft claims 0.567 — numerical discrepancy only, both ≫ 0.05, conclusion unchanged); G1′ = **240/240 single-token, 0 failures** with the real tokenizer, Appendix C token IDs 20/20 and occurrence counts 20/20 match. Fano re-derivation for K=20 verified tight at chance; 10pp bar now explicitly anchored to bridge effect size; Bonferroni 0.05/24 correct; decision tree TOTAL; no hypothesis shift vs the dossier's Law #15 block.
+
+**FIX 1 (load-bearing):** Appendix-A parity sentence ("planetary A-first iff i odd") contradicts §4's strata table and the parenthetical (both: planetary 8/block A-first). Correct the sentence to planetary-even/elemental-odd and re-verify the rebuilt bench against the §4 table.
+
+**FIX 2 (load-bearing):** bench SHA-256 pin `2996ac8b…3ac3e` not reproducible from the registered spec — 8 serialization variants tried, none match; item schema and question-option-order rule are unregistered. Register the exact canonical serialization + option-order rule, recompute the pin from the reference implementation, and pin the reference oracle/permutation code for the G2 diagnostic.
+
+**Weights-integrity caveat (§6 G1): RESOLVED.** The draft's fail-safe posture (disclosed mismatch, runtime refusal, execution withheld) was correct; the parallel investigation (LOG-4321, `f8014fd`) found the relocated snapshot byte-intact — the mismatch was a procedural artifact (drafter hashed raw safetensors incl. non-persistent buffers instead of the loaded state_dict); the LOG-331 pin `ec276abe…` was reproduced exactly from the relocated snapshot. No draft change needed; the normal launch chain is no longer gated on weights integrity.
+
+Both fixes to be re-verified by this office before signing. Untouched: EXP091's ADOPTED KILL, LOG-204 bridge demotion, H1 closure.
