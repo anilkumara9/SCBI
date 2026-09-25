@@ -8543,3 +8543,24 @@ Both fixes to be re-verified by this office before signing. Untouched: EXP091's 
 **Re-verification (post-fix):** test_exp086.py 104/104; smoke_test.py 16/16; mock verdict scenarios 13/13; adversarial precedence probes 7/7 (V5>V7, V5 boundary, V6, V1, V7b, stage-2 InvalidRunError gate, V8/V9 paths).
 
 **Status:** Bundle awaits independent re-verification of the fixes for the SIGN to lift. CEO GPU clearance + stage-2 signoff + GPU venue remain user-gated.
+
+---
+
+## LOG-4328 — EXP092 (Information-Bottleneck Localization) execution bundle built (2026-09-25)
+
+**Launch-chain position:** signed pre-registration (LOG-4325, binding Law #14 SIGN) → bundle build (this entry) → independent bundle review → CEO execution clearance → execution. No real extraction has run.
+
+**Files** (all under `experiments/runs/EXP092_ibl/`): `protocol_pin.py` (signed-protocol digest guard + bench/weights pins), `g1prime.py` + `g1prime_verification.json` (build-time G1′ artifact), `g2_verification.json` (build-time G2 artifact), `extract_layer_embeddings.py` (real+mock extraction; guards G0/G1/G1′/G2/G3), `score_exp092.py` (per-layer LOO 1-NN, stratified permutation null B=1,000, Bonferroni α=0.05/24, ≥10pp effect bar, §5 TOTAL tree, G4 gate, S1/S2), `run_exp092.py` (CLI; exit 0 ran / 2 refused / 3 RUN-INVALID), `test_exp092.py` (49 unit tests), `smoke_test.py` (11 checks), `requirements.txt` (accelerate pinned — LOG-331 lesson), `BUILD_NOTES.md`.
+
+**Verification (executed at build time):**
+- `test_exp092.py`: **49/49 green** (numpy-only + fake tokenizer; no weights touched).
+- `smoke_test.py`: **11/11 PASS** (0 model passes).
+- CLI: no-clearance → exit 2; `--gpu` → exit 2; `--mock` → exit 0 with `mode="mock"`-stamped report.
+- G1′ (real tokenizer over all 60 prompts): 240/240 single-token, 20/20 token IDs match signed protocol Appendix C exactly.
+- G2 (oracle diagnostic, 10,000 stratified perms): 0.0607, p=0.5312, gate PASS (8.4s).
+
+**Two test bugs fixed during the build** (bundle behavior was correct in both cases): (1) G1 pass-branch test used a synthetic dict against the real LOG-331 pin — rewrote to patch-pin equality; (2) scheme-fidelity test compared two different tie-break statistics (the exact §5 discrepancy the reviewer noted) — rewrote so both arms use the same argmin statistic, matching the reference RNG scheme to 6 decimals.
+
+**Guard map:** G0 bench pin; G1 Δθ=0 via loaded-state-dict hash vs LOG-331 pin (pre/post); G1′ tokenizer cover before weight access; G2 oracle artifact; G3 mode stamp; G4 zero-null-spread RUN-INVALID; exact-tie RUN-INVALID (§3); signed-protocol digest guard. Layer 20 excluded from CONTINUE (routes to PIVOT) per §5.
+
+**Status:** Bundle ready for the independent Law #14 bundle review. Do NOT run real extraction before that review and CEO clearance.

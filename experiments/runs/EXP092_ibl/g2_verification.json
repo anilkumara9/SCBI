@@ -1,0 +1,11 @@
+{
+ "B": 10000,
+ "bench_pin": "9be8162633fe19aa2a924440d8ba158c1cc4e734c1f2a554a01a27e459f47fc4",
+ "experiment": "EXP092",
+ "gate": "PASS",
+ "guard": "G2",
+ "oracle_accuracy": 0.06071548821548822,
+ "permutation_p": 0.5312468753124687,
+ "seed": 9207,
+ "wall_seconds": 8.4
+}
