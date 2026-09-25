@@ -195,10 +195,15 @@ class Backend:
 #   30..44 element 2-hop, 45..59 element 3-hop.
 # target = head entity A; foil = tail entity (C for 2-hop, D for 3-hop).
 #
-# DEVIATION NOTE (EXP084-D1 class): EXP084's run_exp084.py build_benchmark
-# claims a "verbatim" rebuild but uses DIFFERENT index tuples (a 15-cycle
-# rotation set). EXP086 does NOT follow EXP084; it follows the authoritative
-# EXP077 construction below. The EXP077 archive itself contains no prompt
+# RETRACTION NOTE (F4, Law #14 Stage-B review 2026-09-25): an earlier
+# "DEVIATION NOTE (EXP084-D1 class)" comment here claimed EXP084's
+# build_benchmark uses DIFFERENT index tuples (a "15-cycle rotation set").
+# That claim was FALSE and is RETRACTED: programmatic diff proves EXP084's
+# _BENCH_TRIPLES/_BENCH_QUADS are byte-identical to EXP077's
+# TRIPLES_INDICES/QUADS_INDICES (15/15 triples, 15/15 quads). The
+# "15-cycle rotation set" claim was a visual-comparison error. EXP086
+# follows the authoritative EXP077 construction below (which EXP084 also
+# follows). The EXP077 archive itself contains no prompt
 # strings (only ent/typ/correct per record), so bit-identity of the prompt
 # SET rests on this construction code, and the archive serves as the
 # SHA-256 integrity pin + 60-record probe-set definition (protocol R5d).

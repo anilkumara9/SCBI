@@ -38,7 +38,7 @@
   "seeds": {
     "generator": "torch.Generator manual_seed (execution node only); numpy never used for random directions",
     "master": 20260924,
-    "schedule": "item_norm_seed(item, norm) = 20260924 + 1000*item + 10*norm + k (F6 correction: manifest previously said 100*item; code uses 1000*item)"
+    "schedule": "item_norm_seed(item, norm_idx) = 20260924 + 1000*item + norm_idx (matches exp086_rng.py item_norm_seed exactly; F6 correction)"
   },
   "signed_protocol": "experiments/protocols/EXP086_R3_AMPLIFIER_PREREG_SIGNED.md",
   "stage": "A advisory only (executed LOG-331); Stage-B implementation complete and CPU-tested on real weights (1 item, Δθ=0), awaiting independent Law #14 Stage-B bundle review + CEO GPU clearance + stage-2 review signoff; Stage B NOT licensed for execution",

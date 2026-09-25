@@ -119,7 +119,8 @@ none required re-registration:
   EXP084's tuples are byte-identical to EXP077's. Claim retracted above.
 - **F5**: binding interpretations now recorded (below); BUILD_NOTES/docstring
   false claims corrected.
-- **F6**: manifest seed schedule corrected to `20260924 + 1000*item + norm`
+- **F6**: manifest seed schedule corrected to `20260924 + 1000*item + norm_idx`
+  (matches `exp086_rng.py` `item_norm_seed` exactly)
   (code: exp086_rng.item_norm_seed).
 
 ### Binding interpretations (F5 — recorded, not silently assumed)

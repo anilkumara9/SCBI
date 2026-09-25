@@ -8634,3 +8634,17 @@ Addendum appended to experiments/protocols/REVIEWS/EXP092_LAW14_BUNDLE_REVIEW_20
 **Conditions for SIGN:** correct the code comment to reflect the F4 retraction; correct the manifest formula to `20260924 + 1000*item + norm_idx`. Re-verification is then a check.
 
 Full addendum: `experiments/runs/EXP086_amplifier/law14_stageb_review_2026-09-25.md` (appended, original untouched). Review modified no bundle, protocol, or other files.
+
+## LOG-4334 — EXP086 Stage-B LOG-4333 documentation corrections applied (2026-09-25)
+
+**Role:** Implementation agent (reports to CEO Nova). **Scope:** apply the two documentation corrections required by the binding LOG-4333 REJECT (Law #14 re-verification of the EXP086 Stage-B fixes). No science affected; no signed protocol touched; no weights touched; no GPU execution.
+
+**F4 (code comment):** `experiments/runs/EXP086_amplifier/run_exp086.py:199-200` carried the false EXP084 "15-cycle rotation set" claim as a live comment. Replaced with an explicit RETRACTION NOTE: the claim was FALSE and is retracted; programmatic diff proves EXP084's `_BENCH_TRIPLES`/`_BENCH_QUADS` are byte-identical to EXP077's `TRIPLES_INDICES`/`QUADS_INDICES` (15/15 triples, 15/15 quads); the "15-cycle rotation set" phrase was a visual-comparison error. Re-grepped the full `EXP086_amplifier/` directory for "15-cycle" / "rotation set": remaining occurrences are all in retraction contexts (the new comment quoting-then-retracting the false claim; `BUILD_NOTES.md` retraction; the review file's evidence quotes — review file untouched). No lingering live copies.
+
+**F6 (manifest seed formula):** `experiments/runs/EXP086_amplifier/manifest.json` seed schedule corrected from `20260924 + 1000*item + 10*norm + k` to `20260924 + 1000*item + norm_idx`, matching `exp086_rng.py:29` (`item_norm_seed` returns `MASTER_SEED + 1000*i + norm_idx`) exactly. Verified by execution: `item_norm_seed(0,0)=20260924`, `(0,1)=20260925`, `(7,0)=20267924`, `(59,1)=20319925`; `seed_schedule()` yields 120 pairwise-distinct seeds. `BUILD_NOTES.md` F6 line aligned to `norm_idx` naming.
+
+**Test status (post-fix):** `test_exp086.py` 101/104, `smoke_test.py` 15/16 — the 4 failures are the documented environmental set ("raises/refuses without torch" assertions in a torch-present venv: torch 2.14.0+cpu installed). Confirmed pre-existing and unrelated to these edits by stashing the 3 edited files and re-running: identical 4 failures on the pre-edit tree. Zero regressions introduced (edits were a comment block + a JSON string + a BUILD_NOTES line; no logic touched).
+
+**Next in launch chain:** narrow independent Law #14 re-verification (comment corrected + manifest matches code + re-grep for lingering copies), per the LOG-4333 conditions for SIGN.
+
+Files changed: `experiments/runs/EXP086_amplifier/run_exp086.py`, `experiments/runs/EXP086_amplifier/manifest.json`, `experiments/runs/EXP086_amplifier/BUILD_NOTES.md`. Committed locally; no push (standing rule: pushes need the founder's fresh token).
