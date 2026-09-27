@@ -52,7 +52,22 @@ sys.path.append(EXP093_DIR)
 import numpy as np
 
 import constructor as C
-import protocol_pin as pin  # EXP093's pins: bench, weights, snapshot, threads
+
+
+def _load_module(name, path):
+    """Load a module from an explicit file path (avoids sys.path collisions
+    between EXP092_ibl/protocol_pin.py and EXP093_l11_causal/protocol_pin.py)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(name, path)
+    mod = importlib.util.module_from_spec(spec)
+    sys.modules[name] = mod
+    spec.loader.exec_module(mod)
+    return mod
+
+
+# EXP093's pins (bench, weights, snapshot, thread pin) — explicit path load.
+pin = _load_module("exp093_protocol_pin",
+                   os.path.join(EXP093_DIR, "protocol_pin.py"))
 import reference_implementation as ref
 import g1prime
 from inject import TorchInjectionHook, verify_g5_real, RunInvalid as InjectRunInvalid
