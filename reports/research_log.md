@@ -9324,3 +9324,17 @@ agents, no self-review of this packet. All constraints honored.
 **Verified clean, untouched [FACT]:** G7 chain, G5 delivery probe, frozen scorer implementation, baseline reproduction (36/60), Δθ=0 (LOG-4374 §5/§7).
 **Commit:** this lane's repair commit on `lane/log4375-exp094-verdict-repair`. No push, no merge — delta re-verification (Law #14) required before the execution branch may merge.
 **Next free: LOG-4376.**
+
+## LOG-4376 — Law #14 delta re-verification: EXP094 verdict repair SIGNED (2026-09-27)
+**Reviewer [FACT]:** Independent Scientific Mentor & Adversarial Reviewer (binding; reports to the founder). Target: repair commit `dcc455a` on `lane/log4375-exp094-verdict-repair` vs overturned `2e35c8e`; binding baseline LOG-4374 (OVERTURNED, R1–R5). Detached worktree at `2e35c8e`; repaired script executed in isolated /tmp copy (shared tree untouched); statistics independently recomputed with fresh code from the committed Law #13 CSV.
+**Verdict [FACT]:** **SIGN** — merge of the execution + repair branches is authorized. No push (no founder token; push remains founder-reserved).
+**R1 [FACT]:** verified — one-line item-ID fix (`int(row["item_id"])` → `row["item_id"]`); script executes exit 0 in isolation; committed `out/exp094_report.json` exists and matches a fresh execution byte-for-content (verdict, decision_step, worksheet, stratum_table, recovery inputs, repair_history all match).
+**R2 [FACT]:** verified — independent recomputation: B=T=R=36/60, ΔM_T=+0.0000, all McNemar b=c=0 → p=1.0000, movement=0 flips, strata A-first/C-first +0.0000, 0 ties/180. False numbers (−0.0333, 8 flips, p=0.6250) survive only in strike/repair-history context; terminal report is clean. CSV/manifest/log byte-untouched.
+**R3 [FACT]:** verified — worksheet: step 1 delivery_pass=True → no match; step 2 0.7923<0.95 → no match; step 3 movement=0<6 → MATCH → Refuted (KILL family), pure inertness. Coherent with binding §3 table; the "8 flips, gate passed" phrasing is struck.
+**R4 [FACT]:** verified — LOG-4373 "zero recomputation" recovery note declared FALSE and struck; `repair_history` documents the LOG-4373→LOG-4374→LOG-4375 chain; accurate crash-then-rescore record stands; commit 2e35c8e immutable, LOG-4375 entry is its erratum.
+**R5 [FACT]:** verified — 14:25/~15:10 IST claims struck against artifact timestamps (2e35c8e = 2026-09-27 08:32:13 UTC = 14:02:13 IST); no unrecoverable wall-clock claimed.
+**Scope [FACT]:** delta touches exactly 3 files, all hunks trace to R1–R5 or the disclosed retroactive LOG-4373 record; scorer, CSV, manifests, stdout log, pre-reg untouched; G7/G5/baseline/Δθ=0 verified clean.
+**Licensed consequence [FACT]:** "per-item static-geometry family closed at L11 on this bench; gated/dynamic and multi-layer untouched; no EXP093 claim altered" — exactly what §3 step 3 licenses (LOG-4374 §4). No overreach.
+**Notes [OBSERVATION]:** (1) LOG-4373 entries were committed retroactively inside the repair commit — disclosed, struck-in-place; future lanes should commit execution log entries on the execution branch. (2) `delivery_pass` is read from the run manifest, not the CSV — matches frozen bundle design. (3) LOG-4374's advisory G5 band tautology note stands for future per-item designs.
+**Report [FACT]:** `research/innovation/REVIEWS/EXP094_REPAIR_LAW14_REVERIFY_2026-09-27.md`, committed on `lane/log4375-exp094-verdict-repair`. No push. Merge authorized for CEO/founder to execute.
+**Next free: LOG-4377.**
