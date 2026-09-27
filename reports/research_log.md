@@ -9232,3 +9232,27 @@ agents, no self-review of this packet. All constraints honored.
 **Paper milestone:** The SCBI boundary paper ("The Decodability Gap") is finalized at **v81** — 18 pages, clean build, all 29 cross-refs resolving, all citations matched, 8 limitations, closing line intact. Author block: Meda Anilkumar, New Horizon College of Engineering (Bengaluru), CSE (Data Science). **Founder is publishing now** (arXiv first). Pre-submission review (v77) verdict: arXiv-ready as-is; top-conference track needs (a) layer-11 vs l* injection ambiguity resolved (HIGH — founder's scientific call), (b) main-text page cut 14→9, (c) EXP093 "six tests" enumerated. Institution added per reviewer's HIGH flag on single-author/no-institution bias risk.
 **Team alert:** All roles notified — paper lane is CLOSED. Research continues on CPU lanes; GPU queue (K2 → EXP083 → EXP084 → EXP086-B → EXP088 → EXP087) remains gated on founder's Kaggle.
 **Next free: LOG-4368.**
+
+## LOG-4369 — Law #14 full first review of S4-9 pre-registration draft: SIGN-WITH-FIXES (binding) (2026-09-27)
+
+**Target [FACT]:** `research/innovation/S4-9_PREREG_DRAFT_2026-09-27.md` (LOG-4368, commit `0e6a2fb` on `lane/log4368-s4-9-prereg-draft`), read via `git show` — shared working tree not disturbed. Reviewer read the LOG-4365 worth-it packet, LOG-4352/4366/4368 log entries, and the K3 Law-#14 review (LOG-4361) as the rigor/format precedent before reviewing.
+
+**Verdict [BINDING]:** SIGN-WITH-FIXES — four blocking findings (F1–F4), seven advisories (A1–A7). Report: `research/innovation/REVIEWS/S4-9_PREREG_LAW14_REVIEW_2026-09-27.md` (this lane's branch only; not merged, not pushed).
+
+**Fidelity [FACT]:** all draft numbers traced to LOG-4352/LOG-4365 — PASS, zero invented values. Law-#15 block present and honest — PASS. Guards PASS on Δθ=0, per-item margin CSV (closes the LOG-4352 Law-#13 gap), and instrumentation; N_final gate correctly specified (verified passing on paper: McNemar-exact floor is 6 unidirectional flips, exactly the registered movement gate; no EXP079-style structural cap). No pilot authorized, no experiment number minted, no signed artifact modified, no weights touched — draft does not overreach into execution.
+
+**Blocking findings [BINDING — repair lane must fix; delta re-verification required before SIGN]:**
+- **F1 — §3 decision table not totally partitioned (same defect class as K3's F1):** no evaluation order (rows 1/2 and rows 5/6 double-fire); §2.3 "delivery unproven → Underdetermined" contradicts §3 row 5 "delivery FAILS → Inconclusive/HOLD"; two dead zones — (i) consistent wrong-direction steering (ΔM_T < −0.10, T-vs-R p < 0.05) fires no row, and misrouting it to KILL would be scientifically wrong (a causal channel exists); (ii) T-vs-R-significant but stratum-inconsistent positive fires no row ("consistent" undefined in the binding table). Mechanical repair supplied: binding 6-step evaluation order (delivery → degeneracy → movement → specificity → licensed positive → PIVOT) with operational definitions, restoring §0's "exactly one row earned".
+- **F2 — T-arm constructor unspecified:** the intervention under test has no algorithm/inputs/contrast operation — the pre-registration is unexecutable as written (maximal Law-#9 hazard). Signed version must carry a frozen constructor spec; repair lane writes the science, delta re-verification checks frozenness + G7 audit.
+- **F3 — arm-routing "rule" is a placeholder** ("registered before the run") naming a phantom "N-vs-B" arm (stale EXP093 label inherited via backlog row → packet → draft; S4-9's arms are B/T/R). Mechanical repair supplied: explicit full within-item pairing rule (post-hoc re-routing structurally impossible) + retire the N label.
+- **F4 — Underdetermined trigger unsound:** "mean pairwise |cos| ≥ 0.95 OR norm CV < 0.05" — the norm-CV disjunct voids fully-powered runs (uniform norms = ideal matched case) and adds a void condition the packet never licensed, contradicting the drafting note's "without changing the breaking point". Mechanical repair: collinearity check only; all-zero d_i already caught by the G5 delivery probe.
+
+**Advisories [NON-BLOCKING]:** A1 "six cells" → nine (§3 vs §5); A2 map six rows to the five permitted verdicts (K3-A1 analog); A3 define ΔM explicitly + clarify T-vs-R pairs T(i) vs R(i); A4 pre-register the per-item→verdict delivery-probe aggregation rule; A5 record the on-paper N_final computation; A6 R-arm norm tie + sampling distribution; A7 cite EXP093's margin convention for the CSV.
+
+**Draft §6 open items answered [FACT]:** (1) G7 label-free audit procedure proposed — freeze + input attestation + label-swap invariance test (the auditable disqualification bar) + cross-item isolation; run must not start without it. (2) Routing wording stress-tested — fails; F3 repair closes it with no residual degree of freedom. (3) Norm-vs-collinearity split — rejected; keep collinearity only (F4).
+
+**Release conditions [BINDING]:** this SIGN-WITH-FIXES signs nothing, authorizes no run/pilot, mints no experiment number, books no compute, commissions no repair lane. After F1–F4 repair: fresh independent delta re-verification → SIGN → CEO execution clearance. EXP093 KILL untouched by every row.
+
+**Process note [FACT]:** $0, CPU only, paper only — read-only on all signed protocols/artifacts/weights; no model runs, no GPU contact, no pushes, no merges, no self-review of this review. Branch `lane/log4369-s4-9-prereg-review` from `main` @ `bfe3a80`; committed, not pushed.
+
+**Next free: LOG-4370.**
