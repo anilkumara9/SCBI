@@ -1,0 +1,46 @@
+{
+  "constructor_version": "C-1",
+  "constructor_sha256": "5e03f206dd907b52baa1ab6d5c9954c709d1b47d143c83f9aa85caa81917f361",
+  "P0_TEXT": "The following passage is shown for reference.\n\n",
+  "P0_sha256": "e7e81496b08455b00316659f58dbdbaf7d606025b0277975aeb3f09e2601e11d",
+  "NORM_RATIO": 0.0474,
+  "R_SEED": 94094,
+  "dependency_pins": {
+    "torch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "numpy": "2.5.3",
+    "python": "3.12.3"
+  },
+  "g7_verdict": "PASS",
+  "g72_attestation": {
+    "forbidden_token_hits": [],
+    "function_signatures": {
+      "build_per_item_direction": [
+        "a_vec",
+        "b_vec",
+        "h_norm_b",
+        "ratio"
+      ],
+      "build_random_direction": [
+        "d_norm",
+        "dim",
+        "rng"
+      ]
+    },
+    "allowed_inputs": [
+      "prompt token-ID arrays (item's own input tokens only)",
+      "P0 token-ID array (frozen neutral prefix)",
+      "a_vec: L11 residual at readout anchor, task framing (D,)",
+      "b_vec: L11 residual at readout anchor, P0 reference (D,)",
+      "h_norm_b: scalar L11 residual norm on the B-arm pass",
+      "rng: numpy Generator (R arm only, seed pinned)"
+    ],
+    "label_locations_documented": [
+      "bench['ent'] (target entity string per item) \u2014 never passed to any constructor function; the executor's construction call sites take prompt text / activation vectors only.",
+      "archived .npz label vector \u2014 not read by this experiment at all (EXP093's direction source; EXP094 constructs from live passes)."
+    ],
+    "cross_item_statement": "build_per_item_direction coerces inputs to 1-D float64 and raises ConstructionError on any other shape; no code path indexes other items."
+  },
+  "g73_max_abs_diff": 0.0,
+  "g74_statement": "non-1-D tensors rejected; d_i is a pure function of item i"
+}
