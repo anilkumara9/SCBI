@@ -1,0 +1,175 @@
+{
+  "verdict": "Refuted",
+  "decision_step": 3,
+  "decision_worksheet": [
+    {
+      "step": 1,
+      "condition": "G5-style probe FAILS -> Inconclusive",
+      "evidence": "delivery_pass=True"
+    },
+    {
+      "step": 2,
+      "condition": "mean pairwise |cosine| >= 0.95 -> Underdetermined",
+      "evidence": "mean_abs_cosine=0.7923"
+    },
+    {
+      "step": 3,
+      "condition": "movement (b+c TB + b+c RB) < 6 -> Refuted (KILL family)",
+      "evidence": "movement=0"
+    }
+  ],
+  "stratum_table": {
+    "agg__TB": {
+      "n": 60,
+      "acc_X": 0.6,
+      "acc_Y": 0.6,
+      "delta": 0.0,
+      "mcnemar_b": 0,
+      "mcnemar_c": 0,
+      "mcnemar_p": 1.0,
+      "tango_ci_lo": 0.0,
+      "tango_ci_hi": 0.0
+    },
+    "agg__RB": {
+      "n": 60,
+      "acc_X": 0.6,
+      "acc_Y": 0.6,
+      "delta": 0.0,
+      "mcnemar_b": 0,
+      "mcnemar_c": 0,
+      "mcnemar_p": 1.0,
+      "tango_ci_lo": 0.0,
+      "tango_ci_hi": 0.0
+    },
+    "agg__TR": {
+      "n": 60,
+      "acc_X": 0.6,
+      "acc_Y": 0.6,
+      "delta": 0.0,
+      "mcnemar_b": 0,
+      "mcnemar_c": 0,
+      "mcnemar_p": 1.0,
+      "tango_ci_lo": 0.0,
+      "tango_ci_hi": 0.0
+    },
+    "A__TB": {
+      "n": 30,
+      "acc_X": 0.9666666666666667,
+      "acc_Y": 0.9666666666666667,
+      "delta": 0.0,
+      "mcnemar_b": 0,
+      "mcnemar_c": 0,
+      "mcnemar_p": 1.0,
+      "tango_ci_lo": 0.0,
+      "tango_ci_hi": 0.0
+    },
+    "A__RB": {
+      "n": 30,
+      "acc_X": 0.9666666666666667,
+      "acc_Y": 0.9666666666666667,
+      "delta": 0.0,
+      "mcnemar_b": 0,
+      "mcnemar_c": 0,
+      "mcnemar_p": 1.0,
+      "tango_ci_lo": 0.0,
+      "tango_ci_hi": 0.0
+    },
+    "A__TR": {
+      "n": 30,
+      "acc_X": 0.9666666666666667,
+      "acc_Y": 0.9666666666666667,
+      "delta": 0.0,
+      "mcnemar_b": 0,
+      "mcnemar_c": 0,
+      "mcnemar_p": 1.0,
+      "tango_ci_lo": 0.0,
+      "tango_ci_hi": 0.0
+    },
+    "C__TB": {
+      "n": 30,
+      "acc_X": 0.23333333333333334,
+      "acc_Y": 0.23333333333333334,
+      "delta": 0.0,
+      "mcnemar_b": 0,
+      "mcnemar_c": 0,
+      "mcnemar_p": 1.0,
+      "tango_ci_lo": 0.0,
+      "tango_ci_hi": 0.0
+    },
+    "C__RB": {
+      "n": 30,
+      "acc_X": 0.23333333333333334,
+      "acc_Y": 0.23333333333333334,
+      "delta": 0.0,
+      "mcnemar_b": 0,
+      "mcnemar_c": 0,
+      "mcnemar_p": 1.0,
+      "tango_ci_lo": 0.0,
+      "tango_ci_hi": 0.0
+    },
+    "C__TR": {
+      "n": 30,
+      "acc_X": 0.23333333333333334,
+      "acc_Y": 0.23333333333333334,
+      "delta": 0.0,
+      "mcnemar_b": 0,
+      "mcnemar_c": 0,
+      "mcnemar_p": 1.0,
+      "tango_ci_lo": 0.0,
+      "tango_ci_hi": 0.0
+    }
+  },
+  "secondaries": {
+    "mean_margin_shift_T": -0.0025049209533333137,
+    "mean_margin_shift_R": -0.004577287038333322,
+    "flip_ledger": {
+      "B_wrong_to_T_right": [],
+      "B_right_to_T_wrong": [],
+      "B_wrong_to_R_right": [],
+      "B_right_to_R_wrong": []
+    },
+    "tie_count": 0,
+    "tie_rate": 0.0,
+    "baseline_acc_B": 0.6,
+    "n_B_correct": 36
+  },
+  "bars": {
+    "delta_bar": 0.1,
+    "alpha": 0.05,
+    "movement_gate": 6,
+    "degeneracy_bar": 0.95
+  },
+  "n": 60,
+  "mode": "real",
+  "recovery": {
+    "kind": "rescore-from-recorded-margins",
+    "reason": "executor crashed on a variable-name typo AFTER all passes, guards, and CSV write completed; no pass was recomputed",
+    "repair_history": [
+      "LOG-4373: recovery script committed but never ran (int() on string item IDs -> ValueError); claimed statistics had no auditable provenance.",
+      "LOG-4374: Law #14 review OVERTURNED the verdict (false statistics, false recovery story, missing report artifact).",
+      "LOG-4375: item-ID bug fixed (string keys, no renumbering); rescore executed against the committed CSV with the frozen scorer; exp094_report.json produced and committed."
+    ],
+    "inputs": {
+      "per_item_records.csv_sha256": "9ada6ef9d489aee959b56160053cbe7bdb7024e6c593cbf3a9ffbfd9b366d149",
+      "constructor_manifest_run.json_sha256": "c016d98aa6ea31cee5176d10ede14432c814c50fabe5085d5cdc0143313a4dfc",
+      "constructor_sha256": "5e03f206dd907b52baa1ab6d5c9954c709d1b47d143c83f9aa85caa81917f361"
+    },
+    "guards_observed_in_run_log": [
+      "G7.1 frozen constructor + audit PASS",
+      "G0 bench pin pass",
+      "G1' 240/240 real-tokenizer cover pass",
+      "\u0394\u03b8=0 pre-run hash == LOG-331 pin",
+      "G5 per-item band 60/60 + execution probe PASS",
+      "degeneracy gate 0.7923 < 0.95 bar",
+      "\u0394\u03b8=0 post-run hash OK"
+    ]
+  },
+  "run_meta": {
+    "mode": "real",
+    "layer": 11,
+    "n_passes": 244,
+    "constructor_sha256": "5e03f206dd907b52baa1ab6d5c9954c709d1b47d143c83f9aa85caa81917f361",
+    "P0_sha256": "e7e81496b08455b00316659f58dbdbaf7d606025b0277975aeb3f09e2601e11d",
+    "R_SEED": 94094
+  }
+}
