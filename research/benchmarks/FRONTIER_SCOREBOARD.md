@@ -28,7 +28,7 @@ repo-artifact-verified (§3).
 | Inference-time search (coverage) | **LLM-Monkeys**: coverage scales log-linearly over 4 orders of magnitude; SWE-bench Lite 15.9%→56% at 250 samples (verifier-gated) | G/E/S/T loop: never discriminatingly tested; E-validity [CONJECTURE] | **A working scaling law vs an untested formulation.** |
 | Search + self-evaluation (planning) | **ToT**: Game of 24, GPT-4: 4%→74% (BFS b=5, depth 3) | No planning/search result; EXP068 retired as-signed (Law #15 FAIL) | **4%→74% vs no result.** |
 | Cheap decoding-time aggregation | **Self-consistency**: GSM8K +17.9% (PaLM-540B 56.5%→74.4%, 40 paths, majority vote) | EXP056 autonomous selection: +4pp, p=0.25, **not significant** | **+17.9pp significant vs +4pp non-significant.** |
-| Static steering, decision flips | **ITI**: Alpaca TruthfulQA 32.5%→65.1% (+32.6pp) via label-trained head probes (NeurIPS 2023) | EXP077: **ΔM=0, p=1.0, N=60** (410m/L20) — five static rooms dead; **EXP093: the shared L11 task direction is also ΔM=0, p=1.0 (b=c=0)** — causal inertness, not measurement failure; the L20 boundary generalizes: **information ≠ influence**. G1 killed the QK-subspace mechanism. | **+32.6pp (label-trained probes) vs exactly zero at two layers.** |
+| Static steering, decision flips | **ITI**: Alpaca TruthfulQA 32.5%→65.1% (+32.6pp) via label-trained head probes (NeurIPS 2023) | EXP077: **ΔM=0, p=1.0, N=60** (410m/L20) — five static rooms dead; **EXP093: the shared L11 task direction is also ΔM=0, p=1.0 (b=c=0)** — causal inertness, not measurement failure; the L20 boundary generalizes: **information ≠ influence**; **EXP094: the per-item L11 direction is also ΔM_T=+0.0000, 0/120 flips, p=1.0000 (T=B=R=36/60)** — pure inertness *with confirmed delivery* (G5 execution probe rel_err 4.26e-07, nonzero margin shifts on all 120 arms); the per-item static-geometry family is closed at L11. G1 killed the QK-subspace mechanism. | **+32.6pp (label-trained probes) vs exactly zero at two layers — shared and per-item at L11.** |
 | Context-dependent steering | **SVF** (arXiv:2602.01654, Feb 2026): per-activation steering fields, multi-layer coordinated — *no headline number in the checked abstract* | Gated/conditional variants of our operator: **never tested** (survived EXP077's narrow kill by exemption, not evidence) | **A working 2026 method vs an untested exemption.** |
 | Closed-loop representation control | **Activation-LQR**: LTV linearization + LQR feedback with tracking-error bounds, no training — *existence proof, no headline accuracy number in abstract* | CLLC candidate: narrowed distinction only, **never tested** | **Guarantees vs a narrowed claim.** |
 | Selective-abstention reliability | **NoisyCoconut** (TMLR June 2026): unanimous latent-path agreement → error <15% on math reasoning via selective abstention | No reliability result of any kind | **<15% error vs no measurement.** |
@@ -212,6 +212,7 @@ The same columns. Nothing cherry-picked; the demotions are stated first.
 | **EXP091** — KILL: zero-shot cosine scoring dead (LOG-361/362) | Zero-shot cosine-similarity scoring, frozen final-token embeddings, novel relational items | pythia-410m / L20 | **31/60 (51.67%), exact one-sided binomial p=0.4487**; A-first 0.50 / C-first 0.5333; margins noise-scale (mean 6.8e-4); instrument responsive (G4 spread 0.0803 ≫ 1e-4) — genuine null; CLM-8B free-lunch version KILLED as designed (≤37/60 bar) | 60 passes, $0 CPU | None (zero-shot) | N | Y | Killed (executed real, CPU); independent verdict review ADOPTED (LOG-362); Δθ=0 verified | LOG-361/362; `experiments/runs/EXP091*` |
 | **EXP092** — CONTINUE: layer-11 task information licensed (LOG-4336/4338) | Information-Bottleneck Localization — per-layer 1-NN LOO on frozen embeddings | pythia-410m, all 24 layers | Layer 11: **acc 0.3333 (20/60), stratified-permutation p=0.000999 < α_B=0.0020833, effect +0.2000 ≥ 0.10**; S = {1,11,12,13,14,15,17,18} clear both bars; L20 acc 0.15, p=0.0659 (correctly excluded). ADOPT-WITH-CORRECTIONS (binding). **Licensed claim: frozen layer 11 carries significant task information (1-NN LOO, Bonferroni-significant, ≥10pp above null).** Novelty N1. No capability claim licensed. | $0 CPU (~1.5h) | None | N | Y | Continue, l* = 11; S1 (Ross kNN-MI) retired — proven vacuous by construction (MI = ψ(60)−ψ(4) exactly in this regime; any successor MI diagnostic needs a degeneracy analysis + constant-data unit test) | LOG-4336 (execution), LOG-4338 (binding review), `experiments/runs/EXP092_ibl/` |
 | **EXP093** — KILL UPHELD: shared layer-11 direction causally inert (LOG-4352) | Static injection of the shared layer-11 task direction on EXP092-B | pythia-410m / L11 | **Δ = 0.0000; McNemar b = c = 0 → p = 1.0 in all six tests** (P-vs-B and N-vs-B × 3 strata); perturbation real (4.7% of residual norm, reached the logits, G5 rel_err 4.3e-07) but flipped zero decisions — causal inertness, not measurement failure. **Information ≠ influence at layer 11; the layer-20 boundary generalizes.** Falsifies "≥10pp causal transfer via a shared static direction at layer 11" only. | $0 CPU (~10–15 min) | None | N | Y | Killed (executed real, CPU); independent verdict review binding (LOG-4352); Δθ=0 verified (pre/post `ec276abe…`) | LOG-4352; `experiments/protocols/REVIEWS/EXP093_LAW14_VERDICT_REVIEW_2026-09-25.md` |
+| **EXP094** — KILL ADOPTED: per-item layer-11 task direction causally inert (LOG-4377) | Static per-item injection of the per-item L11 task direction on EXP092-B (decision flips) | pythia-410m / L11 | **ΔM_T=+0.0000 (T=B=R=36/60); movement=0 flips across 120 injection item-arms; all nine McNemar b=c=0 → p=1.0000**; strata +0.0000/+0.0000, 0 ties/180; G5 delivery confirmed (execution probe rel_err 4.26e-07, nonzero margin shifts on all 120 arms) — pure inertness, not measurement failure. **Per-item static-geometry family closed at L11 (gated/dynamic and multi-layer untouched).** The false LOG-4373 statistics (ΔM_T=−0.0333, 8 flips, p=0.6250) were struck at LOG-4374 and never appear as live numbers. | $0 CPU (244/400 passes) | None | N | Y | Killed (executed real, CPU); Law #14 repair SIGNED (LOG-4376); independent verdict review **ADOPTED (LOG-4377)**; Δθ=0 verified (pre/post `ec276abe…`) | LOG-4373–4377; `experiments/runs/EXP094_peritem_l11/` |
 
 ### 3.2 The program's position, stated without softening
 
@@ -225,8 +226,10 @@ under CEO re-review (LOG-213) — the tilt accounts are dead on both ends
 (target-boost 0/60, K1; foil-suppression 0/60, EXP082), and the live
 mechanism is the relational (t−f) readout effect, still label-informed. Its
 best autonomous number (+4pp, EXP056) is not significant. Its mechanism
-program is six dead static-geometry rooms (five at L20 + the shared-direction
-L11 generalization, EXP093) + one killed QK-subspace sentence + one retracted
+program is seven dead static-geometry rooms (five at L20 + the shared-direction
+L11 generalization, EXP093 + the per-item L11 granularity, EXP094 — whose null
+survived a full scoring-repair cycle: false LOG-4373 statistics struck at
+LOG-4374, verdict ADOPTED at LOG-4377) + one killed QK-subspace sentence + one retracted
 Procrustes claim + two dead directional-readout hypotheses (K1, EXP082) +
 one dead free-lunch scorer (EXP091, a genuine null from a working instrument)
 + one algebraic-untestability boundary (EXP085, k=2) + one infeasible
@@ -241,7 +244,9 @@ EXP080/081/084 still gated on CEO GPU clearance. The week's one licensed
 positive: **EXP092 — frozen Pythia-410m layer 11 carries significant task
 information** (1-NN LOO, Bonferroni-significant, ≥10pp above null) — an
 observation, not a capability; EXP093's kill banked its immediate
-consequence: information ≠ influence.
+consequence: information ≠ influence; EXP094's kill banks the per-item
+consequence — the per-item static-geometry family is closed at L11
+(LOG-4377 ADOPTED).
 
 [INFERENCE]: plotted on the same axes, SCBI does not trail the frontier by a
 margin — it trails by *category*: the frontier has L1–L2 capability results;
@@ -341,6 +346,18 @@ Per-item construction can never beat a None-class row.
   Same axes, same honesty: SCBI holds zero positive signals for autonomous
   steering; the label-free race stays tied at zero. No literature re-check
   this cycle (next due 2026-10-23).
+- v1.2 — 2026-09-28 (LOG-4389): added the EXP094 row — per-item layer-11 task
+  direction causally inert (Refuted/KILL at §3 step 3, repair SIGNED LOG-4376,
+  verdict ADOPTED LOG-4377): ΔM_T=+0.0000, T=B=R=36/60, 0/120 flips, all nine
+  McNemar p=1.0000, strata +0.0000/+0.0000, 0 ties/180, G5 delivery confirmed
+  (execution probe rel_err 4.26e-07, nonzero margin shifts on all 120 arms) —
+  pure inertness, not measurement failure; per-item static-geometry family
+  closed at L11 (gated/dynamic and multi-layer untouched; no EXP093 claim
+  altered). §0 static-steering row carries the per-item L11 clause; §3.2
+  inventory now reads seven dead static rooms. Honesty note: LOG-4373's false
+  statistics (ΔM_T=−0.0333, 8 flips, p=0.6250) were struck at LOG-4374 and
+  never appear as live numbers on this board. No literature re-check this
+  cycle (next due 2026-10-23).
 
 ---
 
