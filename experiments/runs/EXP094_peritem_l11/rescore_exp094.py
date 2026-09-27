@@ -1,12 +1,23 @@
-"""EXP094 crash recovery: rescore from the recorded per-item CSV.
+"""EXP094 verdict rescore: score the recorded per-item CSV with the frozen bundle.
 
-On 2026-09-27 the licensed real run completed all 244 passes, all guards
-(G0, G1', G5, Δθ=0 pre/post, thread pin), and wrote per_item_records.csv
-(180 rows) plus constructor_manifest_run.json — then crashed on a variable
-name typo in the final score_experiment call. This script recovers the
-verdict WITHOUT recomputing anything: it reads the recorded margins, the
-recorded delivery_pass flag, and the recorded mean pairwise |cosine|, and
-calls the frozen bundle's score_experiment on exactly those inputs.
+Timeline (honest provenance, LOG-4375):
+  1. The licensed real run completed all 244 passes, all guards, and wrote
+     per_item_records.csv (180 rows) + constructor_manifest_run.json — then
+     crashed AFTER the CSV write on a variable-name typo in the final
+     score_experiment call (NameError: 'mean_abs_cosine', run_exp094.py:359;
+     evidenced by exp094_stdout.log's internal sequence). The margins are
+     genuine recorded data; the crash is genuine.
+  2. The recovery script committed with the run had its OWN bug
+     (int(item_id) on string IDs) and never successfully ran — Law #14
+     review LOG-4374 OVERTURNED the claimed verdict: the reported numbers
+     (dM_T=-0.0333, 8 flips, p=0.6250) had no auditable provenance.
+  3. This repair (LOG-4375) fixes the item-ID handling (string keys; items
+     are NOT renumbered) and executes the rescore: it reads the recorded
+     margins, the recorded delivery_pass flag, and the recorded mean
+     pairwise |cosine| from the committed CSV/manifest, and calls the
+     frozen bundle's score_experiment on exactly those inputs. No pass is
+     recomputed; no margin is regenerated — only the pre-registered
+     decision-table scoring is applied to recorded data.
 
 Exit 0 = report written; exit 1 = inputs inconsistent.
 """
@@ -48,7 +59,9 @@ def main():
     strata = {}
     with open(csv_path) as f:
         for row in csv.DictReader(f):
-            i = int(row["item_id"])
+            # LOG-4375 fix: item IDs are strings (e.g. 'exp092_planetary_2hop_0');
+            # keep string keys — do NOT renumber items.
+            i = row["item_id"]
             margins[row["arm"]][i] = float(row["margin"])
             strata[i] = row["stratum"]
     assert all(len(v) == 60 for v in margins.values()), \
@@ -70,6 +83,16 @@ def main():
         "kind": "rescore-from-recorded-margins",
         "reason": "executor crashed on a variable-name typo AFTER all passes, "
                   "guards, and CSV write completed; no pass was recomputed",
+        "repair_history": [
+            "LOG-4373: recovery script committed but never ran (int() on "
+            "string item IDs -> ValueError); claimed statistics had no "
+            "auditable provenance.",
+            "LOG-4374: Law #14 review OVERTURNED the verdict (false "
+            "statistics, false recovery story, missing report artifact).",
+            "LOG-4375: item-ID bug fixed (string keys, no renumbering); "
+            "rescore executed against the committed CSV with the frozen "
+            "scorer; exp094_report.json produced and committed.",
+        ],
         "inputs": {
             "per_item_records.csv_sha256": sha256_file(csv_path),
             "constructor_manifest_run.json_sha256": sha256_file(
