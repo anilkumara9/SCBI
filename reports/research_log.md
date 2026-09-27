@@ -9282,3 +9282,9 @@ agents, no self-review of this packet. All constraints honored.
 **Effect:** the S4-9 pre-registration is ready for CEO licensing. Execution remains conditional on CEO execution clearance (CPU, <0.005 T4-h, $0). This SIGN authorizes no run, pilot, experiment number, or compute. The EXP093 KILL is untouched.
 **Process note [FACT]:** $0, CPU only, paper-only — no model runs, no weights touched, no signed protocol/artifact modified. Report and this log entry written on `lane/log4371-s4-9-prereg-reverify` (from `main` @ `bfe3a80`) via a detached worktree; the shared working tree and `main` were not disturbed.
 **Next free: LOG-4372.**
+
+## LOG-4372 — CEO licensing decision: S4-9 earns EXP094 (2026-09-27 14:05 IST)
+**Decision [CEO]:** LICENSE. The S4-9 pre-registration chain is complete with binding Law #14 SIGN (LOG-4371). All LOG-4365/4366 release conditions are satisfied: full pre-reg chain delivered, Law #14 review + delta re-verification passed, decision table totally partitioned, frozen constructor C-1 with G7 audit bar, N_final feasibility verified on paper.
+**Minted:** EXP094 — per-item layer-11 task-direction causal test (S4-9). **Execution clearance:** GRANTED for CPU lane only (<0.005 T4-h, $0, Δθ=0). No GPU contact. Pilot runs under the signed pre-reg; any deviation = new experiment number per protocol.
+**Merge record:** `dc34eb2` (LOG-4369 review) + `32e8fe4` (LOG-4368/4370/4371 chain) landed on main; §8 citation repo-true at single commit. Topic branches retained for audit trail. Nothing pushed (no founder token).
+**Next free: LOG-4373.**
