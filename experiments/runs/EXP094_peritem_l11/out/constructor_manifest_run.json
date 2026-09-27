@@ -1,0 +1,483 @@
+{
+  "frozen_manifest": {
+    "constructor_version": "C-1",
+    "constructor_sha256": "5e03f206dd907b52baa1ab6d5c9954c709d1b47d143c83f9aa85caa81917f361",
+    "P0_TEXT": "The following passage is shown for reference.\n\n",
+    "P0_sha256": "e7e81496b08455b00316659f58dbdbaf7d606025b0277975aeb3f09e2601e11d",
+    "NORM_RATIO": 0.0474,
+    "R_SEED": 94094,
+    "dependency_pins": {
+      "torch": "2.14.0+cpu",
+      "transformers": "5.17.0",
+      "numpy": "2.5.3",
+      "python": "3.12.3"
+    },
+    "g7_verdict": "PASS",
+    "g72_attestation": {
+      "forbidden_token_hits": [],
+      "function_signatures": {
+        "build_per_item_direction": [
+          "a_vec",
+          "b_vec",
+          "h_norm_b",
+          "ratio"
+        ],
+        "build_random_direction": [
+          "d_norm",
+          "dim",
+          "rng"
+        ]
+      },
+      "allowed_inputs": [
+        "prompt token-ID arrays (item's own input tokens only)",
+        "P0 token-ID array (frozen neutral prefix)",
+        "a_vec: L11 residual at readout anchor, task framing (D,)",
+        "b_vec: L11 residual at readout anchor, P0 reference (D,)",
+        "h_norm_b: scalar L11 residual norm on the B-arm pass",
+        "rng: numpy Generator (R arm only, seed pinned)"
+      ],
+      "label_locations_documented": [
+        "bench['ent'] (target entity string per item) \u2014 never passed to any constructor function; the executor's construction call sites take prompt text / activation vectors only.",
+        "archived .npz label vector \u2014 not read by this experiment at all (EXP093's direction source; EXP094 constructs from live passes)."
+      ],
+      "cross_item_statement": "build_per_item_direction coerces inputs to 1-D float64 and raises ConstructionError on any other shape; no code path indexes other items."
+    },
+    "g73_max_abs_diff": 0.0,
+    "g74_statement": "non-1-D tensors rejected; d_i is a pure function of item i"
+  },
+  "per_item": [
+    {
+      "item": 0,
+      "r_norm": 3.973071421918549,
+      "degenerate_zero": false,
+      "d_norm": 0.9901693228876303,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 1,
+      "r_norm": 3.695841125915741,
+      "degenerate_zero": false,
+      "d_norm": 1.0139467224609153,
+      "perturbation_ratio": 0.04739999999999999
+    },
+    {
+      "item": 2,
+      "r_norm": 3.831395991034606,
+      "degenerate_zero": false,
+      "d_norm": 0.995583722273694,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 3,
+      "r_norm": 3.692746039356068,
+      "degenerate_zero": false,
+      "d_norm": 0.9954035213745097,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 4,
+      "r_norm": 4.169168890571327,
+      "degenerate_zero": false,
+      "d_norm": 1.003774871598407,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 5,
+      "r_norm": 3.743606483752114,
+      "degenerate_zero": false,
+      "d_norm": 1.001613980102979,
+      "perturbation_ratio": 0.04739999999999999
+    },
+    {
+      "item": 6,
+      "r_norm": 4.055595821008728,
+      "degenerate_zero": false,
+      "d_norm": 0.9936313616840713,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 7,
+      "r_norm": 3.918613010898408,
+      "degenerate_zero": false,
+      "d_norm": 0.9973007806877496,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 8,
+      "r_norm": 3.8784873836811156,
+      "degenerate_zero": false,
+      "d_norm": 0.997751982423085,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 9,
+      "r_norm": 3.9023578781702115,
+      "degenerate_zero": false,
+      "d_norm": 0.9850238940522935,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 10,
+      "r_norm": 3.8774488739558133,
+      "degenerate_zero": false,
+      "d_norm": 1.0071724769540895,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 11,
+      "r_norm": 3.7714354439916087,
+      "degenerate_zero": false,
+      "d_norm": 1.0049921563283013,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 12,
+      "r_norm": 3.8863178927058355,
+      "degenerate_zero": false,
+      "d_norm": 0.9857447358946249,
+      "perturbation_ratio": 0.047400000000000005
+    },
+    {
+      "item": 13,
+      "r_norm": 3.8815396673705362,
+      "degenerate_zero": false,
+      "d_norm": 1.0216623145614383,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 14,
+      "r_norm": 4.0110644813787095,
+      "degenerate_zero": false,
+      "d_norm": 0.9848078781167696,
+      "perturbation_ratio": 0.047400000000000005
+    },
+    {
+      "item": 15,
+      "r_norm": 3.66471017233681,
+      "degenerate_zero": false,
+      "d_norm": 1.0158307218442473,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 16,
+      "r_norm": 3.1988207862814666,
+      "degenerate_zero": false,
+      "d_norm": 1.017358582896476,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 17,
+      "r_norm": 3.7545414950044838,
+      "degenerate_zero": false,
+      "d_norm": 1.018780095860876,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 18,
+      "r_norm": 3.4180977041971565,
+      "degenerate_zero": false,
+      "d_norm": 1.0138854055680933,
+      "perturbation_ratio": 0.047400000000000005
+    },
+    {
+      "item": 19,
+      "r_norm": 3.7929486539074024,
+      "degenerate_zero": false,
+      "d_norm": 0.9948676827749723,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 20,
+      "r_norm": 3.419083967849914,
+      "degenerate_zero": false,
+      "d_norm": 1.0123104681009458,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 21,
+      "r_norm": 3.5647280078234074,
+      "degenerate_zero": false,
+      "d_norm": 1.0090329666694533,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 22,
+      "r_norm": 3.5209645349513,
+      "degenerate_zero": false,
+      "d_norm": 0.9876898342022038,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 23,
+      "r_norm": 3.875277871167185,
+      "degenerate_zero": false,
+      "d_norm": 0.98779044893748,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 24,
+      "r_norm": 3.3928515940753345,
+      "degenerate_zero": false,
+      "d_norm": 1.0283238786920565,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 25,
+      "r_norm": 3.9887790070428832,
+      "degenerate_zero": false,
+      "d_norm": 1.004719034967127,
+      "perturbation_ratio": 0.04739999999999999
+    },
+    {
+      "item": 26,
+      "r_norm": 3.4515310522737193,
+      "degenerate_zero": false,
+      "d_norm": 1.0273097744466542,
+      "perturbation_ratio": 0.047399999999999984
+    },
+    {
+      "item": 27,
+      "r_norm": 4.025053138075927,
+      "degenerate_zero": false,
+      "d_norm": 0.9983850261393645,
+      "perturbation_ratio": 0.04739999999999999
+    },
+    {
+      "item": 28,
+      "r_norm": 3.363463227079022,
+      "degenerate_zero": false,
+      "d_norm": 1.0040572281315157,
+      "perturbation_ratio": 0.047400000000000005
+    },
+    {
+      "item": 29,
+      "r_norm": 3.7124320071836254,
+      "degenerate_zero": false,
+      "d_norm": 1.0218896689749677,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 30,
+      "r_norm": 4.145692263172733,
+      "degenerate_zero": false,
+      "d_norm": 0.9949247902355732,
+      "perturbation_ratio": 0.04739999999999999
+    },
+    {
+      "item": 31,
+      "r_norm": 3.932069316125973,
+      "degenerate_zero": false,
+      "d_norm": 0.9954751827629555,
+      "perturbation_ratio": 0.047400000000000005
+    },
+    {
+      "item": 32,
+      "r_norm": 3.788377312908922,
+      "degenerate_zero": false,
+      "d_norm": 0.996955637287987,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 33,
+      "r_norm": 4.2679784500215305,
+      "degenerate_zero": false,
+      "d_norm": 0.9796854137054396,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 34,
+      "r_norm": 4.115102183135176,
+      "degenerate_zero": false,
+      "d_norm": 0.9931135315273869,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 35,
+      "r_norm": 4.4055581116399685,
+      "degenerate_zero": false,
+      "d_norm": 0.9899857965023654,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 36,
+      "r_norm": 3.8669569898859684,
+      "degenerate_zero": false,
+      "d_norm": 0.9874772141601451,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 37,
+      "r_norm": 4.317641215036296,
+      "degenerate_zero": false,
+      "d_norm": 1.003738957536581,
+      "perturbation_ratio": 0.047400000000000005
+    },
+    {
+      "item": 38,
+      "r_norm": 4.057927380560656,
+      "degenerate_zero": false,
+      "d_norm": 0.9999087112529939,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 39,
+      "r_norm": 4.149783436564597,
+      "degenerate_zero": false,
+      "d_norm": 0.9948327898236206,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 40,
+      "r_norm": 3.590562536767103,
+      "degenerate_zero": false,
+      "d_norm": 1.001182380780777,
+      "perturbation_ratio": 0.04739999999999999
+    },
+    {
+      "item": 41,
+      "r_norm": 4.321602190019881,
+      "degenerate_zero": false,
+      "d_norm": 0.9857455352279806,
+      "perturbation_ratio": 0.047400000000000005
+    },
+    {
+      "item": 42,
+      "r_norm": 4.039602890335051,
+      "degenerate_zero": false,
+      "d_norm": 0.9915281896157357,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 43,
+      "r_norm": 4.066720957238695,
+      "degenerate_zero": false,
+      "d_norm": 1.0003533595450744,
+      "perturbation_ratio": 0.047400000000000005
+    },
+    {
+      "item": 44,
+      "r_norm": 3.967800833661782,
+      "degenerate_zero": false,
+      "d_norm": 0.9994289140372522,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 45,
+      "r_norm": 3.637279613695916,
+      "degenerate_zero": false,
+      "d_norm": 1.0057241300582378,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 46,
+      "r_norm": 3.8869503590679995,
+      "degenerate_zero": false,
+      "d_norm": 0.9933249533971906,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 47,
+      "r_norm": 3.461458003325721,
+      "degenerate_zero": false,
+      "d_norm": 0.9924540881761484,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 48,
+      "r_norm": 4.055755270233754,
+      "degenerate_zero": false,
+      "d_norm": 0.9833104068030387,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 49,
+      "r_norm": 3.816077510122933,
+      "degenerate_zero": false,
+      "d_norm": 0.9983632750770789,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 50,
+      "r_norm": 3.9453833923308403,
+      "degenerate_zero": false,
+      "d_norm": 0.994810551112693,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 51,
+      "r_norm": 3.570700537538306,
+      "degenerate_zero": false,
+      "d_norm": 1.0119386096331033,
+      "perturbation_ratio": 0.047399999999999984
+    },
+    {
+      "item": 52,
+      "r_norm": 4.042063999458276,
+      "degenerate_zero": false,
+      "d_norm": 1.0089349844152602,
+      "perturbation_ratio": 0.047399999999999984
+    },
+    {
+      "item": 53,
+      "r_norm": 3.486208279695117,
+      "degenerate_zero": false,
+      "d_norm": 1.0094005024914305,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 54,
+      "r_norm": 3.929750076395439,
+      "degenerate_zero": false,
+      "d_norm": 1.0062630604543215,
+      "perturbation_ratio": 0.047400000000000005
+    },
+    {
+      "item": 55,
+      "r_norm": 3.501534048343063,
+      "degenerate_zero": false,
+      "d_norm": 1.0006317779102176,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 56,
+      "r_norm": 4.091742755777078,
+      "degenerate_zero": false,
+      "d_norm": 1.0018653275480922,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 57,
+      "r_norm": 3.3887896749954227,
+      "degenerate_zero": false,
+      "d_norm": 1.0078136816203527,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 58,
+      "r_norm": 4.042821025203967,
+      "degenerate_zero": false,
+      "d_norm": 1.007128860878029,
+      "perturbation_ratio": 0.0474
+    },
+    {
+      "item": 59,
+      "r_norm": 3.344854077403621,
+      "degenerate_zero": false,
+      "d_norm": 1.001820588075419,
+      "perturbation_ratio": 0.047400000000000005
+    }
+  ],
+  "g5_band": [
+    0.0355,
+    0.0593
+  ],
+  "g5_n_in_band": 60,
+  "g5_execution": {
+    "criterion_i_rel_err": 4.26001700539517e-07,
+    "criterion_ii_max_abs_change": 0.0,
+    "criterion_iii_bit_match": true,
+    "gate": "PASS"
+  },
+  "delivery_pass": true,
+  "mean_pairwise_abs_cosine": 0.7922606322936264
+}

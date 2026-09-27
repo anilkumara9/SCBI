@@ -356,7 +356,7 @@ def run_real(bench, manifest, snapshot, log, out_dir):
 
     phrasing = [b["phrasing"] for b in bench]
     report = score_experiment(mB, mT, mR, phrasing, delivery_pass,
-                              mean_abs_cosine)
+                              mean_abs_cos)
     report["mode"] = "real"
     report["guards"] = {
         "G0": "pass (bench pin)",
