@@ -1,0 +1,14 @@
+[run] G0 pass: bench pin 9be8162633fe19aa…, 60/60 unique tuples, strata match §2.
+[run] G1' inherited (bench-pin byte-identity with EXP092-B; EXP092 real-tokenizer cover 240/240 stands).
+[run] G2 pass (archived .npz (read-only)): 60/60 ||r_i|| > 1e-9 (min=1.3352), 60/60 v unit-norm, coherence mean_cos_u=-0.0160, prenorm=[0.0246,0.0444].
+[run] torch intra-op threads pinned: 2
+[run] loading tokenizer: /home/hatch/workspace/.exp086_weights/pythia-410m
+[run] G1' pass: 240/240 in-prompt occurrences single-token (real tokenizer, offset-mapping cover check).
+[run] loading frozen model: /home/hatch/workspace/.exp086_weights/pythia-410m
+[run] model.eval() set; requires_grad_(False) on all parameters.
+[run] G1 pre-run hash OK: ec276abe3902fab0…
+[run] G5 pass: (i) rel_err=4.30e-07, (ii) max_abs=0.00e+00, (iii) bit_match=True
+[run] G4 pass: clean baseline 36/60, mean margin -0.001819 (ref -0.0018).
+[run] 180 forward passes complete (60 B + 60 P + 60 N).
+[run] G1 post-run hash OK: ec276abe3902fab0… (Δθ=0 verified)
+[run] REAL mode: frozen LOG-331 snapshot, CPU, read-only.

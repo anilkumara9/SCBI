@@ -1,0 +1,94 @@
+{
+  "verdict": "KILL",
+  "verdict_detail": {
+    "aggregate": {
+      "n": 60,
+      "acc_B": 0.6,
+      "acc_P": 0.6,
+      "acc_N": 0.6,
+      "delta": 0.0,
+      "mcnemar_b": 0,
+      "mcnemar_c": 0,
+      "mcnemar_p": 1.0,
+      "mcnemar_NvB_p": 1.0,
+      "delta_N": 0.0,
+      "monotone": false,
+      "bars": false
+    },
+    "A_first": {
+      "n": 30,
+      "acc_B": 0.9666666666666667,
+      "acc_P": 0.9666666666666667,
+      "acc_N": 0.9666666666666667,
+      "delta": 0.0,
+      "mcnemar_b": 0,
+      "mcnemar_c": 0,
+      "mcnemar_p": 1.0,
+      "mcnemar_NvB_p": 1.0,
+      "delta_N": 0.0,
+      "monotone": false,
+      "bars": false
+    },
+    "C_first": {
+      "n": 30,
+      "acc_B": 0.23333333333333334,
+      "acc_P": 0.23333333333333334,
+      "acc_N": 0.23333333333333334,
+      "delta": 0.0,
+      "mcnemar_b": 0,
+      "mcnemar_c": 0,
+      "mcnemar_p": 1.0,
+      "mcnemar_NvB_p": 1.0,
+      "delta_N": 0.0,
+      "monotone": false,
+      "bars": false
+    },
+    "bars": {
+      "delta_bar": 0.1,
+      "alpha": 0.05
+    }
+  },
+  "secondaries": {
+    "mean_margin_shift_P": 0.005951849619547526,
+    "mean_margin_shift_N": -0.007636133829752604,
+    "flip_ledger": {
+      "B_wrong_to_P_right": [],
+      "B_right_to_P_wrong": [],
+      "B_wrong_to_N_right": [],
+      "B_right_to_N_wrong": []
+    },
+    "tie_count": 0,
+    "tie_rate": 0.0
+  },
+  "n": 60,
+  "mode": "real",
+  "perturbation_ratio": 0.04739378973585022,
+  "guards": {
+    "G0": "pass (bench pin 9be8162633fe19aa\u2026)",
+    "G1": "pass (pre/post LOG-331 hash)",
+    "G1'": "inherited + real-tokenizer cover re-executed (240/240)",
+    "G2": "pass (60/60 ||r_i||>1e-9, min=1.3352, 60/60 unit-norm, R4 ok)",
+    "G3": "mode=real",
+    "G4": "pass (36/60, margin tol 1e-4)",
+    "G5": "pass (i rel_err=4.30e-07, ii max_abs=0.00e+00, iii bit_match)"
+  },
+  "coherence": {
+    "mean_pairwise_cosine_u": -0.015992130539039823,
+    "prenorm_norm_range": [
+      0.02458087639879936,
+      0.04443734858819417
+    ],
+    "max_pairwise_cosine_v": 0.9553621325668837,
+    "min_r_norm": 1.335202738426142
+  },
+  "run_meta": {
+    "mode": "real",
+    "alpha": 1.0,
+    "layer": 11,
+    "n_conditions": 3,
+    "n_passes": 180,
+    "torch_threads": 2,
+    "protocol_digest": "3e0f269b9f2c5170d2b6ed37b2bd03f39f8eeb344914e8bb1f904709ad13db93",
+    "bench_pin": "9be8162633fe19aa2a924440d8ba158c1cc4e734c1f2a554a01a27e459f47fc4"
+  }
+}

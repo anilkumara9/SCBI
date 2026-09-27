@@ -8936,4 +8936,299 @@ No change to the decision-loop injection (`run_conditions_real`), scoring, or an
 
 **Non-blocking observation:** per-item margins are not persisted to disk (Law #13 gap for decision data; aggregates only). Future bundles should write the per-item margin CSV. Does not affect this verdict.
 
+**Licensed claim (scoped):** static injection of the shared layer-11 task direction does not move decisions on EXP092-B — information ≠ influence at layer 11; the layer-20 boundary generalizes. Falsifies "≥10pp causal transfer via a shared static direction at layer 11" only; per-item directions, gated/dynamic mechanisms, and multi-layer compositions remain EXP094+ material.
+
+**Non-blocking observation:** per-item margins are not persisted to disk (Law #13 gap for decision data; aggregates only). Future bundles should write the per-item margin CSV. Does not affect this verdict.
+
 Review: `experiments/protocols/REVIEWS/EXP093_LAW14_VERDICT_REVIEW_2026-09-25.md`.
+
+## LOG-4353 — 2026-09-25 — Friday cull (acting Research Lead): NOT a failed week — falsification happened AND ambitious attempts happened
+
+**Act:** Acting Research Lead (Friday cull per `research/RESEARCH_OPERATING_SYSTEM.md` §2/§9/§10, LOG-218/219). Read: operating system §§9–10; this week's log entries (2026-09-21 → 2026-09-25); `research/innovation/CANDIDATE_BACKLOG.md`; `research/benchmarks/FRONTIER_SCOREBOARD.md` (§§0, 3.1, 3.2, 5); `research/innovation/SPRINT_2026-09-25_SUMMIT.md` (partial). $0 spent; no signed artifact touched; no experiment number minted.
+
+### The two LOG-218 questions — answered honestly
+
+**1. Did we falsify something? YES — emphatically.** Six kills, three halts, two RUN-INVALIDs, one binding review REJECT this week:
+- EXP077 (LOG-128): five static-geometry rooms dead, ΔM=0, p=1.0.
+- G1 (LOG-134): KILL — the handover's "Core Causal Null-Space Theorem" false as a QK-subspace claim (inversion: failed direction B_agg MORE QK-visible than the working bridge).
+- K1 (LOG-213): readout-tilt EXONERATED (0/180 at the 0.9 bar); EXP082 (LOG-217/278): foil-suppression KILLED, UPHELD at forensic reconciliation.
+- EXP067 (LOG-130): STAGE_A_HALT — full-rank Procrustes operationalization underdetermined (80 anchors span ~33/64 dims); H1 untestable via this path.
+- EXP078 (LOG-117): ENERGY_GATE_HALT — oracle-scale static bridge has no decision headroom.
+- EXP079 (LOG-138): halt accepted — the signed HALT_PROBE rule infeasible by construction (max N_final=46 < 50 over ALL splits); probe-feasibility algebra is now a standing pre-reg gate.
+- K3 Phase-0 (LOG-238): HALT on FATAL G4 — the plan died on its own guard.
+- S3-1/S3-3 Stage-0 archived gates (LOG-243): killed as infeasible — no archive carries per-layer snapshots; pivoted to Stage-0b live pilots.
+- EXP085 (LOG-323): KILLED as designed — k=2 binary forced-choice makes rank-suppression algebraically untestable (ΔM_C2 ≡ 2·(N_f/60)−1, Tier-0 Type-I=1.00).
+- EXP091 (LOG-361/362): KILL — the CLM-8B free-lunch version dead (31/60, p=0.4487, on a WORKING instrument — a genuine null).
+- EXP093 (LOG-4352): KILL UPHELD — shared layer-11 task direction causally inert (Δ=0.0000, b=c=0 → p=1.0, all six tests; perturbation real at 4.7% of residual norm): **information ≠ influence at layer 11; the layer-20 boundary generalizes.**
+- EXP086 Stage-B fixes REJECT (LOG-4333, binding) → repaired, re-verified SIGN (LOG-4335).
+- EXP090 (LOG-354): RUN-INVALID — G1 tokenizer defect by construction (7/10 entities multi-token; the assumption was asserted without running the real tokenizer).
+
+**2. Did we attempt anything ambitious? YES.** The CLM-8B free-lunch falsifier arc (LOG-334/335/336 → LOG-354 → LOG-355 → LOG-361/362) attempted to falsify an external frontier-adjacent claim and killed the free-lunch version cleanly; the summit sprint (2026-09-25) produced 7 summit-aimed mechanism candidates under the summit question (IBL → EXP092 CONTINUE, TGA, …); the ambition sprint (LOG-250) produced 7 ranked candidates R1–R7 with Law-15 packets + a 22-entry cull list + 4 guards; R1/R2/R3 signed and queued (EXP083/084 launch-licensed, LOG-273); R4 (EOC) passed the Law-15 gate with a worth-it analysis + unsigned pre-reg skeleton; EXP092/093 asked "where does the frozen net carry task information?" and "does the shared direction cause decisions?" — a genuine scientific extension of the layer-20 boundary.
+
+**This was not a week of pure process. Not a failed week.** Logged as such.
+
+### What died (buried with honors)
+
+Recorded in the backlog's new **Graveyard** section (`research/innovation/CANDIDATE_BACKLOG.md`, bottom): S3-5 (ACG) and S3-6 (AAR) **culled** — three days as IDEA rows (2026-09-23 → 2026-09-25) with no kill criterion and no costed pilot; S3-6 never differentiated itself from the standing Law-#14 apparatus. Idea text preserved verbatim and searchable; resurrection requires a full Law-15 packet + belief-change + steelman, Law #14-reviewed. Plus the week's twelve burials-with-honors (tilt family, foil-suppression, static cone geometry, shared L11 direction, QK-null-space, free-lunch scoring, k=2 runner-up suppression, better-probe rescue, archived target-free verification, oracle-scale static bridge, EXP067's Procrustes operationalization, K3 Phase-0's D1 premise).
+
+### What was born
+
+- **S4-8** — fresh multi-option runner-up-suppression proposal (NOT a revival of EXP085; new scored construct, new option→token mappings, rebuilt foil control, full fresh pre-reg chain) — pays EXP085's death-debt.
+- **S4-9** — per-item (not shared) layer-11 task-direction causal test (EXP094+ material; shared-vs-per-item contrast, N-vs-B routing, stratum breakdown, per-item margin CSV per LOG-4352's Law-#13 observation) — pays EXP093's death-debt.
+- No backlog entry was promoted this cycle. All live rows have kill criteria + costed pilots. S4-1 (I2) updated to KILLED-AS-DESIGNED (binary form), surviving only as S4-8's fresh proposal.
+
+### Deaths-owe-candidates (LOG-219) — audit
+
+EXP077 row corrected from stale "PENDING K1" → PAID (K1 landed LOG-213; S3-8 recommended K2 PROCEED LOG-225; K2 launch-licensed LOG-273, awaiting founder GPU). Ten new death rows added (EXP067, EXP078, EXP079, K3-Phase-0, S3-1/S3-3 archived, EXP085, EXP090, EXP091, EXP093). **Every death owes and pays; two rows are OPEN:** (a) EXP067 — owed candidate is the re-specified loop under LOOP_SPEC_DRAFT, but E-validity is still [CONJECTURE]; (b) K3 Phase-0 — re-registration commissioned but not yet delivered (K3 Phase-1 verdict remains an outstanding program trigger). **Escalation to CEO:** the EXP067 decision is a judgment call (does the LOOP_SPEC re-specification count as the owed candidate, or is the adaptive-loop family banked as a boundary observation?), and the K3 re-registration is overdue relative to its commissioning — options: (1) direct the Research Lead to commission the LOOP_SPEC re-specification as a formal candidate this week; (2) bank the adaptive-loop family as boundary observation and close the debt; (3) set a delivery deadline for the K3 re-registration or stand the CPU-audit thread down. Recommendation: (1) + (3).
+
+### Scoreboard
+
+`research/benchmarks/FRONTIER_SCOREBOARD.md` updated to **v1.1** this cycle (Track 9 duty performed by the acting Lead): 9 new verdict rows (§3.1), §3.2 inventory rewritten, §0 static-steering row records the L11 generalization, changelog appended. Same axes, same honesty: SCBI holds **zero positive signals for autonomous steering**; EXP092's licensed positive is task-information at L11, not a steering mechanism; the label-free race stays tied at zero. No literature re-check this cycle (next due 2026-10-23).
+
+### Standing notes
+
+- GitHub sync: per standing rule the repo is pushed after each completed research cycle with a fresh founder-supplied token; **no token was supplied to this worker, so no push was made** — the tree (main @ 9fecaf7 + this run's file edits) awaits the next sync. Edits in this run: `research/innovation/CANDIDATE_BACKLOG.md` (S4-8/S4-9 born, S3-5/S3-6 culled to Graveyard, deaths table extended), `research/benchmarks/FRONTIER_SCOREBOARD.md` (v1.1).
+- Belief-change test applied to all promotions: S4-8's belief ("EXP085's kill was about the construct, not the mechanism") and S4-9's belief ("the EXP093 kill was about sharedness, not location") are named in their rows.
+- Law #15 for this cull: (1) question — did the week falsify something AND attempt something ambitious; (2) decision — FAILED-WEEK vs NOT-A-FAILED-WEEK, which changes the CEO's next Monday briefing posture; (3) cheapest — reading existing records, $0; (4) license — the LOG-218 standing rule itself, breaking point: a week with zero kills and zero ambitious attempts.
+
+## LOG-4354 — R4 (EOC) Stage −1 complete (2026-09-26) — citation VERIFIED w/ attribution correction; λ̂ proxy WELL-DEFINED
+
+*Dispatched by the next-wave dispatcher per LOG-4353's license (skeleton required Stage −1 before pre-registration). $0 CPU, numpy toy net only; no model weights, no pretrained forward passes, no signed protocols touched, no experiment number minted, no commit/push.*
+
+**Citation — VERIFIED with correction:** Poole, Lahiri, Raghu, Sohl-Dickstein, Ganguli, "Exponential expressivity in deep neural networks through transient chaos", arXiv:1606.05340, NIPS 2016 — the order-to-chaos phase-transition framework, with χ₁ (Eq. 7, "multiplicative stretch factor") as the theoretical object λ̂ finite-differences across depth. **Misattribution found and corrected:** the worth-it analysis's "signal-propagation depth scales are maximal at criticality" is NOT in Poole 2016 (full-text search: zero occurrences of "depth scale") — it is the Schoenholz, Gilmer, Ganguli, Sohl-Dickstein, "Deep Information Propagation", ICLR 2017 (arXiv:1611.01232) abstract corollary: "in networks at the edge of chaos, one of these depth scales diverges." License survives with corrected attribution; Gap 1 (trainability→decisions analogical) unchanged. **Pre-reg action:** cite Schoenholz et al. 2017 for the depth-scale claim (append-only erratum to the worth-it analysis; signed artifacts untouched).
+
+**λ̂ proxy on a toy random MLP (L=11, 20 items, 860 measurements, all computed, nothing invented):**
+- Well-defined: **0 NaN / 0 Inf** — no degenerate ‖Δh₀‖, no blow-up.
+- ε-robustness: per-decade means identical to 5 decimals across ε = 1e-6…1e-2; cross-decade Pearson **r = 1.0000** (0.9998 at 1e-2) — proxy sits in the linear regime; ε choice is non-load-bearing.
+- Regime discrimination: gain 0.5 → λ̂ = **−0.683** (ordered); gain 1.0 → λ̂ = **−0.004** (critical); gain 1.5 → λ̂ = **+0.210** (chaotic). Separation (~0.5–0.9) is 30–60× the within-item seed noise (~0.013) — the diagnostic detects the regime it is supposed to.
+- Seed stability (fixed net, ε-direction seed varies — the real-experiment case): within-item std **0.013** vs cross-item std of per-item means **0.003** (ratio ≈ 0.23). On random nets, λ̂(x) per-item variation is seed noise, not item structure.
+- **Consequence for pre-reg:** pin the ε-direction seed once; keep the skeleton's Var(∣λ̂_baseline∣) floor as the power gate — the toy shows it is load-bearing (no variance → Underdetermined, never KILL); run Stage 0's seed/ε gate on the real model before any scheduling.
+
+**Lane signal: CONTINUE to full pre-registration** with (1) the Schoenholz-2017 citation fix, (2) seed-pin + Var-floor hardening. No diagnostic-invalid KILL is licensed. Full report: `research/innovation/R4_STAGE_MINUS1_REPORT_2026-09-26.md`. Re-runnable script (master seed 20260926): `/tmp/r4_stage_minus1/lambda_hat_toy.py`.
+
+## LOG-4355 — R4 (EOC) full pre-registration DRAFT written (2026-09-26) — UNSIGNED, not reviewed
+
+*Dispatched by the next-wave dispatcher per LOG-4354's CONTINUE-to-pre-registration signal (duplicate-lane check clean: only skeleton, worth-it analysis, and Stage −1 report existed). On paper only, $0 CPU; no model runs, no weights touched, no GPU contact; no signed protocol file edited; no experiment number minted; no commits/pushes. Draft: `research/innovation/R4_PREREG_DRAFT_2026-09-26.md`.*
+
+**What was drafted:** the full unsigned pre-registration for R4 (Edge-of-chaos per-item gain scheduling), fleshing out the skeleton with the worth-it analysis's decision logic and Stage −1's results. Law #15 block included: precise question (does per-item gain scheduling toward λ̂≈0 move 2-hop decisions beyond fixed-gain baselines — is distance-to-criticality a usable per-item control signal, Δθ=0); KILL if scheduled-g ΔM ≤ best-fixed-g ΔM or no |λ̂| dose-response (Spearman p ≥ 0.1); CONTINUE to a (diagnostic, gain-actuator) sweep only on the non-negotiable dose-response signature; cheapest falsifier = Stage 0 diagnostic gate (120 passes ≈ 0.0015 T4-h; total pilot 300 passes ≈ 0.0038 T4-h, 60 items).
+
+**Gates/hardenings in (both LOG-4354 mandates applied):**
+- (a) Citation fix everywhere: Schoenholz, Gilmer, Ganguli, Sohl-Dickstein, "Deep Information Propagation", ICLR 2017 (arXiv:1611.01232) for the depth-scale-maximality claim; Poole et al. 2016 (arXiv:1606.05340) for the χ₁/order-to-chaos framework only. Append-only erratum noted.
+- (b) Seed-pin: ε-direction seed pinned exactly once, logged; Var(|λ̂_baseline|) power floor defined relative to Stage 0's own seed-noise measurement (discriminability > 1 vs pooled within-item seed variance) — no variance → verdict **Underdetermined**, never KILL on a powerless test.
+- Kill-first sequence: Stage 0 (seed/ε stability → KILL candidate if diagnostic-invalid; manipulation check → STOP if λ̂ doesn't move; variance floor → Underdetermined) before any scheduling.
+- Fixed-gain grid pre-registered as a real grid: same candidate gain set as G_sched held constant per item, symmetric about neutral, frozen before execution — exact numeric multipliers are [OPEN], finalized in the execution manifest at Law #14 review (not invented here).
+- Gaps stated honestly: Gap 1 (trainability→decisions analogical — license licenses the test, not the conclusion); Gap 2 (temperature confound discriminated structurally by the dose-response: uniform gain across |λ̂_baseline| = temperature story = KILL).
+- Guards: Δθ=0 (weight hash), bench/thread pin, Law #7 (λ̂ label-free by construction), grid freeze, $0 compute for the draft. PWAR is HELD (piggyback-only $0 marginal).
+
+**Next step:** independent Law #14 adversarial review of the draft → SIGN (or fix-list) → CEO GPU clearance → sequenced behind K2→EXP083→EXP084→EXP086-B→EXP088→EXP087. Review has NOT happened — no SIGN claimed.
+
+## LOG-4356 — Law #14 independent adversarial review: R4 (EOC) full pre-registration draft — SIGN-WITH-FIXES (2026-09-26)
+
+*Dispatched by the SCBI next-wave dispatcher for the Law #14 review lane explicitly sequenced by LOG-4355. Reviewer-only lane: the draft was NOT edited (findings-only, independence preserved). $0 compute, CPU only; no model weights touched, no GPU contact, no signed protocols edited, no experiment number minted, no commits/pushes. Reviewed object: `research/innovation/R4_PREREG_DRAFT_2026-09-26.md` (UNSIGNED). Cross-checked against: `R4_STAGE_MINUS1_REPORT_2026-09-26.md`, `R4_PREREG_SKELETON_2026-09-25.md`, `R4_WORTHIT_ANALYSIS_2026-09-25.md`.*
+
+**Verdict: SIGN-WITH-FIXES — 5 blocking / 4 non-blocking findings. The draft does NOT sign until all blocking findings are repaired (separate fix wave, then re-review of the repaired sections only).**
+
+**Coverage check (the 7 mandated review legs):**
+1. **Law #15 block (§0): COMPLETE** — precise question, KILL/CONTINUE decision logic, cheapest falsifier (Stage 0, 120 passes ≈ 0.0015 T4-h), license + sharpest breaking point (scheduled-g ΔM ≤ best-fixed-g ΔM or Spearman p ≥ 0.1 → KILL). Quantitative prediction pre-registered (Spearman(gain_i, |λ̂_baseline,i|) > 0, one-sided p < 0.05, AND ΔM edge).
+2. **Falsification table (§7): INTERNALLY CONSISTENT except one dead zone → F1 (blocking).** Kill-first sequence intact (Stage 0 gates fire before any scheduling); Underdetermined-not-KILL on the powerless test is correct and honored.
+3. **LOG-4354 mandates:** (a) citation fix — VERIFIED applied everywhere: Schoenholz et al. 2017 (arXiv:1611.01232) carries the depth-scale-maximality claim, Poole et al. 2016 (arXiv:1606.05340) carries only the χ₁/order-to-chaos framework, in both §1.1 and §4; draft attributions match the Stage −1 report's verified quotes. (b) seed-pin + Var floor — VERIFIED: ε-direction seed pinned exactly once and logged; Var_cross(|λ̂_baseline|) floor defined relative to Stage 0's own pooled within-item seed variance (discriminability > 1), Underdetermined on failure.
+4. **Citations verifiable, no misattribution:** draft claims match the Stage −1 full-text findings verbatim (Poole 2016: zero occurrences of "depth scale"; Schoenholz 2017 abstract corollary as quoted). **BUT → F9 (blocking):** draft §4 asserts "The worth-it file carries its own append-only erratum" — grep confirms NO erratum exists in `R4_WORTHIT_ANALYSIS_2026-09-25.md`, and line 36 still states the depth-scale claim as a Poole 2016 theorem. The erratum LOG-4354 claimed was never appended.
+5. **Gaps stated honestly:** Gap 1 (trainability→decisions analogical; license licenses the test, not the conclusion) and Gap 2 (temperature confound discriminated structurally by the dose-response) are carried forward unsoftened. ✓
+6. **Guards:** Δθ=0 (pre/post weight hash, Law #13) ✓; grid-freeze (no mid-run edits, Law #3/#9) ✓; Law #7 (λ̂ label-free by construction; endpoints use evaluation labels only) ✓; bench/thread pin ✓; $0 posture for the draft ✓; PWAR HELD (piggyback-only, no claim licensed) ✓; sequencing behind K2→EXP083→EXP084→EXP086-B→EXP088→EXP087 stated ✓.
+7. **LOG-4338 degeneracy lesson:** λ̂ is a finite-difference stretch ratio, not a mathematical constant on degenerate inputs — the toy showed seed-dependence (within-item std 0.013) and regime response (−0.683/−0.004/+0.210), so the diagnostic is not ties-free-constant by construction. The draft's protection is structural: zero-variance diagnostics trip the Var floor → Underdetermined, never a false KILL. **Protected.** Note only: an ε-injection failure mode (identical Δh_L/Δh_0 ratios) is implicitly covered by the same floor.
+
+**Blocking findings (repair before SIGN):**
+- **F1 — decision-table dead zone.** §7 kills at Spearman p ≥ 0.1 and continues at one-sided p < 0.05; the region 0.05 ≤ p < 0.1 has NO pre-registered verdict. A p = 0.07 outcome is undecidable under the table. Fix: add an explicit verdict row (e.g., inconclusive → Underdetermined/hold, or pre-registered directional call).
+- **F2 — Stage 0 arm underbudgeted.** The D arm allocates 2 passes/item (120 passes), which buys ONE λ̂ measurement — but §5 promises a "λ̂ re-measured across ε-direction seeds" stability gate in the same arm. Seed-stability re-measurement (K seeds × 2 passes) is not budgeted. The §0 "cheapest falsifying test = 120 passes ≈ 0.0015 T4-h" figure does not cover its own stability gate. Fix: budget the stability arm explicitly and recompute the cheapest-falsifier cost.
+- **F3 — scheduler passes unbudgeted.** §2.3 defines g(x) = argmin_g |λ̂(x; g)| over the candidate gain set — measuring λ̂(x; g) at each candidate gain needs diagnostic passes per setting (2 × settings × items), which appear NOWHERE in the 300-pass budget. Fix: either budget scheduler λ̂-evaluations or replace argmin-over-measurements with a pre-registered mapping from λ̂_baseline; the pilot budget and the "cheapest" cost ranking must be recomputed either way.
+- **F4 — signature metric undefined.** The non-negotiable Spearman uses gain_i, which is never defined (Law #5). If gain_i is per-item binary accuracy difference, it takes values {−1, 0, +1} — a ties-heavy variable that weakens the one-sided p < 0.05 gate and needs a ties-corrected test or a finer-grained definition (e.g., margin/logit gain). Fix: define gain_i explicitly in the draft and state the ties treatment.
+- **F9 — false erratum claim.** Append the append-only erratum to `R4_WORTHIT_ANALYSIS_2026-09-25.md` (it never happened despite LOG-4354's claim) and/or correct draft §4's false statement. A signing candidate must not contain a false factual claim.
+
+**Non-blocking (advisory; F5/F6 fixed at manifest stage at latest):**
+- **F5:** CONTINUE fires on ΔM > 0 with no significance/effect-size gate — a one-item flip (ΔM = 1/60) plus p < 0.05 Spearman licenses a sweep. Consider a paired test or minimum ΔM threshold in the manifest.
+- **F6:** ε-injection site unspecified for a tokenized frozen LM (input embeddings? which positions?) — Law #3/#13 reproducibility requires fixing this in the manifest before execution; Law #7 clean only if injection stays label-free.
+- **F7:** Law #15 block names KILL/CONTINUE but no explicit PIVOT branch (Underdetermined/STOP cover it implicitly). Letter-complete the block.
+- **F8:** numeric grid multipliers [OPEN] — acknowledged; finalize in the pre-registered execution manifest, frozen before execution.
+
+**All quantitative claims spot-checked against the Stage −1 report (none invented):** −0.683/−0.004/+0.210 regime discrimination ✓; r = 1.0000 ε-robustness (0.9998 at 1e-2 per report) ✓; 0 NaN/0 Inf over 860 ✓; within-item std 0.013 vs cross-item 0.003 ✓; 30–60× separation ✓; 120/300-pass arm arithmetic and 0.0015/0.0038 T4-h match the skeleton ✓. Draft is otherwise skeleton-faithful (§2–§9 mirror the skeleton's structure and decision logic; new material = citations, erratum, LOG-4354 hardenings, grid structure, guards).
+
+*Next: separate fix wave repairs F1–F4 + F9 (no draft edits by this reviewer); repaired sections return for Law #14 re-review; then SIGN → CEO GPU clearance → queue behind K2→EXP083→EXP084→EXP086-B→EXP088→EXP087. No new experiment number minted by this lane.*
+
+## LOG-4357 — 2026-09-26 — Law #14 full-draft SIGN (binding): R4 (EOC) pre-registration — campaign strategy review closure
+
+**Act:** Campaign strategy review lane (30-day campaign, daily review 2026-09-26 07:40 IST). Three waves dispatched this review, all $0 CPU; unsigned draft only; no signed protocols, weights, or artifacts touched; no commits/pushes.
+
+**Wave 1 — fix wave** (per LOG-4356's explicit next step): repaired all 5 blocking findings in `research/innovation/R4_PREREG_DRAFT_2026-09-26.md` + the worth-it analysis:
+- F1 (§7): dead-zone row added — Spearman one-sided 0.05 ≤ p < 0.1 → **Underdetermined (hold)**, no spend; §0 Law #15 block letter-completed with PIVOT branch.
+- F2 (§2.4 + §0): D_stab stability arm budgeted (K=3 ε-seeds × 2 passes × 60 items = 360 passes); Stage 0 recomputed **480 passes ≈ 0.0061 T4-h** (was 120 / 0.0015).
+- F3 (§2.3 + §2.4): scheduler argmin-over-measurements replaced with pre-registered deterministic mapping M(λ̂_baseline) → frozen 3-setting grid (zero scheduler diagnostic passes); G_manip budgeted (120 passes); total pilot **780 passes ≈ 0.0098 T4-h**; R4 now sixth of seven in sprint cost order.
+- F4 (§6): [DEFINITION] gain_i := margin_scheduled,i − margin_best-fixed,i (logit margin, continuous); ties → midrank averaging, conservative.
+- F9: the append-only erratum to `R4_WORTHIT_ANALYSIS_2026-09-25.md` that LOG-4354 claimed but never wrote now **actually exists** (line 54), correcting Poole-2016 → Schoenholz-2017; draft §4 claim rephrased to true timestamped form.
+Kill-first logic preserved; cost posture more honest (480→780 passes), not softer.
+
+**Wave 2 — independent Law #14 re-review of repaired sections only:** SIGN. All five findings verified repaired; arithmetic confirmed (780 = 60×13, 0.0098 T4-h, skeleton-rate-consistent); no falsification softening. Two non-blocking notes carried: (1) 0.0061 vs 0.0060 rounding slip (manifest-stage fix); (2) no explicit §7 row-precedence rule for the ΔM≤0 ∧ dead-zone-p overlap (kill-first logic resolves it; advisory).
+
+**Wave 3 — Law #14 full-draft SIGN review:** **SIGN (binding)**. No new blocking findings; integration verified (no dangling references, no stale budgets, no inter-section contradiction); all untouched LOG-4356 legs still hold; the two non-blocking notes correctly non-blocking.
+
+**Signed artifact:** `research/innovation/R4_PREREG_DRAFT_2026-09-26.md`.
+
+**Sequenced next steps (draft's own §10, per review recommendation):** signing ceremony → CEO GPU clearance → queue behind K2→EXP083→EXP084→EXP086-B→EXP088→EXP087. Signing ceremony and GPU clearance are CEO-office actions, not CPU lanes — the R4 lane is complete as far as this review's CPU authority reaches.
+
+**Campaign assessment close-out:** today's priority #1 (R4 fix wave) is complete — the lane advanced from SIGN-WITH-FIXES to binding full-draft SIGN in ~50 minutes of review time. No zombie work; no busywork lanes; no kills today. GPU queue unchanged (still founder-gated; no date to guess). Open items carried: K3 re-registration commissioning (overdue, next CPU candidate), EXP067 CEO decision (escalated).
+
+## LOG-4358 — K3 re-registration delivery lane: FULFILLED — LOG-4353/4357 "not yet delivered" is a misremember; no draft written (2026-09-26)
+
+**Verdict-first [FACT]:** the K3 re-registration commissioned at LOG-238 was delivered in full; LOG-4353's death-debt row (b) ("K3 Phase-0 — re-registration commissioned but not yet delivered") and LOG-4357's carried line ("K3 re-registration commissioning (overdue, next CPU candidate)") are factual misremembers. **No pre-registration draft was written in this lane** — writing one would be a LOG-4347-class duplicate lane.
+
+**Trace [FACT]:** LOG-238 commissioned a "re-registered K3 Phase-0 plan (new number K3-Phase0-R1, Law #4) with G4 repointed to the signed pre-audit JSON per-item records" (writer LOG-239; Law #14 review LOG-240). LOG-239 delivered `research/analysis_plans/K3_PHASE0_R1_PLAN_LOG239_2026-09-23.md` (FROZEN; sole substantive change = G4 repoint, D1-lesson bar binding). LOG-240: Law #14 SIGN — R1 Phase-0 released (11-hunk delta machine-verified, carry-over fidelity + no-weakening confirmed). LOG-241: R1 Phase-0 executed; **PROCEED** — candidate (i) premise-rank bank E-K3-1 PASS (g = 1.922505 >= 0.25); candidate (ii) donor centroid C3 E-K3-1 PASS (g = 1.061783 >= 0.25, audit-value match 7.45e-9 <= 1e-6, |g - 1.061783| = 9.56e-8 <= 1e-4); G4 recomputed 60/60 index-aligned byte-exact vs signed `C-A_PREAUDIT_2026-09-23.json` per-item (id,t,f) records (Law #3 — nothing inherited from LOG-238); G3 Delta theta = 0 (hash pre == post == archived ec276abe...e0ed); k = 0/60 both candidates (CP95 [0.0000, 0.0596]); deliverables `K3_construction_audit_execute_LOG239_LOG241_2026-09-23.py` + results JSON + `K3_PHASE0_REPORT_LOG241_2026-09-23.md`. LOG-242: Law #14 re-verification SIGN; **Phase-1 CEO packet issued** — arms C1 (Law-#7-compliant candidates) / C2 (concurrent option-informed bridge, procedure-validity control) / K3i / K3ii; <=240 expected passes (hard cap 400); McNemar exact + Tango 95% CIs; delta_min = 0.05; licensed readings CONTINUE (>=1 compliant candidate rescues while C2 meaningful) / KILL (all compliant NULL while C2 clearly rescues -> re-scope to label-assisted steering) / Inconclusive-HOLD (C2 NULL regardless); conditional clearance — Phase-1 released only after K2 executes and Sprint-3 pilots clear; G9 3/5 satisfied (plan SIGN, Phase-0 report, re-verification SIGN), CEO GPU clearance + BK-04 booking outstanding.
+
+**Genuine-gap test [INTERPRETATION]:** none. A K3 Phase-1 pre-registration draft was never commissioned by any LOG entry, and LOG-242's conditional clearance keeps Phase-1 GPU-gated behind K2 -> EXP083 -> EXP084 -> EXP086-B -> EXP088 -> EXP087 — no license exists for a CPU pre-reg-draft lane, and writing one would invent unlicensed scope, not pay the LOG-238 commission. Per LOG-4353's escalation option (3), the CPU-audit thread now formally stands down as **fulfilled**.
+
+**Genuinely outstanding (not this lane):** the K3 Phase-1 verdict remains an open program trigger (the one true clause in LOG-4353's row (b)) — but its trigger is founder-GPU execution, not a missing CPU deliverable. Death-debt row (b) corrected: K3-Phase-0 debt PAID at LOG-242; Phase-1 verdict PENDING GPU.
+
+**Process note:** $0 spent; no files created or modified except this entry; no signed artifacts touched; no experiment number minted; no commit/push. Lesson: death-debt audits must trace each debt to its terminal delivery LOG before declaring it outstanding — LOG-4353/4357 both repeated an unverified "overdue" claim.
+
+**Next:** none — this commission is CLOSED. **Next free: LOG-4359.**
+
+## LOG-4359 — Founder ruling on EXP067 + K3 escalations: both death-debts PAID; K3 Phase-1 pre-reg draft commissioned as $0 CPU lane (2026-09-26)
+
+**Ruling [FACT]:** the founder approved both recommendations of the 2026-09-26 decision brief (`research/strategy/FOUNDER_DECISION_BRIEF_2026-09-26.md`).
+
+**EXP067 — PAID by EXP068 (Option 1).** The owed re-specified loop already exists: EXP068 (`experiments/protocols/EXP068_LOOP_PREREG_SPEC.md`) is pre-registered, signed, lists EXP063–067 as predecessors, and carries the E-validity conjecture as a pre-registered halt gate under the signed `theory/LOOP_SPEC_DRAFT.md`. Commissioning another re-specification would be duplicate-lane work. Contingent: if EXP068 is ever stood down, the debt re-opens. Follow-through tracked as EXP068's GPU-gated execution in the founder queue.
+
+**K3 — Phase-0 PAID; Phase-1 pre-reg draft commissioned (Option 1 + draft-half of Option 2).** The Phase-0 re-registration was delivered (LOG-239), Law-#14-reviewed (LOG-240), executed to PROCEED (LOG-241), and re-verified SIGN (LOG-242) — independently confirmed by the LOG-4358 audit. The OPEN row's premise ("not yet delivered") was a misremember. Open item re-scoped: K3 Phase-1 screen licensing (G9 3/5; CEO GPU clearance + booking outstanding; execution GPU-gated behind the founder queue). The K3 Phase-1 pre-registration draft is commissioned now as a $0 CPU writer lane, formalizing the LOG-242 Phase-1 CEO packet (arms C1/C2/K3i/K3ii; ≤240 expected passes, hard cap 400; McNemar exact + Tango 95% CIs; delta_min = 0.05; licensed CONTINUE/KILL/Inconclusive-HOLD readings) into a reviewable artifact.
+
+**Disclosure [CEO]:** the LOG-4358 audit lane concluded no license existed for a K3 Phase-1 CPU draft lane and stood the CPU thread down as fulfilled. The founder's approval of the brief constitutes the license and overrules that conclusion; the objection is recorded here, not hidden. On founder reversal, the draft lane closes and LOG-4358's stand-down stands.
+
+**Standing rule adopted (CEO office):** no death-debt row may be marked OPEN without citing the latest LOG entry on that thread, checked at cull time (Law #12). Root cause of both misremembers: the ledger drifted from the log.
+
+**Next:** K3 Phase-1 pre-reg draft writer lane dispatched (this ruling). **Next free: LOG-4360.**
+
+## LOG-4360 — K3 Phase-1 pre-registration draft delivered (DRAFT, UNSIGNED) — Law #14 review lane NOT commissioned (2026-09-26)
+
+**Deliverable:** `experiments/protocols/K3_PHASE1_PREREG_DRAFT_2026-09-26.md` — DRAFT, UNSIGNED. Written by the pre-registration writer lane licensed by founder ruling LOG-4359 (which overruled the LOG-4358 stand-down). $0 compute, CPU only, no GPU contact, no signed-protocol edits, no experiment number minted, no numbers invented — every value cites its LOG source.
+
+**Content (all from the LOG-242 Phase-1 CEO packet):** arms C1 (Law-#7-compliant candidates: (i) premise-rank bank direction, g=1.922505, and (ii) signed EXP081 v2 donor centroid, g=1.061783 — both Supported at LOG-241) / C2 (concurrent option-informed bridge, procedure-validity control) / K3i / K3ii; budget ≤240 expected passes, hard cap 400; statistics McNemar exact + Tango 95% CIs, δ_min=0.05. Licensed decision table: ≥1 compliant candidate clears rescue while C2 meaningful → CONTINUE (autonomous-mechanism reading survives this falsifier only); all compliant NULL while C2 clearly rescues → KILL (re-scope to label-assisted steering); C2 NULL → Inconclusive-HOLD regardless. Worth-it gate block: exact question (is compliant construction causally sufficient, or is rescue label-leakage?), KILL/CONTINUE/HOLD decisions, cheapest falsifying test (the screen itself, C2 as falsifier), quantitative prediction (≥1 supported candidate rescues at δ_min=0.05), breaking point (compliant NULL + C2 rescues → KILL). Guards: Δθ=0 (Law #13), Law-#7 compliance C-a–C-e, g≥0.25 floor, G4 index alignment (Law #3), G5 zero forward-invocation, no 0.9-bar carryover (k=0/60, CP95 [0.0000,0.0596]).
+
+**Context carried:** conditional clearance — execution only after K2 executes and Sprint-3 pilots clear (LOG-242); GPU-gated behind founder queue K2→EXP083→EXP084→EXP086-B→EXP088→EXP087; G9 3/5 satisfied (LOG-240 plan SIGN, LOG-241 Phase-0 report, LOG-242 re-verification SIGN), CEO GPU clearance + BK-04 booking outstanding; K3 Phase-1 verdict remains a benchmark-analyst re-hire trigger.
+
+**Not done here:** no Law #14 review commissioned or performed — that is a separate independent lane. No signature, no GPU authorization, no booking.
+
+**Next free: LOG-4361.**
+
+## LOG-4361 — Law #14 independent review of the K3 Phase-1 pre-registration DRAFT: SIGN-WITH-FIXES (one blocking finding) (2026-09-26)
+
+**Reviewer:** independent Law #14 (reports to the founder; binding). **Target:** `experiments/protocols/K3_PHASE1_PREREG_DRAFT_2026-09-26.md` — DRAFT, UNSIGNED (delivered LOG-4360, licensed by founder ruling LOG-4359). $0, CPU only, read-only on signed protocols. **Report:** `experiments/protocols/REVIEWS/K3_PHASE1_LAW14_REVIEW_2026-09-26.md`.
+
+**Verdict: SIGN-WITH-FIXES.** Fidelity audit PASS — every number, arm definition, and budget figure traces to LOG-238–242 (g=1.922505/1.061783, 7.45e-9/9.56e-8, k=0/60 CP95 [0.0000,0.0596], ≤240 expected / cap 400, McNemar exact + Tango 95% CIs, δ_min=0.05, arms C1/C2/K3i/K3ii, G9 3/5); "30 3-hop items" and "signed EXP081 v2 donor centroid" verified against LOG-234's plan shape and the signed R1 plan. Worth-it gate PASS (all five answers honest; "survival is not proof" stated). Budget recomputed: 5 conditions × 30 items + 30 baseline = 180 ≤ 240 ✓. Guards PASS (Δθ=0, Law-#7 C-a–C-e, G4 byte-exact recompute, C2 HOLD-on-NULL). Honesty markers PASS (no experiment number, DRAFT/UNSIGNED accurate, no capability claims).
+
+**F1 (blocking):** §3 decision table uses three undefined gating terms ("C2 meaningful" / "C2 clearly rescues" / "C2 NULL") while the licensed operational definition — cell (1): Tango L > 0.05 (signed R1 plan ll. 454–455, 460) — sits unbound in §2.1 prose. The marginal-C2 band has no clean routing; an executor would have to invent the verdict (Law #9 hazard). Required fix (mechanical): rewrite §3 rows in cell-(1) terms — ≥1 compliant in cell (1) + C2 in cell (1) → CONTINUE; all compliant outside cell (1) + C2 in cell (1) → KILL; C2 outside cell (1) → Inconclusive-HOLD regardless — with the cell-(1) definition bound above the table. Total partition, no dead zone, no overlap; tightening of the LOG-242/LOG-234 licensed readings, not a rewrite.
+
+**Advisories (non-blocking):** A1 — enumerate the five permitted verdicts; A2 — show the budget decomposition in the signed version; A3 — cite LOG-234 (not LOG-242) for the 30-item bench datum; A4 — point the "caveat protocol" guard at R1 plan ll. 393–401, 636.
+
+**Not signed.** After F1 repair, a fresh independent repair re-verification (delta-only on F1) is required before SIGN. Execution conditions unchanged: CEO GPU clearance, BK-04 booking, K2 executed + Sprint-3 pilots cleared, founder GPU queue sequencing.
+
+**Next free: LOG-4362.**
+
+## LOG-4362 — K3 Phase-1 draft repair: F1 + A1–A4 applied per binding review LOG-4361 (2026-09-26)
+
+**Lane:** repair agent, licensed by review LOG-4361 (SIGN-WITH-FIXES). Target: `experiments/protocols/K3_PHASE1_PREREG_DRAFT_2026-09-26.md` (UNSIGNED, editable — repair permitted; signed protocols untouched).
+
+**F1 (blocking, mechanical):** §3 decision table rewritten in cell-(1) terms. Binding definitional line added directly above the table: cell (1) := Tango 95% CI lower bound L > δ_min = 0.05 (signed R1 plan ll. 454–455, 460; LOG-234) — outcome space totally partitioned, no marginal band. Three rows now: (1) ≥1 compliant candidate in cell (1) AND C2 in cell (1) → CONTINUE; (2) all compliant candidates outside cell (1) AND C2 in cell (1) → KILL (re-scope to label-assisted steering); (3) C2 outside cell (1) → Inconclusive-HOLD regardless. Tightening of the licensed LOG-242 readings, not a rewrite — licensed semantics unchanged.
+
+**A1 (non-blocking):** the five permitted verdicts enumerated in §3 — Supported / Not supported / Inconclusive / Underdetermined / Refuted (program governance order; LOG-240/242 verdict discipline).
+
+**A2 (non-blocking):** §2.2 budget now shows the self-verifying decomposition: 5 injection conditions (C1-i, C1-ii, C2, K3i, K3ii) × 30 items = 150 injection passes + 30 baseline = **180 expected ≤ 240**; hard cap 400 unchanged.
+
+**A3 (non-blocking):** the "30 3-hop items" bench datum now cites LOG-234 plan shape (was covered by the blanket LOG-242 attribution).
+
+**A4 (non-blocking):** §4 0.9-bar caveat guard now points at the exact registered text — R1 plan ll. 393–401, 636 (caveat attaches to any Phase-1 CONTINUE verdict; candidate-(ii) firing is Phase-1-gating).
+
+**Diff check:** four surgical edits, exact-text replacements only; no other section of the draft touched; no numbers invented; no scope expansion; no experiment number minted. $0 compute, CPU only.
+
+**Next:** independent Law #14 repair re-verification (delta-only on F1) — separate lane, not commissioned here. **Next free: LOG-4363.**
+
+## LOG-4363 — Law #14 delta re-verification: K3 Phase-1 draft F1 repair VERIFIED — SIGN (binding) (2026-09-26)
+
+**Verdict: SIGN (binding).** Independent Law #14 reviewer (reports to founder). Scope: delta-only re-verification of the F1 repair (LOG-4362); full review LOG-4361 stands.
+
+**V1 PASS:** cell-(1) definition (Tango 95% CI lower bound L > δ_min = 0.05; signed R1 plan ll. 454–455, 460; LOG-234) bound directly above the §3 table, as F1 required.
+**V2 PASS:** outcome space totally partitioned — hand-computed truth table over {compliant in/out of cell (1)} × {C2 in/out of cell (1)} routes all four combinations to exactly one row; marginal-C2 band explicitly closed ("no marginal band"); the Law #9 executor-discretion hazard is eliminated.
+**V3 PASS:** licensed LOG-242 semantics preserved — rows match F1's required table verbatim in substance; tightening only, no bar moved.
+**V4 PASS:** repair confined to F1 + A1–A4 (content-inspected; draft file untracked in git so no HEAD diff baseline; §0 retains original LOG-242 packet language verbatim, untouched).
+**V5 PASS:** A1 (five permitted verdicts enumerated), A2 (budget decomposition 5×30+30=180 ≤ 240, cap 400), A3 (30-item datum cites LOG-234), A4 (caveat guard → R1 plan ll. 393–401, 636) — all applied as specified.
+
+**Non-blocking observation (out of delta scope):** §0 Law #15 block retains LOG-242 summary language ("C2 meaningful/clearly rescues/NULL") without local operationalization; predates the repair, not flagged by the full review; §3 is the designated binding execution artifact and now governs via cell-(1). Recorded only.
+
+**Effect:** the K3 Phase-1 pre-registration draft is now a SIGNED artifact (pre-registration only). This SIGN does not authorize GPU, book BK-04, mint an experiment number, or commission the signing ceremony. Execution stays conditional on CEO GPU clearance, BK-04 booking, K2 executed + Sprint-3 pilots cleared, sequencing behind the founder GPU queue. CEO-office note: update the draft header status line ("NOT reviewed") to reflect SIGN; reviewer did not edit the draft.
+
+Review: `experiments/protocols/REVIEWS/K3_PHASE1_LAW14_REVERIFY_2026-09-26.md`. $0, CPU only; no signed protocols touched. **Next free: LOG-4364.**
+
+## LOG-4364 — Append-only erratum: K3 Phase-1 stale "UNSIGNED / NOT reviewed" header corrected (2026-09-26)
+
+**Action [FACT]:** Founder-authorized (chat, 2026-09-26) append-only erratum for the K3 Phase-1 pre-registration. New file: `experiments/protocols/ERRATUM_K3_STALE_UNSIGNED_HEADER_2026-09-26.md`. The signed artifact `experiments/protocols/K3_PHASE1_PREREG_DRAFT_2026-09-26.md` (SHA-256 `31b156c0…47a8` at erratum time) was NOT edited.
+
+**Why [FACT]:** the file's title/status header still reads "DRAFT (UNSIGNED)" / "NOT reviewed", contradicting the binding record — LOG-4361 review (SIGN-WITH-FIXES), LOG-4362 repair, LOG-4363 delta re-verification SIGN (binding). LOG-4363 governs; the header is stale metadata.
+
+**Scope of SIGN (unchanged) [FACT]:** pre-registration only. No GPU authorized, no BK-04 booking, no experiment number minted, execution still conditional on CEO GPU clearance, BK-04, K2 executed + Sprint-3 pilots cleared, and sequencing behind the founder GPU queue. No registered endpoint, verdict rule, budget (180 expected / 400 cap), or decision mapping altered. Re-signing not required.
+
+**Precedent:** EXP086/087/088 stale-watermark errata (2026-09-24). $0, CPU only. **Next free: LOG-4365.**
+
+## LOG-4365 — Law #15 worth-it packet for S4-9 written (2026-09-27)
+
+**Action [FACT]:** wrote `research/innovation/S4-9_WORTHIT_ANALYSIS_2026-09-27.md` —
+the Law-#15 worth-it packet for candidate S4-9 (per-item layer-11 task-direction
+causal test, EXP094+ material).
+
+**Sources [FACT]:** `research/innovation/CANDIDATE_BACKLOG.md` (S4-9 row:
+question, kill criterion, ≈180–240 passes / 3 arms / CPU / <0.005 T4-h pilot,
+belief "the EXP093 kill was about sharedness, not location", PROPOSAL status);
+`research/innovation/R4_WORTHIT_ANALYSIS_2026-09-25.md` (Law-#15 packet structure
+precedent); LOG-4352 (EXP093 kill numbers: Δ=0.0000, McNemar b=c=0 → p=1.0 all six
+tests, perturbation_ratio=0.0474 ~4.7% of residual norm, margins +0.0059 P /
+−0.0076 N, DELTA_BAR=0.10, ALPHA=0.05, licensed claim falsifying only "≥10pp
+causal transfer via a shared static direction at layer 11", Law-#13 per-item
+margin CSV gap observation); LOG-4353 (Friday cull: S4-9 born from EXP093's
+death-debt, debt recorded PAID, belief-change test applied).
+
+**Contents [FACT]:** precise question (shared dead → is per-item causal?);
+decision table with two KILL paths (per-item ≤ shared → family dead; random-per-item
+matches task-per-item → nonspecific perturbation), a licensed-positive CONTINUE
+(pre-registered N-vs-B routing + stratum breakdown), and a PIVOT branch; cheapest
+falsifier costed from the backlog row (CPU, <0.005 T4-h) with guards: G7 label-free
+constructor (Law #7 disqualification bar), per-item margin CSV (Law #13 repair),
+pre-registered arm routing, stratum breakdown, N_final feasibility gate; mathematical
+license (dimensionality argument: one shared vector vs item-indexed family;
+prediction ΔM_T > 0.10 and ΔM_T > ΔM_R, McNemar p < 0.05; sharp breaking point);
+honest audit (construction degrees of freedom, single bench, power); death-debt
+linkage (pays EXP093's debt; fully discharged at signed pre-reg); summit filter
+(per-item causal channel = the primitive a self-steering loop needs; GO as Phase-3
+mechanism science with named autonomous extension); graveyard filter (CLEAR);
+verdict GO as EXP094+ material.
+
+**Hard fence [FACT]:** no pilot authorized — the packet states explicitly that a
+full fresh pre-registration chain + Law #14 review is required before any run,
+not a revival or edit of EXP093's signed protocol.
+
+**Process note [FACT]:** $0, CPU only, paper-only — no model runs, no weights
+touched (read-only on all signed protocols/artifacts/weights), no experiment
+number minted, no commits, no pushes, no GPU contact, no dispatch of further
+agents, no self-review of this packet. All constraints honored.
+
+**Next:** Law #14 review of this packet is a separate lane, not commissioned here
+(uncommissioned). **Next free: LOG-4366.**
+
+## LOG-4366 — Campaign strategy review (2026-09-27 07:40 IST): daily review + S4-9 worth-it wave reconciled
+
+**Movement since the LOG-4357 review (all dated 2026-09-26):** K3 Phase-1 pre-reg draft delivered (LOG-4360) → Law #14 SIGN-WITH-FIXES with one blocking finding (LOG-4361, decision-table Law-#9 hazard) → repaired in cell-(1) terms (LOG-4362) → **binding SIGN** on delta re-verification (LOG-4363) → append-only stale-header erratum (LOG-4364). LOG-4358 audit proved the "overdue K3 commissioning" was a misremember (delivered LOG-239–242). LOG-4359 founder ruling: EXP067 death-debt PAID via EXP068; K3 Phase-0 PAID; K3 Phase-1 draft commissioned as $0 CPU lane; standing rule — no OPEN death-debt row without citing the latest LOG on that thread. No OPEN death-debt rows remain.
+
+**Dispatch (one wave, $0 CPU):** S4-9 worth-it writer (LOG-4365), duplicate-lane-checked. **Outcome reconciled:** `research/innovation/S4-9_WORTHIT_ANALYSIS_2026-09-27.md` delivered — decision table kills on per-item ΔM ≤ shared or random-control match, continues only on ΔM_T > 0.10 > ΔM_R (McNemar p<0.05) with N-vs-B routing + stratum breakdown; cheapest test 180–240 passes CPU <0.005 T4-h; guards: G7 label-free constructor, per-item margin CSV (Law-#13 gap repaired), N_final feasibility gate; belief named ("kill was about sharedness, not location"); verdict GO as EXP094+ material, pilot NOT authorized — full pre-reg chain + Law #14 review still required. Paper only; no signed artifacts, weights, experiment numbers, commits, pushes, or GPU contact.
+
+**Assessment:** R4 and K3 Phase-1 lanes fully CPU-complete (signed, awaiting CEO-office actions + founder GPU). Backlog zombie-clean (all live rows carry kill criteria + costed pilots; S3-5/S3-6 in Graveyard). GPU queue unchanged and honestly reported — founder-gated, no date guessed. No kills today; no blockers; no busywork lanes detected.
+
+**Next free: LOG-4367.**
+
+## LOG-4367 — Boundary paper finalized; founder publishing (2026-09-27 13:47 IST)
+**Paper milestone:** The SCBI boundary paper ("The Decodability Gap") is finalized at **v81** — 18 pages, clean build, all 29 cross-refs resolving, all citations matched, 8 limitations, closing line intact. Author block: Meda Anilkumar, New Horizon College of Engineering (Bengaluru), CSE (Data Science). **Founder is publishing now** (arXiv first). Pre-submission review (v77) verdict: arXiv-ready as-is; top-conference track needs (a) layer-11 vs l* injection ambiguity resolved (HIGH — founder's scientific call), (b) main-text page cut 14→9, (c) EXP093 "six tests" enumerated. Institution added per reviewer's HIGH flag on single-author/no-institution bias risk.
+**Team alert:** All roles notified — paper lane is CLOSED. Research continues on CPU lanes; GPU queue (K2 → EXP083 → EXP084 → EXP086-B → EXP088 → EXP087) remains gated on founder's Kaggle.
+**Next free: LOG-4368.**

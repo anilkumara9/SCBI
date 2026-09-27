@@ -49,6 +49,12 @@ Total pilot cost: **≈ 0.0038 T4-h (free-tier GPU)** — fourth in the sprint's
 
 **License verdict:** HOLDS. Theorem-anchored, quantitative, mutually discriminating against the two nearest alternatives, with the sharpest breaking point in the sprint and both gaps converted into pre-registered gates.
 
+---
+
+## Erratum (append-only — appended 2026-09-26; correction claimed but never written at LOG-4354, repaired per LOG-4356 F9)
+
+**Correction to §4 (Mathematical license) above:** §4 states "Poole et al. 2016 — signal-propagation depth scales are maximal at criticality (ordered/chaotic phase boundary)." That attribution is wrong. The "signal-propagation depth scales are maximal at criticality" theorem belongs to **Schoenholz et al. 2017 (arXiv:1611.01232)**; **Poole et al. 2016 (arXiv:1606.05340)** is cited only for the χ₁/order-to-chaos framework (verified at Stage −1 by full-text search of Poole 2016: zero occurrences of "depth scale"). The original §4 text above is left unedited — this erratum carries the correction by append-only amendment. The R4 full pre-registration draft attributes correctly in its §1.1. No signed artifact was touched.
+
 ## 5. Summit filter
 
 Does it move a frozen model toward autonomous inference-time cognition? **Partially — passes as mechanism science.** As specified, EOC is externally scheduled (we compute λ̂, we set τ) — not autonomous. But it is *inference-time control of the model's own dynamics*, and the summit-directional extension is explicit: the model self-estimates λ̂ and self-schedules gain (a closed self-regulation loop — Phase 4 material). It also attacks the verifier bottleneck obliquely: λ̂ is a *label-free, per-item diagnostic* — exactly the class of signal the program's E-step needs. Verdict: GO as Phase-3 mechanism with a named autonomous extension; it is not itself the autonomy result and must never be described as such.

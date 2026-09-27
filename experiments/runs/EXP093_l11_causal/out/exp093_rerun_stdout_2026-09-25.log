@@ -1,0 +1,20 @@
+[run] G0 pass: bench pin 9be8162633fe19aa…, 60/60 unique tuples, strata match §2.
+[run] G1' inherited (bench-pin byte-identity with EXP092-B; EXP092 real-tokenizer cover 240/240 stands).
+[run] G2 pass (archived .npz (read-only)): 60/60 ||r_i|| > 1e-9 (min=1.3352), 60/60 v unit-norm, coherence mean_cos_u=-0.0160, prenorm=[0.0246,0.0444].
+[run] torch intra-op threads pinned: 2
+[run] loading tokenizer: /home/hatch/workspace/.exp086_weights/pythia-410m
+[run] G1' pass: 240/240 in-prompt occurrences single-token (real tokenizer, offset-mapping cover check).
+[run] loading frozen model: /home/hatch/workspace/.exp086_weights/pythia-410m
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<02:15,  2.15it/s]Loading weights:  11%|█         | 32/292 [00:00<00:03, 68.23it/s]Loading weights:  16%|█▋        | 48/292 [00:00<00:02, 89.21it/s]Loading weights:  25%|██▌       | 74/292 [00:00<00:01, 122.48it/s]Loading weights:  34%|███▎      | 98/292 [00:00<00:01, 142.77it/s]Loading weights:  40%|███▉      | 116/292 [00:01<00:01, 120.53it/s]Loading weights:  51%|█████▏    | 150/292 [00:01<00:00, 167.95it/s]Loading weights:  59%|█████▊    | 171/292 [00:01<00:00, 149.67it/s]Loading weights:  68%|██████▊   | 200/292 [00:01<00:00, 177.12it/s]Loading weights:  76%|███████▌  | 222/292 [00:01<00:00, 186.14it/s]Loading weights:  83%|████████▎ | 243/292 [00:01<00:00, 173.32it/s]Loading weights:  90%|████████▉ | 262/292 [00:01<00:00, 169.61it/s]Loading weights:  96%|█████████▌| 281/292 [00:02<00:00, 145.14it/s]Loading weights: 100%|██████████| 292/292 [00:02<00:00, 134.78it/s]
+[run] model.eval() set; requires_grad_(False) on all parameters.
+[run] G1 pre-run hash OK: ec276abe3902fab0…
+[run] G5 pass: (i) rel_err=4.30e-07, (ii) max_abs=0.00e+00, (iii) bit_match=True
+[run] G4 pass: clean baseline 36/60, mean margin -0.001819 (ref -0.0018).
+[run] 180 forward passes complete (60 B + 60 P + 60 N).
+[run] G1 post-run hash OK: ec276abe3902fab0… (Δθ=0 verified)
+[run] REAL mode: frozen LOG-331 snapshot, CPU, read-only.
+[run] Δ=+0.0000 McNemar p=1 monotone=False
+[run] Δ_A=+0.0000 Δ_C=+0.0000
+[run] AUTHORITATIVE VERDICT: KILL
+[run] report: out/exp093_report.json

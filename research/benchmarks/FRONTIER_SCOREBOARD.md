@@ -28,7 +28,7 @@ repo-artifact-verified (§3).
 | Inference-time search (coverage) | **LLM-Monkeys**: coverage scales log-linearly over 4 orders of magnitude; SWE-bench Lite 15.9%→56% at 250 samples (verifier-gated) | G/E/S/T loop: never discriminatingly tested; E-validity [CONJECTURE] | **A working scaling law vs an untested formulation.** |
 | Search + self-evaluation (planning) | **ToT**: Game of 24, GPT-4: 4%→74% (BFS b=5, depth 3) | No planning/search result; EXP068 retired as-signed (Law #15 FAIL) | **4%→74% vs no result.** |
 | Cheap decoding-time aggregation | **Self-consistency**: GSM8K +17.9% (PaLM-540B 56.5%→74.4%, 40 paths, majority vote) | EXP056 autonomous selection: +4pp, p=0.25, **not significant** | **+17.9pp significant vs +4pp non-significant.** |
-| Static steering, decision flips | **ITI**: Alpaca TruthfulQA 32.5%→65.1% (+32.6pp) via label-trained head probes (NeurIPS 2023) | EXP077: **ΔM=0, p=1.0, N=60** (410m/L20) — five static rooms dead; G1 killed the QK-subspace mechanism | **+32.6pp (label-trained probes) vs exactly zero.** |
+| Static steering, decision flips | **ITI**: Alpaca TruthfulQA 32.5%→65.1% (+32.6pp) via label-trained head probes (NeurIPS 2023) | EXP077: **ΔM=0, p=1.0, N=60** (410m/L20) — five static rooms dead; **EXP093: the shared L11 task direction is also ΔM=0, p=1.0 (b=c=0)** — causal inertness, not measurement failure; the L20 boundary generalizes: **information ≠ influence**. G1 killed the QK-subspace mechanism. | **+32.6pp (label-trained probes) vs exactly zero at two layers.** |
 | Context-dependent steering | **SVF** (arXiv:2602.01654, Feb 2026): per-activation steering fields, multi-layer coordinated — *no headline number in the checked abstract* | Gated/conditional variants of our operator: **never tested** (survived EXP077's narrow kill by exemption, not evidence) | **A working 2026 method vs an untested exemption.** |
 | Closed-loop representation control | **Activation-LQR**: LTV linearization + LQR feedback with tracking-error bounds, no training — *existence proof, no headline accuracy number in abstract* | CLLC candidate: narrowed distinction only, **never tested** | **Guarantees vs a narrowed claim.** |
 | Selective-abstention reliability | **NoisyCoconut** (TMLR June 2026): unanimous latent-path agreement → error <15% on math reasoning via selective abstention | No reliability result of any kind | **<15% error vs no measurement.** |
@@ -203,24 +203,45 @@ The same columns. Nothing cherry-picked; the demotions are stated first.
 | **EXP082** — foil-suppression tilt: **EXP082-EXONERATED** (LOG-217) | Fresh battery, foil-suppression lemma + 0.484 mirror bound + joint-firing lemma | 160m/L10 + 410m/L20 archives | **Not supported — (f) k_f=0/60 on every run, CP 95% CI [0.0000, 0.0596]; (a)-contrast k_a=0/60; N_bothfire=0**; mean cosθ 0.9503/0.2775/0.2775 | $0 CPU, 0 forward passes | N/A | — | Y | EXECUTED 2026-09-23. Foil-suppression hypothesis KILLED. Static directional-readout story dead; rescue must come from the relational (t−f) readout effect or downstream transformation. Death-debt paid: S3-7 logged → LOG-221 | `research/analysis_plans/EXP082_REPORT_LOG217_2026-09-23.md`, `EXP082_RESULTS_LOG217_2026-09-23.json` |
 | **S3-7** — spoiler-suppression archived-record analysis (LOG-221) | Foil-vs-third-token tabulation on rescued items | EXP065/066/077 archives | **Underdetermined** — no predicted-token labels in any archive; the pre-registered "labels absent" branch fired | $0, 0 forward passes | N/A | — | Y | Analysis complete; flipped to QUEUED with instrumentation spec (per-item top-5 tokens+logits, competitor identity, margin decomposition) | `research/analysis_plans/S37_SPOILER_ANALYSIS_LOG221_2026-09-23.md` |
 | **EXP080 / EXP081** | G2 oracle ceiling; C-A donor transfer v2 | (Kaggle GPU when cleared) | 1,320 / 660 forward passes (weakest-grade ceiling ⇒ cheapest experiment) | GPU-dark | EXP080: Per-item ceiling (label-informed L1); EXP081: transfer | To be tested | Y | PRE-REGISTERED; §A.6 addenda ACCEPTED (LOG-210); gated on K1 verdict + CEO GPU clearance | `experiments/protocols/EXP080_LICENSE_ADDENDUM_LOG209_2026-09-23.md` etc. |
+| **EXP067** — STAGE_A_HALT (LOG-130) | Adaptive-loop full-rank Procrustes operationalization | pythia-410m (2×T4) | Halt at Stage A guard: rank/spectral violated (head 0: rank=33, gap=1.59e-08; 80 anchors span ~33/64 dims) — H1 untestable under this operationalization; I1 stands unchallenged | 70.79s GPU | N/A (halt) | — | Y | Halted (pre-registered branch a); Δθ=0 confirmed (pre==post) | `experiments/runs/EXP067*`; LOG-130 |
+| **EXP078** — BRANCH (a) ENERGY_GATE_HALT (LOG-117) | Oracle-scale static bridge, subspace-restricted | pythia-410m (GPU) | Halt at energy gate — as predicted; oracle-strength static injection has no decision headroom | GPU | Per-item (oracle) | — | Y | Halted (predicted); +16.67pp oracle ceiling remains a ceiling, not a mechanism | LOG-117 |
+| **K3 Phase-0** — HALT on FATAL G4 (LOG-238) | CPU audit plan self-guard | CPU | Halted on plan-premise defect D1 — the plan died on its own guard; re-registration commissioned | $0 CPU | N/A | — | Y | Halted; re-registration commissioned, K3 Phase-1 verdict outstanding | LOG-238 |
+| **S3-1 / S3-3 Stage-0 archived gates** — INFEASIBLE (LOG-243) | Target-free causal verification on archived records | Archived artifacts (8 + exp077_vectors.pt) | **Killed as an approach:** no per-layer activation/attention snapshots exist in any archive — archived gate infeasible, not merely underpowered; pivoted to Stage-0b live pilots | $0 CPU | N/A | — | Y | Killed (approach); pivots QUEUED | LOG-243; `research/innovation/CANDIDATE_BACKLOG.md` |
+| **EXP085** — KILLED as designed (LOG-323) | Runner-up suppression on binary forced-choice bench | (draft only — never executed) | k=2 algebra collapses the design (ΔM_C2 ≡ 2·(N_f/60)−1, Tier-0 Type-I=1.00, kill-bar power 0.00, C3 undefined, C7 ≡ N_f/60) — binary benches make rank-suppression **untestable by construction** | $0 | N/A | — | Y | Killed as designed (CEO decision on binding LOG-317 adjudication); draft retained bannered KILLED per Law #8 | LOG-323; LOG-317 |
+| **EXP090** — RUN-INVALID, G1 by construction (LOG-354) | CLM-8B free-lunch falsifier, attempt 2 | CPU (real tokenizer) | RUN-INVALID: 7/10 bench entities multi-token (Jupiter, Mars, Mercury, Saturn, Venus, Bronze, Steel) — the G1 single-token assumption was asserted by two Law #14 reviews without running the real tokenizer; registered bench cannot satisfy G1 under any execution → verdict withheld | $0 CPU | N/A | — | Y | RUN-INVALID (design defect); weights untouched | `experiments/runs/EXP090_clm8b_falsifier_v2/out/exp090_exec_stdout.log`; LOG-354 |
+| **EXP091** — KILL: zero-shot cosine scoring dead (LOG-361/362) | Zero-shot cosine-similarity scoring, frozen final-token embeddings, novel relational items | pythia-410m / L20 | **31/60 (51.67%), exact one-sided binomial p=0.4487**; A-first 0.50 / C-first 0.5333; margins noise-scale (mean 6.8e-4); instrument responsive (G4 spread 0.0803 ≫ 1e-4) — genuine null; CLM-8B free-lunch version KILLED as designed (≤37/60 bar) | 60 passes, $0 CPU | None (zero-shot) | N | Y | Killed (executed real, CPU); independent verdict review ADOPTED (LOG-362); Δθ=0 verified | LOG-361/362; `experiments/runs/EXP091*` |
+| **EXP092** — CONTINUE: layer-11 task information licensed (LOG-4336/4338) | Information-Bottleneck Localization — per-layer 1-NN LOO on frozen embeddings | pythia-410m, all 24 layers | Layer 11: **acc 0.3333 (20/60), stratified-permutation p=0.000999 < α_B=0.0020833, effect +0.2000 ≥ 0.10**; S = {1,11,12,13,14,15,17,18} clear both bars; L20 acc 0.15, p=0.0659 (correctly excluded). ADOPT-WITH-CORRECTIONS (binding). **Licensed claim: frozen layer 11 carries significant task information (1-NN LOO, Bonferroni-significant, ≥10pp above null).** Novelty N1. No capability claim licensed. | $0 CPU (~1.5h) | None | N | Y | Continue, l* = 11; S1 (Ross kNN-MI) retired — proven vacuous by construction (MI = ψ(60)−ψ(4) exactly in this regime; any successor MI diagnostic needs a degeneracy analysis + constant-data unit test) | LOG-4336 (execution), LOG-4338 (binding review), `experiments/runs/EXP092_ibl/` |
+| **EXP093** — KILL UPHELD: shared layer-11 direction causally inert (LOG-4352) | Static injection of the shared layer-11 task direction on EXP092-B | pythia-410m / L11 | **Δ = 0.0000; McNemar b = c = 0 → p = 1.0 in all six tests** (P-vs-B and N-vs-B × 3 strata); perturbation real (4.7% of residual norm, reached the logits, G5 rel_err 4.3e-07) but flipped zero decisions — causal inertness, not measurement failure. **Information ≠ influence at layer 11; the layer-20 boundary generalizes.** Falsifies "≥10pp causal transfer via a shared static direction at layer 11" only. | $0 CPU (~10–15 min) | None | N | Y | Killed (executed real, CPU); independent verdict review binding (LOG-4352); Δθ=0 verified (pre/post `ec276abe…`) | LOG-4352; `experiments/protocols/REVIEWS/EXP093_LAW14_VERDICT_REVIEW_2026-09-25.md` |
 
 ### 3.2 The program's position, stated without softening
 
 [FACT]/[OBSERVATION]: the program holds **zero positive signals for
 autonomous steering** (LOG-204 ruling 1 — stated plainly per the CEO's
 order; unchanged by K1-EXONERATED, which exonerated the *tilt* account, not
-the *label-use* fact). Its most-cited positive number (+10pp bridge rescue)
-is a Per-item control whose §H7 demotion is under CEO re-review (LOG-213)
-— the tilt accounts are dead on both ends (target-boost 0/60, K1;
-foil-suppression 0/60, EXP082), and the live mechanism is the relational
-(t−f) readout effect, still label-informed. Its best autonomous number
-(+4pp, EXP056) is not significant. Its mechanism program is five dead rooms
-+ one killed QK-subspace sentence + one retracted Procrustes claim + two
-dead directional-readout hypotheses (K1, EXP082). Its live assets are: the
-I1 boundary (a diagnostic instrument), the G1 per-head table
-(a measurement-pruned instrument), the K2 pilot (LICENSED, awaiting CEO GPU
-clearance), Sprint-3 Stage-0 pilots (LICENSED), the K3 CPU audit, and two
-pre-registered GPU experiments still gated on CEO clearance.
+the *label-use* fact, and unchanged by EXP092-CONTINUE, which licenses
+task-information at L11, not a steering mechanism). Its most-cited positive
+number (+10pp bridge rescue) is a Per-item control whose §H7 demotion is
+under CEO re-review (LOG-213) — the tilt accounts are dead on both ends
+(target-boost 0/60, K1; foil-suppression 0/60, EXP082), and the live
+mechanism is the relational (t−f) readout effect, still label-informed. Its
+best autonomous number (+4pp, EXP056) is not significant. Its mechanism
+program is six dead static-geometry rooms (five at L20 + the shared-direction
+L11 generalization, EXP093) + one killed QK-subspace sentence + one retracted
+Procrustes claim + two dead directional-readout hypotheses (K1, EXP082) +
+one dead free-lunch scorer (EXP091, a genuine null from a working instrument)
++ one algebraic-untestability boundary (EXP085, k=2) + one infeasible
+archived-verification approach (S3-1/S3-3 Stage-0) + two predicted halts
+(EXP067 Stage A, EXP078 energy gate) + one plan halted on its own guard (K3
+Phase-0). Its live assets are: the I1 boundary (a diagnostic instrument), the
+G1 per-head table (a measurement-pruned instrument), the K2 pilot (LICENSED,
+awaiting founder GPU), Sprint-3 Stage-0b pilots (QUEUED — need Law-#14-signed
+plans + CEO GPU clearance), the R1–R7 pipeline (R1/R2/R3 signed and queued),
+S4-8/S4-9 (fresh proposals from the Friday cull, LOG-4353), and
+EXP080/081/084 still gated on CEO GPU clearance. The week's one licensed
+positive: **EXP092 — frozen Pythia-410m layer 11 carries significant task
+information** (1-NN LOO, Bonferroni-significant, ≥10pp above null) — an
+observation, not a capability; EXP093's kill banked its immediate
+consequence: information ≠ influence.
 
 [INFERENCE]: plotted on the same axes, SCBI does not trail the frontier by a
 margin — it trails by *category*: the frontier has L1–L2 capability results;
@@ -310,6 +331,16 @@ Per-item construction can never beat a None-class row.
   history. Post-write updates folded in before release: K1-EXONERATED
   (LOG-213), EXP082-EXONERATED (LOG-217), S3-7 Underdetermined (LOG-221);
   §H7 demotion status corrected to "under CEO re-review, not locked in."
+- v1.1 — 2026-09-25 (LOG-4353, Friday cull): added the week's verdict rows —
+  EXP067 STAGE_A_HALT, EXP078 ENERGY_GATE_HALT, K3 Phase-0 HALT on FATAL G4,
+  S3-1/S3-3 Stage-0 archived-gate INFEASIBLE, EXP085 KILLED as designed,
+  EXP090 RUN-INVALID (G1 by construction), EXP091 KILL (free-lunch scorer),
+  EXP092 CONTINUE (L11 task information licensed — the week's one licensed
+  positive), EXP093 KILL UPHELD (information ≠ influence generalizes the
+  L20 boundary); §3.2 inventory and §0 static-steering row updated to match.
+  Same axes, same honesty: SCBI holds zero positive signals for autonomous
+  steering; the label-free race stays tied at zero. No literature re-check
+  this cycle (next due 2026-10-23).
 
 ---
 
