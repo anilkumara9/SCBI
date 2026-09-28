@@ -1,5 +1,30 @@
 # SCBI Research Log
 
+## LOG-4506 — V83 plan D1 repair: v3 with corrected LOG-4491 provenance caveat (2026-09-28)
+
+**Lane [FACT]:** repair lane for the single defect D1 from the independent LOG-4505 Law #14 review (SIGN-WITH-FIXES) of `research/strategy/V83_CHANGE_PLAN_v2_2026-09-28.md`. Pre-assigned LOG-4506. Review-only scope: no v82 modification, no signed protocol touched, no experiment number minted, no clearance granted, no v83 build. $0 compute.
+**Deliverable [FACT]:** `research/strategy/V83_CHANGE_PLAN_v3_2026-09-28.md` — v2 with ONLY the D1 correction applied: the stale provenance caveat ("LOG-4491 entry is truncated mid-sentence ... CEO append-only repair needed") replaced with "LOG-4491 was truncated mid-sentence; append-only repair completed at LOG-4495; the entry is now complete." Applied at the two v2 sites (provenance caveat + provenance-gaps summary bullet), both tagged `(D1 correction, LOG-4506)`.
+**Diff scope [FACT]:** `diff` v2-vs-v3 shows exactly 2 changed lines (72, 91) — the two D1 corrections; zero other differences. v2 byte-identical before and after (sha256 `3c3df27c705f5c80d876c1d2285487da935eea49a054b13b11cbf3fbb6ff88cd` preserved); v2 remains the archived artifact. v82 sources verified untouched; no signed protocol modified; no new experiment number minted.
+**Log integrity:** append-only — new entry prepended, no rewrite, no reorder, no stash.
+**Next free: LOG-4507.**
+
+## LOG-4505 — Independent Law #14 review of the v83 change-plan v2 (2026-09-28)
+
+**Lane [FACT]:** INDEPENDENT Law #14 review of `research/strategy/V83_CHANGE_PLAN_v2_2026-09-28.md` (pre-assigned LOG-4505; review only — v82, the v1/v2 plans, and all signed protocols untouched; no experiment number minted; no clearance granted; no build work). LOG-4494 was a CEO self-audit (not independent); this lane is the required independent review. $0 compute.
+
+**Deliverable [FACT]:** `research/strategy/V83_CHANGE_PLAN_v2_LAW14_REVIEW_LOG-4505_2026-09-28.md` (target sha256 `3c3df27c705f5c80d876c1d2285487da935eea49a054b13b11cbf3fbb6ff88cd`).
+
+**LOG-4471 flag disposition [FACT]:** O1 RESOLVED — Change #6R hard-bans +0.010/−0.004 in four places; every v2 occurrence is a prohibition, never an attributed claim; only LOG-4472's aggregate means (+0.0059518/−0.0076361) labeled "means across items" may be used. O2 RESOLVED — Change #3 keeps the EXP095 scope fence (LOG-4400) + S6 stand-down (LOG-4464) and bars presenting EXP105 as filling the dose-response gap. O3 informational — Change #10 ADOPT as-is. T1 held as founder decision — Change #12 ADOPT as-is; Part 4(c) offers boxed compression or full retention.
+
+**Line-level v82 grounding [FACT]:** verified in-file this lane — §sec:kills L367, §sec:phasediagram L376, Item-33 values at L391 (1.013/2.106/3.119/"across items" match v2 to ≤3e-4), app:master L530, limitations L394, Proposition 1 + 1/1022 at L270, checkable claims L173, fig:hero L158, fig:phasediagram L342, "20/60 = 33.33%, p=0.000999" and "McNemar b=c=0, p=1.0, ΔM=0" at L157, LOG-4472 item ID `exp092_elemental_2hop_3` confirmed. EXP104/105 numbers cross-checked against LOG-4481/4483/4489/4491/4492 — all match. S4-8 (LOG-4480) and S4-8′ (LOG-4488) SIGNs confirmed.
+
+**Binding-verdict consistency [FACT]:** no contradictions — I2′ kept CLOSED/falsification-terminal with the honest headline traveling; S6 stand-down preserved (Part 4a approval excludes violating it); scoreboard v1.4 cited; Procrustes retraction untouched; novelty N1 untouched.
+
+**One defect — D1 (MINOR, fixable):** v2's provenance caveat asserts as [FACT] that "the research log's own LOG-4491 entry is truncated mid-sentence" and requests a CEO append-only log repair. In-file verification: LOG-4491 (L63) is complete, and the repair already landed at LOG-4495 (L44). The caveat was accurate at LOG-4494 time but is now stale. Fix: replace with "LOG-4491 was truncated; append-only repair completed at LOG-4495; entry now complete." Nothing in the plan depends on it.
+
+**Verdict [FACT]:** **SIGN-WITH-FIXES** — v2 is structurally sound; the LOG-4471 flags are verifiably disposed; provenance gaps 0; fabricated numbers 0. May proceed to the founder decision brief once D1's one-line correction is applied. No v83 build authorized — build still requires the founder's Part 4 decisions (a) build approval, (b) Item-33 variant, (c) cut depth.
+**Next free: LOG-4506.**
+
 ## LOG-4504 — Push-cycle prep: commit Colab notebook workstream (2026-09-28)
 
 **Commissioning [FACT]:** LOG-4504 pre-assigned. Commit the LOG-4503 Colab notebook workstream. No push (push requires a fresh founder-supplied token; none held by this lane).
