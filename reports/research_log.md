@@ -10880,4 +10880,8 @@ Uncommitted LOG-4513 entry in `reports/research_log.md` and the new sweep report
 
 **Boundaries:** release candidate ≠ published. arXiv posting remains founder-reserved (external publishing). The TAAI submission uses the separate v82-based PDF (`SCBI_Boundary_Paper_v82_TAAI.pdf`) and is unaffected by this clearance. No push attempted — upstream push needs a fresh founder-supplied token. $0 compute.
 
-**Next free: LOG-4520.**
+## LOG-4520 — Commit-prep: LOG-4519 committed on sync/2026-09-29-consolidated (2026-09-29, commit lane)
+
+**[FACT]:** Full worktree LOG-divergence check clean before commit — no LOG number present in any worktree copy missing from the main tree (the `sync-log4393-4465` worktree log is a strict older subset; the prunable `/tmp/log4369` lane worktree carries no log). Commit `a8c708c` contains only `reports/research_log.md` (the LOG-4519 CEO release-clearance entry, 11 insertions). No push attempted — upstream push is founder-reserved. No stash used; the log remains append-only.
+
+**Next free: LOG-4521.**
