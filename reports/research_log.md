@@ -10811,4 +10811,8 @@ The founder may override any of these; until then these stand.
 
 **Affected decision:** the two significant finds belong in **v84 related work** — v83 is a frozen release candidate per LOG-4512, no v83 change licensed. **No find licenses new work; no research decision changes.** Scoreboard headline unchanged: zero positive signals for label-free autonomous steering; the race stays tied at zero.
 
-**Next free: LOG-4514.**
+## LOG-4514 — Commit-prep: LOG-4513 + 2026-09-29 sweep report committed locally (2026-09-29)
+
+Uncommitted LOG-4513 entry in `reports/research_log.md` and the new sweep report `research/frontier/SWEEP_2026-09-29.md` are now committed locally on topic branch `sync/2026-09-29-log4513-sweep` (commit `fa82eb8`, from `main` HEAD `e90d0d8`). Full worktree LOG-divergence check passed before branching: the stale worktree copy (LOG ≤ 4447) is a strict subset of the main tree's set — nothing lost. LOG-4513's append-only entry was preserved verbatim via md5-verified backup/restore across the branch switch; no `git stash` used. No push attempted — upstream push is founder-reserved.
+
+**Next free: LOG-4515.**
