@@ -1,0 +1,4706 @@
+{
+ "experiment": "EXP104",
+ "tier": "Tier-0",
+ "bench_builder": "EXP104 Tier-0 execution lane (this lane), 2026-09-28",
+ "d3_blindness_claim": "All structural-foil designations in bench_spec.py were made at bench-build time, before any model contact on S4-8 bench items. Independent verification pending (checker lane); see checker_verification.json when present. Checker verification persisted in checker_verification.json (no model-output artifacts at check time); item substitution recorded in checker_addendum.json.",
+ "tokenizer_artifact": "EleutherAI/gpt-neox-20b",
+ "tokenizer_file_sha256": "c24618a1b3e6a38167beff1c72cffd126c3a66254347304b50547d12c5f25624",
+ "tokenizer_provenance": "hub EleutherAI/gpt-neox-20b main-branch tokenizer.json byte-identical to pythia-410m snapshot copy (verified 2026-09-28)",
+ "vocab_size": 50254,
+ "template_sha256": "b4f68516436f8c94cba6f54590b4b458eaf532eb9eb2fa57046365e36a922a7c",
+ "shuffle_seed": 20260928,
+ "n_items": 60,
+ "k": 8,
+ "g1_attestation": {
+  "n_option_strings": 480,
+  "all_single_token": true,
+  "all_intra_item_distinct": true,
+  "per_string": [
+   {
+    "item_id": "exp104_t0_00",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_00",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_00",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_00",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_00",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_00",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_00",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_00",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_01",
+    "option": "Croatia",
+    "n_tokens": 1,
+    "token_id": 42862
+   },
+   {
+    "item_id": "exp104_t0_01",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_01",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_01",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_01",
+    "option": "Romania",
+    "n_tokens": 1,
+    "token_id": 34262
+   },
+   {
+    "item_id": "exp104_t0_01",
+    "option": "Poland",
+    "n_tokens": 1,
+    "token_id": 16795
+   },
+   {
+    "item_id": "exp104_t0_01",
+    "option": "Serbia",
+    "n_tokens": 1,
+    "token_id": 37959
+   },
+   {
+    "item_id": "exp104_t0_01",
+    "option": "Hungary",
+    "n_tokens": 1,
+    "token_id": 29171
+   },
+   {
+    "item_id": "exp104_t0_02",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_02",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_02",
+    "option": "Morocco",
+    "n_tokens": 1,
+    "token_id": 40983
+   },
+   {
+    "item_id": "exp104_t0_02",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_02",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_02",
+    "option": "Egypt",
+    "n_tokens": 1,
+    "token_id": 10253
+   },
+   {
+    "item_id": "exp104_t0_02",
+    "option": "Turkey",
+    "n_tokens": 1,
+    "token_id": 14307
+   },
+   {
+    "item_id": "exp104_t0_02",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_03",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_03",
+    "option": "Croatia",
+    "n_tokens": 1,
+    "token_id": 42862
+   },
+   {
+    "item_id": "exp104_t0_03",
+    "option": "Turkey",
+    "n_tokens": 1,
+    "token_id": 14307
+   },
+   {
+    "item_id": "exp104_t0_03",
+    "option": "Egypt",
+    "n_tokens": 1,
+    "token_id": 10253
+   },
+   {
+    "item_id": "exp104_t0_03",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_03",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_03",
+    "option": "Cyprus",
+    "n_tokens": 1,
+    "token_id": 44637
+   },
+   {
+    "item_id": "exp104_t0_03",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_04",
+    "option": "Serbia",
+    "n_tokens": 1,
+    "token_id": 37959
+   },
+   {
+    "item_id": "exp104_t0_04",
+    "option": "Poland",
+    "n_tokens": 1,
+    "token_id": 16795
+   },
+   {
+    "item_id": "exp104_t0_04",
+    "option": "Russia",
+    "n_tokens": 1,
+    "token_id": 7422
+   },
+   {
+    "item_id": "exp104_t0_04",
+    "option": "Croatia",
+    "n_tokens": 1,
+    "token_id": 42862
+   },
+   {
+    "item_id": "exp104_t0_04",
+    "option": "Georgia",
+    "n_tokens": 1,
+    "token_id": 12096
+   },
+   {
+    "item_id": "exp104_t0_04",
+    "option": "Romania",
+    "n_tokens": 1,
+    "token_id": 34262
+   },
+   {
+    "item_id": "exp104_t0_04",
+    "option": "Ukraine",
+    "n_tokens": 1,
+    "token_id": 17111
+   },
+   {
+    "item_id": "exp104_t0_04",
+    "option": "Hungary",
+    "n_tokens": 1,
+    "token_id": 29171
+   },
+   {
+    "item_id": "exp104_t0_05",
+    "option": "Iceland",
+    "n_tokens": 1,
+    "token_id": 28651
+   },
+   {
+    "item_id": "exp104_t0_05",
+    "option": "Denmark",
+    "n_tokens": 1,
+    "token_id": 22783
+   },
+   {
+    "item_id": "exp104_t0_05",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_05",
+    "option": "Netherlands",
+    "n_tokens": 1,
+    "token_id": 16333
+   },
+   {
+    "item_id": "exp104_t0_05",
+    "option": "Norway",
+    "n_tokens": 1,
+    "token_id": 20341
+   },
+   {
+    "item_id": "exp104_t0_05",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_05",
+    "option": "Sweden",
+    "n_tokens": 1,
+    "token_id": 16842
+   },
+   {
+    "item_id": "exp104_t0_05",
+    "option": "Finland",
+    "n_tokens": 1,
+    "token_id": 25270
+   },
+   {
+    "item_id": "exp104_t0_06",
+    "option": "Korea",
+    "n_tokens": 1,
+    "token_id": 9733
+   },
+   {
+    "item_id": "exp104_t0_06",
+    "option": "Sweden",
+    "n_tokens": 1,
+    "token_id": 16842
+   },
+   {
+    "item_id": "exp104_t0_06",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_06",
+    "option": "Canada",
+    "n_tokens": 1,
+    "token_id": 6144
+   },
+   {
+    "item_id": "exp104_t0_06",
+    "option": "China",
+    "n_tokens": 1,
+    "token_id": 4135
+   },
+   {
+    "item_id": "exp104_t0_06",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_06",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_06",
+    "option": "Japan",
+    "n_tokens": 1,
+    "token_id": 4047
+   },
+   {
+    "item_id": "exp104_t0_07",
+    "option": "Norway",
+    "n_tokens": 1,
+    "token_id": 20341
+   },
+   {
+    "item_id": "exp104_t0_07",
+    "option": "Iceland",
+    "n_tokens": 1,
+    "token_id": 28651
+   },
+   {
+    "item_id": "exp104_t0_07",
+    "option": "Sweden",
+    "n_tokens": 1,
+    "token_id": 16842
+   },
+   {
+    "item_id": "exp104_t0_07",
+    "option": "Korea",
+    "n_tokens": 1,
+    "token_id": 9733
+   },
+   {
+    "item_id": "exp104_t0_07",
+    "option": "Japan",
+    "n_tokens": 1,
+    "token_id": 4047
+   },
+   {
+    "item_id": "exp104_t0_07",
+    "option": "Denmark",
+    "n_tokens": 1,
+    "token_id": 22783
+   },
+   {
+    "item_id": "exp104_t0_07",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_07",
+    "option": "Finland",
+    "n_tokens": 1,
+    "token_id": 25270
+   },
+   {
+    "item_id": "exp104_t0_08",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_08",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_08",
+    "option": "Denmark",
+    "n_tokens": 1,
+    "token_id": 22783
+   },
+   {
+    "item_id": "exp104_t0_08",
+    "option": "Netherlands",
+    "n_tokens": 1,
+    "token_id": 16333
+   },
+   {
+    "item_id": "exp104_t0_08",
+    "option": "Poland",
+    "n_tokens": 1,
+    "token_id": 16795
+   },
+   {
+    "item_id": "exp104_t0_08",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_08",
+    "option": "Norway",
+    "n_tokens": 1,
+    "token_id": 20341
+   },
+   {
+    "item_id": "exp104_t0_08",
+    "option": "Sweden",
+    "n_tokens": 1,
+    "token_id": 16842
+   },
+   {
+    "item_id": "exp104_t0_09",
+    "option": "Denmark",
+    "n_tokens": 1,
+    "token_id": 22783
+   },
+   {
+    "item_id": "exp104_t0_09",
+    "option": "Finland",
+    "n_tokens": 1,
+    "token_id": 25270
+   },
+   {
+    "item_id": "exp104_t0_09",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_09",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_09",
+    "option": "Sweden",
+    "n_tokens": 1,
+    "token_id": 16842
+   },
+   {
+    "item_id": "exp104_t0_09",
+    "option": "Poland",
+    "n_tokens": 1,
+    "token_id": 16795
+   },
+   {
+    "item_id": "exp104_t0_09",
+    "option": "Norway",
+    "n_tokens": 1,
+    "token_id": 20341
+   },
+   {
+    "item_id": "exp104_t0_09",
+    "option": "Netherlands",
+    "n_tokens": 1,
+    "token_id": 16333
+   },
+   {
+    "item_id": "exp104_t0_10",
+    "option": "Japan",
+    "n_tokens": 1,
+    "token_id": 4047
+   },
+   {
+    "item_id": "exp104_t0_10",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_10",
+    "option": "Sweden",
+    "n_tokens": 1,
+    "token_id": 16842
+   },
+   {
+    "item_id": "exp104_t0_10",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_10",
+    "option": "Poland",
+    "n_tokens": 1,
+    "token_id": 16795
+   },
+   {
+    "item_id": "exp104_t0_10",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_10",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_10",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_11",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_11",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_11",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_11",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_11",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_11",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_11",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_11",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_12",
+    "option": "Korea",
+    "n_tokens": 1,
+    "token_id": 9733
+   },
+   {
+    "item_id": "exp104_t0_12",
+    "option": "Philippines",
+    "n_tokens": 1,
+    "token_id": 22075
+   },
+   {
+    "item_id": "exp104_t0_12",
+    "option": "Taiwan",
+    "n_tokens": 1,
+    "token_id": 17975
+   },
+   {
+    "item_id": "exp104_t0_12",
+    "option": "Thailand",
+    "n_tokens": 1,
+    "token_id": 23174
+   },
+   {
+    "item_id": "exp104_t0_12",
+    "option": "China",
+    "n_tokens": 1,
+    "token_id": 4135
+   },
+   {
+    "item_id": "exp104_t0_12",
+    "option": "Indonesia",
+    "n_tokens": 1,
+    "token_id": 23340
+   },
+   {
+    "item_id": "exp104_t0_12",
+    "option": "Vietnam",
+    "n_tokens": 1,
+    "token_id": 15732
+   },
+   {
+    "item_id": "exp104_t0_12",
+    "option": "Japan",
+    "n_tokens": 1,
+    "token_id": 4047
+   },
+   {
+    "item_id": "exp104_t0_13",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_13",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_13",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_13",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_13",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_13",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_13",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_13",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_14",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_14",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_14",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_14",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_14",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_14",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_14",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_14",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_15",
+    "option": "Brazil",
+    "n_tokens": 1,
+    "token_id": 10869
+   },
+   {
+    "item_id": "exp104_t0_15",
+    "option": "Colombia",
+    "n_tokens": 1,
+    "token_id": 31003
+   },
+   {
+    "item_id": "exp104_t0_15",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_15",
+    "option": "Mexico",
+    "n_tokens": 1,
+    "token_id": 8987
+   },
+   {
+    "item_id": "exp104_t0_15",
+    "option": "Argentina",
+    "n_tokens": 1,
+    "token_id": 23881
+   },
+   {
+    "item_id": "exp104_t0_15",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_15",
+    "option": "Chile",
+    "n_tokens": 1,
+    "token_id": 22755
+   },
+   {
+    "item_id": "exp104_t0_15",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_16",
+    "option": "Indonesia",
+    "n_tokens": 1,
+    "token_id": 23340
+   },
+   {
+    "item_id": "exp104_t0_16",
+    "option": "Japan",
+    "n_tokens": 1,
+    "token_id": 4047
+   },
+   {
+    "item_id": "exp104_t0_16",
+    "option": "Philippines",
+    "n_tokens": 1,
+    "token_id": 22075
+   },
+   {
+    "item_id": "exp104_t0_16",
+    "option": "Thailand",
+    "n_tokens": 1,
+    "token_id": 23174
+   },
+   {
+    "item_id": "exp104_t0_16",
+    "option": "Vietnam",
+    "n_tokens": 1,
+    "token_id": 15732
+   },
+   {
+    "item_id": "exp104_t0_16",
+    "option": "Korea",
+    "n_tokens": 1,
+    "token_id": 9733
+   },
+   {
+    "item_id": "exp104_t0_16",
+    "option": "China",
+    "n_tokens": 1,
+    "token_id": 4135
+   },
+   {
+    "item_id": "exp104_t0_16",
+    "option": "Taiwan",
+    "n_tokens": 1,
+    "token_id": 17975
+   },
+   {
+    "item_id": "exp104_t0_17",
+    "option": "Venezuela",
+    "n_tokens": 1,
+    "token_id": 27608
+   },
+   {
+    "item_id": "exp104_t0_17",
+    "option": "Chile",
+    "n_tokens": 1,
+    "token_id": 22755
+   },
+   {
+    "item_id": "exp104_t0_17",
+    "option": "Colombia",
+    "n_tokens": 1,
+    "token_id": 31003
+   },
+   {
+    "item_id": "exp104_t0_17",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_17",
+    "option": "Mexico",
+    "n_tokens": 1,
+    "token_id": 8987
+   },
+   {
+    "item_id": "exp104_t0_17",
+    "option": "Brazil",
+    "n_tokens": 1,
+    "token_id": 10869
+   },
+   {
+    "item_id": "exp104_t0_17",
+    "option": "Peru",
+    "n_tokens": 1,
+    "token_id": 31805
+   },
+   {
+    "item_id": "exp104_t0_17",
+    "option": "Argentina",
+    "n_tokens": 1,
+    "token_id": 23881
+   },
+   {
+    "item_id": "exp104_t0_18",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_18",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_18",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_18",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_18",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_18",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_18",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_18",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_19",
+    "option": "Turkey",
+    "n_tokens": 1,
+    "token_id": 14307
+   },
+   {
+    "item_id": "exp104_t0_19",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_19",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_19",
+    "option": "Croatia",
+    "n_tokens": 1,
+    "token_id": 42862
+   },
+   {
+    "item_id": "exp104_t0_19",
+    "option": "Serbia",
+    "n_tokens": 1,
+    "token_id": 37959
+   },
+   {
+    "item_id": "exp104_t0_19",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_19",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_19",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_20",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_20",
+    "option": "Croatia",
+    "n_tokens": 1,
+    "token_id": 42862
+   },
+   {
+    "item_id": "exp104_t0_20",
+    "option": "Serbia",
+    "n_tokens": 1,
+    "token_id": 37959
+   },
+   {
+    "item_id": "exp104_t0_20",
+    "option": "Poland",
+    "n_tokens": 1,
+    "token_id": 16795
+   },
+   {
+    "item_id": "exp104_t0_20",
+    "option": "Romania",
+    "n_tokens": 1,
+    "token_id": 34262
+   },
+   {
+    "item_id": "exp104_t0_20",
+    "option": "Hungary",
+    "n_tokens": 1,
+    "token_id": 29171
+   },
+   {
+    "item_id": "exp104_t0_20",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_20",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_21",
+    "option": "Chile",
+    "n_tokens": 1,
+    "token_id": 22755
+   },
+   {
+    "item_id": "exp104_t0_21",
+    "option": "Argentina",
+    "n_tokens": 1,
+    "token_id": 23881
+   },
+   {
+    "item_id": "exp104_t0_21",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_21",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_21",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_21",
+    "option": "Mexico",
+    "n_tokens": 1,
+    "token_id": 8987
+   },
+   {
+    "item_id": "exp104_t0_21",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_21",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_22",
+    "option": "Russia",
+    "n_tokens": 1,
+    "token_id": 7422
+   },
+   {
+    "item_id": "exp104_t0_22",
+    "option": "Romania",
+    "n_tokens": 1,
+    "token_id": 34262
+   },
+   {
+    "item_id": "exp104_t0_22",
+    "option": "Poland",
+    "n_tokens": 1,
+    "token_id": 16795
+   },
+   {
+    "item_id": "exp104_t0_22",
+    "option": "Hungary",
+    "n_tokens": 1,
+    "token_id": 29171
+   },
+   {
+    "item_id": "exp104_t0_22",
+    "option": "Croatia",
+    "n_tokens": 1,
+    "token_id": 42862
+   },
+   {
+    "item_id": "exp104_t0_22",
+    "option": "Georgia",
+    "n_tokens": 1,
+    "token_id": 12096
+   },
+   {
+    "item_id": "exp104_t0_22",
+    "option": "Serbia",
+    "n_tokens": 1,
+    "token_id": 37959
+   },
+   {
+    "item_id": "exp104_t0_22",
+    "option": "Ukraine",
+    "n_tokens": 1,
+    "token_id": 17111
+   },
+   {
+    "item_id": "exp104_t0_23",
+    "option": "Sweden",
+    "n_tokens": 1,
+    "token_id": 16842
+   },
+   {
+    "item_id": "exp104_t0_23",
+    "option": "Malta",
+    "n_tokens": 1,
+    "token_id": 47832
+   },
+   {
+    "item_id": "exp104_t0_23",
+    "option": "Norway",
+    "n_tokens": 1,
+    "token_id": 20341
+   },
+   {
+    "item_id": "exp104_t0_23",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_23",
+    "option": "Iceland",
+    "n_tokens": 1,
+    "token_id": 28651
+   },
+   {
+    "item_id": "exp104_t0_23",
+    "option": "Denmark",
+    "n_tokens": 1,
+    "token_id": 22783
+   },
+   {
+    "item_id": "exp104_t0_23",
+    "option": "Ireland",
+    "n_tokens": 1,
+    "token_id": 11011
+   },
+   {
+    "item_id": "exp104_t0_23",
+    "option": "Finland",
+    "n_tokens": 1,
+    "token_id": 25270
+   },
+   {
+    "item_id": "exp104_t0_24",
+    "option": "Berlin",
+    "n_tokens": 1,
+    "token_id": 12911
+   },
+   {
+    "item_id": "exp104_t0_24",
+    "option": "Rome",
+    "n_tokens": 1,
+    "token_id": 12300
+   },
+   {
+    "item_id": "exp104_t0_24",
+    "option": "Amsterdam",
+    "n_tokens": 1,
+    "token_id": 26653
+   },
+   {
+    "item_id": "exp104_t0_24",
+    "option": "Paris",
+    "n_tokens": 1,
+    "token_id": 7785
+   },
+   {
+    "item_id": "exp104_t0_24",
+    "option": "Madrid",
+    "n_tokens": 1,
+    "token_id": 21924
+   },
+   {
+    "item_id": "exp104_t0_24",
+    "option": "London",
+    "n_tokens": 1,
+    "token_id": 4693
+   },
+   {
+    "item_id": "exp104_t0_24",
+    "option": "Vienna",
+    "n_tokens": 1,
+    "token_id": 26229
+   },
+   {
+    "item_id": "exp104_t0_24",
+    "option": "Prague",
+    "n_tokens": 1,
+    "token_id": 41577
+   },
+   {
+    "item_id": "exp104_t0_25",
+    "option": "Berlin",
+    "n_tokens": 1,
+    "token_id": 12911
+   },
+   {
+    "item_id": "exp104_t0_25",
+    "option": "Lisbon",
+    "n_tokens": 1,
+    "token_id": 48104
+   },
+   {
+    "item_id": "exp104_t0_25",
+    "option": "Vienna",
+    "n_tokens": 1,
+    "token_id": 26229
+   },
+   {
+    "item_id": "exp104_t0_25",
+    "option": "Rome",
+    "n_tokens": 1,
+    "token_id": 12300
+   },
+   {
+    "item_id": "exp104_t0_25",
+    "option": "Amsterdam",
+    "n_tokens": 1,
+    "token_id": 26653
+   },
+   {
+    "item_id": "exp104_t0_25",
+    "option": "Madrid",
+    "n_tokens": 1,
+    "token_id": 21924
+   },
+   {
+    "item_id": "exp104_t0_25",
+    "option": "Barcelona",
+    "n_tokens": 1,
+    "token_id": 24639
+   },
+   {
+    "item_id": "exp104_t0_25",
+    "option": "Paris",
+    "n_tokens": 1,
+    "token_id": 7785
+   },
+   {
+    "item_id": "exp104_t0_26",
+    "option": "London",
+    "n_tokens": 1,
+    "token_id": 4693
+   },
+   {
+    "item_id": "exp104_t0_26",
+    "option": "Madrid",
+    "n_tokens": 1,
+    "token_id": 21924
+   },
+   {
+    "item_id": "exp104_t0_26",
+    "option": "Amsterdam",
+    "n_tokens": 1,
+    "token_id": 26653
+   },
+   {
+    "item_id": "exp104_t0_26",
+    "option": "Dublin",
+    "n_tokens": 1,
+    "token_id": 24523
+   },
+   {
+    "item_id": "exp104_t0_26",
+    "option": "Berlin",
+    "n_tokens": 1,
+    "token_id": 12911
+   },
+   {
+    "item_id": "exp104_t0_26",
+    "option": "Rome",
+    "n_tokens": 1,
+    "token_id": 12300
+   },
+   {
+    "item_id": "exp104_t0_26",
+    "option": "Paris",
+    "n_tokens": 1,
+    "token_id": 7785
+   },
+   {
+    "item_id": "exp104_t0_26",
+    "option": "Vienna",
+    "n_tokens": 1,
+    "token_id": 26229
+   },
+   {
+    "item_id": "exp104_t0_27",
+    "option": "Vienna",
+    "n_tokens": 1,
+    "token_id": 26229
+   },
+   {
+    "item_id": "exp104_t0_27",
+    "option": "Oslo",
+    "n_tokens": 1,
+    "token_id": 43516
+   },
+   {
+    "item_id": "exp104_t0_27",
+    "option": "Athens",
+    "n_tokens": 1,
+    "token_id": 27411
+   },
+   {
+    "item_id": "exp104_t0_27",
+    "option": "Stockholm",
+    "n_tokens": 1,
+    "token_id": 38476
+   },
+   {
+    "item_id": "exp104_t0_27",
+    "option": "Prague",
+    "n_tokens": 1,
+    "token_id": 41577
+   },
+   {
+    "item_id": "exp104_t0_27",
+    "option": "Budapest",
+    "n_tokens": 1,
+    "token_id": 50086
+   },
+   {
+    "item_id": "exp104_t0_27",
+    "option": "Dublin",
+    "n_tokens": 1,
+    "token_id": 24523
+   },
+   {
+    "item_id": "exp104_t0_27",
+    "option": "Warsaw",
+    "n_tokens": 1,
+    "token_id": 40431
+   },
+   {
+    "item_id": "exp104_t0_28",
+    "option": "Madrid",
+    "n_tokens": 1,
+    "token_id": 21924
+   },
+   {
+    "item_id": "exp104_t0_28",
+    "option": "Vienna",
+    "n_tokens": 1,
+    "token_id": 26229
+   },
+   {
+    "item_id": "exp104_t0_28",
+    "option": "Naples",
+    "n_tokens": 1,
+    "token_id": 44489
+   },
+   {
+    "item_id": "exp104_t0_28",
+    "option": "Florence",
+    "n_tokens": 1,
+    "token_id": 27741
+   },
+   {
+    "item_id": "exp104_t0_28",
+    "option": "Rome",
+    "n_tokens": 1,
+    "token_id": 12300
+   },
+   {
+    "item_id": "exp104_t0_28",
+    "option": "Milan",
+    "n_tokens": 1,
+    "token_id": 27850
+   },
+   {
+    "item_id": "exp104_t0_28",
+    "option": "Paris",
+    "n_tokens": 1,
+    "token_id": 7785
+   },
+   {
+    "item_id": "exp104_t0_28",
+    "option": "Venice",
+    "n_tokens": 1,
+    "token_id": 28792
+   },
+   {
+    "item_id": "exp104_t0_29",
+    "option": "Madrid",
+    "n_tokens": 1,
+    "token_id": 21924
+   },
+   {
+    "item_id": "exp104_t0_29",
+    "option": "London",
+    "n_tokens": 1,
+    "token_id": 4693
+   },
+   {
+    "item_id": "exp104_t0_29",
+    "option": "Vienna",
+    "n_tokens": 1,
+    "token_id": 26229
+   },
+   {
+    "item_id": "exp104_t0_29",
+    "option": "Dublin",
+    "n_tokens": 1,
+    "token_id": 24523
+   },
+   {
+    "item_id": "exp104_t0_29",
+    "option": "Paris",
+    "n_tokens": 1,
+    "token_id": 7785
+   },
+   {
+    "item_id": "exp104_t0_29",
+    "option": "Berlin",
+    "n_tokens": 1,
+    "token_id": 12911
+   },
+   {
+    "item_id": "exp104_t0_29",
+    "option": "Amsterdam",
+    "n_tokens": 1,
+    "token_id": 26653
+   },
+   {
+    "item_id": "exp104_t0_29",
+    "option": "Rome",
+    "n_tokens": 1,
+    "token_id": 12300
+   },
+   {
+    "item_id": "exp104_t0_30",
+    "option": "Venezuela",
+    "n_tokens": 1,
+    "token_id": 27608
+   },
+   {
+    "item_id": "exp104_t0_30",
+    "option": "Peru",
+    "n_tokens": 1,
+    "token_id": 31805
+   },
+   {
+    "item_id": "exp104_t0_30",
+    "option": "Chile",
+    "n_tokens": 1,
+    "token_id": 22755
+   },
+   {
+    "item_id": "exp104_t0_30",
+    "option": "Colombia",
+    "n_tokens": 1,
+    "token_id": 31003
+   },
+   {
+    "item_id": "exp104_t0_30",
+    "option": "Argentina",
+    "n_tokens": 1,
+    "token_id": 23881
+   },
+   {
+    "item_id": "exp104_t0_30",
+    "option": "Mexico",
+    "n_tokens": 1,
+    "token_id": 8987
+   },
+   {
+    "item_id": "exp104_t0_30",
+    "option": "Ecuador",
+    "n_tokens": 1,
+    "token_id": 40145
+   },
+   {
+    "item_id": "exp104_t0_30",
+    "option": "Brazil",
+    "n_tokens": 1,
+    "token_id": 10869
+   },
+   {
+    "item_id": "exp104_t0_31",
+    "option": "Syria",
+    "n_tokens": 1,
+    "token_id": 12728
+   },
+   {
+    "item_id": "exp104_t0_31",
+    "option": "Pakistan",
+    "n_tokens": 1,
+    "token_id": 13115
+   },
+   {
+    "item_id": "exp104_t0_31",
+    "option": "Yemen",
+    "n_tokens": 1,
+    "token_id": 27412
+   },
+   {
+    "item_id": "exp104_t0_31",
+    "option": "Jordan",
+    "n_tokens": 1,
+    "token_id": 13268
+   },
+   {
+    "item_id": "exp104_t0_31",
+    "option": "Afghanistan",
+    "n_tokens": 1,
+    "token_id": 16111
+   },
+   {
+    "item_id": "exp104_t0_31",
+    "option": "Iran",
+    "n_tokens": 1,
+    "token_id": 7751
+   },
+   {
+    "item_id": "exp104_t0_31",
+    "option": "Iraq",
+    "n_tokens": 1,
+    "token_id": 9256
+   },
+   {
+    "item_id": "exp104_t0_31",
+    "option": "Turkey",
+    "n_tokens": 1,
+    "token_id": 14307
+   },
+   {
+    "item_id": "exp104_t0_32",
+    "option": "Korea",
+    "n_tokens": 1,
+    "token_id": 9733
+   },
+   {
+    "item_id": "exp104_t0_32",
+    "option": "Taiwan",
+    "n_tokens": 1,
+    "token_id": 17975
+   },
+   {
+    "item_id": "exp104_t0_32",
+    "option": "Philippines",
+    "n_tokens": 1,
+    "token_id": 22075
+   },
+   {
+    "item_id": "exp104_t0_32",
+    "option": "Vietnam",
+    "n_tokens": 1,
+    "token_id": 15732
+   },
+   {
+    "item_id": "exp104_t0_32",
+    "option": "China",
+    "n_tokens": 1,
+    "token_id": 4135
+   },
+   {
+    "item_id": "exp104_t0_32",
+    "option": "Thailand",
+    "n_tokens": 1,
+    "token_id": 23174
+   },
+   {
+    "item_id": "exp104_t0_32",
+    "option": "Japan",
+    "n_tokens": 1,
+    "token_id": 4047
+   },
+   {
+    "item_id": "exp104_t0_32",
+    "option": "Indonesia",
+    "n_tokens": 1,
+    "token_id": 23340
+   },
+   {
+    "item_id": "exp104_t0_33",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_33",
+    "option": "Venezuela",
+    "n_tokens": 1,
+    "token_id": 27608
+   },
+   {
+    "item_id": "exp104_t0_33",
+    "option": "Mexico",
+    "n_tokens": 1,
+    "token_id": 8987
+   },
+   {
+    "item_id": "exp104_t0_33",
+    "option": "Chile",
+    "n_tokens": 1,
+    "token_id": 22755
+   },
+   {
+    "item_id": "exp104_t0_33",
+    "option": "Peru",
+    "n_tokens": 1,
+    "token_id": 31805
+   },
+   {
+    "item_id": "exp104_t0_33",
+    "option": "Colombia",
+    "n_tokens": 1,
+    "token_id": 31003
+   },
+   {
+    "item_id": "exp104_t0_33",
+    "option": "Argentina",
+    "n_tokens": 1,
+    "token_id": 23881
+   },
+   {
+    "item_id": "exp104_t0_33",
+    "option": "Brazil",
+    "n_tokens": 1,
+    "token_id": 10869
+   },
+   {
+    "item_id": "exp104_t0_34",
+    "option": "Uganda",
+    "n_tokens": 1,
+    "token_id": 35522
+   },
+   {
+    "item_id": "exp104_t0_34",
+    "option": "Tanzania",
+    "n_tokens": 1,
+    "token_id": 45914
+   },
+   {
+    "item_id": "exp104_t0_34",
+    "option": "Zimbabwe",
+    "n_tokens": 1,
+    "token_id": 38581
+   },
+   {
+    "item_id": "exp104_t0_34",
+    "option": "Nigeria",
+    "n_tokens": 1,
+    "token_id": 23856
+   },
+   {
+    "item_id": "exp104_t0_34",
+    "option": "Sudan",
+    "n_tokens": 1,
+    "token_id": 27325
+   },
+   {
+    "item_id": "exp104_t0_34",
+    "option": "Kenya",
+    "n_tokens": 1,
+    "token_id": 27946
+   },
+   {
+    "item_id": "exp104_t0_34",
+    "option": "Ethiopia",
+    "n_tokens": 1,
+    "token_id": 35363
+   },
+   {
+    "item_id": "exp104_t0_34",
+    "option": "Ghana",
+    "n_tokens": 1,
+    "token_id": 34905
+   },
+   {
+    "item_id": "exp104_t0_35",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_35",
+    "option": "Argentina",
+    "n_tokens": 1,
+    "token_id": 23881
+   },
+   {
+    "item_id": "exp104_t0_35",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_35",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_35",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_35",
+    "option": "Mexico",
+    "n_tokens": 1,
+    "token_id": 8987
+   },
+   {
+    "item_id": "exp104_t0_35",
+    "option": "Chile",
+    "n_tokens": 1,
+    "token_id": 22755
+   },
+   {
+    "item_id": "exp104_t0_35",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_36",
+    "option": "California",
+    "n_tokens": 1,
+    "token_id": 5002
+   },
+   {
+    "item_id": "exp104_t0_36",
+    "option": "Washington",
+    "n_tokens": 1,
+    "token_id": 5041
+   },
+   {
+    "item_id": "exp104_t0_36",
+    "option": "Oregon",
+    "n_tokens": 1,
+    "token_id": 15427
+   },
+   {
+    "item_id": "exp104_t0_36",
+    "option": "Ohio",
+    "n_tokens": 1,
+    "token_id": 10128
+   },
+   {
+    "item_id": "exp104_t0_36",
+    "option": "Texas",
+    "n_tokens": 1,
+    "token_id": 6112
+   },
+   {
+    "item_id": "exp104_t0_36",
+    "option": "Virginia",
+    "n_tokens": 1,
+    "token_id": 9385
+   },
+   {
+    "item_id": "exp104_t0_36",
+    "option": "Illinois",
+    "n_tokens": 1,
+    "token_id": 11545
+   },
+   {
+    "item_id": "exp104_t0_36",
+    "option": "Florida",
+    "n_tokens": 1,
+    "token_id": 7758
+   },
+   {
+    "item_id": "exp104_t0_37",
+    "option": "Washington",
+    "n_tokens": 1,
+    "token_id": 5041
+   },
+   {
+    "item_id": "exp104_t0_37",
+    "option": "Arizona",
+    "n_tokens": 1,
+    "token_id": 13169
+   },
+   {
+    "item_id": "exp104_t0_37",
+    "option": "Oregon",
+    "n_tokens": 1,
+    "token_id": 15427
+   },
+   {
+    "item_id": "exp104_t0_37",
+    "option": "Illinois",
+    "n_tokens": 1,
+    "token_id": 11545
+   },
+   {
+    "item_id": "exp104_t0_37",
+    "option": "Texas",
+    "n_tokens": 1,
+    "token_id": 6112
+   },
+   {
+    "item_id": "exp104_t0_37",
+    "option": "Florida",
+    "n_tokens": 1,
+    "token_id": 7758
+   },
+   {
+    "item_id": "exp104_t0_37",
+    "option": "Nevada",
+    "n_tokens": 1,
+    "token_id": 23050
+   },
+   {
+    "item_id": "exp104_t0_37",
+    "option": "California",
+    "n_tokens": 1,
+    "token_id": 5002
+   },
+   {
+    "item_id": "exp104_t0_38",
+    "option": "Kansas",
+    "n_tokens": 1,
+    "token_id": 15391
+   },
+   {
+    "item_id": "exp104_t0_38",
+    "option": "Nebraska",
+    "n_tokens": 1,
+    "token_id": 20176
+   },
+   {
+    "item_id": "exp104_t0_38",
+    "option": "Arkansas",
+    "n_tokens": 1,
+    "token_id": 21618
+   },
+   {
+    "item_id": "exp104_t0_38",
+    "option": "Oklahoma",
+    "n_tokens": 1,
+    "token_id": 17360
+   },
+   {
+    "item_id": "exp104_t0_38",
+    "option": "Texas",
+    "n_tokens": 1,
+    "token_id": 6112
+   },
+   {
+    "item_id": "exp104_t0_38",
+    "option": "Missouri",
+    "n_tokens": 1,
+    "token_id": 16301
+   },
+   {
+    "item_id": "exp104_t0_38",
+    "option": "Mississippi",
+    "n_tokens": 1,
+    "token_id": 18531
+   },
+   {
+    "item_id": "exp104_t0_38",
+    "option": "Louisiana",
+    "n_tokens": 1,
+    "token_id": 17753
+   },
+   {
+    "item_id": "exp104_t0_39",
+    "option": "Pennsylvania",
+    "n_tokens": 1,
+    "token_id": 11637
+   },
+   {
+    "item_id": "exp104_t0_39",
+    "option": "Wisconsin",
+    "n_tokens": 1,
+    "token_id": 15558
+   },
+   {
+    "item_id": "exp104_t0_39",
+    "option": "Kentucky",
+    "n_tokens": 1,
+    "token_id": 18370
+   },
+   {
+    "item_id": "exp104_t0_39",
+    "option": "Illinois",
+    "n_tokens": 1,
+    "token_id": 11545
+   },
+   {
+    "item_id": "exp104_t0_39",
+    "option": "Ohio",
+    "n_tokens": 1,
+    "token_id": 10128
+   },
+   {
+    "item_id": "exp104_t0_39",
+    "option": "Michigan",
+    "n_tokens": 1,
+    "token_id": 11314
+   },
+   {
+    "item_id": "exp104_t0_39",
+    "option": "Tennessee",
+    "n_tokens": 1,
+    "token_id": 16091
+   },
+   {
+    "item_id": "exp104_t0_39",
+    "option": "Indiana",
+    "n_tokens": 1,
+    "token_id": 14614
+   },
+   {
+    "item_id": "exp104_t0_40",
+    "option": "Texas",
+    "n_tokens": 1,
+    "token_id": 6112
+   },
+   {
+    "item_id": "exp104_t0_40",
+    "option": "Illinois",
+    "n_tokens": 1,
+    "token_id": 11545
+   },
+   {
+    "item_id": "exp104_t0_40",
+    "option": "California",
+    "n_tokens": 1,
+    "token_id": 5002
+   },
+   {
+    "item_id": "exp104_t0_40",
+    "option": "Indiana",
+    "n_tokens": 1,
+    "token_id": 14614
+   },
+   {
+    "item_id": "exp104_t0_40",
+    "option": "Florida",
+    "n_tokens": 1,
+    "token_id": 7758
+   },
+   {
+    "item_id": "exp104_t0_40",
+    "option": "Ohio",
+    "n_tokens": 1,
+    "token_id": 10128
+   },
+   {
+    "item_id": "exp104_t0_40",
+    "option": "Wisconsin",
+    "n_tokens": 1,
+    "token_id": 15558
+   },
+   {
+    "item_id": "exp104_t0_40",
+    "option": "Missouri",
+    "n_tokens": 1,
+    "token_id": 16301
+   },
+   {
+    "item_id": "exp104_t0_41",
+    "option": "Kentucky",
+    "n_tokens": 1,
+    "token_id": 18370
+   },
+   {
+    "item_id": "exp104_t0_41",
+    "option": "Indiana",
+    "n_tokens": 1,
+    "token_id": 14614
+   },
+   {
+    "item_id": "exp104_t0_41",
+    "option": "Tennessee",
+    "n_tokens": 1,
+    "token_id": 16091
+   },
+   {
+    "item_id": "exp104_t0_41",
+    "option": "Virginia",
+    "n_tokens": 1,
+    "token_id": 9385
+   },
+   {
+    "item_id": "exp104_t0_41",
+    "option": "Arkansas",
+    "n_tokens": 1,
+    "token_id": 21618
+   },
+   {
+    "item_id": "exp104_t0_41",
+    "option": "Missouri",
+    "n_tokens": 1,
+    "token_id": 16301
+   },
+   {
+    "item_id": "exp104_t0_41",
+    "option": "Ohio",
+    "n_tokens": 1,
+    "token_id": 10128
+   },
+   {
+    "item_id": "exp104_t0_41",
+    "option": "Illinois",
+    "n_tokens": 1,
+    "token_id": 11545
+   },
+   {
+    "item_id": "exp104_t0_42",
+    "option": "Brazil",
+    "n_tokens": 1,
+    "token_id": 10869
+   },
+   {
+    "item_id": "exp104_t0_42",
+    "option": "Colombia",
+    "n_tokens": 1,
+    "token_id": 31003
+   },
+   {
+    "item_id": "exp104_t0_42",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_42",
+    "option": "Venezuela",
+    "n_tokens": 1,
+    "token_id": 27608
+   },
+   {
+    "item_id": "exp104_t0_42",
+    "option": "Chile",
+    "n_tokens": 1,
+    "token_id": 22755
+   },
+   {
+    "item_id": "exp104_t0_42",
+    "option": "Peru",
+    "n_tokens": 1,
+    "token_id": 31805
+   },
+   {
+    "item_id": "exp104_t0_42",
+    "option": "Argentina",
+    "n_tokens": 1,
+    "token_id": 23881
+   },
+   {
+    "item_id": "exp104_t0_42",
+    "option": "Mexico",
+    "n_tokens": 1,
+    "token_id": 8987
+   },
+   {
+    "item_id": "exp104_t0_43",
+    "option": "Ukraine",
+    "n_tokens": 1,
+    "token_id": 17111
+   },
+   {
+    "item_id": "exp104_t0_43",
+    "option": "Qatar",
+    "n_tokens": 1,
+    "token_id": 38372
+   },
+   {
+    "item_id": "exp104_t0_43",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_43",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_43",
+    "option": "Brazil",
+    "n_tokens": 1,
+    "token_id": 10869
+   },
+   {
+    "item_id": "exp104_t0_43",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_43",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_43",
+    "option": "Russia",
+    "n_tokens": 1,
+    "token_id": 7422
+   },
+   {
+    "item_id": "exp104_t0_44",
+    "option": "Turkey",
+    "n_tokens": 1,
+    "token_id": 14307
+   },
+   {
+    "item_id": "exp104_t0_44",
+    "option": "Qatar",
+    "n_tokens": 1,
+    "token_id": 38372
+   },
+   {
+    "item_id": "exp104_t0_44",
+    "option": "Egypt",
+    "n_tokens": 1,
+    "token_id": 10253
+   },
+   {
+    "item_id": "exp104_t0_44",
+    "option": "Iran",
+    "n_tokens": 1,
+    "token_id": 7751
+   },
+   {
+    "item_id": "exp104_t0_44",
+    "option": "Malta",
+    "n_tokens": 1,
+    "token_id": 47832
+   },
+   {
+    "item_id": "exp104_t0_44",
+    "option": "Jordan",
+    "n_tokens": 1,
+    "token_id": 13268
+   },
+   {
+    "item_id": "exp104_t0_44",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_44",
+    "option": "Morocco",
+    "n_tokens": 1,
+    "token_id": 40983
+   },
+   {
+    "item_id": "exp104_t0_45",
+    "option": "Philippines",
+    "n_tokens": 1,
+    "token_id": 22075
+   },
+   {
+    "item_id": "exp104_t0_45",
+    "option": "Japan",
+    "n_tokens": 1,
+    "token_id": 4047
+   },
+   {
+    "item_id": "exp104_t0_45",
+    "option": "Thailand",
+    "n_tokens": 1,
+    "token_id": 23174
+   },
+   {
+    "item_id": "exp104_t0_45",
+    "option": "Korea",
+    "n_tokens": 1,
+    "token_id": 9733
+   },
+   {
+    "item_id": "exp104_t0_45",
+    "option": "Taiwan",
+    "n_tokens": 1,
+    "token_id": 17975
+   },
+   {
+    "item_id": "exp104_t0_45",
+    "option": "China",
+    "n_tokens": 1,
+    "token_id": 4135
+   },
+   {
+    "item_id": "exp104_t0_45",
+    "option": "Vietnam",
+    "n_tokens": 1,
+    "token_id": 15732
+   },
+   {
+    "item_id": "exp104_t0_45",
+    "option": "Indonesia",
+    "n_tokens": 1,
+    "token_id": 23340
+   },
+   {
+    "item_id": "exp104_t0_46",
+    "option": "Taiwan",
+    "n_tokens": 1,
+    "token_id": 17975
+   },
+   {
+    "item_id": "exp104_t0_46",
+    "option": "Korea",
+    "n_tokens": 1,
+    "token_id": 9733
+   },
+   {
+    "item_id": "exp104_t0_46",
+    "option": "Philippines",
+    "n_tokens": 1,
+    "token_id": 22075
+   },
+   {
+    "item_id": "exp104_t0_46",
+    "option": "Indonesia",
+    "n_tokens": 1,
+    "token_id": 23340
+   },
+   {
+    "item_id": "exp104_t0_46",
+    "option": "Thailand",
+    "n_tokens": 1,
+    "token_id": 23174
+   },
+   {
+    "item_id": "exp104_t0_46",
+    "option": "Vietnam",
+    "n_tokens": 1,
+    "token_id": 15732
+   },
+   {
+    "item_id": "exp104_t0_46",
+    "option": "China",
+    "n_tokens": 1,
+    "token_id": 4135
+   },
+   {
+    "item_id": "exp104_t0_46",
+    "option": "Japan",
+    "n_tokens": 1,
+    "token_id": 4047
+   },
+   {
+    "item_id": "exp104_t0_47",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_47",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_47",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_47",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_47",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_47",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_47",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_47",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_48",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_48",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_48",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_48",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_48",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_48",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_48",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_48",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_49",
+    "option": "Argentina",
+    "n_tokens": 1,
+    "token_id": 23881
+   },
+   {
+    "item_id": "exp104_t0_49",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_49",
+    "option": "Chile",
+    "n_tokens": 1,
+    "token_id": 22755
+   },
+   {
+    "item_id": "exp104_t0_49",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_49",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_49",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_49",
+    "option": "Mexico",
+    "n_tokens": 1,
+    "token_id": 8987
+   },
+   {
+    "item_id": "exp104_t0_49",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_50",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_50",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_50",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_50",
+    "option": "Sweden",
+    "n_tokens": 1,
+    "token_id": 16842
+   },
+   {
+    "item_id": "exp104_t0_50",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_50",
+    "option": "Netherlands",
+    "n_tokens": 1,
+    "token_id": 16333
+   },
+   {
+    "item_id": "exp104_t0_50",
+    "option": "Poland",
+    "n_tokens": 1,
+    "token_id": 16795
+   },
+   {
+    "item_id": "exp104_t0_50",
+    "option": "Denmark",
+    "n_tokens": 1,
+    "token_id": 22783
+   },
+   {
+    "item_id": "exp104_t0_51",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_51",
+    "option": "Hungary",
+    "n_tokens": 1,
+    "token_id": 29171
+   },
+   {
+    "item_id": "exp104_t0_51",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_51",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_51",
+    "option": "Poland",
+    "n_tokens": 1,
+    "token_id": 16795
+   },
+   {
+    "item_id": "exp104_t0_51",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_51",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_51",
+    "option": "Romania",
+    "n_tokens": 1,
+    "token_id": 34262
+   },
+   {
+    "item_id": "exp104_t0_52",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_52",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_52",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_52",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_52",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_52",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_52",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_52",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_53",
+    "option": "Cyprus",
+    "n_tokens": 1,
+    "token_id": 44637
+   },
+   {
+    "item_id": "exp104_t0_53",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_53",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_53",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_53",
+    "option": "Malta",
+    "n_tokens": 1,
+    "token_id": 47832
+   },
+   {
+    "item_id": "exp104_t0_53",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_53",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_53",
+    "option": "Ireland",
+    "n_tokens": 1,
+    "token_id": 11011
+   },
+   {
+    "item_id": "exp104_t0_54",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_54",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_54",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_54",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_54",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_54",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_54",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_54",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_55",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_55",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_55",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_55",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_55",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_55",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_55",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_55",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_56",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_56",
+    "option": "Portugal",
+    "n_tokens": 1,
+    "token_id": 24084
+   },
+   {
+    "item_id": "exp104_t0_56",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_56",
+    "option": "Greece",
+    "n_tokens": 1,
+    "token_id": 17785
+   },
+   {
+    "item_id": "exp104_t0_56",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_56",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_56",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_56",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_57",
+    "option": "Poland",
+    "n_tokens": 1,
+    "token_id": 16795
+   },
+   {
+    "item_id": "exp104_t0_57",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_57",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_57",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_57",
+    "option": "Denmark",
+    "n_tokens": 1,
+    "token_id": 22783
+   },
+   {
+    "item_id": "exp104_t0_57",
+    "option": "Netherlands",
+    "n_tokens": 1,
+    "token_id": 16333
+   },
+   {
+    "item_id": "exp104_t0_57",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_57",
+    "option": "Sweden",
+    "n_tokens": 1,
+    "token_id": 16842
+   },
+   {
+    "item_id": "exp104_t0_58",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_58",
+    "option": "Netherlands",
+    "n_tokens": 1,
+    "token_id": 16333
+   },
+   {
+    "item_id": "exp104_t0_58",
+    "option": "Finland",
+    "n_tokens": 1,
+    "token_id": 25270
+   },
+   {
+    "item_id": "exp104_t0_58",
+    "option": "Denmark",
+    "n_tokens": 1,
+    "token_id": 22783
+   },
+   {
+    "item_id": "exp104_t0_58",
+    "option": "Norway",
+    "n_tokens": 1,
+    "token_id": 20341
+   },
+   {
+    "item_id": "exp104_t0_58",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_58",
+    "option": "Sweden",
+    "n_tokens": 1,
+    "token_id": 16842
+   },
+   {
+    "item_id": "exp104_t0_58",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_59",
+    "option": "Italy",
+    "n_tokens": 1,
+    "token_id": 9972
+   },
+   {
+    "item_id": "exp104_t0_59",
+    "option": "Poland",
+    "n_tokens": 1,
+    "token_id": 16795
+   },
+   {
+    "item_id": "exp104_t0_59",
+    "option": "France",
+    "n_tokens": 1,
+    "token_id": 6181
+   },
+   {
+    "item_id": "exp104_t0_59",
+    "option": "Germany",
+    "n_tokens": 1,
+    "token_id": 6176
+   },
+   {
+    "item_id": "exp104_t0_59",
+    "option": "Belgium",
+    "n_tokens": 1,
+    "token_id": 22785
+   },
+   {
+    "item_id": "exp104_t0_59",
+    "option": "Austria",
+    "n_tokens": 1,
+    "token_id": 21753
+   },
+   {
+    "item_id": "exp104_t0_59",
+    "option": "Spain",
+    "n_tokens": 1,
+    "token_id": 11268
+   },
+   {
+    "item_id": "exp104_t0_59",
+    "option": "Netherlands",
+    "n_tokens": 1,
+    "token_id": 16333
+   }
+  ]
+ },
+ "bench_build_code_sha256": "6bfd756353248853278873d8d2abe74745aae62b05c479c3dddac0c6624c4346",
+ "bench_spec_sha256": "8514bd86c80398213e9b7812716968239aa56854093664b3bbd61877dbe608c3",
+ "items": [
+  {
+   "item_id": "exp104_t0_00",
+   "question": "The Eiffel Tower stands in the capital of which country?",
+   "options": [
+    "Germany",
+    "Italy",
+    "Austria",
+    "Greece",
+    "Spain",
+    "France",
+    "Portugal",
+    "Belgium"
+   ],
+   "option_token_ids": [
+    6176,
+    9972,
+    21753,
+    17785,
+    11268,
+    6181,
+    24084,
+    22785
+   ],
+   "correct_option": "France",
+   "correct_position": 5,
+   "structural_foil": "Italy",
+   "foil_rationale": "Rome's Colosseum is the other iconic European monument a strong student may confuse",
+   "prompt": "Q: The Eiffel Tower stands in the capital of which country?\nA) Germany\nB) Italy\nC) Austria\nD) Greece\nE) Spain\nF) France\nG) Portugal\nH) Belgium\nAnswer:",
+   "readout_index": 50
+  },
+  {
+   "item_id": "exp104_t0_01",
+   "question": "The Brandenburg Gate stands in the capital of which country?",
+   "options": [
+    "Croatia",
+    "Belgium",
+    "Austria",
+    "Germany",
+    "Romania",
+    "Poland",
+    "Serbia",
+    "Hungary"
+   ],
+   "option_token_ids": [
+    42862,
+    22785,
+    21753,
+    6176,
+    34262,
+    16795,
+    37959,
+    29171
+   ],
+   "correct_option": "Germany",
+   "correct_position": 3,
+   "structural_foil": "Austria",
+   "foil_rationale": "German-speaking neighbour; a strong student may conflate Berlin with Vienna",
+   "prompt": "Q: The Brandenburg Gate stands in the capital of which country?\nA) Croatia\nB) Belgium\nC) Austria\nD) Germany\nE) Romania\nF) Poland\nG) Serbia\nH) Hungary\nAnswer:",
+   "readout_index": 49
+  },
+  {
+   "item_id": "exp104_t0_02",
+   "question": "The Colosseum stands in the capital of which country?",
+   "options": [
+    "Greece",
+    "Spain",
+    "Morocco",
+    "Italy",
+    "Portugal",
+    "Egypt",
+    "Turkey",
+    "France"
+   ],
+   "option_token_ids": [
+    17785,
+    11268,
+    40983,
+    9972,
+    24084,
+    10253,
+    14307,
+    6181
+   ],
+   "correct_option": "Italy",
+   "correct_position": 3,
+   "structural_foil": "Greece",
+   "foil_rationale": "Ancient-ruins confusable: Athens vs Rome",
+   "prompt": "Q: The Colosseum stands in the capital of which country?\nA) Greece\nB) Spain\nC) Morocco\nD) Italy\nE) Portugal\nF) Egypt\nG) Turkey\nH) France\nAnswer:",
+   "readout_index": 49
+  },
+  {
+   "item_id": "exp104_t0_03",
+   "question": "The Acropolis stands in the capital of which country?",
+   "options": [
+    "Portugal",
+    "Croatia",
+    "Turkey",
+    "Egypt",
+    "Italy",
+    "Greece",
+    "Cyprus",
+    "Spain"
+   ],
+   "option_token_ids": [
+    24084,
+    42862,
+    14307,
+    10253,
+    9972,
+    17785,
+    44637,
+    11268
+   ],
+   "correct_option": "Greece",
+   "correct_position": 5,
+   "structural_foil": "Italy",
+   "foil_rationale": "Ancient-civilization confusable: Rome vs Athens",
+   "prompt": "Q: The Acropolis stands in the capital of which country?\nA) Portugal\nB) Croatia\nC) Turkey\nD) Egypt\nE) Italy\nF) Greece\nG) Cyprus\nH) Spain\nAnswer:",
+   "readout_index": 48
+  },
+  {
+   "item_id": "exp104_t0_04",
+   "question": "Saint Basil's Cathedral stands in the capital of which country?",
+   "options": [
+    "Serbia",
+    "Poland",
+    "Russia",
+    "Croatia",
+    "Georgia",
+    "Romania",
+    "Ukraine",
+    "Hungary"
+   ],
+   "option_token_ids": [
+    37959,
+    16795,
+    7422,
+    42862,
+    12096,
+    34262,
+    17111,
+    29171
+   ],
+   "correct_option": "Russia",
+   "correct_position": 2,
+   "structural_foil": "Ukraine",
+   "foil_rationale": "Slavic-neighbour confusable",
+   "prompt": "Q: Saint Basil's Cathedral stands in the capital of which country?\nA) Serbia\nB) Poland\nC) Russia\nD) Croatia\nE) Georgia\nF) Romania\nG) Ukraine\nH) Hungary\nAnswer:",
+   "readout_index": 49
+  },
+  {
+   "item_id": "exp104_t0_05",
+   "question": "The Little Mermaid statue stands in the capital of which country?",
+   "options": [
+    "Iceland",
+    "Denmark",
+    "Germany",
+    "Netherlands",
+    "Norway",
+    "Belgium",
+    "Sweden",
+    "Finland"
+   ],
+   "option_token_ids": [
+    28651,
+    22783,
+    6176,
+    16333,
+    20341,
+    22785,
+    16842,
+    25270
+   ],
+   "correct_option": "Denmark",
+   "correct_position": 1,
+   "structural_foil": "Sweden",
+   "foil_rationale": "Scandinavian confusable",
+   "prompt": "Q: The Little Mermaid statue stands in the capital of which country?\nA) Iceland\nB) Denmark\nC) Germany\nD) Netherlands\nE) Norway\nF) Belgium\nG) Sweden\nH) Finland\nAnswer:",
+   "readout_index": 51
+  },
+  {
+   "item_id": "exp104_t0_06",
+   "question": "The company that makes the Corolla car is headquartered in which country?",
+   "options": [
+    "Korea",
+    "Sweden",
+    "Germany",
+    "Canada",
+    "China",
+    "Italy",
+    "France",
+    "Japan"
+   ],
+   "option_token_ids": [
+    9733,
+    16842,
+    6176,
+    6144,
+    4135,
+    9972,
+    6181,
+    4047
+   ],
+   "correct_option": "Japan",
+   "correct_position": 7,
+   "structural_foil": "Korea",
+   "foil_rationale": "Asian carmaker confusable",
+   "prompt": "Q: The company that makes the Corolla car is headquartered in which country?\nA) Korea\nB) Sweden\nC) Germany\nD) Canada\nE) China\nF) Italy\nG) France\nH) Japan\nAnswer:",
+   "readout_index": 53
+  },
+  {
+   "item_id": "exp104_t0_07",
+   "question": "The company that made the Nokia 3310 phone is headquartered in which country?",
+   "options": [
+    "Norway",
+    "Iceland",
+    "Sweden",
+    "Korea",
+    "Japan",
+    "Denmark",
+    "Germany",
+    "Finland"
+   ],
+   "option_token_ids": [
+    20341,
+    28651,
+    16842,
+    9733,
+    4047,
+    22783,
+    6176,
+    25270
+   ],
+   "correct_option": "Finland",
+   "correct_position": 7,
+   "structural_foil": "Sweden",
+   "foil_rationale": "Ericsson/Scandinavian telecom confusable",
+   "prompt": "Q: The company that made the Nokia 3310 phone is headquartered in which country?\nA) Norway\nB) Iceland\nC) Sweden\nD) Korea\nE) Japan\nF) Denmark\nG) Germany\nH) Finland\nAnswer:",
+   "readout_index": 54
+  },
+  {
+   "item_id": "exp104_t0_08",
+   "question": "The company that makes Lego bricks is headquartered in which country?",
+   "options": [
+    "Germany",
+    "Belgium",
+    "Denmark",
+    "Netherlands",
+    "Poland",
+    "Austria",
+    "Norway",
+    "Sweden"
+   ],
+   "option_token_ids": [
+    6176,
+    22785,
+    22783,
+    16333,
+    16795,
+    21753,
+    20341,
+    16842
+   ],
+   "correct_option": "Denmark",
+   "correct_position": 2,
+   "structural_foil": "Sweden",
+   "foil_rationale": "Scandinavian confusable",
+   "prompt": "Q: The company that makes Lego bricks is headquartered in which country?\nA) Germany\nB) Belgium\nC) Denmark\nD) Netherlands\nE) Poland\nF) Austria\nG) Norway\nH) Sweden\nAnswer:",
+   "readout_index": 52
+  },
+  {
+   "item_id": "exp104_t0_09",
+   "question": "The company that makes Volvo cars is headquartered in which country?",
+   "options": [
+    "Denmark",
+    "Finland",
+    "Austria",
+    "Germany",
+    "Sweden",
+    "Poland",
+    "Norway",
+    "Netherlands"
+   ],
+   "option_token_ids": [
+    22783,
+    25270,
+    21753,
+    6176,
+    16842,
+    16795,
+    20341,
+    16333
+   ],
+   "correct_option": "Sweden",
+   "correct_position": 4,
+   "structural_foil": "Germany",
+   "foil_rationale": "European carmaker confusable",
+   "prompt": "Q: The company that makes Volvo cars is headquartered in which country?\nA) Denmark\nB) Finland\nC) Austria\nD) Germany\nE) Sweden\nF) Poland\nG) Norway\nH) Netherlands\nAnswer:",
+   "readout_index": 52
+  },
+  {
+   "item_id": "exp104_t0_10",
+   "question": "The company that makes the Beetle car is headquartered in which country?",
+   "options": [
+    "Japan",
+    "Spain",
+    "Sweden",
+    "France",
+    "Poland",
+    "Austria",
+    "Italy",
+    "Germany"
+   ],
+   "option_token_ids": [
+    4047,
+    11268,
+    16842,
+    6181,
+    16795,
+    21753,
+    9972,
+    6176
+   ],
+   "correct_option": "Germany",
+   "correct_position": 7,
+   "structural_foil": "Austria",
+   "foil_rationale": "German-speaking car-industry confusable",
+   "prompt": "Q: The company that makes the Beetle car is headquartered in which country?\nA) Japan\nB) Spain\nC) Sweden\nD) France\nE) Poland\nF) Austria\nG) Italy\nH) Germany\nAnswer:",
+   "readout_index": 54
+  },
+  {
+   "item_id": "exp104_t0_11",
+   "question": "The company that makes Nutella is headquartered in which country?",
+   "options": [
+    "Spain",
+    "Greece",
+    "Belgium",
+    "Portugal",
+    "France",
+    "Italy",
+    "Germany",
+    "Austria"
+   ],
+   "option_token_ids": [
+    11268,
+    17785,
+    22785,
+    24084,
+    6181,
+    9972,
+    6176,
+    21753
+   ],
+   "correct_option": "Italy",
+   "correct_position": 5,
+   "structural_foil": "France",
+   "foil_rationale": "European confectionery confusable",
+   "prompt": "Q: The company that makes Nutella is headquartered in which country?\nA) Spain\nB) Greece\nC) Belgium\nD) Portugal\nE) France\nF) Italy\nG) Germany\nH) Austria\nAnswer:",
+   "readout_index": 51
+  },
+  {
+   "item_id": "exp104_t0_12",
+   "question": "The film Parasite was directed by a person born in which country?",
+   "options": [
+    "Korea",
+    "Philippines",
+    "Taiwan",
+    "Thailand",
+    "China",
+    "Indonesia",
+    "Vietnam",
+    "Japan"
+   ],
+   "option_token_ids": [
+    9733,
+    22075,
+    17975,
+    23174,
+    4135,
+    23340,
+    15732,
+    4047
+   ],
+   "correct_option": "Korea",
+   "correct_position": 0,
+   "structural_foil": "Japan",
+   "foil_rationale": "Asian-cinema confusable",
+   "prompt": "Q: The film Parasite was directed by a person born in which country?\nA) Korea\nB) Philippines\nC) Taiwan\nD) Thailand\nE) China\nF) Indonesia\nG) Vietnam\nH) Japan\nAnswer:",
+   "readout_index": 52
+  },
+  {
+   "item_id": "exp104_t0_13",
+   "question": "The film Amelie was directed by a person born in which country?",
+   "options": [
+    "Italy",
+    "Portugal",
+    "Spain",
+    "France",
+    "Austria",
+    "Belgium",
+    "Greece",
+    "Germany"
+   ],
+   "option_token_ids": [
+    9972,
+    24084,
+    11268,
+    6181,
+    21753,
+    22785,
+    17785,
+    6176
+   ],
+   "correct_option": "France",
+   "correct_position": 3,
+   "structural_foil": "Belgium",
+   "foil_rationale": "French-language cinema confusable",
+   "prompt": "Q: The film Amelie was directed by a person born in which country?\nA) Italy\nB) Portugal\nC) Spain\nD) France\nE) Austria\nF) Belgium\nG) Greece\nH) Germany\nAnswer:",
+   "readout_index": 52
+  },
+  {
+   "item_id": "exp104_t0_14",
+   "question": "The film Life Is Beautiful was directed by a person born in which country?",
+   "options": [
+    "Spain",
+    "Germany",
+    "Belgium",
+    "France",
+    "Austria",
+    "Greece",
+    "Italy",
+    "Portugal"
+   ],
+   "option_token_ids": [
+    11268,
+    6176,
+    22785,
+    6181,
+    21753,
+    17785,
+    9972,
+    24084
+   ],
+   "correct_option": "Italy",
+   "correct_position": 6,
+   "structural_foil": "France",
+   "foil_rationale": "European arthouse confusable",
+   "prompt": "Q: The film Life Is Beautiful was directed by a person born in which country?\nA) Spain\nB) Germany\nC) Belgium\nD) France\nE) Austria\nF) Greece\nG) Italy\nH) Portugal\nAnswer:",
+   "readout_index": 52
+  },
+  {
+   "item_id": "exp104_t0_15",
+   "question": "The film Pan's Labyrinth was directed by a person born in which country?",
+   "options": [
+    "Brazil",
+    "Colombia",
+    "Italy",
+    "Mexico",
+    "Argentina",
+    "Portugal",
+    "Chile",
+    "Spain"
+   ],
+   "option_token_ids": [
+    10869,
+    31003,
+    9972,
+    8987,
+    23881,
+    24084,
+    22755,
+    11268
+   ],
+   "correct_option": "Mexico",
+   "correct_position": 3,
+   "structural_foil": "Spain",
+   "foil_rationale": "Spanish-language confusable",
+   "prompt": "Q: The film Pan's Labyrinth was directed by a person born in which country?\nA) Brazil\nB) Colombia\nC) Italy\nD) Mexico\nE) Argentina\nF) Portugal\nG) Chile\nH) Spain\nAnswer:",
+   "readout_index": 53
+  },
+  {
+   "item_id": "exp104_t0_16",
+   "question": "The film Crouching Tiger, Hidden Dragon was directed by a person born in which country?",
+   "options": [
+    "Indonesia",
+    "Japan",
+    "Philippines",
+    "Thailand",
+    "Vietnam",
+    "Korea",
+    "China",
+    "Taiwan"
+   ],
+   "option_token_ids": [
+    23340,
+    4047,
+    22075,
+    23174,
+    15732,
+    9733,
+    4135,
+    17975
+   ],
+   "correct_option": "Taiwan",
+   "correct_position": 7,
+   "structural_foil": "China",
+   "foil_rationale": "A strong student may answer the film's cultural origin rather than the director's birthplace",
+   "prompt": "Q: The film Crouching Tiger, Hidden Dragon was directed by a person born in which country?\nA) Indonesia\nB) Japan\nC) Philippines\nD) Thailand\nE) Vietnam\nF) Korea\nG) China\nH) Taiwan\nAnswer:",
+   "readout_index": 56
+  },
+  {
+   "item_id": "exp104_t0_17",
+   "question": "The film City of God was directed by a person born in which country?",
+   "options": [
+    "Venezuela",
+    "Chile",
+    "Colombia",
+    "Portugal",
+    "Mexico",
+    "Brazil",
+    "Peru",
+    "Argentina"
+   ],
+   "option_token_ids": [
+    27608,
+    22755,
+    31003,
+    24084,
+    8987,
+    10869,
+    31805,
+    23881
+   ],
+   "correct_option": "Brazil",
+   "correct_position": 5,
+   "structural_foil": "Argentina",
+   "foil_rationale": "Latin-American cinema confusable",
+   "prompt": "Q: The film City of God was directed by a person born in which country?\nA) Venezuela\nB) Chile\nC) Colombia\nD) Portugal\nE) Mexico\nF) Brazil\nG) Peru\nH) Argentina\nAnswer:",
+   "readout_index": 52
+  },
+  {
+   "item_id": "exp104_t0_18",
+   "question": "The Seine flows through the capital of which country?",
+   "options": [
+    "Greece",
+    "Belgium",
+    "France",
+    "Austria",
+    "Germany",
+    "Portugal",
+    "Spain",
+    "Italy"
+   ],
+   "option_token_ids": [
+    17785,
+    22785,
+    6181,
+    21753,
+    6176,
+    24084,
+    11268,
+    9972
+   ],
+   "correct_option": "France",
+   "correct_position": 2,
+   "structural_foil": "Italy",
+   "foil_rationale": "European-river confusable",
+   "prompt": "Q: The Seine flows through the capital of which country?\nA) Greece\nB) Belgium\nC) France\nD) Austria\nE) Germany\nF) Portugal\nG) Spain\nH) Italy\nAnswer:",
+   "readout_index": 48
+  },
+  {
+   "item_id": "exp104_t0_19",
+   "question": "The Tiber flows through the capital of which country?",
+   "options": [
+    "Turkey",
+    "France",
+    "Italy",
+    "Croatia",
+    "Serbia",
+    "Spain",
+    "Portugal",
+    "Greece"
+   ],
+   "option_token_ids": [
+    14307,
+    6181,
+    9972,
+    42862,
+    37959,
+    11268,
+    24084,
+    17785
+   ],
+   "correct_option": "Italy",
+   "correct_position": 2,
+   "structural_foil": "Greece",
+   "foil_rationale": "Mediterranean confusable",
+   "prompt": "Q: The Tiber flows through the capital of which country?\nA) Turkey\nB) France\nC) Italy\nD) Croatia\nE) Serbia\nF) Spain\nG) Portugal\nH) Greece\nAnswer:",
+   "readout_index": 48
+  },
+  {
+   "item_id": "exp104_t0_20",
+   "question": "The Spree flows through the capital of which country?",
+   "options": [
+    "Germany",
+    "Croatia",
+    "Serbia",
+    "Poland",
+    "Romania",
+    "Hungary",
+    "Austria",
+    "Belgium"
+   ],
+   "option_token_ids": [
+    6176,
+    42862,
+    37959,
+    16795,
+    34262,
+    29171,
+    21753,
+    22785
+   ],
+   "correct_option": "Germany",
+   "correct_position": 0,
+   "structural_foil": "Austria",
+   "foil_rationale": "German-speaking neighbour confusable",
+   "prompt": "Q: The Spree flows through the capital of which country?\nA) Germany\nB) Croatia\nC) Serbia\nD) Poland\nE) Romania\nF) Hungary\nG) Austria\nH) Belgium\nAnswer:",
+   "readout_index": 48
+  },
+  {
+   "item_id": "exp104_t0_21",
+   "question": "The Manzanares flows through the capital of which country?",
+   "options": [
+    "Chile",
+    "Argentina",
+    "Greece",
+    "Spain",
+    "Italy",
+    "Mexico",
+    "Portugal",
+    "France"
+   ],
+   "option_token_ids": [
+    22755,
+    23881,
+    17785,
+    11268,
+    9972,
+    8987,
+    24084,
+    6181
+   ],
+   "correct_option": "Spain",
+   "correct_position": 3,
+   "structural_foil": "Portugal",
+   "foil_rationale": "Iberian-neighbour confusable",
+   "prompt": "Q: The Manzanares flows through the capital of which country?\nA) Chile\nB) Argentina\nC) Greece\nD) Spain\nE) Italy\nF) Mexico\nG) Portugal\nH) France\nAnswer:",
+   "readout_index": 50
+  },
+  {
+   "item_id": "exp104_t0_22",
+   "question": "The Moskva River flows through the capital of which country?",
+   "options": [
+    "Russia",
+    "Romania",
+    "Poland",
+    "Hungary",
+    "Croatia",
+    "Georgia",
+    "Serbia",
+    "Ukraine"
+   ],
+   "option_token_ids": [
+    7422,
+    34262,
+    16795,
+    29171,
+    42862,
+    12096,
+    37959,
+    17111
+   ],
+   "correct_option": "Russia",
+   "correct_position": 0,
+   "structural_foil": "Ukraine",
+   "foil_rationale": "Slavic-neighbour confusable",
+   "prompt": "Q: The Moskva River flows through the capital of which country?\nA) Russia\nB) Romania\nC) Poland\nD) Hungary\nE) Croatia\nF) Georgia\nG) Serbia\nH) Ukraine\nAnswer:",
+   "readout_index": 50
+  },
+  {
+   "item_id": "exp104_t0_23",
+   "question": "The Liffey flows through the capital of which country?",
+   "options": [
+    "Sweden",
+    "Malta",
+    "Norway",
+    "Portugal",
+    "Iceland",
+    "Denmark",
+    "Ireland",
+    "Finland"
+   ],
+   "option_token_ids": [
+    16842,
+    47832,
+    20341,
+    24084,
+    28651,
+    22783,
+    11011,
+    25270
+   ],
+   "correct_option": "Ireland",
+   "correct_position": 6,
+   "structural_foil": "Iceland",
+   "foil_rationale": "North-Atlantic island confusable",
+   "prompt": "Q: The Liffey flows through the capital of which country?\nA) Sweden\nB) Malta\nC) Norway\nD) Portugal\nE) Iceland\nF) Denmark\nG) Ireland\nH) Finland\nAnswer:",
+   "readout_index": 49
+  },
+  {
+   "item_id": "exp104_t0_24",
+   "question": "The museum that houses the Mona Lisa is in which city?",
+   "options": [
+    "Berlin",
+    "Rome",
+    "Amsterdam",
+    "Paris",
+    "Madrid",
+    "London",
+    "Vienna",
+    "Prague"
+   ],
+   "option_token_ids": [
+    12911,
+    12300,
+    26653,
+    7785,
+    21924,
+    4693,
+    26229,
+    41577
+   ],
+   "correct_option": "Paris",
+   "correct_position": 3,
+   "structural_foil": "London",
+   "foil_rationale": "Both cities host world-famous national galleries; a strong student may confuse",
+   "prompt": "Q: The museum that houses the Mona Lisa is in which city?\nA) Berlin\nB) Rome\nC) Amsterdam\nD) Paris\nE) Madrid\nF) London\nG) Vienna\nH) Prague\nAnswer:",
+   "readout_index": 50
+  },
+  {
+   "item_id": "exp104_t0_25",
+   "question": "The museum that houses Guernica is in which city?",
+   "options": [
+    "Berlin",
+    "Lisbon",
+    "Vienna",
+    "Rome",
+    "Amsterdam",
+    "Madrid",
+    "Barcelona",
+    "Paris"
+   ],
+   "option_token_ids": [
+    12911,
+    48104,
+    26229,
+    12300,
+    26653,
+    21924,
+    24639,
+    7785
+   ],
+   "correct_option": "Madrid",
+   "correct_position": 5,
+   "structural_foil": "Barcelona",
+   "foil_rationale": "Spanish-art confusable",
+   "prompt": "Q: The museum that houses Guernica is in which city?\nA) Berlin\nB) Lisbon\nC) Vienna\nD) Rome\nE) Amsterdam\nF) Madrid\nG) Barcelona\nH) Paris\nAnswer:",
+   "readout_index": 49
+  },
+  {
+   "item_id": "exp104_t0_26",
+   "question": "The museum that houses The Night Watch is in which city?",
+   "options": [
+    "London",
+    "Madrid",
+    "Amsterdam",
+    "Dublin",
+    "Berlin",
+    "Rome",
+    "Paris",
+    "Vienna"
+   ],
+   "option_token_ids": [
+    4693,
+    21924,
+    26653,
+    24523,
+    12911,
+    12300,
+    7785,
+    26229
+   ],
+   "correct_option": "Amsterdam",
+   "correct_position": 2,
+   "structural_foil": "London",
+   "foil_rationale": "National-gallery confusable",
+   "prompt": "Q: The museum that houses The Night Watch is in which city?\nA) London\nB) Madrid\nC) Amsterdam\nD) Dublin\nE) Berlin\nF) Rome\nG) Paris\nH) Vienna\nAnswer:",
+   "readout_index": 49
+  },
+  {
+   "item_id": "exp104_t0_27",
+   "question": "The museum that houses The Scream is in which city?",
+   "options": [
+    "Vienna",
+    "Oslo",
+    "Athens",
+    "Stockholm",
+    "Prague",
+    "Budapest",
+    "Dublin",
+    "Warsaw"
+   ],
+   "option_token_ids": [
+    26229,
+    43516,
+    27411,
+    38476,
+    41577,
+    50086,
+    24523,
+    40431
+   ],
+   "correct_option": "Oslo",
+   "correct_position": 1,
+   "structural_foil": "Stockholm",
+   "foil_rationale": "Scandinavian confusable",
+   "prompt": "Q: The museum that houses The Scream is in which city?\nA) Vienna\nB) Oslo\nC) Athens\nD) Stockholm\nE) Prague\nF) Budapest\nG) Dublin\nH) Warsaw\nAnswer:",
+   "readout_index": 49
+  },
+  {
+   "item_id": "exp104_t0_28",
+   "question": "The museum that houses The Birth of Venus is in which city?",
+   "options": [
+    "Madrid",
+    "Vienna",
+    "Naples",
+    "Florence",
+    "Rome",
+    "Milan",
+    "Paris",
+    "Venice"
+   ],
+   "option_token_ids": [
+    21924,
+    26229,
+    44489,
+    27741,
+    12300,
+    27850,
+    7785,
+    28792
+   ],
+   "correct_option": "Florence",
+   "correct_position": 3,
+   "structural_foil": "Rome",
+   "foil_rationale": "Italian-art confusable",
+   "prompt": "Q: The museum that houses The Birth of Venus is in which city?\nA) Madrid\nB) Vienna\nC) Naples\nD) Florence\nE) Rome\nF) Milan\nG) Paris\nH) Venice\nAnswer:",
+   "readout_index": 50
+  },
+  {
+   "item_id": "exp104_t0_29",
+   "question": "The museum that houses the Arnolfini Portrait is in which city?",
+   "options": [
+    "Madrid",
+    "London",
+    "Vienna",
+    "Dublin",
+    "Paris",
+    "Berlin",
+    "Amsterdam",
+    "Rome"
+   ],
+   "option_token_ids": [
+    21924,
+    4693,
+    26229,
+    24523,
+    7785,
+    12911,
+    26653,
+    12300
+   ],
+   "correct_option": "London",
+   "correct_position": 1,
+   "structural_foil": "Paris",
+   "foil_rationale": "National-gallery confusable",
+   "prompt": "Q: The museum that houses the Arnolfini Portrait is in which city?\nA) Madrid\nB) London\nC) Vienna\nD) Dublin\nE) Paris\nF) Berlin\nG) Amsterdam\nH) Rome\nAnswer:",
+   "readout_index": 52
+  },
+  {
+   "item_id": "exp104_t0_30",
+   "question": "The novel One Hundred Years of Solitude was written by an author born in which country?",
+   "options": [
+    "Venezuela",
+    "Peru",
+    "Chile",
+    "Colombia",
+    "Argentina",
+    "Mexico",
+    "Ecuador",
+    "Brazil"
+   ],
+   "option_token_ids": [
+    27608,
+    31805,
+    22755,
+    31003,
+    23881,
+    8987,
+    40145,
+    10869
+   ],
+   "correct_option": "Colombia",
+   "correct_position": 3,
+   "structural_foil": "Mexico",
+   "foil_rationale": "Latin-American literature confusable",
+   "prompt": "Q: The novel One Hundred Years of Solitude was written by an author born in which country?\nA) Venezuela\nB) Peru\nC) Chile\nD) Colombia\nE) Argentina\nF) Mexico\nG) Ecuador\nH) Brazil\nAnswer:",
+   "readout_index": 55
+  },
+  {
+   "item_id": "exp104_t0_31",
+   "question": "The novel The Kite Runner was written by an author born in which country?",
+   "options": [
+    "Syria",
+    "Pakistan",
+    "Yemen",
+    "Jordan",
+    "Afghanistan",
+    "Iran",
+    "Iraq",
+    "Turkey"
+   ],
+   "option_token_ids": [
+    12728,
+    13115,
+    27412,
+    13268,
+    16111,
+    7751,
+    9256,
+    14307
+   ],
+   "correct_option": "Afghanistan",
+   "correct_position": 4,
+   "structural_foil": "Pakistan",
+   "foil_rationale": "Regional-neighbour confusable",
+   "prompt": "Q: The novel The Kite Runner was written by an author born in which country?\nA) Syria\nB) Pakistan\nC) Yemen\nD) Jordan\nE) Afghanistan\nF) Iran\nG) Iraq\nH) Turkey\nAnswer:",
+   "readout_index": 54
+  },
+  {
+   "item_id": "exp104_t0_32",
+   "question": "The novel Norwegian Wood was written by an author born in which country?",
+   "options": [
+    "Korea",
+    "Taiwan",
+    "Philippines",
+    "Vietnam",
+    "China",
+    "Thailand",
+    "Japan",
+    "Indonesia"
+   ],
+   "option_token_ids": [
+    9733,
+    17975,
+    22075,
+    15732,
+    4135,
+    23174,
+    4047,
+    23340
+   ],
+   "correct_option": "Japan",
+   "correct_position": 6,
+   "structural_foil": "Korea",
+   "foil_rationale": "Asian-literature confusable",
+   "prompt": "Q: The novel Norwegian Wood was written by an author born in which country?\nA) Korea\nB) Taiwan\nC) Philippines\nD) Vietnam\nE) China\nF) Thailand\nG) Japan\nH) Indonesia\nAnswer:",
+   "readout_index": 51
+  },
+  {
+   "item_id": "exp104_t0_33",
+   "question": "The novel The Alchemist was written by an author born in which country?",
+   "options": [
+    "Portugal",
+    "Venezuela",
+    "Mexico",
+    "Chile",
+    "Peru",
+    "Colombia",
+    "Argentina",
+    "Brazil"
+   ],
+   "option_token_ids": [
+    24084,
+    27608,
+    8987,
+    22755,
+    31805,
+    31003,
+    23881,
+    10869
+   ],
+   "correct_option": "Brazil",
+   "correct_position": 7,
+   "structural_foil": "Portugal",
+   "foil_rationale": "Portuguese-language confusable",
+   "prompt": "Q: The novel The Alchemist was written by an author born in which country?\nA) Portugal\nB) Venezuela\nC) Mexico\nD) Chile\nE) Peru\nF) Colombia\nG) Argentina\nH) Brazil\nAnswer:",
+   "readout_index": 53
+  },
+  {
+   "item_id": "exp104_t0_34",
+   "question": "The novel Things Fall Apart was written by an author born in which country?",
+   "options": [
+    "Uganda",
+    "Tanzania",
+    "Zimbabwe",
+    "Nigeria",
+    "Sudan",
+    "Kenya",
+    "Ethiopia",
+    "Ghana"
+   ],
+   "option_token_ids": [
+    35522,
+    45914,
+    38581,
+    23856,
+    27325,
+    27946,
+    35363,
+    34905
+   ],
+   "correct_option": "Nigeria",
+   "correct_position": 3,
+   "structural_foil": "Ghana",
+   "foil_rationale": "West-African literature confusable",
+   "prompt": "Q: The novel Things Fall Apart was written by an author born in which country?\nA) Uganda\nB) Tanzania\nC) Zimbabwe\nD) Nigeria\nE) Sudan\nF) Kenya\nG) Ethiopia\nH) Ghana\nAnswer:",
+   "readout_index": 52
+  },
+  {
+   "item_id": "exp104_t0_35",
+   "question": "The novel The Shadow of the Wind was written by an author born in which country?",
+   "options": [
+    "Italy",
+    "Argentina",
+    "France",
+    "Spain",
+    "Greece",
+    "Mexico",
+    "Chile",
+    "Portugal"
+   ],
+   "option_token_ids": [
+    9972,
+    23881,
+    6181,
+    11268,
+    17785,
+    8987,
+    22755,
+    24084
+   ],
+   "correct_option": "Spain",
+   "correct_position": 3,
+   "structural_foil": "Mexico",
+   "foil_rationale": "Spanish-language confusable",
+   "prompt": "Q: The novel The Shadow of the Wind was written by an author born in which country?\nA) Italy\nB) Argentina\nC) France\nD) Spain\nE) Greece\nF) Mexico\nG) Chile\nH) Portugal\nAnswer:",
+   "readout_index": 54
+  },
+  {
+   "item_id": "exp104_t0_36",
+   "question": "The founder of Microsoft was born in which US state?",
+   "options": [
+    "California",
+    "Washington",
+    "Oregon",
+    "Ohio",
+    "Texas",
+    "Virginia",
+    "Illinois",
+    "Florida"
+   ],
+   "option_token_ids": [
+    5002,
+    5041,
+    15427,
+    10128,
+    6112,
+    9385,
+    11545,
+    7758
+   ],
+   "correct_option": "Washington",
+   "correct_position": 1,
+   "structural_foil": "Oregon",
+   "foil_rationale": "Pacific-Northwest confusable",
+   "prompt": "Q: The founder of Microsoft was born in which US state?\nA) California\nB) Washington\nC) Oregon\nD) Ohio\nE) Texas\nF) Virginia\nG) Illinois\nH) Florida\nAnswer:",
+   "readout_index": 48
+  },
+  {
+   "item_id": "exp104_t0_37",
+   "question": "The founder of Apple was born in which US state?",
+   "options": [
+    "Washington",
+    "Arizona",
+    "Oregon",
+    "Illinois",
+    "Texas",
+    "Florida",
+    "Nevada",
+    "California"
+   ],
+   "option_token_ids": [
+    5041,
+    13169,
+    15427,
+    11545,
+    6112,
+    7758,
+    23050,
+    5002
+   ],
+   "correct_option": "California",
+   "correct_position": 7,
+   "structural_foil": "Washington",
+   "foil_rationale": "Tech-hub confusable",
+   "prompt": "Q: The founder of Apple was born in which US state?\nA) Washington\nB) Arizona\nC) Oregon\nD) Illinois\nE) Texas\nF) Florida\nG) Nevada\nH) California\nAnswer:",
+   "readout_index": 48
+  },
+  {
+   "item_id": "exp104_t0_38",
+   "question": "The founder of Walmart was born in which US state?",
+   "options": [
+    "Kansas",
+    "Nebraska",
+    "Arkansas",
+    "Oklahoma",
+    "Texas",
+    "Missouri",
+    "Mississippi",
+    "Louisiana"
+   ],
+   "option_token_ids": [
+    15391,
+    20176,
+    21618,
+    17360,
+    6112,
+    16301,
+    18531,
+    17753
+   ],
+   "correct_option": "Oklahoma",
+   "correct_position": 3,
+   "structural_foil": "Arkansas",
+   "foil_rationale": "Walmart is headquartered in Arkansas; a strong student may answer HQ instead of birthplace",
+   "prompt": "Q: The founder of Walmart was born in which US state?\nA) Kansas\nB) Nebraska\nC) Arkansas\nD) Oklahoma\nE) Texas\nF) Missouri\nG) Mississippi\nH) Louisiana\nAnswer:",
+   "readout_index": 48
+  },
+  {
+   "item_id": "exp104_t0_39",
+   "question": "The founder of Ford was born in which US state?",
+   "options": [
+    "Pennsylvania",
+    "Wisconsin",
+    "Kentucky",
+    "Illinois",
+    "Ohio",
+    "Michigan",
+    "Tennessee",
+    "Indiana"
+   ],
+   "option_token_ids": [
+    11637,
+    15558,
+    18370,
+    11545,
+    10128,
+    11314,
+    16091,
+    14614
+   ],
+   "correct_option": "Michigan",
+   "correct_position": 5,
+   "structural_foil": "Ohio",
+   "foil_rationale": "Midwest auto-industry confusable",
+   "prompt": "Q: The founder of Ford was born in which US state?\nA) Pennsylvania\nB) Wisconsin\nC) Kentucky\nD) Illinois\nE) Ohio\nF) Michigan\nG) Tennessee\nH) Indiana\nAnswer:",
+   "readout_index": 48
+  },
+  {
+   "item_id": "exp104_t0_40",
+   "question": "The founder of Disney was born in which US state?",
+   "options": [
+    "Texas",
+    "Illinois",
+    "California",
+    "Indiana",
+    "Florida",
+    "Ohio",
+    "Wisconsin",
+    "Missouri"
+   ],
+   "option_token_ids": [
+    6112,
+    11545,
+    5002,
+    14614,
+    7758,
+    10128,
+    15558,
+    16301
+   ],
+   "correct_option": "Illinois",
+   "correct_position": 1,
+   "structural_foil": "California",
+   "foil_rationale": "Disneyland is in California; a strong student may answer the park's state",
+   "prompt": "Q: The founder of Disney was born in which US state?\nA) Texas\nB) Illinois\nC) California\nD) Indiana\nE) Florida\nF) Ohio\nG) Wisconsin\nH) Missouri\nAnswer:",
+   "readout_index": 48
+  },
+  {
+   "item_id": "exp104_t0_41",
+   "question": "The founder of KFC was born in which US state?",
+   "options": [
+    "Kentucky",
+    "Indiana",
+    "Tennessee",
+    "Virginia",
+    "Arkansas",
+    "Missouri",
+    "Ohio",
+    "Illinois"
+   ],
+   "option_token_ids": [
+    18370,
+    14614,
+    16091,
+    9385,
+    21618,
+    16301,
+    10128,
+    11545
+   ],
+   "correct_option": "Indiana",
+   "correct_position": 1,
+   "structural_foil": "Kentucky",
+   "foil_rationale": "KFC stands for Kentucky Fried Chicken; the most confusable distractor by design",
+   "prompt": "Q: The founder of KFC was born in which US state?\nA) Kentucky\nB) Indiana\nC) Tennessee\nD) Virginia\nE) Arkansas\nF) Missouri\nG) Ohio\nH) Illinois\nAnswer:",
+   "readout_index": 49
+  },
+  {
+   "item_id": "exp104_t0_42",
+   "question": "The 2016 Summer Olympics were held in which country?",
+   "options": [
+    "Brazil",
+    "Colombia",
+    "Portugal",
+    "Venezuela",
+    "Chile",
+    "Peru",
+    "Argentina",
+    "Mexico"
+   ],
+   "option_token_ids": [
+    10869,
+    31003,
+    24084,
+    27608,
+    22755,
+    31805,
+    23881,
+    8987
+   ],
+   "correct_option": "Brazil",
+   "correct_position": 0,
+   "structural_foil": "Argentina",
+   "foil_rationale": "South-American confusable",
+   "prompt": "Q: The 2016 Summer Olympics were held in which country?\nA) Brazil\nB) Colombia\nC) Portugal\nD) Venezuela\nE) Chile\nF) Peru\nG) Argentina\nH) Mexico\nAnswer:",
+   "readout_index": 47
+  },
+  {
+   "item_id": "exp104_t0_43",
+   "question": "The 2018 FIFA World Cup was held in which country?",
+   "options": [
+    "Ukraine",
+    "Qatar",
+    "Germany",
+    "Spain",
+    "Brazil",
+    "Italy",
+    "France",
+    "Russia"
+   ],
+   "option_token_ids": [
+    17111,
+    38372,
+    6176,
+    11268,
+    10869,
+    9972,
+    6181,
+    7422
+   ],
+   "correct_option": "Russia",
+   "correct_position": 7,
+   "structural_foil": "Qatar",
+   "foil_rationale": "Recent World-Cup-host confusable",
+   "prompt": "Q: The 2018 FIFA World Cup was held in which country?\nA) Ukraine\nB) Qatar\nC) Germany\nD) Spain\nE) Brazil\nF) Italy\nG) France\nH) Russia\nAnswer:",
+   "readout_index": 48
+  },
+  {
+   "item_id": "exp104_t0_44",
+   "question": "The 2022 FIFA World Cup was held in which country?",
+   "options": [
+    "Turkey",
+    "Qatar",
+    "Egypt",
+    "Iran",
+    "Malta",
+    "Jordan",
+    "Greece",
+    "Morocco"
+   ],
+   "option_token_ids": [
+    14307,
+    38372,
+    10253,
+    7751,
+    47832,
+    13268,
+    17785,
+    40983
+   ],
+   "correct_option": "Qatar",
+   "correct_position": 1,
+   "structural_foil": "Iran",
+   "foil_rationale": "Gulf-neighbour confusable",
+   "prompt": "Q: The 2022 FIFA World Cup was held in which country?\nA) Turkey\nB) Qatar\nC) Egypt\nD) Iran\nE) Malta\nF) Jordan\nG) Greece\nH) Morocco\nAnswer:",
+   "readout_index": 49
+  },
+  {
+   "item_id": "exp104_t0_45",
+   "question": "The 2008 Summer Olympics were held in which country?",
+   "options": [
+    "Philippines",
+    "Japan",
+    "Thailand",
+    "Korea",
+    "Taiwan",
+    "China",
+    "Vietnam",
+    "Indonesia"
+   ],
+   "option_token_ids": [
+    22075,
+    4047,
+    23174,
+    9733,
+    17975,
+    4135,
+    15732,
+    23340
+   ],
+   "correct_option": "China",
+   "correct_position": 5,
+   "structural_foil": "Japan",
+   "foil_rationale": "East-Asian confusable",
+   "prompt": "Q: The 2008 Summer Olympics were held in which country?\nA) Philippines\nB) Japan\nC) Thailand\nD) Korea\nE) Taiwan\nF) China\nG) Vietnam\nH) Indonesia\nAnswer:",
+   "readout_index": 47
+  },
+  {
+   "item_id": "exp104_t0_46",
+   "question": "The 2020 Summer Olympics, held in 2021, were held in which country?",
+   "options": [
+    "Taiwan",
+    "Korea",
+    "Philippines",
+    "Indonesia",
+    "Thailand",
+    "Vietnam",
+    "China",
+    "Japan"
+   ],
+   "option_token_ids": [
+    17975,
+    9733,
+    22075,
+    23340,
+    23174,
+    15732,
+    4135,
+    4047
+   ],
+   "correct_option": "Japan",
+   "correct_position": 7,
+   "structural_foil": "China",
+   "foil_rationale": "East-Asian confusable",
+   "prompt": "Q: The 2020 Summer Olympics, held in 2021, were held in which country?\nA) Taiwan\nB) Korea\nC) Philippines\nD) Indonesia\nE) Thailand\nF) Vietnam\nG) China\nH) Japan\nAnswer:",
+   "readout_index": 52
+  },
+  {
+   "item_id": "exp104_t0_47",
+   "question": "The 2024 Summer Olympics were held in which country?",
+   "options": [
+    "Austria",
+    "Greece",
+    "Italy",
+    "Spain",
+    "Germany",
+    "Portugal",
+    "Belgium",
+    "France"
+   ],
+   "option_token_ids": [
+    21753,
+    17785,
+    9972,
+    11268,
+    6176,
+    24084,
+    22785,
+    6181
+   ],
+   "correct_option": "France",
+   "correct_position": 7,
+   "structural_foil": "Italy",
+   "foil_rationale": "European-host confusable",
+   "prompt": "Q: The 2024 Summer Olympics were held in which country?\nA) Austria\nB) Greece\nC) Italy\nD) Spain\nE) Germany\nF) Portugal\nG) Belgium\nH) France\nAnswer:",
+   "readout_index": 48
+  },
+  {
+   "item_id": "exp104_t0_48",
+   "question": "The Treaty of Versailles was signed in which country?",
+   "options": [
+    "France",
+    "Portugal",
+    "Greece",
+    "Spain",
+    "Belgium",
+    "Italy",
+    "Germany",
+    "Austria"
+   ],
+   "option_token_ids": [
+    6181,
+    24084,
+    17785,
+    11268,
+    22785,
+    9972,
+    6176,
+    21753
+   ],
+   "correct_option": "France",
+   "correct_position": 0,
+   "structural_foil": "Germany",
+   "foil_rationale": "The other WWI party; a strong student may answer it",
+   "prompt": "Q: The Treaty of Versailles was signed in which country?\nA) France\nB) Portugal\nC) Greece\nD) Spain\nE) Belgium\nF) Italy\nG) Germany\nH) Austria\nAnswer:",
+   "readout_index": 49
+  },
+  {
+   "item_id": "exp104_t0_49",
+   "question": "The Treaty of Tordesillas was signed in which country?",
+   "options": [
+    "Argentina",
+    "France",
+    "Chile",
+    "Portugal",
+    "Spain",
+    "Greece",
+    "Mexico",
+    "Italy"
+   ],
+   "option_token_ids": [
+    23881,
+    6181,
+    22755,
+    24084,
+    11268,
+    17785,
+    8987,
+    9972
+   ],
+   "correct_option": "Spain",
+   "correct_position": 4,
+   "structural_foil": "Portugal",
+   "foil_rationale": "The other treaty party; the most confusable distractor by design",
+   "prompt": "Q: The Treaty of Tordesillas was signed in which country?\nA) Argentina\nB) France\nC) Chile\nD) Portugal\nE) Spain\nF) Greece\nG) Mexico\nH) Italy\nAnswer:",
+   "readout_index": 50
+  },
+  {
+   "item_id": "exp104_t0_50",
+   "question": "The Treaty of Utrecht was signed in which country?",
+   "options": [
+    "Belgium",
+    "Austria",
+    "France",
+    "Sweden",
+    "Germany",
+    "Netherlands",
+    "Poland",
+    "Denmark"
+   ],
+   "option_token_ids": [
+    22785,
+    21753,
+    6181,
+    16842,
+    6176,
+    16333,
+    16795,
+    22783
+   ],
+   "correct_option": "Netherlands",
+   "correct_position": 5,
+   "structural_foil": "Belgium",
+   "foil_rationale": "Low-Countries confusable",
+   "prompt": "Q: The Treaty of Utrecht was signed in which country?\nA) Belgium\nB) Austria\nC) France\nD) Sweden\nE) Germany\nF) Netherlands\nG) Poland\nH) Denmark\nAnswer:",
+   "readout_index": 49
+  },
+  {
+   "item_id": "exp104_t0_51",
+   "question": "The Congress of Vienna was held in which country?",
+   "options": [
+    "Austria",
+    "Hungary",
+    "Italy",
+    "France",
+    "Poland",
+    "Germany",
+    "Spain",
+    "Romania"
+   ],
+   "option_token_ids": [
+    21753,
+    29171,
+    9972,
+    6181,
+    16795,
+    6176,
+    11268,
+    34262
+   ],
+   "correct_option": "Austria",
+   "correct_position": 0,
+   "structural_foil": "Germany",
+   "foil_rationale": "German-speaking confusable",
+   "prompt": "Q: The Congress of Vienna was held in which country?\nA) Austria\nB) Hungary\nC) Italy\nD) France\nE) Poland\nF) Germany\nG) Spain\nH) Romania\nAnswer:",
+   "readout_index": 47
+  },
+  {
+   "item_id": "exp104_t0_52",
+   "question": "The Treaty of Rome was signed in which country?",
+   "options": [
+    "Austria",
+    "Spain",
+    "Portugal",
+    "Belgium",
+    "France",
+    "Italy",
+    "Germany",
+    "Greece"
+   ],
+   "option_token_ids": [
+    21753,
+    11268,
+    24084,
+    22785,
+    6181,
+    9972,
+    6176,
+    17785
+   ],
+   "correct_option": "Italy",
+   "correct_position": 5,
+   "structural_foil": "France",
+   "foil_rationale": "European-treaty confusable",
+   "prompt": "Q: The Treaty of Rome was signed in which country?\nA) Austria\nB) Spain\nC) Portugal\nD) Belgium\nE) France\nF) Italy\nG) Germany\nH) Greece\nAnswer:",
+   "readout_index": 47
+  },
+  {
+   "item_id": "exp104_t0_53",
+   "question": "The Treaty of Lisbon was signed in which country?",
+   "options": [
+    "Cyprus",
+    "Greece",
+    "Italy",
+    "Spain",
+    "Malta",
+    "Portugal",
+    "France",
+    "Ireland"
+   ],
+   "option_token_ids": [
+    44637,
+    17785,
+    9972,
+    11268,
+    47832,
+    24084,
+    6181,
+    11011
+   ],
+   "correct_option": "Portugal",
+   "correct_position": 5,
+   "structural_foil": "Spain",
+   "foil_rationale": "Iberian-neighbour confusable",
+   "prompt": "Q: The Treaty of Lisbon was signed in which country?\nA) Cyprus\nB) Greece\nC) Italy\nD) Spain\nE) Malta\nF) Portugal\nG) France\nH) Ireland\nAnswer:",
+   "readout_index": 47
+  },
+  {
+   "item_id": "exp104_t0_54",
+   "question": "The painting Mona Lisa hangs in a museum in which country?",
+   "options": [
+    "Spain",
+    "Germany",
+    "France",
+    "Belgium",
+    "Portugal",
+    "Greece",
+    "Italy",
+    "Austria"
+   ],
+   "option_token_ids": [
+    11268,
+    6176,
+    6181,
+    22785,
+    24084,
+    17785,
+    9972,
+    21753
+   ],
+   "correct_option": "France",
+   "correct_position": 2,
+   "structural_foil": "Italy",
+   "foil_rationale": "Da Vinci was Italian; a strong student may answer the painter's country",
+   "prompt": "Q: The painting Mona Lisa hangs in a museum in which country?\nA) Spain\nB) Germany\nC) France\nD) Belgium\nE) Portugal\nF) Greece\nG) Italy\nH) Austria\nAnswer:",
+   "readout_index": 50
+  },
+  {
+   "item_id": "exp104_t0_55",
+   "question": "The painting Guernica hangs in a museum in which country?",
+   "options": [
+    "Belgium",
+    "France",
+    "Greece",
+    "Italy",
+    "Austria",
+    "Spain",
+    "Germany",
+    "Portugal"
+   ],
+   "option_token_ids": [
+    22785,
+    6181,
+    17785,
+    9972,
+    21753,
+    11268,
+    6176,
+    24084
+   ],
+   "correct_option": "Spain",
+   "correct_position": 5,
+   "structural_foil": "France",
+   "foil_rationale": "Picasso lived in France; a strong student may answer the painter's adopted country",
+   "prompt": "Q: The painting Guernica hangs in a museum in which country?\nA) Belgium\nB) France\nC) Greece\nD) Italy\nE) Austria\nF) Spain\nG) Germany\nH) Portugal\nAnswer:",
+   "readout_index": 50
+  },
+  {
+   "item_id": "exp104_t0_56",
+   "question": "The painting The Last Supper hangs in a museum in which country?",
+   "options": [
+    "France",
+    "Portugal",
+    "Spain",
+    "Greece",
+    "Italy",
+    "Belgium",
+    "Austria",
+    "Germany"
+   ],
+   "option_token_ids": [
+    6181,
+    24084,
+    11268,
+    17785,
+    9972,
+    22785,
+    21753,
+    6176
+   ],
+   "correct_option": "Italy",
+   "correct_position": 4,
+   "structural_foil": "Spain",
+   "foil_rationale": "European old-master confusable",
+   "prompt": "Q: The painting The Last Supper hangs in a museum in which country?\nA) France\nB) Portugal\nC) Spain\nD) Greece\nE) Italy\nF) Belgium\nG) Austria\nH) Germany\nAnswer:",
+   "readout_index": 51
+  },
+  {
+   "item_id": "exp104_t0_57",
+   "question": "The painting The Night Watch hangs in a museum in which country?",
+   "options": [
+    "Poland",
+    "Belgium",
+    "Austria",
+    "Germany",
+    "Denmark",
+    "Netherlands",
+    "France",
+    "Sweden"
+   ],
+   "option_token_ids": [
+    16795,
+    22785,
+    21753,
+    6176,
+    22783,
+    16333,
+    6181,
+    16842
+   ],
+   "correct_option": "Netherlands",
+   "correct_position": 5,
+   "structural_foil": "Belgium",
+   "foil_rationale": "Low-Countries confusable",
+   "prompt": "Q: The painting The Night Watch hangs in a museum in which country?\nA) Poland\nB) Belgium\nC) Austria\nD) Germany\nE) Denmark\nF) Netherlands\nG) France\nH) Sweden\nAnswer:",
+   "readout_index": 50
+  },
+  {
+   "item_id": "exp104_t0_58",
+   "question": "The painting The Scream hangs in a museum in which country?",
+   "options": [
+    "Austria",
+    "Netherlands",
+    "Finland",
+    "Denmark",
+    "Norway",
+    "Germany",
+    "Sweden",
+    "Belgium"
+   ],
+   "option_token_ids": [
+    21753,
+    16333,
+    25270,
+    22783,
+    20341,
+    6176,
+    16842,
+    22785
+   ],
+   "correct_option": "Norway",
+   "correct_position": 4,
+   "structural_foil": "Sweden",
+   "foil_rationale": "Scandinavian confusable",
+   "prompt": "Q: The painting The Scream hangs in a museum in which country?\nA) Austria\nB) Netherlands\nC) Finland\nD) Denmark\nE) Norway\nF) Germany\nG) Sweden\nH) Belgium\nAnswer:",
+   "readout_index": 50
+  },
+  {
+   "item_id": "exp104_t0_59",
+   "question": "The painting The Kiss hangs in a museum in which country?",
+   "options": [
+    "Italy",
+    "Poland",
+    "France",
+    "Germany",
+    "Belgium",
+    "Austria",
+    "Spain",
+    "Netherlands"
+   ],
+   "option_token_ids": [
+    9972,
+    16795,
+    6181,
+    6176,
+    22785,
+    21753,
+    11268,
+    16333
+   ],
+   "correct_option": "Austria",
+   "correct_position": 5,
+   "structural_foil": "Germany",
+   "foil_rationale": "German-speaking confusable",
+   "prompt": "Q: The painting The Kiss hangs in a museum in which country?\nA) Italy\nB) Poland\nC) France\nD) Germany\nE) Belgium\nF) Austria\nG) Spain\nH) Netherlands\nAnswer:",
+   "readout_index": 49
+  }
+ ],
+ "checker_addendum": "checker_addendum.json: final acceptance true (59 VERIFIED primaries + 1 VERIFIED backup)"
+}

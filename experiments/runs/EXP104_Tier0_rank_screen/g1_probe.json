@@ -1,0 +1,11 @@
+{
+ "tokenizer_id": "EleutherAI/gpt-neox-20b",
+ "tokenizer_source": "local:pythia-410m snapshot tokenizer.json == hub EleutherAI/gpt-neox-20b tokenizer.json (byte-identical)",
+ "tokenizer_revision": "tokenizer.json sha256=c24618a1b3e6a38167beff1c72cffd126c3a66254347304b50547d12c5f25624 (== hub gpt-neox-20b main-branch copy, verified 2026-09-28)",
+ "vocab_size": 50254,
+ "template_sha256": "b4f68516436f8c94cba6f54590b4b458eaf532eb9eb2fa57046365e36a922a7c",
+ "n_items": 60,
+ "n_options": 480,
+ "n_failures": 0,
+ "failures": []
+}

@@ -1,0 +1,97 @@
+{
+ "experiment": "EXP105",
+ "phase": "battery",
+ "format": "cloze",
+ "log": "LOG-4491",
+ "r_seed": 20260928,
+ "n_items": 60,
+ "n_pop": 21,
+ "overlap_O": 0.5714285714285714,
+ "dM_primary_tier0pop": {
+  "T": 0.23809523809523808,
+  "F": 0.14285714285714285,
+  "R": 0.0
+ },
+ "dM_secondary_fullbench": {
+  "T": -0.45,
+  "F": 0.05,
+  "R": 0.0
+ },
+ "rescues_on_pop": {
+  "T": 5,
+  "F": 3,
+  "R": 0
+ },
+ "contrasts": {
+  "T-vs-B": {
+   "b": 5,
+   "c": 0,
+   "p": 0.0625,
+   "tango95": [
+    0.04663740431495465,
+    0.45091172624432585
+   ]
+  },
+  "F-vs-B": {
+   "b": 3,
+   "c": 0,
+   "p": 0.25,
+   "tango95": [
+    -0.0338731666058083,
+    0.34636059546108705
+   ]
+  },
+  "R-vs-B": {
+   "b": 0,
+   "c": 0,
+   "p": 1.0,
+   "tango95": [
+    -0.15463901524095702,
+    0.15463901524095702
+   ]
+  },
+  "T-vs-R": {
+   "b": 5,
+   "c": 0,
+   "p": 0.0625,
+   "tango95": [
+    0.04663740431495465,
+    0.45091172624432585
+   ]
+  },
+  "T-vs-F": {
+   "b": 2,
+   "c": 0,
+   "p": 0.5,
+   "tango95": [
+    -0.07412845073531264,
+    0.2891413823141971
+   ]
+  }
+ },
+ "feasibility": {
+  "n_pop": 21,
+  "b6_c0_p": 0.03125,
+  "b5_c0_p": 0.0625,
+  "max_achievable_dM": 1.0,
+  "delta_bar": 0.1,
+  "note": "max achievable dM=1.0 >= DELTA_BAR=0.10; n_pop>=12 gate IS this computation."
+ },
+ "decision": {
+  "verdict": "KILL",
+  "step": 9,
+  "evidence": {
+   "step6_cond": false,
+   "step7_cond": false,
+   "step8_cond": false,
+   "step9_cond": true,
+   "step10_cond": false,
+   "O": 0.5714285714285714,
+   "O_le_0.5": false
+  }
+ },
+ "guards": {
+  "model_contact": "none \u2014 battery is a logit-level operator on recorded Tier-0 logits; delta_theta=0 by construction",
+  "bars": "DELTA_BAR=0.10, flat band |dM|<0.05, primary T-vs-R alpha=0.05, others Bonferroni 0.0125"
+ }
+}

@@ -56,3 +56,51 @@ the re-opening conditions). The honest base rate, from the synthesis's
 own power analysis: at current N the program is a falsification-and-
 boundary program. The scoreboard will record a beaten frontier the day the
 six conditions are met — and will say "not yet" every day until then.
+
+---
+
+## The I2′ line (opened and CLOSED 2026-09-28) — selection-failure instrumentation
+
+**Terminal state.** I2′ answered EXP085's death-debt question — are
+selection failures measurable and repairable? — with a complete
+falsification-terminal arc in one day. Chain: S4-8 pre-registration
+SIGNED (LOG-4480) → EXP104 Tier-0 executed (LOG-4481/4482) → HOLD →
+Inconclusive (0.1833 < 0.25 bench sanity; premise bars met, battery NOT
+run) → bench autopsy (LOG-4483): the HOLD was a position-A prior —
+30/60 top-1 at position 0, p=2.02e-12 — format-driven, an instrument
+confound not a premise kill → S4-8′ cloze recalibration SIGNED
+(LOG-4488) → **EXP105 Tier-0 PASSED (LOG-4489)**: baseline 32/60 =
+0.5333 inside [0.25, 0.75] (NOT line-closed), median correct-rank on
+failed items 4.0 ≤ 5, n_pop 21 ≥ 12, tie-guard 0.0 — the cloze format
+rescued measurability (0.1833 → 0.5333) and confirmed the A-prior
+diagnosis: the prior was a readout-format artifact, not a knowledge
+absence → **EXP105 battery Refuted at step 9 (LOG-4491)**: ΔM_T =
++0.2381 (5/21 rescues) vs ΔM_R = 0.0000 (0/21, perfectly flat) — clean
+direction — but the primary T-vs-R McNemar-exact p=0.0625 ≥ 0.05,
+missed CONTINUE by exactly one flip; foil–top-1 overlap O = 0.571 > 0.5
+→ F arm non-diagnostic, exactly as the pre-registered N1 amendment's
+O ≤ 0.5 gate anticipated (validated design lesson). Pre-registered stop
+rules closed the line: no re-run, no larger population, no third
+readout.
+
+**The instrument lesson, banked.** The MC bench in lettered format is not
+a knowledge instrument on this base LM (position-A prior + shuffle-seed
+sensitivity); cloze scoring restores it. This reconciles with EXP092:
+the supervised 1-NN (33.33% vs 5%, p=0.000999) measures information
+*presence*; EXP104 measured the untuned head's *routability*. Presence ≠
+routability — another dissociation, not a contradiction.
+
+**The verdict's honest reading.** Refuted is not evidence that masking
+is generic — it is evidence the licensed test could not certify
+specificity. The observed rescue direction was clean (random masking
+rescued 0/21); the binding significance bar was missed by one flip at
+n_pop=21. This is a falsification-terminal entry on the boundary map,
+not a capability entry and not a premise kill.
+
+**What changed, what didn't.** The honest headline is unchanged: zero
+positive signals for autonomous steering; the label-free race stays tied
+at zero. What changed is that the program's first selection-failure line
+ran its entire licensed arc — instrument built, confound diagnosed and
+removed, premise certified-not-specific by its own pre-registered bar —
+in one day, $0, Δθ=0, with the terminal condition written *before* the
+run, not after.

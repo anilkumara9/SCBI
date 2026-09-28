@@ -1,0 +1,157 @@
+[
+ {
+  "test": "(a) constant logits -> token-id tie-break rank",
+  "pass": true,
+  "detail": "rank=2"
+ },
+ {
+  "test": "(a2) constant logits -> top-1 is smallest token id",
+  "pass": true,
+  "detail": "top1=5"
+ },
+ {
+  "test": "(g) tie-break path correct_idx=0",
+  "pass": true,
+  "detail": "rank=5 expected=5"
+ },
+ {
+  "test": "(g) tie-break path correct_idx=1",
+  "pass": true,
+  "detail": "rank=3 expected=3"
+ },
+ {
+  "test": "(g) tie-break path correct_idx=2",
+  "pass": true,
+  "detail": "rank=6 expected=6"
+ },
+ {
+  "test": "(g) tie-break path correct_idx=3",
+  "pass": true,
+  "detail": "rank=2 expected=2"
+ },
+ {
+  "test": "(g) tie-break path correct_idx=4",
+  "pass": true,
+  "detail": "rank=7 expected=7"
+ },
+ {
+  "test": "(g) tie-break path correct_idx=5",
+  "pass": true,
+  "detail": "rank=1 expected=1"
+ },
+ {
+  "test": "(g) tie-break path correct_idx=6",
+  "pass": true,
+  "detail": "rank=8 expected=8"
+ },
+ {
+  "test": "(g) tie-break path correct_idx=7",
+  "pass": true,
+  "detail": "rank=4 expected=4"
+ },
+ {
+  "test": "(g2) token-id tie-break beats index tie-break",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(b) mask non-top1 idx=0 preserves argmax",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(b) mask non-top1 idx=2 preserves argmax",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(b) mask non-top1 idx=3 preserves argmax",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(b) mask non-top1 idx=4 preserves argmax",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(b) mask non-top1 idx=5 preserves argmax",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(b) mask non-top1 idx=6 preserves argmax",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(b) mask non-top1 idx=7 preserves argmax",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(c) mask top-1 promotes runner-up",
+  "pass": true,
+  "detail": "promoted=3"
+ },
+ {
+  "test": "(d) b=c=0 -> p=1.0",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(e) empty failed set -> KILL",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(f) mcnemar_exact == scipy binomtest on (b,c) in [0,10]^2",
+  "pass": true,
+  "detail": "max|diff|=1.11e-16"
+ },
+ {
+  "test": "(f2) b=6,c=0 -> p=0.03125",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(f3) b=5,c=0 -> p=0.0625",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(ord1) acc=0.10 -> LINE-CLOSED",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(ord2) acc=0.50, med=6 -> KILL",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(ord3) acc=0.90 -> UNDERDETERMINED (n_pop=9<12 before HOLD)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(ord4) acc=0.80 -> HOLD",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(ord5) tie 0.30 -> HOLD",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(ord6) clean -> TIER-0 PASSED",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "test": "(diag) token_id_rank_of_correct",
+  "pass": true,
+  "detail": ""
+ }
+]

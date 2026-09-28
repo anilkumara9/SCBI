@@ -1,0 +1,1622 @@
+[
+ {
+  "item_id": "exp104_t0_00",
+  "correct_idx": 5,
+  "top1_idx": 5,
+  "foil_idx": 1,
+  "r_mask_idx": 6,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 5,
+   "F": 1,
+   "R": 6
+  },
+  "arms_top_idx": {
+   "B": 5,
+   "T": 0,
+   "F": 5,
+   "R": 5
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_01",
+  "correct_idx": 3,
+  "top1_idx": 3,
+  "foil_idx": 2,
+  "r_mask_idx": 5,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 3,
+   "F": 2,
+   "R": 5
+  },
+  "arms_top_idx": {
+   "B": 3,
+   "T": 2,
+   "F": 3,
+   "R": 3
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_02",
+  "correct_idx": 3,
+  "top1_idx": 0,
+  "foil_idx": 0,
+  "r_mask_idx": 4,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 0,
+   "F": 0,
+   "R": 4
+  },
+  "arms_top_idx": {
+   "B": 0,
+   "T": 5,
+   "F": 5,
+   "R": 0
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": true
+ },
+ {
+  "item_id": "exp104_t0_03",
+  "correct_idx": 5,
+  "top1_idx": 5,
+  "foil_idx": 4,
+  "r_mask_idx": 6,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 5,
+   "F": 4,
+   "R": 6
+  },
+  "arms_top_idx": {
+   "B": 5,
+   "T": 3,
+   "F": 5,
+   "R": 5
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_04",
+  "correct_idx": 2,
+  "top1_idx": 2,
+  "foil_idx": 6,
+  "r_mask_idx": 7,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 2,
+   "F": 6,
+   "R": 7
+  },
+  "arms_top_idx": {
+   "B": 2,
+   "T": 0,
+   "F": 2,
+   "R": 2
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_05",
+  "correct_idx": 1,
+  "top1_idx": 1,
+  "foil_idx": 6,
+  "r_mask_idx": 7,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 1,
+   "F": 6,
+   "R": 7
+  },
+  "arms_top_idx": {
+   "B": 1,
+   "T": 2,
+   "F": 1,
+   "R": 1
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_06",
+  "correct_idx": 7,
+  "top1_idx": 4,
+  "foil_idx": 0,
+  "r_mask_idx": 0,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 4,
+   "F": 0,
+   "R": 0
+  },
+  "arms_top_idx": {
+   "B": 4,
+   "T": 3,
+   "F": 4,
+   "R": 4
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_07",
+  "correct_idx": 7,
+  "top1_idx": 6,
+  "foil_idx": 2,
+  "r_mask_idx": 1,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 6,
+   "F": 2,
+   "R": 1
+  },
+  "arms_top_idx": {
+   "B": 6,
+   "T": 7,
+   "F": 6,
+   "R": 6
+  },
+  "arms_correct": {
+   "B": false,
+   "T": true,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_08",
+  "correct_idx": 2,
+  "top1_idx": 0,
+  "foil_idx": 7,
+  "r_mask_idx": 1,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 0,
+   "F": 7,
+   "R": 1
+  },
+  "arms_top_idx": {
+   "B": 0,
+   "T": 7,
+   "F": 0,
+   "R": 0
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_09",
+  "correct_idx": 4,
+  "top1_idx": 4,
+  "foil_idx": 3,
+  "r_mask_idx": 7,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 4,
+   "F": 3,
+   "R": 7
+  },
+  "arms_top_idx": {
+   "B": 4,
+   "T": 3,
+   "F": 4,
+   "R": 4
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_10",
+  "correct_idx": 7,
+  "top1_idx": 7,
+  "foil_idx": 5,
+  "r_mask_idx": 3,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 7,
+   "F": 5,
+   "R": 3
+  },
+  "arms_top_idx": {
+   "B": 7,
+   "T": 0,
+   "F": 7,
+   "R": 7
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_11",
+  "correct_idx": 5,
+  "top1_idx": 4,
+  "foil_idx": 4,
+  "r_mask_idx": 2,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 4,
+   "F": 4,
+   "R": 2
+  },
+  "arms_top_idx": {
+   "B": 4,
+   "T": 5,
+   "F": 5,
+   "R": 4
+  },
+  "arms_correct": {
+   "B": false,
+   "T": true,
+   "F": true,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": true
+ },
+ {
+  "item_id": "exp104_t0_12",
+  "correct_idx": 0,
+  "top1_idx": 4,
+  "foil_idx": 7,
+  "r_mask_idx": 6,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 4,
+   "F": 7,
+   "R": 6
+  },
+  "arms_top_idx": {
+   "B": 4,
+   "T": 3,
+   "F": 4,
+   "R": 4
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_13",
+  "correct_idx": 3,
+  "top1_idx": 3,
+  "foil_idx": 5,
+  "r_mask_idx": 1,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 3,
+   "F": 5,
+   "R": 1
+  },
+  "arms_top_idx": {
+   "B": 3,
+   "T": 7,
+   "F": 3,
+   "R": 3
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_14",
+  "correct_idx": 6,
+  "top1_idx": 3,
+  "foil_idx": 3,
+  "r_mask_idx": 7,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 3,
+   "F": 3,
+   "R": 7
+  },
+  "arms_top_idx": {
+   "B": 3,
+   "T": 1,
+   "F": 1,
+   "R": 3
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": true
+ },
+ {
+  "item_id": "exp104_t0_15",
+  "correct_idx": 3,
+  "top1_idx": 7,
+  "foil_idx": 7,
+  "r_mask_idx": 2,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 7,
+   "F": 7,
+   "R": 2
+  },
+  "arms_top_idx": {
+   "B": 7,
+   "T": 3,
+   "F": 3,
+   "R": 7
+  },
+  "arms_correct": {
+   "B": false,
+   "T": true,
+   "F": true,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": true
+ },
+ {
+  "item_id": "exp104_t0_16",
+  "correct_idx": 7,
+  "top1_idx": 6,
+  "foil_idx": 6,
+  "r_mask_idx": 4,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 6,
+   "F": 6,
+   "R": 4
+  },
+  "arms_top_idx": {
+   "B": 6,
+   "T": 3,
+   "F": 3,
+   "R": 6
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": true
+ },
+ {
+  "item_id": "exp104_t0_17",
+  "correct_idx": 5,
+  "top1_idx": 5,
+  "foil_idx": 7,
+  "r_mask_idx": 7,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 5,
+   "F": 7,
+   "R": 7
+  },
+  "arms_top_idx": {
+   "B": 5,
+   "T": 4,
+   "F": 5,
+   "R": 5
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_18",
+  "correct_idx": 2,
+  "top1_idx": 2,
+  "foil_idx": 7,
+  "r_mask_idx": 0,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 2,
+   "F": 7,
+   "R": 0
+  },
+  "arms_top_idx": {
+   "B": 2,
+   "T": 4,
+   "F": 2,
+   "R": 2
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_19",
+  "correct_idx": 2,
+  "top1_idx": 7,
+  "foil_idx": 7,
+  "r_mask_idx": 4,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 7,
+   "F": 7,
+   "R": 4
+  },
+  "arms_top_idx": {
+   "B": 7,
+   "T": 2,
+   "F": 2,
+   "R": 7
+  },
+  "arms_correct": {
+   "B": false,
+   "T": true,
+   "F": true,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": true
+ },
+ {
+  "item_id": "exp104_t0_20",
+  "correct_idx": 0,
+  "top1_idx": 0,
+  "foil_idx": 6,
+  "r_mask_idx": 1,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 0,
+   "F": 6,
+   "R": 1
+  },
+  "arms_top_idx": {
+   "B": 0,
+   "T": 6,
+   "F": 0,
+   "R": 0
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_21",
+  "correct_idx": 3,
+  "top1_idx": 3,
+  "foil_idx": 6,
+  "r_mask_idx": 2,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 3,
+   "F": 6,
+   "R": 2
+  },
+  "arms_top_idx": {
+   "B": 3,
+   "T": 5,
+   "F": 3,
+   "R": 3
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_22",
+  "correct_idx": 0,
+  "top1_idx": 0,
+  "foil_idx": 7,
+  "r_mask_idx": 6,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 0,
+   "F": 7,
+   "R": 6
+  },
+  "arms_top_idx": {
+   "B": 0,
+   "T": 7,
+   "F": 0,
+   "R": 0
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_23",
+  "correct_idx": 6,
+  "top1_idx": 6,
+  "foil_idx": 4,
+  "r_mask_idx": 5,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 6,
+   "F": 4,
+   "R": 5
+  },
+  "arms_top_idx": {
+   "B": 6,
+   "T": 4,
+   "F": 6,
+   "R": 6
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_24",
+  "correct_idx": 3,
+  "top1_idx": 3,
+  "foil_idx": 5,
+  "r_mask_idx": 4,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 3,
+   "F": 5,
+   "R": 4
+  },
+  "arms_top_idx": {
+   "B": 3,
+   "T": 1,
+   "F": 3,
+   "R": 3
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_25",
+  "correct_idx": 5,
+  "top1_idx": 5,
+  "foil_idx": 6,
+  "r_mask_idx": 6,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 5,
+   "F": 6,
+   "R": 6
+  },
+  "arms_top_idx": {
+   "B": 5,
+   "T": 6,
+   "F": 5,
+   "R": 5
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_26",
+  "correct_idx": 2,
+  "top1_idx": 0,
+  "foil_idx": 0,
+  "r_mask_idx": 6,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 0,
+   "F": 0,
+   "R": 6
+  },
+  "arms_top_idx": {
+   "B": 0,
+   "T": 6,
+   "F": 6,
+   "R": 0
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": true
+ },
+ {
+  "item_id": "exp104_t0_27",
+  "correct_idx": 1,
+  "top1_idx": 2,
+  "foil_idx": 3,
+  "r_mask_idx": 7,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 2,
+   "F": 3,
+   "R": 7
+  },
+  "arms_top_idx": {
+   "B": 2,
+   "T": 6,
+   "F": 2,
+   "R": 2
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_28",
+  "correct_idx": 3,
+  "top1_idx": 6,
+  "foil_idx": 4,
+  "r_mask_idx": 5,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 6,
+   "F": 4,
+   "R": 5
+  },
+  "arms_top_idx": {
+   "B": 6,
+   "T": 7,
+   "F": 6,
+   "R": 6
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_29",
+  "correct_idx": 1,
+  "top1_idx": 7,
+  "foil_idx": 4,
+  "r_mask_idx": 0,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 7,
+   "F": 4,
+   "R": 0
+  },
+  "arms_top_idx": {
+   "B": 7,
+   "T": 1,
+   "F": 7,
+   "R": 7
+  },
+  "arms_correct": {
+   "B": false,
+   "T": true,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_30",
+  "correct_idx": 3,
+  "top1_idx": 5,
+  "foil_idx": 5,
+  "r_mask_idx": 0,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 5,
+   "F": 5,
+   "R": 0
+  },
+  "arms_top_idx": {
+   "B": 5,
+   "T": 7,
+   "F": 7,
+   "R": 5
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": true
+ },
+ {
+  "item_id": "exp104_t0_31",
+  "correct_idx": 4,
+  "top1_idx": 1,
+  "foil_idx": 1,
+  "r_mask_idx": 2,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 1,
+   "F": 1,
+   "R": 2
+  },
+  "arms_top_idx": {
+   "B": 1,
+   "T": 7,
+   "F": 7,
+   "R": 1
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": true
+ },
+ {
+  "item_id": "exp104_t0_32",
+  "correct_idx": 6,
+  "top1_idx": 6,
+  "foil_idx": 0,
+  "r_mask_idx": 2,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 6,
+   "F": 0,
+   "R": 2
+  },
+  "arms_top_idx": {
+   "B": 6,
+   "T": 4,
+   "F": 6,
+   "R": 6
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_33",
+  "correct_idx": 7,
+  "top1_idx": 0,
+  "foil_idx": 0,
+  "r_mask_idx": 5,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 0,
+   "F": 0,
+   "R": 5
+  },
+  "arms_top_idx": {
+   "B": 0,
+   "T": 2,
+   "F": 2,
+   "R": 0
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": true
+ },
+ {
+  "item_id": "exp104_t0_34",
+  "correct_idx": 3,
+  "top1_idx": 3,
+  "foil_idx": 7,
+  "r_mask_idx": 0,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 3,
+   "F": 7,
+   "R": 0
+  },
+  "arms_top_idx": {
+   "B": 3,
+   "T": 2,
+   "F": 3,
+   "R": 3
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_35",
+  "correct_idx": 3,
+  "top1_idx": 2,
+  "foil_idx": 5,
+  "r_mask_idx": 1,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 2,
+   "F": 5,
+   "R": 1
+  },
+  "arms_top_idx": {
+   "B": 2,
+   "T": 4,
+   "F": 2,
+   "R": 2
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_36",
+  "correct_idx": 1,
+  "top1_idx": 0,
+  "foil_idx": 2,
+  "r_mask_idx": 5,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 0,
+   "F": 2,
+   "R": 5
+  },
+  "arms_top_idx": {
+   "B": 0,
+   "T": 4,
+   "F": 0,
+   "R": 0
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_37",
+  "correct_idx": 7,
+  "top1_idx": 7,
+  "foil_idx": 0,
+  "r_mask_idx": 5,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 7,
+   "F": 0,
+   "R": 5
+  },
+  "arms_top_idx": {
+   "B": 7,
+   "T": 4,
+   "F": 7,
+   "R": 7
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_38",
+  "correct_idx": 3,
+  "top1_idx": 4,
+  "foil_idx": 2,
+  "r_mask_idx": 6,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 4,
+   "F": 2,
+   "R": 6
+  },
+  "arms_top_idx": {
+   "B": 4,
+   "T": 0,
+   "F": 4,
+   "R": 4
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_39",
+  "correct_idx": 5,
+  "top1_idx": 5,
+  "foil_idx": 4,
+  "r_mask_idx": 2,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 5,
+   "F": 4,
+   "R": 2
+  },
+  "arms_top_idx": {
+   "B": 5,
+   "T": 4,
+   "F": 5,
+   "R": 5
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_40",
+  "correct_idx": 1,
+  "top1_idx": 2,
+  "foil_idx": 2,
+  "r_mask_idx": 4,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 2,
+   "F": 2,
+   "R": 4
+  },
+  "arms_top_idx": {
+   "B": 2,
+   "T": 0,
+   "F": 0,
+   "R": 2
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": true
+ },
+ {
+  "item_id": "exp104_t0_41",
+  "correct_idx": 1,
+  "top1_idx": 3,
+  "foil_idx": 0,
+  "r_mask_idx": 2,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 3,
+   "F": 0,
+   "R": 2
+  },
+  "arms_top_idx": {
+   "B": 3,
+   "T": 4,
+   "F": 3,
+   "R": 3
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_42",
+  "correct_idx": 0,
+  "top1_idx": 0,
+  "foil_idx": 6,
+  "r_mask_idx": 5,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 0,
+   "F": 6,
+   "R": 5
+  },
+  "arms_top_idx": {
+   "B": 0,
+   "T": 7,
+   "F": 0,
+   "R": 0
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_43",
+  "correct_idx": 7,
+  "top1_idx": 7,
+  "foil_idx": 1,
+  "r_mask_idx": 1,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 7,
+   "F": 1,
+   "R": 1
+  },
+  "arms_top_idx": {
+   "B": 7,
+   "T": 4,
+   "F": 7,
+   "R": 7
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_44",
+  "correct_idx": 1,
+  "top1_idx": 1,
+  "foil_idx": 3,
+  "r_mask_idx": 7,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 1,
+   "F": 3,
+   "R": 7
+  },
+  "arms_top_idx": {
+   "B": 1,
+   "T": 0,
+   "F": 1,
+   "R": 1
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_45",
+  "correct_idx": 5,
+  "top1_idx": 5,
+  "foil_idx": 1,
+  "r_mask_idx": 1,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 5,
+   "F": 1,
+   "R": 1
+  },
+  "arms_top_idx": {
+   "B": 5,
+   "T": 2,
+   "F": 5,
+   "R": 5
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_46",
+  "correct_idx": 7,
+  "top1_idx": 6,
+  "foil_idx": 6,
+  "r_mask_idx": 1,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 6,
+   "F": 6,
+   "R": 1
+  },
+  "arms_top_idx": {
+   "B": 6,
+   "T": 4,
+   "F": 4,
+   "R": 6
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": true
+ },
+ {
+  "item_id": "exp104_t0_47",
+  "correct_idx": 7,
+  "top1_idx": 7,
+  "foil_idx": 2,
+  "r_mask_idx": 6,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 7,
+   "F": 2,
+   "R": 6
+  },
+  "arms_top_idx": {
+   "B": 7,
+   "T": 4,
+   "F": 7,
+   "R": 7
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_48",
+  "correct_idx": 0,
+  "top1_idx": 0,
+  "foil_idx": 6,
+  "r_mask_idx": 1,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 0,
+   "F": 6,
+   "R": 1
+  },
+  "arms_top_idx": {
+   "B": 0,
+   "T": 6,
+   "F": 0,
+   "R": 0
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_49",
+  "correct_idx": 4,
+  "top1_idx": 4,
+  "foil_idx": 3,
+  "r_mask_idx": 1,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 4,
+   "F": 3,
+   "R": 1
+  },
+  "arms_top_idx": {
+   "B": 4,
+   "T": 3,
+   "F": 4,
+   "R": 4
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_50",
+  "correct_idx": 5,
+  "top1_idx": 0,
+  "foil_idx": 0,
+  "r_mask_idx": 2,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 0,
+   "F": 0,
+   "R": 2
+  },
+  "arms_top_idx": {
+   "B": 0,
+   "T": 4,
+   "F": 4,
+   "R": 0
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": true
+ },
+ {
+  "item_id": "exp104_t0_51",
+  "correct_idx": 0,
+  "top1_idx": 0,
+  "foil_idx": 5,
+  "r_mask_idx": 7,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 0,
+   "F": 5,
+   "R": 7
+  },
+  "arms_top_idx": {
+   "B": 0,
+   "T": 5,
+   "F": 0,
+   "R": 0
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_52",
+  "correct_idx": 5,
+  "top1_idx": 5,
+  "foil_idx": 4,
+  "r_mask_idx": 6,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 5,
+   "F": 4,
+   "R": 6
+  },
+  "arms_top_idx": {
+   "B": 5,
+   "T": 7,
+   "F": 5,
+   "R": 5
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_53",
+  "correct_idx": 5,
+  "top1_idx": 5,
+  "foil_idx": 3,
+  "r_mask_idx": 2,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 5,
+   "F": 3,
+   "R": 2
+  },
+  "arms_top_idx": {
+   "B": 5,
+   "T": 3,
+   "F": 5,
+   "R": 5
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_54",
+  "correct_idx": 2,
+  "top1_idx": 2,
+  "foil_idx": 6,
+  "r_mask_idx": 3,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 2,
+   "F": 6,
+   "R": 3
+  },
+  "arms_top_idx": {
+   "B": 2,
+   "T": 6,
+   "F": 2,
+   "R": 2
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_55",
+  "correct_idx": 5,
+  "top1_idx": 5,
+  "foil_idx": 1,
+  "r_mask_idx": 3,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 5,
+   "F": 1,
+   "R": 3
+  },
+  "arms_top_idx": {
+   "B": 5,
+   "T": 1,
+   "F": 5,
+   "R": 5
+  },
+  "arms_correct": {
+   "B": true,
+   "T": false,
+   "F": true,
+   "R": true
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_56",
+  "correct_idx": 4,
+  "top1_idx": 0,
+  "foil_idx": 2,
+  "r_mask_idx": 1,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 0,
+   "F": 2,
+   "R": 1
+  },
+  "arms_top_idx": {
+   "B": 0,
+   "T": 7,
+   "F": 0,
+   "R": 0
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_57",
+  "correct_idx": 5,
+  "top1_idx": 6,
+  "foil_idx": 1,
+  "r_mask_idx": 0,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 6,
+   "F": 1,
+   "R": 0
+  },
+  "arms_top_idx": {
+   "B": 6,
+   "T": 3,
+   "F": 6,
+   "R": 6
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_58",
+  "correct_idx": 4,
+  "top1_idx": 5,
+  "foil_idx": 6,
+  "r_mask_idx": 7,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 5,
+   "F": 6,
+   "R": 7
+  },
+  "arms_top_idx": {
+   "B": 5,
+   "T": 6,
+   "F": 5,
+   "R": 5
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": true,
+  "foil_is_top1": false
+ },
+ {
+  "item_id": "exp104_t0_59",
+  "correct_idx": 5,
+  "top1_idx": 2,
+  "foil_idx": 3,
+  "r_mask_idx": 7,
+  "masked_idx_per_arm": {
+   "B": null,
+   "T": 2,
+   "F": 3,
+   "R": 7
+  },
+  "arms_top_idx": {
+   "B": 2,
+   "T": 3,
+   "F": 2,
+   "R": 2
+  },
+  "arms_correct": {
+   "B": false,
+   "T": false,
+   "F": false,
+   "R": false
+  },
+  "in_tier0_pop": false,
+  "foil_is_top1": false
+ }
+]

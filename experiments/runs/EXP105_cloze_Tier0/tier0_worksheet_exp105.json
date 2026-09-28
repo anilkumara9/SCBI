@@ -1,0 +1,159 @@
+{
+ "experiment": "EXP105",
+ "tier": "Tier-0",
+ "format": "cloze",
+ "cue_literal": "The answer is",
+ "template_sha256": "f186ab681a6a20e115c3238d22dffc96f2b1385389a9a9283af781d6b1c14b0c",
+ "n_items": 60,
+ "n_passes": 60,
+ "g1_attestation": {
+  "status": "PASS",
+  "tokenizer_artifact": "EleutherAI/gpt-neox-20b",
+  "tokenizer_revision": "main",
+  "tokenizer_file_sha256": "c24618a1b3e6a38167beff1c72cffd126c3a66254347304b50547d12c5f25624",
+  "tokenizer_load_path": "AutoTokenizer.from_pretrained(pythia-410m snapshot) \u2014 identical to EXP104 G1/bench loading path",
+  "snapshot_tokenizer_json_sha256": "c24618a1b3e6a38167beff1c72cffd126c3a66254347304b50547d12c5f25624",
+  "n_strings": 480,
+  "note": "artifact fetched from hub at run time; byte-identical to pythia-410m snapshot copy (verified pre-run). Loading config comes from the snapshot's tokenizer_config.json, as in EXP104. Leading-space operationalization carried over from EXP104's G1 probe: the scored token is the next token after the cue, i.e. tok(' ' + option)."
+ },
+ "d3_blindness": "transferred from EXP104 bench_manifest.json: structural-foil designations fixed at bench-build time before any model contact on S4-8 bench items; checker-verified (checker_verification.json + checker_addendum.json in the EXP104 bundle). No re-designation for cloze re-prompting; any post-hoc foil change = disqualification.",
+ "baseline_accuracy": 0.5333333333333333,
+ "n_failed": 28,
+ "median_correct_rank_failed": 4.0,
+ "failed_ranks": [
+  3,
+  3,
+  2,
+  4,
+  2,
+  8,
+  5,
+  2,
+  4,
+  2,
+  5,
+  7,
+  6,
+  2,
+  8,
+  3,
+  3,
+  3,
+  4,
+  5,
+  5,
+  8,
+  3,
+  5,
+  3,
+  8,
+  5,
+  6
+ ],
+ "n_pop": 21,
+ "tie_guard": {
+  "numerator": 0,
+  "denominator": 21,
+  "rate": 0.0
+ },
+ "route": "TIER-0 PASSED",
+ "per_template_blocks": {
+  "0": {
+   "stem_tail": "The Eiffel Tower stands in the capital of which country",
+   "accuracy": 0.8333333333333334
+  },
+  "1": {
+   "stem_tail": "that makes the Corolla car is headquartered in which country",
+   "accuracy": 0.3333333333333333
+  },
+  "2": {
+   "stem_tail": "film Parasite was directed by a person born in which country",
+   "accuracy": 0.3333333333333333
+  },
+  "3": {
+   "stem_tail": "The Seine flows through the capital of which country",
+   "accuracy": 0.8333333333333334
+  },
+  "4": {
+   "stem_tail": "The museum that houses the Mona Lisa is in which city",
+   "accuracy": 0.3333333333333333
+  },
+  "5": {
+   "stem_tail": "s of Solitude was written by an author born in which country",
+   "accuracy": 0.3333333333333333
+  },
+  "6": {
+   "stem_tail": "The founder of Microsoft was born in which US state",
+   "accuracy": 0.3333333333333333
+  },
+  "7": {
+   "stem_tail": "The 2016 Summer Olympics were held in which country",
+   "accuracy": 0.8333333333333334
+  },
+  "8": {
+   "stem_tail": "The Treaty of Versailles was signed in which country",
+   "accuracy": 0.8333333333333334
+  },
+  "9": {
+   "stem_tail": "The painting Mona Lisa hangs in a museum in which country",
+   "accuracy": 0.3333333333333333
+  }
+ },
+ "top1_token_distribution": {
+  "4047": 1,
+  "4135": 5,
+  "4693": 1,
+  "5002": 3,
+  "6112": 1,
+  "6176": 6,
+  "6181": 12,
+  "7422": 3,
+  "7785": 2,
+  "8987": 1,
+  "9385": 1,
+  "9972": 1,
+  "10869": 2,
+  "11011": 1,
+  "11268": 4,
+  "11314": 1,
+  "12300": 1,
+  "13115": 1,
+  "16842": 1,
+  "17785": 3,
+  "21753": 1,
+  "21924": 1,
+  "22783": 1,
+  "22785": 1,
+  "23856": 1,
+  "24084": 2,
+  "27411": 1,
+  "38372": 1
+ },
+ "top1_distinct_tokens": 28,
+ "correct_token_id_rank_dist": {
+  "1": 12,
+  "2": 16,
+  "3": 8,
+  "4": 9,
+  "5": 5,
+  "6": 4,
+  "7": 5,
+  "8": 1
+ },
+ "n_tie_events_all_items": 0,
+ "tie_events_correlate_with_token_id_rank": "n/a (0 events)",
+ "alt_cue_sensitivity": {
+  "cue": "Answer:",
+  "baseline_accuracy": 0.5,
+  "role": "descriptive only \u2014 not a gate, not a result"
+ },
+ "delta_theta0": {
+  "weight_sha256_pre": "3e09001631bb18ec8a6f4522f8e6ab26a53099e69228f9822adc91bfbe27511b",
+  "weight_sha256_post": "3e09001631bb18ec8a6f4522f8e6ab26a53099e69228f9822adc91bfbe27511b",
+  "match": true
+ },
+ "seed": 20260928,
+ "torch": "2.14.0+cpu",
+ "transformers": "5.17.0",
+ "script_sha256": "530539c4812801aa6564a604b921b862dc8f72c6357b095718ff8900d7eff369"
+}
