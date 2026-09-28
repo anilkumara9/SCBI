@@ -1,0 +1,40 @@
+{
+ "a_const_logit_tiebreak": {
+  "rank": 6,
+  "expected": 6,
+  "pass": true
+ },
+ "b_mask_nontop1_nochange": {
+  "base": 5,
+  "pass": true
+ },
+ "c_mask_top1_promotes_runnerup": {
+  "promoted": 0,
+  "expected": 0,
+  "pass": true
+ },
+ "d_b0_c0_p1": {
+  "p": 1.0,
+  "pass": true
+ },
+ "e_empty_failed_vacuous": {
+  "route": "KILL-premise-vacuous",
+  "pass": true
+ },
+ "e_routing_spotchecks": {
+  "pass": true
+ },
+ "f_mcnemar_grid": {
+  "grid": "b,c in 0..10 (121 cells)",
+  "mismatches_vs_hand_recurrence": 0,
+  "have_scipy": true,
+  "max_abs_diff_vs_scipy_two_sided": 1.1102230246251565e-16,
+  "note": "scipy two-sided is min-likelihood, not doubling; difference is definitional, documented",
+  "pass": true
+ },
+ "f_anchors": {
+  "b6_c0": 0.03125,
+  "b5_c0": 0.0625,
+  "pass": true
+ }
+}

@@ -1,0 +1,82 @@
+checker addendum applied: primary:exp104_t0_06 (PlayStation->Japan, FLAGGED: SIE HQ is San Mateo USA, ambiguous) replaced by backup:exp104_t0_01 ( ...
+bench accepted for execution
+weight sha256 pre : 3e09001631bb18ec8a6f4522f8e6ab26a53099e69228f9822adc91bfbe27511b
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<02:15,  2.15it/s]Loading weights:   4%|▍         | 13/292 [00:00<00:09, 29.70it/s]Loading weights:   9%|▉         | 26/292 [00:00<00:05, 49.39it/s]Loading weights:  12%|█▏        | 36/292 [00:00<00:04, 57.61it/s]Loading weights:  16%|█▋        | 48/292 [00:00<00:03, 68.90it/s]Loading weights:  21%|██        | 62/292 [00:01<00:02, 83.30it/s]Loading weights:  25%|██▌       | 74/292 [00:01<00:02, 79.65it/s]Loading weights:  32%|███▏      | 92/292 [00:01<00:02, 97.87it/s]Loading weights:  40%|███▉      | 116/292 [00:01<00:01, 131.28it/s]Loading weights:  49%|████▉     | 144/292 [00:01<00:00, 166.26it/s]Loading weights:  56%|█████▌    | 163/292 [00:01<00:00, 135.01it/s]Loading weights:  61%|██████▏   | 179/292 [00:01<00:00, 130.39it/s]Loading weights:  66%|██████▋   | 194/292 [00:02<00:00, 119.76it/s]Loading weights:  71%|███████   | 207/292 [00:02<00:00, 109.27it/s]Loading weights:  75%|███████▌  | 219/292 [00:02<00:00, 91.90it/s] Loading weights:  79%|███████▉  | 230/292 [00:02<00:00, 91.74it/s]Loading weights:  82%|████████▏ | 240/292 [00:02<00:00, 90.46it/s]Loading weights:  86%|████████▋ | 252/292 [00:02<00:00, 94.64it/s]Loading weights:  90%|█████████ | 264/292 [00:02<00:00, 99.14it/s]Loading weights:  95%|█████████▍| 276/292 [00:02<00:00, 101.75it/s]Loading weights: 100%|██████████| 292/292 [00:03<00:00, 94.50it/s] 
+model loaded; params: 405.334016 M
+exp104_t0_00 rank=3 top1='Germany' 2.2s rss=2.24GB
+exp104_t0_01 rank=2 top1='Austria' 0.8s rss=2.24GB
+exp104_t0_02 rank=4 top1='Greece' 0.9s rss=2.24GB
+exp104_t0_03 rank=1 top1='Greece' 0.7s rss=2.24GB
+exp104_t0_04 rank=3 top1='Serbia' 0.9s rss=2.24GB
+exp104_t0_05 rank=2 top1='Iceland' 0.8s rss=2.24GB
+exp104_t0_06 rank=2 top1='Germany' 0.9s rss=2.24GB
+exp104_t0_07 rank=3 top1='Norway' 1.0s rss=2.24GB
+exp104_t0_08 rank=2 top1='Germany' 0.9s rss=2.24GB
+exp104_t0_09 rank=3 top1='Denmark' 0.9s rss=2.24GB
+exp104_t0_10 rank=1 top1='Germany' 1.2s rss=2.24GB
+exp104_t0_11 rank=7 top1='Spain' 1.2s rss=2.24GB
+exp104_t0_12 rank=3 top1='Japan' 0.9s rss=2.24GB
+exp104_t0_13 rank=4 top1='Germany' 0.9s rss=2.24GB
+exp104_t0_14 rank=3 top1='Spain' 0.9s rss=2.24GB
+exp104_t0_15 rank=6 top1='Brazil' 1.0s rss=2.24GB
+exp104_t0_16 rank=5 top1='Indonesia' 0.9s rss=2.24GB
+exp104_t0_17 rank=2 top1='Venezuela' 1.0s rss=2.24GB
+exp104_t0_18 rank=2 top1='Greece' 0.9s rss=2.24GB
+exp104_t0_19 rank=2 top1='Greece' 1.0s rss=2.24GB
+exp104_t0_20 rank=1 top1='Germany' 0.9s rss=2.24GB
+exp104_t0_21 rank=2 top1='France' 1.2s rss=2.24GB
+exp104_t0_22 rank=1 top1='Russia' 0.9s rss=2.24GB
+exp104_t0_23 rank=6 top1='Sweden' 0.9s rss=2.24GB
+exp104_t0_24 rank=4 top1='Berlin' 0.9s rss=2.24GB
+exp104_t0_25 rank=5 top1='Rome' 1.0s rss=2.24GB
+exp104_t0_26 rank=7 top1='Rome' 1.1s rss=2.24GB
+exp104_t0_27 rank=6 top1='Budapest' 1.1s rss=2.24GB
+exp104_t0_28 rank=7 top1='Rome' 0.9s rss=2.24GB
+exp104_t0_29 rank=4 top1='Rome' 1.0s rss=2.24GB
+exp104_t0_30 rank=8 top1='Venezuela' 1.1s rss=2.24GB
+exp104_t0_31 rank=6 top1='Syria' 1.1s rss=2.24GB
+exp104_t0_32 rank=1 top1='Japan' 2.4s rss=2.24GB
+exp104_t0_33 rank=2 top1='Portugal' 1.2s rss=2.24GB
+exp104_t0_34 rank=1 top1='Nigeria' 0.9s rss=2.24GB
+exp104_t0_35 rank=2 top1='Italy' 1.1s rss=2.24GB
+exp104_t0_36 rank=8 top1='California' 0.9s rss=2.24GB
+exp104_t0_37 rank=1 top1='California' 0.8s rss=2.24GB
+exp104_t0_38 rank=8 top1='Texas' 0.9s rss=2.24GB
+exp104_t0_39 rank=4 top1='Indiana' 1.0s rss=2.24GB
+exp104_t0_40 rank=2 top1='Texas' 0.9s rss=2.24GB
+exp104_t0_41 rank=3 top1='Illinois' 0.8s rss=2.24GB
+exp104_t0_42 rank=1 top1='Brazil' 0.8s rss=2.24GB
+exp104_t0_43 rank=1 top1='Russia' 0.8s rss=2.24GB
+exp104_t0_44 rank=3 top1='Egypt' 0.9s rss=2.24GB
+exp104_t0_45 rank=1 top1='China' 1.1s rss=2.24GB
+exp104_t0_46 rank=2 top1='China' 1.1s rss=2.24GB
+exp104_t0_47 rank=4 top1='Austria' 0.8s rss=2.24GB
+exp104_t0_48 rank=2 top1='Germany' 0.9s rss=2.24GB
+exp104_t0_49 rank=2 top1='Argentina' 0.9s rss=2.24GB
+exp104_t0_50 rank=8 top1='Belgium' 0.9s rss=2.24GB
+exp104_t0_51 rank=1 top1='Austria' 0.9s rss=2.24GB
+exp104_t0_52 rank=5 top1='Greece' 0.9s rss=2.24GB
+exp104_t0_53 rank=3 top1='Greece' 0.9s rss=2.24GB
+exp104_t0_54 rank=6 top1='Spain' 0.9s rss=2.24GB
+exp104_t0_55 rank=3 top1='Belgium' 0.9s rss=2.24GB
+exp104_t0_56 rank=6 top1='Germany' 0.8s rss=2.24GB
+exp104_t0_57 rank=8 top1='Belgium' 0.8s rss=2.24GB
+exp104_t0_58 rank=6 top1='Denmark' 0.7s rss=2.24GB
+exp104_t0_59 rank=6 top1='Germany' 0.8s rss=2.24GB
+all 60 passes done in 58.7 s
+weight sha256 post: 3e09001631bb18ec8a6f4522f8e6ab26a53099e69228f9822adc91bfbe27511b
+{
+ "baseline_accuracy": 0.18333333333333332,
+ "n_failed": 49,
+ "median_correct_rank_failed": 4,
+ "n_pop": 33,
+ "tie_guard": {
+  "numerator": 0,
+  "denominator": 33,
+  "rate": 0.0
+ },
+ "route": "HOLD-sanity"
+}
+ROUTE: HOLD-sanity
+EXIT:0

@@ -1,0 +1,818 @@
+{
+  "identity": "independent checker lane, first touch on S4-8",
+  "timestamp_utc": "2026-09-28T12:13:34.137582+00:00",
+  "task": "EXP104 Tier-0 bench verification (bench_manifest.json 60 items + bench_backups.json 6 items); blind independent answer-key audit",
+  "methods": [
+    "read-only parse of both bench JSONs",
+    "structural check: 8 unique options per item, designated answer and structural foil present and distinct",
+    "bench_spec.py read for build-time rationale provenance (not executed)",
+    "web verification of every researched answer-key claim (official/institutional sources; citations embedded in flagged and hard-case records)",
+    "no model, weights, tokenizer, logits, ranks, or decisions touched at any point"
+  ],
+  "structural_result": "66/66 items: 8 unique options each; designated answer and structural foil both present in options and distinct. IDs collide across collections (exp104_t0_00..05 reused), disambiguated via collection-prefixed record_id.",
+  "d3_blindness_attestation": "This checker lane is independent of the bench builder; all foil rationales were read from bench_spec.py as build-time data and none were edited; the checker had zero model contact (no weights, tokenizer runs, logits, ranks, or per-item model decisions were produced or observed). First touch on S4-8 artifacts.",
+  "counts": {
+    "total_records": 66,
+    "primary": 60,
+    "backup": 6,
+    "verified": 64,
+    "flagged": 2
+  },
+  "flagged_items": [
+    "primary:exp104_t0_06",
+    "backup:exp104_t0_04"
+  ],
+  "bench_accepted": false,
+  "acceptance_note": "bench_accepted is false because one PRIMARY item is flagged (primary:exp104_t0_06); backup flags alone would not block acceptance. run_tier0.py correctly gates on bench_accepted=true, so execution must HALT until this item is repaired or replaced.",
+  "verdicts": [
+    {
+      "record_id": "primary:exp104_t0_00",
+      "collection": "primary",
+      "item_id": "exp104_t0_00",
+      "category": "T1 landmark->country",
+      "question": "The Eiffel Tower stands in the capital of which country?",
+      "designated_answer": "France",
+      "structural_foil": "Italy",
+      "verdict": "VERIFIED",
+      "note": "Eiffel Tower in Paris, capital of France."
+    },
+    {
+      "record_id": "primary:exp104_t0_01",
+      "collection": "primary",
+      "item_id": "exp104_t0_01",
+      "category": "T1 landmark->country",
+      "question": "The Brandenburg Gate stands in the capital of which country?",
+      "designated_answer": "Germany",
+      "structural_foil": "Austria",
+      "verdict": "VERIFIED",
+      "note": "Brandenburg Gate in Berlin, capital of Germany."
+    },
+    {
+      "record_id": "primary:exp104_t0_02",
+      "collection": "primary",
+      "item_id": "exp104_t0_02",
+      "category": "T1 landmark->country",
+      "question": "The Colosseum stands in the capital of which country?",
+      "designated_answer": "Italy",
+      "structural_foil": "Greece",
+      "verdict": "VERIFIED",
+      "note": "Colosseum in Rome, capital of Italy."
+    },
+    {
+      "record_id": "primary:exp104_t0_03",
+      "collection": "primary",
+      "item_id": "exp104_t0_03",
+      "category": "T1 landmark->country",
+      "question": "The Acropolis stands in the capital of which country?",
+      "designated_answer": "Greece",
+      "structural_foil": "Italy",
+      "verdict": "VERIFIED",
+      "note": "Acropolis in Athens, capital of Greece."
+    },
+    {
+      "record_id": "primary:exp104_t0_04",
+      "collection": "primary",
+      "item_id": "exp104_t0_04",
+      "category": "T1 landmark->country",
+      "question": "Saint Basil's Cathedral stands in the capital of which country?",
+      "designated_answer": "Russia",
+      "structural_foil": "Ukraine",
+      "verdict": "VERIFIED",
+      "note": "Saint Basil's Cathedral in Moscow, capital of Russia."
+    },
+    {
+      "record_id": "primary:exp104_t0_05",
+      "collection": "primary",
+      "item_id": "exp104_t0_05",
+      "category": "T1 landmark->country",
+      "question": "The Little Mermaid statue stands in the capital of which country?",
+      "designated_answer": "Denmark",
+      "structural_foil": "Sweden",
+      "verdict": "VERIFIED",
+      "note": "Little Mermaid statue in Copenhagen, capital of Denmark."
+    },
+    {
+      "record_id": "primary:exp104_t0_06",
+      "collection": "primary",
+      "item_id": "exp104_t0_06",
+      "category": "T2 company->HQ country",
+      "question": "The company that makes the PlayStation console is headquartered in which country?",
+      "designated_answer": "Japan",
+      "structural_foil": "Korea",
+      "verdict": "FLAGGED",
+      "note": "DEFECT: 'the company that makes the PlayStation console' is Sony Interactive Entertainment, whose global headquarters have been in San Mateo, California, USA since the 2016 SCE/SNEI reorganization; designated answer 'Japan' corresponds only to parent-company Sony Group HQ, and the USA is not among the 8 options, so the question has no uniquely correct designated answer. Sources: https://siliconangle.com/2016/01/26/playstations-headquarters-is-moving-to-california-with-the-newly-created-sony-interactive-entertainment/ and https://mcvuk.com/business-news/publishing/sony-creates-playstation-focused-sony-interactive-entertainment-division/"
+    },
+    {
+      "record_id": "primary:exp104_t0_07",
+      "collection": "primary",
+      "item_id": "exp104_t0_07",
+      "category": "T2 company->HQ country",
+      "question": "The company that made the Nokia 3310 phone is headquartered in which country?",
+      "designated_answer": "Finland",
+      "structural_foil": "Sweden",
+      "verdict": "VERIFIED",
+      "note": "Nokia headquartered in Finland (Espoo)."
+    },
+    {
+      "record_id": "primary:exp104_t0_08",
+      "collection": "primary",
+      "item_id": "exp104_t0_08",
+      "category": "T2 company->HQ country",
+      "question": "The company that makes Lego bricks is headquartered in which country?",
+      "designated_answer": "Denmark",
+      "structural_foil": "Sweden",
+      "verdict": "VERIFIED",
+      "note": "Lego Group headquartered in Denmark (Billund)."
+    },
+    {
+      "record_id": "primary:exp104_t0_09",
+      "collection": "primary",
+      "item_id": "exp104_t0_09",
+      "category": "T2 company->HQ country",
+      "question": "The company that makes Volvo cars is headquartered in which country?",
+      "designated_answer": "Sweden",
+      "structural_foil": "Germany",
+      "verdict": "VERIFIED",
+      "note": "Volvo Cars headquartered in Sweden (Gothenburg)."
+    },
+    {
+      "record_id": "primary:exp104_t0_10",
+      "collection": "primary",
+      "item_id": "exp104_t0_10",
+      "category": "T2 company->HQ country",
+      "question": "The company that makes the Beetle car is headquartered in which country?",
+      "designated_answer": "Germany",
+      "structural_foil": "Austria",
+      "verdict": "VERIFIED",
+      "note": "Volkswagen (Beetle maker) headquartered in Germany (Wolfsburg)."
+    },
+    {
+      "record_id": "primary:exp104_t0_11",
+      "collection": "primary",
+      "item_id": "exp104_t0_11",
+      "category": "T2 company->HQ country",
+      "question": "The company that makes Nutella is headquartered in which country?",
+      "designated_answer": "Italy",
+      "structural_foil": "France",
+      "verdict": "VERIFIED",
+      "note": "Ferrero (Nutella maker) is an Italian multinational headquartered in Alba, Piedmont, Italy; founded there 1946 by Pietro Ferrero. Source: https://en.wikipedia.org/wiki/Ferrero_SpA"
+    },
+    {
+      "record_id": "primary:exp104_t0_12",
+      "collection": "primary",
+      "item_id": "exp104_t0_12",
+      "category": "T3 film->director birth country",
+      "question": "The film Parasite was directed by a person born in which country?",
+      "designated_answer": "Korea",
+      "structural_foil": "Japan",
+      "verdict": "VERIFIED",
+      "note": "Bong Joon-ho born Daegu, South Korea; Parasite director. Source: https://goldenglobes.com/person/bong-joon-ho/"
+    },
+    {
+      "record_id": "primary:exp104_t0_13",
+      "collection": "primary",
+      "item_id": "exp104_t0_13",
+      "category": "T3 film->director birth country",
+      "question": "The film Amelie was directed by a person born in which country?",
+      "designated_answer": "France",
+      "structural_foil": "Belgium",
+      "verdict": "VERIFIED",
+      "note": "Jean-Pierre Jeunet born Roanne, France; Amelie director. Source: https://v2.11db.io/people/details/230252"
+    },
+    {
+      "record_id": "primary:exp104_t0_14",
+      "collection": "primary",
+      "item_id": "exp104_t0_14",
+      "category": "T3 film->director birth country",
+      "question": "The film Life Is Beautiful was directed by a person born in which country?",
+      "designated_answer": "Italy",
+      "structural_foil": "France",
+      "verdict": "VERIFIED",
+      "note": "Roberto Benigni born Manciano/Castiglion Fiorentino, Italy; Life Is Beautiful director. Source: https://www.wionews.com/entertainment/life-is-beautiful-director-roberto-benigni-to-receive-venice-cinema-career-award-377749"
+    },
+    {
+      "record_id": "primary:exp104_t0_15",
+      "collection": "primary",
+      "item_id": "exp104_t0_15",
+      "category": "T3 film->director birth country",
+      "question": "The film Pan's Labyrinth was directed by a person born in which country?",
+      "designated_answer": "Mexico",
+      "structural_foil": "Spain",
+      "verdict": "VERIFIED",
+      "note": "Guillermo del Toro born Guadalajara, Mexico; Pan's Labyrinth director. Source: https://www.oscars.org/events/labyrinth-conversation-guillermo-del-toro"
+    },
+    {
+      "record_id": "primary:exp104_t0_16",
+      "collection": "primary",
+      "item_id": "exp104_t0_16",
+      "category": "T3 film->director birth country",
+      "question": "The film Crouching Tiger, Hidden Dragon was directed by a person born in which country?",
+      "designated_answer": "Taiwan",
+      "structural_foil": "China",
+      "verdict": "VERIFIED",
+      "note": "Ang Lee born Pingtung, Taiwan; Crouching Tiger, Hidden Dragon director. Source: https://www.taipeitimes.com/News/taiwan/archives/2024/12/13/2003828431"
+    },
+    {
+      "record_id": "primary:exp104_t0_17",
+      "collection": "primary",
+      "item_id": "exp104_t0_17",
+      "category": "T3 film->director birth country",
+      "question": "The film City of God was directed by a person born in which country?",
+      "designated_answer": "Brazil",
+      "structural_foil": "Argentina",
+      "verdict": "VERIFIED",
+      "note": "Fernando Meirelles born Sao Paulo, Brazil; City of God co-director. Source: https://en.wikipedia.org/wiki/Fernando_Meirelles"
+    },
+    {
+      "record_id": "primary:exp104_t0_18",
+      "collection": "primary",
+      "item_id": "exp104_t0_18",
+      "category": "T4 river->capital country",
+      "question": "The Seine flows through the capital of which country?",
+      "designated_answer": "France",
+      "structural_foil": "Italy",
+      "verdict": "VERIFIED",
+      "note": "Seine flows through Paris, capital of France."
+    },
+    {
+      "record_id": "primary:exp104_t0_19",
+      "collection": "primary",
+      "item_id": "exp104_t0_19",
+      "category": "T4 river->capital country",
+      "question": "The Tiber flows through the capital of which country?",
+      "designated_answer": "Italy",
+      "structural_foil": "Greece",
+      "verdict": "VERIFIED",
+      "note": "Tiber flows through Rome, capital of Italy."
+    },
+    {
+      "record_id": "primary:exp104_t0_20",
+      "collection": "primary",
+      "item_id": "exp104_t0_20",
+      "category": "T4 river->capital country",
+      "question": "The Spree flows through the capital of which country?",
+      "designated_answer": "Germany",
+      "structural_foil": "Austria",
+      "verdict": "VERIFIED",
+      "note": "Spree flows through Berlin, capital of Germany."
+    },
+    {
+      "record_id": "primary:exp104_t0_21",
+      "collection": "primary",
+      "item_id": "exp104_t0_21",
+      "category": "T4 river->capital country",
+      "question": "The Manzanares flows through the capital of which country?",
+      "designated_answer": "Spain",
+      "structural_foil": "Portugal",
+      "verdict": "VERIFIED",
+      "note": "Manzanares flows through Madrid, capital of Spain. Source: https://digital.csic.es/bitstream/10261/375845/1/Renaturalisation_natural_rewilding.pdf"
+    },
+    {
+      "record_id": "primary:exp104_t0_22",
+      "collection": "primary",
+      "item_id": "exp104_t0_22",
+      "category": "T4 river->capital country",
+      "question": "The Moskva River flows through the capital of which country?",
+      "designated_answer": "Russia",
+      "structural_foil": "Ukraine",
+      "verdict": "VERIFIED",
+      "note": "Moskva River flows through Moscow, capital of Russia."
+    },
+    {
+      "record_id": "primary:exp104_t0_23",
+      "collection": "primary",
+      "item_id": "exp104_t0_23",
+      "category": "T4 river->capital country",
+      "question": "The Liffey flows through the capital of which country?",
+      "designated_answer": "Ireland",
+      "structural_foil": "Iceland",
+      "verdict": "VERIFIED",
+      "note": "Liffey flows through Dublin, capital of Ireland."
+    },
+    {
+      "record_id": "primary:exp104_t0_24",
+      "collection": "primary",
+      "item_id": "exp104_t0_24",
+      "category": "T5 museum->city",
+      "question": "The museum that houses the Mona Lisa is in which city?",
+      "designated_answer": "Paris",
+      "structural_foil": "London",
+      "verdict": "VERIFIED",
+      "note": "Mona Lisa housed in the Louvre, Paris."
+    },
+    {
+      "record_id": "primary:exp104_t0_25",
+      "collection": "primary",
+      "item_id": "exp104_t0_25",
+      "category": "T5 museum->city",
+      "question": "The museum that houses Guernica is in which city?",
+      "designated_answer": "Madrid",
+      "structural_foil": "Barcelona",
+      "verdict": "VERIFIED",
+      "note": "Guernica housed in Museo Reina Sofia, Madrid."
+    },
+    {
+      "record_id": "primary:exp104_t0_26",
+      "collection": "primary",
+      "item_id": "exp104_t0_26",
+      "category": "T5 museum->city",
+      "question": "The museum that houses The Night Watch is in which city?",
+      "designated_answer": "Amsterdam",
+      "structural_foil": "London",
+      "verdict": "VERIFIED",
+      "note": "The Night Watch housed in the Rijksmuseum, Amsterdam."
+    },
+    {
+      "record_id": "primary:exp104_t0_27",
+      "collection": "primary",
+      "item_id": "exp104_t0_27",
+      "category": "T5 museum->city",
+      "question": "The museum that houses The Scream is in which city?",
+      "designated_answer": "Oslo",
+      "structural_foil": "Stockholm",
+      "verdict": "VERIFIED",
+      "note": "The Scream (1893 version) housed in the National Museum, Oslo. Source: https://www.nasjonalmuseet.no/en/stories/explore-the-collection/edvard-munch-and-the-scream-in-the-national-museum/"
+    },
+    {
+      "record_id": "primary:exp104_t0_28",
+      "collection": "primary",
+      "item_id": "exp104_t0_28",
+      "category": "T5 museum->city",
+      "question": "The museum that houses The Birth of Venus is in which city?",
+      "designated_answer": "Florence",
+      "structural_foil": "Rome",
+      "verdict": "VERIFIED",
+      "note": "The Birth of Venus housed in the Uffizi, Florence."
+    },
+    {
+      "record_id": "primary:exp104_t0_29",
+      "collection": "primary",
+      "item_id": "exp104_t0_29",
+      "category": "T5 museum->city",
+      "question": "The museum that houses the Arnolfini Portrait is in which city?",
+      "designated_answer": "London",
+      "structural_foil": "Paris",
+      "verdict": "VERIFIED",
+      "note": "The Arnolfini Portrait housed in the National Gallery, London. Source: https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait"
+    },
+    {
+      "record_id": "primary:exp104_t0_30",
+      "collection": "primary",
+      "item_id": "exp104_t0_30",
+      "category": "T6 novel->author birth country",
+      "question": "The novel One Hundred Years of Solitude was written by an author born in which country?",
+      "designated_answer": "Colombia",
+      "structural_foil": "Mexico",
+      "verdict": "VERIFIED",
+      "note": "Gabriel Garcia Marquez born Aracataca, Colombia; One Hundred Years of Solitude. Source: https://www.foyles.co.uk/book/one-hundred-years-of-solitude/gabriel-garcia-marquez/9780141184999"
+    },
+    {
+      "record_id": "primary:exp104_t0_31",
+      "collection": "primary",
+      "item_id": "exp104_t0_31",
+      "category": "T6 novel->author birth country",
+      "question": "The novel The Kite Runner was written by an author born in which country?",
+      "designated_answer": "Afghanistan",
+      "structural_foil": "Pakistan",
+      "verdict": "VERIFIED",
+      "note": "Khaled Hosseini born Kabul, Afghanistan; The Kite Runner. Source: https://khaledhosseini.com/bio/"
+    },
+    {
+      "record_id": "primary:exp104_t0_32",
+      "collection": "primary",
+      "item_id": "exp104_t0_32",
+      "category": "T6 novel->author birth country",
+      "question": "The novel Norwegian Wood was written by an author born in which country?",
+      "designated_answer": "Japan",
+      "structural_foil": "Korea",
+      "verdict": "VERIFIED",
+      "note": "Haruki Murakami born Kyoto, Japan; Norwegian Wood. Source: https://en.wikipedia.org/wiki/Haruki_Murakami"
+    },
+    {
+      "record_id": "primary:exp104_t0_33",
+      "collection": "primary",
+      "item_id": "exp104_t0_33",
+      "category": "T6 novel->author birth country",
+      "question": "The novel The Alchemist was written by an author born in which country?",
+      "designated_answer": "Brazil",
+      "structural_foil": "Portugal",
+      "verdict": "VERIFIED",
+      "note": "Paulo Coelho born Rio de Janeiro, Brazil; The Alchemist. Source: https://en.wikipedia.org/wiki/Paulo_Coelho"
+    },
+    {
+      "record_id": "primary:exp104_t0_34",
+      "collection": "primary",
+      "item_id": "exp104_t0_34",
+      "category": "T6 novel->author birth country",
+      "question": "The novel Things Fall Apart was written by an author born in which country?",
+      "designated_answer": "Nigeria",
+      "structural_foil": "Ghana",
+      "verdict": "VERIFIED",
+      "note": "Chinua Achebe born Ogidi, Nigeria; Things Fall Apart. Source: https://en.wikipedia.org/wiki/Chinua_Achebe"
+    },
+    {
+      "record_id": "primary:exp104_t0_35",
+      "collection": "primary",
+      "item_id": "exp104_t0_35",
+      "category": "T6 novel->author birth country",
+      "question": "The novel The Shadow of the Wind was written by an author born in which country?",
+      "designated_answer": "Spain",
+      "structural_foil": "Mexico",
+      "verdict": "VERIFIED",
+      "note": "Carlos Ruiz Zafon born Barcelona, Spain; The Shadow of the Wind. Source: https://en.wikipedia.org/wiki/Carlos_Ruiz_Zafón"
+    },
+    {
+      "record_id": "primary:exp104_t0_36",
+      "collection": "primary",
+      "item_id": "exp104_t0_36",
+      "category": "T7 founder->US state",
+      "question": "The founder of Microsoft was born in which US state?",
+      "designated_answer": "Washington",
+      "structural_foil": "Oregon",
+      "verdict": "VERIFIED",
+      "note": "Bill Gates (Microsoft) born Washington (Seattle). Source: https://www.cnn.com/us/bill-gates-fast-facts"
+    },
+    {
+      "record_id": "primary:exp104_t0_37",
+      "collection": "primary",
+      "item_id": "exp104_t0_37",
+      "category": "T7 founder->US state",
+      "question": "The founder of Apple was born in which US state?",
+      "designated_answer": "California",
+      "structural_foil": "Washington",
+      "verdict": "VERIFIED",
+      "note": "Intended founder Steve Jobs born San Francisco, California; co-founder Steve Wozniak born San Jose, California. NOTE: Apple has three co-founders; Ronald Wayne was born in Ohio, but Ohio is not among the 8 options, so 'California' is the unique defensible answer among the options. Sources: https://www.history.com/this-day-in-history/October-5/apple-founder-steve-jobs-dies"
+    },
+    {
+      "record_id": "primary:exp104_t0_38",
+      "collection": "primary",
+      "item_id": "exp104_t0_38",
+      "category": "T7 founder->US state",
+      "question": "The founder of Walmart was born in which US state?",
+      "designated_answer": "Oklahoma",
+      "structural_foil": "Arkansas",
+      "verdict": "VERIFIED",
+      "note": "Sam Walton (Walmart) born Kingfisher, Oklahoma. Source: https://corporate.walmart.com/about/sam-walton"
+    },
+    {
+      "record_id": "primary:exp104_t0_39",
+      "collection": "primary",
+      "item_id": "exp104_t0_39",
+      "category": "T7 founder->US state",
+      "question": "The founder of Ford was born in which US state?",
+      "designated_answer": "Michigan",
+      "structural_foil": "Ohio",
+      "verdict": "VERIFIED",
+      "note": "Henry Ford born Wayne County, Michigan. Source: https://ophelia.sdsu.edu:8443/ford/06-19-2021/articles/history/henry-ford-biography.html"
+    },
+    {
+      "record_id": "primary:exp104_t0_40",
+      "collection": "primary",
+      "item_id": "exp104_t0_40",
+      "category": "T7 founder->US state",
+      "question": "The founder of Disney was born in which US state?",
+      "designated_answer": "Illinois",
+      "structural_foil": "California",
+      "verdict": "VERIFIED",
+      "note": "Walt Disney born Chicago, Illinois. Source: https://en.wikipedia.org/wiki/Walter_Elias_Disney"
+    },
+    {
+      "record_id": "primary:exp104_t0_41",
+      "collection": "primary",
+      "item_id": "exp104_t0_41",
+      "category": "T7 founder->US state",
+      "question": "The founder of KFC was born in which US state?",
+      "designated_answer": "Indiana",
+      "structural_foil": "Kentucky",
+      "verdict": "VERIFIED",
+      "note": "Harland Sanders (KFC) born Henryville, Indiana. Source: https://en.wikipedia.org/wiki/Colonel_Sanders"
+    },
+    {
+      "record_id": "primary:exp104_t0_42",
+      "collection": "primary",
+      "item_id": "exp104_t0_42",
+      "category": "T8 event->country",
+      "question": "The 2016 Summer Olympics were held in which country?",
+      "designated_answer": "Brazil",
+      "structural_foil": "Argentina",
+      "verdict": "VERIFIED",
+      "note": "2016 Summer Olympics held in Rio de Janeiro, Brazil."
+    },
+    {
+      "record_id": "primary:exp104_t0_43",
+      "collection": "primary",
+      "item_id": "exp104_t0_43",
+      "category": "T8 event->country",
+      "question": "The 2018 FIFA World Cup was held in which country?",
+      "designated_answer": "Russia",
+      "structural_foil": "Qatar",
+      "verdict": "VERIFIED",
+      "note": "2018 FIFA World Cup held in Russia."
+    },
+    {
+      "record_id": "primary:exp104_t0_44",
+      "collection": "primary",
+      "item_id": "exp104_t0_44",
+      "category": "T8 event->country",
+      "question": "The 2022 FIFA World Cup was held in which country?",
+      "designated_answer": "Qatar",
+      "structural_foil": "Iran",
+      "verdict": "VERIFIED",
+      "note": "2022 FIFA World Cup held in Qatar."
+    },
+    {
+      "record_id": "primary:exp104_t0_45",
+      "collection": "primary",
+      "item_id": "exp104_t0_45",
+      "category": "T8 event->country",
+      "question": "The 2008 Summer Olympics were held in which country?",
+      "designated_answer": "China",
+      "structural_foil": "Japan",
+      "verdict": "VERIFIED",
+      "note": "2008 Summer Olympics held in Beijing, China."
+    },
+    {
+      "record_id": "primary:exp104_t0_46",
+      "collection": "primary",
+      "item_id": "exp104_t0_46",
+      "category": "T8 event->country",
+      "question": "The 2020 Summer Olympics, held in 2021, were held in which country?",
+      "designated_answer": "Japan",
+      "structural_foil": "China",
+      "verdict": "VERIFIED",
+      "note": "2020 Summer Olympics (held 2021) held in Tokyo, Japan."
+    },
+    {
+      "record_id": "primary:exp104_t0_47",
+      "collection": "primary",
+      "item_id": "exp104_t0_47",
+      "category": "T8 event->country",
+      "question": "The 2024 Summer Olympics were held in which country?",
+      "designated_answer": "France",
+      "structural_foil": "Italy",
+      "verdict": "VERIFIED",
+      "note": "2024 Summer Olympics held in Paris, France."
+    },
+    {
+      "record_id": "primary:exp104_t0_48",
+      "collection": "primary",
+      "item_id": "exp104_t0_48",
+      "category": "T9 treaty->country",
+      "question": "The Treaty of Versailles was signed in which country?",
+      "designated_answer": "France",
+      "structural_foil": "Germany",
+      "verdict": "VERIFIED",
+      "note": "Treaty of Versailles signed at Versailles, France."
+    },
+    {
+      "record_id": "primary:exp104_t0_49",
+      "collection": "primary",
+      "item_id": "exp104_t0_49",
+      "category": "T9 treaty->country",
+      "question": "The Treaty of Tordesillas was signed in which country?",
+      "designated_answer": "Spain",
+      "structural_foil": "Portugal",
+      "verdict": "VERIFIED",
+      "note": "Treaty of Tordesillas signed in Spain (1494). Source: https://www.unesco.org/en/memory-world/lac/tordesillas-treaty-1494"
+    },
+    {
+      "record_id": "primary:exp104_t0_50",
+      "collection": "primary",
+      "item_id": "exp104_t0_50",
+      "category": "T9 treaty->country",
+      "question": "The Treaty of Utrecht was signed in which country?",
+      "designated_answer": "Netherlands",
+      "structural_foil": "Belgium",
+      "verdict": "VERIFIED",
+      "note": "Treaty/Peace of Utrecht concluded at Utrecht, Netherlands. Source: https://thecanadianencyclopedia.ca/en/article/treaty-of-utrecht"
+    },
+    {
+      "record_id": "primary:exp104_t0_51",
+      "collection": "primary",
+      "item_id": "exp104_t0_51",
+      "category": "T9 treaty->country",
+      "question": "The Congress of Vienna was held in which country?",
+      "designated_answer": "Austria",
+      "structural_foil": "Germany",
+      "verdict": "VERIFIED",
+      "note": "Congress of Vienna held in Vienna, Austria."
+    },
+    {
+      "record_id": "primary:exp104_t0_52",
+      "collection": "primary",
+      "item_id": "exp104_t0_52",
+      "category": "T9 treaty->country",
+      "question": "The Treaty of Rome was signed in which country?",
+      "designated_answer": "Italy",
+      "structural_foil": "France",
+      "verdict": "VERIFIED",
+      "note": "Treaty of Rome signed in Rome, Italy."
+    },
+    {
+      "record_id": "primary:exp104_t0_53",
+      "collection": "primary",
+      "item_id": "exp104_t0_53",
+      "category": "T9 treaty->country",
+      "question": "The Treaty of Lisbon was signed in which country?",
+      "designated_answer": "Portugal",
+      "structural_foil": "Spain",
+      "verdict": "VERIFIED",
+      "note": "Treaty of Lisbon signed in Lisbon, Portugal."
+    },
+    {
+      "record_id": "primary:exp104_t0_54",
+      "collection": "primary",
+      "item_id": "exp104_t0_54",
+      "category": "T10 painting->country",
+      "question": "The painting Mona Lisa hangs in a museum in which country?",
+      "designated_answer": "France",
+      "structural_foil": "Italy",
+      "verdict": "VERIFIED",
+      "note": "Mona Lisa hangs in the Louvre, Paris, France."
+    },
+    {
+      "record_id": "primary:exp104_t0_55",
+      "collection": "primary",
+      "item_id": "exp104_t0_55",
+      "category": "T10 painting->country",
+      "question": "The painting Guernica hangs in a museum in which country?",
+      "designated_answer": "Spain",
+      "structural_foil": "France",
+      "verdict": "VERIFIED",
+      "note": "Guernica hangs in Museo Reina Sofia, Madrid, Spain."
+    },
+    {
+      "record_id": "primary:exp104_t0_56",
+      "collection": "primary",
+      "item_id": "exp104_t0_56",
+      "category": "T10 painting->country",
+      "question": "The painting The Last Supper hangs in a museum in which country?",
+      "designated_answer": "Italy",
+      "structural_foil": "Spain",
+      "verdict": "VERIFIED",
+      "note": "The Last Supper housed in the Convent of Santa Maria delle Grazie, Milan, Italy. Source: https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo_da_Vinci)"
+    },
+    {
+      "record_id": "primary:exp104_t0_57",
+      "collection": "primary",
+      "item_id": "exp104_t0_57",
+      "category": "T10 painting->country",
+      "question": "The painting The Night Watch hangs in a museum in which country?",
+      "designated_answer": "Netherlands",
+      "structural_foil": "Belgium",
+      "verdict": "VERIFIED",
+      "note": "The Night Watch displayed in the Rijksmuseum, Amsterdam, Netherlands. Source: https://en.wikipedia.org/wiki/The_Night_Watch"
+    },
+    {
+      "record_id": "primary:exp104_t0_58",
+      "collection": "primary",
+      "item_id": "exp104_t0_58",
+      "category": "T10 painting->country",
+      "question": "The painting The Scream hangs in a museum in which country?",
+      "designated_answer": "Norway",
+      "structural_foil": "Sweden",
+      "verdict": "VERIFIED",
+      "note": "The Scream (1893 version) in the National Museum, Oslo, Norway. Source: https://www.nasjonalmuseet.no/en/stories/explore-the-collection/edvard-munch-and-the-scream-in-the-national-museum/"
+    },
+    {
+      "record_id": "primary:exp104_t0_59",
+      "collection": "primary",
+      "item_id": "exp104_t0_59",
+      "category": "T10 painting->country",
+      "question": "The painting The Kiss hangs in a museum in which country?",
+      "designated_answer": "Austria",
+      "structural_foil": "Germany",
+      "verdict": "VERIFIED",
+      "note": "The Kiss (1907-08) housed in the Belvedere, Vienna, Austria. Source: https://www.artchive.com/artwork/the-kiss-gustav-klimt-1907-1908/"
+    },
+    {
+      "record_id": "backup:exp104_t0_00",
+      "collection": "backup",
+      "item_id": "exp104_t0_00",
+      "category": "backup misc",
+      "question": "The Latin word Hydrargyrum gives the chemical symbol of which element?",
+      "designated_answer": "Mercury",
+      "structural_foil": "Silver",
+      "verdict": "VERIFIED",
+      "note": "Hydrargyrum is Latin for mercury (element symbol Hg). Source: https://en.wikipedia.org/wiki/Mercury_(element)"
+    },
+    {
+      "record_id": "backup:exp104_t0_01",
+      "collection": "backup",
+      "item_id": "exp104_t0_01",
+      "category": "backup company->HQ",
+      "question": "The company that makes the Corolla car is headquartered in which country?",
+      "designated_answer": "Japan",
+      "structural_foil": "Korea",
+      "verdict": "VERIFIED",
+      "note": "Toyota (Corolla maker) headquartered in Japan."
+    },
+    {
+      "record_id": "backup:exp104_t0_02",
+      "collection": "backup",
+      "item_id": "exp104_t0_02",
+      "category": "backup novel->author birth country",
+      "question": "The novel 1984 was written by an author born in which country?",
+      "designated_answer": "India",
+      "structural_foil": "England",
+      "verdict": "VERIFIED",
+      "note": "George Orwell born Motihari, Bihar, British India; 1984 author. NOTE: foil rationale acknowledges the England confusable; 'India' is the intended and defensible designated answer among options. Source: https://www.thehindu.com/in-school/news-bytes/renovation-of-george-orwells-house-in-bihar-begins/article6154914.ece/amp/"
+    },
+    {
+      "record_id": "backup:exp104_t0_03",
+      "collection": "backup",
+      "item_id": "exp104_t0_03",
+      "category": "backup film->director birth country",
+      "question": "The film Spirited Away was directed by a person born in which country?",
+      "designated_answer": "Japan",
+      "structural_foil": "China",
+      "verdict": "VERIFIED",
+      "note": "Hayao Miyazaki born Tokyo, Japan; Spirited Away director."
+    },
+    {
+      "record_id": "backup:exp104_t0_04",
+      "collection": "backup",
+      "item_id": "exp104_t0_04",
+      "category": "backup museum->city",
+      "question": "The museum that houses Sunflowers is in which city?",
+      "designated_answer": "Amsterdam",
+      "structural_foil": "Paris",
+      "verdict": "FLAGGED",
+      "note": "DEFECT: Van Gogh painted multiple canonical 'Sunflowers' canvases housed in Amsterdam (Van Gogh Museum), London (National Gallery), Philadelphia, Munich, and Tokyo; 'London' is among this item's options, so the designated answer 'Amsterdam' is not uniquely determined by the question wording. Source: https://en.wikipedia.org/wiki/Sunflowers_(Van_Gogh_series)"
+    },
+    {
+      "record_id": "backup:exp104_t0_05",
+      "collection": "backup",
+      "item_id": "exp104_t0_05",
+      "category": "backup landmark->country",
+      "question": "The Tower of London stands in the capital of which country?",
+      "designated_answer": "England",
+      "structural_foil": "Scotland",
+      "verdict": "VERIFIED",
+      "note": "Tower of London in London, capital of England."
+    }
+  ],
+  "file_inventory": [
+    {
+      "path": "./__pycache__/bench_spec.cpython-312.pyc",
+      "mtime_utc": "2026-09-28T12:10:36.946767+00:00",
+      "size_bytes": 13055,
+      "sha256": "4ad6e60348a4e9da07a1539d124003d703456bdb3dc5ef440f828f9268eb3277"
+    },
+    {
+      "path": "./bench_backups.json",
+      "mtime_utc": "2026-09-28T12:10:59.247722+00:00",
+      "size_bytes": 4204,
+      "sha256": "74328d7056ffe4ef9783f13e189afc3c109d286512e6f005d2e01bd131a2c408"
+    },
+    {
+      "path": "./bench_manifest.json",
+      "mtime_utc": "2026-09-28T12:10:59.247243+00:00",
+      "size_bytes": 96375,
+      "sha256": "acd70433eb57d4048c883443215d2e27a6057ae1cefe5989f8eb0c8a32c1b08f"
+    },
+    {
+      "path": "./bench_spec.py",
+      "mtime_utc": "2026-09-28T12:10:36.120787+00:00",
+      "size_bytes": 16016,
+      "sha256": "3e0cb385799610ac29fbaa46be5216d4b93f89d4cdbfeae2052b8bb083c77fc6"
+    },
+    {
+      "path": "./build_bench.py",
+      "mtime_utc": "2026-09-28T12:10:52.570788+00:00",
+      "size_bytes": 4358,
+      "sha256": "6bfd756353248853278873d8d2abe74745aae62b05c479c3dddac0c6624c4346"
+    },
+    {
+      "path": "./g1_probe.json",
+      "mtime_utc": "2026-09-28T12:10:41.761131+00:00",
+      "size_bytes": 528,
+      "sha256": "0b7dcac5d23ef4959c97c1559d38a7528b0feebcd8f105efaeb7e8a95dd4df42"
+    },
+    {
+      "path": "./g1_probe.py",
+      "mtime_utc": "2026-09-28T12:09:24.523784+00:00",
+      "size_bytes": 2989,
+      "sha256": "5fc022af398376e6537010b6aa65c89e6fcf677f32336f930d500b0af9bb6b26"
+    },
+    {
+      "path": "./run_tier0.py",
+      "mtime_utc": "2026-09-28T12:11:31.943789+00:00",
+      "size_bytes": 5590,
+      "sha256": "9fc89081f29d8def578c94acc2311e12acf33dfc874a0454489006590b248dbb"
+    },
+    {
+      "path": "./unit_tests.json",
+      "mtime_utc": "2026-09-28T12:11:22.380653+00:00",
+      "size_bytes": 782,
+      "sha256": "2ba1b5ec4edfd827cbe72484c63ebae804aebd826e473d0c44c487464982e9b7"
+    },
+    {
+      "path": "./unit_tests.py",
+      "mtime_utc": "2026-09-28T12:11:20.879789+00:00",
+      "size_bytes": 4892,
+      "sha256": "c1a8863c34b0a71d884a0afb7125a951e7979273d11bb18ff5ac02c9e83f6db6"
+    }
+  ],
+  "no_model_output_attestation": "Full recursive inventory of ~/workspace/SCBI/experiments/runs/EXP104_Tier0_rank_screen captured immediately before writing this file: no logits, ranks, per-item model decisions, results, .npy, or other model-output artifacts exist; run_tier0.py is present but was not executed by this lane (its own guard requires a checker file with bench_accepted=true, which did not exist). bench_manifest.json, bench_backups.json, bench_spec.py, build_bench.py, g1_probe.json, g1_probe.py, run_tier0.py, unit_tests.py, unit_tests.json, and __pycache__/bench_spec.cpython-312.pyc were not modified. checker_verification.json was absent at capture time."
+}

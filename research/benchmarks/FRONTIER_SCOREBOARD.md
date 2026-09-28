@@ -49,6 +49,37 @@ label-informed construction (that is the bridge's error, LOG-197/204).
 Beating the frontier means §4's per-family observation, which always
 includes the label-use-class constraint (§2.1).
 
+**v1.3 delta [FACT], 2026-09-28:** a new program line opened — **I2′
+(selection-failure instrumentation, EXP085's death-debt)**. EXP104's
+Tier-0 screen (LOG-4481) HOLDed on bench sanity (0.1833 < 0.25); the
+autopsy (LOG-4483) diagnosed a **position-A prior (30/60, p=2.02e-12)** —
+a measured instrument confound, not a model finding and not a premise
+kill. The licensed recalibration (S4-8′, SIGNED LOG-4488) re-prompts the
+same 60 items as cloze completions; EXP105 is running with a binding
+breaking point (cloze Tier-0 < 0.25 → LINE-CLOSED). **Capability
+scoreboard: unchanged — still zero positive signals for autonomous
+steering; the label-free race stays tied at zero.**
+
+**v1.4 delta [FACT], 2026-09-28:** the I2′ line reached its terminal
+state — **falsification-terminal, not capability.** EXP105 (cloze
+Tier-0, LOG-4489) **PASSED** the sanity bars that EXP104 failed: baseline
+**0.5333 (32/60)** inside [0.25, 0.75], median correct-rank on failed
+items **4.0 ≤ 5**, n_pop = **21 ≥ 12**, tie-guard **0.0 ≤ 0.25**
+— the cloze format rescued measurability (0.1833 → 0.5333), confirming
+the LOG-4483 position-A diagnosis: the prior was a readout-format
+artifact, not a knowledge absence. The intervention battery (LOG-4491)
+then **KILLED the readout-suppression premise at step 9**: ΔM_T = +0.2381
+(5/21 rescues) vs ΔM_R = 0.0000 (0/21) — clean direction — but the
+primary T-vs-R McNemar-exact **p = 0.0625 ≥ 0.05**, missed by exactly one
+flip (b=6 would have certified CONTINUE). Foil overlap O = 0.571 > 0.5
+→ F arm non-diagnostic — the S4-8 N1 amendment's O ≤ 0.5 gate (a
+pre-registered design decision) anticipated exactly this failure mode and
+is recorded as a validated design lesson. Pre-registered stop rules now
+close the battery line: no re-run, no larger population, no third
+readout. **Capability scoreboard: unchanged — still zero positive
+signals for autonomous steering; the label-free race stays tied at
+zero.**
+
 ---
 
 ## 1. How to read this board
@@ -212,6 +243,23 @@ The same columns. Nothing cherry-picked; the demotions are stated first.
 | **EXP091** — KILL: zero-shot cosine scoring dead (LOG-361/362) | Zero-shot cosine-similarity scoring, frozen final-token embeddings, novel relational items | pythia-410m / L20 | **31/60 (51.67%), exact one-sided binomial p=0.4487**; A-first 0.50 / C-first 0.5333; margins noise-scale (mean 6.8e-4); instrument responsive (G4 spread 0.0803 ≫ 1e-4) — genuine null; CLM-8B free-lunch version KILLED as designed (≤37/60 bar) | 60 passes, $0 CPU | None (zero-shot) | N | Y | Killed (executed real, CPU); independent verdict review ADOPTED (LOG-362); Δθ=0 verified | LOG-361/362; `experiments/runs/EXP091*` |
 | **EXP092** — CONTINUE: layer-11 task information licensed (LOG-4336/4338) | Information-Bottleneck Localization — per-layer 1-NN LOO on frozen embeddings | pythia-410m, all 24 layers | Layer 11: **acc 0.3333 (20/60), stratified-permutation p=0.000999 < α_B=0.0020833, effect +0.2000 ≥ 0.10**; S = {1,11,12,13,14,15,17,18} clear both bars; L20 acc 0.15, p=0.0659 (correctly excluded). ADOPT-WITH-CORRECTIONS (binding). **Licensed claim: frozen layer 11 carries significant task information (1-NN LOO, Bonferroni-significant, ≥10pp above null).** Novelty N1. No capability claim licensed. | $0 CPU (~1.5h) | None | N | Y | Continue, l* = 11; S1 (Ross kNN-MI) retired — proven vacuous by construction (MI = ψ(60)−ψ(4) exactly in this regime; any successor MI diagnostic needs a degeneracy analysis + constant-data unit test) | LOG-4336 (execution), LOG-4338 (binding review), `experiments/runs/EXP092_ibl/` |
 | **EXP093** — KILL UPHELD: shared layer-11 direction causally inert (LOG-4352) | Static injection of the shared layer-11 task direction on EXP092-B | pythia-410m / L11 | **Δ = 0.0000; McNemar b = c = 0 → p = 1.0 in all six tests** (P-vs-B and N-vs-B × 3 strata); perturbation real (4.7% of residual norm, reached the logits, G5 rel_err 4.3e-07) but flipped zero decisions — causal inertness, not measurement failure. **Information ≠ influence at layer 11; the layer-20 boundary generalizes.** Falsifies "≥10pp causal transfer via a shared static direction at layer 11" only. | $0 CPU (~10–15 min) | None | N | Y | Killed (executed real, CPU); independent verdict review binding (LOG-4352); Δθ=0 verified (pre/post `ec276abe…`) | LOG-4352; `experiments/protocols/REVIEWS/EXP093_LAW14_VERDICT_REVIEW_2026-09-25.md` |
+| **EXP094** — KILL: per-item static L11 geometry refuted by inertness (LOG-4376/4377) | Per-item static L11 injection (per-item direction, not shared) | pythia-410m / L11 | **0 flips across 120 injection arms** (B=T=R=36/60, p=1.0) despite confirmed delivery; per-item static-geometry family closed at L11 | $0 CPU | None | N | Y | Refuted (executed real, CPU); independent verdict review ADOPTED (LOG-4377) | LOG-4376/4377; `experiments/runs/EXP094*` |
+| **EXP095** — KILL: α-grid inert (LOG-4400) | α grid sweep on per-item L11 injection | pythia-410m / L11 | α ∈ {0.25,0.5,1,2,4} → task flips {0,0,0,1,1} — inert below bar at every ratio | $0 CPU | None | N | Y | Refuted | LOG-4400 |
+| **EXP096** — KILL: headroom-gated movement fragility (LOG-4407) | Headroom-gated per-item L11 injection | pythia-410m / L11 | Headroom-gated T and B_wrong each moved 3 — movement exists but is not attributable to the task direction | $0 CPU | None | N | Y | Refuted | LOG-4407 |
+| **EXP097** — PIVOT: fragility (LOG-4416) | Fragility probe of per-item L11 movement | pythia-410m / L11 | Movement not directionally attributable | $0 CPU | None | N | Y | PIVOT (fragility) | LOG-4416 |
+| **EXP098** — PIVOT: composition premise not supported (LOG-4423) | Layer-composition injection (L11, L20, joint, random-joint) | pythia-410m / L11, L20 | L11: 3 flips; L20: 6 flips (all right→wrong); joint: 7 flips; **random joint: 12 flips** — no interaction candidates; composition premise unsupported | $0 CPU | None | N | Y | PIVOT (premise) | LOG-4423 |
+| **EXP099** — PIVOT: fragility — directional claim not supported (LOG-4434) | Directional fragility probe | pythia-410m / L8 | L8 moved 4; **W20 random moved 7** — directional claim not supported | $0 CPU | None | N | Y | PIVOT (fragility) | LOG-4434 |
+| **EXP100** — PIVOT (untestable): S6-3 mean-gate collapse (LOG-4441) | Mean-over-heads L11 attention-gated injection of the killed per-item L11 direction @ 0.38 | pythia-410m / L11 (gate read at L11) | Coverage **0/60** — mass_i ∈ [0.0396, 0.0746] vs τ_i ∈ [0.2286, 0.2759]; gate never close to firing on any item; 0 injection passes; step-2b coverage tripwire (<10%) fired | 127 CPU passes, $0 | None | — (null; untestable) | Y | **PIVOT (untestable)** — step-2b tripwire; not a KILL of dynamic gating (forbidden from a collapsed gate); not a fragility finding | LOG-4441; `experiments/runs/EXP100_gated_L11/` |
+| **EXP101** — KILL: S6-3b max-gate refuted (LOG-4448) | Max-over-heads L11 attention-gated injection of the killed per-item L11 direction @ 0.38 | pythia-410m / L11 (gate read at L11) | Coverage **16/60 = 26.67%** (gate testable). gated-T vs B: **1 flip (b=0, c=1, p=1.0)** — sole flip right→wrong on `exp092_elemental_2hop_0`. gated-R vs B: 0 flips. ΔM (paired logit-margin): gated-T −0.0236, gated-R −0.0171 (flat, \|ΔM\|<0.10). Evidential weight (16 fired): 0 directional-positive flips → one-sided 95% UB **17.1%** on gated-conditional directional flip rate | 159 CPU passes, $0 | None | N | Y | **Refuted** — step-6 Gated KILL; fenced to max-gated per-item L11 injection @0.38 on EXP092-B | LOG-4448; `experiments/runs/EXP101_gated_L11_max/` |
+| **EXP102** — PIVOT (untestable): S6-3c L20-mean-gate collapse (LOG-4455) | Mean-over-heads **L20** attention-gated injection of the killed per-item L11 direction @ 0.38 | pythia-410m / L11 (gate read at L20) | Coverage **1/60 = 1.67%** — single fired item `exp092_elemental_3hop_0` (mass 0.23303 ≥ τ 0.22857); mass range [0.0346, 0.2330] vs τ [0.2286, 0.2759]; gated-T vs B 0 flips; gated-R vs B 0 flips; ΔM 0.0 all contrasts; step-2b tripwire fired. F1 decision-proxy audit (descriptive only): B accuracy 1/1 fired vs 35/59 unfired | 129 CPU passes, $0 | None | — (null; untestable) | Y | **PIVOT (untestable)** — step-2b tripwire; not a KILL | LOG-4455; `experiments/runs/EXP102_L20gated_L11/` |
+| **EXP103** — KILL: S6-3d L20-max-gate refuted; gate family closed 4/4 (LOG-4462) | Max-over-heads **L20** attention-gated injection of the killed per-item L11 direction @ 0.38 | pythia-410m / L11 (gate read at L20) | Coverage **55/60 = 91.67%** (gate testable). gated-T vs B: **3 flips (b=1, c=2, p=1.0)** — 1 wrong→right, 2 right→wrong. gated-R vs B: 1 flip (b=1, c=0, p=1.0). gated-T vs gated-R: b=1, c=3, p=0.625. ΔM: gated-T −0.012874, gated-R −0.029963 (flat). Evidential weight (55 fired): 1 directional-positive flip → one-sided 95% UB **5.3%**. F1 audit: B accuracy 34/55 fired vs 2/5 unfired (gate not a near-decision proxy; descriptive) | 237 CPU passes, $0 | None | N | Y | **Refuted** — step-6 Gated KILL; the {mean,max}×{L11,L20} externally-computed attention-gate family is CLOSED 4/4 (mean-L11 untestable, max-L11 Refuted, mean-L20 untestable, max-L20 Refuted). LOG-4460 terminality claim engages: no fifth tweak of this family, ever, under this license | LOG-4462; `experiments/runs/EXP103_L20maxgated_L11/` |
+| **S6-5 pooled audit** — directional flip ceiling (LOG-4409) | Pooled task-direction decision flips across the static S6 program | pythia-410m / L11 | **5/381** task-direction decision flips → one-sided 95% upper bound **2.74%** on the pooled directional flip rate | $0 CPU | None | — | Y | Supported (audit; boundary quantification) | LOG-4409 |
+| **S6 L11-rescue program — STAND-DOWN (LOG-4463/4464)** | Innovation-design lane: four self-computed-gate candidates constructed and falsified on paper (P prompt-instructed self-gate, E output-uncertainty gate, C activation-magnitude read, B probe-based gate) | CPU design only | No design clears the worth-it gate: P fails principled-threshold/license/interpretability (base-model noise, illusory "self," bench re-baselining); E fails threshold/license (threshold is a guess); C fails the terminality claim directly (fifth externally-computed gate); B fails interpretability (label-informed by construction, LOG-197 precedent). **Rational update: the direction is the problem, not the gate.** Ten experiments, ~2,000 CPU passes. Pre-registered re-opening conditions: (i) a license-bearing observation for a specific self-computed gate enters the record; (ii) a new direction family earns its license; (iii) founder orders otherwise | $0 CPU | N/A (design) | — | Y | **STAND-DOWN** (CEO ruling LOG-4464) — no further injection of the killed per-item L11 direction on CPU lanes; GPU queue untouched | LOG-4463/4464; `research/innovation/S6_STANDDOWN_RECOMMENDATION_2026-09-28.md` |
+| **EXP104** — HOLD → Inconclusive: Tier-0 bench sanity failure (LOG-4481/4482) | Tier-0 correct-rank screen for the I2′ line (are selection failures measurable/repairable — EXP085's death-debt question) | pythia-410m / next-token position after terminal `Answer:` | Baseline accuracy **11/60 = 0.1833** < 0.25 sanity band; failed 49; median correct-rank (failed) = **4** (bar ≤ 5 met); n_pop (failed ∧ rank ≤ 5) = **33** (bar ≥ 12 met); tie-guard 0/33 = 0.0. G1 tokenizer gate 0/480 clean; checker 64/66 (1 item replaced, 1 dropped → 59 VERIFIED + 1 backup). §3 binding step-4: HOLD (bench sanity) → **Inconclusive**. The premise/power bars were satisfied — the failure is bench calibration, not the selection-failure premise. Battery NOT licensed, NOT run | 60/60 passes, 58.7 s CPU fp32, $0 | None | N (null) | Y (Δθ=0 verified, pre/post weight sha256 identical) | **HOLD→Inconclusive** (executed real, CPU, signed S4-8 pre-reg v3 LOG-4480, CEO clearance LOG-4482) — premise NOT killed | LOG-4481/4482; `experiments/runs/EXP104_Tier0_rank_screen/` |
+| **Position-A prior** — measured MC-instrument confound (LOG-4483) | Autopsy of EXP104's HOLD (analyst lane, committed artifacts only, no new passes) | pythia-410m (EXP104 bundle records) | Top-1 at position 0 on **30/60 items**, P ≥ 30 under no bias = **2.02e-12**; uniform across all 10 templates (2–4 pos0-picks per 6-item block) → format-driven (`A)…H)` enumeration + terminal `Answer:`), not content-driven. Of the 11 correct, 4 at position 0 ≈ 3.0 expected under a pure prior — the A-picks carry no knowledge. Non-A-prior items: **7/30 = 0.233** (< 0.25 sanity, above 0.125 chance). Shuffle seed over-represented correct positions 3 and 5 → the realized baseline is shuffle-seed-sensitive: this MC bench, in this format, is not a knowledge instrument. Recorded as a bench confound, NOT a model finding. EXP092 reconciliation: supervised 1-NN at L11 (33.33% vs 5%, p=0.000999) measures information *presence*; EXP104 measures *routability* of the untuned base head — no contradiction | 0 new passes ($0 analyst recompute) | N/A (diagnostic) | — | Y | Supported (diagnostic; deterministic recompute from bundle, deliverable with sha256 lineage) | LOG-4483; `research/analysis_plans/EXP104_BENCH_AUTOPSY_2026-09-28.md` |
+| **S4-8 / S4-8′ — pre-registration milestones (LOG-4480, LOG-4488)** | Signed Tier-0 protocols for the I2′ line: S4-8 (MC correct-rank screen, v3, chain LOG-4475→4480) and S4-8′ (cloze recalibration, v2, chain LOG-4484→4488) | Paper only | S4-8: seven §5 degeneracy unit tests + foil–top-1 overlap stratum (O ≤ 0.5 gate on the step-8 F diagnostic) + G1 tokenizer gate + foil-build blindness. S4-8′: re-prompts the same 60 items as cloze completions (`<question> The answer is`, cue pinned/frozen), drops the correct-position shuffle, scores the same 8 G1-verified candidate tokens with ascending-token-id tie-break; **new binding breaking point: cloze Tier-0 baseline < 0.25 → LINE-CLOSED** (I2′ untestable on Pythia-410m at $0, no third readout); predicted band 0.25–0.45 [HYPOTHESIS] | $0 CPU | N/A (protocols) | — | Y | **SIGNED** (both, Law #14 full chains; S4-8′ fixes incl. one-word remainder LOG-4488) — EXP105 (cloze Tier-0) is the first execution under S4-8′, executed as EXP105 (below) — outcome now plotted | LOG-4480 (S4-8); LOG-4484–4488 (S4-8′); `research/innovation/S4-8_PREREG_DRAFT_v3_2026-09-28.md`, `S4-8_PRIME_PREREG_DRAFT_2026-09-28.md` |
+| **EXP105 Tier-0** — PASSED: cloze measurability rescued (LOG-4489) | Tier-0 correct-rank screen on the cloze recalibration (S4-8′ first execution) | pythia-410m / next-token position after pinned completion cue | Baseline accuracy **32/60 = 0.5333** inside [0.25, 0.75] — NOT line-closed; median correct-rank (failed) = **4.0** ≤ 5; n_pop (failed ∧ rank ≤ 5) = **21** ≥ 12; tie-guard 0/21 = **0.0** ≤ 0.25; alt-cue descriptive baseline (`Answer:`) 0.5 (not a gate). G1 tokenizer gate 0/480; Δθ=0 (pre/post weight sha256 identical). Run survived a VM restart at 13 records — `verify_resume.py` confirmed a bit-exact 8-logit match before resuming 47 more | 60/60 passes, $0 CPU, torch 2.14.0+cpu / transformers 5.17.0 in a rebuilt venv | None | N (null-positive: passed sanity, no steering claim) | Y | **PASSED** (Tier-0 only; licensed the battery — NOT a capability result) | LOG-4489; `experiments/runs/EXP105_cloze_Tier0/` |
+| **EXP105 battery** — KILL (nonspecific), step 9 → **Refuted** (LOG-4491) | Intervention battery on the Tier-0 population: logit-level truth/falsity/random masking operators (B/T/F/R arms) | pythia-410m / recorded Tier-0 8-candidate logits (zero model contact) | Tier-0 population n_pop = 21. ΔM_T = **+0.2381** (5/21 rescues); ΔM_F = +0.1429 (3/21); ΔM_R = **0.0000** (0/21 — perfectly flat). Primary binding contrast T-vs-R McNemar-exact: b=5, c=0 → **p = 0.0625 ≥ 0.05** — missed CONTINUE by exactly one flip (b=6, c=0 → p=0.03125 would have certified). Tango 95% CIs: T-vs-R (0.047, 0.451); F-vs-B (−0.034, 0.346); R-vs-B (−0.155, 0.155). Foil–top-1 overlap **O = 12/21 = 0.571 > 0.5** → F arm non-diagnostic (pre-registered stratum; the N1 amendment's gate anticipated this). Decision walk: step-7 CONTINUE fails on the primary p-value; step-8 fails (F-vs-B p=0.25, O > 0.5); **step 9 fires → Refuted**. Pre-registered stop rules close the line: no re-run, no larger population, no third readout | 0 model passes (logit-level operators), $0 CPU, R seed pinned 20260928; one implementation bug caught and fixed mid-lane (degenerate Tango CI transcription — rewrote as bounded MLE, verified on symmetric/null/grid cases; worksheet numbers from the fixed implementation) | None | N | Y (Δθ=0 by construction) | **Refuted** — readout-suppression premise KILLED as a certified-specific mechanism; the rescue direction was clean but specificity was not certified. Not evidence masking is generic — evidence the licensed test could not certify specificity | LOG-4491; `experiments/runs/EXP105_battery/` (report, worksheet, per-item CSV/JSON, executor) |
 
 ### 3.2 The program's position, stated without softening
 
@@ -242,6 +290,47 @@ positive: **EXP092 — frozen Pythia-410m layer 11 carries significant task
 information** (1-NN LOO, Bonferroni-significant, ≥10pp above null) — an
 observation, not a capability; EXP093's kill banked its immediate
 consequence: information ≠ influence.
+
+**The S6 L11-rescue program, closed 2026-09-28 (LOG-4464).** The nine
+rescue experiments after EXP094 read as one arc. Per-item static geometry
+refuted by inertness (EXP094: 0 flips/120 arms); the α grid inert at every
+ratio (EXP095); movement that exists but is not directionally attributable
+(EXP096/097, EXP099 fragility); the composition premise not supported
+(EXP098: random joint 12 flips vs 7 joint); and the externally-computed
+attention-gate family closed 4/4 — mean-at-L11 untestable at 0/60 coverage
+(EXP100), max-at-L11 Refuted (EXP101: 1 flip, right→wrong), mean-at-L20
+untestable at 1/60 (EXP102), max-at-L20 Refuted (EXP103: 3 flips, p=1.0,
+1 positive/55 fired → one-sided 95% UB 5.3%). The S6-5 pooled audit fixes
+the program ceiling: 5/381 directional flips, one-sided 95% UB **2.74%**.
+An innovation-design lane then falsified all four self-computed-gate
+candidates on paper (LOG-4463) — the CEO ruled STAND-DOWN on the whole
+L11-rescue program (LOG-4464) with the rational update **"the direction is
+the problem, not the gate."** What this arc contributes is boundary
+science, not capability: ten experiments, ~2,000 CPU passes, $0, every
+rescue dead, untestable, or uninterpretable — the wall behind the L11
+direction is now mapped on all four gate cells and the static/per-item
+geometry side. The LOG-4460 terminality claim bars any fifth
+externally-computed gate variant; surviving conditional license is
+self-computed gates and beyond, each needing its own pre-registration and
+Law #14 review. The GPU queue (K2 → EXP083 → EXP084 → EXP086 Stage B →
+EXP088 → EXP087) is untouched. **Capability scoreboard: unchanged — still
+zero positive signals for autonomous steering.**
+
+**The I2′ line, opened and CLOSED 2026-09-28 (LOG-4480–4491).** EXP085's death-debt
+(selection-failure instrumentation) ran its full arc in one day: S4-8 SIGNED
+(LOG-4480), EXP104 Tier-0 → HOLD on bench sanity (0.1833 < 0.25) →
+Inconclusive (LOG-4481/4482); autopsy traced the HOLD to a position-A prior
+(30/60, p=2.02e-12), an instrument confound, not a premise kill (LOG-4483);
+S4-8′ cloze recalibration SIGNED (LOG-4488); EXP105 Tier-0 **PASSED**
+(0.5333, LOG-4489) — the cloze format rescued measurability and confirmed
+the A-prior diagnosis; EXP105 battery **Refuted at step 9** (LOG-4491):
+ΔM_T = +0.2381 vs ΔM_R = 0.0000, but primary T-vs-R McNemar p=0.0625 ≥ 0.05 —
+missed CONTINUE by one flip; foil overlap O = 0.571 > 0.5 made the F arm
+non-diagnostic, exactly as the pre-registered N1 gate anticipated. Pre-
+registered stop rules closed the line: no re-run, no larger population, no
+third readout. **The I2′ line is a complete falsification-terminal arc —
+instrument built, confound diagnosed and removed, premise certified-not-
+specific by its own licensed bar.** Boundary science, not capability.
 
 [INFERENCE]: plotted on the same axes, SCBI does not trail the frontier by a
 margin — it trails by *category*: the frontier has L1–L2 capability results;
@@ -341,6 +430,49 @@ Per-item construction can never beat a None-class row.
   Same axes, same honesty: SCBI holds zero positive signals for autonomous
   steering; the label-free race stays tied at zero. No literature re-check
   this cycle (next due 2026-10-23).
+- v1.2 — 2026-09-28 (benchmark-analyst lane): plotted the full EXP094–103
+  S6 wave + S6 stand-down — EXP094 (per-item static L11 KILL by inertness,
+  0/120), EXP095 (α-grid KILL), EXP096 (KILL, fragility), EXP097
+  (PIVOT-fragility), EXP098 (PIVOT-premise, composition unsupported),
+  EXP099 (PIVOT-fragility, directional claim not supported), EXP100
+  (PIVOT-untestable, mean-L11 gate 0/60), EXP101 (Refuted, max-L11 gate
+  16/60, 1 flip right→wrong), EXP102 (PIVOT-untestable, mean-L20 gate
+  1/60), EXP103 (Refuted, max-L20 gate 55/60, 3 flips p=1.0, one-sided 95%
+  UB 5.3% on directional flip rate) — the {mean,max}×{L11,L20} externally-
+  computed attention-gate family closed 4/4; S6-5 pooled audit (5/381 →
+  95% UB 2.74%); S6 L11-rescue STAND-DOWN (LOG-4463/4464, "the direction
+  is the problem, not the gate"). §3.1 rows + §3.2 position paragraph added.
+  Capability scoreboard: unchanged — zero positive signals for autonomous
+  steering; the label-free race stays tied at zero. Standing
+  PROGRESS_ANALYSIS.md written (one page, 2026-09-28). No literature
+  re-check this cycle (next due 2026-10-23).
+- v1.3 — 2026-09-28 (benchmark-analyst lane, LOG-4490): opened the **I2′
+  line** (selection-failure instrumentation, EXP085's death-debt) —
+  EXP104 Tier-0 (LOG-4481/4482): HOLD → Inconclusive (0.1833 < 0.25 bench
+  sanity; premise/power bars met; battery NOT run); EXP104 autopsy
+  (LOG-4483): **position-A prior 30/60, p=2.02e-12** as a measured
+  instrument confound (not a model finding, not a premise kill), 7/30 =
+  0.233 on non-A-prior items, per-template gradient recorded; S4-8
+  pre-reg SIGNED (LOG-4480, chain LOG-4475→4480) and S4-8′ cloze
+  pre-reg SIGNED (LOG-4488, chain LOG-4484→4488) with binding breaking
+  point (cloze Tier-0 < 0.25 → LINE-CLOSED). EXP105 (cloze Tier-0) marked
+  running — outcome NOT plotted. §0 headline + §3.2 position updated;
+  PROGRESS_ANALYSIS.md gained an I2′ section. No literature re-check
+  this cycle (next due 2026-10-23).
+- v1.4 — 2026-09-28 (benchmark-analyst lane, LOG-4492): closed the **I2′
+  line** as falsification-terminal — EXP105 Tier-0 PASSED (LOG-4489:
+  0.5333 inside [0.25, 0.75], median failed-item correct rank 4.0,
+  n_pop 21, tie guard 0.0; cloze rescued measurability 0.1833 → 0.5333,
+  confirming the position-A diagnosis) + EXP105 battery Refuted at
+  step 9 (LOG-4491: ΔM_T = +0.2381 vs ΔM_R = 0.0000, primary T-vs-R
+  McNemar p=0.0625 ≥ 0.05, missed CONTINUE by one flip; O = 0.571 > 0.5
+  → F arm non-diagnostic, as the pre-registered N1 gate anticipated;
+  stop rules close the line — no re-run, no larger population, no third
+  readout). §0 delta + §3.1 rows + §3.2 I2′ paragraph rewritten to the
+  terminal state. Capability scoreboard: unchanged — zero positive
+  signals for autonomous steering; the label-free race stays tied at
+  zero. PROGRESS_ANALYSIS.md I2′ section updated to terminal. No
+  literature re-check this cycle (next due 2026-10-23).
 
 ---
 
