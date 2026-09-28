@@ -1,5 +1,11 @@
 # SCBI Research Log
 
+## LOG-4502 — Push-cycle prep: commit sweep/review/repair workstream (2026-09-28)
+
+**Commit [FACT]:** LOG-4502 pre-assigned. Committed the LOG-4499–4501 workstream to new topic branch `sync/2026-09-28-log4499-4501-wave` (branched from `d45c5ea`). Commit `c73a9a6fb7782e52cd4c94ddb00154b4ef6a6655` — 5 files, 274 insertions, 1 deletion: `research/frontier/SWEEP_2026-09-28.md` (new, LOG-4499), `falsification_kit/REVIEW_LOG-4500.md` (new, LOG-4500), `falsification_kit/tests/test_battery_guard.py` (new, LOG-4501), `falsification_kit/battery.py` (F1 guard + docstring fix, LOG-4501), `reports/research_log.md` (append-only entries, committed as-is). Log LOG range verified intact before commit (highest entry LOG-4501; no rewrite, no reorder).
+**Audit [FACT]:** secret/weight scan clean — no credentials, tokens, API keys, or model weights; no files >5MB. No stash, no force-push. **Push NOT done — awaiting fresh founder-supplied token.**
+**Next free: LOG-4503.**
+
 ## LOG-4501 — Falsification-kit F1 repair: empty-population HALT + docstring fix (2026-09-28)
 
 **Repair [FACT]:** LOG-4501 pre-assigned. Fixed the single required defect F1 from the independent LOG-4500 review of the falsification kit (`falsification_kit/REVIEW_LOG-4500.md`). Mechanical fix only: (1) `battery.py` now HALTs (SystemExit, non-zero exit, explicit message naming the missing `correct_rank` field) when `n_pop == 0` — it can no longer silently emit KILL step 10 on an empty population; (2) the docstring's Input field list now includes `correct_rank` as REQUIRED and documents the population rule (failed items, correct_rank ≤ 5); every other listed field verified against what the code reads. Guard placed in `battery.py` main() before `battery_decision` — `core/scoring.py`'s pre-registered decision table untouched. tier0.py untouched.
