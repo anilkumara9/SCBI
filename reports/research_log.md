@@ -1,5 +1,13 @@
 # SCBI Research Log
 
+## LOG-4504 — Push-cycle prep: commit Colab notebook workstream (2026-09-28)
+
+**Commissioning [FACT]:** LOG-4504 pre-assigned. Commit the LOG-4503 Colab notebook workstream. No push (push requires a fresh founder-supplied token; none held by this lane).
+**Commit [FACT]:** branch `sync/2026-09-28-log4503-4504-wave`, commit `621f34d` — 2 files, 518 insertions: `falsification_kit/colab/Reproduce_the_Gap.ipynb` (24K, 11 cells; force-added past the `*.ipynb` gitignore per brief — `.gitignore` itself untouched) + `reports/research_log.md` (LOG-4503 entry). LOG range verified intact before commit: highest LOG-4503, single copy, staged diff added only the new entry; no stash, no rewrite, no force-push.
+**Audit [FACT]:** secret/weight scan clean — no credentials, API keys, tokens, or model weights; all "token" string hits are tokenizer/token-ID references; file 24K (<5MB).
+**Push:** NOT done — awaiting founder token.
+**Next free: LOG-4505.**
+
 ## LOG-4503 — COLAB NOTEBOOK lane: "Reproduce the Gap" 5-minute CPU demo (2026-09-28)
 
 **Commissioning [FACT]:** LOG-4503 pre-assigned. Gap-analysis fix #9 (LOG-4496): a 5-minute CPU-only Colab notebook demo of the Decodability Gap. Licensed artifact work; no v82 sources modified; no v83 built; no kit core script modified (notebook vendors slimmed copies, documented in-cell).
