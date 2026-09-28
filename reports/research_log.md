@@ -10870,4 +10870,14 @@ Uncommitted LOG-4513 entry in `reports/research_log.md` and the new sweep report
 
 **Local only:** merges + this entry committed on `sync/2026-09-29-consolidated`; no push attempted, no PR — upstream push is founder-reserved. No signed protocols, model weights, or files outside this repo touched. $0 compute.
 
-**Next free: LOG-4519.**
+## LOG-4519 — CEO release clearance: v84 is a RELEASE CANDIDATE (2026-09-29, CEO lane)
+
+**Decision: GRANT.** v84 is cleared as the release candidate for the SCBI boundary paper, superseding v83 as the current cleared version.
+
+**Basis [FACT]:** LOG-4516 (independent Law #14 exact-version delta review) returned **SIGN** clean on the v84 draft. The reviewer rebuilt both editions itself from source (tectonic) rather than trusting the draft lane: main 19pp MD5 `3dbf25c75d1d67711af28f0b05eddf3c`, IEEE 6pp MD5 `1ac1a171da472c02cbf16bd500018b6b` — byte-identical to the draft lane's claimed builds. The v84↔v83 source delta is confined exactly to the three licensed items: (1) the "Converging evidence" related-work paragraph + two `refs.bib` entries (both editions) + one IEEE discussion sentence, framing arXiv:2609.31401 and arXiv:2609.25366 as converging evidence per LOG-4513; (2) O1 — summary sentence now names all six checkable claims; (3) O2 — `(C5)` body tag added and the NeurIPS checklist corrected to state true tag locations. Every new factual claim verified grounded in `SWEEP_2026-09-29.md` — zero unsupported claims. Binding C3 adjudication: the draft lane's keep-`(C3)`-in-§2 correction is RIGHT — the tag sits with its theorem (Lemma 1, Proposition 1) and the retraction's measured numbers; the checklist's false "all six tags in §4" was the true defect, now corrected. Regression gates hold: no `??` references, no duplicate labels, touched pages visually clean, no banned `+0.010/−0.004` in live sources, college email present in both editions, no "release candidate" string in v84 sources pre-clearance.
+
+**Relationship to v83 [FACT]:** v84 = v83 + related-work additions + O1/O2 polish (strict content superset). v84 is now the current release candidate; v83 remains frozen as the prior RC — its sources byte-untouched, its clearance (LOG-4512) standing as history. v82 frozen likewise.
+
+**Boundaries:** release candidate ≠ published. arXiv posting remains founder-reserved (external publishing). The TAAI submission uses the separate v82-based PDF (`SCBI_Boundary_Paper_v82_TAAI.pdf`) and is unaffected by this clearance. No push attempted — upstream push needs a fresh founder-supplied token. $0 compute.
+
+**Next free: LOG-4520.**
