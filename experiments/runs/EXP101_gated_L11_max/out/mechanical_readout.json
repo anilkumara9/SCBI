@@ -1,0 +1,186 @@
+{
+  "status": "UNINTERPRETED_MECHANICAL_READOUT",
+  "experiment": "EXP101",
+  "routing": "LIVE",
+  "routing_reason": "(gated-T=1 >= 1) OR (gated-R=0 >= 1)",
+  "coverage": 0.26666666666666666,
+  "n_fired": 16,
+  "mass_max_range": [
+    0.14796015108004212,
+    0.3169274292886257
+  ],
+  "mass_mean_range": [
+    0.03958099070950993,
+    0.07457058551881346
+  ],
+  "tau_range": [
+    0.22857142857142856,
+    0.27586206896551724
+  ],
+  "gate_integrity_audit": {
+    "fired_iff_max_ge_tau": "60/60",
+    "meanfire_implies_maxfire": true
+  },
+  "n_correct": {
+    "B": 36,
+    "gated-T": 35,
+    "gated-R": 36
+  },
+  "n_included": {
+    "gated-T": 60,
+    "gated-R": 60
+  },
+  "flips_vs_B": {
+    "gated-T": 1,
+    "gated-R": 0
+  },
+  "flip_ids_vs_B": {
+    "gated-T": [
+      "exp092_elemental_2hop_0"
+    ],
+    "gated-R": []
+  },
+  "delta_M": {
+    "gated-T_vs_B": -0.016666666666666666,
+    "gated-R_vs_B": 0.0,
+    "gated-T_vs_gated-R": -0.016666666666666666
+  },
+  "mcnemar": {
+    "gated-T_vs_B": {
+      "b": 0,
+      "c": 1,
+      "p": 1.0
+    },
+    "gated-R_vs_B": {
+      "b": 0,
+      "c": 0,
+      "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+      "b": 0,
+      "c": 1,
+      "p": 1.0
+    }
+  },
+  "strata": {
+    "agg": {
+      "gated-T_vs_B": {
+        "n": 60,
+        "delta": -0.016666666666666666,
+        "b": 0,
+        "c": 1,
+        "p": 1.0
+      },
+      "gated-R_vs_B": {
+        "n": 60,
+        "delta": 0.0,
+        "b": 0,
+        "c": 0,
+        "p": 1.0
+      },
+      "gated-T_vs_gated-R": {
+        "n": 60,
+        "delta": -0.016666666666666666,
+        "b": 0,
+        "c": 1,
+        "p": 1.0
+      }
+    },
+    "a_first": {
+      "gated-T_vs_B": {
+        "n": 30,
+        "delta": 0.0,
+        "b": 0,
+        "c": 0,
+        "p": 1.0
+      },
+      "gated-R_vs_B": {
+        "n": 30,
+        "delta": 0.0,
+        "b": 0,
+        "c": 0,
+        "p": 1.0
+      },
+      "gated-T_vs_gated-R": {
+        "n": 30,
+        "delta": 0.0,
+        "b": 0,
+        "c": 0,
+        "p": 1.0
+      }
+    },
+    "c_first": {
+      "gated-T_vs_B": {
+        "n": 30,
+        "delta": -0.03333333333333333,
+        "b": 0,
+        "c": 1,
+        "p": 1.0
+      },
+      "gated-R_vs_B": {
+        "n": 30,
+        "delta": 0.0,
+        "b": 0,
+        "c": 0,
+        "p": 1.0
+      },
+      "gated-T_vs_gated-R": {
+        "n": 30,
+        "delta": -0.03333333333333333,
+        "b": 0,
+        "c": 1,
+        "p": 1.0
+      }
+    }
+  },
+  "margin_shift_descriptive": {
+    "gated-T": {
+      "mean": -0.023636484146118165,
+      "std": 0.17283776607016663,
+      "min": -0.8640346527099609,
+      "max": 0.5529346466064453,
+      "n_nonzero": 16
+    },
+    "gated-R": {
+      "mean": -0.017063983281453452,
+      "std": 0.17442073254535162,
+      "min": -0.9095973968505859,
+      "max": 0.4982166290283203,
+      "n_nonzero": 16
+    }
+  },
+  "delivery": {
+    "fired_cell_rows": 32,
+    "in_band": 32,
+    "out_of_band": 0,
+    "exclusions": {
+      "gated-T": [],
+      "gated-R": []
+    }
+  },
+  "delta_theta": {
+    "pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "pin": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "verified": true
+  },
+  "passes": {
+    "total": 159,
+    "expected_max": 247,
+    "hard_cap": 500
+  },
+  "sanity_gates": {
+    "gated-T": {
+      "ties": 0,
+      "ties_over_60": 0.0,
+      "run_invalid_ties": false,
+      "zero_variance": false
+    },
+    "gated-R": {
+      "ties": 0,
+      "ties_over_60": 0.0,
+      "run_invalid_ties": false,
+      "zero_variance": false
+    }
+  }
+}

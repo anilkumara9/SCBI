@@ -1,0 +1,18 @@
+{
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "python": "3.12.3",
+  "thread_pin": 2,
+  "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+  "weights_pin": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "weights_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "weights_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "bench_pin": "9be8162633fe19aa2a924440d8ba158c1cc4e734c1f2a554a01a27e459f47fc4",
+  "seeds": {
+    "R_SEED": 94094
+  },
+  "n_passes": 162,
+  "expected_passes": 162,
+  "hard_cap": 400
+}

@@ -1,0 +1,501 @@
+{
+  "rows": [
+    {
+      "item": 0,
+      "item_id": "exp092_planetary_2hop_0",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.48444366455078125,
+      "dM_gated_R": -0.053801536560058594
+    },
+    {
+      "item": 1,
+      "item_id": "exp092_planetary_2hop_1",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 2,
+      "item_id": "exp092_planetary_2hop_2",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.14855384826660156,
+      "dM_gated_R": -0.569239616394043
+    },
+    {
+      "item": 3,
+      "item_id": "exp092_planetary_2hop_3",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.35137939453125,
+      "dM_gated_R": -0.2917442321777344
+    },
+    {
+      "item": 4,
+      "item_id": "exp092_planetary_2hop_4",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.7362127304077148,
+      "dM_gated_R": -0.074066162109375
+    },
+    {
+      "item": 5,
+      "item_id": "exp092_planetary_2hop_5",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.6660966873168945,
+      "dM_gated_R": 0.11246776580810547
+    },
+    {
+      "item": 6,
+      "item_id": "exp092_planetary_2hop_6",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 1.1070270538330078,
+      "dM_gated_R": 0.03979015350341797
+    },
+    {
+      "item": 7,
+      "item_id": "exp092_planetary_2hop_7",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.029935836791992188,
+      "dM_gated_R": 0.43250083923339844
+    },
+    {
+      "item": 8,
+      "item_id": "exp092_planetary_2hop_8",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.2303180694580078,
+      "dM_gated_R": -0.047959327697753906
+    },
+    {
+      "item": 9,
+      "item_id": "exp092_planetary_2hop_9",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.1366729736328125,
+      "dM_gated_R": 0.24160003662109375
+    },
+    {
+      "item": 10,
+      "item_id": "exp092_planetary_2hop_10",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.5342340469360352,
+      "dM_gated_R": -0.4215869903564453
+    },
+    {
+      "item": 11,
+      "item_id": "exp092_planetary_2hop_11",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.23881053924560547,
+      "dM_gated_R": 0.011731147766113281
+    },
+    {
+      "item": 12,
+      "item_id": "exp092_planetary_2hop_12",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.5459823608398438,
+      "dM_gated_R": -0.09264850616455078
+    },
+    {
+      "item": 13,
+      "item_id": "exp092_planetary_2hop_13",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.3482799530029297,
+      "dM_gated_R": -0.2553272247314453
+    },
+    {
+      "item": 14,
+      "item_id": "exp092_planetary_2hop_14",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.14891338348388672,
+      "dM_gated_R": 0.4117708206176758
+    },
+    {
+      "item": 15,
+      "item_id": "exp092_planetary_3hop_0",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.5529346466064453,
+      "dM_gated_R": -0.6350059509277344
+    },
+    {
+      "item": 16,
+      "item_id": "exp092_planetary_3hop_1",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 17,
+      "item_id": "exp092_planetary_3hop_2",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.38663387298583984,
+      "dM_gated_R": 0.07354927062988281
+    },
+    {
+      "item": 18,
+      "item_id": "exp092_planetary_3hop_3",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 19,
+      "item_id": "exp092_planetary_3hop_4",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.12128448486328125,
+      "dM_gated_R": 0.43970775604248047
+    },
+    {
+      "item": 20,
+      "item_id": "exp092_planetary_3hop_5",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": 0.47269344329833984,
+      "dM_gated_R": 0.06043434143066406
+    },
+    {
+      "item": 21,
+      "item_id": "exp092_planetary_3hop_6",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.12255001068115234,
+      "dM_gated_R": 0.6938285827636719
+    },
+    {
+      "item": 22,
+      "item_id": "exp092_planetary_3hop_7",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.4331626892089844,
+      "dM_gated_R": 0.6738071441650391
+    },
+    {
+      "item": 23,
+      "item_id": "exp092_planetary_3hop_8",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.15075969696044922,
+      "dM_gated_R": -0.5061540603637695
+    },
+    {
+      "item": 24,
+      "item_id": "exp092_planetary_3hop_9",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.11674785614013672,
+      "dM_gated_R": -0.022211074829101562
+    },
+    {
+      "item": 25,
+      "item_id": "exp092_planetary_3hop_10",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.7381515502929688,
+      "dM_gated_R": -0.7097330093383789
+    },
+    {
+      "item": 26,
+      "item_id": "exp092_planetary_3hop_11",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.027108192443847656,
+      "dM_gated_R": 0.07044792175292969
+    },
+    {
+      "item": 27,
+      "item_id": "exp092_planetary_3hop_12",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.0861663818359375,
+      "dM_gated_R": -0.17650222778320312
+    },
+    {
+      "item": 28,
+      "item_id": "exp092_planetary_3hop_13",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.3122901916503906,
+      "dM_gated_R": 0.47043704986572266
+    },
+    {
+      "item": 29,
+      "item_id": "exp092_planetary_3hop_14",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.13410377502441406,
+      "dM_gated_R": -0.25482845306396484
+    },
+    {
+      "item": 30,
+      "item_id": "exp092_elemental_2hop_0",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.8640346527099609,
+      "dM_gated_R": -0.006816864013671875
+    },
+    {
+      "item": 31,
+      "item_id": "exp092_elemental_2hop_1",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.31922054290771484,
+      "dM_gated_R": 0.19731712341308594
+    },
+    {
+      "item": 32,
+      "item_id": "exp092_elemental_2hop_2",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.39568519592285156,
+      "dM_gated_R": -0.5156364440917969
+    },
+    {
+      "item": 33,
+      "item_id": "exp092_elemental_2hop_3",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.4253549575805664,
+      "dM_gated_R": -0.1942758560180664
+    },
+    {
+      "item": 34,
+      "item_id": "exp092_elemental_2hop_4",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": 0.014539718627929688,
+      "dM_gated_R": -0.31083011627197266
+    },
+    {
+      "item": 35,
+      "item_id": "exp092_elemental_2hop_5",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 36,
+      "item_id": "exp092_elemental_2hop_6",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.282379150390625,
+      "dM_gated_R": 0.3798236846923828
+    },
+    {
+      "item": 37,
+      "item_id": "exp092_elemental_2hop_7",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.09191513061523438,
+      "dM_gated_R": -0.24048137664794922
+    },
+    {
+      "item": 38,
+      "item_id": "exp092_elemental_2hop_8",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.6106443405151367,
+      "dM_gated_R": -0.7509002685546875
+    },
+    {
+      "item": 39,
+      "item_id": "exp092_elemental_2hop_9",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.025397300720214844,
+      "dM_gated_R": -0.10784912109375
+    },
+    {
+      "item": 40,
+      "item_id": "exp092_elemental_2hop_10",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 41,
+      "item_id": "exp092_elemental_2hop_11",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.19150829315185547,
+      "dM_gated_R": 0.09272193908691406
+    },
+    {
+      "item": 42,
+      "item_id": "exp092_elemental_2hop_12",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.5025730133056641,
+      "dM_gated_R": 0.3218851089477539
+    },
+    {
+      "item": 43,
+      "item_id": "exp092_elemental_2hop_13",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.0035076141357421875,
+      "dM_gated_R": -0.29514026641845703
+    },
+    {
+      "item": 44,
+      "item_id": "exp092_elemental_2hop_14",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.4983835220336914,
+      "dM_gated_R": 0.4962596893310547
+    },
+    {
+      "item": 45,
+      "item_id": "exp092_elemental_3hop_0",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.05663871765136719,
+      "dM_gated_R": -0.10784530639648438
+    },
+    {
+      "item": 46,
+      "item_id": "exp092_elemental_3hop_1",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.29768848419189453,
+      "dM_gated_R": 0.1455087661743164
+    },
+    {
+      "item": 47,
+      "item_id": "exp092_elemental_3hop_2",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": 0.027922630310058594,
+      "dM_gated_R": -0.7239198684692383
+    },
+    {
+      "item": 48,
+      "item_id": "exp092_elemental_3hop_3",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.19979000091552734,
+      "dM_gated_R": 0.08715438842773438
+    },
+    {
+      "item": 49,
+      "item_id": "exp092_elemental_3hop_4",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": 0.045165061950683594,
+      "dM_gated_R": -0.3797483444213867
+    },
+    {
+      "item": 50,
+      "item_id": "exp092_elemental_3hop_5",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.30741119384765625,
+      "dM_gated_R": 0.6293878555297852
+    },
+    {
+      "item": 51,
+      "item_id": "exp092_elemental_3hop_6",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": 0.136810302734375,
+      "dM_gated_R": -0.18492412567138672
+    },
+    {
+      "item": 52,
+      "item_id": "exp092_elemental_3hop_7",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.21047592163085938,
+      "dM_gated_R": 0.07874393463134766
+    },
+    {
+      "item": 53,
+      "item_id": "exp092_elemental_3hop_8",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": 0.35101890563964844,
+      "dM_gated_R": -0.02414703369140625
+    },
+    {
+      "item": 54,
+      "item_id": "exp092_elemental_3hop_9",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.10431289672851562,
+      "dM_gated_R": -0.12480926513671875
+    },
+    {
+      "item": 55,
+      "item_id": "exp092_elemental_3hop_10",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.1849069595336914,
+      "dM_gated_R": -0.029715538024902344
+    },
+    {
+      "item": 56,
+      "item_id": "exp092_elemental_3hop_11",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.20498371124267578,
+      "dM_gated_R": 0.11459636688232422
+    },
+    {
+      "item": 57,
+      "item_id": "exp092_elemental_3hop_12",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.0883321762084961,
+      "dM_gated_R": 0.016119003295898438
+    },
+    {
+      "item": 58,
+      "item_id": "exp092_elemental_3hop_13",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.011584281921386719,
+      "dM_gated_R": 0.1582202911376953
+    },
+    {
+      "item": 59,
+      "item_id": "exp092_elemental_3hop_14",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": 0.09140968322753906,
+      "dM_gated_R": -0.13976478576660156
+    }
+  ],
+  "descriptive": {
+    "gated-T": {
+      "mean": -0.012874078750610352,
+      "std": 0.35924076289371326,
+      "min": -0.8640346527099609,
+      "max": 1.1070270538330078,
+      "n_nonzero": 55
+    },
+    "gated-R": {
+      "mean": -0.029963366190592446,
+      "std": 0.3304853435484894,
+      "min": -0.7509002685546875,
+      "max": 0.6938285827636719,
+      "n_nonzero": 55
+    }
+  },
+  "note": "descriptive only; alters no verdict"
+}

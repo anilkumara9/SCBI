@@ -1,0 +1,27 @@
+[g7] G7.1 pass: constructor 5e03f206dd907b52… frozen, audit PASS.
+[g0] G0 pass: bench pin 9be8162633fe19aa…, 60 items.
+[run] torch intra-op threads pinned: 2
+[run] G1' pass: 240/240 in-prompt occurrences single-token.
+[run] Δθ=0 pre-run hash OK: ec276abe3902fab0…
+[run] B arm complete: 60 passes; B accuracy 36/60.
+[run] reference passes complete: 60 passes.
+[run] construction complete: 60 d_i^(20) (frozen regen) + 60 d_i^(8) (new C-1 on L8 residuals) at ratio 0.38.
+[run] W draws complete: 60 g_i^(20) (seed 117011) + 60 g_i^(8) (seed 117013), item-major per stream.
+[run] norm-tie check: 120/120 per-layer ties hold (||g_i^(L)|| == ||d_i^(L)||).
+[run] L20 degeneracy signature: mean|cos|=0.6639 (vs 0.6639 OK; gate 0.95).
+[run] L8 degeneracy: mean|cos|=0.8717 (gate 0.95).
+[run] STEP-0 B agreement: 60/60 per-item decisions match the archived EXP094 baseline.
+[run] G5 layer-8 execution probe: PASS (rel_err=7.18e-08, other=0.00e+00).
+[run] G5 layer-20 execution probe: PASS (rel_err=6.68e-08, other=0.00e+00).
+[run] STEP-1 delivery: 240/240 cell-rows computed; 240/240 in band [0.285, 0.475]; exclusions: (20, 'L20')=0, (20, 'W20')=0, (8, 'L8')=0, (8, 'W8')=0.
+[run] sweep L20-only: 60/60 passes complete.
+[run] sweep L8-only: 60/60 passes complete.
+[run] sweep W20: 60/60 passes complete.
+[run] sweep W8: 60/60 passes complete.
+[run] sweep complete. Total passes: 368 (expected 368, cap 500).
+[run] Δθ=0 post-run hash OK (Δθ=0 verified).
+[run] scoring complete: 15 stratum cells (3 strata x 5 contrasts).
+[run] anchor count check: L20-only flips = 6 == 6 — proceed to regime routing.
+[run] regime routing: LIVE ((W20=7 >= 1) OR (W8=1 >= 1)).
+[run] consistency anchor: L20-only flip set == EXP098's 6-item set — setup validated.
+[run] margin-shift ledger: 60 rows; descriptive aggregates computed.

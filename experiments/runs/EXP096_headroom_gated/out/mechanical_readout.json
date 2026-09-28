@@ -1,0 +1,119 @@
+{
+  "status": "UNINTERPRETED_MECHANICAL_READOUT",
+  "alpha": 8.0,
+  "n_correct": {
+    "B_gated": 16,
+    "T": 15,
+    "B_wrong": 17
+  },
+  "flips_vs_B": {
+    "T": 3,
+    "B_wrong": 3
+  },
+  "delta_M": {
+    "T": -0.047619047619047616,
+    "B_wrong": 0.047619047619047616
+  },
+  "mcnemar_T_vs_B": {
+    "b": 1,
+    "c": 2,
+    "p": 1.0
+  },
+  "mcnemar_W_vs_B": {
+    "b": 2,
+    "c": 1,
+    "p": 1.0
+  },
+  "flip_ledger_TB": {
+    "x_to_right": [
+      15
+    ],
+    "x_to_wrong": [
+      0,
+      20
+    ]
+  },
+  "flip_ledger_WB": {
+    "x_to_right": [
+      15,
+      17
+    ],
+    "x_to_wrong": [
+      11
+    ]
+  },
+  "ties": 0,
+  "reach_verification": {
+    "realized_max_abs_shift_alpha8": 0.862091064453125,
+    "under_coverage_tripwire": 1.125,
+    "under_coverage_tripped": false,
+    "over_coverage_tripwire": 0.45,
+    "over_coverage_tripped": false,
+    "routing": "no tripwire fired: reach as calibrated"
+  },
+  "strata": {
+    "agg__TB": {
+      "T_delta": -0.047619047619047616,
+      "T_b": 1,
+      "T_c": 2,
+      "T_p": 1.0
+    },
+    "A__TB": {
+      "T_delta": 0.07692307692307693,
+      "T_b": 1,
+      "T_c": 0,
+      "T_p": 1.0
+    },
+    "C__TB": {
+      "T_delta": -0.25,
+      "T_b": 0,
+      "T_c": 2,
+      "T_p": 0.5
+    }
+  },
+  "decision_worksheet_steps_0_2": [
+    {
+      "step": 0,
+      "condition": "foundation gates",
+      "evidence": {
+        "constructor_rehash": "match frozen pin",
+        "B_agreement": "60/60 per-item vs archived EXP094 baseline",
+        "gate_manifest": "21/21 member-for-member vs Appendix A",
+        "degeneracy_sanity": "within 0.05 of 0.7923"
+      }
+    },
+    {
+      "step": 1,
+      "condition": "delivery (42 gated rows in band)",
+      "evidence": {
+        "in_band": 42,
+        "excluded": []
+      }
+    },
+    {
+      "step": 2,
+      "condition": "degeneracy gate input",
+      "evidence": {
+        "mean_abs_cosine": 0.7922606322936264,
+        "bar": 0.95
+      }
+    },
+    {
+      "step": "reach",
+      "condition": "in-run reach verification",
+      "evidence": {
+        "realized_max_abs_shift_alpha8": 0.862091064453125,
+        "under_coverage_tripwire": 1.125,
+        "under_coverage_tripped": false,
+        "over_coverage_tripwire": 0.45,
+        "over_coverage_tripped": false,
+        "routing": "no tripwire fired: reach as calibrated"
+      }
+    },
+    {
+      "step": "3-6",
+      "condition": "VERDICT LANE (not executor)",
+      "evidence": "gated contrast statistics in stratum_table_27.json"
+    }
+  ]
+}

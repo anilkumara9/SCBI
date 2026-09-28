@@ -1,0 +1,271 @@
+[
+ {
+  "step": 0,
+  "condition": "foundation gates",
+  "evidence": {
+   "constructor_rehash": "match frozen pin",
+   "G5_layer_11": "PASS (frozen verify_g5 core, d_0^(11) probe)",
+   "B_agreement": "60/60 per-item vs archived EXP094 baseline",
+   "B_accuracy": 36,
+   "L11_degeneracy_signature": "0.7923 vs 0.7923 (tol 0.05) \u2014 PASS",
+   "attention_math_validation": "max abs diff 0.00e+00 <= 1e-05 \u2014 PASS",
+   "E_over_N": "60/60 <= 0.5"
+  },
+  "walk": "VERDICT LANE (independent recompute): (i) constructor rehash match 5e03f206...917f361 PASS; (ii) B agreement 60/60 vs archived EXP094 baseline (recomputed) PASS; (iii) 60/60 annotation asserts (1<=E<N, E/N<=0.5, tau exact) PASS; (iv) degeneracy 0.79226063 vs 0.7923 (|d|=0.00004<0.05) PASS; G5 rel_err 6.98e-08 PASS; dtheta=0 pre==post==LOG-331 pin PASS. No HOLD."
+ },
+ {
+  "step": 1,
+  "condition": "delivery (fired rows in band)",
+  "evidence": {
+   "n_fired_cell_rows": 0,
+   "in_band": 0,
+   "out_of_band": 0,
+   "exclusions": {
+    "gated-T": [],
+    "gated-R": []
+   },
+   "zero_norm_directions": 0
+  },
+  "walk": "VERDICT LANE: 0 fired cell-rows; 0 OOB; exclusions empty; per-arm PASS. Vacuous pass per protocol (unfired items never probed); >2-OOB HOLD condition cannot fire on 0 rows. Proceed."
+ },
+ {
+  "step": "2a",
+  "condition": "gate integrity",
+  "evidence": {
+   "gate_source": "B_pass_only",
+   "n_block_input_captures": 60,
+   "capture_arm_tags": [
+    "B"
+   ],
+   "pre_hook_readonly": true,
+   "step_0iii": {
+    "E_over_N_le_0.5": "60/60",
+    "one_le_E_lt_N": "60/60",
+    "final_token_outside_span": "60/60",
+    "tau_in_(0,1]": "60/60"
+   },
+   "step_2a": "firing vector derived from B-pass captures only; injection-pass data never entered the gate computation",
+   "attention_backend": "sdpa (default; B pass bit-identical code path to EXP094-099)",
+   "attention_math_validation": {
+    "method": "WITHIN-backend eager ground truth: the eager model's own captured block-11 input through its own submodules vs its own output_attentions weights (separate model instance, output_attentions=True)",
+    "n_items": 3,
+    "max_abs_diff": 0.0,
+    "tol": 1e-05,
+    "pass": true
+   },
+   "backend_divergence_diagnostic": {
+    "note": "attempt-1 HOLD diagnosis (2026-09-28): cross-backend comparison is invalid \u2014 SDPA-vs-eager block-11 inputs already differ ~1e-5 from layers-0-10 backend divergence; logged, not gated",
+    "sdpa_vs_eager_block11_input_max_abs_diff_3_items": 8.58306884765625e-06
+   }
+  },
+  "walk": "VERDICT LANE: gate_source B_pass on 60/60 rows; gate_integrity.json assertion verified; no injection-pass derivation. No HOLD. Proceed."
+ },
+ {
+  "step": "2b",
+  "condition": "coverage tripwire",
+  "evidence": {
+   "coverage": 0.0,
+   "n_fired": 0,
+   "floor": 0.1,
+   "tripwire_fired": true
+  },
+  "walk": "VERDICT LANE: coverage recomputed 0/60 = 0.000 < 10% (<6/60). TRIPWIRE FIRES -> PIVOT (untestable). Binding row quoted in verdict doc. First-match-wins: steps 2c-8 never reached."
+ },
+ {
+  "step": 3,
+  "condition": "regime routing (machine-written)",
+  "evidence": {
+   "routing": "PREEMPTED_BY_STEP_2B",
+   "routing_reason": "gated-T = 0 and gated-R = 0 with coverage 0.000 < 0.1 (step-2b tripwire; verdict lane rules PIVOT)",
+   "coverage": 0.0,
+   "n_fired": 0,
+   "evidence": {
+    "gated_T_flips_vs_B": 0,
+    "gated_R_flips_vs_B": 0,
+    "delivery_confirmed": true,
+    "sanity": {
+     "gated-T": {
+      "ties": 0,
+      "ties_over_60": 0.0,
+      "run_invalid_ties": false,
+      "zero_variance": false
+     },
+     "gated-R": {
+      "ties": 0,
+      "ties_over_60": 0.0,
+      "run_invalid_ties": false,
+      "zero_variance": false
+     }
+    }
+   },
+   "note": "machine-written before the table walk; per-arm RUN-INVALID routed where sanity gates fire; steps 2b, 4-8 are the verdict lane's"
+  },
+  "walk": "VERDICT LANE: not reached (preempted by step 2b). Machine routing PREEMPTED_BY_STEP_2B confirmed by independent walk, not trusted."
+ },
+ {
+  "step": 4,
+  "condition": "fragility PIVOT (matched random, \u00a73 step 4)",
+  "evidence": {
+   "aggregate_contrasts": {
+    "gated-T_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-R_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    }
+   },
+   "gated_R_flips_vs_B": 0,
+   "note": "fragility routes before directionality; verdict lane applies the first-match rule"
+  },
+  "walk": "VERDICT LANE: not reached (preempted by step 2b, first-match-wins)."
+ },
+ {
+  "step": 5,
+  "condition": "licensed positive (gated-T, \u00a73 step 5)",
+  "evidence": {
+   "aggregate_contrasts": {
+    "gated-T_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-R_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    }
+   },
+   "stratum_cells": "stratum_table.json",
+   "note": "full conjunction evaluated by the verdict lane"
+  },
+  "walk": "VERDICT LANE: not reached (preempted by step 2b, first-match-wins)."
+ },
+ {
+  "step": 6,
+  "condition": "coverage sensitivity (\u00a73 step 6)",
+  "evidence": {
+   "coverage": 0.0,
+   "n_fired": 0,
+   "aggregate_contrasts": {
+    "gated-T_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-R_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    }
+   }
+  },
+  "walk": "VERDICT LANE: not reached (preempted by step 2b, first-match-wins)."
+ },
+ {
+  "step": 7,
+  "condition": "FROZEN -> Underdetermined (\u00a73 step 7)",
+  "evidence": {
+   "routing": "PREEMPTED_BY_STEP_2B",
+   "aggregate_contrasts": {
+    "gated-T_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-R_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    }
+   }
+  },
+  "walk": "VERDICT LANE: not reached (preempted by step 2b, first-match-wins)."
+ },
+ {
+  "step": 8,
+  "condition": "otherwise -> PIVOT (named sub-cases)",
+  "evidence": {
+   "aggregate_contrasts": {
+    "gated-T_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-R_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    }
+   }
+  },
+  "walk": "VERDICT LANE: not reached (preempted by step 2b, first-match-wins)."
+ },
+ {
+  "step": "verdict",
+  "condition": "binding verdict",
+  "evidence": {
+   "firing_step": "2b",
+   "coverage": 0.0
+  },
+  "walk": "VERDICT LANE: PIVOT (untestable) - Not supported for the directional claim. See EXP100_VERDICT_2026-09-28.md."
+ }
+]

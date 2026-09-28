@@ -1,0 +1,49 @@
+{
+  "experiment": "EXP096",
+  "mode": "real",
+  "layer": 11,
+  "alpha": 8.0,
+  "gate": {
+    "tau_8": 0.9,
+    "n": 21,
+    "agreement": "21/21"
+  },
+  "excluded_gated_indices": [],
+  "reach": {
+    "realized_max_abs_shift_alpha8": 0.862091064453125,
+    "under_coverage_tripwire": 1.125,
+    "under_coverage_tripped": false,
+    "over_coverage_tripwire": 0.45,
+    "over_coverage_tripped": false,
+    "routing": "no tripwire fired: reach as calibrated"
+  },
+  "guards": {
+    "G0": "pass (bench pin)",
+    "G1'": "pass (real-tokenizer cover re-executed)",
+    "\u0394\u03b8=0": "pass (pre/post LOG-331 hash)",
+    "G7": "pass (constructor 5e03f206dd907b52\u2026, audit PASS)",
+    "STEP-0": "pass (60/60 B agreement; gate 21/21; sanity OK)",
+    "STEP-1": "42/42 in band (0 excluded)",
+    "STEP-2": "mean|cos|=0.7923 (sanity vs 0.7923 OK)",
+    "reach": "no tripwire fired: reach as calibrated",
+    "thread_pin": 2
+  },
+  "run_meta": {
+    "torch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "numpy": "2.5.3",
+    "python": "3.12.3",
+    "thread_pin": 2,
+    "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+    "weights_pin": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "weights_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "weights_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "bench_pin": "9be8162633fe19aa2a924440d8ba158c1cc4e734c1f2a554a01a27e459f47fc4",
+    "seeds": {
+      "R_SEED": 94094
+    },
+    "n_passes": 162,
+    "expected_passes": 162,
+    "hard_cap": 400
+  }
+}

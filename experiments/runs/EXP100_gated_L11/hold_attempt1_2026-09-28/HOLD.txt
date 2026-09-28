@@ -1,0 +1,1 @@
+STEP-0 HOLD: attention-math validation failed on item 0: max abs diff 1.50e-05 > 1e-05 vs eager ground truth — HOLD + diagnose.

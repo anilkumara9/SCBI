@@ -1,0 +1,499 @@
+{
+  "constructor_sha256": "5e03f206dd907b52baa1ab6d5c9954c709d1b47d143c83f9aa85caa81917f361",
+  "constructor_sha256_live": "5e03f206dd907b52baa1ab6d5c9954c709d1b47d143c83f9aa85caa81917f361",
+  "P0_sha256": "e7e81496b08455b00316659f58dbdbaf7d606025b0277975aeb3f09e2601e11d",
+  "NORM_RATIO": 0.0474,
+  "ALPHA": 8.0,
+  "RATIO_ALPHA8": 0.3792,
+  "R_SEED": 94094,
+  "g7_carryover": "EXP094 constructor_manifest.json (audit PASS)",
+  "per_item": [
+    {
+      "item": 0,
+      "item_id": "exp092_planetary_2hop_0",
+      "gate_member": true,
+      "d_norm_alpha8": 7.921354583101042,
+      "g_norm_alpha8": 7.921354583101043,
+      "h_norm_B": 20.889648162186294
+    },
+    {
+      "item": 1,
+      "item_id": "exp092_planetary_2hop_1",
+      "gate_member": true,
+      "d_norm_alpha8": 8.111573779687323,
+      "g_norm_alpha8": 8.111573779687323,
+      "h_norm_B": 21.391281064576276
+    },
+    {
+      "item": 2,
+      "item_id": "exp092_planetary_2hop_2",
+      "gate_member": true,
+      "d_norm_alpha8": 7.964669778189552,
+      "g_norm_alpha8": 7.964669778189552,
+      "h_norm_B": 21.003875997335317
+    },
+    {
+      "item": 3,
+      "item_id": "exp092_planetary_2hop_3",
+      "gate_member": false,
+      "d_norm_alpha8": 7.963228170996078,
+      "g_norm_alpha8": 7.963228170996077,
+      "h_norm_B": 21.00007429060147
+    },
+    {
+      "item": 4,
+      "item_id": "exp092_planetary_2hop_4",
+      "gate_member": false,
+      "d_norm_alpha8": 8.030198972787256,
+      "g_norm_alpha8": 8.030198972787256,
+      "h_norm_B": 21.176685054818712
+    },
+    {
+      "item": 5,
+      "item_id": "exp092_planetary_2hop_5",
+      "gate_member": false,
+      "d_norm_alpha8": 8.012911840823833,
+      "g_norm_alpha8": 8.012911840823831,
+      "h_norm_B": 21.13109662664513
+    },
+    {
+      "item": 6,
+      "item_id": "exp092_planetary_2hop_6",
+      "gate_member": false,
+      "d_norm_alpha8": 7.94905089347257,
+      "g_norm_alpha8": 7.94905089347257,
+      "h_norm_B": 20.962686955360155
+    },
+    {
+      "item": 7,
+      "item_id": "exp092_planetary_2hop_7",
+      "gate_member": false,
+      "d_norm_alpha8": 7.978406245501997,
+      "g_norm_alpha8": 7.978406245501996,
+      "h_norm_B": 21.040100858391344
+    },
+    {
+      "item": 8,
+      "item_id": "exp092_planetary_2hop_8",
+      "gate_member": true,
+      "d_norm_alpha8": 7.98201585938468,
+      "g_norm_alpha8": 7.9820158593846795,
+      "h_norm_B": 21.049619882343567
+    },
+    {
+      "item": 9,
+      "item_id": "exp092_planetary_2hop_9",
+      "gate_member": true,
+      "d_norm_alpha8": 7.880191152418348,
+      "g_norm_alpha8": 7.880191152418348,
+      "h_norm_B": 20.78109481122982
+    },
+    {
+      "item": 10,
+      "item_id": "exp092_planetary_2hop_10",
+      "gate_member": false,
+      "d_norm_alpha8": 8.057379815632716,
+      "g_norm_alpha8": 8.057379815632716,
+      "h_norm_B": 21.24836449270231
+    },
+    {
+      "item": 11,
+      "item_id": "exp092_planetary_2hop_11",
+      "gate_member": false,
+      "d_norm_alpha8": 8.03993725062641,
+      "g_norm_alpha8": 8.039937250626412,
+      "h_norm_B": 21.20236616726374
+    },
+    {
+      "item": 12,
+      "item_id": "exp092_planetary_2hop_12",
+      "gate_member": true,
+      "d_norm_alpha8": 7.885957887156999,
+      "g_norm_alpha8": 7.885957887156998,
+      "h_norm_B": 20.79630244503428
+    },
+    {
+      "item": 13,
+      "item_id": "exp092_planetary_2hop_13",
+      "gate_member": true,
+      "d_norm_alpha8": 8.173298516491506,
+      "g_norm_alpha8": 8.173298516491505,
+      "h_norm_B": 21.554057269228657
+    },
+    {
+      "item": 14,
+      "item_id": "exp092_planetary_2hop_14",
+      "gate_member": false,
+      "d_norm_alpha8": 7.878463024934157,
+      "g_norm_alpha8": 7.878463024934157,
+      "h_norm_B": 20.776537513012016
+    },
+    {
+      "item": 15,
+      "item_id": "exp092_planetary_3hop_0",
+      "gate_member": true,
+      "d_norm_alpha8": 8.126645774753978,
+      "g_norm_alpha8": 8.126645774753978,
+      "h_norm_B": 21.43102788700944
+    },
+    {
+      "item": 16,
+      "item_id": "exp092_planetary_3hop_1",
+      "gate_member": false,
+      "d_norm_alpha8": 8.138868663171808,
+      "g_norm_alpha8": 8.138868663171808,
+      "h_norm_B": 21.463261242541687
+    },
+    {
+      "item": 17,
+      "item_id": "exp092_planetary_3hop_2",
+      "gate_member": false,
+      "d_norm_alpha8": 8.150240766887007,
+      "g_norm_alpha8": 8.150240766887007,
+      "h_norm_B": 21.49325096752903
+    },
+    {
+      "item": 18,
+      "item_id": "exp092_planetary_3hop_3",
+      "gate_member": false,
+      "d_norm_alpha8": 8.111083244544746,
+      "g_norm_alpha8": 8.111083244544746,
+      "h_norm_B": 21.389987459242473
+    },
+    {
+      "item": 19,
+      "item_id": "exp092_planetary_3hop_4",
+      "gate_member": false,
+      "d_norm_alpha8": 7.958941462199778,
+      "g_norm_alpha8": 7.958941462199778,
+      "h_norm_B": 20.988769678796885
+    },
+    {
+      "item": 20,
+      "item_id": "exp092_planetary_3hop_5",
+      "gate_member": false,
+      "d_norm_alpha8": 8.098483744807567,
+      "g_norm_alpha8": 8.098483744807567,
+      "h_norm_B": 21.3567609303997
+    },
+    {
+      "item": 21,
+      "item_id": "exp092_planetary_3hop_6",
+      "gate_member": false,
+      "d_norm_alpha8": 8.072263733355626,
+      "g_norm_alpha8": 8.072263733355626,
+      "h_norm_B": 21.287615330579186
+    },
+    {
+      "item": 22,
+      "item_id": "exp092_planetary_3hop_7",
+      "gate_member": true,
+      "d_norm_alpha8": 7.90151867361763,
+      "g_norm_alpha8": 7.90151867361763,
+      "h_norm_B": 20.8373382743081
+    },
+    {
+      "item": 23,
+      "item_id": "exp092_planetary_3hop_8",
+      "gate_member": false,
+      "d_norm_alpha8": 7.90232359149984,
+      "g_norm_alpha8": 7.90232359149984,
+      "h_norm_B": 20.839460948048103
+    },
+    {
+      "item": 24,
+      "item_id": "exp092_planetary_3hop_9",
+      "gate_member": false,
+      "d_norm_alpha8": 8.226591029536452,
+      "g_norm_alpha8": 8.226591029536452,
+      "h_norm_B": 21.69459659687883
+    },
+    {
+      "item": 25,
+      "item_id": "exp092_planetary_3hop_10",
+      "gate_member": true,
+      "d_norm_alpha8": 8.037752279737015,
+      "g_norm_alpha8": 8.037752279737013,
+      "h_norm_B": 21.196604113230528
+    },
+    {
+      "item": 26,
+      "item_id": "exp092_planetary_3hop_11",
+      "gate_member": false,
+      "d_norm_alpha8": 8.218478195573233,
+      "g_norm_alpha8": 8.218478195573233,
+      "h_norm_B": 21.673201992545454
+    },
+    {
+      "item": 27,
+      "item_id": "exp092_planetary_3hop_12",
+      "gate_member": false,
+      "d_norm_alpha8": 7.987080209114916,
+      "g_norm_alpha8": 7.987080209114916,
+      "h_norm_B": 21.062975235007695
+    },
+    {
+      "item": 28,
+      "item_id": "exp092_planetary_3hop_13",
+      "gate_member": false,
+      "d_norm_alpha8": 8.032457825052125,
+      "g_norm_alpha8": 8.032457825052125,
+      "h_norm_B": 21.18264194370286
+    },
+    {
+      "item": 29,
+      "item_id": "exp092_planetary_3hop_14",
+      "gate_member": false,
+      "d_norm_alpha8": 8.175117351799742,
+      "g_norm_alpha8": 8.175117351799742,
+      "h_norm_B": 21.5588537758432
+    },
+    {
+      "item": 30,
+      "item_id": "exp092_elemental_2hop_0",
+      "gate_member": true,
+      "d_norm_alpha8": 7.959398321884586,
+      "g_norm_alpha8": 7.959398321884585,
+      "h_norm_B": 20.989974477543743
+    },
+    {
+      "item": 31,
+      "item_id": "exp092_elemental_2hop_1",
+      "gate_member": false,
+      "d_norm_alpha8": 7.963801462103644,
+      "g_norm_alpha8": 7.963801462103644,
+      "h_norm_B": 21.001586134239567
+    },
+    {
+      "item": 32,
+      "item_id": "exp092_elemental_2hop_2",
+      "gate_member": true,
+      "d_norm_alpha8": 7.975645098303896,
+      "g_norm_alpha8": 7.975645098303897,
+      "h_norm_B": 21.032819352067236
+    },
+    {
+      "item": 33,
+      "item_id": "exp092_elemental_2hop_3",
+      "gate_member": false,
+      "d_norm_alpha8": 7.837483309643517,
+      "g_norm_alpha8": 7.837483309643517,
+      "h_norm_B": 20.668468643574677
+    },
+    {
+      "item": 34,
+      "item_id": "exp092_elemental_2hop_4",
+      "gate_member": false,
+      "d_norm_alpha8": 7.944908252219095,
+      "g_norm_alpha8": 7.944908252219095,
+      "h_norm_B": 20.951762268510272
+    },
+    {
+      "item": 35,
+      "item_id": "exp092_elemental_2hop_5",
+      "gate_member": true,
+      "d_norm_alpha8": 7.919886372018923,
+      "g_norm_alpha8": 7.919886372018923,
+      "h_norm_B": 20.88577629751826
+    },
+    {
+      "item": 36,
+      "item_id": "exp092_elemental_2hop_6",
+      "gate_member": false,
+      "d_norm_alpha8": 7.899817713281161,
+      "g_norm_alpha8": 7.899817713281161,
+      "h_norm_B": 20.832852619412346
+    },
+    {
+      "item": 37,
+      "item_id": "exp092_elemental_2hop_7",
+      "gate_member": false,
+      "d_norm_alpha8": 8.029911660292647,
+      "g_norm_alpha8": 8.02991166029265,
+      "h_norm_B": 21.17592737418947
+    },
+    {
+      "item": 38,
+      "item_id": "exp092_elemental_2hop_8",
+      "gate_member": false,
+      "d_norm_alpha8": 7.999269690023951,
+      "g_norm_alpha8": 7.999269690023951,
+      "h_norm_B": 21.095120490569492
+    },
+    {
+      "item": 39,
+      "item_id": "exp092_elemental_2hop_9",
+      "gate_member": true,
+      "d_norm_alpha8": 7.9586623185889644,
+      "g_norm_alpha8": 7.9586623185889644,
+      "h_norm_B": 20.988033540582713
+    },
+    {
+      "item": 40,
+      "item_id": "exp092_elemental_2hop_10",
+      "gate_member": true,
+      "d_norm_alpha8": 8.009459046246215,
+      "g_norm_alpha8": 8.009459046246215,
+      "h_norm_B": 21.121991155712596
+    },
+    {
+      "item": 41,
+      "item_id": "exp092_elemental_2hop_11",
+      "gate_member": true,
+      "d_norm_alpha8": 7.885964281823845,
+      "g_norm_alpha8": 7.885964281823846,
+      "h_norm_B": 20.796319308607185
+    },
+    {
+      "item": 42,
+      "item_id": "exp092_elemental_2hop_12",
+      "gate_member": false,
+      "d_norm_alpha8": 7.932225516925886,
+      "g_norm_alpha8": 7.932225516925886,
+      "h_norm_B": 20.9183162366189
+    },
+    {
+      "item": 43,
+      "item_id": "exp092_elemental_2hop_13",
+      "gate_member": false,
+      "d_norm_alpha8": 8.002826876360595,
+      "g_norm_alpha8": 8.002826876360595,
+      "h_norm_B": 21.1045012562252
+    },
+    {
+      "item": 44,
+      "item_id": "exp092_elemental_2hop_14",
+      "gate_member": false,
+      "d_norm_alpha8": 7.995431312298018,
+      "g_norm_alpha8": 7.995431312298018,
+      "h_norm_B": 21.084998186439922
+    },
+    {
+      "item": 45,
+      "item_id": "exp092_elemental_3hop_0",
+      "gate_member": true,
+      "d_norm_alpha8": 8.045793040465902,
+      "g_norm_alpha8": 8.045793040465902,
+      "h_norm_B": 21.217808651017677
+    },
+    {
+      "item": 46,
+      "item_id": "exp092_elemental_3hop_1",
+      "gate_member": true,
+      "d_norm_alpha8": 7.946599627177525,
+      "g_norm_alpha8": 7.946599627177525,
+      "h_norm_B": 20.95622264551035
+    },
+    {
+      "item": 47,
+      "item_id": "exp092_elemental_3hop_2",
+      "gate_member": false,
+      "d_norm_alpha8": 7.9396327054091875,
+      "g_norm_alpha8": 7.939632705409187,
+      "h_norm_B": 20.93784996152212
+    },
+    {
+      "item": 48,
+      "item_id": "exp092_elemental_3hop_3",
+      "gate_member": true,
+      "d_norm_alpha8": 7.86648325442431,
+      "g_norm_alpha8": 7.86648325442431,
+      "h_norm_B": 20.74494529120335
+    },
+    {
+      "item": 49,
+      "item_id": "exp092_elemental_3hop_4",
+      "gate_member": false,
+      "d_norm_alpha8": 7.986906200616631,
+      "g_norm_alpha8": 7.986906200616631,
+      "h_norm_B": 21.062516351837107
+    },
+    {
+      "item": 50,
+      "item_id": "exp092_elemental_3hop_5",
+      "gate_member": false,
+      "d_norm_alpha8": 7.958484408901544,
+      "g_norm_alpha8": 7.958484408901544,
+      "h_norm_B": 20.9875643694661
+    },
+    {
+      "item": 51,
+      "item_id": "exp092_elemental_3hop_6",
+      "gate_member": false,
+      "d_norm_alpha8": 8.095508877064827,
+      "g_norm_alpha8": 8.095508877064827,
+      "h_norm_B": 21.348915815044382
+    },
+    {
+      "item": 52,
+      "item_id": "exp092_elemental_3hop_7",
+      "gate_member": false,
+      "d_norm_alpha8": 8.071479875322082,
+      "g_norm_alpha8": 8.07147987532208,
+      "h_norm_B": 21.28554819441478
+    },
+    {
+      "item": 53,
+      "item_id": "exp092_elemental_3hop_8",
+      "gate_member": false,
+      "d_norm_alpha8": 8.075204019931444,
+      "g_norm_alpha8": 8.075204019931444,
+      "h_norm_B": 21.295369250874064
+    },
+    {
+      "item": 54,
+      "item_id": "exp092_elemental_3hop_9",
+      "gate_member": false,
+      "d_norm_alpha8": 8.050104483634572,
+      "g_norm_alpha8": 8.050104483634572,
+      "h_norm_B": 21.229178490597498
+    },
+    {
+      "item": 55,
+      "item_id": "exp092_elemental_3hop_10",
+      "gate_member": false,
+      "d_norm_alpha8": 8.005054223281741,
+      "g_norm_alpha8": 8.005054223281741,
+      "h_norm_B": 21.110375061396997
+    },
+    {
+      "item": 56,
+      "item_id": "exp092_elemental_3hop_11",
+      "gate_member": true,
+      "d_norm_alpha8": 8.014922620384738,
+      "g_norm_alpha8": 8.014922620384738,
+      "h_norm_B": 21.136399315360595
+    },
+    {
+      "item": 57,
+      "item_id": "exp092_elemental_3hop_12",
+      "gate_member": false,
+      "d_norm_alpha8": 8.062509452962821,
+      "g_norm_alpha8": 8.062509452962821,
+      "h_norm_B": 21.26189201730702
+    },
+    {
+      "item": 58,
+      "item_id": "exp092_elemental_3hop_13",
+      "gate_member": true,
+      "d_norm_alpha8": 8.057030887024233,
+      "g_norm_alpha8": 8.057030887024233,
+      "h_norm_B": 21.24744432232129
+    },
+    {
+      "item": 59,
+      "item_id": "exp092_elemental_3hop_14",
+      "gate_member": false,
+      "d_norm_alpha8": 8.014564704603352,
+      "g_norm_alpha8": 8.014564704603352,
+      "h_norm_B": 21.13545544462909
+    }
+  ],
+  "mean_pairwise_abs_cosine": 0.7922606322936264,
+  "degeneracy_sanity": {
+    "archived_ref": 0.7923,
+    "recomputed": 0.7922606322936264,
+    "tol": 0.05,
+    "pass": true
+  }
+}

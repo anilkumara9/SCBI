@@ -1,0 +1,18 @@
+{
+  "band": [
+    0.285,
+    0.475
+  ],
+  "n_fired_cell_rows": 32,
+  "in_band": 32,
+  "out_of_band": 0,
+  "exclusions": {
+    "gated-T": [],
+    "gated-R": []
+  },
+  "per_arm_PASS_FAIL": {
+    "gated-T": "PASS",
+    "gated-R": "PASS"
+  },
+  "realized_vs_perturbed_note": "both arms are single-injection (no co-injection cascade); the hook adds \u03b4 directly to the post-block residual at the final position, so the realized injection ratio == the analytic perturbation_ratio by construction; placement validated by the G5 execution probe (frozen verify_g5 core, criterion i) at layer 11"
+}

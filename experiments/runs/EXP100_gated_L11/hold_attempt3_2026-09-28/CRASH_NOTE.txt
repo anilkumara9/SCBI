@@ -1,0 +1,18 @@
+ATTEMPT 3 — full experimental pipeline completed (127 passes, all guards
+PASS), then crashed in the SCORING tail (score_exp100.compute):
+ValueError: invalid literal for int() — the scorer sorted string item_ids
+('exp092_planetary_2hop_7') with key=int. Mechanical scorer bug, fixed
+(bench-order, no int cast). No artifact JSONs were written before the
+crash, but the three experimental CSVs are complete and valid (181/61/121
+lines). Preserved here for the determinism cross-check: attempt 4 must
+reproduce these CSVs bit-identically.
+
+Key mechanical facts from attempt 3 (UNINTERPRETED):
+- attention-math validation 3/3 PASS (max abs diff 0.00e+00, within-backend)
+- B accuracy 36/60; B agreement 60/60 vs archived EXP094
+- L11 degeneracy signature 0.7923 vs 0.7923 PASS
+- G5 layer-11 probe PASS (rel_err 6.98e-08)
+- norm-tie 60/60; Δθ=0 pre/post verified; 127 passes total
+- GATE: fired 0/60 (coverage 0.000); mass range [0.0396, 0.0746] vs tau
+  range [0.2286, 0.2759] -> step-2b tripwire condition met (verdict lane)
+- sweep: 0 injection passes; 60 unfired items deterministically copied B
