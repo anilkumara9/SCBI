@@ -9,7 +9,11 @@ performed, so Delta-theta=0 holds by construction and the battery costs $0.
 Input:  the JSON written by tier0.py ({"worksheet":..., "records":[...]}),
         or any JSON list of records with fields:
         item_id, candidate_logits[8], candidate_token_ids[8],
-        correct_idx, foil_idx, top1_idx.
+        correct_idx, foil_idx, top1_idx, correct_rank.
+
+correct_rank is REQUIRED: the battery population is the failed items with
+correct_rank <= 5. A record set without correct_rank collapses the
+population to zero, and the run HALTs rather than emitting a verdict.
 Usage:
     python battery.py --records results/tier0.json --out results/battery.json
 
@@ -69,6 +73,19 @@ def main():
         full_records.append(entry)
         if in_pop:
             pop_records.append(entry)
+
+    # F1 guard (LOG-4500 review): never emit a verdict on an empty
+    # population. A record set following the old docstring (which omitted
+    # correct_rank) collapses n_pop to 0; silently emitting KILL step 10
+    # there is a false-KILL path. HALT instead.
+    if not pop_records:
+        missing = sum(1 for r in records if r.get("correct_rank") is None)
+        raise SystemExit(
+            "HALT: empty battery population (n_pop=0) — refusing to emit a "
+            "verdict on zero records. %d/%d input records lack the required "
+            "'correct_rank' field (see docstring Input). The battery "
+            "population is the failed items with correct_rank<=5; fix your "
+            "records or re-run tier0.py." % (missing, len(records)))
 
     verdict, step, evidence, contrasts = battery_decision(pop_records)
 
