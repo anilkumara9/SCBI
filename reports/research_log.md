@@ -10860,4 +10860,14 @@ Uncommitted LOG-4513 entry in `reports/research_log.md` and the new sweep report
 
 **Lane [FACT]:** LOG-4515 (v84 draft) and LOG-4516 (independent Law #14 DELTA review, verdict SIGN clean) entries in `reports/research_log.md` are now committed locally on topic branch `sync/2026-09-29-v84-draft` (commit `2bbefd4`, cut from `main` HEAD `e90d0d8`). Full worktree LOG-divergence check passed before branching: every worktree's LOG set is a subset of the main tree's set — nothing lost, nothing duplicated. Append-only log preserved verbatim via md5-verified backup/restore across the branch switch; no `git stash` used. No push attempted — upstream push is founder-reserved.
 
-**Next free: LOG-4518.**
+## LOG-4518 — Merge consolidation: 9-28/9-29 sync waves unified (2026-09-29, merge-consolidation lane)
+
+**Lane [FACT]:** New branch `sync/2026-09-29-consolidated` cut from `sync/2026-09-29-v84-draft`. Merged: `sync/2026-09-28-v83-clearance` (merge `462935e`) — this branch already contains `sync/2026-09-28-log4503-4504-wave` and `sync/2026-09-28-log4505-4506-wave` as ancestors (verified via merge-base), so no redundant merges were made; plus `sync/2026-09-29-log4513-sweep` (merge `9f84137`) to recover the stranded 9-29 sweep report file. Log conflicts on `reports/research_log.md` resolved per rule in favor of the current line (v84-draft version, `--ours`); no LOG entry lost, none duplicated.
+
+**Stranded files recovered (all verified present on the new branch):** `falsification_kit/` (README.md, REVIEW_LOG-4500.md, battery.py, bench/, core/, reference/, reproduce_exp105.sh, tests/), `falsification_kit/colab/Reproduce_the_Gap.ipynb`, `experiments/runs/EXP104_Tier0_rank_screen/`, `experiments/runs/EXP105_battery/`, `experiments/runs/EXP105_cloze_Tier0/`, `research/strategy/V83_CHANGE_PLAN_v2_LAW14_REVIEW_LOG-4505_2026-09-28.md`, `research/analysis_plans/EXP104_BENCH_AUTOPSY_2026-09-28.md`, `research/benchmarks/` (scoreboard v1.4), `research/frontier/SWEEP_2026-09-28.md`, `research/frontier/SWEEP_2026-09-29.md`. Gaps: none.
+
+**LOG-range verification [FACT]:** full numeric range 4393..4517 present exactly once each on the new branch (heading-level mix `##`/`###` accounted for in the check); duplicates: none; missing: none. Worktree divergence check passed before merging: every worktree's LOG set is a subset of the main tree's set.
+
+**Local only:** merges + this entry committed on `sync/2026-09-29-consolidated`; no push attempted, no PR — upstream push is founder-reserved. No signed protocols, model weights, or files outside this repo touched. $0 compute.
+
+**Next free: LOG-4519.**
