@@ -10856,4 +10856,8 @@ Uncommitted LOG-4513 entry in `reports/research_log.md` and the new sweep report
 
 **Affected decision:** v84 is cleared to advance as a DRAFT only. It is NOT a release candidate; no CEO clearance is granted or implied by this review. $0 compute.
 
-**Next free: LOG-4517.**
+## LOG-4517 — Commit: v84 draft + independent review SIGN recorded (2026-09-29, commit-prep lane)
+
+**Lane [FACT]:** LOG-4515 (v84 draft) and LOG-4516 (independent Law #14 DELTA review, verdict SIGN clean) entries in `reports/research_log.md` are now committed locally on topic branch `sync/2026-09-29-v84-draft` (commit `2bbefd4`, cut from `main` HEAD `e90d0d8`). Full worktree LOG-divergence check passed before branching: every worktree's LOG set is a subset of the main tree's set — nothing lost, nothing duplicated. Append-only log preserved verbatim via md5-verified backup/restore across the branch switch; no `git stash` used. No push attempted — upstream push is founder-reserved.
+
+**Next free: LOG-4518.**
