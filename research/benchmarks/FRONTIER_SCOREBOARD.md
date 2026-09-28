@@ -212,6 +212,18 @@ The same columns. Nothing cherry-picked; the demotions are stated first.
 | **EXP091** — KILL: zero-shot cosine scoring dead (LOG-361/362) | Zero-shot cosine-similarity scoring, frozen final-token embeddings, novel relational items | pythia-410m / L20 | **31/60 (51.67%), exact one-sided binomial p=0.4487**; A-first 0.50 / C-first 0.5333; margins noise-scale (mean 6.8e-4); instrument responsive (G4 spread 0.0803 ≫ 1e-4) — genuine null; CLM-8B free-lunch version KILLED as designed (≤37/60 bar) | 60 passes, $0 CPU | None (zero-shot) | N | Y | Killed (executed real, CPU); independent verdict review ADOPTED (LOG-362); Δθ=0 verified | LOG-361/362; `experiments/runs/EXP091*` |
 | **EXP092** — CONTINUE: layer-11 task information licensed (LOG-4336/4338) | Information-Bottleneck Localization — per-layer 1-NN LOO on frozen embeddings | pythia-410m, all 24 layers | Layer 11: **acc 0.3333 (20/60), stratified-permutation p=0.000999 < α_B=0.0020833, effect +0.2000 ≥ 0.10**; S = {1,11,12,13,14,15,17,18} clear both bars; L20 acc 0.15, p=0.0659 (correctly excluded). ADOPT-WITH-CORRECTIONS (binding). **Licensed claim: frozen layer 11 carries significant task information (1-NN LOO, Bonferroni-significant, ≥10pp above null).** Novelty N1. No capability claim licensed. | $0 CPU (~1.5h) | None | N | Y | Continue, l* = 11; S1 (Ross kNN-MI) retired — proven vacuous by construction (MI = ψ(60)−ψ(4) exactly in this regime; any successor MI diagnostic needs a degeneracy analysis + constant-data unit test) | LOG-4336 (execution), LOG-4338 (binding review), `experiments/runs/EXP092_ibl/` |
 | **EXP093** — KILL UPHELD: shared layer-11 direction causally inert (LOG-4352) | Static injection of the shared layer-11 task direction on EXP092-B | pythia-410m / L11 | **Δ = 0.0000; McNemar b = c = 0 → p = 1.0 in all six tests** (P-vs-B and N-vs-B × 3 strata); perturbation real (4.7% of residual norm, reached the logits, G5 rel_err 4.3e-07) but flipped zero decisions — causal inertness, not measurement failure. **Information ≠ influence at layer 11; the layer-20 boundary generalizes.** Falsifies "≥10pp causal transfer via a shared static direction at layer 11" only. | $0 CPU (~10–15 min) | None | N | Y | Killed (executed real, CPU); independent verdict review binding (LOG-4352); Δθ=0 verified (pre/post `ec276abe…`) | LOG-4352; `experiments/protocols/REVIEWS/EXP093_LAW14_VERDICT_REVIEW_2026-09-25.md` |
+| **EXP094** — KILL: per-item static L11 geometry refuted by inertness (LOG-4376/4377) | Per-item static L11 injection (per-item direction, not shared) | pythia-410m / L11 | **0 flips across 120 injection arms** (B=T=R=36/60, p=1.0) despite confirmed delivery; per-item static-geometry family closed at L11 | $0 CPU | None | N | Y | Refuted (executed real, CPU); independent verdict review ADOPTED (LOG-4377) | LOG-4376/4377; `experiments/runs/EXP094*` |
+| **EXP095** — KILL: α-grid inert (LOG-4400) | α grid sweep on per-item L11 injection | pythia-410m / L11 | α ∈ {0.25,0.5,1,2,4} → task flips {0,0,0,1,1} — inert below bar at every ratio | $0 CPU | None | N | Y | Refuted | LOG-4400 |
+| **EXP096** — KILL: headroom-gated movement fragility (LOG-4407) | Headroom-gated per-item L11 injection | pythia-410m / L11 | Headroom-gated T and B_wrong each moved 3 — movement exists but is not attributable to the task direction | $0 CPU | None | N | Y | Refuted | LOG-4407 |
+| **EXP097** — PIVOT: fragility (LOG-4416) | Fragility probe of per-item L11 movement | pythia-410m / L11 | Movement not directionally attributable | $0 CPU | None | N | Y | PIVOT (fragility) | LOG-4416 |
+| **EXP098** — PIVOT: composition premise not supported (LOG-4423) | Layer-composition injection (L11, L20, joint, random-joint) | pythia-410m / L11, L20 | L11: 3 flips; L20: 6 flips (all right→wrong); joint: 7 flips; **random joint: 12 flips** — no interaction candidates; composition premise unsupported | $0 CPU | None | N | Y | PIVOT (premise) | LOG-4423 |
+| **EXP099** — PIVOT: fragility — directional claim not supported (LOG-4434) | Directional fragility probe | pythia-410m / L8 | L8 moved 4; **W20 random moved 7** — directional claim not supported | $0 CPU | None | N | Y | PIVOT (fragility) | LOG-4434 |
+| **EXP100** — PIVOT (untestable): S6-3 mean-gate collapse (LOG-4441) | Mean-over-heads L11 attention-gated injection of the killed per-item L11 direction @ 0.38 | pythia-410m / L11 (gate read at L11) | Coverage **0/60** — mass_i ∈ [0.0396, 0.0746] vs τ_i ∈ [0.2286, 0.2759]; gate never close to firing on any item; 0 injection passes; step-2b coverage tripwire (<10%) fired | 127 CPU passes, $0 | None | — (null; untestable) | Y | **PIVOT (untestable)** — step-2b tripwire; not a KILL of dynamic gating (forbidden from a collapsed gate); not a fragility finding | LOG-4441; `experiments/runs/EXP100_gated_L11/` |
+| **EXP101** — KILL: S6-3b max-gate refuted (LOG-4448) | Max-over-heads L11 attention-gated injection of the killed per-item L11 direction @ 0.38 | pythia-410m / L11 (gate read at L11) | Coverage **16/60 = 26.67%** (gate testable). gated-T vs B: **1 flip (b=0, c=1, p=1.0)** — sole flip right→wrong on `exp092_elemental_2hop_0`. gated-R vs B: 0 flips. ΔM (paired logit-margin): gated-T −0.0236, gated-R −0.0171 (flat, \|ΔM\|<0.10). Evidential weight (16 fired): 0 directional-positive flips → one-sided 95% UB **17.1%** on gated-conditional directional flip rate | 159 CPU passes, $0 | None | N | Y | **Refuted** — step-6 Gated KILL; fenced to max-gated per-item L11 injection @0.38 on EXP092-B | LOG-4448; `experiments/runs/EXP101_gated_L11_max/` |
+| **EXP102** — PIVOT (untestable): S6-3c L20-mean-gate collapse (LOG-4455) | Mean-over-heads **L20** attention-gated injection of the killed per-item L11 direction @ 0.38 | pythia-410m / L11 (gate read at L20) | Coverage **1/60 = 1.67%** — single fired item `exp092_elemental_3hop_0` (mass 0.23303 ≥ τ 0.22857); mass range [0.0346, 0.2330] vs τ [0.2286, 0.2759]; gated-T vs B 0 flips; gated-R vs B 0 flips; ΔM 0.0 all contrasts; step-2b tripwire fired. F1 decision-proxy audit (descriptive only): B accuracy 1/1 fired vs 35/59 unfired | 129 CPU passes, $0 | None | — (null; untestable) | Y | **PIVOT (untestable)** — step-2b tripwire; not a KILL | LOG-4455; `experiments/runs/EXP102_L20gated_L11/` |
+| **EXP103** — KILL: S6-3d L20-max-gate refuted; gate family closed 4/4 (LOG-4462) | Max-over-heads **L20** attention-gated injection of the killed per-item L11 direction @ 0.38 | pythia-410m / L11 (gate read at L20) | Coverage **55/60 = 91.67%** (gate testable). gated-T vs B: **3 flips (b=1, c=2, p=1.0)** — 1 wrong→right, 2 right→wrong. gated-R vs B: 1 flip (b=1, c=0, p=1.0). gated-T vs gated-R: b=1, c=3, p=0.625. ΔM: gated-T −0.012874, gated-R −0.029963 (flat). Evidential weight (55 fired): 1 directional-positive flip → one-sided 95% UB **5.3%**. F1 audit: B accuracy 34/55 fired vs 2/5 unfired (gate not a near-decision proxy; descriptive) | 237 CPU passes, $0 | None | N | Y | **Refuted** — step-6 Gated KILL; the {mean,max}×{L11,L20} externally-computed attention-gate family is CLOSED 4/4 (mean-L11 untestable, max-L11 Refuted, mean-L20 untestable, max-L20 Refuted). LOG-4460 terminality claim engages: no fifth tweak of this family, ever, under this license | LOG-4462; `experiments/runs/EXP103_L20maxgated_L11/` |
+| **S6-5 pooled audit** — directional flip ceiling (LOG-4409) | Pooled task-direction decision flips across the static S6 program | pythia-410m / L11 | **5/381** task-direction decision flips → one-sided 95% upper bound **2.74%** on the pooled directional flip rate | $0 CPU | None | — | Y | Supported (audit; boundary quantification) | LOG-4409 |
+| **S6 L11-rescue program — STAND-DOWN (LOG-4463/4464)** | Innovation-design lane: four self-computed-gate candidates constructed and falsified on paper (P prompt-instructed self-gate, E output-uncertainty gate, C activation-magnitude read, B probe-based gate) | CPU design only | No design clears the worth-it gate: P fails principled-threshold/license/interpretability (base-model noise, illusory "self," bench re-baselining); E fails threshold/license (threshold is a guess); C fails the terminality claim directly (fifth externally-computed gate); B fails interpretability (label-informed by construction, LOG-197 precedent). **Rational update: the direction is the problem, not the gate.** Ten experiments, ~2,000 CPU passes. Pre-registered re-opening conditions: (i) a license-bearing observation for a specific self-computed gate enters the record; (ii) a new direction family earns its license; (iii) founder orders otherwise | $0 CPU | N/A (design) | — | Y | **STAND-DOWN** (CEO ruling LOG-4464) — no further injection of the killed per-item L11 direction on CPU lanes; GPU queue untouched | LOG-4463/4464; `research/innovation/S6_STANDDOWN_RECOMMENDATION_2026-09-28.md` |
 
 ### 3.2 The program's position, stated without softening
 
@@ -242,6 +254,31 @@ positive: **EXP092 — frozen Pythia-410m layer 11 carries significant task
 information** (1-NN LOO, Bonferroni-significant, ≥10pp above null) — an
 observation, not a capability; EXP093's kill banked its immediate
 consequence: information ≠ influence.
+
+**The S6 L11-rescue program, closed 2026-09-28 (LOG-4464).** The nine
+rescue experiments after EXP094 read as one arc. Per-item static geometry
+refuted by inertness (EXP094: 0 flips/120 arms); the α grid inert at every
+ratio (EXP095); movement that exists but is not directionally attributable
+(EXP096/097, EXP099 fragility); the composition premise not supported
+(EXP098: random joint 12 flips vs 7 joint); and the externally-computed
+attention-gate family closed 4/4 — mean-at-L11 untestable at 0/60 coverage
+(EXP100), max-at-L11 Refuted (EXP101: 1 flip, right→wrong), mean-at-L20
+untestable at 1/60 (EXP102), max-at-L20 Refuted (EXP103: 3 flips, p=1.0,
+1 positive/55 fired → one-sided 95% UB 5.3%). The S6-5 pooled audit fixes
+the program ceiling: 5/381 directional flips, one-sided 95% UB **2.74%**.
+An innovation-design lane then falsified all four self-computed-gate
+candidates on paper (LOG-4463) — the CEO ruled STAND-DOWN on the whole
+L11-rescue program (LOG-4464) with the rational update **"the direction is
+the problem, not the gate."** What this arc contributes is boundary
+science, not capability: ten experiments, ~2,000 CPU passes, $0, every
+rescue dead, untestable, or uninterpretable — the wall behind the L11
+direction is now mapped on all four gate cells and the static/per-item
+geometry side. The LOG-4460 terminality claim bars any fifth
+externally-computed gate variant; surviving conditional license is
+self-computed gates and beyond, each needing its own pre-registration and
+Law #14 review. The GPU queue (K2 → EXP083 → EXP084 → EXP086 Stage B →
+EXP088 → EXP087) is untouched. **Capability scoreboard: unchanged — still
+zero positive signals for autonomous steering.**
 
 [INFERENCE]: plotted on the same axes, SCBI does not trail the frontier by a
 margin — it trails by *category*: the frontier has L1–L2 capability results;
@@ -341,6 +378,22 @@ Per-item construction can never beat a None-class row.
   Same axes, same honesty: SCBI holds zero positive signals for autonomous
   steering; the label-free race stays tied at zero. No literature re-check
   this cycle (next due 2026-10-23).
+- v1.2 — 2026-09-28 (benchmark-analyst lane): plotted the full EXP094–103
+  S6 wave + S6 stand-down — EXP094 (per-item static L11 KILL by inertness,
+  0/120), EXP095 (α-grid KILL), EXP096 (KILL, fragility), EXP097
+  (PIVOT-fragility), EXP098 (PIVOT-premise, composition unsupported),
+  EXP099 (PIVOT-fragility, directional claim not supported), EXP100
+  (PIVOT-untestable, mean-L11 gate 0/60), EXP101 (Refuted, max-L11 gate
+  16/60, 1 flip right→wrong), EXP102 (PIVOT-untestable, mean-L20 gate
+  1/60), EXP103 (Refuted, max-L20 gate 55/60, 3 flips p=1.0, one-sided 95%
+  UB 5.3% on directional flip rate) — the {mean,max}×{L11,L20} externally-
+  computed attention-gate family closed 4/4; S6-5 pooled audit (5/381 →
+  95% UB 2.74%); S6 L11-rescue STAND-DOWN (LOG-4463/4464, "the direction
+  is the problem, not the gate"). §3.1 rows + §3.2 position paragraph added.
+  Capability scoreboard: unchanged — zero positive signals for autonomous
+  steering; the label-free race stays tied at zero. Standing
+  PROGRESS_ANALYSIS.md written (one page, 2026-09-28). No literature
+  re-check this cycle (next due 2026-10-23).
 
 ---
 
