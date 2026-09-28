@@ -1,0 +1,809 @@
+{
+ "worksheet": {
+  "kit": "decodability-gap-falsification-kit",
+  "phase": "battery",
+  "seed": 20260928,
+  "n_items": 60,
+  "n_pop": 21,
+  "dM_primary_tier0pop": {
+   "T": 0.23809523809523808,
+   "F": 0.14285714285714285,
+   "R": 0.0
+  },
+  "contrasts": {
+   "T-vs-B": {
+    "b": 5,
+    "c": 0,
+    "d": 16,
+    "p": 0.0625,
+    "tango95": [
+     0.04663939627990292,
+     0.4509140303516862
+    ]
+   },
+   "F-vs-B": {
+    "b": 3,
+    "c": 0,
+    "d": 18,
+    "p": 0.25,
+    "tango95": [
+     -0.0338735680886867,
+     0.34636247753151167
+    ]
+   },
+   "R-vs-B": {
+    "b": 0,
+    "c": 0,
+    "d": 21,
+    "p": 1.0,
+    "tango95": [
+     -0.15464978982444066,
+     0.15464494073722476
+    ]
+   },
+   "T-vs-R": {
+    "b": 5,
+    "c": 0,
+    "d": 16,
+    "p": 0.0625,
+    "tango95": [
+     0.04663939627990292,
+     0.4509140303516862
+    ]
+   },
+   "T-vs-F": {
+    "b": 2,
+    "c": 0,
+    "d": 19,
+    "p": 0.5,
+    "tango95": [
+     -0.07412891429856258,
+     0.2891438999800013
+    ]
+   }
+  },
+  "decision": {
+   "verdict": "KILL",
+   "step": 9,
+   "evidence": {
+    "step6_cond": false,
+    "step7_cond": false,
+    "step8_cond": false,
+    "step9_cond": true,
+    "step10_cond": false,
+    "O": 0.5714285714285714,
+    "O_le_0.5": false,
+    "n_pop": 21,
+    "dM_T": 0.23809523809523808,
+    "dM_F": 0.14285714285714285,
+    "dM_R": 0.0
+   }
+  },
+  "guards": {
+   "model_contact": "none \u2014 logit-level operator; Delta-theta=0 by construction",
+   "bars": "DELTA_BAR=0.10, flat band |dM|<0.05, primary T-vs-R alpha=0.05, others Bonferroni 0.0125, O_GATE=0.5"
+  }
+ },
+ "records": [
+  {
+   "item_id": "exp104_t0_00",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 6,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_01",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 5,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_02",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": true,
+   "r_mask_idx": 4,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_03",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 6,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_04",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 7,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_05",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 7,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_06",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 0,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_07",
+   "arms_correct": {
+    "B": false,
+    "T": true,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 1,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_08",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 1,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_09",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 7,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_10",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 3,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_11",
+   "arms_correct": {
+    "B": false,
+    "T": true,
+    "F": true,
+    "R": false
+   },
+   "foil_is_top1": true,
+   "r_mask_idx": 2,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_12",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 6,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_13",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 1,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_14",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": true,
+   "r_mask_idx": 7,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_15",
+   "arms_correct": {
+    "B": false,
+    "T": true,
+    "F": true,
+    "R": false
+   },
+   "foil_is_top1": true,
+   "r_mask_idx": 2,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_16",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": true,
+   "r_mask_idx": 4,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_17",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 7,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_18",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 0,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_19",
+   "arms_correct": {
+    "B": false,
+    "T": true,
+    "F": true,
+    "R": false
+   },
+   "foil_is_top1": true,
+   "r_mask_idx": 4,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_20",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 1,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_21",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 2,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_22",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 6,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_23",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 5,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_24",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 4,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_25",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 6,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_26",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": true,
+   "r_mask_idx": 6,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_27",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 7,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_28",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 5,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_29",
+   "arms_correct": {
+    "B": false,
+    "T": true,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 0,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_30",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": true,
+   "r_mask_idx": 0,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_31",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": true,
+   "r_mask_idx": 2,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_32",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 2,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_33",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": true,
+   "r_mask_idx": 5,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_34",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 0,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_35",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 1,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_36",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 5,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_37",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 5,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_38",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 6,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_39",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 2,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_40",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": true,
+   "r_mask_idx": 4,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_41",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 2,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_42",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 5,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_43",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 1,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_44",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 7,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_45",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 1,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_46",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": true,
+   "r_mask_idx": 1,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_47",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 6,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_48",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 1,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_49",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 1,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_50",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": true,
+   "r_mask_idx": 2,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_51",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 7,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_52",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 6,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_53",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 2,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_54",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 3,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_55",
+   "arms_correct": {
+    "B": true,
+    "T": false,
+    "F": true,
+    "R": true
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 3,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_56",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 1,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_57",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 0,
+   "in_tier0_pop": false
+  },
+  {
+   "item_id": "exp104_t0_58",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 7,
+   "in_tier0_pop": true
+  },
+  {
+   "item_id": "exp104_t0_59",
+   "arms_correct": {
+    "B": false,
+    "T": false,
+    "F": false,
+    "R": false
+   },
+   "foil_is_top1": false,
+   "r_mask_idx": 7,
+   "in_tier0_pop": false
+  }
+ ]
+}
