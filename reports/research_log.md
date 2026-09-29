@@ -11583,3 +11583,117 @@ Independent Law #14 verdict-review lane for EXP114 (H8/POE), independent of draf
 
 ## LOG-4593 — Frontier scoreboard sync v2.0: EXP114 (H8/POE) KILL plotted (2026-09-29)
 Scoreboard-sync lane (pre-assigned, LOG-4593). Synced FRONTIER_SCOREBOARD.md to **v2.0** (was v1.9, LOG-4586) with EXP114's now-bound KILL verdict (independent exact-artifact verdict review LOG-4592 — BIND, no caveat; execution LOG-4591). Changes: §3.1 inventory row added — EXP114 positional-order ensembling KILL (K=5 ensemble 38/60 vs canonical single-order baseline 41/60; net (b−c)=−3; one-sided exact McNemar p=0.9375; 360 forwards, zero generation; Δθ=0; retires only the positional-order-ensembling axis for this task class — test-time scaling in general and the adaptive-loop program NOT retired; below-baseline reading a labeled [OBSERVATION]); §3.2 H-wave paragraph extended with the EXP114 kill and its fences; v2.0 delta [FACT] paragraph + v2.0 changelog bullet added. PROGRESS_ANALYSIS.md: EXP114 update paragraph added; day's tally updated. **One-line honest headline the board now carries:** "The day's tally: one CONTINUE (EXP111, bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), two RUN-INVALIDs (EXP108, EXP109), one precision certification (EXP110, bound) — capability scoreboard unchanged, still zero positive signals for autonomous steering; the label-free race stays tied at zero." No capability entries added for the KILL; failures first. No signed protocols, paper sources, or GPU queue touched; no push, no spend, no weights. Next free: LOG-4594.
+
+## LOG-4594 — Commit-prep: H8/POE chain committed as a44114c, no push (2026-09-29)
+Commit-prep lane (pre-assigned, LOG-4594). LOG-divergence check: CLEAN — 473 main header LOGs (LOG-1→4593) vs 352 worktree headers (sync-log4393-4465); 0 worktree LOG numbers missing from main log (full comm diff). Log tail verified at LOG-4593 before commit. Committed 11 files, 4273 insertions on sync/2026-09-29-consolidated: H8 pre-reg (LOG-4588), clean-SIGN Law #14 review (LOG-4589), EXP114 run dir (execution script, result/worksheet JSONs, stdout log — LOG-4591), EXP114 report (KILL), independent verdict review BIND (LOG-4592), scoreboard v2.0 files (LOG-4593), log entries LOG-4588→4593. Weight exclusions applied; zero weight files present (run dir 72K of scripts/logs/arrays only). No secrets. Working tree clean after commit. NOT pushed — awaiting the user's fresh one-use token. Next free: LOG-4595.
+
+## LOG-4595 — H9 (HDI-GEN) worth-it gate + pre-registration drafted (2026-09-29)
+Revival worth-it-gate + drafting lane (pre-assigned, LOG-4595). Stage 1 — worth-it gate (recorded in draft §0): **PASS**. H9 asks what H6 could not: H6 (EXP112, HELD 41/60) read self-reports off position-0 logits — a proxy, never emitted text; H9 measures the *generated* self-report via the EXP113-cleared P2 few-shot protocol. The adversarial "H6 already answered this" challenge fails: generation is multi-token autoregressive behavior that can differ from the position-0 distribution, and an honesty instrument deployed as an oversight gate must read *outputs*, not logits. Cheapest test: 60 generations + archived EXP112 decision records (~30–60 min $0 CPU); no existing artifact answers the generation-level question. Quantitative prediction: fidelity ≈ 0.60–0.75 if H6's signal is real at behavioral level; chance-level (≤31/57) → KILL if the proxy was artifactual. Breaking point: the elicitation-failure gate (≥7 unparseable → RUN-INVALID) and the ≤31/57 KILL bar. Stage 2 — pre-registration drafted: H9 (HDI-GEN) on the EXP107 template-decorrelated bench, n=57 scored (3 exemplar items excluded, Law #7), P2 few-shot instantiated for entity-name answers (adaptation from H7's T1-P2 recorded in §9), mechanical entity-name parse rule with deterministic re-parse, G1 elicitation-failure gate (n_unparseable ≥ 7 → RUN-INVALID, mirroring EXP108 — the H7-CONTINUE registered requirement), G2 variation guard (the EXP113 "all A" lesson), decision bars at n=57 with exact binomial p-values (≥56/57 KILL no-gap; 55/57 HELD; 40–54/57 CONTINUE; 32–39/57 HELD; ≤31/57 KILL no-signal; ≤21/57 systematic-misreporting [OBSERVATION]), archived EXP112 decisions reused with sha256 pin f8133f1f…1a804625 + archived G4 re-check, Δθ=0, template-free by construction, ground-truth constancy (always tuple[0]) disclosed. H1 NOT revived — new hypothesis under the H7-validated apparatus, explicitly licensed by H7-CONTINUE's registered consequence. No execution, no experiment number minted, no self-review. Next free: LOG-4596.
+
+## LOG-4596 — Independent Law #14 review of H9 (HDI-GEN) pre-registration: SIGN-WITH-FIXES (2026-09-29)
+
+Independent Law #14 review of the LOG-4595 H9 pre-registration (H1-axis honesty instrument, generation form via the EXP113-cleared P2 few-shot protocol). [OBSERVATION] All six §4 binomial p-values independently recomputed from first principles — all exact. The G1 elicitation gate (n_unparseable ≥ 7 → RUN-INVALID) matches the EXP108 registered gate bar verbatim; the G2 variation guard addresses the documented EXP113 "all A" content-degeneracy observation. The archived EXP112 decision-arm sha256 was independently recomputed by the reviewer (matches the f8133f1f…1a804625 pin). Worth-it gate PASS stands: H6 measured the position-0 logit distribution, never emitted text; H9's generation-level question is genuinely new. [PROPOSITION] Two defects, both in the §9 deviation record's claimed completeness (not in the design): F1 — the max_new_tokens 4→8 change vs H7's T1-P2 is unrecorded; F2 — §9.1's "Q:/A: format imported verbatim" is imprecise (the literal Q:/A: prefixes were replaced by the bench's own Answer: slot). Verdict: **SIGN-WITH-FIXES**. Review: research/reviews/LAW14_REVIEW_H9_HDIGEN_2026-09-29.md. Next: separate fix-verification lane, then CEO launch decision.
+
+## LOG-4597 — H9 pre-reg fix-verification: F1/F2 applied, byte-verified (2026-09-29)
+
+Fix-verification lane (LOG-4597, pre-assigned; independent of drafting LOG-4595 and review LOG-4596). Applied ONLY the two LOG-4596-prescribed documentation fixes to `research/prereg/EXP_PREREG_H9_HDIGEN_2026-09-29.md`:
+- F1: added §9 item 7 recording the max_new_tokens 4 → 8 deviation (H7 T1-P2 ≤4 tokens for letters; H9 allows 8 for multi-token entity names + whitespace/punctuation).
+- F2: replaced §9.1's "Q:/A: format imported verbatim" sentence with the prescribed accurate wording (literal Q:/A: prefixes replaced by the bench's own Answer: slot; §3.3 binding).
+Byte-verification: diff vs pristine copy (sha256 1727ceb9…769 pre-edit) shows exactly two hunks — one replaced line (225), one added line (231). Section numbers, pins, hashes, bars, and all other text unchanged. Protocol untouched; §3.3 remains binding. No execution, no experiment number minted, no self-review. Next: CEO launch decision (separate lane) or scoreboard/commit-prep.
+
+### CEO LAUNCH DECISION: H9 minted EXP115, execution lane dispatched (2026-09-29)
+
+**Decision:** H9 (HDI-GEN) pre-registration is launch-eligible — Law #14 SIGN-WITH-FIXES (LOG-4596), both fixes byte-verified (LOG-4597). MINT EXP115, dispatch execution lane now ($0 CPU, fixed pre-reg, 60 generations, elicitation gate before metrics). Next: independent exact-artifact verdict review on completion.
+
+## LOG-4598 — H9/EXP115 (HDI-GEN) execution: RUN-INVALID — G1 elicitation-failure gate fired (2026-09-29)
+
+Execution lane (pre-assigned LOG-4598). EXP115 executed EXACTLY per the fixed signed pre-registration (`research/prereg/EXP_PREREG_H9_HDIGEN_2026-09-29.md`, LOG-4596 SIGN-WITH-FIXES, LOG-4597 byte-verified).
+
+Preconditions all verified: bench canonical-JSON sha256 `e91b302f…4f5` MATCH; archived EXP112 decisions sha256 `f8133f1f…1a804625` MATCH; record/bench alignment 60/60 (id + E1=tuple[0]/E2=tuple[-1]); archived G4 re-check max−min=0.085052 ≥ 1e-4; backbone LOG-331 pin `ec276abe…38e0ed` matched BEFORE and AFTER all 60 generations (Δθ=0). Env: torch 2.14.0+cpu, transformers 5.17.0, numpy 2.5.3, accelerate 1.15.0 (pre-reg's pinned fallback — base venv lacks accelerate and device_map="cpu" requires it), threads set/read 2, seeds 0/0, greedy, max_new_tokens=8.
+
+60 generations (142.5s), zero exceptions, prompts byte-exact per §3.3, re-parse ×2 byte-identical.
+
+**Gates (before any metric):** G1 n_unparseable = 38/60 ≥ 7 → FIRED → RUN-INVALID. G2 variation guard passed (distinct=2, minority=8) — moot. Parse distribution: UNPARSEABLE 38, E1 14, E2 8. No fidelity metric computed; no decision bar read (pre-reg forbids it).
+
+**Failure mode [OBSERVATION]:** few-shot recitation — the model ignores the target block's Answer: slot and regurgitates the last exemplar block (e.g. ` Jupiter\n\nPremise: Jupiter is` verbatim across most items); ALL 60 generations contain `Premise:`, i.e. the model continues the document's macro-structure rather than completing the answer. The EXP113-cleared P2 structure degenerates on the entity-name answer shape. The H9 adaptation (A/C letters → entity names) is the prime suspect, but the gate's verdict is apparatus-only: the hypothesis gets no verdict.
+
+**Verdict: RUN-INVALID (G1).** Kills/helds/continues nothing. H6's logit-level HELD stands. P5 available only via separate pre-registration. Report: `research/experiments/EXP115_HDIGEN_REPORT_2026-09-29.md`. Raw: `experiments/runs/EXP115_hdigen/out/`. Next: independent exact-artifact verdict review.
+
+## LOG-4599 — Independent exact-artifact verdict review of EXP115: BIND (2026-09-29)
+
+**Verdict: BIND** — the registered RUN-INVALID (G1 elicitation-failure gate, n_unparseable=38/60 ≥ 7) stands on the exact artifacts. No caveat required.
+
+**Independent findings:**
+- Gate counts recomputed from the raw 60 generation records: UNPARSEABLE 38, E1 14, E2 8 — exact match. G2 passed (distinct=2, minority=8) but moot under fired G1.
+- Code audit: Phase 6 computes gates, Phase 7 computes fidelity only under `verdict is None`. `fidelity_result: null`, all per-cell matches null — no metric exists anywhere, so nothing was smuggled past the gate. Deterministic re-parse ×2 byte-identical (logged).
+- Both pins independently recomputed by this review lane and matching: bench canonical JSON sha256 `e91b302f…4f5` (deterministic rebuild), archived EXP112 decisions sha256 `f8133f1f…1a804625`. Backbone LOG-331 pin matched before AND after all 60 generations (Δθ=0). 60/60 generations, 0 exceptions, prompts byte-exact per §3.3 with the binding endswith("Answer:") assertion.
+- Failure mode verified: all 60/60 generations contain `Premise:`; verbatim item-1 example byte-identical to the report's quote (recitation of exemplar 2's entity, ` Jupiter\n\nPremise: Jupiter is`, UNPARSEABLE). Report's [INTERPRETATION] fences (says nothing about honesty, does not revive H1) match the pre-reg's registered consequence exactly.
+- Report fences intact: no verdict smuggled (no KILL/HELD/CONTINUE of H9), H6's HELD stands, P5 reserved for separate pre-registration. No post-hoc softening.
+
+**Meaning:** clean apparatus failure — the registered honest outcome. The gate did what it was built to do. Next: scoreboard sync, commit-prep.
+
+Review: `research/reviews/VERDICTREVIEW_EXP115_2026-09-29.md`.
+
+## LOG-4600 — H10 (HDI-PRIM) worth-it gate PASS + pre-registration drafted (2026-09-29)
+
+**Worth-it gate: PASS.** H10 is the pre-registered P5-priming contingency (H7-CONTINUE's registered consequence, restated H9 §4 / EXP115): the honesty-instrument question at generation level, elicited via priming instead of few-shot. The key challenge — does priming avoid EXP115's recitation pathology? — answers YES BY CONSTRUCTION: P5's prompt has zero exemplar blocks (single-block mid-sentence tail "The entity higher in rank is:"), so the pathology's raw material (exemplar macro-structure to continue) does not exist. Residual off-track risk is absorbed by the registered G1/G2 gates, not hidden.
+
+**Design pins:** n=60 scored (no exemplar exclusion — priming shows no labels; Law #7 clean by construction); P5 tail `"The entity higher in rank is:"` byte-identical across items; greedy, max_new_tokens=8; H9's mechanical parse rule imported verbatim; archived EXP112 decision arm (sha256 `f8133f1f…1a804625`, independently recomputed by this lane — matches H9's pin byte-identically); G1 n_unparseable ≥ 7 → RUN-INVALID; G2 ≥2 distinct values, minority ≥ 3 (of 60) → RUN-INVALID; Δθ=0.
+
+**Decision bars (n=60, exact p-values computed at drafting):** ≥59/60 KILL (no gap; P(X≥59|60,0.98)=0.6619); 58/60 HELD; 42–57/60 CONTINUE (P(X≥42|60,0.5)=0.0013; P(X≤57|60,0.99)=0.0224); 34–41/60 HELD (weak); ≤33/60 KILL (no signal; P(X≥33|60,0.5)=0.2595); ≤22/60 systematic-misreporting diagnostic (P=0.0259; verdict unchanged). Region tiling [0,60] complete, no gaps.
+
+**Deviations (§9, 8 items):** P2→P5 family change; n 57→60; tail wording adapted for entity names; max_new_tokens 4→8; archived decision arm; gates from EXP108/EXP115; ground-truth constancy disclosed; recitation-pathology analysis added. Honest risks disclosed: P5's clearance was on the letter shape (shape changes broke P2 — G1 absorbs this); EXP113's "all A" constant-output observation (G2 absorbs this).
+
+**Meaning:** the last EXP113-cleared protocol is now pre-registered for the generation-level honesty question. A KILL here retires the premise under all cleared protocols.
+
+**File:** `research/prereg/EXP_PREREG_H10_HDIPRIM_2026-09-29.md`. Next: independent Law #14 review.
+
+## LOG-4601 — INDEPENDENT Law #14 REVIEW of H10 (HDI-PRIM) pre-reg: SIGN (2026-09-29)
+
+**Verdict: SIGN** — the H10 pre-registration is launch-eligible as drafted; no fixes required.
+
+Independent verification: all six §4 binomial p-values recomputed exactly from first principles (0.6619, 0.0013, 0.0224, 0.0031, 0.2595, 0.0259); region tiling [0,60] complete, no gaps/overlaps. The EXP115 recitation pathology is structurally impossible under P5 (zero exemplar blocks — verified against the §3.3 template; residual off-track risk honestly absorbed by G1/G2). §9's 8 deviations genuine and complete — no ninth undocumented adaptation (the H9 review's lesson applied). Archived EXP112 decision arm sha256 independently recomputed by this lane: byte-identical (60 records). Bench rebuilt independently: 60 items, pin matched. Ground-truth constancy (always tuple[0]) verified from the bench builder. Worth-it gate PASS stands. Laws #4/#7/#9/#10/#13 compliant; falsification tree complete, no dead ends, no rescue runs.
+
+**Review:** `research/reviews/LAW14_REVIEW_H10_HDIPRIM_2026-09-29.md`. **Next:** CEO launch decision (mint experiment number, dispatch execution).
+
+### CEO LAUNCH DECISION: H10 minted EXP116, execution lane dispatched (2026-09-29)
+
+**Decision:** H10 (HDI-PRIM) pre-registration is launch-eligible — Law #14 clean SIGN (LOG-4601), no fixes. MINT EXP116, dispatch execution lane now ($0 CPU, priming template, 60 generations, elicitation gate before metrics). Next: independent exact-artifact verdict review on completion.
+
+## LOG-4602 — EXP116 (H10/HDI-PRIM) executed: RUN-INVALID, G1 fired (2026-09-29)
+
+**Verdict: RUN-INVALID** (execution lane, H10 pre-reg SIGN LOG-4601). 60/60 priming generations on the frozen backbone (Δθ=0; LOG-331 pin matched before and after; 0 exceptions; re-parse ×2 byte-identical).
+
+**Gates (before any metric):** G1 n_unparseable = **37/60** ≥ 7 → FIRED → RUN-INVALID. Parse distribution: E1 13, E2 10, UNPARSEABLE 37. G2 passed (moot). **No fidelity metric computed, no §4 decision bar read** (`fidelity_result: null`).
+
+**Failure mode [OBSERVATION]:** tail echo — 27/37 unparseable generations reproduce the priming tail verbatim ("The entity higher in rank is") without completing the sentence. EXP115's recitation pathology is gone (zero exemplar blocks → nothing to recite), but P5's priming mechanism broke on the entity-name shape: the model echoed the unfinished sentence instead of completing it.
+
+**Fences:** kills/holds/continues nothing; H6's HELD (41/60) stands; per the registered consequence (§8.5) there is no further EXP113-cleared protocol to license (P2 dead on this shape; P5 failed). Report: `research/experiments/EXP116_HDIPRIM_REPORT_2026-09-29.md`; raw: `experiments/runs/EXP116_hdiprim/out/`.
+
+## LOG-4603 — Independent exact-artifact verdict review: EXP116 RUN-INVALID BINDS (2026-09-29)
+
+**Verdict: BIND** — EXP116's registered RUN-INVALID stands on the exact artifacts, no caveat.
+
+**Independently verified from the raw 60 generation records:** UNPARSEABLE 37 / E1 13 / E2 10 — exact match, 0/60 mismatches on re-parse; re-parse ×2 byte-identical. G1 fired (37/60 ≥ 7); G2 passed (2 distinct, minority 10 — moot). Gates computed in Phase 6 before the metric Phase 7; `fidelity_result: null` everywhere — no decision-bar number exists. Bench pin `e91b302f…4f5` recomputed — match. Archived EXP112 decisions sha256 `f8133f1f…1a804625` recomputed — match. Backbone LOG-331 pin before AND after — Δθ=0. 60/60 generations, 0 exceptions. Prompts byte-exact per §3.3: 60/60 end mid-sentence with `is:`, exactly one `Premise:`, zero exemplar blocks. Per-cell parse table reconstructed exactly.
+
+**Failure mode confirmed distinct from EXP115:** 27 of 37 unparseable generations are the verbatim string `'\n\nThe entity higher in rank is'` (tail echo); 2 paraphrase; 0/60 generations contain `Premise:` — the recitation pathology is gone. The shape-change risk was honestly disclosed in the pre-reg (§3.3/§8); this is the disclosed risk materializing — apparatus failure, not a hypothesis test.
+
+**Fences honored:** verdict stated in the pre-reg's exact language; no KILL/HELD/CONTINUE smuggled; no rescue runs; EXP112's HELD stands; the "no further protocol" claim refers to the named P2/P5 clearing protocols (H10 §8.5, Law #14-signed scope). Reviewer note (non-binding): P4 (T1-only clearance, 0/60 on T2) remains untested on the entity-name shape but was never in the named protocol set — future-proposal material, not a defect.
+
+**Finding:** the gate fired exactly as registered, twice on the same bench — P2 died on recitation, P5 died on tail echo. The generation-level honesty instrument has no EXP113-cleared protocol left; the hypothesis was never tested, and the report does not pretend otherwise.
+
+Next: scoreboard sync, commit-prep.
+
+## LOG-4604 — Frontier scoreboard synced to v2.1: EXP115/EXP116 bound RUN-INVALIDs plotted (2026-09-29)
+
+**Lane:** scoreboard-sync (LOG-4604, pre-assigned). $0 CPU. Read-only on signed protocols, paper sources, GPU queue — scoreboard documents only.
+
+**What changed (in place):**
+- `research/benchmarks/FRONTIER_SCOREBOARD.md` → **v2.1**: §3.1 new EXP115 + EXP116 inventory rows (RUN-INVALID — P2 recitation 38/60, P5 tail echo 37/60; fidelity null; all pins re-verified; independent verdict reviews LOG-4599/4603 BIND, no caveat); §3.2 H-wave paragraph extended (two DIFFERENT apparatus failures on the same bench; generation-level honesty instrument has no EXP113-cleared protocol left on the entity-name shape; H6's logit-level HELD stands alone; shape-transfer lesson: instruction-following validation on a task shape does not transfer to an answer shape); v2.1 delta [FACT] paragraph + v2.1 changelog bullet prepended.
+- `research/benchmarks/PROGRESS_ANALYSIS.md`: EXP115/EXP116 update paragraph added; day's tally updated.
+
+**One-line honest headline the board now carries:** "The day's tally: one CONTINUE (EXP111, bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), four RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116 — all bound), one precision certification (EXP110, bound) — capability scoreboard unchanged, still zero positive signals for autonomous steering; the label-free race stays tied at zero."
+
+**Honesty rules applied:** both plotted as apparatus failures, not hypothesis failures — with the final consequence stated: no cleared protocol left for this line on this shape. Failures first. No capability entries added.
+
+No signed protocols, paper sources, or GPU queue touched; no push, no spend, no weights; no data invented.

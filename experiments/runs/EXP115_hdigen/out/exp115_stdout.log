@@ -1,0 +1,12 @@
+[exp115] bench pin OK: e91b302f41f641c7... n=60
+[exp115] decisions pin OK; alignment 60/60; archived G4 max-min=0.085052
+[exp115] backbone pre-hash OK: ec276abe3902fab0... (Δθ=0)
+[exp115] 60 prompts built per §3.3; exemplar answers = E1 of items 0,1,2
+[exp115] progress: 20/60 generations, 48.4s elapsed, exceptions=0
+[exp115] progress: 40/60 generations, 96.1s elapsed, exceptions=0
+[exp115] progress: 60/60 generations, 142.5s elapsed, exceptions=0
+[exp115] generations done: 60/60, exceptions=0, 142.5s
+[exp115] backbone post-hash OK (Δθ=0)
+[exp115] re-parse ×2 byte-identical
+[exp115] G1: n_unparseable=38/60 (bar: >=7 -> RUN-INVALID)
+[exp115] G2: distinct=2, minority=8 (need >=2 distinct, minority>=3)

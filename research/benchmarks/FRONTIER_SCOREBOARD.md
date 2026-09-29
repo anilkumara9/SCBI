@@ -299,6 +299,8 @@ The same columns. Nothing cherry-picked; the demotions are stated first.
 | **EXP112** — **HELD**: honesty instrument in logit-readout form, zero generation (H6/HDI-LR) | First-token entity-name-logit self-report (argmax over two pinned token logits, single-token BPE 120/120, byte-exact QUESTION_SUFFIX — no new wording) vs registered cosine-argmax decision statistic, on the EXP107 template-decorrelated bench; zero generation — H1 explicitly NOT revived (new hypothesis under a new apparatus) | pythia-410m (frozen; 180 fresh single-token forwards; LOG-331 pin matched before AND after, Δθ=0); archived premise embeddings reused (three artifact hashes verified before use) | **Fidelity 41/60 = 0.6833** (P(X≥41\|60,0.5)=0.0031 — real above chance, below the decisive bar) → registered 34–41/60 band → **HELD**. Law #14-grade degeneracy guards ran **before** any metric read: G1 mean mass 0.301075 ≥ 0.01 (min 0.0685), G2 readout balance 27/33 — channel genuine, non-degenerate; a dead channel could not masquerade as a measurement. Descriptive per-cell: flipped-word cells 24/30 vs original-word cells 17/30 — registered [OBSERVATION], changes no verdict | 180 forwards, CPU, $0 | None (no training, no labels; template-free by construction) | — (instrument) | Y | **HELD (bound)** — weak honesty-decoding correlation at one read site; **licenses nothing, retires nothing, no re-runs** (Law #4); not consciousness, generality, or capability; novelty N1 | LOG-4575; `research/experiments/EXP112_HDILR_REPORT_2026-09-29.md`; independent verdict review LOG-4576 (BIND — no caveat) |
 | **EXP113** — **CONTINUE**: elicitation validation — at least one pinned protocol clears ≥80% mechanically-parseable structured outputs on both task shapes (H7/EVALID) | Instruction-following apparatus validation: T1 single-token answer (H1 self-report shape), T2 numbered outlines (H4 planner shape); 5 pinned protocols (P1 verbatim baselines, P2 few-shot, P3 explicit stop, P4 repetition penalty, P5 priming) | pythia-410m base (frozen), CPU, greedy decoding | **T1:** P1=0/60 (EXP108 echo path reproduced), P2=60/60, P3=0/60, P4=58/60, P5=60/60. **T2:** P1=24/60, P2=60/60, P3=0/60, P4=0/60 (penalty derails outlines), P5=60/60. Clearance bar ≥48/60 → T1-CLEAR={P2,P4,P5}, T2-CLEAR={P2,P5}, both non-empty → CONTINUE. Few-shot (P2) and priming (P5) are the only protocols clearing both shapes | 600 generations, CPU, $0 (first launch died at 180/600 on a VM reboot — no metric read; full re-run from scratch; crash log preserved; deterministic re-parse byte-identical; 0 exceptions; 2 empties scored UNPARSEABLE; no RUN-INVALID fired) | None (parseability metric; exemplars carry labels but the metric is parseability) | — (apparatus validation) | Y (LOG-331 pin before AND after, Δθ=0) | **CONTINUE (bound)** — licenses H1/H4 revival as NEW hypotheses with the named clearing protocols (each carrying its own elicitation-failure gate); does NOT revive H1/H4 themselves. **Methodological/apparatus entry, NOT capability**: parseable output ≠ reasoning, honesty, or capability; backbone-specific (base Pythia-410m, CPU, greedy); novelty N1 | LOG-4584; `research/experiments/EXP113_EVALID_REPORT_2026-09-29.md`; independent verdict review LOG-4585 (BIND — no caveat) |
 | **EXP114** — **KILL**: positional-order ensembling (H8/POE) — K=5 ensemble of frozen-backbone position logits over randomized presentation orders | Test-time ensembling over positional orderings of the EXP107 template-decorrelated 2-hop cloze bench; paired head-to-head against the canonical single-order baseline; 360/360 forward passes, zero generation | pythia-410m base (frozen), CPU, float32, logit readout at the pinned site | **acc_ensemble 38/60 = 0.6333 vs acc_baseline 41/60 = 0.6833; net (b−c) = −3 (b=2, c=5, n=7); one-sided exact McNemar p = 0.9375** — the ensemble scored 5pp BELOW the baseline. Registered bars: CONTINUE required p ≤ 0.05 with b > c — not met; HELD required net > 0 — not met; **net ≤ 0 → KILL** | 360 forward passes (300 ensemble K=5 order bits + 60 baseline), CPU, $0; order patterns independently replicated from random.Random(20260929), 0/60 mismatches | None (logit readout; no training, no labels touch the apparatus) | — (ensembling method, not transfer) | Y (LOG-331 pin before AND after all 360 forwards, Δθ=0) | **KILL (bound)** — retires only the positional-order-ensembling axis for this task class; test-time scaling in general and the adaptive-loop program are explicitly NOT retired. Below-baseline reading a labeled [OBSERVATION]; no post-hoc softening; novelty N1 | LOG-4591; `research/experiments/EXP114_POE_REPORT_2026-09-29.md`; independent verdict review LOG-4592 (BIND — no caveat) |
+| **EXP115** — **RUN-INVALID**: honesty instrument with generation-based self-reports, few-shot (P2) elicited (H9/HDI-GEN) | Few-shot self-report generations on the EXP107 template-decorrelated bench; registered gate n_unparseable ≥ 7 (of 60) → RUN-INVALID; fidelity vs archived EXP112 per-item decisions | pythia-410m base (frozen; 60 greedy generations; LOG-331 pin matched before AND after, Δθ=0); archived EXP112 per-item decisions reused (sha256 `f8133f1f…1a804625` independently re-verified by the execution lane); record/bench alignment 60/60; archived G4 re-check 0.085052 ≥ 1e-4 | **n_unparseable = 38/60 ≥ 7 → G1 FIRED** — failure mode: few-shot recitation (model regurgitates the last exemplar block; all 60 generations contain `Premise:` — e.g. ` Jupiter\n\nPremise: Jupiter is` verbatim from exemplar 2). G2 passed (moot). Fidelity **null** — no decision-bar number exists (gate evaluated before any metric, in code). Deterministic re-parse ×2 byte-identical; per-item generation records retained (the EXP108 lesson) | 60 generations, CPU, $0 | N/A (apparatus) | — (instrument never tested) | Y | **RUN-INVALID (apparatus, bound)** — the hypothesis was never tested; H6's logit-level HELD stands; P5 reserved for a separate pre-registration (the pre-reg's registered consequence); no verdict smuggled | LOG-4598; `research/experiments/EXP115_HDIGEN_REPORT_2026-09-29.md`; independent verdict review LOG-4599 (BIND — no caveat) |
+| **EXP116** — **RUN-INVALID**: honesty instrument with priming-protocol (P5) generation-based self-reports (H10/HDI-PRIM) | Priming-protocol self-report generations on the EXP107 template-decorrelated bench; single-block mid-sentence priming template (zero exemplar blocks — the EXP115 recitation pathology structurally blocked); registered G1/G2 gates before metrics; fidelity vs archived EXP112 decisions | pythia-410m base (frozen; 60 greedy generations, max_new_tokens=8; LOG-331 pin before AND after, Δθ=0); archived EXP112 decisions sha256 independently re-verified; bench pin `e91b302f…4f5` | **n_unparseable = 37/60 ≥ 7 → G1 FIRED** — new, *distinct* failure mode: tail echo (27 of the 37 unparseable echo the unfinished priming sentence `"\n\nThe entity higher in rank is"` verbatim; **0/60 generations contain `Premise:`** — recitation confirmed absent). G2 passed (moot). Fidelity **null** — not wrong, *absent*, exactly as the pre-reg requires. Prompts byte-exact: end mid-sentence with `is:`, exactly one `Premise:`, zero exemplar blocks. Shape-change risk disclosed in the pre-reg (§3.3, §8) — P5's 60/60 clearance was on the single-letter shape; this RUN-INVALID is the disclosed risk materializing | 60 generations, CPU, $0 | N/A (apparatus) | — (instrument never tested) | Y | **RUN-INVALID (apparatus, bound)** — two DIFFERENT apparatus failures on the same bench (recitation vs tail echo); **the generation-level honesty instrument has no EXP113-cleared protocol left on the entity-name shape** — P2 dead (EXP115), P5 dead (EXP116); the hypothesis was never tested. H6's logit-level HELD (41/60) stands alone as the only honesty signal. Reviewer note (non-binding): P4 (repetition penalty) cleared T1-only and was never in the named protocol set — future-proposal material, not a defect | LOG-4602; `research/experiments/EXP116_HDIPRIM_REPORT_2026-09-29.md`; independent verdict review LOG-4603 (BIND — no caveat) |
 
 ### 3.2 The program's position, stated without softening
 
@@ -420,6 +422,32 @@ backbone under pinned protocols: few-shot (P2) and priming (P5) clear ≥80%
 mechanically-parseable outputs on both the H1-shaped (T1) and H4-shaped (T2)
 tasks, which licenses H1/H4 revival as NEW hypotheses with the named clearing
 protocols (each carrying its own elicitation-failure gate) but revives neither. **H8 (EXP114)** — the positional-order-ensembling test-time-scaling axis — is cleanly dead: the K=5 ensemble scored **38/60 vs the canonical single-order baseline 41/60 (net −3, one-sided exact McNemar p=0.9375)**, firing the registered net ≤ 0 → KILL branch with no post-hoc re-interpretation. The fences hold: this retires only the positional-order-ensembling axis for this task class — test-time scaling in general and the adaptive-loop program are explicitly NOT retired. The 5pp below-baseline reading is a labeled [OBSERVATION]; no rescue is licensed or implied (LOG-4591 execution; independent verdict review LOG-4592 BIND, no caveat).
+
+**H9 (EXP115) and H10 (EXP116)** — the two EXP113-licensed honesty-instrument
+revival hypotheses — both died at the apparatus layer without ever testing
+the hypothesis, and the two deaths were *different* failures, each
+independently confirmed from the raw generations (independent exact-artifact
+verdict reviews LOG-4599/4603 — both BIND, no caveat): few-shot (P2)
+elicitation collapsed into recitation (n_unparseable = **38/60** ≥ 7; all 60
+generations contain `Premise:`, the last exemplar block regurgitated verbatim),
+while priming (P5) elicitation — structurally immune to recitation (zero
+exemplar blocks) — collapsed into tail echo (n_unparseable = **37/60** ≥ 7; 27
+of the 37 unparseable echo the unfinished priming sentence
+`"\n\nThe entity higher in rank is"` verbatim; 0/60 contain `Premise:` — recitation
+confirmed absent). Both failures were inside the pre-regs' disclosed risk
+envelopes; the gates fired before any metric was read (fidelity null, not
+wrong); all archive pins and the LOG-331 backbone pin (Δθ=0) independently
+re-verified. **Apparatus failures, not hypothesis failures — but the
+consequence is final for this line: the generation-level honesty instrument
+has no EXP113-cleared protocol left on the entity-name shape** (P2 dead on
+this shape, EXP115; P5 just failed, EXP116). H6's logit-level HELD (41/60)
+stands alone as the only honesty signal. The reports KILL, HELD, and CONTINUE
+nothing — no verdict was smuggled. The durable methodological update:
+instruction-following validation on a task *shape* does not transfer to an
+*answer* shape — P5's 60/60 clearance was on single letters, and the
+entity-name shape broke it (LOG-4603 reviewer note: P4, cleared T1-only, was
+never in the named protocol set and remains untested future-proposal material,
+not a defect in this report).
 Parseable output ≠ reasoning, honesty, or capability — a real methodological
 gain, not a capability signal. **Capability
 scoreboard: unchanged — still zero positive signals for autonomous
@@ -698,6 +726,33 @@ nor a kill. **Capability scoreboard: unchanged — still zero positive
 signals for autonomous steering; the label-free race stays tied at
 zero.** No literature re-check this cycle (next due 2026-10-23).
 
+**v2.1 delta [FACT], 2026-09-29:** plotted **EXP115 (H9/HDI-GEN)** and
+**EXP116 (H10/HDI-PRIM)** — both **RUN-INVALID** (independent exact-artifact
+verdict reviews LOG-4599 and LOG-4603 — both BIND, no caveat). The two
+EXP113-licensed honesty-instrument revival hypotheses died at the apparatus
+layer on the same bench via two DIFFERENT failures, each independently
+confirmed from the raw generations: EXP115 (few-shot P2 elicitation):
+n_unparseable = **38/60** ≥ 7 → G1 fired; failure mode few-shot recitation
+(last exemplar block regurgitated; all 60 generations contain `Premise:`).
+EXP116 (priming P5 elicitation, zero exemplar blocks — recitation
+structurally blocked): n_unparseable = **37/60** ≥ 7 → G1 fired; new failure
+mode tail echo (27 of 37 unparseable echo the unfinished priming sentence
+verbatim; 0/60 contain `Premise:` — recitation confirmed absent). Both
+failures inside the pre-regs' disclosed risk envelopes; both gates fired
+before any metric was read (fidelity null, not wrong); all archive pins and
+the LOG-331 backbone pin (Δθ=0) independently re-verified. **Apparatus
+failures, not hypothesis failures — but the consequence is final for this
+line:** the generation-level honesty instrument has no EXP113-cleared
+protocol left on the entity-name shape (P2 dead, EXP115; P5 dead, EXP116).
+H6's logit-level HELD (41/60) stands alone as the only honesty signal.
+**The day's tally, honestly: one CONTINUE (EXP111, bound), one HELD (EXP112,
+bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 —
+both bound), four RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116 — all bound),
+one precision certification (EXP110, bound).** **Capability scoreboard:
+unchanged — still zero positive signals for autonomous steering; the
+label-free race stays tied at zero.** No literature re-check this cycle
+(next due 2026-10-23).
+
 **v2.0 delta [FACT], 2026-09-29:** plotted **EXP114 (H8/POE)** —
 **KILL** (independent exact-artifact verdict review LOG-4592 — BIND, no
 caveat). The round-2 wave's first clean negative: positional-order
@@ -751,6 +806,28 @@ for this backbone under pinned protocols, a real methodological gain —
 still zero positive signals for autonomous steering; the label-free
 race stays tied at zero.** No literature re-check this cycle (next due
 2026-10-23).
+- v2.1 — 2026-09-29 (scoreboard-sync lane, LOG-4604): plotted **EXP115
+  (H9/HDI-GEN)** and **EXP116 (H10/HDI-PRIM)** — both **RUN-INVALID**
+  (independent exact-artifact verdict reviews LOG-4599/4603, both BIND, no
+  caveat). Two DIFFERENT apparatus failures on the same bench: P2 few-shot
+  elicitation died on recitation (n_unparseable = 38/60 ≥ 7; all 60
+  generations contain `Premise:`, the last exemplar block regurgitated
+  verbatim); P5 priming elicitation — zero exemplar blocks, recitation
+  structurally blocked — died on tail echo (n_unparseable = 37/60 ≥ 7; 27
+  of 37 unparseable echo the unfinished priming sentence verbatim; 0/60
+  contain `Premise:`). Both failures inside the pre-regs' disclosed risk
+  envelopes; both gates fired before any metric was read (fidelity null,
+  not wrong); all archive pins and the LOG-331 backbone pin (Δθ=0)
+  independently re-verified. **Apparatus failures, not hypothesis failures
+  — but the consequence is final for this line:** the generation-level
+  honesty instrument has no EXP113-cleared protocol left on the entity-name
+  shape; H6's logit-level HELD (41/60) stands alone as the only honesty
+  signal. The day's tally: one CONTINUE (EXP111), one HELD (EXP112), one
+  apparatus CONTINUE (EXP113), two KILLs (EXP107, EXP114), four
+  RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116), one precision certification
+  (EXP110). **Capability scoreboard: unchanged — still zero positive
+  signals for autonomous steering; the label-free race stays tied at zero.**
+  No literature re-check this cycle (next due 2026-10-23).
 - v2.0 — 2026-09-29 (scoreboard-sync lane, LOG-4593): plotted **EXP114
   (H8/POE) KILL** — K=5 positional-order ensemble 38/60 vs canonical
   single-order baseline 41/60 (net −3, one-sided McNemar p=0.9375;

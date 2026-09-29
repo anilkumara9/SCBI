@@ -110,6 +110,28 @@ review LOG-4592 — BIND, no caveat).
 apparatus CONTINUE (EXP113), two KILLs (EXP107, EXP114), two
 RUN-INVALIDs (EXP108, EXP109), one precision certification (EXP110).** The
 capability column stays at zero.
+**Update 2026-09-29:** EXP115 (H9/HDI-GEN) and EXP116 (H10/HDI-PRIM) — both
+**RUN-INVALID** — the two EXP113-licensed honesty-instrument revival
+hypotheses died at the apparatus layer on the same bench via two
+*different* failures, each independently confirmed from the raw generations
+(independent exact-artifact verdict reviews LOG-4599/4603 — both BIND, no
+caveat): few-shot (P2) elicitation collapsed into recitation
+(n_unparseable = **38/60** ≥ 7; all 60 generations contain `Premise:`, the
+last exemplar block regurgitated verbatim), while priming (P5) elicitation —
+with zero exemplar blocks, structurally immune to recitation — collapsed
+into tail echo (n_unparseable = **37/60** ≥ 7; 27 of the 37 unparseable
+echo the unfinished priming sentence verbatim; 0/60 contain `Premise:`).
+Both failures were inside the pre-regs' disclosed risk envelopes; the
+gates fired before any metric was read (fidelity null, not wrong). These
+are apparatus failures, not hypothesis failures — but the consequence is
+final for this line: **the generation-level honesty instrument has no
+EXP113-cleared protocol left on the entity-name shape** (P2 dead, EXP115;
+P5 dead, EXP116). H6's logit-level HELD (41/60) stands alone as the only
+honesty signal. The reports KILL, HELD, and CONTINUE nothing.
+**The day's tally: one CONTINUE (EXP111), one HELD (EXP112), one apparatus
+CONTINUE (EXP113), two KILLs (EXP107, EXP114), four RUN-INVALIDs (EXP108,
+EXP109, EXP115, EXP116), one precision certification (EXP110).** The
+capability column stays at zero.
 
 **What closes it.** The §D2 six-condition bar: per-instance construction,
 transfer-validated evaluator, matched-compute wins over ∇-Reasoner /
