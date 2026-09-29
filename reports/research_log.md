@@ -14052,3 +14052,62 @@ Committed the scoreboard v3.7 wave locally: commit `3651ecf` on branch `sync/202
 2. **Steerable but Not Decodable** (arXiv:2604.02608; README re-surfaced 26 Sep): the converse dissociation of the program's headline — FV steering succeeds where the logit lens cannot decode (4,032 pairs, 12 tasks, 6 models, 3 families; gaps to −0.91). Independent convergent evidence for the v82/v83 boundary narrative; cite in related work alongside arXiv:2609.06951.
 
 Also logged: Disentangling Steering Vectors (2609.07037), Steering Geometry / Schwartz circumplex (2609.06289), Cylindrical Representation Hypothesis (ICML 2026), UCSD steering technique (Belkin), confidence-steering causal study, CoRefine (2602.08948), ReProbe, Beyond Decodability encoding probe (2605.00607v2), second-order synaptic motifs / Jacobian bulk (2609.14251 — participation-ratio diagnostic as a future TGA-lane watch item), J-space workspace summary.
+
+## LOG-4752 — Commit-prep: frontier-sweep wave committed locally (2026-09-30)
+
+**Lane:** LOG-4752 (pre-assigned). **Scope:** `research/benchmarks/FRONTIER_SWEEP_2026-09-30.md` (LOG-4751, new) + `reports/research_log.md` (LOG-4750 + LOG-4751 entries; LOG-4750's append rode this cycle per convention).
+
+**Commit:** `0da37a4` — `feat(frontier): daily sweep 2026-09-30 — 12 candidates, GEOSTEER watch item`, branch `sync/2026-09-29-consolidated`, 2 files, +112 insertions, zero deletions. Staged set verified wave-only before commit (`git status --short` showed exactly the two wave files; `git diff --cached` matched).
+
+**Divergence check: CLEAN.** Heading-anchored full numeric LOG comparison: main tree 631 headings (max 4751) vs worktree `sync-log4393-4465` 352 headings (max 4466) — zero worktree LOG numbers missing from main.
+
+**Push: NOT attempted.** Pushes/PRs remain founder-reserved with a fresh founder-supplied token (none supplied). Research log append-only; no stash, move, or rewrite used.
+
+## LOG-4753 — v84 change-plan draft: frontier-sweep related-work additions (2026-09-30)
+
+**Lane:** LOG-4753 (pre-assigned). **Scope:** paper only; $0 CPU. **Status: DRAFT — licenses nothing.**
+
+Drafted `research/paper/V84_CHANGE_PLAN_SWEEP_2026-09-30.md` for the v84 release candidate (main + IEEE editions; v82/v83 frozen). Admits two LOG-4751 sweep items: (1) "Steerable but Not Decodable" (Nadaf, arXiv:2604.02608) as the converse dissociation — cite in the converging-evidence paragraph (main §related-work; IEEE sec-discussion.tex) alongside arXiv:2609.06951; (2) GEOSTEER (Ngo/Vo/Le, arXiv:2609.10658) as a named future-work watch item — the licensed escalation instrument class if EXP131's one-shot v₁ injection nulls (main §future-work; IEEE sec-conclusion.tex). Both admitted as sentences only: no figure changes, no claim changes, no new numbered claims, boxed bets summary and closing line verbatim. Bibliography: two new entries (keys `nadaf2026`, `ngo2026`; no collisions in either refs.bib; fields sweep-verified, not re-hit this lane). Regression checklist included for the implementation + review lanes.
+
+**Next:** independent Law #14 exact-version review of the plan → CEO clearance → implementation → rebuild verification.
+
+## LOG-4754 — Law #14 independent review of v84 change plan: SIGN-WITH-FIXES (2026-09-30)
+
+**Lane:** LOG-4754 (pre-assigned). **Scope:** independent exact-version review of
+`research/paper/V84_CHANGE_PLAN_SWEEP_2026-09-30.md` (SHA-256
+`191cb6b37149f359d22450a40e96bfbd7a3b0b99265d92a478392c6fbd3b372b` — hashed by
+the reviewer before reading). $0 CPU, paper only; v82/v83/v84 sources read-only,
+untouched.
+
+**Verdict: SIGN-WITH-FIXES.** The plan is sound and signable after three
+launch-gating citation fixes (Law #3). Both arXiv abstracts independently
+re-fetched 2026-09-30.
+
+**Independently verified:** arXiv:2604.02608 title/authors (Mohammed Suhail B
+Nadaf)/12-tasks-6-models-3-families/4,032 pairs/3-of-72 converse cell/FV-as-
+computational-instructions; arXiv:2609.10658 authors (Ngo/Vo/Le)/9-Sep-2026/
+Riemannian-geodesic formulation/learned nonlinear objective/TruthfulQA-
+RealToxicityPrompts-UltraFeedback/SOTA-baseline improvement. All four insertion
+points exist in v84 sources with text matching the plan's quotes verbatim
+(main converging-evidence paragraph; IEEE novelty-and-position paragraph; main
+`\section{Future work: three bets, one horizon}` + `\label{sec:future}` opening
+line; IEEE sec-conclusion future-work paragraph). Bibliography keys
+`nadaf2026`/`ngo2026`: no collisions in either refs.bib. No new numbered
+claims; GEOSTEER framed strictly as a watch item, never a claim or license;
+no figure changes; regression checklist complete and honest; scope held.
+
+**Numbered fixes required:** FIX-1 — Nadaf version history: "v2 Aug 2026" is
+wrong; arXiv shows v2 last revised 8 May 2026 → "v2 May 2026". FIX-2 — the
+"−0.91" gap number is unverified (absent from the paper's full text and
+abstract; originates in the sweep report) → remove, replace with
+abstract-verified language (>0.90 steering accuracy with incoherent unembedding
+projection). FIX-3 — GEOSTEER bibtex/plan title must read "…in Large Language
+Models", not "…in LLMs".
+
+**Observation (not a fix):** the same two field errors originate in the signed
+LOG-4751 sweep report (lines 59–60); correcting it needs a dedicated erratum
+lane — recommended, outside this review's scope.
+
+**Next:** fix-verification of FIX-1…FIX-3 → CEO clearance → implementation lane
+→ rebuild verification. Review:
+`research/reviews/LAW14_REVIEW_V84_CHANGEPLAN_SWEEP_2026-09-30.md`.
