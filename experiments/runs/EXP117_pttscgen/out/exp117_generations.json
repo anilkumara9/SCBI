@@ -1,0 +1,164 @@
+{
+ "generations": [
+  {
+   "arm": "phase0a_planner",
+   "item_idx": 0,
+   "prompt_sha256": "1e7da50d047544647b7f8ed082e8379a55f77d0acfd484f0fef049eec9594768",
+   "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Mars outranks Venus. Venus outranks Saturn. Question: Who is higher in rank, Saturn or Mars? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.",
+   "n_new_tokens": 160,
+   "exception": null
+  },
+  {
+   "arm": "phase0a_planner",
+   "item_idx": 1,
+   "prompt_sha256": "c913891bc4f95c54e2fbd01d526dfc3e3541902b274c9bbac5c7f13e778201d5",
+   "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Jupiter outranks Mercury. Mercury outranks Venus. Question: Who is higher in rank, Mercury or Venus? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.",
+   "n_new_tokens": 160,
+   "exception": null
+  },
+  {
+   "arm": "phase0a_planner",
+   "item_idx": 2,
+   "prompt_sha256": "980d19a0e0691c0cca6398b6ae501dc474d83ed96b7991124e37d92568d5c5f9",
+   "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Mercury outranks Venus. Venus outranks Jupiter. Jupiter outranks Mercury. Question: Who is higher in rank, Mercury or Venus? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement",
+   "n_new_tokens": 160,
+   "exception": null
+  },
+  {
+   "arm": "phase0a_planner",
+   "item_idx": 5,
+   "prompt_sha256": "19a66ecada2bbf801f95bccbe7094a2c9b9d3eaf9e798ac5795ffda95198182c",
+   "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Mercury outranks Venus. Venus outranks Saturn. Question: Who is higher in rank, Venus or Mercury? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.",
+   "n_new_tokens": 160,
+   "exception": null
+  },
+  {
+   "arm": "phase0a_planner",
+   "item_idx": 6,
+   "prompt_sha256": "6e59ea0e26e5519948389bd9042e66dbc04b3b2d2b5bf3fe2e278635ee98f6ca",
+   "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Mars outranks Venus. Venus outranks Saturn. Question: Who is higher in rank, Saturn or Mars? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.",
+   "n_new_tokens": 160,
+   "exception": null
+  },
+  {
+   "arm": "phase0a_planner",
+   "item_idx": 7,
+   "prompt_sha256": "c4f78ee8196bf852d6f1bd143383c68b09d3dc54e9a92de7304fcba72bf4255f",
+   "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Mercury outranks Jupiter. Jupiter outranks Mercury. Question: Who is higher in rank, Mercury or Jupiter? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.",
+   "n_new_tokens": 160,
+   "exception": null
+  },
+  {
+   "arm": "phase0a_planner",
+   "item_idx": 8,
+   "prompt_sha256": "57d81a56751ab90b01793d1ae718727949152585ce2d8c5de0dc419964e6be14",
+   "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Jupiter is higher than Mercury. Mercury is higher than Venus. Question: Who is higher in rank, Jupiter or Mercury? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.",
+   "n_new_tokens": 160,
+   "exception": null
+  },
+  {
+   "arm": "phase0a_planner",
+   "item_idx": 9,
+   "prompt_sha256": "a7e475ad47ecace4ae2b5e6492179d22753438afa2ca56b142d60fabae1dbcf3",
+   "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Jupiter is higher than Mercury. Mercury is higher than Venus. Question: Who is higher in rank, Jupiter or Mercury? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.",
+   "n_new_tokens": 160,
+   "exception": null
+  },
+  {
+   "arm": "phase0a_planner",
+   "item_idx": 10,
+   "prompt_sha256": "a4b8f03cb713e635e854334276c664b053964168ab1a2ae8fa365ae657ee8dde",
+   "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Mercury is lower than Venus. Venus is lower than Mars. Question: Who is higher in rank, Mercury or Mars? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.",
+   "n_new_tokens": 160,
+   "exception": null
+  },
+  {
+   "arm": "phase0a_planner",
+   "item_idx": 11,
+   "prompt_sha256": "8a04a900a44fc44baac936ace259cef5aeb26a00646a11d9816b437de543af23",
+   "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Jupiter is lower than Venus. Venus is lower than Saturn. Question: Who is higher in rank, Venus or Saturn? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.",
+   "n_new_tokens": 160,
+   "exception": null
+  },
+  {
+   "arm": "phase0b_baseline",
+   "item_idx": 0,
+   "prompt_sha256": "1a326d1eb67edc4dbdd999272ffe76005287b860ea5de4ed6b2b579dc8deca18",
+   "output": "\n\n1. Jupiter\n\n2. Mars\n\n3. Venus\n",
+   "n_new_tokens": 16,
+   "exception": null
+  },
+  {
+   "arm": "phase0b_baseline",
+   "item_idx": 1,
+   "prompt_sha256": "464ca80d1aae0f5d70b6b94c0e0f1468a06ac2b6619421f7ca1e667c7d0c1b81",
+   "output": "\n\n1. Jupiter\n\n2. Saturn\n\n3. Venus\n",
+   "n_new_tokens": 16,
+   "exception": null
+  },
+  {
+   "arm": "phase0b_baseline",
+   "item_idx": 2,
+   "prompt_sha256": "2cad1df97fd2ddf8fb20860732defebd3c1d42580d581be4574fccb8aff23bf1",
+   "output": "\n\nMercury\n\nMercury is the highest-ranked",
+   "n_new_tokens": 16,
+   "exception": null
+  },
+  {
+   "arm": "phase0b_baseline",
+   "item_idx": 5,
+   "prompt_sha256": "d3e69477770f13244220d3372e878b292e38a1be4326df508b61c26c63685f70",
+   "output": "\n\n1. Venus\n\n2. Mercury\n\n3. Saturn\n",
+   "n_new_tokens": 16,
+   "exception": null
+  },
+  {
+   "arm": "phase0b_baseline",
+   "item_idx": 6,
+   "prompt_sha256": "ccb541df4b3f16f2f525ad30a8ab914421a36e430a333f7c9c4cc6bd31ea3aa3",
+   "output": "\n\n1. Jupiter\n\n2. Saturn\n\n3. Mars\n",
+   "n_new_tokens": 16,
+   "exception": null
+  },
+  {
+   "arm": "phase0b_baseline",
+   "item_idx": 7,
+   "prompt_sha256": "eca65fa8f947cc4fa8a09fc03454fb1ca776eb376a68991f7285b4878757b871",
+   "output": "\n\nVenus\n\nVenus is the highest-ranked entity.",
+   "n_new_tokens": 16,
+   "exception": null
+  },
+  {
+   "arm": "phase0b_baseline",
+   "item_idx": 8,
+   "prompt_sha256": "8f59c6dfd1677756da2886b8e082c71ed11c6639c2255bd8b266ee26c8be7e85",
+   "output": "\n\nMercury\n\nMercury is lower than Saturn. Saturn",
+   "n_new_tokens": 16,
+   "exception": null
+  },
+  {
+   "arm": "phase0b_baseline",
+   "item_idx": 9,
+   "prompt_sha256": "76b034fe0370318e5324fd90a6ffab09dcd43c4d9e581c246a13425278f1ce93",
+   "output": "\n\nMercury\n\nMercury is lower than Venus. Venus",
+   "n_new_tokens": 16,
+   "exception": null
+  },
+  {
+   "arm": "phase0b_baseline",
+   "item_idx": 10,
+   "prompt_sha256": "da86ff4776aee4e9b48bf6af1d57c6e773fd0f837b56aaf128cafb6ca032609b",
+   "output": "\n\nJupiter\n\nThe lower-ranked entity is:\n\n",
+   "n_new_tokens": 16,
+   "exception": null
+  },
+  {
+   "arm": "phase0b_baseline",
+   "item_idx": 11,
+   "prompt_sha256": "9bcbe81ec4911279ceb456689a8eeef9e4d23046ae13a40551451f77fcb15bc0",
+   "output": "\n\n1. Saturn\n\n2. Jupiter\n\n3. Venus\n",
+   "n_new_tokens": 16,
+   "exception": null
+  }
+ ]
+}

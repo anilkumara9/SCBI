@@ -1,0 +1,14 @@
+[09:51:17] bench provenance sha256: 47281cd3dc243369... (expect 47281cd3dc243369...)
+[09:51:17] bench built: len=60
+[09:51:17] loading tokenizer + model from /home/hatch/workspace/.exp086_weights/pythia-410m
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<02:15,  2.16it/s]Loading weights:   4%|▍         | 12/292 [00:00<00:10, 26.79it/s]Loading weights:   8%|▊         | 24/292 [00:00<00:05, 45.11it/s]Loading weights:  13%|█▎        | 38/292 [00:00<00:03, 63.92it/s]Loading weights:  17%|█▋        | 50/292 [00:00<00:03, 77.26it/s]Loading weights:  23%|██▎       | 68/292 [00:01<00:02, 103.69it/s]Loading weights:  28%|██▊       | 81/292 [00:01<00:02, 96.01it/s] Loading weights:  33%|███▎      | 96/292 [00:01<00:01, 101.57it/s]Loading weights:  39%|███▉      | 114/292 [00:01<00:01, 112.00it/s]Loading weights:  46%|████▌     | 134/292 [00:01<00:01, 129.52it/s]Loading weights:  52%|█████▏    | 153/292 [00:01<00:00, 139.83it/s]Loading weights:  58%|█████▊    | 168/292 [00:01<00:01, 103.36it/s]Loading weights:  62%|██████▏   | 181/292 [00:02<00:01, 88.08it/s] Loading weights:  66%|██████▌   | 192/292 [00:02<00:01, 72.71it/s]Loading weights:  70%|██████▉   | 204/292 [00:02<00:01, 74.40it/s]Loading weights:  75%|███████▍  | 218/292 [00:02<00:00, 80.36it/s]Loading weights:  82%|████████▏ | 240/292 [00:02<00:00, 108.15it/s]Loading weights:  87%|████████▋ | 253/292 [00:02<00:00, 91.78it/s] Loading weights:  90%|█████████ | 264/292 [00:03<00:00, 91.06it/s]Loading weights:  95%|█████████▍| 276/292 [00:03<00:00, 90.69it/s]Loading weights: 100%|██████████| 292/292 [00:03<00:00, 88.39it/s]
+[09:51:31] backbone hash BEFORE: ec276abe3902fab0... (expect ec276abe3902fab0...)
+[09:51:31] planner prompt byte-identity vs EXP113 T2-P2 reference: 0/60 mismatches
+[09:51:31] Phase 0a: recitation check on 10 probe items
+[09:56:38] Phase 0a: recited items (literal §3.7 definition) = 0/10 (gate: >=6 -> RUN-INVALID); diag mean max overlap = 0.7054
+[09:56:38] Phase 0a DIAGNOSTIC: items with >=2 content-level verbatim recitations = 10/10 (does NOT fire the gate; reports the marker-strip blind spot)
+[09:56:38] Phase 0b: decision-channel mini-gate on 10 probe items
+[09:57:07] Phase 0b: parseable = 0/10 (gate: <8 -> RUN-INVALID); distinct=0, minority=0 (gate: <2 distinct or minority<2 -> RUN-INVALID)
+[09:57:07] FINAL VERDICT: RUN-INVALID (Phase 0b: no generation decision channel on this bench/shape)
+wall time: 5.8 min

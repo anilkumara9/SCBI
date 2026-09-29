@@ -11697,3 +11697,90 @@ Next: scoreboard sync, commit-prep.
 **Honesty rules applied:** both plotted as apparatus failures, not hypothesis failures — with the final consequence stated: no cleared protocol left for this line on this shape. Failures first. No capability entries added.
 
 No signed protocols, paper sources, or GPU queue touched; no push, no spend, no weights; no data invented.
+
+## LOG-4605 — commit-prep: H9/H10 wave artifacts committed (2026-09-29)
+
+**Commit:** `a2fc64e` on branch `sync/2026-09-29-consolidated` — 19 files, 2728 insertions(+). Contents: LOG-4594→LOG-4604 artifacts — H9/H10 pre-registrations + Law #14 reviews (LOG-4595/4596 SIGN-WITH-FIXES, LOG-4600/4601 clean SIGN), EXP115/EXP116 run dirs and reports (both RUN-INVALID), verdict reviews BIND (LOG-4599, 4603), scoreboard v2.1 (LOG-4604), log entries. Weight exclusion verified (no *.safetensors/*.bin present; run dirs are scripts/logs/generations only). Divergence check CLEAN (0 worktree LOG numbers missing from main). NOT pushed — awaiting the user's fresh one-use token.
+
+## LOG-4606 — H11 (PTTSC-GEN) worth-it gate PASS + pre-registration drafted (2026-09-29)
+
+**Lane:** worth-it-gate + pre-reg drafting (LOG-4606 pre-assigned). $0 CPU. Read-only on signed artifacts.
+
+**Gate verdict: PASS.** H11 asks the question EXP109 posed but could not test (RUN-INVALID, n_valid=0): does plan-conditioning improve decisions? — with a re-derived apparatus on both arms: planner = H7's T2-P2 few-shot protocol imported byte-verbatim (EXP113 cleared 60/60 outlines on this exact bench; EXP109's verbatim T2-P1 degenerated 18/20), executor/baseline = greedy priming entity-name slot (all EXP113 clearances were greedy; EXP109's sampled baseline failed 80/80). The two binding unknowns are front-loaded into cheap Phase-0 gates (~20 generations): (0a) planner recitation check — T2-P2's 60/60 was mechanical-parse only and verbatim exemplar recitation would pass it (the EXP115 pathology applied to outlines); ≥6/10 probe items with ≥2 verbatim-recited outlines → RUN-INVALID; (0b) decision-channel mini-gate — the entity-name slot failed 3/3 priors (EXP109/115/116); <8/10 parseable or degenerate variation → RUN-INVALID. Full n=60 run only if both pass; elicitation gate n_valid ≥ 48/60 (the 80% EXP113 threshold).
+
+**Key design decisions (all in §8, 11 adaptations, no omissions):** greedy throughout (no sampling variation → H4's 4-sample baseline becomes 1 generation; the matched-budget planning-premium framing is dropped for pipeline-vs-baseline with the compute confound disclosed as a fence — a CONTINUE licenses the pipeline as an adaptive-loop component, NOT planning-vs-compute attribution); McNemar one-sided bars with (5,0)→p=0.03125 minimum CONTINUE; KILL = net ≤ 0; HELD = net > 0, p > 0.05; no rescue runs. Bench provenance pin 47281cd3…0585 and LOG-331 backbone pin re-verified; planner prompts byte-verified against EXP113's raw T2-P2 records.
+
+**Honest risks disclosed:** Phase 0b is the binding constraint (most likely RUN-INVALID — itself a boundary finding: no generation decision channel on the program's standard bench); the verbatim-recitation criterion has a paraphrase blind spot (diagnostic only); outline quality unmeasured.
+
+**Files:** `research/prereg/EXP_PREREG_H11_PTTSCGEN_2026-09-29.md`. Next: independent Law #14 review (separate lane).
+
+## LOG-4607 — Independent Law #14 review of H11 (PTTSC-GEN) pre-registration: SIGN-WITH-FIXES (2026-09-29)
+
+**Lane [FACT]:** pre-assigned LOG-4607, independent review lane. Independent of the LOG-4606 drafting lane. $0 CPU. Read-only everywhere except this review and this log entry.
+
+**Artifact:** `research/prereg/EXP_PREREG_H11_PTTSCGEN_2026-09-29.md` (exact file; no other version).
+
+**Verdict: SIGN-WITH-FIXES.** One documentation-precision fix (FIX-1), no design flaw; the protocol (§3.3) is unaffected.
+
+**Independently verified:**
+- All seven §4 McNemar one-sided p-values recomputed from first principles — exact ((5,0)→0.03125, (4,0)→0.0625, (6,0)→0.015625, (6,1)→0.0625, (7,1)→0.03515625, (9,2)→0.03271484375, (8,3)→0.11328125); region tiling gapless; net-+5 (4,0)/(6,1) correctly HELD — no razor-thin CONTINUE.
+- T2-P2 import byte-verbatim vs H7 §3.3 (TAIL, OUTLINES, block(i), exemplars 3/4, generation spec); byte-verification vs exp113_raw.json operationally pinned (reference path + mismatch→RUN-INVALID).
+- Phase-0a recitation rule mechanically decidable (exact strip+casefold match vs 4 pinned exemplars; ≥2 recited outlines → item recited; ≥6/10 → RUN-INVALID); the recitation rationale is sound (EXP115 showed verbatim recitation passes mechanical parse rules; EXP113's T2-P2 60/60 clearance was parse-only).
+- Phase-0b numbers honestly calibrated against the three cited priors (EXP109 80/80 sampled unparseable; EXP115 38/60; EXP116 37/60 — verified against the reports); no p-value license claimed for the operational gates; paraphrase-recitation blind spot disclosed.
+- 48/60 gate matches EXP113's 80% clearance threshold.
+- Honesty fence airtight (§3.9/§7.1): matched-budget framing dropped with the greedy reason stated; ~2.7× token asymmetry disclosed (≤14,400 tokens verified); CONTINUE licenses the pipeline as an adaptive-loop component only — planning-vs-compute attribution explicitly unlicensed; foil tie-break (conservative) preserved.
+- Bench provenance pin re-verified byte-exact (sha256 of exp077_instance_records.json = 47281cd3…0585); bench rebuilt verbatim (60 items, 60/60 distinct prompts, 10/10 distinct probe prompts).
+- H4 §1.1 claims verified verbatim (greedy planner 160 tokens; temp=0.7/top_p=0.9 executor/baseline; 4 baseline samples; matched budget; n=20 pilot; 20−n_valid≥3 gate; LOG-4547 chain).
+- Worth-it gate PASS: EXP109's RUN-INVALID means the planning hypothesis was never tested (its own §5 says so); EXP113's CONTINUE explicitly licenses this lane; both arms' apparatus differ from H4 — not a re-run.
+- Laws #4/#7/#9/#10/#13 comply; falsification tree complete (every branch terminates; "No rescue runs" bars unlicensed tweaks).
+
+**FIX-1 (required before launch):** §8 omits the item-valid/arm-valid rule adaptation. H4 §3.8: item valid iff planner arm valid + executor arm valid + baseline arm valid, with H4 §3.5's per-arm "≥ 3 parseable votes" rule (4 executor + 4 baseline generations/item). H11 §3.8: planner-valid (§3.3) AND ≥2 executor votes parseable AND baseline parseable. With H11's generation counts (2–4 executor, 1 baseline), H4's ≥3-of-4 per-arm rule is arithmetically impossible — the threshold change is a forced consequence of adaptations 2 and 4, but it is a real spec difference the completeness claim misses. Insert as new §8 item 10 (renumber the H7 "No change" item to 11) with the review's exact wording (see LAW14_REVIEW_H11_PTTSCGEN_2026-09-29.md).
+
+**Next:** fix-verification lane (byte-verified, only FIX-1), then CEO launch decision. This lane stops here.
+
+## LOG-4608 — H11 pre-reg fix-verification (Law #14 FIX-1): item-valid/arm-valid rule recorded (2026-09-29)
+
+[FACT] Fix-verification lane (LOG-4608, pre-assigned), independent of the drafting and review lanes. $0 CPU.
+[FACT] The independent Law #14 review (LOG-4607) returned SIGN-WITH-FIXES with exactly one documentation-precision fix (FIX-1: §8 omits the item-valid/arm-valid rule adaptation); no design flaw.
+[OBSERVATION] Applied FIX-1 verbatim at the review's prescribed location: new item 10 appended to the "From H4's pre-registered design" list in §8 (recording H4's per-arm "≥ 3 parseable votes" → H11's planner-valid + ≥2 executor votes parseable + baseline parseable); existing "From H7's T2-P2 spec: 10. No change" renumbered to 11.
+[FACT] Byte-verification: `diff` against the pristine copy (sha256 `d2b9a6d6…43be7d`, 260 lines) shows exactly two hunks — the one-line item-10 insertion and the `10.` → `11.` renumber; no other line changed. New file sha256 `9f720b80…c208a2` (261 lines). Section numbers, pins, hashes, and decision bars all byte-identical.
+[FACT] The review's exact complaint (the §8 completeness claim broken by the omitted item-validity adaptation) is resolved; the §8 list is now complete.
+[FACT] Lane boundaries held: no execution, no experiment number minted, no signed protocol beyond this prescribed fix edited, no self-review. The CEO launch decision and experiment-number minting remain separate later lanes. Next free: LOG-4609.
+
+### CEO LAUNCH DECISION: H11 minted EXP117, execution lane dispatched (2026-09-29)
+
+**Decision:** H11 (PTTSC-GEN) pre-registration is launch-eligible — Law #14 SIGN-WITH-FIXES (LOG-4607), FIX-1 byte-verified (LOG-4608). MINT EXP117, dispatch execution lane now ($0 CPU, T2-P2 planner byte-verbatim, Phase-0 gates before the full run). Next: independent exact-artifact verdict review on completion.
+
+## LOG-4609 — EXP117 (H11/PTTSC-GEN) executed: RUN-INVALID at Phase 0b (2026-09-29)
+
+**Verdict: RUN-INVALID** — the Phase-0b decision-channel mini-gate fired: 0/10 probe items parseable on the priming entity-name slot (gate: <8/10). No full run licensed; no metric computed; the planning hypothesis gets no verdict.
+
+**Preconditions (all verified before any generation):** bench provenance pin MATCH (len=60); backbone LOG-331 pin matched before first generation (Δθ=0); the 60 §3.3 planner prompts byte-identical (0/60 mismatches) to the reference implementation of EXP113's signed exp113_run.py T2-P2 construction (the raw JSON stores no prompts, so the byte-identity is against the signed script — disclosed). Environment: torch==2.14.0+cpu, transformers==5.17.0, numpy==2.5.3, accelerate==1.15.0, device_map="cpu" honored exactly, greedy, seeds 0/0, threads 2/2.
+
+**Phase 0a (recitation check):** literal §3.7 gate = 0/10 recited (gate ≥6) — did not fire. **Protocol-defect discovery:** the literal definition (exact match vs marker-prefixed exemplar lines) cannot fire on verbatim content recitation because extraction strips the markers — verified by construction and confirmed empirically: content-level diagnostic = 10/10 items with ≥2 verbatim-content recitations; the planner recited the exemplar block on every probe item while the literal gate scored 0/10. Paraphrase diagnostic (registered): mean max token-overlap 0.7054. Applied the gate as written (Law #4); the bindingness is for the independent verdict review to adjudicate.
+
+**Phase 0b (decision-channel mini-gate):** 0/10 parseable; distinct=0, minority=0. Failure mode: the model enumerates entities as a list ("\n\n1. Jupiter\n\n2. Mars\n\n3. Venus\n") instead of naming one — the exact-match parse rule scores it UNPARSEABLE. 4th consecutive entity-name-slot generation failure (EXP109 80/80, EXP115 38/60, EXP116 37/60, EXP117 0/10 here). 20/20 generations completed, 0 exceptions, 5.8 min wall time.
+
+**Falsification branch:** bench ok → backbone pin (pre) ok → prompts byte-verified ok → Phase 0a literal pass → Phase 0b 0/10 <8 → RUN-INVALID (no generation decision channel on this bench/shape; not a verdict about planning).
+
+**Report:** research/experiments/EXP117_PTTSCGEN_REPORT_2026-09-29.md. **Raw:** experiments/runs/EXP117_pttscgen/out/ (exp117_execute.py, exp117_generations.json, exp117_result.json, exp117_stdout.log).
+
+## LOG-4610 — Independent exact-artifact verdict review: EXP117 RUN-INVALID BIND (2026-09-29)
+
+**Verdict: BIND** — EXP117's registered RUN-INVALID stands on the exact artifacts, no caveat.
+
+Every binding count independently recomputed from the 20 raw generation records and matched exactly (Phase 0a probe set {0,1,2,5,6,7,8,9,10,11}; literal §3.7 gate 0/10; 0b parseable 0/10; pins match; no metric exists). The 0b enumeration failure mode verified verbatim from raw generations (e.g. item 0: `'\n\n1. Jupiter\n\n2. Mars\n\n3. Venus\n'`).
+
+**Protocol-defect adjudication:** the §3.7 literal recitation definition is structurally inert for verbatim CONTENT recitation (compares marker-stripped extracted outlines against marker-prefixed exemplar lines — real defect, verified by construction and empirically: literal 0/10 while the content diagnostic shows 10/10 items with ≥2 content recitations). It does NOT change the verdict — the executor applied it as written (Law #4) and Phase 0b fired independently. Recorded as a binding apparatus-definition lesson: no future protocol may reuse the §3.7 definition. Fences honored: no verdict smuggled, prior verdicts (EXP109/115/116) unchanged, the 4th-consecutive-entity-name-slot-failure claim checked against the three priors.
+
+Review: `research/reviews/VERDICTREVIEW_EXP117_2026-09-29.md`.
+
+## LOG-4611 — FRONTIER_SCOREBOARD synced to v2.1→v2.2 with EXP117's bound RUN-INVALID (2026-09-29)
+
+**Scoreboard-sync lane (LOG-4611 pre-assigned). $0 CPU.** Read the latest scoreboard and the LOG-4610 independent verdict review; plotted EXP117's now-bound RUN-INVALID strictly as an apparatus failure, not a hypothesis failure.
+
+**Changes (in place):** `research/benchmarks/FRONTIER_SCOREBOARD.md` → **v2.2**: §3.1 new EXP117 inventory row (Phase 0b 0/10 parseable → FIRED; enumeration failure mode verbatim-quoted; 4th consecutive entity-name-generation-slot failure; §3.7 protocol-defect discovery adjudicated REAL but non-decisive; binding lesson recorded); §3.2 H-wave paragraph extended (H11/EXP117 — the generation channel for entity-name answers dead on base Pythia-410m across four apparatuses; H6's logit-level HELD stands alone); v2.2 delta [FACT] paragraph + changelog bullet prepended. `research/benchmarks/PROGRESS_ANALYSIS.md`: EXP117 update paragraph added; day's tally updated.
+
+**Honest headline the board now carries:** "The day's tally: one CONTINUE (EXP111, bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), five RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117 — all bound), one precision certification (EXP110, bound) — capability scoreboard unchanged, still zero positive signals for autonomous steering; the label-free race stays tied at zero."
+
+No capability entries added; no signed protocols, paper sources, or GPU queue touched; no push, no spend, no weights; no data invented. Next free: LOG-4612.

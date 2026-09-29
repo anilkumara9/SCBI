@@ -133,6 +133,31 @@ CONTINUE (EXP113), two KILLs (EXP107, EXP114), four RUN-INVALIDs (EXP108,
 EXP109, EXP115, EXP116), one precision certification (EXP110).** The
 capability column stays at zero.
 
+**Update 2026-09-29:** EXP117 (H11/PTTSC-GEN) — **RUN-INVALID** — the
+EXP113-licensed planner/executor revival hypothesis (a NEW apparatus on the
+T2 numbered-outline shape, not a re-run of EXP109) never reached the
+planning question: Phase 0b's decision-channel mini-gate fired with **0/10
+parseable** (the model enumerates entities as a list instead of naming one),
+the 4th consecutive entity-name-generation-slot failure on this shape
+(EXP109 80/80 sampled; EXP115 38/60 recitation; EXP116 37/60 tail echo;
+EXP117 0/10 enumeration). Phase 0a's literal recitation gate did NOT fire
+(0/10) while the content-level diagnostic scored 10/10 — the independent
+exact-artifact verdict review (LOG-4610 — BIND, no caveat) adjudicated a
+**REAL protocol defect**: the §3.7 literal recitation definition is
+structurally inert for content recitation (marker-stripped extraction vs
+marker-prefixed exemplar lines) — but it did NOT change the verdict (the
+gate was applied as written; Phase 0b fired independently; the RUN-INVALID
+is overdetermined), and it is recorded as a binding apparatus-definition
+lesson: **no future protocol may reuse the §3.7 definition.** Planner
+prompts byte-verified 0/60 mismatches against the signed `exp113_run.py`
+T2-P2 construction; backbone LOG-331 pin matched pre-run, Δθ=0.
+**Apparatus failure, not a hypothesis failure — no verdict smuggled; the
+generation channel for entity-name answers is dead on base Pythia-410m
+across four apparatuses.** **The day's tally: one CONTINUE (EXP111), one
+HELD (EXP112), one apparatus CONTINUE (EXP113), two KILLs (EXP107,
+EXP114), five RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117), one
+precision certification (EXP110).** The capability column stays at zero.
+
 **What closes it.** The §D2 six-condition bar: per-instance construction,
 transfer-validated evaluator, matched-compute wins over ∇-Reasoner /
 Activation-LQR / Meta-Reasoner / DEER / LatentMAS plus the pinned M15

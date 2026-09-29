@@ -301,6 +301,7 @@ The same columns. Nothing cherry-picked; the demotions are stated first.
 | **EXP114** — **KILL**: positional-order ensembling (H8/POE) — K=5 ensemble of frozen-backbone position logits over randomized presentation orders | Test-time ensembling over positional orderings of the EXP107 template-decorrelated 2-hop cloze bench; paired head-to-head against the canonical single-order baseline; 360/360 forward passes, zero generation | pythia-410m base (frozen), CPU, float32, logit readout at the pinned site | **acc_ensemble 38/60 = 0.6333 vs acc_baseline 41/60 = 0.6833; net (b−c) = −3 (b=2, c=5, n=7); one-sided exact McNemar p = 0.9375** — the ensemble scored 5pp BELOW the baseline. Registered bars: CONTINUE required p ≤ 0.05 with b > c — not met; HELD required net > 0 — not met; **net ≤ 0 → KILL** | 360 forward passes (300 ensemble K=5 order bits + 60 baseline), CPU, $0; order patterns independently replicated from random.Random(20260929), 0/60 mismatches | None (logit readout; no training, no labels touch the apparatus) | — (ensembling method, not transfer) | Y (LOG-331 pin before AND after all 360 forwards, Δθ=0) | **KILL (bound)** — retires only the positional-order-ensembling axis for this task class; test-time scaling in general and the adaptive-loop program are explicitly NOT retired. Below-baseline reading a labeled [OBSERVATION]; no post-hoc softening; novelty N1 | LOG-4591; `research/experiments/EXP114_POE_REPORT_2026-09-29.md`; independent verdict review LOG-4592 (BIND — no caveat) |
 | **EXP115** — **RUN-INVALID**: honesty instrument with generation-based self-reports, few-shot (P2) elicited (H9/HDI-GEN) | Few-shot self-report generations on the EXP107 template-decorrelated bench; registered gate n_unparseable ≥ 7 (of 60) → RUN-INVALID; fidelity vs archived EXP112 per-item decisions | pythia-410m base (frozen; 60 greedy generations; LOG-331 pin matched before AND after, Δθ=0); archived EXP112 per-item decisions reused (sha256 `f8133f1f…1a804625` independently re-verified by the execution lane); record/bench alignment 60/60; archived G4 re-check 0.085052 ≥ 1e-4 | **n_unparseable = 38/60 ≥ 7 → G1 FIRED** — failure mode: few-shot recitation (model regurgitates the last exemplar block; all 60 generations contain `Premise:` — e.g. ` Jupiter\n\nPremise: Jupiter is` verbatim from exemplar 2). G2 passed (moot). Fidelity **null** — no decision-bar number exists (gate evaluated before any metric, in code). Deterministic re-parse ×2 byte-identical; per-item generation records retained (the EXP108 lesson) | 60 generations, CPU, $0 | N/A (apparatus) | — (instrument never tested) | Y | **RUN-INVALID (apparatus, bound)** — the hypothesis was never tested; H6's logit-level HELD stands; P5 reserved for a separate pre-registration (the pre-reg's registered consequence); no verdict smuggled | LOG-4598; `research/experiments/EXP115_HDIGEN_REPORT_2026-09-29.md`; independent verdict review LOG-4599 (BIND — no caveat) |
 | **EXP116** — **RUN-INVALID**: honesty instrument with priming-protocol (P5) generation-based self-reports (H10/HDI-PRIM) | Priming-protocol self-report generations on the EXP107 template-decorrelated bench; single-block mid-sentence priming template (zero exemplar blocks — the EXP115 recitation pathology structurally blocked); registered G1/G2 gates before metrics; fidelity vs archived EXP112 decisions | pythia-410m base (frozen; 60 greedy generations, max_new_tokens=8; LOG-331 pin before AND after, Δθ=0); archived EXP112 decisions sha256 independently re-verified; bench pin `e91b302f…4f5` | **n_unparseable = 37/60 ≥ 7 → G1 FIRED** — new, *distinct* failure mode: tail echo (27 of the 37 unparseable echo the unfinished priming sentence `"\n\nThe entity higher in rank is"` verbatim; **0/60 generations contain `Premise:`** — recitation confirmed absent). G2 passed (moot). Fidelity **null** — not wrong, *absent*, exactly as the pre-reg requires. Prompts byte-exact: end mid-sentence with `is:`, exactly one `Premise:`, zero exemplar blocks. Shape-change risk disclosed in the pre-reg (§3.3, §8) — P5's 60/60 clearance was on the single-letter shape; this RUN-INVALID is the disclosed risk materializing | 60 generations, CPU, $0 | N/A (apparatus) | — (instrument never tested) | Y | **RUN-INVALID (apparatus, bound)** — two DIFFERENT apparatus failures on the same bench (recitation vs tail echo); **the generation-level honesty instrument has no EXP113-cleared protocol left on the entity-name shape** — P2 dead (EXP115), P5 dead (EXP116); the hypothesis was never tested. H6's logit-level HELD (41/60) stands alone as the only honesty signal. Reviewer note (non-binding): P4 (repetition penalty) cleared T1-only and was never in the named protocol set — future-proposal material, not a defect | LOG-4602; `research/experiments/EXP116_HDIPRIM_REPORT_2026-09-29.md`; independent verdict review LOG-4603 (BIND — no caveat) |
+| **EXP117** — **RUN-INVALID**: planner/executor pipeline with P2-primed decision slot, Phase-0 gated (H11/PTTSC-GEN) | Plan-conditioned planner/executor pipeline vs baseline on the EXP089 bench; Phase-0a recitation gate + Phase-0b decision-channel mini-gate fire before the full run | pythia-410m base (frozen; 20 Phase-0 generations, greedy; LOG-331 pin matched pre-run, Δθ=0); planner prompts byte-verified **0/60 mismatches** against the signed `exp113_run.py` T2-P2 construction (EXP113's raw JSON stores no prompts — disclosed honestly); 20/20 generations, 0 exceptions | **Phase 0b: 0/10 parseable < 8/10 → FIRED** — failure mode: entity-name enumeration (model lists entities, e.g. `'\n\n1. Jupiter\n\n2. Mars\n\n3. Venus\n'`, instead of naming one). Phase 0a literal §3.7 gate 0/10 (≥6 → did NOT fire). Full run NOT licensed; McNemar never reached. **4th consecutive entity-name-generation-slot failure** on this shape (EXP109 80/80 sampled; EXP115 38/60 recitation; EXP116 37/60 tail echo; EXP117 0/10 enumeration). **Protocol-defect discovery:** §3.7's literal recitation definition is structurally inert for *content* recitation (marker-stripped extraction vs marker-prefixed exemplar lines — content diagnostic 10/10 ≥2 recitations while the literal gate scored 0/10) — adjudicated **REAL but non-decisive** (gate applied as written; 0b fired independently; RUN-INVALID overdetermined). Binding lesson: **no future protocol may reuse the §3.7 definition** | 20 generations, CPU, $0 | N/A (apparatus) | — (planning question never tested) | Y | **RUN-INVALID (apparatus, bound)** — no verdict smuggled; H4 stays RUN-INVALID-from-EXP109; EXP109/115/116 statuses unchanged; H6's logit-level HELD stands alone as the only honesty signal | LOG-4609; `research/experiments/EXP117_PTTSCGEN_REPORT_2026-09-29.md`; independent verdict review LOG-4610 (BIND — no caveat) |
 
 ### 3.2 The program's position, stated without softening
 
@@ -448,6 +449,27 @@ instruction-following validation on a task *shape* does not transfer to an
 entity-name shape broke it (LOG-4603 reviewer note: P4, cleared T1-only, was
 never in the named protocol set and remains untested future-proposal material,
 not a defect in this report).
+
+**H11 (EXP117)** — the EXP113-licensed planner/executor revival hypothesis,
+a NEW apparatus on the T2 numbered-outline shape (not a re-run of EXP109) —
+died at the Phase-0 gates without ever testing the planning question
+(independent exact-artifact verdict review LOG-4610 — BIND, no caveat).
+Phase 0b fired with **0/10 parseable**: the model enumerates entities as a
+list (e.g. `'\n\n1. Jupiter\n\n2. Mars\n\n3. Venus\n'`) instead of naming one
+— the **4th consecutive entity-name-generation-slot failure** on this shape
+(EXP109 80/80 sampled; EXP115 38/60 recitation; EXP116 37/60 tail echo;
+EXP117 0/10 enumeration). Phase 0a's literal recitation gate did NOT fire
+(0/10) while the content-level diagnostic scored 10/10: the review
+adjudicated a REAL protocol defect — the §3.7 literal recitation definition
+compares marker-stripped extracted outlines against marker-prefixed
+exemplar lines, making it structurally inert for content recitation — but
+it did NOT change the verdict (the gate was applied as written; Phase 0b
+fired independently; the RUN-INVALID is overdetermined). It is recorded as
+a binding apparatus-definition lesson: **no future protocol may reuse the
+§3.7 definition.** The generation channel for entity-name answers is dead
+on base Pythia-410m across four different apparatuses; H6's logit-level HELD
+stands alone as the only honesty signal. Apparatus failure, not a hypothesis
+failure — no verdict was smuggled, EXP109/115/116 statuses unchanged.
 Parseable output ≠ reasoning, honesty, or capability — a real methodological
 gain, not a capability signal. **Capability
 scoreboard: unchanged — still zero positive signals for autonomous
@@ -726,6 +748,36 @@ nor a kill. **Capability scoreboard: unchanged — still zero positive
 signals for autonomous steering; the label-free race stays tied at
 zero.** No literature re-check this cycle (next due 2026-10-23).
 
+**v2.2 delta [FACT], 2026-09-29:** plotted **EXP117 (H11/PTTSC-GEN)** —
+**RUN-INVALID** (independent exact-artifact verdict review LOG-4610 —
+BIND, no caveat). The EXP113-licensed planner/executor revival hypothesis
+(a NEW apparatus on the T2 numbered-outline shape — not a re-run of
+EXP109) never reached the planning question: Phase 0b's decision-channel
+mini-gate fired with **0/10 parseable** — the model enumerates entities as
+a list (`'\n\n1. Jupiter\n\n2. Mars\n\n3. Venus\n'`) instead of naming
+one — the **4th consecutive entity-name-generation-slot failure** on this
+shape (EXP109 80/80 sampled; EXP115 38/60 recitation; EXP116 37/60 tail
+echo; EXP117 0/10 enumeration). Phase 0a's literal recitation gate did NOT
+fire (0/10) while the content-level diagnostic scored 10/10: the review
+adjudicated a **REAL protocol defect** — the §3.7 literal recitation
+definition is structurally inert for content recitation
+(marker-stripped extraction vs marker-prefixed exemplar lines) — but it
+did NOT change the verdict (the gate was applied as written; Phase 0b
+fired independently; the RUN-INVALID is overdetermined), and it is recorded
+as a binding apparatus-definition lesson: **no future protocol may reuse
+the §3.7 definition.** Planner prompts byte-verified 0/60 mismatches
+against the signed `exp113_run.py` T2-P2 construction (the raw JSON stores
+no prompts — disclosed honestly); backbone LOG-331 pin matched pre-run,
+Δθ=0. **Apparatus failure, not a hypothesis failure — no verdict smuggled;
+the generation channel for entity-name answers is dead on base Pythia-410m
+across four apparatuses.** **The day's tally, honestly: one CONTINUE
+(EXP111, bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113,
+bound), two KILLs (EXP107, EXP114 — both bound), five RUN-INVALIDs (EXP108,
+EXP109, EXP115, EXP116, EXP117 — all bound), one precision certification
+(EXP110, bound).** **Capability scoreboard: unchanged — still zero positive
+signals for autonomous steering; the label-free race stays tied at zero.**
+No literature re-check this cycle (next due 2026-10-23).
+
 **v2.1 delta [FACT], 2026-09-29:** plotted **EXP115 (H9/HDI-GEN)** and
 **EXP116 (H10/HDI-PRIM)** — both **RUN-INVALID** (independent exact-artifact
 verdict reviews LOG-4599 and LOG-4603 — both BIND, no caveat). The two
@@ -806,6 +858,33 @@ for this backbone under pinned protocols, a real methodological gain —
 still zero positive signals for autonomous steering; the label-free
 race stays tied at zero.** No literature re-check this cycle (next due
 2026-10-23).
+- v2.2 — 2026-09-29 (scoreboard-sync lane, LOG-4611): plotted **EXP117
+  (H11/PTTSC-GEN)** — **RUN-INVALID** (independent exact-artifact verdict
+  review LOG-4610 — BIND, no caveat). The EXP113-licensed planner/executor
+  revival hypothesis (a NEW apparatus on the T2 numbered-outline shape,
+  not a re-run of EXP109) never reached the planning question: Phase 0b's
+  decision-channel mini-gate fired with **0/10 parseable** — the model
+  enumerates entities as a list (`'\n\n1. Jupiter\n\n2. Mars\n\n3. Venus\n'`)
+  instead of naming one — the **4th consecutive entity-name-generation-slot
+  failure** on this shape (EXP109 80/80 sampled; EXP115 38/60 recitation;
+  EXP116 37/60 tail echo; EXP117 0/10 enumeration). Phase 0a's literal
+  recitation gate did NOT fire (0/10) while the content diagnostic scored
+  10/10: the review adjudicated the **§3.7 protocol-defect discovery REAL
+  but non-decisive** (marker-stripped extraction vs marker-prefixed
+  exemplar lines — structurally inert for content recitation) — the gate
+  was applied as written (Law #4), Phase 0b fired independently, and the
+  RUN-INVALID is overdetermined. Binding lesson recorded: **no future
+  protocol may reuse the §3.7 definition.** Planner prompts byte-verified
+  0/60 mismatches against the signed `exp113_run.py` T2-P2 construction
+  (raw JSON stores no prompts — disclosed); backbone LOG-331 pin matched
+  pre-run, Δθ=0. **Apparatus failure, not a hypothesis failure — no verdict
+  smuggled; no rescue licensed.** The day's tally: one CONTINUE (EXP111),
+  one HELD (EXP112), one apparatus CONTINUE (EXP113), two KILLs (EXP107,
+  EXP114), five RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117), one
+  precision certification (EXP110). **Capability scoreboard: unchanged —
+  still zero positive signals for autonomous steering; the label-free race
+  stays tied at zero.** No literature re-check this cycle (next due
+  2026-10-23).
 - v2.1 — 2026-09-29 (scoreboard-sync lane, LOG-4604): plotted **EXP115
   (H9/HDI-GEN)** and **EXP116 (H10/HDI-PRIM)** — both **RUN-INVALID**
   (independent exact-artifact verdict reviews LOG-4599/4603, both BIND, no
