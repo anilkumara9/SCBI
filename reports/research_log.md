@@ -13514,3 +13514,70 @@ EXP129 wave. No push attempted — founder token still pending.
 **Day's tally (honest):** four CONTINUEs (EXP111/EXP120/EXP122 reclassified domain-set-detector correlations; EXP127 dynamics measurement), one HELD (EXP112 bench-1-specific), one apparatus CONTINUE (EXP113), **five KILLs (EXP107, EXP114, EXP125, EXP126, EXP129 — all bound)**, eleven RUN-INVALIDs (EXP108/109/115/116/117/118/119/121/123/124/128 — all bound), one precision certification (EXP110). **Capability headline unchanged: zero positive signals for autonomous steering.** No killed lane resurrected; no verdict on any existing entry changed; EXP127's CONTINUE and EXP128's UNTESTED status untouched.
 
 **Result:** scoreboard v3.4 live; LOG-4717 is this entry (verified next-free before append; continuity LOG-4716 → LOG-4717, no gaps; count = 1).
+
+## LOG-4718 — 2026-09-29 — Commit-prep: CLP/EXP129 KILL wave committed locally
+
+**Lane:** commit-prep (commit only, no push). **Action:** committed the CLP/EXP129 wave locally on branch `sync/2026-09-29-consolidated` as `e6c13cf` ("feat(exp129-clp): closed-loop adaptive pursuit — KILL r=1.000005, scoreboard v3.4"). 12 files, +2555 insertions, no deletions.
+
+**Pre-commit checks:** (1) LOG divergence: full numeric LOG set diffed between the main tree's `reports/research_log.md` (range 001..4717) and the worktree `~/workspace/SCBI-worktrees/sync-log4393-4465/reports/research_log.md` (max 4466) — zero worktree LOG numbers missing from main; CLEAN. (2) Staged set exactly the wave artifacts: CLP gate memo (LOG-4710), EXP129 pre-registration post-erratum (LOG-4711/4712/4713/4714), Law #14 review SIGN-WITH-FIXES (LOG-4712), EXP129 execution report KILL (LOG-4715), independent verdict review BIND-WITH-CAVEAT (LOG-4716), EXP129 executor + append-only console/stdout logs + per-item/worksheet JSONs, LOG-4710→4717 research-log additions, scoreboard v3.4 update (LOG-4717). (3) Safety: no weights, secrets, or credential material staged; secret-scan clean (only `token` substring false positives). `exp129_vectors.npz` untracked per repo `.gitignore` `*.npz` convention (no npz tracked anywhere; SHA-256 recorded in the §3.8 hash-pin). `__pycache__/` excluded. No stash used — the research log is append-only; this entry appended after the commit.
+
+**Fast-forward / push:** not attempted. No push; pushes/PRs remain founder-reserved with a fresh founder-supplied token (used once, never stored).
+
+## LOG-4719 — 2026-09-29 — TTS (Family D) worth-it gate: PASS (conditional)
+
+**Lane:** worth-it gate (pre-assigned LOG-4719). $0 CPU. Read-only on signed protocols, paper sources, and the GPU queue. Nothing pushed, spent, or credential-touched.
+
+**Gate verdict: PASS (conditional).** Family D — discriminating test-time scaling: does margin-verified best-of-N beat greedy by a registered margin on the relational bench class? Distinguishable from every killed lane; carries two cheap falsification tests.
+
+**One-line reason:** No dead lane ever measured verifier-selection gain — EXP056 was unpowered/unregistered (+4pp, p=0.25, LOG-064), H4/PTTSC was a planner-executor design (executed as EXP109, RUN-INVALID elicitation failure, axis not retired — differentiated, not revived); and the dossier's generation-channel write-off is now stale — EXP113's EVALID apparatus CONTINUE'd a construct-validity gate for generation on this backbone (P2/P5 clear 60/60), which is exactly the defect-class-8 machinery the generation deaths were missing.
+
+**Two-stage design (the gate's structural contribution):** Stage 1 = verifier-calibration check on the greedy arm only (margin vs correctness, ~30 min CPU, ~6% of budget) — fail → RUN-INVALID, Stage 2 never licensed. Stage 2 = N=16 sampling with margin-selected vs random-selected (budget control) vs greedy arms; McNemar paired, +10pp bar coherent at n=60 ((6,0)→p=0.03125).
+
+**Four launch conditions for the pre-registration:** (1) EVALID-cleared elicitation protocol (P2 or P5) named + EXP109's elicitation-failure gate carried verbatim — Law #14's generation-channel ruling is the pre-launch tripwire; (2) the two-stage design with the Stage-1 pre-gate; (3) the random-selection control arm with the budget-account branch (margin-select ≈ random-select → no CONTINUE); (4) the EXP126 domain-set threat disclosed — any CONTINUE tagged search-and-selection, never reasoning improvement.
+
+**Deliverable:** `research/strategy/TTS_GATE_2026-09-29.md` (all eight worth-it items in order, summit filter, never-resurrect audit). Next in the launch chain: pre-registration drafting under a minted experiment number at the CEO launch decision → independent Law #14 review → fix-verification → CEO launch → execution.
+
+## LOG-4720 — 2026-09-29 — Pre-registration draft: EXP130 (TTS test-time scaling)
+
+**Lane:** pre-registration drafting (LOG-4720, pre-assigned). **$0 CPU.** Draft only; licenses nothing.
+
+**Action:** drafted `research/prereg/EXP_PREREG_TTS_TESTTIMESCALING_2026-09-29.md` (sha256 `4640d44d1252a04f50146b4495fa32559c57cb9b3421ee8c01092c27076396eb`) for EXP130 (Family D — test-time scaling), minted at the CEO launch decision on the LOG-4719 gate (PASS, conditional).
+
+**Design (two-stage, from the gate):** Stage 1 = verifier-calibration pre-gate on the greedy arm (point-biserial r_pb(margin, correctness) ≥ 0.30, pinned Law #4; fail → RUN-INVALID, Stage 2 never licensed, ~30 min). Stage 2 = greedy vs margin-verified best-of-N (N=16) vs random-selection control (same 16, uniform pick) on the 60-item EXP107 template-decorrelated bench (pin `e91b302f…dd49e4f5`, verified at drafting). Verifier = the registered cosine margin statistic (H1/H6 §3.3, verbatim: E1=tuple[0], E2=tuple[-1], layer-20 final-token, margin=|cos_E1−cos_E2|, ties→E2), applied per (item, sample) on the item prompt + stripped sample. Elicitation = EVALID-cleared T1-P2 few-shot (EXP113/H7, 60/60); clearance-transfer (EXP089 letters → EXP107 entity answers) disclosed as a named limitation; EXP109's 10% elicitation-failure gate carried verbatim (`60 − n_valid ≥ 6` → RUN-INVALID). G4 instrument-health carried. McNemar one-sided license; critical table computed a priori (gate's "(6,0)→0.03125" corrected to the one-sided 0.015625, program standard). Bars: CONTINUE = Δ ≥ +10pp AND McNemar(margin,greedy) p ≤ 0.05 AND McNemar(margin,random) p ≤ 0.05; KILL = Δ < +4pp at N=16; HELD = +4–10pp or beats-greedy-not-random; correlate signature (Δ_original ≥ +10pp AND Δ_flipped ≤ 0, the EXP126 threat made mechanical) → HELD, CONTINUE withheld. Law #9 ordering: guards → backbone pin → bench provenance pin → EVALID gate → Stage 1 → hash-pin (Stage 1) → Stage 2 → hash-pin (Stage 2) → McNemar → decision. Honest frame: search-and-selection, never "the model reasons better"; scoreboard stays at zero. Cost ≈ 1,020 generations + 1,140 embedding forwards ≈ 2–4h CPU, $0.
+
+**Continuity:** LOG-4719 confirmed max before append; exactly one entry. House rules (`AGENTS.md`) read before editing. Read-only outside the protocol file + log append. Nothing pushed, spent, or credential-touched.
+
+**Next:** independent Law #14 review (Law #14's generation-channel construct-validity ruling is the pre-launch tripwire) → fix-verification → CEO launch → execution.
+
+## LOG-4721 — Independent Law #14 review of EXP130 (TTS) pre-registration: REJECT — the generation-channel tripwire fires (2026-09-29)
+
+**Lane:** independent Law #14 review (LOG-4721 pre-assigned). **$0 CPU.** Read-only on signed protocols, paper sources, and the GPU queue. Nothing pushed, spent, or credential-touched. Protocol hash verified before review: sha256 `4640d44d1252a04f50146b4495fa32559c57cb9b3421ee8c01092c27076396eb` (matches the LOG-4720 draft value; no lane defect).
+
+**Verdict: REJECT.** The dossier's pre-launch tripwire fires: the generation-channel construct-validity gate (§1.2, §3.3) is insufficient on the program record, and no fix within this draft's architecture can supply what is missing. The family never launches on this elicitation design — the pre-reg's own §2 tripwire branch ("Law #14 rules the generation-channel construct invalid → Never launches — pre-launch kill, recorded").
+
+**The defect, in brief:** the pre-reg pins T1-P2 few-shot as "EVALID-cleared" for entity-name answers on the EXP107 bench, but (1) EXP115 tested the identical elicitation macro-structure on entity names on this exact bench (identical bench pin `e91b302f…4f5`) → RUN-INVALID, G1 fired at 38/60 unparseable, few-shot recitation pathology (bound LOG-4599); (2) EXP116's registered consequence holds P2 dead on the entity-name shape and "no further EXP113-cleared protocol to license" (bound LOG-4673); (3) the H20 lane bound, no caveat: "entity-name generation channel dead on all EXP113-cleared protocols (P2 dead on this shape, P5 dead on tail echo, P4 dies here)" — RUN-INVALID, TERMINAL, "honesty-instrument line closes permanently on this shape." The pre-reg's §1.2(i) omits the direct EXP115 negative and the terminal binding, framing the letter→entity transfer as merely unvalidated rather than tested-and-failed. The Q:/A: wrapper is a cosmetic variant of the failed apparatus, not a construct-validity argument. The in-protocol elicitation gate routes the expected failure to RUN-INVALID — safe, but not worth licensing: the apparatus question was answered, and re-licensing contradicts the terminal binding. The gate's launch condition (1) ("an EVALID-cleared elicitation protocol (P2 or P5) named") is satisfiable only for letter answers, not the entity-name shape this protocol uses.
+
+**Sound on the record (for any re-proposal):** McNemar critical table independently recomputed exact (all six values); budget-confound control operationalized via McNemar(margin,random) ≤ 0.05 (not a judgment call); EXP126 correlate fence mechanical and downgrade-only; KILL bar deliberately below the significance floor (verified); honest frame verbatim; EXP056 beaten by registration and power.
+
+**Observations for a re-proposal (not fixes):** O1 — the Stage-1/item-validity ordering is unexecutable as staged (LOG-4704 defect class: §0(b) item validity needs the 16 samples while §3.5/§5 stage Stage 1 before they are burned; split the elicitation audit, move the 120 option-embedding forwards pre-Stage-1); O2 — pin the Stage-1 zero-variance r_pb branch; O3 — the "EXP109's gate carried verbatim" attribution is wrong (EXP109 used ≥3/20; the ≥6/60 rule is the H1/H4/EXP108-class 10% rule); O4 — §1.2(ii)'s constant-stream claim contradicts G4 (constant stream fires instrument-deaf RUN-INVALID); O5 — clarify the G4 cosine set.
+
+**Re-proposal condition:** this REJECT kills the family on the P2/P4/P5 elicitation designs for entity-name answers, per the H20 terminal binding. Re-proposal licensed only with a genuinely new elicitation apparatus carrying positive construct-validity evidence for entity-name answers on this backbone (a new EVALID-style lane, or a small elicitation pilot demonstrating defeat of the EXP115 recitation pathology). Disclosure alone does not suffice; neither does a prompt-variant re-test. TGA (EXP127, CONTINUE), DSF (EXP128, UNTESTED), CLP (EXP129, KILL) untouched.
+
+**Deliverable:** `research/reviews/LAW14_REVIEW_TTS_TESTTIMESCALING_2026-09-29.md`. House rules (`AGENTS.md`) read before editing. Next free: LOG-4722.
+
+## LOG-4722 — 2026-09-29 — Scoreboard sync: EXP130 (TTS) REJECT plotted, scoreboard v3.5
+
+**Lane:** scoreboard-sync (LOG-4722, pre-assigned). **$0 CPU.** Read-only except the scoreboard file + this entry. Read `AGENTS.md` before editing. Nothing pushed, spent, or credential-touched.
+
+**Action:** updated `research/benchmarks/FRONTIER_SCOREBOARD.md` to **v3.5** with four additions, all prior rows/tallies/history frozen and verified intact:
+
+1. **§3.1 EXP130 row** — **REJECT (pre-launch KILL)**: TTS test-time scaling (margin-verified best-of-N vs greedy, two-stage pre-reg, never executed). Law #14 review LOG-4721 fired the pre-reg's own §2 generation-channel tripwire: EVALID's T1-P2 clearance does not transfer to entity-name answers — EXP115's identical macro-structure on the identical bench → RUN-INVALID (G1 38/60); EXP116's registered consequence bound LOG-4673 ("no further EXP113-cleared protocol to license"); H20's terminal binding ("entity-name generation channel dead on all EXP113-cleared protocols" — RUN-INVALID, TERMINAL). §1.2(i)'s letter→entity disclosure was materially incomplete (framed as unvalidated, not tested-and-failed — now recorded). Re-proposal licensed ONLY with a genuinely new elicitation apparatus carrying positive construct-validity evidence for entity-name answers — disclosure alone and prompt-variant re-tests do not suffice.
+2. **§3.2 H27 paragraph** — the EXP130 terminal reading + the paradigm-break ledger: all four paradigm families now engaged — Family A (TGA) CONTINUE (EXP127), Family B (DSF) UNTESTED (EXP128 RUN-INVALID apparatus-void), Family C (CLP) KILL (EXP129), Family D (TTS) pre-launch KILL/REJECT (EXP130).
+3. **v3.5 delta [FACT]** — the day's tally, honestly: four CONTINUEs, one HELD, one apparatus CONTINUE, five KILLs, **one pre-launch KILL/REJECT (EXP130 — bound at review, never executed)**, ELEVEN RUN-INVALIDs, one precision certification.
+4. **Version-history v3.5 entry.**
+
+**Confirmed headline:** capability scoreboard unchanged — **still zero positive signals for autonomous steering; the label-free race stays tied at zero.** EXP127's TGA CONTINUE, EXP128's UNTESTED status, EXP129's CLP KILL stand untouched. No killed lane resurrected; no verdict on any existing entry changed.
+
+**Lane note (defect, disclosed):** the §3.1 row insertion was first attempted in-memory and never written to disk; caught by the structural integrity check, re-applied via a temp file and re-verified. No content was lost; final state verified byte-level (four additions, each exactly once, all ordering positions correct).
+
+**Next in the launch chain:** commit-prep for the TTS/EXP130 wave (branch/worktree/commit only — push is founder-reserved).
