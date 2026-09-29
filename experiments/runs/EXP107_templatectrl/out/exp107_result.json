@@ -1,0 +1,20 @@
+{
+ "x": 34,
+ "n": 60,
+ "acc": 0.5666666666666667,
+ "p_one_sided_vs_chance": 0.18314700335164552,
+ "cell_scores": {
+  "A-first/flipped": "4/15",
+  "A-first/original": "15/15",
+  "C-first/flipped": "0/15",
+  "C-first/original": "15/15"
+ },
+ "sanity_gate": "60/60",
+ "overlap": [],
+ "reuse_integrity_ok": true,
+ "bench_pin_ok": true,
+ "blockoff_pass": true,
+ "determinism_pass1_eq_pass2": true,
+ "byte_identity_scored_eq_fresh": true,
+ "final_hash_ok": true
+}

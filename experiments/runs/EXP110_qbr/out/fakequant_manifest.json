@@ -1,0 +1,17 @@
+{
+ "experiment": "EXP110 (H2/QBR)",
+ "phase": "fake_quantization",
+ "model_id": "EleutherAI/pythia-410m",
+ "fp32_sha256": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+ "fp32_pin_match_log331": true,
+ "quantized_sha256": "ed919d476819051e2ac7f16461bb07a0befa8886bb0c9f9ed28e14f20cab9c33",
+ "quantized_differs_from_pin_expected": true,
+ "method": "per-output-channel symmetric INT8 fake-quant on every nn.Linear weight, float32 compute; embeddings/biases/LayerNorm/activations untouched; zero rows map to exact 0",
+ "presentation_mechanism": "saved-to-local-directory used as --model-id (/home/hatch/workspace/SCBI/experiments/runs/EXP110_qbr/out/quantized_model)",
+ "seed": 20260928,
+ "torch": "2.14.0+cpu",
+ "transformers": "5.17.0",
+ "threads_set": 2,
+ "threads_read_back": 2,
+ "linear_layers_quantized": 97
+}

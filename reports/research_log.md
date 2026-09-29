@@ -11011,3 +11011,476 @@ Uncommitted LOG-4513 entry in `reports/research_log.md` and the new sweep report
 **Binding note [CEO-record]:** EXP087's launch license was never in doubt — only its files were missing. The bundle is now restored on the working branch; EXP087 is bundle-complete and launch-licensed per LOG-343, parked behind K2 → EXP083 → EXP084 → EXP086 Stage B → EXP088 on the founder's Kaggle GPU.
 
 **Next free: LOG-4527.**
+
+## LOG-4528 — Frontier technique-adoption analysis: steering-under-compression + JEV-27B (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4528. Single-lane fence held: no subagent dispatch, no model runs, no GPU contact, no commits, no pushes, no PRs, no stash. $0 CPU. Read-only on signed protocols, paper sources (v82/v83/v84 untouched), weights, and GPU queue. No follow-up lanes dispatched; boundary held.
+
+**Source [FACT]:** `~/workspace/goals/scbi-research-program/hidden_files/frontier_sweep_log.md`, 2026-09-29 block. arXiv:2609.06473 "Steering Under Compression" (Bhandari & Wade, ~Sep 11; VERIFIED via arxiv.org). AutoTrust JEV-27B (PRNewswire via CNA/Morningstar; benchmark mean 84.07% vendor-claimed — UNVERIFIED; 108.9M-param decision head on frozen Qwen3.8-27B, Apache-2.0).
+
+**Memo:** `research/strategy/FRONTIER_ADOPTION_2026-09-29.md` (analysis only; proposes changes, applies none).
+
+**Findings [INTERPRETATION, evidence-grounded]:**
+
+1. **arXiv:2609.06473 — verdict ADOPT-WITH-CONDITIONS.** Steal three concrete procedures: (a) matched-geometry collinearity gate (cosine between quantized-model and FP16 steering directions; their band 0.989–0.998 INT8, 0.945–0.990 NF4) before any "steering survives transformation X" claim; (b) censored iso-effect dose ladder (effect-vs-α curve shape: graded vs step-function vs cap-runaway — their reasoning-length result shows shortening collapses discontinuously at 12–30%); (c) baseline-shift attribution (their Mistral-NF4 GSM8K α=0 shift 0.545→0.365) reported separately from steering delta. Enables two new kills our kit cannot do today: collinearity-gate failure ("the direction changed") and baseline-dominance ("the α=0 shift exceeds any α>0 effect"). Proposed change targets (NOT changed): `falsification_kit/core/`, `falsification_kit/tier0.py` (collinearity gate), `falsification_kit/battery.py` (dose-ladder shape test), future steering pre-registrations (S4-9 `research/innovation/S4-9_PREREG_DRAFT_2026-09-27.md` template). Discipline is $0 CPU; running quantized replicas is GPU-gated (no retro-verification of closed S4/S5/S6/I2′ lines licensed — their zero-flip verdicts are transformation-invariant).
+
+2. **AutoTrust JEV-27B — verdict ADOPT-WITH-CONDITIONS.** Steal one procedure: the block-off byte-identical falsifiability discipline (their bar: 164/164 HumanEval completions byte-identical to the base model with the decision block switched off). For all future frozen-backbone + attached-module experiments (output-side mechanisms, K3 Phase-1): a disable switch + byte-identical reproduction check against the backbone pin must pass before any capability number is admissible; failing it kills the "frozen" premise at tier 0. This closes the premise-verification loophole class that killed our QK-subspace theorem. Proposed change targets (NOT changed): `falsification_kit/tier0.py` (module-off invariance test), `research/CANDIDATE_BACKLOG.md` head-candidate rows (disable-switch clause). Discipline $0 CPU; real head training GPU/founder-gated; JEV-27B's 84.07% is UNVERIFIED — adopted discipline only, never the number. Recorded as architecture-convergence context only (second Δθ=0 frozen-backbone + output-side head in 10 days after CLM-8B — predicted by EXP077's output-side boundary finding).
+
+**Threat assessment [INTERPRETATION]: no threat to published v84 claims — explicit.** (a) 2609.06473 studies steering survival under quantization; v84's steering verdicts were collected on FP32 Pythia-410m and never cross a quantization transformation. (b) JEV-27B is a *trained* output-side head; v84 makes no claims about trained heads — its boundary claims concern *static* steering. The finding converges with, not against, the EXP077 output-side result. (c) Adjacent context only: Simula steering-grid and SPS state-conditioned steering study *conditional* steering; v84 never claimed conditional steering fails (K2/EXP083/084 conditional line remains licensed).
+
+**Top adoption item [INTERPRETATION]:** both disciplines belong in the falsification kit as tier-0 gates in its next repair/extension wave — the collinearity + iso-effect ladder for steering-under-transformation claims, the block-off byte-identical test for backbone + module claims. Both turn currently-unfalsifiable claim shapes into killable ones.
+
+**Next free: LOG-4529.**
+
+## LOG-4527 — Summit innovation sprint round 2: four falsifiable candidates (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4527 (innovation-sprint lane). Single-lane fence held: no subagent dispatch, no model runs, no GPU contact, no commits, no pushes, no PRs, no stash. $0 CPU, proposals only — no experiment numbers minted, no signed protocol touched (v82/v83/v84, weights, GPU queue read-only). **Order note [FACT]:** this entry was pre-assigned before LOG-4528 but written after it; append-only rule respected (no insertion, no reorder) — numeric presence, not position, is the continuity invariant. Boundary held: no follow-up lanes dispatched.
+
+**Source [FACT]:** today's frontier sweep (2026-09-29 block): AutoTrust JEV-27B (108.9M-param trained head on frozen Qwen3.8-27B, 84.07% vendor-claimed UNVERIFIED, byte-identical block-off), arXiv:2609.06473 (steering under INT8: cosine 0.989–0.998 preserved, asymmetric dose-response, baseline shifts), GPT-6.1 Astra shelved (deception + scope-authorization failures). Differentiated against SPRINT_2026-09-25_SUMMIT.md (7 candidates), NEXT_DIRECTION_SPRINT_2026-09-28.md (5 proposals, S6 wave since executed/stood down LOG-4463/4464), and all verdicts through LOG-4526. Dossier: `research/innovation/SPRINT_2026-09-29_SUMMIT.md` (proposal record, licenses nothing).
+
+**The four candidates [HYPOTHESIS]** (each with full worth-it gate in the dossier — exact question, KILL/CONTINUE/PIVOT decision, cheapest test, mathematical license, quantitative prediction, breaking point):
+
+1. **H3 — LFH: Label-Free Head** (RECOMMENDED FIRST). Train an L2-logistic head (~2k params) on frozen embeddings using disjoint-bench labels only (train EXP092-B, test EXP091 bench; item-overlap > 0 → RUN-INVALID, Law #7), with JEV-27B's block-off byte-identical discipline. Bars: ≥ 40/60 → CONTINUE (first autonomous output-side result; licenses GPU head-training); ≤ 35/60 → KILL (room is artifact-only). $0 CPU ~30 min. Revives the 2026-09-25 rejected "trained contrastive heads" darling with the cost objection dissolved. Only candidate with positive-signal upside.
+2. **H1 — HDI: Honesty-Decodability Instrument.** Decode the model's self-report ("which option did you choose?") from frozen activations vs its actual argmax decision; measure the fidelity gap. License: Berg et al. SAE deception-feature result (self-report causally separable, logged 2026-09-27). Bars: fidelity ∈ [0.70, 0.95] → CONTINUE (oversight primitive for the Astra-defined constraint); ≥ 0.98 or ≤ 0.55 → KILL. $0 CPU ~2h. Summit instrument, new to corpus.
+3. **H4 — PTTSC: Planned Test-Time Scaling Coordinator (CPU pilot).** Planner writes 4 outlines in one pass, frozen executor develops each, majority vote — vs 4 independent samples at identical budget. License: PTTS theory (Wu et al. 2609.27374) + Meta FAIR 2609.26704. Bars: planner ≥ baseline + 8pp → CONTINUE (pattern enters EXP068-family designs); planner ≤ baseline → KILL (TTS axis dead for this class). $0 CPU ~4h. Complements GPU-gated EXP070 (oracle ceiling), does not duplicate it.
+4. **H2 — QBR: Quantization-Boundary Robustness.** Re-run the cleared EXP105 falsification-kit battery under INT8 fake-quantization; ≥6/7 tiers reproduce → boundary precision-certified; any tier flips → PIVOT (precision-indexed boundary). $0 CPU ~2–4h. Honest caveat: fake-quant approximates weight-only INT8; bitsandbytes-exact is GPU-gated.
+
+**Rejected darlings [FACT]:** shared-direction fine dose curve (named unmeasured at LOG-4471, but Law #14 would likely rule it a sixth gate tweak on the closed static family — recorded as open thread, not proposed); full JEV-27B replication (GPU-gated); PTTS-RL (needs training); min-entropy prefix search / test-time soft-prompt (killed 2026-09-25).
+
+**Recommendation [INTERPRETATION]:** run H3 first — cheapest, only positive-upside candidate, decisive both ways, Law #6/#7-safe by construction. H1 follows as the summit instrument; H4 as the capability-positive TTS pilot; H2 as certification. Next step per candidate: signed pre-registration + independent Law #14 review (launch chain — a CEO decision, not this lane's).
+
+**Next free: LOG-4529.**
+
+## LOG-4529 — H3 (LFH) pre-registration drafted: Label-Free Head (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4529 (pre-registration drafting lane, H3 from the 2026-09-29 summit sprint dossier). Single-lane fence held: drafting only — no model runs, no embeddings touched, no GPU contact, no experiment number minted, no commits, no pushes, no PRs, no stash. $0 CPU. Read-only on signed protocols (v82/v83/v84), weights, and the GPU queue. No self-review, no self-approval; independent Law #14 review is a separate lane.
+
+**Source [FACT]:** `research/innovation/SPRINT_2026-09-29_SUMMIT.md` §H3 (worth-it gate passed, ranked #1). Drafted artifact: `research/prereg/EXP_PREREG_H3_LFH_2026-09-29.md`.
+
+**Pre-registration summary [HYPOTHESIS]:** an L2-logistic head (~2k params) trained on frozen-embedding labels from EXP092-B transfers above chance to the disjoint EXP091 60-item bench (≥ 40/60) with byte-identical block-off vs the backbone pin.
+
+**Method [PROPOSITION]:** frozen backbone (Δθ=0, hash-checked — Law #6); disjoint-bench labels only (train EXP092-B, test EXP091; item-ID overlap > 0 → RUN-INVALID — Law #7); JEV-27B block-off discipline (head-detached ⇒ byte-identical outputs, else apparatus INVALID and any CONTINUE void).
+
+**Decision bars (registered):** ≥ 40/60 → CONTINUE (one-sided binomial p ≈ 0.0067 vs chance — verified at drafting; dossier's "≈0.003" annotation corrected, bar unchanged; licenses a GPU head-training proposal); ≤ 35/60 → KILL (room is artifact-only — retire it); 36–39/60 → HELD/INCONCLUSIVE (P(X≥36|chance)=0.078; licenses nothing, retires nothing, no re-runs — larger-n rescue barred as a gate tweak). Full falsification decision tree in the draft; no weasel words.
+
+**Cost [FACT]:** $0 CPU, ~30 min, no GPU contact.
+
+**Deviation [FACT]:** p-value annotation corrected from the dossier's loose "≈0.003" to the verified 0.0067 (one-sided); decision bar itself unchanged. Novelty stays N1 (N2-adjacent only on an independently verified CONTINUE). A CONTINUE is a first positive signal — not superhuman cognition, not generality beyond the bench.
+
+**Boundary:** independent Law #14 review of this exact file, CEO launch decision, and execution under a minted experiment number are later lanes — not this one. This lane stops here.
+
+**Next free: LOG-4530.**
+
+## LOG-4530 — Independent Law #14 review of EXP_PREREG_H3_LFH_2026-09-29.md: SIGN-WITH-FIXES (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4530 (independent Law #14 review lane for the H3/LFH pre-registration drafted under LOG-4529). Single-lane fence held: review only — no draft edits, no execution, no experiment number minted, no GPU contact, no push. $0 CPU. Reviewer independent of the drafting lane; did not write the document under review.
+
+**Artifact reviewed [FACT]:** `research/prereg/EXP_PREREG_H3_LFH_2026-09-29.md` (exact version). Review file: `research/reviews/LAW14_REVIEW_H3_LFH_2026-09-29.md`.
+
+**Verdict [INTERPRETATION]:** SIGN-WITH-FIXES. Three required fixes, each verifiable by inspection: (FIX-1) pin the L2 regularization strength or the exact train-data-only selection rule — unpinned λ is a post-hoc tuning vector (Law #4/#9); (FIX-2) pin the embedding source — backbone layer or multi-layer rule, archive path or extraction spec — unpinned layer is a fishing vector (Law #4/#9); (FIX-3) extend the Law #7 bar explicitly to model-selection choices (no EXP091 label may inform λ, layer, or threshold). No fix changes the hypothesis, decision bars, or verdict logic.
+
+**Findings [FACT]:** falsifiability PASS — bars decisive both directions, HELD zone (36–39) pre-committed and licenses nothing (honest, not a hedge); the CONTINUE bar (p=0.0067) is ~7× stricter than α=0.05. Statistics independently recomputed and all correct: P(X≥40)=0.006745, P(X≥36)=0.077501, P(X≤35)=0.922499; the dossier's loose "≈0.003" was honestly corrected in the draft. Law #6 hash check adequate; Law #7 overlap tripwire airtight procedurally; Law #4 bars pre-committed. JEV-27B block-off correctly specified as a CONTINUE precondition (byte-identity must pass before any capability claim is admissible). §7 overclaim guards hold — no sentence promises superhuman cognition, consciousness, or generality beyond the bench; novelty honestly N1. "$0 CPU, ~30 min, no GPU contact" credible; nothing secretly needs GPU or weights.
+
+**Boundary:** after the three fixes are verified in the draft, the verdict upgrades to SIGN and the artifact clears to the CEO launch-decision lane. This review approves no execution and mints no experiment number. This lane stops here.
+
+**Next free: LOG-4531.**
+
+## LOG-4531 — Pre-registration repair: H3/LFH three Law #14 fixes applied (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4531 (repair lane for the H3/LFH pre-registration reviewed under LOG-4530). $0 CPU. Single-lane fence held: edited exactly one file (`research/prereg/EXP_PREREG_H3_LFH_2026-09-29.md`); everything else read-only; no execution, no experiment number minted, no GPU contact, no weights touched, no push.
+
+**Fixes applied [FACT] — each verifiable by inspection of the revised draft:**
+- **FIX-1 (Law #4):** L2 regularization pinned at **C = 1.0** (`sklearn.linear_model.LogisticRegression(penalty='l2', C=1.0)`), fixed before any run; no CV, no grid search, no EXP091 test label/target/metric may inform it. (Adopted the review's own example value — the fixed-constant branch, which closes the post-hoc tuning vector most tightly.)
+- **FIX-2 (Law #4):** embedding source pinned at **frozen Pythia-410m, layer 20** — the program-standard read site for EXP091-bench frozen embeddings, cited from the signed protocol `experiments/protocols/EXP091_CLM8B_ADAPTATION_V3_PREREG_SIGNED.md` — with the full extraction spec (final-token hidden state, float32, CPU, `device_map="cpu"`, `requires_grad_(False)`, `model.eval()` + `torch.no_grad()`; item encoding = premise-sentences substring per the bench-construction code path). Identical procedure for EXP092-B training items and EXP091 test items; archived embeddings admissible only with this exact layer-20 provenance in their manifest, otherwise the single extraction pass runs under this spec.
+- **FIX-3 (Law #7):** §3.2 now states verbatim — "No EXP091 test label, target, or metric may inform any model-selection choice (regularization strength, embedding layer/source, decision threshold); all such choices are pinned above or derived from train data only."
+
+**Unchanged [FACT]:** decision bars (≥ 40/60 CONTINUE / ≤ 35/60 KILL / 36–39 HELD), verdict logic, hypothesis, the p≈0.0067 correction, and all already-correct numbers. No reformatting, rewording, or improvement of unrelated sections.
+
+**Open questions:** none. The layer choice (FIX-2) was not guessed — it is the program's signed, established read site for the EXP091 bench, cited in the draft.
+
+**Boundary:** this lane does NOT upgrade the review verdict to SIGN and does NOT approve execution — re-verification of these fixes is a separate lane, then the CEO launch decision, then execution under a minted experiment number (founder-authorized lanes only). This lane stops here.
+
+**Next free: LOG-4532.**
+
+## LOG-4532 — Independent Law #14 fix-verification for H3/LFH pre-registration: ALL-FIXES-VERIFIED (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4532 (fix-verification lane for the H3/LFH pre-registration repaired under LOG-4531). $0 CPU. Single-lane fence held: read-only everywhere except `research/reviews/LAW14_FIXVERIFY_H3_LFH_2026-09-29.md` and this append; no execution, no experiment number minted, no GPU contact, no push. Reviewer independent of both the LOG-4529 drafting lane and the LOG-4531 repair lane.
+
+**Verdict [INTERPRETATION]:** ALL-FIXES-VERIFIED. All three LOG-4530 required fixes confirmed present in the draft, quoted verbatim in the verification file: (FIX-1) C = 1.0 pinned, no CV/grid search, no EXP091 test information may inform it; (FIX-2) frozen Pythia-410m layer 20 with full extraction spec, identical train/test procedure, archived embeddings admissible only with layer-20 manifest provenance; (FIX-3) the required Law #7 model-selection sentence present verbatim in §3.2. Decision bars (≥ 40/60 CONTINUE p≈0.0067 / ≤ 35/60 KILL / 36–39 HELD), verdict logic, hypothesis, and registered numbers spot-checked unchanged. **Per the LOG-4530 review, its verdict upgrades to SIGN.** The artifact is cleared for the CEO launch-decision lane.
+
+**Observation [INTERPRETATION]:** §7's "Unsigned and unreviewed until the independent Law #14 lane signs or rejects" is mildly stale now that a review exists and is upgraded — not a defect; left for the signing lane.
+
+**Boundary:** this lane approves no execution and mints no experiment number — that is the CEO launch decision, founder-authorized lanes only. This lane stops here.
+
+**Next free: LOG-4533.**
+
+## LOG-4533 — CEO launch decision: H3/LFH cleared to execute as EXP106 (2026-09-29)
+Pre-registration EXP_PREREG_H3_LFH_2026-09-29.md drafted (LOG-4529), independently reviewed SIGN-WITH-FIXES (LOG-4530), three fixes applied (LOG-4531), fixes independently verified ALL-FIXES-VERIFIED upgrading the review to SIGN (LOG-4532). Decision bars locked: ≥40/60 CONTINUE / ≤35/60 KILL / 36–39 HELD. $0 CPU, ~30 min, no GPU contact, backbone Δθ=0. CEO authorizes execution; experiment number EXP106 minted (next after EXP105). Execution lane dispatched. Next free: LOG-4534.
+
+## LOG-4534 — EXP106 (H3/LFH) execution: 60/60, block-off PASS → CONTINUE (registered), template confound on record (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4534 (execution lane for H3/LFH, CEO launch LOG-4533). $0 CPU. Single-lane fence held: executed only — no signed artifact modified, no follow-up dispatched, no re-runs, no GPU contact, no push. Executor: `experiments/runs/EXP106_lfh/run_exp106.py`; report: `research/experiments/EXP106_LFH_REPORT_2026-09-29.md`.
+
+**Method [FACT]:** sklearn `LogisticRegression(penalty='l2', C=1.0)` on frozen Pythia-410m embeddings. Train: EXP092-B 60 items (bench rebuilt, pin `9be81626…` verified), fresh 60-pass extraction under the pinned spec — premise-substring encoding, `hidden_states[20]` (the EXP091 program-standard site as actually implemented, verified by pyc disassembly: no +1 offset), final-token, float32, CPU, no-grad. Test: archived EXP091 `state` embeddings (admissible: layer-20 provenance in manifest, same spec). Binary label = phrasing (A-first = target in first premise sentence). y: 30/30 both benches.
+
+**Guards [OBSERVATION]:** backbone hash `ec276abe…` matched pre/post/final (Δθ=0); item-ID overlap train/test = 0 (tripwire not triggered); no test label/target/metric touched training; C pinned, no tuning.
+
+**Primary result [OBSERVATION]:** **60/60 = 1.0000** on the disjoint EXP091 bench; one-sided binomial p = 8.67×10⁻¹⁹ vs chance. Train accuracy (non-binding): 60/60.
+
+**Block-off [OBSERVATION]:** PASS — fresh backbone-only re-extraction of the full test bench (two passes, deterministic) is **byte-identical** to the archived embeddings used for scoring (SHA-256 `fe01b33d742be8ce`). Head is a pure additive readout; CONTINUE not voided.
+
+**Verdict [INTERPRETATION]:** falsification-tree branch `≥ 40/60, block-off passes` → **CONTINUE** (pre-reg's exact language: "First autonomous output-side result in-program. Licenses a GPU head-training proposal (separate lane)."). Overclaim guards hold: not superhuman cognition, not generality beyond the bench; novelty N1.
+
+**Adversarial observation [OBSERVATION/INTERPRETATION] (Law #11/#14):** the phrasing label is deterministically generated by the surface template ("outranks" vs "is lower than"), ported verbatim across both benches — 60/60 in each. Dissection: on 31/60 test items the train entity-prior disagrees with the template; the head followed the template on all 31. The transfer is **template detection, a shared-construction artifact** — the hypothesis's intended reading ("autonomous (non-artifact) instantiation") is NOT supported despite the bar being crossed. Any GPU proposal licensed by this CONTINUE is only meaningful against a template-controlled bench. The LOG-4530 review did not flag this confound; recorded here.
+
+**Boundary:** execution complete. No licensed re-run exists under any branch. This lane stops here.
+
+**Next free: LOG-4535.**
+
+## LOG-4535 — EXP107 template-control kill-test: feasibility YES, pre-reg drafted (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4535 (follow-up design lane for the EXP106 template confound, LOG-4534). $0 CPU. Read-only on signed protocols, paper sources, weights, and the GPU queue. Single-lane fence held: designed only — no execution, no model calls, no push, no minting (the EXP107 designation is reserved in the draft; formal minting is the CEO launch decision's act).
+
+**Feasibility verdict [FACT]:** YES — a template-decorrelated bench is constructible from existing EXP091/EXP092 item records with zero model calls. Deterministic rephrasing rule (closed vocabulary, meaning-preserving): reverse the premise sentence order AND swap the verb family ("outranks" <-> "is lower than"), re-anchoring subject/object so the ranking meaning and the target's sentence position are preserved. Builder: `experiments/runs/EXP107_templatectrl/build_exp107_bench.py` — builds 60/60 items, four balanced 15-item cells crossing phrasing x template word-family, all design-time assertions pass (cell balance, word-family swap, label semantics, extraction contract, train/test ID disjointness). Registered bench pin: `e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5`.
+
+**Design [FACT]:** pre-registration drafted at `research/prereg/EXP_PREREG_EXP107_TEMPLATECTRL_2026-09-29.md` — EXP106's head retrained on the reused EXP106 train embeddings (reuse-integrity hashes registered: embeddings `4e6229be…`, ids `4668fc45…`; mismatch -> RUN-INVALID), pipeline-continuity sanity gate (must reproduce 60/60 on the original EXP091 bench), fresh 60-pass CPU extraction of the decorrelated bench under the pinned layer-20 spec, byte-identical block-off discipline.
+
+**Decision bars (registered):** >= 40/60 -> CONTINUE (genuine position-readout signal; EXP106's GPU proposal stands, template-controlled, founder-gated) / <= 35/60 -> KILL the EXP106 transfer reading (pure template artifact; EXP106's GPU proposal license VOID) / 36-39 -> HELD. Rival predictions registered: pure template artifact => exactly 30/60 on balanced cells; genuine position readout => ~60/60.
+
+**Honest limitation on record [INTERPRETATION]:** the flip also moves the target from sentence-subject to sentence-object, so a collapsed score kills the transfer reading under either a word-template or a subject-position cue; the test does not identify which surface cue the head used.
+
+**Boundary:** this lane drafts only. Independent Law #14 review of the exact draft file is a separate lane; CEO launch decision mints EXP107. This lane stops here.
+
+**Next free: LOG-4536.**
+
+## LOG-4536 — Independent Law #14 review of EXP107 template-control pre-reg: SIGN-WITH-FIXES (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4536 (independent Law #14 review lane for `research/prereg/EXP_PREREG_EXP107_TEMPLATECTRL_2026-09-29.md`, the EXP107 template-control kill-test of EXP106's 60/60). $0 CPU. Read-only everywhere except this entry and the review file. Independence held: this lane did not write the draft (LOG-4535 design lane); no edits made to the draft, no execution approved, no follow-ups dispatched.
+
+**Review method [FACT]:** adversarial re-verification, not re-reading — independently executed the bench builder, recomputed the binomial bars, re-derived the rival predictions by simulation, re-hashed the train embeddings/id arrays and the backbone pin from source files, swept the built bench for residual cues, and cross-checked the builder's base items against the EXP106 executor's `build_test_premises`.
+
+**Verified [OBSERVATION]:** (1) Decorrelation works — word family x phrasing = 15/15/15/15, closed vocabulary; a pure word-family detector scores exactly 30/60 (originals 30/30, flipped 0/30). (2) No residual label-determining cue: grammatical role is also decorrelated (15/15/15/15); target-in-first-sentence iff A-first holds 60/60 (the intended position signal); entity identity already ruled out by EXP106's 31-item analysis; the bench differs from EXP091 in exactly one manipulated variable. (3) The subject/object caveat is honest AND mathematically correct — both a word-family and a subject-role detector predict exactly 30/60, so a collapsed score cannot discriminate them; registered in draft §3.6 and §7 with no overreach. (4) Sanity gate correctly specified and not gameable (failure direction is RUN-INVALID only; deterministic retrain leaves no tuning freedom). (5) Bars decisive: P(X>=40|n=60,p=.5) = 0.00674 recomputed, matching the draft's 0.0067; KILL bar absorbs ±5 around the artifact point prediction; 36-39 HELD licenses nothing. (6) All pins carry over and verify: backbone `ec276abe…`, train embeddings `4e6229be…`, id array `4668fc45…`, bench `e91b302f…` (all recomputed from source files); layer 20, C=1.0, Δθ=0, overlap tripwire, byte-identical block-off. (7) Overclaim guards properly scoped — CONTINUE keeps the GPU proposal (template-controlled, founder-gated, proposal-only); KILL voids it; EXP106's binding CONTINUE is not re-litigated.
+
+**Verdict [INTERPRETATION]:** **SIGN-WITH-FIXES** for `EXP_PREREG_EXP107_TEMPLATECTRL_2026-09-29.md`. Two minor verifiable fixes required before CEO launch (neither changes any decision, bar, or interpretation): FIX-1 — soften "exactly 30/60" to "≈30/60 (±5 absorbed by the ≤35/60 KILL bar)" in §2 and §3.6; FIX-2 — pin the retrain environment to the EXP106 stack (sklearn 1.9.1, `~/.venv-exp077`) in §3.2 per Law #13. Full review: `research/reviews/LAW14_REVIEW_EXP107_TEMPLATECTRL_2026-09-29.md`.
+
+**Boundary:** review only. Fixes are the design lane's or CEO's act; fixes-verified check is a separate lane. No execution licensed.
+
+**Next free: LOG-4537.**
+
+## LOG-4537 — EXP107 pre-reg repair: Law #14 SIGN-WITH-FIXES fixes applied (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4537 (repair lane for `research/prereg/EXP_PREREG_EXP107_TEMPLATECTRL_2026-09-29.md`, the EXP107 template-control kill-test of EXP106's 60/60). $0 CPU. Single-file edit license only: the pre-reg file. Everything else read-only. No execution licensed, no push, no weights touched, no GPU contact, no EXP107 minting (minting is the CEO launch decision's act).
+
+**Review under repair [FACT]:** independent Law #14 review lane LOG-4536 returned **SIGN-WITH-FIXES** for the exact draft version (`research/reviews/LAW14_REVIEW_EXP107_TEMPLATECTRL_2026-09-29.md`), with two minor verifiable fixes required before CEO launch — neither changes any decision bar, verdict logic, hypothesis, or number.
+
+**FIX-1 applied (precision):** in §2 (worth-it gate, quantitative prediction) and §3.6 (registered rival predictions), "exactly 30/60" → "≈30/60" with the appended parenthetical "(point prediction; ±5 of embedding-shift noise absorbed by the ≤35/60 KILL bar)". Verified: `grep -c "exactly 30/60"` on the file returns **0** (the review's stated verification criterion). Untouched as required: the "original cells 30/30 correct, flipped cells 0/30" detector mechanics, the 15-item cell-balance figures describing the verified builder output, and all decision bars (≥40 CONTINUE / ≤35 KILL / 36–39 HELD).
+
+**FIX-2 applied (reproducibility, Law #13):** in §3.2 (head spec), appended the review's verbatim environment pin — "Retrain executes in the EXP106 environment (sklearn 1.9.1, `~/.venv-exp077`, torch 2.14.0+cpu) so the sanity gate tests pipeline determinism, not cross-version optimizer drift." Verified: the string "1.9.1" appears in §3.2 (the review's stated verification criterion).
+
+**Boundary:** repair only. No bar, hypothesis, or number was changed; no unrelated section was reformatted. This lane does NOT approve execution, does NOT self-verify the fixes, and does NOT mint EXP107. A fixes-verified check is a separate lane (required before CEO launch). This lane stops here.
+
+**Next free: LOG-4538.**
+
+## LOG-4538 — Fix-verification of EXP107 pre-reg repairs: ALL-FIXES-VERIFIED, Law #14 review upgraded to SIGN (2026-09-29)
+
+**Lane [FACT]:** independent fix-verification (pre-assigned LOG-4538) of the LOG-4537 repairs to `research/prereg/EXP_PREREG_EXP107_TEMPLATECTRL_2026-09-29.md` (the EXP107 template-control kill-test of EXP106's 60/60). $0 CPU. Read-only on the prereg and the LOG-4536 review; wrote only the verification file and this entry. Independence held: this lane did not write the draft (LOG-4535) and did not apply the repairs (LOG-4537). No execution approved, no EXP107 minted, no follow-ups dispatched — launch is the CEO's decision.
+
+**Review under check [FACT]:** `research/reviews/LAW14_REVIEW_EXP107_TEMPLATECTRL_2026-09-29.md` (LOG-4536) returned SIGN-WITH-FIXES with two fixes; neither changed any bar, verdict logic, hypothesis, or number.
+
+**FIX-1 [PASS]:** "exactly 30/60" → "≈30/60" with "(point prediction; ±5 of embedding-shift noise absorbed by the ≤35/60 KILL bar)" in §2 (worth-it gate, L28) and §3.6 (rival predictions, L71). `grep -c "exactly 30/60"` on the prereg returns 0 — zero remaining occurrences. Exact verified-builder figures preserved (30/30 + 0/30 detector arithmetic, 4×15 cells).
+
+**FIX-2 [PASS]:** §3.2 (L44) carries the verbatim environment pin — "Retrain executes in the EXP106 environment (sklearn 1.9.1, `~/.venv-exp077`, torch 2.14.0+cpu) so the sanity gate tests pipeline determinism, not cross-version optimizer drift." Law #13 satisfied.
+
+**Spot-check [PASS]:** decision bars unchanged (≥40/60 CONTINUE / ≤35/60 KILL / 36–39 HELD, block-off precondition intact); verdict logic unchanged (CONTINUE = genuine position-readout signal, founder-gated proposal; KILL scoped to the EXP106 transfer reading); hypothesis unchanged.
+
+**Verdict: ALL-FIXES-VERIFIED.** The LOG-4536 independent Law #14 review verdict is upgraded from SIGN-WITH-FIXES to **SIGN** for the EXP107 pre-registration.
+
+**Deliverable [FACT]:** `research/reviews/LAW14_FIXVERIFY_EXP107_TEMPLATECTRL_2026-09-29.md`.
+
+**Next free: LOG-4539.**
+
+## LOG-4539 — CEO launch decision: EXP107 template-control cleared to execute (2026-09-29)
+Pre-registration EXP_PREREG_EXP107_TEMPLATECTRL_2026-09-29.md drafted (LOG-4535), independently reviewed SIGN-WITH-FIXES (LOG-4536; kill instrument independently verified working), two fixes applied (LOG-4537), fixes independently verified ALL-FIXES-VERIFIED upgrading the review to SIGN (LOG-4538). Decision bars locked: ≥40/60 CONTINUE (genuine position-readout; EXP106 GPU proposal stands template-controlled, founder-gated) / ≤35/60 KILL the EXP106 transfer reading (GPU proposal license VOID) / 36–39 HELD. $0 CPU, ~30 min, no GPU contact, backbone Δθ=0. CEO authorizes execution as EXP107. Execution lane dispatched. Next free: LOG-4540.
+
+## LOG-4540 — EXP107 execution: KILL — the EXP106 60/60 was pure template artifact (2026-09-29)
+
+**Lane [FACT]:** EXP107 execution (pre-assigned LOG-4540), CEO-launched LOG-4539. Executed exactly per the signed pre-registration `research/prereg/EXP_PREREG_EXP107_TEMPLATECTRL_2026-09-29.md` (independent Law #14 review SIGN via LOG-4536/4537/4538). $0 CPU, ~4 min. No signed protocol, paper source, or GPU-queue artifact touched. No push.
+
+**Preconditions [OBSERVATION]:** all passed. Backbone hash Δθ=0 pre/mid/post/final (`ec276abe…e0ed`); train-artifact reuse-integrity hashes match (`4e6229be…`, `4668fc45…`); decorrelated-bench pin matches (`e91b302f…`); item-ID overlap tripwire 0; sanity gate — retrained head in the EXP106 environment (sklearn 1.9.1, torch 2.14.0+cpu) reproduced **60/60** on the original EXP091 bench (rebuilt verbatim via `build_test_premises`); block-off byte-identical discipline PASS (determinism + scored==fresh, `sha 9b6e8afb…` ×3).
+
+**Primary metric [OBSERVATION]:** logistic head (L2, C=1.0) trained on the template-correlated EXP092-B bench scored **34/60 = 0.5667** on the 60-item template-decorrelated bench. One-sided binomial p vs chance = **0.1831**. Per-cell: A-first/original 15/15, A-first/flipped 4/15, C-first/original 15/15, C-first/flipped 0/15 (original-word cells 30/30, flipped-word cells 4/30 — the registered template-detector signature).
+
+**Verdict: KILL — the EXP106 transfer reading.** 34/60 ≤ 35/60 (pre-reg bar, verbatim). The EXP106 60/60 was pure surface-template detection, not a target-position readout; the GPU head-training proposal licensed by EXP106's CONTINUE is **VOID**. Any new GPU proposal must be re-licensed against a template-decorrelated design (founder-gated; no execution licensed). Per the registered caveat: the collapsed score kills the reading under *either* a word-template or a subject-position cue — the test does not distinguish them. No re-run, no larger-n rescue (unlicensed — barred). EXP106's registered CONTINUE verdict stands as registered (its bars were binding; this lane tested the *reading*, not the verdict).
+
+**Deliverable [FACT]:** `research/experiments/EXP107_TEMPLATECTRL_REPORT_2026-09-29.md`; raw logs/embeddings/per-item under `experiments/runs/EXP107_templatectrl/out/` (`exp107_execution_log.txt`, `exp107_test_embeddings.npz`, `exp107_per_item.json`, `exp107_result.json`).
+
+**Lane stops here.** No follow-ups dispatched. Independent review of this execution is a separate lane, not this lane's work.
+
+**Next free: LOG-4541.**
+
+## LOG-4541 — H1 (HDI) pre-registration drafted: Honesty-Decodability Instrument (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4541 (pre-registration drafting lane, H1 from the 2026-09-29 summit sprint dossier). Single-lane fence held: drafting only — no model runs, no embeddings touched, no GPU contact, no experiment number minted, no commits, no pushes, no PRs, no stash. $0 CPU. Read-only on signed protocols (v82/v83/v84), weights, and the GPU queue. No self-review, no self-approval; independent Law #14 review is a separate lane. Next-free number verified from the log tail (LOG-4540 was last) — LOG-4541 was free as pre-assigned.
+
+**Source [FACT]:** `research/innovation/SPRINT_2026-09-29_SUMMIT.md` §H1 (worth-it gate passed, ranked #2). Drafted artifact: `research/prereg/EXP_PREREG_H1_HDI_2026-09-29.md`.
+
+**Pre-registration summary [HYPOTHESIS]:** on the 60-item EXP091 bench, the fidelity between a linear probe's decoded self-report (frozen Pythia-410m layer-20 decision-time activations) and the registered argmax decision statistic falls in [0.70, 0.95] with probe decodability ≥ 0.70 — a measurable, calibrated honesty gap, linearly instrumentable at the program-standard read site. Falsifiers: fidelity ≥ 0.98 (no gap) or ≤ 0.55 (no signal).
+
+**Method [PROPOSITION]:** frozen backbone (Δθ=0, LOG-331 hash-checked — Law #6); 60-item EXP091 bench rebuilt verbatim with provenance SHA-256 pin; actual decision = registered argmax decision statistic (cosine(state_emb, option_emb), argmax(A,C), ties → C; G4 instrument-health gate — EXP091 signed protocol verbatim); self-report = greedy generation against one pinned verbatim prompt template ("Which option did you choose — A or C? Reply with a single letter and nothing else."), pinned parse rule, ≥7/60 unparseable → RUN-INVALID; probe = L2 logistic (C=1.0) on the state_emb vector, stratified 3-fold CV (seed 0), out-of-fold predictions; fidelity = (1/n_valid) Σ 1[decoded == decision]. Law #7 clean by construction: probe targets are model-generated self-reports, bench labels never used as targets and never enter the metric. NOT a follow-up to EXP106/EXP107 — that line is closed (EXP107 template-control KILL, 34/60; EXP106 GPU license void); H1 tests a different object (honesty, not transfer) and reuses no EXP106/EXP107 artifact.
+
+**Decision bars (registered):** ≥ 59/60 (≥0.98) → KILL (≤1 miss is parse/generation noise — no gap to study); 58/60 → HELD; 42–57/60 ([0.70,0.95]) with decodability ≥ 0.70 → CONTINUE (P(X≥42|chance)=0.0013 — decisive signal; P(X≤57|0.99)=0.022 — the gap is real; licenses the honesty-probe instrument program as later lanes only); 42–57/60 with decodability < 0.70 → HELD (incoherent, pinned); 34–41/60 → HELD (weak signal — licenses nothing, retires nothing); ≤ 33/60 (≤0.55) → KILL (P(X≥33|chance)=0.259 — no signal; ≤23/60 additionally records a systematic-misreporting [OBSERVATION] without changing the KILL). No re-runs, no larger-n rescue — barred as gate tweaks. Full falsification decision tree in the draft; all degrees of freedom pinned in advance (prompt, decision statistic, read site, probe, CV, seeds, parse rule, bars) — the EXP106/EXP107 lesson.
+
+**Cost [FACT]:** $0 CPU, ~2h, no GPU contact.
+
+**Deviation [FACT]:** the dossier's "probe decodability ≥ 3× chance" is ill-defined for a binary target (chance=0.5 → 3× chance exceeds 1); corrected at drafting to a registered decodability gate ≥ 0.70 (P(X≥42|chance)=0.0013). Fidelity bars unchanged. Novelty stays N1. A CONTINUE is an oversight primitive validated on this bench and prompt — not consciousness, not generality, not template-generality.
+
+**Boundary:** independent Law #14 review of this exact file, CEO launch decision, and execution under a minted experiment number are later lanes — not this one. This lane stops here.
+
+**Next free: LOG-4542.**
+
+## LOG-4542 — Independent Law #14 review of H1 (HDI) pre-registration: SIGN-WITH-FIXES (2026-09-29)
+
+**Lane [FACT]:** pre-assigned LOG-4542, independent review lane. This lane did not draft the document. $0 CPU. Read-only everywhere except the review output and this log entry. No model runs, no weights touched, no GPU contact, no experiment number minted, no commits, no pushes, no PRs.
+
+**Document under exact-version review [FACT]:** `research/prereg/EXP_PREREG_H1_HDI_2026-09-29.md` (H1 — HDI: Honesty-Decodability Instrument; drafted under LOG-4541). Review: `research/reviews/LAW14_REVIEW_H1_HDI_2026-09-29.md`.
+
+**Verdict: SIGN-WITH-FIXES** — 4 fixes, each verifiable; fixes 1–3 required before execution, fix 4 editorial. This review does not fix the draft, approve execution, or dispatch follow-ups.
+
+**Findings [INTERPRETATION]:** (1) Falsifiability: bars decisive in both directions — under the null ≈81% of mass lands in KILL, ≈18% in the 34–41 HELD band; under a real gap the mass concentrates in CONTINUE. The HELD zones are honest indeterminacy, not a hedge. (2) All six binomial claims independently recomputed and match (0.0013 / 0.022 / 0.66 / 0.259 / 0.0031 / 0.046). The dossier's ill-defined "≥ 3× chance" → ≥ 0.70 gate correction is sound and documented as a deviation. (3) Parse rule is a total deterministic function — airtight; base-model non-compliance correctly routes to RUN-INVALID, not a verdict. (4) Law #7 clean by construction — bench labels never appear as probe targets or in the metric; no leakage path found. (5) EXP091 decision-statistic reuse is valid; H1 stands alone from the closed EXP106/EXP107 line (no artifact reused). (6) Overclaim guards hold; feasibility "~2h CPU, no GPU" is credible.
+
+**Primary defect [INTERPRETATION]:** degenerate self-report channel is unpinned — a constant or near-constant parsed self-report (the likely base-model echo path) makes `StratifiedKFold(3)` raise `ValueError`, leaving the executor to improvise (unlicensed degree of freedom) instead of resolving. Fix 1 pins a degenerate-channel → RUN-INVALID branch plus balanced-accuracy for the decodability gate so a majority-class probe cannot pass it. Cross-check: the registered EXP091 decisions are 31 A / 29 C (recomputed from `exp091_report.json`; 0 ties), so no false CONTINUE is live on this bench — the fix is defense-in-depth for the instrument logic. Fix 2 corrects the §4 "n_valid = 60" wording (bars are fractions of n_valid ∈ [54,60]; binomial values are the n=60 reference). Fix 3 adds 4 missing rows to the §5 registry (backbone hash pin, determinism pins, single-token assertion, G4 gate). Fix 4 removes a redundant clause.
+
+**Boundary:** the fixes belong to the drafting lane (separate lane); CEO launch only after a re-review signs the fixed exact version. This lane stops here.
+
+**Next free: LOG-4543.**
+
+## LOG-4543 — H1 HDI pre-registration repair: applied LOG-4542 SIGN-WITH-FIXES (2026-09-29)
+
+**Lane:** pre-registration repair (drafting-file repair only; $0 CPU; this lane wrote nothing else).
+**Document repaired:** `research/prereg/EXP_PREREG_H1_HDI_2026-09-29.md` (drafted LOG-4541; independently reviewed LOG-4542, SIGN-WITH-FIXES).
+
+**Fixes applied — exactly the 4 the LOG-4542 review requires:**
+1. **FIX-1 (required):** degenerate self-report channel pinned — parsed self-report with < 2 distinct classes, or minority class < 3 members (the `StratifiedKFold(3)` minimum) → **RUN-INVALID (degenerate self-report channel)**, placed in the §6 decision tree before any verdict; no executor improvisation licensed. Decodability diagnostic switched from plain accuracy to **balanced accuracy** (`sklearn.metrics.balanced_accuracy_score`), ≥ 0.70 gate unchanged (a constant/majority-class probe scores ≤ 0.50 and cannot pass).
+2. **FIX-2 (required):** §4 header restated — bars are **fractions of n_valid** (n_valid ∈ [54, 60] when the elicitation gate does not fire); binomial values are the n = 60 reference license, negligibly shifted in the window (P(X ≥ 39 | 55, 0.5) = 0.001334 vs 0.001335 at n = 60, per the review's recomputation — no new precision invented); executor must report n_valid.
+3. **FIX-3 (required):** §5 registry gained 4 rows already pinned in body text — backbone parameter-hash pin (LOG-331 `ec276abe…0ed`), determinism pins (`model.eval()`, `torch.no_grad()`, `device_map="cpu"`, float32), single-token BPE assertion (RUN-INVALID on failure), G4 instrument-health gate.
+4. **FIX-4 (editorial):** redundant clause removed — systematic-misreporting diagnostic now reads "if fidelity ≤ 23/60"; the P(X ≤ 23 | 60, 0.5) = 0.046 license is unchanged.
+
+**Not changed:** hypothesis, decision logic, verdict bars, correctly-stated numbers, and all other sections. A one-line revision note was added to the header for exact-version traceability; re-verification of this exact version is a **separate lane** (not this lane's work).
+
+**Boundary:** execution is NOT approved; no experiment number minted; no push; no GPU contact; no weights touched. CEO launch only after a re-review signs the fixed exact version.
+
+## LOG-4544 — Independent fix-verification of H1 (HDI) pre-registration: ALL-FIXES-VERIFIED, review upgraded to SIGN (2026-09-29)
+
+**Lane [FACT]:** pre-assigned LOG-4544, fix-verification lane. Independent of the LOG-4541 drafting lane and the LOG-4543 repair lane. $0 CPU. Read-only everywhere except the verification output and this log entry. No model runs, no weights touched, no GPU contact, no experiment number minted, no commits, no pushes, no PRs.
+
+**Documents [FACT]:** verified `research/prereg/EXP_PREREG_H1_HDI_2026-09-29.md` against `research/reviews/LAW14_REVIEW_H1_HDI_2026-09-29.md` (LOG-4542, SIGN-WITH-FIXES, 4 fixes). Verification report: `research/reviews/LAW14_FIXVERIFY_H1_HDI_2026-09-29.md`.
+
+**Verdict: ALL-FIXES-VERIFIED — the LOG-4542 review is upgraded to SIGN.** Each fix confirmed with exact quoted text and file line: (1) degenerate self-report channel → RUN-INVALID branch present in the §6 decision tree (line 133) before any verdict row, plus decodability switched to `balanced_accuracy_score` with the ≥ 0.70 gate (§3.5 line 69, §5 registry line 118); (2) §4 header restated as fractions of n_valid ∈ [54, 60] with the n=60 binomial reference and the n=55 check value 0.001334 vs 0.001335 matching the review's recomputation (line 80), executor must report n_valid; (3) §5 registry gained all 4 rows — backbone hash pin, determinism pins, single-token BPE assertion, G4 gate (lines 105, 106, 115, 116); (4) redundant "fidelity ≤ 33/60 and" clause removed from the systematic-misreporting diagnostic, now reads "if fidelity ≤ 23/60" with the 0.046 license unchanged (line 92).
+
+**Spot-check [FACT]:** hypothesis, decision bars/tree, and all six binomial values (0.0013 / 0.022 / 0.66 / 0.259 / 0.0031 / 0.046) unchanged. No unrelated rewording detected. Honest caveat: the prereg file is untracked so no pre-repair committed version exists for a byte-level diff; the check was internal consistency against the review's detailed draft description, which passed on every quoted passage.
+
+**Boundary:** this lane verifies only — execution is NOT approved, no experiment number minted. CEO launch decision is a separate lane. This lane stops here.
+
+**Next free: LOG-4545.**
+
+## LOG-4545 — CEO launch decision: H1/HDI cleared to execute as EXP108 (2026-09-29)
+Pre-registration EXP_PREREG_H1_HDI_2026-09-29.md drafted (LOG-4541), independently reviewed SIGN-WITH-FIXES (LOG-4542; degenerate-channel hole found), four fixes applied (LOG-4543), fixes independently verified ALL-FIXES-VERIFIED upgrading the review to SIGN (LOG-4544). Decision bars locked: ≥59/60 KILL (no gap) / 58 HELD / 42–57 with balanced-accuracy ≥0.70 → CONTINUE / 42–57 with <0.70 → HELD / 34–41 HELD / ≤33/60 KILL; degenerate self-report channel → RUN-INVALID; bars as fractions of n_valid ∈ [54,60]. $0 CPU, ~2h, no GPU contact, backbone Δθ=0. CEO authorizes execution as EXP108 (next after EXP107). Execution lane dispatched. Next free: LOG-4546.
+
+## LOG-4546 — EXP108 (H1/HDI) execution: RUN-INVALID — elicitation failure, 60/60 unparseable echo path (2026-09-29)
+
+**Lane [FACT]:** pre-assigned LOG-4546, execution lane. Executed EXP108 exactly per `research/prereg/EXP_PREREG_H1_HDI_2026-09-29.md` (signed via LOG-4541→4544, CEO launch-cleared LOG-4545). $0 CPU. Read-only on signed protocols and paper sources; no signed artifact modified, no push, no GPU contact, no credentials.
+
+**Preconditions [FACT]:** provenance SHA-256 pin `47281cd3…0585` matched; bench rebuilt verbatim, 60/60 items; per-item single-token BPE assertions passed (no items dropped); backbone pre-hash `ec276abe3902fab0…0ed` matched the LOG-331 pin exactly (Δθ=0 at launch); post-extraction hash matched (Δθ=0 held through 180 forward passes); environment torch 2.14.0+cpu / transformers 5.17.0 / sklearn 1.9.1 as registered.
+
+**G4 instrument-health gate [OBSERVATION]:** cosine spread over the 120 values = 0.080273 ≥ 1e-4 — PASS. Cross-check: reproduces EXP091's historical `g4_spread = 0.0802726149559021` to 6 decimals; ties-broken-toward-C = 0 matches EXP091. The decision-statistic instrument worked — bit-consistent with the signed extraction.
+
+**Outcome [OBSERVATION]:** self-report elicitation (pinned verbatim template, greedy, max_new_tokens=4) returned **n_unparseable = 60/60** — the pre-registered gate (≥7) fired → **RUN-INVALID (elicitation failure), NOT a verdict.** Failure mode verified on a 3-item diagnostic: greedy generation emitted the identical token sequence `[187, 187, 23433, 27]` = `"\n\nQuestion:"` on every item — a pure echo path. Base Pythia-410m (no instruction tuning) does not answer the self-report question; it continues the document pattern. First alphabetic char 'Q' → UNPARSEABLE, deterministically, on all 60 items. This is the exact failure mode the LOG-4542 independent review anticipated; the gate routed it by design.
+
+**No metric read:** n_valid, fidelity, and balanced accuracy were never computed (gate fired before the probe stage). The degenerate-channel gate was never reached. Post-generation backbone hash was not computed — the run stopped at the gate; no forward pass followed.
+
+**What this licenses / does not license [INTERPRETATION]:** licenses only the apparatus observation — the pinned single-template greedy elicitation does not elicit a parseable self-report from base Pythia-410m on this bench. It is NOT evidence about honesty, does NOT kill/hold/continue the honesty-instrument program, and does NOT retire H1. Any follow-up (different prompt, more tokens, different read site) is a new pre-registered lane — barred as a gate tweak from this one.
+
+**Report:** `research/experiments/EXP108_HDI_REPORT_2026-09-29.md`. Raw evidence: `experiments/runs/EXP108_hdi/out/exp108_console.log`; executor `experiments/runs/EXP108_hdi/run_exp108.py`.
+
+**Boundary:** execution only — no review, no clearance, no follow-up dispatched. This lane stops here.
+
+**Next free: LOG-4547.**
+
+## LOG-4547 — H4/PTTSC pre-registration drafted (2026-09-29)
+
+**Lane [FACT]:** pre-assigned LOG-4547, drafting lane. Drafted `research/prereg/EXP_PREREG_H4_PTTSC_2026-09-29.md` for H4 (PTTSC: Planned Test-Time Scaling Coordinator, CPU pilot) from the SPRINT_2026-09-29_SUMMIT.md §H4 dossier (worth-it gate passed, ranked #3).
+
+**Design [FACT]:** planner writes 4 outlines in one greedy pass (pinned verbatim prompt, max_new_tokens=160, outline extraction on `1.`–`4.` markers, ≥2 distinct non-empty outlines or planner-invalid); frozen executor develops each (pinned verbatim prompt, temperature=0.7/top_p=0.9/max_new_tokens=48, pinned seeds) — vs 4 independent baseline samples (pinned verbatim prompt, identical sampling spec, pinned seeds); majority vote per arm, ties → C (foil, conservative); ≥3 parseable votes per arm or arm-invalid; 20−n_valid ≥ 3 → RUN-INVALID; ≥50% unparseable generations → RUN-INVALID (the EXP108 echo-mode defense). Budget pinned: identical *executor* budget (4×48 tokens/arm); the single planner pass is the treatment. Pilot scope = first 20 bench items in build order (dossier's n=60 ≈ 4.5–9+ CPU-hours — beyond the practical envelope; a full-n run is a separate lane, not a re-run). $0 CPU, ~1.5–3.5h.
+
+**Decision bars [FACT]:** CONTINUE = one-sided McNemar exact p ≤ 0.05 on the paired (b,c) table (minimum practical: (5,0), net +5/20); net ≤ 0 → KILL (dossier breaking point verbatim); 0 < net with p > 0.05 → HELD. No rescue runs, no post-hoc rewording (BARRED, Law #4).
+
+**Deviation [FACT]:** two deviations from the dossier, mathematically required and recorded in the prereg §8: (1) budget clarified to identical-executor-budget + planner-as-treatment; (2) the dossier's raw +8pp CONTINUE bar is not statistically meaningful at n=20 (even net +5/20 with (b,c)=(6,1) gives p=0.0625) — replaced by the McNemar license. McNemar critical values verified at drafting.
+
+**What this does NOT claim:** a CONTINUE is a planning premium at this scale/bench only — not superintelligence, not consciousness, not generality; novelty N1 (Known Combination; PTTS prior art 2609.27374 + Meta FAIR 2609.26704; complementary to GPU-gated EXP070, no reuse of closed EXP106/EXP107 artifacts).
+
+**Boundary:** drafting only — no execution, no experiment number minted, no self-review. Independent Law #14 review is a separate lane. This lane stops here.
+
+**Next free: LOG-4548.**
+
+## LOG-4548 — Independent Law #14 review of H4/PTTSC pre-registration: SIGN-WITH-FIXES (2026-09-29)
+
+**Lane [FACT]:** pre-assigned LOG-4548, independent review lane. Independent of the LOG-4547 drafting lane. $0 CPU. Read-only everywhere except the review output and this log entry. No model runs, no weights touched, no GPU contact, no experiment number minted, no commits, no pushes, no PRs.
+
+**Documents [FACT]:** reviewed `research/prereg/EXP_PREREG_H4_PTTSC_2026-09-29.md` (exact version) against dossier `research/innovation/SPRINT_2026-09-29_SUMMIT.md` §H4 and the bench builder `experiments/runs/EXP089_clm8b_falsifier/benchmark_exp089.py`. Review: `research/reviews/LAW14_REVIEW_H4_PTTSC_2026-09-29.md`.
+
+**Verdict: SIGN-WITH-FIXES** — 5 required fixes (each verifiable by quoted text), 2 recommendations. Execution is NOT approved; the fixed exact version must pass a re-review/fix-verification lane before any CEO launch decision.
+
+**Headline finding [INTERPRETATION]:** the answer-elicitation protocol is construct-invalid as written. The prompt asks the model to "Reply with a single letter, A or C" while the question lists entity names ("Who is higher in rank, Mars or Venus?") and never establishes what A/C denote — a human subject would ask what the letters refer to. Independently verified: all 60 bench items ask "who is higher" with the target always highest, so the ground-truth label is constant ("A" = target) across items. As operationalized, "accuracy" = P(emit "A"), not decision capability — invalidating both CONTINUE (would be a token-bias false positive) and KILL (would rest on a broken instrument) readings. Fix (required): elicit the entity name (recommended — keeps {PROMPT} truly verbatim) or letter-label the options; the McNemar machinery, gates, and bars are untouched by the repair.
+
+**Other required fixes [FACT]:** (2) outline-extraction rule underspecified for preambles, repeated/in-text "1." markers, and seed indexing — pin an exact deterministic algorithm; (3) pin parse rule to newly-generated-tokens-only (EXP108 convention) and clarify the 50% tripwire denominator as executor+baseline vote-generations; (4) §8 header says "two deviations" but there are three (budget, bars, n=60→n=20 scope) — correct the count; (5) KILL interpretation ("TTS axis dead for this task class") overclaims for a 20-item planet-only pilot — fence to piloted scope, matching CONTINUE's fence.
+
+**Verified passes [FACT]:** all 7 McNemar table values recomputed exact via math.comb — match ((5,0)→0.0312 … (9,2)→0.0327); minimum CONTINUE bar is indeed (5,0); (4,0)→0.0625 fails. The dossier's +8pp bar is confirmed meaningless at n=20 (+8pp ≈ 1.6 items; (2,0)→p=0.25). Budget-as-treatment reading is correct and honestly disclosed; the (5,0) bar contains the extra-token concern. Planning is the only cross-arm difference (executor/baseline share identical sampling spec; planner greediness is treatment, touches no baseline). Degeneracy defenses sufficient (4-identical-outlines caught by the ≥2-distinct rule). Power simulation: not theater — P(CONTINUE)≈0.62 on a large clean effect, ≈0.001 under the null; moderate effects land honestly in HELD. Feasibility arithmetic checks (10,880 tokens, 180 generations, ~1.5–3.5h). First-20 rule is provably cherry-pick-free (mechanical, pre-treatment-data) though unrepresentative (15 planet-2hop + 5 planet-3hop, 0% elemental — stratification recommended). Laws #6/#7/#9/#13 clean; Law #4 clean (no rescue runs, BARRED rewording); PTTS citation arXiv:2609.27374 independently verified real via arXiv (Wu et al., PTTS-ZS +6.7pp pass@64 — matches dossier). H1's letter-convention precedent distinguished: H1's metric never depended on letter votes (RUN-INVALID pre-metric); H4's does entirely.
+
+**Boundary:** review only — no fix applied, no execution approved, no experiment number minted, no follow-up dispatched. Repair + re-review are separate lanes. This lane stops here.
+
+**Next free: LOG-4549.**
+
+## LOG-4549 — H4/PTTSC pre-registration repair: 5 required fixes applied (2026-09-29)
+
+**Lane:** LOG-4549 (repair only — this lane did not draft the document, does not review, does not approve execution, does not mint an experiment number, dispatches no follow-ups)
+**Document repaired:** `research/prereg/EXP_PREREG_H4_PTTSC_2026-09-29.md` (drafted LOG-4547, independently reviewed LOG-4548: SIGN-WITH-FIXES)
+
+**Fixes applied [FACT]:** all 5 required fixes from the LOG-4548 review, verified by exact quoted-text grep after edit:
+1. **FIX-1 (construct validity):** executor (§3.4) and baseline (§3.5) closing instructions changed to "Reply with the name of the higher-ranked entity and nothing else."; parse rule replaced with: "Decode the newly generated tokens only (prompt tokens excluded — the EXP108 convention); strip whitespace and trailing punctuation (.,;:!?); case-insensitive compare against the item's two bench entity names (bench keys "A" and "C"): exact match → that entity is the vote; otherwise UNPARSEABLE." Labels re-pinned to the target entity name (bench "A" key, §3.2); tie-break re-pinned to the foil entity (bench "C" key, §3.6 + DoF table). Verification: 0 occurrences of "single letter" / "first alphabetic" remain; §§3.4–3.5 carry the entity-name instruction.
+2. **FIX-2 (extraction algorithm):** §3.3 rule replaced with the exact left-to-right first-occurrence algorithm — preamble discarded, missing marker → empty outline, drop empties/exact duplicates, planner-valid iff ≥ 2 distinct non-empty, outline_idx = 0-based post-dedup position. §5 DoF table updated and the 2–3-outline executor-behavior row added per the review.
+3. **FIX-3 (parse scope):** new-tokens-only scope pinned in the parse rule (§3.5) and DoF table; §3.8 tripwire denominator clarified to "≥ 50% of executor + baseline vote-generations UNPARSEABLE (planner generations covered by the planner-valid rule)"; §6 decision-tree row mirrored.
+4. **FIX-4 (deviation count):** §8 header corrected to "three deviations"; pilot scope (n=60→n=20, planet-only: 15 planet-2hop + 5 planet-3hop, 0% elemental) added as item 3 (§3.2/§7).
+5. **FIX-5 (KILL fence):** KILL rows in §§4/6 re-scoped to "at this pilot scale on this pilot bench; the coordinator axis is retired for the piloted scope (a full-bench test remains a separate, unlicensed lane)"; §2's "dead for this task class" re-scoped identically so no unqualified occurrence remains (0 occurrences verified).
+
+**Unchanged per the repair rule [FACT]:** McNemar bars and (b,c) table, the budget-as-treatment design, the (5,0) minimum CONTINUE configuration, all verified numbers, seed streams, backbone hash pin, determinism pins, Law #4/#6/#7/#9/#13 posture, and the §8 overclaim guards — untouched.
+
+**Recommendations [INTERPRETATION]:** R1 (stratified pilot), R2 (planner token cap), R3 (power-characterization sentence) are recommendations, not requirements — all three noted-but-declined. Reason: each would alter a pinned degree of freedom (first-20 rule, planner generation spec) or add unverified-by-this-lane text that the review explicitly passed as-is or marked optional; the repair rule is "exactly what the review requires, nothing more." Stratification remains open for a future separate lane.
+
+**Boundary:** repair only. Execution is NOT approved. The repaired exact version must pass a re-review/fix-verification lane (program precedent: H1 LOG-4542 → LOG-4544) before any CEO launch decision. No experiment number minted. This lane stops here.
+
+**Next free: LOG-4550.**
+
+## LOG-4550 — H4/PTTSC fix-verification: all five required fixes verified (2026-09-29)
+
+Independent fix-verification lane (separate from LOG-4547 drafting and LOG-4549 repair; $0 CPU; read-only on sources). Verified the LOG-4549-repaired `research/prereg/EXP_PREREG_H4_PTTSC_2026-09-29.md` against the required-fixes section of the LOG-4548 Law #14 review (using the required-fixes numbering, not the review's §7 FIX-4/FIX-5 cross-reference slip).
+
+FIX-1 (construct validity): PASS — closing instruction "Reply with the name of the higher-ranked entity and nothing else." verbatim 2x; entity-name parse rule (newly generated tokens only, strip whitespace/trailing punctuation, case-insensitive exact match vs bench entity names, else UNPARSEABLE) verbatim; labels = target entity name; tie-break = foil entity; zero occurrences of "single letter"/"first alphabetic"/"Reply with a single letter".
+
+FIX-2 (extraction): PASS — §3.3 carries the exact first-occurrence-marker algorithm (preamble discarded, missing marker → empty, drop empties/dups, planner-valid iff ≥2 distinct non-empty, outline_idx = 0-based post-dedup); DoF table updated incl. the new "Executor outline count" row.
+
+FIX-3 (parse scope): PASS — new-tokens-only pinned in §3.5 and the DoF table; §3.8 tripwire denominator clarified ("≥50% of executor + baseline vote-generations ... UNPARSEABLE"; planner covered by planner-valid rule).
+
+FIX-4 (deviation count): PASS — §8 header reads "three deviations" with the planet-only pilot scope listed as item 3.
+
+FIX-5 (KILL fence): PASS — KILL rows in §§4/6 (and the §2 decision-changed KILL) fenced to piloted scope ("at this pilot scale on this pilot bench ... retired for the piloted scope"); zero unqualified "dead for this task class" occurrences.
+
+Spot-checks intact: McNemar table (all 7 values match LOG-4548's recomputation), budget-as-treatment design (§3.7), seeds (2000+/3000+ disjoint streams), hash pins (LOG-331 backbone pin; EXP091 provenance SHA-256), determinism pins (eval/no_grad/cpu/float32).
+
+**Verdict: ALL-FIXES-VERIFIED — the LOG-4548 review is upgraded to SIGN.** Execution and experiment-number minting remain the CEO launch decision; this lane approves nothing further. Verification file: `research/reviews/LAW14_FIXVERIFY_H4_PTTSC_2026-09-29.md`.
+
+**Next free: LOG-4551.**
+
+## LOG-4551 — CEO launch decision: H4/PTTSC cleared to execute as EXP109 (2026-09-29)
+Pre-registration EXP_PREREG_H4_PTTSC_2026-09-29.md drafted (LOG-4547), independently reviewed SIGN-WITH-FIXES (LOG-4548; construct-invalid A/C elicitation caught, entity-name fix required), five fixes applied (LOG-4549), fixes independently verified ALL-FIXES-VERIFIED upgrading the review to SIGN (LOG-4550). Decision bars locked: McNemar exact p ≤ 0.05 (min (5,0), net +5/20) → CONTINUE / net ≤ 0 → KILL (fenced to piloted scope) / 0 < net with p > 0.05 → HELD. 20-item pilot, first 20 in build order, planner-vs-identical-executor-budget, entity-name elicitation, backbone Δθ=0. $0 CPU, ~1.5–3.5h, no GPU contact. CEO authorizes execution as EXP109 (next after EXP108). Execution lane dispatched. Next free: LOG-4552.
+
+## LOG-4552 — EXP109 (H4/PTTSC) execution: RUN-INVALID, elicitation failure (2026-09-29)
+Executed EXP109 exactly per the signed pre-registration (CEO launch LOG-4551; $0 CPU; frozen Pythia-410m, Δθ=0 verified by LOG-331 hash before/after: ec276abe…38e0ed both; bench provenance SHA-256 pin matched; 20-item pilot = first 20 in build order). Outcome: **RUN-INVALID (elicitation failure)** — n_valid=0/20, 20−n_valid=20 ≥ 3 gate fired; the ≥50% unparseable apparatus tripwire also fired (88/88 vote-generations unparseable). Planner arm: 18/20 items produced zero numbered outlines (greedy decoding fell into a repetition attractor emitting "Plan: Write a list of the possible answers to the question." — no 1.–4. markers); 2 items yielded 4 mechanical "outlines" that were answer-enumerations, not plans, and failed arm-validity anyway (executor 0/4, baseline 0/4 parseable). Baseline: 80/80 samples unparseable (EXP108 echo mode at scale). No metric read, no (b,c) table, no McNemar p — per §3.8/§6 this is an apparatus finding, not a verdict about planning. Licenses nothing, retires nothing; the coordinator axis is NOT retired for the piloted scope; any future planner-executor test is a separate pre-registered lane, not a continuation. 108 generations in 20.9 min. Report: research/experiments/EXP109_PTTSC_REPORT_2026-09-29.md; raw: experiments/runs/EXP109_pttsc/out/. Next free: LOG-4553.
+
+## LOG-4553 — H2 (QBR) pre-registration drafted: Quantization-Boundary Robustness (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4553 (pre-registration drafting lane, H2 from the 2026-09-29 summit sprint dossier). Single-lane fence held: drafting only — no model runs, no weights touched, no GPU contact, no experiment number minted, no commits, no pushes, no PRs, no stash. $0 CPU. Read-only on signed protocols (v82/v83/v84), weights, and the GPU queue. No self-review, no self-approval; independent Law #14 review is a separate lane.
+
+**Source [FACT]:** `research/innovation/SPRINT_2026-09-29_SUMMIT.md` §H2 (worth-it gate passed, ranked #4). Drafted artifact: `research/prereg/EXP_PREREG_H2_QBR_2026-09-29.md`.
+
+**Pre-registration summary [HYPOTHESIS]:** the EXP105 falsification-kit battery's binding verdict (KILL at step 9) reproduces under weight-only INT8 fake-quantization of the frozen backbone — i.e., the Decodability Gap boundary is precision-regime-robust at the binding-bar level.
+
+**H2-vs-LOG-4528-condition argument [INTERPRETATION]:** the draft argues H2 is licensed, not barred, by LOG-4528's "no retro-verification of closed S4/S5/S6/I2′ lines" condition — (1) H2 does not touch the zero-flip S4/S5/S6 lines; (2) the EXP105 verdict is a statistical null (p=0.0625), not a zero-flip verdict, so the condition's transformation-invariance rationale does not cover it; (3) H2 is fenced from overturning or re-opening the I2′ KILL — it asks the new question of whether the boundary needs a precision index. The draft explicitly invites the Law #14 reviewer to kill H2 outright if §1.1 reads as rationalization.
+
+**Method [PROPOSITION]:** per-output-channel symmetric INT8 fake-quantization of Linear weights (FP32 storage/compute — "fake" pinned vs true INT8 kernels; bitsandbytes-exact named as the GPU-gated honest ceiling); backbone verified against the LOG-331 pin before quantization, quantized copy derived and discarded, tier0.py internal hash assertion still guards drift; zero generation (hard constraint from the EXP108/EXP109 RUN-INVALID lesson — tier0.py is forward-passes only, battery.py is pure logit arithmetic).
+
+**Decision bars (registered):** seven named tiers T1–T7 against the FP32 EXP105 reference (TIER-0 PASSED @ 0.5333; KILL step 9; dM_T=+0.2381, dM_F=+0.1429, dM_R=0; McNemar b=5,c=0,p=0.0625; O=0.5714; n_pop=21). 7/7 → CERTIFIED; 6/7 with structural tiers (T1–T3: Tier-0 verdict, battery verdict class, battery step) intact → CERTIFIED-WITH-NOTE; any structural flip or ≤5/7 → PIVOT (precision-indexed boundary statement + one bounded characterization lane using the LOG-4528-adopted procedures; no closed line re-opens). False-positive risk addressed via the determinism argument (seeded run — flips are deterministic facts about the quantized regime, not sampling flukes) plus the 6/7 note band.
+
+**Cost [FACT]:** $0 CPU, ~2–4h, no GPU contact.
+
+**Deviations [FACT]:** seven recorded in the draft (§8) — tiers named/bound, "any flip → PIVOT" refined to structural-flip sensitivity, PIVOT operationally defined, fake-quant spec pinned, no-generation constraint added, LOG-4528-condition argument added, "KILL regime-dependence" restated as CERTIFIED. Novelty N1 (Known Combination).
+
+**Boundary:** independent Law #14 review of this exact file, CEO launch decision, and execution under a minted experiment number are later lanes — not this one. This lane stops here.
+
+**Next free: LOG-4554.**
+
+## LOG-4554 — Independent Law #14 review of H2 (QBR) pre-registration: SIGN-WITH-FIXES (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4554 (independent Law #14 review lane). Single-lane fence held: review only — no model runs, no weights touched, no GPU contact, no experiment number minted, no commits, no pushes, no PRs, no stash. $0 CPU. Read-only everywhere except this entry and the review file. Independence holds: the drafting lane was LOG-4553 (separate agent); this reviewer did not write the draft.
+
+**Artifact under exact-version review [FACT]:** `research/prereg/EXP_PREREG_H2_QBR_2026-09-29.md` — pre-registration for H2 (QBR: Quantization-Boundary Robustness), re-running the cleared EXP105 falsification-kit battery under INT8 fake-quantization.
+
+**Verdict [INTERPRETATION]:** **SIGN-WITH-FIXES** on the exact filename. Two verifiable fixes required (review file §F): (F1) pin the Law #13 environment side — record torch/transformers versions + thread count in the execution worksheet (tier0.py seeds but pins no thread count; CPU float32 matmul determinism across thread counts is not guaranteed); (F2) pin the quantized-copy presentation mechanism — state whether the quantized weights are held in-memory (state_dict swap) or saved to a local directory used as --model-id, since tier0.py loads by model-id. Neither fix alters the hypothesis, tiers, bars, or fences.
+
+**License question — the killing invitation declined [INTERPRETATION]:** the drafter's §1.1 invited the reviewer to kill H2 outright if the LOG-4528-condition argument read as rationalization. Tested adversarially; the invitation is declined. LOG-4528's condition bars "retro-verification of closed S4/S5/S6/I2′ lines" with the stated rationale "their zero-flip verdicts are transformation-invariant" — but EXP105's verdict is not a zero-flip verdict: verified against the reference worksheets (dM_T=+0.2381, dM_F=+0.1429, McNemar T-vs-R b=5/c=0/p=0.0625, KILL at step 9 via a statistical-null gate). The adopted compression paper (arXiv:2609.06473) proves exactly these components (baselines, dose-response) are precision-sensitive. H2's decision table contains no branch that overturns the I2′ KILL — the KILL stands under CERTIFIED, CERTIFIED-WITH-NOTE, and PIVOT alike — so the question is genuinely new (does the boundary need a precision index?), not re-litigation. Recorded as a scope ruling: the LOG-4528 condition bars re-running zero-flip lines under transformation; it does not bar precision-indexing a statistical-null verdict. S4/S5/S6 lines remain closed and untouched.
+
+**Verification summary [FACT]:** all seven T1–T7 reference values checked against `falsification_kit/reference/tier0_worksheet.json` and `battery_worksheet.json` (TIER-0 PASSED @ 0.5333; KILL step 9; contrasts; p=0.0625; O=0.5714; n_pop=21, median rank 4.0) — all match. Zero-generation verified (no `.generate(` in tier0.py; battery.py is pure logit arithmetic). The T5 attribution note verified against `core/scoring.py::battery_decision` (p_TR < 0.05 necessarily kills the ev9 KILL-9 path). Fake-quant gap honestly characterized with bitsandbytes-exact named as the GPU-gated ceiling; CERTIFIED fenced to the simulation scope at three points. PIVOT operationally defined (statement template + one bounded characterization lane + hard fences). Structural/non-structural tier distinction principled (binding outputs vs diagnostic evidence). Determinism argument sound.
+
+**Review file:** `research/reviews/LAW14_REVIEW_H2_QBR_2026-09-29.md`.
+
+**Boundary:** this lane stops here. Fix-verification is a separate lane; CEO launch decision and execution under a minted number are later lanes — not this one.
+
+**Next free: LOG-4555.**
+
+## LOG-4555 — H2 (QBR) pre-registration repair: F1/F2 review fixes applied (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4555 repair lane. Single-lane fence held: edited exactly one file (`research/prereg/EXP_PREREG_H2_QBR_2026-09-29.md`) applying only the two fixes the independent Law #14 review (`research/reviews/LAW14_REVIEW_H2_QBR_2026-09-29.md`, SIGN-WITH-FIXES, LOG-4554) required. Everything else read-only. No model runs, no weights touched, no GPU contact, no experiment number minted, no commits, no pushes, no stash. $0 CPU.
+
+**F1 — Law #13 environment pin applied [FACT]:** one sentence added to §3.3 step 1 requiring the execution worksheet to record the environment manifest — exact torch and transformers versions plus the CPU thread count the executor sets and reads back via `torch.get_num_threads()` — verifiable against the reference worksheet's existing keys by worksheet diff. Pre-write verification confirmed the checked-in reference worksheet carries `torch=2.14.0+cpu` and `transformers=5.17.0`; those values are cited in the pin as the reference baseline.
+
+**F2 — quantized-copy presentation mechanism pinned [FACT]:** one sentence added to §3.3 step 2 requiring the execution worksheet to state the presentation mechanism — in-memory `state_dict` swap after model load, or saved-to-local-directory used as `--model-id` — since tier0.py loads by model-id from cache and §3.2's "disposable in-memory copy" pins the quantization target, not how the copy is presented to the runner. The mechanism choice itself remains the execution lane's decision; only the disclosure is required, per the review.
+
+**Unchanged [FACT]:** hypothesis, the seven tiers, per-tier reproduce criteria, reference numbers, decision bars (CERTIFIED / CERTIFIED-WITH-NOTE / PIVOT), falsification decision tree, PIVOT definition, fences, fake-quant spec, Δθ=0 procedure, no-generation constraint, novelty N1, and all seven recorded deviations are byte-identical to the LOG-4553 draft. Nothing else was reformatted or reworded.
+
+**Open questions [FACT]:** none. No ambiguity was encountered — the review's two fixes were each specified as a single verifiable worksheet-disclosure sentence, and both were applied in exactly that form.
+
+**Boundary:** this lane authorizes no execution and performs no self-verification. Fix-verification against the review file, the CEO launch decision, and execution under a minted experiment number are separate later lanes — not this one.
+
+**Next free: LOG-4556.**
+
+## LOG-4556 — H2 (QBR) Law #14 fix-verification: ALL-FIXES-VERIFIED, review upgraded to SIGN (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4556 independent fix-verification lane. Verified the two fixes the independent Law #14 review (research/reviews/LAW14_REVIEW_H2_QBR_2026-09-29.md, LOG-4554, SIGN-WITH-FIXES) required on the exact artifact `research/prereg/EXP_PREREG_H2_QBR_2026-09-29.md`, against the LOG-4555 repair lane's claim. Independent of drafting (LOG-4553) and repair (LOG-4555). Read-only: no edits to the prereg, no model runs, no weights touched, no GPU contact, no commits, no pushes, no stash. $0 CPU.
+
+**F1 — PASS [FACT]:** §3.3 step 1 now requires the execution worksheet to record the Law #13 environment manifest — exact torch and transformers versions (citing reference pins `torch=2.14.0+cpu`, `transformers=5.17.0`) and the CPU thread count the executor sets and reads back via `torch.get_num_threads()`. The cited reference values were confirmed against `falsification_kit/reference/tier0_worksheet.json` (`"torch": "2.14.0+cpu"`, `"transformers": "5.17.0"`).
+
+**F2 — PASS [FACT]:** §3.3 step 2 now requires the execution worksheet to state the quantized-copy presentation mechanism — in-memory `state_dict` swap after model load, or saved-to-local-directory used as `--model-id`.
+
+**Spot-check [FACT]:** hypothesis, exact question, seven tiers T1–T7 with per-tier Boolean criteria, decision bars (CERTIFIED / CERTIFIED-WITH-NOTE / PIVOT), PIVOT operational definition, fences, fake-quant spec, §1.1 license argument (kill-invitation intact), and Δθ=0 procedure all present and unchanged. Only the two fix sentences were added.
+
+**Verdict [INTERPRETATION]:** **ALL-FIXES-VERIFIED.** The LOG-4554 independent Law #14 review is upgraded to **SIGN** on the exact filename `EXP_PREREG_H2_QBR_2026-09-29.md`. Full verification record: `research/reviews/LAW14_FIXVERIFY_H2_QBR_2026-09-29.md`.
+
+**Boundary:** this lane authorizes no execution and mints no experiment number. The CEO launch decision and execution are separate later lanes — not this one.
+
+**Next free: LOG-4557.**
+
+## LOG-4557 — CEO launch decision: H2/QBR cleared to execute as EXP110 (2026-09-29)
+Pre-registration EXP_PREREG_H2_QBR_2026-09-29.md drafted (LOG-4553; license question argued head-on in §1.1), independently reviewed SIGN-WITH-FIXES (LOG-4554; kill invitation declined — H2 licensed as boundary precision-certification, not barred retro-verification), two fixes applied (LOG-4555), fixes independently verified ALL-FIXES-VERIFIED upgrading the review to SIGN (LOG-4556). Decision bars locked: 7/7 tiers → CERTIFIED / 6/7 with T1–T3 intact → CERTIFIED-WITH-NOTE / any structural flip or ≤5/7 → PIVOT (precision-indexed boundary + one bounded characterization lane; I2′ KILL stands regardless). Per-channel symmetric INT8 fake-quant on Linear weights, FP32 compute, zero generation (hard constraint), backbone Δθ=0. $0 CPU, ~2–4h, no GPU contact. CEO authorizes execution as EXP110 (next after EXP109). Execution lane dispatched. Next free: LOG-4558.
+
+## LOG-4558 — EXP110 (H2/QBR) executed: CERTIFIED-WITH-NOTE — boundary verdict KILL-at-step-9 precision-certified under INT8 fake-quantization (2026-09-29)
+
+**Commissioning [FACT]:** pre-assigned LOG-4558 execution lane (CEO launch LOG-4557; pre-reg `research/prereg/EXP_PREREG_H2_QBR_2026-09-29.md`; independent Law #14 SIGN LOG-4556). $0 CPU, no GPU contact, no generation. Single-lane fence: executed only; signed protocols and paper sources untouched; no pushes, no PRs.
+
+**Sanity [FACT]:** `bash falsification_kit/reproduce_exp105.sh` → `REPRODUCTION EXACT ✔` (exit 0; 31/31 unit tests PASS; battery re-run matches published worksheet on all 7 fields).
+
+**Backbone [FACT]:** FP32 backbone `get_hash` (LOG-331 verbatim procedure: SHA-256 over sorted `state_dict()` keys, float32 bytes) = `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed` — matches LOG-331 pin exactly. A first-pass tier0-style parameter-order hash mismatched (`4c242d9a…`): root-caused as hash-method difference, not weight difference; documented in the report. Fake-quant (per-output-channel symmetric INT8, every `nn.Linear` weight, 97 layers / 271,488 rows, float32 compute; embeddings/biases/LayerNorm/activations FP32) applied to a disposable copy; copy SHA-256 `ed919d476819051e2ac7f16461bb07a0befa8886bb0c9f9ed28e14f20cab9c33` (differs — expected). Presentation mechanism: saved-to-local-directory, passed as `--model-id` to tier0.py (F2). tier0.py internal pre/post hash assertion held; FP32 reference weights never modified. Environment manifest: torch `2.14.0+cpu`, transformers `5.17.0` (both match reference pins), threads set 2 / read back 2, seed 20260928, float32, G1 gate 60/60.
+
+**Results [OBSERVATION]:** quantized Tier-0 `TIER-0 PASSED` @ baseline 0.5333 (identical to FP32; 28 failed, tie_rate 0.000, median failed rank 4.0); quantized battery **KILL at step 9** (n_pop=20, dM_T=+0.2000, dM_F=+0.1500, dM_R=0.0000, T-vs-R b=4 c=0 p=0.1250, O=0.5000). Seven tiers vs FP32 reference: T1 TRUE, T2 TRUE, T3 TRUE, T4 TRUE, T5 TRUE, T6 FALSE (O=0.5000 exactly at gate, not > 0.5 — 10/20 vs 12/21; population shrank 21→20 at the rank-5 margin), T7 TRUE. **6/7 with structural tiers T1–T3 intact.**
+
+**Verdict [INTERPRETATION]:** **CERTIFIED-WITH-NOTE** (exact pre-reg §4 language: "The single flipped tier is documented as a bounded, measured precision effect; verdicts are unchanged. Certification holds."). Falsification-tree branch: `6/7 true AND T1∧T2∧T3 true`. The T6 flip is a deterministic precision effect (single non-structural, diagnostic-evidence tier), not a sampling fluke; verdict class and step unchanged. PIVOT branch not triggered — no follow-up characterization lane dispatched, none licensed by this outcome. §7 fences honored: certification scoped to the simulation (not true INT8 hardware); the I2′/EXP105 KILL stands regardless — not strengthened, re-opened, or re-licensed; no closed line re-run; no capability claimed. Novelty N1.
+
+**Report:** `research/experiments/EXP110_QBR_REPORT_2026-09-29.md`. Raw logs: `experiments/runs/EXP110_qbr/out/` (tier0_quantized.json, battery_quantized.json, stdouts, fakequant_manifest.json, quantized_model/ disposable copy).
+
+**Boundary:** this lane stops here. No follow-up dispatch.
+
+**Next free: LOG-4559.**
+
+## LOG-4559 — Independent exact-artifact verdict review: EXP107 BIND, EXP108 QUALIFY, EXP109 BIND, EXP110 BIND (2026-09-29)
+Independent LOG-4559 lane (read-only; $0 CPU) re-verified the four newest execution verdicts against exact artifacts and pre-registration bars. EXP107 KILL: BIND — raw per_item 34/60, cells 15/15/4/15/15/15/0/15, p=0.1831 recomputed; registered ≤35/60 bar with ±5 noise annotation applied exactly. EXP108 RUN-INVALID: QUALIFY — registered elicitation gate (≥7 unparseable) fired on the raw console log (60/60); required footnote: per-item generation records were not retained, so the parse step is not independently re-computable from artifacts. EXP109 RUN-INVALID: BIND — raw n_valid=0/20, both registered gates fire (20−n_valid≥3; 88/88 unparseable tripwire); no planning verdict; pilot-scope fencing honored (axis not retired). EXP110 CERTIFIED-WITH-NOTE: BIND — all 7 per-tier Booleans recomputed from raw match (T6 FALSE at O=0.5000 exactly on gate); reference values match kit worksheets; 97 Linear layers in fakequant manifest; backbone pin-check-then-derive coherent; environment manifest matches pins; §7 fences present. Full record: research/reviews/VERDICTREVIEW_EXP107-110_2026-09-29.md. Next free: LOG-4560.
+
+## LOG-4560 — Scoreboard v1.6 sync: H-wave verdicts plotted, capability column unchanged at zero (2026-09-29)
+Scoreboard-sync lane (read-only on protocols/paper/GPU; $0 CPU) synced ~/workspace/SCBI/research/benchmarks/FRONTIER_SCOREBOARD.md to v1.6 with the four independently bound H-wave verdicts (review LOG-4559: EXP107/109/110 BIND, EXP108 QUALIFY with required footnote). §3.1 rows added: EXP106→EXP107 KILL (60/60 transfer reading died as template artifact, 34/60 p=0.1831 — original-word cells 30/30, flipped-word cells 4/30; GPU head-training proposal void; Train-probes class); EXP108 RUN-INVALID (60/60 self-reports unparseable; footnote: no per-item generations retained — single log-summary line); EXP109 RUN-INVALID (planner repetition attractor, n_valid=0/20; axis NOT retired, pilot-scope fenced); EXP110 CERTIFIED-WITH-NOTE (6/7 tiers, structural intact; T6 O 0.5714→0.5000; EXP105 KILL-at-step-9 precision-certified under weight-only INT8 fake-quantization; simulation-scoped; I2′ KILL stands; no capability claim licensed). §0 static-steering row + §3.2 position paragraph + v1.6 changelog updated. No capability entries added for any of these (kills, RUN-INVALIDs, and a boundary certification all add zero capability). Honest headline: no robust positive capability signal toward the summit survived; today's durable gains are methodological. Next free: LOG-4561.

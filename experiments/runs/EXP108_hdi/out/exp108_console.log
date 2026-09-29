@@ -1,0 +1,8 @@
+[exp108] provenance pin OK: 47281cd3dc243369...
+[exp108] bench OK: 60 items
+[exp108] pre-hash OK: ec276abe3902fab0... (Δθ=0)
+[exp108] extraction complete: 180 forward passes; ties toward C: 0
+[exp108] G4 pass: cosine spread = 0.080273 (>= 1e-4)
+[exp108] mid-hash OK (Δθ=0)
+[exp108] elicitation complete: n_unparseable = 60/60
+[exp108] RUN-INVALID (elicitation failure): n_unparseable=60 >= 7. Not a verdict.

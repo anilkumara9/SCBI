@@ -1,0 +1,11 @@
+{
+ "x": 60,
+ "n": 60,
+ "acc": 1.0,
+ "p_one_sided_vs_chance": 8.673617379884035e-19,
+ "train_acc": 1.0,
+ "overlap": [],
+ "blockoff_pass": true,
+ "determinism_pass1_eq_pass2": true,
+ "final_hash_ok": true
+}

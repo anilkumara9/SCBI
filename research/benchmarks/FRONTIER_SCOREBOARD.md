@@ -28,7 +28,7 @@ repo-artifact-verified (§3).
 | Inference-time search (coverage) | **LLM-Monkeys**: coverage scales log-linearly over 4 orders of magnitude; SWE-bench Lite 15.9%→56% at 250 samples (verifier-gated) | G/E/S/T loop: never discriminatingly tested; E-validity [CONJECTURE] | **A working scaling law vs an untested formulation.** |
 | Search + self-evaluation (planning) | **ToT**: Game of 24, GPT-4: 4%→74% (BFS b=5, depth 3) | No planning/search result; EXP068 retired as-signed (Law #15 FAIL) | **4%→74% vs no result.** |
 | Cheap decoding-time aggregation | **Self-consistency**: GSM8K +17.9% (PaLM-540B 56.5%→74.4%, 40 paths, majority vote) | EXP056 autonomous selection: +4pp, p=0.25, **not significant** | **+17.9pp significant vs +4pp non-significant.** |
-| Static steering, decision flips | **ITI**: Alpaca TruthfulQA 32.5%→65.1% (+32.6pp) via label-trained head probes (NeurIPS 2023) | EXP077: **ΔM=0, p=1.0, N=60** (410m/L20) — five static rooms dead; **EXP093: the shared L11 task direction is also ΔM=0, p=1.0 (b=c=0)** — causal inertness, not measurement failure; the L20 boundary generalizes: **information ≠ influence**. G1 killed the QK-subspace mechanism. **S5-2** (LOG-4392): per-arm 95% upper **4.87%** (n=60, 0/60) — effects ≥4.87% dead on every bench; the skeptic's 1–5% "small real effect" band NOT killed at $0 (the 1–4.87% band is the declared blind spot); grand pooled 0.38% (0/780) assumes across-arm exchangeability. **S5-3** (LOG-4393): 0/8 decode probes clear the bar → EXP077 variants never-decodable, not decodable-yet-inert (instrument LIVE on synthetic D1a). | **+32.6pp (label-trained probes) vs exactly zero at two layers.** |
+| Static steering, decision flips | **ITI**: Alpaca TruthfulQA 32.5%→65.1% (+32.6pp) via label-trained head probes (NeurIPS 2023) | EXP077: **ΔM=0, p=1.0, N=60** (410m/L20) — five static rooms dead; **EXP093: the shared L11 task direction is also ΔM=0, p=1.0 (b=c=0)** — causal inertness, not measurement failure; the L20 boundary generalizes: **information ≠ influence**. G1 killed the QK-subspace mechanism. **S5-2** (LOG-4392): per-arm 95% upper **4.87%** (n=60, 0/60) — effects ≥4.87% dead on every bench; the skeptic's 1–5% "small real effect" band NOT killed at $0 (the 1–4.87% band is the declared blind spot); grand pooled 0.38% (0/780) assumes across-arm exchangeability. **S5-3** (LOG-4393): 0/8 decode probes clear the bar → EXP077 variants never-decodable, not decodable-yet-inert (instrument LIVE on synthetic D1a). **EXP106→EXP107** (LOG-4534/4540): the trained output-side head's **60/60** disjoint-bench transfer reading was **killed as a template artifact** (34/60, p=0.1831 — original-word cells 30/30, flipped-word cells 4/30; GPU head-training proposal void). **EXP110** (LOG-4558): the EXP105 KILL-at-step-9 verdict is **precision-certified under weight-only INT8 fake-quantization** (6/7 tiers, structural intact; T6 O 0.5714→0.5000 as a bounded precision effect) — boundary-science, not capability; the I2′ KILL stands. | **+32.6pp (label-trained probes) vs exactly zero at two layers. The one trained-readout signal died as a template artifact; the boundary holds under INT8 simulation but nothing steers.** |
 | Context-dependent steering | **SVF** (arXiv:2602.01654, Feb 2026): per-activation steering fields, multi-layer coordinated — *no headline number in the checked abstract* | Gated/conditional variants of our operator: **never tested** (survived EXP077's narrow kill by exemption, not evidence) | **A working 2026 method vs an untested exemption.** |
 | Closed-loop representation control | **Activation-LQR**: LTV linearization + LQR feedback with tracking-error bounds, no training — *existence proof, no headline accuracy number in abstract* | CLLC candidate: narrowed distinction only, **never tested** | **Guarantees vs a narrowed claim.** |
 | Selective-abstention reliability | **NoisyCoconut** (TMLR June 2026): unanimous latent-path agreement → error <15% on math reasoning via selective abstention | No reliability result of any kind | **<15% error vs no measurement.** |
@@ -291,6 +291,10 @@ The same columns. Nothing cherry-picked; the demotions are stated first.
 | **S4-8 / S4-8′ — pre-registration milestones (LOG-4480, LOG-4488)** | Signed Tier-0 protocols for the I2′ line: S4-8 (MC correct-rank screen, v3, chain LOG-4475→4480) and S4-8′ (cloze recalibration, v2, chain LOG-4484→4488) | Paper only | S4-8: seven §5 degeneracy unit tests + foil–top-1 overlap stratum (O ≤ 0.5 gate on the step-8 F diagnostic) + G1 tokenizer gate + foil-build blindness. S4-8′: re-prompts the same 60 items as cloze completions (`<question> The answer is`, cue pinned/frozen), drops the correct-position shuffle, scores the same 8 G1-verified candidate tokens with ascending-token-id tie-break; **new binding breaking point: cloze Tier-0 baseline < 0.25 → LINE-CLOSED** (I2′ untestable on Pythia-410m at $0, no third readout); predicted band 0.25–0.45 [HYPOTHESIS] | $0 CPU | N/A (protocols) | — | Y | **SIGNED** (both, Law #14 full chains; S4-8′ fixes incl. one-word remainder LOG-4488) — EXP105 (cloze Tier-0) is the first execution under S4-8′, executed as EXP105 (below) — outcome now plotted | LOG-4480 (S4-8); LOG-4484–4488 (S4-8′); `research/innovation/S4-8_PREREG_DRAFT_v3_2026-09-28.md`, `S4-8_PRIME_PREREG_DRAFT_2026-09-28.md` |
 | **EXP105 Tier-0** — PASSED: cloze measurability rescued (LOG-4489) | Tier-0 correct-rank screen on the cloze recalibration (S4-8′ first execution) | pythia-410m / next-token position after pinned completion cue | Baseline accuracy **32/60 = 0.5333** inside [0.25, 0.75] — NOT line-closed; median correct-rank (failed) = **4.0** ≤ 5; n_pop (failed ∧ rank ≤ 5) = **21** ≥ 12; tie-guard 0/21 = **0.0** ≤ 0.25; alt-cue descriptive baseline (`Answer:`) 0.5 (not a gate). G1 tokenizer gate 0/480; Δθ=0 (pre/post weight sha256 identical). Run survived a VM restart at 13 records — `verify_resume.py` confirmed a bit-exact 8-logit match before resuming 47 more | 60/60 passes, $0 CPU, torch 2.14.0+cpu / transformers 5.17.0 in a rebuilt venv | None | N (null-positive: passed sanity, no steering claim) | Y | **PASSED** (Tier-0 only; licensed the battery — NOT a capability result) | LOG-4489; `experiments/runs/EXP105_cloze_Tier0/` |
 | **EXP105 battery** — KILL (nonspecific), step 9 → **Refuted** (LOG-4491) | Intervention battery on the Tier-0 population: logit-level truth/falsity/random masking operators (B/T/F/R arms) | pythia-410m / recorded Tier-0 8-candidate logits (zero model contact) | Tier-0 population n_pop = 21. ΔM_T = **+0.2381** (5/21 rescues); ΔM_F = +0.1429 (3/21); ΔM_R = **0.0000** (0/21 — perfectly flat). Primary binding contrast T-vs-R McNemar-exact: b=5, c=0 → **p = 0.0625 ≥ 0.05** — missed CONTINUE by exactly one flip (b=6, c=0 → p=0.03125 would have certified). Tango 95% CIs: T-vs-R (0.047, 0.451); F-vs-B (−0.034, 0.346); R-vs-B (−0.155, 0.155). Foil–top-1 overlap **O = 12/21 = 0.571 > 0.5** → F arm non-diagnostic (pre-registered stratum; the N1 amendment's gate anticipated this). Decision walk: step-7 CONTINUE fails on the primary p-value; step-8 fails (F-vs-B p=0.25, O > 0.5); **step 9 fires → Refuted**. Pre-registered stop rules close the line: no re-run, no larger population, no third readout | 0 model passes (logit-level operators), $0 CPU, R seed pinned 20260928; one implementation bug caught and fixed mid-lane (degenerate Tango CI transcription — rewrote as bounded MLE, verified on symmetric/null/grid cases; worksheet numbers from the fixed implementation) | None | N | Y (Δθ=0 by construction) | **Refuted** — readout-suppression premise KILLED as a certified-specific mechanism; the rescue direction was clean but specificity was not certified. Not evidence masking is generic — evidence the licensed test could not certify specificity | LOG-4491; `experiments/runs/EXP105_battery/` (report, worksheet, per-item CSV/JSON, executor) |
+| **EXP106 → EXP107** — **KILL**: the label-free head's 60/60 transfer reading was a template artifact (H3 arc) | Trained output-side head transfer: L2-logistic head (C=1.0) on frozen L20 final-token embeddings, fit on one 60-item bench, scored on a disjoint 60-item bench (item-ID overlap 0); then a template-decorrelated control (word-family × phrasing, 4×15 balanced cells, deterministic rewriting) | pythia-410m / L20 (frozen; block-off byte-identity check passed) | EXP106: **60/60**, one-sided binomial **p=8.67e-19** → registered CONTINUE (the program's first above-chance trained-readout signal). EXP107: **34/60 = 0.5667, one-sided p=0.1831** ≤ 35/60 KILL bar → **KILL**. Per-cell: 15/15, 4/15, 15/15, 0/15 — original-word cells 30/30, flipped-word cells 4/30 (the registered template-detector signature); 31/31 training-prior-vs-template disagreements followed the template | CPU; sklearn head on extracted embeddings; $0 | Train-probes (head fit on disjoint-bench labels, applied to held-out items) | Y (the transfer claim itself) → N on control | Y | **Killed (transfer reading)** — GPU head-training proposal licensed by the CONTINUE is void; no re-run, no larger-N rescue; kill holds whether the cue is word-template or subject-position | LOG-4534/4540; `research/experiments/EXP107_TEMPLATECTRL_REPORT_2026-09-29.md`; independent verdict review LOG-4559 (BIND) |
+| **EXP108** — **RUN-INVALID**: honesty-instrument elicitation failure (H1) | Self-report honesty probe: 60 self-report generations; strip → first alphabetic char → {A, C}, else UNPARSEABLE; registered gate n_unparseable ≥ 7 → RUN-INVALID | pythia-410m base (greedy generation), CPU | **n_unparseable = 60/60 ≥ 7 → RUN-INVALID (elicitation failure)**. All 60 emitted the identical token sequence `[187, 187, 23433, 27]` = "\n\nQuestion:" — document-pattern continuation, not answers. No fidelity score, no balanced accuracy exist. H1 is neither KILLED nor CONTINUED | 60 generations, CPU, $0 | N/A (apparatus) | — | Y | **RUN-INVALID (apparatus)** — required footnote (review LOG-4559 QUALIFY): no per-item generation records retained; evidence is a single console-log summary line; future runs of this class must retain per-item logs | LOG-4546; `research/experiments/EXP108_HDI_REPORT_2026-09-29.md` |
+| **EXP109** — **RUN-INVALID**: planner/executor elicitation failure, 20-item pilot (H4) | Planner emits 4 outlines; frozen executor develops each; majority vote; vs 4 independent samples at identical generation budget. Planet-only pilot (15 planet-2hop + 5 planet-3hop; no elemental items) | pythia-410m base (greedy generation), CPU | Planner arm: **18/20 items zero numbered outlines** (repetition attractor: "Plan: Write a list of the possible answers to the question"); 2 items mechanical enumerations, executor 0/4 parseable. Baseline: **80/80 unparseable**. **n_valid = 0/20** — elicitation-failure gate fires (20 ≥ 3); global degeneracy tripwire fires (88/88). No accuracy, no (b,c) table, no McNemar p exists | 108 generations, 20.9 CPU-min, $0 | N/A (apparatus) | — | Y | **RUN-INVALID (apparatus)** — planner/executor axis NOT retired; pilot-scope fenced (a KILL would require net ≤ 0 on valid paired items — never reached) | LOG-4552; `research/experiments/EXP109_PTTSC_REPORT_2026-09-29.md` |
+| **EXP110** — **CERTIFIED-WITH-NOTE**: the EXP105 KILL-at-step-9 verdict is precision-certified under weight-only INT8 fake-quantization (H2) | Re-run the cleared EXP105 falsification-kit battery on a fake-quantized frozen backbone (per-output-channel symmetric INT8 on all 97 Linear weight matrices, FP32 compute; zero generation by design) | pythia-410m, CPU; torch 2.14.0+cpu / transformers 5.17.0, threads 2, seed 20260928; backbone verified against the LOG-331 pin before quant (disposable copy, discarded after run) | **6/7 tiers reproduce** — T1 Tier-0 PASSED @ 0.5333 = ref; T2 KILL = KILL; T3 step 9 = 9; T4 dM_T=+0.2000>0, dM_F=+0.1500>0, \|dM_R\|<0.05 (ref +0.2381/+0.1429/flat); T5 T-vs-R b=4,c=0,p=0.1250 ≥ 0.05 (ref b=5,c=0,p=0.0625); **T6 flipped: O=0.5000 (not > 0.5) vs ref 0.5714** — n_pop 21→20 at the rank-5 margin; T7 n_pop=20 within ±5 of 21. Structural tiers T1–T3 intact → CERTIFIED-WITH-NOTE (pre-reg §4 branch); PIVOT correctly not triggered | Quantized Tier-0 (60 forward passes) + battery, ~2–4h CPU, $0; sanity gate `reproduce_exp105.sh` = EXACT ✔ before quant | None | — (boundary certification) | Y | **Certified (boundary-science)** — simulation-scoped (NOT true INT8 hardware; bitsandbytes-exact is the GPU-gated ceiling); the I2′ KILL stands regardless; no closed line re-opens; **no capability claim licensed** | LOG-4558; `research/experiments/EXP110_QBR_REPORT_2026-09-29.md`; independent verdict review LOG-4559 (BIND) |
 
 ### 3.2 The program's position, stated without softening
 
@@ -366,6 +370,29 @@ registered stop rules closed the line: no re-run, no larger population, no
 third readout. **The I2′ line is a complete falsification-terminal arc —
 instrument built, confound diagnosed and removed, premise certified-not-
 specific by its own licensed bar.** Boundary science, not capability.
+
+**The summit-sprint H-wave, 2026-09-29 (LOG-4527–4558).** All four
+sprint hypotheses executed to binding outcomes. H3's label-free head
+produced the day's apparent positive — 60/60 transfer, p=8.67e-19 —
+and the program's own adversarial machinery killed it within hours:
+EXP107's template-decorrelated bench scored the exact template-detector
+signature (34/60, p=0.1831; original-word cells 30/30, flipped-word
+cells 4/30), voiding the GPU head-training proposal the CONTINUE had
+licensed — the output-side trained-head room is retired as artifact-only
+unless a new family earns its license. H1 (EXP108) and H4 (EXP109) died
+at the apparatus layer, not their hypotheses: base Pythia-410m cannot
+follow instruction-style generation prompts — self-reports collapsed to a
+degenerate echo, planners to a repetition attractor. The durable
+methodological rule: any generation-based frozen experiment must validate
+instruction-following before treating outputs as measurements. H2
+(EXP110) certified the I2′ boundary under weight-only INT8
+fake-quantization (6/7 tiers, structural intact) — the program's first
+licensed precision-certification of a boundary verdict, simulation-scoped
+and fenced. The wave's net: zero new capability signals; one killed
+transfer reading; one precision-certified boundary; one hardened
+apparatus rule. **Capability scoreboard: unchanged — still zero positive
+signals for autonomous steering; the label-free race stays tied at
+zero.**
 
 [INFERENCE]: plotted on the same axes, SCBI does not trail the frontier by a
 margin — it trails by *category*: the frontier has L1–L2 capability results;
@@ -525,7 +552,86 @@ Per-item construction can never beat a None-class row.
   positive signals; race tied at zero); two converging-evidence finds
   (arXiv:2609.31401, arXiv:2609.25366) tracked for the next §5 fold-in.
   No literature re-check this cycle (next due 2026-10-23).
+
+**v1.6 delta [FACT], 2026-09-29:** plotted the summit-sprint H-wave
+verdicts (independent exact-artifact verdict review LOG-4559 —
+EXP107/109/110 BIND, EXP108 BIND-QUALIFIED with a required footnote).
+**H3 (LFH) → EXP106→EXP107:** the trained output-side head scored
+**60/60** on the disjoint transfer bench (one-sided binomial
+p=8.67e-19 → registered CONTINUE, LOG-4534) — the program's first
+above-chance trained-readout signal — and died on adversarial
+dissection: EXP107's template-control bench (four balanced 15-item
+cells, word-family × phrasing decorrelated, deterministic rewriting,
+no new model calls) scored **34/60 = 0.5667, one-sided p=0.1831** —
+the exact template-detector signature (original-word cells 30/30,
+flipped-word cells 4/30; per-cell 15/15, 4/15, 15/15, 0/15; on all 31
+items where the training-entity prior disagreed with the template, the
+head followed the template). The EXP106 autonomous-transfer reading
+is **KILLED**; the GPU head-training proposal it licensed is void —
+no re-run, no larger-N rescue (LOG-4540 execution; review ADOPTED).
+The test cannot distinguish a word-template cue from a
+subject-position cue — the kill holds under either. **H1 (HDI) →
+EXP108: RUN-INVALID** — all 60 self-reports unparseable (identical
+degenerate token echo `[187, 187, 23433, 27]` = "\n\nQuestion:" —
+base Pythia-410m continued the document pattern instead of answering);
+no fidelity score, no balanced accuracy exist; H1 is neither KILLED
+nor CONTINUED (LOG-4546 execution; review QUALIFIED with required
+footnote: **no per-item generation records were retained — the
+60/60 evidence is a single console-log summary line, and the parse
+step cannot be independently re-computed**; future runs of this class
+must retain per-item logs). **H4 (PTTSC) → EXP109: RUN-INVALID** —
+18/20 planner items degenerated into a repetition attractor ("Plan:
+Write a list of the possible answers to the question"), 80/80 baseline
+generations unparseable, **n_valid = 0/20** (elicitation-failure gate
+fires at 20 ≥ 3; global degeneracy tripwire fires at 88/88); no
+accuracy, no (b,c) table, no McNemar p exists; the planner/executor
+axis is **NOT retired**, pilot-scope fenced (LOG-4552 execution;
+review ADOPTED). **H2 (QBR) → EXP110: CERTIFIED-WITH-NOTE** — the
+EXP105 KILL-at-step-9 verdict reproduces under weight-only INT8
+fake-quantization: **6/7 tiers**, structural tiers (Tier-0 verdict,
+battery verdict class, battery step) intact; the single flip T6
+(foil–top-1 overlap O: 0.5714 → 0.5000, n_pop 21→20 at the rank-5
+margin) is a bounded, measured, deterministic precision effect —
+documented as a note, not a pivot; certification is simulation-scoped
+(not true INT8 hardware — bitsandbytes-exact is the GPU-gated ceiling);
+the I2′ KILL stands regardless (LOG-4554 license ruling:
+precision-certification of a statistical-null verdict ≠ the barred
+retro-verification; the independent review declined the kill
+invitation, SIGN). **Capability scoreboard: unchanged — still zero
+positive signals for autonomous steering; the label-free race stays
+tied at zero.** Durable gains this cycle are methodological: (1) base
+Pythia-410m demonstrably cannot follow instruction-style generation
+prompts (EXP108/EXP109 apparatus failures) — any generation-based
+frozen experiment must validate instruction-following before treating
+outputs as measurements; (2) the Decodability Gap boundary now carries
+a bounded precision-certification statement (EXP110) — a
+boundary-science entry, not a capability. No literature re-check this
+cycle (next due 2026-10-23).
   PROGRESS_ANALYSIS.md: v84 release-candidate marker updated.
+- v1.6 — 2026-09-29 (scoreboard-sync lane, LOG-4560): plotted the
+  summit-sprint H-wave — EXP106→EXP107 (H3: 60/60 disjoint-bench transfer
+  reading KILLED as a template artifact, 34/60 p=0.1831; GPU
+  head-training proposal void; output-side trained-head room retired as
+  artifact-only), EXP108 (H1: RUN-INVALID — 60/60 self-reports
+  unparseable; apparatus finding, H1 neither killed nor continued;
+  required footnote: no per-item generation records retained —
+  evidence is a single log-summary line), EXP109 (H4: RUN-INVALID —
+  planner repetition attractor, n_valid=0/20; axis NOT retired,
+  pilot-scope fenced), EXP110 (H2: CERTIFIED-WITH-NOTE — 6/7 tiers,
+  structural intact; T6 O 0.5714→0.5000 as a bounded precision effect;
+  EXP105's KILL-at-step-9 precision-certified under weight-only INT8
+  fake-quantization; I2′ KILL stands; simulation-scoped, not true
+  INT8 hardware). Independent exact-artifact verdict review LOG-4559
+  folded in (EXP107/109/110 BIND; EXP108 QUALIFIED with the required
+  footnote). §0 delta + static-steering row + §3.1 rows + §3.2
+  position paragraph updated. **Capability scoreboard: unchanged —
+  zero positive signals for autonomous steering; the label-free race
+  stays tied at zero.** Durable gains are methodological: generation
+  experiments must validate instruction-following before measuring
+  (base Pythia-410m cannot follow generation instructions); the
+  Decodability Gap boundary now carries a bounded precision-
+  certification. No literature re-check this cycle (next due
+  2026-10-23).
 
 ---
 

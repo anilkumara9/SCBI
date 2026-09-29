@@ -1,0 +1,29 @@
+[2026-09-29T04:54:38] ENV: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "sklearn": "1.9.1", "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m", "site_hidden_states_index": 20, "head": "LogisticRegression(penalty='l2', C=1.0) [all other params default]", "date": "2026-09-29", "lane": "LOG-4540"}
+[2026-09-29T04:54:38] reuse-integrity: embeddings-array sha=4e6229bea083570f... match=True
+[2026-09-29T04:54:38] reuse-integrity: ids-array sha=4668fc45716d46b4... match=True
+[2026-09-29T04:54:38] y_train: A-first(1)=30, C-first(0)=30
+[2026-09-29T04:54:38] bench cells: {('A-first', 'flipped'): 15, ('A-first', 'original'): 15, ('C-first', 'original'): 15, ('C-first', 'flipped'): 15}
+[2026-09-29T04:54:38] bench pin: e91b302f41f641c7... match=True
+[2026-09-29T04:54:38] y_test: A-first(1)=30, C-first(0)=30
+[2026-09-29T04:54:38] OVERLAP TRIPWIRE: 0 shared item IDs
+[2026-09-29T04:54:38] loading tokenizer + frozen model...
+[2026-09-29T04:54:49] G1 pre hash: ec276abe3902fab0... match=True
+[2026-09-29T04:54:49] head fit: n_iter=[18], coef shape=(1, 1024)
+[2026-09-29T04:54:49] sanity gate: fresh extraction of original EXP091 bench (60 passes)...
+[2026-09-29T04:55:23] SANITY GATE: 60/60 on original EXP091 bench (must be 60/60)
+[2026-09-29T04:55:23] SANITY GATE: PASS
+[2026-09-29T04:55:26] G1 mid hash (post sanity-gate): ec276abe3902fab0... match=True
+[2026-09-29T04:55:26] extracting decorrelated bench (60 passes, premise-only, hidden_states[20])...
+[2026-09-29T04:55:59] G1 post hash: ec276abe3902fab0... match=True (Δθ=0)
+[2026-09-29T04:55:59] scored embeddings sha=9b6e8afb091ba1ed...
+[2026-09-29T04:55:59] DECORRELATED SCORE: 34/60 = 0.5667
+[2026-09-29T04:55:59] per-cell: {"A-first/flipped": "4/15", "A-first/original": "15/15", "C-first/flipped": "0/15", "C-first/original": "15/15"}
+[2026-09-29T04:55:59] one-sided binomial p (vs 0.5): 1.831470e-01
+[2026-09-29T04:55:59] block-off: fresh backbone-only extraction, pass 1...
+[2026-09-29T04:56:28] block-off: fresh backbone-only extraction, pass 2...
+[2026-09-29T04:56:58] determinism pass1==pass2: True
+[2026-09-29T04:56:58] byte-identity scored==fresh: True
+[2026-09-29T04:56:58] sha scored=9b6e8afb091ba1ed fresh1=9b6e8afb091ba1ed fresh2=9b6e8afb091ba1ed
+[2026-09-29T04:56:58] BLOCK-OFF: PASS
+[2026-09-29T04:57:01] G1 final hash: ec276abe3902fab0... match=True
+[2026-09-29T04:57:01] RESULT: {"x": 34, "n": 60, "acc": 0.5666666666666667, "p_one_sided_vs_chance": 0.18314700335164552, "cell_scores": {"A-first/flipped": "4/15", "A-first/original": "15/15", "C-first/flipped": "0/15", "C-first/original": "15/15"}, "sanity_gate": "60/60", "overlap": [], "reuse_integrity_ok": true, "bench_pin_ok": true, "blockoff_pass": true, "determinism_pass1_eq_pass2": true, "byte_identity_scored_eq_fresh": true, "final_hash_ok": true}
