@@ -11798,3 +11798,92 @@ No capability entries added; no signed protocols, paper sources, or GPU queue to
 **Gate: FAIL — KILL the proposal.** Three independent grounds: (1) the cheapest test is already decisive — Fisher's exact two-sided on the archived 2×2 table [[24,6],[17,13]] gives p = 0.0946 > 0.05 (OR = 3.06); per-15-cell splits p = 0.2451 / 0.4270; the one-sided p = 0.0473 is declined as post-hoc direction selection (Law #4/#9). (2) No cross-experiment consistency — EXP111's trained head shows 12/15 vs 12/15 (G = 0.0000), zero asymmetry. (3) A new experiment number would be theater — EXP112's decisions are deterministic and archived; re-running reproduces the identical table.
 
 **Deliverable:** kill memo `research/strategy/H12_KILLRECOMMENDATION_2026-09-29.md`. No experiment number minted, no pre-registration drafted. EXP112's HELD stands; the 24/30 vs 17/30 split remains a descriptive observation (p = 0.0946 two-sided, post-hoc exact test, no verdict).
+
+## LOG-4614 — Commit-prep: H12 kill + LOG-4612 committed as 38fa8c4, push staged (2026-09-29)
+
+**Divergence check:** CLEAN — 0 worktree LOG numbers (sync-log4393-4465, 352 headers) missing from the main log (493 headers, LOG-4612→4613).
+**Commit:** `38fa8c4` on `sync/2026-09-29-consolidated` — 2 files, 49 insertions(+): research log entries LOG-4612 + LOG-4613, plus the H12 kill memo `research/strategy/H12_KILLRECOMMENDATION_2026-09-29.md` (Fisher's exact p = 0.0946, zero EXP111 cross-consistency, no pre-registration drafted). No weight files; no secrets committed.
+**NOT pushed** — push requires the user's fresh one-use token. `38fa8c4` sits atop `5af3d04`; both are staged-ready for that token. Working tree otherwise clean (only this LOG-4614 entry, which belongs to the next commit cycle). Next free: LOG-4615.
+
+## LOG-4615 — Innovation sprint: H13/H14/H15 candidates pass the worth-it gate (2026-09-29)
+
+**Sprint:** against scoreboard v2.2 and the closed-axes list (entity-name generation ×4, flipped-cell, positional-order ensembling, static L11 injection, Law-#9 theater), three candidates pass the six-element worth-it gate + summit filter: **H13 (HDI-LOC)** — logit-lens layer-locality of EXP112's 41/60 HELD signal, pre-registered contrast mean(L16–L24)−mean(L0–L8) ≥ 0.10 → CONTINUE / |contrast| < 0.05 → KILL locality; **H14 (PTTSC-LOGIT)** — H11's plan-conditioning question re-asked at the proven logit level (EXP112 apparatus + EXP113 T2-P2 planner), paired McNemar, Phase-0 + n_valid ≥ 48/60 gates, token-asymmetry honesty fence; **H15 (LFH-GEN2)** — EXP111's 24/30 decodability signal replicated on a newly constructed second decorrelated bench (acc ≥ 0.70, G < 0.30 to strengthen). Rejected: S5 blind-spot closure (no decision changes), EXP111 per-layer bench-1 replication (theater), cross-model check (deprioritized). Recommended order: H13 → H14 → H15. Brief: `research/strategy/INNOVATION_SPRINT_2026-09-29_H1315.md`. Each needs its own gate → pre-reg → Law #14 review → fix-verification → CEO launch, per the single-lane fence.
+
+## LOG-4616 — H13 (HDI-LOC) worth-it gate: PASS → pre-registration drafted (2026-09-29)
+
+**Worth-it gate (§0 of the draft): PASS.** Key challenges adjudicated: (a) per-layer logit-lens readouts are new data — EXP111's L4–L16 per-layer analysis used trained heads, a different instrument; (b) a new experiment number is licensed (1080 new forwards, not re-read archived data); (c) H6's "no different layer" fence addressed — H13 asks *where* the signal lives, a question no registered bar addressed, and no H13 outcome can change EXP112's HELD; (d) statistical license honestly computed at drafting (C ≥ 0.10 is 2–3.5σ from the no-locality null; HELD zone 0.05–0.10; KILL-bar miss rate ≈ 0.04–0.15 disclosed).
+
+**Draft:** `research/prereg/EXP_PREREG_H13_HDILOC_2026-09-29.md` — H13 (HDI-LOC): pre-registered contrast C = mean(fidelity L16–L24) − mean(fidelity L0–L8) via the logit lens (18 sites, 60 items); C ≥ 0.10 & late ≥ 0.65 → CONTINUE; |C| < 0.05 → KILL (diffuse); C ≤ −0.10 → KILL (reverse); else HELD. Run-validity rule (< 5 non-degenerate sites/window → RUN-INVALID) blocks the false-CONTINUE path. Decision target = EXP112's archived decision column with a 41/60-exact consistency pin (HALT on drift). Per-cell diagnostic dropped (H12 kill). Honesty fence: fidelity is not honesty; locality is not mechanism; CONTINUE licenses layer-window localization only.
+
+**Lane boundary:** drafting only — no execution, no experiment number minted, no signed artifact modified, no self-review. Independent Law #14 review is the next lane.
+
+## LOG-4617 — Independent Law #14 review of H13 (HDI-LOC) pre-registration (2026-09-29)
+
+**Verdict: SIGN-WITH-FIXES** (independent review lane, LOG-4617). The H13 science is sound — every binding number (SE(C) ≤ 0.0283, 3.5σ / attenuated 2.0σ, p ≈ 4×10⁻⁴ / 0.041, miss rates 0.04/0.15) survived independent recomputation; the CONTINUE/HELD/KILL tiling is gapless with no razor-thin CONTINUE; the run-validity rule genuinely blocks the false-CONTINUE path; the new-data license holds (EXP111's per-layer analysis was a trained-head instrument, not a logit lens); H12's cell-stratification kill is honored. **Four defects block signing:**
+1. **§6's falsification decision tree is a literal truncation placeholder** (`...[truncated 4156 chars]`) and §§7–10 do not exist — yet the body references §7.1 and §10.
+2. **Wrong read-site identity:** the archived 41/60 is the final-output logits readout (logit lens at hidden_states[24]), not "L20" as §0/§1.1/§3.2 repeatedly state. (Benign: the late window contains the archived site, making the consistency pin a true byte-level identity check.)
+3. **Citation error:** "H6 §8.5" does not exist — the bar is H6 §4's "No rescue runs" clause.
+4. **§10 deviation list** claimed exhaustive by the drafting lane does not exist.
+Fix wording is exact in `research/reviews/LAW14_REVIEW_H13_HDILOC_2026-09-29.md`; fix-verification is a separate lane. No protocol edited, no execution, $0 CPU.
+
+## LOG-4618 — Fix-verification: H13 (HDI-LOC) pre-registration FIX-1–FIX-4 applied and byte-verified (2026-09-29)
+
+**Lane:** LOG-4618 fix-verification (independent of the drafting lane), $0 CPU. Applied the LOG-4617 Law #14 review's four prescribed fixes to `research/prereg/EXP_PREREG_H13_HDILOC_2026-09-29.md`, verified byte-wise against a pristine copy (sha256 `bf4037a4…b7268a`):
+
+1. **FIX-1:** §6's truncation placeholder (`...[truncated 4156 chars]`) replaced with the complete 10-row falsification decision tree, byte-verbatim with the review (incl. the review's `\|C\|` pipe escapes).
+2. **FIX-2:** §§7–10 written in full, byte-verbatim with the review's prescribed text (honesty fence §7.1 — EXP112's HELD untouchable; §8 cost/honesty [FACT]; §9 what H13 does NOT claim; §10 twelve-item deviation list vs H6). The review's trailing meta-instruction paragraph ("The fix-verification lane must byte-confirm…") correctly excluded — it is a lane instruction, not protocol content. §10 byte-confirmed complete against §§3–5: every body adaptation appears, no row introduces an undocumented design choice.
+3. **FIX-3:** read-site identity corrected — "the L20 read site" → final-output logits read site (4 prescribed replacements + the §3.3 added sentence verbatim: the late window {16..24} contains the archived site, lens at L24 = output logits, so the §3.2 consistency pin is a true byte-level identity check). **Checklist-demanded addition:** the review's checklist item 3 forbids any remaining "L20" describing EXP112's readout — §3.5's "G2 (L20 readout variation)" was such a case (H6's G2 guarded the self-report readouts, which per Defect B were the final-answer-position logits), corrected to "G2 (final-output readout variation)". grep now finds **zero** remaining "L20", zero "truncated", zero "§8.5".
+4. **FIX-4:** "H6 §8.5" → "H6 §4's 'No rescue runs' clause" with the review's exact wording; remainder of §0(c) unchanged.
+
+**Verification outcomes:** diff vs pristine shows exactly the four fixes (+ the one checklist-demanded §3.5 correction); no other line moved (pins, hashes, bars, seeds all byte-identical). FIX-1 table == review byte-verbatim; FIX-2 == review verbatim (minus the lane-instruction tail); all cross-references (§7.1 from §0c/§1.1/§2, §10) now resolve.
+
+**Observations for the CEO launch lane (not defects of this verification):** (a) the review's prescribed §10 item 12 cites "(H6 §8.6 equivalent)" — H6's pre-registration has no §8.6 (its novelty item is §8 item 6); the wording was reproduced verbatim per the prescription; the launch lane may want a review addendum. (b) The launch chain next step is the CEO launch decision — this lane did not self-clear, execute, or mint an experiment number.
+
+### CEO LAUNCH DECISION: H13 minted EXP118, execution lane dispatched (2026-09-29)
+
+**Decision:** H13 (HDI-LOC) pre-registration is launch-eligible — Law #14 SIGN-WITH-FIXES (LOG-4617), all four fixes byte-verified (LOG-4618: falsification tree + §§7-10 written in full, L20→final-output readout corrected, H6 §8.5→§4 citation corrected). MINT EXP118, dispatch execution lane now ($0 CPU, 1080 forwards, 41/60-exact consistency pin HALT-on-drift). **Citation note for the record:** §10 item 12's "(H6 §8.6 equivalent)" should read "H6 §8 item 6" (H6 has no §8.6) — a review-prescription citation nit reproduced verbatim; it changes no bar, pin, or decision. Next: independent exact-artifact verdict review on completion.
+
+## LOG-4619 — EXP118 (H13/HDI-LOC) execution: RUN-INVALID (logit-lens apparatus failure) (2026-09-29)
+
+**Lane:** H13/EXP118 execution (pre-assigned LOG-4619). Question: whether EXP112's 41/60 logit-level self-report fidelity is localized in late layers, via per-layer logit-lens contrast C = mean(fidelity L16–L24) − mean(fidelity L0–L8). Registered bars: C ≥ 0.10 + late fidelity ≥ 0.65 → CONTINUE; |C| < 0.05 → KILL (diffuse); C ≤ −0.10 → KILL (reverse); else HELD; < 5 non-degenerate sites in either window → RUN-INVALID; consistency-pin drift → HALT.
+
+**All provenance pins verified BEFORE any model contact [FACT]:** EXP107 npz sha256 `6cf4a8a…6a76`, embeddings bytes `9b6e8afb…99123`, ids bytes `3669e102…5cb9`, bench canonical JSON `e91b302f…4f5`, EXP112 archive 60 records id-order-aligned to bench — all MATCH. Backbone hash before AND after all forwards: `ec276abe…38e0ed` == LOG-331 pin (Δθ=0). BPE re-assertion: 120/120 option texts exactly one token, matching archived t1/t2. Env: torch 2.14.0+cpu, transformers 5.17.0, numpy 2.5.3, sklearn 1.9.1 (venv-exp077), Pythia-410m snapshot, CPU float32, seeds 0/0, 2 threads, 60 forwards × 18 sites = 1080 logit-lens readouts, $0 CPU.
+
+**Consistency pin PASSED [FACT]:** lens@L24 readouts byte-identical to EXP112's archived readout column 60/60; recomputed fidelity 41/60 = 0.6833 exactly.
+
+**Executor mechanics (no protocol change):** (1) First attempt double-applied final_layer_norm at L24 — in transformers 5.17.0 the capture decorator ties hidden_states[-1] to the already-normed last_hidden_state; the pre-registered consistency pin caught it (5/60 argmax flips) and HALTed that attempt exactly as designed. Corrected lens: lm_head(h_24) at L24, lm_head(final_layer_norm(h_L)) for L≤23 — verified lm_head(hs[24]) == out.logits to 4.4e-06. Module paths in this version: model.gpt_neox.final_layer_norm, model.lm_head. (2) Default python3 lacks torch; run used ~/workspace/.venv-exp077 (matches registered EXP107/108/112 env).
+
+**Per-site degeneracy diagnostic [OBSERVATION] (pre-reg §3.5 requires reporting):** mean post-softmax mass on (t1,t2): L0 2.2e-05, L1 1e-06, L2 2e-06, L3 1e-06, L4 1e-06, L5 1e-06, L6 2e-06, L7 2e-06, L8 1e-06, L16 9.0e-05, L17 1.23e-04, L18 9.73e-04, L19 9.733e-03, L20 0.047045, L21 0.026502, L22 0.046673, L23 0.198650, L24 0.301075. Non-degenerate sites: early window 0/9, late window 5/9.
+
+**Verdict: RUN-INVALID.** The pre-registered run-validity rule fired (early window 0/9 non-degenerate < required 5): the logit-lens channel cannot speak at early layers on this bench. The entity-name tokens acquire unembedding mass only in the final ~5 layers. Per Law #9 no per-site fidelity and no contrast C was read — the metric branch was never reached. Apparatus failure, not a verdict on the locality hypothesis. EXP112's HELD (41/60) stands unchanged and fenced.
+
+**Artifacts:** run report `research/experiments/EXP118_HDILOC_REPORT_2026-09-29.md`; script `experiments/runs/EXP118_hdiloc/out/exp118_execute.py`; stdout `experiments/runs/EXP118_hdiloc/out/exp118_stdout.log`; worksheet `experiments/runs/EXP118_hdiloc/out/exp118_worksheet.json`. Independent exact-artifact verdict review needed (H13's lane discipline: independent review on completion).
+
+## LOG-4620 — Independent exact-artifact verdict review of EXP118: QUALIFY — RUN-INVALID binds, one binding caveat (2026-09-29)
+
+**Lane:** independent exact-artifact verdict review (pre-assigned LOG-4620), independent of the LOG-4619 execution lane. $0 CPU, read-only.
+
+**Review verdict: QUALIFY.** The registered RUN-INVALID stands: early window (L0–L8) 0/9 non-degenerate sites, late window 5/9 (L20–L24); the pre-registered run-validity rule (< 5 non-degenerate in either window → RUN-INVALID) fires on the early window with ~450× margin (max early mass 0.000022 vs 0.01 threshold). Independently recomputed from the stdout log's 18 per-site lines; the script's exit (code 46) is byte-consistent. Falsification-tree path matches pre-reg §6 exactly.
+
+**Pins verified [FACT]:** consistency pin PASS (lens@L24 byte-identical to archived readout column 60/60; 41/60 exactly); backbone LOG-331 hash before/after identical (Δθ=0); npz/embeddings/ids/bench pins MATCH; BPE 120/120; env matches the registered envelope.
+
+**Law #9 fence [FACT]:** no per-site fidelity and no contrast C was read — the script's section 8 (metric) is unreachable after the section-7 exit; stdout has no fidelity/C lines, no RESULT_JSON, no result files.
+
+**Binding caveat [FACT]:** the report's §10/§11 (and this log's LOG-4619 entry) claim `experiments/runs/EXP118_hdiloc/out/exp118_worksheet.json` exists and was "written before the validity-rule exit" — FALSE. The script writes artifacts only in section 9, after the validity-rule exit; the exit happened first; repo-wide find returns no such file. The verdict is unaffected (all evidence is in the stdout log), but an erratum must correct the report and nothing may cite the worksheet as existing. The double-norm correction is pin-arbitrated (corrected run's 60/60 byte-identical pin passes); the failed first attempt left no separate log — mechanics note only, not a verdict input.
+
+**Fences:** no locality-hypothesis verdict smuggled; EXP112's HELD unchanged; the §10-item-12 citation nit carried from the LOG-4619 launch entry.
+
+**Review:** `research/reviews/VERDICTREVIEW_EXP118_2026-09-29.md`.
+**Next:** erratum-append lane for the report's worksheet claims; then scoreboard records EXP118 as the sixth RUN-INVALID.
+
+## LOG-4621 — Erratum on the EXP118 report: worksheet-artifact claims corrected (2026-09-29)
+
+**What:** The independent review (LOG-4620, QUALIFY) bound one caveat — the EXP118 report's §10/§11 and the LOG-4619 entry claimed `exp118_worksheet.json` exists and was "written before the validity-rule exit"; a filesystem-wide `find` confirms it does not exist (the script writes artifacts only in section 9, after the section-7 `sys.exit(46)`). This lane appended an erratum (`## Erratum (2026-09-29, LOG-4621)`) to `research/experiments/EXP118_HDILOC_REPORT_2026-09-29.md` — append-only; no existing section touched, verdict untouched. The stdout log is the raw record. Nothing may cite `exp118_worksheet.json` as an existing artifact. **Verdict unaffected:** EXP118's RUN-INVALID stands; EXP112's HELD unchanged. **Fences:** erratum only; no protocol, verdict, or metric altered. **Review:** `research/reviews/VERDICTREVIEW_EXP118_2026-09-29.md`. **Next:** scoreboard records EXP118 as the sixth RUN-INVALID.
+
+## LOG-4622 — Frontier scoreboard v2.3: EXP118's bound RUN-INVALID plotted (2026-09-29)
+
+**What:** Scoreboard synced (v2.3): EXP118 (H13/HDI-LOC) plotted as the **sixth RUN-INVALID** — the logit lens cannot speak at early layers on this bench (early window 0/9 non-degenerate, pre-registered run-validity rule fired; per Law #9 no per-site fidelity and no contrast C was read — no verdict smuggled). EXP112's HELD (41/60) stands unchanged. The erratum (LOG-4621) and the pin-arbitrated double-normalization fix are recorded.
+
+**Day's tally, honestly:** one CONTINUE (EXP111, bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), six RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118 — all bound), one precision certification (EXP110, bound). **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.** H6's logit-level HELD stands alone as the only honesty signal — with no layer foothold yet.
+
+**Next:** commit-prep lane for the H13 wave artifacts (LOG-4616→4622) — no push (founder token reserved).
