@@ -13581,3 +13581,98 @@ EXP129 wave. No push attempted — founder token still pending.
 **Lane note (defect, disclosed):** the §3.1 row insertion was first attempted in-memory and never written to disk; caught by the structural integrity check, re-applied via a temp file and re-verified. No content was lost; final state verified byte-level (four additions, each exactly once, all ordering positions correct).
 
 **Next in the launch chain:** commit-prep for the TTS/EXP130 wave (branch/worktree/commit only — push is founder-reserved).
+
+## LOG-4723 — 2026-09-29 — Commit-prep: TTS/EXP130 REJECT wave committed locally
+
+**Lane:** commit-prep (commit only, no push). **Action:** committed the TTS/EXP130 wave locally on branch `sync/2026-09-29-consolidated` as `1364106` ("feat(exp130-tts): test-time scaling — Law #14 REJECT (pre-launch kill), scoreboard v3.5"). 5 files, +1054 insertions.
+
+**Pre-commit checks:** (1) LOG divergence: full numeric LOG set diffed between the main tree's `reports/research_log.md` (602 LOGs, max 4722) and the worktree `~/workspace/SCBI-worktrees/sync-log4393-4465/reports/research_log.md` (352 LOGs, max 4466) — zero worktree LOG numbers missing from main. (2) Staged set exactly the wave artifacts: TTS gate memo (LOG-4719, PASS conditional), EXP130 pre-registration draft (LOG-4720), Law #14 review (LOG-4721, REJECT — generation-channel tripwire fired), scoreboard v3.5 update (LOG-4722), LOG-4719→4722 research-log additions. (3) Safety: no weights, secrets, or credential material staged; secret-scan clean; no stash used — the research log is append-only; it was only appended to after the commit.
+
+**Fast-forward / push:** not attempted. No push; pushes/PRs remain founder-reserved with a fresh founder-supplied token (used once, never stored).
+
+**Result:** working tree clean after commit; LOG-4723 is this entry (verified next-free before append; continuity LOG-4722 → LOG-4723, no gaps).
+
+## LOG-4724 — 2026-09-29 — Pre-registration draft: EXP127 v₁ injection test (GPU-gated)
+
+**Lane:** pre-registration drafting (pre-assigned LOG-4724). **$0 CPU.**
+**License:** EXP127 (TGA) CONTINUE, bound LOG-4698/4699
+(BIND-WITH-CAVEAT): median R = 8.240640, median σ₁/σ₂ = 1.557689,
+n_d = 10 — "only a separately pre-registered GPU injection test
+along v₁, with matched random controls, dead B_agg control,
+decision-orthogonality gate ĉ, singular-rank trend gate." Draft only;
+licenses nothing until the launch chain (independent Law #14 review
+→ fix-verification → CEO launch decision → GPU execution on user
+hardware under an experiment number minted at launch).
+
+**Deliverable:** `research/prereg/EXP_PREREG_TGA_V1_INJECTION_2026-09-29.md`
+(sha256 `a93612e28064d4b6f37481c52a4424068177c6f4ee7693450306e7cb3f83c3e5`).
+The four licensed elements as protocol-level spec: (1) matched-norm
+random controls (K=8 seeded isotropic draws/arm, budget B pinned
+1%-of-median-‖y_{20,last}‖ per EXP129 FIX-2); (2) dead B_agg control
+(re-derived deterministically from EXP077's archived support set —
+no B_agg hash exists in program records, none invented, Law #2; the
+worksheet records the reconstruction hash; any B_agg flip →
+RUN-INVALID apparatus drift); (3) ĉ decision-orthogonality gate
+(exact-VJP margin-gradient alignment, ĉ < 0.1 → KILL, ≥ 3 prompt
+exclusions → apparatus-void); (4) singular-rank trend gate
+(v̂₁ > v̂₂ > random on ≥ 8/10 prompts; flat → KILL). v₁ re-pinned
+exactly from `exp127_vectors.npz` (`9b527c…13dc`, 10/10 id
+alignment) — no finite-difference reconstruction (EXP128
+constraint, breaking point (c)). One-shot injection at x_{20,last}
+(no loop — EXP129's mechanism does not transfer). Primary bars:
+median margin-displacement ratio ≥ 2× paired AND ΔM_v1 > 0 with
+McNemar(v₁, random) one-sided p ≤ 0.05 AND rank-trend holds AND
+ĉ ≥ 0.1 AND ΔM_Bagg = 0 → CONTINUE; margin gain without flips →
+HELD. Law #9 ordering: guards → backbone pin → artifact re-pins →
+budget computation and record → ĉ gate → forward batches → validity
+checks → raw-record hash-pin → metric → decision. §7 carries the
+never-resurrect audit (semantic-direction kills do not fence v₁
+under Law #4 — new direction class; EXP128/EXP129 constraints
+named). Honest frame: a steering test, not a steering claim —
+scoreboard stays at zero until a bound positive lands; no
+generality beyond Pythia-410m L20→L24 and the 10 pinned prompts.
+
+**House rules** (`~/workspace/SCBI/AGENTS.md`) read before editing;
+read-only outside the protocol file + this append; nothing pushed,
+spent, or credential-touched.
+
+## LOG-4725 — 2026-09-29 — Independent Law #14 review: EXP127 v₁ injection-test pre-registration — SIGN-WITH-FIXES
+
+**Lane:** independent Law #14 review (LOG-4725 pre-assigned). **$0 CPU.** Read-only review; no protocol edit by this lane. **Verdict: SIGN-WITH-FIXES.**
+
+**Protocol:** `research/prereg/EXP_PREREG_TGA_V1_INJECTION_2026-09-29.md` — sha256 `a93612e28064d4b6f37481c52a4424068177c6f4ee7693450306e7cb3f83c3e5` confirmed before reading. GPU-bound (founder hardware); reviewed to the stricter standard.
+
+**Verified:** all four gate/control specs are protocol-level (K=8 seeded matched randoms with mechanical dose-fence; dead B_agg control re-derived deterministically from EXP077's archived support set per `build_candidate_directions` — Law #2-honest, no invented hash; ĉ decision-orthogonality gate on the base-forward VJP with ĉ < 0.1 → KILL; singular-rank trend gate). Artifact re-pins verified against the run dir: `exp127_vectors.npz` sha256 recomputed exact (`9b527c…dc`), 10 `v1__` keys match the 10 prompt ids. B_agg "any flip → RUN-INVALID" routing correct (safe UNTESTED, not a verdict). ĉ gate computed pre-injection — no circularity. Non-resurrection clean (§7 names all constraining kills; v₁ is a Law #4 new direction class; one-shot injection only; no finite differences). Law #9 ordering executable, no LOG-4704-class circularity (validity checks before hash-pin; verdict metrics after). CONTINUE bar conjunctive (ĉ ≥ 0.1, median r ≥ 2, ΔM_v1 > 0 with one-sided McNemar p ≤ 0.05, rank-trend holds, ΔM_Bagg = 0). Honest frame verbatim.
+
+**Fixes:** launch-gating — (1) pin the McNemar "best-random" comparator (global-best arm vs per-item best — Law #4 degree of freedom in the CONTINUE bar); (2) pin the zero-denominator branch of the margin-displacement ratio r_i (0/0 → 1, x/0 → +∞ with disclosure). Verdict-immaterial — (3) align the §0 Law #9 ordering string with §5 (add budget computation and record); (4) state the v̂₂ derivation iteration count K=40 explicitly (§3.3, currently by reference to the LOG-4714 erratum); (5) cost the v̂₂ derivation in §6 (~800 autograd products); (6) add the a priori McNemar one-sided exact critical table for n=10.
+
+**Review:** `research/reviews/LAW14_REVIEW_TGA_V1_INJECTION_2026-09-29.md`. **Next in the launch chain:** fix-verification → CEO launch decision → GPU execution (user hardware, founder queue) under an experiment number minted at launch. Nothing pushed, spent, or credential-touched.
+
+## LOG-4726 — 2026-09-29 — Fix-verification: EXP127 v₁ injection-test pre-registration (seven → six fixes byte-verified)
+
+**Lane:** fix-verification (pre-assigned LOG-4726). **Action:** applied the six numbered fixes from the independent Law #14 review (LOG-4725, SIGN-WITH-FIXES) to `research/prereg/EXP_PREREG_TGA_V1_INJECTION_2026-09-29.md`. No other edit permitted; none made.
+
+**Hashes:** pre-fix sha256 `a93612e28064d4b6f37481c52a4424068177c6f4ee7693450306e7cb3f83c3e5` (recorded before any edit; pristine copy kept at `/tmp/v1inj_pristine.md` for the diff); post-fix sha256 `d85205f4ce2b1aadd2b2bda64397f7523e15958cf4fd8d903acccf0fd7f8bf52`.
+
+**Diff:** 26 changed lines, all fix-attributable, zero other bytes. None of the six fixes was vacuous.
+
+**The six fixes:**
+1. **(LAUNCH-GATING) McNemar "best-random" pinned:** [DEFINITION] added in §3.7 — best-random = the single random arm j* with the most flips across all 10 items (ties → lowest j); the paired table compares v₁'s vs j*'s per-item decisions. Carried verbatim to §2 CONTINUE bar and §4 tree row. [INTERPRETATION] The review named two candidate definitions (global-best vs per-item best); the global-best reading is the minimal conservative pin — a single pinned arm, not 10 per-item maxima.
+2. **(LAUNCH-GATING) Zero-denominator branch of r_i:** pinned in §3.7 — denominator 0 (all 8 random arms move the margin by exactly 0 on item i): 0/0 → r_i = 1; x/0 (x > 0) → r_i = +∞; denominator-zero items disclosed as a diagnostic in the report.
+3. **(verdict-immaterial) §0 Law #9 ordering string aligned with §5:** added "budget computation and record" between artifact re-pins and the ĉ gate.
+4. **(verdict-immaterial) v̂₂ iteration count stated:** §3.3 now reads "fixed iteration count K=40" (previously by reference to the LOG-4714 erratum only).
+5. **(verdict-immaterial) v̂₂ derivation costed:** §6 budget now includes ~800 autograd products (K=40 × 2 products × 10 prompts).
+6. **(verdict-immaterial) A-priori McNemar critical table:** added in §3.7 — n=5: (5,0) → 0.0312; n=6: (6,0) → 0.0156; n=7: (7,0) → 0.0078; n=8: (7,1) → 0.0352; n=9: (8,1) → 0.0195; n=10: (9,1) → 0.0107; n ≤ 4: significance unreachable. All values machine-verified with exact binomial arithmetic (%.4f display, the EXP130 program standard — (6,0)→0.0156 matches the EXP130 draft precedent).
+
+**Result:** the EXP127 v₁ injection-test pre-registration is GPU-launch-ready pending the CEO launch decision; execution itself is founder-gated (user hardware). No push, no spend, no credentials touched.
+## LOG-4727 — 2026-09-29 — CEO launch decision: EXP131 minted — TGA v₁ injection test licensed for GPU execution
+
+**Lane:** CEO launch decision (pre-assigned LOG-4727). **$0 CPU.**
+
+**Decision:** The CEO mints experiment number **EXP131** for the EXP127 v₁ injection test. The pre-registration `research/prereg/EXP_PREREG_TGA_V1_INJECTION_2026-09-29.md` (post-fix sha256 `d85205f4ce2b1aadd2b2bda64397f7523e15958cf4fd8d903acccf0fd7f8bf52`) is **LICENSED FOR GPU EXECUTION** — the launch chain is complete: drafted LOG-4724, independent Law #14 SIGN-WITH-FIXES LOG-4725, all six fixes byte-verified LOG-4726 (26 changed lines, all fix-attributable).
+
+**Founder-gated:** execution runs on the founder's hardware — the founder's GPU queue (`research/strategy/GPU_QUEUE_READINESS_2026-09-29.md` row 9, appended this lane). The executor must verify the protocol hash matches `d85205f4…f8bf52` before the first forward; any mismatch → the run does not start.
+
+**Run brief (for surfacing to the founder):** EXP131 = one-shot GPU injection along v̂₁ (EXP127's dynamics-matched leading direction, R = 8.240640) vs K=8 matched-norm seeded random directions vs the dead B_agg control (any B_agg flip → RUN-INVALID apparatus drift); decision-orthogonality gate ĉ < 0.1 → KILL; singular-rank trend gate (v̂₁ > v̂₂ > random on ≥8/10, flat → KILL); conjunctive CONTINUE requires ĉ ≥ 0.1 AND median margin-displacement ratio ≥ 2× AND ΔM_v1 > 0 with one-sided McNemar p ≤ 0.05 AND rank-trend holds AND ΔM_Bagg = 0 → the program's first bound positive steering signal. Honest frame: a steering test, not a steering claim — capability scoreboard stays at zero until a bound positive lands.
+
+**No CEO self-clearance beyond this recorded decision.** Nothing pushed, spent, or credential-touched.
