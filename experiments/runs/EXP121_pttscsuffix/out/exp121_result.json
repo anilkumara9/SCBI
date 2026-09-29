@@ -1,0 +1,1877 @@
+{
+  "verdict": "RUN-INVALID (elicitation-failure gate: n_valid=38 < 48)",
+  "gates": {},
+  "phases": {
+    "phase0_precheck": {
+      "placeholder_plan_block": "Plan:\n1. Placeholder outline one.\n2. Placeholder outline two.\n3. Placeholder outline three.",
+      "details": [
+        {
+          "item": 0,
+          "id": "exp107_flip_exp077_planet_2hop_0",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 1,
+          "id": "exp107_ctrl_exp077_planet_2hop_1",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 2,
+          "id": "exp107_flip_exp077_planet_2hop_2",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 3,
+          "id": "exp107_ctrl_exp077_planet_2hop_3",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 4,
+          "id": "exp107_flip_exp077_planet_2hop_4",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 5,
+          "id": "exp107_ctrl_exp077_planet_2hop_5",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 6,
+          "id": "exp107_flip_exp077_planet_2hop_6",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 7,
+          "id": "exp107_ctrl_exp077_planet_2hop_7",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 8,
+          "id": "exp107_ctrl_exp077_planet_2hop_8",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 9,
+          "id": "exp107_flip_exp077_planet_2hop_9",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 10,
+          "id": "exp107_flip_exp077_planet_2hop_10",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 11,
+          "id": "exp107_ctrl_exp077_planet_2hop_11",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 12,
+          "id": "exp107_flip_exp077_planet_2hop_12",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 13,
+          "id": "exp107_ctrl_exp077_planet_2hop_13",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 14,
+          "id": "exp107_flip_exp077_planet_2hop_14",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 15,
+          "id": "exp107_flip_exp077_planet_3hop_0",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 16,
+          "id": "exp107_ctrl_exp077_planet_3hop_1",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 17,
+          "id": "exp107_flip_exp077_planet_3hop_2",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 18,
+          "id": "exp107_ctrl_exp077_planet_3hop_3",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 19,
+          "id": "exp107_flip_exp077_planet_3hop_4",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 20,
+          "id": "exp107_ctrl_exp077_planet_3hop_5",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 21,
+          "id": "exp107_flip_exp077_planet_3hop_6",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 22,
+          "id": "exp107_ctrl_exp077_planet_3hop_7",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 23,
+          "id": "exp107_flip_exp077_planet_3hop_8",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 24,
+          "id": "exp107_ctrl_exp077_planet_3hop_9",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 25,
+          "id": "exp107_ctrl_exp077_planet_3hop_10",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 26,
+          "id": "exp107_flip_exp077_planet_3hop_11",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 27,
+          "id": "exp107_ctrl_exp077_planet_3hop_12",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 28,
+          "id": "exp107_flip_exp077_planet_3hop_13",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 29,
+          "id": "exp107_ctrl_exp077_planet_3hop_14",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 30,
+          "id": "exp107_flip_exp077_element_2hop_0",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 31,
+          "id": "exp107_ctrl_exp077_element_2hop_1",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 32,
+          "id": "exp107_flip_exp077_element_2hop_2",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 33,
+          "id": "exp107_ctrl_exp077_element_2hop_3",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 34,
+          "id": "exp107_flip_exp077_element_2hop_4",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 35,
+          "id": "exp107_ctrl_exp077_element_2hop_5",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 36,
+          "id": "exp107_flip_exp077_element_2hop_6",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 37,
+          "id": "exp107_ctrl_exp077_element_2hop_7",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 38,
+          "id": "exp107_flip_exp077_element_2hop_8",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 39,
+          "id": "exp107_ctrl_exp077_element_2hop_9",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 40,
+          "id": "exp107_flip_exp077_element_2hop_10",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 41,
+          "id": "exp107_ctrl_exp077_element_2hop_11",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 42,
+          "id": "exp107_flip_exp077_element_2hop_12",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 43,
+          "id": "exp107_ctrl_exp077_element_2hop_13",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 44,
+          "id": "exp107_flip_exp077_element_2hop_14",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 45,
+          "id": "exp107_ctrl_exp077_element_3hop_0",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 46,
+          "id": "exp107_flip_exp077_element_3hop_1",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 47,
+          "id": "exp107_ctrl_exp077_element_3hop_2",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 48,
+          "id": "exp107_flip_exp077_element_3hop_3",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 49,
+          "id": "exp107_ctrl_exp077_element_3hop_4",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 50,
+          "id": "exp107_flip_exp077_element_3hop_5",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 51,
+          "id": "exp107_ctrl_exp077_element_3hop_6",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 52,
+          "id": "exp107_ctrl_exp077_element_3hop_7",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 53,
+          "id": "exp107_flip_exp077_element_3hop_8",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 54,
+          "id": "exp107_ctrl_exp077_element_3hop_9",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 55,
+          "id": "exp107_flip_exp077_element_3hop_10",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 56,
+          "id": "exp107_ctrl_exp077_element_3hop_11",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 57,
+          "id": "exp107_flip_exp077_element_3hop_12",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 58,
+          "id": "exp107_ctrl_exp077_element_3hop_13",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        },
+        {
+          "item": 59,
+          "id": "exp107_flip_exp077_element_3hop_14",
+          "tail_plan": [
+            32,
+            37741,
+            27
+          ],
+          "tail_base": [
+            32,
+            37741,
+            27
+          ],
+          "identity": true
+        }
+      ],
+      "identity_count": 60
+    },
+    "phase0a": {
+      "probe_items": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "details": [
+        {
+          "item": 0,
+          "n_outlines": 4,
+          "planner_valid": true,
+          "n_recited_content_diagnostic": 3
+        },
+        {
+          "item": 1,
+          "n_outlines": 4,
+          "planner_valid": true,
+          "n_recited_content_diagnostic": 3
+        },
+        {
+          "item": 2,
+          "n_outlines": 4,
+          "planner_valid": true,
+          "n_recited_content_diagnostic": 3
+        },
+        {
+          "item": 5,
+          "n_outlines": 4,
+          "planner_valid": true,
+          "n_recited_content_diagnostic": 3
+        },
+        {
+          "item": 6,
+          "n_outlines": 4,
+          "planner_valid": true,
+          "n_recited_content_diagnostic": 3
+        },
+        {
+          "item": 7,
+          "n_outlines": 4,
+          "planner_valid": true,
+          "n_recited_content_diagnostic": 3
+        },
+        {
+          "item": 8,
+          "n_outlines": 4,
+          "planner_valid": true,
+          "n_recited_content_diagnostic": 3
+        },
+        {
+          "item": 9,
+          "n_outlines": 4,
+          "planner_valid": true,
+          "n_recited_content_diagnostic": 3
+        },
+        {
+          "item": 10,
+          "n_outlines": 4,
+          "planner_valid": true,
+          "n_recited_content_diagnostic": 3
+        },
+        {
+          "item": 11,
+          "n_outlines": 4,
+          "planner_valid": true,
+          "n_recited_content_diagnostic": 3
+        }
+      ],
+      "planner_valid_count": 10,
+      "content_recited_items_diagnostic": 10
+    },
+    "phase0b": {
+      "details": [
+        {
+          "item": 0,
+          "planner_valid": true,
+          "tokenization_identity": true,
+          "n_tokens_plan": 187,
+          "mass_plan": 0.06203658666011051,
+          "mass_base": 0.457488691096573,
+          "g1_plan": true,
+          "g1_base": true,
+          "valid": true
+        },
+        {
+          "item": 1,
+          "planner_valid": true,
+          "tokenization_identity": true,
+          "n_tokens_plan": 187,
+          "mass_plan": 0.09132167970690136,
+          "mass_base": 0.37121557940486394,
+          "g1_plan": true,
+          "g1_base": true,
+          "valid": true
+        },
+        {
+          "item": 2,
+          "planner_valid": true,
+          "tokenization_identity": true,
+          "n_tokens_plan": 187,
+          "mass_plan": 0.16943282561688822,
+          "mass_base": 0.3842327831323489,
+          "g1_plan": true,
+          "g1_base": true,
+          "valid": true
+        },
+        {
+          "item": 5,
+          "planner_valid": true,
+          "tokenization_identity": true,
+          "n_tokens_plan": 187,
+          "mass_plan": 0.07763105968355756,
+          "mass_base": 0.564559726965123,
+          "g1_plan": true,
+          "g1_base": true,
+          "valid": true
+        },
+        {
+          "item": 6,
+          "planner_valid": true,
+          "tokenization_identity": true,
+          "n_tokens_plan": 187,
+          "mass_plan": 0.03727603353925335,
+          "mass_base": 0.1937854977593736,
+          "g1_plan": true,
+          "g1_base": true,
+          "valid": true
+        },
+        {
+          "item": 7,
+          "planner_valid": true,
+          "tokenization_identity": true,
+          "n_tokens_plan": 187,
+          "mass_plan": 0.06547673721365739,
+          "mass_base": 0.4701036521762373,
+          "g1_plan": true,
+          "g1_base": true,
+          "valid": true
+        },
+        {
+          "item": 8,
+          "planner_valid": true,
+          "tokenization_identity": true,
+          "n_tokens_plan": 187,
+          "mass_plan": 0.04790589675052578,
+          "mass_base": 0.46910653821859916,
+          "g1_plan": true,
+          "g1_base": true,
+          "valid": true
+        },
+        {
+          "item": 9,
+          "planner_valid": true,
+          "tokenization_identity": true,
+          "n_tokens_plan": 187,
+          "mass_plan": 0.025912254251436458,
+          "mass_base": 0.4095684605452873,
+          "g1_plan": true,
+          "g1_base": true,
+          "valid": true
+        },
+        {
+          "item": 10,
+          "planner_valid": true,
+          "tokenization_identity": true,
+          "n_tokens_plan": 187,
+          "mass_plan": 0.06647623987823414,
+          "mass_base": 0.48364362976273134,
+          "g1_plan": true,
+          "g1_base": true,
+          "valid": true
+        },
+        {
+          "item": 11,
+          "planner_valid": true,
+          "tokenization_identity": true,
+          "n_tokens_plan": 187,
+          "mass_plan": 0.08736982037381497,
+          "mass_base": 0.5414233899455063,
+          "g1_plan": true,
+          "g1_base": true,
+          "valid": true
+        }
+      ],
+      "valid_count": 10
+    }
+  },
+  "items": [
+    {
+      "item": 0,
+      "id": "exp107_flip_exp077_planet_2hop_0",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.06203658666011051,
+      "mass_base": 0.457488691096573,
+      "valid": true
+    },
+    {
+      "item": 1,
+      "id": "exp107_ctrl_exp077_planet_2hop_1",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.09132167970690136,
+      "mass_base": 0.37121557940486394,
+      "valid": true
+    },
+    {
+      "item": 2,
+      "id": "exp107_flip_exp077_planet_2hop_2",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.16943282561688822,
+      "mass_base": 0.3842327831323489,
+      "valid": true
+    },
+    {
+      "item": 3,
+      "id": "exp107_ctrl_exp077_planet_2hop_3",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.029982694577947566,
+      "mass_base": 0.3130146895906907,
+      "valid": true
+    },
+    {
+      "item": 4,
+      "id": "exp107_flip_exp077_planet_2hop_4",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.02619143163179163,
+      "mass_base": 0.18599909164803685,
+      "valid": true
+    },
+    {
+      "item": 5,
+      "id": "exp107_ctrl_exp077_planet_2hop_5",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.07763105968355756,
+      "mass_base": 0.564559726965123,
+      "valid": true
+    },
+    {
+      "item": 6,
+      "id": "exp107_flip_exp077_planet_2hop_6",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.03727603353925335,
+      "mass_base": 0.1937854977593736,
+      "valid": true
+    },
+    {
+      "item": 7,
+      "id": "exp107_ctrl_exp077_planet_2hop_7",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.06547673721365739,
+      "mass_base": 0.4701036521762373,
+      "valid": true
+    },
+    {
+      "item": 8,
+      "id": "exp107_ctrl_exp077_planet_2hop_8",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.04790589675052578,
+      "mass_base": 0.46910653821859916,
+      "valid": true
+    },
+    {
+      "item": 9,
+      "id": "exp107_flip_exp077_planet_2hop_9",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.025912254251436458,
+      "mass_base": 0.4095684605452873,
+      "valid": true
+    },
+    {
+      "item": 10,
+      "id": "exp107_flip_exp077_planet_2hop_10",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.06647623987823414,
+      "mass_base": 0.48364362976273134,
+      "valid": true
+    },
+    {
+      "item": 11,
+      "id": "exp107_ctrl_exp077_planet_2hop_11",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.08736982037381497,
+      "mass_base": 0.5414233899455063,
+      "valid": true
+    },
+    {
+      "item": 12,
+      "id": "exp107_flip_exp077_planet_2hop_12",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.3652118370105847,
+      "mass_base": 0.4557982869267993,
+      "valid": true
+    },
+    {
+      "item": 13,
+      "id": "exp107_ctrl_exp077_planet_2hop_13",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.038251873074431286,
+      "mass_base": 0.50471997537264,
+      "valid": true
+    },
+    {
+      "item": 14,
+      "id": "exp107_flip_exp077_planet_2hop_14",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.03731687545213213,
+      "mass_base": 0.2111285452786431,
+      "valid": true
+    },
+    {
+      "item": 15,
+      "id": "exp107_flip_exp077_planet_3hop_0",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.003058978912182973,
+      "mass_base": 0.1653032101633525,
+      "valid": false
+    },
+    {
+      "item": 16,
+      "id": "exp107_ctrl_exp077_planet_3hop_1",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.02245405481260339,
+      "mass_base": 0.3767243298487498,
+      "valid": true
+    },
+    {
+      "item": 17,
+      "id": "exp107_flip_exp077_planet_3hop_2",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.0030664710752493773,
+      "mass_base": 0.21547915465342016,
+      "valid": false
+    },
+    {
+      "item": 18,
+      "id": "exp107_ctrl_exp077_planet_3hop_3",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.029979666202688722,
+      "mass_base": 0.28458364565253214,
+      "valid": true
+    },
+    {
+      "item": 19,
+      "id": "exp107_flip_exp077_planet_3hop_4",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.004641153423065476,
+      "mass_base": 0.21580421372761638,
+      "valid": false
+    },
+    {
+      "item": 20,
+      "id": "exp107_ctrl_exp077_planet_3hop_5",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.05277420624722161,
+      "mass_base": 0.27956189599815806,
+      "valid": true
+    },
+    {
+      "item": 21,
+      "id": "exp107_flip_exp077_planet_3hop_6",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.0016954410907024724,
+      "mass_base": 0.1859625019454728,
+      "valid": false
+    },
+    {
+      "item": 22,
+      "id": "exp107_ctrl_exp077_planet_3hop_7",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.013951914824155868,
+      "mass_base": 0.3730163466759212,
+      "valid": true
+    },
+    {
+      "item": 23,
+      "id": "exp107_flip_exp077_planet_3hop_8",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.008306079859664717,
+      "mass_base": 0.16844205811795454,
+      "valid": false
+    },
+    {
+      "item": 24,
+      "id": "exp107_ctrl_exp077_planet_3hop_9",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.033833764120799165,
+      "mass_base": 0.5677453841090856,
+      "valid": true
+    },
+    {
+      "item": 25,
+      "id": "exp107_ctrl_exp077_planet_3hop_10",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.040538509672331025,
+      "mass_base": 0.4542447383355339,
+      "valid": true
+    },
+    {
+      "item": 26,
+      "id": "exp107_flip_exp077_planet_3hop_11",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.0014909022846193748,
+      "mass_base": 0.2147023185767286,
+      "valid": false
+    },
+    {
+      "item": 27,
+      "id": "exp107_ctrl_exp077_planet_3hop_12",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.006066598004180679,
+      "mass_base": 0.4937431403856073,
+      "valid": false
+    },
+    {
+      "item": 28,
+      "id": "exp107_flip_exp077_planet_3hop_13",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.008306079859664717,
+      "mass_base": 0.16844205811795454,
+      "valid": false
+    },
+    {
+      "item": 29,
+      "id": "exp107_ctrl_exp077_planet_3hop_14",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.033833764120799165,
+      "mass_base": 0.5677453841090856,
+      "valid": true
+    },
+    {
+      "item": 30,
+      "id": "exp107_flip_exp077_element_2hop_0",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.013207845627159794,
+      "mass_base": 0.12328517447756118,
+      "valid": true
+    },
+    {
+      "item": 31,
+      "id": "exp107_ctrl_exp077_element_2hop_1",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.10824112935991961,
+      "mass_base": 0.5152537617394274,
+      "valid": true
+    },
+    {
+      "item": 32,
+      "id": "exp107_flip_exp077_element_2hop_2",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.04443325076480952,
+      "mass_base": 0.11888144259758779,
+      "valid": true
+    },
+    {
+      "item": 33,
+      "id": "exp107_ctrl_exp077_element_2hop_3",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.016465367102072984,
+      "mass_base": 0.3752592818244211,
+      "valid": true
+    },
+    {
+      "item": 34,
+      "id": "exp107_flip_exp077_element_2hop_4",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.012951120192361536,
+      "mass_base": 0.16138892081267842,
+      "valid": true
+    },
+    {
+      "item": 35,
+      "id": "exp107_ctrl_exp077_element_2hop_5",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.05914483858294429,
+      "mass_base": 0.32252830072124844,
+      "valid": true
+    },
+    {
+      "item": 36,
+      "id": "exp107_flip_exp077_element_2hop_6",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.011502436768070981,
+      "mass_base": 0.1961909959162927,
+      "valid": true
+    },
+    {
+      "item": 37,
+      "id": "exp107_ctrl_exp077_element_2hop_7",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.06185735375073391,
+      "mass_base": 0.28720834509773024,
+      "valid": true
+    },
+    {
+      "item": 38,
+      "id": "exp107_flip_exp077_element_2hop_8",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.008570617616208857,
+      "mass_base": 0.16507909966430268,
+      "valid": false
+    },
+    {
+      "item": 39,
+      "id": "exp107_ctrl_exp077_element_2hop_9",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.011342745343128683,
+      "mass_base": 0.38200188257804946,
+      "valid": true
+    },
+    {
+      "item": 40,
+      "id": "exp107_flip_exp077_element_2hop_10",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.03750401212327229,
+      "mass_base": 0.18648729495122837,
+      "valid": true
+    },
+    {
+      "item": 41,
+      "id": "exp107_ctrl_exp077_element_2hop_11",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.09982478491339385,
+      "mass_base": 0.5626207753712854,
+      "valid": true
+    },
+    {
+      "item": 42,
+      "id": "exp107_flip_exp077_element_2hop_12",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.06943997966204576,
+      "mass_base": 0.1459044982501383,
+      "valid": true
+    },
+    {
+      "item": 43,
+      "id": "exp107_ctrl_exp077_element_2hop_13",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.004544551811441343,
+      "mass_base": 0.3934102976424857,
+      "valid": false
+    },
+    {
+      "item": 44,
+      "id": "exp107_flip_exp077_element_2hop_14",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E2",
+      "readout_base": "E2",
+      "mass_plan": 0.025314065541912092,
+      "mass_base": 0.13609007910529455,
+      "valid": true
+    },
+    {
+      "item": 45,
+      "id": "exp107_ctrl_exp077_element_3hop_0",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.016802401497150028,
+      "mass_base": 0.27999064536021007,
+      "valid": true
+    },
+    {
+      "item": 46,
+      "id": "exp107_flip_exp077_element_3hop_1",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.0018176080322673683,
+      "mass_base": 0.20335538745302034,
+      "valid": false
+    },
+    {
+      "item": 47,
+      "id": "exp107_ctrl_exp077_element_3hop_2",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.057582245133968604,
+      "mass_base": 0.3903921076327966,
+      "valid": true
+    },
+    {
+      "item": 48,
+      "id": "exp107_flip_exp077_element_3hop_3",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.00018731189123686988,
+      "mass_base": 0.09798600434151317,
+      "valid": false
+    },
+    {
+      "item": 49,
+      "id": "exp107_ctrl_exp077_element_3hop_4",
+      "planner_valid": true,
+      "g1_plan": true,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.01437310135880952,
+      "mass_base": 0.31828167887950304,
+      "valid": true
+    },
+    {
+      "item": 50,
+      "id": "exp107_flip_exp077_element_3hop_5",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.0001423252178394243,
+      "mass_base": 0.0684922355868045,
+      "valid": false
+    },
+    {
+      "item": 51,
+      "id": "exp107_ctrl_exp077_element_3hop_6",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.003115285119445156,
+      "mass_base": 0.38533344128153985,
+      "valid": false
+    },
+    {
+      "item": 52,
+      "id": "exp107_ctrl_exp077_element_3hop_7",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.007072193669966497,
+      "mass_base": 0.25925991590492836,
+      "valid": false
+    },
+    {
+      "item": 53,
+      "id": "exp107_flip_exp077_element_3hop_8",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.0006931329135902857,
+      "mass_base": 0.1275820154822513,
+      "valid": false
+    },
+    {
+      "item": 54,
+      "id": "exp107_ctrl_exp077_element_3hop_9",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.0003082397248467691,
+      "mass_base": 0.24493099975995414,
+      "valid": false
+    },
+    {
+      "item": 55,
+      "id": "exp107_flip_exp077_element_3hop_10",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.000827570096672231,
+      "mass_base": 0.15727157430098374,
+      "valid": false
+    },
+    {
+      "item": 56,
+      "id": "exp107_ctrl_exp077_element_3hop_11",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.0013996152200378151,
+      "mass_base": 0.222275904236366,
+      "valid": false
+    },
+    {
+      "item": 57,
+      "id": "exp107_flip_exp077_element_3hop_12",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.0006252701595772643,
+      "mass_base": 0.12264285088217591,
+      "valid": false
+    },
+    {
+      "item": 58,
+      "id": "exp107_ctrl_exp077_element_3hop_13",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E2",
+      "mass_plan": 0.0001788829162151244,
+      "mass_base": 0.27056816359771063,
+      "valid": false
+    },
+    {
+      "item": 59,
+      "id": "exp107_flip_exp077_element_3hop_14",
+      "planner_valid": true,
+      "g1_plan": false,
+      "g1_base": true,
+      "readout_plan": "E1",
+      "readout_base": "E1",
+      "mass_plan": 0.000688685093434462,
+      "mass_base": 0.09724689959526672,
+      "valid": false
+    }
+  ],
+  "baseline_reproduction_mismatches": 0,
+  "baseline_variation": {
+    "distinct": 2,
+    "minority": 27
+  },
+  "n_valid": 38,
+  "worksheet": {
+    "experiment": "EXP121",
+    "hypothesis": "H19/PTTSC-SUFFIX",
+    "lane": "LOG-4644",
+    "environment": {
+      "torch": "2.14.0+cpu",
+      "transformers": "5.17.0",
+      "numpy": "2.5.3",
+      "sklearn": "1.9.1",
+      "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+      "torch_num_threads_set": 2,
+      "torch_num_threads_readback": 2,
+      "seeds": {
+        "torch": 0,
+        "numpy": 0
+      },
+      "device": "cpu",
+      "dtype": "float32",
+      "device_map": "cpu",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 160
+      }
+    },
+    "pins": {
+      "npz": "6cf4a8a726a2b6e4623f57d0287d95879866f77e789bcc3789fb693cf2af6a76",
+      "embeddings_bytes": "9b6e8afb091ba1edbb0311ba1d3414d34a65942c3fdecb4533b69720f2a99123",
+      "ids_bytes": "3669e102222719d66f61daca46ae1ac34e844e398ae433743a5b37bfc5075cb9",
+      "bench": "e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5",
+      "backbone_pin_expected": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+      "backbone_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+      "backbone_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed"
+    },
+    "planner_prompt_byte_identity_mismatches": 0,
+    "reparse_byte_identical": true,
+    "artifact_hashes": {
+      "generations": "a28cc25eddcab03057c0910a7801d6fd03833b4580db9a23cbcd41191962b146",
+      "forwards": "80db4300b4d741ec4dd05ee9ef655a2015f81d4e2ae4f17e6118c91d8d380904",
+      "precheck": "513ee67cda02740673ff30f1d5db243e08d021699b59ba16a6eac0309f7e3c04",
+      "per_item": "eb00f32275e187afd9733b4f8643644bce1046b57dd064261ac0f23ecb76be34",
+      "execute_script": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "completed_utc": "2026-09-29T13:12:26Z"
+}

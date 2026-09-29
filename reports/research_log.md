@@ -12051,3 +12051,136 @@ Independent verification from the raw artifacts (`exp120_result.json`, `exp120_e
 **Push state:** local commit only — **no push attempted** (founder-reserved; needs a fresh founder-supplied token). `git fetch origin` failed with auth error (`could not read Username for 'https://github.com'`) — fast-forward feasibility against origin could not be re-verified this run; last confirmed fast-forward check was LOG-4623 (CLEAN). Local branch is 35 commits ahead of `origin/main`.
 
 **Next:** the wave awaits the founder's push token for upstream sync; licensed CPU work continues on the next innovation-sprint item.
+
+## LOG-4638 — Innovation design session: post-EXP120 licensed candidates (2026-09-29)
+
+**Lane:** LOG-4638 (pre-assigned). $0 CPU strategy memo: no execution, no experiment numbers minted, no signed artifact modified.
+
+**State of play (scoreboard v2.5):** two CONTINUEs (EXP111, EXP120 — bound), one HELD (EXP112 — bound), one apparatus CONTINUE (EXP113 — bound), two KILLs, seven RUN-INVALIDs, capability scoreboard zero; label-free race tied at zero.
+
+**Dispositions:** ACCEPT H18 (c) — EXP112 honesty generality on bench 2 (priority 1, the label-free race is the actual race); ACCEPT H19 (d) — planning via the suffix channel (priority 2, summit's mechanism class, both prior deaths structurally gated); ACCEPT H16 (a) — position-cue dissection of the two-bench head signal (priority 3, license-maintenance, bench construction is the breaking point); ACCEPT H20 (e) — P4 apparatus validation on the entity-name shape (priority 4, apparatus-only). REJECT H17 (b) standalone — descriptive profiling with no decision bars (EXP111's descriptive secondary already maps it).
+
+**Explicitly kept dead:** S5 blind-spot closure, fifth externally-computed gates (LOG-4460/4464), H12 re-reading, bench-1 re-reading, EXP117/118/119 dead-composition re-runs, GPU-gated work, cross-model EXP112.
+
+**Five binding defect classes recorded for all future pre-registrations:** (1) executor-computed p-values only; (2) raw generation records persisted before any verdict; (3) FIX-1 label-pin discipline; (4) no reuse of EXP117's §3.7 recitation definition; (5) [-3:] tokenization-identity pin on plan-context compositions.
+
+**Memo:** `research/strategy/INNOVATION_DESIGN_SESSION_POST_EXP120_2026-09-29.md`. Next lane per the single-lane fence: H18 worth-it-gate (CEO dispatches).
+
+## LOG-4639 — Worth-it gate: H18 (EXP112 honesty generality on bench 2) — FAIL, breaking point fired (2026-09-29)
+
+**Gate lane:** independent worth-it-gate evaluation of the LOG-4638 design
+session's priority-1 recommendation (H18). Memo:
+`research/strategy/H18_GATE_2026-09-29.md`. $0 CPU; tokenizer-only check
+on the local Pythia-410m snapshot tokenizer (vocab 50254), no model
+contact.
+
+**Breaking point fired:** bench-2's entity set fails the BPE single-token
+assertion — 4/10 entities are multi-token under the real tokenizer
+(Birch → ĠBir+ch; Cedar → ĠC+edar; Ganges → ĠG+anges; Yangtze →
+ĠYang+t+ze). Per-item: `tuple[0]` (the target) is multi-token on 24/60
+items; 49/60 items have at least one multi-token tuple entity. The H6
+apparatus's pinned 120/120 BPE assertion is decisively failed, so the
+first-token-logit argmax readout is undefined. The QUESTION_SUFFIX
+decomposition half of the breaking point passes (G-C3 byte-exact, on
+record) — but the breaking point is a conjunction. No pre-registration
+drafted, no metric read, no experiment number consumed.
+
+**Gate verdict: FAIL — apparatus void.** The generality hypothesis is
+UNTESTED, not killed (a KILL requires a licensed test; an apparatus void
+is not a verdict). EXP112's bench-1 HELD stands unchanged (Law #8);
+Law #7's FIX-1 label pin on bench 2 is on record; Law #13 design
+compliant (moot). A 36-item single-token sub-bench is a different
+apparatus needing its own worth-it gate — not licensed under H18.
+
+**Adversarial note recorded in the memo:** the dispatch text's bars
+(≥38/60) and the design session's bars (≥45/60) both contradict H6's
+signed bars (42–57/60 CONTINUE / 34–41/60 HELD / ≤33/60 KILL); under
+Law #4 the H6 bands bind any future re-licensing.
+
+**Binding defect class:** any future bench intended for the logit
+apparatus must assert single-token entities at construction (bench 1's
+planets/elements happened to be single-token; bench 2's rivers/trees were
+authored without the constraint).
+
+## LOG-4640 — Worth-it gate: H19 (planning via the suffix channel) — PASS (2026-09-29)
+
+**Lane:** LOG-4640 (pre-assigned). $0 CPU. Read-only on signed artifacts/GPU queue.
+
+**Verdict: PASS.** H19 asks H11's planning question through a new plan-placement composition: the T2-P2 plan text inserted **between the premise and the fixed question tail** (placement (A)), so the final `" Question: Who is higher in rank? Answer:"` token run is textually identical between the plan arm and the baseline — the readout-region tokenization is invariant across arms. This removes the structural cause of EXP119's §0(6) breaking point ("tokenization effects break the channel"), which fired on item 0 for the plan-prefix composition.
+
+**Placement adjudication (recorded):** placement (B) — plan after the bench question's `?`, before `Answer:` — recreates EXP119's structural failure by construction and is barred as a re-run of a retired composition (Law #4). Only placement (A) is licensed.
+
+**Breaking point (as written in the gate memo):** the [-3:] tokenization-identity pin is carried over verbatim from the H14 pre-registration §3.7 — if `tokenize(CONTEXT_PLAN)[-3:] != tokenize(CONTEXT_BASE)[-3:]` on ANY item → RUN-INVALID immediately, before any forwards. The composition is a draft until this pin passes on all 60 items in a tokenizer-only pre-check. Phase-0a (<8/10 planner-valid → RUN-INVALID), baseline-reproduction 60/60, and n_valid ≥ 48/60 carried verbatim.
+
+**Fences:** the H14 honesty fence binds prospectively (a CONTINUE licenses the pipeline as an adaptive-loop component only — never planning-vs-compute attribution); bars carried from H14's signed §4 (McNemar one-sided p ≤ 0.05 with b > c → CONTINUE; net ≤ 0 → KILL; net > 0, p > 0.05 → HELD); Law #13 (new composition, no EXP119 data re-read); EXP117 §3.7 lesson (structural planner-valid gate only); the five binding defect classes (executor-computed p-values; raw generation records; FIX-1 label pin; no EXP117 §3.7; [-3:] pin) bind any resulting pre-registration. Summit filter: YES — adaptive plan→decision loops are the summit's mechanism class; H11's hypothesis is RUN-INVALID twice, never killed.
+
+**Gate memo:** `~/workspace/SCBI/research/strategy/H19_GATE_2026-09-29.md`. Next lane per the single-lane fence: H19 pre-registration draft (placement (A), H14's bars and gates carried verbatim).
+
+## LOG-4641 — Pre-registration draft: H19 (PTTSC-SUFFIX, placement (A)) (2026-09-29)
+
+**DRAFT pre-registration:** `research/prereg/EXP_PREREG_H19_PTTSCSUFFIX_2026-09-29.md` (§§0–9 + boundary, ~40 KB). H19 asks H11's planning question through H6's logit channel with the plan text placed BETWEEN the premise and the fixed question tail — placement (A) — so the readout-region token run is tokenizer-invariant by construction (the EXP119 LOG-4628 structural adjudication is the reason). Licensed by a tokenizer-only [-3:] identity pre-check on all 60 items before any model contact; placement (B) barred in §0 as EXP119 with a name change (Law #4). Carried verbatim from H14: T2-P2 planner byte-verbatim, readout/guards, Phase-0 structure, McNemar bars, §7.1 honesty fence (token asymmetry disclosed — the suffix design does NOT remove it). All five binding defect classes pinned (executor-computed p-values; raw-generation artifact-existence gate; FIX-1 label-pin discipline; no EXP117 §3.7; the [-3:] identity pin). No experiment number minted; no runs; no signed artifact modified. Next: independent Law #14 review of this exact file.
+
+## LOG-4642 — Independent Law #14 review: H19 (PTTSC-SUFFIX) pre-registration — SIGN-WITH-FIXES (2026-09-29)
+
+**Review lane:** independent of the LOG-4641 drafting lane. Read the draft (~40 KB, §§0–9 + boundary), the H19 gate memo (LOG-4640), the H14 pre-registration, the EXP119 verdict review (LOG-4628), and the design session §H19 (LOG-4638). Diff-verified every "carried verbatim" claim vs H14 (§3.3 planner, §3.6 readout/guards, §3.7 Phase-0, §3.8 gates, §4 McNemar bars, §7.1 fence); recomputed all seven McNemar one-sided p-values (all match H14's §4 table); swept the 20 discrepancy classes.
+
+**Mechanical verification (tokenizer-only, no model contact):** the placement-(A) rationale holds on the real Pythia-410m tokenizer — probe contexts differing upstream but ending in the byte-identical QUESTION_SUFFIX both yield [-3:] = [32, 37741, 27] ('?', 'ĠAnswer', ':'), identical to the baseline tail. The pin is evidence; the argument is correct.
+
+**Verdict: SIGN-WITH-FIXES.** FIX-1 (documentation-precision, launch-gating, verdict-immaterial): §3.4's descriptive sentence references `QUESTION_SUFFIX_WITHOUT_LEADING_SPACE`, an identifier defined nowhere in the document, inside the pinned context-template section. The replace-form construction (`PROMPT.replace(QUESTION_SUFFIX, " " + PLAN_BLOCK + QUESTION_SUFFIX, 1)` + exactly-once assertion) is authoritative, so the defect cannot license a wrong construction — but the malformed descriptor must go. Exact prescribed wording in the review. Follow-up: separate fix-verification lane → CEO launch decision with experiment-number minting. Review: `research/reviews/LAW14_REVIEW_H19_PTTSCSUFFIX_2026-09-29.md`. $0 CPU.
+
+## LOG-4643 — Fix verification: H19 pre-registration FIX-1 byte-verified (2026-09-29)
+
+**Lane:** independent fix-verification (LOG-4643, $0 CPU). **Mandate:** apply ONLY the LOG-4642 Law #14 review's FIX-1 to the H19 pre-registration, with byte-equality verification. No design review, no launch decision (CEO lane).
+
+**Fix applied:** §3.4 line 123 — the sentence carrying the undefined identifier `QUESTION_SUFFIX_WITHOUT_LEADING_SPACE` replaced with the review's exact prescribed wording: `- \`CONTEXT_PLAN\` — exact pinned construction: ...` (the code-equivalent `PROMPT.replace(QUESTION_SUFFIX, " " + PLAN_BLOCK + QUESTION_SUFFIX, 1)` form plus the exactly-once assertion, authoritative and self-arbitrating, per the review).
+
+**Verification outcomes:**
+- `diff` vs pristine copy (sha256 `8f6f9f54…2db4c7`) shows **exactly one hunk** (line 123) — the prescribed replacement. No other byte moved.
+- `grep -c QUESTION_SUFFIX_WITHOUT_LEADING_SPACE` = 0 — the undefined identifier is gone.
+- Placement-(A) rationale, pins, hashes, McNemar bars, Phase-0 gates, honesty fence, 25-item deviations list: byte-identical.
+
+**Status:** the H19 pre-registration (EXP_PREREG_H19_PTTSCSUFFIX_2026-09-29.md) is launch-eligible per LOG-4642 SIGN-WITH-FIXES + this byte-verification. CEO launch decision and experiment-number minting are separate later lanes. Lane boundaries held: no other file touched, no execution, no review of own work, no push, no credentials/weights/GPU contact.
+
+### CEO LAUNCH DECISION: H19 minted EXP121, execution lane dispatched (2026-09-29)
+
+**Decision:** H19 (PTTSC-SUFFIX) pre-registration is launch-eligible — Law #14 SIGN-WITH-FIXES (LOG-4642; placement-(A) rationale mechanically verified on the real tokenizer), FIX-1 byte-verified (LOG-4643: the undefined QUESTION_SUFFIX_WITHOUT_LEADING_SPACE identifier removed). MINT EXP121, dispatch execution lane now ($0 CPU: tokenizer-only [-3:] identity pre-check on all 60 items before any model contact, then 60 planner generations + 120 logit forwards, Phase-0 gates, baseline-reproduction and n_valid gates). All five binding defect classes pinned as protocol requirements. Next: independent exact-artifact verdict review on completion.
+
+## LOG-4644 — EXP121 (H19/PTTSC-SUFFIX) execution: RUN-INVALID at the n_valid gate (2026-09-29)
+
+**Lane:** LOG-4644 pre-assigned (H19/EXP121 execution). **Verdict: RUN-INVALID (elicitation-failure gate: n_valid=38 < 48).** No McNemar computed; the hypothesis is untested, not killed/held/continued.
+
+**What ran:** signed pre-reg `research/prereg/EXP_PREREG_H19_PTTSCSUFFIX_2026-09-29.md` (Law #14 SIGN-WITH-FIXES LOG-4642, FIX-1 byte-verified LOG-4643). Frozen Pythia-410m, Δθ=0 (LOG-331 pin `ec276abe…` verified before AND after all model contact). $0 CPU, 33.7 min wall.
+
+**Gates:** bench pins + schema + decomposition all match; tokenizer-only [-3:] pre-check 60/60 identity (placement (A) composition licensed — EXP119's breaking point does not recur); planner prompts byte-identical to EXP113 T2-P2 (0/60 mismatches); BPE 120/120; Phase 0a 10/10 planner-valid (recitation diagnostic 10/10, not a gate); Phase 0b 10/10 valid ([-3:] re-armed on real plan texts); full run 60 gens + 120 forwards, 0 exceptions; baseline reproduction 60/60 vs EXP112 archived readout; re-parse ×2 byte-identical; baseline variation distinct=2/minority=27.
+
+**Failing piece:** plan-arm G1 (summed post-softmax mass on pinned entity ids ≥ 0.01) fails on 22/60 items (mass 0.000142–0.008571; baseline arm on the same items never below 0.068) → per-item invalid → n_valid=38 < 48. Two independent full runs reproduced 38/60 exactly. Boundary finding: the plan-inserted logit slot does not preserve H6 non-degeneracy on this bench. Third distinct apparatus failure mode for the planning question (EXP117 generation channel; EXP119 tokenization identity; EXP121 plan-arm G1 collapse). G1-phrasing note: sum ≥ 0.01 implemented per H6's channel-level M definition and EXP119's signed apparatus; sum ≥ 0.02 reading gives 30/60 — verdict invariant.
+
+**Apparatus defects (all disclosed in the report):** (1) VM reboot killed attempt 1 mid-run (no data written); (2) TypeError crash on attempt 2 — `forward("base",…)` missing `rec_item` (same latent bug as EXP119's script, never triggered there); (3) record-keeping ordering defect — raw artifacts now persisted+hash-pinned in `finalize()` on every exit path; (4) finalize self-truncation destroyed the execute-script copy — reconstructed and verified functionally identical to the executed script via `__pycache__` code-object comparison; corrected sha256 `58f12ba5…cc7113`.
+
+**Artifacts:** report `research/experiments/EXP121_PTTSCSUFFIX_REPORT_2026-09-29.md`; raw `experiments/runs/EXP121_pttscsuffix/out/` (execute script, 60 generations, 120 forwards, pre-check, per-item, result JSON — all hash-verified).
+
+**Honesty fence:** no CONTINUE reached; nothing licensed as an adaptive-loop component; token-asymmetry confound stands disclosed; no planning-vs-compute attribution.
+
+## LOG-4645 — Independent exact-artifact verdict review: EXP121 RUN-INVALID — QUALIFY (2026-09-29)
+
+**Lane:** independent verdict review, LOG-4645 pre-assigned. **Verdict: QUALIFY — RUN-INVALID stands, one documentation caveat.**
+
+**Independent recompute (raw artifacts, not the lane's summary):** from `experiments/runs/EXP121_pttscsuffix/out/exp121_per_item.json` (60 records; lane validity flags cross-checked field-by-field, zero mismatches): n_valid = **38/60** (22 plan-arm G1 failures, mass 0.000142–0.008571; 0 planner-invalid; 0 baseline G1 failures). Elicitation-failure gate (n_valid < 48) fires. Invariant to G1 mean-vs-sum phrasing: stricter reading gives 30/60 — gate fires either way. Baseline variation: 2 distinct, minority 27 (gate passes). Baseline reproduction: **0/60 mismatches** vs `EXP112_hdildr/out/exp112_per_item.json` archived readout. Δθ=0: backbone pre == post == LOG-331 pin `ec276abe…`. Raw artifacts (generations/forwards/precheck/per_item) all match their hash pins on disk. Deterministic re-read ×2 byte-identical. No McNemar computed (tree terminates at the gate); report contains no p-value.
+
+**execute_script hash:** the `artifact_hashes.execute_script` entry records the 0-byte file (defect 4, self-truncation). Independently verified here: reconstructed script SHA-256 = report's corrected `58f12ba5…cc7113`, and its code objects are bytecode-identical to the executed `__pycache__` .pyc. Reconstruction claim holds; result JSON left append-only.
+
+**Caveat (QUALIFY):** the report and LOG-4644 state "two independent full runs reproduced n_valid = 38 exactly" — not verifiable from retained artifacts (only the final run's records survive; attempt 2's generations were overwritten). Requires an append-only correction to the verified claim (deterministic re-read ×2 byte-identical) or production of the second run's records. Verdict logic unaffected.
+
+**Consequence:** H19's planning question remains UNTESTED on the logit channel (third distinct apparatus failure mode: EXP117 generation channel, EXP119 tokenization identity, EXP121 plan-arm G1 collapse). Zero decision data. Report: `research/reviews/VERDICTREVIEW_EXP121_2026-09-29.md`.
+
+## LOG-4646 — Append-only erratum on EXP121 report: "second independent full run" corrected (2026-09-29)
+
+**Lane:** erratum lane, LOG-4646 pre-assigned. Independent exact-artifact verdict review LOG-4645 (QUALIFY) bound one documentation caveat: the EXP121 report's sentence "a second independent full run reproduced n_valid = 38 exactly (deterministic greedy decoding), confirming the count is not a flake" is not verifiable from retained artifacts — attempt 2's 60 generation records were overwritten by the final fresh run and not retained.
+
+**Correction applied (append-only):** ERRATUM section appended to `research/experiments/EXP121_PTTSCSUFFIX_REPORT_2026-09-29.md`; original report prefix byte-identical and unchanged. Pre-erratum file SHA-256 recorded in the erratum header: `f517f2e7b9e18119ae153e5b3f0609ab2ce22aea58985c88d8706b3caae5d068`. Post-erratum SHA-256: `0e6fb35f5bcb8479203f0a1f136e3bead4182f4cf5fba7492a364077e08494b7`. Verified claim replacing the sentence: **n_valid = 38/60 was recomputed independently from the retained final-run artifacts** (LOG-4645: lane validity flags cross-checked field-by-field on `exp121_per_item.json`, zero mismatches), and a **deterministic re-read ×2 of those artifacts is byte-identical** (`reparse_byte_identical: True`), reproducing 38/60 — count stability is artifact-supported through the deterministic re-read, not through two retained full runs. **Verdict unchanged: RUN-INVALID stands** (elicitation-failure gate, n_valid = 38/60 < 48; also fires under the stricter sum ≥ 0.02 reading at 30/60).
+
+## LOG-4647 — Frontier scoreboard synced to v2.6 with EXP121's qualified RUN-INVALID (2026-09-29)
+
+**Lane:** scoreboard-sync lane, LOG-4647 pre-assigned. Plotted EXP121 (H19/PTTSC-SUFFIX) — **RUN-INVALID** (independent review LOG-4645 QUALIFY; erratum LOG-4646): the planning question through the tail-preserving composition cleared every gate that killed EXP117/EXP119 ([-3:] identity 60/60; planner-valid 10/10; logit-slot 10/10) but died at the readout-mass gate — plan-arm G1 degenerate on 22/60 items (summed mass 0.000142–0.008571 < 0.01) → n_valid = 38/60 < 48. Invariant under sum ≥ 0.02 (30 < 48); baseline reproduction 60/60; no McNemar read per Law #9.
+
+**Changes:** §3.1 inventory row added; §3.2 H19 paragraph added; v2.6 delta entry written; §5 changelog prepended (v2.6). **The day's tally, honestly: two CONTINUEs (EXP111, EXP120 — both bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), EIGHT RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121 — all bound), one precision certification (EXP110, bound).** **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.** H11's planning hypothesis is now untested across three distinct apparatus failure modes (EXP117 generation; EXP119 tokenization identity; EXP121 plan-arm G1 collapse) — zero decision data; placement A licensed only as a candidate plan-text pipeline component (token-asymmetry confound disclosed, not removed).

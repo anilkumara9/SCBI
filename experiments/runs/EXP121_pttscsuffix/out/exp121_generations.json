@@ -1,0 +1,362 @@
+[
+  {
+    "item_idx": 0,
+    "prompt_sha256": "410e641566f7ce7f5c0bcb18f1e4759285bf9e7606ffe18873037d036aad1b49",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 1,
+    "prompt_sha256": "4613f242c9ceda0b9dc1995f117e99549294bd2c96a9dee2c1aab96c57571552",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 2,
+    "prompt_sha256": "32ea6f7b3371a38db7141afea360b3f7793a0fd57db05c02990a9da47f71ca1c",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Jupiter is lower than Saturn. Mercury is lower than Jupiter. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 3,
+    "prompt_sha256": "78c8a26ed45ba1223d537572f49522dc0a0e1a3091b1b5361f4df7ee1a63a307",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 4,
+    "prompt_sha256": "9799822ec6841cab39e9b92873e1365610a05ab2ffed84aa11fa578db13b2723",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 5,
+    "prompt_sha256": "f5f079969c050a524582e1f73168a23e3a45f6f8e00e288d8fc996997ce5c7f9",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 6,
+    "prompt_sha256": "3430e82ff3f59aa01dd5d3040658559e583d4e11bf12a5a5f28581df56e71bcd",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Mars is higher than Jupiter. Saturn is higher than Mars. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 7,
+    "prompt_sha256": "623fd3656a0ad8c5fe441c5dca7397d3f6cb1405603abadbb7169cd1094d4e20",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 8,
+    "prompt_sha256": "288e5d470a1f634ac73aca05a2aba905ae18618647a95147fca0325dbb444890",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Jupiter is higher than Mercury. Mercury is higher than Venus. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 9,
+    "prompt_sha256": "0b1dd12e25c5008e064e441493077f5bd99ce8352ba6a93f66c8c36375838b1a",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 10,
+    "prompt_sha256": "f7c6596bc2e1cda25b65e3b383b8a56170b87ab834bade6d86174b17470b65de",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 11,
+    "prompt_sha256": "85e0077ff78a9bb27dc11f54bc126165f9ed0a29bedb057bcedc0251ae8ec5cd",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Jupiter is lower than Venus. Saturn is lower than Mars. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 12,
+    "prompt_sha256": "a7afeb28e1dfa09bc08963489e5c0d1eab162c9b2010b7a2dc360d02d0d83575",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Jupiter outranks Saturn. Saturn outranks Jupiter. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 13,
+    "prompt_sha256": "802841f2fba0f440e3f7415dcfcce5adf54bf56baa89a793e1fc6014445ec9ba",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 14,
+    "prompt_sha256": "224d1393a66387825d8a42691cbed51d39ea2f0d1d82de8f7a87c5d62047f3c3",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 15,
+    "prompt_sha256": "f29bc31a378c60c15fda42b996183f90f3e31cb640965c359354dc56b58b6c9b",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Jupiter is lower than Venus. Saturn is lower than Jupiter. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 16,
+    "prompt_sha256": "8bb9e85e551acf0ea5a731bf77faf66ce3c7c2bd6776d200d21b0d935abd0333",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Saturn outranks Mercury. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 17,
+    "prompt_sha256": "27d1c661c41b941ee42dd6c9d277422871cfc702d47c5a6c602a7738b9241094",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Mercury is lower than Saturn. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 18,
+    "prompt_sha256": "85eab3b8420772b182bc8ed7fadd2f1c1c3b466ff3ffc46d11f1517678456675",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 19,
+    "prompt_sha256": "7f59cf48ef5755ac22a013477a9af9ca1d60b35dd54cbbc6020fe07cc8381608",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Mercury is lower than Jupiter. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 20,
+    "prompt_sha256": "09467a6b8f743545f12e48ec4528f1b217ebe6d2f35c7263e7ec4e587fd2cefc",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 21,
+    "prompt_sha256": "c0300a6544d88d112b60888f644fd720f72015731397a71b99d56aef0dd436be",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Mars is higher than Jupiter. Saturn is higher than Mars. Mercury is higher than Saturn. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 22,
+    "prompt_sha256": "de4bbda8ae462ad401609d689a7b2f96bf59129210f86144c3a7834594943a64",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Saturn outranks Mercury. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 23,
+    "prompt_sha256": "15d0b75dfc36c43d2a25785e9ac6efcee7e18bc0cc1b23b615889f1594607c35",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Mars outranks Jupiter. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 24,
+    "prompt_sha256": "c7b3864ed24ca339718d7b6f1fd1d8bf3defe15e8c182fa162e39851f56b3fb4",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Jupiter is lower than Venus. Venus is lower than Mars. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 25,
+    "prompt_sha256": "8e993bdc087acb5f0fc339ff2ea1da8c51490bb34eef5f64b5c8f47f822a062d",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Jupiter is lower than Venus. Venus is lower than Mars. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 26,
+    "prompt_sha256": "00c2a6cc66ad6ba8ecb41abd4a2555e803a2ccac1a905fa0ae8a0e638e206718",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Jupiter outranks Saturn. Saturn outranks Jupiter. Venus outranks Jupiter. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 27,
+    "prompt_sha256": "a28ab2546c1fadbf2885c02198852a976c2f7b267926668ffae0aecdebedd51a",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Jupiter is higher than Saturn. Saturn is higher than Venus. Venus is higher than Mars. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 28,
+    "prompt_sha256": "15d0b75dfc36c43d2a25785e9ac6efcee7e18bc0cc1b23b615889f1594607c35",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Venus is lower than Mars. Saturn is lower than Venus. Mars outranks Jupiter. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 29,
+    "prompt_sha256": "c7b3864ed24ca339718d7b6f1fd1d8bf3defe15e8c182fa162e39851f56b3fb4",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Jupiter is lower than Venus. Venus is lower than Mars. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 30,
+    "prompt_sha256": "3e132167d1a7f5e65c285b890bee4b36ef84c0d7dc641cf754974e5d9889cfd8",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Iron. Silver is lower than Gold. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 31,
+    "prompt_sha256": "c62294137800fd3b4c7acaaadb241e574f8fecc6169d76e39c45a8a1e0df4f1e",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is higher than Silver. Silver is higher than Bronze. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 32,
+    "prompt_sha256": "99b33d55fb1b6435895c03418617f3dbdd99ed5189a20edfc04a28b9cd72d9d0",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Silver. Silver is lower than Gold. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 33,
+    "prompt_sha256": "87d3ab44cc7d4eebffafde62710bed68f9b9edca9e3e310ca7d117524a804371",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is higher than Silver. Silver is higher than Gold. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 34,
+    "prompt_sha256": "1c6e9e54ef25b4ad16116411463adc3b74e2c98bf23f820176e54649f34e96bb",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Iron. Bronze is lower than Gold. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 35,
+    "prompt_sha256": "078b590b8c40e7a1928ee34c5cac1c2de22050ab4d4566f21e2764dd1eff31c6",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is higher than Bronze. Bronze is higher than Steel. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 36,
+    "prompt_sha256": "65398e99f17046f7c7700ac86b43686d76226773f164b308fd979e53cf6fd193",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Silver. Bronze is lower than Gold. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 37,
+    "prompt_sha256": "0d4457236e7a375abf3ee1dd3485f76ce5baa459366b517eee379bdbff0f8cf9",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Silver. Silver is lower than Gold. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 38,
+    "prompt_sha256": "ee5c4405f0f31fbbc99dea6b0cb5c686d3cc6d6e939ba8ea6a1c2f6c5c5a2de6",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold outranks Silver. Bronze outranks Silver. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 39,
+    "prompt_sha256": "f14ba6b4a0e9e18c51f0188091f282e412acd03c1c7fbcfcb4118c6b6e6c8e87",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Steel. Steel is lower than Gold. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 40,
+    "prompt_sha256": "f74e0b2aa86b5dd1b94be76d105c7f6e2ec191c3d2872fda36785f6f70a8dbb5",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is higher than Silver. Iron is higher than Gold. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 41,
+    "prompt_sha256": "425a4990766138992b34da5db2431e056c026f21659f7c543d77337fbe1261c5",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Silver. Silver is lower than Bronze. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 42,
+    "prompt_sha256": "17f441a9a15650fa1c1af8cd71657c2d4d5bc381cd01ab79b40eed15eebbc370",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold outranks Silver. Bronze outranks Gold. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 43,
+    "prompt_sha256": "6ce22509b3f20a6921c03e5a86efd8b5646f500c048e4d4e5a325312796e79b5",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Silver. Silver is lower than Gold. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 44,
+    "prompt_sha256": "23635332eb6885179d80a23cfd9695303a8bb6cad27e925f496ace11e6945a96",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is higher than Bronze. Iron is higher than Gold. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 45,
+    "prompt_sha256": "73489e4e60754b7791d498efe94207f2c57e125334a49912e6a95178a4814b23",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is higher than Silver. Silver is higher than Bronze. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 46,
+    "prompt_sha256": "675715c6d9f6db8b13897c6988efc77724182e8550c7598d8a3f1f97cd6880fa",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Silver. Bronze is lower than Gold. Steel is lower than Bronze. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 47,
+    "prompt_sha256": "7f6eee24cc243caeeec8e9f904302ff03357b2512144ae394a8d57a6a1ed9667",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is higher than Bronze. Bronze is higher than Iron. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 48,
+    "prompt_sha256": "994498de25bc940564365c342dc9e4e4a6dc22d1d16a8befc1274b0700a3f600",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Silver. Bronze is lower than Gold. Iron is lower than Silver. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 49,
+    "prompt_sha256": "421cc252173faa4bf03975957dea54a710cd54e60c70077147f110e49f3398b6",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is higher than Silver. Silver is higher than Gold. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. E",
+    "exception": null
+  },
+  {
+    "item_idx": 50,
+    "prompt_sha256": "fad0b6dce8e53674912ba14c89fa034e460eb43655a0922cf9a1771373071372",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Iron. Silver is lower than Gold. Bronze is lower than Silver. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 51,
+    "prompt_sha256": "23e5614a79b17d59181da16f4152f324582f510b47d8b88677cb43ebb744fae0",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is higher than Silver. Silver is higher than Bronze. Bronze is higher than Steel. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 52,
+    "prompt_sha256": "60f73ca766b6ed57a2dd6ba655a93790ed2992cb30d2681cc2f66a4902c4644e",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Silver. Silver is lower than Bronze. Bronze is lower than Gold. Gold is lower than Iron. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each",
+    "exception": null
+  },
+  {
+    "item_idx": 53,
+    "prompt_sha256": "a2bd7055019c7a9ca2c66cab8c37cc50a262a097d58f14659660beb738b1f659",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold outranks Silver. Bronze outranks Silver. Iron outranks Silver. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 54,
+    "prompt_sha256": "59c84d6d9f19a03899244d08c1d438204fb84b844ded7b1d0c757f9d9960799d",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Silver. Silver is lower than Gold. Gold is lower than Iron. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 55,
+    "prompt_sha256": "3c9c198213fae97f0ddeca35b5cd178afd26813324ce52b841a93c918b984dbc",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is higher than Silver. Silver is higher than Gold. Iron is higher than Silver. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 56,
+    "prompt_sha256": "78970dc78d48bfdba9ef8b52fb7cb473e3e45c370e296422b47d00269c0ced5c",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Silver. Silver is lower than Bronze. Bronze is lower than Gold. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 57,
+    "prompt_sha256": "e538de825dc45af64b891bfc9f7f9322a91b75bf0dafaeaa99bafc1f609b99f4",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold outranks Bronze. Silver outranks Gold. Bronze outranks Silver. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 58,
+    "prompt_sha256": "d73839885944d2a1cbb5bbc718af2e6ec0b944afdabf2e12ba725c540001b0ff",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is lower than Silver. Silver is lower than Bronze. Bronze is lower than Iron. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  },
+  {
+    "item_idx": 59,
+    "prompt_sha256": "ab90d84a5d0273f4af0b518f45c585d9c4214fe86ff624f7ff22c914b2b2362e",
+    "output": "\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate entities.\n3. Eliminate the entity contradicted by any premise.\n4. Name the remaining entity as the answer.\n\nPremise: Gold is higher than Silver. Silver is higher than Gold. Iron is higher than Iron. Question: Who is higher in rank? Answer:\n\nPlan: Before answering, write 4 distinct numbered solution outlines (1. 2. 3. 4.), each a different approach to answering the question. Each outline must be 40 words or fewer. Do not give the final answer yet.\n1. Restate the question's ordering constraint in my own words.\n2. Check each premise statement against the two candidate",
+    "exception": null
+  }
+]
