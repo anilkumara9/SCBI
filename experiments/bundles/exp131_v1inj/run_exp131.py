@@ -396,7 +396,7 @@ def main():
         z0 = hs[SITE][0, -1].detach()
         z = z0.clone().requires_grad_(True)
         v1d = v1[pid].to(device)
-        q = torch.randn(H, generator=gen_v2, device=device)
+        q = torch.randn(H, generator=gen_v2).to(device)
         q = q - (v1d @ q) * v1d
         q = q / q.norm()
         for _ in range(K_V2):

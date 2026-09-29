@@ -14328,3 +14328,32 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Verification:** `py_compile` OK; `test_decision_tree.py` 11/11 pass; CPU smoke (`--smoke --weights ~/workspace/.exp086_weights/pythia-410m`) completed end-to-end — v2 derivation K=40 |v2.v1|=5.588e-09 OK, sensing-discipline assert PASS, backbone pin post-match, VERDICT: KILL via ĉ=0.0634<0.1 — the known branch-exercising artifact, NOT a result. Note: the bare documented `--smoke` invocation (no `--weights`) fails on this machine at the tokenizer Hub fetch due to the runtime's broken proxy env (`httpx.InvalidURL`) — environmental, unrelated to this fix; with `--weights` the pipeline is clean. On Kaggle (networked) the documented command applies.
 
 **Patched file ready to upload to the live Kaggle notebook.**
+
+## LOG-4763 — Commit-prep: LOG-4761/4762 wave committed (2026-09-30)
+
+**Lane:** LOG-4763 (pre-assigned). **Scope:** commit-prep for the LOG-4761/4762
+wave. $0 CPU; no model contact; commit only — no push attempted (pushes/PRs are
+founder-reserved; no founder-supplied token for this wave).
+
+**Commit:** `652d2d4` on branch `sync/2026-09-29-consolidated` —
+`LOG-4763: EXP131 executor CUDA device-fix (LOG-4762) + research-log appends
+(commit-only, no push)`. Staged set verified wave-only: `git diff --stat`
+showed exactly two files (+44/−8) — `experiments/bundles/exp131_v1inj/run_exp131.py`
+(exactly the five LOG-4762 device-placement fixes, zero other bytes) plus
+`reports/research_log.md` (+35, the LOG-4761 and LOG-4762 appends). Untracked
+`experiments/bundles/exp131_v1inj/out/` (local CPU-smoke artifacts) deliberately
+left untracked — not wave work. Secret-scan clean: only benign prose mentions
+("fresh token", "Secret-scan clean"); no credentials, no weights, no `.env`,
+no >1MB staged files, no `ghp_` material.
+
+**Log:** this entry appended AFTER the commit (LOG-4762 confirmed max before
+append; continuity 4762→4763; count = 1). The working tree now holds only this
+uncommitted LOG-4763 append, riding the next commit cycle per convention. The
+research log is append-only — no stash, move, or rewrite was used at any point.
+
+## LOG-4764
+- Date: 2026-09-30 (UTC). Lane: EXP131 executor patch-repair (CPU-only, $0).
+- Context: LOG-4762's CUDA device fix introduced a deterministic crash on the Kaggle T4: `torch.randn(H, generator=gen_v2, device=device)` raised "Expected a 'cuda' device type for generator but found 'cpu'" — PyTorch requires the generator's device type to match the requested tensor device, and gen_v2 is a CPU Generator (line 399, only generator+device collision in the file).
+- Fix (exactly one line, `experiments/bundles/exp131_v1inj/run_exp131.py`): `q = torch.randn(H, generator=gen_v2).to(device)`. Rationale: generating on CPU with the pinned seed (20260929_4714) then moving preserves the exact random sequence identically on CPU and CUDA — reproducibility unchanged, only placement fixed. No protocol, bars, seeds, or numerics change.
+- Verification: `py_compile` OK; `test_decision_tree.py` 11/11 pass; CPU smoke (`--smoke --weights ~/workspace/.exp086_weights/pythia-410m`) completed end-to-end — backbone LOG-331 pin OK, v2 derivation K=40 with |v2.v1|=5.588e-09 (byte-identical to the LOG-4762 smoke value, confirming the random stream is unchanged), sensing-discipline assert PASS. VERDICT: KILL via c_hat=0.0634 < 0.1 — the known 1-prompt/K=1 smoke-configuration branch artifact, NOT a result.
+- Diff verified against 652d2d4: exactly the one line. Patched file ready for re-upload to the live Kaggle notebook. Nothing pushed, spent, or credential-touched.
