@@ -13342,3 +13342,175 @@ founder token.
 **Deliverables:** updated `research/benchmarks/FRONTIER_SCOREBOARD.md` (v3.2 history lines frozen; structural integrity verified — one EXP128 row, one H25 paragraph, one v3.3 delta, one v3.3 history entry). Exactly one LOG-4708 entry (this one). Read-only on signed artifacts and the GPU queue. No push, no spend, no credentials touched.
 
 **Next:** commit-prep for the DSF/EXP128 wave (branch/worktree/commit only). No push without a fresh founder token.
+
+## LOG-4709 — 2026-09-29 — Commit-prep: DSF/EXP128 RUN-INVALID wave committed locally
+
+**Lane:** commit-prep (commit only, no push). **Action:** committed the DSF/EXP128 wave locally on branch `sync/2026-09-29-consolidated` as `e9ac77b` ("feat(exp128-dsf): DSF sensitivity-field mapping wave — RUN-INVALID apparatus-void, scoreboard v3.3"). 10 files, +1759 insertions.
+
+**Pre-commit checks:** (1) LOG divergence: full numeric LOG set diffed between the main tree's `reports/research_log.md` and the worktree `~/workspace/SCBI-worktrees/sync-log4393-4465/reports/research_log.md` (max 4466) — zero worktree LOG numbers missing from main; the `/tmp/log4369` worktree holds no log file. (2) Staged set exactly the wave artifacts: DSF gate memo, DSF pre-registration (post-fix, Law #14 SIGN-WITH-FIXES with all seven fixes byte-verified), Law #14 review, EXP128 execution report, EXP128 independent verdict review (BIND-WITH-CAVEAT), EXP128 executor + append-only console log + stdout log, LOG-4702→4708 research-log additions, scoreboard v3.3 update. (3) Safety: no weights, secrets, or credential material staged; secret-scan clean (only `tokenizer` false positives). No stash used — the research log is append-only; it was only appended to after the commit.
+
+**Fast-forward / push:** not attempted. No push; pushes/PRs remain founder-reserved with a fresh founder-supplied token (used once, never stored).
+
+**Result:** working tree clean after commit; LOG-4709 is this entry (verified next-free before append; continuity LOG-4708 → LOG-4709, no gaps).
+
+## LOG-4710 — 2026-09-29 — Worth-it gate: Family C (CLP, closed-loop adaptive pursuit)
+
+**Lane:** worth-it gate (LOG-4710 pre-assigned). **$0 CPU.** Gate only — licenses nothing to execute. Read-only on signed protocols, paper sources, and the GPU queue; nothing pushed, spent, or credential-touched. House rules (`~/workspace/SCBI/AGENTS.md`) read before writing.
+
+**Gate verdict: PASS (conditional).** Memo: `research/strategy/CLP_GATE_2026-09-29.md`.
+
+**The eight items, in brief.** (1) Exact question: does state-feedback re-targeting of a perturbation — δ₂ computed from the measured response d₁ to δ₁ under a pre-reg-frozen correction rule (sequential sense-act forwards within one evaluation; no temporal loop in a frozen deterministic model) — move the residual further **per unit norm** than any open-loop injection spending the same norm budget? (2) Decision: ≥2× per-norm ratio → CONTINUE ($0 gate for the GPU closed-loop line CLLC/EXP086-B); ≤1.2× → KILL the adaptive-pursuit premise on $0; 1.2–2× → HELD; saturation → KILL; Law #14 rules adaptation = dose → never launches. (3) Cheapest test: 10 items × {closed-loop 2-step, open-loop sum, single shot}, all norm-budget-matched, ~2h CPU, $0. (4) License: Newton-type iteration (conditional on local smoothness — EXP128 qualifies the "if"), EXP127's R=8.24 (the amplifier exists; exact-JVP apparatus licensed), Activation-LQR as frontier existence proof. (5) Prediction: ratio ≥2 under causal feedback; ≤1.2 under the null; saturation branch predicts KILL via EXP128's threshold-like [OBSERVATION]. (6) Breaking point: Δθ=0 pin, mechanical norm-budget matching (the dose-fence), ε-discipline learned from EXP128 (exact JVPs, nonlinear-by-design feedback, or its own ε-descent gate — the ε=1e-3 finite-difference regime is barred), frozen correction rule, no training. (7) Paradigm-break: no dead lane ever measured feedback gain — every killed injection (EXP077/EXP093/EXP094, S5-2, EXP095/096/097) was open-loop along fixed semantic directions; EXP128 killed a sensing instrument (finite differences at ε=1e-3, 1/12 within 25%), not feedback, and CLP is barred from that apparatus; TGA (CONTINUE'd) and DSF (UNTESTED) are untouched. The tripwire is stated in advance: semantic directions + feedback + no norm control = EXP077/094 with a bolt-on, and Law #14 kills it at review. (8) Difficulty directive: CLP *is* a perturbation instrument (admitted plainly) — what it is not is a hope-push; the direction is a function of measured trajectory response, and the test is built to execute its own hypothesis (its ratio, saturation, or Law #14's dose ruling kills it).
+
+**Honest frame:** control-efficiency question, not a capability claim; capability scoreboard stays at zero. The four launch conditions the pre-reg must satisfy or Law #14 kills the family at review: (1) norm-budget-matched controls with the adaptation≠dose proof; (2) §6(c) ε-discipline; (3) primary bar on displacement-per-norm (continuous), flips as [OBSERVATION] only (EXP094's floor makes flips a degenerate primary metric); (4) frozen correction rule, no per-item tuning.
+
+**Next in the launch chain:** pre-registration drafting under a minted experiment number at the CEO launch decision → independent Law #14 review → fix-verification → CEO launch → execution.
+
+**Result:** LOG-4710 is this entry (verified next-free before append; continuity LOG-4709 → LOG-4710, no gaps).
+
+## LOG-4711 — 2026-09-29 — EXP129 (CLP closed-loop adaptive pursuit) pre-registration drafted
+
+**Lane:** LOG-4711 (pre-assigned), $0 CPU. **Action:** drafted the pre-registration protocol at `research/prereg/EXP_PREREG_CLP_ADAPTIVEPURSUIT_2026-09-29.md`, per the gate (LOG-4710, PASS conditional) and the CEO launch decision minting EXP129. Draft only — licenses nothing; independent Law #14 review is next (its channel-vs-dose ruling is the pre-launch tripwire).
+
+**The four launch conditions implemented as protocol spec:** (1) norm-budget-matched controls (§3.4: closed-loop 2-step vs open-loop 2-step sum with pinned v̂₂ vs single shot, total budget B pinned, breaking point (b) mechanical dose-fence); (2) EXP128's killed ε=1e-3 finite-difference sensing apparatus is absent — sensing is exact-JVP/adjoint via autograd, EXP127's Law-#14-licensed instrument (breaking point (c) asserts no finite-difference sensing term); (3) dynamics-sensed directions only (§3.3: per-prompt v̂₁/v̂₂ re-pinned from EXP127's run dir; no semantic/task directions — EXP077/EXP094 not resurrected); (4) the correction rule frozen as the §3.5 adjoint re-targeting formula ŵ = Mᵀd̂₁/‖Mᵀd̂₁‖, identical for all items (breaking point (d)).
+
+**Falsification tree headline:** median per-item feedback-gain ratio r ≥ 2 → CONTINUE (the $0 gate for the GPU closed-loop line); ≤ 1.2 → KILL the adaptive-pursuit premise on $0; saturation (median ‖d₂−d₁‖/‖d₁‖ ≤ 0.1) → KILL; dose-in-disguise (loop ≈ open-loop sum) → KILL; 1.2–2 → HELD; Law #14 ruling adaptation = dose → never launches. Decision-statistic flips are [OBSERVATION] only.
+
+**Law #9 ordering:** guards → backbone pin → forward batches (60 forwards + JVP/VJP sensing, any batch order) → validity-check evaluation (norm-budget audit + sensing-discipline assert + correction-rule pin) → raw-record hash-pin → displacement metric → decision.
+
+**Honest frame (verbatim in the draft):** this is a control-efficiency question, not a capability claim — capability scoreboard stays at zero; a CLP KILL is adverse evidence against the GPU closed-loop line's premise but does not unlicense signed bundles; no injection here is autonomous steering.
+
+**Next:** independent Law #14 review of the draft (LOG-4712). Nothing pushed, spent, or credential-touched.
+
+## LOG-4712 — 2026-09-29 — Independent Law #14 review of the EXP129 (CLP) pre-registration draft: SIGN-WITH-FIXES
+
+**Lane:** independent Law #14 review (fresh eyes; no role in the gate, draft, or any execution lane). **$0 CPU.** Read-only except this entry and the review file. Nothing pushed, spent, or credential-touched.
+
+**Artifact reviewed:** `research/prereg/EXP_PREREG_CLP_ADAPTIVEPURSUIT_2026-09-29.md` — sha256 verified before review: `f03804d2879cfd8b4d2393fbb986e3f0fe90ae4188658b6b88cbb644a47919eb` (matches the lane brief; no lane defect).
+
+**Verdict: SIGN-WITH-FIXES.** The protocol is launchable after the numbered fixes. Review: `research/reviews/LAW14_REVIEW_CLP_ADAPTIVEPURSUIT_2026-09-29.md`.
+
+**The channel-vs-dose tripwire (the dossier's stated pre-launch kill) does NOT fire — ruling: adaptation ≠ dose.** Steel-manned the REJECT case (in a deterministic model the sense-act sequence is a deterministic function of (item, rule), so "feedback" could be a geometry comparison wearing feedback's name). It fails here: (a) the feedback signal is the *measured nonlinear* response direction d̂₁ — EXP128 established the map is not locally linear at this scale, so d₁ carries information the linear prediction Mδ₁ lacks; the deviation from linearity IS the feedback signal; (b) norm-matching makes the dose reading mechanically impossible (the loop arm injects ≤ the single-shot arm's norm by triangle inequality); (c) the protocol polices the reduction itself with the registered "dose in disguise" KILL branch (median ‖d₂‖/‖d_sum‖ ≤ 1.2 — verified mutually exclusive with the CONTINUE bar); (d) the executor cannot compute ŵ without running the measurement forward.
+
+**Other checks:** all four gate launch conditions are protocol-level specs (norm-matched controls §3.4/(b); EXP128 constraint — exact-JVP sensing, finite-difference sensing barred §3.5/(c), grep-verified absent; dynamics-sensed v̂₁/v̂₂ only §3.3; frozen correction rule §3.5/(d)). Law #9 ordering executable — no LOG-4704-class circularity (norm audit reads forward-produced values; correction-rule check is a post-hoc code-vs-formula audit from pinned raw records; hash-pin precedes the metric). Non-resurrection clean — v̂₁/v̂₂ are a new direction class under Law #4 (EXP127 CONTINUE'd, bound), the feedback-gain discriminant was measured by no dead lane; S5-2 unengaged (flips are [OBSERVATION] only). EXP128 non-transfer verified — the killed finite-difference-gain apparatus is absent; ŵ's "maximally amplifies" reading is exact linear algebra on M, not a linear-regime claim about g. Honest frame verbatim.
+
+**Fixes (7):** launch-gating — FIX-1 pin the verdict-branch precedence (saturation KILL vs CONTINUE bar can co-fire when the first push alone dominates; recommend KILL branches first); FIX-2 pin the budget magnitude B numerically in the pre-reg (currently executor-pinned with no scale — a Law #4 degree of freedom; the saturation branch is scale-sensitive). Verdict-immaterial — FIX-3 whitelist/blacklist the sensing-discipline assert (d̂₁ direction allowed; gain ratios barred); FIX-4 audit injected norm per arm AND the component structure, key (b) to the components; FIX-5 record expected v̂ artifact SHA-256 + per-prompt id alignment in the re-pin; FIX-6 correct the forward count (50 forwards + ~10 VJPs, not 60); FIX-7 state the loop arm's sense→act sequence is fixed in the §5 tree. Caveats (no fix): C1 the ‖Mᵀd̂₁‖=0 fallback biases toward KILL (conservative, disclosed — tabulate flags); C2 threshold-dominated d̂₁ would surface inside the protocol's own branches.
+
+**Next:** fix-verification of the seven fixes (LOG-4713) → CEO launch decision → execution under EXP129. Nothing pushed, spent, or credential-touched.
+
+## LOG-4713 — 2026-09-29 — Fix-verification: EXP129 (CLP) pre-registration — seven fixes applied and byte-verified
+
+**Lane:** fix-verification (LOG-4713 pre-assigned). **$0 CPU.** Edit scope: only `research/prereg/EXP_PREREG_CLP_ADAPTIVEPURSUIT_2026-09-29.md`; read-only on everything else. House rules (`~/workspace/SCBI/AGENTS.md`) read before editing. Nothing pushed, spent, or credential-touched.
+
+**Byte-verification:** pre-fix sha256 `f03804d2879cfd8b4d2393fbb986e3f0fe90ae4188658b6b88cbb644a47919eb` (hashed before any edit; pristine copy at `/tmp/clp_pristine.md`); post-fix sha256 `c9a5104f47bab4c32157e612bae2f0ef033d0b5916c9b652852630b3f8c96966`. Diff: 109 changed lines across 9 hunks — every changed line fix-attributable, zero other bytes; no "60 forwards" leftovers.
+
+**The seven fixes (all had targets — none vacuous):**
+1. **FIX-1 (launch-gating):** §4 + §5 tree now state evaluation precedence explicitly — saturation and dose-in-disguise KILL branches evaluated FIRST; the median-r bars (CONTINUE ≥ 2 / KILL ≤ 1.2 / HELD) apply only if neither premise-KILL fires (resolves the co-fire corner where ‖d₁‖ ≥ 2× best open-loop while d₂ ≈ d₁).
+2. **FIX-2 (launch-gating):** §3.3 pins the budget magnitude — B = 0.01 × median ‖y_{20,last}‖ over the 10 pinned prompts; the 1% fraction is pre-registered (not executor-chosen); absolute B computed from the base forwards, recorded in the worksheet BEFORE the first perturbed forward, asserted there; breaking point (b) audits it. [INTERPRETATION, this lane] No absolute L20 residual-norm number exists in program records, so an absolute value would have to be invented (Law #2 violation); the scale-relative rule is the minimal honest reading.
+3. **FIX-3:** §3.5 now carries the mechanically checkable sensing-discipline enumeration — WHITELIST: finite-displacement direction d̂₁ as feedback input (a direction only, never a linearity claim); BLACKLIST: any finite-difference gain ratio ‖Δ‖/‖δ‖ used as an amplification estimate or sensing input. §0(c) and the §5 tree row reference the enumeration.
+4. **FIX-4:** §0(b) + §3.4 keyed to the component structure — ‖δ₁‖=‖c‖=‖δ_open‖=B/2, ‖δ_single‖=B (float32 tolerance); injected norms (‖δ₂‖, ‖δ₁+δ_open‖, ‖δ_single‖) recorded as observations with ‖·‖ ≤ B by triangle inequality.
+5. **FIX-5:** §3.3 records the expected artifact `exp127_vectors.npz` SHA-256 `9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc` (verified against EXP127's report artifact table and recomputed); re-pin verifies hash AND per-prompt id alignment (all 10 decision-set ids as `v1__<prompt_id>` keys). Caveat flagged to CEO: no stored v̂₂ vector file exists in the EXP127 run dir (npz holds only `v1__` + `urand__` keys — verified); no v̂₂ hash was invented. The sum arm's v̂₂ source needs a Law-#4-compliant provenance at the CEO launch decision.
+6. **FIX-6:** forward count corrected everywhere (§3.6, §5 tree, §7): 10 × 5 = **50 forwards** + ~10 VJPs for adjoint sensing (the "10×3×2=60" formula overcounted).
+7. **FIX-7:** §5 tree states batch order is free across items/arms but the loop arm's sense→act sequence (forward-1 → measure d₁ → compute c → forward-2 from the unperturbed base) is fixed.
+
+**The EXP129 pre-registration is launch-ready pending the CEO decision.**
+
+## LOG-4714 — 2026-09-29 — Erratum: v̂₂ provenance in the EXP129 (CLP) pre-registration
+
+**Lane:** protocol erratum (CEO-decided, minimal). **Context:** LOG-4713 applied all seven Law #14 fixes (post-fix sha256 `c9a5104f47bab4c32157e612bae2f0ef033d0b5916c9b652852630b3f8c96966`) but surfaced one caveat: the open-loop sum arm's pinned direction v̂₂ had no stored artifact — EXP127's `exp127_vectors.npz` holds only `v1__` + `urand__` keys, so no hash was invented.
+
+**Action:** appended exactly one subsection — §3.3.1 "Erratum (LOG-4714): v̂₂,i derivation provenance" — to `research/prereg/EXP_PREREG_CLP_ADAPTIVEPURSUIT_2026-09-29.md`. Provenance: v̂₂,i is derived at execution time (not re-pinned) by seeded deflated power iteration (seed `20260929_4714`) on the frozen L20→L24 propagator with orthogonalization against the re-pinned v̂₁,i — q_{k+1} ∝ (I − v̂₁,i v̂₁,iᵀ) MᵀM q_k, exact JVP/VJP apparatus from EXP127 — computed once per prompt before the first perturbed forward; orthogonality assert |v̂₂,iᵀ v̂₁,i| < 1e-6 (miss → apparatus-void); vectors recorded under `v2__<prompt_id>` with SHA-256 folded into the §3.8 raw-record hash-pin (Law #4 deterministic given seed + apparatus + frozen backbone).
+
+**Verification:** pre-erratum sha256 `c9a5104f47bab4c32157e612bae2f0ef033d0b5916c9b652852630b3f8c96966`; post-erratum `8eea9f0d659501885cbe7e30657824a372495fda9ecc130c8cc4a0cabeee5ba7`; diff against pristine = one hunk, 34 added lines, zero deletions — the seven Law #14 fixes byte-frozen. House rules (`AGENTS.md`) read before editing.
+
+**Result:** zero open items — the EXP129 pre-registration is launch-ready pending the CEO launch decision. Nothing pushed, spent, or credential-touched. LOG-4714 confirmed next-free before append (continuity LOG-4713 → LOG-4714, no gaps).
+
+## LOG-4715 — 2026-09-29 — EXP129 (CLP) executed: KILL
+
+**Lane:** execution (LOG-4715 pre-assigned). **License:** CEO launch decision —
+pre-registration launch-ready (Law #14 SIGN-WITH-FIXES LOG-4712, seven fixes
+byte-verified LOG-4713, v̂₂-provenance erratum LOG-4714). Protocol hash
+`8eea9f0d659501885cbe7e30657824a372495fda9ecc130c8cc4a0cabeee5ba7`
+verified before the first forward. $0 CPU, Δθ=0 by construction.
+
+**Design:** closed-loop 2-step (sense d₁ at L20→x24, exact-adjoint correction
+ŵ = Mᵀd̂₁/‖Mᵀd̂₁‖ via EXP127's Law-#14-licensed JVP/VJP apparatus, act from
+base) vs norm-matched open-loop sum (δ₁ along v̂₁ + δ_open along v̂₂, the
+honest second push) vs single shot (B·v̂₁); budget B = 0.01·median‖y₂₀‖ =
+0.50578363 pinned before the first perturbed forward; 10 verbatim EXP107
+prompts; 50 forwards + adjoint VJPs. v̂₁ re-pinned from EXP127's artifact
+(hash + id alignment); v̂₂ derived per the LOG-4714 erratum (seed
+20260929_4714, K=40 deflated power iteration, all 10 |v̂₂ᵀv̂₁| < 1.1e-08).
+
+**Guards:** backbone LOG-331 pin `ec276abe…` pre/post identical; component
+norm audit (‖δ₁‖=‖c‖=‖δ_open‖=B/2, ‖δ_single‖=B, rel tol 1e-5) PASS on all 40
+components; sensing-discipline assert (ops = {exact-jvp, exact-vjp}, no
+finite-difference term) PASS; correction-rule pin (single frozen §3.5 rule)
+PASS; raw records hash-pinned before the decision statistic existed.
+
+**Verdict: KILL** — median per-item feedback-gain ratio r = **1.000005**
+(bar ≤ 1.2). Premise KILL branches evaluated first per FIX-1: saturation
+(median 1.013 > 0.1) and dose-in-disguise (median 1.652 > 1.2) did not fire.
+Per-item r ∈ [0.9998, 1.0002]: the loop arm's displacement equals the
+single-shot arm's to four places on every item — the adjoint correction
+re-derived v̂₁, so the "feedback" is the single push arrived at via
+sense-act. Real null, all guards passed. Recorded as adverse evidence
+against the GPU closed-loop line's premise; does not unlicense signed
+bundles. Capability scoreboard stays at zero.
+
+**Artifacts:** `research/experiments/EXP129_CLP_ADAPTIVEPURSUIT_REPORT_2026-09-29.md`;
+run dir `experiments/runs/EXP129_clp/` (executor, per-item json
+`14a566ce…`, vectors npz `e3d869af…`, worksheet `ec3b68d2…`, append-only
+console log). Two disclosed protocol-ambiguity notes (readout-site
+§3.1 parenthetical resolved to EXP127's map; flips [OBSERVATION] not
+measurable under the registered apparatus) — for the independent review.
+
+**Next in the launch chain:** independent exact-artifact verdict review
+(LOG-4716), then scoreboard sync, then commit-prep. No push attempted —
+founder token still pending.
+
+## LOG-4716 — 2026-09-29 — Independent exact-artifact verdict review: EXP129 (CLP) KILL bound (BIND-WITH-CAVEAT)
+
+**Lane:** independent Law #14 verdict review (fresh eyes; executor not reused).
+**Artifact:** `research/reviews/VERDICTREVIEW_EXP129_2026-09-29.md`.
+
+**Verdict: BIND-WITH-CAVEAT** — EXP129's KILL stands. Independently
+re-derived from the raw artifacts: median per-item feedback-gain ratio
+r = 1.0000048288402206 → 1.000005 ≤ 1.2 (KILL bar fires); stored r equals
+the registered definition `‖d₂‖/max(‖d_sum‖,‖d_single‖)` exactly on all
+10 items; saturation median 1.013390 (bar ≤ 0.1 — no fire);
+dose-in-disguise median 1.652381 (bar ≤ 1.2 — no fire). All guards pass:
+Δθ=0 (pins pre/post identical), protocol hash pin, v̂₁ re-pin (hash +
+10/10 id alignment), v̂₂ per LOG-4714 erratum (seed 20260929_4714, K=40,
+orthogonality bar 1e-6 passes), budget B = 0.50578363 recorded before the
+first perturbed forward, 50 forwards, component norm audit 40/40,
+sensing-discipline assert (exact-JVP/VJP only, zero finite-difference
+terms), correction-rule pin.
+
+**Caveats (documentation-only, non-verdict-bearing):** (C1) the report's
+worksheet/console-log SHA-256 pins are pre-finalization hashes — both
+files received post-verdict appends, so those two pins cannot be
+re-verified from current disk bytes; the verdict-determining
+per_item.json pin is exact and intact. Lesson: future lanes write the
+verdict to a new file, never append to pinned artifacts. (C2) the
+report's "all |v̂₂ᵀv̂₁| < 1.1e-08" is wrong at stated precision (console
+shows 1.164e-08 for prompt 9; recompute max 1.30e-08) — the 1e-6 bar
+still passes by ~77×. (C3) the report's "r ∈ [0.9998, 1.0002]" is
+4dp-rounded (exact 0.9997644–1.0002242). (C4) flips recorded as "not
+measured" (disclosed, justified; no bar reads flips).
+
+**Adjudicated:** the §3.1 "(post-final-LayerNorm)" parenthetical is a
+drafting slip — the pre-norm EXP127-map reading is the only executable
+one (post-norm d₁ would sit outside the propagator's codomain, breaking
+the adjoint rule). Verdict-immaterial. Honest frame verified:
+control-efficiency, not capability; capability scoreboard at zero.
+
+**Next in the launch chain:** scoreboard sync, then commit-prep for the
+EXP129 wave. No push attempted — founder token still pending.
+
+## LOG-4717 — 2026-09-29 — Scoreboard sync: EXP129 (CLP) KILL plotted, v3.4
+
+**Lane:** scoreboard-sync (read-only except the scoreboard file and this append). **Action:** updated `research/benchmarks/FRONTIER_SCOREBOARD.md` in place from v3.3 to **v3.4** — four additions, zero other bytes touched (prior rows/tallies/history verified frozen): §3.1 EXP129 inventory row (KILL: median per-item feedback-gain ratio r = 1.000005 ≤ 1.2 bar; saturation flag 1.013390 and dose-in-disguise flag 1.652381 did not fire; all 10 items in [0.9998, 1.0002]; exact-adjoint correction re-derived v̂₁ — feedback is a complicated way to do one push; dose reading mechanically excluded by the budget audit), §3.2 H26 paragraph, v3.4 delta [FACT] line, v3.4 version-history entry.
+
+**Day's tally (honest):** four CONTINUEs (EXP111/EXP120/EXP122 reclassified domain-set-detector correlations; EXP127 dynamics measurement), one HELD (EXP112 bench-1-specific), one apparatus CONTINUE (EXP113), **five KILLs (EXP107, EXP114, EXP125, EXP126, EXP129 — all bound)**, eleven RUN-INVALIDs (EXP108/109/115/116/117/118/119/121/123/124/128 — all bound), one precision certification (EXP110). **Capability headline unchanged: zero positive signals for autonomous steering.** No killed lane resurrected; no verdict on any existing entry changed; EXP127's CONTINUE and EXP128's UNTESTED status untouched.
+
+**Result:** scoreboard v3.4 live; LOG-4717 is this entry (verified next-free before append; continuity LOG-4716 → LOG-4717, no gaps; count = 1).
