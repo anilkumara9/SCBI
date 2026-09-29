@@ -273,6 +273,45 @@ EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123 — all bound), one
 precision certification (EXP110, bound).** The capability column stays at
 zero.
 
+**Update 2026-09-29:** EXP124 (H21/PLAN-INSTRUMENT) —
+**RUN-INVALID (apparatus-void)** — the plan-as-instrument selection of H11's
+planning question: per item, a T2-P2 plan is elicited and the pinned §3.4
+choice rule (leftmost-longest entity mention in the final outline in
+position order) picks variant A vs C. Every Phase-0 gate passed
+(tokenizer-only [-3:] **120/120** before model contact; choice-validity
+**10/10**; variant discriminability **4/10**, M_A=0.38102, M_C=0.46331;
+planner prompts byte-identical **0/60** vs the EXP113 T2-P2 reference) —
+then the full run collapsed: **A-FIRST=48, C-FIRST=7, choice-invalid=5**
+(independently reimplemented with **60/60 per-item agreement** and
+outline-count agreement 60/60, zero field mismatches) → **C-FIRST=7 < 12
+→ the registered choice-information gate fired** (decision-inert control
+→ RUN-INVALID; independent exact-artifact verdict review LOG-4671 —
+BIND, no caveat). The descriptive failure mode, independently
+spot-verified: 60/60 full-run generation texts carry a hallucinated
+`Premise:` line with entities outside the bench vocabulary (38 raw / 34
+distinct collapsed), and the choice rule reads the leftmost entity match
+inside the regurgitation — the outline texts contain no entity names, so
+every extracted "choice" is a function of model regurgitation, not plan
+content; the instrument was never a treatment. Per Law #9 no McNemar
+table, no b/c/d/p — no metric was read; the lane halted before the 120
+variant forwards; LOG-331 pre-contact pin matched, Δθ=0. The contrast
+with the Phase-0 passes is the structural fact: the planner passes the
+probe gates but the full-run choice collapses to a decision-inert
+control — a boundary finding on choice informativeness, and the source
+of the new binding lesson (defect class 8): a choice-extraction rule on
+the final outline in position order must assert the final outline is
+plan content, not regurgitation. **H11's planning hypothesis survives its
+fourth RUN-INVALID** (EXP117, 119, 121, 124) — untested, not killed;
+H21's instrument-selection channel is UNTESTED, not retired (a KILL
+would have retired it); no further H11 composition is licensed without
+a genuinely new instrument class. **The day's tally: three CONTINUEs
+(EXP111 — bound; EXP120 — bound, qualified; EXP122 — bound), one HELD
+(EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs
+(EXP107, EXP114 — both bound), ten RUN-INVALIDs (EXP108, EXP109, EXP115,
+EXP116, EXP117, EXP118, EXP119, EXP121, EXP123, EXP124 — all bound), one
+precision certification (EXP110, bound).** The capability column stays at
+zero.
+
 **What closes it.** The §D2 six-condition bar: per-instance construction,
 transfer-validated evaluator, matched-compute wins over ∇-Reasoner /
 Activation-LQR / Meta-Reasoner / DEER / LatentMAS plus the pinned M15

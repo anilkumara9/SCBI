@@ -1,0 +1,15 @@
+[14:19:38] ENV: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "sklearn": "1.9.1", "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m", "torch_num_threads_set": 2, "torch_num_threads_readback": 2, "seeds": {"torch": 0, "numpy": 0, "random_arm_rng": 20260929}, "device": "cpu", "dtype": "float32", "device_map": "cpu", "generation": {"do_sample": false, "max_new_tokens": 160}}
+[14:19:38] npz pins OK
+[14:19:38] bench pin OK: 60 items; schema + decomposition + phrasing 30/30 pass (§3.1/§3.5)
+[14:19:38] archived EXP112 readout column loaded: 60 records
+[14:19:44] token-id pin check vs EXP112 archive: 60/60 single-token, ids match
+[14:19:44] variant construction OK: 60/60 premises template-matched; SWAP involution 60/60; labels consistent
+[14:19:44] Phase-0pre: [-3:] identity holds on 120/120 variant contexts (no model contact)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<02:42,  1.79it/s]Loading weights:   7%|▋         | 20/292 [00:00<00:06, 39.69it/s]Loading weights:  12%|█▏        | 36/292 [00:00<00:04, 59.95it/s]Loading weights:  16%|█▋        | 48/292 [00:00<00:03, 71.94it/s]Loading weights:  21%|██        | 62/292 [00:01<00:02, 87.43it/s]Loading weights:  29%|██▉       | 84/292 [00:01<00:01, 118.33it/s]Loading weights:  34%|███▍      | 99/292 [00:01<00:01, 110.37it/s]Loading weights:  39%|███▊      | 113/292 [00:01<00:01, 111.96it/s]Loading weights:  48%|████▊     | 140/292 [00:01<00:01, 132.87it/s]Loading weights:  53%|█████▎    | 156/292 [00:01<00:01, 128.94it/s]Loading weights:  58%|█████▊    | 170/292 [00:01<00:01, 113.31it/s]Loading weights:  62%|██████▏   | 182/292 [00:01<00:00, 113.85it/s]Loading weights:  66%|██████▋   | 194/292 [00:02<00:01, 84.90it/s] Loading weights:  75%|███████▍  | 218/292 [00:02<00:00, 107.82it/s]Loading weights:  79%|███████▉  | 230/292 [00:02<00:00, 98.59it/s] Loading weights:  84%|████████▍ | 246/292 [00:02<00:00, 102.94it/s]Loading weights:  90%|█████████ | 264/292 [00:02<00:00, 110.57it/s]Loading weights:  97%|█████████▋| 282/292 [00:02<00:00, 118.74it/s]Loading weights: 100%|██████████| 292/292 [00:02<00:00, 98.19it/s] 
+[14:19:50] backbone hash BEFORE: ec276abe3902fab0... (expect ec276abe3902fab0...)
+[14:19:50] planner prompt byte-identity vs EXP113 T2-P2 reference: 0/60 mismatches
+[14:25:36] Phase-0a: planner choice-validity 10/10
+[14:25:53] Phase-0b: discriminability 4/10 differ; M_A=0.38102 M_C=0.46331
+[14:57:29] full run: 60/60 generations; choice-valid 55/60 (A-FIRST=48, C-FIRST=7); gen exceptions 0
+[14:57:29] artifact pins: {"exp124_console.log": "d5b4059603132b132120201d204462e084c6e0e7cf12e10ddfe8cd7c36d580cb", "exp124_generations.json": "1759881d314848ac43b2cd5b6fb81262edbf0285672fd8fe7c8712df9cb7796a", "exp124_forwards.json": "2f8c638b182fbd21df8867d648b1babffc7a64789581ea4d378af7d693026563", "exp124_run.json": "0ce9343b143a02baab718fc369f8513d56da56887338e8039f19a7acf9f09959", "exp124_worksheet.json": "c6d953ffe201c123cc7553d1631ae798a877a84b842d039ac2cba0c4fc59c626"}

@@ -1,0 +1,647 @@
+{
+ "verdict": "RUN-INVALID (choice-information gate: A-FIRST=48 C-FIRST=7; each must be >= 12; decision-inert control)",
+ "gates": {
+  "variant_construction": {
+   "swaps": 60,
+   "involution": "60/60 pass",
+   "labels": "V_A/V_C assigned, bench-phrasing consistent"
+  },
+  "phase0a": {
+   "choice_valid": 10,
+   "of": 10
+  },
+  "phase0b": {
+   "differing_items": 4,
+   "of": 10,
+   "M_A": 0.3810219487649775,
+   "M_C": 0.4633068482342478
+  },
+  "full_run": {
+   "n_valid": 55,
+   "of": 60,
+   "A-FIRST": 48,
+   "C-FIRST": 7,
+   "gen_exceptions": 0
+  }
+ },
+ "phases": {
+  "phase0pre": {
+   "variant_contexts": 120,
+   "identity": "120/120 pass"
+  },
+  "phase0a": {
+   "probe_items": [
+    0,
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "details": [
+    {
+     "item": 0,
+     "id": "exp107_flip_exp077_planet_2hop_0",
+     "choice": "A-FIRST",
+     "n_outlines": 4,
+     "choice_valid": true
+    },
+    {
+     "item": 1,
+     "id": "exp107_ctrl_exp077_planet_2hop_1",
+     "choice": "A-FIRST",
+     "n_outlines": 4,
+     "choice_valid": true
+    },
+    {
+     "item": 2,
+     "id": "exp107_flip_exp077_planet_2hop_2",
+     "choice": "A-FIRST",
+     "n_outlines": 4,
+     "choice_valid": true
+    },
+    {
+     "item": 5,
+     "id": "exp107_ctrl_exp077_planet_2hop_5",
+     "choice": "A-FIRST",
+     "n_outlines": 4,
+     "choice_valid": true
+    },
+    {
+     "item": 6,
+     "id": "exp107_flip_exp077_planet_2hop_6",
+     "choice": "A-FIRST",
+     "n_outlines": 4,
+     "choice_valid": true
+    },
+    {
+     "item": 7,
+     "id": "exp107_ctrl_exp077_planet_2hop_7",
+     "choice": "A-FIRST",
+     "n_outlines": 4,
+     "choice_valid": true
+    },
+    {
+     "item": 8,
+     "id": "exp107_ctrl_exp077_planet_2hop_8",
+     "choice": "C-FIRST",
+     "n_outlines": 4,
+     "choice_valid": true
+    },
+    {
+     "item": 9,
+     "id": "exp107_flip_exp077_planet_2hop_9",
+     "choice": "A-FIRST",
+     "n_outlines": 4,
+     "choice_valid": true
+    },
+    {
+     "item": 10,
+     "id": "exp107_flip_exp077_planet_2hop_10",
+     "choice": "A-FIRST",
+     "n_outlines": 4,
+     "choice_valid": true
+    },
+    {
+     "item": 11,
+     "id": "exp107_ctrl_exp077_planet_2hop_11",
+     "choice": "A-FIRST",
+     "n_outlines": 4,
+     "choice_valid": true
+    }
+   ]
+  },
+  "phase0b": {
+   "probe_items": [
+    0,
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "details": [
+    {
+     "item": 0,
+     "id": "exp107_flip_exp077_planet_2hop_0",
+     "side_A": "E2",
+     "side_C": "E2",
+     "differ": false,
+     "mass_A": 0.457488691096573,
+     "mass_C": 0.6818421239346881
+    },
+    {
+     "item": 1,
+     "id": "exp107_ctrl_exp077_planet_2hop_1",
+     "side_A": "E1",
+     "side_C": "E2",
+     "differ": true,
+     "mass_A": 0.37121557940486394,
+     "mass_C": 0.2252240672175855
+    },
+    {
+     "item": 2,
+     "id": "exp107_flip_exp077_planet_2hop_2",
+     "side_A": "E1",
+     "side_C": "E1",
+     "differ": false,
+     "mass_A": 0.3842327831323489,
+     "mass_C": 0.7154142223194397
+    },
+    {
+     "item": 5,
+     "id": "exp107_ctrl_exp077_planet_2hop_5",
+     "side_A": "E1",
+     "side_C": "E2",
+     "differ": true,
+     "mass_A": 0.564559726965123,
+     "mass_C": 0.29957502822240895
+    },
+    {
+     "item": 6,
+     "id": "exp107_flip_exp077_planet_2hop_6",
+     "side_A": "E2",
+     "side_C": "E2",
+     "differ": false,
+     "mass_A": 0.1937854977593736,
+     "mass_C": 0.4996519983377957
+    },
+    {
+     "item": 7,
+     "id": "exp107_ctrl_exp077_planet_2hop_7",
+     "side_A": "E1",
+     "side_C": "E2",
+     "differ": true,
+     "mass_A": 0.4701036521762373,
+     "mass_C": 0.3076190238384357
+    },
+    {
+     "item": 8,
+     "id": "exp107_ctrl_exp077_planet_2hop_8",
+     "side_A": "E2",
+     "side_C": "E2",
+     "differ": false,
+     "mass_A": 0.11790394152646465,
+     "mass_C": 0.46910653821859916
+    },
+    {
+     "item": 9,
+     "id": "exp107_flip_exp077_planet_2hop_9",
+     "side_A": "E1",
+     "side_C": "E2",
+     "differ": true,
+     "mass_A": 0.4277036527357555,
+     "mass_C": 0.4095684605452873
+    },
+    {
+     "item": 10,
+     "id": "exp107_flip_exp077_planet_2hop_10",
+     "side_A": "E2",
+     "side_C": "E2",
+     "differ": false,
+     "mass_A": 0.613104906807646,
+     "mass_C": 0.48364362976273134
+    },
+    {
+     "item": 11,
+     "id": "exp107_ctrl_exp077_planet_2hop_11",
+     "side_A": "E2",
+     "side_C": "E2",
+     "differ": false,
+     "mass_A": 0.21012105604539008,
+     "mass_C": 0.5414233899455063
+    }
+   ]
+  }
+ },
+ "items": [
+  {
+   "item_idx": 0,
+   "id": "exp107_flip_exp077_planet_2hop_0",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 1,
+   "id": "exp107_ctrl_exp077_planet_2hop_1",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 2,
+   "id": "exp107_flip_exp077_planet_2hop_2",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 3,
+   "id": "exp107_ctrl_exp077_planet_2hop_3",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 4,
+   "id": "exp107_flip_exp077_planet_2hop_4",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 5,
+   "id": "exp107_ctrl_exp077_planet_2hop_5",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 6,
+   "id": "exp107_flip_exp077_planet_2hop_6",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 7,
+   "id": "exp107_ctrl_exp077_planet_2hop_7",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 8,
+   "id": "exp107_ctrl_exp077_planet_2hop_8",
+   "choice": "C-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 9,
+   "id": "exp107_flip_exp077_planet_2hop_9",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 10,
+   "id": "exp107_flip_exp077_planet_2hop_10",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 11,
+   "id": "exp107_ctrl_exp077_planet_2hop_11",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 12,
+   "id": "exp107_flip_exp077_planet_2hop_12",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 13,
+   "id": "exp107_ctrl_exp077_planet_2hop_13",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 14,
+   "id": "exp107_flip_exp077_planet_2hop_14",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 15,
+   "id": "exp107_flip_exp077_planet_3hop_0",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 16,
+   "id": "exp107_ctrl_exp077_planet_3hop_1",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 17,
+   "id": "exp107_flip_exp077_planet_3hop_2",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 18,
+   "id": "exp107_ctrl_exp077_planet_3hop_3",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 19,
+   "id": "exp107_flip_exp077_planet_3hop_4",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 20,
+   "id": "exp107_ctrl_exp077_planet_3hop_5",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 21,
+   "id": "exp107_flip_exp077_planet_3hop_6",
+   "choice": "C-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 22,
+   "id": "exp107_ctrl_exp077_planet_3hop_7",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 23,
+   "id": "exp107_flip_exp077_planet_3hop_8",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 24,
+   "id": "exp107_ctrl_exp077_planet_3hop_9",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 25,
+   "id": "exp107_ctrl_exp077_planet_3hop_10",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 26,
+   "id": "exp107_flip_exp077_planet_3hop_11",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 27,
+   "id": "exp107_ctrl_exp077_planet_3hop_12",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 28,
+   "id": "exp107_flip_exp077_planet_3hop_13",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 29,
+   "id": "exp107_ctrl_exp077_planet_3hop_14",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 30,
+   "id": "exp107_flip_exp077_element_2hop_0",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 31,
+   "id": "exp107_ctrl_exp077_element_2hop_1",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 32,
+   "id": "exp107_flip_exp077_element_2hop_2",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 33,
+   "id": "exp107_ctrl_exp077_element_2hop_3",
+   "choice": null,
+   "n_outlines": 4,
+   "choice_valid": false
+  },
+  {
+   "item_idx": 34,
+   "id": "exp107_flip_exp077_element_2hop_4",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 35,
+   "id": "exp107_ctrl_exp077_element_2hop_5",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 36,
+   "id": "exp107_flip_exp077_element_2hop_6",
+   "choice": "C-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 37,
+   "id": "exp107_ctrl_exp077_element_2hop_7",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 38,
+   "id": "exp107_flip_exp077_element_2hop_8",
+   "choice": null,
+   "n_outlines": 4,
+   "choice_valid": false
+  },
+  {
+   "item_idx": 39,
+   "id": "exp107_ctrl_exp077_element_2hop_9",
+   "choice": "C-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 40,
+   "id": "exp107_flip_exp077_element_2hop_10",
+   "choice": "C-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 41,
+   "id": "exp107_ctrl_exp077_element_2hop_11",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 42,
+   "id": "exp107_flip_exp077_element_2hop_12",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 43,
+   "id": "exp107_ctrl_exp077_element_2hop_13",
+   "choice": null,
+   "n_outlines": 4,
+   "choice_valid": false
+  },
+  {
+   "item_idx": 44,
+   "id": "exp107_flip_exp077_element_2hop_14",
+   "choice": "C-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 45,
+   "id": "exp107_ctrl_exp077_element_3hop_0",
+   "choice": "C-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 46,
+   "id": "exp107_flip_exp077_element_3hop_1",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 47,
+   "id": "exp107_ctrl_exp077_element_3hop_2",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 48,
+   "id": "exp107_flip_exp077_element_3hop_3",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 49,
+   "id": "exp107_ctrl_exp077_element_3hop_4",
+   "choice": null,
+   "n_outlines": 4,
+   "choice_valid": false
+  },
+  {
+   "item_idx": 50,
+   "id": "exp107_flip_exp077_element_3hop_5",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 51,
+   "id": "exp107_ctrl_exp077_element_3hop_6",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 52,
+   "id": "exp107_ctrl_exp077_element_3hop_7",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 53,
+   "id": "exp107_flip_exp077_element_3hop_8",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 54,
+   "id": "exp107_ctrl_exp077_element_3hop_9",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 55,
+   "id": "exp107_flip_exp077_element_3hop_10",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 56,
+   "id": "exp107_ctrl_exp077_element_3hop_11",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 57,
+   "id": "exp107_flip_exp077_element_3hop_12",
+   "choice": null,
+   "n_outlines": 4,
+   "choice_valid": false
+  },
+  {
+   "item_idx": 58,
+   "id": "exp107_ctrl_exp077_element_3hop_13",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  },
+  {
+   "item_idx": 59,
+   "id": "exp107_flip_exp077_element_3hop_14",
+   "choice": "A-FIRST",
+   "n_outlines": 4,
+   "choice_valid": true
+  }
+ ]
+}

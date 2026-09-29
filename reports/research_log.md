@@ -12440,3 +12440,140 @@ EXP123 (H20/P4APPARATUS) plotted as **RUN-INVALID, TERMINAL** on the standing fr
 **New tally (v2.8):** three CONTINUEs (EXP111 — bound; EXP120 — bound, qualified; EXP122 — bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), **nine RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123 — all bound)**, one precision certification (EXP110, bound). **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the trained-head line remains a three-bench identity-readout CONTINUE (decodability, not steering).** No literature re-check this cycle (next due 2026-10-23).
 
 **Single-lane fence respected:** this lane syncs and reports; it does not re-adjudicate any verdict.
+
+
+## LOG-4664 — Commit-prep: H20/EXP123 terminal RUN-INVALID wave committed locally as e641ca3 (2026-09-29)
+
+*Lane: commit-prep, LOG-4664 pre-assigned. $0 CPU. Read-only on all signed artifacts except this log append; this lane commits, never pushes, never force-pushes, never stashes the research log.*
+
+**LOG-divergence check (pre-commit):** FULL numeric LOG set compared between main-tree `reports/research_log.md` (543 numbered entries, range LOG-001→LOG-4663) and every worktree log (`~/workspace/SCBI-worktrees/sync-log4393-4465/reports/research_log.md`, 352 entries). **Zero LOG numbers present in a worktree log but missing from the main log. Divergence: CLEAN.**
+
+**Changed-file audit (pre-commit):** exactly the H20/EXP123 wave — modified `reports/research_log.md` (LOG-4657→4663 additions), `research/benchmarks/FRONTIER_SCOREBOARD.md` and `research/benchmarks/PROGRESS_ANALYSIS.md` (scoreboard v2.8); new `research/strategy/H20_GATE_2026-09-29.md`, `research/prereg/EXP_PREREG_H20_P4APPARATUS_2026-09-29.md`, `research/reviews/LAW14_REVIEW_H20_P4APPARATUS_2026-09-29.md`, `research/experiments/EXP123_P4APPARATUS_REPORT_2026-09-29.md`, `research/reviews/VERDICTREVIEW_EXP123_2026-09-29.md`, and `experiments/runs/EXP123_p4apparatus/out/` (7 raw artifacts). No unexpected files. Weight/secret scan: zero `.pt`/`.bin`/`.safetensors`, no tokens or credential material; `__pycache__/*.pyc` excluded (already gitignored).
+
+**Commit:** `[sync/2026-09-29-consolidated e641ca3] LOG-4664 — H20/EXP123 terminal RUN-INVALID wave (LOG-4657→4664): gate, pre-reg, reviews, bound verdict, scoreboard v2.8` — 15 files, `+2876/-0` (append-only; no deletions, research log never rewritten). `git fetch origin` failed: no GitHub authentication available (`could not read Username for 'https://github.com'`) — fast-forward feasibility not freshly reverifiable (last confirmed fast-forward check: LOG-4623, CLEAN). **No push attempted** — push requires a fresh one-use founder token; never force-push. No stash used at any point.
+
+**Uncommitted after commit:** none — working tree clean except this LOG-4664 entry, which is now committed... (entry written post-commit; next wave commit will carry it). Standing scoreboard (v2.8): three bound CONTINUEs (EXP111, EXP120, EXP122), one HELD (EXP112), one apparatus CONTINUE (EXP113), two KILLs (EXP107, EXP114), nine RUN-INVALIDs, one precision certification. Capability scoreboard unchanged: still zero positive signals for autonomous steering.
+
+**Single-lane fence respected:** this lane commits and logs; it does not dispatch, review, or push.
+
+
+## LOG-4665 — Innovation design session post-EXP123: H21/H22/H23 licensed (2026-09-29)
+
+*Lane: innovation design-session, LOG-4665 pre-assigned. $0 CPU strategy memo only: no execution, no experiment numbers minted, no signed artifact modified, no GPU contact, no commits, no pushes. Continuity verified: LOG-4664 ×1, LOG-4665 free.*
+
+**State of play (scoreboard v2.8):** three CONTINUEs (EXP111, EXP120 qualified, EXP122 — three-bench trained-head identity-readout line, position decorrelated), one HELD (EXP112, bound, label-free), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — bound), nine RUN-INVALIDs (108, 109, 115, 116, 117, 118, 119, 121, 123 — all bound), one precision certification (EXP110, bound). **Capability scoreboard: still zero positive signals for autonomous steering; the label-free race stays tied at zero.**
+
+**Closed this cycle:** H11's planning question RUN-INVALID on three logit-channel compositions (EXP117 generation, EXP119 tokenization identity, EXP121 plan-arm G1 mass collapse 38/60 < 48 — with a new binding lesson: per-item G1 validity may not be screened post-hoc on a treatment arm, since collapsing items are exactly where the treatment "did something" — defect class 6). Entity-name generation channel TERMINAL (EXP123: P2/P5/P4 all dead). H18's bench-2 reuse dead (apparatus-void: 4/10 multi-token entities).
+
+**Design session memo:** `research/strategy/INNOVATION_DESIGN_SESSION_POST_EXP123_2026-09-29.md` (each candidate with six worth-it items, ACCEPT/REJECT disposition, ranked priority, summit filter).
+
+**ACCEPTED, ranked:**
+1. **H21 — plan-as-instrument-selection** (new H11 apparatus): EXP113-cleared T2-P2 planner chooses between two phrasing variants of the decision prompt; plan text never enters the prompt; paired McNemar plan-chosen vs random-chosen. Dodges all three H11 failure modes (no generation, no tokenization surface, no G1 collapse — readout prompts are the pinned baseline). Breaking points: choice-information gate (each phrasing ≥20%), Phase-0 phrasing-discriminability gate, per-arm G1 guard, Δθ=0 pins. The only $0 CPU capability-adjacent bet — and the honest answer to "what moves the capability scoreboard off zero."
+2. **H22 — EXP112 honesty generality on fresh bench 4** (H18 re-licensed): new construction, single-token entities asserted at construction (EXP090/H18 lesson), H6's signed bars bind (42–57 CONTINUE / 34–41 HELD / ≤33 KILL; =58 HELD; ≥59 KILL). The label-free race is the actual race.
+3. **H23 — within-domain decoy dissection**: pinned H5 head protocol on bench 5 (same-domain distractors); ≥20/30 G<0.30 → CONTINUE entity-identity interpretation; collapse → KILL identity, reclassify the three-bench line as domain-set-detector correlation (Law #11). Decides what the program's best observation is.
+
+**REJECTED (staying dead):** fourth generality bench (superseded by H23's sharper question; may return only if H23 CONTINUES); H17 standalone profiling; S5 blind-spot closure; fifth externally-computed gate; H12/bench-1 re-reading; any EXP117/118/119/121/123 composition re-run; entity-name generation on any new composition (EXP123 terminal rule); GPU-required candidates; selective-abstention/routing with the trained head as a capability claim (Train-probes §2.1 bars it).
+
+**Binding defect classes carried forward (all future pre-registrations):** (1) p-values executor-computed, never hand-written; (2) raw generation records persisted before any verdict; (3) no truncated-comment label citations; (4) no EXP117 §3.7 recitation definition; (5) [-3:] tokenization-identity pin on any plan-context composition; (6) per-item G1 validity may not be screened post-hoc on a treatment arm; (7) single-token entities asserted at construction for any logit-apparatus bench.
+
+**Single-lane fence respected:** this lane designs only — worth-it-gate lanes → pre-reg drafts → Law #14 reviews → fix-verification → CEO launch → minted execution numbers; no lane may advance itself.
+
+## LOG-4666 — Worth-it gate H21 (plan-as-instrument-selection): PASS (2026-09-29)
+
+*Lane: worth-it gate, LOG-4666 pre-assigned. $0 CPU evaluation only: no experiment number minted, no signed artifact modified, no model contact, no commits, no pushes. Continuity verified: LOG-4665 ×1, LOG-4666 free.*
+
+**Verdict: PASS.** H21 is licensed for pre-registration drafting under the registered bars.
+
+**Gate memo:** `research/strategy/H21_GATE_2026-09-29.md` (six worth-it items, registered bars, breaking points, summit filter).
+
+**Exact question:** does a planning artifact — the EXP113-cleared T2-P2 planner's choice between the EXP107 bench's two genuine phrasing variants (A-first/C-first, 30/30 verified), plan text never entering the prompt — steer the EXP112 logit decision, measured by paired McNemar on plan-chosen vs random-chosen phrasing correctness?
+
+**Registered bars (binding on the pre-reg draft):** one-sided McNemar (direction: plan-chosen-correct), p and discordant count executor-computed — p < 0.05 with d ≥ 10 → CONTINUE (licenses plan-as-instrument as a candidate adaptive-loop component; honest caveat: steering-adjacent, label-free None-class, not full autonomous steering); p ≥ 0.05 with d ≥ 40 → KILL (d ≥ 40 is the registered 80%-power floor at α=0.05 one-sided for true discordant asymmetry q=0.70 — exactly computed for this memo: power(q=0.70) d=38→0.774, d=40→0.807); p ≥ 0.05 with d < 40 → HELD, no rescue. Deviation recorded: gate registers one-sided, refining the design session's two-sided sketch — subject to Law #14 review.
+
+**Cheapest test:** 60 planner choice-generations (pinned T2-P2 prompt + pinned mechanical Law-#7-clean choice-extraction) + 120 baseline forwards (60 items × 2 phrasing variants); the random arm is derived seed-pinned from the same 120 forwards. Total 60 gens + 120 forwards, $0 CPU.
+
+**Breaking points (conjunctive, any miss → apparatus-void, UNTESTED):** (a) each phrasing chosen ≥20% (≥12/60); (b) Phase-0 phrasing-discriminability: variants differ on ≥3/10 probe readouts; (c) per-arm G1 guard as a CONSTRUCTION-TIME filter on both prompt variants (the EXP121 class-6 defect made structurally impossible — no post-hoc treatment-arm screening; full-run per-item degeneracy → RUN-INVALID, never item-dropping); (d) LOG-331 Δθ=0 pins pre/post; (e) raw records hash-pinned before verdict; plus planner choice-valid ≥8/10 and byte-identical variant tails.
+
+**Three H11 failure-mode dodges:** EXP117 — zero entity-name generation (EXP113-cleared planner only, logit readout only); EXP119 — plan text never enters any prompt (byte-verbatim fixed variants, identical QUESTION_SUFFIX tails; the [-3:] surface does not exist); EXP121 — readout prompts are the pinned baseline (60/60 EXP112 reproduction), plan tokens never in context, so no G1 mass collapse is possible.
+
+**Summit filter: YES** — the only licensed $0 CPU candidate that could move the capability scoreboard off zero (None-class label-free plan→decision causal signal). **A KILL here closes the only live capability-adjacent bet** — H11 exhausts its fourth logit-channel composition; capability stays at zero and the honest deliverable remains boundary science.
+
+**Next:** single-lane fence — pre-registration draft lane for H21.
+
+## LOG-4667 — H21 (plan-as-instrument-selection) pre-registration drafted (2026-09-29)
+
+*Lane: pre-registration drafting, LOG-4667 pre-assigned. $0 CPU: read-only on signed protocols, paper sources, and the GPU queue — draft only. Continuity verified: LOG-4666 ×1, LOG-4667 free; no gaps.*
+
+**Draft:** `research/prereg/EXP_PREREG_H21_PLANINSTRUMENT_2026-09-29.md` — 50,810 bytes, §§0–9 + boundary (H5/H14/H19 template). Source: design session LOG-4665 H21 § → gate PASS LOG-4666. No experiment number minted; launch chain: independent Law #14 review of the exact file → fix-verification → CEO launch decision.
+
+**Registered bars (verbatim from the gate memo §2, binding):** one-sided McNemar p (direction: plan-chosen-correct) executor-computed — p < 0.05 AND d ≥ 10 → CONTINUE (licenses plan-as-instrument as a candidate adaptive-loop component; steering-adjacent, label-free None-class, NOT full autonomous steering); p ≥ 0.05 AND d ≥ 40 → KILL (retires the instrument-selection channel; d ≥ 40 is the registered 80%-power floor, power(q=0.70)→0.807, α=0.05 one-sided); p ≥ 0.05 with d < 40 → HELD, no rescue; any §5 breaking-point miss → RUN-INVALID (apparatus-void, UNTESTED).
+
+**Design as drafted:** the EXP113-cleared T2-P2 planner (byte-verbatim, H19 §3.3) generates 60 plans; the pinned mechanical choice-extraction (§3.4 — first entity-name mention in the final outline, leftmost-longest, case-sensitive; E1→A-FIRST, E2→C-FIRST; no mention→choice-invalid; Law #7-clean, symmetric in the entities) selects between two fixed phrasing variants per item (A-first/C-first, §3.5 — V_own = bench prompt verbatim, V_other via the pinned involutive phrasing-swap; the EXP107 word-family flip preserves phrasing and is not reused); plan text never enters any decision prompt (token-asymmetry sidestepped by construction — the dodge of all three H11 failure modes: EXP117 generation, EXP119 tokenization identity, EXP121 G1 mass collapse). 60 choice generations + 120 variant forwards + 60 choice-arm forwards (determinism cross-check); random arm seed-pinned (default_rng(20260929)) from the 120. Breaking points: (a) each phrasing ≥12/60; (b) Phase-0b discriminability ≥3/10; (c) construction-time channel G1 (M≥0.01, symmetric; full-run per-item degeneracy → RUN-INVALID, never dropped — class 6); (d) LOG-331 Δθ=0 pre/post; (e) raw records hash-pinned before verdict; Phase-0a choice-valid ≥8/10; variant tails byte-identical [32, 37741, 27]. All seven defect classes pinned (§2).
+
+**Draft-specified (not in the gate memo — flagged for Law #14):** the §3.4 choice-extraction rule itself; the §3.5 phrasing-swap; the V_own 60/60 baseline-reproduction check (carried from H19 §3.8); the (p<0.05, d<10)→HELD gap-fill (no CONTINUE below the d≥10 floor); the determinism cross-check; forward-record pinning clarified as 180 (120+60). **Deviation carried forward:** one-sided McNemar refining the design session's two-sided sketch (gate-recorded; reviewer to confirm the directional license is earned).
+
+**Next:** independent Law #14 review lane.
+
+## LOG-4668 — Independent Law #14 review of H21 (PLAN-INSTRUMENT) pre-registration: SIGN-WITH-FIXES (2026-09-29)
+
+Independent Law #14 review (fresh eyes; did not draft) of `research/prereg/EXP_PREREG_H21_PLANINSTRUMENT_2026-09-29.md` (drafting lane LOG-4667, gate LOG-4666). Verdict: **SIGN-WITH-FIXES** — three documentation-precision fixes, all launch-gating, all verdict-immaterial; no structural defect.
+
+Verified by independent recomputation: the four bars are coherent, disjoint, exhaustive — (p<0.05,d≥10)→CONTINUE, (p≥0.05,d≥40)→KILL, (p≥0.05,d<40) or (p<0.05,d<10)→HELD; the (p<0.05,d<10)→HELD gap-fill is the only resolution consistent with the gate's d≥10 floor. Power floor recomputed exactly: q=0.70 → d=38: 0.7745, d=40: 0.8074, d=44: 0.8606 (matches draft); all ten §4 (b,c) critical-value rows reproduce. T2-P2 prompt construction byte-identical to H19 §3.3 modulo annotations; extraction semantically equivalent to EXP113 §3.4. Choice rule (§3.4) deterministic and total; phrasing-swap verified involutive at template level with byte-exact per-item check pinned. One-sided McNemar licensed (directional hypothesis a priori; deviation documented at gate §2(ii), draft §0.2/§8.1/§9). G1 as construction-time filter (EXP121 class-6 structurally impossible); all seven binding defect classes pinned; honest frame (steering-adjacent, None-class, NOT autonomous steering) and token-asymmetry sidestep hold by construction.
+
+FIX-1 (launch-gating, verdict-immaterial): four dangling "§2.1" cross-references (None-class definition; §0.2, §7.1×2, §9) — no §2.1 exists in this file; add it or re-point to the gate memo. FIX-2 (launch-gating, verdict-immaterial): §8 item 3 cites "(gate §3)" for 60+180 costing, but gate §3 licensed 60+120 — the extra 60 choice-arm forwards are the draft's (item 8). FIX-3 (launch-gating, verdict-immaterial): "power ≥ 0.80 requires d ≥ 40" is inaccurate — exact recomputation gives 0.8071 at d=37 (non-monotone critical values); d≥40 stands as a conservative pre-registered floor (0.8074 at exactly 40); reword. Review: `research/reviews/LAW14_REVIEW_H21_PLANINSTRUMENT_2026-09-29.md`. Divergence check CLEAN (0 worktree LOGs missing from main). Next: fix-verification lane → CEO launch decision.
+
+## LOG-4669 — H21 (PLAN-INSTRUMENT) pre-registration FIX-1/2/3 applied and byte-verified (2026-09-29)
+
+*Lane: fix-verification, LOG-4669 pre-assigned. $0 CPU: read-only on signed protocols, paper sources, and the GPU queue — applied the three launch-gating fixes from the independent Law #14 review (LOG-4668), nothing else. Continuity verified: LOG-4668 ×1, LOG-4669 free; no gaps.*
+
+**File:** `research/prereg/EXP_PREREG_H21_PLANINSTRUMENT_2026-09-29.md`. Pre-fix sha256 `cc36e09a660c19d00c2aa90cc7579ec49f12ebad1e61ee83beca57e885bf5cb9` (pristine copy retained for diff).
+
+**FIX-1** (chose reviewer's option A — added the section; consistent for all four): inserted `### 2.1 The label-free None-class [DEFINITION]` between the §2 exact question and the decision-bars block (4 new lines, no renumbering). Defines the None-class as no training and no labels in the causal path from planning to decision (Law #7; bench targets at metric time only); pins that a CONTINUE is steering-adjacent (the plan chooses the measurement instrument; the instrument does the deciding), not autonomous steering. All four dangling "§2.1" references (§0.2 CONTINUE bar, §7.1 items 1 and 4, §9 boundary) now resolve in-file. Re-pointing to the gate memo was rejected: the gate memo (`H21_GATE_2026-09-29.md`) has sections 1–7 only and its own "§2.1" references are themselves dangling, so re-pointing would have moved the dangle instead of resolving it.
+
+**FIX-2** (§8 item 3, one line): reworded the costing attribution — gate §3 is now credited only for what it licensed (60 generations + 120 variant forwards); the additional 60 choice-arm forwards are credited to this draft's addition (item 8, the determinism cross-check); the "240 forwards + 60 gens" session sketch it replaces stays as stated.
+
+**FIX-3** (§0 item 4 mathematical-license prose, one line): the inaccurate "power ≥ 0.80 … requires d ≥ 40" is replaced with the executor-computed values (d=37 → 0.807, d=38 → 0.774, d=39 → 0.740, d=40 → 0.807, d=44 → 0.861 — exact binomial critical values non-monotone in d); the KILL bar's d ≥ 40 now stands explicitly as a conservative pre-registered cutoff (power 0.8074 at exactly 40). No "requires" phrasing remains anywhere in the file. This was the closest to the handwritten-stats defect class — the numbers were right, the necessity claim wasn't; the fix keeps the numbers and removes the claim.
+
+**Byte-verification:** diff against the pre-fix copy shows exactly three changed regions (line 26: FIX-3 prose; lines 68–71: new §2.1; line 294→298: FIX-2 attribution) and no other byte changed. Post-fix sha256 `7278565d8a3d433b351cda9f285750ae57bbe83cd44fe8f84d2d834656dea4b3`. All three fixes are verdict-immaterial: no bar, gate, number, or critical value changed.
+
+**Next:** CEO launch decision (H21 pre-registration is launch-ready; no experiment number minted by this lane).
+
+## LOG-4670 — EXP124 (H21/PLAN-INSTRUMENT) executed: RUN-INVALID at the choice-information gate (2026-09-29)
+
+*Lane: execution, LOG-4670 pre-assigned. $0 CPU. Protocol: `research/prereg/EXP_PREREG_H21_PLANINSTRUMENT_2026-09-29.md` (Law #14 SIGN-WITH-FIXES LOG-4668; FIX-1/2/3 byte-verified LOG-4669). This mints EXP124 — the program's first label-free plan→decision causal test (plan-conditioned instrument selection vs random phrasing, paired McNemar).*
+
+**Verdict: RUN-INVALID (apparatus-void; H21 UNTESTED, no verdict).** Breaking point (a) fired: the full run's extracted choice distribution was A-FIRST=48, C-FIRST=7, choice-invalid=5 (n_valid=55/60) — C-FIRST=7 < 12, so the planner's output is a decision-inert control, not a treatment. No variant forwards, no McNemar table, no metric were constructed (Law #9); b, c, d, p do not exist.
+
+**Falsification-tree walk (executor-produced):** bench provenance + schema + phrasing 30/30 PASS; SWAP involution 60/60 PASS; Phase-0pre [-3:] identity 120/120 PASS (no model contact); backbone LOG-331 pin pre PASS (`ec276abe3902fab0…`); planner prompts byte-identical to H19 §3.3 T2-P2 (0/60 mismatches) PASS; Phase-0a choice-validity 10/10 PASS; Phase-0b discriminability 4/10 differ PASS, M_A=0.38102 M_C=0.46331 PASS; full run 60/60 generations, 0 exceptions. Halted at the choice-information gate per tree order — no post-contact backbone pin (no forward phase reached; script contains no optimizer/backward pass; Δθ=0 by construction).
+
+**Descriptive failure-mode finding (unlicensed observation, not a verdict):** 55/55 choice-valid final outlines contain a *hallucinated premise* (34 distinct; entities like Gold/Iron/Silver/Bronze, absent from bench 1), and 55/55 choices are driven by the leftmost entity match inside the hallucinated region — the §3.4 rule fired mechanically on model regurgitation, not plan content. Generation pattern: verbatim exemplar recitation → hallucinated premise+question+tail → re-recitation to the 160-token cap (consistent with the EXP117/EXP119 10/10 recitation finding). New binding defect class 8: a final-outline choice rule must assert the final outline is plan content, not regurgitation, or the instrument is unlicensed.
+
+**Raw artifacts (hash-pinned):** `experiments/runs/EXP124_planinstrument/out/` — `exp124_generations.json` (70 records) `1759881d…`, `exp124_forwards.json` (20 probe records) `2f8c638b…`, `exp124_run.json` `0ce9343b…`, `exp124_worksheet.json` `c6d953ff…`, `exp124_console.log` `d5b40596…`. Env: torch 2.14.0+cpu, transformers 5.17.0, numpy 2.5.3, sklearn 1.9.1; threads=2; greedy, max_new_tokens=160.
+
+**Honest frame:** H11's question survives its fourth RUN-INVALID; the instrument-selection channel is untested, not retired. Label-free race still tied at zero; trained-readout CONTINUEs and EXP112 HELD unchanged. Report: `research/experiments/EXP124_PLANINSTRUMENT_REPORT_2026-09-29.md`.
+
+## LOG-4671 — Independent exact-artifact verdict review of EXP124 (H21/PLAN-INSTRUMENT): BIND (2026-09-29)
+
+*Lane: independent verdict review, LOG-4671 pre-assigned. $0 CPU. Read-only everywhere except this review and the log append. Fresh eyes; no modification of signed artifacts.*
+
+**Verdict: BIND — the execution lane's RUN-INVALID stands, no caveat.**
+
+**Independent recomputation (fresh implementation from protocol text, raw generation texts):** rebuilt the bench via `build_exp107_bench.build_bench()`; reimplemented §3.3 outline extraction and §3.4 final-outline leftmost-longest entity-mention choice rule; applied to the 60 fresh full-run generations in `exp124_generations.json`. Result: A-FIRST=48, C-FIRST=7, choice-invalid=5 — per-item agreement with the executor 60/60, outline-count agreement 60/60. C-FIRST=7 < 12 fires the pre-registered choice-information gate (breaking point (a)); the §5 tree terminates pre-metric at RUN-INVALID (decision-inert control). The verdict follows mechanically from the artifacts.
+
+**Gates:** Phase-0pre 120/120 [-3:] identity PASS; Phase-0a 10/10 choice-valid (≥8) PASS; Phase-0b 4/10 differing readouts (≥3), M_A=0.38102 M_C=0.46331 (≥0.01) PASS; planner prompts 0/60 mismatches vs EXP113 T2-P2 reference PASS. The Phase-0-pass/full-run-collapse contrast is handled by the signed tree (choice-information gate pre-metric) and §7.5 fence item 5: this is a boundary finding on choice informativeness, not a verdict on H11.
+
+**Integrity:** backbone pre-pin matched LOG-331 via hard gate; post-pin branch sits after the 120 variant forwards in the tree and was correctly not reached (report discloses this; no optimizer/backward pass exists — Δθ=0 by construction). All five raw-artifact SHA-256 pins recomputed and matching. Forwards: exactly 20 Phase-0b probe records; zero full-run forwards (Law #9 honored). Baseline reproduction vs EXP112 archive: not reached, correctly absent.
+
+**Law #9 / defect class 1:** no McNemar table, no b/c/d/p, no p-value in the report — the metric stage was never reached and none is quoted.
+
+**Descriptive failure-mode (unlicensed observation, spot-verified):** 60/60 full-run generations contain a bench-foreign `Premise:` line in the final outline (hallucinated entities, e.g. Gold/Iron/Silver/Bronze; exemplar-planet recitations); "34 distinct" reproduces exactly under truncation-variant normalization (38 raw → 34 collapsed). Correctly flagged as observation, not verdict. No caveat.
+
+**Terminal reading:** RUN-INVALID (apparatus-void); H21's instrument-selection channel is UNTESTED, not retired; H11's planning question survives its fourth RUN-INVALID; no number minted; label-free race tied at zero. Review: `research/reviews/VERDICTREVIEW_EXP124_2026-09-29.md`.
+
+## LOG-4672 — Frontier scoreboard synced to v2.9 with EXP124 (H21/PLAN-INSTRUMENT) (2026-09-29)
+
+EXP124 (LOG-4670 execution; independent exact-artifact verdict review LOG-4671 — BIND, no caveat) plotted. **RUN-INVALID (apparatus-void):** plan-as-instrument selection — per-item T2-P2 plans elicited, pinned §3.4 choice rule picking variant A vs C from the final outline. Phase-0 cleared everywhere (tokenizer-only [-3:] 120/120; choice-validity 10/10; discriminability 4/10, M_A=0.38102, M_C=0.46331; prompts byte-identical 0/60 vs EXP113 T2-P2) — then the full-run choice collapsed: **A-FIRST=48, C-FIRST=7, choice-invalid=5** (independent reimplementation 60/60 per-item agreement) → **C-FIRST=7 < 12 → registered choice-information gate fired**. Descriptive failure mode (independently spot-verified): 60/60 generation texts carry a hallucinated `Premise:` line with off-bench entities; the choice rule reads the leftmost entity match inside the regurgitation — the instrument was never a treatment. Per Law #9 no McNemar table was read; lane halted before the 120 variant forwards; pre-contact LOG-331 pin matched, Δθ=0.
+
+**Terminal reading:** H11's planning hypothesis survives its **FOURTH RUN-INVALID** (EXP117, 119, 121, 124) — untested, not killed; H21's instrument-selection channel UNTESTED, not retired (a KILL would have retired it); no further H11 composition licensed without a genuinely new instrument class (H21 draft §0(d)). New binding lesson (defect class 8): choice-extraction on the final outline must assert the final outline is plan content, not regurgitation.
+
+**Scoreboard v2.9 tally:** three CONTINUEs (EXP111 — bound; EXP120 — bound, qualified; EXP122 — bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), **TEN RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123, EXP124 — all bound)**, one precision certification (EXP110, bound). §3.1 EXP124 row + §3.2 H21 paragraph + v2.9 changelog delta + PROGRESS_ANALYSIS update added. **Capability scoreboard unchanged — still zero positive signals for autonomous steering; the trained-head line remains a three-bench identity-readout CONTINUE (decodability, not steering); the label-free race stays tied at zero.** No literature re-check this cycle (next due 2026-10-23).
