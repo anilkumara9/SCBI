@@ -1,0 +1,542 @@
+[
+ {
+  "e1": "Mars",
+  "e2": "Jupiter",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_2hop_0",
+  "item_idx": 0,
+  "output": " Mercury, Moon and",
+  "parseable": false
+ },
+ {
+  "e1": "Venus",
+  "e2": "Saturn",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_2hop_1",
+  "item_idx": 1,
+  "output": " Mercury, the planet",
+  "parseable": false
+ },
+ {
+  "e1": "Jupiter",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_2hop_2",
+  "item_idx": 2,
+  "output": " The Moon, the",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_2hop_3",
+  "item_idx": 3,
+  "output": " The Sun, the",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Saturn",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_2hop_4",
+  "item_idx": 4,
+  "output": " Jupiter, Mercury and",
+  "parseable": false
+ },
+ {
+  "e1": "Venus",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_2hop_5",
+  "item_idx": 5,
+  "output": " Jupiter, the planet",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Saturn",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_2hop_6",
+  "item_idx": 6,
+  "output": " The Sun, Moon",
+  "parseable": false
+ },
+ {
+  "e1": "Venus",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_2hop_7",
+  "item_idx": 7,
+  "output": " The Sun, the",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_2hop_8",
+  "item_idx": 8,
+  "output": " Jupiter, which has",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_2hop_9",
+  "item_idx": 9,
+  "output": " Jupiter, Saturn and",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Jupiter",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_2hop_10",
+  "item_idx": 10,
+  "output": " Mercury, the planet",
+  "parseable": false
+ },
+ {
+  "e1": "Venus",
+  "e2": "Saturn",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_2hop_11",
+  "item_idx": 11,
+  "output": " Mercury, Moon and",
+  "parseable": false
+ },
+ {
+  "e1": "Jupiter",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_2hop_12",
+  "item_idx": 12,
+  "output": " The Sun, the",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_2hop_13",
+  "item_idx": 13,
+  "output": " Saturn, which has",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Saturn",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_2hop_14",
+  "item_idx": 14,
+  "output": " Jupiter, Mercury and",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Saturn",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_3hop_0",
+  "item_idx": 15,
+  "output": " Mercury, Moon and",
+  "parseable": false
+ },
+ {
+  "e1": "Venus",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_3hop_1",
+  "item_idx": 16,
+  "output": " Mars, because he",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_3hop_2",
+  "item_idx": 17,
+  "output": " Jupiter, the Sun",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_3hop_3",
+  "item_idx": 18,
+  "output": " The Sun, the",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_3hop_4",
+  "item_idx": 19,
+  "output": " Saturn, which has",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Saturn",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_3hop_5",
+  "item_idx": 20,
+  "output": " Mercury, the planet",
+  "parseable": false
+ },
+ {
+  "e1": "Venus",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_3hop_6",
+  "item_idx": 21,
+  "output": " The Sun, Moon",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_3hop_7",
+  "item_idx": 22,
+  "output": " Jupiter, the planet",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_3hop_8",
+  "item_idx": 23,
+  "output": " The Sun, the",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_3hop_9",
+  "item_idx": 24,
+  "output": " Saturn, which has",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Saturn",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_3hop_10",
+  "item_idx": 25,
+  "output": " Mercury, Moon and",
+  "parseable": false
+ },
+ {
+  "e1": "Venus",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_3hop_11",
+  "item_idx": 26,
+  "output": " The Sun, the",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_3hop_12",
+  "item_idx": 27,
+  "output": " Jupiter, the Sun",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_flip_exp077_planet_3hop_13",
+  "item_idx": 28,
+  "output": " The Sun, the",
+  "parseable": false
+ },
+ {
+  "e1": "Mars",
+  "e2": "Mercury",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_planet_3hop_14",
+  "item_idx": 29,
+  "output": " Saturn, which has",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Silver",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_2hop_0",
+  "item_idx": 30,
+  "output": " The highest ranked person",
+  "parseable": false
+ },
+ {
+  "e1": "Gold",
+  "e2": "Bronze",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_2hop_1",
+  "item_idx": 31,
+  "output": " The one who has",
+  "parseable": false
+ },
+ {
+  "e1": "Silver",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_2hop_2",
+  "item_idx": 32,
+  "output": " Gold, Silver and",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_2hop_3",
+  "item_idx": 33,
+  "output": " The one who has",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Bronze",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_2hop_4",
+  "item_idx": 34,
+  "output": " The highest ranked person",
+  "parseable": false
+ },
+ {
+  "e1": "Gold",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_2hop_5",
+  "item_idx": 35,
+  "output": " Silver, Bronze and",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Bronze",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_2hop_6",
+  "item_idx": 36,
+  "output": " Gold, Silver and",
+  "parseable": false
+ },
+ {
+  "e1": "Gold",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_2hop_7",
+  "item_idx": 37,
+  "output": " The highest ranking person",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_2hop_8",
+  "item_idx": 38,
+  "output": " The one who has",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_2hop_9",
+  "item_idx": 39,
+  "output": " The one who has",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Silver",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_2hop_10",
+  "item_idx": 40,
+  "output": " The one who has",
+  "parseable": false
+ },
+ {
+  "e1": "Gold",
+  "e2": "Bronze",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_2hop_11",
+  "item_idx": 41,
+  "output": " Bronze, Silver and",
+  "parseable": false
+ },
+ {
+  "e1": "Silver",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_2hop_12",
+  "item_idx": 42,
+  "output": " Gold, Silver and",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_2hop_13",
+  "item_idx": 43,
+  "output": " The highest ranked person",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Bronze",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_2hop_14",
+  "item_idx": 44,
+  "output": " The one who has",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Bronze",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_3hop_0",
+  "item_idx": 45,
+  "output": " The one who has",
+  "parseable": false
+ },
+ {
+  "e1": "Gold",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_3hop_1",
+  "item_idx": 46,
+  "output": " The highest ranking person",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_3hop_2",
+  "item_idx": 47,
+  "output": " The one who has",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_3hop_3",
+  "item_idx": 48,
+  "output": " Gold, Silver and",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_3hop_4",
+  "item_idx": 49,
+  "output": " The one who has",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Bronze",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_3hop_5",
+  "item_idx": 50,
+  "output": " The highest ranked person",
+  "parseable": false
+ },
+ {
+  "e1": "Gold",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_3hop_6",
+  "item_idx": 51,
+  "output": " The one who has",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_3hop_7",
+  "item_idx": 52,
+  "output": " The highest ranking person",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_3hop_8",
+  "item_idx": 53,
+  "output": " Gold, Silver and",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_3hop_9",
+  "item_idx": 54,
+  "output": " The highest ranking person",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Bronze",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_3hop_10",
+  "item_idx": 55,
+  "output": " The one who has",
+  "parseable": false
+ },
+ {
+  "e1": "Gold",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_3hop_11",
+  "item_idx": 56,
+  "output": " The highest ranking person",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_3hop_12",
+  "item_idx": 57,
+  "output": " Silver, Bronze and",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_ctrl_exp077_element_3hop_13",
+  "item_idx": 58,
+  "output": " The highest ranked person",
+  "parseable": false
+ },
+ {
+  "e1": "Iron",
+  "e2": "Steel",
+  "exception": false,
+  "id": "exp107_flip_exp077_element_3hop_14",
+  "item_idx": 59,
+  "output": " The one who has",
+  "parseable": false
+ }
+]

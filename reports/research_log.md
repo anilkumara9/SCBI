@@ -12284,3 +12284,159 @@ authored without the constraint).
 **Lane:** scoreboard-sync lane, LOG-4655 pre-assigned. Plotted EXP122 (H16/POSITION-CUE) — **CONTINUE** (independent exact-artifact verdict review LOG-4654 BIND, no caveat): the position-cue dissection of EXP111/EXP120's trained-head signal ran the pinned H5 discipline verbatim on a third, independently constructed bench (bench 3: 60 items, fresh animal/fruit entity sets, new verb families, four 15-item cells) with the position scramble built in — target final sentence position balanced 15/15 within each label class (corr = 0.0). All construction gates passed (G-C1 32/60, position-scramble gate 30/60, G-C2 |Pearson| = 0.0322 — Law #13 fence honored, G-C3 byte-exact; LOG-331 pin before AND after, Δθ=0). Trained L2 head (no tuning) → **test 27/30 = 0.9000** (per-cell 6/8, 7/7, 7/7, 7/8; acc(F)=0.8667, acc(T)=0.9333), **G = −0.0667 < 0.30** → the registered ≥20/30 with G<0.30 CONTINUE branch fires. Exact one-sided p = 4.215e-06, executor-computed (defect class (a) honored).
 
 **Changes:** §0 static-steering row headline updated (three-bench identity-readout CONTINUE, position decorrelated — still decodability, not steering); §3.1 EXP122 inventory row added; §3.2 H16 paragraph added; v2.7 delta entries written (§0 area + changelog prepend); PROGRESS_ANALYSIS.md EXP122 update added. **The day's tally, honestly: three CONTINUEs (EXP111 — bound; EXP120 — bound, qualified; EXP122 — bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), eight RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121 — all bound), one precision certification (EXP110, bound).** **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.** H11's planning hypothesis remains untested across three distinct apparatus failure modes (EXP117 generation; EXP119 tokenization identity; EXP121 plan-arm G1 collapse) — zero decision data; the subject-position-detector alternative for the head signal is excluded, but the identity readout remains boundary-science decodability, not capability (no generality beyond the three benches/layer/model, novelty N1; no re-licensing of H1/H4 or closed families).
+
+## LOG-4656 — Commit-prep: H16/EXP122 wave committed locally (2026-09-29)
+
+**Lane:** commit-prep lane, LOG-4656 pre-assigned. Committed the H16/EXP122 wave locally on branch `sync/2026-09-29-consolidated` as `3b23933` (19 files, +2969/−1): LOG-4649→4655 research-log additions, H16 gate memo, pre-reg + Law #14 review + fix-verification state, EXP122 execution report, independent verdict review (BIND, CONTINUE), scoreboard v2.7 sync, and the full `experiments/runs/EXP122_positioncue/` directory (`.pyc` excluded; `.npz` artifacts remain `.gitignore`d per house rule). LOG-divergence check CLEAN (366 worktree LOGs all present in main; highest LOG-4655 before this append). No weights, secrets, or credential material staged. No stash used. `git fetch origin` failed — no GitHub authentication available, so fast-forward feasibility could not be freshly reverified; no push attempted (push requires a fresh founder token; never force-push). Working tree clean after commit.
+
+**Evidence:** commit `3b23933b8778497b188855cbc0a77ee7a85dfa4a`.
+
+## LOG-4657 — H20 (P4 apparatus validation) worth-it gate: PASS (2026-09-29)
+
+**Lane:** worth-it gate lane, LOG-4657 pre-assigned. $0 CPU strategy memo; read-only on signed protocols, paper sources, GPU queue; no experiment number minted.
+
+**Verdict: PASS — H20 is worth running.** The exact question (sharpened against EXP121's third apparatus death): does the P4 repetition-penalty protocol — the last EXP113-cleared protocol never tested on the entity-name shape — elicit ≥80% mechanically-parseable entity-name self-reports on the EXP107 template-decorrelated bench, i.e. is there *any* cleared elicitation protocol that keeps the entity-name generation channel alive (P2 died on EXP117's enumeration attractor 0/10; P5 died on tail echo; EXP121's plan-inserted logit slot died on G1 mass collapse 22/60, n_valid=38/60). Decision bars (design session, verbatim): **≥48/60 parseable → CONTINUE** (licenses the honesty-instrument revival line with P4 as a NEW hypothesis under Law #4, carrying its own elicitation-failure gate); **n_unparseable ≥ 7 → RUN-INVALID**, a **TERMINAL apparatus verdict** on the entity-name shape — the channel is then dead on all EXP113-cleared protocols and the honesty-instrument line closes permanently on this shape (H1/H4's T1/T2 clearances on their own shapes untouched). Cheapest test: 60 greedy generations on the verbatim EXP107 `{PROMPT}` under the pinned P4 hyperparameters (`repetition_penalty=1.2`, `no_repeat_ngram_size=3`, greedy, `max_new_tokens=4`; EXP_PREREG_H7_EVALID §3.3) + pinned mechanical parse rule (strip; trailing punctuation; case-insensitive exact match vs the two pinned candidate entity names; parseable iff exactly one matches) + elicitation-failure gate on the full 60 (no early abandonment, Law #9) + EXP113 run discipline (per-generation exception logging, deterministic re-parse ×2 byte-identical, LOG-331 backbone pin before/after, raw records hash-pinned before verdict). **G1 does NOT apply** — it is a logit-slot validity guard; H20 is a generation apparatus, and the mechanical-parse bar + elicitation gate + re-parse pin replace it. Mathematical license: EXP113 T1-P4 cleared at 58/60 [OBSERVATION]; EXP107 bench discipline (60 items, four 15-item cells) [FACT]; EXP121's 22/60 plan-arm collapse (0.000142–0.008571 vs 0.01) [OBSERVATION]. Breaking mechanism [INTERPRETATION]: `repetition_penalty=1.2` down-weights context-present tokens — including the entity-name tokens in the premise — nudging outputs into EXP117's enumeration/continuation attractors (EXP113's own T2 datum: P4=0/60 on outlines). Quantitative prediction: P4-works → parseable ∈ [48,60]/60; P4-dead → ∈ [0,20]/60 with P(n_unparseable ≥ 7) ≈ 1 (the RUN-INVALID branch is the *expected* outcome and is itself the licensed terminal finding). **Breaking point — CHECKED, not tripped:** all 10 EXP107 entity names are single-token under the real Pythia-410m tokenizer (tokenizer-only, `ĠMars`→[13648] … `ĠSteel`→[19727]; zero multi-token), so the H18 pattern does not fire and every name fits P4's 4-token cap; the pinned hyperparameters are template-independent, and the template swap is the registered unknown (Law #4), not an apparatus void. Summit filter: MARGINAL — apparatus validation, honestly stated; a CONTINUE re-opens the entity-name self-report question via a *generation* instrument on the EXP107 shape but does **not** rescue EXP112's bench-2 logit line (different instrument, separate hypothesis; the label-free race stays tied at zero). Compliance: no resurrection (H17/S5/H12/bench-1 re-reading/EXP117-119 reruns untouched); binding lesson (i) honored (the design's breaking point is elicitation itself); no hand-written p-values. Memo: `~/workspace/SCBI/research/strategy/H20_GATE_2026-09-29.md`. Next lane (single-lane fence): pre-registration draft under a minted number — this lane stops here.
+
+## LOG-4658 — H20 (P4 apparatus validation) pre-registration drafted (2026-09-29)
+
+**Lane:** pre-registration drafting lane, LOG-4658 pre-assigned. $0 CPU; read-only on signed protocols, paper sources, GPU queue; no experiment number minted (the H7 precedent — execution, if ever launched, is a CEO decision under a minted number).
+
+**Draft:** `~/workspace/SCBI/research/prereg/EXP_PREREG_H20_P4APPARATUS_2026-09-29.md` — 10 sections (§§0–9 + boundary), 29,811 bytes, H5/H14/H19 template structure. 60 greedy generations on the verbatim EXP107 `{PROMPT}` under the pinned P4 hyperparameters (`repetition_penalty=1.2`, `no_repeat_ngram_size=3`, greedy, `max_new_tokens=4`; EXP_PREREG_H7_EVALID §3.3); verbatim EXP107 bench (no new construction; pins: bench-JSON `e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5`, npz `6cf4a8a726a2b6e4623f57d0287d95879866f77e789bcc3789fb693cf2af6a76`, embeddings-bytes `9b6e8afb091ba1edbb0311ba1d3414d34a65942c3fdecb4533b69720f2a99123`, ids-bytes `3669e102222719d66f61daca46ae1ac34e844e398ae433743a5b37bfc5075cb9`; all verified byte-identical against H19's pins). Pinned mechanical parse rule: strip; rstrip trailing punctuation set `.,;:!?'"')]}`; case-insensitive exact match vs the two pinned candidate entity names (E1 = `tuple[0]`, E2 = `tuple[-1]`, the H6 pin); parseable iff exactly one matches; empties UNPARSEABLE. Token pin: all 10 EXP107 entity names single-token (LOG-4657).
+
+**Registered bars (verbatim from the LOG-4657 gate, pinned with precedence):** **n_unparseable ≤ 6 (⇒ ≥54/60 parseable, above EXP113's ≥48/60 clearance bar) → CONTINUE** — licenses the honesty-instrument revival line with P4 as a **NEW hypothesis** under Law #4 (not a revival of H9/H10), carrying its own elicitation-failure gate into any downstream protocol; **n_unparseable ≥ 7 → RUN-INVALID, TERMINAL** — the entity-name generation channel is dead on all EXP113-cleared protocols (P2 died EXP117, P5 died on tail echo, P4 dies here) and the honesty-instrument line closes permanently on this shape (H1/H4's T1/T2 clearances untouched); middle region (n_unparseable ≤ 6 but < 48 parseable) registered as HELD-no-rescue for tree-exhaustiveness and **declared unreachable by arithmetic** (see the drafting fix below). The elicitation-failure gate takes precedence over the clearance bar (the gate memo's licensed terminal reading). No inferential statistic is registered or computed (the EXP120 lesson honored by construction: no hand-written p-values possible). **G1 does NOT apply** — it is a logit-slot guard; H20 is a generation apparatus; the mechanical-parse bar + elicitation gate + re-parse ×2 byte-identity pin replace it. Any deviation from the pinned bench/hyperparameters/parse rule → apparatus-void, UNTESTED, no number minted. EXP113 discipline carried verbatim: per-generation exception logging (>6/60 → RUN-INVALID), re-parse ×2 byte-identical, LOG-331 backbone hash pin `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed` before/after, raw generation records persisted + hash-pinned before verdict (the EXP119 lesson, defect class 2), Δθ=0, no early abandonment (Law #9). Primary metric is parseability (format), not correctness (Law #7 posture carried: the parse rule never reads labels); a decision-silent correctness-vs-`tuple[0]` diagnostic is reported to inform any licensed downstream lane. Phase-0 explicitly vacated: no planner, no logit slot, no composition — breaking points were checked at gate (LOG-4657, tokenizer-only).
+
+**Honest frame:** a CONTINUE re-opens the entity-name self-report question via a generation instrument on the EXP107 shape but does **not** rescue EXP112's bench-2 logit line (different instrument, separate hypothesis); the label-free race stays tied at zero either way. Summit filter: MARGINAL, stated without inflation. Novelty: N1 — Known Combination.
+
+**Drafting fix recorded (§8 deviation 10):** the brief's §4 parenthetical "Between 41–47 parseable (n_unparseable ≤ 6 but < 48)" is arithmetically impossible — with n=60, n_unparseable ≤ 6 implies n_parseable ≥ 54, so the 41–47 region cannot coexist with n_unparseable ≤ 6. Per the gate memo, the elicitation-failure gate takes precedence, making the middle region unreachable; the draft registers it as HELD-no-rescue for tree-exhaustiveness and declares it unreachable rather than silently reproducing the inconsistency. If the intended design was a weaker gate, that is a different hypothesis structure requiring a new worth-it gate — not a silent edit to the signed protocol (Law #4). One self-caught transcription defect during drafting: the ids-bytes pin was initially written `...5075cb39`; corrected by exact-text edit to the verified `...5075cb9` and re-verified byte-identical against H19's pin before this log entry.
+
+**Self-check:** all 5 pins verified present and byte-identical against H19's protocol; 10 section headers present; continuity 4657→4658, no gaps. Next lane (single-lane fence): independent Law #14 review of this exact file — this lane stops here.
+
+## LOG-4659 — Independent Law #14 review of H20 pre-registration: SIGN-WITH-FIXES (2026-09-29)
+
+**Lane:** independent Law #14 review lane, LOG-4659 pre-assigned. $0 CPU; read-only everywhere except this review (`~/workspace/SCBI/research/reviews/LAW14_REVIEW_H20_P4APPARATUS_2026-09-29.md`) and this log append; fresh eyes — this lane did not draft the protocol. Law #14 scope: mathematical soundness and internal consistency, not style.
+
+**Verdict: SIGN-WITH-FIXES** — two fixes, neither touching a bar, a gate, or the hypothesis.
+
+**F1 — launch-gating (minor, one pinned sentence):** §3.4 defines `raw` as "generation text (decoded tokens only)" but does not pin the decode call. Pin: generation text = `tokenizer.decode(new_token_ids, skip_special_tokens=True)`; input-prompt tokens never decoded into `raw`. An executor choice here can move parseability counts on edge items; the "prompt never part of the parse" clause is present, the special-token handling is not. Verdict-immaterial to the bars; Law #13 reproducibility pin.
+
+**F2 — verdict-immaterial (documentation):** the draft (and the LOG-4657 gate memo it transcribes) attributes P2's entity-name-shape death to "EXP117". The record shows EXP117's 0/10 was the P5-lineage priming slot on the EXP091 bench (enumeration attractor); P2's entity-name-shape death is **EXP115** (few-shot recitation, RUN-INVALID — confirmed by VERDICTREVIEW_EXP116: "P2 is dead on this shape (EXP115)"). Terminal license unaffected (P2 is dead on this shape either way). Suggested placement: §8 as deviation 11, keeping §0's gate-memo transcription verbatim.
+
+**Verified sound (independent checks, not re-assertion):**
+1. **Bars coherent, disjoint, exhaustive:** `n_unparseable ≤ 6` → CONTINUE (effective `≥54/60` parseable given the exact partition); `≥7` → terminal RUN-INVALID; middle region (`≤6` unparseable, `<48` parseable) arithmetically unreachable — the parse rule is total (exceptions scored unparseable), so `n_parseable = 60 − n_unparseable` holds exactly, and `≤6` unparseable ⇒ `≥54` parseable. The gate memo's 48–53 overlap is resolved by explicit registered gate precedence (the only consistent reading); §8 deviation 10 documents the brief's arithmetic fix honestly.
+2. **Counting exact:** exceptions → unparseable; `>6/60` exceptions → RUN-INVALID (apparatus void), checked before the elicitation gate in the §5 tree — no pollution of the terminal verdict's meaning.
+3. **Parse rule deterministic and total:** all edge cases handled (empty, both-match, neither-match, attractors). Both-match edge verified impossible on this bench: deterministic rebuild shows **0/60** items with `tuple[0] == tuple[-1]`. Punctuation set pinned.
+4. **P4 pins byte-exact** against EXP_PREREG_H7_EVALID §3.3 (T1-P4 line): `repetition_penalty=1.2`, `no_repeat_ngram_size=3`, greedy, `max_new_tokens=4`. Bench rebuild deterministic: 60 items, schema keys ⊇ {prompt, premise, tuple, phrasing, id}, `prompt == premise + QUESTION_SUFFIX` byte-exact on all 60.
+5. **Tokenization independently verified** (real Pythia-410m snapshot tokenizer, vocab 50254): all 10 entity names single-token with leading space; `ĠMars`→[13648], `ĠJupiter`→[34434] match the draft's examples.
+6. **G1 correctly not applied;** full-text scan shows zero logit-slot language in the method (§3) or decision tree (§5) — all mass/logit mentions are historical or definitional. **No p-values** registered or computed — correct for count bars on a full census; Law #9 compliant; the EXP120 lesson honored by construction.
+7. **Terminal reading licensed:** H1/H4 T1/T2 clearances on their own shapes untouched; P5's entity-name death confirmed via VERDICTREVIEW_EXP116 (tail echo). No undefined identifiers (H19 lesson).
+
+**Lane-process note:** this lane first appended the entry to a wrong path (`SCBI/research/reports/research_log.md`, a directory this lane's write created) instead of the canonical `SCBI/reports/research_log.md`. The canonical log was verified untouched (12312 lines, no LOG-4659) before repair; the entry was then appended here, and the spurious file and directory were removed. No log content was lost or duplicated.
+
+**Single-lane fence respected:** this lane does not repair the draft, clear execution, or dispatch any lane.
+
+## LOG-4660 — H20 (P4 apparatus validation) pre-registration FIX-1/FIX-2 byte-verified (2026-09-29)
+
+**Lane:** LOG-4660 (pre-assigned). $0 CPU. Applied the two fixes from the
+independent Law #14 review (LOG-4659) to
+`research/prereg/EXP_PREREG_H20_P4APPARATUS_2026-09-29.md`; no bar, gate,
+or hypothesis touched. Read-only on signed protocols, paper sources,
+GPU queue. No commit, no push, no credentials.
+
+**Pre-fix sha256:** `1b439460faf086212e61efe245633c970aec162b1b639a2a4bb77e5cd3ad9d20`
+**Post-fix sha256:** `fb60a5ff9c89cdc3a3d756126db9a7a412a26bab70b4beb2d3530f257e424b85`
+
+**Diff (exactly two hunks, no other bytes changed):**
+1. **F1 (Law #13 reproducibility pin, §3.4):** added the pinned decode
+   bullet after the parse-rule code block — generation text =
+   `tokenizer.decode(new_token_ids, skip_special_tokens=True)`;
+   input-prompt tokens are never decoded into `raw`.
+2. **F2 (citation precision, §8 deviation 11):** corrected P2's
+   entity-name-shape death attribution from EXP117 to **EXP115**
+   (few-shot recitation, RUN-INVALID — confirmed by
+   VERDICTREVIEW_EXP116; EXP117's 0/10 was the P5-lineage priming slot
+   on the EXP091 bench). §0's gate-memo transcription kept verbatim;
+   deviation 11 carries the correction. Terminal license unaffected.
+
+**Byte-verification:** diffed against a pre-fix copy — exactly two
+changed hunks, one per fix; no other line or byte altered. Both
+pre-fix and post-fix sha256 recorded above.
+
+**Single-lane fence respected:** this lane does not self-review,
+self-clear, or self-dispatch execution. Launch remains a CEO decision
+under a minted experiment number.
+
+## LOG-4661 — EXP123 (H20/P4 apparatus) executed: RUN-INVALID, TERMINAL (2026-09-29)
+
+**Lane:** LOG-4661 (pre-assigned). $0 CPU. Executed the signed
+pre-registration `research/prereg/EXP_PREREG_H20_P4APPARATUS_2026-09-29.md`
+(Law #14 signed, two fixes byte-verified). This lane mints EXP123. Read-only
+on signed protocols, paper sources, GPU queue. No commit, no push, no
+credentials.
+
+**Apparatus pins (all held):** verbatim EXP107 bench, canonical SHA-256
+`e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5`
+(schema + `prompt == premise + QUESTION_SUFFIX` byte-exact); backbone
+Pythia-410m LOG-331 pin `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed`
+match BEFORE and AFTER all generations (Δθ=0); P4 hyperparameters
+`repetition_penalty=1.2, no_repeat_ngram_size=3, do_sample=False,
+max_new_tokens=4` asserted byte-identical; all 10 entity names single-token
+with leading space; torch 2.14.0+cpu / transformers 5.17.0 / numpy 2.5.3,
+seeds torch=0, numpy=0.
+
+**Full run:** 60 pass-A generations + 60 pass-B deterministic rerun (fixed
+seeds), byte-identical outputs. Per-generation exceptions **0/60**
+(exception gate did not fire). Re-parse ×2 byte-identical. Raw generation
+records persisted and hash-pinned before the verdict:
+`exp123_generations.json` SHA-256
+`662b9feb0cbe7e458eae5b4d4542e7c7495bacaa5fef72ae5331013784f513c6`.
+
+**Registered counts:** n_parseable=**0**, n_unparseable=**60**,
+n_exceptions=0. Correctness diagnostic (decision-silent): names-e1=0,
+names-e2=0 of 0 parseable. No p-values registered; none computed.
+
+**Verdict: RUN-INVALID, TERMINAL** — elicitation-failure gate fired on the
+full 60 (n_unparseable=60 ≥ 7). The entity-name generation channel is dead
+on all EXP113-cleared protocols (P2 dead on this shape, P5 dead on tail
+echo, P4 dies here). The honesty-instrument line closes permanently on this
+shape. The expected outcome under the P4-dead alternative (pre-reg predicted
+P(n_unparseable ≥ 7) ≈ 1): a finding, not a failure.
+
+**Generations (genuine signal):** 18 distinct outputs, all continuation
+attractors (`' The one who has'`, `' The Sun, the'`, `' Mercury, the
+planet'`, `' The highest ranked person'`) — repetition_penalty=1.2
+down-weights the in-prompt entity-name tokens, biasing against emitting the
+entity name. H1/H4's T1/T2 clearances on their own shapes untouched.
+Label-free race stays tied at zero.
+
+**Report:** `research/experiments/EXP123_P4APPARATUS_REPORT_2026-09-29.md`.
+**Raw:** `experiments/runs/EXP123_p4apparatus/out/` (result SHA-256
+`3dc49c821fed8fc114167c63ad1680cd4fe3c0025a4e15d4783409064972873d`).
+
+**Single-lane fence respected:** this lane executes and reports; it does not
+self-review, self-clear, or dispatch downstream work.
+
+
+## LOG-4662 — Independent exact-artifact verdict review of EXP123: BIND, no caveat (2026-09-29)
+
+*Lane: independent verdict review, LOG-4662 pre-assigned. $0 CPU. Read-only on all signed artifacts; this lane writes only its review and this log append.*
+
+Independent re-implementation of the pinned §3.4 parse rule (strip → rstrip punctuation → case-insensitive exact match vs E1/E2 → XOR) applied to the raw `exp123_generations.json` texts: **n_parseable=0/60, n_unparseable=60/60, n_exceptions=0**, item-by-item **zero mismatches** against the lane's own parse table. No p-values registered or computed. Pins verified: bench canonical SHA-256 `e91b302f…` asserted at runtime with `prompt == premise + QUESTION_SUFFIX` byte-exact; P4 hyperparameters (`repetition_penalty=1.2, no_repeat_ngram_size=3, do_sample=False, max_new_tokens=4`) byte-identical; decode `skip_special_tokens=True`; 60+60 deterministic rerun byte-identical; re-parse ×2 byte-identical; backbone LOG-331 pin `ec276abe…` matched BEFORE and AFTER (Δθ=0). Raw hash pins independently recomputed and matched: `exp123_generations.json` SHA-256 `662b9feb0cbe7e458eae5b4d4542e7c7495bacaa5fef72ae5331013784f513c6`, `exp123_result.json` SHA-256 `3dc49c821fed8fc114167c63ad1680cd4fe3c0025a4e15d4783409064972873d`. LOG-4661 is next-free, exactly one entry, substance matches artifacts.
+
+**Verdict: BIND, no caveat.** The elicitation-failure gate fires at n_unparseable=60 ≥ 7 on the full 60; the lane's **RUN-INVALID, TERMINAL** verdict follows by direct application of the registered §4/§5 tree. The report's terminal reading stays in licensed scope: entity-name generation channel dead on all EXP113-cleared protocols (P2 dead on this shape, P5 dead on tail echo, P4 dies here); honesty-instrument line closes permanently on this shape; H1/H4's T1/T2 clearances untouched; label-free race tied at zero. No scope creep, no summit overclaim.
+
+**Review:** `research/reviews/VERDICTREVIEW_EXP123_2026-09-29.md`.
+
+**Single-lane fence respected:** this lane reviews and reports; it does not self-clear, scoreboard-sync, or dispatch downstream work.
+
+
+## LOG-4663 — Frontier scoreboard synced to v2.8: EXP123 plotted (2026-09-29)
+
+*Lane: scoreboard sync, LOG-4663 pre-assigned. $0 CPU. Read-only on all signed artifacts; this lane writes only the benchmark files and this log append.*
+
+EXP123 (H20/P4APPARATUS) plotted as **RUN-INVALID, TERMINAL** on the standing frontier scoreboard: P4 repetition-penalty decoding on the verbatim EXP107 bench — **n_parseable=0/60, n_unparseable=60/60, n_exceptions=0** (independently recomputed, zero mismatches; rerun + re-parse byte-identical; Δθ=0) — the elicitation-failure gate fires on the full 60. The honest terminal reading is recorded in-file: the entity-name generation channel is dead on **all** EXP113-cleared protocols (P2 EXP115, P5 EXP116, P4 EXP123); the honesty-instrument line closes permanently on the entity-name shape; H1/H4's T1/T2 clearances untouched; label-free race tied at zero.
+
+**Changes:** §3.1 EXP123 inventory row added; §3.2 H20 paragraph added; `**v2.8 delta**` entry prepended before the v2.7 delta; `- v2.8 —` list entry prepended before the v2.7 list entry; `PROGRESS_ANALYSIS.md` EXP123 update paragraph appended.
+
+**New tally (v2.8):** three CONTINUEs (EXP111 — bound; EXP120 — bound, qualified; EXP122 — bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), **nine RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123 — all bound)**, one precision certification (EXP110, bound). **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the trained-head line remains a three-bench identity-readout CONTINUE (decodability, not steering).** No literature re-check this cycle (next due 2026-10-23).
+
+**Single-lane fence respected:** this lane syncs and reports; it does not re-adjudicate any verdict.

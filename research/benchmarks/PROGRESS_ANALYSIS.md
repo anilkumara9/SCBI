@@ -237,6 +237,42 @@ EXP115, EXP116, EXP117, EXP118, EXP119, EXP121 — all bound), one
 precision certification (EXP110, bound).** The capability column stays at
 zero.
 
+**Update 2026-09-29:** EXP123 (H20/P4APPARATUS) — **RUN-INVALID,
+TERMINAL** — the last EXP113-cleared generation protocol on the
+entity-name shape died completely: P4 repetition-penalty decoding
+(`repetition_penalty=1.2`, `no_repeat_ngram_size=3`, greedy,
+`max_new_tokens=4`) on the verbatim EXP107 60-item bench yielded
+**n_parseable = 0/60, n_unparseable = 60/60, n_exceptions = 0**
+(independently recomputed from the raw artifacts, zero mismatches;
+deterministic rerun + re-parse ×2 byte-identical; raw records persisted
+and hash-pinned before the verdict; LOG-331 pin before AND after, Δθ=0).
+The generations are real, non-degenerate model outputs (0/60 empty) — 18
+distinct continuation attractors, none naming either candidate — a genuine
+signal, not a decode artifact: the pre-reg's breaking mechanism realized
+exactly (the repetition penalty down-weights tokens already present in the
+input context, *including the entity-name tokens in the premise*, biasing
+against emitting the entity name — on this shape P4 is an
+anti-elicitation protocol, compounding EXP117's continuation attractors
+and EXP113's own T2 datum of P4=0/60 on outlines). This was the
+**expected** outcome (pre-reg predicted P(n_unparseable ≥ 7) ≈ 1): a
+finding, not a failure. **Terminal reading, licensed:** the entity-name
+generation channel is dead on **all** EXP113-cleared protocols — P2 died
+on this shape (EXP115), P5 died on tail echo (EXP116), P4 dies here —
+the honesty-instrument line closes **permanently on the entity-name
+shape** (no protocol rescue, no larger-n rescue, no parameter tweak
+licensed); H1/H4's T1/T2 clearances are untouched; EXP112's bench-2 logit
+line is not rescued (a different instrument); the label-free race stays
+tied at zero. Parseability ≠ correctness (registered): 0/60 is a *format*
+measurement; the decision-silent correctness diagnostic is vacuous (0 of
+0). Apparatus closure, not a hypothesis kill (independent exact-artifact
+verdict review LOG-4662 — BIND, no caveat). **The day's tally: three
+CONTINUEs (EXP111 — bound; EXP120 — bound, qualified; EXP122 — bound),
+one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two
+KILLs (EXP107, EXP114 — both bound), nine RUN-INVALIDs (EXP108, EXP109,
+EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123 — all bound), one
+precision certification (EXP110, bound).** The capability column stays at
+zero.
+
 **What closes it.** The §D2 six-condition bar: per-instance construction,
 transfer-validated evaluator, matched-compute wins over ∇-Reasoner /
 Activation-LQR / Meta-Reasoner / DEER / LatentMAS plus the pinned M15
