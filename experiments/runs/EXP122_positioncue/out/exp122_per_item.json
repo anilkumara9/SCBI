@@ -1,0 +1,1052 @@
+[
+ {
+  "derived_from": "exp122_b3_tf_p00",
+  "final_first": false,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tf_p00",
+  "phrasing": "target-first",
+  "premise": "Premise: Mango is dominated by Lion. Lion is dominated by Fox.",
+  "prompt": "Premise: Mango is dominated by Lion. Lion is dominated by Fox. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Fox",
+   "Lion",
+   "Mango"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p01",
+  "final_first": true,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tf_p01",
+  "phrasing": "target-first",
+  "premise": "Premise: Tiger ranks above Apple. Apple ranks above Bear.",
+  "prompt": "Premise: Tiger ranks above Apple. Apple ranks above Bear. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Tiger",
+   "Apple",
+   "Bear"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p02",
+  "final_first": false,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tf_p02",
+  "phrasing": "target-first",
+  "premise": "Premise: Plum is dominated by Fox. Fox is dominated by Lion.",
+  "prompt": "Premise: Plum is dominated by Fox. Fox is dominated by Lion. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Lion",
+   "Fox",
+   "Plum"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p03",
+  "final_first": true,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tf_p03",
+  "phrasing": "target-first",
+  "premise": "Premise: Fox ranks above Cherry. Cherry ranks above Tiger.",
+  "prompt": "Premise: Fox ranks above Cherry. Cherry ranks above Tiger. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Fox",
+   "Cherry",
+   "Tiger"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p04",
+  "final_first": false,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tf_p04",
+  "phrasing": "target-first",
+  "premise": "Premise: Mango is dominated by Tiger. Tiger is dominated by Bear.",
+  "prompt": "Premise: Mango is dominated by Tiger. Tiger is dominated by Bear. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Bear",
+   "Tiger",
+   "Mango"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p05",
+  "final_first": true,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tf_p05",
+  "phrasing": "target-first",
+  "premise": "Premise: Wolf ranks above Plum. Plum ranks above Fox.",
+  "prompt": "Premise: Wolf ranks above Plum. Plum ranks above Fox. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Wolf",
+   "Plum",
+   "Fox"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p06",
+  "final_first": false,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tf_p06",
+  "phrasing": "target-first",
+  "premise": "Premise: Mango is dominated by Fox. Fox is dominated by Apple.",
+  "prompt": "Premise: Mango is dominated by Fox. Fox is dominated by Apple. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Apple",
+   "Fox",
+   "Mango"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p07",
+  "final_first": true,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tf_p07",
+  "phrasing": "target-first",
+  "premise": "Premise: Lion ranks above Cherry. Cherry ranks above Wolf.",
+  "prompt": "Premise: Lion ranks above Cherry. Cherry ranks above Wolf. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Lion",
+   "Cherry",
+   "Wolf"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p08",
+  "final_first": false,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tf_p08",
+  "phrasing": "target-first",
+  "premise": "Premise: Apple is dominated by Wolf. Wolf is dominated by Plum.",
+  "prompt": "Premise: Apple is dominated by Wolf. Wolf is dominated by Plum. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Plum",
+   "Wolf",
+   "Apple"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p09",
+  "final_first": true,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tf_p09",
+  "phrasing": "target-first",
+  "premise": "Premise: Plum ranks above Apple. Apple ranks above Wolf.",
+  "prompt": "Premise: Plum ranks above Apple. Apple ranks above Wolf. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Plum",
+   "Apple",
+   "Wolf"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p10",
+  "final_first": false,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tf_p10",
+  "phrasing": "target-first",
+  "premise": "Premise: Plum is dominated by Wolf. Wolf is dominated by Grape.",
+  "prompt": "Premise: Plum is dominated by Wolf. Wolf is dominated by Grape. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Grape",
+   "Wolf",
+   "Plum"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p11",
+  "final_first": true,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tf_p11",
+  "phrasing": "target-first",
+  "premise": "Premise: Mango ranks above Cherry. Cherry ranks above Tiger.",
+  "prompt": "Premise: Mango ranks above Cherry. Cherry ranks above Tiger. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Mango",
+   "Cherry",
+   "Tiger"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p12",
+  "final_first": false,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tf_p12",
+  "phrasing": "target-first",
+  "premise": "Premise: Cherry is dominated by Tiger. Tiger is dominated by Plum.",
+  "prompt": "Premise: Cherry is dominated by Tiger. Tiger is dominated by Plum. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Plum",
+   "Tiger",
+   "Cherry"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p13",
+  "final_first": true,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tf_p13",
+  "phrasing": "target-first",
+  "premise": "Premise: Apple ranks above Grape. Grape ranks above Tiger.",
+  "prompt": "Premise: Apple ranks above Grape. Grape ranks above Tiger. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Apple",
+   "Grape",
+   "Tiger"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p14",
+  "final_first": false,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tf_p14",
+  "phrasing": "target-first",
+  "premise": "Premise: Plum is dominated by Fox. Fox is dominated by Cherry.",
+  "prompt": "Premise: Plum is dominated by Fox. Fox is dominated by Cherry. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Cherry",
+   "Fox",
+   "Plum"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p15",
+  "final_first": true,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tf_p15",
+  "phrasing": "target-first",
+  "premise": "Premise: Mango ranks above Plum. Plum ranks above Tiger. Tiger ranks above Cherry.",
+  "prompt": "Premise: Mango ranks above Plum. Plum ranks above Tiger. Tiger ranks above Cherry. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Mango",
+   "Plum",
+   "Tiger",
+   "Cherry"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p16",
+  "final_first": false,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tf_p16",
+  "phrasing": "target-first",
+  "premise": "Premise: Fox is dominated by Grape. Grape is dominated by Tiger. Tiger is dominated by Bear.",
+  "prompt": "Premise: Fox is dominated by Grape. Grape is dominated by Tiger. Tiger is dominated by Bear. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Bear",
+   "Tiger",
+   "Grape",
+   "Fox"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p17",
+  "final_first": true,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tf_p17",
+  "phrasing": "target-first",
+  "premise": "Premise: Lion ranks above Cherry. Cherry ranks above Tiger. Tiger ranks above Grape.",
+  "prompt": "Premise: Lion ranks above Cherry. Cherry ranks above Tiger. Tiger ranks above Grape. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Lion",
+   "Cherry",
+   "Tiger",
+   "Grape"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p18",
+  "final_first": false,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tf_p18",
+  "phrasing": "target-first",
+  "premise": "Premise: Bear is dominated by Plum. Plum is dominated by Tiger. Tiger is dominated by Fox.",
+  "prompt": "Premise: Bear is dominated by Plum. Plum is dominated by Tiger. Tiger is dominated by Fox. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Fox",
+   "Tiger",
+   "Plum",
+   "Bear"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p19",
+  "final_first": true,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tf_p19",
+  "phrasing": "target-first",
+  "premise": "Premise: Lion ranks above Grape. Grape ranks above Bear. Bear ranks above Apple.",
+  "prompt": "Premise: Lion ranks above Grape. Grape ranks above Bear. Bear ranks above Apple. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Lion",
+   "Grape",
+   "Bear",
+   "Apple"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p20",
+  "final_first": false,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tf_p20",
+  "phrasing": "target-first",
+  "premise": "Premise: Bear is dominated by Grape. Grape is dominated by Lion. Lion is dominated by Tiger.",
+  "prompt": "Premise: Bear is dominated by Grape. Grape is dominated by Lion. Lion is dominated by Tiger. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Tiger",
+   "Lion",
+   "Grape",
+   "Bear"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p21",
+  "final_first": true,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tf_p21",
+  "phrasing": "target-first",
+  "premise": "Premise: Wolf ranks above Apple. Apple ranks above Tiger. Tiger ranks above Plum.",
+  "prompt": "Premise: Wolf ranks above Apple. Apple ranks above Tiger. Tiger ranks above Plum. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Wolf",
+   "Apple",
+   "Tiger",
+   "Plum"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p22",
+  "final_first": false,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tf_p22",
+  "phrasing": "target-first",
+  "premise": "Premise: Fox is dominated by Apple. Apple is dominated by Wolf. Wolf is dominated by Lion.",
+  "prompt": "Premise: Fox is dominated by Apple. Apple is dominated by Wolf. Wolf is dominated by Lion. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Lion",
+   "Wolf",
+   "Apple",
+   "Fox"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p23",
+  "final_first": true,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tf_p23",
+  "phrasing": "target-first",
+  "premise": "Premise: Bear ranks above Mango. Mango ranks above Wolf. Wolf ranks above Plum.",
+  "prompt": "Premise: Bear ranks above Mango. Mango ranks above Wolf. Wolf ranks above Plum. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Bear",
+   "Mango",
+   "Wolf",
+   "Plum"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tf_p24",
+  "final_first": false,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tf_p24",
+  "phrasing": "target-first",
+  "premise": "Premise: Tiger is dominated by Cherry. Cherry is dominated by Wolf. Wolf is dominated by Mango.",
+  "prompt": "Premise: Tiger is dominated by Cherry. Cherry is dominated by Wolf. Wolf is dominated by Mango. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Mango",
+   "Wolf",
+   "Cherry",
+   "Tiger"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p25",
+  "final_first": true,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tf_p25",
+  "phrasing": "target-first",
+  "premise": "Premise: Apple ranks above Plum. Plum ranks above Bear. Bear ranks above Mango.",
+  "prompt": "Premise: Apple ranks above Plum. Plum ranks above Bear. Bear ranks above Mango. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Apple",
+   "Plum",
+   "Bear",
+   "Mango"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p26",
+  "final_first": false,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tf_p26",
+  "phrasing": "target-first",
+  "premise": "Premise: Lion is dominated by Plum. Plum is dominated by Fox. Fox is dominated by Mango.",
+  "prompt": "Premise: Lion is dominated by Plum. Plum is dominated by Fox. Fox is dominated by Mango. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Mango",
+   "Fox",
+   "Plum",
+   "Lion"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p27",
+  "final_first": true,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tf_p27",
+  "phrasing": "target-first",
+  "premise": "Premise: Cherry ranks above Apple. Apple ranks above Tiger. Tiger ranks above Mango.",
+  "prompt": "Premise: Cherry ranks above Apple. Apple ranks above Tiger. Tiger ranks above Mango. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Cherry",
+   "Apple",
+   "Tiger",
+   "Mango"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p28",
+  "final_first": false,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tf_p28",
+  "phrasing": "target-first",
+  "premise": "Premise: Wolf is dominated by Mango. Mango is dominated by Bear. Bear is dominated by Plum.",
+  "prompt": "Premise: Wolf is dominated by Mango. Mango is dominated by Bear. Bear is dominated by Plum. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Plum",
+   "Bear",
+   "Mango",
+   "Wolf"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tf_p29",
+  "final_first": true,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tf_p29",
+  "phrasing": "target-first",
+  "premise": "Premise: Cherry ranks above Grape. Grape ranks above Fox. Fox ranks above Plum.",
+  "prompt": "Premise: Cherry ranks above Grape. Grape ranks above Fox. Fox ranks above Plum. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Cherry",
+   "Grape",
+   "Fox",
+   "Plum"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p00",
+  "final_first": true,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tl_p00",
+  "phrasing": "target-last",
+  "premise": "Premise: Lion dominates Plum. Plum dominates Tiger.",
+  "prompt": "Premise: Lion dominates Plum. Plum dominates Tiger. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Lion",
+   "Plum",
+   "Tiger"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p01",
+  "final_first": false,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tl_p01",
+  "phrasing": "target-last",
+  "premise": "Premise: Apple ranks below Tiger. Tiger ranks below Fox.",
+  "prompt": "Premise: Apple ranks below Tiger. Tiger ranks below Fox. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Fox",
+   "Tiger",
+   "Apple"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p02",
+  "final_first": true,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tl_p02",
+  "phrasing": "target-last",
+  "premise": "Premise: Tiger dominates Grape. Grape dominates Lion.",
+  "prompt": "Premise: Tiger dominates Grape. Grape dominates Lion. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Tiger",
+   "Grape",
+   "Lion"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p03",
+  "final_first": false,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tl_p03",
+  "phrasing": "target-last",
+  "premise": "Premise: Plum ranks below Wolf. Wolf ranks below Bear.",
+  "prompt": "Premise: Plum ranks below Wolf. Wolf ranks below Bear. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Bear",
+   "Wolf",
+   "Plum"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p04",
+  "final_first": true,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tl_p04",
+  "phrasing": "target-last",
+  "premise": "Premise: Tiger dominates Grape. Grape dominates Wolf.",
+  "prompt": "Premise: Tiger dominates Grape. Grape dominates Wolf. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Tiger",
+   "Grape",
+   "Wolf"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p05",
+  "final_first": false,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tl_p05",
+  "phrasing": "target-last",
+  "premise": "Premise: Mango ranks below Bear. Bear ranks below Tiger.",
+  "prompt": "Premise: Mango ranks below Bear. Bear ranks below Tiger. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Tiger",
+   "Bear",
+   "Mango"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p06",
+  "final_first": true,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tl_p06",
+  "phrasing": "target-last",
+  "premise": "Premise: Plum dominates Apple. Apple dominates Bear.",
+  "prompt": "Premise: Plum dominates Apple. Apple dominates Bear. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Plum",
+   "Apple",
+   "Bear"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p07",
+  "final_first": false,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tl_p07",
+  "phrasing": "target-last",
+  "premise": "Premise: Apple ranks below Tiger. Tiger ranks below Fox.",
+  "prompt": "Premise: Apple ranks below Tiger. Tiger ranks below Fox. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Fox",
+   "Tiger",
+   "Apple"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p08",
+  "final_first": true,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tl_p08",
+  "phrasing": "target-last",
+  "premise": "Premise: Apple dominates Plum. Plum dominates Lion.",
+  "prompt": "Premise: Apple dominates Plum. Plum dominates Lion. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Apple",
+   "Plum",
+   "Lion"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p09",
+  "final_first": false,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tl_p09",
+  "phrasing": "target-last",
+  "premise": "Premise: Cherry ranks below Fox. Fox ranks below Mango.",
+  "prompt": "Premise: Cherry ranks below Fox. Fox ranks below Mango. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Mango",
+   "Fox",
+   "Cherry"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p10",
+  "final_first": true,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tl_p10",
+  "phrasing": "target-last",
+  "premise": "Premise: Mango dominates Cherry. Cherry dominates Fox.",
+  "prompt": "Premise: Mango dominates Cherry. Cherry dominates Fox. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Mango",
+   "Cherry",
+   "Fox"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p11",
+  "final_first": false,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tl_p11",
+  "phrasing": "target-last",
+  "premise": "Premise: Mango ranks below Wolf. Wolf ranks below Plum.",
+  "prompt": "Premise: Mango ranks below Wolf. Wolf ranks below Plum. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Plum",
+   "Wolf",
+   "Mango"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p12",
+  "final_first": true,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tl_p12",
+  "phrasing": "target-last",
+  "premise": "Premise: Plum dominates Mango. Mango dominates Tiger.",
+  "prompt": "Premise: Plum dominates Mango. Mango dominates Tiger. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Plum",
+   "Mango",
+   "Tiger"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p13",
+  "final_first": false,
+  "flipped": false,
+  "hop": 2,
+  "id": "exp122_ctrl_exp122_b3_tl_p13",
+  "phrasing": "target-last",
+  "premise": "Premise: Cherry ranks below Wolf. Wolf ranks below Plum.",
+  "prompt": "Premise: Cherry ranks below Wolf. Wolf ranks below Plum. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Plum",
+   "Wolf",
+   "Cherry"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p14",
+  "final_first": true,
+  "flipped": true,
+  "hop": 2,
+  "id": "exp122_flip_exp122_b3_tl_p14",
+  "phrasing": "target-last",
+  "premise": "Premise: Grape dominates Plum. Plum dominates Tiger.",
+  "prompt": "Premise: Grape dominates Plum. Plum dominates Tiger. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Grape",
+   "Plum",
+   "Tiger"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p15",
+  "final_first": false,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tl_p15",
+  "phrasing": "target-last",
+  "premise": "Premise: Tiger ranks below Plum. Plum ranks below Fox. Fox ranks below Cherry.",
+  "prompt": "Premise: Tiger ranks below Plum. Plum ranks below Fox. Fox ranks below Cherry. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Cherry",
+   "Fox",
+   "Plum",
+   "Tiger"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p16",
+  "final_first": true,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tl_p16",
+  "phrasing": "target-last",
+  "premise": "Premise: Wolf dominates Grape. Grape dominates Bear. Bear dominates Plum.",
+  "prompt": "Premise: Wolf dominates Grape. Grape dominates Bear. Bear dominates Plum. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Wolf",
+   "Grape",
+   "Bear",
+   "Plum"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p17",
+  "final_first": false,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tl_p17",
+  "phrasing": "target-last",
+  "premise": "Premise: Lion ranks below Apple. Apple ranks below Bear. Bear ranks below Wolf.",
+  "prompt": "Premise: Lion ranks below Apple. Apple ranks below Bear. Bear ranks below Wolf. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Wolf",
+   "Bear",
+   "Apple",
+   "Lion"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p18",
+  "final_first": true,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tl_p18",
+  "phrasing": "target-last",
+  "premise": "Premise: Bear dominates Cherry. Cherry dominates Wolf. Wolf dominates Grape.",
+  "prompt": "Premise: Bear dominates Cherry. Cherry dominates Wolf. Wolf dominates Grape. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Bear",
+   "Cherry",
+   "Wolf",
+   "Grape"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p19",
+  "final_first": false,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tl_p19",
+  "phrasing": "target-last",
+  "premise": "Premise: Lion ranks below Mango. Mango ranks below Bear. Bear ranks below Fox.",
+  "prompt": "Premise: Lion ranks below Mango. Mango ranks below Bear. Bear ranks below Fox. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Fox",
+   "Bear",
+   "Mango",
+   "Lion"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p20",
+  "final_first": true,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tl_p20",
+  "phrasing": "target-last",
+  "premise": "Premise: Tiger dominates Mango. Mango dominates Bear. Bear dominates Grape.",
+  "prompt": "Premise: Tiger dominates Mango. Mango dominates Bear. Bear dominates Grape. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Tiger",
+   "Mango",
+   "Bear",
+   "Grape"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p21",
+  "final_first": false,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tl_p21",
+  "phrasing": "target-last",
+  "premise": "Premise: Lion ranks below Mango. Mango ranks below Fox. Fox ranks below Tiger.",
+  "prompt": "Premise: Lion ranks below Mango. Mango ranks below Fox. Fox ranks below Tiger. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Tiger",
+   "Fox",
+   "Mango",
+   "Lion"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p22",
+  "final_first": true,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tl_p22",
+  "phrasing": "target-last",
+  "premise": "Premise: Bear dominates Cherry. Cherry dominates Fox. Fox dominates Grape.",
+  "prompt": "Premise: Bear dominates Cherry. Cherry dominates Fox. Fox dominates Grape. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Bear",
+   "Cherry",
+   "Fox",
+   "Grape"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p23",
+  "final_first": false,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tl_p23",
+  "phrasing": "target-last",
+  "premise": "Premise: Bear ranks below Cherry. Cherry ranks below Fox. Fox ranks below Tiger.",
+  "prompt": "Premise: Bear ranks below Cherry. Cherry ranks below Fox. Fox ranks below Tiger. Question: Who is higher in rank? Answer:",
+  "target_domain": "D1",
+  "tuple": [
+   "Tiger",
+   "Fox",
+   "Cherry",
+   "Bear"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp122_b3_tl_p24",
+  "final_first": true,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tl_p24",
+  "phrasing": "target-last",
+  "premise": "Premise: Plum dominates Apple. Apple dominates Wolf. Wolf dominates Mango.",
+  "prompt": "Premise: Plum dominates Apple. Apple dominates Wolf. Wolf dominates Mango. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Plum",
+   "Apple",
+   "Wolf",
+   "Mango"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p25",
+  "final_first": false,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tl_p25",
+  "phrasing": "target-last",
+  "premise": "Premise: Tiger ranks below Apple. Apple ranks below Lion. Lion ranks below Plum.",
+  "prompt": "Premise: Tiger ranks below Apple. Apple ranks below Lion. Lion ranks below Plum. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Plum",
+   "Lion",
+   "Apple",
+   "Tiger"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p26",
+  "final_first": true,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tl_p26",
+  "phrasing": "target-last",
+  "premise": "Premise: Grape dominates Apple. Apple dominates Wolf. Wolf dominates Plum.",
+  "prompt": "Premise: Grape dominates Apple. Apple dominates Wolf. Wolf dominates Plum. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Grape",
+   "Apple",
+   "Wolf",
+   "Plum"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p27",
+  "final_first": false,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tl_p27",
+  "phrasing": "target-last",
+  "premise": "Premise: Bear ranks below Mango. Mango ranks below Tiger. Tiger ranks below Grape.",
+  "prompt": "Premise: Bear ranks below Mango. Mango ranks below Tiger. Tiger ranks below Grape. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Grape",
+   "Tiger",
+   "Mango",
+   "Bear"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p28",
+  "final_first": true,
+  "flipped": true,
+  "hop": 3,
+  "id": "exp122_flip_exp122_b3_tl_p28",
+  "phrasing": "target-last",
+  "premise": "Premise: Apple dominates Cherry. Cherry dominates Bear. Bear dominates Plum.",
+  "prompt": "Premise: Apple dominates Cherry. Cherry dominates Bear. Bear dominates Plum. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Apple",
+   "Cherry",
+   "Bear",
+   "Plum"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp122_b3_tl_p29",
+  "final_first": false,
+  "flipped": false,
+  "hop": 3,
+  "id": "exp122_ctrl_exp122_b3_tl_p29",
+  "phrasing": "target-last",
+  "premise": "Premise: Wolf ranks below Apple. Apple ranks below Bear. Bear ranks below Mango.",
+  "prompt": "Premise: Wolf ranks below Apple. Apple ranks below Bear. Bear ranks below Mango. Question: Who is higher in rank? Answer:",
+  "target_domain": "D2",
+  "tuple": [
+   "Mango",
+   "Bear",
+   "Apple",
+   "Wolf"
+  ],
+  "y": 0
+ }
+]

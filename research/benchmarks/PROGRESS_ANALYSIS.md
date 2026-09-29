@@ -196,6 +196,47 @@ certification (EXP110, bound).** The capability column stays at zero.
 H6's logit-level HELD (41/60) stands alone as the only honesty signal.
 **Update 2026-09-29:** EXP121 (H19/PTTSC-SUFFIX) — **RUN-INVALID** — the planning question, re-asked on the logit channel through the tail-preserving composition (plan text between the premise and the fixed ` Question: Who is higher in rank? Answer:` tail — placement A), cleared every apparatus gate that killed EXP117/EXP119 (tokenizer [-3:] identity 60/60, Phase 0a planner-valid 10/10, Phase-0b identity + G1 10/10; the EXP119 structural break does not recur under placement A) but died one layer deeper, at the readout-mass degeneracy gate: on 22/60 items the plan-inserted arm drove the summed post-softmax mass on the two pinned entity tokens to 0.000142–0.008571 (< 0.01 — the distribution concentrates elsewhere at the final position) while the baseline arm never dropped below 0.068 on the same items → **n_valid = 38/60 < 48 → RUN-INVALID (elicitation-failure gate)** (independent exact-artifact verdict review LOG-4645 — QUALIFY: verdict stands on the exact artifacts, one documentation caveat — the report's "second independent full run reproduced n_valid = 38" is unverifiable from retained artifacts, corrected by **erratum (LOG-4646)**; the verified claim is n_valid=38/60 recomputed independently from final-run artifacts, deterministic re-read ×2 byte-identical). Invariant under the stricter sum ≥ 0.02 reading (30 < 48); baseline reproduction 60/60 vs EXP112's archived readout; baseline variation distinct=2/minority=27 (gate passed); per Law #9 no McNemar table was read — no verdict smuggled. **H11's planning hypothesis is now untested across three distinct apparatus failure modes** (EXP117 generation, EXP119 tokenization identity, EXP121 plan-arm G1 collapse) — zero decision data. The one licensed upside, honestly fenced: placement A is a candidate adaptive-loop component for the plan-text pipeline — the token-asymmetry confound stands disclosed, not removed, so no planning-vs-compute attribution is licensed. **Apparatus failure, not a hypothesis failure.** **The day's tally: two CONTINUEs (EXP111, EXP120 — both bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), eight RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121 — all bound), one precision certification (EXP110, bound).** The capability column stays at zero.
 
+**Update 2026-09-29:** EXP122 (H16/POSITION-CUE) — **CONTINUE** — the
+position-cue dissection EXP111/EXP120's trained-head signal needed: does
+the head read the target's domain-set identity, or merely its sentence
+position? The pinned H5 discipline ran verbatim on a *third, independently
+constructed* bench (bench 3: 60 items, four 15-item cells, fresh
+animal/fruit entity sets disjoint from benches 1/2, new verb families
+"ranks above/below" and "dominates/is dominated by") with the position
+scramble built into the construction — the target's final sentence
+position balanced **15/15 within each label class** (corr = 0.0), so
+position carries no label information; all construction gates passed
+(G-C1 32/60 ≤ 36/60; position-scramble gate 30/60 ≤ 36/60; G-C2
+|Pearson| = 0.0322 ≤ 0.10 — no bench-1 labels or embeddings entered the
+analysis (Law #13); G-C3 QUESTION_SUFFIX byte-exact; LOG-331 pin before
+AND after all 60 fresh CPU extractions, Δθ=0): **test 27/30 = 0.9000**
+(per-cell 6/8, 7/7, 7/7, 7/8; acc(F)=0.8667, acc(T)=0.9333),
+**G = −0.0667 < 0.30** → the registered CONTINUE branch fires
+(LOG-4653 execution). The independent exact-artifact verdict review
+(LOG-4654 — BIND, no caveat) recomputed the head test from scratch —
+27/30, per-cell, G, all match — and independently verified the scramble
+from the canonical bench JSON (0/60 label mismatches, corr 0.0). Exact
+one-sided p = **4.215e-06**, executor-computed (defect class (a) honored).
+**Honest placement:** the output-side readout room's positive is now a
+three-bench observation of the identity-readout signal *with position
+decorrelated* — the subject-position-detector alternative is excluded —
+but it remains **boundary-science decodability, not capability**:
+correlation, not steering; no decision flips moved; the cross-bench
+statistical-comparison fence was honored (each bench's numbers stated
+descriptively, no test between benches); EXP111's and EXP120's
+observations restated, never re-adjudicated (Law #8); fences: no
+capability, no generality beyond the three benches/layer/model, no
+re-licensing of H1/H4 or closed families, novelty N1. H11's planning
+hypothesis remains untested across the three apparatus failure modes
+(EXP117 generation, EXP119 tokenization identity, EXP121 plan-arm G1
+collapse) — zero decision data. **The day's tally: three CONTINUEs
+(EXP111 — bound; EXP120 — bound, qualified; EXP122 — bound), one HELD
+(EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs
+(EXP107, EXP114 — both bound), eight RUN-INVALIDs (EXP108, EXP109,
+EXP115, EXP116, EXP117, EXP118, EXP119, EXP121 — all bound), one
+precision certification (EXP110, bound).** The capability column stays at
+zero.
+
 **What closes it.** The §D2 six-condition bar: per-instance construction,
 transfer-validated evaluator, matched-compute wins over ∇-Reasoner /
 Activation-LQR / Meta-Reasoner / DEER / LatentMAS plus the pinned M15
