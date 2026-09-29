@@ -28,7 +28,7 @@ repo-artifact-verified (§3).
 | Inference-time search (coverage) | **LLM-Monkeys**: coverage scales log-linearly over 4 orders of magnitude; SWE-bench Lite 15.9%→56% at 250 samples (verifier-gated) | G/E/S/T loop: never discriminatingly tested; E-validity [CONJECTURE] | **A working scaling law vs an untested formulation.** |
 | Search + self-evaluation (planning) | **ToT**: Game of 24, GPT-4: 4%→74% (BFS b=5, depth 3) | No planning/search result; EXP068 retired as-signed (Law #15 FAIL) | **4%→74% vs no result.** |
 | Cheap decoding-time aggregation | **Self-consistency**: GSM8K +17.9% (PaLM-540B 56.5%→74.4%, 40 paths, majority vote) | EXP056 autonomous selection: +4pp, p=0.25, **not significant** | **+17.9pp significant vs +4pp non-significant.** |
-| Static steering, decision flips | **ITI**: Alpaca TruthfulQA 32.5%→65.1% (+32.6pp) via label-trained head probes (NeurIPS 2023) | EXP077: **ΔM=0, p=1.0, N=60** (410m/L20) — five static rooms dead; **EXP093: the shared L11 task direction is also ΔM=0, p=1.0 (b=c=0)** — causal inertness, not measurement failure; the L20 boundary generalizes: **information ≠ influence**. G1 killed the QK-subspace mechanism. **S5-2** (LOG-4392): per-arm 95% upper **4.87%** (n=60, 0/60) — effects ≥4.87% dead on every bench; the skeptic's 1–5% "small real effect" band NOT killed at $0 (the 1–4.87% band is the declared blind spot); grand pooled 0.38% (0/780) assumes across-arm exchangeability. **S5-3** (LOG-4393): 0/8 decode probes clear the bar → EXP077 variants never-decodable, not decodable-yet-inert (instrument LIVE on synthetic D1a). **EXP106→EXP107** (LOG-4534/4540): the trained output-side head's **60/60** disjoint-bench transfer reading was **killed as a template artifact** (34/60, p=0.1831 — original-word cells 30/30, flipped-word cells 4/30; GPU head-training proposal void). **EXP110** (LOG-4558): the EXP105 KILL-at-step-9 verdict is **precision-certified under weight-only INT8 fake-quantization** (6/7 tiers, structural intact; T6 O 0.5714→0.5000 as a bounded precision effect) — boundary-science, not capability; the I2′ KILL stands. **EXP111** (H5/LFH-TD, LOG-4568): trained L2-logistic head on the EXP107 **template-decorrelated** bench (H3's re-licensed attempt under the kill-test's own discipline): **24/30 = 0.8000, one-sided p=0.00072** (independent review LOG-4569 QUALIFIED — required footnote: the report's 0.0014 is the two-sided value; one-sided 0.00072, descriptive-only, no branch affected), **G=0.0000** (acc(F)=acc(T)=0.8000, far below the 0.30 kill threshold — no template-detector signature) → **CONTINUE** — the program's first output-side result to survive adversarial testing. The GPU head-training proposal voided by EXP107 is re-licensed under decorrelated-bench discipline (still founder-hardware-gated). **Boundary-science decodability entry, NOT capability** — one layer-20 correlation on one n=30 bench; capability needs downstream causal tests. | **+32.6pp (label-trained probes) vs exactly zero at two layers. The 60/60 trained-readout signal died as a template artifact; the boundary holds under INT8 simulation but nothing steers. One above-chance head signal (EXP111, 24/30 on the decorrelated bench) survived adversarial testing — decodability, not steering.** |
+| Static steering, decision flips | **ITI**: Alpaca TruthfulQA 32.5%→65.1% (+32.6pp) via label-trained head probes (NeurIPS 2023) | EXP077: **ΔM=0, p=1.0, N=60** (410m/L20) — five static rooms dead; **EXP093: the shared L11 task direction is also ΔM=0, p=1.0 (b=c=0)** — causal inertness, not measurement failure; the L20 boundary generalizes: **information ≠ influence**. G1 killed the QK-subspace mechanism. **S5-2** (LOG-4392): per-arm 95% upper **4.87%** (n=60, 0/60) — effects ≥4.87% dead on every bench; the skeptic's 1–5% "small real effect" band NOT killed at $0 (the 1–4.87% band is the declared blind spot); grand pooled 0.38% (0/780) assumes across-arm exchangeability. **S5-3** (LOG-4393): 0/8 decode probes clear the bar → EXP077 variants never-decodable, not decodable-yet-inert (instrument LIVE on synthetic D1a). **EXP106→EXP107** (LOG-4534/4540): the trained output-side head's **60/60** disjoint-bench transfer reading was **killed as a template artifact** (34/60, p=0.1831 — original-word cells 30/30, flipped-word cells 4/30; GPU head-training proposal void). **EXP110** (LOG-4558): the EXP105 KILL-at-step-9 verdict is **precision-certified under weight-only INT8 fake-quantization** (6/7 tiers, structural intact; T6 O 0.5714→0.5000 as a bounded precision effect) — boundary-science, not capability; the I2′ KILL stands. **EXP111** (H5/LFH-TD, LOG-4568): trained L2-logistic head on the EXP107 **template-decorrelated** bench (H3's re-licensed attempt under the kill-test's own discipline): **24/30 = 0.8000, one-sided p=0.00072** (independent review LOG-4569 QUALIFIED — required footnote: the report's 0.0014 is the two-sided value; one-sided 0.00072, descriptive-only, no branch affected), **G=0.0000** (acc(F)=acc(T)=0.8000, far below the 0.30 kill threshold — no template-detector signature) → **CONTINUE** — the program's first output-side result to survive adversarial testing. The GPU head-training proposal voided by EXP107 is re-licensed under decorrelated-bench discipline (still founder-hardware-gated). **Boundary-science decodability entry, NOT capability** — one layer-20 correlation on one n=30 bench; capability needs downstream causal tests. | **+32.6pp (label-trained probes) vs exactly zero at two layers. The 60/60 trained-readout signal died as a template artifact; the boundary holds under INT8 simulation but nothing steers. One above-chance head signal (EXP111, 24/30 on the decorrelated bench) survived adversarial testing — and EXP120 replicated it on a second independently constructed decorrelated bench (25/30, G=−0.2000; independent review QUALIFIED, verdict stands) — decodability on two benches, not steering.** |
 | Context-dependent steering | **SVF** (arXiv:2602.01654, Feb 2026): per-activation steering fields, multi-layer coordinated — *no headline number in the checked abstract* | Gated/conditional variants of our operator: **never tested** (survived EXP077's narrow kill by exemption, not evidence) | **A working 2026 method vs an untested exemption.** |
 | Closed-loop representation control | **Activation-LQR**: LTV linearization + LQR feedback with tracking-error bounds, no training — *existence proof, no headline accuracy number in abstract* | CLLC candidate: narrowed distinction only, **never tested** | **Guarantees vs a narrowed claim.** |
 | Selective-abstention reliability | **NoisyCoconut** (TMLR June 2026): unanimous latent-path agreement → error <15% on math reasoning via selective abstention | No reliability result of any kind | **<15% error vs no measurement.** |
@@ -303,6 +303,8 @@ The same columns. Nothing cherry-picked; the demotions are stated first.
 | **EXP116** — **RUN-INVALID**: honesty instrument with priming-protocol (P5) generation-based self-reports (H10/HDI-PRIM) | Priming-protocol self-report generations on the EXP107 template-decorrelated bench; single-block mid-sentence priming template (zero exemplar blocks — the EXP115 recitation pathology structurally blocked); registered G1/G2 gates before metrics; fidelity vs archived EXP112 decisions | pythia-410m base (frozen; 60 greedy generations, max_new_tokens=8; LOG-331 pin before AND after, Δθ=0); archived EXP112 decisions sha256 independently re-verified; bench pin `e91b302f…4f5` | **n_unparseable = 37/60 ≥ 7 → G1 FIRED** — new, *distinct* failure mode: tail echo (27 of the 37 unparseable echo the unfinished priming sentence `"\n\nThe entity higher in rank is"` verbatim; **0/60 generations contain `Premise:`** — recitation confirmed absent). G2 passed (moot). Fidelity **null** — not wrong, *absent*, exactly as the pre-reg requires. Prompts byte-exact: end mid-sentence with `is:`, exactly one `Premise:`, zero exemplar blocks. Shape-change risk disclosed in the pre-reg (§3.3, §8) — P5's 60/60 clearance was on the single-letter shape; this RUN-INVALID is the disclosed risk materializing | 60 generations, CPU, $0 | N/A (apparatus) | — (instrument never tested) | Y | **RUN-INVALID (apparatus, bound)** — two DIFFERENT apparatus failures on the same bench (recitation vs tail echo); **the generation-level honesty instrument has no EXP113-cleared protocol left on the entity-name shape** — P2 dead (EXP115), P5 dead (EXP116); the hypothesis was never tested. H6's logit-level HELD (41/60) stands alone as the only honesty signal. Reviewer note (non-binding): P4 (repetition penalty) cleared T1-only and was never in the named protocol set — future-proposal material, not a defect | LOG-4602; `research/experiments/EXP116_HDIPRIM_REPORT_2026-09-29.md`; independent verdict review LOG-4603 (BIND — no caveat) |
 | **EXP117** — **RUN-INVALID**: planner/executor pipeline with P2-primed decision slot, Phase-0 gated (H11/PTTSC-GEN) | Plan-conditioned planner/executor pipeline vs baseline on the EXP089 bench; Phase-0a recitation gate + Phase-0b decision-channel mini-gate fire before the full run | pythia-410m base (frozen; 20 Phase-0 generations, greedy; LOG-331 pin matched pre-run, Δθ=0); planner prompts byte-verified **0/60 mismatches** against the signed `exp113_run.py` T2-P2 construction (EXP113's raw JSON stores no prompts — disclosed honestly); 20/20 generations, 0 exceptions | **Phase 0b: 0/10 parseable < 8/10 → FIRED** — failure mode: entity-name enumeration (model lists entities, e.g. `'\n\n1. Jupiter\n\n2. Mars\n\n3. Venus\n'`, instead of naming one). Phase 0a literal §3.7 gate 0/10 (≥6 → did NOT fire). Full run NOT licensed; McNemar never reached. **4th consecutive entity-name-generation-slot failure** on this shape (EXP109 80/80 sampled; EXP115 38/60 recitation; EXP116 37/60 tail echo; EXP117 0/10 enumeration). **Protocol-defect discovery:** §3.7's literal recitation definition is structurally inert for *content* recitation (marker-stripped extraction vs marker-prefixed exemplar lines — content diagnostic 10/10 ≥2 recitations while the literal gate scored 0/10) — adjudicated **REAL but non-decisive** (gate applied as written; 0b fired independently; RUN-INVALID overdetermined). Binding lesson: **no future protocol may reuse the §3.7 definition** | 20 generations, CPU, $0 | N/A (apparatus) | — (planning question never tested) | Y | **RUN-INVALID (apparatus, bound)** — no verdict smuggled; H4 stays RUN-INVALID-from-EXP109; EXP109/115/116 statuses unchanged; H6's logit-level HELD stands alone as the only honesty signal | LOG-4609; `research/experiments/EXP117_PTTSCGEN_REPORT_2026-09-29.md`; independent verdict review LOG-4610 (BIND — no caveat) |
 | **EXP118** — **RUN-INVALID**: logit-lens layer-locality of the H6 honesty signal (H13/HDI-LOC) | H6 apparatus extended per-layer via the logit lens (final LayerNorm + unembedding, no bias; argmax over the two pinned entity-name token ids; ties → E2); pre-registered contrast C = mean(fidelity L16–L24) − mean(fidelity L0–L8); per-site degeneracy diagnostic (mean post-softmax mass on (t1,t2) < 0.01) + run-validity rule (<5 non-degenerate sites in either window → RUN-INVALID); 41/60-exact consistency pin on EXP112's archived decision column (HALT-on-drift) | pythia-410m base (frozen; 1080 forwards, 60 items × 18 layer sites, CPU, $0; LOG-331 pin matched before AND after all forwards, Δθ=0); consistency pin PASSED (lens@L24 byte-identical 60/60 to EXP112's archived readout column, 41/60 = 0.6833 exactly); BPE single-token 120/120; all provenance pins MATCH | **Early window 0/9 non-degenerate < 5/9 → RUN-INVALID** — the logit lens cannot speak at early layers on this bench (early max mass 0.000022, ~450× below the 0.01 threshold; entity-name tokens acquire unembedding mass only in the final ~5 layers). Per Law #9, **no per-site fidelity and no contrast C was read** — no verdict smuggled on the late-locality hypothesis. **Integrity win:** the executor's first attempt double-normalized at L24 → 5/60 argmax flips; the pre-registered consistency pin HALTed that attempt and arbitrated the fix (corrected lens: lm_head(h_24) at L24 == out.logits to 4.4e-06). **Report-factual defect** (verdict-untouched): report §10/§11 claimed `exp118_worksheet.json` was written — false (script writes artifacts only after the validity-rule exit; filesystem-wide find: no such file) — corrected by **erratum LOG-4621** | 1080 forwards, CPU, $0 | N/A (apparatus) | — (late-locality question never tested) | Y | **RUN-INVALID (apparatus, bound)** — review LOG-4620 QUALIFY (verdict stands, one binding caveat recorded as erratum); no verdict smuggled; EXP112's HELD (41/60) stands unchanged; H6's logit-level HELD stands alone as the only honesty signal, with no layer foothold | LOG-4619/4620/4621; `research/experiments/EXP118_HDILOC_REPORT_2026-09-29.md`; independent verdict review LOG-4620 (QUALIFY — caveat: worksheet-claim erratum) |
+| **EXP119** — **RUN-INVALID**: planning hypothesis re-asked on the zero-generation logit channel (H14/PTTSC-LOGIT) | Plan-conditioned planner/executor pipeline vs baseline on the EXP107 template-decorrelated bench; Phase-0a planner bench-transfer + Phase-0b tokenization-identity pin (plan-tail [-3:] vs fixed `? Answer:` baseline-tail [-3:]; mismatch on ANY item → RUN-INVALID immediately); full run never licensed | pythia-410m base (frozen; 10 Phase-0a planner generations only; LOG-331 pin matched pre-contact, Δθ=0); tokenizer-only mechanism replication (no model contact) | **Phase 0b tokenization-identity mismatch on item 0: plan tail `[444, 37741, 27]` vs baseline `[32, 37741, 27]`** → RUN-INVALID; zero Phase-0b forwards ran; no metric read (Law #9); tuple[0] never touched (Law #7). Structural mechanism (independent review): any plan block whose final outline doesn't end in `?` breaks the identity — the §0(6) breaking point ("tokenization effects break the channel") realized exactly as anticipated. Phase 0a 10/10 planner-valid (gate did not fire) — apparatus observation: T2-P2 transfers to EXP107 as a plan elicitor | 10 generations, CPU, $0 | N/A (apparatus) | — (planning question never tested) | Y | **RUN-INVALID (apparatus, bound)** — H11's planning hypothesis now untested on BOTH EXP107 decision channels (generation dead per EXP117, plan-prefix logit slot dead per EXP119); licenses nothing, retires only the exact tested composition (T2-P2 plan block + [-3:] identity); EXP112's HELD unchanged. Binding lesson: future execution lanes must persist raw generation records before any verdict is written (EXP119's Phase-0a texts were not persisted; verdict intact) | LOG-4627/4628; `research/experiments/EXP119_PTTSCLOGIT_REPORT_2026-09-29.md`; independent verdict review LOG-4628 (BIND — no caveat) |
+| **EXP120** — **CONTINUE (QUALIFIED)**: EXP111's trained-head signal replicates on a second independently constructed template-decorrelated bench (H15/LFH-GEN2) | Trained L2-logistic head (C=1.0, lbfgs, no tuning) on frozen L20 final-token embeddings of a NEW 60-item bench (bench 2: four 15-item cells, new verb families "surpasses"/"is below", new river+tree entity sets, no shared template vocabulary beyond ordinary English function words); stratified 30/30 train/test split (seed 20260929, ID overlap 0) — the pinned H5 discipline verbatim; registered bars: ≥20/30 AND G<0.30 → CONTINUE | pythia-410m / L20 (frozen; 60 fresh CPU forwards; LOG-331 pin before AND after, Δθ=0) | Construction gates ALL pass: design-time assertions; G-C1 pure-template detector **30/60 ≤ 36/60** (chance-level); G-C2 \|Pearson\| = **0.0475 ≤ 0.10** (no bench-1 labels/embeddings enter the analysis — Law #13); G-C3 QUESTION_SUFFIX byte-exact + deterministic rebuild; canonical pin `1d7d22c0…82fb2eee`. **Test 25/30 = 0.8333** (per-cell 4/8, 7/7, 7/7, 7/8; acc(F)=0.7333, acc(T)=0.9333), **G = −0.2000 < 0.30** → CONTINUE. Exact one-sided binomial p = **0.00016** (report's hand-written "≈0.0009" corrected by erratum LOG-4635; conservative error, verdict-unaffected). Determinism re-fit byte-identical; all seven record-keeping artifacts hash-pinned before the verdict; run-1 JSON tuple-key crash repaired by full deterministic re-run (byte-identical hashes, both logs preserved) | 60 extractions + sklearn head fit, $0 CPU, torch 2.14.0+cpu / transformers 5.17.0 / sklearn 1.9.1 | Train-probes (head fit on bench-2 train split, applied to held-out test items) | Y (the head's read of bench 2; the generality hypothesis: EXP111 replicates) | Y | **CONTINUE (bound, QUALIFIED)** — the output-side readout room's positive is now a two-bench observation of the same trained-readout signal (layer-20 subject-position cue); **boundary-science decodability entry, NOT capability** — correlation, not steering; no decision flips moved; no cross-bench statistical comparison (unlicensed fence honored); EXP111's bench-1 observation restated, never re-adjudicated (Law #8); fences: no capability, no generality beyond the two benches/layer/model, no re-licensing of H1/H4 or closed families, novelty N1. New defect class recorded: **report authors hand-writing p-values instead of executor-computed values** — future pre-registrations must pin p-values as executor-computed | LOG-4633 (execution); `research/experiments/EXP120_LFHGEN2_REPORT_2026-09-29.md` (§10 erratum LOG-4635); independent verdict review LOG-4634 (QUALIFY — verdict stands, p-value caveat) |
 
 ### 3.2 The program's position, stated without softening
 
@@ -478,6 +480,45 @@ steering; the label-free race stays tied at zero. One n=30 bench does
 not move the capability scoreboard.**
 
 **H13 (EXP118)** — asked WHERE the H6 honesty signal lives (H6's apparatus extended per-layer via the zero-training logit lens) — died at the pre-registered run-validity rule without ever testing the late-locality hypothesis (independent exact-artifact verdict review LOG-4620 — QUALIFY: the verdict stands on the exact artifacts, with one binding caveat recorded below). Early window (L0–L8) **0/9 non-degenerate** (required ≥5): the logit lens cannot speak at early layers on this bench — entity-name tokens acquire unembedding mass only in the final ~5 layers (early max mass 0.000022, ~450× below the 0.01 threshold). Per Law #9, **no per-site fidelity and no contrast C was read** — no verdict smuggled. The protocol's integrity proved itself: the executor's first attempt double-normalized at L24 (5/60 argmax flips), and the pre-registered 41/60-exact consistency pin HALTed that attempt and arbitrated the corrected lens — a genuine apparatus win, not a finding about the model. The caveat: the report's §10/§11 claimed `exp118_worksheet.json` was written — false (the script writes artifacts only after the validity-rule exit; a filesystem-wide find returns no such file) — corrected by **erratum (LOG-4621)**; verdict untouched. Apparatus failure, not a hypothesis failure. H6's logit-level HELD (41/60) stands alone as the only honesty signal — with no layer foothold yet, and no larger-N rescue, no different window, and no different lens is licensed (all barred). **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.**
+
+**H14 (EXP119)** — re-asked H11's planning question on the proven zero-generation logit channel, and the channel itself died at the apparatus layer (independent exact-artifact verdict review LOG-4628 — BIND, no caveat). The pre-registered Phase-0b tokenization-identity pin (plan-tail [-3:] must equal the baseline's fixed `? Answer:` tail [-3:]) failed on the first probe item: plan tail `[444, 37741, 27]` vs baseline `[32, 37741, 27]` — the plan block's final outline ends in a word, not `?`, so the final token run differs. The review replicated this tokenizer-only (no model contact) and adjudicated it **structural, not item-specific**: any plan block whose final outline does not end in `?` breaks the pinned identity — the pre-reg's §0(6) breaking point ("tokenization effects break the channel") realized exactly as anticipated. Zero Phase-0b forwards ran; per Law #9 no metric was read and tuple[0] was never touched (Law #7) — no verdict smuggled; the full run was never licensed. Consequence: **H11's planning hypothesis is now untested on both EXP107 decision channels** (the generation channel died in EXP117, the plan-prefix logit slot died here). Small positive, honestly framed: Phase 0a scored **10/10 planner-valid** (gate did not fire) — T2-P2 transfers to the EXP107 bench as a plan elicitor (apparatus observation, not a capability claim). The binding record-keeping lesson: the execution lane did not persist raw Phase-0a generation texts (counts and diagnostics only — verdict intact, record-keeping insufficient); **future execution lanes must persist raw generation records before any verdict is written.** Apparatus failure, not a hypothesis failure. H6's logit-level HELD (41/60) stands alone as the only honesty signal. **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.**
+
+**H15 (EXP120)** — the generality test the innovation sprint
+pre-registered for EXP111's output-side positive: does the trained head
+replicate on a *second, independently constructed* template-decorrelated
+bench? Yes, with the license exactly as written (independent
+exact-artifact verdict review LOG-4634 — QUALIFY: the registered
+CONTINUE stands, one documentation-precision caveat). Bench 2 passed
+every construction gate — design-time assertions (60 items, four 15-item
+cells, opposite verb families on flipped items, `exp120_*` namespace
+disjoint from bench 1), G-C1 pure-template detector 30/60 ≤ 36/60, G-C2
+|Pearson| = 0.0475 ≤ 0.10 (**no bench-1 labels or embeddings entered
+the analysis — the review verified the Law #13 fence in the
+implementation, not just the claim**), G-C3 byte-exact decomposition —
+and the pinned H5 protocol ran verbatim: **test 25/30 = 0.8333 with G =
+−0.2000 < 0.30**, firing the registered ≥20/30-with-G<0.30 CONTINUE
+branch (LOG-4633 execution; backbone LOG-331 pin before AND after all 60
+fresh CPU extractions, Δθ=0; determinism re-fit byte-identical). The
+review recomputed the head test from scratch with numpy — 25/30,
+per-cell descriptives, and G all match. The single caveat: the report's
+hand-written "≈0.0009" p-value for 25/30 is wrong — exact one-sided is
+**0.00016** — an error in the *conservative* direction that cannot have
+licensed the verdict, corrected by **erratum (LOG-4635)**; the
+executor never computed a p. The unlicensed cross-bench
+statistical-comparison fence was honored (each bench's numbers stated
+descriptively, no test between bench 1 and bench 2), and EXP111's
+bench-1 observation was restated, never re-adjudicated (Law #8). The
+binding apparatus-definition lesson from this cycle: **report authors
+hand-writing p-values instead of executor-computed values is now a
+defect class** — future pre-registrations must pin p-values as
+executor-computed (the run-1 JSON tuple-key crash was itself repaired
+honestly: full deterministic re-run, byte-identical artifact hashes,
+both logs preserved). Honest placement: the output-side readout room's
+positive is now a **two-bench observation** — a trained L2 head
+extracting the subject-position cue at layer 20 on two independently
+constructed benches — but it is still **boundary-science decodability,
+not capability**: correlation, not steering; no decision flips moved;
+the label-free race stays tied at zero; EXP112's HELD untouched.
 
 [INFERENCE]: plotted on the same axes, SCBI does not trail the frontier by a
 margin — it trails by *category*: the frontier has L1–L2 capability results;
@@ -751,6 +792,55 @@ nor a kill. **Capability scoreboard: unchanged — still zero positive
 signals for autonomous steering; the label-free race stays tied at
 zero.** No literature re-check this cycle (next due 2026-10-23).
 
+**v2.5 delta [FACT], 2026-09-29:** plotted **EXP120 (H15/LFH-GEN2)** —
+**QUALIFIED CONTINUE** (independent exact-artifact verdict review
+LOG-4634 — QUALIFY: the registered CONTINUE stands, one
+documentation-precision caveat). EXP111's trained-head signal replicates
+on an independently constructed, template-decorrelated second bench:
+bench 2 (60 fresh items, four 15-item cells, new verb families
+"surpasses"/"is below" replacing bench 1's "outranks"/"is lower than",
+new river+tree entity sets, no shared template vocabulary beyond
+ordinary English function words) passed every construction gate —
+design-time assertions; G-C1 pure-template detector **30/60 ≤ 36/60**
+(chance-level, by construction); G-C2 |Pearson| = **0.0475 ≤ 0.10** (no
+bench-1 labels or embeddings entered the analysis — the Law #13 fence
+was verified in the implementation, not just asserted); G-C3
+QUESTION_SUFFIX byte-exact + deterministic rebuild ✓; canonical pin
+`1d7d22c0…82fb2eee` — and the pinned H5 protocol ran verbatim (seed
+20260929, stratified 30/30 split, ID overlap 0; LogisticRegression(l2,
+C=1.0, lbfgs, max_iter=1000), no tuning, one shot): **test 25/30 =
+0.8333** (per-cell 4/8, 7/7, 7/7, 7/8; acc(F)=0.7333, acc(T)=0.9333),
+**G = −0.2000 < 0.30** → ≥20/30 with G<0.30 fires the registered
+CONTINUE branch (LOG-4633 execution; backbone LOG-331 pin before AND
+after all 60 fresh CPU extractions, Δθ=0; determinism re-fit
+byte-identical). The review recomputed the head test from scratch with
+numpy (25/30 ✓, per-cell ✓, G ✓). The caveat: the report's hand-written
+descriptive p ("≈0.0009" for 25/30) is wrong — exact one-sided is
+0.00016, two-sided 0.00032 (the error understates the evidence and cannot
+have licensed the verdict, since the registered bar is count-based) —
+corrected by **erratum (LOG-4635)**; verdict untouched. The unlicensed
+cross-bench statistical-comparison fence was honored (each bench's
+numbers stated descriptively, no test between bench 1 and bench 2), and
+EXP111's bench-1 observation was restated, never re-adjudicated (Law
+#8). **Record-keeping defect class recorded:** EXP120's §7 p was never
+computed by the executor — the report author hand-wrote it; **future
+pre-registrations must pin p-values as executor-computed.** **Honest
+placement:** the output-side readout room's positive is now a two-bench
+observation — a trained head extracting the subject-position cue at layer
+20 on two independently constructed benches — but it remains
+**boundary-science decodability, NOT capability**: correlation, not
+steering; no decision flips moved; the label-free race stays tied at
+zero; EXP112's HELD untouched. **The day's tally, honestly: two
+CONTINUEs (EXP111, EXP120 — both bound), one HELD (EXP112, bound), one
+apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both
+bound), seven RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117,
+EXP118, EXP119 — all bound), one precision certification (EXP110,
+bound).** **Capability scoreboard: unchanged — still zero positive
+signals for autonomous steering; the label-free race stays tied at
+zero.** No literature re-check this cycle (next due 2026-10-23).
+
+**v2.4 delta [FACT], 2026-09-29:** plotted **EXP119 (H14/PTTSC-LOGIT)** — **RUN-INVALID** (independent exact-artifact verdict review LOG-4628 — BIND, no caveat). The H11 planning question, re-asked on the proven zero-generation logit channel, died at the pre-registered Phase-0b tokenization-identity pin on the first probe item: plan tail `[444, 37741, 27]` vs baseline `[32, 37741, 27]` — the plan block's final outline ends in a word, not `?`, so the final token run differs from the baseline's fixed `? Answer:` tail. The review replicated the mechanism tokenizer-only (no model contact) and adjudicated it **structural, not item-specific**: any plan block whose final outline doesn't end in `?` breaks the pinned [-3:] identity — the pre-reg's §0(6) breaking point ("tokenization effects break the channel") realized exactly as anticipated. **Zero Phase-0b forwards ran; n_valid, correctness, and McNemar were never computed; tuple[0] never touched** (Law #7) — no verdict smuggled; the full run was never licensed. **H11's planning hypothesis is now untested on both EXP107 decision channels** (generation dead per EXP117, plan-prefix logit slot dead per EXP119). The positive apparatus note: Phase 0a scored **10/10 planner-valid** (gate did not fire) — T2-P2 transfers to the EXP107 bench as a plan elicitor (apparatus observation, not a capability claim). **Record-keeping binding lesson:** EXP119's raw Phase-0a generation texts were not persisted (counts/diagnostics only — verdict intact, record-keeping insufficient); **future execution lanes must persist raw generation records before any verdict is written.** **Apparatus failure, not a hypothesis failure.** **The day's tally, honestly: one CONTINUE (EXP111, bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), SEVEN RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119 — all bound), one precision certification (EXP110, bound).** **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.** No literature re-check this cycle (next due 2026-10-23).
+
 **v2.3 delta [FACT], 2026-09-29:** plotted **EXP118 (H13/HDI-LOC)** — **RUN-INVALID** (independent exact-artifact verdict review LOG-4620 — QUALIFY: the verdict stands on the exact artifacts, one binding caveat recorded as erratum LOG-4621). The layer-locality question (where does EXP112's 41/60 HELD fidelity live, via the zero-training logit lens across 18 layer sites) never reached its metric: the pre-registered run-validity rule fired on the early window — **0/9 non-degenerate sites** (required ≥5) — the logit lens cannot speak at early layers on this bench. Entity-name tokens acquire unembedding mass only in the final ~5 layers (early max mass 0.000022, ~450× below the 0.01 threshold). Per Law #9 **no per-site fidelity and no contrast C was read** — no verdict smuggled; EXP112's HELD stands unchanged. The consistency pin PASSED (lens@L24 byte-identical 60/60 to EXP112's archived column, 41/60 exactly), and the pin proved its worth: the executor's first attempt double-normalized at L24 (5/60 argmax flips) and the pin HALTed it — the corrected lens is what the registered protocol accepted. **Apparatus failure, not a hypothesis failure.** The caveat: the report's §10/§11 falsely claimed `exp118_worksheet.json` was written (the script writes artifacts only after the validity-rule exit; filesystem-wide find: no such file) — corrected by erratum (LOG-4621); verdict untouched. **The day's tally, honestly: one CONTINUE (EXP111, bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), six RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118 — all bound), one precision certification (EXP110, bound).** **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.** No literature re-check this cycle (next due 2026-10-23).
 
 **v2.2 delta [FACT], 2026-09-29:** plotted **EXP117 (H11/PTTSC-GEN)** —
@@ -863,6 +953,64 @@ for this backbone under pinned protocols, a real methodological gain —
 still zero positive signals for autonomous steering; the label-free
 race stays tied at zero.** No literature re-check this cycle (next due
 2026-10-23).
+- v2.5 — 2026-09-29 (scoreboard-sync lane, LOG-4636): plotted **EXP120
+  (H15/LFH-GEN2)** — **QUALIFIED CONTINUE** (independent exact-artifact verdict
+  review LOG-4634 — QUALIFY: the registered CONTINUE stands, one
+  documentation-precision caveat). EXP111's trained-head signal replicates
+  on a second independently constructed template-decorrelated bench: all
+  construction gates pass (design-time assertions; G-C1 pure-template
+  detector 30/60 ≤ 36/60; G-C2 |Pearson| = 0.0475 ≤ 0.10 — no bench-1
+  labels or embeddings entered the analysis (Law #13, verified in the
+  implementation); G-C3 decomposition byte-exact; backbone LOG-331 before
+  AND after all 60 extractions, Δθ=0); the pinned H5 protocol ran verbatim
+  (seed 20260929, stratified 30/30 split, ID overlap 0;
+  LogisticRegression(l2, C=1.0, lbfgs, max_iter=1000), no tuning, one shot)
+  → **test 25/30 = 0.8333** (per-cell 4/8, 7/7, 7/7, 7/8),
+  **G = −0.2000 < 0.30** → CONTINUE (LOG-4633 execution). The review
+  recomputed the head test from scratch with numpy (25/30, per-cell, G —
+  all match). The caveat: the report's hand-written descriptive p
+  ("≈0.0009" for 25/30) is wrong — exact one-sided 0.00016, two-sided
+  0.00032 (conservative error, verdict-unaffected) — corrected by erratum
+  (LOG-4635). The output-side readout room's positive is now a two-bench
+  observation (layer-20 subject-position cue); **boundary-science
+  decodability, NOT capability** — correlation, not steering; no decision
+  flips moved; the label-free race stays tied at zero; EXP112's HELD
+  untouched. Cross-bench statistical comparison fence honored (no test
+  between bench 1 and bench 2); EXP111's bench-1 observation restated,
+  never re-adjudicated (Law #8). New defect class recorded: **report
+  authors hand-writing p-values instead of executor-computed values** —
+  future pre-registrations must pin p-values as executor-computed. §0
+  static-steering row + §3.1 row + §3.2 H15 paragraph added. **The day's
+  tally, honestly: two CONTINUEs (EXP111, EXP120 — both bound), one HELD
+  (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs
+  (EXP107, EXP114 — both bound), seven RUN-INVALIDs (EXP108, EXP109,
+  EXP115, EXP116, EXP117, EXP118, EXP119 — all bound), one precision
+  certification (EXP110, bound).** **Capability scoreboard: unchanged —
+  still zero positive signals for autonomous steering; the label-free race
+  stays tied at zero.** No literature re-check this cycle (next due
+  2026-10-23).
+- v2.4 — 2026-09-29 (scoreboard-sync lane, LOG-4629): plotted **EXP119
+  (H14/PTTSC-LOGIT)** — **RUN-INVALID** (independent exact-artifact verdict
+  review LOG-4628 — BIND, no caveat). The H11 planning question re-asked on
+  the zero-generation logit channel died at the pre-registered Phase-0b
+  tokenization-identity pin: plan tail `[444, 37741, 27]` vs baseline
+  `[32, 37741, 27]` on item 0 — structural (any plan block whose final
+  outline doesn't end in `?` breaks the pinned [-3:] identity), the §0(6)
+  breaking point ("tokenization effects break the channel") realized exactly
+  as anticipated; zero Phase-0b forwards ran, no metric read, tuple[0] never
+  touched. H11's planning hypothesis is now untested on both EXP107 decision
+  channels (generation dead per EXP117, plan-prefix logit slot dead per
+  EXP119). Phase 0a 10/10 planner-valid: T2-P2 transfers to EXP107 as a plan
+  elicitor (apparatus observation, not a capability claim). Binding
+  record-keeping lesson: future execution lanes must persist raw generation
+  records before any verdict is written (EXP119's Phase-0a texts were not
+  persisted; verdict intact). **Apparatus failure, not a hypothesis failure.**
+  The day's tally: one CONTINUE (EXP111), one HELD (EXP112), one apparatus
+  CONTINUE (EXP113), two KILLs (EXP107, EXP114), **seven RUN-INVALIDs
+  (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119)**, one precision
+  certification (EXP110). **Capability scoreboard: unchanged — still zero
+  positive signals for autonomous steering; the label-free race stays tied
+  at zero.** No literature re-check this cycle (next due 2026-10-23).
 - v2.3 — 2026-09-29 (scoreboard-sync lane, LOG-4622): plotted **EXP118
   (H13/HDI-LOC)** — **RUN-INVALID** (independent exact-artifact verdict
   review LOG-4620 — QUALIFY: the verdict stands, one binding caveat recorded

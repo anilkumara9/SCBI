@@ -160,6 +160,41 @@ precision certification (EXP110).** The capability column stays at zero.
 
 **Update 2026-09-29:** EXP118 (H13/HDI-LOC) — **RUN-INVALID** — the layer-locality question (where does EXP112's 41/60 HELD fidelity live, via the zero-training logit lens across 18 layer sites) never reached its metric: the pre-registered run-validity rule fired on the early window — **0/9 non-degenerate sites** (required ≥5) — the logit lens cannot speak at early layers on this bench (entity-name tokens acquire unembedding mass only in the final ~5 layers). Per Law #9 no per-site fidelity and no contrast C was read — no verdict smuggled; EXP112's HELD stands unchanged. The consistency pin PASSED (lens@L24 byte-identical 60/60 to EXP112's archived column, 41/60 exactly) and arbitrated the double-normalization fix on the executor's first attempt (5/60 argmax flips HALTed) — a genuine apparatus-integrity win, not a model finding. The independent exact-artifact verdict review (LOG-4620 — QUALIFY) bound one caveat: the report's §10/§11 falsely claimed `exp118_worksheet.json` was written — corrected by **erratum (LOG-4621)**; verdict untouched. **Apparatus failure, not a hypothesis failure.** **The day's tally: one CONTINUE (EXP111), one HELD (EXP112), one apparatus CONTINUE (EXP113), two KILLs (EXP107, EXP114), six RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118), one precision certification (EXP110).** The capability column stays at zero.
 
+**Update 2026-09-29:** EXP119 (H14/PTTSC-LOGIT) — **RUN-INVALID** — the H11 planning question re-asked on the proven zero-generation logit channel died at the pre-registered Phase-0b tokenization-identity pin: plan tail `[444, 37741, 27]` vs baseline `[32, 37741, 27]` on the first probe item — the plan block's final outline ends in a word, not `?`, so the final token run differs from the baseline's fixed `? Answer:` tail. The independent exact-artifact verdict review (LOG-4628 — BIND, no caveat) replicated the mechanism tokenizer-only (no model contact) and adjudicated it **structural, not item-specific**: any plan block whose final outline doesn't end in `?` breaks the pinned [-3:] identity — the pre-reg's §0(6) breaking point ("tokenization effects break the channel") realized exactly as anticipated. Zero Phase-0b forwards ran; per Law #9 no metric was read and tuple[0] was never touched (Law #7) — no verdict smuggled; the full run was never licensed. **H11's planning hypothesis is now untested on both EXP107 decision channels** (generation dead per EXP117, plan-prefix logit slot dead per EXP119). Small positive, honestly framed: Phase 0a scored **10/10 planner-valid** (gate did not fire) — T2-P2 transfers to the EXP107 bench as a plan elicitor (apparatus observation, not a capability claim). **Binding record-keeping lesson:** the execution lane did not persist raw Phase-0a generation texts (counts/diagnostics only — verdict intact, record-keeping insufficient); future execution lanes must persist raw generation records before any verdict is written. **Apparatus failure, not a hypothesis failure.** **The day's tally: one CONTINUE (EXP111), one HELD (EXP112), one apparatus CONTINUE (EXP113), two KILLs (EXP107, EXP114), seven RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119), one precision certification (EXP110).** The capability column stays at zero. **Update 2026-09-29:** EXP120 (H15/LFH-GEN2) — **QUALIFIED CONTINUE** —
+the generality test EXP111's output-side positive needed: the trained
+L2-logistic head replicates on a *second, independently constructed*
+template-decorrelated bench (60 fresh items, four 15-item cells, new verb
+families "surpasses"/"is below" replacing bench 1's "outranks"/"is lower
+than", new river+tree entity sets; all construction gates passed —
+G-C1 pure-template detector 30/60 ≤ 36/60, G-C2 |Pearson| = 0.0475 ≤ 0.10
+with no bench-1 labels or embeddings entering the analysis (Law #13,
+verified in the implementation), G-C3 decomposition byte-exact; LOG-331
+pin before AND after all 60 fresh CPU extractions, Δθ=0): **test 25/30 =
+0.8333** (per-cell 4/8, 7/7, 7/7, 7/8), **G = −0.2000 < 0.30** → the
+registered ≥20/30 with G<0.30 CONTINUE branch fires (LOG-4633 execution).
+The independent exact-artifact verdict review (LOG-4634 — QUALIFY)
+recomputed everything from scratch with numpy — 25/30, per-cell, G, all
+match — and bound one documentation-precision caveat: the report's
+hand-written "≈0.0009" p for 25/30 is wrong — exact one-sided is
+**0.00016** — an error in the conservative direction, corrected by
+**erratum (LOG-4635)**; the verdict never depended on it. The cross-bench
+statistical-comparison fence was honored (each bench's numbers stated
+descriptively, no test between bench 1 and bench 2), and EXP111's
+bench-1 observation was restated, never re-adjudicated (Law #8).
+**Honest placement:** the output-side readout room's positive is now a
+two-bench observation — a trained head extracting the subject-position
+cue at layer 20 on two independently constructed benches — but it remains
+**boundary-science decodability, not capability**: correlation, not
+steering; no decision flips moved. The defect class banked: **report
+authors hand-writing p-values instead of executor-computed values** —
+future pre-registrations must pin p-values as executor-computed. **The
+day's tally: two CONTINUEs (EXP111, EXP120 — both bound), one HELD
+(EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs
+(EXP107, EXP114 — both bound), seven RUN-INVALIDs (EXP108, EXP109,
+EXP115, EXP116, EXP117, EXP118, EXP119 — all bound), one precision
+certification (EXP110, bound).** The capability column stays at zero.
+H6's logit-level HELD (41/60) stands alone as the only honesty signal.
+
 **What closes it.** The §D2 six-condition bar: per-instance construction,
 transfer-validated evaluator, matched-compute wins over ∇-Reasoner /
 Activation-LQR / Meta-Reasoner / DEER / LatentMAS plus the pinned M15

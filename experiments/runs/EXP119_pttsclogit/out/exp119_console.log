@@ -1,0 +1,15 @@
+[10:22:26] ENV: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "sklearn": "1.9.1", "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m", "torch_num_threads_set": 2, "torch_num_threads_readback": 2, "seeds": {"torch": 0, "numpy": 0}, "device": "cpu", "dtype": "float32", "device_map": "cpu", "generation": {"do_sample": false, "max_new_tokens": 160}}
+[10:22:26] npz pins OK
+[10:22:26] bench pin OK: 60 items; schema + decomposition assertion pass (§3.1/§3.4)
+[10:22:26] archived EXP112 readout column loaded: 60 records
+[10:22:29] BPE single-token re-assertion: 120/120; token ids match EXP112 worksheet pins
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<03:16,  1.48it/s]Loading weights:   4%|▍         | 12/292 [00:00<00:13, 20.18it/s]Loading weights:  10%|█         | 30/292 [00:00<00:05, 49.69it/s]Loading weights:  14%|█▍        | 41/292 [00:01<00:04, 58.49it/s]Loading weights:  18%|█▊        | 54/292 [00:01<00:03, 67.41it/s]Loading weights:  25%|██▍       | 72/292 [00:01<00:02, 88.65it/s]Loading weights:  32%|███▏      | 92/292 [00:01<00:01, 111.53it/s]Loading weights:  36%|███▋      | 106/292 [00:01<00:01, 115.67it/s]Loading weights:  41%|████      | 120/292 [00:01<00:01, 111.82it/s]Loading weights:  46%|████▌     | 133/292 [00:01<00:01, 103.72it/s]Loading weights:  50%|█████     | 146/292 [00:01<00:01, 92.53it/s] Loading weights:  54%|█████▍    | 158/292 [00:02<00:01, 91.95it/s]Loading weights:  60%|█████▉    | 174/292 [00:02<00:01, 93.48it/s]Loading weights:  64%|██████▍   | 187/292 [00:02<00:01, 100.75it/s]Loading weights:  70%|██████▉   | 204/292 [00:02<00:00, 113.82it/s]Loading weights:  74%|███████▍  | 216/292 [00:02<00:00, 103.58it/s]Loading weights:  80%|████████  | 234/292 [00:02<00:00, 115.52it/s]Loading weights:  85%|████████▍ | 248/292 [00:02<00:00, 115.69it/s]Loading weights:  92%|█████████▏| 270/292 [00:03<00:00, 137.45it/s]Loading weights:  99%|█████████▊| 288/292 [00:03<00:00, 136.68it/s]Loading weights: 100%|██████████| 292/292 [00:03<00:00, 92.33it/s] 
+[10:22:36] backbone hash BEFORE: ec276abe3902fab0... (expect ec276abe3902fab0...)
+[10:22:36] planner prompt byte-identity vs EXP113 T2-P2 reference: 0/60 mismatches
+[10:22:36] Phase 0a: planner bench-transfer check on 10 probe items
+[10:28:16] Phase 0a: planner-valid = 10/10 (gate: <8 -> RUN-INVALID)
+[10:28:16] Phase 0a DIAGNOSTIC (not a gate): items with >=2 content-level recitations = 10/10
+[10:28:16] Phase 0b: logit slot with plan prefix on 10 probe items
+[10:28:16] FINAL VERDICT: RUN-INVALID (Phase 0b: tokenization mismatch on item 0: plan-tail [444, 37741, 27] vs base-tail [32, 37741, 27])
+wall time: 5.9 min

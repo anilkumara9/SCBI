@@ -1,0 +1,992 @@
+[
+ {
+  "derived_from": "exp120_river_2hop_0",
+  "domain": "river",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_river_2hop_0",
+  "phrasing": "A-first",
+  "premise": "Premise: Nile is below Thames. Amazon is below Nile.",
+  "prompt": "Premise: Nile is below Thames. Amazon is below Nile. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Thames",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_2hop_1",
+  "domain": "river",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_river_2hop_1",
+  "phrasing": "A-first",
+  "premise": "Premise: Ganges surpasses Thames. Thames surpasses Nile.",
+  "prompt": "Premise: Ganges surpasses Thames. Thames surpasses Nile. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Ganges",
+   "Thames",
+   "Nile"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_2hop_2",
+  "domain": "river",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_river_2hop_2",
+  "phrasing": "A-first",
+  "premise": "Premise: Ganges is below Yangtze. Thames is below Ganges.",
+  "prompt": "Premise: Ganges is below Yangtze. Thames is below Ganges. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Ganges",
+   "Thames"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_2hop_3",
+  "domain": "river",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_river_2hop_3",
+  "phrasing": "A-first",
+  "premise": "Premise: Yangtze surpasses Thames. Thames surpasses Amazon.",
+  "prompt": "Premise: Yangtze surpasses Thames. Thames surpasses Amazon. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Thames",
+   "Amazon"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_2hop_4",
+  "domain": "river",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_river_2hop_4",
+  "phrasing": "A-first",
+  "premise": "Premise: Nile is below Ganges. Amazon is below Nile.",
+  "prompt": "Premise: Nile is below Ganges. Amazon is below Nile. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Ganges",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_2hop_5",
+  "domain": "river",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_river_2hop_5",
+  "phrasing": "A-first",
+  "premise": "Premise: Yangtze surpasses Ganges. Ganges surpasses Nile.",
+  "prompt": "Premise: Yangtze surpasses Ganges. Ganges surpasses Nile. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Ganges",
+   "Nile"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_2hop_6",
+  "domain": "river",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_river_2hop_6",
+  "phrasing": "A-first",
+  "premise": "Premise: Thames is below Ganges. Amazon is below Thames.",
+  "prompt": "Premise: Thames is below Ganges. Amazon is below Thames. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Ganges",
+   "Thames",
+   "Amazon"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_2hop_7",
+  "domain": "river",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_river_2hop_7",
+  "phrasing": "A-first",
+  "premise": "Premise: Yangtze surpasses Thames. Thames surpasses Nile.",
+  "prompt": "Premise: Yangtze surpasses Thames. Thames surpasses Nile. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Thames",
+   "Nile"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_2hop_8",
+  "domain": "river",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_river_2hop_8",
+  "phrasing": "C-first",
+  "premise": "Premise: Amazon is below Ganges. Ganges is below Yangtze.",
+  "prompt": "Premise: Amazon is below Ganges. Ganges is below Yangtze. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Ganges",
+   "Amazon"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_river_2hop_9",
+  "domain": "river",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_river_2hop_9",
+  "phrasing": "C-first",
+  "premise": "Premise: Nile surpasses Amazon. Yangtze surpasses Nile.",
+  "prompt": "Premise: Nile surpasses Amazon. Yangtze surpasses Nile. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_river_2hop_10",
+  "domain": "river",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_river_2hop_10",
+  "phrasing": "C-first",
+  "premise": "Premise: Nile surpasses Amazon. Thames surpasses Nile.",
+  "prompt": "Premise: Nile surpasses Amazon. Thames surpasses Nile. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Thames",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_river_2hop_11",
+  "domain": "river",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_river_2hop_11",
+  "phrasing": "C-first",
+  "premise": "Premise: Nile is below Thames. Thames is below Ganges.",
+  "prompt": "Premise: Nile is below Thames. Thames is below Ganges. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Ganges",
+   "Thames",
+   "Nile"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_river_2hop_12",
+  "domain": "river",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_river_2hop_12",
+  "phrasing": "C-first",
+  "premise": "Premise: Ganges surpasses Thames. Yangtze surpasses Ganges.",
+  "prompt": "Premise: Ganges surpasses Thames. Yangtze surpasses Ganges. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Ganges",
+   "Thames"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_river_2hop_13",
+  "domain": "river",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_river_2hop_13",
+  "phrasing": "C-first",
+  "premise": "Premise: Amazon is below Thames. Thames is below Yangtze.",
+  "prompt": "Premise: Amazon is below Thames. Thames is below Yangtze. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Thames",
+   "Amazon"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_river_2hop_14",
+  "domain": "river",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_river_2hop_14",
+  "phrasing": "C-first",
+  "premise": "Premise: Nile surpasses Amazon. Ganges surpasses Nile.",
+  "prompt": "Premise: Nile surpasses Amazon. Ganges surpasses Nile. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Ganges",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_river_3hop_0",
+  "domain": "river",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_river_3hop_0",
+  "phrasing": "A-first",
+  "premise": "Premise: Thames is below Ganges. Nile is below Thames. Amazon is below Nile.",
+  "prompt": "Premise: Thames is below Ganges. Nile is below Thames. Amazon is below Nile. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Ganges",
+   "Thames",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_3hop_1",
+  "domain": "river",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_river_3hop_1",
+  "phrasing": "A-first",
+  "premise": "Premise: Yangtze surpasses Ganges. Ganges surpasses Thames. Thames surpasses Nile.",
+  "prompt": "Premise: Yangtze surpasses Ganges. Ganges surpasses Thames. Thames surpasses Nile. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Ganges",
+   "Thames",
+   "Nile"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_3hop_2",
+  "domain": "river",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_river_3hop_2",
+  "phrasing": "A-first",
+  "premise": "Premise: Ganges is below Yangtze. Nile is below Ganges. Amazon is below Nile.",
+  "prompt": "Premise: Ganges is below Yangtze. Nile is below Ganges. Amazon is below Nile. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Ganges",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_3hop_3",
+  "domain": "river",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_river_3hop_3",
+  "phrasing": "A-first",
+  "premise": "Premise: Yangtze surpasses Ganges. Ganges surpasses Thames. Thames surpasses Amazon.",
+  "prompt": "Premise: Yangtze surpasses Ganges. Ganges surpasses Thames. Thames surpasses Amazon. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Ganges",
+   "Thames",
+   "Amazon"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_3hop_4",
+  "domain": "river",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_river_3hop_4",
+  "phrasing": "A-first",
+  "premise": "Premise: Thames is below Yangtze. Nile is below Thames. Amazon is below Nile.",
+  "prompt": "Premise: Thames is below Yangtze. Nile is below Thames. Amazon is below Nile. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Thames",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_3hop_5",
+  "domain": "river",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_river_3hop_5",
+  "phrasing": "A-first",
+  "premise": "Premise: Ganges surpasses Thames. Thames surpasses Nile. Nile surpasses Amazon.",
+  "prompt": "Premise: Ganges surpasses Thames. Thames surpasses Nile. Nile surpasses Amazon. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Ganges",
+   "Thames",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_3hop_6",
+  "domain": "river",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_river_3hop_6",
+  "phrasing": "A-first",
+  "premise": "Premise: Ganges is below Yangtze. Thames is below Ganges. Nile is below Thames.",
+  "prompt": "Premise: Ganges is below Yangtze. Thames is below Ganges. Nile is below Thames. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Ganges",
+   "Thames",
+   "Nile"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_3hop_7",
+  "domain": "river",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_river_3hop_7",
+  "phrasing": "A-first",
+  "premise": "Premise: Yangtze surpasses Ganges. Ganges surpasses Nile. Nile surpasses Amazon.",
+  "prompt": "Premise: Yangtze surpasses Ganges. Ganges surpasses Nile. Nile surpasses Amazon. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Ganges",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_river_3hop_8",
+  "domain": "river",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_river_3hop_8",
+  "phrasing": "C-first",
+  "premise": "Premise: Thames surpasses Amazon. Ganges surpasses Thames. Yangtze surpasses Ganges.",
+  "prompt": "Premise: Thames surpasses Amazon. Ganges surpasses Thames. Yangtze surpasses Ganges. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Ganges",
+   "Thames",
+   "Amazon"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_river_3hop_9",
+  "domain": "river",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_river_3hop_9",
+  "phrasing": "C-first",
+  "premise": "Premise: Amazon is below Nile. Nile is below Thames. Thames is below Yangtze.",
+  "prompt": "Premise: Amazon is below Nile. Nile is below Thames. Thames is below Yangtze. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Thames",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_river_3hop_10",
+  "domain": "river",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_river_3hop_10",
+  "phrasing": "C-first",
+  "premise": "Premise: Amazon is below Nile. Nile is below Thames. Thames is below Ganges.",
+  "prompt": "Premise: Amazon is below Nile. Nile is below Thames. Thames is below Ganges. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Ganges",
+   "Thames",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_river_3hop_11",
+  "domain": "river",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_river_3hop_11",
+  "phrasing": "C-first",
+  "premise": "Premise: Thames surpasses Nile. Ganges surpasses Thames. Yangtze surpasses Ganges.",
+  "prompt": "Premise: Thames surpasses Nile. Ganges surpasses Thames. Yangtze surpasses Ganges. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Ganges",
+   "Thames",
+   "Nile"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_river_3hop_12",
+  "domain": "river",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_river_3hop_12",
+  "phrasing": "C-first",
+  "premise": "Premise: Amazon is below Nile. Nile is below Ganges. Ganges is below Yangtze.",
+  "prompt": "Premise: Amazon is below Nile. Nile is below Ganges. Ganges is below Yangtze. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Ganges",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_river_3hop_13",
+  "domain": "river",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_river_3hop_13",
+  "phrasing": "C-first",
+  "premise": "Premise: Thames surpasses Amazon. Ganges surpasses Thames. Yangtze surpasses Ganges.",
+  "prompt": "Premise: Thames surpasses Amazon. Ganges surpasses Thames. Yangtze surpasses Ganges. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Ganges",
+   "Thames",
+   "Amazon"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_river_3hop_14",
+  "domain": "river",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_river_3hop_14",
+  "phrasing": "C-first",
+  "premise": "Premise: Amazon is below Nile. Nile is below Thames. Thames is below Yangtze.",
+  "prompt": "Premise: Amazon is below Nile. Nile is below Thames. Thames is below Yangtze. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Yangtze",
+   "Thames",
+   "Nile",
+   "Amazon"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_2hop_0",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_tree_2hop_0",
+  "phrasing": "A-first",
+  "premise": "Premise: Oak is below Maple. Pine is below Oak.",
+  "prompt": "Premise: Oak is below Maple. Pine is below Oak. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Maple",
+   "Oak",
+   "Pine"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_2hop_1",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_tree_2hop_1",
+  "phrasing": "A-first",
+  "premise": "Premise: Cedar surpasses Maple. Maple surpasses Oak.",
+  "prompt": "Premise: Cedar surpasses Maple. Maple surpasses Oak. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Cedar",
+   "Maple",
+   "Oak"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_2hop_2",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_tree_2hop_2",
+  "phrasing": "A-first",
+  "premise": "Premise: Cedar is below Birch. Maple is below Cedar.",
+  "prompt": "Premise: Cedar is below Birch. Maple is below Cedar. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Cedar",
+   "Maple"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_2hop_3",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_tree_2hop_3",
+  "phrasing": "A-first",
+  "premise": "Premise: Birch surpasses Maple. Maple surpasses Pine.",
+  "prompt": "Premise: Birch surpasses Maple. Maple surpasses Pine. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Maple",
+   "Pine"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_2hop_4",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_tree_2hop_4",
+  "phrasing": "A-first",
+  "premise": "Premise: Oak is below Cedar. Pine is below Oak.",
+  "prompt": "Premise: Oak is below Cedar. Pine is below Oak. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Cedar",
+   "Oak",
+   "Pine"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_2hop_5",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_tree_2hop_5",
+  "phrasing": "A-first",
+  "premise": "Premise: Birch surpasses Cedar. Cedar surpasses Oak.",
+  "prompt": "Premise: Birch surpasses Cedar. Cedar surpasses Oak. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Cedar",
+   "Oak"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_2hop_6",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_tree_2hop_6",
+  "phrasing": "A-first",
+  "premise": "Premise: Maple is below Cedar. Pine is below Maple.",
+  "prompt": "Premise: Maple is below Cedar. Pine is below Maple. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Cedar",
+   "Maple",
+   "Pine"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_2hop_7",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_tree_2hop_7",
+  "phrasing": "C-first",
+  "premise": "Premise: Oak is below Maple. Maple is below Birch.",
+  "prompt": "Premise: Oak is below Maple. Maple is below Birch. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Maple",
+   "Oak"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_2hop_8",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_tree_2hop_8",
+  "phrasing": "C-first",
+  "premise": "Premise: Cedar surpasses Pine. Birch surpasses Cedar.",
+  "prompt": "Premise: Cedar surpasses Pine. Birch surpasses Cedar. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Cedar",
+   "Pine"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_2hop_9",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_tree_2hop_9",
+  "phrasing": "C-first",
+  "premise": "Premise: Pine is below Oak. Oak is below Birch.",
+  "prompt": "Premise: Pine is below Oak. Oak is below Birch. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Oak",
+   "Pine"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_2hop_10",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_tree_2hop_10",
+  "phrasing": "C-first",
+  "premise": "Premise: Oak surpasses Pine. Maple surpasses Oak.",
+  "prompt": "Premise: Oak surpasses Pine. Maple surpasses Oak. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Maple",
+   "Oak",
+   "Pine"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_2hop_11",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_tree_2hop_11",
+  "phrasing": "C-first",
+  "premise": "Premise: Oak is below Maple. Maple is below Cedar.",
+  "prompt": "Premise: Oak is below Maple. Maple is below Cedar. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Cedar",
+   "Maple",
+   "Oak"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_2hop_12",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_tree_2hop_12",
+  "phrasing": "C-first",
+  "premise": "Premise: Cedar surpasses Maple. Birch surpasses Cedar.",
+  "prompt": "Premise: Cedar surpasses Maple. Birch surpasses Cedar. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Cedar",
+   "Maple"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_2hop_13",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 2,
+  "id": "exp120_ctrl_exp120_tree_2hop_13",
+  "phrasing": "C-first",
+  "premise": "Premise: Pine is below Maple. Maple is below Birch.",
+  "prompt": "Premise: Pine is below Maple. Maple is below Birch. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Maple",
+   "Pine"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_2hop_14",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 2,
+  "id": "exp120_flip_exp120_tree_2hop_14",
+  "phrasing": "C-first",
+  "premise": "Premise: Oak surpasses Pine. Cedar surpasses Oak.",
+  "prompt": "Premise: Oak surpasses Pine. Cedar surpasses Oak. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Cedar",
+   "Oak",
+   "Pine"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_3hop_0",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_tree_3hop_0",
+  "phrasing": "A-first",
+  "premise": "Premise: Cedar surpasses Maple. Maple surpasses Oak. Oak surpasses Pine.",
+  "prompt": "Premise: Cedar surpasses Maple. Maple surpasses Oak. Oak surpasses Pine. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Cedar",
+   "Maple",
+   "Oak",
+   "Pine"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_3hop_1",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_tree_3hop_1",
+  "phrasing": "A-first",
+  "premise": "Premise: Cedar is below Birch. Maple is below Cedar. Oak is below Maple.",
+  "prompt": "Premise: Cedar is below Birch. Maple is below Cedar. Oak is below Maple. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Cedar",
+   "Maple",
+   "Oak"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_3hop_2",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_tree_3hop_2",
+  "phrasing": "A-first",
+  "premise": "Premise: Birch surpasses Cedar. Cedar surpasses Oak. Oak surpasses Pine.",
+  "prompt": "Premise: Birch surpasses Cedar. Cedar surpasses Oak. Oak surpasses Pine. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Cedar",
+   "Oak",
+   "Pine"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_3hop_3",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_tree_3hop_3",
+  "phrasing": "A-first",
+  "premise": "Premise: Cedar is below Birch. Maple is below Cedar. Pine is below Maple.",
+  "prompt": "Premise: Cedar is below Birch. Maple is below Cedar. Pine is below Maple. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Cedar",
+   "Maple",
+   "Pine"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_3hop_4",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_tree_3hop_4",
+  "phrasing": "A-first",
+  "premise": "Premise: Birch surpasses Maple. Maple surpasses Oak. Oak surpasses Pine.",
+  "prompt": "Premise: Birch surpasses Maple. Maple surpasses Oak. Oak surpasses Pine. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Maple",
+   "Oak",
+   "Pine"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_3hop_5",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_tree_3hop_5",
+  "phrasing": "A-first",
+  "premise": "Premise: Maple is below Cedar. Oak is below Maple. Pine is below Oak.",
+  "prompt": "Premise: Maple is below Cedar. Oak is below Maple. Pine is below Oak. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Cedar",
+   "Maple",
+   "Oak",
+   "Pine"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_3hop_6",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_tree_3hop_6",
+  "phrasing": "A-first",
+  "premise": "Premise: Birch surpasses Cedar. Cedar surpasses Maple. Maple surpasses Oak.",
+  "prompt": "Premise: Birch surpasses Cedar. Cedar surpasses Maple. Maple surpasses Oak. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Cedar",
+   "Maple",
+   "Oak"
+  ],
+  "y": 1
+ },
+ {
+  "derived_from": "exp120_tree_3hop_7",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_tree_3hop_7",
+  "phrasing": "C-first",
+  "premise": "Premise: Pine is below Oak. Oak is below Cedar. Cedar is below Birch.",
+  "prompt": "Premise: Pine is below Oak. Oak is below Cedar. Cedar is below Birch. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Cedar",
+   "Oak",
+   "Pine"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_3hop_8",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_tree_3hop_8",
+  "phrasing": "C-first",
+  "premise": "Premise: Maple surpasses Pine. Cedar surpasses Maple. Birch surpasses Cedar.",
+  "prompt": "Premise: Maple surpasses Pine. Cedar surpasses Maple. Birch surpasses Cedar. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Cedar",
+   "Maple",
+   "Pine"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_3hop_9",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_tree_3hop_9",
+  "phrasing": "C-first",
+  "premise": "Premise: Pine is below Oak. Oak is below Maple. Maple is below Birch.",
+  "prompt": "Premise: Pine is below Oak. Oak is below Maple. Maple is below Birch. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Maple",
+   "Oak",
+   "Pine"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_3hop_10",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_tree_3hop_10",
+  "phrasing": "C-first",
+  "premise": "Premise: Oak surpasses Pine. Maple surpasses Oak. Cedar surpasses Maple.",
+  "prompt": "Premise: Oak surpasses Pine. Maple surpasses Oak. Cedar surpasses Maple. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Cedar",
+   "Maple",
+   "Oak",
+   "Pine"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_3hop_11",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_tree_3hop_11",
+  "phrasing": "C-first",
+  "premise": "Premise: Oak is below Maple. Maple is below Cedar. Cedar is below Birch.",
+  "prompt": "Premise: Oak is below Maple. Maple is below Cedar. Cedar is below Birch. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Cedar",
+   "Maple",
+   "Oak"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_3hop_12",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_tree_3hop_12",
+  "phrasing": "C-first",
+  "premise": "Premise: Oak surpasses Pine. Cedar surpasses Oak. Birch surpasses Cedar.",
+  "prompt": "Premise: Oak surpasses Pine. Cedar surpasses Oak. Birch surpasses Cedar. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Cedar",
+   "Oak",
+   "Pine"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_3hop_13",
+  "domain": "tree",
+  "flipped": false,
+  "hop": 3,
+  "id": "exp120_ctrl_exp120_tree_3hop_13",
+  "phrasing": "C-first",
+  "premise": "Premise: Pine is below Maple. Maple is below Cedar. Cedar is below Birch.",
+  "prompt": "Premise: Pine is below Maple. Maple is below Cedar. Cedar is below Birch. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Cedar",
+   "Maple",
+   "Pine"
+  ],
+  "y": 0
+ },
+ {
+  "derived_from": "exp120_tree_3hop_14",
+  "domain": "tree",
+  "flipped": true,
+  "hop": 3,
+  "id": "exp120_flip_exp120_tree_3hop_14",
+  "phrasing": "C-first",
+  "premise": "Premise: Oak surpasses Pine. Maple surpasses Oak. Birch surpasses Maple.",
+  "prompt": "Premise: Oak surpasses Pine. Maple surpasses Oak. Birch surpasses Maple. Question: Who is higher in rank? Answer:",
+  "tuple": [
+   "Birch",
+   "Maple",
+   "Oak",
+   "Pine"
+  ],
+  "y": 0
+ }
+]
