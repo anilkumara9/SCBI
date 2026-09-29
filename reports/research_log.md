@@ -13953,3 +13953,55 @@ six fixes was vacuous.
 unchanged: EXP132 apparatus-void (RUN-INVALID), Family B's directional-gain
 hypothesis UNTESTED, no ΔGini minted. Capability scoreboard unaffected —
 still zero positive autonomous-steering signals.
+
+## LOG-4746 — EXP132 wave committed locally; no push (2026-09-30)
+
+**Lane:** LOG-4746 (pre-assigned). **$0 CPU, no model contact. Commit only.**
+
+**Commit:** `b9a8a6305126384a89e82bf16c6b984c6cf162ae` on `sync/2026-09-29-consolidated` — `feat(exp132): directional-gain field — apparatus-void (RUN-INVALID), SIGN-WITH-FIXES satisfied`. 5 files, +1024 insertions, staged set verified wave-only:
+- `experiments/runs/EXP132_dgf/run_exp132.py` (executor)
+- `experiments/runs/EXP132_dgf/out/exp132_console.log` (console evidence, 24 lines)
+- `research/experiments/EXP132_DGF_GAINFIELD_REPORT_2026-09-29.md` (post-fix sha256 `6a906fd1fcee569c000adf8706c1069ac6d38dff17e1410c4f9432de24d1534d`)
+- `research/reviews/LAW14_REVIEW_EXP132_EXECUTION_2026-09-29.md` (LOG-4744, SIGN-WITH-FIXES)
+- `reports/research_log.md` (LOG-4743→4745 entries)
+
+**Divergence check: CLEAN.** Heading-anchored full numeric LOG comparison: main tree 625 headings (max 4745 pre-append) vs worktree `sync-log4393-4465` max 4466 — zero worktree LOG numbers missing from main.
+
+**Push: NOT attempted.** Pushes/PRs remain founder-reserved with a fresh founder-supplied token (none supplied).
+
+## LOG-4747 — EXP128 erratum: double-final-LayerNorm readout defect recorded (2026-09-30)
+
+**Lane:** LOG-4747 (pre-assigned). **$0 CPU, no model contact.** Read-only
+everywhere except the erratum file and this log entry.
+
+**The defect [FACT]:** EXP128's `base_forward`/`perturbed_forward` apply
+`model.gpt_neox.final_layer_norm` to `hidden_states[24]`, which is already
+post-final-LayerNorm in transformers 5.17.0 (25-entry layout: hs[0]=embeddings,
+hs[k]=block-(k−1) output for 1≤k≤23, hs[24]=post-final-LN; relative error 0.0
+vs `last_hidden_state`; independently verified in the LOG-4744 audit). The
+double application deviates from the correct single-norm readout by relative
+norm **0.165** (independently measured). EXP128's linearity diagnostic measured
+the **wrong construct** (double-normalized readout), not the registered object
+`x_{24,last}`.
+
+**How found:** independent apparatus audit during the EXP132 execution review
+(LOG-4744, FIX-5), with independent recomputation on the pinned weights; the
+causal-mask concern was ruled a phantom; EXP132's own readout (`make_g`,
+exactly one final LayerNorm) is correct — its executor had already flagged the
+double-norm pattern as a latent bug.
+
+**Verdict impact: NONE on the category.** EXP128 stays **RUN-INVALID / DSF
+UNTESTED**. Law #9 stopped the run before the verdict-bar read, so no metric
+was ever read from any construct, wrong or right. However, the report's
+substantive linearity numbers ("1/12 within 25%", "amplification-driven
+transition saturation") are **void as measurements of the registered object**
+— they describe the double-normalized construct.
+
+**Implications:** any re-analysis of EXP128's linearity data must use the
+corrected single-norm readout; the double-norm finding deepens the
+apparatus-void story (the diagnostic failed even on a doubly-normalized
+construct). No future experiment may reuse EXP128's readout recipe without
+correcting the normalization.
+
+**Provenance:** append-only erratum; the signed EXP128 report and protocol are
+untouched. **Erratum:** `research/errata/EXP128_ERRATUM_DOUBLEFINALNORM_2026-09-29.md`.
