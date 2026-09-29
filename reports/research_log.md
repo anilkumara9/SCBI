@@ -11784,3 +11784,17 @@ Review: `research/reviews/VERDICTREVIEW_EXP117_2026-09-29.md`.
 **Honest headline the board now carries:** "The day's tally: one CONTINUE (EXP111, bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), five RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117 — all bound), one precision certification (EXP110, bound) — capability scoreboard unchanged, still zero positive signals for autonomous steering; the label-free race stays tied at zero."
 
 No capability entries added; no signed protocols, paper sources, or GPU queue touched; no push, no spend, no weights; no data invented. Next free: LOG-4612.
+
+## LOG-4612 — Commit-prep: H11/EXP117 wave committed as 5af3d04, push staged (2026-09-29)
+
+**Divergence check:** CLEAN — 0 worktree LOG numbers (sync-log4393-4465, 352 headers) missing from the main log (491 headers, LOG-4606→4611).
+**Commit:** `5af3d04` on `sync/2026-09-29-consolidated` — 12 files, 1420 insertions(+): H11 pre-registration (LOG-4606) + Law #14 review SIGN-WITH-FIXES (LOG-4607) + FIX-1 byte-verified (LOG-4608) + CEO launch note, EXP117 run dir (script, 20 generations, result, logs) + RUN-INVALID report (LOG-4609), verdict review BIND with §3.7 protocol-defect adjudication (LOG-4610), scoreboard v2.2 (LOG-4611). No weight files (`*.safetensors`/`*.bin`/`quantized_model*`/venvs excluded); run dir is scripts/logs/JSON only. No secrets committed.
+**NOT pushed** — push requires the user's fresh one-use token. `5af3d04` is staged-ready for that token.
+
+## LOG-4613 — H12 (HDI-FLIP) worth-it gate: FAIL → kill recommendation, no pre-registration (2026-09-29)
+
+**Lane:** LOG-4613 worth-it-gate + pre-reg drafting lane for H12 (does honesty-readout fidelity concentrate in flipped-word cells?).
+
+**Gate: FAIL — KILL the proposal.** Three independent grounds: (1) the cheapest test is already decisive — Fisher's exact two-sided on the archived 2×2 table [[24,6],[17,13]] gives p = 0.0946 > 0.05 (OR = 3.06); per-15-cell splits p = 0.2451 / 0.4270; the one-sided p = 0.0473 is declined as post-hoc direction selection (Law #4/#9). (2) No cross-experiment consistency — EXP111's trained head shows 12/15 vs 12/15 (G = 0.0000), zero asymmetry. (3) A new experiment number would be theater — EXP112's decisions are deterministic and archived; re-running reproduces the identical table.
+
+**Deliverable:** kill memo `research/strategy/H12_KILLRECOMMENDATION_2026-09-29.md`. No experiment number minted, no pre-registration drafted. EXP112's HELD stands; the 24/30 vs 17/30 split remains a descriptive observation (p = 0.0946 two-sided, post-hoc exact test, no verdict).
