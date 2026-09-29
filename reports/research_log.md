@@ -13729,3 +13729,17 @@ Bundle: `experiments/bundles/exp131_v1inj/` — RUNBOOK.md (exact founder run pr
 
 Execution remains founder-gated: the founder runs the bundle on their hardware following the RUNBOOK; raw records come back to the program for a verdict-report lane. The capability scoreboard stays at zero until and unless a bound positive lands. Nothing pushed, spent, or credential-touched.
 
+## LOG-4733 — 2026-09-29 — Commit-prep: EXP131 (TGA v₁ injection test) bundle wave committed locally
+
+Committed locally as `eb185b9` (`feat(exp131-bundle): founder-ready execution bundle — review SIGN-WITH-FIXES satisfied, released for founder GPU run`) on `sync/2026-09-29-consolidated`, carrying: the full EXP131 GPU execution bundle (`experiments/bundles/exp131_v1inj/` — RUNBOOK, executor, decision-tree tests, vendored protocol), the independent bundle review (LOG-4730), the GPU-queue row-9 status change to RELEASED — awaiting founder hardware run, and LOG-4728→4732 research-log entries.
+
+No push was attempted — pushes/PRs remain founder-reserved with a fresh founder-supplied token (none supplied). Working tree is clean; EXP131 now awaits the founder's GPU run on their hardware. The capability scoreboard stays at zero until and unless a bound positive lands.
+
+
+## LOG-4734 — 2026-09-29 — Scoreboard sync v3.6: EXP131 minted and released
+
+Minted and released **EXP131 (TGA v₁ injection test)** — **LICENSED/PRE-LAUNCH, awaiting founder hardware** — the first licensed downstream of EXP127's TGA CONTINUE (bound LOG-4699): one-shot GPU injection along v̂₁ (exact re-pin from EXP127's `exp127_vectors.npz`, zero finite-difference terms) with K=8 seeded matched-norm random controls, the dead B_agg control (deterministically reconstructed; any B_agg flip → RUN-INVALID), the ĉ decision-orthogonality gate (ĉ < 0.1 → KILL), and the singular-rank trend gate (v̂₁ > v̂₂ > randoms on ≥8/10; flat → KILL). CONTINUE is conjunctive (ĉ ≥ 0.1, median margin-displacement ratio ≥ 2 paired, ΔM_v1 > 0 with one-sided McNemar p ≤ 0.05 vs pinned global-best random, rank-trend holds, ΔM_Bagg = 0).
+
+Pre-registration: draft LOG-4724, independent Law #14 review LOG-4725 (SIGN-WITH-FIXES), six fixes byte-verified LOG-4726 (post-fix sha256 `d85205f4ce2b1aadd2b2bda64397f7523e15958cf4fd8d903acccf0fd7f8bf52`). CEO launch decision LOG-4727; execution bundle built LOG-4729, independently reviewed SIGN-WITH-FIXES LOG-4730, three fixes byte-verified LOG-4731; CEO founder-release LOG-4732; committed `eb185b9` (LOG-4733). GPU queue row 9: RELEASED — awaiting founder hardware run.
+
+**Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.** EXP131's result is unmeasured — it is counted nowhere and claimed nowhere. Family A ledger updated: EXP127's CONTINUE now has its licensed downstream. `research/benchmarks/FRONTIER_SCOREBOARD.md` v3.6 (delta paragraph, §3.1 EXP131 row, §3.2 H28 paragraph, §0 at-a-glance pending-test note, version-history bullet).
