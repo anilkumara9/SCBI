@@ -14029,3 +14029,26 @@ untouched. **Erratum:** `research/errata/EXP128_ERRATUM_DOUBLEFINALNORM_2026-09-
 **Honest capability headline: zero positive signals for autonomous steering.** The day's tally: four CONTINUEs (EXP111/120/122 — reclassified domain-set-detector correlations; EXP127), one HELD (EXP112), one apparatus CONTINUE (EXP113), five KILLs (EXP107, EXP114, EXP125, EXP126, EXP129), one pre-launch KILL/REJECT (EXP130), TWELVE RUN-INVALIDs (EXP108, EXP109, EXP115–EXP119, EXP121, EXP123, EXP124, EXP128, EXP132), one precision certification (EXP110), one LICENSED/PRE-LAUNCH (EXP131 — released for founder GPU, result unmeasured).
 
 **Edits:** §3.1 EXP132 row added; EXP128 §3.1 row annotated with the erratum; §3.2 H29 paragraph added; v3.7 delta paragraph; version-history bullet. No prior verdict binding altered. No literature re-check this cycle (next due 2026-10-23).
+
+## LOG-4750 — Commit-prep: scoreboard v3.7 wave (2026-09-30)
+
+**Lane:** LOG-4750 (commit-prep, pre-assigned). **$0 CPU.**
+
+Committed the scoreboard v3.7 wave locally: commit `3651ecf` on branch `sync/2026-09-29-consolidated` — `feat(scoreboard): v3.7 — EXP132 apparatus-void, EXP128 erratum recorded`. Staged set verified wave-only: `research/benchmarks/FRONTIER_SCOREBOARD.md` (v3.7, LOG-4749) and `reports/research_log.md` (LOG-4748 + LOG-4749 entries; LOG-4748's append rode this cycle per convention).
+
+**Divergence check: CLEAN.** Heading-anchored full numeric LOG comparison: main tree 629 headings (max 4749) vs worktree `sync-log4393-4465` 352 headings (max 4466) — zero worktree LOG numbers missing from main.
+
+**Continuity:** LOG-4749 confirmed max before append; continuity 4749→4750; count = 1. Append-only — no stash, move, or rewrite.
+
+**Push: NOT attempted.** Pushes/PRs remain founder-reserved with a fresh founder-supplied token (none supplied).
+
+## LOG-4751 — Daily frontier sweep (2026-09-30)
+
+**Lane:** LOG-4751 (pre-assigned). **$0 CPU, read-only on the repo; no model contact.** Swept work published or surfaced 2026-09-23 → 2026-09-30 across four clusters: activation steering / representation geometry, test-time scaling / reasoning / self-refinement, the decodability≠steerability boundary claim, non-normality / transient growth. Submission dates recorded verbatim; items submitted before the window but surfaced within it are flagged as such.
+
+**12 candidates logged** in `research/benchmarks/FRONTIER_SWEEP_2026-09-30.md`; no verdict, license, or capability headline changes. Two watch items:
+
+1. **GEOSTEER** (arXiv:2609.10658, submitted 9 Sep 2026, surfaced ~28 Sep): norm-preserving steering as Riemannian optimization — learned objective + geodesic multistep updates beating SOTA one-step baselines on TruthfulQA/RealToxicityPrompts/UltraFeedback. Single most relevant item: it directly informs the active licensed lane EXP131 — if the one-shot v₁ injection nulls, geometry-aware multistep steering is the licensed escalation candidate (new instrument class, not a dose tweak).
+2. **Steerable but Not Decodable** (arXiv:2604.02608; README re-surfaced 26 Sep): the converse dissociation of the program's headline — FV steering succeeds where the logit lens cannot decode (4,032 pairs, 12 tasks, 6 models, 3 families; gaps to −0.91). Independent convergent evidence for the v82/v83 boundary narrative; cite in related work alongside arXiv:2609.06951.
+
+Also logged: Disentangling Steering Vectors (2609.07037), Steering Geometry / Schwartz circumplex (2609.06289), Cylindrical Representation Hypothesis (ICML 2026), UCSD steering technique (Belkin), confidence-steering causal study, CoRefine (2602.08948), ReProbe, Beyond Decodability encoding probe (2605.00607v2), second-order synaptic motifs / Jacobian bulk (2609.14251 — participation-ratio diagnostic as a future TGA-lane watch item), J-space workspace summary.
