@@ -1,0 +1,30 @@
+[15:31:16] EXP126 (H23/WITHIN-DOMAIN) execution — Law #9 ordered
+[15:31:16] protocol sha256: 42660838a4ab48e9a54871114cf60ffb8be5c8ad538f251f8001baf9c29e8117
+[15:31:16] bench sha256:    444e40260b4c71c512db72db2c5d2555b31ffbbd8db2eedcf8a3a46fddbb0e8a
+[15:31:16] bench items: 60
+[15:31:16] bench schema checks: ids 60/60 unique, labels 30/30, phrasing 30/30, flips 30/30, law-7 60/60
+[15:31:23] backbone pin (pre): 24f4100e4611bbe34efbaff69acf505cc62cdd80c46602e29d3ec89f65c04768
+[15:31:23] RUN-INVALID: backbone pin mismatch vs LOG-331 (pre)
+[15:31:56] EXP126 (H23/WITHIN-DOMAIN) execution — Law #9 ordered
+[15:31:56] protocol sha256: 42660838a4ab48e9a54871114cf60ffb8be5c8ad538f251f8001baf9c29e8117
+[15:31:56] bench sha256:    444e40260b4c71c512db72db2c5d2555b31ffbbd8db2eedcf8a3a46fddbb0e8a
+[15:31:56] bench items: 60
+[15:31:56] bench schema checks: ids 60/60 unique, labels 30/30, phrasing 30/30, flips 30/30, law-7 60/60
+[15:32:02] backbone pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[15:32:02] backbone pin OK (LOG-331). Delta-theta guard armed.
+[15:32:02] running 60 premise layer-20 extractions...
+[15:32:50] extractions complete: X=(60, 1024)
+[15:32:52] backbone pin (post): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[15:32:52] Δθ=0 confirmed (pins identical, LOG-331)
+[15:32:52] bench hash stable across extraction
+[15:32:53] split: train=30 test=30 N_F=15 N_T=15; disjoint OK
+[15:32:53] head fit done (lbfgs n_iter=[np.int32(142)])
+[15:32:53] determinism re-fit: byte-identical predictions OK
+[15:32:53] pinned (pre-verdict) embeddings_npz: b448faf41af4a4bc0136138dd9293f24d12d772be369c1beb3b7f526f208e1e2
+[15:32:53] pinned (pre-verdict) head_weights_npz: a84846fc21c1e708760833482cd7ca345e985b29523cd593cef58bd8c8d05d8e
+[15:32:53] pinned (pre-verdict) split_ids: 925ae590ed398993c0f7ac37f6923651253fd7af1ee29e5f542993688537a738
+[15:32:53] pinned (pre-verdict) bench_json: 444e40260b4c71c512db72db2c5d2555b31ffbbd8db2eedcf8a3a46fddbb0e8a
+[15:32:53] METRIC: test acc 18/30 = 0.6000, acc(F)=0.4000, acc(T)=0.8000, G=-0.4000, P(X>=18|30,0.5)=0.1807973040
+[15:32:53] descriptive: train acc=1.0000, ||w||=1.7255
+[15:32:53] per-cell test acc: {"('target-first', False)": '2/8', "('target-first', True)": '6/7', "('target-last', False)": '4/7', "('target-last', True)": '6/8'}
+[15:32:53] VERDICT: KILL — acc<=18/30 with G<0.30 (no identity readout on bench 5)

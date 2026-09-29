@@ -12776,3 +12776,155 @@ credentials touched.
 **Tally (v3.0):** three CONTINUEs (EXP111, EXP120 qualified, EXP122), one HELD (EXP112, bench-1-specific), one apparatus CONTINUE (EXP113), three KILLs (EXP107, EXP114, EXP125), ten RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123, EXP124), one precision certification (EXP110). **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.**
 
 **Continuity:** 4681 → 4682, no gaps. LOG-4682 confirmed next-free before append (0 existing entries, head was LOG-4681).
+
+## LOG-4683 — 2026-09-29 20:47 IST — H22/EXP125 wave committed locally (commit only, no push)
+
+**Scope:** H22/EXP125 KILL wave (LOG-4674 → 4682) — gate, pre-reg, reviews, bench-4 certificate, bound KILL verdict, scoreboard v3.0.
+
+**Lane checks (LOG-4683):**
+- Divergence: CLEAN — full numeric LOG set compared between the main tree and `SCBI-worktrees/sync-log4393-4465` (0 LOGs missing from main).
+- Status audit: changed/untracked files exactly the wave artifacts (see file list below); nothing unexpected.
+- Safety: no weights, no secrets, no credential material; `__pycache__` excluded; `*.npz` skipped by repo-wide `.gitignore` (line 52 — same convention as the EXP124 wave; hashes pinned in the report/worksheet).
+- `git fetch origin`: not attempted with credentials — fast-forward feasibility not freshly reverified. **No push attempted — pushes/PRs remain founder-reserved.**
+
+**Commit:** `1fe3fb2` on `sync/2026-09-29-consolidated` — "LOG-4683 — H22/EXP125 KILL wave (LOG-4674→4683): gate, pre-reg, reviews, bench4 cert, bound KILL, scoreboard v3.0". 16 files changed, +3526 insertions: `research/strategy/H22_GATE_2026-09-29.md`, `research/prereg/EXP_PREREG_H22_HONESTYGEN4_2026-09-29.md`, `research/reviews/LAW14_REVIEW_H22_HONESTYGEN4_2026-09-29.md`, `research/reviews/VERDICTREVIEW_EXP125_2026-09-29.md`, `research/experiments/EXP125_HONESTYGEN4_REPORT_2026-09-29.md`, bench builder + certify script + executor, bench JSON + breaking-point certificate + per-item + worksheet + console log, research-log LOG-4674→4682 additions, scoreboard v3.0 files.
+
+**Uncommitted leftovers:** this LOG-4683 entry itself (intentionally follows the commit); `experiments/runs/EXP125_honestygen4/out/exp125_embeddings.npz` (gitignored, hash-pinned in report/worksheet); `__pycache__` (gitignored).
+
+**Continuity:** 4682 → 4683, no gaps. LOG-4683 confirmed next-free before append (0 existing entries, head was LOG-4682).
+
+## LOG-4684 — H23 worth-it gate: PASS (within-domain decoy dissection)
+
+**Lane:** LOG-4684 (pre-assigned). **Gate memo:** `research/strategy/H23_GATE_2026-09-29.md` (12,316 bytes). $0 CPU; tokenizer-only breaking-point check; no model contact, no pushes, no credentials.
+
+**Exact question:** Are the trained-head decodability CONTINUEs (EXP111 24/30, EXP120 25/30 qualified, EXP122 27/30) true entity-identity readout or merely domain-set detection? Test: pinned H5/H16 head protocol on bench 5 — all-animal premises, label = target's entity-subset membership, EXP122 construction discipline carried over.
+
+**Decision changed:** ≥20/30 AND G<0.30 → CONTINUE (true entity reader — mechanistic foothold for the three-bench line); ≤18/30 OR G≥0.30 → KILL of the identity interpretation (three-bench CONTINUEs reclassified as domain-set-detector correlations, Law #11; observations stand, Law #8); 19/30 with G<0.30 → HELD, no rescue. PIVOT does not appear.
+
+**Cheapest test:** one 60-item bench-5 construction + 60 fresh layer-20 CPU extractions (premises only, Δθ=0, LOG-331 pin before/after) + pinned H5 head spec (L2 C=1.0, lbfgs, seed 20260929, stratified 30/30). $0 CPU, ~1.5h.
+
+**Mathematical license:** EXP122's 27/30=0.90 CONTINUE (G=−0.0667, |Pearson|=0.0322); EXP120's 25/30 qualified; EXP111's 24/30 — the decoy-structure confound (distinct domain sets per cell on all three benches) was never separated. Bench 5 makes domain-set membership carry zero information by construction, which is what makes the test discriminative.
+
+**Quantitative prediction:** entity-identity → ≥20/30 with G<0.30; coarse domain-detector → collapse toward ~15/30 (≤18/30 KILL band, p≥0.1808); word-family detector → G≥0.30 (kill-test precedence).
+
+**Bar-calibration adjudication:** the H6 42–57/60 bars do NOT transfer (wrong apparatus, wrong n — n=60 full-bench fidelity on the logit readout vs n=30 stratified test split on the head protocol). The H5/H16 signed n=30 head bars bind: CONTINUE ≥20/30 (one-sided p≤0.0494), HELD=19/30, KILL ≤18/30 (p≥0.1808), G≥0.30 kills regardless of score. H14's McNemar bars likewise do not transfer. EXP122's 27/30 precedent is the correct calibration.
+
+**Breaking point (conjunctive):** bench-5 construction is the breaking point — (a) all-animal premises, subset-membership labels 30/30, zero cross-domain entities (construction audit); (b) single-token entities 14/14 (verified at the gate, real Pythia-410m tokenizer, " "+E encoding — construction hygiene beyond the signed lineage's N/A); (c) [-3:] explicitly N/A (no logit channel, per H16 §6 item 4); (d) Δθ=0 LOG-331 pins; (e) Law-#7 own label pin; (f) head recipe byte-identical to H5/H16 pin; (g) G-C1/G-C2/G-C3 + position-scramble gates carried from EXP122's construction. Any miss → apparatus-void, hypothesis UNTESTED, no head trained.
+
+**Breaking-point tokenizer check (tokenizer-only, real Pythia-410m tokenizer):** ANIMALS 14/20 single-token — Cat, Dog, Bear, Wolf, Fox, Lion, Tiger, Horse, Cow, Pig, Rat, Bat, Bird, Fish (multi: Deer, Goat, Sheep, Frog, Snake, Crab — excluded). FRUITS 7/15 — rejected. METALS not checked — bench 1 owns the set. **Chosen domain: ANIMALS.**
+
+**Summit filter:** NO — boundary-science dissection, not a summit move. A CONTINUE refines the boundary map; it never becomes a capability claim (trained head = label-informed control, never an autonomous mechanism; capability scoreboard stays at zero).
+
+**Never-resurrect audit:** H17, S5, H12, bench-1/2 re-reading, EXP117/118/119/121/123/124 reruns, entity-name generation, H22 bench-2 rescue (dead), H22 generality hypothesis (KILLed at EXP125 — barred re-test), no EXP125 protocol reuse without a new pre-reg. All honored.
+
+**Gate verdict: PASS.** H23 licensed. Next: pre-registration drafting lane (EXP126 to be minted at CEO launch decision) → Law #14 review → fix-verification → CEO launch → construction lane with breaking-point certificate → execution.
+
+**Design caution for the pre-reg lane:** the entity-subset label semantics change vs H5/H16 must be pinned explicitly (builder docstring + independent Law-#7 pin, per H16's §2 disclosure precedent); bars are properties of the protocol PLUS this specific label design.
+
+**Continuity:** 4683 → 4684, no gaps. LOG-4684 confirmed next-free before append (0 existing entries, head was LOG-4683).
+
+## LOG-4685 — H23 pre-registration drafted: EXP_PREREG_H23_WITHINDOMAIN (within-domain decoy dissection)
+
+**Lane:** LOG-4685 (pre-assigned drafting lane, c09b3158-4633-417c-b4a3-6ee837555ec6). $0 CPU; read-only on signed protocols, paper sources, GPU queue. No push, no spend, no credentials, no model contact.
+
+**Artifact:** `research/prereg/EXP_PREREG_H23_WITHINDOMAIN_2026-09-29.md` — 35,325 bytes; 11 `##` sections (§§0–9 + boundary §10), 9 `###` subsections (1.1, 3.1–3.8); follows the H5/H14/H16 template structure. Licensed nothing: draft only, no number minted, no signed artifact touched.
+
+**Sources read before drafting:** `research/strategy/H23_GATE_2026-09-29.md` (all six worth-it items binding); `research/prereg/EXP_PREREG_H16_POSITIONCUE_2026-09-29.md` (template + pinned head recipe); `research/reviews/LAW14_REVIEW_H16_POSITIONCUE_2026-09-29.md` (§2 disclosure precedent + four fix-patterns carried as pre-avoidance); repo AGENTS.md house rules.
+
+**Design pinned (honored from the gate memo, all non-negotiable requirements):**
+- Bench 5: 60 items, all-animal premises (14 gate-verified single-token names), S1={Cat, Dog, Bear, Wolf, Fox} vs S2={Lion, Tiger, Horse, Cow, Pig}, neutral decoys {Rat, Bat, Bird, Fish} only as non-target tuple entities; new verb families; decoy options from the same domain; disjoint from benches 1–4 (ID namespace expb5_).
+- Breaking point conjunctive (§0): single-domain audit (zero cross-domain entities, independent per-item whole-word certification) + 14/14 single-token assertion (tokenizer-only, construction hygiene — explicit design deviation from the H16 lineage, declared in §3.2/§9) + G-C1 ≤36/60 + G-C2 |Pearson|≤0.10 vs bench-3 builder records (design check only, Law #13 fence) + G-C3 byte-exact + position-scramble ≤36/60 (final position = phrasing XOR flipped, balanced 15/15 per label class via identical flip×label pattern across phrasing groups — the H16 FIX-2/FIX-3 pattern pre-applied). Any miss → construction-fate RUN-INVALID, hypothesis UNTESTED.
+- Label semantics pinned explicitly (§2 disclosure, per H16 precedent): builder docstring + independent `y == (tuple[0] in S1)` assertion; bars are properties of protocol + this specific label design.
+- Head recipe byte-identical to H5/H16 pin (L20 final-token, L2 C=1.0, lbfgs, max_iter=1000, random_state=20260929; stratified 30/30 split seed 20260929, 4-cell key f"{phrasing}_{flipped}", test counts 8/7/7/8 in sorted key order — the H16 FIX-1 shorthand corrected at drafting).
+- 60 fresh layer-20 CPU extractions (premises only), Δθ=0, LOG-331 pin ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed before/after; env torch 2.14.0+cpu/transformers 5.17.0/numpy 2.5.3/sklearn 1.9.1.
+- Registered bars (H5/H16 signed n=30 head bars; H6's 42–57/60 bars explicitly barred from transfer — wrong apparatus, wrong n): CONTINUE ≥20/30 AND G<0.30; KILL ≤18/30 OR G≥0.30 (G≥0.30 takes precedence over any score); HELD = 19/30 with G<0.30. p-licenses carried: P(X≥20|30,0.5)=0.0493686, P(X≥19|30,0.5)=0.1002442, P(X≥18|30,0.5)=0.1807973, P(X≥37|60,0.5)=0.0462305 (LOG-4651-verified).
+- Binding defect classes: (a) executor-computed p-values; (b) raw embeddings + head weights hash-pinned before verdict; (c) label semantics cite builder docstring + independent pin; (d) N/A (zero generation); (e) [-3:] N/A (no logit channel); (f) single-token ACTIVE (14/14, construction hygiene); (g) per-item G1 explicitly N/A (head protocol carries no mass guard).
+- Honest frame: boundary-science dissection, not a summit move; trained head = label-informed control, never an autonomous mechanism — a CONTINUE never migrates to the capability scoreboard (stays zero). KILL → three-bench CONTINUEs reclassified as domain-set-detector correlations (Law #11); observations stand (Law #8). No cross-bench effect sizes licensed (H15 lesson).
+- Boundary (§10): cannot show causality/other layers/benches/models; H22's generality hypothesis stays KILLed (EXP125 barred re-test); H17 stays rejected.
+
+**Next in the launch chain:** independent Law #14 review of this exact file → fix-verification → CEO launch (mint EXP126) → construction lane with breaking-point certificate → execution.
+
+**Continuity:** LOG-4684 → LOG-4685, exactly one entry, no gaps.
+
+## LOG-4686 — Independent Law #14 review of H23 pre-registration: SIGN (zero fixes)
+
+**Lane:** LOG-4686 (pre-assigned, independent). **Artifact:** `research/prereg/EXP_PREREG_H23_WITHINDOMAIN_2026-09-29.md`. $0 CPU. Read-only on signed protocols, paper sources, GPU queue; wrote only the review and this entry. Never push, never spend, never touch credentials.
+
+**Verdict: SIGN — zero fixes.** Mathematical soundness and internal consistency confirmed on all eight assigned checks:
+
+1. **Bars:** CONTINUE ≥20/30 AND G<0.30; KILL ≤18/30 OR G≥0.30; HELD =19/30 with G<0.30 — complete, disjoint partition (residual 19/30 with G≥0.30 falls under KILL via OR). All cited binomial values recomputed from scratch (pure math.comb): P(X≥20|30,0.5)=0.0493686, P(X≥19|30,0.5)=0.1002442, P(X≥18|30,0.5)=0.1807973, P(X≥37|60,0.5)=0.0462305 — zero drift from the draft's printed values.
+2. **Bar calibration:** H6's 42–57/60 bars correctly barred from transfer (wrong apparatus, wrong n); H5/H16 n=30 head bars are the correct calibration (EXP122 27/30 precedent).
+3. **Label semantics:** §2 explicit disclosure (H16 precedent) complete; independent Law-#7 pin `y == (tuple[0] in S1)` mechanical and separate from prose; non-target entities drawn from all 14 animals (H16 FIX-4 analog pre-applied).
+4. **Within-domain audit:** 0/60 out-of-domain gate, whole-word matching against the 14-animal set, executable; single-token assertion carries the restart-not-patch rule, declared as an explicit design deviation (not smuggled).
+5. **Position-scramble gate:** H16 FIX-2 (phrasing = original authoring group; final position = phrasing XOR flipped) and FIX-3 (identical flip×label pattern across groups; 15/15 final positions per label class) pre-applied; G-C1/G-C2/G-C3 coherent; 36/60 bar is the correct α=0.05 one-sided critical value.
+6. **Breaking point:** conjunctive; any miss → construction-fate RUN-INVALID, hypothesis UNTESTED; no path in the §5 tree mints a number after a partial failure.
+7. **Head recipe:** byte-identical to the H5/H16 pin (L2 C=1.0, lbfgs, max_iter=1000, seed 20260929, stratified 30/30, L20 site, pinned environment).
+8. **Split counts:** 8/7/7/8 shorthand matches the explicit sorted-key mapping (H16 FIX-1 typo pre-avoided); N_F=N_T=15; labels balanced within cells by construction.
+
+All seven binding defect classes addressed; Law #11 tagging sound (KILL reclassifies the three-bench CONTINUE as a domain-set-detector correlation, never erases — Law #8); H17 barred; H22 stays KILLed; no cross-bench effect sizes; no launch-gating or verdict-immaterial fixes found.
+
+**Continuity:** LOG-4685 → LOG-4686, exactly one entry, no gaps.
+
+## LOG-4687 — H23 bench-5 construction: breaking-point certificate PASS, EXP126 licensed
+
+**Lane:** LOG-4687 (pre-assigned, construction). **Protocol:** `research/prereg/EXP_PREREG_H23_WITHINDOMAIN_2026-09-29.md` (launch-ready: Law #14 SIGN, zero fixes, LOG-4686). **Artifacts:** `experiments/runs/EXP126_withindomain/build_exp126_bench.py`, `certify_exp126_bench.py`, `out/exp126_bench5.json`, `out/exp126_breaking_point_certificate.md`.
+
+**Certificate verdict: PASS** — all conjunctive breaking-point elements hold. Execution licensed to proceed under minted experiment number EXP126 (CEO decision).
+
+**Bench:** 60 items, four balanced 15-item cells (target-first/target-last × original/flipped), all-animal premises, 30/30 labels (y=1 iff tuple[0] ∈ S1={Cat,Dog,Bear,Wolf,Fox}; y=0 iff ∈ S2={Lion,Tiger,Horse,Cow,Pig}), neutral decoys {Rat,Bat,Bird,Fish} as non-targets only, new verb families (`towers over`/`crouches under`, `looms over`/`cowers beneath`), hop x label 15/15/15/15.
+
+**Gates (all from the pinned raw construction):**
+- Single-token assertion (real Pythia-410m tokenizer, `" "+E` encoding, tokenizer-only): **14/14 single-token**, zero multi-token → no restart needed.
+- Single-domain audit (whole-word, per item): **0/60** premises contain any out-of-domain entity — the discriminative gate holds; a domain-set detector has no input by construction.
+- G-C1 pure-template detector: **28/60** ≤ 36 → PASS.
+- G-C2 entity-rank correlation (bench-3 vs bench-5, sorted-by-ID, 240 elements): **Pearson +0.0018**, |r| = 0.0018 ≤ 0.10 → PASS. Achieved via three documented construction choices: Y1 = EXP122's pattern rotated +7 mod 30 (label-sequence independence), hash-based hop rule (salt `exp126`, padding-pattern independence), S1/S2-interleaved GC2 index (label-agnostic). Entity assignments hash-selected with salt `exp126` vs bench-3's `exp122`.
+- G-C3 byte-exact decomposition: QUESTION_SUFFIX byte-exact, prompt == premise + suffix 60/60, determinism re-run byte-identical → PASS.
+- Position-scramble gate: **30/60** ≤ 36 → PASS (final position 15/15 within each label class).
+- Law-#7 own label pin: `y == (tuple[0] in S1)` mechanically asserted **60/60**; builder docstring documents the meaning-preserving construction and the S1/S2 label derivation (explicit §2 disclosure).
+- No item screening: 60 emitted, 60 in bench; flip by sorted position only; no model calls, no RNG at construction.
+- ID namespace `expb5_*`: no collision with bench 1/2/3/4 prefixes; verb families contain no prior-bench substring (per-item asserted).
+- Determinism: rebuild pin `444e40260b4c71c512db72db2c5d2555b31ffbbd8db2eedcf8a3a46fddbb0e8a` matches fresh re-run and on-disk JSON.
+- Defect class (e) ([-3:]) explicitly N/A for H23 (protocol §6 item 4 — no logit channel).
+
+**Continuity:** LOG-4686 → LOG-4687, exactly one entry, no gaps.
+
+## LOG-4688 — EXP126 (H23/WITHIN-DOMAIN) execution: KILL — identity-readout interpretation dead
+
+**Date:** 2026-09-29. **Lane:** EXP126 execution (pre-assigned LOG-4688). **Status:** COMPLETE.
+**Protocol:** `research/prereg/EXP_PREREG_H23_WITHINDOMAIN_2026-09-29.md` (Law #14 SIGN, zero fixes, LOG-4686; sha256 `42660838a4ab48e9a54871114cf60ffb8be5c8ad538f251f8001baf9c29e8117`).
+**Bench 5:** construction certificate PASS (LOG-4687); bench sha256 `444e40260b4c71c512db72db2c5d2555b31ffbbd8db2eedcf8a3a46fddbb0e8a` verified at execution.
+**$0 CPU. Δθ=0** (LOG-331 pin `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed` before AND after the 60 extractions).
+
+**Verdict: KILL.** The pinned H5/H16 head protocol (L2-logreg C=1.0, lbfgs max_iter=1000, seed 20260929, stratified 30/30, layer-20 final-token embeddings of premises only) on all-animal bench 5 (entity-subset labels y=1 iff tuple[0] ∈ S1, domain-set membership informationally dead by construction) scored **test accuracy 18/30 = 0.6000** with **G = acc(F) − acc(T) = 0.40 − 0.80 = −0.4000**. The ≤18/30 KILL arm fires (executor-computed exact one-sided P(X≥18|30,0.5)=0.1807973040 ≥ 0.1808 — at chance); the word-family kill-test arm does not fire (G=−0.40 < 0.30 — asymmetry runs opposite a word-family detector). Per-cell: ("target-first",orig)=2/8, ("target-first",flip)=6/7, ("target-last",orig)=4/7, ("target-last",flip)=6/8. Train acc=1.0000, ||w||=1.7255, converged (142 lbfgs iters, no warning).
+
+**Tree:** all nodes passed — protocol pin, bench schema (ids 60/60, labels 30/30, phrasing 30/30, flips 30/30, Law-#7 60/60), backbone pins, 60 fresh layer-20 extractions, split disjoint (N_F=N_T=15), determinism re-fit byte-identical, artifact-existence gate (embeddings/head-weights/split-ids/bench JSON hash-pinned before verdict), metric read only after all guards (Law #9).
+**Lane defect disclosed:** first attempt loaded the backbone with `AutoModel` (state dict excludes `embed_out.weight`) → pre-extraction pin mismatch → tree halted at RUN-INVALID before any extraction; corrected to `AutoModelForCausalLM` (the LOG-331 method, EXP125's loader); full tree re-ran. Both attempts on the append-only console log; no metric existed before the pin passed.
+
+**Law #11 two-layer tagging:** EXP111's, EXP120's, EXP122's bench observations STAND (Law #8); their three-bench CONTINUE is **reclassified as a domain-set-detector correlation** — the heads on benches 1–3 plausibly read only which domain set sits on top. Any entity-level use of the signal is retired. Trained head stays a label-informed control — never an autonomous mechanism; capability scoreboard stays at zero positive signals.
+
+**Artifacts:** report `research/experiments/EXP126_WITHINDOMAIN_REPORT_2026-09-29.md`; executor `experiments/runs/EXP126_withindomain/exp126_execute.py`; raw artifacts in `experiments/runs/EXP126_withindomain/out/` — embeddings npz `b448faf41af4a4bc0136138dd9293f24d12d772be369c1beb3b7f526f208e1e2`, head weights `a84846fc21c1e708760833482cd7ca345e985b29523cd593cef58bd8c8d05d8e`, split ids `925ae590ed398993c0f7ac37f6923651253fd7af1ee29e5f542993688537a738`, worksheet `66f671e9e33dab58d117808ed45dc1ba0623ca02a5f51bbeea2374338be38c37`. Environment: torch 2.14.0+cpu / transformers 5.17.0 / numpy 2.5.3 / sklearn 1.9.1 (`.venv-exp111`).
+
+**Next:** independent exact-artifact verdict review lane (LOG-4689), then scoreboard sync (LOG-4690), then commit-prep (LOG-4691). H22's generality hypothesis stays KILLed (not re-opened). No further re-test of the identity interpretation at larger n, different layer, different label design, or sixth bench is licensed.
+
+## LOG-4689
+
+Independent exact-artifact verdict review of EXP126 (H23/WITHIN-DOMAIN) — reviewer lane, fresh eyes. Verdict: **BIND-WITH-CAVEAT** — the execution lane's KILL is correct from the exact artifacts.
+
+Independent recomputation (numpy + math.comb, no reuse of executor functions): bench sha256 `444e4026…` matches LOG-4687 certificate pin; protocol sha256 `42660838…` matches signed draft; all four artifact hashes match the report table; **test accuracy 18/30 = 0.6000** re-derived per-item from raw embeddings + pinned head weights; **G = acc(F)−acc(T) = 0.4000−0.8000 = −0.4000** recomputed with the H5/H16 F=flipped=False/T=flipped=True convention; P(X≥18|30,0.5) = **0.1807973040** via pure math.comb (10-decimal agreement); backbone pins pre/post both `ec276abe…` (Δθ=0); split 30/30 disjoint, N_F=N_T=15; Law-#7 pin `y == (tuple[0] in S1)` 60/60. KILL arm (≤18/30) fires; word-family arm correctly does not fire (G<0.30). Law #9 ordering holds (artifacts hash-pinned pre-verdict at 15:32:53, metric then verdict after). Lane-defect disclosure verified complete: first attempt's AutoModel pin mismatch halted at RUN-INVALID 15:31:23 before any extraction; corrected AutoModelForCausalLM re-run 15:31:56–15:32:53; no metric existed before the corrected pin; both attempts on the append-only console log. Law #11 consequence correctly recorded: EXP111/120/122 observations stand (Law #8), three-bench CONTINUE reclassified as domain-set-detector correlation; H22 stays KILLed; capability scoreboard stays at zero.
+
+CAVEAT (non-verdict-bearing): `exp126_worksheet.json` is truncated at 910 bytes (ends mid-array at `"n_iter": [`; contains no verdict/metric/guard fields). Hash recorded honestly. Metric and verdict live in the report + console log with Law #9 ordering intact; metric independently re-derivable from intact pinned raw artifacts. No erratum to the verdict needed.
+
+## LOG-4690 — Scoreboard sync v3.1 (EXP126/H23 plotted)
+
+**Date:** 2026-09-29. **Lane:** scoreboard-sync (pre-assigned LOG-4690). **Status:** COMPLETE.
+**Sources read:** `research/reviews/VERDICTREVIEW_EXP126_2026-09-29.md` (LOG-4689), `research/experiments/EXP126_WITHINDOMAIN_REPORT_2026-09-29.md` (LOG-4688), `research/benchmarks/FRONTIER_SCOREBOARD.md` (v3.0), `research/benchmarks/PROGRESS_ANALYSIS.md`.
+
+**Frontier scoreboard v3.0 → v3.1.** §3.1: EXP126 inventory row added (KILL — test 18/30 = 0.6000, G = −0.4000, exact one-sided P(X≥18|30,0.5) = 0.1807973040, all guards passed, Δθ=0, split disjoint 30/30, Law-#7 pin 60/60, review LOG-4689 BIND-WITH-CAVEAT). §3.2: H23 terminal paragraph added — identity-readout *interpretation* dead; the heads were domain-set detectors, not entity readers; within-domain dissection line closes. EXP111/EXP120/EXP122 rows updated with Law-#11 tag: their three-bench CONTINUE is **reclassified as a domain-set-detector correlation** (observations stand, Law #8); any entity-level use of the signal is retired. §0 at-a-glance static-steering row updated with the EXP126 terminal reading. v3.1 delta + changelog entry recorded. PROGRESS_ANALYSIS.md updated with the EXP126 paragraph.
+
+**Day's tally, honestly:** three CONTINUEs (EXP111 — bound, reclassified; EXP120 — bound, qualified, reclassified; EXP122 — bound, reclassified), one HELD (EXP112 — bound, bench-1-specific), one apparatus CONTINUE (EXP113 — bound), four KILLs (EXP107, EXP114, EXP125, EXP126 — all bound), ten RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123, EXP124 — all bound), one precision certification (EXP110 — bound). **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.**
+
+**New binding defect class:** a hash-pinned worksheet can still be truncated (exp126_worksheet.json, 910 bytes) — future lanes must parse/validate the manifest before treating it as readable.
+
+**The identity-readout vs domain-set detection question is answered, not open:** domain-set detection. EXP112's bench-1-only honesty HELD is the sole remaining non-decodability label-free signal, and it is bench-specific.
+
+**Continuity:** LOG-4689 → LOG-4690, exactly one entry, no gaps. **Next:** commit-prep lane (LOG-4691) — commits H23/EXP126 locally, no push.
