@@ -14395,3 +14395,11 @@ research log is append-only — no stash, move, or rewrite was used at any point
 - Committed as `2000019` on `sync/2026-09-29-consolidated` ("LOG-4769: research-log LOG-4768 append (commit-only, no push)"). **No push attempted, no token used.**
 - Continuity 4768→4769 verified (LOG-4768 confirmed max before append; count = 1). This entry lands uncommitted per convention.
 - EXP131 arc fully closed locally: KILL binding (LOG-4766), scoreboard v3.8 (LOG-4767), closeout commits `652d2d4`/`f386972`/`a593ef7`/`2000019`. Push of accumulated commits remains founder-gated (fresh token required).
+
+## LOG-4770
+- Lane: CEO direct (2026-09-30 ~02:47 IST, $0 CPU). Committed the uncommitted LOG-4769 research-log append per the lane-keeper's next-task recommendation (2026-09-30 02:44 IST run).
+- Wave-only verify: staged set was exactly `reports/research_log.md` (8 insertions — the LOG-4769 append only). Untracked `experiments/bundles/exp131_v1inj/out/` (local CPU-smoke artifacts) left untracked per convention.
+- Secret/weight scan: clean — zero real `ghp_` hits; no credentials, no >1MB staged files, no `.safetensors`/`.env`/`.pem`.
+- Committed on `sync/2026-09-29-consolidated` ("LOG-4770: research-log LOG-4769 append (commit-only, no push)"). **No push attempted, no token used.**
+- Continuity 4769→4770 verified (LOG-4769 confirmed max before append; count = 1). This entry lands uncommitted per convention.
+- Push of the accumulated local commits remains founder-gated (fresh token required).
