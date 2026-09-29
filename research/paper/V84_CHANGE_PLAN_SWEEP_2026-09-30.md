@@ -22,9 +22,10 @@ for v84's claims. The plan records why each admitted item earns its place.
 
 **Citation (sweep-verified, LOG-4751):** Mohammed Suhail B. Nadaf, "Steerable but Not
 Decodable: Function Vectors Operate Beyond the Logit Lens," arXiv:2604.02608 (v1 Apr
-2026; v2 Aug 2026). 4,032 cross-template pairs, 12 tasks, 6 models, 3 families;
+2026; v2 May 2026). 4,032 cross-template pairs, 12 tasks, 6 models, 3 families;
 function-vector steering succeeds where the logit lens cannot decode the answer at any
-layer (gaps to −0.91); only 3/72 task-model cells show decodable-without-steerable.
+layer — even at > 0.90 steering accuracy, projecting the FV through the unembedding
+yields incoherent token distributions; only 3/72 task-model cells show decodable-without-steerable.
 
 **Why admitted:** it is the *converse* of v84's headline dissociation
 ("decodes at 6.7× chance; steers zero decisions"). Together with the two existing
@@ -46,7 +47,8 @@ after the Jia sentence:
 
 > Nadaf \citep{nadaf2026} supplies the converse: across 4,032 cross-template pairs,
 > 12 tasks, and 6 models, function-vector steering succeeds even where the logit lens
-> cannot decode the answer at any layer (gaps to $-0.91$). The dissociation holds in
+> cannot decode the answer at any layer — even at > 0.90 steering accuracy, projecting
+> the FV through the unembedding yields incoherent token distributions. The dissociation holds in
 > both directions: decodability does not imply steerability, and steerability does
 > not imply decodability.
 
@@ -67,7 +69,7 @@ sentence (after the `\cite{jia2026}` clause):
 ## 2. Admitted item 2 — GEOSTEER (next-instrument watch item)
 
 **Citation (sweep-verified, LOG-4751):** Xuan Cuong Ngo, Hao Vo, Ngan Le,
-"GEOSTEER: Geodesic Optimization for Activation Steering in LLMs," arXiv:2609.10658
+"GEOSTEER: Geodesic Optimization for Activation Steering in Large Language Models," arXiv:2609.10658
 (submitted 9 Sep 2026). Norm-preserving steering reformulated as Riemannian
 optimization: a learned nonlinear objective guides a sequence of small geodesic steps
 on the representation manifold, beating SOTA one-step activation-steering baselines
@@ -127,7 +129,7 @@ verified against both files):
 
 @misc{ngo2026,
   author = {Xuan Cuong Ngo and Hao Vo and Ngan Le},
-  title = {GEOSTEER: Geodesic Optimization for Activation Steering in LLMs},
+  title = {GEOSTEER: Geodesic Optimization for Activation Steering in Large Language Models},
   year = {2026},
   eprint = {2609.10658},
   archivePrefix = {arXiv}

@@ -14219,3 +14219,26 @@ both editions' tex/pdf/refs.bib + the two IEEE sections). v82/v83 untouched
 (pre-existing untracked `ieee-v82-backup/` and modified `ieee/ieee-paper.pdf`
 left alone). **No push attempted** (founder-reserved; no token supplied for
 this wave).
+
+## LOG-4759 — Frontier-sweep erratum wave: commit-prep (2026-09-30)
+
+**Lane:** LOG-4759 (pre-assigned). **$0 CPU, commit only — no push.**
+
+Committed the frontier-sweep erratum wave: `research/benchmarks/FRONTIER_SWEEP_2026-09-30.md`
+(erratum section, LOG-4757: Nadaf "v2 Aug 2026" → "v2 May 2026"; the unverified "−0.91"
+gap number struck and replaced with abstract-verified language) and
+`reports/research_log.md` (LOG-4755→4758 entries).
+
+**Commit:** `f6c0166` on `sync/2026-09-29-consolidated`
+(`fix(sweep): erratum — Nadaf v2 date, unverified -0.91 number struck`);
+2 files, +117 insertions; staged set verified wave-only.
+
+**Divergence check: CLEAN.** Heading-anchored full numeric LOG comparison:
+main tree 638 headings (max 4758) vs worktree `sync-log4393-4465` 352 headings
+(max 4466) — zero worktree LOG numbers missing from main.
+
+**Left uncommitted (rides the next cycle):** the modified
+`research/paper/V84_CHANGE_PLAN_SWEEP_2026-09-30.md` (LOG-4755 fix-verification
+edits) — belongs to the v84 implementation wave, not this wave.
+
+**No push attempted** (founder-reserved; no token supplied for this wave).
