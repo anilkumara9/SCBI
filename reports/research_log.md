@@ -12577,3 +12577,202 @@ EXP124 (LOG-4670 execution; independent exact-artifact verdict review LOG-4671 �
 **Terminal reading:** H11's planning hypothesis survives its **FOURTH RUN-INVALID** (EXP117, 119, 121, 124) — untested, not killed; H21's instrument-selection channel UNTESTED, not retired (a KILL would have retired it); no further H11 composition licensed without a genuinely new instrument class (H21 draft §0(d)). New binding lesson (defect class 8): choice-extraction on the final outline must assert the final outline is plan content, not regurgitation.
 
 **Scoreboard v2.9 tally:** three CONTINUEs (EXP111 — bound; EXP120 — bound, qualified; EXP122 — bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), **TEN RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123, EXP124 — all bound)**, one precision certification (EXP110, bound). §3.1 EXP124 row + §3.2 H21 paragraph + v2.9 changelog delta + PROGRESS_ANALYSIS update added. **Capability scoreboard unchanged — still zero positive signals for autonomous steering; the trained-head line remains a three-bench identity-readout CONTINUE (decodability, not steering); the label-free race stays tied at zero.** No literature re-check this cycle (next due 2026-10-23).
+
+## LOG-4673 — H21/EXP124 wave committed locally (no push; founder token pending) (2026-09-29)
+
+*Lane: commit-prep, LOG-4673 pre-assigned. $0 CPU. No push, no force-push, no stash; `git fetch origin` failed on missing GitHub auth (noted, commit proceeded). Divergence check CLEAN (0 worktree LOGs missing from main; full LOG set compared).*
+
+**Commit:** `8502831` on branch `sync/2026-09-29-consolidated` — "LOG-4673 — H21/EXP124 RUN-INVALID wave (LOG-4665→4673): design, gate, pre-reg, reviews, bound verdict, scoreboard v2.9". 17 files, +2641: H21 gate memo (`H21_GATE_2026-09-29.md`), post-EXP123 innovation design session (`INNOVATION_DESIGN_SESSION_POST_EXP123_2026-09-29.md`), H21 pre-registration (`EXP_PREREG_H21_PLANINSTRUMENT_2026-09-29.md`), Law #14 review (`LAW14_REVIEW_H21_PLANINSTRUMENT_2026-09-29.md`), EXP124 report (`EXP124_PLANINSTRUMENT_REPORT_2026-09-29.md`), independent verdict review (`VERDICTREVIEW_EXP124_2026-09-29.md`), scoreboard v2.9 files (`FRONTIER_SCOREBOARD.md`, `PROGRESS_ANALYSIS.md`), research-log LOG-4665→4672 additions, and the EXP124 raw run directory (`experiments/runs/EXP124_planinstrument/out/`, 8 artifact files; `__pycache__` excluded). No weights, no secrets, no credential material staged.
+
+**Working tree clean after commit.** Fast-forward feasibility could not be freshly reverified (no auth). This branch remains ahead of `origin/main` with unpushed commits — the 5-commit unpushed count from earlier waves plus `8502831`. No push attempted; pushes and PRs remain founder-reserved.
+
+## LOG-4674 — Worth-it gate H22 (EXP112 honesty generality on fresh bench 4): PASS (2026-09-29)
+
+**Lane:** LOG-4674 (pre-assigned). $0 CPU evaluation memo only — no execution, no number minted, no signed artifact modified.
+
+**Question:** Does EXP112's label-free honesty readout (41/60, HELD, bench 1) replicate on bench 4 — a newly constructed, template-decorrelated 60-item bench with fresh entity sets and new templates, single-token entities asserted at construction — under EXP112's exact pinned logit apparatus?
+
+**Decision changed:** H6's signed bars bind verbatim (Law #4): 42–57/60 → CONTINUE the honesty-instrument generality; 34–41/60 → HELD; ≤33/60 → KILL of the generality hypothesis (EXP112's bench-1 HELD stands per Law #8, reclassified bench-specific, Law #11 two-layer tagging); =58/60 → HELD; ≥59/60 → KILL. The bench-1-calibrated bars transfer to bench 4 without recalibration — they are calibrated on the measured quantity (fidelity), which is defined identically on any 60-item bench. No cross-bench fidelity comparisons licensed.
+
+**Cheapest test:** 60-item bench-4 construction (four balanced 15-item cells, new templates, new entity domains) + 240 fresh CPU forwards (60 premise L20 embeddings + 120 option embeddings + 60 self-report), $0, Δθ=0 pins before/after. Domains disjoint from benches 1–3 (planets/elements, rivers/trees, animals/fruits/cities).
+
+**Breaking-point check (tokenizer-only, executed in this lane):** real Pythia-410m tokenizer, `" "+E` encoding — body parts: Heart [15382], Lung [37792], Liver [17687], Bone [34257], Brain [24114], Eye [27919], Ear [40627], Hand [10535], Foot [12867], Rib [31641], Skin [37019] (11/11 single-token); weather: Rain [21398], Snow [18724], Storm [25005], Wind [17054], Ice [22078], Frost [37838], Cloud [18189], Thunder [27926], Mist [31872], Dew [45797] (10/10 single-token). Rejected at the check: gemstones 4/12, hand tools 3/12, kitchen 7/16, clothing 4/16, instruments 1/16. (a) SATISFIED at gate level; (b) template-decorrelation discipline specified (G-C1/G-C2 in diagnostic form; G-C3 byte-exact decomposition in full); (c) Law-#7 own-label pin under FIX-1 discipline as a pre-pre-reg construction gate. Any miss → apparatus-void, hypothesis UNTESTED, no number minted.
+
+**Mathematical license:** EXP112 41/60 HELD, P(X≥41|60,0.5)=0.0031; the H18 finding (bench-2 apparatus-void, 4/10 multi-token entities) is why bench 4 asserts single-token at construction; the BPE assertion discipline of the H6 apparatus.
+
+**Quantitative prediction (bands):** honesty-signal-real → fidelity in the 34–41/60 band or above it; bench-1-fluke → collapse toward 30/60 (≤33/60 KILL region).
+
+**Summit filter:** YES without inflation — the label-free race is the program's actual race; a CONTINUE here would be the strongest licensed label-free signal producible on $0 CPU. Not steering, not capability, no introspective claim (H6 §8).
+
+**Gate verdict: PASS.** Pre-registration lane is licensed next under the single-lane fence; it must re-run the single-token assertion on the final entity sets before any bench item is finalized. Memo: `research/strategy/H22_GATE_2026-09-29.md`. Bench 4 is new ground, not a rescue of H18 on bench 2 (that line stays dead).
+
+## LOG-4675 — H22 pre-registration drafted (EXP112 honesty generality on fresh bench 4) (2026-09-29)
+
+**Lane:** LOG-4675 (pre-assigned). $0 CPU drafting lane only — read-only on signed protocols, paper sources, and the GPU queue; no execution, no bench construction, no number minted, no signed artifact modified, no push, no credentials touched.
+
+**Read:** `research/strategy/H22_GATE_2026-09-29.md` (LOG-4674, gate PASS — all design assertions, bars, and binding defect classes honored), `research/prereg/EXP_PREREG_H6_HDILR_2026-09-29.md` (H6 signed apparatus, EXP112: 41/60 HELD, bench 1).
+
+**Draft:** `research/prereg/EXP_PREREG_H22_HONESTYGEN4_2026-09-29.md` (37,288 bytes; §§0–9 + boundary; 12 ### subsections), following the H5/H14/H19 template structure.
+
+**Key pins:**
+- Bench 4: 60 items, four balanced 15-item cells ((A-first/C-first) × (original/flipped)), fresh body-part/weather entity domains (11 + 10 single-token names gate-verified on the real Pythia-410m tokenizer; full token-id lists cited in draft §3.2(a)), new templates; disjointness from benches 1 (planets/elements), 2 (rivers/trees), 3 (animals/fruits/cities) asserted at construction.
+- EXP112's exact pinned logit apparatus carried verbatim: honesty self-report context, fidelity-vs-cosine-decision-statistic metric, BPE single-token discipline (construction contract, not runtime filter), G1/G2/G4 guards, ties→E2; **240 fresh forwards** (60 premise-state L20 extractions + 120 option forwards + 60 self-report forwards — H6's 180-forward archive form replaced per Law #13, no archive exists for bench 4).
+- Registered bars (H6's signed bars, verbatim, Law #4 — no recalibration): **42–57/60 → CONTINUE; 34–41/60 → HELD; ≤33/60 → KILL** of the generality hypothesis; =58/60 → HELD; ≥59/60 → KILL. No cross-bench fidelity comparisons (bench 4 stands alone).
+- Breaking point (conjunctive): (a) single-token assertion re-run on final entity sets during construction (any multi-token → construction restarted, not patched); (b) G-C1/G-C2 in diagnostic form, G-C3 byte-exact decomposition in full; (c) Law-#7 own label pin under FIX-1 before pre-registration; (d) Δθ=0 LOG-331 pins before/after; (e) raw records hash-pinned before verdict; all p-values executor-computed. Miss on (a)/(b)-G-C3/(c) → apparatus-void, UNTESTED, no number minted (LOG-4639 precedent); miss on (d)/(e) at execution → RUN-INVALID.
+- All seven binding defect classes honored: (1) p-values executor-computed and printed; (2) raw records hash-pinned before verdict; (3) label semantics cite the builder's meaning-preserving construction (FIX-1 pin); (4) no EXP117 recitation reuse; (5) `[-3:]` identity pin `[32, 37741, 27]` on composed contexts before metric contact; (6) single-token assertion ACTIVE (logit apparatus); (7) per-item G1 as construction-time filter only — H6's G1 stays a run-level guard with RUN-INVALID form, no runtime item screening (EXP121 class-6).
+- Honest frame: a CONTINUE is the strongest licensed label-free signal producible on $0 CPU — not steering, not capability; the label-free race is the actual race; EXP112's bench-1 41/60 HELD stands either way (Law #8; a generality KILL reclassifies it bench-specific, Law #11 two-layer tagging).
+- Boundary: what the protocol cannot show (no mechanism attribution, no generality beyond bench 4, cannot close the decodability gap); **H18's contaminated bench-2 line stays dead** — no rescue, no rerun, no sub-bench.
+
+**Next:** independent Law #14 review of this exact file (separate lane) → fix-verification → CEO launch decision → construction lane (breaking-point certificate (a)/(b)/(c)) → execution under a minted number.
+
+**Continuity:** 4674 → 4675, no gaps. LOG-4675 pre-assignment confirmed next-free (head was LOG-4674 before append).
+
+## LOG-4676 — Independent Law #14 review of H22 pre-registration: SIGN-WITH-FIXES (one launch-gating, verdict-immaterial fix) (2026-09-29)
+
+- Independent Law #14 lane (LOG-4676 pre-assigned, fresh eyes) reviewed `research/prereg/EXP_PREREG_H22_HONESTYGEN4_2026-09-29.md` against H6, the LOG-4674 gate memo, and the LOG-4639 bar audit. Verdict: **SIGN-WITH-FIXES**.
+- Verified: bars coherent/disjoint/exhaustive by integer enumeration (0–33 KILL, 34–41 HELD, 42–57 CONTINUE, 58 HELD, 59–60 KILL); all five cited binomial p-values recomputed exactly (0.0013 / 0.022 / 0.0031 / 0.259 / 0.046) plus the 0.66 auxiliary; 240-vs-180 forward deviation justified and declared; fidelity metric, decision statistic, readout, and G1/G2 guards identical to H6; all 21 entity token IDs verified 21/21 on the real Pythia-410m tokenizer; QUESTION_SUFFIX `[-3:]` tail verified `[32, 37741, 27]`; G-C1/G-C2 diagnostic transfer with G-C3 full is declared and justified; no cross-bench comparisons; H18's bench-2 line stays dead.
+- FIX-1 (launch-gating, verdict-immaterial): §3.5's "per-item mass filtering licensed only at construction" clause is in tension with §3.2's model-free construction discipline (mass measurement needs backbone contact) — fix to state explicitly that no per-item filtering occurs at construction or execution, documented in the breaking-point certificate. No bar changes.
+- Review: `research/reviews/LAW14_REVIEW_H22_HONESTYGEN4_2026-09-29.md`.
+
+**Next:** fix-verification of FIX-1 → CEO launch decision → construction lane (breaking-point certificate (a)/(b)/(c)) → execution under a minted number.
+
+**Continuity:** 4675 → 4676, no gaps. LOG-4676 pre-assignment confirmed next-free (head was LOG-4675 before append).
+
+## LOG-4677 — FIX-1 applied and byte-verified on H22 pre-registration (launch-ready pending CEO lane) (2026-09-29)
+
+- Fix-verification lane (LOG-4677 pre-assigned) applied the single launch-gating FIX-1 from the LOG-4676 Law #14 review to `research/prereg/EXP_PREREG_H22_HONESTYGEN4_2026-09-29.md` (§3.5, line 112).
+- The sentence "Any per-item mass filtering is licensed **only at construction** (…) ; **no per-item screening occurs at execution.**" is replaced by: "No per-item filtering of any kind occurs at construction or at execution: the construction lane makes no model calls (the single-token assertion is tokenizer-only), and the builder documents the absence of any item screening in the breaking-point certificate."
+- Byte verification: pre-fix sha256 `389d826dc19d02418911845af68931511fe3e1409aa3ae1507ab10bbe5d52580`; post-fix sha256 `0ae1351c9e156f2d23c777aeab68fa5de4113cb39a1a3ca95400cbf3e37e472d`; diff against the pre-fix copy shows exactly one changed region (line 112), no other bytes changed. The run-level G1 guard, all bars, and all other sections are byte-identical.
+- Observation (not changed — no license): the §3.5 bullet heading still reads "Per-item G1 as construction-time filter only (EXP121 class-6)" and the §6 deviation summary still says filtering is "licensed only at construction, never at execution"; both are now stale relative to the fixed sentence. Flagged for the CEO lane to disposition before construction is briefed.
+
+**Next:** CEO launch decision → construction lane (breaking-point certificate (a)/(b)/(c)) → execution under a minted number.
+
+**Continuity:** 4676 → 4677, no gaps. LOG-4677 pre-assignment confirmed next-free (head was LOG-4676 before append).
+
+## LOG-4678 — H22 pre-registration doc-consistency fix byte-verified (launch-ready pending CEO decision) (2026-09-29)
+
+- Doc-consistency lane (LOG-4678, pre-assigned): fixed two stale references left by FIX-1 in `research/prereg/EXP_PREREG_H22_HONESTYGEN4_2026-09-29.md`, both now aligned with the FIX-1 sentence "No per-item filtering of any kind occurs at construction or at execution":
+  - §3.5 bullet heading (line 112): "Per-item G1 as construction-time filter only (EXP121 class-6)" → "No per-item filtering at construction or execution (EXP121 class-6 structural fix)" (remainder of bullet unchanged).
+  - §6 deviation summary entry 6 (line 247): heading reworded identically; trailing clause "per-item mass filtering is licensed only at construction, never at execution" → "no per-item filtering of any kind occurs at construction or at execution".
+- Rules enforced: only the two strings plus minimal grammar changed; no bar, gate, number, or other text touched. Pre-fix sha256 `0ae1351c9e156f2d23c777aeab68fa5de4113cb39a1a3ca95400cbf3e37e472d`; post-fix sha256 `276b4db84e8c3442dc2859ab68ad5312223b91ebc6c28b237fafccf7ecf92820`; diff against pre-fix copy shows exactly two changed regions (112, 247), zero other bytes.
+- Read `~/workspace/SCBI/AGENTS.md` before editing (Law #1); read-only on signed protocols and GPU queue; no push, no spend, no credentials touched.
+
+**Next:** CEO launch decision → construction lane (breaking-point certificate (a)/(b)/(c)) → execution under a minted number.
+
+**Continuity:** 4677 → 4678, no gaps. LOG-4678 pre-assignment confirmed next-free (head was LOG-4677 before append).
+
+## LOG-4679 — H22 bench-4 construction (HONESTY-GEN4): breaking-point certificate PASS (2026-09-29)
+
+- Construction lane (LOG-4679, pre-assigned): built bench 4 per `research/prereg/EXP_PREREG_H22_HONESTYGEN4_2026-09-29.md` §3.2. Builder: `experiments/runs/EXP125_honestygen4/build_exp125_bench.py` (pure string construction; no RNG, no model calls). Canonical bench: `experiments/runs/EXP125_honestygen4/out/exp125_bench4.json` (60 items, sha256 `4995545cae3b662567166d1549952e304d19ced014431bb48637f4b5e27c6cf7`).
+- (a) Single-token assertion, real Pythia-410m tokenizer (`~/workspace/.exp086_weights/pythia-410m`, tokenizer-only, `encode(" "+E, add_special_tokens=False)`): **21/21 single-token** on the final sets (body parts: Heart 15382, Lung 37792, Liver 17687, Bone 34257, Brain 24114, Eye 27919, Ear 40627, Hand 10535, Foot 12867, Rib 31641, Skin 37019; weather: Rain 21398, Snow 18724, Storm 25005, Wind 17054, Ice 22078, Frost 37838, Cloud 18189, Thunder 27926, Mist 31872, Dew 45797). Zero multi-token; no restart needed.
+- (b) G-C1 pure-template detector (diagnostic): **30/60** ≤ 36/60 PASS. G-C2 entity-rank |Pearson| vs bench-1 builder records: **0.0198** ≤ 0.10 PASS (diagnostic). G-C3 FULL: QUESTION_SUFFIX byte-exact, prompt == premise + QUESTION_SUFFIX on 60/60, determinism re-run hash match — PASS. [-3:] token-tail identity `[32, 37741, 27]`: **60/60** PASS.
+- (c) Law-#7 own label pin: builder's meaning-preserving construction docstring + independent per-item whole-word assertion (tuple[0] in first premise sentence iff A-first — 60/60; whole-word match because "Ear" ⊂ "Heart"). Labels enter only the pin, never the apparatus.
+- No item screening: exactly 60 base items emitted, all 60 in the bench; flip selection by sorted position only (EXP121 lesson). Disjointness asserted by set-membership: bench-4 entities touch no bench-1/2/3 entity set; ID prefix `exp125_*` collision-free; new verb families ("outshines"/"is outshone by"), no prior-family substrings in any premise.
+- Certificate: `experiments/runs/EXP125_honestygen4/out/exp125_breaking_point_certificate.md` — **verdict PASS** (all conjunctive breaking-point elements hold). Execution licensed to proceed under a minted experiment number (CEO decision).
+- Read `~/workspace/SCBI/AGENTS.md` before editing (Law #1); read-only on signed protocols and GPU queue; no push, no spend, no credentials touched.
+
+**Next:** CEO decision → mint experiment number → execution lane (240 fresh forwards, breaking points (d)/(e)).
+
+**Continuity:** 4678 → 4679, no gaps. LOG-4679 pre-assignment confirmed next-free (head was LOG-4678 before append).
+
+## LOG-4680 — EXP125 (H22/HONESTY-GEN4) executed: KILL, fidelity 28/60 (2026-09-29)
+
+**Verdict: KILL — the honesty-instrument generality hypothesis is dead at logit level.**
+Fidelity between the frozen backbone's first-token logit-readout self-report and the
+registered cosine-argmax decision statistic on fresh bench 4 = **28/60 = 0.4667**,
+inside the registered ≤ 33/60 KILL band (P(X ≥ 28 | 60, 0.5) = 0.7405, observed one-sided).
+EXP112's bench-1 HELD (41/60) stands per Law #8, reclassified bench-specific (Law #11).
+
+**Execution (per the signed §3 recipe, exact):** protocol pin verified
+(`276b4db8...f92820`) before any forward; bench-4 pin verified (`4995545c...27c6cf7`);
+single-token assertion 120/120 at execution; [-3:] identity 60/60 ([32,37741,27]);
+backbone LOG-331 pin `ec276abe...38e0ed` matched BEFORE and AFTER all 240 forwards
+(60 premise-state L20 extractions + 120 option + 60 self-report; model.eval(),
+torch.no_grad(), cpu/float32, seeds 0/0, threads 2/2). G4 passed (cosine spread
+0.138125 ≥ 1e-4); G1 passed (M=0.232343 ≥ 0.01; min 0.044155; 100% ≥ 0.01);
+G2 passed (readouts E1=21/E2=39, minority 21 ≥ 3). Raw records hash-pinned BEFORE
+the verdict was read: exp125_per_item.json `27a3744d...367b`,
+exp125_embeddings.npz `c12defa5...082` (state 60×1024 + option 120×1024 float32),
+exp125_worksheet.json pre-verdict `4ee1d7ff...c9d9` → final `c1cbdb14...9bb4b1`.
+Runtime ~2.3 min, exit 0. Executor-computed exact p-values printed (defect class 1):
+P(X≥42|0.5)=0.0013352181, P(X≤57|0.99)=0.0224201648, P(X≥41|0.5)=0.0031088013,
+P(X≥33|0.5)=0.2594790016, P(X≤23|0.5)=0.0462304905. Systematic-misreporting
+diagnostic not triggered (28 > 23). No readout/decision ties.
+
+**Observations (descriptive, no verdict branch):** phrasing-shaped fidelity asymmetry —
+A-first cells 9/15 + 11/15 = 20/30 = 0.6667 vs C-first cells 3/15 + 5/15 = 8/30 = 0.2667
+(recorded for future separately pre-registered proposal work; changes no verdict).
+Decision margins tiny (median 0.0010, max 0.0045); G4 passed honestly (spread
+0.138125) — a true no-signal verdict, not a G4 miss. Independent post-hoc check:
+agreement re-derived from raw records = 28/60; item-0 cosines recomputed bit-exact.
+
+**Consequence:** the honest-label-free readout is a one-bench phenomenon (41/60 bench 1,
+28/60 bench 4) — no general instrument property. Per §4, no larger-n re-test, no
+different layer/carrier/third bench, no re-read (barred). No cross-bench fidelity
+comparison licensed. The H22 KILL does not resurrect bench 2/H18 (stays dead) and does
+not touch EXP112's bench-1 HELD. Bench-2 rescue lines remain barred. This result is a
+real null in the label-free race: the strongest licensed label-free signal producible
+on $0 CPU did not replicate. Next: independent verdict review (fresh lane), then
+scoreboard sync and commit-prep; H23 (within-domain decoy dissection) remains the
+ranked next hypothesis lane.
+
+Report: research/experiments/EXP125_HONESTYGEN4_REPORT_2026-09-29.md.
+
+**Continuity:** 4679 → 4680, no gaps. LOG-4680 pre-assignment confirmed next-free
+(head was LOG-4679 before append). Read `~/workspace/SCBI/AGENTS.md` before editing
+(Law #1); read-only on signed protocols and GPU queue; no push, no spend, no
+credentials touched.
+
+## LOG-4681 — Independent exact-artifact verdict review of EXP125: BIND (with one minor observation)
+
+**Reviewer lane (pre-assigned LOG-4681). Fresh eyes.** Independently recomputed the
+EXP125 (H22) verdict from the pinned raw artifacts in
+`experiments/runs/EXP125_honestygen4/out/`, reimplementing the fidelity rule from the
+protocol text — no reuse of the executor's functions.
+
+**Verified:**
+- Bench sha256 `4995545cae3b662567166d1549952e304d19ced014431bb48637f4b5e27c6cf7` and
+  signed protocol sha256 `276b4db84e8c3442dc2859ab68ad5312223b91ebc6c28b237fafccf7ecf92820`
+  — both match.
+- Fidelity re-derived (decision == readout): **28/60 = 0.4667** — matches the report.
+  Cells balanced 15/15/15/15; per-cell 11/15, 9/15, 5/15, 3/15 as reported.
+- Guards from raw artifacts: G4 spread 0.138125 ≥ 1e-4; G1 M = 0.23234268 ≥ 0.01
+  (frac ≥ 0.01 = 1.0); G2 readouts E1=21/E2=39, minority 21 ≥ 3; [-3:] identity 60/60
+  `[32, 37741, 27]` (real Pythia-410m tokenizer, tokenizer-only, re-run in this lane);
+  byte-exact decomposition 60/60; single-token option texts 120/120.
+- Backbone LOG-331 pins pre/post both `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed` — Δθ=0.
+- All six executor-computed p-values re-derived independently to printed precision
+  (0.0013352181, 0.0224201648, 0.0031088013, 0.2594790016, 0.0462304905, 0.7405209984).
+- Systematic-misreporting diagnostic correctly NOT triggered at 28/60 (> 23).
+- Honest frame: EXP112 bench-1 HELD stands reclassified bench-specific (Law #11),
+  no cross-bench fidelity comparison claimed beyond the tagging, bench-2 line stays dead,
+  no hypothesis rewording, per-cell asymmetry correctly tagged [OBSERVATION].
+
+**One minor observation (non-verdict-bearing):** the report §4 claims the execution
+lane's post-hoc item-0 cosine pair was "bit-exact". My independent float32
+recomputation from raw embeddings agrees to ~7 significant figures but differs at ULP
+level (~1.6e-9; reduction-order artifact). Decision agreement is 60/60, which is what
+the verdict reads. Documentation precision overreach only — no erratum required.
+
+**Verdict: BIND.** 28/60 ∈ ≤33/60 under H6's signed verbatim bars → KILL of H22's
+honesty-generality hypothesis at logit level; EXP112's bench-1 HELD stands,
+reclassified bench-specific.
+
+Report: research/reviews/VERDICTREVIEW_EXP125_2026-09-29.md.
+
+**Continuity:** 4680 → 4681, no gaps. LOG-4681 pre-assignment confirmed next-free
+(head was LOG-4680 before append). Read `~/workspace/SCBI/AGENTS.md` before editing
+(Law #1); read-only on signed protocols and GPU queue; no push, no spend, no
+credentials touched.
+
+## LOG-4682 — 2026-09-29 — Frontier scoreboard v2.9 → v3.0: EXP125 (H22) plotted
+
+**Lane:** LOG-4682 (scoreboard-sync, pre-assigned). $0 CPU. Read-only on signed protocols, paper sources, and the GPU queue; no push, no spend, no credentials touched.
+
+**Plotted:** EXP125 (H22/HONESTY-GEN4) — **KILL** (independent exact-artifact verdict review LOG-4681 — BIND, no caveat). Fidelity 28/60 = 0.4667 → registered ≤33/60 KILL band; all guards passed (G4 0.138125, G1 M=0.232343, G2 minority=21, [-3:] 60/60, single-token 120/120; LOG-331 pin before AND after, Δθ=0) — a licensed guard-passed null, not an apparatus failure. Independent review re-derived 28/60 from the raw artifacts, cosine-argmax agreement 60/60, all six executor-computed p-values re-verified to printed precision; one non-verdict-bearing documentation overreach (bit-exact ULP claim — no erratum needed). The generality hypothesis is dead at logit level; no larger-n re-test, different layer, different carrier, or third bench is licensed (§4 of the protocol, barred as an unlicensed gate tweak). EXP112's bench-1 41/60 HELD reclassified bench-specific (Law #11 two-layer tagging) — the honesty readout is a one-bench phenomenon, not a general instrument property.
+
+**Files:** `research/benchmarks/FRONTIER_SCOREBOARD.md` — EXP125 inventory row added after EXP124; EXP112 row updated with the bench-specific tag; §3.2 H22 paragraph added after the H21 paragraph; v3.0 delta prepended to the §0 delta stack; v3.0 changelog entry prepended. `research/benchmarks/PROGRESS_ANALYSIS.md` — EXP125 update appended before "What closes it."
+
+**Tally (v3.0):** three CONTINUEs (EXP111, EXP120 qualified, EXP122), one HELD (EXP112, bench-1-specific), one apparatus CONTINUE (EXP113), three KILLs (EXP107, EXP114, EXP125), ten RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123, EXP124), one precision certification (EXP110). **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.**
+
+**Continuity:** 4681 → 4682, no gaps. LOG-4682 confirmed next-free before append (0 existing entries, head was LOG-4681).

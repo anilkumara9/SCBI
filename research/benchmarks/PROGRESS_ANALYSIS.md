@@ -312,6 +312,40 @@ EXP116, EXP117, EXP118, EXP119, EXP121, EXP123, EXP124 — all bound), one
 precision certification (EXP110, bound).** The capability column stays at
 zero.
 
+**Update 2026-09-29:** EXP125 (H22/HONESTY-GEN4) —
+**KILL** — the honesty-generality hypothesis is dead at logit level. On the
+independently constructed bench 4 (60 items, four balanced 15-item cells;
+body-part + weather entities, 21/21 single-token under the real Pythia-410m
+tokenizer; new templates, disjoint from benches 1/2/3; breaking-point
+certificate LOG-4679 PASSED before execution — single-token assertion,
+[-3:] identity 60/60, G-C1 30/60, G-C2 |Pearson|=0.0198, G-C3 byte-exact,
+Law-#7 label pin, no item screening of any kind), EXP112's H6 honesty
+apparatus carried verbatim → **fidelity 28/60 = 0.4667 → the registered
+≤33/60 KILL band** (LOG-4680 execution; independent exact-artifact verdict
+review LOG-4681 — BIND, no caveat: fidelity independently re-derived
+**28/60** from the raw per-item records, cosine-argmax agreement 60/60, all
+six executor-computed p-values re-verified to printed precision, observed
+one-sided P(X≥28|60,0.5)=0.7405; systematic-misreporting diagnostic
+correctly NOT triggered at 28 > 23; all guards passed — G4 spread
+0.138125, G1 M=0.232343, G2 minority=21, single-token 120/120 —
+LOG-331 pin before AND after, Δθ=0). This is a **licensed guard-passed
+null, not an apparatus failure**: the channel spoke and said nothing. Per
+§4 of the protocol a KILL is never followed by a larger-n re-test, a
+different layer, a different carrier, or a third bench (barred as an
+unlicensed gate tweak). **EXP112's bench-1 41/60 HELD stands, reclassified
+bench-specific (Law #11 two-layer tagging)** — the label-free honesty
+readout is a **one-bench phenomenon** (41/60 bench 1, 28/60 bench 4), not a
+general instrument property. The label-free line now reads: EXP111/EXP120/
+EXP122 decodability CONTINUEs (readout, not steering), EXP112 bench-1-only
+honesty HELD. **The day's tally: three CONTINUEs (EXP111 — bound; EXP120 —
+bound, qualified; EXP122 — bound), one HELD (EXP112, bound,
+bench-1-specific), one apparatus CONTINUE (EXP113, bound), three KILLs
+(EXP107, EXP114, EXP125 — all bound), ten RUN-INVALIDs (EXP108, EXP109,
+EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123, EXP124 — all bound),
+one precision certification (EXP110, bound).** The capability column stays
+at zero — the strongest licensed label-free signal the program could
+produce on $0 CPU did not replicate.
+
 **What closes it.** The §D2 six-condition bar: per-instance construction,
 transfer-validated evaluator, matched-compute wins over ∇-Reasoner /
 Activation-LQR / Meta-Reasoner / DEER / LatentMAS plus the pinned M15
