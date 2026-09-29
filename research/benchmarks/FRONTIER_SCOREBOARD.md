@@ -28,7 +28,7 @@ repo-artifact-verified (§3).
 | Inference-time search (coverage) | **LLM-Monkeys**: coverage scales log-linearly over 4 orders of magnitude; SWE-bench Lite 15.9%→56% at 250 samples (verifier-gated) | G/E/S/T loop: never discriminatingly tested; E-validity [CONJECTURE] | **A working scaling law vs an untested formulation.** |
 | Search + self-evaluation (planning) | **ToT**: Game of 24, GPT-4: 4%→74% (BFS b=5, depth 3) | No planning/search result; EXP068 retired as-signed (Law #15 FAIL) | **4%→74% vs no result.** |
 | Cheap decoding-time aggregation | **Self-consistency**: GSM8K +17.9% (PaLM-540B 56.5%→74.4%, 40 paths, majority vote) | EXP056 autonomous selection: +4pp, p=0.25, **not significant** | **+17.9pp significant vs +4pp non-significant.** |
-| Static steering, decision flips | **ITI**: Alpaca TruthfulQA 32.5%→65.1% (+32.6pp) via label-trained head probes (NeurIPS 2023) | EXP077: **ΔM=0, p=1.0, N=60** (410m/L20) — five static rooms dead; **EXP093: the shared L11 task direction is also ΔM=0, p=1.0 (b=c=0)** — causal inertness, not measurement failure; the L20 boundary generalizes: **information ≠ influence**. G1 killed the QK-subspace mechanism. | **+32.6pp (label-trained probes) vs exactly zero at two layers.** |
+| Static steering, decision flips | **ITI**: Alpaca TruthfulQA 32.5%→65.1% (+32.6pp) via label-trained head probes (NeurIPS 2023) | EXP077: **ΔM=0, p=1.0, N=60** (410m/L20) — five static rooms dead; **EXP093: the shared L11 task direction is also ΔM=0, p=1.0 (b=c=0)** — causal inertness, not measurement failure; the L20 boundary generalizes: **information ≠ influence**. G1 killed the QK-subspace mechanism. **S5-2** (LOG-4392): per-arm 95% upper **4.87%** (n=60, 0/60) — effects ≥4.87% dead on every bench; the skeptic's 1–5% "small real effect" band NOT killed at $0 (the 1–4.87% band is the declared blind spot); grand pooled 0.38% (0/780) assumes across-arm exchangeability. **S5-3** (LOG-4393): 0/8 decode probes clear the bar → EXP077 variants never-decodable, not decodable-yet-inert (instrument LIVE on synthetic D1a). | **+32.6pp (label-trained probes) vs exactly zero at two layers.** |
 | Context-dependent steering | **SVF** (arXiv:2602.01654, Feb 2026): per-activation steering fields, multi-layer coordinated — *no headline number in the checked abstract* | Gated/conditional variants of our operator: **never tested** (survived EXP077's narrow kill by exemption, not evidence) | **A working 2026 method vs an untested exemption.** |
 | Closed-loop representation control | **Activation-LQR**: LTV linearization + LQR feedback with tracking-error bounds, no training — *existence proof, no headline accuracy number in abstract* | CLLC candidate: narrowed distinction only, **never tested** | **Guarantees vs a narrowed claim.** |
 | Selective-abstention reliability | **NoisyCoconut** (TMLR June 2026): unanimous latent-path agreement → error <15% on math reasoning via selective abstention | No reliability result of any kind | **<15% error vs no measurement.** |
@@ -79,6 +79,35 @@ close the battery line: no re-run, no larger population, no third
 readout. **Capability scoreboard: unchanged — still zero positive
 signals for autonomous steering; the label-free race stays tied at
 zero.**
+
+**v1.5 delta [FACT], 2026-09-29:** plotted the two S5 boundary-strengthening
+verdicts from the 9-28 wave — **S5-2 power audit** (LOG-4392): exact
+one-sided 95% upper **4.87%** per arm (n=60, 0/60) over every static-geometry
+kill (EXP065/066, EXP077 ×8, EXP093, EXP094's T-vs-B arm; EXP094 aggregate
+(0/120) → 2.47%; Bench-A pooled L20 (0/540) → 0.55%; Bench-B pooled L11
+(0/180) → 1.65%; grand pooled (0/780) → 0.38% — pooled figures assume
+across-arm exchangeability, collapsing to 4.87% under perfect cross-arm
+correlation; EXP078 contributes no bound — energy-gate halt, not a
+flip-rate kill). The skeptic's 1–5% "small real effect" band is **NOT killed
+at $0** — the 1–4.87% per-arm band is the declared blind spot; **the audit
+plots an honest bound, not a kill.** **S5-3 decode probes** (LOG-4393):
+0/8 EXP077-variant probes clear the EXP092 bar (v_hat acc=0.0667, p=0.3227;
+V6 acc=0.1167 rejected by Bonferroni + 10pp bar; V7 acc=0.0000) →
+**never-decodable PIVOT** — the eight Gap-4 rooms were empty (informational
+wall), not decodable-yet-inert; instrument LIVE on synthetic D1a
+(acc=1.0, p=0.001). **Paper marker: v84 is the release candidate**
+(LOG-4519, CEO GRANT — supersedes v83; v84 = v83 + converging-evidence
+related work + O1/O2 polish, a strict content superset; v83 frozen as prior
+RC). EXP095/096/097 (LOG-4400/4407/4416) and the EXP105 battery
+(LOG-4491, repaired LOG-4495) were verified in-file this cycle — binding
+numbers confirmed, no superseding LOG found; already plotted at v1.2/v1.4,
+no re-plot. Daily frontier sweep (LOG-4513): two converging-evidence finds
+(arXiv:2609.31401 Ravulapalli/Chadha — probe accuracy rises while
+steering benefit stays negligible; arXiv:2609.25366 Jia/Mu, TMLR Sep 2026 —
+readable-but-not-reliably-controllable, ~25% flips at best) — tracked for
+the next §5 fold-in cycle; **headline confirmed unchanged: zero positive
+signals for autonomous steering; the label-free race stays tied at zero.**
+No literature re-check this cycle (next due 2026-10-23).
 
 ---
 
@@ -244,6 +273,8 @@ The same columns. Nothing cherry-picked; the demotions are stated first.
 | **EXP092** — CONTINUE: layer-11 task information licensed (LOG-4336/4338) | Information-Bottleneck Localization — per-layer 1-NN LOO on frozen embeddings | pythia-410m, all 24 layers | Layer 11: **acc 0.3333 (20/60), stratified-permutation p=0.000999 < α_B=0.0020833, effect +0.2000 ≥ 0.10**; S = {1,11,12,13,14,15,17,18} clear both bars; L20 acc 0.15, p=0.0659 (correctly excluded). ADOPT-WITH-CORRECTIONS (binding). **Licensed claim: frozen layer 11 carries significant task information (1-NN LOO, Bonferroni-significant, ≥10pp above null).** Novelty N1. No capability claim licensed. | $0 CPU (~1.5h) | None | N | Y | Continue, l* = 11; S1 (Ross kNN-MI) retired — proven vacuous by construction (MI = ψ(60)−ψ(4) exactly in this regime; any successor MI diagnostic needs a degeneracy analysis + constant-data unit test) | LOG-4336 (execution), LOG-4338 (binding review), `experiments/runs/EXP092_ibl/` |
 | **EXP093** — KILL UPHELD: shared layer-11 direction causally inert (LOG-4352) | Static injection of the shared layer-11 task direction on EXP092-B | pythia-410m / L11 | **Δ = 0.0000; McNemar b = c = 0 → p = 1.0 in all six tests** (P-vs-B and N-vs-B × 3 strata); perturbation real (4.7% of residual norm, reached the logits, G5 rel_err 4.3e-07) but flipped zero decisions — causal inertness, not measurement failure. **Information ≠ influence at layer 11; the layer-20 boundary generalizes.** Falsifies "≥10pp causal transfer via a shared static direction at layer 11" only. | $0 CPU (~10–15 min) | None | N | Y | Killed (executed real, CPU); independent verdict review binding (LOG-4352); Δθ=0 verified (pre/post `ec276abe…`) | LOG-4352; `experiments/protocols/REVIEWS/EXP093_LAW14_VERDICT_REVIEW_2026-09-25.md` |
 | **EXP094** — KILL: per-item static L11 geometry refuted by inertness (LOG-4376/4377) | Per-item static L11 injection (per-item direction, not shared) | pythia-410m / L11 | **0 flips across 120 injection arms** (B=T=R=36/60, p=1.0) despite confirmed delivery; per-item static-geometry family closed at L11 | $0 CPU | None | N | Y | Refuted (executed real, CPU); independent verdict review ADOPTED (LOG-4377) | LOG-4376/4377; `experiments/runs/EXP094*` |
+| **S5-2** — power audit: honest bounds on the static-geometry kills (LOG-4392) | Flip-rate upper bounds over committed static-geometry kill statistics | pythia-410m / L20 (EXP065, EXP066, EXP077 ×8 variants) + L11 (EXP093, EXP094); EXP078 contributes NO bound (ENERGY_GATE_HALT, localization not a flip-rate kill — LOG-117) | Exact one-sided 95% upper = 1−0.05^{1/n}. Per-arm **(0/60): 4.87% exact / 5.00% Ro3 / 5.96% CP-2sided** — applies to EXP065, EXP066, each EXP077 variant, EXP093, EXP094's T-vs-B arm. EXP094 aggregate (0/120): **2.47%**. Bench-A pooled L20 (0/540): **0.55%**; Bench-B pooled L11 (0/180): **1.65%**; grand pooled (0/780): **0.38%**. **Pooling caveat [FACT]:** arms share the same 60 items — pooled figures assume across-arm exchangeability; under perfect cross-arm correlation the pool collapses to the per-arm 4.87% (honest: Bench-A ∈ [0.55%, 4.87%], Bench-B ∈ [1.65%, 4.87%]) | 0 new passes ($0 arithmetic over committed statistics) | N/A | — | Y | **Supported (audit)** — CONFIRM + QUANTIFY: PIVOT does not fire (no bound outruns its license); the skeptic's 1–5% "small real effect" band is **NOT killed at $0** — the 1–4.87% per-arm band remains the declared blind spot. What $0 buys: effects ≥4.87% dead per arm on every bench; ≥2.47% dead on the EXP094 aggregate; ≥1.65% pooled at L11; ≥0.55% as an across-arm average at L20 (exchangeability assumed). N≈100+ replication priced (independently reproduced from committed statistics). **The audit plots an honest bound, not a kill** | LOG-4392; `research/analysis_plans/S5-2_POWER_AUDIT_2026-09-28.md` |
+| **S5-3** — paired decode probes: never-decodable PIVOT (LOG-4393) | EXP092's licensed decode protocol on the eight killed EXP077 variants' directions (Gap 4: decodable-yet-inert vs never-decodable) | pythia-410m / L20 (archived EXP077 directions; index 20 = EXP077 target layer) | **0/8 clear the bar** (Bonferroni p < 0.05/8 + (acc − q95) ≥ 0.10): v_hat probes (V1–V5, V8) acc=0.0667, p=0.3227, effect=−0.033; V6 (r_vec) acc=0.1167, p=0.0499 — rejected by BOTH bars; V7 (v_hat^c) acc=0.0000, p=1.0. **Instrument LIVE:** D1a synthetic-1-D machinery check acc=1.0, p=0.001, effect=+0.85 (variant nulls are real nulls, not deafness); D1b: 1-D entity information at L20 is weak along any real direction tried (label-informed: acc=0.05, p=0.75) | $0 CPU, 0 new model passes (≤480 CPU probes on archived artifacts); deterministic re-run byte-identical | None | N | Y | **PIVOT (never-decodable)** — the Gap-4 rooms were empty (informational wall), not decodable-yet-inert. 8 arms = 3 distinct directions (v_hat; r_vec cos=0.019 to v_hat; v_hat^c). Consistent with EXP077's branch-(c) NEITHER GPU verdict. Caveat: decode target is target-entity identifiability (EXP092's licensed operationalization), not EXP077's relational-vs-neutral construct | LOG-4393; `research/analysis_plans/S5_3_REPORT_2026-09-28.md`, `research/analysis_plans/s5_3_decode_probes_2026-09-28.py` |
 | **EXP095** — KILL: α-grid inert (LOG-4400) | α grid sweep on per-item L11 injection | pythia-410m / L11 | α ∈ {0.25,0.5,1,2,4} → task flips {0,0,0,1,1} — inert below bar at every ratio | $0 CPU | None | N | Y | Refuted | LOG-4400 |
 | **EXP096** — KILL: headroom-gated movement fragility (LOG-4407) | Headroom-gated per-item L11 injection | pythia-410m / L11 | Headroom-gated T and B_wrong each moved 3 — movement exists but is not attributable to the task direction | $0 CPU | None | N | Y | Refuted | LOG-4407 |
 | **EXP097** — PIVOT: fragility (LOG-4416) | Fragility probe of per-item L11 movement | pythia-410m / L11 | Movement not directionally attributable | $0 CPU | None | N | Y | PIVOT (fragility) | LOG-4416 |
@@ -312,7 +343,11 @@ direction is now mapped on all four gate cells and the static/per-item
 geometry side. The LOG-4460 terminality claim bars any fifth
 externally-computed gate variant; surviving conditional license is
 self-computed gates and beyond, each needing its own pre-registration and
-Law #14 review. The GPU queue (K2 → EXP083 → EXP084 → EXP086 Stage B →
+Law #14 review. The S5-2 power audit (LOG-4392) fixes the honest bounds on
+the underlying static-geometry kills — per-arm 95% upper 4.87%, the
+skeptic's 1–5% band NOT killed at $0 — and S5-3 (LOG-4393) re-licenses the
+eight EXP077 variants as never-decodable (0/8 clear the bar): the rooms
+were empty, not decodable-yet-inert. The GPU queue (K2 → EXP083 → EXP084 → EXP086 Stage B →
 EXP088 → EXP087) is untouched. **Capability scoreboard: unchanged — still
 zero positive signals for autonomous steering.**
 
@@ -473,6 +508,24 @@ Per-item construction can never beat a None-class row.
   signals for autonomous steering; the label-free race stays tied at
   zero. PROGRESS_ANALYSIS.md I2′ section updated to terminal. No
   literature re-check this cycle (next due 2026-10-23).
+- v1.5 — 2026-09-29 (scoreboard-sync lane, LOG-4524): plotted **S5-2 power
+  audit** (LOG-4392 — per-arm 95% upper 4.87% (n=60, 0/60) over EXP065/066,
+  EXP077×8, EXP093, EXP094's T-vs-B arm; EXP078 no bound; pooled figures
+  with exchangeability caveat: Bench-A 0.55%, Bench-B 1.65%, grand 0.38%;
+  skeptic's 1–5% band NOT killed at $0 — honest bound, not a kill) and
+  **S5-3 decode probes** (LOG-4393 — 0/8 clear the bar, never-decodable
+  PIVOT for all eight EXP077 variants; instrument LIVE on D1a). §0
+  static-steering row + §3.2 position paragraph updated. **Paper marker:
+  v84 is the release candidate** (LOG-4519, CEO GRANT, superseding v83 —
+  strict content superset; v83 frozen as prior RC). Premises verified
+  in-file this cycle: EXP095/096/097 (LOG-4400/4407/4416) and EXP105
+  battery (LOG-4491, repaired LOG-4495) — binding numbers confirmed, no
+  contradictions, no supersession; already plotted at v1.2/v1.4, not
+  re-plotted. Daily sweep LOG-4513: headline confirmed unchanged (zero
+  positive signals; race tied at zero); two converging-evidence finds
+  (arXiv:2609.31401, arXiv:2609.25366) tracked for the next §5 fold-in.
+  No literature re-check this cycle (next due 2026-10-23).
+  PROGRESS_ANALYSIS.md: v84 release-candidate marker updated.
 
 ---
 

@@ -10936,3 +10936,31 @@ Uncommitted LOG-4513 entry in `reports/research_log.md` and the new sweep report
 **Scope held [FACT]:** $0 CPU — file operations only, no model contact, no weights loaded. Single-lane fence held: no dispatch. Stop at the commit + log entry.
 
 **Next free: LOG-4524.**
+
+## LOG-4524 — Frontier scoreboard v1.5: S5-2/S5-3 plotted, v84 RC marker (2026-09-29)
+
+**Lane [FACT]:** Scoreboard-sync lane, pre-assigned LOG-4524. $0 CPU; paper only; read-only on signed protocols, weights, and paper sources (v82/v83/v84 untouched). Single-lane fence held: no subagent dispatch, no model runs.
+
+**Step-0 premise verification [FACT]:** every verdict cited in the brief confirmed in-file with its binding numbers; no contradiction, no supersession found.
+- LOG-4400 (EXP095 REFUTED): T-vs-B flips {0,0,0,1,1} across α∈{0.25,0.5,1,2,4}, all McNemar p=1.0; license strength-invariant over 16× — confirmed verbatim.
+- LOG-4407 (EXP096 REFUTED): gated T(8.0) 3 flips < 6, p=1.0, ΔM=−0.0476; B_wrong 3 flips p=1.0; closed conditionally — confirmed.
+- LOG-4416 (EXP097 PIVOT fragility): step 5a fired, threshold account dead as a mechanism claim — confirmed.
+- LOG-4491/4495 (EXP105 battery): ΔM_T=+0.2381 vs ΔM_R=0.0, primary T-vs-R McNemar p=0.0625 (missed CONTINUE by one flip), O=0.571>0.5 → F non-diagnostic, line CLOSED — confirmed; LOG-4495 is a verbatim repair of LOG-4491's truncation, not a new verdict.
+- LOG-4392 (S5-2): per-arm (0/60) 95% upper 4.87% exact one-sided / 5.00% Ro3 / 5.96% CP-2sided; EXP094 aggregate (0/120) 2.47%; Bench-A pooled (0/540) 0.55%; Bench-B pooled (0/180) 1.65%; grand pooled (0/780) 0.38% — all pooled figures assuming across-arm exchangeability (collapse to 4.87% under perfect cross-arm correlation; honest Bench-A ∈ [0.55%, 4.87%], Bench-B ∈ [1.65%, 4.87%]); EXP078 contributes no bound (energy-gate halt, not a flip-rate kill). Verdict: CONFIRM + QUANTIFY; skeptic's 1–5% band NOT killed at $0 — plot the honest bound, not a kill — confirmed.
+- LOG-4393 (S5-3): 0/8 clear the bar (v_hat acc=0.0667, p=0.3227; V6 0.1167 rejected by both bars; V7 0.0000); never-decodable PIVOT; instrument LIVE on D1a synthetic (acc=1.0, p=0.001) — confirmed.
+- LOG-4519 (CEO GRANT): v84 is the release candidate, superseding v83 (strict content superset: v83 + converging-evidence related work + O1/O2 polish; v83 frozen as prior RC). Reconciled with LOG-4515/4516: those stated "NOT a release candidate" for the pre-clearance draft state; LOG-4519's clearance post-dates them. No later LOG contradicts — LOG-4520 is commit-prep, LOG-4521/4522 killed stale packet lanes (S5-1=EXP095, S5-4=EXP096 — confirming, not contradicting), LOG-4523 is repo-integrity.
+- LOG-4513 (daily frontier sweep 2026-09-29): headline unchanged — zero positive signals for label-free autonomous steering, race tied at zero; two converging-evidence finds (arXiv:2609.31401 Ravulapalli/Chadha; arXiv:2609.25366 Jia/Mu, TMLR Sep 2026) belong in v84 related work (already added there, LOG-4515), tracked for the next §5 scoreboard fold-in.
+
+**Plotted (FRONTIER_SCOREBOARD.md v1.5) [FACT]:**
+1. New §3.1 row: **S5-2 power audit** (LOG-4392) — Status: Supported (audit), verdict CONFIRM + QUANTIFY, skeptic's band NOT killed at $0.
+2. New §3.1 row: **S5-3 decode probes** (LOG-4393) — Status: PIVOT (never-decodable), 0/8 clear the bar, instrument LIVE.
+3. §0 static-steering at-a-glance row: S5-2/S5-3 clauses appended (per-arm 95% upper 4.87%, declared 1–4.87% blind spot; never-decodable PIVOT).
+4. §0 v1.5 delta entry; §3.2 position paragraph (S6 arc) extended with S5-2/S5-3; §5 changelog entry.
+5. PROGRESS_ANALYSIS.md: paper marker updated — v84 release candidate (LOG-4519, superseding v83); no other numbers touched (per lane scope).
+6. EXP095/096/097 and EXP105 battery NOT re-plotted — already at v1.2/v1.4, verified unchanged in-file.
+
+**Headline [FACT]:** unchanged — zero positive signals for autonomous steering; the label-free race stays tied at zero (confirmed by LOG-4513, 2026-09-29).
+
+**Staged, not committed:** `research/benchmarks/FRONTIER_SCOREBOARD.md`, `research/benchmarks/PROGRESS_ANALYSIS.md`, `reports/research_log.md`. No commit, no push, no PR, no stash.
+
+**Next free: LOG-4525.**

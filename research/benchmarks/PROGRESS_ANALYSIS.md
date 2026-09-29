@@ -41,7 +41,9 @@ boundary science: the static + per-item + externally-gated rescue
 program — every tested rescue dead, untestable, or uninterpretable — is
 now a *map*, not a single null. That is real and publishable as a
 boundary result (the gap analysis flags it as the largest no-new-compute
-evidence delta for v83). It is not a capability and does not compete with
+evidence delta for v84 — current release candidate, superseding v83 per
+LOG-4519; v84 = v83 + converging-evidence related work + O1/O2 polish).
+It is not a capability and does not compete with
 any frontier row. The one axis where the frontier is also at zero —
 **label-free autonomous steering** — remains the only honest race.
 
