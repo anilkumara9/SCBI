@@ -90,9 +90,25 @@ elicitation-failure gate); H1/H4 themselves are NOT revived
 Methodological/apparatus entry: parseable output ≠ reasoning, honesty,
 or capability — the generation axis is open for this backbone under
 pinned protocols, a real methodological gain, not a capability signal.
-**The day's tally: one CONTINUE (EXP111), one HELD (EXP112), one KILL
-(EXP107), two RUN-INVALIDs (EXP108, EXP109), one precision
-certification (EXP110), one apparatus CONTINUE (EXP113).** The
+**Update 2026-09-29:** EXP114 (H8/POE) **KILL** — positional-order
+ensembling, the round-2 wave's first clean negative: K=5 ensemble of
+frozen-backbone position logits over randomized presentation orders vs
+the canonical single-order baseline on the EXP107
+template-decorrelated bench (360/360 forward passes, zero generation;
+order patterns independently replicated from random.Random(20260929),
+0/60 mismatches; all three archive hashes and the LOG-331 backbone pin
+matched before AND after, Δθ=0): **acc_ensemble 38/60 = 0.6333 vs
+acc_baseline 41/60 = 0.6833; net (b−c) = −3; one-sided exact McNemar
+p = 0.9375** — the ensemble scored 5pp BELOW the baseline, firing the
+registered net ≤ 0 → KILL branch with no post-hoc re-interpretation.
+Fences honored: retires only the positional-order-ensembling axis for
+this task class — test-time scaling in general and the adaptive-loop
+program are explicitly NOT retired; the below-baseline reading is a
+labeled [OBSERVATION], no softening (independent exact-artifact verdict
+review LOG-4592 — BIND, no caveat).
+**The day's tally: one CONTINUE (EXP111), one HELD (EXP112), one
+apparatus CONTINUE (EXP113), two KILLs (EXP107, EXP114), two
+RUN-INVALIDs (EXP108, EXP109), one precision certification (EXP110).** The
 capability column stays at zero.
 
 **What closes it.** The §D2 six-condition bar: per-instance construction,
