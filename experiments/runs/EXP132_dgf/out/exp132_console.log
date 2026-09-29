@@ -1,0 +1,24 @@
+protocol pin OK (post-fix LOG-4740 revision)
+bench sha256: e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5
+prompts: 10 pinned ids verified (protocol §3.1)
+env: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "device": "cpu", "threads": 2, "smoke": false, "protocol_pin": "6963043b8bed628646520bf3a2eb15389c2740eb4b85d913a8a7bcf2202ec6cf", "bench_pin": "e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5"}
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+semantic probe derived (EXP077 support-set recipe); sha256: 56828e953024101685692f02297ad90f817187733b2b8b497c73189921a6c9b2
+support continuity diagnostic mean_cos_v1=0.7163
+base forwards complete: 10 prompts
+validity check (a): unit-norm audit passed (1 semantic + 80 iso probes)
+converting model to float64 for the convergence diagnostic...
+diagnostic prompt exp107_flip_exp077_planet_2hop_0: FAIL (excluded)
+diagnostic prompt exp107_ctrl_exp077_planet_2hop_1: FAIL (excluded)
+diagnostic prompt exp107_flip_exp077_planet_2hop_2: FAIL (excluded)
+diagnostic prompt exp107_ctrl_exp077_planet_2hop_3: FAIL (excluded)
+diagnostic prompt exp107_flip_exp077_planet_2hop_4: FAIL (excluded)
+diagnostic prompt exp107_ctrl_exp077_planet_2hop_5: FAIL (excluded)
+diagnostic prompt exp107_flip_exp077_planet_2hop_6: FAIL (excluded)
+diagnostic prompt exp107_ctrl_exp077_planet_2hop_7: FAIL (excluded)
+diagnostic prompt exp107_ctrl_exp077_planet_2hop_8: FAIL (excluded)
+diagnostic prompt exp107_flip_exp077_planet_2hop_9: FAIL (excluded)
+model restored to float32; backbone hash re-verified after round-trip.
+decision set: 0/10 prompts passed the diagnostic
+apparatus-void: fewer than 8 diagnostic-passing prompts. Hypothesis UNTESTED.

@@ -13791,3 +13791,165 @@ Fix-verification lane (LOG-4740) applied all nine Law #14 review fixes (LOG-4739
 **Executor obligation:** verify the protocol sha256 `6963043b8bed628646520bf3a2eb15389c2740eb4b85d913a8a7bcf2202ec6cf` before the first forward; any mismatch → apparatus-void, do not run.
 
 **Next in the launch chain:** execution lane dispatch under EXP132.
+
+## LOG-4742 — 2026-09-29 — Commit-prep complete: DGF/EXP132 wave committed locally, no push
+
+**Commit:** `b855317` on `sync/2026-09-29-consolidated` — `feat(exp132-dgf): directional-gain field pre-reg licensed — SIGN-WITH-FIXES satisfied`. 5 files, +1114 insertions, zero deletions, staged set verified wave-only: `research/strategy/DGF_GATE_2026-09-29.md` (LOG-4737 PASS-conditional), `research/analysis_plans/DSF_APPARATUS_REDESIGN_STUDY_2026-09-29.md` (LOG-4736), `research/prereg/EXP_PREREG_DGF_GAINFIELD_2026-09-29.md` (LOG-4738/4739/4740, post-fix sha256 `6963043b8bed628646520bf3a2eb15389c2740eb4b85d913a8a7bcf2202ec6cf`), `research/reviews/LAW14_REVIEW_DGF_GAINFIELD_2026-09-29.md` (LOG-4739 SIGN-WITH-FIXES), `reports/research_log.md` (LOG-4735→4741 entries; LOG-4735's append rode this cycle per convention).
+
+**Divergence check:** CLEAN — full heading-anchored numeric LOG comparison, main tree (max 4741) vs worktree `sync-log4393-4465` (352 LOGs, max 4466): zero worktree LOG numbers missing from main.
+
+**Push:** not attempted. Pushes/PRs remain founder-reserved with a fresh founder-supplied token (none supplied).
+
+**State:** EXP132 (DGF directional-gain field) minted and licensed for CPU execution at LOG-4741; the launch chain is closed on the CPU side. Next: execution lane dispatch under EXP132.
+
+## LOG-4743 — EXP132 execution: apparatus-void (RUN-INVALID), 0/10 diagnostic pass (2026-09-29)
+
+**Lane:** LOG-4743 (pre-assigned). **Experiment:** EXP132 (DGF directional-gain
+field), licensed LOG-4741. **$0 CPU.**
+
+**Verdict: apparatus-void (RUN-INVALID). Hypothesis UNTESTED; no ΔGini minted.**
+
+The §3.3 multi-ε float64 convergence diagnostic failed on 0/10 prompts
+(required ≥ 8/10). Per-prompt worst |F(ε)−JVP|/JVP over 9 probes × layers
+{0,11,23} × ε∈{1e-6,1e-7,1e-8}: 1.36e5–2.46e5 (bar: ≤ 0.25). Decision set: 0
+prompts. Median ΔGini: UNMEASURED. Official executor exit code 42 via the
+registered falsification tree (Law #9 ordering followed; tree stopped at the
+diagnostic — JVP batches never ran).
+
+**Protocol compliance:** pre-reg SHA-256 `6963043b…c6cf` verified before model
+contact (match); backbone LOG-331 `ec276abe3902fab0…` pre-pin MATCH; 10 pinned
+prompt ids verbatim; semantic probe derived deterministically from EXP077's
+support-set recipe (SHA-256 `56828e953024101685692f02297ad90f817187733b2b8b497c73189921a6c9b2`,
+recorded pre-JVP); Δθ=0 by construction (eval mode, requires_grad=False, no
+optimizer/loss); eager attention backend (CPU sdpa/flash has no backward —
+backbone pin unaffected).
+
+**Instrument finding [OBSERVATION]:** the failure is not a code defect. The
+JVP is the exact infinitesimal derivative (`make_g` reproduces the base
+readout at 0.0 relative error; the model's own forward confirms the
+quotients). Finite-difference quotients F(ε) do not converge to it: F(1e-3)≈4.2
+(≈JVP 4.48), F(1e-4)≈22, F(1e-5)≈223, F(1e-6..1e-8)≈1.6e3–1.4e5 — growing as ε
+shrinks, with an ε-independent numerator floor ≈2e-3. Block-by-block trajectory
+shows smooth but extreme nonlinear amplification from block 13 (≈5×) to block
+21 (≈1083×); bisection localizes the sharp transition to scale ≈1e-11. The
+map's Taylor radius is ≈1e-11: the exact derivative exists but no finite
+perturbation at any accessible scale (≥1e-8 in float64) lives in its linear
+regime.
+
+**Interpretation:** deepens EXP128's RUN-INVALID. EXP128 showed finite
+differences at 1e-3 measure saturation, not the derivative; EXP132 shows the
+exact derivative itself occupies an infinitesimal regime (≈1e-11) with no
+finite-ε counterpart — "directional gain" of the frozen layer-to-readout map
+has no operational meaning at finite precision. The DSF soft-spot hypothesis
+remains UNTESTED (never measured by either instrument). Characterization-only
+frame honored; no targeting claim; capability scoreboard unaffected.
+
+**Report:** `research/experiments/EXP132_DGF_GAINFIELD_REPORT_2026-09-29.md`.
+**Executor:** `experiments/runs/EXP132_dgf/run_exp132.py`;
+console `experiments/runs/EXP132_dgf/out/exp132_console.log`.
+**Next:** independent Law #14 review of this execution (binds the
+apparatus-void); Family B stays UNTESTED.
+
+## LOG-4744 — Law #14 independent review of EXP132 execution: SIGN-WITH-FIXES (2026-09-29)
+
+**Lane:** LOG-4744 (pre-assigned). **Scope:** independent execution review of
+LOG-4743 (EXP132 apparatus-void). Reviewer performed read-only apparatus audits
+with independent recomputation on the pinned weights; no new experiment run.
+
+**Verdict: SIGN-WITH-FIXES. Binding outcome BOUND:** §3.3 multi-ε float64
+convergence diagnostic 0/10 prompts (bar ≥ 8/10) → **apparatus-void
+(RUN-INVALID)**; hypothesis UNTESTED; no ΔGini minted; median ΔGini UNMEASURED.
+Full review: `research/reviews/LAW14_REVIEW_EXP132_EXECUTION_2026-09-29.md`.
+
+**Protocol compliance independently verified [FACT]:** pre-reg SHA-256
+`6963043b…c6cf` matches on disk and console (verified pre-model-contact);
+backbone LOG-331 `ec276abe3902fab0…` pre-pin MATCH and re-verified after the
+float64 round-trip (h_mid); 10 prompt ids verbatim; probe SHA-256
+`56828e953024101685692f02297ad90f817187733b2b8b497c73189921a6c9b2`;
+DIAG_EPS/TOL/LAYERS/N_PROMPTS/K_ISO byte-match the signed protocol; Law #9
+ordering followed (JVP batches, verdict metrics, raw-record hash-pin correctly
+not reached); Law #7 clean; Δθ=0.
+
+**Apparatus audit:** the rotary-embedding fix was causally material
+(independent test: rel diff 0.98 at layer-0 attention, 0.062 at readout) —
+pre-fix smoke numbers were void. The causal-mask concern was a phantom:
+explicit mask+positions+rotary reproduces the default path at rel error 0.0.
+`make_g` applies exactly one final LayerNorm and is correct for all diagnostic
+layers {0,11,23}.
+
+**Layout finding [FACT] (transformers 5.17.0):** `hidden_states` has 25 entries:
+hs[0]=embeddings, hs[k]=block-(k−1) output for 1≤k≤23, **hs[24]=post-final-LN**
+(rel 0.0 vs `last_hidden_state`); raw block-23 output is absent. EXP132
+unaffected (all sites < 24). **EXP128's latent double-final-LN defect CONFIRMED
+real:** its executor applies `final_layer_norm` to the already-normalized
+hs[24] (deviation rel 0.165 from the correct readout) — its linearity
+diagnostic measured the wrong construct. EXP128 verdict category unchanged
+(RUN-INVALID, DSF UNTESTED — it stopped before metrics either way), but its
+report needs a dedicated erratum lane (recommended, not in this review's
+scope).
+
+**Numbered fixes required before the wave is committable:** FIX-1 — replace
+"Taylor radius ≈ 1e-11" with the licensed quantity (linear-regime radius at 25%
+tolerance, below 1e-8; the signed protocol itself states the map is C^∞, so a
+Taylor-radius/analyticity claim is unlicensed and self-contradictory). FIX-2 —
+narrow "no operational meaning as a gain": the AD JVP is the exact derivative;
+what failed is FD validation, so the instrument *as licensed* (FD-validated
+JVP) does not exist. FIX-3 — provenance-mark the worst-rel table and
+[OBSERVATION] items 2–4 as worksheet-derived: `/tmp/diag_full.log` no longer
+exists; the committed console evidences only per-prompt PASS/FAIL (Law #13).
+FIX-4 — disambiguate the two pins: Law #9 raw-record hash-pin correctly not
+reached; Law #6 h_mid weight-integrity pin WAS performed. FIX-5 — EXP128
+erratum finding recorded above. FIX-6 (minor) — console log has duplicated
+pre-diagnostic blocks (append residue); truncate/annotate.
+
+**Not licensed by this review:** resurrecting finite-difference DSF sensing;
+promoting ≈1e-11 beyond FIX-1's narrow reading; any claim about what EXP128's
+check would have shown on the correct readout (unmeasured). Capability
+scoreboard unaffected: **zero positive autonomous-steering signals.**
+
+## LOG-4745 — EXP132 execution-report six-fix byte-verification: all applied (2026-09-29)
+
+**Lane:** LOG-4745 (pre-assigned). **Scope:** byte-verification of the six
+numbered fixes required by the LOG-4744 independent review (SIGN-WITH-FIXES)
+before the EXP132 wave is committable. $0 CPU, no model contact. Edited only
+the execution report and the official console log; read-only everywhere
+else. No push, no spend, no credential touch.
+
+**Pre-fix report SHA-256:** `ee8885d6fd7b4bcd77e33d1af170eb0fbbbba56889ac9a482525638b3d722520`
+(pristine copy held at `/tmp/exp132_report_pristine.md` for the diff).
+**Post-fix report SHA-256:** `6a906fd1fcee569c000adf8706c1069ac6d38dff17e1410c4f9432de24d1534d`.
+Diff: 89 changed lines, all fix-attributable, zero other bytes. None of the
+six fixes was vacuous.
+
+**Per-fix edit summary:**
+- FIX-1 (launch-gating): all "Taylor radius ≈ 1e-11" / analyticity claims
+  replaced with the licensed quantity — the linear-regime radius at the
+  registered 25% tolerance, placed below 1e-8 (bisection onset ≈1e-11
+  marked worksheet-derived); protocol's C^∞ premise now stated alongside,
+  so no unlicensed analyticity claim remains.
+- FIX-2 (launch-gating): "no operational meaning as a gain" narrowed to the
+  licensed conclusion — the AD JVP is the exact derivative; what failed is
+  its finite-difference validation, so the instrument *as licensed*
+  (FD-validated JVP) does not exist. The "Relation to EXP128" paragraph
+  conformed to the report's own narrow apparatus-void conclusion.
+- FIX-3 (launch-gating): the per-prompt worst-rel table and [OBSERVATION]
+  items 2–4 provenance-marked "worksheet-derived; not reproducible from
+  committed artifacts (Law #13)" — `/tmp/diag_full.log` is gone; the
+  committed console evidences only per-prompt PASS/FAIL.
+- FIX-4: pins disambiguated — the Law #9 raw-record hash-pin was correctly
+  NOT reached; the Law #6 weight-integrity pin (h_mid, backbone hash
+  re-verified after the float64 round-trip, console line 22) WAS performed.
+- FIX-5: the EXP128 erratum finding recorded — its executor applies
+  `final_layer_norm` to the already-normalized `hidden_states[24]` (rel
+  deviation 0.165), so its linearity diagnostic measured the wrong
+  construct; verdict category unchanged (RUN-INVALID, DSF UNTESTED); a
+  dedicated EXP128 erratum lane is recommended (this report does not
+  rewrite EXP128's report).
+- FIX-6 (minor): official console `experiments/runs/EXP132_dgf/out/exp132_console.log`
+  truncated from 30 to 24 lines — lines 7–12 were byte-identical duplicates
+  of lines 1–6 (append residue); no executor output line was altered.
+
+**Wave status:** committable pending the commit-prep lane. Binding outcome
+unchanged: EXP132 apparatus-void (RUN-INVALID), Family B's directional-gain
+hypothesis UNTESTED, no ΔGini minted. Capability scoreboard unaffected —
+still zero positive autonomous-steering signals.
