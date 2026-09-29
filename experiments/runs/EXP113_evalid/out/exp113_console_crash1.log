@@ -1,0 +1,12 @@
+[2026-09-29 06:41:16] EXP113 H7/EVALID execution start (LOG-4584)
+[2026-09-29 06:41:16] env: torch=2.14.0+cpu transformers=5.17.0 numpy=2.5.3 threads_set=2 threads_read=2 seed=0 device=cpu dtype=float32 greedy=True
+[2026-09-29 06:41:16] bench provenance sha256: 47281cd3dc243369be0aa5be2345663b752cdb4a329a16a37f08da5717230585
+[2026-09-29 06:41:16] bench rebuilt verbatim: n=60; item0 id=exp077_planet_2hop_0; item59 id=exp077_element_3hop_14
+[2026-09-29 06:41:16] loading tokenizer + model (cpu, float32)...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<01:18,  3.71it/s]Loading weights:   4%|▍         | 12/292 [00:00<00:06, 40.15it/s]Loading weights:  11%|█         | 32/292 [00:00<00:03, 78.71it/s]Loading weights:  14%|█▍        | 42/292 [00:00<00:03, 76.93it/s]Loading weights:  17%|█▋        | 51/292 [00:00<00:03, 78.78it/s]Loading weights:  23%|██▎       | 68/292 [00:00<00:02, 92.79it/s]Loading weights:  30%|██▉       | 87/292 [00:01<00:01, 116.83it/s]Loading weights:  36%|███▌      | 104/292 [00:01<00:01, 124.76it/s]Loading weights:  41%|████      | 120/292 [00:01<00:01, 128.22it/s]Loading weights:  46%|████▌     | 134/292 [00:01<00:01, 129.70it/s]Loading weights:  51%|█████     | 148/292 [00:01<00:01, 124.32it/s]Loading weights:  55%|█████▌    | 161/292 [00:01<00:01, 111.70it/s]Loading weights:  60%|██████    | 176/292 [00:01<00:01, 114.53it/s]Loading weights:  64%|██████▍   | 188/292 [00:01<00:00, 104.77it/s]Loading weights:  68%|██████▊   | 200/292 [00:02<00:00, 103.33it/s]Loading weights:  74%|███████▍  | 216/292 [00:02<00:00, 114.12it/s]Loading weights:  78%|███████▊  | 228/292 [00:02<00:00, 114.37it/s]Loading weights:  86%|████████▋ | 252/292 [00:02<00:00, 145.01it/s]Loading weights:  91%|█████████▏| 267/292 [00:02<00:00, 115.29it/s]Loading weights:  96%|█████████▌| 280/292 [00:02<00:00, 102.11it/s]Loading weights: 100%|██████████| 292/292 [00:02<00:00, 105.19it/s]
+[2026-09-29 06:41:20] model: GPTNeoXForCausalLM; dtype=torch.float32
+[2026-09-29 06:41:23] backbone hash BEFORE: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[2026-09-29 06:42:40] progress: 60/600 generations, 1.3 min elapsed, exceptions=0, empty=0
+[2026-09-29 07:04:43] progress: 120/600 generations, 23.3 min elapsed, exceptions=0, empty=0
+[2026-09-29 07:07:53] progress: 180/600 generations, 26.5 min elapsed, exceptions=0, empty=0

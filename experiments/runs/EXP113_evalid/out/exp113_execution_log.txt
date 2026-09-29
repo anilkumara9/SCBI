@@ -1,0 +1,25 @@
+[2026-09-29 07:31:24] EXP113 H7/EVALID execution start (LOG-4584)
+[2026-09-29 07:31:24] env: torch=2.14.0+cpu transformers=5.17.0 numpy=2.5.3 threads_set=2 threads_read=2 seed=0 device=cpu dtype=float32 greedy=True
+[2026-09-29 07:31:24] bench provenance sha256: 47281cd3dc243369be0aa5be2345663b752cdb4a329a16a37f08da5717230585
+[2026-09-29 07:31:24] bench rebuilt verbatim: n=60; item0 id=exp077_planet_2hop_0; item59 id=exp077_element_3hop_14
+[2026-09-29 07:31:24] loading tokenizer + model (cpu, float32)...
+[2026-09-29 07:31:28] model: GPTNeoXForCausalLM; dtype=torch.float32
+[2026-09-29 07:31:31] backbone hash BEFORE: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[2026-09-29 07:32:43] progress: 60/600 generations, 1.2 min elapsed, exceptions=0, empty=0
+[2026-09-29 07:52:22] progress: 120/600 generations, 20.9 min elapsed, exceptions=0, empty=0
+[2026-09-29 07:55:26] progress: 180/600 generations, 23.9 min elapsed, exceptions=0, empty=0
+[2026-09-29 08:18:26] progress: 240/600 generations, 46.9 min elapsed, exceptions=0, empty=0
+[2026-09-29 08:19:13] progress: 300/600 generations, 47.7 min elapsed, exceptions=0, empty=0
+[2026-09-29 08:31:19] progress: 360/600 generations, 59.8 min elapsed, exceptions=0, empty=0
+[2026-09-29 08:32:25] progress: 420/600 generations, 60.9 min elapsed, exceptions=0, empty=2
+[2026-09-29 08:36:44] progress: 480/600 generations, 65.2 min elapsed, exceptions=0, empty=2
+[2026-09-29 08:38:01] progress: 540/600 generations, 66.5 min elapsed, exceptions=0, empty=2
+[2026-09-29 08:57:17] progress: 600/600 generations, 85.8 min elapsed, exceptions=0, empty=2
+[2026-09-29 08:57:17] generation complete: 600/600, exceptions=0, empty=2, gen_time_min=85.8
+[2026-09-29 08:57:21] backbone hash AFTER: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[2026-09-29 08:57:21] deterministic re-parse: byte-identical (2 runs)
+[2026-09-29 08:57:21] r1(T1)={'P1': 0, 'P2': 60, 'P3': 0, 'P4': 58, 'P5': 60} r2(T2)={'P1': 24, 'P2': 60, 'P3': 0, 'P4': 0, 'P5': 60}
+[2026-09-29 08:57:21] T1-CLEAR=['P2', 'P4', 'P5'] T2-CLEAR=['P2', 'P5'] -> verdict=CONTINUE
+[2026-09-29 08:57:21] blocklist diagnostic: {'T1-P1': {'frac_block_a': 1.0, 'frac_block_b': 0.0}, 'T2-P1': {'frac_block_a': 0.0, 'frac_block_b': 0.16666666666666666}, 'T1-P2': {'frac_block_a': 0.0, 'frac_block_b': 0.0}, 'T2-P2': {'frac_block_a': 0.0, 'frac_block_b': 0.0}, 'T1-P3': {'frac_block_a': 0.0, 'frac_block_b': 0.0}, 'T2-P3': {'frac_block_a': 0.0, 'frac_block_b': 0.0}, 'T1-P4': {'frac_block_a': 0.0, 'frac_block_b': 0.0}, 'T2-P4': {'frac_block_a': 0.016666666666666666, 'frac_block_b': 0.0}, 'T1-P5': {'frac_block_a': 0.0, 'frac_block_b': 0.0}, 'T2-P5': {'frac_block_a': 0.0, 'frac_block_b': 0.0}}
+[2026-09-29 08:57:21] raw records written: 600
+[2026-09-29 08:57:21] EXP113 execution done in 86.0 min; verdict=CONTINUE

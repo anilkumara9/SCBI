@@ -297,6 +297,7 @@ The same columns. Nothing cherry-picked; the demotions are stated first.
 | **EXP110** — **CERTIFIED-WITH-NOTE**: the EXP105 KILL-at-step-9 verdict is precision-certified under weight-only INT8 fake-quantization (H2) | Re-run the cleared EXP105 falsification-kit battery on a fake-quantized frozen backbone (per-output-channel symmetric INT8 on all 97 Linear weight matrices, FP32 compute; zero generation by design) | pythia-410m, CPU; torch 2.14.0+cpu / transformers 5.17.0, threads 2, seed 20260928; backbone verified against the LOG-331 pin before quant (disposable copy, discarded after run) | **6/7 tiers reproduce** — T1 Tier-0 PASSED @ 0.5333 = ref; T2 KILL = KILL; T3 step 9 = 9; T4 dM_T=+0.2000>0, dM_F=+0.1500>0, \|dM_R\|<0.05 (ref +0.2381/+0.1429/flat); T5 T-vs-R b=4,c=0,p=0.1250 ≥ 0.05 (ref b=5,c=0,p=0.0625); **T6 flipped: O=0.5000 (not > 0.5) vs ref 0.5714** — n_pop 21→20 at the rank-5 margin; T7 n_pop=20 within ±5 of 21. Structural tiers T1–T3 intact → CERTIFIED-WITH-NOTE (pre-reg §4 branch); PIVOT correctly not triggered | Quantized Tier-0 (60 forward passes) + battery, ~2–4h CPU, $0; sanity gate `reproduce_exp105.sh` = EXACT ✔ before quant | None | — (boundary certification) | Y | **Certified (boundary-science)** — simulation-scoped (NOT true INT8 hardware; bitsandbytes-exact is the GPU-gated ceiling); the I2′ KILL stands regardless; no closed line re-opens; **no capability claim licensed** | LOG-4558; `research/experiments/EXP110_QBR_REPORT_2026-09-29.md`; independent verdict review LOG-4559 (BIND) |
 | **EXP111** — **CONTINUE**: trained head on the template-decorrelated bench survives the kill-test that killed EXP106 (H5/LFH-TD) | L2-logistic head (C=1.0, lbfgs) on frozen L20 final-token embeddings of the EXP107 template-decorrelated bench; stratified 30/30 train/test split (seed 20260929, key `{phrasing}_{flipped}`, train/test ID overlap 0); registered CONTINUE ⇔ ≥20/30 AND G < 0.30 | pythia-410m / L20 (frozen; block-off byte-identity; embeddings extracted from archived EXP107 artifact — three artifact hashes verified pre-training; no backbone loaded for primary analysis); skull-layer secondary L4/L8/L12/L16 descriptive-only | **Test 24/30 = 0.8000** (per-cell 7/8, 6/7, 5/7, 6/8; acc(F)=acc(T)=0.8000), **G = 0.0000 < 0.30** → CONTINUE (the only firing branch; kill branch G ≥ 0.30 correctly not triggered). Train acc 1.0000, no tuning; determinism re-fit byte-identical; head hash 483a91a8…afdf9f28. **One-sided binomial p = 0.00072** (report's 0.0014 is the two-sided value — required footnote, descriptive-only, no branch affected). Secondary (descriptive): L4 24/30 G=−0.1333; L8 30/30 G=0.0000; L12 29/30 G=0.0667; L16 30/30 G=0.0000 — position signal decodable across layers, no signature at any layer. LOG-331 pin verified pre AND post (Δθ=0) | sklearn CPU fit, $0 | Train-probes (head fit on disjoint-bench labels, held-out items) | Y (the head's read of the decorrelated bench) | Y | **CONTINUE (bound)** — first output-side result to survive adversarial testing; the GPU head-training proposal voided by EXP107 is **re-licensed under decorrelated-bench discipline** (founder-hardware-gated); **NOT a capability result** — one layer-20 correlation on one n=30 bench; novelty N1; fences: no generality, no consciousness, no capability until downstream causal tests; no re-licensing of H1/H4/static/closed lines | LOG-4568; `research/experiments/EXP111_LFHTD_REPORT_2026-09-29.md`; independent verdict review LOG-4569 (QUALIFIED — p-value footnote) |
 | **EXP112** — **HELD**: honesty instrument in logit-readout form, zero generation (H6/HDI-LR) | First-token entity-name-logit self-report (argmax over two pinned token logits, single-token BPE 120/120, byte-exact QUESTION_SUFFIX — no new wording) vs registered cosine-argmax decision statistic, on the EXP107 template-decorrelated bench; zero generation — H1 explicitly NOT revived (new hypothesis under a new apparatus) | pythia-410m (frozen; 180 fresh single-token forwards; LOG-331 pin matched before AND after, Δθ=0); archived premise embeddings reused (three artifact hashes verified before use) | **Fidelity 41/60 = 0.6833** (P(X≥41\|60,0.5)=0.0031 — real above chance, below the decisive bar) → registered 34–41/60 band → **HELD**. Law #14-grade degeneracy guards ran **before** any metric read: G1 mean mass 0.301075 ≥ 0.01 (min 0.0685), G2 readout balance 27/33 — channel genuine, non-degenerate; a dead channel could not masquerade as a measurement. Descriptive per-cell: flipped-word cells 24/30 vs original-word cells 17/30 — registered [OBSERVATION], changes no verdict | 180 forwards, CPU, $0 | None (no training, no labels; template-free by construction) | — (instrument) | Y | **HELD (bound)** — weak honesty-decoding correlation at one read site; **licenses nothing, retires nothing, no re-runs** (Law #4); not consciousness, generality, or capability; novelty N1 | LOG-4575; `research/experiments/EXP112_HDILR_REPORT_2026-09-29.md`; independent verdict review LOG-4576 (BIND — no caveat) |
+| **EXP113** — **CONTINUE**: elicitation validation — at least one pinned protocol clears ≥80% mechanically-parseable structured outputs on both task shapes (H7/EVALID) | Instruction-following apparatus validation: T1 single-token answer (H1 self-report shape), T2 numbered outlines (H4 planner shape); 5 pinned protocols (P1 verbatim baselines, P2 few-shot, P3 explicit stop, P4 repetition penalty, P5 priming) | pythia-410m base (frozen), CPU, greedy decoding | **T1:** P1=0/60 (EXP108 echo path reproduced), P2=60/60, P3=0/60, P4=58/60, P5=60/60. **T2:** P1=24/60, P2=60/60, P3=0/60, P4=0/60 (penalty derails outlines), P5=60/60. Clearance bar ≥48/60 → T1-CLEAR={P2,P4,P5}, T2-CLEAR={P2,P5}, both non-empty → CONTINUE. Few-shot (P2) and priming (P5) are the only protocols clearing both shapes | 600 generations, CPU, $0 (first launch died at 180/600 on a VM reboot — no metric read; full re-run from scratch; crash log preserved; deterministic re-parse byte-identical; 0 exceptions; 2 empties scored UNPARSEABLE; no RUN-INVALID fired) | None (parseability metric; exemplars carry labels but the metric is parseability) | — (apparatus validation) | Y (LOG-331 pin before AND after, Δθ=0) | **CONTINUE (bound)** — licenses H1/H4 revival as NEW hypotheses with the named clearing protocols (each carrying its own elicitation-failure gate); does NOT revive H1/H4 themselves. **Methodological/apparatus entry, NOT capability**: parseable output ≠ reasoning, honesty, or capability; backbone-specific (base Pythia-410m, CPU, greedy); novelty N1 | LOG-4584; `research/experiments/EXP113_EVALID_REPORT_2026-09-29.md`; independent verdict review LOG-4585 (BIND — no caveat) |
 
 ### 3.2 The program's position, stated without softening
 
@@ -412,7 +413,14 @@ the decisive bar; it licenses nothing and retires nothing; LOG-4575
 execution, independent review LOG-4576 BIND). The wave's net: one killed
 transfer reading; two RUN-INVALID apparatus failures; one
 precision-certified boundary; one hardened apparatus rule; one surviving
-above-chance output-side correlation; and one HELD honesty reading. **Capability
+above-chance output-side correlation; and one HELD honesty reading; and one
+apparatus CONTINUE (EXP113, bound) — the generation axis is open for this
+backbone under pinned protocols: few-shot (P2) and priming (P5) clear ≥80%
+mechanically-parseable outputs on both the H1-shaped (T1) and H4-shaped (T2)
+tasks, which licenses H1/H4 revival as NEW hypotheses with the named clearing
+protocols (each carrying its own elicitation-failure gate) but revives neither.
+Parseable output ≠ reasoning, honesty, or capability — a real methodological
+gain, not a capability signal. **Capability
 scoreboard: unchanged — still zero positive signals for autonomous
 steering; the label-free race stays tied at zero. One n=30 bench does
 not move the capability scoreboard.**
@@ -688,6 +696,47 @@ one precision certification (EXP110, bound).** HELD is neither a positive
 nor a kill. **Capability scoreboard: unchanged — still zero positive
 signals for autonomous steering; the label-free race stays tied at
 zero.** No literature re-check this cycle (next due 2026-10-23).
+
+**v1.9 delta [FACT], 2026-09-29:** plotted **EXP113 (H7/EVALID)** —
+**CONTINUE** (independent exact-artifact verdict review LOG-4585 —
+BIND, no caveat). The bounded apparatus question that gates honest
+H1/H4 revival: 5 pinned elicitation protocols × 2 task shapes (T1
+single-token answer = H1 self-report shape; T2 numbered outlines = H4
+planner shape) × 60 items = 600 greedy generations on frozen base
+Pythia-410m, every output parsed by the registered mechanical scripts
+(deterministic re-parse byte-identical; 0 exceptions; 2 empties scored
+UNPARSEABLE; no RUN-INVALID fired; backbone LOG-331 pin matched before
+AND after, Δθ=0). **Counts:** T1 — P1=0 (the EXP108 echo path
+reproduced), P2=60, P3=0, P4=58, P5=60; T2 — P1=24, P2=60, P3=0, P4=0
+(repetition penalty derails the outline task), P5=60. Clearance bar
+≥48/60 → T1-CLEAR={P2,P4,P5}, T2-CLEAR={P2,P5}, both non-empty →
+**CONTINUE**. Few-shot (P2) and priming (P5) are the only protocols
+clearing both shapes. **Consequence, fenced:** H1/H4 revival is
+licensable as NEW hypotheses with the named clearing protocols (each
+carrying its own elicitation-failure gate) — H1/H4 themselves are NOT
+revived. First launch died at 180/600 on a VM reboot (no metric read;
+full re-run from scratch; crash log preserved). **The day's tally,
+honestly: one CONTINUE (EXP111, bound), one HELD (EXP112, bound), one
+KILL (EXP107), two RUN-INVALIDs (EXP108, EXP109), one precision
+certification (EXP110, bound), one apparatus CONTINUE (EXP113, bound).**
+This is a methodological/apparatus entry — the generation axis is open
+for this backbone under pinned protocols, a real methodological gain —
+**not a capability signal.** **Capability scoreboard: unchanged —
+still zero positive signals for autonomous steering; the label-free
+race stays tied at zero.** No literature re-check this cycle (next due
+2026-10-23).
+- v1.9 — 2026-09-29 (scoreboard-sync lane, LOG-4586): plotted **EXP113
+  (H7/EVALID) CONTINUE** — 5 pinned protocols × 2 task shapes × 60
+  items = 600 greedy generations; T1-CLEAR={P2,P4,P5}, T2-CLEAR={P2,P5}
+  (clearance ≥48/60) → CONTINUE (independent verdict review LOG-4585
+  BIND, no caveat); few-shot and priming clear both shapes → H1/H4
+  revival licensable as NEW hypotheses with the named protocols (not
+  revived); **apparatus/methodological entry, NOT capability** (parseable
+  output ≠ reasoning, honesty, or capability). The day's tally: one
+  CONTINUE, one HELD, one KILL, two RUN-INVALIDs, one precision
+  certification, one apparatus CONTINUE. **Capability scoreboard:
+  unchanged — zero positive signals for autonomous steering.** No
+  literature re-check this cycle (next due 2026-10-23).
 - v1.8 — 2026-09-29 (scoreboard-sync lane, LOG-4577): plotted **EXP112
   (H6/HDI-LR) HELD** — fidelity 41/60 = 0.6833 inside the registered
   34–41/60 band (independent verdict review LOG-4576 BIND); Law

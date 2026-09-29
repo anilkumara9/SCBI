@@ -72,10 +72,28 @@ degeneracy guards (G1 mean mass 0.301075 ≥ 0.01, G2 readout balance
 the LOG-331 backbone pin (before AND after the 180 fresh forwards)
 verified, Δθ=0. HELD licenses nothing, retires nothing, no re-runs —
 a weak honesty-decoding correlation at one read site, not consciousness,
-generality, or capability. **The day's tally: one CONTINUE (EXP111),
-one HELD (EXP112), one KILL (EXP107), two RUN-INVALIDs (EXP108, EXP109),
-one precision certification (EXP110).** The capability column stays at
-zero.
+generality, or capability. **Update 2026-09-29:** EXP113 (H7/EVALID)
+**CONTINUE** — the bounded apparatus question that gates honest H1/H4
+revival: 5 pinned elicitation protocols × 2 task shapes (T1 single-token
+answer = H1 self-report shape; T2 numbered outlines = H4 planner shape)
+× 60 items = 600 greedy generations on frozen base Pythia-410m, every
+output parsed by the registered mechanical scripts (deterministic
+re-parse byte-identical; 0 exceptions; no RUN-INVALID fired; backbone
+LOG-331 pin before AND after, Δθ=0). T1 — P1=0/60, P2=60/60, P3=0/60,
+P4=58/60, P5=60/60; T2 — P1=24/60, P2=60/60, P3=0/60, P4=0/60, P5=60/60;
+clearance ≥48/60 → T1-CLEAR={P2,P4,P5}, T2-CLEAR={P2,P5}, both
+non-empty → **CONTINUE**. Few-shot (P2) and priming (P5) are the only
+protocols clearing both shapes — H1/H4 revival is licensable as NEW
+hypotheses with the named clearing protocols (each with its own
+elicitation-failure gate); H1/H4 themselves are NOT revived
+(independent exact-artifact verdict review LOG-4585 — BIND, no caveat).
+Methodological/apparatus entry: parseable output ≠ reasoning, honesty,
+or capability — the generation axis is open for this backbone under
+pinned protocols, a real methodological gain, not a capability signal.
+**The day's tally: one CONTINUE (EXP111), one HELD (EXP112), one KILL
+(EXP107), two RUN-INVALIDs (EXP108, EXP109), one precision
+certification (EXP110), one apparatus CONTINUE (EXP113).** The
+capability column stays at zero.
 
 **What closes it.** The §D2 six-condition bar: per-instance construction,
 transfer-validated evaluator, matched-compute wins over ∇-Reasoner /
