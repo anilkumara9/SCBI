@@ -14293,3 +14293,38 @@ cited papers' own, with no license/verdict implication.
 **Verdict: SIGN.** Implementation cleared for the paper-side push chain
 (founder-reserved: fresh token, fast-forward verification, no force-push).
 Full review: `research/reviews/LAW14_REVIEW_V84_IMPLEMENTATION_2026-09-30.md`.
+
+## LOG-4761 — Commit-prep: LOG-4760 review wave committed (2026-09-30)
+
+**Lane:** LOG-4761 (pre-assigned). **Scope:** commit-prep for the LOG-4760 review
+wave. $0 CPU; no model contact; commit only — no push attempted (pushes/PRs are
+founder-reserved; no founder-supplied token for this wave).
+
+**Commit:** `026ad84` on branch `sync/2026-09-29-consolidated` —
+`docs(review): Law14 SIGN on v84 implementation (LOG-4760)`. Staged set
+verified wave-only (2 files, +134 insertions): the untracked review file
+`research/reviews/LAW14_REVIEW_V84_IMPLEMENTATION_2026-09-29.md` (83 lines)
+plus `reports/research_log.md` (+51, LOG-4759 + LOG-4760 entries; LOG-4759's
+append rode this cycle per convention). `git status --short` showed exactly the
+two wave files before staging; `git diff --cached` matched. Secret-scan clean:
+no weights, no credentials, no `ghp_` material.
+
+**Divergence check: CLEAN.** Heading-anchored full numeric LOG comparison: main
+tree 640 headings (max 4760 pre-append) vs worktree `sync-log4393-4465`
+(max 4466) — zero worktree LOG numbers missing from main. No divergence
+incident.
+
+**Log:** this entry appended AFTER the commit (LOG-4760 confirmed max before
+append; continuity 4760→4761; count = 1). The working tree now holds only this
+uncommitted LOG-4761 append, riding the next commit cycle per convention. The
+research log is append-only — no stash, move, or rewrite was used at any point.
+
+## LOG-4762 — EXP131 executor CUDA device-fix patch (2026-09-30)
+
+**Lane:** LOG-4762 (pre-assigned). **$0 CPU.** Mechanical device-placement fix to `experiments/bundles/exp131_v1inj/run_exp131.py` — the Kaggle T4 smoke exposed a deterministic bug: the clamped-KV / v2-derivation path allocated CPU tensors while the model lives on cuda:0. No protocol, bars, seeds, or numerics changed.
+
+**Five minimal edits (all in main(), `device` in closure scope):** (1) `build_clamped_kv`: `K = torch.empty(NH, T, HD, device=device)`; (2) `V = torch.empty(NH, T, HD, device=device)`; (3) `pos = torch.arange(T, device=device)`; (4) `rotate_vec`: `torch.as_tensor(pos, device=inv_freq.device)` (defense in depth; inv_freq is a model buffer); (5) per-prompt v2 loop: `q = torch.randn(H, generator=gen_v2, device=device)` plus loop-local `v1d = v1[pid].to(device)` replacing the three `v1[pid]` uses (deflation and orthogonality assert). The ĉ-gate's `v1[pid].to(torch.float64)` untouched (CPU-consistent by design). Git diff verified: every changed line belongs to the five fixes, zero other bytes.
+
+**Verification:** `py_compile` OK; `test_decision_tree.py` 11/11 pass; CPU smoke (`--smoke --weights ~/workspace/.exp086_weights/pythia-410m`) completed end-to-end — v2 derivation K=40 |v2.v1|=5.588e-09 OK, sensing-discipline assert PASS, backbone pin post-match, VERDICT: KILL via ĉ=0.0634<0.1 — the known branch-exercising artifact, NOT a result. Note: the bare documented `--smoke` invocation (no `--weights`) fails on this machine at the tokenizer Hub fetch due to the runtime's broken proxy env (`httpx.InvalidURL`) — environmental, unrelated to this fix; with `--weights` the pipeline is clean. On Kaggle (networked) the documented command applies.
+
+**Patched file ready to upload to the live Kaggle notebook.**

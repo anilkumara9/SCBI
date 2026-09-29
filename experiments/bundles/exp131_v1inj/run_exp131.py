@@ -324,7 +324,7 @@ def main():
         QW.append(qw); QB.append(qb); KW.append(kw); KB.append(kb); VW.append(vw); VB.append(vb)
 
     def rotate_vec(r, pos):
-        ang = torch.as_tensor(pos).reshape(-1, 1) * inv_freq.reshape(1, -1)
+        ang = torch.as_tensor(pos, device=inv_freq.device).reshape(-1, 1) * inv_freq.reshape(1, -1)
         c = torch.cat([ang.cos(), ang.cos()], dim=-1)
         s = torch.cat([ang.sin(), ang.sin()], dim=-1)
         r_rot = r[..., :RND]
@@ -338,9 +338,9 @@ def main():
     def build_clamped_kv(h_base, li):
         u = F.layer_norm(h_base, (H,), W["ln1w"][li], W["ln1b"][li], LN_EPS)
         T = h_base.shape[0]
-        K = torch.empty(NH, T, HD)
-        V = torch.empty(NH, T, HD)
-        pos = torch.arange(T)
+        K = torch.empty(NH, T, HD, device=device)
+        V = torch.empty(NH, T, HD, device=device)
+        pos = torch.arange(T, device=device)
         for hd in range(NH):
             k = u @ KW[li][hd].T + KB[li][hd]
             v = u @ VW[li][hd].T + VB[li][hd]
@@ -395,18 +395,19 @@ def main():
         f = make_f(Kc, Vc, T)
         z0 = hs[SITE][0, -1].detach()
         z = z0.clone().requires_grad_(True)
-        q = torch.randn(H, generator=gen_v2)
-        q = q - (v1[pid] @ q) * v1[pid]
+        v1d = v1[pid].to(device)
+        q = torch.randn(H, generator=gen_v2, device=device)
+        q = q - (v1d @ q) * v1d
         q = q / q.norm()
         for _ in range(K_V2):
             w = jvp(f, z, q)
             t = vjp(f, z, w)
-            t = t - (v1[pid] @ t) * v1[pid]
+            t = t - (v1d @ t) * v1d
             tq = t.norm()
             assert float(tq.item()) > 0, "deflated iteration collapsed"
             q = t / tq
         v2i = q.detach()
-        ortho = abs(float((v2i @ v1[pid]).item()))
+        ortho = abs(float((v2i @ v1d).item()))
         if ortho >= 1e-6:
             log("apparatus-void: v2 orthogonality assert failed (|v2.v1|=%.3e)." % ortho)
             sys.exit(44)
