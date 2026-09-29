@@ -14005,3 +14005,27 @@ correcting the normalization.
 
 **Provenance:** append-only erratum; the signed EXP128 report and protocol are
 untouched. **Erratum:** `research/errata/EXP128_ERRATUM_DOUBLEFINALNORM_2026-09-29.md`.
+
+## LOG-4748 — Commit-prep: EXP128 erratum wave (2026-09-29)
+
+**Lane:** LOG-4748 (pre-assigned). **Scope:** `research/errata/EXP128_ERRATUM_DOUBLEFINALNORM_2026-09-29.md` (LOG-4747) + `reports/research_log.md` (LOG-4746 + LOG-4747 entries; LOG-4746's append rode the previous cycle uncommitted).
+
+**Commit:** `7611f9361a18e8f5d75c1b9e2168c3092045fcd9` on branch `sync/2026-09-29-consolidated` — `fix(errata): EXP128 double-final-LN defect — verdict category unchanged`. 2 files, +137 insertions, zero deletions; staged set verified wave-only (`git status --short` showed only the two wave files; `git diff --cached` matched).
+
+**Divergence check:** CLEAN. Heading-anchored full numeric LOG comparison: main tree 627 headings (max 4747) vs worktree `sync-log4393-4465` (max 4466) — zero worktree LOG numbers missing from main.
+
+**Push:** NOT attempted. Pushes/PRs remain founder-reserved with a fresh founder-supplied token (none supplied).
+
+## LOG-4749 — Scoreboard sync: v3.7 (EXP132 apparatus-void + EXP128 erratum) (2026-09-30)
+
+**Lane:** LOG-4749 (pre-assigned). **Scope:** frontier scoreboard v3.6 → v3.7 (`research/benchmarks/FRONTIER_SCOREBOARD.md`). $0 CPU, no model contact; read-only everywhere else. No claims beyond what's signed.
+
+**Plotted:**
+1. **EXP132 (DGF/DIRECTIONAL-GAIN-FIELD) — RUN-INVALID (apparatus-void).** Execution LOG-4743: the §3.3 multi-ε float64 convergence diagnostic failed on 0/10 prompts (bar ≥ 8/10); per Law #9 the tree stopped at the diagnostic — no JVP batches, no hash-pin, no metric, no ΔGini minted. Independent execution review LOG-4744: **SIGN-WITH-FIXES**, binding outcome BOUND (apparatus-void, hypothesis UNTESTED); six fixes byte-verified LOG-4745; wave committed `b9a8a63` LOG-4746. Licensed conclusion: the AD JVP *is* the exact derivative, but no finite perturbation at any accessible scale (≥1e-8 in float64) lives in its linear regime — the instrument *as licensed* (FD-validated JVP) does not exist. The DGF directional-gain hypothesis is UNTESTED, not killed. Family B's original targeting mission stays UNTESTED and unlicensed.
+2. **EXP128 erratum** (LOG-4747, committed `7611f93`): the executor applied `final_layer_norm` to the already-normalized `hs[24]` (transformers 5.17.0: hs[24] is post-final-LN; deviation rel 0.165 from the registered x_{24,last}) — the linearity diagnostic measured a doubly-normalized readout, not the registered construct. Verdict category UNCHANGED (RUN-INVALID, soft-spot premise UNTESTED; Law #9 stopped the run before any metric was read).
+
+**Family B ledger:** DSF/DGF directional-gain hypothesis UNTESTED — never measured by either instrument (EXP128's finite differences hit saturation; EXP132's exact JVP occupies an infinitesimal regime with no finite-ε counterpart). EXP127's TGA CONTINUE, EXP129's CLP KILL, EXP130's REJECT, EXP131's RELEASED status stand untouched.
+
+**Honest capability headline: zero positive signals for autonomous steering.** The day's tally: four CONTINUEs (EXP111/120/122 — reclassified domain-set-detector correlations; EXP127), one HELD (EXP112), one apparatus CONTINUE (EXP113), five KILLs (EXP107, EXP114, EXP125, EXP126, EXP129), one pre-launch KILL/REJECT (EXP130), TWELVE RUN-INVALIDs (EXP108, EXP109, EXP115–EXP119, EXP121, EXP123, EXP124, EXP128, EXP132), one precision certification (EXP110), one LICENSED/PRE-LAUNCH (EXP131 — released for founder GPU, result unmeasured).
+
+**Edits:** §3.1 EXP132 row added; EXP128 §3.1 row annotated with the erratum; §3.2 H29 paragraph added; v3.7 delta paragraph; version-history bullet. No prior verdict binding altered. No literature re-check this cycle (next due 2026-10-23).
