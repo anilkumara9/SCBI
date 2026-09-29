@@ -14111,3 +14111,111 @@ lane — recommended, outside this review's scope.
 **Next:** fix-verification of FIX-1…FIX-3 → CEO clearance → implementation lane
 → rebuild verification. Review:
 `research/reviews/LAW14_REVIEW_V84_CHANGEPLAN_SWEEP_2026-09-30.md`.
+
+## LOG-4755 — v84 change-plan three-fix byte-verification (2026-09-30)
+
+**Lane:** LOG-4755 (pre-assigned). **Scope:** apply the three launch-gating citation
+fixes from the LOG-4754 independent Law #14 review (SIGN-WITH-FIXES) to
+`research/paper/V84_CHANGE_PLAN_SWEEP_2026-09-30.md`. $0 CPU, paper only. v82/v83/v84
+sources untouched. No fixes beyond the three; no silent repairs.
+
+**Pre-fix SHA-256** `191cb6b37149f359d22450a40e96bfbd7a3b0b99265d92a478392c6fbd3b372b`
+(matches the reviewed bytes). **Post-fix SHA-256**
+`af0f0d12e819e96e8744eae6e5d0305ad4577de30cb8f0728b8b09372fe4a9a6`. Diff: 12
+changed lines, all fix-attributable, zero other bytes. None of the three fixes was
+vacuous — each had an applicable target.
+
+- **FIX-1** — Nadaf version date "v2 Aug 2026" → "v2 May 2026" (§1 citation header;
+  the proposed insertion did not repeat the date — verified by grep).
+- **FIX-2** — unverified "−0.91" gap number removed from the §1 citation header and
+  the proposed main-edition insertion; replaced with the review's abstract-verified
+  language ("even at > 0.90 steering accuracy, projecting the FV through the
+  unembedding yields incoherent token distributions"). A self-caught punctuation
+  residue (orphan closing paren from the removed parenthetical) was repaired in the
+  same edit; the sentence reads cleanly.
+- **FIX-3** — GEOSTEER title corrected to the exact arXiv title ("…in Large Language
+  Models") in the §2 header and the `@misc{ngo2026}` bibtex entry.
+
+Grep-verified post-fix: no residual "Aug 2026", "0.91", or "in LLMs" in the plan.
+
+**Verdict:** the plan is now sign-clean pending CEO clearance. Next in the chain:
+CEO clearance → implementation lane → rebuild verification.
+
+## LOG-4756 — CEO clearance: v84 change-plan implementation licensed (2026-09-30)
+
+**Lane:** LOG-4756 (pre-assigned). **Decision: CLEAR.** The CEO clears implementation
+of the v84 change plan `research/paper/V84_CHANGE_PLAN_SWEEP_2026-09-30.md`
+(post-fix SHA-256 `af0f0d12e819e96e8744eae6e5d0305ad4577de30cb8f0728b8b09372fe4a9a6`,
+hash-verified by the implementation lane before touching sources). Chain complete:
+draft LOG-4753 → independent Law #14 SIGN-WITH-FIXES LOG-4754 → three fixes
+byte-verified LOG-4755.
+
+**Scope (hard boundary):** exactly the plan's four insertion points (main
+`v84/paper.tex` converging-evidence paragraph tail + future-work new paragraph;
+IEEE `v84-ieee/sections/sec-discussion.tex` line-29 paragraph + `v84-ieee/sections/sec-conclusion.tex`
+future-work sentence) plus the `nadaf2026`/`ngo2026` bibtex entries in both
+`refs.bib`. No other source changes licensed. v82/v83 frozen and untouched.
+Both editions rebuilt with tectonic; rebuild verification per the plan's regression
+checklist required before the wave commits.
+
+**Not licensed:** any claim change, figure change, or rewording of signed results;
+any statement about EXP131's outcome (unmeasured); any license for GEOSTEER as an
+experiment (watch item only).
+
+## LOG-4757 — Frontier-sweep erratum: two field errors corrected (2026-09-30)
+
+**Lane:** LOG-4757 (pre-assigned; brief carried "4758" but LOG-4756 was the numeric max at write time — continuity 4756→4757). $0 CPU. Read-only on everything except the sweep-report erratum and this entry; nothing pushed, spent, model-contacted, or credential-touched.
+
+**Erratum appended** to `research/benchmarks/FRONTIER_SWEEP_2026-09-30.md` (LOG-4751 signed report), append-only — original C1 lines preserved verbatim. Corrects the two field errors found by the independent Law #14 review of the v84 change plan (LOG-4754):
+1. Nadaf entry "v2 Aug 2026" → **v2 May 2026** (arXiv: v2 last revised 8 May 2026).
+2. The "−0.91" gap number (originated in the sweep report; not in the paper's full text or abstract) → struck; replaced with abstract-verified language: **>0.90 steering accuracy** with **incoherent unembedding projection** (logit lens cannot decode at any layer).
+
+**Verdict impact:** none — the sweep's headline (12 candidates, GEOSTEER A1 watch item) stands; the corrected fields feed the already-fixed v84 change plan (LOG-4755 fixes byte-verified, LOG-4756 CEO clearance granted).
+
+## LOG-4758 — v84 implementation + rebuild verification: commit-prep (2026-09-30)
+
+**Lane:** LOG-4758 (pre-assigned; renumbered from the pre-assigned LOG-4757 after a
+parallel erratum lane took LOG-4757 — no duplicate created; continuity 4757→4758).
+**Scope:** implement the CEO-cleared change plan
+(`research/paper/V84_CHANGE_PLAN_SWEEP_2026-09-30.md`, post-fix SHA-256
+`af0f0d12e819e96e8744eae6e5d0305ad4577de30cb8f0728b8b09372fe4a9a6`, re-verified
+before touching sources) on v84 sources. $0 CPU, paper only.
+
+**Insertions applied (exactly the plan's four + two bibtex):**
+1. Main `v84/paper.tex` converging-evidence paragraph: "Two" → "Three
+   contemporaneous results", Nadaf converse sentence appended after the Jia
+   sentence, closing sentence → "None threatens the boundary claim; all three
+   corroborate its shape from independent angles --- one theoretical, one
+   peer-reviewed behavioral, one converse-directional."
+2. Main `v84/paper.tex` future-work section: GEOSTEER watch-item paragraph
+   inserted after the section opening line, before the bets figure.
+3. IEEE `v84-ieee/sections/sec-discussion.tex` line-29 paragraph: converse-
+   direction clause appended after the `\cite{jia2026}` clause.
+4. IEEE `v84-ieee/sections/sec-conclusion.tex`: watch-item sentence inserted
+   before the final "Superhuman" sentence.
+5. `nadaf2026` + `ngo2026` bibtex entries appended to both `refs.bib` (no key
+   collisions).
+
+**Deviation from the plan (conformance, disclosed):** the plan specified
+`\citet{ngo2026}` in the IEEE insertion; the IEEE template does not load natbib
+(`\citet` undefined — first build failed with "Undefined control sequence" at
+sec-conclusion.tex:20), so `\cite{ngo2026}` was used instead. Intent (named watch
+item) preserved; no other plan text altered.
+
+**Rebuild verification (tectonic, both editions):** main `paper.pdf` and IEEE
+`ieee-paper.pdf` rebuild byte-clean — zero errors, zero `??` references in
+either PDF, zero duplicate-label warnings. Word-level PDF diff vs the committed
+pre-change PDFs shows ONLY the four licensed insertions + two new references +
+pagination shifts (main 19→20pp; IEEE page-footer renumbering from citation
+insertion). Regression checklist holds: no C7 / no new numbered claims; no
+"release candidate" string added to sources; no banned numbers; college email
+`1nh22cd066@newhorizonindia.edu` present in both editions; C1–C6 tags and (C5)
+location untouched; boxed bets summary, figure, and all signed results verbatim.
+
+**Commit:** `baa044d` on branch `arxiv-prep` (repo `~/workspace/scbi-paper`),
+message "feat(v84): sweep related-work additions — Nadaf converse dissociation,
+GEOSTEER future-work watch item". Staged set verified wave-only (7 files:
+both editions' tex/pdf/refs.bib + the two IEEE sections). v82/v83 untouched
+(pre-existing untracked `ieee-v82-backup/` and modified `ieee/ieee-paper.pdf`
+left alone). **No push attempted** (founder-reserved; no token supplied for
+this wave).

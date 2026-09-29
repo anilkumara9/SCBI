@@ -87,3 +87,12 @@ No item in this sweep changes any verdict, license, or the capability headline (
 2. **Steerable-but-Not-Decodable (C1)** — independent converse-dissociation evidence strengthening the v82/v83 boundary narrative; cite in related work.
 
 **Candidates found: 12** (A1–A6, B1–B2, C1–C2, D1–D2). **Single most relevant: A1 (GEOSTEER)** — freshest, and the only item that directly informs an active licensed lane (EXP131).
+
+---
+
+## Erratum (2026-09-30, LOG-4758; parallel lane used LOG-4757)
+
+The independent Law #14 exact-version review of the v84 change plan (LOG-4754) found two field errors that originated in this signed report (the C1 entry, lines 59–60). The original lines are preserved above; this erratum corrects the record:
+
+1. **Nadaf version date.** The C1 entry states "v2 Aug 2026". arXiv shows v2 last revised **8 May 2026**. The correct reading is "v2 May 2026".
+2. **The "−0.91" gap number.** The C1 entry states "gaps up to −0.91". That number does not exist in the paper's full text or abstract — it originated in this sweep report. It is struck. The abstract-verified language is: function-vector steering succeeds with **>0.90 steering accuracy** even where the logit lens's **unembedding projection is incoherent** (the logit lens cannot decode the answer at any layer).
