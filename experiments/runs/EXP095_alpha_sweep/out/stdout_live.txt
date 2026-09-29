@@ -1,0 +1,27 @@
+[g7] G7.1 pass: constructor 5e03f206dd907b52… frozen, audit PASS.
+[g0] G0 pass: bench pin 9be8162633fe19aa…, 60 items.
+[run] torch intra-op threads pinned: 2
+[run] G1' pass: 240/240 in-prompt occurrences single-token.
+[run] Δθ=0 pre-run hash OK: ec276abe3902fab0…
+[run] B arm complete: 60 passes; B accuracy 36/60.
+[run] reference passes complete: 60 passes.
+[run] construction complete: 60 d_i, 60 g_i (R seed 94094).
+[run] degeneracy: mean|cos|=0.7923 (sanity vs 0.7923 OK; bar 0.95).
+[run] STEP-0 B agreement: 60/60 per-item decisions match the archived EXP094 baseline.
+[run] STEP-0 T(1.0): flips vs B = 0 (clean replication).
+[run] G5 execution probe (a=1.0, item 0): rel_err=4.26e-07, other-pos=0.00e+00, bit_match=True -> PASS.
+[run] STEP-1 delivery a=0.25: 60/60 in [0.00889, 0.01481] -> PASS.
+[run] STEP-1 delivery a=0.5: 60/60 in [0.01778, 0.02963] -> PASS.
+[run] STEP-1 delivery a=1.0: 60/60 in [0.0355, 0.0593] -> PASS.
+[run] STEP-1 delivery a=2.0: 60/60 in [0.0711, 0.1185] -> PASS.
+[run] STEP-1 delivery a=4.0: 60/60 in [0.1422, 0.237] -> PASS.
+[run] sweep a=0.25: T 60 + B_wrong 60 passes complete.
+[run] sweep a=0.5: T 60 + B_wrong 60 passes complete.
+[run] sweep a=1.0: T 0 + B_wrong 60 passes complete.
+[run] sweep a=2.0: T 60 + B_wrong 60 passes complete.
+[run] sweep a=4.0: T 60 + B_wrong 60 passes complete.
+[run] sweep complete. Total passes: 724 (expected 724, cap 1300).
+[run] Δθ=0 post-run hash OK (Δθ=0 verified).
+[run] per-item CSV written: out/per_item_records.csv.
+[run] EXP095 records complete (UNINTERPRETED — verdict lane next).
+[run] report: out/exp095_report.json

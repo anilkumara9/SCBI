@@ -1,0 +1,26 @@
+{
+  "routing": "PREEMPTED_BY_STEP_2B",
+  "routing_reason": "gated-T = 0 and gated-R = 0 with coverage 0.000 < 0.1 (step-2b tripwire; verdict lane rules PIVOT)",
+  "coverage": 0.0,
+  "n_fired": 0,
+  "evidence": {
+    "gated_T_flips_vs_B": 0,
+    "gated_R_flips_vs_B": 0,
+    "delivery_confirmed": true,
+    "sanity": {
+      "gated-T": {
+        "ties": 0,
+        "ties_over_60": 0.0,
+        "run_invalid_ties": false,
+        "zero_variance": false
+      },
+      "gated-R": {
+        "ties": 0,
+        "ties_over_60": 0.0,
+        "run_invalid_ties": false,
+        "zero_variance": false
+      }
+    }
+  },
+  "note": "machine-written before the table walk; per-arm RUN-INVALID routed where sanity gates fire; steps 2b, 4-8 are the verdict lane's"
+}

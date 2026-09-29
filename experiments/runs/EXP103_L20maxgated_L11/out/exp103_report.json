@@ -1,0 +1,50 @@
+{
+  "experiment": "EXP103",
+  "mode": "real",
+  "layer": 11,
+  "gate_layer": 20,
+  "ratio": 0.38,
+  "coverage": 0.9166666666666666,
+  "n_fired": 55,
+  "exclusions": {
+    "gated-T": [],
+    "gated-R": []
+  },
+  "routing": "LIVE",
+  "guards": {
+    "G0": "pass (bench pin)",
+    "G1'": "pass (real-tokenizer cover re-executed)",
+    "\u0394\u03b8=0": "pass (pre/post LOG-331 hash)",
+    "G7": "pass (constructor 5e03f206dd907b52\u2026, audit PASS)",
+    "G5-L11": "pass (frozen verify_g5 core, d_0^(11) execution probe)",
+    "STEP-0": "pass (60/60 B agreement; L11 signature OK; L20 attention-math validation PASS)",
+    "STEP-0iii": "pass (60/60 E/N<=0.5)",
+    "STEP-1": "110/110 fired rows in band; 0 zero-norm directions",
+    "STEP-2a": "pass (gate from B-pass L20 captures only; fired\u27faL20-max\u2265\u03c4 60/60)",
+    "gate_rule": "L20-max>=tau (gate\u2019s own mass only \u2014 F2-class fence, \u00a74.3)",
+    "norm_ties": "60/60",
+    "thread_pin": 2,
+    "F5": "single environment (no mid-run rebuild)"
+  },
+  "run_meta": {
+    "torch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "numpy": "1.26.4",
+    "python": "3.12.3",
+    "thread_pin": 2,
+    "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+    "weights_pin": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "weights_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "weights_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "bench_pin": "9be8162633fe19aa2a924440d8ba158c1cc4e734c1f2a554a01a27e459f47fc4",
+    "seeds": {
+      "R_SEED_GATED": 513020,
+      "G5_probe_seed": 31337
+    },
+    "single_environment_F5": "all passes in this environment; no mid-run rebuild",
+    "n_passes": 237,
+    "expected_passes": 247,
+    "hard_cap": 500,
+    "budget_note": "180 maximum per v2 \u00a72.4 counts the 60 B + <=60 gated-T + <=60 gated-R experiment passes, plus 60 reserve; the 60 construction-ref passes, 4 G5 execution probes, and 3 eager attention-validation passes are licensed executor machinery (EXP098 precedent: 368 under the same budget structure); the binding constraint is the 500 HARD CAP (not waivable)"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "experiment": "EXP099",
+  "mode": "real",
+  "layers": [
+    8,
+    20
+  ],
+  "ratio": 0.38,
+  "exclusions": {
+    "(20,L20)": [],
+    "(20,W20)": [],
+    "(8,L8)": [],
+    "(8,W8)": []
+  },
+  "routing": "LIVE",
+  "anchor": {
+    "count": 6,
+    "set_equal": true
+  },
+  "guards": {
+    "G0": "pass (bench pin)",
+    "G1'": "pass (real-tokenizer cover re-executed)",
+    "\u0394\u03b8=0": "pass (pre/post LOG-331 hash)",
+    "G7": "pass (constructor 5e03f206dd907b52\u2026, audit PASS)",
+    "G5-L8": "pass (frozen verify_g5 core, d_0^(8) execution probe)",
+    "G5-L20": "pass (frozen verify_g5 core, d_0^(20) execution probe)",
+    "STEP-0": "pass (60/60 B agreement; L20 signature OK)",
+    "STEP-1": "240/240 in band; 0 zero-norm directions",
+    "STEP-2": "L8 mean|cos|=0.8717 (bar 0.95)",
+    "STEP-3": "anchor count 6/6; routing LIVE",
+    "STEP-4": "anchor set-equality PASS",
+    "norm_ties": "120/120",
+    "thread_pin": 2,
+    "F5": "single environment (no mid-run rebuild)"
+  },
+  "run_meta": {
+    "torch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "numpy": "2.5.3",
+    "python": "3.12.3",
+    "thread_pin": 2,
+    "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+    "weights_pin": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "weights_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "weights_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "bench_pin": "9be8162633fe19aa2a924440d8ba158c1cc4e734c1f2a554a01a27e459f47fc4",
+    "seeds": {
+      "R_SEED_W20": 117011,
+      "R_SEED_W8": 117013,
+      "G5_probe_seed": 31337
+    },
+    "single_environment_F5": "all passes in this environment; no mid-run rebuild",
+    "n_passes": 368,
+    "expected_passes": 368,
+    "hard_cap": 500,
+    "budget_note": "360 expected per v2 \u00a72.3 counts the 300 (item, arm) experiment passes + 60 reserve; the 60 construction-ref passes and 8 G5 execution probes are licensed executor machinery (EXP098 precedent: 368 under the same budget structure); the binding constraint is the 500 HARD CAP (not waivable)"
+  }
+}

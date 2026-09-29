@@ -1,0 +1,206 @@
+{
+  "status": "UNINTERPRETED_MECHANICAL_READOUT",
+  "per_alpha": {
+    "0.25": {
+      "n_correct": {
+        "B": 36,
+        "T": 36,
+        "B_wrong": 36
+      },
+      "flips_vs_B": {
+        "T": 0,
+        "B_wrong": 0
+      },
+      "delta_M": {
+        "T": 0.0,
+        "B_wrong": 0.0
+      },
+      "mcnemar_T_vs_B": {
+        "b": 0,
+        "c": 0,
+        "p": 1.0
+      },
+      "mcnemar_W_vs_B": {
+        "b": 0,
+        "c": 0,
+        "p": 1.0
+      },
+      "ties": 0
+    },
+    "0.5": {
+      "n_correct": {
+        "B": 36,
+        "T": 36,
+        "B_wrong": 36
+      },
+      "flips_vs_B": {
+        "T": 0,
+        "B_wrong": 0
+      },
+      "delta_M": {
+        "T": 0.0,
+        "B_wrong": 0.0
+      },
+      "mcnemar_T_vs_B": {
+        "b": 0,
+        "c": 0,
+        "p": 1.0
+      },
+      "mcnemar_W_vs_B": {
+        "b": 0,
+        "c": 0,
+        "p": 1.0
+      },
+      "ties": 0
+    },
+    "1.0": {
+      "n_correct": {
+        "B": 36,
+        "T": 36,
+        "B_wrong": 36
+      },
+      "flips_vs_B": {
+        "T": 0,
+        "B_wrong": 0
+      },
+      "delta_M": {
+        "T": 0.0,
+        "B_wrong": 0.0
+      },
+      "mcnemar_T_vs_B": {
+        "b": 0,
+        "c": 0,
+        "p": 1.0
+      },
+      "mcnemar_W_vs_B": {
+        "b": 0,
+        "c": 0,
+        "p": 1.0
+      },
+      "ties": 0
+    },
+    "2.0": {
+      "n_correct": {
+        "B": 36,
+        "T": 35,
+        "B_wrong": 36
+      },
+      "flips_vs_B": {
+        "T": 1,
+        "B_wrong": 0
+      },
+      "delta_M": {
+        "T": -0.016666666666666666,
+        "B_wrong": 0.0
+      },
+      "mcnemar_T_vs_B": {
+        "b": 0,
+        "c": 1,
+        "p": 1.0
+      },
+      "mcnemar_W_vs_B": {
+        "b": 0,
+        "c": 0,
+        "p": 1.0
+      },
+      "ties": 0
+    },
+    "4.0": {
+      "n_correct": {
+        "B": 36,
+        "T": 35,
+        "B_wrong": 36
+      },
+      "flips_vs_B": {
+        "T": 1,
+        "B_wrong": 2
+      },
+      "delta_M": {
+        "T": -0.016666666666666666,
+        "B_wrong": 0.0
+      },
+      "mcnemar_T_vs_B": {
+        "b": 0,
+        "c": 1,
+        "p": 1.0
+      },
+      "mcnemar_W_vs_B": {
+        "b": 1,
+        "c": 1,
+        "p": 1.0
+      },
+      "ties": 0
+    }
+  },
+  "decision_worksheet_steps_0_2": [
+    {
+      "step": 0,
+      "condition": "replication anchor",
+      "evidence": {
+        "B_agreement": "60/60 per-item vs archived EXP094 baseline",
+        "T1_flips_vs_B": 0,
+        "foundation_wobble": false
+      }
+    },
+    {
+      "step": 1,
+      "condition": "delivery per alpha (>=58/60 in band)",
+      "evidence": {
+        "0.25": {
+          "in_band": 60,
+          "pass": true,
+          "band": [
+            0.00889,
+            0.01481
+          ]
+        },
+        "0.5": {
+          "in_band": 60,
+          "pass": true,
+          "band": [
+            0.01778,
+            0.02963
+          ]
+        },
+        "1.0": {
+          "in_band": 60,
+          "pass": true,
+          "band": [
+            0.0355,
+            0.0593
+          ]
+        },
+        "2.0": {
+          "in_band": 60,
+          "pass": true,
+          "band": [
+            0.0711,
+            0.1185
+          ]
+        },
+        "4.0": {
+          "in_band": 60,
+          "pass": true,
+          "band": [
+            0.1422,
+            0.237
+          ]
+        }
+      }
+    },
+    {
+      "step": 2,
+      "condition": "degeneracy gate input + sanity",
+      "evidence": {
+        "mean_abs_cosine": 0.7922606322936264,
+        "sanity_ref": 0.7923,
+        "sanity_tol": 0.05
+      }
+    },
+    {
+      "step": "3-6",
+      "condition": "VERDICT LANE (not executor)",
+      "evidence": "per-alpha contrast statistics in stratum_table_135.json"
+    }
+  ]
+}

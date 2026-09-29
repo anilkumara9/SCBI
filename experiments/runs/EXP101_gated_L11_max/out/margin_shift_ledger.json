@@ -1,0 +1,501 @@
+{
+  "rows": [
+    {
+      "item": 0,
+      "item_id": "exp092_planetary_2hop_0",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 1,
+      "item_id": "exp092_planetary_2hop_1",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 2,
+      "item_id": "exp092_planetary_2hop_2",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 3,
+      "item_id": "exp092_planetary_2hop_3",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 4,
+      "item_id": "exp092_planetary_2hop_4",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 5,
+      "item_id": "exp092_planetary_2hop_5",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 6,
+      "item_id": "exp092_planetary_2hop_6",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 7,
+      "item_id": "exp092_planetary_2hop_7",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 8,
+      "item_id": "exp092_planetary_2hop_8",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 9,
+      "item_id": "exp092_planetary_2hop_9",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 10,
+      "item_id": "exp092_planetary_2hop_10",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 11,
+      "item_id": "exp092_planetary_2hop_11",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 12,
+      "item_id": "exp092_planetary_2hop_12",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 13,
+      "item_id": "exp092_planetary_2hop_13",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.3482799530029297,
+      "dM_gated_R": -0.4468069076538086
+    },
+    {
+      "item": 14,
+      "item_id": "exp092_planetary_2hop_14",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 15,
+      "item_id": "exp092_planetary_3hop_0",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": 0.5529346466064453,
+      "dM_gated_R": 0.4982166290283203
+    },
+    {
+      "item": 16,
+      "item_id": "exp092_planetary_3hop_1",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 17,
+      "item_id": "exp092_planetary_3hop_2",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.38663387298583984,
+      "dM_gated_R": 0.16577720642089844
+    },
+    {
+      "item": 18,
+      "item_id": "exp092_planetary_3hop_3",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.023099899291992188,
+      "dM_gated_R": 0.020714759826660156
+    },
+    {
+      "item": 19,
+      "item_id": "exp092_planetary_3hop_4",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 20,
+      "item_id": "exp092_planetary_3hop_5",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": 0.47269344329833984,
+      "dM_gated_R": -0.10906410217285156
+    },
+    {
+      "item": 21,
+      "item_id": "exp092_planetary_3hop_6",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 22,
+      "item_id": "exp092_planetary_3hop_7",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 23,
+      "item_id": "exp092_planetary_3hop_8",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 24,
+      "item_id": "exp092_planetary_3hop_9",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.11674785614013672,
+      "dM_gated_R": -0.5883083343505859
+    },
+    {
+      "item": 25,
+      "item_id": "exp092_planetary_3hop_10",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 26,
+      "item_id": "exp092_planetary_3hop_11",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 27,
+      "item_id": "exp092_planetary_3hop_12",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 28,
+      "item_id": "exp092_planetary_3hop_13",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.3122901916503906,
+      "dM_gated_R": -0.1699380874633789
+    },
+    {
+      "item": 29,
+      "item_id": "exp092_planetary_3hop_14",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 30,
+      "item_id": "exp092_elemental_2hop_0",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.8640346527099609,
+      "dM_gated_R": 0.20452117919921875
+    },
+    {
+      "item": 31,
+      "item_id": "exp092_elemental_2hop_1",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 32,
+      "item_id": "exp092_elemental_2hop_2",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 33,
+      "item_id": "exp092_elemental_2hop_3",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 34,
+      "item_id": "exp092_elemental_2hop_4",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 35,
+      "item_id": "exp092_elemental_2hop_5",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 36,
+      "item_id": "exp092_elemental_2hop_6",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 37,
+      "item_id": "exp092_elemental_2hop_7",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 38,
+      "item_id": "exp092_elemental_2hop_8",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 39,
+      "item_id": "exp092_elemental_2hop_9",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 40,
+      "item_id": "exp092_elemental_2hop_10",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 41,
+      "item_id": "exp092_elemental_2hop_11",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 42,
+      "item_id": "exp092_elemental_2hop_12",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 43,
+      "item_id": "exp092_elemental_2hop_13",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 44,
+      "item_id": "exp092_elemental_2hop_14",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 45,
+      "item_id": "exp092_elemental_3hop_0",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.05663871765136719,
+      "dM_gated_R": 0.07404613494873047
+    },
+    {
+      "item": 46,
+      "item_id": "exp092_elemental_3hop_1",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 47,
+      "item_id": "exp092_elemental_3hop_2",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": 0.027922630310058594,
+      "dM_gated_R": -0.04106330871582031
+    },
+    {
+      "item": 48,
+      "item_id": "exp092_elemental_3hop_3",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 49,
+      "item_id": "exp092_elemental_3hop_4",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 50,
+      "item_id": "exp092_elemental_3hop_5",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.30741119384765625,
+      "dM_gated_R": 0.2545804977416992
+    },
+    {
+      "item": 51,
+      "item_id": "exp092_elemental_3hop_6",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": 0.136810302734375,
+      "dM_gated_R": -0.13733196258544922
+    },
+    {
+      "item": 52,
+      "item_id": "exp092_elemental_3hop_7",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 53,
+      "item_id": "exp092_elemental_3hop_8",
+      "stratum": "C-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 54,
+      "item_id": "exp092_elemental_3hop_9",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 55,
+      "item_id": "exp092_elemental_3hop_10",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.1849069595336914,
+      "dM_gated_R": 0.06375789642333984
+    },
+    {
+      "item": 56,
+      "item_id": "exp092_elemental_3hop_11",
+      "stratum": "A-first",
+      "fired": false,
+      "dM_gated_T": 0.0,
+      "dM_gated_R": 0.0
+    },
+    {
+      "item": 57,
+      "item_id": "exp092_elemental_3hop_12",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": -0.0883321762084961,
+      "dM_gated_R": -0.9095973968505859
+    },
+    {
+      "item": 58,
+      "item_id": "exp092_elemental_3hop_13",
+      "stratum": "A-first",
+      "fired": true,
+      "dM_gated_T": -0.011584281921386719,
+      "dM_gated_R": -0.027187347412109375
+    },
+    {
+      "item": 59,
+      "item_id": "exp092_elemental_3hop_14",
+      "stratum": "C-first",
+      "fired": true,
+      "dM_gated_T": 0.09140968322753906,
+      "dM_gated_R": 0.12384414672851562
+    }
+  ],
+  "descriptive": {
+    "gated-T": {
+      "mean": -0.023636484146118165,
+      "std": 0.17283776607016663,
+      "min": -0.8640346527099609,
+      "max": 0.5529346466064453,
+      "n_nonzero": 16
+    },
+    "gated-R": {
+      "mean": -0.017063983281453452,
+      "std": 0.17442073254535162,
+      "min": -0.9095973968505859,
+      "max": 0.4982166290283203,
+      "n_nonzero": 16
+    }
+  },
+  "note": "descriptive only; alters no verdict"
+}

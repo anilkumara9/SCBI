@@ -1,0 +1,80 @@
+{
+  "bands": {
+    "0.25": [
+      0.00889,
+      0.01481
+    ],
+    "0.5": [
+      0.01778,
+      0.02963
+    ],
+    "1.0": [
+      0.0355,
+      0.0593
+    ],
+    "2.0": [
+      0.0711,
+      0.1185
+    ],
+    "4.0": [
+      0.1422,
+      0.237
+    ]
+  },
+  "per_alpha": {
+    "0.25": {
+      "in_band": 60,
+      "pass": true,
+      "band": [
+        0.00889,
+        0.01481
+      ]
+    },
+    "0.5": {
+      "in_band": 60,
+      "pass": true,
+      "band": [
+        0.01778,
+        0.02963
+      ]
+    },
+    "1.0": {
+      "in_band": 60,
+      "pass": true,
+      "band": [
+        0.0355,
+        0.0593
+      ]
+    },
+    "2.0": {
+      "in_band": 60,
+      "pass": true,
+      "band": [
+        0.0711,
+        0.1185
+      ]
+    },
+    "4.0": {
+      "in_band": 60,
+      "pass": true,
+      "band": [
+        0.1422,
+        0.237
+      ]
+    }
+  },
+  "live_alphas": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "excluded_alphas": [],
+  "g5_execution_probe_alpha1": {
+    "criterion_i_rel_err": 4.26001700539517e-07,
+    "criterion_ii_max_abs_change": 0.0,
+    "criterion_iii_bit_match": true,
+    "gate": "PASS"
+  }
+}

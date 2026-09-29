@@ -1,0 +1,263 @@
+[
+ {
+  "step": 0,
+  "condition": "foundation gates",
+  "evidence": {
+   "constructor_rehash": "match frozen pin",
+   "G5_layer_11": "PASS (frozen verify_g5 core, d_0^(11) probe)",
+   "B_agreement": "60/60 per-item vs archived EXP094 baseline",
+   "B_accuracy": 36,
+   "L11_degeneracy_signature": "0.7923 vs 0.7923 (tol 0.05) \u2014 PASS",
+   "attention_math_validation": "max abs diff 0.00e+00 <= 1e-05 \u2014 PASS",
+   "E_over_N": "60/60 <= 0.5"
+  },
+  "walk": "VERDICT LANE (LOG-4448): PASS \u2014 no HOLD. (i) constructor re-hash live == 5e03f206...917f361 (verified in constructor_manifest.json); (ii) B agreement 60/60 per-item vs archived EXP094 vector, recomputed independently by this lane from experiments/runs/EXP094_peritem_l11/out/per_item_records.csv (36/60 accuracy both; hooks attached = non-perturbation proof holds); (iii) span annotations 60/60 valid (1<=E<N, E/N<=0.5, final token outside span \u2014 recomputed from per_item_gate.csv); (iv) degeneracy recomputed 0.79226063 vs 0.7923, tol 0.05 \u2014 PASS. Attention-math within-backend validation 0.00e+00 <= 1e-05 (3/3) recorded."
+ },
+ {
+  "step": 1,
+  "condition": "delivery (fired rows in band)",
+  "evidence": {
+   "n_fired_cell_rows": 32,
+   "in_band": 32,
+   "out_of_band": 0,
+   "exclusions": {
+    "gated-T": [],
+    "gated-R": []
+   },
+   "zero_norm_directions": 0
+  },
+  "walk": "VERDICT LANE (LOG-4448): PASS \u2014 no HOLD, no exclusions. 32/32 fired cell-rows (16 items x 2 arms) within [0.285, 0.475] (all exactly 0.38, recomputed from per_item_delivery.csv); 0 out-of-band per arm; unfired rows perturbation_ratio undefined (44 items x 2 arms); norm ties 60/60; zero-norm directions 0; sanity gates (zero-variance decisions, ties/60>5%) not triggered."
+ },
+ {
+  "step": "2a",
+  "condition": "gate integrity",
+  "evidence": {
+   "gate_source": "B_pass_only",
+   "gate_rule": "max>=tau (mass_i^max = max_h span-sum; mass_i^mean = audit field ONLY, \u00a74.3 verbatim fence)",
+   "n_block_input_captures": 60,
+   "capture_arm_tags": [
+    "B"
+   ],
+   "pre_hook_readonly": true,
+   "coverage": 0.26666666666666666,
+   "n_fired": 16,
+   "mass_max_range": [
+    0.14796015108004212,
+    0.3169274292886257
+   ],
+   "mass_mean_range": [
+    0.03958099070950993,
+    0.07457058551881346
+   ],
+   "tau_range": [
+    0.22857142857142856,
+    0.27586206896551724
+   ],
+   "audit_fired_iff_max_ge_tau": "60/60",
+   "audit_meanfire_implies_maxfire": true,
+   "audit_note": "mass_mean is gate-integrity audit evidence only; no mean-field-derived coverage, flip, or counterfactual quantity is computed or cited (\u00a74.3 verbatim fence)",
+   "step_0iii": {
+    "E_over_N_le_0.5": "60/60",
+    "one_le_E_lt_N": "60/60",
+    "final_token_outside_span": "60/60",
+    "tau_in_(0,1]": "60/60"
+   },
+   "step_2a": "firing vector derived from B-pass captures only; injection-pass data never entered the gate computation",
+   "attention_backend": "sdpa (default; B pass bit-identical code path to EXP094-099)",
+   "attention_math_validation": {
+    "method": "WITHIN-backend eager ground truth: the eager model's own captured block-11 input through its own submodules vs its own output_attentions weights (separate model instance, output_attentions=True)",
+    "n_items": 3,
+    "max_abs_diff": 0.0,
+    "tol": 1e-05,
+    "pass": true
+   },
+   "backend_divergence_diagnostic": {
+    "note": "attempt-1 HOLD diagnosis (2026-09-28): cross-backend comparison is invalid \u2014 SDPA-vs-eager block-11 inputs already differ ~1e-5 from layers-0-10 backend divergence; logged, not gated",
+    "sdpa_vs_eager_block11_input_max_abs_diff_3_items": 8.58306884765625e-06
+   }
+  },
+  "walk": "VERDICT LANE (LOG-4448): PASS. Gate derived from B pass only: gate_source=B_pass on all 60 rows of per_item_gate.csv, capture_arm_tags=['B'], pre-hook read-only. fired<=>mass_max>=tau on 60/60 rows, recomputed independently by this lane (float tolerance; stored tau rounded 3.4e-11 from 2E/N \u2014 nearest firing margin 4.185e-04, no decision affected). Structural mean-fire=>max-fire holds on 60/60. Mean-mass audit field: used only for the permitted structural check and descriptive range; no mean-field-derived coverage, flip, or counterfactual quantity computed or cited \u2014 \u00a74.3 fence observed."
+ },
+ {
+  "step": "2b",
+  "condition": "coverage tripwire",
+  "evidence": {
+   "coverage": 0.26666666666666666,
+   "n_fired": 16,
+   "floor": 0.1,
+   "tripwire_fired": false,
+   "vacuous_gate": false
+  },
+  "walk": "VERDICT LANE (LOG-4448): tripwire NOT fired. Coverage 16/60 = 0.2667 >= 10% floor. The S6-3/EXP100 mean-gate collapse did not repeat under the max-gate."
+ },
+ {
+  "step": "2c",
+  "condition": "vacuous-gate flag",
+  "evidence": {
+   "vacuous_gate": false,
+   "required_verbatim_caveat": "CONTINUE (directional signal at ratio 0.38; gating unattributed \u2014 the gate was vacuous)."
+  },
+  "walk": "VERDICT LANE (LOG-4448): flag not attached. Coverage 26.67% != 100% \u2014 the gate is selective, not vacuous. The required verbatim caveat does not apply."
+ },
+ {
+  "step": 3,
+  "condition": "regime routing (machine-written)",
+  "evidence": {
+   "routing": "LIVE",
+   "routing_reason": "(gated-T=1 >= 1) OR (gated-R=0 >= 1)",
+   "coverage": 0.26666666666666666,
+   "n_fired": 16,
+   "evidence": {
+    "gated_T_flips_vs_B": 1,
+    "gated_R_flips_vs_B": 0,
+    "delivery_confirmed": true,
+    "sanity": {
+     "gated-T": {
+      "ties": 0,
+      "ties_over_60": 0.0,
+      "run_invalid_ties": false,
+      "zero_variance": false
+     },
+     "gated-R": {
+      "ties": 0,
+      "ties_over_60": 0.0,
+      "run_invalid_ties": false,
+      "zero_variance": false
+     }
+    }
+   },
+   "note": "machine-written before the table walk; per-arm RUN-INVALID routed where sanity gates fire; steps 2b, 4-8 are the verdict lane's"
+  },
+  "walk": "VERDICT LANE (LOG-4448): LIVE. gated-T flips = 1 >= 1 (asymmetric rule; the moving test arm routes LIVE). Regime is LIVE \u2014 evaluate."
+ },
+ {
+  "step": 4,
+  "condition": "fragility PIVOT (matched random, \u00a73 step 4)",
+  "evidence": {
+   "aggregate_contrasts": {
+    "gated-T_vs_B": {
+     "n": 60,
+     "delta": -0.016666666666666666,
+     "b": 0,
+     "c": 1,
+     "p": 1.0
+    },
+    "gated-R_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+     "n": 60,
+     "delta": -0.016666666666666666,
+     "b": 0,
+     "c": 1,
+     "p": 1.0
+    }
+   },
+   "gated_R_flips_vs_B": 0,
+   "note": "fragility routes before directionality; verdict lane applies the first-match rule"
+  },
+  "walk": "VERDICT LANE (LOG-4448): NOT fired. Disjunct (a) requires gated-T>=6 AND gated-R>=6: 1 and 0 \u2014 no. Disjunct (b) requires gated-T<6 AND gated-R>=6: gated-R=0 < 6 \u2014 no. No matched-control fragility; control did not outmove task."
+ },
+ {
+  "step": 5,
+  "condition": "licensed positive (gated-T, \u00a73 step 5)",
+  "evidence": {
+   "aggregate_contrasts": {
+    "gated-T_vs_B": {
+     "n": 60,
+     "delta": -0.016666666666666666,
+     "b": 0,
+     "c": 1,
+     "p": 1.0
+    },
+    "gated-R_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+     "n": 60,
+     "delta": -0.016666666666666666,
+     "b": 0,
+     "c": 1,
+     "p": 1.0
+    }
+   },
+   "stratum_cells": "stratum_table.json",
+   "sensitivity_floor_8_over_N_realized": 0.13333333333333333,
+   "sensitivity_floor_8_over_F": 0.5,
+   "note": "full conjunction evaluated by the verdict lane"
+  },
+  "walk": "VERDICT LANE (LOG-4448): NOT fired \u2014 licensed-positive conjunct fails at the first conjunct: gated-T flips = 1 < 6 (McNemar-exact doubling b=0,c=1,p=1.0 recomputed independently by this lane). gated-R flat (<6 flips AND |DeltaM|=0.0171<0.10, DeltaM as mean paired logit-margin, recomputed: -0.0171 R / -0.0236 T); stratum consistency holds (aggregate s_agg=+1; A-first (0,0) and C-first (0,1) both uninformative <2 flips); coverage 26.67%>=10%. The positive was mathematically reachable (16 fired >= 8 needed) and did not materialize."
+ },
+ {
+  "step": 6,
+  "condition": "gated KILL (\u00a73 step 6)",
+  "evidence": {
+   "routing": "LIVE",
+   "coverage": 0.26666666666666666,
+   "n_fired": 16,
+   "aggregate_contrasts": {
+    "gated-T_vs_B": {
+     "n": 60,
+     "delta": -0.016666666666666666,
+     "b": 0,
+     "c": 1,
+     "p": 1.0
+    },
+    "gated-R_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+     "n": 60,
+     "delta": -0.016666666666666666,
+     "b": 0,
+     "c": 1,
+     "p": 1.0
+    }
+   },
+   "note": "verdict lane evaluates the step-6 conjunction (LIVE, coverage\u226510%, gated-T<6, gated-R sub-threshold)"
+  },
+  "walk": "VERDICT LANE (LOG-4448): FIRES \u2014 binding. Regime LIVE, coverage 26.67% >= 10%, gated-T flips = 1 < 6, gated-R sub-threshold (0 < 6; no step-4 claim). Verdict: Refuted \u2014 existential relevance-gating does not rescue the L11 direction. Fenced to max-gated per-item L11 injection at ratio 0.38 on EXP092-B; never to 'all dynamic mechanisms', 'all aggregations', or 'all layers'. KILL weight: flatness across the 16 FIRED items \u2014 0 directional flips / 16 (one-sided 95pct upper bound 17.1pct on the gated-conditional directional flip rate); 1 total flip (right->wrong) / 16 (upper bound 26.4pct). Not flatness across 60."
+ },
+ {
+  "step": 7,
+  "condition": "otherwise -> PIVOT (named sub-cases)",
+  "evidence": {
+   "aggregate_contrasts": {
+    "gated-T_vs_B": {
+     "n": 60,
+     "delta": -0.016666666666666666,
+     "b": 0,
+     "c": 1,
+     "p": 1.0
+    },
+    "gated-R_vs_B": {
+     "n": 60,
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+     "n": 60,
+     "delta": -0.016666666666666666,
+     "b": 0,
+     "c": 1,
+     "p": 1.0
+    }
+   }
+  },
+  "walk": "VERDICT LANE (LOG-4448): not reached \u2014 step 6 fired first (first-match-wins)."
+ }
+]

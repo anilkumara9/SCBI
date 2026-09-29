@@ -1,0 +1,24 @@
+[g7] G7.1 pass: constructor 5e03f206dd907b52… frozen, audit PASS.
+[g0] G0 pass: bench pin 9be8162633fe19aa…, 60 items.
+[run] torch intra-op threads pinned: 2
+[run] G1' pass: 240/240 in-prompt occurrences single-token.
+[run] STEP-0(iii): 60/60 items satisfy 1<=E<N, E/N<=0.5, final token outside span. tau range [0.2286, 0.2759].
+[run] Δθ=0 pre-run hash OK: ec276abe3902fab0…
+[run] attention-math validation: 3/3 items within-backend, max abs diff 0.00e+00 <= 1e-05 vs eager ground truth (L20 math) — PASS.
+[run] diagnostic: SDPA-vs-eager block-20 input max abs diff over 3 items = 1.05e-03 (backend divergence, not gated).
+[run] B arm complete: 60 passes; B accuracy 36/60.
+[run] reference passes complete: 60 passes.
+[run] construction complete: 60 d_i^(11) (frozen C-1) at ratio 0.38.
+[run] gated-R draws complete: 60 g_i^(11) (seed 513020), item-major.
+[run] norm-tie check: 60/60 pass (||g_i^(11)|| == ||d_i^(11)||).
+[run] L11 degeneracy signature: mean|cos|=0.7923 (vs 0.7923 OK).
+[run] STEP-0 B agreement: 60/60 per-item decisions match the archived EXP094 baseline.
+[run] G5 layer-11 execution probe: PASS (rel_err=6.98e-08, other=0.00e+00).
+[run] gate (L20 max-over-heads): fired 55/60 (coverage 0.917); mass_i^{L20,max} range [0.1754, 0.9999]; tau range [0.2286, 0.2759]; fired⟺L20-max≥τ 60/60.
+[run] STEP-1 delivery: 110 fired cell-rows; 110 in band [0.285, 0.475]; exclusions: gated-T=[], gated-R=[].
+[run] sweep complete: 110 injection passes (55 fired items x 2 arms); 5 unfired items copied B. Total passes: 237 (expected ≤ 247, cap 500).
+[run] Δθ=0 post-run hash OK (Δθ=0 verified).
+[run] gate CSV round-trip audit: fired⟺L20-max≥τ 60/60 — PASS.
+[run] scoring complete: 9 stratum cells (3 strata x 3 contrasts).
+[run] regime routing: LIVE ((gated-T=3 >= 1) OR (gated-R=1 >= 1)).
+[run] margin-shift ledger: 60 rows; descriptive aggregates computed.

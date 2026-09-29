@@ -1,0 +1,120 @@
+{
+  "pools": {
+    "EXP095_T_only": {
+      "k": 2,
+      "n": 300,
+      "rate": 0.006666666666666667,
+      "exact_1sided_95": 0.020836230527024713,
+      "cp_2sided_upper": 0.023873497572173663,
+      "rule_of_three": null
+    },
+    "EXP095_all_injection": {
+      "k": 4,
+      "n": 600,
+      "rate": 0.006666666666666667,
+      "exact_1sided_95": 0.01519043951414284,
+      "cp_2sided_upper": 0.016980706739316787,
+      "rule_of_three": null
+    },
+    "EXP096_T_only_gated": {
+      "k": 3,
+      "n": 21,
+      "rate": 0.14285714285714285,
+      "exact_1sided_95": 0.3292110194625514,
+      "cp_2sided_upper": 0.363423987016981,
+      "rule_of_three": null
+    },
+    "EXP096_all_injection_gated": {
+      "k": 6,
+      "n": 42,
+      "rate": 0.14285714285714285,
+      "exact_1sided_95": 0.2626161546521669,
+      "cp_2sided_upper": 0.2853938419132712,
+      "rule_of_three": null
+    },
+    "family_peritem_T_only": {
+      "k": 5,
+      "n": 381,
+      "rate": 0.013123359580052493,
+      "exact_1sided_95": 0.027394016495645934,
+      "cp_2sided_upper": 0.03035830543892354,
+      "rule_of_three": null
+    },
+    "family_peritem_all_injection": {
+      "k": 10,
+      "n": 762,
+      "rate": 0.013123359580052493,
+      "exact_1sided_95": 0.022158444448855785,
+      "cp_2sided_upper": 0.024001539620259693,
+      "rule_of_three": null
+    },
+    "benchB_L11_extended": {
+      "k": 10,
+      "n": 822,
+      "rate": 0.012165450121654502,
+      "exact_1sided_95": 0.020547919901559963,
+      "cp_2sided_upper": 0.022258582070586785,
+      "rule_of_three": null
+    },
+    "grand_extended": {
+      "k": 10,
+      "n": 1422,
+      "rate": 0.007032348804500703,
+      "exact_1sided_95": 0.011899224140504427,
+      "cp_2sided_upper": 0.012894598918805567,
+      "rule_of_three": null
+    }
+  },
+  "exp095_flips": {
+    "0.25/T": {
+      "n": 60,
+      "flips": 0
+    },
+    "0.25/B_wrong": {
+      "n": 60,
+      "flips": 0
+    },
+    "0.5/T": {
+      "n": 60,
+      "flips": 0
+    },
+    "0.5/B_wrong": {
+      "n": 60,
+      "flips": 0
+    },
+    "1.0/T": {
+      "n": 60,
+      "flips": 0
+    },
+    "1.0/B_wrong": {
+      "n": 60,
+      "flips": 0
+    },
+    "2.0/T": {
+      "n": 60,
+      "flips": 1
+    },
+    "2.0/B_wrong": {
+      "n": 60,
+      "flips": 0
+    },
+    "4.0/T": {
+      "n": 60,
+      "flips": 1
+    },
+    "4.0/B_wrong": {
+      "n": 60,
+      "flips": 2
+    }
+  },
+  "exp096_flips": {
+    "T": {
+      "n": 21,
+      "flips": 3
+    },
+    "B_wrong": {
+      "n": 21,
+      "flips": 3
+    }
+  }
+}

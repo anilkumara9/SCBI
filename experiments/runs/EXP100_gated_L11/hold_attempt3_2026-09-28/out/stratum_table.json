@@ -1,0 +1,146 @@
+[
+  {
+    "n": 60,
+    "acc_X": 0.6,
+    "acc_Y": 0.6,
+    "delta": 0.0,
+    "mcnemar_b": 0,
+    "mcnemar_c": 0,
+    "mcnemar_p": 1.0,
+    "tango_ci": [
+      0.0,
+      0.0
+    ],
+    "contrast": "gated-T_vs_B",
+    "kind": "discovery",
+    "stratum": "agg"
+  },
+  {
+    "n": 30,
+    "acc_X": 0.9666666666666667,
+    "acc_Y": 0.9666666666666667,
+    "delta": 0.0,
+    "mcnemar_b": 0,
+    "mcnemar_c": 0,
+    "mcnemar_p": 1.0,
+    "tango_ci": [
+      0.0,
+      0.0
+    ],
+    "contrast": "gated-T_vs_B",
+    "kind": "discovery",
+    "stratum": "a_first"
+  },
+  {
+    "n": 30,
+    "acc_X": 0.23333333333333334,
+    "acc_Y": 0.23333333333333334,
+    "delta": 0.0,
+    "mcnemar_b": 0,
+    "mcnemar_c": 0,
+    "mcnemar_p": 1.0,
+    "tango_ci": [
+      0.0,
+      0.0
+    ],
+    "contrast": "gated-T_vs_B",
+    "kind": "discovery",
+    "stratum": "c_first"
+  },
+  {
+    "n": 60,
+    "acc_X": 0.6,
+    "acc_Y": 0.6,
+    "delta": 0.0,
+    "mcnemar_b": 0,
+    "mcnemar_c": 0,
+    "mcnemar_p": 1.0,
+    "tango_ci": [
+      0.0,
+      0.0
+    ],
+    "contrast": "gated-R_vs_B",
+    "kind": "discovery",
+    "stratum": "agg"
+  },
+  {
+    "n": 30,
+    "acc_X": 0.9666666666666667,
+    "acc_Y": 0.9666666666666667,
+    "delta": 0.0,
+    "mcnemar_b": 0,
+    "mcnemar_c": 0,
+    "mcnemar_p": 1.0,
+    "tango_ci": [
+      0.0,
+      0.0
+    ],
+    "contrast": "gated-R_vs_B",
+    "kind": "discovery",
+    "stratum": "a_first"
+  },
+  {
+    "n": 30,
+    "acc_X": 0.23333333333333334,
+    "acc_Y": 0.23333333333333334,
+    "delta": 0.0,
+    "mcnemar_b": 0,
+    "mcnemar_c": 0,
+    "mcnemar_p": 1.0,
+    "tango_ci": [
+      0.0,
+      0.0
+    ],
+    "contrast": "gated-R_vs_B",
+    "kind": "discovery",
+    "stratum": "c_first"
+  },
+  {
+    "n": 60,
+    "acc_X": 0.6,
+    "acc_Y": 0.6,
+    "delta": 0.0,
+    "mcnemar_b": 0,
+    "mcnemar_c": 0,
+    "mcnemar_p": 1.0,
+    "tango_ci": [
+      0.0,
+      0.0
+    ],
+    "contrast": "gated-T_vs_gated-R",
+    "kind": "diagnostic",
+    "stratum": "agg"
+  },
+  {
+    "n": 30,
+    "acc_X": 0.9666666666666667,
+    "acc_Y": 0.9666666666666667,
+    "delta": 0.0,
+    "mcnemar_b": 0,
+    "mcnemar_c": 0,
+    "mcnemar_p": 1.0,
+    "tango_ci": [
+      0.0,
+      0.0
+    ],
+    "contrast": "gated-T_vs_gated-R",
+    "kind": "diagnostic",
+    "stratum": "a_first"
+  },
+  {
+    "n": 30,
+    "acc_X": 0.23333333333333334,
+    "acc_Y": 0.23333333333333334,
+    "delta": 0.0,
+    "mcnemar_b": 0,
+    "mcnemar_c": 0,
+    "mcnemar_p": 1.0,
+    "tango_ci": [
+      0.0,
+      0.0
+    ],
+    "contrast": "gated-T_vs_gated-R",
+    "kind": "diagnostic",
+    "stratum": "c_first"
+  }
+]

@@ -1,0 +1,339 @@
+[
+  {
+    "step": 0,
+    "condition": "foundation gates",
+    "evidence": {
+      "constructor_rehash": "match frozen pin",
+      "G5_layer_8": "PASS (frozen verify_g5 core, d_0^(8) probe)",
+      "G5_layer_20": "PASS (frozen verify_g5 core, d_0^(20) probe)",
+      "B_agreement": "60/60 per-item vs archived EXP094 baseline",
+      "B_accuracy": 36,
+      "L20_degeneracy_signature": "0.6639 vs 0.6639 (tol 0.05) \u2014 PASS"
+    },
+    "walk": "WALK (verdict lane): foundation gates PASS \u2014 constructor re-hash matches frozen pin; B agreement 60/60 vs archived EXP094 (own recomputation); L20 degeneracy signature 0.6638734927007373 vs 0.6639 (|\u0394|=0.0000265 \u2264 0.05); \u0394\u03b8=0 pre==post==LOG-331 pin. \u2192 proceed."
+  },
+  {
+    "step": 1,
+    "condition": "delivery (240 cell-rows in band)",
+    "evidence": {
+      "in_band": 240,
+      "out_of_band": 0,
+      "exclusions": {
+        "(20,L20)": [],
+        "(20,W20)": [],
+        "(8,L8)": [],
+        "(8,W8)": []
+      },
+      "zero_norm_directions": 0
+    },
+    "walk": "WALK (verdict lane): delivery PASS \u2014 240/240 cell-rows in [0.285,0.475] (own range check), 0 OOB, 0 zero-norm directions, 0 exclusions. Realized N=60/arm; sensitivity floor 9/60=0.15. \u2192 proceed."
+  },
+  {
+    "step": 2,
+    "condition": "degeneracy gate input (L8)",
+    "evidence": {
+      "mean_abs_cosine_8": 0.8717262992607462,
+      "bar": 0.95,
+      "gate_fired": false
+    },
+    "walk": "WALK (verdict lane): L8 mean|cos|=0.8717262992607462 < 0.95 \u2192 void path not triggered. L20-void unreachable (step-0 gate tighter). \u2192 proceed."
+  },
+  {
+    "step": 3,
+    "condition": "regime routing (machine-written)",
+    "evidence": {
+      "routing": "LIVE",
+      "routing_reason": "(W20=7 >= 1) OR (W8=1 >= 1)",
+      "anchor_count_verified": 6,
+      "evidence": {
+        "L20_flips_vs_B": 6,
+        "L8_flips_vs_B": 4,
+        "W20_flips_vs_B": 7,
+        "W8_flips_vs_B": 1,
+        "delivery_confirmed": true,
+        "tie_counts": {
+          "L20": 0,
+          "L8": 0,
+          "W20": 0,
+          "W8": 0,
+          "B": 0
+        },
+        "tie_gate_arms": [],
+        "zero_variance": {
+          "L20": false,
+          "L8": false,
+          "W20": false,
+          "W8": false,
+          "B": false
+        },
+        "coherence_arms": [],
+        "n_included": {
+          "L20": 60,
+          "L8": 60,
+          "W20": 60,
+          "W8": 60
+        }
+      },
+      "note": "machine-written before the table walk; per-arm RUN-INVALID routed where sanity gates fire"
+    },
+    "walk": "WALK (verdict lane): anchor count checked first \u2014 L20-only flips=6 (own count) \u2192 not HOLD. (W20=7\u22651) OR (W8=1\u22651) \u2192 LIVE (own computation). Sanity gates clear: 0 ties, no zero-variance arms. \u2192 LIVE, proceed."
+  },
+  {
+    "step": 4,
+    "condition": "consistency anchor (set-equality)",
+    "evidence": {
+      "step": 4,
+      "expected_set": [
+        "exp092_elemental_2hop_0",
+        "exp092_elemental_2hop_10",
+        "exp092_elemental_3hop_1",
+        "exp092_planetary_2hop_11",
+        "exp092_planetary_2hop_5",
+        "exp092_planetary_2hop_7"
+      ],
+      "expected_count": 6,
+      "expected_b": 0,
+      "expected_c": 6,
+      "observed_count": 6,
+      "observed_b": 0,
+      "observed_c": 6,
+      "note": "setup validation, not a verdict step",
+      "observed_set": [
+        "exp092_elemental_2hop_0",
+        "exp092_elemental_2hop_10",
+        "exp092_elemental_3hop_1",
+        "exp092_planetary_2hop_11",
+        "exp092_planetary_2hop_5",
+        "exp092_planetary_2hop_7"
+      ],
+      "set_equality": true
+    },
+    "walk": "WALK (verdict lane): anchor set equality TRUE \u2014 EXP099 L20-only flip set == EXP098 archived 6-item set (own recomputation of EXP098 primaries; b=0,c=6 both). Setup validated. \u2192 proceed. (Licenses no L20 causality finding.)"
+  },
+  {
+    "step": 5,
+    "condition": "fragility PIVOT (first-match-wins)",
+    "evidence": {
+      "aggregate_contrasts": {
+        "L20B": {
+          "n": 60,
+          "delta": -0.1,
+          "b": 0,
+          "c": 6,
+          "p": 0.03125
+        },
+        "L8B": {
+          "n": 60,
+          "delta": -0.03333333333333333,
+          "b": 1,
+          "c": 3,
+          "p": 0.625
+        },
+        "W20B": {
+          "n": 60,
+          "delta": -0.08333333333333333,
+          "b": 1,
+          "c": 6,
+          "p": 0.125
+        },
+        "W8B": {
+          "n": 60,
+          "delta": 0.016666666666666666,
+          "b": 1,
+          "c": 0,
+          "p": 1.0
+        },
+        "L8W8": {
+          "n": 60,
+          "delta": -0.05,
+          "b": 0,
+          "c": 3,
+          "p": 0.25
+        }
+      },
+      "note": "step-5 disjuncts evaluated by the verdict lane from these numbers"
+    },
+    "walk": "WALK (verdict lane): FIRES \u2014 disjunct (b): L8-only=4 <6 AND W20=7 \u22656 \u2192 PIVOT (fragility \u2014 control-outmoves-task / fragile regime, naming L20). Disjunct (a) fails (L8-only<6). First-match-wins; steps 6\u20138 not reached."
+  },
+  {
+    "step": 6,
+    "condition": "licensed positive (L8)",
+    "evidence": {
+      "aggregate_contrasts": {
+        "L20B": {
+          "n": 60,
+          "delta": -0.1,
+          "b": 0,
+          "c": 6,
+          "p": 0.03125
+        },
+        "L8B": {
+          "n": 60,
+          "delta": -0.03333333333333333,
+          "b": 1,
+          "c": 3,
+          "p": 0.625
+        },
+        "W20B": {
+          "n": 60,
+          "delta": -0.08333333333333333,
+          "b": 1,
+          "c": 6,
+          "p": 0.125
+        },
+        "W8B": {
+          "n": 60,
+          "delta": 0.016666666666666666,
+          "b": 1,
+          "c": 0,
+          "p": 1.0
+        },
+        "L8W8": {
+          "n": 60,
+          "delta": -0.05,
+          "b": 0,
+          "c": 3,
+          "p": 0.25
+        }
+      },
+      "stratum_cells": "stratum_table.json (A__L8B, C__L8B)",
+      "note": "full conjunction evaluated by the verdict lane"
+    },
+    "walk": "WALK (verdict lane): not reached (step 5 fired first). For the record the conjunct would fail: L8-only=4 <6."
+  },
+  {
+    "step": "6-caveat",
+    "condition": "post-step-6 L20-fragility caveat",
+    "evidence": {
+      "W20_flips": 7,
+      "aggregate_contrasts": {
+        "L20B": {
+          "n": 60,
+          "delta": -0.1,
+          "b": 0,
+          "c": 6,
+          "p": 0.03125
+        },
+        "L8B": {
+          "n": 60,
+          "delta": -0.03333333333333333,
+          "b": 1,
+          "c": 3,
+          "p": 0.625
+        },
+        "W20B": {
+          "n": 60,
+          "delta": -0.08333333333333333,
+          "b": 1,
+          "c": 6,
+          "p": 0.125
+        },
+        "W8B": {
+          "n": 60,
+          "delta": 0.016666666666666666,
+          "b": 1,
+          "c": 0,
+          "p": 1.0
+        },
+        "L8W8": {
+          "n": 60,
+          "delta": -0.05,
+          "b": 0,
+          "c": 3,
+          "p": 0.25
+        }
+      }
+    },
+    "walk": "WALK (verdict lane): not applicable \u2014 live only if the step-5 disjuncts did not fire; disjunct (b) fired. No caveat evaluation."
+  },
+  {
+    "step": 7,
+    "condition": "sweep KILL",
+    "evidence": {
+      "aggregate_contrasts": {
+        "L20B": {
+          "n": 60,
+          "delta": -0.1,
+          "b": 0,
+          "c": 6,
+          "p": 0.03125
+        },
+        "L8B": {
+          "n": 60,
+          "delta": -0.03333333333333333,
+          "b": 1,
+          "c": 3,
+          "p": 0.625
+        },
+        "W20B": {
+          "n": 60,
+          "delta": -0.08333333333333333,
+          "b": 1,
+          "c": 6,
+          "p": 0.125
+        },
+        "W8B": {
+          "n": 60,
+          "delta": 0.016666666666666666,
+          "b": 1,
+          "c": 0,
+          "p": 1.0
+        },
+        "L8W8": {
+          "n": 60,
+          "delta": -0.05,
+          "b": 0,
+          "c": 3,
+          "p": 0.25
+        }
+      },
+      "regime": "LIVE",
+      "note": "KILL requires regime LIVE with L8-liveness (F3)"
+    },
+    "walk": "WALK (verdict lane): not reached (step 5 fired first)."
+  },
+  {
+    "step": 8,
+    "condition": "otherwise -> PIVOT (named sub-cases)",
+    "evidence": {
+      "aggregate_contrasts": {
+        "L20B": {
+          "n": 60,
+          "delta": -0.1,
+          "b": 0,
+          "c": 6,
+          "p": 0.03125
+        },
+        "L8B": {
+          "n": 60,
+          "delta": -0.03333333333333333,
+          "b": 1,
+          "c": 3,
+          "p": 0.625
+        },
+        "W20B": {
+          "n": 60,
+          "delta": -0.08333333333333333,
+          "b": 1,
+          "c": 6,
+          "p": 0.125
+        },
+        "W8B": {
+          "n": 60,
+          "delta": 0.016666666666666666,
+          "b": 1,
+          "c": 0,
+          "p": 1.0
+        },
+        "L8W8": {
+          "n": 60,
+          "delta": -0.05,
+          "b": 0,
+          "c": 3,
+          "p": 0.25
+        }
+      }
+    },
+    "walk": "WALK (verdict lane): not reached (step 5 fired first)."
+  }
+]
