@@ -14467,3 +14467,11 @@ research log is append-only — no stash, move, or rewrite was used at any point
 - Committed on `sync/2026-09-29-consolidated` ("LOG-4778: research-log LOG-4777 append (commit-only, no push)"). **No push attempted, no token used.**
 - Continuity 4777→4778 verified (LOG-4777 confirmed max before append; count = 1). This entry lands uncommitted per convention.
 - Push of the accumulated local commits remains founder-gated (fresh token required).
+
+## LOG-4779
+- Lane: CEO direct (2026-09-30 ~05:01 IST, $0 CPU). Committed the uncommitted LOG-4778 research-log append per the lane-keeper's next-task recommendation (2026-09-30 04:59 IST run).
+- Wave-only verify: staged set was exactly `reports/research_log.md` (8 insertions, 0 deletions — the LOG-4778 append only). Untracked `experiments/bundles/exp131_v1inj/out/` (local CPU-smoke artifacts) left untracked per convention.
+- Secret/weight scan: clean — zero credential-pattern hits; no >1MB staged files; no `.safetensors`/`.env`/`.pem`.
+- Committed on `sync/2026-09-29-consolidated` ("LOG-4779: research-log LOG-4778 append (commit-only, no push)"). **No push attempted, no token used.**
+- Continuity 4778→4779 verified (LOG-4778 confirmed max before append; count = 1). This entry lands uncommitted per convention.
+- Push of the accumulated local commits remains founder-gated (fresh token required).
