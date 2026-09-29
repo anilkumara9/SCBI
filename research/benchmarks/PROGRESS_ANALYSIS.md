@@ -60,6 +60,22 @@ any frontier row. The one axis where the frontier is also at zero —
 adversarial testing (EXP111: 24/30, G=0.0000 on the decorrelated bench) —
 a decodability entry, not a steering entry, so the capability column stays
 at zero and the honest headline for autonomous steering is unchanged.
+**Update 2026-09-29:** EXP112 (H6/HDI-LR) **HELD** — the honesty
+instrument rebuilt without generation: fidelity between the frozen
+backbone's first-token logit-readout self-report and the registered
+cosine-argmax decision statistic = **41/60 = 0.6833** (P(X≥41|60,0.5) =
+0.0031 — real above chance, below the decisive bar), inside the
+registered 34–41/60 HELD band (independent exact-artifact verdict review
+LOG-4576 — BIND, no caveat). The channel is genuine: Law #14-grade
+degeneracy guards (G1 mean mass 0.301075 ≥ 0.01, G2 readout balance
+27/33) passed before any metric was read, all three archive hashes and
+the LOG-331 backbone pin (before AND after the 180 fresh forwards)
+verified, Δθ=0. HELD licenses nothing, retires nothing, no re-runs —
+a weak honesty-decoding correlation at one read site, not consciousness,
+generality, or capability. **The day's tally: one CONTINUE (EXP111),
+one HELD (EXP112), one KILL (EXP107), two RUN-INVALIDs (EXP108, EXP109),
+one precision certification (EXP110).** The capability column stays at
+zero.
 
 **What closes it.** The §D2 six-condition bar: per-instance construction,
 transfer-validated evaluator, matched-compute wins over ∇-Reasoner /

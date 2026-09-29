@@ -1,0 +1,76 @@
+{
+ "experiment": "EXP112",
+ "hypothesis": "H6/HDI-LR",
+ "lane": "LOG-4575",
+ "environment": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "sklearn": "1.9.1",
+  "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+  "site_hidden_states_index": 20,
+  "torch_num_threads_set": 2,
+  "torch_num_threads_readback": 2,
+  "seeds": {
+   "torch": 0,
+   "numpy": 0
+  },
+  "device": "cpu",
+  "dtype": "float32"
+ },
+ "pins": {
+  "npz": "6cf4a8a726a2b6e4623f57d0287d95879866f77e789bcc3789fb693cf2af6a76",
+  "embeddings_bytes": "9b6e8afb091ba1edbb0311ba1d3414d34a65942c3fdecb4533b69720f2a99123",
+  "ids_bytes": "3669e102222719d66f61daca46ae1ac34e844e398ae433743a5b37bfc5075cb9",
+  "bench": "e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5",
+  "backbone_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "backbone_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "backbone_pin_expected": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed"
+ },
+ "guards": {
+  "G4_spread": 0.08505242045418565,
+  "G1_mean_mass": 0.3010748148880898,
+  "G1_min": 0.0684922355868045,
+  "G1_max": 0.5677453841090856,
+  "G2_distinct": 2,
+  "G2_minority": 27,
+  "G2_E1": 27,
+  "G2_E2": 33
+ },
+ "margin_distribution": {
+  "median": 0.0008072037301226354,
+  "min": 1.825750847089802e-05,
+  "max": 0.0018203144556930562,
+  "ties_toward_E2": 0
+ },
+ "fidelity": {
+  "agree": 41,
+  "n": 60,
+  "value": 0.6833333333333333
+ },
+ "verdict": "HELD",
+ "verdict_reason": "weak signal, below the decisive bar; licenses nothing, retires nothing",
+ "systematic_misreporting_observation": null,
+ "per_cell_fidelity": {
+  "A-first/flipped": {
+   "agree": 12,
+   "n": 15,
+   "fidelity": 0.8
+  },
+  "A-first/original": {
+   "agree": 8,
+   "n": 15,
+   "fidelity": 0.5333333333333333
+  },
+  "C-first/flipped": {
+   "agree": 12,
+   "n": 15,
+   "fidelity": 0.8
+  },
+  "C-first/original": {
+   "agree": 9,
+   "n": 15,
+   "fidelity": 0.6
+  }
+ }
+}
