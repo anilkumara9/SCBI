@@ -13134,3 +13134,211 @@ CAVEAT (non-verdict-bearing): `exp126_worksheet.json` is truncated at 910 bytes 
 **Honest headline recorded in all three artifacts:** first CONTINUE in the new dynamics paradigm — first positive signal since the static family's 120-experiment negative; reframes the program's negative as "frozen models can't be steered by snapshot instruments," with v₁ the one licensed channel. Licensed consequence: ONLY a signed GPU injection-test pre-registration along v₁ (new experiment number, ĉ decision-orthogonality gate, rank-trend gate) — no injection, no steering claim; the downstream GPU injection test is founder-gated (user's hardware). **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero; this is a licensed measurement CONTINUE, not a capability entry.**
 
 **Continuity:** LOG-4699 → LOG-4700, exactly one entry, no gaps (LOG-4700 verified next-free before append).
+
+## LOG-4701 — 2026-09-29 — Commit-prep: TGA/EXP127 CONTINUE wave committed locally
+
+**Lane:** commit-prep (commit only, no push). **Action:** committed the TGA/EXP127 wave locally on branch `sync/2026-09-29-consolidated` as `da905f9` ("LOG-4701 — TGA/EXP127 CONTINUE wave (LOG-4693→4701): paradigm-break sprint, gate, pre-reg, reviews, bound CONTINUE, scoreboard v3.2"). 14 files, +3925 insertions.
+
+**Pre-commit checks:** (1) LOG divergence: full numeric LOG set diffed between the main tree's `reports/research_log.md` (762 unique LOG headers) and the worktree `~/workspace/SCBI-worktrees/sync-log4393-4465/reports/research_log.md` (522 unique, max 4466) — zero worktree LOG numbers missing from main. (2) Staged set exactly the wave artifacts: TGA gate memo, TGA pre-registration (post-fix), Law #14 review, EXP127 execution report, EXP127 verdict review, paradigm-break sprint dossier, EXP127 executor + console log + per-prompt JSON + worksheet, LOG-4693→4700 research-log additions, CEO diary (founder hard-research directive note), scoreboard v3.2 files. (3) Safety: no weights, secrets, or credential material staged; `__pycache__`/`.pyc` excluded; `exp127_vectors.npz` skipped by repo-wide `.gitignore` line 52 (same convention as the EXP125/EXP126 waves — hashes pinned in the report/worksheet). No stash used.
+
+**Fast-forward / push:** `git fetch origin` not attempted (no GitHub auth available) — fast-forward feasibility not freshly reverified. No push attempted; pushes/PRs remain founder-reserved with a fresh token.
+
+**Result:** working tree clean after commit; LOG-4701 is this entry (verified next-free before append; continuity LOG-4700 → LOG-4701, no gaps).
+
+## LOG-4702 — 2026-09-29 — DSF worth-it gate (Family B, dynamical sensitivity-field mapping): PASS
+
+**Lane:** worth-it-gate lane (pre-assigned LOG-4702). **$0 CPU.** Worth-it gate only — licenses nothing to execute. Read-only on signed protocols, paper sources, and the GPU queue. Nothing pushed, spent, or credential-touched.
+
+**Gate verdict: PASS.** All seven worth-it items satisfiable with exact, pre-registered, $0-CPU content. Memo: `research/strategy/DSF_GATE_2026-09-29.md`.
+
+**Read first:** `research/strategy/PARADIGM_BREAK_SPRINT_2026-09-29.md` (LOG-4693, Family B sketch, kill rule, seventh item), `research/experiments/EXP127_TGA_TRANSIENTGROWTH_REPORT_2026-09-29.md` (EXP127 CONTINUE'd: median R = 8.240640 ≥ 3, median σ₁/σ₂ = 1.557689 ≥ 1.5 — the dynamics-matched amplifier exists; DSF asks WHERE sensitivity lives layer-wise), `research/strategy/TGA_GATE_2026-09-29.md`.
+
+**Design locked at gate:** finite-difference gain field S_l = E[‖x_{24,last}(x_l + δ) − x_{24,last}(x_l)‖ / ‖δ‖] across all 24 block outputs x_0…x_23; δ = ε·u, u isotropic unit vector (seeded), ε identical across all layers/items/draws (same δ budget per layer); 10 verbatim EXP107 prompts (EXP127's decision set); K = 4 draws per (item, layer); 1920 forwards, ~1–2h CPU, $0; no autograd, no training, no labels (Law #7 clean by construction).
+
+**Structure statistic and bars:** layer-Gini coefficient of the 24-element field. CONTINUE: Gini ≥ 0.4 AND top-3 concentration layers not all in {x_21, x_22, x_23} (the dossier's guard against a trivial readout-adjacent CONTINUE). KILL as independent family (folds into TGA as a targeting note): Gini ≥ 0.4 but top-3 all in {x_21, x_22, x_23}. HELD: Gini ∈ [0.2, 0.4). KILL: Gini < 0.2 — the soft-spot premise dies (the EXP127-licensed v_1 injection test still proceeds independently, but without a layer-targeting prior).
+
+**Breaking point (conjunctive):** (a) Δθ=0 — LOG-331 pins before/after; (b) linear regime — ε/2 check on a pinned subset, |S(ε/2)−S(ε)|/S(ε) ≤ 0.25 on ≥ 80% of check points; (c) identical ‖δ‖ = ε per layer/item/draw; (d) no training, no weight mutation. Any miss → apparatus-void, UNTESTED, no field minted.
+
+**Seventh item:** the constraining kills (EXP077 cone kills, EXP094 L11 inertness, S5-2 4.87% bound, S5-3 PIVOT, G1 QK-subspace KILL, EXP115/116/123 generation-channel deaths) are all snapshot-instrument, semantic-direction, or content-readout results — none measured layer-wise dynamical sensitivity, so Law #4 licenses DSF as a new measurement, not a tweak. Family B appears in the log only as the LOG-4693 proposal record ("$0 CPU, proposals only") — unfollowed and unproposed-before, never killed. TGA (CONTINUE'd) is not re-gated.
+
+**Summit filter:** the field is the targeting map, not a capability — stated without inflation; capability scoreboard stays at zero.
+
+**Never-resurrect audit:** H17, S5, H12, bench re-reading, EXP117/118/119/121/123/124 reruns, entity-name generation, H22's generality, H23's identity interpretation, killed static-instrument lanes, TGA — none touched.
+
+**Next:** pre-registration drafting lane (experiment number minted at CEO launch decision) → Law #14 review → fix-verification → CEO launch → execution.
+
+**Continuity:** LOG-4701 → LOG-4702, exactly one entry, no gaps (LOG-4702 verified next-free before append).
+
+## LOG-4703 — DSF pre-registration drafted (2026-09-29)
+
+**Lane:** LOG-4703 (pre-assigned). **$0 CPU.** Draft only — licenses
+nothing to execute. Read-only on signed protocols, paper sources, and
+the GPU queue; nothing pushed, spent, or credential-touched.
+
+**Task:** draft the pre-registration for DSF (Family B of the
+paradigm-break sprint) per the LOG-4702 gate memo. **Done.**
+
+**Draft:** `research/prereg/EXP_PREREG_DSF_SENSITIVITYFIELD_2026-09-29.md`
+(18,983 bytes; 11 `##` sections, §§0–9 + boundary §10), following the
+H5/H14/H19 template and the TGA pre-reg conventions.
+
+**Design honored (verbatim from the gate):**
+- Field S_l = E[‖x_{24,last}(x_l + δ) − x_{24,last}(x_l)‖/‖δ‖], l = 0…23
+  (L0 = post-embedding, Ll = block-(l−1) output, final-token site;
+  readout site x_{24,last} = post-final-LayerNorm input to unembedding).
+- δ = ε·u, ε = 1e-3 absolute identical everywhere (breaking point (c));
+  u seeded isotropic unit vector, base seed 20260929, stream scheme
+  pinned; K = 4 draws per (item, layer).
+- 10 verbatim EXP107 prompts (ids `exp107_{flip,ctrl}_exp077_planet_2hop_{0..9}`,
+  EXP127's decision set); 1920 field forwards + 48 ε/2-check forwards,
+  ~1–2h CPU, $0; AutoModelForCausalLM (EXP126 loader lesson).
+- Linearity check: items {0,4,9} × layers {L5,L11,L17,L23}, 12 points,
+  ε/2 arm vs main-field S(ε); |S(ε/2)−S(ε)|/S(ε) ≤ 0.25 on ≥ 10/12 —
+  miss → apparatus-void (no ε retuning).
+- Decision statistic: layer-Gini of {S_l} + top-3 concentration set
+  (deterministic lowest-index tie-break); executor-computed.
+- Bars (Law #4, gate verbatim): CONTINUE = Gini ≥ 0.4 AND top-3 not all
+  in {L21,L22,L23}; KILL-as-family = Gini ≥ 0.4 but top-3 all
+  readout-adjacent; HELD = Gini ∈ [0.2,0.4); KILL = Gini < 0.2.
+- Breaking point conjunctive: (a) Δθ=0 LOG-331 pins; (b) linearity
+  check; (c) identical δ budget; (d) no training. Any miss →
+  apparatus-void, UNTESTED, no field minted.
+- Defect classes: (a) Gini executor-computed; (b) per-(item,layer,draw)
+  records + ε/2 records + manifest hash-pinned before verdict;
+  (c) Law #7 — isotropic δ, no content read; (d) no EXP117 reuse;
+  (e) [-3:] N/A; (f) single-token N/A; (g) per-item G1 N/A.
+- §1.2 records the generation-channel distinction FOR Law #14's ruling:
+  DSF generates/decodes/reads nothing — only trajectory norms.
+- §9 deviations (complete): dossier's completion-comparison → internal
+  residual-perturbation FD (no generation); top-3 formulation → gate's
+  Gini+top-3; K/ε/check-subset pinned per gate.
+- Honest frame: the field is the targeting map for the v_1 injection
+  test and Family C — not a capability; capability scoreboard stays at
+  zero.
+
+**Next:** independent Law #14 review (must rule on the §1.2
+generation-channel distinction) → fix-verification → CEO launch
+decision (mints the experiment number) → execution.
+
+**Continuity:** LOG-4702 → LOG-4703, exactly one entry, no gaps (LOG-4703 verified next-free before append).
+
+## LOG-4704 — 2026-09-29 — Independent Law #14 review of DSF pre-registration: SIGN-WITH-FIXES
+
+**Lane:** LOG-4704 (pre-assigned). Independent Law #14 review of `research/prereg/EXP_PREREG_DSF_SENSITIVITYFIELD_2026-09-29.md` (LOG-4703 draft). **$0 CPU.** Read-only on all signed artifacts; review + this entry are the only writes. Nothing pushed, spent, or credential-touched.
+
+**Verdict: SIGN-WITH-FIXES.** The design is mathematically sound and the hypothesis is falsifiable; two specification defects are launch-gating, five further fixes verdict-immaterial.
+
+**Verified:** bars coherent/disjoint/exhaustive (partition <0.2 KILL / [0.2,0.4) HELD / ≥0.4 split by top-3; tie-break pinned; Law #4 vs gate §2 holds); Gini formula correct (mean-absolute-difference, n=24, executor-computed); ε=1e-3 is a gate pin with regime validity tested — not asserted — by the no-retune linearity check (0.25 / ≥10-of-12 consistent across §0/§3.6/§5); seed-stream formula collision-free; forward arithmetic 1920+48=1968 verified; generation-channel distinction RULED SOUND (terminal rule unengaged — metric is purely residual-stream norm at x_{24,last}, no token decoded, no text read); AutoModelForCausalLM loader + LOG-331 pin correctly applied; seventh-item record and never-resurrect audit complete; boundary (no injection, final-token-only) consistent with TGA §3.3.
+
+**Launch-gating:** FIX-1 — the stated Law #9 ordering ("linearity check → field") is unexecutable: the check's evaluation requires S(ε) reused from the main field (§3.6); reorder to forwards → check evaluation → hash-pin → Gini → decision. FIX-2 — §3.9 (raw-record hash-pin spec referenced by the §5 tree) does not exist; write it.
+
+**Verdict-immaterial:** FIX-3 — name the RNG algorithm, pin the draw-index origin, S(ε)=0 → failed point. FIX-4 — clarify {L21,L22,L23} = three sites nearest the readout under §3.1 indexing. FIX-5 — executor records per-layer SEs + split-half Gini stability as disclosed [OBSERVATION]. FIX-6 — S_l is mean-directional-gain (Frobenius-related), not the spectral norm; soften "same object EXP127 measured". FIX-7 — Henrici license is EXP086 Stage A (LOG-331), not G1_REPORT; TGA §3.3 cross-position is a "design decision (not measured)", not "barred".
+
+**Review:** `research/reviews/LAW14_REVIEW_DSF_SENSITIVITYFIELD_2026-09-29.md` (10,356 bytes).
+
+**Continuity:** LOG-4703 → LOG-4704, exactly one entry, no gaps (LOG-4704 verified next-free before append). **Next:** fix-verification lane (apply + byte-verify FIX-1/FIX-2 and the five immaterial fixes), then CEO launch decision.
+
+## LOG-4705 — DSF pre-reg fix-verification (2026-09-29)
+
+**Lane:** LOG-4705 (pre-assigned). **$0 CPU.** Byte-verified application of the seven LOG-4704 Law #14 fixes to `research/prereg/EXP_PREREG_DSF_SENSITIVITYFIELD_2026-09-29.md`. No other writes; nothing pushed, spent, or credential-touched.
+
+- Pre-fix sha256 `07e2da901af410fe898b710c9bd31fa1ef72c2193ff75ecee8090abaff4f3a69` (pristine copy hashed before any edit); post-fix sha256 `c1f5212651fc8d2ca2eefd6e4bebfc9580dc7a85f958bd19f48f8b73263f683b`.
+- Diff vs the pristine copy shows exactly the seven fixes' regions (66 changed lines, 9 hunks, all fix-attributable, zero other bytes):
+  - FIX-1 (launch-gating, 3 regions): §0 + §5 Law #9 ordering strings reworded to "guards → backbone pin → forward batches (field forwards + ε/2-check forwards, either batch order) → linearity-check evaluation → raw-record hash-pin → Gini → decision"; §5 tree rows reordered (forwards row first, then linearity-check evaluation; check failure → apparatus-void before hash-pin).
+  - FIX-2 (launch-gating): new §3.9 raw-record hash-pin specification (artifact list: per (item, layer, draw) ratio records + δ seeds/vectors, per-layer S_l with SEs, S(ε/2) check values + pass/fail flags, environment manifest, console log; SHA-256; computed immediately after the linearity check passes and before the Gini).
+  - FIX-3: §3.3 seed discipline — `torch.Generator` (`generator.manual_seed(per_triple_seed)`, torch 2.14.0+cpu) named; draw indices pinned 0-based (d ∈ {0,1,2,3}); rule added: S(ε) = 0 at a check point counts that point as failed.
+  - FIX-4: §3.1 clarifying sentence — {L21, L22, L23} denotes the three injection sites nearest the readout under §3.1 block-input indexing (gate's x-notation superseded; no bar change).
+  - FIX-5: §3.4 [OBSERVATION] — executor records per-layer SEs + split-half Gini-stability diagnostic; no bar reads either.
+  - FIX-6: §3.4 norm identity — S_l is the mean-random-direction gain (Frobenius-related, lower bound on σ_1), not the spectral norm; same layer-to-readout gain family as EXP127's power iteration, not the same estimator. (The review's quoted "same object EXP127 measured via JVPs" phrase was not present in the draft — only the clarification was applicable.)
+  - FIX-7a: header citation — the Henrici license (He = 0.7332–0.8343, mean 0.7689, 48 O/V components) now cites EXP086 Stage A (LOG-331), not `G1_REPORT_2026-09-23.md`. FIX-7b was vacuous: the draft contains no "(the cross-position Jacobian was barred in TGA §3.3)" parenthetical — verified by grep; no edit made.
+- House rules read (`~/workspace/SCBI/AGENTS.md`) before editing; read-only on all signed protocols, paper sources, and the GPU queue.
+
+**Next:** CEO launch decision (minting the DSF experiment number); the pre-registration is launch-ready.
+
+## LOG-4706 — EXP128 (DSF) execution: RUN-INVALID, apparatus-void at the linearity gate (2026-09-29)
+
+**Lane:** LOG-4706 (pre-assigned). **Protocol:**
+`research/prereg/EXP_PREREG_DSF_SENSITIVITYFIELD_2026-09-29.md`
+(post-fix sha256 `c1f5212651fc8d2ca2eefd6e4bebfc9580dc7a85f958bd19f48f8b73263f683b`,
+verified before any forward). **$0 CPU. Δθ=0 by construction.**
+
+**Verdict: RUN-INVALID (apparatus-void).** The ε/2 linearity check
+(breaking point (b)) failed: **1/12** check points within 25% (bar:
+≥ 10/12; items {0,4,9} × layers {L5,L11,L17,L23}). The finite
+difference at ε = 1e-3 measures nonlinearity, not the propagator
+norm. The lane halted at the gate per the §5 tree: no raw-record
+hash-pin, no layer-Gini, no top-3, no §4 bar read. **The soft-spot
+hypothesis is UNTESTED, not killed.**
+
+**Tree walk (all numbers executor-produced):** protocol hash PASS;
+10 verbatim EXP107 prompts (ids `exp107_{flip,ctrl}_exp077_planet_2hop_{0..9}`,
+text byte-identical to EXP127's pinned decision set) PASS; δ budget
+‖δ‖ = ε audited per draw — 960/960 field + 48/48 check within 1e-9
+PASS (float32 ε = 0.0010000000474974513; one deterministic
+renormalization per draw, disclosed in the report); backbone LOG-331
+pin `ec276abe3902fab0…` pre-forward PASS; 10 base + 960 perturbed +
+48 check forwards DONE; linearity check 1/12 → **RUN-INVALID**;
+post-forward pin, hash-pin, Gini — not reached (halted per tree
+order).
+
+**Descriptive failure mode (unlicensed observation):** on 11/12
+check points S(ε/2) ≈ 1.5–2.4× S(ε) — the response magnitude
+‖g_l(y_l+δ) − g_l(y_l)‖ is roughly independent of ‖δ‖ at this scale
+(saturating/threshold-like response, not a linear propagator). The
+sole PASS (item 0, L23, rel = 0.2349) is the readout-adjacent site —
+the only span with a single block + LayerNorm. Consistent with the
+Kreiss intuition that motivated DSF: strong non-normality may make
+the linear regime lie below this ε. The pre-reg forbids ε retuning —
+this stays a descriptive observation, not a re-test.
+
+**Lane defect, disclosed:** the first attempt's δ-budget audit
+tolerance (1e-12) was miscalibrated against float32 ε and halted
+apparatus-void before any perturbed forward; fixed to 1e-9 with the
+exact-budget renormalization (executor-internal, no protocol edit)
+and the full tree re-ran from the top. Both attempts on the
+append-only console log. Loader: AutoModelForCausalLM (EXP126
+lesson).
+
+**Consequence:** no field minted; no concentration statistic
+exists; the v_1 injection test (EXP127 downstream) proceeds on its
+own license without a layer-targeting prior. Capability scoreboard
+stays at zero.
+
+**Deliverables:** report
+`research/experiments/EXP128_DSF_SENSITIVITYFIELD_REPORT_2026-09-29.md`;
+executor + console/stdout logs in
+`experiments/runs/EXP128_dsf/` (failed run retained per Law #8).
+
+**Next:** independent exact-artifact verdict review (LOG-4707),
+then scoreboard sync, then commit-prep. No push without a fresh
+founder token.
+
+## LOG-4707 — Independent verdict review of EXP128 (DSF): BIND-WITH-CAVEAT (2026-09-29)
+
+**Lane:** LOG-4707 (pre-assigned). **Verdict: BIND-WITH-CAVEAT** — EXP128's RUN-INVALID (apparatus-void) is correct from the exact artifacts. The caveat is non-verdict-bearing: the protocol's §3.7 cost formula "10×24×4×2=1920 forwards" overcounts what the §3.4 estimator requires (960 one-sided perturbed + 10 base; the ×2 has no estimator basis). The executor ran the estimator-required counts (960 + 10 + 48 = 1018), disclosed alongside the formula. No erratum to the verdict.
+
+**Independent verification (reimplemented from protocol text, never reusing the executor's functions):**
+- Protocol hash on disk == signed post-fix `c1f5212651fc8d2ca2eefd6e4bebfc9580dc7a85f958bd19f48f8b73263f683b`; matches report and console pre-forward pin.
+- Linearity check recomputed from the console-table values: **1/12 within 25%** — only item 0 / L23 passes (rel = 0.2349); other 11 rel ∈ [0.531, 1.362]. All 12 table `rel` values match the recomputation to printed precision.
+- Scope note: per-draw ratios were not retained (tree halts before the §3.9 hash-pin node — the report discloses this); the count is verified on the pinned console-table values.
+- δ-budget audit: executor-internal per-draw halting guard at 1e-9 tolerance with deterministic renormalization `d ← d·(ε/‖δ‖)`; second attempt completed 960/960 field + 48/48 check draws with no budget-halt. Protocol file contains no renorm/tolerance language — no protocol edit. Constants audited: EPS=1e-3, BASE_SEED=20260929, K_DRAWS=4, N_LAYERS=24, CHECK_ITEMS=(0,4,9), CHECK_LAYERS=(5,11,17,23), LIN_TOL=0.25 — all match.
+- Δθ=0: pre-pin matches LOG-331 `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed`; post-pin correctly unreached (linearity-failure branch exits before it — tree order).
+- Lane-defect disclosure complete: attempt 1 halted at 1e-12 tolerance on the first draw (‖δ‖=0.0010000000474974513) before any perturbed forward; attempt 2 re-ran the full tree from the top; both on the append-only console log.
+- Nothing beyond the gate read: zero Gini/top-3/p-value mentions in either log; out/ holds only the two logs (no field/check/ratios/worksheet JSON) — metric genuinely unminted (Law #9).
+- Honest frame: soft-spot hypothesis UNTESTED, not killed; saturating-response observation correctly tagged unlicensed; no ε retuning; EXP127's CONTINUE and the TGA program untouched; capability scoreboard at zero.
+
+**Deliverables:** `research/reviews/VERDICTREVIEW_EXP128_2026-09-29.md`; exactly one LOG-4707 entry (this one). No push, no spend, no credentials touched. Read-only on signed artifacts and the GPU queue.
+
+**Next:** scoreboard sync (v3.2 presumably), then commit-prep for the DSF/EXP128 wave. No push without a fresh founder token.
+
+## LOG-4708 — Scoreboard sync v3.3: EXP128 (DSF) plotted as RUN-INVALID (2026-09-29)
+
+**Lane:** LOG-4708 (pre-assigned, CEO-dispatched). **Action:** capability-frontier scoreboard updated v3.2 → v3.3. **Changes, only:** (1) §3.1 inventory row added for **EXP128 — RUN-INVALID (apparatus-void)** (DSF sensitivity-field mapping: ε/2 linearity check 1/12 within 25% vs ≥10/12 bar — breaking point (b) fired; field never minted per Law #9; soft-spot premise UNTESTED, not killed; no ε retuning; lane-defect disclosure complete — 1e-12 tolerance misfire → 1e-9 renormalization, full re-run, both attempts on the console log; LOG-4706 execution, LOG-4707 BIND-WITH-CAVEAT); (2) §3.2 H25 paragraph added; (3) v3.3 delta [FACT] line added; (4) version-history v3.3 entry added. No other row, tally, or verdict touched; no killed lane resurrected.
+
+**Honest tally, now:** four CONTINUEs (EXP111 — bound, reclassified domain-set-detector correlation; EXP120 — bound, qualified, reclassified; EXP122 — bound, reclassified; EXP127 — bound), one HELD (EXP112 — bound, bench-1-specific), one apparatus CONTINUE (EXP113 — bound), four KILLs (EXP107, EXP114, EXP125, EXP126 — all bound), eleven RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123, EXP124, EXP128 — all bound), one precision certification (EXP110 — bound).
+
+**Capability headline: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.**
+
+**Deliverables:** updated `research/benchmarks/FRONTIER_SCOREBOARD.md` (v3.2 history lines frozen; structural integrity verified — one EXP128 row, one H25 paragraph, one v3.3 delta, one v3.3 history entry). Exactly one LOG-4708 entry (this one). Read-only on signed artifacts and the GPU queue. No push, no spend, no credentials touched.
+
+**Next:** commit-prep for the DSF/EXP128 wave (branch/worktree/commit only). No push without a fresh founder token.
