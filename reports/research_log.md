@@ -12039,3 +12039,15 @@ Independent verification from the raw artifacts (`exp120_result.json`, `exp120_e
 ## LOG-4636 — Frontier scoreboard synced to v2.5 with EXP120's qualified CONTINUE (2026-09-29)
 
 **What:** plotted EXP120 (H15/LFH-GEN2) — QUALIFIED CONTINUE (independent exact-artifact verdict review LOG-4634; report's hand-written "≈0.0009" p corrected to exact one-sided 0.00016 by erratum LOG-4635, verdict unaffected) — onto `FRONTIER_SCOREBOARD.md` (§0 v2.5 delta, §3.1 inventory row, §3.2 H15 paragraph, §5 changelog entry) and `PROGRESS_ANALYSIS.md` (EXP120 update paragraph). EXP111's trained-head signal is now a two-bench observation (25/30, G=−0.2000 on bench 2; 24/30, G=0.0000 on bench 1) — boundary-science decodability, NOT capability. Recorded the new defect class: report authors hand-writing p-values instead of executor-computed values — future pre-registrations must pin p-values as executor-computed. Day's tally: two CONTINUEs (EXP111, EXP120 — both bound), one HELD (EXP112, bound), one apparatus CONTINUE (EXP113, bound), two KILLs (EXP107, EXP114 — both bound), seven RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119 — all bound), one precision certification (EXP110, bound). Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero. Scoreboard version: v2.5.
+
+## LOG-4637 — Commit-prep: H14/H15 wave committed locally (2026-09-29)
+
+**Commit:** `cc989c3` on `sync/2026-09-29-consolidated` — 27 files changed, +4088/−1 — H14/EXP119 RUN-INVALID (Phase 0b tokenization breaking point, bound LOG-4628), H15/EXP120 qualified CONTINUE (25/30, G=−0.2000, two-bench head replication, bound LOG-4634, p-value erratum LOG-4635), frontier scoreboard v2.5 (LOG-4636).
+
+**LOG continuity:** full numeric check LOG-4623→4636 — all 14 present, zero gaps; historical gaps outside this wave unchanged (known numbering history).
+
+**Cleanliness:** no weights, no secrets (the credentials-scan matches were all tokenizer vocabulary: `tokenize`, `tokenization`, `max_new_tokens`). All staged files were identifiable wave artifacts.
+
+**Push state:** local commit only — **no push attempted** (founder-reserved; needs a fresh founder-supplied token). `git fetch origin` failed with auth error (`could not read Username for 'https://github.com'`) — fast-forward feasibility against origin could not be re-verified this run; last confirmed fast-forward check was LOG-4623 (CLEAN). Local branch is 35 commits ahead of `origin/main`.
+
+**Next:** the wave awaits the founder's push token for upstream sync; licensed CPU work continues on the next innovation-sprint item.
