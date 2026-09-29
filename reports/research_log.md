@@ -12940,3 +12940,197 @@ CAVEAT (non-verdict-bearing): `exp126_worksheet.json` is truncated at 910 bytes 
 **Safety:** no weights, no secrets, no credential material staged; `__pycache__` excluded; `exp126_embeddings.npz` + `exp126_head_weights.npz` skipped by repo-wide `.gitignore` line 52 (same convention as the EXP124 wave — hashes pinned in the report/worksheet). No stash used. `git fetch origin` failed on missing GitHub auth (fast-forward feasibility not freshly reverified). **No push attempted — pushes/PRs remain founder-reserved.**
 
 **Uncommitted leftovers:** none — working tree clean after commit.
+
+## LOG-4692 — 2026-09-29 — commit-prep: LOG-4691 research-log entry committed locally (tail)
+
+**Lane:** LOG-4692 (pre-assigned). Commit only; no push.
+
+**Change:** the only uncommitted change after commit `4846ac1` was the LOG-4691 entry itself (12 added lines in `reports/research_log.md`). Committed as `292ad75e59fe4c1e3426778687641afea3bdb9c8` on branch `sync/2026-09-29-consolidated` — "LOG-4692 — LOG-4691 research-log entry (commit tail)". Working tree clean after commit.
+
+**Safety:** no stash used; no secrets/weights staged. `git fetch origin` not attempted (no GitHub auth available) — fast-forward feasibility not freshly reverified. **No push attempted — pushes/PRs remain founder-reserved.**
+
+**Continuity:** LOG-4691 → LOG-4692, exactly one entry, no gaps. **Next:** upstream push of the four wave commits (`8502831`, `1fe3fb2`, `4846ac1`, `292ad75`) — founder-reserved, needs a fresh founder token.
+
+## LOG-4693 — 2026-09-29 — deep-strategy sprint: PARADIGM-BREAK dossier (think differently)
+
+**Lane:** LOG-4693 (pre-assigned). $0 CPU, strategy dossier only. No experiment numbers minted, no signed protocol touched, no GPU contact, no execution licensed, nothing committed.
+
+**Founder directive:** the current research paradigm has hit a wall; the team must think fundamentally differently, not run more variants of the same instruments.
+
+**Dossier:** `research/strategy/PARADIGM_BREAK_SPRINT_2026-09-29.md`.
+
+**The dead paradigm named:** the static-snapshot instrument paradigm — every RUN-INVALID/KILL family measured or manipulated a frozen activation snapshot (one layer, one token, one pass) and treated the number as a fact about cognition. The 120-experiment negative is not "frozen models can't be steered" but "frozen models can't be steered *by snapshot instruments*." The program's own unfollowed measurement states why in numbers: EXP086 Stage A, Henrici He = 0.7332–0.8343 (mean 0.7689) across all 48 attention blocks — strongly non-normal layer dynamics, filed as "advisory" and never turned into an experiment.
+
+**What the negative licenses vs forbids:** licenses boundary-science claims with exact bounds (per-arm ≤4.87% static effects dead at two layers; never-decodable rooms; INT8-certified boundary; domain-set-detector characterization; bench-specificity tags). Forbids: decodability→steerability claims, capability claims from label-informed constructions, any new static-injection lane at any strength/layer/gating/dose, any bench built for another decodability number, any resurrection of KILLED hypotheses.
+
+**Four families, each with the six worth-it items + kill conditions:**
+1. **A — TGA (transient-growth amplification):** the unfollowed lead. Randomized power iteration on autograd Jacobians of the frozen propagator; gain ratio R ≥ 3 → CONTINUE to a licensed GPU injection test along the dynamics' own leading singular vector v_1 (a direction class no static injection ever used); R < 2 → KILL the dynamics-matched program pre-GPU. ~1h CPU, $0. Ranked #2 in the 2026-09-25 sprint, never executed — unfollowed, not killed.
+2. **B — DSF (dynamical sensitivity-field mapping, derived):** S = ‖trajectory(x+δ) − trajectory(x)‖ / ‖δ‖ across 24 layers — the third quantity the program never measured (information ✓, influence ✓, sensitivity ✗). Structured field (layer-Gini ≥ 0.4) → CONTINUE as the targeting map for A/C; uniform (Gini < 0.2) → KILL the "soft spot" premise. ~1–2h CPU, $0.
+3. **C — CLP (closed-loop adaptive pursuit, $0 gate of the GPU-resident CLLC/EXP086-B line):** two-step Newton-on-the-residual vs open-loop; direction adapts to state (not a bigger α — the EXP095 dose kill is fenced by design). ≥2× displacement-per-norm → CONTINUE; ≤1.2× → KILL on $0. ~2h CPU, $0.
+4. **D — TTS (discriminating test-time scaling):** budget-matched, McNemar-registered best-of-N with the frozen margin as verifier, N powered for 10pp. ≥ +10pp → CONTINUE (first capability-positive $0 result); flat curve → KILL the axis for this bench class. ~3–4h CPU, $0.
+
+**Recommendation:** gate **Family A first** — cheapest (~1h), kill rule pre-drafted, engages the single measured-but-unfollowed lead, and its outcome gates B and C (if the dynamics have no distinguished amplified direction, the targeting premise dies with it — itself a publishable boundary fact). B second, C third (needs GPU queue regardless), D fourth (frontier's game, CPU-costly, EXP056-adjacent).
+
+**STOP list (explicit):** stop instrumenting snapshots; stop sweeping injection; stop building benches for readout numbers; stop composing plan text near decision prompts without a generation-construct-validity gate; stop re-testing KILLED hypotheses; stop proposing without a $0 kill — the six worth-it items gain a seventh: *"what existing SCBI kill constrains this, and why is it not a resurrection."*
+
+**Continuity:** LOG-4692 → LOG-4693, exactly one entry, no gaps. **Next:** worth-it gate lane for Family A (TGA) per the launch chain — CEO dispatch.
+
+## LOG-4694 — 2026-09-29 — worth-it gate: Family A (TGA transient-growth amplification) — PASS
+
+**Lane:** LOG-4694 (pre-assigned). $0 CPU. Worth-it gate only — licenses nothing to execute. Read-only on signed protocols, paper sources, GPU queue. Nothing pushed, spent, or credential-touched.
+
+**Gate verdict: PASS.** All seven worth-it items satisfiable with exact, pre-registered, $0-CPU content. Memo: `research/strategy/TGA_GATE_2026-09-29.md` (10,893 bytes).
+
+**The seven items:**
+1. **Exact question:** does the frozen Pythia-410m L20→L24 propagator have a distinguished maximally-amplified direction v_1? Quantified by R = σ_max(M)/σ̄(M), M = ∂x_{24,last}/∂x_{20,last} (final-token block, 1024×1024), σ_max via randomized power iteration (M never materialized), σ̄ via Hutchinson; decision statistic = median R over 10 EXP107-bench prompts.
+2. **Decision changed:** median R ≥ 3 → CONTINUE to a signed GPU injection-test pre-reg along v_1 vs matched-norm random vs B_agg (new experiment number; first licensed injection direction since the static family closed); R < 2 → KILL the dynamics-matched program pre-GPU; 2 ≤ R < 3 → HELD, no GPU. Auxiliary pilot-stage KILL: median σ_1/σ_2 < 1.5 → KILL the distinguished-direction claim even at R ≥ 3. Downstream injection-stage gates named now (ĉ < 0.1 → KILL; no rank trend → KILL) for the GPU pre-reg to carry.
+3. **Cheapest test:** randomized power iteration + Hutchinson on autograd JVPs, ~30–50 JVPs/prompt × 10 prompts ≈ 300–500 JVPs, ~1h CPU, $0. Layer set: blocks L20–L23 (injection-to-readout span of every prior injection experiment — apples-to-apples with the dead semantic directions). Convergence: relative Rayleigh-quotient change < 1e-6 over 5 iterates AND ≥ 20 iterations; R read only from converged iterates (≥ 8/10 prompts converged required; Law #9 analog). Random-direction null (Hutchinson K=64 + matched-budget direct arm) on the same M with the same budget.
+4. **Mathematical license:** [THEOREM] variational SVD characterization (max_{‖δ‖=1}‖Mδ‖ = σ_max exactly — no direction class beats v_1 by construction); [THEOREM] Kreiss Matrix Theorem (transient growth ≫ 1 possible with stable eigenvalues — non-normality is the existence condition); [OBSERVATION] EXP086 Stage A: He = 0.7332–0.8343 (mean 0.7689) across all 48 attention blocks (LOG-331, CPU, read-only, Δθ=0) — the measured, unfollowed license. [INTERPRETATION] the 120-experiment negative is "frozen models can't be steered *by snapshot instruments*"; no static injection in program history has ever been along v_1. The 4.87% bound (S5-2) and never-decodable PIVOT (S5-3) fence tested semantic/static directions and decode rooms — v_1 is a Law-#4 new direction class; G1's QK KILL falsified a mechanism account, not the propagator's singular structure.
+5. **Quantitative prediction (band, no fabricated literature numbers):** null (decorative non-normality) R ∈ [1, 1.5]; precedent zone R ∈ [1.5, 2.5) (the program's only measured amplification: ×1.8 downstream gain, S3-8/LOG-225, bridge-rescue attribution, different mechanism); TGA hypothesis R ≥ 3 — bar set strictly above the ×1.8 precedent so CONTINUE means a genuinely stronger, dynamics-matched amplifier. HELD band 2–3 = the ambiguous zone between the two.
+6. **Breaking point (conjunctive):** (a) Δθ=0, LOG-331 pin before/after; (b) convergence criterion met on ≥ 8/10 prompts before any R is read; (c) Hutchinson + matched-budget null on the same M with the same budget; (d) no training, no weight mutation — pure autograd JVPs. Any miss → apparatus-void, hypothesis UNTESTED, no R minted.
+7. **Seventh item:** the constraining kills — EXP077 cone kills (semantic concept-direction variants at L20, ΔM=0), EXP094 L11 inertness (120 semantic-direction arms, zero flips), S5-2 4.87% bound (tested semantic/static directions), S5-3 never-decodable PIVOT (decode rooms), G1 QK-subspace KILL (mechanism account), EXP086 Stage B (task-informed decision-normal amplification, explicitly differentiated in the 9-25 novelty audit) — every one a snapshot-instrument or semantic-direction result; none measured or injected along v_1. Law #4 licenses v_1 as a new direction class. The 2026-09-25 TGA proposal was ranked #2 with a pre-drafted kill rule and the log records "$0 CPU; no experiments executed" — unfollowed, not killed. H17, S5, H12, bench re-reading, EXP117/118/119/121/123/124 reruns, entity-name generation, H22 generality, H23 identity interpretation stay dead and untouched.
+
+**Summit filter:** first family whose mechanism matches the summit question — steering along the dynamics' own amplified direction is the closest $0-CPU approach to "moving" the model. Stated without inflation: R ≥ 3 licenses a GPU injection *test*, not a steering claim; R < 2 retires the direction honestly pre-GPU.
+
+**Continuity:** LOG-4693 → LOG-4694, exactly one entry, no gaps (LOG-4694 verified next-free before append). **Next:** pre-registration drafting lane per the launch chain — CEO dispatch.
+
+## LOG-4695 — 2026-09-29 — pre-registration draft: TGA (Family A, transient-growth amplification)
+
+**Lane:** pre-assigned LOG-4695. **$0 CPU.** Draft only — licenses nothing.
+
+- Drafted `research/prereg/EXP_PREREG_TGA_TRANSIENTGROWTH_2026-09-29.md`
+  (20,259 bytes; 11 `##` sections §§0–10; 8 `###` subsections), following
+  the H5/H14/H19 template. Read first: `research/strategy/TGA_GATE_2026-09-29.md`
+  (LOG-4694, gate PASS), `research/strategy/PARADIGM_BREAK_SPRINT_2026-09-29.md`
+  (LOG-4693, Family A sketch + kill rule), `research/analysis_plans/G1_REPORT_2026-09-23.md`
+  (Henrici license), and `~/workspace/SCBI/AGENTS.md` house rules. No signed
+  protocol, paper source, or GPU queue touched; no number minted.
+- Design: randomized power iteration + Hutchinson on the autograd Jacobian of the
+  frozen Pythia-410m L20→L24 propagator M = ∂x_{24,last}/∂x_{20,last}
+  (clamped-context final-token map), 10 verbatim EXP107-bench prompts
+  (canonical first 10, prompts only — Law #7 clean), CPU-only, no labels,
+  M never materialized, Δθ=0 with LOG-331 pins before/after.
+- Metric: R = σ_max(M)/σ̄(M); decision statistic = median R over 10 prompts.
+  Convergence: Rayleigh quotient relative change < 1e-6 over 5 consecutive
+  iterates AND ≥ 20 iterations; ≥ 8/10 prompts converged or apparatus-void.
+  Null: Hutchinson K=64 + matched-budget direct random arm (K=64) on the
+  same M with the same budget.
+- Registered bars (gate verbatim, Law #4): median R ≥ 3 AND median σ_1/σ_2 ≥ 1.5
+  → CONTINUE (licenses a GPU injection-test pre-reg along v_1 — new number,
+  new pre-reg, ĉ gate); median R ≥ 3 with σ_1/σ_2 < 1.5 → KILL
+  (distinguished-direction claim dead); 2 ≤ R < 3 → HELD (no GPU, no rescue);
+  R < 2 → KILL (whole dynamics-matched program stands down pre-GPU).
+  The R ≥ 3 decision is a ratio bar, not a p-value — stated explicitly.
+- Breaking point (conjunctive): (a) Δθ=0 pins; (b) convergence before reading;
+  (c) same-Jacobian same-budget null; (d) no training/weight mutation. Any miss →
+  apparatus-void, hypothesis UNTESTED, no R minted.
+- Pre-reg decisions (caveats resolved, §9 deviations listed in full): (1) budget
+  corrected to hard cap 700 products/prompt (≤7000 total) after full costing of
+  the deflation arm; (2) σ_2 deflation convergence 1e-4/≥10 iters; (3) clamped-KV
+  Jacobian discipline pinned; (4) canonical-order first 10 prompts; (5) direct-arm
+  15% agreement trip diagnostic-only; (6) **span-placement: no fallback span
+  licensed — L12→L16 named only as a future gate's target; R < 2 at L20→L24
+  kills the program outright** (design decision, not a verdict factor).
+- Defect classes: (a) ratio-bar stated; (b) JVP traces/convergence logs/
+  v_1 vectors/manifest hash-pinned before verdict; (c) N/A (no labels);
+  (d) no EXP117 reuse; (e) [-3:] N/A (no logit channel); (f) single-token
+  N/A (no bench); (g) per-item G1 N/A (no treatment arms).
+- Seventh-item record restated: the constraining kills (EXP077 cones, EXP094 L11
+  inertness, S5-2 4.87% bound, S5-3 PIVOT, G1 QK KILL, EXP086 Stage B) are all
+  snapshot-instrument or semantic-direction results; none measured or injected
+  along v_1. The 2026-09-25 TGA proposal was unfollowed, not killed.
+- Honest frame: R ≥ 3 licenses a GPU injection *test* along v_1 — not a steering
+  claim; capability scoreboard stays at zero. A KILL here is itself a publishable
+  boundary fact (the dynamics have no distinguished amplified direction).
+- Next: independent Law #14 review → fix-verification → CEO launch decision →
+  execution under a minted number. The single-lane fence applies.
+
+## LOG-4696 — 2026-09-29 — independent Law #14 review: TGA pre-registration — SIGN-WITH-FIXES
+
+**Lane:** LOG-4696 (pre-assigned). $0 CPU. Read-only on signed protocols, paper sources, GPU queue; wrote only the review and this entry. Nothing pushed, spent, or credential-touched. Fresh eyes — this lane did not draft the protocol.
+
+**Verdict: SIGN-WITH-FIXES** — one launch-gating fix, four verdict-immaterial fixes. Design licensed and launchable once FIX-1 is applied and byte-verified.
+
+**The ten assigned checks (all verified against the log and the gate memo):**
+1. **Bars:** coherent, disjoint, exhaustive — every (median R, median σ₁/σ₂) pair falls into exactly one cell (R≥3∧S≥1.5 CONTINUE; R≥3∧S<1.5 KILL; 2≤R<3 HELD; R<2 KILL). Boundary values unambiguous.
+2. **License chain:** variational SVD characterization correct and load-bearing; Kreiss correctly fenced as an existence condition (§8); EXP086 Stage A He = 0.7332–0.8343 (mean 0.7689) quoted exactly — used only to motivate the pilot (advisory license), never as a guard/verdict input. Precision fix: "48 attention blocks" → "48 attention O/V projection components in 24 layers" (FIX-2).
+3. **Power-iteration vs ≥8/10 rule:** REAL DEFECT — the §0 definition says "median R over the 10 prompts" but breaking point (b) permits 8–9/10 converged with no reading from unconverged iterates; the median over the converged subset, the even-n convention, and the σ₁∩σ₂ decision set are unpinned. **FIX-1 (launch-gating):** pin the decision set = prompts with both σ₁ and σ₂ converged (n_d ≥ 8; fewer → apparatus-void) and an explicit executor-computed median convention; update §0, §2 header, §3.4, §5. No bar changes.
+4. **Hutchinson arm:** σ̄ = sqrt(Tr(MᵀM)/1024) is the correct RMS-gain normalization; "same budget" verifiable in principle via the pinned counting rule — but per-arm product counts are not in the §3.7 pinned record list (FIX-4: add them, verdict-immaterial). Observation: Hutchinson needs only JVPs; the draft's "1 JVP + 1 VJP per draw" is conservative costing, safe under the cap.
+5. **Budget:** gate ~300–500 JVPs vs draft hard cap 700 products/prompt (≤7000 total) — fully disclosed in §9 item 1 with rationale (σ₂ arm postdates the gate); deviation list complete, bars unchanged.
+6. **Jacobian:** clamping discipline pinned (all KVs clamped to base-pass values; only block-20 input residual at last token varies); cross-position correctly flagged out-of-scope ([OPEN] §3.3, §6.2, §10).
+7. **Span placement:** coherent with no-rescue — L20→L24 primary, no fallback licensed, L12→L16 future-gate only; R < 2 kills the program outright.
+8. **Seventh-item record:** verified — EXP077 L20 kills, EXP094 inertness, S5-2 4.87% bound, S5-3 never-decodable PIVOT, G1 KILL, 2026-09-25 TGA #2 "unfollowed, not killed" all check out. **Defect:** EXP086 Stage B listed as a constraining kill — it was licensed and GPU-gated but never executed. **FIX-3 (verdict-immaterial):** reclassify as "licensed, GPU-gated, never executed"; the "no executed experiment measured v_1" claim stands.
+9. **ĉ gate:** correctly deferred to the GPU pre-reg a CONTINUE would license; no injection licensed here.
+10. **Defect-class N/A:** (e) [-3:], (f) single-token, (g) per-item G1 genuinely inapplicable; Law #7 posture sound (no labels anywhere; canonical-order first-10 selection label-blind by construction).
+
+**Additional:** wrong cross-reference — breaking point (b) cites "§3.6" for the convergence criterion; it is §3.4 (FIX-5, verdict-immaterial). Power-iteration math, deflation, null anchors, budget/convergence interaction, and defect-class-1 framing (ratio bar, no p-value) all verified. H17/S5/H12/bench re-reading/EXP117–124 reruns/entity-name generation/H22/H23 stay dead and untouched.
+
+**Continuity:** LOG-4695 → LOG-4696, exactly one entry, no gaps (LOG-4696 verified next-free before append). **Next:** fix-verification lane (byte-verify FIX-1 through FIX-5) → CEO launch decision → execution under a minted experiment number. Review: `research/reviews/LAW14_REVIEW_TGA_TRANSIENTGROWTH_2026-09-29.md`.
+
+## LOG-4697 — 2026-09-29 — fix-verification: TGA pre-registration FIX-1 through FIX-5 — byte-verified, launch-ready
+
+**Lane:** LOG-4697 (pre-assigned). **Artifact fixed:** `research/prereg/EXP_PREREG_TGA_TRANSIENTGROWTH_2026-09-29.md` (TGA draft, LOG-4695; Law #14 SIGN-WITH-FIXES, LOG-4696). **$0 CPU.** Read-only on signed protocols, paper sources, and the GPU queue. No push, no spend, no credentials touched.
+
+**Byte verification:**
+- Pre-fix sha256: `f45aec488c84d08eabca49567498e75e58738d9f02449c49c3bcee42896487bd` (recorded before touching the file; pristine backup diffed, then deleted).
+- Post-fix sha256: `5dea0d419794fe6aa1fce056b9225625aa6ec3b55c57fab39bb7cb9e7d6e2882`.
+- Diff against the pre-fix copy: exactly the ten fix hunks, zero other bytes changed — no bar, gate, number, or other text touched.
+
+**Fixes applied:**
+- **FIX-1 (launch-gating):** decision set pinned — median R and median σ₁/σ₂ computed over prompts where *both* σ₁ and σ₂ converged (n_d ≥ 8 required; fewer → apparatus-void); median convention for even n_d pinned (average of the two middle order statistics, executor-computed; middle order statistic for odd n_d). Updated §0 breaking point (b), §0 [DEFINITION], §2 table header ("Median R (10 prompts)" → decision-set header), §3.4 (σ_max and σ₁/σ₂ median lines), §5 falsification-tree median rows. No bar changes.
+- **FIX-2 (verdict-immaterial):** "across all 48 attention blocks" → "across 48 attention O/V projection components (24 O direct + 24 V fused-interleaved) in 24 layers" (license line and §1.1). He numbers 0.7332–0.8343, mean 0.7689 unchanged.
+- **FIX-3 (verdict-immaterial):** §10 seventh-item record — EXP086 Stage B reclassified as "licensed, GPU-gated, never executed — not a constraining kill"; substantive "no executed experiment measured or injected along v_1" claim stands.
+- **FIX-4 (verdict-immaterial):** §3.7 hash-pinned record list now includes per-arm autograd product counts (σ_1 power iteration, deflated σ_2, Hutchinson, direct — auditable against the §3.6 budget cap) so breaking point (c)'s "same budget" is auditable at execution.
+- **FIX-5 (verdict-immaterial):** the "§3.6 power-iteration convergence criterion" cross-reference was corrected to "§3.4" *within the FIX-1 breaking-point-(b) edit*, since the cross-reference sat inside the sentence FIX-1 reworded; the diff shows one contiguous (b) hunk carrying both corrections, disclosed here explicitly.
+
+**Residue check:** zero remaining occurrences of "§3.6 power-iteration", "across all 48 attention blocks", "Median R (10 prompts)", "median across prompts"; "n_d ≥ 8" present in all four licensed locations.
+
+**Continuity:** LOG-4696 → LOG-4697, exactly one entry, no gaps (LOG-4697 verified next-free before append). **Next:** CEO launch decision → execution under a minted experiment number.
+
+**Decision:** the TGA pre-registration is now launch-ready pending the CEO decision.
+
+## LOG-4698 — 2026-09-29 — EXP127 (TGA) executed: CONTINUE — median R = 8.240640, median σ₁/σ₂ = 1.557689
+
+**Lane:** EXP127 execution (CEO launch decision; protocol post-fix sha256 `5dea0d41…6e2882` verified before any JVP). **$0 CPU. Δθ=0** (pure autograd JVPs/VJPs; LOG-331 pin `ec276abe3902fab0…` identical before first JVP and after last).
+
+**Method:** randomized power iteration for σ₁ (1e-6 rel / 5 iters / ≥20) + deflated σ₂ (1e-4 / 5 / ≥10) + Hutchinson K=64 + matched-budget direct K=64 arm, on the same M = ∂x_{24,last}/∂x_{20,last} (clamped-context final-token map, KVs clamped to base-pass values) with the same autograd budget, on the 10 verbatim EXP107-bench prompts (canonical first 10). M never materialized. R read only from converged iterates, after raw records were hash-pinned (Law #9).
+
+**Result — CONTINUE:** decision set 10/10 (both σ₁ and σ₂ converged on all prompts). **Median R = 8.240640** (per-prompt R ∈ [8.0019, 8.5294]) ≥ 3 **and median σ₁/σ₂ = 1.557689** (per-prompt ∈ [1.5302, 1.5881]) ≥ 1.5. The frozen L20→L24 propagator has a distinguished maximally-amplified direction v₁ with ≈8× the gain of a random direction. Per-prompt measurements are strikingly prompt-invariant (σ₁ ∈ [9.27, 10.11], σ̄ ∈ [1.158, 1.204]) — the amplification structure is a property of the frozen span, not of prompt content.
+
+**Guards:** budget cap 700/prompt held (264–318 used); direct-vs-Hutchinson agreement trip 0.0083–0.0263 (≤0.15 diagnostic) on all 10; manual-span sanity max‖f(z₀)−x₂₄,base‖ ≤ 8.2e-04; no p-value computed/quoted (R ≥ 3 is a registered ratio bar).
+
+**Method notes for the review:** (1) transformers 5.x `@capture_outputs` returns hs[24] = final-layer-norm output, NOT block 23's output — x₂₄ was taken from the real layer-23 module (verified fln(module(hs[23])) == hs[24] to 0.0); (2) torch 2.14 `vjp(f,(z,),(w,))` returns `(output, vjp_result)` directly; (3) per-head qkv rows `[h*192:h*192+64]` = q_h, verified vs the module to 9.8e-05.
+
+**Consequence:** this CONTINUE licenses a **signed GPU injection-test pre-registration** along v₁ vs matched-norm random directions vs B_agg (new experiment number, new pre-reg, ĉ decision-orthogonality gate) — the first licensed injection direction since the static family closed. It licenses no injection by itself and no steering claim; capability scoreboard stays at zero. The σ₁/σ₂ band [1.53, 1.59] clears the bar but leaves σ₂ ≈ 6.3 as a real second amplifier — the injection pre-reg should carry the rank-trend gate exactly as named.
+
+**Artifacts:** report `research/experiments/EXP127_TGA_TRANSIENTGROWTH_REPORT_2026-09-29.md`; raw records `experiments/runs/EXP127_tga/out/` — per_prompt `66f028ba…5e8bc`, vectors `9b527c02…11d3dc`, worksheet `f045413a…a918`, console `78758010…a2ddfa` (all pinned before R was read).
+
+**Continuity:** LOG-4697 → LOG-4698, exactly one entry, no gaps (LOG-4698 verified next-free before append). **Next:** independent exact-artifact verdict review.
+
+## LOG-4699 — 2026-09-29 — Independent exact-artifact verdict review of EXP127: BIND-WITH-CAVEAT
+
+**Lane:** LOG-4699 (pre-assigned). Independent exact-artifact review of the EXP127 execution (LOG-4698). **$0 CPU.** Read-only on all signed artifacts; review + this entry are the only writes.
+
+**Verdict: BIND-WITH-CAVEAT** — EXP127's CONTINUE is correct from the exact artifacts. All recomputation reimplemented from the protocol text (executor's functions not reused).
+
+**Verified:** (1) Protocol sha256 `5dea0d419794fe6aa1fce056b9225625aa6ec3b55c57fab39bb7cb9e7d6e2882` matches the signed post-fix value, verified before any JVP (console line 2). (2) Decision set n_d=10 ≥ 8; median R re-derived **8.240640** (even-n_d convention, average of two middle order statistics) and median σ₁/σ₂ **1.557689** — both exact matches to the report; R == σ₁/σ̄ per prompt to 1e-9; ranges [8.0019, 8.5294] / [1.5302, 1.5881] match. (3) Convergence trace-verified: σ₁ 10/10 (1e-6 rel / 5 iters / ≥20, iters 20–27), deflated σ₂ 10/10 (1e-4 / 5 / ≥10, iters 12–36, every iterate projected ⊥ v₁); σ₁ == sqrt(ρ_final) to 1e-6; flags match trace values. (4) Hutchinson K=64 σ̄ = sqrt(Tr_est/1024) matches to 1e-9; direct K=64 median independently recomputed 1.156906 (prompt 0), exact; agreement |med−σ̄|/σ̄ ∈ [0.0022, 0.0263] ≤ 0.15 on all 10; v₁ (1024,) and 64 uⱼ (64,1024) per prompt in vectors npz. (5) Budget cap 700/prompt held (264–318); per-arm counts reconcile exactly (σ₁=2×iters, σ₂=2×iters, Hutch=128, direct=64). (6) Δθ=0: LOG-331 pin `ec276abe3902fab0…` identical pre and post; no optimizer/loss/backward into weights; `requires_grad=False`. (7) x_{24} built from the real layer-23 module applied to hs[23] (protocol §3.3 object); manual-span sanity 2.20e-04–8.20e-04 ≤ 1e-3 on all 10 prompts. (8) Honest frame complete: CONTINUE licenses only a signed GPU injection-test pre-reg (new number, ĉ gate, rank-trend gate) — no injection, no steering claim, capability scoreboard zero, no generality beyond Pythia-410m L20→L24 and the 10 pinned prompts. (9) Law #9 ordering on the append-only console: protocol hash → pre-pin → 10-prompt measurement → raw records hash-pinned (per_prompt `66f028ba…e8bc13`, vectors `9b527c02…113dc`, pre-verdict worksheet `0c0df797…bda1e`) BEFORE R was read → post-pin identical → VERDICT: CONTINUE.
+
+**Caveats (all non-verdict-bearing documentation precision):** (O1) descriptive range slips — σ₁ iters 20–27 (report: 20–26), σ₂ iters 12–36 (report: 19–36), agreement min 0.0022 (report: 0.0083), sanity min 2.20e-04 (report: 2.4e-04); every registered guard criterion satisfied on actual values. (O2) the "verified fln(module(hs[23])) == hs[24] to 0.0" parenthetical exists in the executor only as a comment — x_{24} itself is correct and functionally validated. (O3) the §4 worksheet hash (`f045413a…`) is the post-verdict finalized worksheet; the pre-R pin was `0c0df797…` (recorded in `final.artifact_pins`) — Law #9 ordering intact. (O4) five smoke-mode machinery-validation attempts precede the real run on the console log; one failed the manual-span sanity (15.85 ≫ 1e-3), was fixed, and never minted numbers — undisclosed in the report, no verdict impact.
+
+**Deliverable:** review `research/reviews/VERDICTREVIEW_EXP127_2026-09-29.md`.
+
+**Continuity:** LOG-4698 → LOG-4699, exactly one entry, no gaps (LOG-4699 verified next-free before append). **Next:** scoreboard sync (EXP127 CONTINUE folds into the boundary characterization; capability scoreboard unchanged at zero).
+
+## LOG-4700 — 2026-09-29 — Scoreboard sync v3.1 → v3.2: EXP127 (TGA/TRANSIENT-GROWTH) CONTINUE plotted
+
+**Lane:** LOG-4700 (pre-assigned). $0 CPU. Read-only on all signed artifacts; wrote only the two benchmark files and this entry. No push, no spend, no credentials touched.
+
+**What was synced:** EXP127 (H24/TGA, LOG-4698 execution — CONTINUE: median R = 8.240640 ≥ 3 AND median σ₁/σ₂ = 1.557689 ≥ 1.5, decision set n_d=10; independent exact-artifact verdict review LOG-4699 — BIND-WITH-CAVEAT, four documentation-only caveats).
+
+**Scoreboard v3.2 tally:** four CONTINUEs (EXP111 — bound, reclassified domain-set-detector correlation; EXP120 — bound, qualified, reclassified; EXP122 — bound, reclassified; EXP127 — bound), one HELD (EXP112 — bound, bench-1-specific), one apparatus CONTINUE (EXP113 — bound), four KILLs (EXP107, EXP114, EXP125, EXP126 — all bound), ten RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123, EXP124 — all bound), one precision certification (EXP110 — bound).
+
+**Edits:** `research/benchmarks/FRONTIER_SCOREBOARD.md` — §3.1 EXP127 inventory row added (after EXP126); §3.2 H24 paragraph added (before the [INFERENCE] block); v3.2 delta prepended (before the v3.1 delta, newest-first convention); v3.2 changelog bullet prepended (before the v3.1 bullet). `research/benchmarks/PROGRESS_ANALYSIS.md` — EXP127 update paragraph added (before "What closes it"). No literature re-check this cycle (next due 2026-10-23).
+
+**Honest headline recorded in all three artifacts:** first CONTINUE in the new dynamics paradigm — first positive signal since the static family's 120-experiment negative; reframes the program's negative as "frozen models can't be steered by snapshot instruments," with v₁ the one licensed channel. Licensed consequence: ONLY a signed GPU injection-test pre-registration along v₁ (new experiment number, ĉ decision-orthogonality gate, rank-trend gate) — no injection, no steering claim; the downstream GPU injection test is founder-gated (user's hardware). **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero; this is a licensed measurement CONTINUE, not a capability entry.**
+
+**Continuity:** LOG-4699 → LOG-4700, exactly one entry, no gaps (LOG-4700 verified next-free before append).
