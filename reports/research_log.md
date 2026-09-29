@@ -12928,3 +12928,15 @@ CAVEAT (non-verdict-bearing): `exp126_worksheet.json` is truncated at 910 bytes 
 **The identity-readout vs domain-set detection question is answered, not open:** domain-set detection. EXP112's bench-1-only honesty HELD is the sole remaining non-decodability label-free signal, and it is bench-specific.
 
 **Continuity:** LOG-4689 → LOG-4690, exactly one entry, no gaps. **Next:** commit-prep lane (LOG-4691) — commits H23/EXP126 locally, no push.
+
+## LOG-4691 — 2026-09-29 — commit-prep: H23/EXP126 KILL wave committed locally
+
+**Lane:** LOG-4691 (pre-assigned). Commit only; no push.
+
+**Divergence check:** CLEAN — full numeric LOG set compared between the main tree's `reports/research_log.md` (570 unique LOG headers, highest LOG-4690) and `~/workspace/SCBI-worktrees/sync-log4393-4465/reports/research_log.md` (352 unique, highest 4466) — zero LOGs in the worktree missing from main. (Pre-existing duplicate headers 215/220/223/224/226/236/4373 are earlier repair history, not divergence.)
+
+**Commit:** `4846ac1` on branch `sync/2026-09-29-consolidated` — "LOG-4691 — H23/EXP126 KILL wave (LOG-4684→4691): gate, pre-reg, review, bench5 cert, bound KILL, scoreboard v3.1". 16 files changed: H23 gate memo, H23 pre-reg, Law #14 review (SIGN, zero fixes), EXP126 report, EXP126 verdict review (BIND-WITH-CAVEAT), bench builder + certifier + executor, bench JSON + breaking-point certificate + split ids + worksheet + console log, research-log LOG-4684→4690 additions, scoreboard v3.1 files.
+
+**Safety:** no weights, no secrets, no credential material staged; `__pycache__` excluded; `exp126_embeddings.npz` + `exp126_head_weights.npz` skipped by repo-wide `.gitignore` line 52 (same convention as the EXP124 wave — hashes pinned in the report/worksheet). No stash used. `git fetch origin` failed on missing GitHub auth (fast-forward feasibility not freshly reverified). **No push attempted — pushes/PRs remain founder-reserved.**
+
+**Uncommitted leftovers:** none — working tree clean after commit.
