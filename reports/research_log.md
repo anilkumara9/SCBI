@@ -14242,3 +14242,54 @@ main tree 638 headings (max 4758) vs worktree `sync-log4393-4465` 352 headings
 edits) — belongs to the v84 implementation wave, not this wave.
 
 **No push attempted** (founder-reserved; no token supplied for this wave).
+
+
+## LOG-4760 — Law #14 exact-version review of the v84 implementation: SIGN (2026-09-30)
+
+**Lane:** LOG-4760 (pre-assigned). **Standard:** binding, exact-version.
+**Under review:** `~/workspace/scbi-paper`, branch `arxiv-prep`, commit `baa044d`
+(`baa044d41d75b96b9203511a0c9b080336d0413e` — verified HEAD before review).
+Plan reviewed against: `research/paper/V84_CHANGE_PLAN_SWEEP_2026-09-30.md`,
+post-fix SHA-256 `af0f0d12e819e96e8744eae6e5d0305ad4577de30cb8f0728b8b09372fe4a9a6`
+(recomputed locally — match). Read-only lane: no paper sources modified, no
+commits, no pushes. LOG-4754 (plan review) and LOG-4516 (pre-wave draft review)
+do not cover this build — this lane reviewed the built implementation.
+
+**Diff audit:** `baa044d` vs parent `36d154e` — exactly five text files changed
+(all at licensed insertion points) + the two rebuilt PDFs:
+1. `v84/paper.tex` converging-evidence paragraph: "Two" → "Three contemporaneous
+   results", Nadaf converse sentences with `\citep{nadaf2026}` (`> 0.90` steering
+   accuracy — the unsupported `−0.91` figure absent, per sweep erratum), closing
+   sentence → "None threatens the boundary claim; all three corroborate its
+   shape from independent angles — one theoretical, one peer-reviewed
+   behavioral, one converse-directional". Byte-match to plan text.
+2. `v84/paper.tex` future-work section: GEOSTEER watch-item paragraph with
+   `\citet{ngo2026}` after the section opening, before the bets figure.
+   Byte-match.
+3. `v84-ieee/sections/sec-discussion.tex`: converse-direction clause with
+   `\cite{nadaf2026}` appended after the `\cite{jia2026}` clause. Byte-match.
+4. `v84-ieee/sections/sec-conclusion.tex`: one watch-item sentence before the
+   final "Superhuman" sentence, using **`\cite{ngo2026}`** (not the plan's
+   `\citet`): recorded plan deviation, conformance-mandated (IEEE template has
+   no natbib), intent-preserving — renders "[18]" grammatically. Accepted.
+5. `nadaf2026` + `ngo2026` bibtex entries appended to both `refs.bib`, keys
+   collision-free, titles/eprints sweep-verified (LOG-4751).
+Every changed line belongs to the plan; no other source line changed.
+
+**Independent rebuild (this lane, tectonic):** both editions EXIT 0, zero `??`
+in output, zero undefined-citation warnings. Rendered bibliography verified in
+the rebuilt PDFs ([17]/[18] Nadaf/Ngo in IEEE; converse sentences and watch-item
+paragraphs in the main body). Title downcasing by the bibliography style is
+style-normal, not a defect.
+
+**Regression:** no C7, C1–C6 intact (each ×2 in main), no figure file changed,
+no removed line touching any claim, no banned language (single "Superhuman"
+diff hit is the pre-existing unchanged horizon sentence), college email
+`1nh22cd066@newhorizonindia.edu` in both editions, v82/v83 untouched (zero
+files outside `v84/`/`v84-ieee/`), new-claim numbers (4,032 pairs / 12 tasks /
+6 models / TruthfulQA / RealToxicityPrompts / UltraFeedback) stated as the
+cited papers' own, with no license/verdict implication.
+
+**Verdict: SIGN.** Implementation cleared for the paper-side push chain
+(founder-reserved: fresh token, fast-forward verification, no force-push).
+Full review: `research/reviews/LAW14_REVIEW_V84_IMPLEMENTATION_2026-09-30.md`.
