@@ -1,0 +1,53 @@
+{
+  "env": {
+    "torch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.3",
+    "threads_set": 2,
+    "threads_read": 2,
+    "seed": 20260929
+  },
+  "backbone": {
+    "pre_hash": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "post_hash": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "pin": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "dtheta0": true
+  },
+  "bench_pin": "e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5",
+  "layers": {
+    "4": {
+      "accuracy": 0.8,
+      "correct": 24,
+      "n": 30,
+      "acc_flipped_False": 0.7333333333333333,
+      "acc_flipped_True": 0.8666666666666667,
+      "G": -0.13333333333333341
+    },
+    "8": {
+      "accuracy": 1.0,
+      "correct": 30,
+      "n": 30,
+      "acc_flipped_False": 1.0,
+      "acc_flipped_True": 1.0,
+      "G": 0.0
+    },
+    "12": {
+      "accuracy": 0.9666666666666667,
+      "correct": 29,
+      "n": 30,
+      "acc_flipped_False": 1.0,
+      "acc_flipped_True": 0.9333333333333333,
+      "G": 0.06666666666666665
+    },
+    "16": {
+      "accuracy": 1.0,
+      "correct": 30,
+      "n": 30,
+      "acc_flipped_False": 1.0,
+      "acc_flipped_True": 1.0,
+      "G": 0.0
+    }
+  },
+  "note": "DESCRIPTIVE-ONLY \u2014 licenses no verdict (pre-reg \u00a76)."
+}

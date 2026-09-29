@@ -1,0 +1,108 @@
+{
+  "env": {
+    "sklearn": "1.9.1",
+    "numpy": "2.5.3"
+  },
+  "hashes": {
+    "npz": "6cf4a8a726a2b6e4623f57d0287d95879866f77e789bcc3789fb693cf2af6a76",
+    "embeddings": "9b6e8afb091ba1edbb0311ba1d3414d34a65942c3fdecb4533b69720f2a99123",
+    "ids": "3669e102222719d66f61daca46ae1ac34e844e398ae433743a5b37bfc5075cb9",
+    "head_weights": "483a91a887b6b876505bf688f558531751337fcd6fba3be5f95652c6afdf9f28"
+  },
+  "split": {
+    "seed": 20260929,
+    "train_ids": [
+      "exp107_ctrl_exp077_planet_2hop_7",
+      "exp107_ctrl_exp077_planet_2hop_1",
+      "exp107_ctrl_exp077_planet_3hop_5",
+      "exp107_flip_exp077_planet_2hop_12",
+      "exp107_ctrl_exp077_planet_3hop_14",
+      "exp107_flip_exp077_element_2hop_8",
+      "exp107_flip_exp077_element_3hop_10",
+      "exp107_flip_exp077_element_2hop_4",
+      "exp107_ctrl_exp077_element_3hop_9",
+      "exp107_flip_exp077_planet_2hop_2",
+      "exp107_ctrl_exp077_element_2hop_13",
+      "exp107_flip_exp077_planet_3hop_11",
+      "exp107_ctrl_exp077_element_2hop_5",
+      "exp107_flip_exp077_planet_2hop_4",
+      "exp107_ctrl_exp077_planet_3hop_9",
+      "exp107_flip_exp077_planet_3hop_8",
+      "exp107_flip_exp077_planet_2hop_14",
+      "exp107_ctrl_exp077_planet_3hop_7",
+      "exp107_ctrl_exp077_planet_2hop_11",
+      "exp107_ctrl_exp077_element_2hop_1",
+      "exp107_flip_exp077_element_3hop_1",
+      "exp107_flip_exp077_element_2hop_2",
+      "exp107_ctrl_exp077_element_3hop_11",
+      "exp107_flip_exp077_element_3hop_3",
+      "exp107_flip_exp077_element_2hop_14",
+      "exp107_flip_exp077_planet_2hop_0",
+      "exp107_ctrl_exp077_element_3hop_6",
+      "exp107_flip_exp077_planet_3hop_4",
+      "exp107_ctrl_exp077_element_2hop_9",
+      "exp107_ctrl_exp077_planet_3hop_10"
+    ],
+    "test_ids": [
+      "exp107_flip_exp077_element_3hop_5",
+      "exp107_ctrl_exp077_element_2hop_11",
+      "exp107_flip_exp077_element_3hop_8",
+      "exp107_ctrl_exp077_planet_2hop_8",
+      "exp107_flip_exp077_planet_2hop_10",
+      "exp107_flip_exp077_planet_3hop_6",
+      "exp107_ctrl_exp077_planet_2hop_3",
+      "exp107_flip_exp077_element_2hop_10",
+      "exp107_flip_exp077_planet_3hop_2",
+      "exp107_flip_exp077_planet_3hop_0",
+      "exp107_flip_exp077_element_3hop_14",
+      "exp107_flip_exp077_element_2hop_12",
+      "exp107_flip_exp077_element_2hop_0",
+      "exp107_flip_exp077_element_3hop_12",
+      "exp107_ctrl_exp077_planet_3hop_12",
+      "exp107_flip_exp077_planet_2hop_9",
+      "exp107_ctrl_exp077_element_3hop_0",
+      "exp107_flip_exp077_planet_2hop_6",
+      "exp107_ctrl_exp077_planet_3hop_1",
+      "exp107_ctrl_exp077_planet_2hop_5",
+      "exp107_ctrl_exp077_element_3hop_13",
+      "exp107_ctrl_exp077_planet_3hop_3",
+      "exp107_ctrl_exp077_planet_2hop_13",
+      "exp107_ctrl_exp077_element_2hop_7",
+      "exp107_ctrl_exp077_element_3hop_7",
+      "exp107_ctrl_exp077_element_3hop_4",
+      "exp107_ctrl_exp077_element_3hop_2",
+      "exp107_flip_exp077_element_2hop_6",
+      "exp107_ctrl_exp077_element_2hop_3",
+      "exp107_flip_exp077_planet_3hop_13"
+    ],
+    "test_cells": {
+      "A-first_True": 7,
+      "C-first_False": 7,
+      "C-first_True": 8,
+      "A-first_False": 8
+    },
+    "train_cells": {
+      "A-first_False": 7,
+      "C-first_True": 7,
+      "C-first_False": 8,
+      "A-first_True": 8
+    },
+    "N_F": 15,
+    "N_T": 15,
+    "disjoint": true
+  },
+  "head": {
+    "spec": "LogisticRegression(penalty='l2', C=1.0, solver='lbfgs', max_iter=1000, random_state=20260929)",
+    "weight_l2_norm": 1.8807075023651123,
+    "determinism_byte_identical": true
+  },
+  "results": {
+    "test_correct": 24,
+    "test_n": 30,
+    "accuracy": 0.8,
+    "acc_flipped_False": 0.8,
+    "acc_flipped_True": 0.8,
+    "G": 0.0
+  },
+  "verdict": "CONTINUE (autonomous output-side transfer; re-licenses GPU head-training under decorrelated-bench discipline; secondary per-layer analysis licensed)"
+}

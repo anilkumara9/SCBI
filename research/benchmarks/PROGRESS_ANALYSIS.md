@@ -1,4 +1,4 @@
-# Progress Analysis — where SCBI stands vs the frontier (standing; updated 2026-09-28)
+# Progress Analysis — where SCBI stands vs the frontier (standing; updated 2026-09-29)
 
 *Standing Benchmark Analyst. One page. No softening. Supersedes the
 2026-09-23 snapshot (`PROGRESS_ANALYSIS_2026-09-23.md`, preserved as
@@ -30,9 +30,19 @@ directional flips (one-sided 95% UB 2.74%). The whole L11-rescue program
 was then stood down (LOG-4463/4464): no self-computed-gate design clears
 the worth-it gate — the rational update is "the direction is the problem,
 not the gate." Ten experiments, ~2,000 CPU passes, $0. The only positive
-numbers in the program's history remain the label-assisted bridge rescues,
-demoted to rescue controls (LOG-197/204); its best autonomous number is
-still +4pp, non-significant (EXP056).
+numbers in the program's history were the label-assisted bridge rescues,
+demoted to rescue controls (LOG-197/204); its best autonomous number was
++4pp, non-significant (EXP056). **Update 2026-09-29: EXP111 is the day's
+first genuine positive signal** — a trained L2-logistic head on the
+EXP107 template-decorrelated bench scored **24/30 = 0.8000, one-sided
+p=0.00072, G=0.0000** → CONTINUE (independent verdict review LOG-4569
+QUALIFIED; the GPU head-training proposal voided by EXP107 is re-licensed
+under decorrelated-bench discipline, still founder-hardware-gated).
+This is a **boundary-science decodability entry, not a capability entry**:
+one layer-20 correlation on one n=30 bench; one n=30 bench does not move
+the capability scoreboard. The program's first output-side result to
+survive adversarial testing — and its honesty test passed alongside it:
+the same kill-test discipline that executed EXP106.
 
 **The gap.** Not a margin — an absence. On accuracy-at-matched-compute and
 on compute-saved, SCBI has no entry while the frontier has six systems
@@ -46,6 +56,10 @@ LOG-4519; v84 = v83 + converging-evidence related work + O1/O2 polish).
 It is not a capability and does not compete with
 any frontier row. The one axis where the frontier is also at zero —
 **label-free autonomous steering** — remains the only honest race.
+**Update 2026-09-29:** one positive output-side correlation survived
+adversarial testing (EXP111: 24/30, G=0.0000 on the decorrelated bench) —
+a decodability entry, not a steering entry, so the capability column stays
+at zero and the honest headline for autonomous steering is unchanged.
 
 **What closes it.** The §D2 six-condition bar: per-instance construction,
 transfer-validated evaluator, matched-compute wins over ∇-Reasoner /
