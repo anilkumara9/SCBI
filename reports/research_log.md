@@ -15516,3 +15516,23 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Scope discipline held:** sentences-only related-work addition, no claim/result/figure/numbered-claim changes, C1–C6 untouched, no experiment numbers named, sycophancy paper still excluded, v82/v83 frozen.
 
 **Next:** CEO decision on v85 implementation — the plan is implementation-ready (reviewer LOG-4872 waived re-review; fixes are editorial).
+
+## LOG-4874 — 2026-10-01 — v85 implementation (paper only, LOG-4874 pre-assigned)
+
+**Lane:** v85 implementation lane (pre-assigned LOG-4874). **Single-lane fence held: $0 CPU, paper only** — no model runs, no GPU contact, no Law #14 review of this lane's own work, no SIGN claims, no experiment number minted, no execution, no spend, no dispatch. Executed the signed v84→v85 change plan (`research/reviews/V85_CHANGE_PLAN_2026-10-01.md`; Law #14 SIGN-WITH-FIXES LOG-4872, fixes applied LOG-4873, re-review waived as editorial). v82/v83/v84 sources frozen — read-only throughout.
+
+**What was done (paper repo `~/workspace/scbi-paper`, branch `arxiv-prep`):**
+1. Copied `v84/` → `v85/` and `v84-ieee/` → `v85-ieee/` (full directory copies).
+2. Applied the plan's four edits exactly, using the plan's proposed text verbatim:
+   - `v85/paper.tex`: inserted `\paragraph{A quantization trap our discipline closes.}` after the "Two measurement traps we close." paragraph (13 new lines).
+   - `v85-ieee/sections/sec-intro.tex`: appended the "Third, ..." quantization-trap clause to the measurement-traps paragraph.
+   - `v85/refs.bib` AND `v85-ieee/refs.bib`: added `@misc{varshney2026cosine}` (arXiv:2609.30275).
+3. Diff verification (v84→v85, tex sources only): the ONLY differences are the planned insertions — new paragraph, appended clause, two bib entries. Nothing else changed.
+
+**Blocker — PDF rebuild not possible on this machine:** no LaTeX toolchain exists here (no pdflatex/xelatex/lualatex/tectonic; no TeX Live; no build script or Makefile in the paper repo). Per the signed plan's own stop rule ("if the build fails ... STOP and report — do not fix forward"), the rebuild was NOT attempted via an improvised toolchain — installing a new engine would not be "the repo's existing build process." `v85/paper.pdf` and `v85-ieee/ieee-paper.pdf` remain the v84 copies (unbuilt for v85).
+
+**Best-effort citation verification (scripted, in place of the build):** extracted every real (non-comment) `\cite`/`\citep` key from both editions' tex and every entry key from both bibs — all citations resolve, zero undefined keys in either edition, including `varshney2026cosine` (cited in both editions, defined in both bibs). The one `\cite{...}` grep hit is a pre-existing placeholder inside TeX comments (`sec-discussion.tex`, `sec-method.tex`), present identically in v84 — no build impact.
+
+**Not committed** to the paper repo — founder decides on paper-repo commits. `v85/` and `v85-ieee/` are working-tree changes only.
+
+**Next:** the PDF rebuild needs a machine with the team's LaTeX toolchain (per AGENTS.md, tectonic XeTeX), or the founder's build environment.
