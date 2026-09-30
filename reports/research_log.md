@@ -15175,3 +15175,15 @@ research log is append-only — no stash, move, or rewrite was used at any point
 5. **What didn't change:** capability scoreboard still zero positive signals for autonomous steering; the label-free race stays tied at zero — now with the loop's selection architecture retired as designed. No literature re-check this cycle (next due 2026-10-23).
 
 **Uncommitted per convention — CEO commits.**
+
+## LOG-4848 — B4/ARI pre-registration DRAFT delivered (2026-09-30)
+
+**Staleness re-diff: CLEAN.** Full-log grep before writing: no execution has ever intervened on attention weights. The attention hits are (i) S6-3b/3c/EXP102's **read-only** attention hooks (measurement for gating, never intervened — "read-only" verbatim in the log); (ii) a Layer-8 "re-routing" mechanistic hypothesis [INTERPRETATION], never executed; (iii) R5/EAR "ephemeral attention registers" (different question, killed); (iv) the sprint dossier's own §7.5(e) listing attention temperature scaling as **unexplored**. S6's breaking point (iv) fenced attention-as-a-*gate*, not attention-as-the-*intervention-target* — the fence does not cover B4. G1 killed a QK-subspace *theorem*, not an intervention. Law #4 clean.
+
+**Draft:** `research/prereg/EXP136_PREREG_ARI_2026-09-30.md` — DRAFT, licenses nothing, EXP136 provisional/not minted. $0 CPU, paper only.
+
+**Design:** 60 EXP092-B items × 4 arms (B base; T1 span-boost ×3; T2 span-ablate; C uniform-reweight control) via eager-attention post-softmax hooks at L20 — the same site as EXP131's killed residual injection, different operator. **Decision table:** CONTINUE ⟺ (T1 or T2 vs B: McNemar one-sided p ≤ 0.05) AND (C vs B: p > 0.05) — routing-specific; KILL ⟺ ΔM_T1 = ΔM_T2 = 0 with (h) PASS; HELD ⟺ C also significant (unattributable) or sub-significant; RUN-INVALID ⟺ any guard trips (Δθ=0, B-decision agreement 60/60 vs EXP094 vector as the eager-backend non-perturbation proof, bench/span pins, the (h) hook-delivery control — foil-span weights < 1e-6 observed directly, strictly stronger than the residual (h) — renormalization, budget 4n+1).
+
+**Drafting corrections (documented in §0):** (1) n = 60, not the sprint's 10 — at n = 10 the sprint's own prediction (≥2/10) cannot reach its own bar (p ≤ 0.05 needs b ≥ 5, c = 0), an 11% false-KILL risk at 20% true rate; cost corrected to ~4–6h CPU. (2) One annotated span, not target+foil — T2 ablates the annotated span (no span invented, Law #2). **Scope fence (§1.2):** operator-efficacy probe, NOT a label-free test — a CONTINUE licenses "attention is a steerable substrate," never autonomous steering. All McNemar/KILL-stringency numbers recomputed exact in-draft (b = 10, c = 2 → p = 79/4096 ≈ 0.019; 0.9^120 ≈ 3.2×10^{-6}).
+
+**Next in the launch chain:** independent Law #14 review of the exact draft file → CEO launch decision.
