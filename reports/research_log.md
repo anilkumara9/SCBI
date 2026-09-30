@@ -15502,3 +15502,17 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Fixes:** F1 (required) — the bib entry must go into BOTH `v84/refs.bib` AND `v84-ieee/refs.bib`; "one bib entry" as written risks an undefined `\cite{varshney2026cosine}` in the IEEE build. F2 (recommended) — reword the main-edition title "The quantization trap we preempt" (implies quantization work the paper never ran). F3 (nit) — abstract says "refusal directions"; proposed text drops "refusal."
 
 **Next:** apply F1 (F2/F3 discretionary), then the v85 implementation lane may proceed. No re-review required — fixes are editorial.
+
+
+## LOG-4873 — v84→v85 change-plan repair: F1/F2/F3 applied (2026-10-01)
+
+**Lane:** LOG-4873 (pre-assigned by the CEO). **$0 CPU, paper only. Repair only — no v85 implementation.** Artifact: `research/reviews/V85_CHANGE_PLAN_2026-10-01.md` (edited in place); `~/workspace/SCBI/AGENTS.md` house rules read before editing. No paper source touched; plan scope unchanged.
+
+**All three review fixes applied (reviewer: LOG-4872, SIGN-WITH-FIXES — F1 required, F2/F3 discretionary, CEO brief: apply all three):**
+- **F1 (required):** bib entry now mandated in BOTH `v84/refs.bib` AND `v84-ieee/refs.bib` — plan header scope line, bibliography section, and a new §4 implementation checklist (5 steps: both bibs, main insertion at `v84/paper.tex:188`, IEEE clause at `v84-ieee/sections/sec-intro.tex:42`, rebuild both editions and confirm zero undefined-citation warnings on `varshney2026cosine`). A single entry would have left the IEEE build with an undefined `\cite{varshney2026cosine}`.
+- **F2 (recommended):** main-edition paragraph title reworded from "The quantization trap we preempt" to **"A quantization trap our discipline closes"** — keeps the methodology-convergence framing, no longer implies quantization work the paper never ran.
+- **F3 (nit):** abstract fidelity restored — "published cosine of $0.996$ between full-precision and quantized **refusal** directions" (qualifier restored where dropped).
+
+**Scope discipline held:** sentences-only related-work addition, no claim/result/figure/numbered-claim changes, C1–C6 untouched, no experiment numbers named, sycophancy paper still excluded, v82/v83 frozen.
+
+**Next:** CEO decision on v85 implementation — the plan is implementation-ready (reviewer LOG-4872 waived re-review; fixes are editorial).

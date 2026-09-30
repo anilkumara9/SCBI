@@ -8,7 +8,10 @@
 **Scope (hard boundary):** related-work *sentences only*. No figure changes, no claim
 changes, no result changes, no rewording of any signed result (C1–C6), no new numbered
 claims. Bibliography: one new entry, sweep-verified (LOG-4870) and abstract-re-verified
-by this lane (2026-10-01, arXiv abs page); no other field invented.
+by this lane (2026-10-01, arXiv abs page); no other field invented. **F1: the entry
+goes into BOTH `v84/refs.bib` AND `v84-ieee/refs.bib` — the IEEE edition's clause
+cites `\cite{varshney2026cosine}`, so a single entry would leave the IEEE build
+with an undefined citation.**
 
 One item is admitted. The sweep's second item ("Less Sycophancy, Stronger Refusal?",
 arXiv:2609.35544v1) is **not** admitted to this plan: the sweep marked it tangential
@@ -60,13 +63,13 @@ already embodies ("only McNemar decision flips count as causal evidence").
 after that paragraph (the existing paragraph's "Two" stays accurate — it still
 describes two traps). Proposed text:
 
-> \paragraph{The quantization trap we preempt.}  Varshney \citep{varshney2026cosine}
+> \paragraph{A quantization trap our discipline closes.}  Varshney \citep{varshney2026cosine}
 > audits a practice this paper's discipline already refuses: certifying
 > interpretability artifacts as surviving quantization by scale-invariant statistics
 > (cosine similarity, correlation, AUROC) reported without the estimator's noise
 > floor.  For the difference-in-means direction estimator, two independent runs
 > already agree to $0.978$--$0.994$ by sampling alone on Qwen2.5-1.5B-Instruct, so a
-> published cosine of $0.996$ between full-precision and quantized directions is
+> published cosine of $0.996$ between full-precision and quantized refusal directions is
 > unevaluable without the $n$ it was computed at; against the split-half null measured
 > within the quantized model, the INT4 direction rotated beyond estimator noise, while
 > the INT8 null result is explicitly not an equivalence claim.  Our transfer claims
@@ -83,7 +86,10 @@ ending "...margin shifts are reported, never counted." Append a third trap claus
 > by sampling, and an INT8 null result is not an equivalence claim — our
 > decision-flip discipline converges with this audit.
 
-**Bibliography** (follows the `@misc` arXiv pattern of `nadaf2026`/`jia2026`):
+**Bibliography** (added to **both** `v84/refs.bib` **and** `v84-ieee/refs.bib` **
+(F1 — the IEEE clause cites `\cite{varshney2026cosine}`, so one entry would leave
+the IEEE build with an undefined citation); follows the `@misc` arXiv pattern of
+`nadaf2026`/`jia2026`):
 
 ```bibtex
 @misc{varshney2026cosine,
@@ -114,7 +120,25 @@ ending "...margin shifts are reported, never counted." Append a third trap claus
 
 ---
 
-## 3. Uncertainties (for the independent Law #14 reviewer)
+## 4. Implementation checklist (post-review, F1)
+
+1. Add the `@misc{varshney2026cosine}` entry to **`v84/refs.bib`**.
+2. Add the same entry to **`v84-ieee/refs.bib`** (required — the IEEE clause cites
+   `\cite{varshney2026cosine}`; a single entry leaves the IEEE build with an
+   undefined citation).
+3. Insert the main-edition paragraph into `v84/paper.tex` after the
+   `\paragraph{Two measurement traps we close.}` paragraph (line 188).
+4. Append the IEEE clause to `v84-ieee/sections/sec-intro.tex` after
+   "...margin shifts are reported, never counted." (line 42 paragraph).
+5. Rebuild **both** editions and confirm zero undefined citations/warnings on
+   `varshney2026cosine`.
+
+No experiment numbers, no signed results, and no v82/v83 files are touched at any
+step.
+
+---
+
+## 5. Uncertainties (for the independent Law #14 reviewer)
 
 1. **Abstract-only verification.** This lane verified the citation against the arXiv
    abstract page (2026-10-01), not the full paper body. Every claim in the proposed
