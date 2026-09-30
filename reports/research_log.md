@@ -15187,3 +15187,17 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Drafting corrections (documented in §0):** (1) n = 60, not the sprint's 10 — at n = 10 the sprint's own prediction (≥2/10) cannot reach its own bar (p ≤ 0.05 needs b ≥ 5, c = 0), an 11% false-KILL risk at 20% true rate; cost corrected to ~4–6h CPU. (2) One annotated span, not target+foil — T2 ablates the annotated span (no span invented, Law #2). **Scope fence (§1.2):** operator-efficacy probe, NOT a label-free test — a CONTINUE licenses "attention is a steerable substrate," never autonomous steering. All McNemar/KILL-stringency numbers recomputed exact in-draft (b = 10, c = 2 → p = 79/4096 ≈ 0.019; 0.9^120 ≈ 3.2×10^{-6}).
 
 **Next in the launch chain:** independent Law #14 review of the exact draft file → CEO launch decision.
+
+## LOG-4849 — Law #14 review of B4/ARI pre-registration: SIGN-WITH-FIXES (2026-09-30)
+
+**Verdict:** SIGN-WITH-FIXES on `research/prereg/EXP136_PREREG_ARI_2026-09-30.md` (exact file). Review: `research/reviews/LAW14_REVIEW_EXP136_ARI_PREREG_2026-09-30.md`. Independent lane — neither drafted nor repaired.
+
+**PASS:** decision-table structure (exact, exhaustive, precedence RUN-INVALID > HELD > KILL > CONTINUE); the (h) control as a direct observation of the causal variable (strictly stronger than the residual (h)); the n=60 correction (all numbers independently recomputed exact — b=10,c=2 → p=0.0193; 0.9^120 ≈ 3.2e-6; n=10 needs b≥5,c=0); the §1.2 scope fence (operator-efficacy, not label-free — correctly drawn); breaking-point coverage (a–g + Law #7); the 7-point worth-it gate; the Law #4 non-resurrection audit (independently re-verified via full-log grep — no execution has ever intervened on attention weights; S6 breaking point (iv) fences attention-as-gate, not attention-as-target; G1/EXP131/133/EXP105 differentiations all hold).
+
+**F1 (required, statistical defect):** the McNemar one-sided H1: b>c (improvement) is applied uniformly, but T2 (span-ablate) is predicted to *worsen* — a T2 effect in its predicted direction (b=2,c=10) gives p=0.9968 under H1:b>c (recomputed), so CONTINUE cannot fire on T2's own prediction; the C-conjunct likewise misses systematic C worsening. Fix: direction-appropriate tests (T1: b>c; T2: c>b or two-sided; C: two-sided).
+
+**F2 (required, coverage gap):** the (h) control verifies only the T2 hook; T1's 3× boost is unverified — if base span mass is ~0, T1 is a no-op and a KILL on ΔM_T1=0 would be invalid. Fix: extend (h) to T1 or gate T1's KILL contribution on base span mass.
+
+**Advisories:** A1 — (h) observes weights, not output propagation (low risk; consider asserting L20 output differs on the probe). A2 — state explicitly that "C significant, T1/T2 flat" resolves to KILL.
+
+**Disposition:** F1–F2 must be applied, then independent fix-verification, then CEO launch decision. Uncommitted per convention — CEO commits.
