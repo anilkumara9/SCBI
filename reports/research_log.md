@@ -15246,3 +15246,11 @@ research log is append-only — no stash, move, or rewrite was used at any point
 - C (uniform-reweight): flips 5/60, ΔM = 0.0833, b = 1, c = 4, McNemar two-sided p = 0.375000; acc 33/60 vs base 36/60.
 
 **Artifacts:** `experiments/runs/EXP136_ari/out/` — `exp136_per_item.csv` (60 rows), `exp136_records.json` (sha256 `3475a4aa63c7b133a0542691542b1152f00e2d4ad9398f8e356170233e5513ae`), `exp136_run_log.txt`, `exp136_stdout.log`, `exp136_verdict.json` ("RAW"). Executor: `run_exp136.py`. No breaking-point trips; exit 0. Single-lane fence held: execution only, no verdict.
+
+## LOG-4853 — EXP136 (B4/ARI) binding verdict: HELD — sub-significant (2026-09-30)
+
+**Independent verdict-review lane (CEO LOG-4853; did not draft/repair/execute).** Recomputed from raw `exp136_per_item.csv` (exact binomial McNemar, no library): T1 (span-boost, one-sided b>c) — flips 1/60, b=0, c=1, p=1.0; T2 (span-ablate, one-sided c>b) — flips 7/60, b=3, c=4, p=0.5; C (uniform, two-sided) — flips 5/60, b=1, c=4, p=0.375. All match the executor's summary; records sha256 `3475a4aa…51a3e` re-hashed and matched. Guards (a)–(f) all PASS; (h) hook-delivery PASS on both hooks per §3.4 thresholds (Phase 1: span mass 0, L1 0.2241, dOut 2.13; Phase 2: span mass 0.1937>0.1120 base, L1 0.1634, dOut 1.78) — delivery proven, not inferred.
+
+**Verdict: HELD (sub-significant).** CONTINUE does not fire (T1 p=1.0, T2 p=0.5 — neither ≤0.05). KILL does not fire on the pre-reg's exact wording (ΔM_T1=1/60, ΔM_T2=7/60 — the strict ΔM=0 bar is unmet; Law #4 forbids post-hoc re-reading). HELD's sub-significant branch fires literally (ΔM>0 with directional p>0.05 on both arms); precedence HELD>KILL>CONTINUE confirms. No RUN-INVALID.
+
+**Honest reading (Law #11):** the flips are symmetric noise — T2's 7 flips split b=3/c=4 (net ≈0), T1's single flip is a worsening (opposite its predicted direction). Inconclusive by the registered bars, not a near-miss. **Licenses nothing, kills nothing, fences nothing.** The routing-around hypothesis is neither confirmed nor dead. Review: `research/reviews/VERDICTREVIEW_EXP136_2026-09-30.md`.
