@@ -15488,3 +15488,17 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Fencing:** related-work sentences only — no claim, result, or figure changes; C1–C6 untouched; boxed bets summary untouched; novelty N1. The sweep's second item (sycophancy, arXiv:2609.35544v1) was not admitted (tangential; not licensed by the CEO's brief).
 
 **Next:** independent Law #14 review of the exact plan file (separate lane).
+
+## LOG-4872 — Law #14 independent review of v84→v85 change plan (2026-10-01)
+
+**Lane:** LOG-4872 (pre-assigned). **Independent Law #14 reviewer; $0 CPU, paper only.** Reviewer did not draft the plan (draft lane LOG-4871). Artifact: `research/reviews/V85_CHANGE_PLAN_2026-10-01.md` (exact filename).
+
+**Verdict: SIGN-WITH-FIXES** (1 required, 1 recommended, 1 nit). Report: `research/reviews/LAW14_REVIEW_V85_CHANGE_PLAN_2026-10-01.md`.
+
+**Independently verified:** Varshney abstract re-verified live (arXiv:2609.30275v1, 2026-10-01) — every substantive claim in the proposed text (κ = nρ²/d noise floor, ρ = 33–61, 0.978–0.994 split-half agreement, 0.996 cosine unevaluable without n, INT4 rotation beyond estimator noise, INT8 null explicitly not an equivalence claim, translation-vs-attenuation) matches the abstract; no overclaim beyond it. v84's own text checked: 0 "quantiz" hits in both editions (plan's placement claim confirmed); main-edition traps paragraph at `v84/paper.tex:188` describes exactly two traps; IEEE traps paragraph at `v84-ieee/sections/sec-intro.tex:42` is one flowing paragraph ending "...margin shifts are reported, never counted." The proposed "transfer claims rest on decision flips, never on cosine" is true of v84's stated discipline. Citation commands match edition conventions (`\citep` main / `\cite` IEEE); bib entry matches `nadaf2026` pattern.
+
+**Bars:** accuracy PASS; scope discipline PASS (related-work sentences only, no claim/result/figure changes, no experiment numbers — the restraint is correct since v84 has no precision-certification discussion to ground them); tone PASS (methodology convergence, not corroboration); completeness PASS (sycophancy exclusion follows the LOG-4870 sweep and CEO brief).
+
+**Fixes:** F1 (required) — the bib entry must go into BOTH `v84/refs.bib` AND `v84-ieee/refs.bib`; "one bib entry" as written risks an undefined `\cite{varshney2026cosine}` in the IEEE build. F2 (recommended) — reword the main-edition title "The quantization trap we preempt" (implies quantization work the paper never ran). F3 (nit) — abstract says "refusal directions"; proposed text drops "refusal."
+
+**Next:** apply F1 (F2/F3 discretionary), then the v85 implementation lane may proceed. No re-review required — fixes are editorial.
