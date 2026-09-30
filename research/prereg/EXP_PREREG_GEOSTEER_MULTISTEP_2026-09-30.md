@@ -135,3 +135,9 @@ guards → backbone pin → artifact re-pins (v̂₁/v̂₂/B̂_agg) → budget 
 ## 9. GPU-resident stage — FENCED, NOT LICENSED
 
 Any GPU stage (e.g., a K-sweep, a larger bench, a per-step ĉ profile on GPU) is **founder-gated**: it requires a fresh Law-#15 worth-it gate on the measured CPU result, a Law-#14 pre-reg review with SIGN, a minted experiment number, and CEO/founder clearance. **This lane provides none of those.** This draft does not license, schedule, or authorize any GPU contact.
+
+---
+
+## Scope erratum (appended 2026-09-30, CEO, per LOG-4817 finding F1 — signed text above untouched)
+
+The KILL-row narrative's clause "not one-shot (LOG-4766)" is **suspended** per LOG-4810: EXP131's binding KILL (LOG-4766) was re-categorized as RUN-INVALID (apparatus defect — blind readout tap) after LOG-4808/4809, and the one-shot TGA-v₁ injection hypothesis is UNTESTED. The EXP133 attempt-4 KILL (LOG-4814, independently reviewed LOG-4817) therefore closes the **multistep-geodesic** branch only: geometry-aware multistep steering along the TGA leading direction steers zero decisions at matched budget with verified delivery. It does not imply one-shot closure; one-shot remains an open hypothesis on the EXP131 track.
