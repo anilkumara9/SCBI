@@ -15162,3 +15162,16 @@ research log is append-only — no stash, move, or rewrite was used at any point
 # **BINDING VERDICT: KILL** — "the E-step ranks candidates" is dead.
 
 **Licensed reading:** the signed evaluator cannot distinguish the known-causal direction from randoms by label-free scores (bridge mean rank 5.02 ≈ uniform); the G/E/S loop as designed has no working selection step. E-validity — [CONJECTURE] since LOG-3842 — is refuted at the registered bars. This is the program's eighth binding KILL and its most architecturally consequential: it retires the selection architecture itself, not a mechanism. The summit path needs an architecture rethink. **Does NOT license:** non-spec scores, other benches/backbones, or resurrection of killed causal families.
+
+## LOG-4847 — Scoreboard v3.11 → v3.12 sync: EXP135 plotted (2026-09-30)
+
+**Benchmark-analyst lane (CEO pre-assigned; single-lane fence: scoreboard only — no protocols, no new experiments).** Source: LOG-4843 (execution), LOG-4846 (independent verdict review — BIND), `research/reviews/VERDICTREVIEW_EXP135_2026-09-30.md`.
+
+**Changes in `research/benchmarks/FRONTIER_SCOREBOARD.md` (v3.12):**
+1. **§3.1 inventory:** EXP135 row added (bound) — label-free E-step validity KILL: ρ̄\* = −0.0042 ≤ 0.3 (permutation p = 0.530275), mean bridge score-rank 5.02/9 ≈ uniform, all 8 guards PASS from raw artifacts ((e) degeneracy 29/60 < 30 trip — one item short, recorded honestly), executor defect (missing H_ALLOW_FRAC, exit-1 post-forwards) → constant + checkpointing, full deterministic re-run, bit-identical forwards. "The E-step ranks candidates" is dead — the G/E/S loop's selection architecture retired as designed. E-validity ([CONJECTURE] since LOG-3842) refuted at the registered bars.
+2. **§0 at-a-glance:** three cells updated — Meta-Reasoner row ("E-validity REFUTED (EXP135 binding KILL)"), LLM-Monkeys row ("G/E/S loop's selection step tested and KILLED"), label-free steering row (EXP135 KILL appended; the elicitation-validation EVALID of EXP113/H7 is a naming collision only — untouched per LOG-4839).
+3. **v3.12 delta [FACT]** added; **version-history** v3.12 entry added.
+4. **Tally:** eight binding KILLs (EXP107, EXP114, EXP125, EXP126, EXP129, EXP131, EXP133, EXP135 — all bound); twelve RUN-INVALIDs; four CONTINUEs; one HELD; one apparatus CONTINUE; one pre-launch KILL/REJECT; one precision certification; zero in flight. Historical v3.11 entries preserve their own tallies (not rewritten).
+5. **What didn't change:** capability scoreboard still zero positive signals for autonomous steering; the label-free race stays tied at zero — now with the loop's selection architecture retired as designed. No literature re-check this cycle (next due 2026-10-23).
+
+**Uncommitted per convention — CEO commits.**
