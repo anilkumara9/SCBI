@@ -15112,3 +15112,11 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Overall: PASS-WITH-AMENDMENT.** All 8 items correctly applied; decision bars, hypothesis, §3.5 derivation, and worth-it gate untouched. Upon the one-line (e) amendment, the pre-registration is launch-ready pending the CEO launch decision. This lane made no edits (verification only); the amendment needs a repair lane + byte-check.
 
 **Continuity:** LOG-4841 confirmed max before append; 4841→4842. Uncommitted per convention — CEO commits.
+
+## LOG-4844 — GitHub push: 7f0cc64 → 83fe6a3 (2026-09-30)
+
+**Pushed to `github.com/anilkumara9/SCBI`, branch `sync/2026-09-29-consolidated`:** 8 commits, fast-forward verified (`7f0cc64..83fe6a3`), no force-push. Founder-supplied token used once, transiently, then discarded — repository scan confirms no trace; no secrets or weights in the pushed range (pre-push scan clean: the only "secret"-pattern hits are the pre-reg's "secretly-efficacious random" technical term).
+
+**What went up:** LOG-4835 (prior push record) → LOG-4842 — the full post-TGA wave: README updated to v3.11 research state (verified), post-TGA innovation sprint (5 ranked bets), B1/MCI draft refused under Law #4 (EXP098 already executed it), B2/EVAL pre-registration drafted (staleness clean), independent Law #14 review (SIGN-WITH-FIXES, 6 fixes), all 8 fixes applied, independent fix-verification (PASS-WITH-AMENDMENT, (e) amendment applied).
+
+**Not pushed:** `experiments/runs/EXP135_eval/` (untracked — the EXP135 execution lane is still running; its LOG-4843 record will ride the next push). This LOG-4844 record itself is committed locally and will ride the next push per convention.
