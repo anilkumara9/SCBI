@@ -15201,3 +15201,19 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Advisories:** A1 — (h) observes weights, not output propagation (low risk; consider asserting L20 output differs on the probe). A2 — state explicitly that "C significant, T1/T2 flat" resolves to KILL.
 
 **Disposition:** F1–F2 must be applied, then independent fix-verification, then CEO launch decision. Uncommitted per convention — CEO commits.
+
+## LOG-4850 — B4/ARI pre-reg repair: F1–F2 applied, A1–A2 addressed (2026-09-30)
+
+**Repair lane (independent of drafting LOG-4848 and review LOG-4849). File:** `research/prereg/EXP136_PREREG_ARI_2026-09-30.md` (edited in place; EXP136 still provisional, not minted; hypothesis, arms, and all non-fix content untouched).
+
+**F1 (McNemar direction mismatch) — applied, 5 touch points:** the uniform one-sided H1:b>c is replaced with direction-appropriate alternatives — T1: one-sided b>c (predicted improvement); T2: one-sided c>b (predicted worsening); C: two-sided (attribution guard, no directional prediction). Updated: §3.3 endpoint (with the Law #4 justification note — unpredicted-direction effects do not license CONTINUE), the §3.3 decision-bars table (CONTINUE/HELD rows reference the directional tests; KILL row unchanged), the statistical license (added the T2 directional reachability example b=2,c=10 → p=79/4096≈0.019), §1 falsifiers, §2 CONTINUE bullet, §5.6 quantitative prediction (both directions). Precedence RUN-INVALID > HELD > KILL > CONTINUE unchanged — the fix changes test direction, not branch priority. Correlated consequence recorded: systematic T1 *worsening* now resolves to HELD (sub-significant), not CONTINUE — the directional bars bind as written.
+
+**F2 (T1 delivery unverified) — applied via (h) extension (the cleaner option):** §3.4 restructured into two phases. Phase 1 (T2, existing asserts 1–5 retained); Phase 2 (new, T1): L1-activity assert (>0.01), boost-direction assert (post-renormalization span mass strictly increases — valid for any base mass in (0,1) since 3s/(1+2s)>s ⟺ s<1), absolute-floor assert (>1e-3, catches the ~0-base no-op), renormalization and finiteness asserts. Any assert fails → RUN-INVALID exit 44. The ~0-base-mass case is explicitly dispositioned: Phase 2 asserts fail → RUN-INVALID, not KILL — the apparatus cannot test T1, so no verdict is licensed. N_h: 1→2 probe forwards; guard (f) budget updated to 4n+2=242 at n=60. The mass-gate alternative was rejected as less clean (it would complicate the decision table without adding epistemic value — the (h) extension handles the degenerate case through the existing RUN-INVALID path).
+
+**A1 (output propagation) — added:** asserts 6 (Phase 1) and 13 (Phase 2): ‖o−o_base‖_2 > 1e-6 on the L20 attention-submodule output, closing the detached-copy false-KILL path (a hook modifying a detached weight copy would pass the weight asserts yet leave o=o_base exactly under deterministic computation).
+
+**A2 (C-significant resolution) — stated:** §4 now explicitly resolves "C vs B significant (two-sided p≤0.05) with ΔM_T1=ΔM_T2=0" to KILL per precedence, with the [INTERPRETATION] that an effective undirected control with flat directed arms means routing is not the lever.
+
+**Consistency sweep:** zero stale N_h=1/241 references; zero uniform-H1 references; the single remaining directionless "one-sided" (line 20) is the §0.1 historical description of the superseded sprint bet — correctly untouched. Uncommitted per convention — CEO commits.
+
+**Next:** independent fix-verification against the LOG-4849 review, then CEO launch decision.
