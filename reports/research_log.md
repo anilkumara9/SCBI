@@ -15420,3 +15420,17 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Binding statement:** "The TGA injection nulls (EXP131 ĉ<0.1, ΔM_v1=0; EXP133 ΔM_geo=0) reproduce under weight-only INT8 fake-quantization; 0/10 quantized-baseline decisions shifted vs FP32 at α=0, and the injection nulls reproduce against the quantized baseline." Precision-regime-dependence is killed for the TGA nulls under the tested approximation class. The EXP131/EXP133 KILLs stand; no PIVOT follow-up licensed; no capability claimed; scope fenced to weight-only fake-quant / Pythia-410m. Report: `research/reviews/VERDICTREVIEW_EXP138_2026-09-30.md`.
 
 **Next:** CEO: scoreboard sync (TGA precision-certified; capability tally unchanged at zero), commit-only push prep, then the pending README refresh and GitHub push cycle (founder token required).
+
+## LOG-4866 — Scoreboard sync v3.15: EXP138 CERTIFIED plotted; TGA story precision-certified (2026-09-30)
+
+**Scoreboard-sync lane (CEO pre-assigned LOG-4866).** $0 CPU, paper only. Frontier scoreboard `research/benchmarks/FRONTIER_SCOREBOARD.md` updated **v3.14 → v3.15**.
+
+**Plotted:** **EXP138 (B5/TGA-INT8) — binding CERTIFIED** (execution LOG-4864; independent Law #14 verdict review LOG-4865 — BIND): all six tiers reproduce — Q1 ĉ_q=0.03747<0.1, Q2 ΔM_v1,q=0/110, Q3 ΔM_geo,q=0/10, Q4 McNemar p=1.0; Q5/Q6 apparatus guards hold (B_agg=0, (h) r=1.0000001); 0/10 quantized α=0 baseline shifts; all 8 breaking points (a)–(h) held; quantized copy byte-identical to EXP110's independently produced manifest; all six tier Booleans independently re-derived from raw records. Second precision certification on the board (EXP110 the first).
+
+**The TGA story now reads:** direction exists (EXP127 CONTINUE, 8.24× amplification) → carries nothing (EXP137 KILL) → moves nothing (EXP131/133 KILLs) → boundary precision-certified (EXP138 CERTIFIED).
+
+**Tallies (v3.15):** 4 CONTINUEs (EXP111 — bound, reclassified domain-set-detector correlation; EXP120 — bound, qualified, reclassified; EXP122 — bound, reclassified; EXP127 — bound); 2 HELDs (EXP112 — bound, bench-1-specific; EXP136 — bound, sub-significant); 1 apparatus CONTINUE (EXP113 — bound); 9 KILLs (EXP107, EXP114, EXP125, EXP126, EXP129, EXP131, EXP133, EXP135, EXP137 — all bound); 1 pre-launch KILL/REJECT (EXP130 — bound at review, never executed); 12 RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123, EXP124, EXP128, EXP132 — all bound); **2 precision certifications (EXP110, EXP138 — both bound)**.
+
+**Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero — now with the TGA boundary precision-certified as boundary science.** Zero IN-FLIGHT. No literature re-check this cycle (next due 2026-10-23).
+
+**Edits:** §3.1 EXP138 row added (bound); §0 at-a-glance steering row updated (TGA story → exists/carries-nothing/moves-nothing/precision-certified); v3.15 delta paragraph added; §5 changelog v3.15 entry added.
