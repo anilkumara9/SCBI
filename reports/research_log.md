@@ -15018,3 +15018,10 @@ research log is append-only — no stash, move, or rewrite was used at any point
 - **Decision:** the draft is **REFUSED** — no file created. Drafting EXP134 as specified would be a Law #4 resurrection (re-proposing a design whose transfer reading was killed, against EXP107's explicit bar on re-runs). The brief's non-resurrection audit ("the killed claim was 'label-constructed directions transfer'") cannot be honestly written: the actually-killed claim is EXP106's trained-head transfer reading.
 - **Recommendation:** do not mint EXP134 for this design. Legitimate paths: (a) the H5/LFH-TD line (already drafted, executed, killed — no resurrection there either); (b) a genuinely new output-side mechanism class with its own Law #15 packet, differentiated from both the bridge artifacts and the EXP106/107 template-artifact kill.
 - **Continuity:** LOG-4833 confirmed max before append; 4833→4834. Uncommitted per convention.
+
+## LOG-4835 — Push completed: sync/2026-09-29-consolidated fc39fcf → 7f0cc64 (2026-09-30)
+
+- **Push [FACT]:** `github.com/anilkumara9/SCBI`, branch `sync/2026-09-29-consolidated`, `fc39fcf..7f0cc64` — fast-forward verified before push (remote was at fc39fcf, an ancestor of HEAD); no force-push. Token used once, transiently (env-only, never written to disk); askpass removed; repo grep confirms zero token trace.
+- **What went up:** the full September-30 wave — EXP133 GEOSTEER chain (pre-reg, Amendments B/C/D, two apparatus voids, attempt-4 binding KILL), the blind-tap defect saga (LOG-4808 REJECT, LOG-4809 re-examination, LOG-4810 EXP131 suspension), EXP131 CPU rehabilitation (hook-fix + venue + drift-detector amendments, attempt-2 binding KILL), scoreboard v3.11, all independent Law #14 reviews, and the voided-GPU-records archive. No weights, no secrets.
+- **Not pushed:** `~/workspace/scbi-paper` (arxiv-prep, v84) — separate repo, awaiting founder direction.
+- **Continuity:** LOG-4834 confirmed max before append; 4834→4835.
