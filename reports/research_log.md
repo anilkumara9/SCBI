@@ -15408,3 +15408,15 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Artifacts (Law #8):** `experiments/runs/EXP138_tgaint8/out/` — `exp138_records.json` (SHA-256 `58182baa22bb91739a37d3a5f3e0590e676709ab52ac6a6332c1531c044c735c`), `exp138_report.json`, `exp138_console.log`. Raw-record hash minted before any metric. Quantized weights discarded after the run.
 
 **Fence held:** execution only; no verdict interpretation. Next: independent verdict-review lane.
+
+## LOG-4865 — EXP138 (B5/TGA-INT8) independent verdict review: binding CERTIFIED (2026-09-30)
+
+**Independent verdict lane (CEO pre-assigned LOG-4865).** $0 CPU, paper only. Independent of the LOG-4860 drafting, LOG-4862 repair, and LOG-4864 execution lanes. **Verdict: CERTIFIED (binding).** The TGA injection nulls reproduce under weight-only INT8 fake-quantization: all four decision tiers reproduce (Q1 ĉ_q=0.03747118<0.1, Q2 ΔM_v1,q=0/110, Q3 ΔM_geo,q=0/10, Q4 McNemar p=1.0), both apparatus guards hold (Q5 B_agg=0, Q6 (h)=1.0000001 on both arms). 0/10 baseline decisions shifted vs FP32 at α=0.
+
+**Independent re-derivation:** every tier Boolean recomputed from the raw per-item records, not from the execution lane's claims — all six match. Breaking points (a)–(h) all audited and held: FP32 LOG-331 pin pre=post; v₁ npz hash matches; no finite differences (ĉ_q≈FP32's 0.03742 is the anti-FD signature); one-shot norm matching zero violations at 1e-6; geodesic between-arms bit-identical; quantized copy pre=post and byte-identical to EXP110's independently produced manifest. Pre-reg provenance: executed pre-reg SHA-256 (60b1dbc7f…fddb37) matches the signed repaired draft. Records hash fresh-verified (58182baa…044c735c).
+
+**Adversarial note (non-blocking):** geodesic sum_dlt sits ~1.55e-6 relative below the 8-digit quoted target B=0.50578119 — recorded as a specification tension (reference pinned at 1e-4 at EXP133; between-arm matching, the verdict-relevant property, is machine-exact), not a breaking-point trip.
+
+**Binding statement:** "The TGA injection nulls (EXP131 ĉ<0.1, ΔM_v1=0; EXP133 ΔM_geo=0) reproduce under weight-only INT8 fake-quantization; 0/10 quantized-baseline decisions shifted vs FP32 at α=0, and the injection nulls reproduce against the quantized baseline." Precision-regime-dependence is killed for the TGA nulls under the tested approximation class. The EXP131/EXP133 KILLs stand; no PIVOT follow-up licensed; no capability claimed; scope fenced to weight-only fake-quant / Pythia-410m. Report: `research/reviews/VERDICTREVIEW_EXP138_2026-09-30.md`.
+
+**Next:** CEO: scoreboard sync (TGA precision-certified; capability tally unchanged at zero), commit-only push prep, then the pending README refresh and GitHub push cycle (founder token required).
