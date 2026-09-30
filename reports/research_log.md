@@ -15384,3 +15384,27 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Scope check:** decision table, tiers Q1–Q6, hypothesis, §1.1, falsification tree, breaking points (a)–(h), §7 fences, worth-it gate — all untouched. No TBD/placeholder remnants (swept, zero hits).
 
 **Report:** `research/reviews/LAW14_FIXVERIFY_EXP138_TGAINT8_2026-09-30.md`. Next: CEO launch decision.
+
+## LOG-4864 — EXP138 (B5/TGA-INT8) execution complete (2026-09-30)
+
+**Execution lane (CEO launch LOG-4864 pre-assigned).** $0 CPU, 6.1 min wall-clock, no GPU, no network. Runner: `experiments/runs/EXP138_tgaint8/run_exp138.py` (smoke-tested first: 1 prompt, all 6 tiers PASS, then full 10-prompt run).
+
+**Apparatus chain (all breaking points held):**
+- FP32 backbone LOG-331 pin verified pre-run `ec276abe…4ec38e0ed` (breaking point (a)); FP32 reference re-pinned post-run — Δθ=0 held.
+- Quantized copy derived via the EXP110-certified pattern (per-output-channel symmetric INT8 on all 97 nn.Linear weights, FP32 compute, in-memory state_dict transform); quantized SHA-256 `ed919d47…cab9c33` — byte-identical to EXP110's quantized manifest, independent confirmation of the pattern. Pre/post-run hash assertion held (breaking point (h)).
+- v₁ re-pin: `exp127_vectors.npz` hash + 10/10 id alignment (breaking point (b)). B_agg re-derived on FP32, hash matches EXP131 (`d3556d83…a1600ae1`). v₂ re-derived on FP32 (K=40, seed 20260929_4714, orthogonality ≤8.4e-09). 8 randoms re-derived verbatim per the F1-pinned scheme (seed 20260929_4724+pi*100).
+- Norm-budget audit: all one-shot arms within 1e-6 rel of B_q = 0.50797630 (breaking point (d)). Geodesic: K=5, pinned B = 0.50578119, retraction bound held. ĉ exclusions: 0 (< 3). No finite-difference sensing (exact JVP/VJP only).
+
+**Raw tier results (execution only — NO verdict; verdict belongs to the independent review lane):**
+- Q1: ĉ_q = 0.03747 < 0.1 (vs FP32 0.03742) → PASS
+- Q2: ΔM_v1,q = 0/110 → PASS
+- Q3: ΔM_geo,q = 0/10 (B_agg-path flips 0) → PASS
+- Q4: McNemar (b,c)=(0,0), p_q = 1.000000 ≥ 0.05 → PASS
+- Q5: ΔM_Bagg,q = 0 → PASS (dead control holds; no RUN-INVALID)
+- Q6: (h) r_q = 1.0000001 ∈ [0.99,1.01] on both arms → PASS (delivery verified; no RUN-INVALID)
+- Baseline shifts: 0/10 quantized α=0 decisions differ from FP32.
+- No breaking-point trips. No apparatus-void. No RUN-INVALID.
+
+**Artifacts (Law #8):** `experiments/runs/EXP138_tgaint8/out/` — `exp138_records.json` (SHA-256 `58182baa22bb91739a37d3a5f3e0590e676709ab52ac6a6332c1531c044c735c`), `exp138_report.json`, `exp138_console.log`. Raw-record hash minted before any metric. Quantized weights discarded after the run.
+
+**Fence held:** execution only; no verdict interpretation. Next: independent verdict-review lane.
