@@ -1,0 +1,32 @@
+[09:17:44] torch 2.14.0+cpu | transformers pinned 5.17.0 | threads=2 | seed=136013
+[09:17:44] numpy 2.5.3
+[09:17:54] loading model EleutherAI/pythia-410m rev 9879c9b5f8bea9051dcb0e68dff21493d67e9d4f (eager)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<00:30,  9.40it/s]Loading weights:  25%|██▍       | 72/292 [00:00<00:00, 403.30it/s]Loading weights:  39%|███▊      | 113/292 [00:00<00:00, 270.35it/s]Loading weights:  49%|████▉     | 144/292 [00:00<00:00, 230.48it/s]Loading weights:  58%|█████▊    | 170/292 [00:00<00:00, 196.90it/s]Loading weights:  66%|██████▌   | 192/292 [00:00<00:00, 188.31it/s]Loading weights:  77%|███████▋  | 224/292 [00:01<00:00, 218.79it/s]Loading weights:  95%|█████████▌| 278/292 [00:01<00:00, 290.62it/s]Loading weights: 100%|██████████| 292/292 [00:01<00:00, 252.71it/s]
+[09:17:58] backbone pre-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[09:17:58] (a) Δθ=0 pre-hash PASS
+[09:17:58] L20 attention module: GPTNeoXAttention
+[09:17:58] (c) bench sha256=9be8162633fe19aa2a924440d8ba158c1cc4e734c1f2a554a01a27e459f47fc4
+[09:17:58] (c) bench pin PASS
+[09:17:58] span derivation: excluded=0
+[09:17:58] n = 60 included items
+[09:17:58] (b) archived B vector loaded: 60 items, acc=36/60
+[09:17:58] eager_attention_forward patched (module-global default path)
+[09:17:58] B pass: 60 items (eager, no hook)
+[09:17:58] captured w_base/o_base on item 0 (q=28, T=29)
+[09:18:41] (b) B-decision agreement 60/60 PASS (acc=36/60)
+[09:18:41] (h) Phase 1: T2 span-ablate hook delivery
+[09:18:41] (h) Phase 1 PASS: spanmass=0.00e+00 renorm=1.19e-07 L1=0.2241 dOut=2.13e+00
+[09:18:41] (h) Phase 2: T1 span-boost hook delivery
+[09:18:42] (h) Phase 2 PASS: L1=0.1634 spanmass 0.1937>0.1120 floor-ok renorm=1.19e-07 dOut=1.78e+00
+[09:18:42] (h) hook-delivery PASS on both hooks
+[09:18:42] T1 pass: 60 items
+[09:19:24] T2 pass: 60 items
+[09:20:06] C pass: 60 items
+[09:20:50] T1: flips=1/60 ΔM=0.0167 b=0 c=1 p=1.000000 (greater) acc=35/60 base=36/60
+[09:20:50] T2: flips=7/60 ΔM=0.1167 b=3 c=4 p=0.500000 (less) acc=35/60 base=36/60
+[09:20:50] C: flips=5/60 ΔM=0.0833 b=1 c=4 p=0.375000 (two-sided) acc=33/60 base=36/60
+[09:20:53] backbone post-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[09:20:53] (f) budget audit PASS: 242 forwards = 4*60 + 2
+[09:20:53] records sha256: 3475a4aa63c7b133a0542691542b1152f00e2d4ad9398f8e356170233e5513ae
+[09:20:53] EXP136 execution complete: exit 0

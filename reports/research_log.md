@@ -15231,3 +15231,18 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Judgment-call rulings (all SOUND, no amendments):** (1) (h)-extension over mass-gate — cleaner, routes the degenerate case through the existing RUN-INVALID path; (2) strict-increase + absolute floor over relative-ratio — a ratio is meaningless at ~0 base mass; (3) systematic T1 worsening → HELD — Law #4 bars licensing CONTINUE for an unpredicted direction; (4) the 1e-6 threshold — correctly sized (detached-copy gives bit-exact equality; real effects are orders of magnitude larger). Minor non-blocking note: the HELD "sub-significant" label is slightly imprecise for a significant-wrong-direction effect, but the §3.3 NOTE pre-registers the resolution explicitly.
 
 **Disposition:** the B4/ARI pre-registration is launch-ready pending the CEO launch decision. This lane made no edits (verification only).
+
+## LOG-4852 — EXP136 (B4/ARI) execution complete: raw results (2026-09-30)
+
+**Execution lane (CEO launch LOG-4852).** Executed exactly per `research/prereg/EXP136_PREREG_ARI_2026-09-30.md` (repaired, fix-verified PASS). $0 CPU (~4 min wall: 242 forwards at ~0.5s/fwd on 2 threads), venv `.venv-exp077` (torch 2.14.0+cpu, transformers 5.17.0, accelerate present), Pythia-410m rev `9879c9b5...`, `attn_implementation="eager"`, float32, `torch.manual_seed(136013)`.
+
+**Intervention mechanism (proven pre-run):** `eager_attention_forward` patched at the `modeling_gpt_neox` module-global default path (verified: "eager" not in `ALL_ATTENTION_FUNCTIONS` registry; 24/24 layer calls reach the patch; identity wrapper bit-exact vs unpatched). Reweighting applied post-softmax at L20, query row q_i only; modified weights returned so the (h) control observes the intervention directly. Smoke test pre-run: T2 span mass 0.0000, T1 boost direction correct, C uniform 4/29 exact.
+
+**All six guards PASS:** (a) Δθ=0 pre/post hash `ec276abe...` match; (b) B-decision agreement 60/60 vs archived EXP094 vector (acc 36/60); (c) bench pin `9be81626...` match, 0 span exclusions (all 60 satisfy 1≤E_i<N_i, E_i/N_i≤0.5, span excludes final token); (d) (h) hook-delivery PASS both phases — Phase 1 (T2): span mass 0.00e+00 < 1e-6, renorm 1.19e-07, L1 0.2241, ‖o−o_base‖ 2.13; Phase 2 (T1): L1 0.1634, span mass 0.1937 > 0.1120 base, floor 1e-3 ok, ‖o−o_base‖ 1.78; (e) per-forward renormalization/finiteness asserted inside the patch; (f) budget 242 = 4×60 + 2.
+
+**Raw results (no interpretation — verdict lane decides):**
+- T1 (span-boost ×3): flips 1/60, ΔM = 0.0167, b = 0, c = 1, McNemar one-sided (b>c) p = 1.000000; acc 35/60 vs base 36/60.
+- T2 (span-ablate): flips 7/60, ΔM = 0.1167, b = 3, c = 4, McNemar one-sided (c>b) p = 0.500000; acc 35/60 vs base 36/60.
+- C (uniform-reweight): flips 5/60, ΔM = 0.0833, b = 1, c = 4, McNemar two-sided p = 0.375000; acc 33/60 vs base 36/60.
+
+**Artifacts:** `experiments/runs/EXP136_ari/out/` — `exp136_per_item.csv` (60 rows), `exp136_records.json` (sha256 `3475a4aa63c7b133a0542691542b1152f00e2d4ad9398f8e356170233e5513ae`), `exp136_run_log.txt`, `exp136_stdout.log`, `exp136_verdict.json` ("RAW"). Executor: `run_exp136.py`. No breaking-point trips; exit 0. Single-lane fence held: execution only, no verdict.
