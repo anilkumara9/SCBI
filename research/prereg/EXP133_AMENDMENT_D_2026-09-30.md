@@ -45,9 +45,12 @@ EXP131's KILL are both RUN-INVALID (apparatus defect); both hypotheses are UNTES
    propagate downstream. Hence `hidden_states[20]` is blind while `hidden_states[21]+`
    move.
 4. In transformers ≤5.0 the hidden states were collected **inline** in the model
-   forward **after** hook application, so the hook-modified value was captured and
-   the tap saw the injection. The 5.0.0 → 5.17.0 upgrade (done to restore the
-   LOG-331 weights pin) silently changed capture from post-hook to pre-hook —
+   forward **after** hook application [INTERPRETATION — 5.0 source not installed
+   here; narrative color, not load-bearing: tap semantics under 5.17.0 are
+   established independently from the 5.17.0 source and the delivery probe],
+   so the hook-modified value was captured and the tap saw the injection. The
+   5.0.0 → 5.17.0 upgrade (done to restore the LOG-331 weights pin) changed
+   capture from post-hook to pre-hook [FACT — verified from 5.17.0 source] —
    a library-version migration shifting activation-capture semantics with no
    guard observing it.
 
