@@ -265,6 +265,33 @@ def main():
     assert B > 0 and math.isfinite(B)
     log("budget B = 0.01 * median||y20|| = %.8f  (recorded BEFORE first injection forward)" % B)
 
+    # ---------------- 5b. breaking point (h): readout-sensitivity positive control (Amendment HOOKFIX 2026-09-30) ----------------
+    # Runs after the base pass and BEFORE the first injection forward. Verifies the
+    # injection hook (prepend=True) delivers to the readout tap on this library version.
+    # tap_base is the already-recorded base state of the first bench prompt (no extra forward).
+    tap_base_h = base_states[0].detach()
+    g_probe = torch.Generator(device=device).manual_seed(20260930)
+    delta_probe = torch.randn(tap_base_h.shape, generator=g_probe, dtype=torch.float32, device=device)
+    delta_probe = delta_probe * (16.0 / float(delta_probe.norm().item()))  # ||delta_probe|| = 16.0
+    def probe_hook_fn(_m, _inp, outp):
+        o = outp.clone()
+        o[:, -1, :] = o[:, -1, :] + delta_probe
+        return o
+    h_probe = layers[19].register_forward_hook(probe_hook_fn, prepend=True)
+    try:
+        with torch.no_grad():
+            out_probe = model(input_ids=input_ids_list[0], output_hidden_states=True)
+    finally:
+        h_probe.remove()
+    tap_inj_h = out_probe.hidden_states[SITE][0, -1, :].detach().cpu()
+    r_probe = float((tap_inj_h - tap_base_h).norm().item()) / float(delta_probe.norm().item())
+    log("breaking point (h): readout-sensitivity positive control r = %.7f (must be in [0.99, 1.01])" % r_probe)
+    if not (0.99 <= r_probe <= 1.01):
+        log("apparatus-void: readout-sensitivity positive control failed (r=%.7f not in [0.99,1.01]) — injection not reaching the readout tap." % r_probe)
+        sys.exit(44)
+    log("breaking point (h) PASS: injection reaches the readout tap (r=%.7f)." % r_probe)
+    del delta_probe, out_probe, tap_inj_h, tap_base_h  # the probe is a control, not a dose; discarded
+
     # ---------------- 6. option embeddings (fresh forwards, no injection) + single-token assert ----------------
     option_embs = {}
     for pi, p in enumerate(prompts):
@@ -447,7 +474,7 @@ def main():
             o = outp.clone()
             o[:, -1, :] = o[:, -1, :] + delta
             return o
-        h_inj = layers[19].register_forward_hook(hook_fn)  # input of block 20
+        h_inj = layers[19].register_forward_hook(hook_fn, prepend=True)  # input of block 20; prepend: fire before the @capture_outputs snapshot hook (Amendment HOOKFIX 2026-09-30)
         try:
             with torch.no_grad():
                 out = model(input_ids=input_ids, output_hidden_states=True)
