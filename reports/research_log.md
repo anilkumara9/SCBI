@@ -15268,3 +15268,17 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Honest reading carried into the board (Law #11):** the flips are symmetric noise, not a lurking signal — inconclusive by the registered bars, not a near-miss. Licenses nothing, kills nothing, fences nothing. The routing-around hypothesis is neither confirmed nor dead; this test of its constructive half returned no directional signal in either arm. Second binding HELD on the board (EXP112 the first, bench-1-specific).
 
 **The day's tally, honestly: four CONTINUEs (EXP111 — bound, reclassified; EXP120 — bound, qualified, reclassified; EXP122 — bound, reclassified; EXP127 — bound), two HELDs (EXP112 — bound, bench-1-specific; EXP136 — bound, sub-significant), one apparatus CONTINUE (EXP113 — bound), eight KILLs (EXP107, EXP114, EXP125, EXP126, EXP129, EXP131, EXP133, EXP135 — all bound), one pre-launch KILL/REJECT (EXP130 — bound at review, never executed), TWELVE RUN-INVALIDs (EXP108, EXP109, EXP115, EXP116, EXP117, EXP118, EXP119, EXP121, EXP123, EXP124, EXP128, EXP132 — all bound), one precision certification (EXP110 — bound), zero IN-FLIGHT.** **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.** No literature re-check this cycle (next due 2026-10-23).
+
+## LOG-4855 — B3/TGA-DECODE pre-registration DRAFT delivered (2026-09-30)
+
+**Staleness re-diff FIRST (LOG-4834/4838 lesson): CLEAN.** Full-log grep for any executed 1-NN (or any) decode on v̂₁-projected or TGA-direction-projected embeddings — zero hits. EXP127 measured v̂₁ (amplification R=8.24×) but never decoded it; the log's 1-NN decodes (EXP092, S5-3) never touched v̂₁; no EXP137/138 mentions exist. E-validity of the bet confirmed unexecuted.
+
+**The bet:** does the TGA leading direction carry task-*decodable* information — a different claim class (decodability vs causality) from the EXP131/133 injection kills. 1-NN LOO on v̂₁-projected archived embeddings, EXP092's licensed protocol. $0 CPU, ~15 min, zero new forwards.
+
+**Drafting corrections (caught here, not by review):** (1) projection space is archived `layers[19]` (= hidden_states[20] = input of block 20 = v̂₁'s native space), NOT `layers[20]` — derived from EXP127's executor and EXP092's extraction indexing; the highest-stakes detail in the draft. (2) Canonical v̂₁ = sign-aligned mean of the 10 archived per-prompt v̂₁'s, licensed by measured mutual |cosine| ∈ [0.9956, 0.9996] (mean 0.9973) — the direction is prompt-invariant; 1-NN on 1-D projections is sign-invariant so residual sign ambiguity is decision-irrelevant. (3) B=10,000 permutations (not 1,000) — the p<0.00208 CONTINUE bar needs headroom below it.
+
+**Decision table:** CONTINUE ⟺ 1-NN ≥15% AND stratified permutation p<0.00208 (the EXP092 family-wise bar, deliberately stricter than single-test 0.05 — flagged for review); KILL ⟺ ≤8% → the TGA story closes completely (exists/carries nothing/moves nothing); HELD ⟺ middle zone; RUN-INVALID ⟺ 7 breaking points (archive hashes, v̂₁ coherence ≥0.99, bench alignment, degeneracy, ties, label count).
+
+**Non-resurrection (Law #4):** EXP131/133 killed causal claims; B3 tests decodability — different claim class under the Decodability Gap dissociation. EXP092 decoded full-layer embeddings, never v̂₁ projections. S5-3 fenced semantic/static directions, not v̂₁.
+
+**Draft:** `research/prereg/EXP137_PREREG_TGADECODE_2026-09-30.md` (DRAFT, licenses nothing, EXP137 provisional). Next: independent Law #14 review.
