@@ -19,9 +19,9 @@
    "n": 0,
    "p_one_sided": 1.0
   },
-  "rank_trend_hits": 10,
+  "rank_trend_hits": 7,
   "rank_trend_bar": 8,
-  "rank_trend": true,
+  "rank_trend": false,
   "best_random_arm": "geo_rand0",
   "random_flips": {
    "geo_rand0": 0,
@@ -49,7 +49,7 @@
   "bagg_reconstruction": "d3556d83751634a2fc5114d56c4ee246bb1b296293d2adcde40a369da1600ae1",
   "bench": "e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5"
  },
- "records_pin": "5078f518bf21cd82c4e194711f35b212e1d64946c7013381e648461b0388442e",
+ "records_pin": "6174f6d3029aae1b7a8c60c195d03c0bf1f3fdb3ef949426e1693b0836f092f3",
  "env": {
   "torch": "2.14.0+cpu",
   "transformers": "5.17.0",
