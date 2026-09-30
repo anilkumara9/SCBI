@@ -15434,3 +15434,15 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Capability scoreboard: unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero — now with the TGA boundary precision-certified as boundary science.** Zero IN-FLIGHT. No literature re-check this cycle (next due 2026-10-23).
 
 **Edits:** §3.1 EXP138 row added (bound); §0 at-a-glance steering row updated (TGA story → exists/carries-nothing/moves-nothing/precision-certified); v3.15 delta paragraph added; §5 changelog v3.15 entry added.
+
+## LOG-4867 — 2026-09-30 — README refreshed to scoreboard v3.15 (README-refresh lane)
+
+**What:** Part VII ("The honest scoreboard") updated from v3.11 to v3.15. No other section touched; no restructuring; no new claims.
+
+**Tallies (v3.15, single source of truth):** 9 binding KILLs (EXP107, EXP114, EXP125, EXP126, EXP129, EXP131, EXP133, EXP135, EXP137); 4 CONTINUEs (EXP111, EXP120, EXP122, EXP127 — three-bench decodability CONTINUEs reclassified as domain-set-detector correlations) + 1 apparatus CONTINUE (EXP113); 2 HELDs (EXP112, EXP136); 1 pre-launch REJECT (EXP130); 12 RUN-INVALIDs; 2 precision certifications (EXP110, EXP138); capability scoreboard zero; zero in flight.
+
+**New verdicts summarized (terse):** EXP135 KILL — G/E/S selection architecture retired (ρ̄* = −0.0042, signed label-free evaluator at chance); EXP136 HELD — attention-routing intervention, symmetric noise, nothing moved; EXP137 KILL — TGA decodability null (1-NN 2/60 = 3.33% vs 5% chance); EXP138 CERTIFIED — TGA nulls reproduce under weight-only INT8 fake-quantization (all six tiers PASS, 0/10 α=0 baseline shifts).
+
+**TGA story one-liner:** exists (EXP127) / carries nothing (EXP137) / moves nothing (EXP131+133) / precision-certified (EXP138).
+
+**File:** `README.md` (Part VII only, edited in place; uncommitted per convention — CEO commits).

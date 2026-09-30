@@ -233,11 +233,11 @@ Each phase is gated by pre-registered statistics and binding independent review.
 
 ---
 
-# Part VII — The honest scoreboard (v3.11, 2026-09-30)
+# Part VII — The honest scoreboard (v3.15, 2026-09-30)
 
 We track SCBI against the industry frontier on the same axes (`research/benchmarks/FRONTIER_SCOREBOARD.md`). The frontier holds verified numbers — ∇-Reasoner 80.4% on MATH-500, Meta-Reasoner +9–12% at −28–35% inference time, LatentMAS +14.6%, ToT 4%→74%, Self-consistency +17.9pp, ITI +32.6pp. **SCBI holds zero capability entries.** Our lead is boundary science, and the only axis where the frontier is also at zero — label-free autonomous steering — is the one race we can still win.
 
-The current tally: **seven binding KILLs** (EXP107, EXP114, EXP125, EXP126, EXP129, EXP131, EXP133), **twelve RUN-INVALIDs**, zero in flight. Both the one-shot and the multistep steering branches are closed with delivery-verified nulls — the GEOSTEER escalation branch is retired. The board says so openly; beating it requires powered N≈100+ evidence, an order of magnitude beyond anything produced to date.
+The current tally: **nine binding KILLs** (EXP107, EXP114, EXP125, EXP126, EXP129, EXP131, EXP133, EXP135, EXP137), **four CONTINUEs** (EXP111, EXP120, EXP122, EXP127 — the three-bench decodability CONTINUEs reclassified as domain-set-detector correlations) plus **one apparatus CONTINUE** (EXP113), **two HELDs** (EXP112, EXP136), **one pre-launch REJECT** (EXP130), **twelve RUN-INVALIDs**, and **two precision certifications** (EXP110, EXP138), zero in flight. The sprint's four new verdicts: EXP135 KILLed the G/E/S selection architecture (label-free evaluator ranks the known-causal bridge at chance, ρ̄\* = −0.0042); EXP136 HELD on attention-routing intervention (symmetric noise — nothing moved); EXP137 KILLed TGA decodability (1-NN 2/60 = 3.33% vs 5% chance); EXP138 precision-certified the TGA nulls under weight-only INT8 fake-quantization (all six tiers PASS, 0/10 α=0 baseline shifts). The TGA story now reads: exists (EXP127) / carries nothing (EXP137) / moves nothing (EXP131+133) / precision-certified (EXP138). Both the one-shot and the multistep steering branches remain closed with delivery-verified nulls — the GEOSTEER escalation branch is retired. The board says so openly; beating it requires powered N≈100+ evidence, an order of magnitude beyond anything produced to date.
 
 ---
 
