@@ -265,6 +265,18 @@ def main():
     assert B > 0 and math.isfinite(B)
     log("budget B = 0.01 * median||y20|| = %.8f  (recorded BEFORE first injection forward)" % B)
 
+    # ---------------- 5a. breaking point (d2): budget drift-detector (Amendment F 2026-09-30) ----------------
+    # Compares the runtime-computed B against the GPU-registered verbatim budget 0.50578119
+    # (Kaggle report, LOG-4766). Runs after budget computation and BEFORE the first injection
+    # forward (ahead of section 5b (h)). Miss -> apparatus-void, exit 44, zero decision forwards.
+    _B_GPU_REF = 0.50578119
+    _d2_rel = abs(B - _B_GPU_REF) / _B_GPU_REF
+    log("breaking point (d2): budget drift-detector |B_cpu-0.50578119|/0.50578119 = %.3e (must be <= 1e-4)" % _d2_rel)
+    if not (_d2_rel <= 1e-4):
+        log("apparatus-void: budget drift-detector failed (|B_cpu-0.50578119|/0.50578119 = %.3e not <= 1e-4) -- cross-device budget drift." % _d2_rel)
+        sys.exit(44)
+    log("breaking point (d2) PASS: budget drift within band (rel = %.3e)." % _d2_rel)
+
     # ---------------- 5b. breaking point (h): readout-sensitivity positive control (Amendment HOOKFIX 2026-09-30) ----------------
     # Runs after the base pass and BEFORE the first injection forward. Verifies the
     # injection hook (prepend=True) delivers to the readout tap on this library version.

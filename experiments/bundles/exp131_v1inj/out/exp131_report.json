@@ -1,0 +1,51 @@
+{
+ "experiment": "EXP131",
+ "verdict": "KILL",
+ "reason": "decision-orthogonal amplifier: c_hat=0.0374 < 0.1",
+ "metrics": {
+  "median_r": 0.5591674452378468,
+  "r_per_item": [
+   1.2040767605331342,
+   0.7159586226251881,
+   1.0444556605675401,
+   0.29111958972332047,
+   1.5740860194477062,
+   0.28886175072434467,
+   1.030890511820031,
+   0.4023762678505055,
+   0.3006161819185844,
+   0.16842762563936073
+  ],
+  "dm_v1": 0,
+  "best_random_arm": 0,
+  "random_flips": {
+   "0": 0,
+   "1": 0,
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 0,
+   "6": 0,
+   "7": 0
+  },
+  "mcnemar_b": 0,
+  "mcnemar_c": 0,
+  "mcnemar_n": 0,
+  "mcnemar_p_onesided": 1.0,
+  "rank_trend_hits": 4,
+  "rank_trend": false,
+  "c_hat_mean": 0.03741588660651928,
+  "c_hat_exclusions": [],
+  "dm_bagg": 0,
+  "budget_B": 0.505783634185791
+ },
+ "records_pin": "867b123f0afadf335af5c2e2bcec3c274993b70157067aa1c88989e525ef581f",
+ "env": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "device": "cpu",
+  "cuda": null,
+  "smoke": false
+ }
+}
