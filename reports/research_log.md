@@ -15282,3 +15282,19 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Non-resurrection (Law #4):** EXP131/133 killed causal claims; B3 tests decodability — different claim class under the Decodability Gap dissociation. EXP092 decoded full-layer embeddings, never v̂₁ projections. S5-3 fenced semantic/static directions, not v̂₁.
 
 **Draft:** `research/prereg/EXP137_PREREG_TGADECODE_2026-09-30.md` (DRAFT, licenses nothing, EXP137 provisional). Next: independent Law #14 review.
+
+## LOG-4856 — Independent Law #14 review of B3/TGA-DECODE pre-registration: SIGN (2026-09-30)
+
+**Verdict: SIGN** — the draft is launch-ready pending the CEO launch decision. No required fixes; three non-blocking advisories (A1–A3). Review: `research/reviews/LAW14_REVIEW_EXP137_TGADECODE_PREREG_2026-09-30.md`. This lane made no edits (review only, per the single-lane fence).
+
+**Highest-stakes verification — the layers[19] derivation: CORRECT.** Independently re-derived from the primary executor sources (not the draft's account): EXP127's `power_iteration` computes JVP-then-VJP (power iteration on M^T M), so v̂₁ is the leading *input* singular vector living in `hs[20]` = input of block 20; EXP092's archive has `layers[l]` = `hidden_states[l+1]` = output of block l; input of block 20 = output of block 19 = archived `layers[19]`. The transformers-5.x `hs[24]` quirk does not affect `hs[20]`. Projecting onto `layers[20]` would test an unlicensed subspace.
+
+**Every pinned constant re-measured and matched:** A1 SHA-256 `9b527c…13dc` exact; A2 SHA-256 `9219bd…95fae` exact; mutual |cosine| of the 10 v̂₁'s = [0.9956, 0.9996], mean 0.9973 — exactly the draft's claim; sign-aligned mean norm 0.9988; strata (16/14/14/16) match EXP092 §4's table; 20 unique labels; seeds 137001/137002 unused; 1-NN sign-invariance confirmed empirically.
+
+**Decision table:** exact, exhaustive, disjoint over (a, p). The p < 0.00208 bar (EXP092's family-wise bar, deliberately stricter than single-test 0.05) was challenged and upheld: it cannot manufacture a KILL (KILL involves no p-value), CONTINUE remains reachable for genuine signals (B=10,000 resolves to ~0.0001), and the accuracy conjunct (≥15% = 3× chance) guards against significant-but-trivial findings.
+
+**Breaking points:** all 7 sound — no missing trip, no over-strict trip. S2 random-direction controls adequate (unit-norm vs unit-norm; non-binding). Worth-it gate holds all 7 points. Law #4 non-resurrection sound (decodability ≠ causality; staleness re-diff clean).
+
+**Advisories:** A1 — NaN/Inf guard not explicit (negligible risk; suggested one-line assert). A2 — the (d) spot check should specify deterministic spot-id selection. A3 — the Fano's-inequality license claim (§5.4) is slightly imprecise (accuracy *yields* the MI bound rather than *being* it); mechanics unaffected.
+
+**Next in the launch chain:** CEO launch decision → execution under minted EXP137.
