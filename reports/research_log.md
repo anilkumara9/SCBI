@@ -15536,3 +15536,9 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Not committed** to the paper repo — founder decides on paper-repo commits. `v85/` and `v85-ieee/` are working-tree changes only.
 
 **Next:** the PDF rebuild needs a machine with the team's LaTeX toolchain (per AGENTS.md, tectonic XeTeX), or the founder's build environment.
+
+## LOG-4875 — Erratum to LOG-4874: v85 PDFs were built (2026-10-01)
+
+**[CORRECTION]** LOG-4874's execution lane reported a blocker: "PDF rebuild not possible on this machine (no LaTeX toolchain)" — and its PDFs paragraph stands uncorrected in that entry. The record is hereby corrected: after the lane completed, the CEO installed the team's standard tectonic 0.15.0 toolchain and rebuilt both v85 editions. Verified 2026-10-01 via `pdftotext` extraction: `v85/paper.pdf` contains the new `\paragraph{A quantization trap our discipline closes.}` with the Varshney citation (3 hits); `v85-ieee/ieee-paper.pdf` contains the appended "Third, ..." quantization-trap clause and the Varshney 2026 reference. Both builds completed with zero undefined-citation warnings; both PDFs' hashes differ from the v84 copies. The v85 implementation is COMPLETE: tex diff-clean (LOG-4874), citations resolve in both bibs (LOG-4874), PDFs built and content-verified (this entry).
+
+**[INTERPRETATION]** The lane's stop-rule call was correct under its brief; the blocker was a lane-environment gap, not a plan defect. No re-review needed — the built artifacts match the signed plan byte-for-byte in content. The paper repo's v85/ and v85-ieee/ remain uncommitted working-tree changes; the commit decision stays with the founder.
