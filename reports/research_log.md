@@ -15306,3 +15306,13 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Apparatus checks (all PASS, zero breaking-point trips):** A1 SHA-256 `9b527c…13dc` exact, 10 `v1__` keys; v̂₁ coherence mean |cosine| = 0.9973 (min 0.9956) ≥ 0.99 — matches the draft's drafting-time measurement exactly; A2 SHA-256 `9219bd…95fae` exact, layers (24, 60, 1024); strata (16/14/14/16) exact; 60 ids == rebuilt EXP092-B bench id set (pin `9be816…` recomputed exact); 20 unique labels; scalars finite (A1 advisory assert applied); variance > 0; zero exact 1-NN ties.
 
 **Raw results (no verdict — independent review lane next):** primary 1-NN LOO on v̂₁-projected `layers[19]` scalars = **2/60 = 0.0333**; stratified permutation (B=10,000, seed stream 137001) **p = 0.5901** (n_ge = 5901, q95 = 0.0833, null mean 0.0355). Secondary (non-binding): S1 full-vector 1-NN at layers[19] = 0.1667; S2 8 random-direction 1-D controls = [0.0667, 0.0667, 0.0, 0.0167, 0.0, 0.0333, 0.0333, 0.0167].
+
+## LOG-4858 — Independent verdict review of EXP137 (B3/TGA-DECODE): binding KILL (2026-09-30)
+
+**Lane:** independent verdict review (did not draft, review, or execute). Sources: signed pre-reg (Law #14 SIGN LOG-4856, no fixes), `experiments/runs/EXP137_tgadecode/out/exp137_report.json` (raw), LOG-4857 (execution record).
+
+**Independent recomputation [OBSERVATION]:** 1-NN LOO accuracy derived from raw per-item records = **2/60 = 0.0333** (flagged indices 14, 24 consistent; no undercount). Permutation p = (1+5901)/(1+10000) = **0.5901**, observation at the null center (null mean 0.0355); the 2/60 sits *below* the 5% chance rate. All 7 breaking points untripped (apparatus sound — LOG-4857 confirms each check). S2: v̂₁'s 0.0333 is inside the random-direction spread [0.0–0.0667], tied at the mode (rank 3/9); S1 full-vector 0.1667 speaks to the space, not the channel (non-binding per pre-reg).
+
+**Decision-table application (binding §4):** CONTINUE requires a ≥ 0.15 AND p < 0.00208 (fails); **KILL requires a ≤ 0.08 — fires (0.0333 ≤ 0.08)**; HELD and RUN-INVALID do not fire. Bars disjoint and exhaustive; no post-hoc re-binning (Law #4).
+
+**Binding verdict: KILL** — "the TGA channel carries no task information above the null ceiling." The TGA story closes completely: exists (EXP127) / carries nothing (this) / moves nothing (EXP131/133). Review: `research/reviews/VERDICTREVIEW_EXP137_2026-09-30.md`. Single-lane fence held (verdict only).
