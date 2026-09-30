@@ -15357,3 +15357,15 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **A2 (advisory):** require the execution worksheet to record the quantized-copy presentation mechanism (EXP110's pre-reg required this; Law #13).
 
 **Review file:** `research/reviews/LAW14_REVIEW_EXP138_TGAINT8_PREREG_2026-09-30.md`. Single-lane fence held: review only, no edits. Next: repair lane for F1 (+ byte-check against this review), then CEO launch decision.
+
+## LOG-4862 — B5/TGA-INT8 pre-reg repair: F1 + A1 + A2 applied (2026-09-30)
+
+**Repair lane** (LOG-4862 pre-assigned; independent of the LOG-4860 drafting and LOG-4861 review lanes). $0 CPU, paper only. Single-lane fence held: repairs only, no execution, EXP138 still provisional.
+
+**F1 (required) — randoms' provenance pinned (Law #13).** §3.3 step 5 now states the 8 matched-norm randoms are re-derived verbatim from EXP131's pinned generation scheme: `torch.Generator()` (CPU), per-prompt `manual_seed(20260929_4724 + pi*100)` (pi = prompt index 0–9), drawing rand0–rand7 in order via `torch.randn(H)`, unit-normalized then scaled to norm budget B — identical random directions to EXP131's records (records SHA-256 `867b123f…f581f`, verified against the bundle's `out/exp131_records.json`); no new randomness introduced. Choice rationale: re-derivation (not fresh draws) is the cleaner option — it keeps the quantized run's random arms identical to EXP131's, maximizing comparability, and the scheme is fully pinned in EXP131's runner (the vectors were never stored as such; the records hold labels + outcomes). Decision table, tiers, hypothesis untouched.
+
+**A1 (advisory) — baseline-shift bound into the CERTIFIED paper statement.** §4 now carries the licensed template: *"The TGA injection nulls (EXP131 ĉ < 0.1, ΔM_v1 = 0; EXP133 ΔM_geo = 0) reproduce under weight-only INT8 fake-quantization; X/10 quantized-baseline decisions shifted vs FP32 at α = 0, and the injection nulls reproduce against the quantized baseline."* A large α = 0 shift with CERTIFIED cannot be stated without the X/10 magnitude — the over-general reading is fenced.
+
+**A2 (advisory) — quantized-copy presentation mechanism.** §3.3 step 2 now requires the execution worksheet to record the presentation mechanism (in-memory `state_dict` swap vs saved-to-local-directory as model-id), per EXP110's pre-reg precedent (Law #13).
+
+**Repaired file:** `research/prereg/EXP138_PREREG_TGAINT8_2026-09-30.md` (edited in place). Next: byte-check fix-verification against the LOG-4861 review, then CEO launch decision.
