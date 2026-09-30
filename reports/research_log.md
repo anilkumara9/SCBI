@@ -15093,3 +15093,22 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Judgment flagged for fix-verification:** the §3.7(e) degeneracy guard still reads "≥30/60 items" — with e>0 exclusions the denominator is ambiguous (≥30 items of n?). Left untouched as outside F1–F6; reviewer should rule whether to parameterize as ≥n/2.
 
 **Continuity:** LOG-4840 confirmed max before append; 4840→4841. Uncommitted per convention — CEO commits.
+
+## LOG-4842 — B2/EVAL pre-reg fix-verification: PASS-WITH-AMENDMENT (2026-09-30)
+
+**Fix-verification lane (CEO pre-assigned, independent of draft and repair). Artifact:** `research/prereg/EXP135_PREREG_EVAL_2026-09-30.md` (repaired). **Against:** the LOG-4840 review (F1–F6, A1–A2). **Report:** `research/reviews/LAW14_FIXVERIFY_EXP135_EVAL_2026-09-30.md`.
+
+**Per-fix verdicts (all PASS, byte-verified):**
+- **F1:** score-rank ties now broken by seeded-random permutation from `np.random.default_rng(135033)` (§3.5); the spec's tie-break correctly scoped to the loop's selection step only; 135033 distinct from all other seeds. The false-CONTINUE defect is closed (E[ρ\*_i]=0 under H0 regardless of degeneracy).
+- **F2:** n=60−e parameterizes the endpoint ((1/n)Σ), the permutation null (n uniforms/replicate), and the budget (50n+750+N_g; 3,751 at n=60). No hardcoded 3,750 or (1/60) remain.
+- **F3:** (g) fully specified — N_g=1, ‖δ_probe‖=16.0, layer 20, answer position, after the base pass / before the first intervention forward, counted in the (f) budget.
+- **F4:** seed-stream table present; all new-style Generator seeds distinct (135008/135033/135031/20260930); the 135031 triple-use spans provably independent RNG subsystems (torch global, numpy legacy, numpy new-style) and is explicitly documented; (g) moved off the colliding 135008 to 20260930.
+- **F5:** "probe-decodability delta" has zero matches in the draft — fully removed, Law #7 risk eliminated.
+- **F6:** new §3.7(h) inertness gate — >1% pair-flips per fresh random (⌈0.01·5n⌉; 3/300 at n=60) → RUN-INVALID, exit 44; the (f) cache records full ŷ decisions. The false-KILL asymmetry is fenced.
+- **A1:** λ_c=0.7 = spec-grid midpoint (EXP068 never ran) — honest. **A2:** α=0.5 quoted (LOG-128 C8), executor-asserted.
+
+**The flagged judgment — ruled:** §3.7(e) still reads "≥30/60 items". With e>0 exclusions the denominator is ambiguous (30/54 = 55.6% at max e vs the 50% intent). **Ruling: parameterize as ≥n/2 included items (≥30 at n=60)** — the F2 principle (item-count-dependent quantities use n) applies. One-line clarification, no scientific change; correctly outside the F1–F6 scope.
+
+**Overall: PASS-WITH-AMENDMENT.** All 8 items correctly applied; decision bars, hypothesis, §3.5 derivation, and worth-it gate untouched. Upon the one-line (e) amendment, the pre-registration is launch-ready pending the CEO launch decision. This lane made no edits (verification only); the amendment needs a repair lane + byte-check.
+
+**Continuity:** LOG-4841 confirmed max before append; 4841→4842. Uncommitted per convention — CEO commits.
