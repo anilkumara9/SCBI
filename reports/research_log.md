@@ -15298,3 +15298,11 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Advisories:** A1 — NaN/Inf guard not explicit (negligible risk; suggested one-line assert). A2 — the (d) spot check should specify deterministic spot-id selection. A3 — the Fano's-inequality license claim (§5.4) is slightly imprecise (accuracy *yields* the MI bound rather than *being* it); mechanics unaffected.
 
 **Next in the launch chain:** CEO launch decision → execution under minted EXP137.
+
+## LOG-4857 — EXP137 (B3/TGA-DECODE) execution complete (2026-09-30)
+
+**Execution lane (CEO launch, pre-reg signed, Law #14 SIGN LOG-4856).** $0 CPU, ~1s wall time, zero new forwards — two npz loads as registered. Run directory: `experiments/runs/EXP137_tgadecode/` (executor `run_exp137.py`, pre-reg + review archived, `out/exp137_report.json`).
+
+**Apparatus checks (all PASS, zero breaking-point trips):** A1 SHA-256 `9b527c…13dc` exact, 10 `v1__` keys; v̂₁ coherence mean |cosine| = 0.9973 (min 0.9956) ≥ 0.99 — matches the draft's drafting-time measurement exactly; A2 SHA-256 `9219bd…95fae` exact, layers (24, 60, 1024); strata (16/14/14/16) exact; 60 ids == rebuilt EXP092-B bench id set (pin `9be816…` recomputed exact); 20 unique labels; scalars finite (A1 advisory assert applied); variance > 0; zero exact 1-NN ties.
+
+**Raw results (no verdict — independent review lane next):** primary 1-NN LOO on v̂₁-projected `layers[19]` scalars = **2/60 = 0.0333**; stratified permutation (B=10,000, seed stream 137001) **p = 0.5901** (n_ge = 5901, q95 = 0.0833, null mean 0.0355). Secondary (non-binding): S1 full-vector 1-NN at layers[19] = 0.1667; S2 8 random-direction 1-D controls = [0.0667, 0.0667, 0.0, 0.0167, 0.0, 0.0333, 0.0333, 0.0167].
