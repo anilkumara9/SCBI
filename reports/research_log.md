@@ -15316,3 +15316,18 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Decision-table application (binding §4):** CONTINUE requires a ≥ 0.15 AND p < 0.00208 (fails); **KILL requires a ≤ 0.08 — fires (0.0333 ≤ 0.08)**; HELD and RUN-INVALID do not fire. Bars disjoint and exhaustive; no post-hoc re-binning (Law #4).
 
 **Binding verdict: KILL** — "the TGA channel carries no task information above the null ceiling." The TGA story closes completely: exists (EXP127) / carries nothing (this) / moves nothing (EXP131/133). Review: `research/reviews/VERDICTREVIEW_EXP137_2026-09-30.md`. Single-lane fence held (verdict only).
+
+## LOG-4859 — Scoreboard v3.13 → v3.14 sync: EXP137 binding KILL plotted (2026-09-30)
+
+**Lane:** benchmark-analyst (scoreboard-sync, $0 CPU, paper only). Read v3.13, LOG-4857 (execution), LOG-4858 (verdict), and `research/reviews/VERDICTREVIEW_EXP137_2026-09-30.md` before editing. No protocols touched, no experiments launched.
+
+**Changes (5 edits, all verified against the sources):**
+1. §0 at-a-glance label-free steering row: EXP137 KILL plotted; the TGA three-part closure stated — exists (EXP127 CONTINUE) / carries nothing (EXP137 KILL) / moves nothing (EXP131 + EXP133 KILLs).
+2. §3.1: EXP137 row added (bound) — primary 2/60 = 0.0333 ≤ 0.08, p = 0.5901, all 7 breaking points untripped, $0 CPU, zero new forwards.
+3. §3.2 H28 paragraph: v3.14 UPDATE appended — the TGA program is complete; no licensed TGA downstream remains.
+4. v3.14 delta added (newest-first, before v3.12).
+5. Version history: v3.14 entry added.
+
+**Tally after sync:** nine binding KILLs (EXP107, EXP114, EXP125, EXP126, EXP129, EXP131, EXP133, EXP135, EXP137 — all bound); four CONTINUEs (EXP111/120/122 reclassified domain-set-detector correlations; EXP127 bound); two HELDs (EXP112, EXP136); one apparatus CONTINUE (EXP113); one pre-launch KILL/REJECT (EXP130); twelve RUN-INVALIDs; one precision certification (EXP110); zero in-flight. Capability scoreboard unchanged — still zero positive signals for autonomous steering; the label-free race stays tied at zero.
+
+**Honest note:** v3.14 closes a chapter, not a program. The TGA line — the dynamics paradigm's first and so far only licensed channel — is now fully mapped as boundary science. The summit path needs a new channel, not a TGA re-read (Law #4).
