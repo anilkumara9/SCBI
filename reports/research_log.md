@@ -15142,3 +15142,23 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Artifacts** (`experiments/runs/EXP135_eval/out/`): `exp135_report.json` (`9b770386…`), `exp135_records.json` (`b12125af…`, per (candidate,item,view) ŷ+margins + unintervened cache), `exp135_per_item.csv` (`fe88cfb2…`, 60-row per-item k/ρ* table), `exp135_run_log.txt` (`67d21ed1…`), `exp135_checkpoint.json`.
 
 **Continuity:** LOG-4843 was CEO pre-assigned to this lane; appended after 4844/4845 (push records) per the pre-assignment. Uncommitted per convention — CEO commits.
+
+## LOG-4846 — EXP135 (B2/EVAL) independent verdict review: binding KILL (2026-09-30)
+
+**Independent verdict-review lane (CEO pre-assigned; single-lane fence: verdict only — this lane did not draft, repair, or execute).** Review: `research/reviews/VERDICTREVIEW_EXP135_2026-09-30.md`.
+
+**Independent recomputation (from `exp135_per_item.csv`, not the report JSON):** ρ̄\* = **−0.0041667** (report: −0.0042 ✓); mean bridge score-rank **5.017** of 9 (report: 5.02 ✓); k-distribution {1:3, 2:8, 3:11, 4:6, 5:8, 6:7, 7:3, 8:4, 9:10} exact match; ρ\*_i = (5−k_i)/4 mapping exact on all 60 rows. Permutation p-value sanity-checked by independent Monte Carlo (p ≈ 0.529 vs reported 0.530275).
+
+**Guards (all 8 verified from raw artifacts):** (a) Δθ=0 pre=post=`ec276abe…e0ed` ✓; (b) bridge re-derived from licensed recipe, α=0.5 ✓; (c) bench 60/60, sha256 match ✓; (d) 0 exclusions ✓; (e) degeneracy **29/60 < 30 trip** — independently recomputed per §3.3 formulas for all three λ values ✓; (f) budget 3,751=3,751 ✓; (g) r=1.0000000 ∈ [0.99,1.01] ✓; (h) inertness flips 2,1,1,2,0,1,1,1 ≤ 3 — independently recomputed vs cache ✓. **No guard fires → not RUN-INVALID.**
+
+**(e) proximity recorded:** 29/60 is one item short of the ≥n/2 apparatus-void trip. Bar held as written (29 < 30 → PASS); 48.3% zero-variance items noted as consistent with the KILL reading.
+
+**Defect-and-rerun assessed:** the missing-`H_ALLOW_FRAC` crash (exit 1, post all 3,751 forwards) → constant added (0.01), checkpointing added, full deterministic re-run. Seed-pinned forwards are bit-identical across runs; the defect cannot have altered results. Honestly recorded in LOG-4843; no compromise.
+
+**Secondaries (Law #4):** S_E(0.5) ρ̄\*=0.1083, S_E(0.9) ρ̄\*=0.1542 — neither clears CONTINUE; no decomposition anomaly; no verdict weight.
+
+**Decision table (§4, precedence RUN-INVALID > KILL > CONTINUE > HELD):** ρ̄\* = −0.0042 ≤ 0.3 → **KILL** fires.
+
+# **BINDING VERDICT: KILL** — "the E-step ranks candidates" is dead.
+
+**Licensed reading:** the signed evaluator cannot distinguish the known-causal direction from randoms by label-free scores (bridge mean rank 5.02 ≈ uniform); the G/E/S loop as designed has no working selection step. E-validity — [CONJECTURE] since LOG-3842 — is refuted at the registered bars. This is the program's eighth binding KILL and its most architecturally consequential: it retires the selection architecture itself, not a mechanism. The summit path needs an architecture rethink. **Does NOT license:** non-spec scores, other benches/backbones, or resurrection of killed causal families.
