@@ -57,14 +57,20 @@ The G/E/S loop's E-step (label-free evaluation of candidate bases) was signed as
 - **Backbone:** frozen Pythia-410m, `device_map="cpu"`, float32, `model.eval()`, `torch.no_grad()` around ALL forwards. CPU-only by design ($0).
 - **Δθ=0 procedure (pinned):** SHA-256 over tensor bytes with sorted `state_dict` keys, float32 (the EXP077/EXP084/EXP108 canonical convention). Hash asserted **before the first forward and after the last**; any mismatch → RUN-INVALID, exit 44. Expected pin: `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed` (LOG-331).
 - **Bench:** the 60-item EXP077 bench (the bridge's licensed bench — same items on which the causal anchor was measured). Provenance SHA-256 of the bench artifact asserted before any forward (executor reads the pin from the LOG-128 record chain at bundle build; recorded in the manifest). `len(bench) == 60` asserted.
-- **View precondition (LOOP_SPEC_DRAFT §2.2, fix S2):** each item must expose (τ(x), {(e_i, σ_i)}) for the 5-vocabulary entity-frame substitution. Any item whose template/slot signature is unavailable is **excluded** and logged (Law #8); its views are never improvised. **Guard:** >6 exclusions (>10%) → bench mismatch → RUN-INVALID, exit 44.
-- **Environment (Law #13):** torch==2.14.0+cpu, transformers==5.17.0 (the registered EXP106–EXP112 / EXP131-attempt-2 CPU environment); numpy/sklearn versions recorded in the worksheet; `torch.manual_seed(135031)` + numpy seed 135031; CPU thread count set and read back via `torch.get_num_threads()`, recorded.
+- **View precondition (LOOP_SPEC_DRAFT §2.2, fix S2):** each item must expose (τ(x), {(e_i, σ_i)}) for the 5-vocabulary entity-frame substitution. Any item whose template/slot signature is unavailable is **excluded** and logged (Law #8); its views are never improvised. **Guard:** >6 exclusions (>10%) → bench mismatch → RUN-INVALID, exit 44. The exclusion count e (0 ≤ e ≤ 6) is determined from the bench metadata BEFORE any forward; n = 60 − e parameterizes the §3.5 endpoint/null and the §3.7(f) budget (F2 fix).
+- **Environment (Law #13):** torch==2.14.0+cpu, transformers==5.17.0 (the registered EXP106–EXP112 / EXP131-attempt-2 CPU environment); numpy/sklearn versions recorded in the worksheet; CPU thread count set and read back via `torch.get_num_threads()`, recorded. **Seed discipline (F4 fix):** no two protocol-randomness draws share a Generator instance —
+  - torch ops: `torch.manual_seed(135031)` (model determinism only);
+  - legacy numpy: `np.random.seed(135031)` (legacy-path calls only);
+  - C2–C9 randoms: `np.random.default_rng(135008)` (8 × 1024 normals);
+  - score-rank tie-break: `np.random.default_rng(135033)` (per-item permutations; F1);
+  - permutation null: `np.random.default_rng(135031)` (B = 200,000 replicates; a dedicated Generator, independent of the legacy `np.random.seed(135031)` state);
+  - (g) probe: `np.random.default_rng(20260930)` (the EXP133 (h) precedent seed — distinct from the randoms' 135008; the draft's "seed 135008, independent draw" was false as written).
 - **Law #7:** bench ground-truth labels are used **nowhere** in this protocol — not in candidate construction (bridge from unembedding rows per the licensed record; randoms from a seeded RNG), not in any score (ŷ_j and M_j are target-free; μ_M/σ_M from unintervened margins), not in any selection. The only label-adjacent object is the bridge's *construction*, which predates this protocol and is not modified here.
 
 ### 3.2 The 9 candidates (pinned)
 
-- **C1 — the bridge (causal anchor) [FACT]:** the output-bridge direction `normalize(E[t_target] − E[t_foil])` from the licensed record, injected at **layer 20** (the EXP077 bridge-arm site), with the α of the EXP077 official bridge arm. The exact vector artifact is SHA-256-pinned at bundle build time against the licensed record chain (LOG-128); the α value is read from LOG-128 at bundle build and recorded in the manifest. **If the record is ambiguous on either, the executor stops → RUN-INVALID (exit 44). Nothing is improvised** (Law #2).
-- **C2–C9 — 8 matched randoms [ASSUMPTION]:** unit-norm vectors drawn i.i.d. from N(0, I_1024), normalized, seed 135008 (independent stream from the bench seed). "Matched" = unit norm (the injection operator's ‖v‖ = 1 convention) and identical site/strength/bench. Orthogonality to the bridge is NOT required; sanity check (no verdict weight): mean|cos| < 0.1 expected under the null.
+- **C1 — the bridge (causal anchor) [FACT]:** the output-bridge direction `normalize(E[t_target] − E[t_foil])` from the licensed record, injected at **layer 20** (the EXP077 bridge-arm site), with the α of the EXP077 official bridge arm. The exact vector artifact is SHA-256-pinned at bundle build time against the licensed record chain (LOG-128); **Expected α = 0.5** (the EXP077 C8 bridge-arm α, LOG-128 — A2 transparency); the executor asserts the LOG-128-read value equals 0.5 before proceeding. **If the record is ambiguous on either, or the asserted α ≠ 0.5, the executor stops → RUN-INVALID (exit 44). Nothing is improvised** (Law #2).
+- **C2–C9 — 8 matched randoms [ASSUMPTION]:** unit-norm vectors drawn i.i.d. from N(0, I_1024), normalized, from the dedicated `np.random.default_rng(135008)` stream (see §3.1 seed discipline). "Matched" = unit norm (the injection operator's ‖v‖ = 1 convention) and identical site/strength/bench. Orthogonality to the bridge is NOT required; sanity check (no verdict weight): mean|cos| < 0.1 expected under the null.
 - **Injection operator (signed spec §2.2):** h ← h + αB at layer 20, answer position, per view.
 
 ### 3.3 The label-free scores (signed LOOP_SPEC_DRAFT §2.2 — cited, not redefined)
@@ -81,9 +87,8 @@ $$\tilde{M}(B; x) = \mathrm{clip}\!\left(\frac{\bar{M}(B; x) - \mu_M}{\sigma_M},
 
 $$S_E(B; x) = \lambda_c \cdot C_{\mathrm{cons}}(B; x) + \lambda_m \cdot \tilde{M}(B; x), \qquad \lambda_c + \lambda_m = 1.$$
 
-- **PRIMARY score:** S_E at λ_c = 0.7 (the provisional default per EXP068's T3 tuning order). The decision tree fires ONLY on the primary (Law #9).
+- **PRIMARY score:** S_E at λ_c = 0.7 (the spec's λ-grid midpoint from {0.5, 0.7, 0.9}, chosen as provisional primary — EXP068's tuning never ran, so no T3 order exists; A1 correction). The decision tree fires ONLY on the primary (Law #9).
 - **SECONDARY (diagnostic, no verdict weight):** S_E at λ_c ∈ {0.5, 0.9} (the spec's tuning grid corners); C_cons alone; M̃ alone. Reported with identical statistics for the Law #14 review's decomposition reading.
-- **EXPLORATORY (no verdict weight):** probe-decodability delta (the sprint's third score — not in the signed spec; included so the review can see whether a non-spec score succeeds where spec scores fail).
 
 ### 3.4 The registered causal ranking [FACT / registered, not re-measured]
 
@@ -92,11 +97,11 @@ This protocol **does not re-measure causality** — it is a $0 measurement exper
 - Bridge: causal rank **1** — licensed: +10pp, b=6, c=0, p=0.03125, EXP077 official GPU record (LOG-128).
 - Each random: causal ranks **tied 2–9** — licensed inertness: EXP077's random arms ΔM=0; EXP131's 8 random injection arms ΔM=0 across 10 prompts (binding KILL, LOG-4832).
 
-The ranking is therefore {bridge: 1, randoms: tied at mean rank 5.5}. **[ASSUMPTION]** The 8 fresh randoms are causally inert like their licensed predecessors. This assumption is NOT tested here (that would be a different experiment); if it is false, the KILL reading weakens symmetrically — recorded in §8.
+The ranking is therefore {bridge: 1, randoms: tied at mean rank 5.5}. **[ASSUMPTION]** The 8 fresh randoms are causally inert like their licensed predecessors. This assumption is now fenced by the §3.7(h) inertness gate (F6 fix): a random that flips decisions at >1% of its (item,view) pairs invalidates the registered ranking → RUN-INVALID, so a false KILL from a secretly-efficacious random cannot pass silently. Residual risk (a weakly-efficacious random below the 1% trip) is recorded in §8.
 
 ### 3.5 The Spearman computation (exact, with the tie correction derived)
 
-Per item i (i = 1..60): rank the 9 candidates by the primary score (ties within score ranks broken by the spec's rule: higher C_cons, then lower candidate index). Let k_i ∈ {1..9} be the bridge's score-rank.
+Per item i (i = 1..n, n = 60 − e): rank the 9 candidates by the primary score; **ties in score are broken by a pre-registered random permutation** drawn from the dedicated `np.random.default_rng(135033)` stream (F1 fix). Let k_i ∈ {1..9} be the bridge's score-rank. **Distinction:** the spec's tie-break (LOOP_SPEC_DRAFT §2.3 — higher C_cons, then lower candidate index) governs the loop's *selection* step; the ranking test pre-registers its own tie-break for the ranking statistic. Under H0 the seeded-random tie-break makes the uniform null EXACT, and degenerate items contribute E[ρ\*_i] = 0 (noise, not bias) — a blind-tap total failure can no longer read as ρ̄\* = 1.0.
 
 **[THEOREM — derived, not assumed]** With the causal ranking's 8-way tie, the tie-corrected (Pearson-on-average-ranks) Spearman per item is:
 
@@ -104,9 +109,9 @@ $$\rho_i = (5 - k_i) \cdot 0.136931\ldots$$
 
 taking the 9 values {0.5477, 0.4108, 0.2739, 0.1369, 0, −0.1369, −0.2739, −0.4108, −0.5477}. **Maximum achievable ρ_max = 0.5477** (bridge ranked first), minimum −0.5477. Derivation: causal ranks [1, 5.5×8] (mean 5, var 2); score ranks a permutation of 1..9 (mean 5, var 20/3); cov = 0.5(5−k_i); ρ = 0.5(5−k_i)/√(40/3).
 
-**Normalized statistic:** ρ\*_i = ρ_i / ρ_max = (5 − k_i)/4 ∈ {1.0, 0.75, 0.5, 0.25, 0, −0.25, −0.5, −0.75, −1.0}. **Primary endpoint:** ρ̄\* = (1/60)Σρ\*_i.
+**Normalized statistic:** ρ\*_i = ρ_i / ρ_max = (5 − k_i)/4 ∈ {1.0, 0.75, 0.5, 0.25, 0, −0.25, −0.5, −0.75, −1.0}. **Primary endpoint:** ρ̄\* = (1/n)Σ_{included i}ρ\*_i, n = 60 − e.
 
-**Null distribution (exact specification):** under H0 (scores carry no causal information), each item's bridge score-rank k_i is uniform on {1..9}, independent across items. One-sided p = P(ρ̄\*_null ≥ ρ̄\*_obs) by Monte Carlo with B = 200,000 draws, seed 135031 (independent stream), MCSE reported. (Exact 9^60 enumeration is infeasible; B = 200,000 gives MCSE ≤ 0.0012 on p near 0.05.)
+**Null distribution (exact specification):** under H0 (scores carry no causal information), each item's bridge score-rank k_i is uniform on {1..9}, independent across items — EXACT with the seeded-random tie-break (F1). One-sided p = P(ρ̄\*_null ≥ ρ̄\*_obs) by Monte Carlo with B = 200,000 draws of n uniforms per replicate from the dedicated `np.random.default_rng(135031)` stream, MCSE reported. (Exact 9^n enumeration is infeasible; B = 200,000 gives MCSE ≤ 0.0012 on p near 0.05.)
 
 ### 3.6 Decision bars with statistical license
 
@@ -126,9 +131,10 @@ Bar semantics: ρ̄\* ≥ 0.7 ⟺ bridge mean score-rank ≤ 2.2 (the sprint's "
 - **(c) Bench pin:** bench SHA-256 mismatch or len ≠ 60 → RUN-INVALID, **exit 44**.
 - **(d) View-precondition exclusions:** >6 items excluded → RUN-INVALID, **exit 44**.
 - **(e) Degeneracy (the EXP131 blind-tap lesson):** if ANY score (primary or secondary) has zero variance across all 9 candidates on ≥30/60 items, the evaluator cannot discriminate — apparatus void → RUN-INVALID, **exit 44**. The per-item score distributions are archived regardless (Law #8).
-- **(f) Budget audit:** forward-pass ledger must equal 9×60×5 (intervention) + 300 (unintervened cache) + 750 (D_sup baseline) = 3,750 ± 0 accounted passes; any unaccounted forward → RUN-INVALID, **exit 44**.
-- **(g) Readout-sensitivity positive control (mandatory since the EXP131/133 rehabilitation):** inject a fixed random vector (seed 135008, independent draw) and require the readout displacement ratio ∈ [0.99, 1.01]; miss → the readout tap is blind → apparatus-void, **exit 44**.
-- **(h) Clean completion:** all guards pass → executor computes the endpoint, prints the verdict per §4, **exit 0**.
+- **(f) Budget audit:** forward-pass ledger must equal 9·n·5 (intervention) + 5·n (unintervened cache: full ŷ decisions AND margins per (item,view) — the decisions are required for the (h) inertness gate) + 750 (D_sup baseline) + N_g (the (g) control) = 50n + 750 + N_g ± 0 accounted passes (3,751 at n = 60, N_g = 1); any unaccounted forward → RUN-INVALID, **exit 44**.
+- **(g) Readout-sensitivity positive control (mandatory since the EXP131/133 rehabilitation):** after the base pass and **before the first intervention forward**, on the first included bench item's first-view input_ids: register the injection hook (`prepend=True`) with a fixed-seed random probe δ_probe drawn from the dedicated `np.random.default_rng(20260930)` stream (the EXP133 (h) precedent seed — distinct from the randoms' 135008; F4 fix), scaled to **‖δ_probe‖ = 16.0** (float32, run device), at **layer 20** (this protocol's injection site), answer position. One forward with `output_hidden_states=True`; `tap = hidden_states[20][0,-1,:]`; `r = ‖tap − tap_base‖/‖δ_probe‖` where `tap_base` is the already-recorded base state (no extra forward). **Assert `r ∈ [0.99, 1.01]`**; miss → the readout tap is blind → apparatus-void, **exit 44**, zero decision forwards. **N_g = 1** forward, counted in the (f) budget (F3 fix). The probe is a control, not a dose: discarded from all records.
+- **(h) Fresh-randoms inertness gate (F6 fix):** for each fresh random C2–C9, count the (item,view) pairs where ŷ_j(random) ≠ ŷ_j^cache (the cached unintervened decision for the same pair, recorded per the (f) cache requirement). **[ASSUMPTION]** Under true inertness the expected flip count is exactly 0 — a non-causal direction changes no argmax; the only possible flips are exact floating-point margin ties, measure-zero events. **Pre-registered allowance: ≤1%** of the random's 5n pairs (⌈0.01·5n⌉; 3 of 300 at n = 60) to cover pathological exact-tie cases. If **any** random exceeds 1% → the registered causal ranking is invalid for this candidate set → RUN-INVALID, **exit 44**. (A secretly-efficacious random at bridge-like strength, +10pp ≈ 6 items ≈ up to 30 pair-flips, exceeds the gate by an order of magnitude; a false KILL of the E-step is thus fenced.)
+- **(i) Clean completion:** all guards pass → executor computes the endpoint, prints the verdict per §4, **exit 0**.
 
 ### 3.8 What is NOT measured here
 
@@ -141,7 +147,7 @@ Causal efficacy of any candidate (registered, §3.4); the G-step (candidate gene
 **Precedence:** RUN-INVALID > KILL > CONTINUE > HELD. (Apparatus failure preempts all substantive verdicts; KILL preempts CONTINUE on exact-boundary data — a bar met exactly is met.)
 
 1. Any §3.7 guard fires → **RUN-INVALID** (exit 44). Report which guard, with the numbers.
-2. Else, ρ̄\* ≤ 0.3 (primary) → **KILL** "the E-step ranks candidates." Licensed reading: the signed evaluator cannot distinguish the known-causal direction from randoms by label-free scores; the G/E/S loop as designed has no working selection step. DOES NOT LICENSE: any claim about non-spec scores (exploratory §3.3 reported separately), any claim about other benches/backbones, any resurrection of killed causal families.
+2. Else, ρ̄\* ≤ 0.3 (primary) → **KILL** "the E-step ranks candidates." Licensed reading: the signed evaluator cannot distinguish the known-causal direction from randoms by label-free scores; the G/E/S loop as designed has no working selection step. DOES NOT LICENSE: any claim about non-spec scores, any claim about other benches/backbones, any resurrection of killed causal families.
 3. Else, ρ̄\* ≥ 0.7 and p < 0.05 (primary) → **CONTINUE** "the E-step ranks candidates." Licensed reading: the loop has a live evaluation component; E-guided candidate-selection designs are licensable as new pre-registrations. DOES NOT LICENSE: full-loop success (G and S untested), any capability claim, any generality beyond this bench/backbone.
 4. Else → **HELD.** The E-validity conjecture remains exactly where it was: conjecture.
 
@@ -153,7 +159,7 @@ The secondary scores' ρ̄\* values are reported in the same table with identica
 
 1. **Exact question:** Can any label-free score from the signed LOOP_SPEC rank candidate injection directions by causal efficacy — specifically, does it rank the known-causal bridge above 8 matched randoms?
 2. **Decision changed:** CONTINUE the G/E/S loop's E-step (→ licenses E-guided selection designs) vs KILL it (the loop as designed ends; architecture rethink) vs HELD (conjecture stays open, unlicensed). The verdict is mechanical (§4).
-3. **Cheapest test + cost:** 9 candidates × 60 items × 5 views = 2,700 intervention forwards + 1,050 cached baseline forwards = **3,750 forward passes, $0, ~2h team CPU** (the sprint's "~1h" estimate is corrected here — 3,750 CPU forwards at measured EXP131-attempt-2 throughput). No GPU. Nothing cheaper discriminates: fewer views breaks the spec's m=5; fewer items breaks the bench pin; fewer candidates breaks the ranking.
+3. **Cheapest test + cost:** 9 candidates × n items × 5 views = 45n intervention forwards + 5n cached + 750 D_sup baseline + 1 (g) control = **50n + 751 forward passes (3,751 at n = 60), $0, ~2h team CPU** (the sprint's "~1h" estimate is corrected here — measured EXP131-attempt-2 throughput). No GPU. Nothing cheaper discriminates: fewer views breaks the spec's m=5; fewer items breaks the bench pin; fewer candidates breaks the ranking.
 4. **Mathematical license:** the signed `theory/LOOP_SPEC_DRAFT.md` (E-validity explicitly [CONJECTURE] — untested, not killed, LOG-3842); the bridge as a measured causal anchor (+10pp, p=0.03125, EXP077 official); rank statistics need no labels (Law #7 clean — ŷ_j, M_j, μ_M/σ_M are all target-free). **Quantitative prediction:** if the E-step works, ρ̄\* ≥ 0.7 (bridge mean score-rank ≤ 2.2). **Breaking point:** ρ̄\* ≤ 0.3 (bridge mean score-rank ≥ 3.8) → KILL.
 5. **Non-resurrection audit:** §6 — E-validity was never tested; no killed family asks the evaluator-ranking question.
 6. **Summit filter:** B2 is architecture-critical, not capability-positive. The G/E/S loop is the program's only path to autonomous basis invention (the summit mechanism); E is its untested load-bearing link. A KILL retires the architecture before more candidate-generation work spends against it; a CONTINUE gives every downstream bet (B1-class, B4-class) a licensed selection step. No candidate claims consciousness, superhuman achievement, or generality beyond its bench.
@@ -177,9 +183,9 @@ The secondary scores' ρ̄\* values are reported in the same table with identica
 
 ## 7. Cost and honesty
 
-- **Compute:** 3,750 forward passes, CPU-only, $0. No GPU contact at any stage.
+- **Compute:** 50n + 751 forward passes (3,751 at n = 60), CPU-only, $0. No GPU contact at any stage.
 - **What constrains this protocol:** the signed LOOP_SPEC_DRAFT (scores, m=5, view construction); the licensed record chain (bridge vector, α, bench); the five permitted verdicts; the exit-code discipline (§3.7).
-- **Honest limitations:** (i) the causal ranking is registered, not re-measured — if the 8 fresh randoms are not inert, the KILL reading weakens (§3.4 assumption recorded); (ii) n=9 candidates makes the per-item statistic coarse — power comes from 60 items, and the p < 0.05 conjunct is load-bearing on CONTINUE; (iii) λ_c = 0.7 is provisional (EXP068's T3 default), not tuned — a CONTINUE at 0.7 does not license other λ values; (iv) the sprint's "~1h" cost estimate was optimistic — corrected to ~2h here.
+- **Honest limitations:** (i) the causal ranking is registered, not re-measured — the §3.7(h) gate fences gross violations (>1% pair-flips), but a weakly-efficacious random below the trip would still weaken the KILL reading (§3.4 assumption recorded); (ii) n=9 candidates makes the per-item statistic coarse — power comes from 60 items, and the p < 0.05 conjunct is load-bearing on CONTINUE; (iii) λ_c = 0.7 is provisional (the spec-grid midpoint — EXP068 never ran, so no tuning order exists), not tuned — a CONTINUE at 0.7 does not license other λ values; (iv) the sprint's "~1h" cost estimate was optimistic — corrected to ~2h here.
 
 ---
 

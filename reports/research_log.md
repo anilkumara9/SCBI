@@ -15075,3 +15075,21 @@ research log is append-only — no stash, move, or rewrite was used at any point
 - **Advisories:** A1 — clarify the λ_c=0.7 "EXP068's T3 default" provenance (EXP068 never ran); A2 — quote the expected numeric α from LOG-128.
 - **Disposition:** F1–F6 must be applied, then independent fix-verification, then CEO launch decision. Review file: `research/reviews/LAW14_REVIEW_EXP135_EVAL_PREREG_2026-09-30.md`.
 - **Continuity:** LOG-4839 confirmed max before append; 4839→4840. Uncommitted per convention — CEO commits.
+
+## LOG-4841 — B2/EVAL pre-reg repair: F1–F6 + A1–A2 applied (2026-09-30)
+
+**Repair lane (CEO pre-assigned). Draft:** `research/prereg/EXP135_PREREG_EVAL_2026-09-30.md` (edited in place; EXP135 still provisional, nothing minted). All six required fixes and both advisories from the LOG-4840 Law #14 review applied; decision-table bars, hypothesis, and §3.5 derivation unchanged.
+
+- **F1 — tie-break bias (statistical defect, the big one):** score-rank ties now broken by a pre-registered random permutation from a dedicated `np.random.default_rng(135033)` stream. The spec's tie-break (LOOP_SPEC_DRAFT §2.3 — higher C_cons, then lower index) is documented as governing the loop's *selection* step, not this ranking test. Under H0 the uniform null is now EXACT; degenerate items contribute E[ρ\*_i]=0 (noise, not bias) — a blind-tap total failure can no longer read as ρ̄\*=1.0.
+- **F2 — exclusions parameterized:** e (0–6) fixed from bench metadata before any forward; n=60−e parameterizes the endpoint (ρ̄\*=(1/n)Σ), the null (n uniforms/replicate), and the budget (50n+750+N_g ± 0 = 3,751 at n=60).
+- **F3 — (g) control specified:** N_g=1 forward, ‖δ_probe‖=16.0 (EXP133 (h) precedent), at layer 20 (this protocol's injection site), answer position, after the base pass and before the first intervention forward; counted in the (f) budget.
+- **F4 — seed hygiene:** full seed-stream table in §3.1 — every named seed gets its own `np.random.default_rng(SEED)` instance; (g) probe moved to the precedent seed 20260930 (the draft's "seed 135008, independent draw" was false as written — 135008 is the randoms' seed).
+- **F5 — exploratory score dropped:** "probe-decodability delta" was undefined and carried Law #7 risk; removed from §3.3 and the §2 KILL clause's "DOES NOT LICENSE" list.
+- **F6 — inertness gate (new §3.7(h)):** per fresh random, ŷ_j(random) vs cached unintervened decisions over 5n pairs; >1% flips (⌈0.01·5n⌉; 3/300 at n=60) → RUN-INVALID (registered causal ranking invalid). The (f) cache now records full ŷ decisions, not just margins. Justification: under true inertness E[flips]=0 exactly (only exact float32 margin ties could flip); bridge-strength efficacy (≈30/300 pair-flips) trips by an order of magnitude.
+- **A1:** λ_c=0.7 provenance corrected — spec-grid midpoint, not "EXP068's T3 order" (EXP068 never ran). **A2:** expected α=0.5 quoted (EXP077 C8 bridge-arm α, LOG-128); executor asserts the LOG-128-read value equals 0.5, else RUN-INVALID.
+
+**Grounded from the record (Law #2):** (g) spec from `research/prereg/EXP133_AMENDMENT_D_2026-09-30.md` §3 (seed 20260930, ‖δ‖=16.0, r∈[0.99,1.01], prepend=True); α=0.5 from LOG-128 (C8 bridge arm).
+
+**Judgment flagged for fix-verification:** the §3.7(e) degeneracy guard still reads "≥30/60 items" — with e>0 exclusions the denominator is ambiguous (≥30 items of n?). Left untouched as outside F1–F6; reviewer should rule whether to parameterize as ≥n/2.
+
+**Continuity:** LOG-4840 confirmed max before append; 4840→4841. Uncommitted per convention — CEO commits.
