@@ -15341,3 +15341,19 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Deviations from the dossier (recorded in draft §4):** "any flip → PIVOT" fenced so apparatus-guard trips (Q5/Q6) yield RUN-INVALID, not PIVOT.
 
 **Next in the launch chain:** independent Law #14 review of the exact draft file → CEO launch decision.
+
+## LOG-4861 — Independent Law #14 review of B5/TGA-INT8 pre-reg: SIGN-WITH-FIXES (2026-09-30)
+
+**Verdict on the exact file** `research/prereg/EXP138_PREREG_TGAINT8_2026-09-30.md`: **SIGN-WITH-FIXES.** One required fix (F1), two advisories (A1–A2). No killing defect.
+
+**License question (tested first, per the draft's adversarial invitation):** declined the kill. LOG-4528's condition names S4/S5/S6/I2′ — not the TGA line (closed 2026-09-30, after the condition). EXP131's KILL rests on a VJP measurement + causal null, not a literal zero-flip verdict, so the condition's transformation-invariance rationale does not cleanly cover it. H2/EXP110 precedent (Law #14 explicitly declined the kill at LOG-4554) applies directly. B5 is boundary precision-certification, fenced from re-opening any closed line.
+
+**Verified PASS:** all six tiers well-formed (Q1's VJP-through-quantized-graph is well-defined — round() is in the weight-derivation step, the VJP is w.r.t. activations; Q4 has independent bite in partial-flip cases); decision table exact with correct apparatus-guard precedence (Q5/Q6 → RUN-INVALID before verdict bars); no CERTIFIED-WITH-NOTE band is correct (all four decision tiers are structural); quantized-regime baseline is the right comparator for the transfer-window question (baseline shifts reported separately, EXP110-precedent); EXP110 fake-quant pattern applied verbatim (formula, scope, Δθ=0 (a)–(e), honest ceiling); v₁ re-pin correct (same-direction-new-regime; hash and v1__<id> format verified against EXP127/EXP131 records); geodesic budget B=0.50578119 verified against EXP133's console log; breaking points (a)–(h) complete, none over-strict; worth-it gate holds all 7 points; Law #4 audit sound.
+
+**F1 (required):** the 8 matched-norm randoms' provenance is unpinned — §3.3 step 5 does not say whether they are re-used from EXP131's records (cite hashes) or freshly drawn (pin seeds). Law #13 gap; one sentence fixes it.
+
+**A1 (advisory):** bind the baseline-shift magnitude into the CERTIFIED paper-statement template so a large α=0 shift + CERTIFIED cannot read as misleading generality.
+
+**A2 (advisory):** require the execution worksheet to record the quantized-copy presentation mechanism (EXP110's pre-reg required this; Law #13).
+
+**Review file:** `research/reviews/LAW14_REVIEW_EXP138_TGAINT8_PREREG_2026-09-30.md`. Single-lane fence held: review only, no edits. Next: repair lane for F1 (+ byte-check against this review), then CEO launch decision.
