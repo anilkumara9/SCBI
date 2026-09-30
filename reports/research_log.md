@@ -14686,3 +14686,59 @@ research log is append-only — no stash, move, or rewrite was used at any point
 - **Re-clearance:** EXP133 is RE-CLEARED for execution under the signed pre-reg as amended by Amendment B. Same experiment number (re-execution, not a new design). Scope unchanged from LOG-4798 except breaking point (b): (b1) v1 re-pin as before; (b2) v2 via licensed deterministic reproduction — run-twice bit-identity + unit-norm + |v2·v1|<1e-6 asserts, both run SHA-256s logged (review advisory); (b3) B_agg via EXP077 support-set reconstruction with hash gate `d3556d83751634a2fc5114d56c4ee246bb1b296293d2adcde40a369da1600ae1` (miss → apparatus-void). All other breaking points, the decision table, and the budget bind as signed.
 - **Fence:** build + execute + report only. No self-review, no table re-interpretation, no scope beyond the cleared pilot, no GPU, no push.
 - **Continuity:** LOG-4801 confirmed max before append; 4801→4802. This entry lands uncommitted per convention.
+
+## LOG-4803 — EXP133 re-execution: APPARATUS-VOID on breaking point (d) (2026-09-30)
+
+- **Verdict [FACT]:** APPARATUS-VOID — hypothesis UNTESTED. The re-execution lane
+  (agent `eccfd345-71fe-439a-b117-7a47ddde4b0f`) tripped breaking point (d) (norm-budget
+  equality) on the full 10-prompt run; the executor enforced it (exit 44). Zero injection
+  forwards executed; no full-run records exist.
+- **Executor [FACT]:** `experiments/runs/EXP133_geosteer_multistep/run_exp133.py` — copied
+  from the Law-#14-reviewed EXP131 executor; the only scientific delta is the injection arm
+  (one-shot → K=5 geodesic micro-steps + sphere retraction + parallel transport, §3.4 as
+  repaired). Bench, backbone pinning, v1 re-pin, v2 derivation (LOG-4714 parameters), B_agg
+  reconstruction, budget computation, option embeddings, and the H1/H6 §3.3 readout are
+  byte-identical logic. The §2 decision table is implemented verbatim (9/9 branches unit-tested
+  against the table); the geodesic walk + ĉ VJP code was validated on synthetic data before the run.
+- **Breaking points (full run) [FACT]:**
+  - (a) backbone pre: `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed` PASS
+    (post not reached — stopped before first injection forward).
+  - (b1) v1 re-pin: npz hash + 10/10 id alignment PASS.
+  - (b3) B_agg: deterministic EXP077 support-set reconstruction reproduces
+    `d3556d83751634a2fc5114d56c4ee246bb1b296293d2adcde40a369da1600ae1` **bit-identically** — PASS.
+  - (b2) v2 run-twice: NOT REACHED (run stopped at §5, before the §7 derivation).
+  - **(d) TRIPPED:** independently recomputed B = 0.50578363 (CPU, 10-prompt median) vs verbatim
+    LOG-4766 B = 0.50578119 (T4 GPU); rel diff **4.832e-06 > 1e-6** → apparatus-void per §0(d).
+- **Diagnosis [OBSERVATION]:** tolerance defect, NOT drift. Backbone hash, bench hash, and the
+  300-forward B_agg reconstruction all match bit-exactly — the apparatus computes the same
+  function. A follow-up diagnostic reproduced the identical B with and without
+  `torch.use_deterministic_algorithms(True)` (model confirmed float32): the 4.83e-06 gap is
+  cross-device fp numerics (GPU torch 2.10+cu128 vs CPU torch 2.14; ~20 blocks of
+  differently-ordered reductions). The 1e-6 tolerance is unsatisfiable on CPU — the same
+  defect class as the first void (breaking-point condition validated against logic, never
+  against reality).
+- **Smoke test [FACT]:** 1-prompt end-to-end PASS (exit 0) — v2 run-twice bit-identity
+  (both `3499eb0e…5665f4`), 25/25 tangent audits at α±1e-6, one-shot arm at B±1e-6, B_agg
+  null-control, pre/post pins; machinery verdict on 1 prompt: KILL decision-orthogonal
+  (ΔM_geo=0, ĉ_geo=0.0643) — NOT the experiment verdict. Records:
+  `experiments/runs/EXP133_geosteer_multistep/out/exp133_smoke_records.json` (+ `.sha256`).
+- **Artifacts:** void report
+  `experiments/runs/EXP133_geosteer_multistep/out/EXP133_FULLRUN_VOID_REPORT.md`
+  (keeps the first void report alongside); executor + smoke records in the same `out/`.
+- **No §2 verdict read** (table's "any breaking-point miss → apparatus-void" row is the raw
+  verdict). No re-interpretation attempted — the lane stopped per the single-lane fence.
+- **Recommended CEO disposition:** Amendment C — relax (d)'s equality tolerance 1e-6 → 1e-4
+  relative, justified by the measured 4.83e-06 cross-device numerics (downstream science
+  unaffected: the executor uses the verbatim registered B per Law #2; 1e-4 still detects real
+  drift; hash pins remain the primary drift detectors). Plus a checklist addition: numerical
+  breaking-point tolerances must be validated against a real execution, not just reviewed
+  for logical form. On re-clearance, re-execution resumes from the current executor unchanged.
+- **Continuity:** LOG-4802 confirmed max before append; 4802→4803. This entry lands uncommitted per convention.
+
+## LOG-4804 — EXP133 Amendment C DRAFT: breaking point (d) tolerance 1e-6 → 1e-4 (2026-09-30)
+
+- **Lane:** LOG-4804 (CEO pre-assigned). **$0 CPU, paper only; single-lane fence held** — draft only, signed pre-reg untouched, no execution licensed, no forwards run. Read `AGENTS.md` before working.
+- **Diagnosis [FACT]:** EXP133 re-execution voided on breaking point (d) (LOG-4803) — CPU-recomputed B = 0.50578363 vs verbatim GPU-measured 0.50578119, rel diff 4.832e-06 > 1e-6 tolerance. Tolerance defect, NOT drift: backbone/bench/B_agg pins all bit-exact; diagnostic reproduced identical B with/without deterministic algorithms (float32 confirmed) — genuine cross-device fp numerics (~20 blocks of differently-ordered reductions, GPU torch 2.10+cu128 vs CPU torch 2.14).
+- **Amendment:** `research/prereg/EXP133_AMENDMENT_C_2026-09-30.md` — NARROW, covers ONLY breaking point (d): equality tolerance 1e-6 → 1e-4 relative. Measured justification: 1e-4 sits >10× above the 4.83e-06 noise floor yet orders of magnitude below any real drift signal; the dose itself is unaffected (executor injects verbatim B per Law #2 — the tolerance gates only the drift-detector); per-step tangent audits stay at 1e-6 (exact by construction, still satisfiable). Everything else unchanged (§4 explicit). §5 extends the Law #14 checklist: numerical breaking-point tolerances must be validated against real execution on the target device, citing a measured bound or margin-over-noise argument — never a tidy round number.
+- **Status:** DRAFT, licenses nothing. Next (not this lane): independent Law #14 review of Amendment C → CEO re-clearance decision.
+- **Continuity:** LOG-4803 confirmed max before append; 4803→4804. This entry lands uncommitted per convention.
