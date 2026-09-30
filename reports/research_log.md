@@ -15476,3 +15476,15 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Noise / out of window:** Disentangling Steering Vectors (2609.07037, Sep 7) and Steering Under Compression (2609.06473, Sep 6) re-surfaced in searches but predate the window and are already in the record. No new releases from Anthropic, Google DeepMind, Meta, Mistral, xAI, DeepSeek in the last 24h; no Oct-1 arXiv submissions surfaced yet (announcement cycle not yet run at sweep time, ~19:15 UTC Sep 30).
 
 **Bottom line:** no verdict, license, or capability headline changes. One related-work addition licensed for the paper's next revision (Varshney 2609.30275).
+
+## LOG-4871 — v84→v85 change plan drafted (2026-10-01)
+
+**Lane:** LOG-4871 (pre-assigned). **$0 CPU, paper only.** v82/v83/v84 paper sources read-only; nothing in them modified.
+
+**What:** drafted `research/reviews/V85_CHANGE_PLAN_2026-10-01.md` — one admitted related-work item from the LOG-4870 frontier sweep: Varshney, "Cosine Similarity Is Not Evidence" (arXiv:2609.30275v1, announced 2026-09-29). Citation abstract-re-verified by this lane 2026-10-01 (arXiv abs page); all proposed-text claims are abstract-verified (flagged §3 for the reviewer).
+
+**The plan:** insert a new `\paragraph{The quantization trap we preempt.}` after the "Two measurement traps we close." paragraph in `v84/paper.tex` (line 188), plus a third-trap clause in `v84-ieee/sections/sec-intro.tex` (line 42), plus one `@misc{varshney2026cosine}` bib entry. The text frames Varshney as methodology convergence — the external audit EXP138's behavioral-tier discipline preempted — never as corroboration of a boundary number. It deliberately names no experiment numbers: v84's text has zero quantization discussion to attach them to.
+
+**Fencing:** related-work sentences only — no claim, result, or figure changes; C1–C6 untouched; boxed bets summary untouched; novelty N1. The sweep's second item (sycophancy, arXiv:2609.35544v1) was not admitted (tangential; not licensed by the CEO's brief).
+
+**Next:** independent Law #14 review of the exact plan file (separate lane).
