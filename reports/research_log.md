@@ -15369,3 +15369,18 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **A2 (advisory) — quantized-copy presentation mechanism.** §3.3 step 2 now requires the execution worksheet to record the presentation mechanism (in-memory `state_dict` swap vs saved-to-local-directory as model-id), per EXP110's pre-reg precedent (Law #13).
 
 **Repaired file:** `research/prereg/EXP138_PREREG_TGAINT8_2026-09-30.md` (edited in place). Next: byte-check fix-verification against the LOG-4861 review, then CEO launch decision.
+## LOG-4863 — B5/TGA-INT8 pre-reg fix-verification: PASS (2026-09-30)
+
+**Verification lane** (LOG-4863 pre-assigned; independent of the LOG-4860 drafting and LOG-4862 repair lanes). $0 CPU, paper only. Single-lane fence held: verification only, no edits, EXP138 still provisional.
+
+**Verdict: PASS** — launch-ready pending the CEO launch decision. All required fixes (F1) and both advisories (A1–A2) correctly and completely applied, byte-verified against the LOG-4861 review and the primary EXP131 artifacts.
+
+**F1 (required) — randoms' provenance pinned: PASS.** §3.3 step 5's re-derivation scheme verified byte-exact against `experiments/bundles/exp131_v1inj/run_exp131.py`: `torch.Generator()` CPU (line 499), `manual_seed(20260929_4724 + pi * 100)` (line 502, exact), rand0–rand7 drawn in order via `torch.randn(H)` (lines 504–506), unit-normalized then scaled to B (lines 507, 511), K_RAND = 8 (line 147). Records hash `867b123f0afadf335af5c2e2bcec3c274993b70157067aa1c88989e525ef581f` triple-confirmed (fresh sha256sum, the `.sha256` sidecar, the draft citation). The Law #13 reproducibility gap is closed.
+
+**A1 (advisory) — baseline-shift bound into CERTIFIED statement: PASS.** §4 carries the licensed template with the X/10 baseline-shift magnitude bound in, plus the explicit fence against over-general precision-robustness claims.
+
+**A2 (advisory) — quantized-copy presentation mechanism: PASS.** §3.3 step 2 requires the execution worksheet to record it (in-memory `state_dict` swap vs saved-to-local-directory as model-id), per EXP110's precedent (Law #13).
+
+**Scope check:** decision table, tiers Q1–Q6, hypothesis, §1.1, falsification tree, breaking points (a)–(h), §7 fences, worth-it gate — all untouched. No TBD/placeholder remnants (swept, zero hits).
+
+**Report:** `research/reviews/LAW14_FIXVERIFY_EXP138_TGAINT8_2026-09-30.md`. Next: CEO launch decision.
