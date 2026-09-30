@@ -14955,3 +14955,10 @@ research log is append-only — no stash, move, or rewrite was used at any point
 - **CEO SIGN:** Amendment E is approved — EXP131 attempt 2 may execute on CPU. (LOG-4823's clearance was GPU-scoped and is superseded for venue; the clearance conditions carry over.)
 - **Drift-detector decision:** the reviewer recommends (b) — separate mini-amendment at CEO discretion — and judges the detector sound, narrow, and mechanical. **Commissioned:** after LOG-4808, the safer posture wins. The detector (CPU-computed B vs GPU-registered 0.50578119 within 1e-4 relative; miss → apparatus-void, exit 44, zero decision forwards) covers a real gap: a systematic cross-device dose shift would pass the same-device (d) audit on every arm. It needs its own draft + independent review + clearance before any executor change.
 - **Continuity:** LOG-4825 confirmed max before append; 4825→4826. Uncommitted per convention.
+
+## LOG-4827 — EXP131 Amendment F drafted: budget drift-detector (2026-09-30)
+
+- **Commissioning [FACT]:** CEO LOG-4826 (per LOG-4825 advisory). $0 CPU, paper only; draft licenses nothing, no executor edits.
+- **Detector spec:** breaking point (d2) — after B is computed at runtime on CPU, before the first injection forward, assert `|B_cpu − 0.50578119| / 0.50578119 ≤ 1e-4`; miss → apparatus-void, `sys.exit(44)`, zero decision forwards (executor's exit-44 convention; pre-reg §0). Reference constant 0.50578119 is the verbatim GPU-registered B (Kaggle report hash `e33a0eac…`, LOG-4766); verified it occurs 0× in `run_exp131.py` — genuine addition. 1e-4 band: demonstrated-safe detector band (LOG-4805 independent SIGN; measured drift 4.832e-6, ~20× margin).
+- **File:** `experiments/bundles/exp131_v1inj/AMENDMENT_DRIFT_DETECTOR_2026-09-30.md` (DRAFT). **Insertion point:** `run_exp131.py` section 5, between line 266 (the `budget B` log line) and the section-5b (h) header.
+- **Continuity:** LOG-4826 confirmed max before append; 4826→4827. Uncommitted per convention — CEO commits.
