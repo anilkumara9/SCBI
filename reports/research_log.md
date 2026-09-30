@@ -15217,3 +15217,17 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Consistency sweep:** zero stale N_h=1/241 references; zero uniform-H1 references; the single remaining directionless "one-sided" (line 20) is the §0.1 historical description of the superseded sprint bet — correctly untouched. Uncommitted per convention — CEO commits.
 
 **Next:** independent fix-verification against the LOG-4849 review, then CEO launch decision.
+
+## LOG-4851 — B4/ARI pre-reg fix-verification: PASS (2026-09-30)
+
+**Independent fix-verification lane (independent of drafting LOG-4848, review LOG-4849, repair LOG-4850). Report:** `research/reviews/LAW14_FIXVERIFY_EXP136_ARI_2026-09-30.md`. **Verdict: PASS** — no amendments.
+
+**Per-fix verdicts (all PASS, byte-verified against the LOG-4849 review):**
+- **F1:** direction-appropriate McNemar alternatives throughout — T1 one-sided b>c, T2 one-sided c>b, C two-sided (§1, §2, §3.3, §4 table, §5.6). Precedence RUN-INVALID > HELD > KILL > CONTINUE intact. Zero stale uniform-H1 references (the single directionless "one-sided" is the §0.1 historical sprint-bet description, correctly untouched).
+- **F2:** (h) Phase 2 (T1) registered with asserts 7–13 — L1 activity >0.01, boost-direction strict increase, absolute floor >1e-3, renormalization, finiteness, output propagation. The ~0-base-mass case routes to RUN-INVALID exit 44, not KILL. Budget guard (f) updated to 242 (N_h=2); zero stale 241/N_h=1 references.
+- **A1:** ‖o−o_base‖_2 > 1e-6 output-propagation asserts present in both phases (asserts 6, 13).
+- **A2:** "C significant, T1/T2 flat" explicitly resolved to KILL per precedence (§4).
+
+**Judgment-call rulings (all SOUND, no amendments):** (1) (h)-extension over mass-gate — cleaner, routes the degenerate case through the existing RUN-INVALID path; (2) strict-increase + absolute floor over relative-ratio — a ratio is meaningless at ~0 base mass; (3) systematic T1 worsening → HELD — Law #4 bars licensing CONTINUE for an unpredicted direction; (4) the 1e-6 threshold — correctly sized (detached-copy gives bit-exact equality; real effects are orders of magnitude larger). Minor non-blocking note: the HELD "sub-significant" label is slightly imprecise for a significant-wrong-direction effect, but the §3.3 NOTE pre-registers the resolution explicitly.
+
+**Disposition:** the B4/ARI pre-registration is launch-ready pending the CEO launch decision. This lane made no edits (verification only).
