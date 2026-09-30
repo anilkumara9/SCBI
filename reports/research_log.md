@@ -14887,3 +14887,9 @@ research log is append-only — no stash, move, or rewrite was used at any point
 - **F1 applied:** dated scope-erratum note appended to the pre-reg (signed text untouched): the KILL closes the **multistep-geodesic** branch only; one-shot remains UNTESTED on the EXP131 track.
 - **Binding verdict:** EXP133 KILL is now **binding** — geodesic multistep steering along the TGA leading direction steers zero decisions at matched budget (ΔM_geo = 0, ĉ_geo = 0.0374, McNemar p = 1.0) with verified injection delivery. The GEOSTEER escalation branch is retired as a license. EXP133 was never EXP131's shadow: one-shot stays open.
 - **Continuity:** LOG-4817 confirmed max before append; 4817→4818. Uncommitted per convention.
+
+## LOG-4819 — Scoreboard v3.9 → v3.10: EXP133 binding KILL plotted (2026-09-30)
+
+- **Lane:** benchmark-analyst lane (CEO-dispatched). $0 CPU, paper only; scoreboard file only — log/paper/protocols untouched.
+- **v3.10 delta [FACT]:** EXP133 attempt-4 binding KILL plotted (LOG-4814 execution; LOG-4817 SIGN-WITH-FIXES; LOG-4818 binding): ΔM_geo = 0, ĉ_geo = 0.0374, McNemar p = 1.0, verified delivery ((h) r = 1.0000001); GEOSTEER escalation branch RETIRED; scope-fenced to multistep-geodesic — EXP131/one-shot remains UNTESTED. Tally: six bound KILLs (EXP107, EXP114, EXP125, EXP126, EXP129, EXP133), thirteen RUN-INVALIDs, zero in-flight. Capability scoreboard unchanged: zero positive autonomous-steering signals.
+- **Continuity:** LOG-4818 confirmed max before append; 4818→4819. Uncommitted per convention.
