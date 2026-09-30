@@ -1,0 +1,81 @@
+{
+ "experiment": "EXP131",
+ "env": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "device": "cpu",
+  "cuda": null,
+  "smoke": true
+ },
+ "pins": {
+  "protocol": "d85205f4ce2b1aadd2b2bda64397f7523e15958cf4fd8d903acccf0fd7f8bf52",
+  "weights_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "weights_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "v1_npz": "9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc",
+  "bagg_reconstruction": "d3556d83751634a2fc5114d56c4ee246bb1b296293d2adcde40a369da1600ae1",
+  "bench": "e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5"
+ },
+ "budget_B": 0.5082483291625977,
+ "c_hat_per_prompt": [
+  0.06340583465941697
+ ],
+ "c_hat_exclusions": [],
+ "per_item": [
+  {
+   "id": "exp107_flip_exp077_planet_2hop_0",
+   "arms": {
+    "base": {
+     "decision": "E2",
+     "cos_E1": 0.1607139511552261,
+     "cos_E2": 0.16207380561435084,
+     "margin": 0.001359854459124732,
+     "injected_norm": 0.0
+    },
+    "v1": {
+     "decision": "E2",
+     "cos_E1": 0.1607139511552261,
+     "cos_E2": 0.16207380561435084,
+     "margin": 0.001359854459124732,
+     "injected_norm": 0.5082483291625977
+    },
+    "v2": {
+     "decision": "E2",
+     "cos_E1": 0.1607139511552261,
+     "cos_E2": 0.16207380561435084,
+     "margin": 0.001359854459124732,
+     "injected_norm": 0.5082483887672424
+    },
+    "rand0": {
+     "decision": "E2",
+     "cos_E1": 0.1607139511552261,
+     "cos_E2": 0.16207380561435084,
+     "margin": 0.001359854459124732,
+     "injected_norm": 0.5082483291625977
+    },
+    "bagg": {
+     "decision": "E2",
+     "cos_E1": 0.1607139511552261,
+     "cos_E2": 0.16207380561435084,
+     "margin": 0.001359854459124732,
+     "injected_norm": 0.5082482695579529
+    }
+   },
+   "dm": {
+    "v1": 0,
+    "v2": 0,
+    "rand0": 0,
+    "bagg": 0
+   },
+   "margin_disp": {
+    "v1": 0.0,
+    "v2": 0.0,
+    "rand0": 0.0,
+    "bagg": 0.0
+   }
+  }
+ ],
+ "meta": {
+  "verdict": "PENDING-METRIC"
+ }
+}

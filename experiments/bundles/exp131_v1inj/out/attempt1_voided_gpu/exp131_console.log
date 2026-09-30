@@ -1,0 +1,80 @@
+== EXP131 (v1 injection test) execution lane ==
+mode: SMOKE (1 prompt, K=1 random)
+protocol sha256: d85205f4ce2b1aadd2b2bda64397f7523e15958cf4fd8d903acccf0fd7f8bf52
+protocol pin OK (post-fix LOG-4726 revision)
+bench sha256: e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5
+prompts: canonical-order first 1 of verbatim EXP107 bench
+env: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "device": "cpu", "cuda": null, "smoke": true}
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+== EXP131 (v1 injection test) execution lane ==
+mode: SMOKE (1 prompt, K=1 random)
+protocol sha256: d85205f4ce2b1aadd2b2bda64397f7523e15958cf4fd8d903acccf0fd7f8bf52
+protocol pin OK (post-fix LOG-4726 revision)
+bench sha256: e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5
+prompts: canonical-order first 1 of verbatim EXP107 bench
+env: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "device": "cpu", "cuda": null, "smoke": true}
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+== EXP131 (v1 injection test) execution lane ==
+mode: SMOKE (1 prompt, K=1 random)
+protocol sha256: d85205f4ce2b1aadd2b2bda64397f7523e15958cf4fd8d903acccf0fd7f8bf52
+protocol pin OK (post-fix LOG-4726 revision)
+bench sha256: e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5
+prompts: canonical-order first 1 of verbatim EXP107 bench
+env: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "device": "cpu", "cuda": null, "smoke": true}
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+v1 artifact sha256: 9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc
+v1 re-pinned: hash OK + 1/1 id alignment (v1__<prompt_id>)
+support set: 150 contrast pairs (300 presentations, verbatim EXP077 construction)
+B_agg re-derived deterministically from EXP077 support set; reconstruction sha256: d3556d83751634a2fc5114d56c4ee246bb1b296293d2adcde40a369da1600ae1
+support continuity diagnostic mean_cos_v1=0.7162
+budget B = 0.01 * median||y20|| = 0.50824833  (recorded BEFORE first injection forward)
+option forwards complete; single-token assert passed on all 2 option texts
+v2 1/1 exp107_flip_exp077_planet_2hop_0: K=40 |v2.v1|=5.588e-09 OK
+sensing-discipline assert PASS: ops=['exact-jvp', 'exact-vjp'] (whitelist: exact JVP/VJP only; blacklist: finite-difference gain ratios)
+c-hat gate: mean=0.0634 over 1 prompts (0 exclusions)
+item 1/1 exp107_flip_exp077_planet_2hop_0: base=E2 margin=0.0014 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'bagg': 0}
+forward batches complete: 1 prompts x 5 forwards (+1 support pass, option forwards, v2 JVPs)
+norm-budget audit PASS: all 4 injection arms within 1e-6 rel of B
+backbone LOG-331 pin (post): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+raw-record hash-pin: 63c952ae0a7cd231cc69f2ba96f783e9e3a1010a74bf378b2d3ee7a6a52542ef (minted before any decision statistic)
+metrics: median r=1.000000 | DM_v1=0 | best-random=j0 (flips=0) | McNemar (b,c)=(0,0) n=0 p=1.000000 | rank-trend 0/1 FAIL
+======================================================================
+VERDICT: KILL
+reason: decision-orthogonal amplifier: c_hat=0.0634 < 0.1
+======================================================================
+report written to out/exp131_report.json
+raw records: out/exp131_records.json (+ .sha256 pin)
+== EXP131 (v1 injection test) execution lane ==
+mode: SMOKE (1 prompt, K=1 random)
+protocol sha256: d85205f4ce2b1aadd2b2bda64397f7523e15958cf4fd8d903acccf0fd7f8bf52
+protocol pin OK (post-fix LOG-4726 revision)
+bench sha256: e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5
+prompts: canonical-order first 1 of verbatim EXP107 bench
+env: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "device": "cpu", "cuda": null, "smoke": true}
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+v1 artifact sha256: 9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc
+v1 re-pinned: hash OK + 1/1 id alignment (v1__<prompt_id>)
+support set: 150 contrast pairs (300 presentations, verbatim EXP077 construction)
+B_agg re-derived deterministically from EXP077 support set; reconstruction sha256: d3556d83751634a2fc5114d56c4ee246bb1b296293d2adcde40a369da1600ae1
+support continuity diagnostic mean_cos_v1=0.7162
+budget B = 0.01 * median||y20|| = 0.50824833  (recorded BEFORE first injection forward)
+option forwards complete; single-token assert passed on all 2 option texts
+v2 1/1 exp107_flip_exp077_planet_2hop_0: K=40 |v2.v1|=5.588e-09 OK
+sensing-discipline assert PASS: ops=['exact-jvp', 'exact-vjp'] (whitelist: exact JVP/VJP only; blacklist: finite-difference gain ratios)
+c-hat gate: mean=0.0634 over 1 prompts (0 exclusions)
+item 1/1 exp107_flip_exp077_planet_2hop_0: base=E2 margin=0.0014 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'bagg': 0}
+forward batches complete: 1 prompts x 5 forwards (+1 support pass, option forwards, v2 JVPs)
+norm-budget audit PASS: all 4 injection arms within 1e-6 rel of B
+backbone LOG-331 pin (post): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+raw-record hash-pin: 63c952ae0a7cd231cc69f2ba96f783e9e3a1010a74bf378b2d3ee7a6a52542ef (minted before any decision statistic)
+metrics: median r=1.000000 | DM_v1=0 | best-random=j0 (flips=0) | McNemar (b,c)=(0,0) n=0 p=1.000000 | rank-trend 0/1 FAIL
+======================================================================
+VERDICT: KILL
+reason: decision-orthogonal amplifier: c_hat=0.0634 < 0.1
+======================================================================
+report written to out/exp131_report.json
+raw records: out/exp131_records.json (+ .sha256 pin)

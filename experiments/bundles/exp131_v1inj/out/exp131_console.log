@@ -1,0 +1,53 @@
+== EXP131 (v1 injection test) execution lane ==
+mode: FULL (10 prompts, K=8 randoms)
+protocol sha256: d85205f4ce2b1aadd2b2bda64397f7523e15958cf4fd8d903acccf0fd7f8bf52
+protocol pin OK (post-fix LOG-4726 revision)
+bench sha256: e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5
+prompts: canonical-order first 10 of verbatim EXP107 bench
+env: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "device": "cpu", "cuda": null, "smoke": false}
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+v1 artifact sha256: 9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc
+v1 re-pinned: hash OK + 10/10 id alignment (v1__<prompt_id>)
+support set: 150 contrast pairs (300 presentations, verbatim EXP077 construction)
+B_agg re-derived deterministically from EXP077 support set; reconstruction sha256: d3556d83751634a2fc5114d56c4ee246bb1b296293d2adcde40a369da1600ae1
+support continuity diagnostic mean_cos_v1=0.7162
+budget B = 0.01 * median||y20|| = 0.50578363  (recorded BEFORE first injection forward)
+breaking point (d2): budget drift-detector |B_cpu-0.50578119|/0.50578119 = 4.832e-06 (must be <= 1e-4)
+breaking point (d2) PASS: budget drift within band (rel = 4.832e-06).
+breaking point (h): readout-sensitivity positive control r = 1.0000001 (must be in [0.99, 1.01])
+breaking point (h) PASS: injection reaches the readout tap (r=1.0000001).
+option forwards complete; single-token assert passed on all 20 option texts
+v2 1/10 exp107_flip_exp077_planet_2hop_0: K=40 |v2.v1|=5.588e-09 OK
+v2 2/10 exp107_ctrl_exp077_planet_2hop_1: K=40 |v2.v1|=8.382e-09 OK
+v2 3/10 exp107_flip_exp077_planet_2hop_2: K=40 |v2.v1|=5.588e-09 OK
+v2 4/10 exp107_ctrl_exp077_planet_2hop_3: K=40 |v2.v1|=1.397e-09 OK
+v2 5/10 exp107_flip_exp077_planet_2hop_4: K=40 |v2.v1|=1.048e-08 OK
+v2 6/10 exp107_ctrl_exp077_planet_2hop_5: K=40 |v2.v1|=1.863e-09 OK
+v2 7/10 exp107_flip_exp077_planet_2hop_6: K=40 |v2.v1|=7.916e-09 OK
+v2 8/10 exp107_ctrl_exp077_planet_2hop_7: K=40 |v2.v1|=3.260e-09 OK
+v2 9/10 exp107_ctrl_exp077_planet_2hop_8: K=40 |v2.v1|=0.000e+00 OK
+v2 10/10 exp107_flip_exp077_planet_2hop_9: K=40 |v2.v1|=1.164e-08 OK
+sensing-discipline assert PASS: ops=['exact-jvp', 'exact-vjp'] (whitelist: exact JVP/VJP only; blacklist: finite-difference gain ratios)
+c-hat gate: mean=0.0374 over 10 prompts (0 exclusions)
+item 1/10 exp107_flip_exp077_planet_2hop_0: base=E2 margin=0.0014 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+item 2/10 exp107_ctrl_exp077_planet_2hop_1: base=E1 margin=0.0014 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+item 3/10 exp107_flip_exp077_planet_2hop_2: base=E1 margin=0.0006 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+item 4/10 exp107_ctrl_exp077_planet_2hop_3: base=E2 margin=0.0006 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+item 5/10 exp107_flip_exp077_planet_2hop_4: base=E2 margin=0.0006 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+item 6/10 exp107_ctrl_exp077_planet_2hop_5: base=E1 margin=0.0012 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+item 7/10 exp107_flip_exp077_planet_2hop_6: base=E2 margin=0.0005 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+item 8/10 exp107_ctrl_exp077_planet_2hop_7: base=E1 margin=0.0012 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+item 9/10 exp107_ctrl_exp077_planet_2hop_8: base=E2 margin=0.0006 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+item 10/10 exp107_flip_exp077_planet_2hop_9: base=E2 margin=0.0008 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+forward batches complete: 10 prompts x 12 forwards (+1 support pass, option forwards, v2 JVPs)
+norm-budget audit PASS: all 110 injection arms within 1e-6 rel of B
+backbone LOG-331 pin (post): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+raw-record hash-pin: 867b123f0afadf335af5c2e2bcec3c274993b70157067aa1c88989e525ef581f (minted before any decision statistic)
+metrics: median r=0.559167 | DM_v1=0 | best-random=j0 (flips=0) | McNemar (b,c)=(0,0) n=0 p=1.000000 | rank-trend 4/10 FAIL
+======================================================================
+VERDICT: KILL
+reason: decision-orthogonal amplifier: c_hat=0.0374 < 0.1
+======================================================================
+report written to out/exp131_report.json
+raw records: out/exp131_records.json (+ .sha256 pin)
