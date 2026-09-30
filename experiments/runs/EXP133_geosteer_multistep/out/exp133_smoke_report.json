@@ -1,0 +1,61 @@
+{
+ "experiment": "EXP133",
+ "verdict": "KILL",
+ "reason": "decision-orthogonal geodesic null: DM_geo=0 and mean c_geo=0.0643 < 0.1 (\u00a70 gate, F3 conditional on the endpoint null)",
+ "metrics": {
+  "dm_geo": 0,
+  "dm_oneshot_v1": 0,
+  "mcnemar_geo_base": {
+   "b_E1toE2": 0,
+   "c_E2toE1": 0,
+   "n": 0,
+   "majority_direction": "E1->E2",
+   "p_one_sided_majority": 1.0,
+   "p_two_sided": 1.0
+  },
+  "mcnemar_geo_oneshot_ref": {
+   "b": 0,
+   "c": 0,
+   "n": 0,
+   "p_one_sided": 1.0
+  },
+  "rank_trend_hits": 1,
+  "rank_trend_bar": 1,
+  "rank_trend": true,
+  "best_random_arm": "geo_rand0",
+  "random_flips": {
+   "geo_rand0": 0,
+   "geo_rand1": 0
+  },
+  "outmoves_best_random": false,
+  "path_noise": false,
+  "random_null_holding": true,
+  "pivot_prompts": 0,
+  "c_geo_mean": 0.0642806751308277,
+  "c_geo_exclusions": [],
+  "dm_bagg_path": 0,
+  "budget_B": 0.50578119,
+  "alpha": 0.101156238,
+  "geodesic_K": 5
+ },
+ "pins": {
+  "protocol": "ad2158bbdec7e86bd925031fad94fa3ce6a12dc5debe86d49edeec05a25ac8a3",
+  "amendment": "e4a7633584b76fc8274d13935f980010e3a2cd91db814a682c7f4707796c58ef",
+  "weights_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "weights_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "v1_npz": "9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc",
+  "v2_run1": "3499eb0ea491dfb977b8341e86272abbce92ab82ca52dcf4c2be43c0445665f4",
+  "v2_run2": "3499eb0ea491dfb977b8341e86272abbce92ab82ca52dcf4c2be43c0445665f4",
+  "bagg_reconstruction": "d3556d83751634a2fc5114d56c4ee246bb1b296293d2adcde40a369da1600ae1",
+  "bench": "e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5"
+ },
+ "records_pin": "944058b2b59cae515e9454db7668cd930d3be71f829b81e2b9e4ff3b196aa91b",
+ "env": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "device": "cpu",
+  "cuda": null,
+  "smoke": true
+ }
+}

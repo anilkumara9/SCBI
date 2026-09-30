@@ -1,0 +1,82 @@
+== EXP133 (GEOSTEER geodesic multistep, K=5) execution lane ==
+mode: FULL (10 prompts, K=2 random paths)
+protocol sha256: ad2158bbdec7e86bd925031fad94fa3ce6a12dc5debe86d49edeec05a25ac8a3
+amendment sha256: e4a7633584b76fc8274d13935f980010e3a2cd91db814a682c7f4707796c58ef
+protocol + amendment pins OK (signed pre-reg LOG-4798 as amended LOG-4801/4802)
+bench sha256: e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5
+prompts: canonical-order first 10 of verbatim EXP107 bench
+env: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "device": "cpu", "cuda": null, "smoke": false}
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] The following generation flags are not valid and may be ignored: ['output_hidden_states']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<02:49,  1.71it/s]Loading weights:  10%|█         | 30/292 [00:00<00:04, 57.47it/s]Loading weights:  16%|█▋        | 48/292 [00:00<00:03, 80.94it/s]Loading weights:  22%|██▏       | 64/292 [00:00<00:02, 96.60it/s]Loading weights:  29%|██▉       | 84/292 [00:01<00:01, 120.10it/s]Loading weights:  36%|███▌      | 104/292 [00:01<00:01, 134.38it/s]Loading weights:  49%|████▉     | 144/292 [00:01<00:00, 188.41it/s]Loading weights:  57%|█████▋    | 166/292 [00:01<00:00, 177.48it/s]Loading weights:  64%|██████▎   | 186/292 [00:01<00:00, 178.34it/s]Loading weights:  71%|███████   | 206/292 [00:01<00:00, 138.65it/s]Loading weights:  77%|███████▋  | 224/292 [00:01<00:00, 145.76it/s]Loading weights:  83%|████████▎ | 241/292 [00:01<00:00, 145.41it/s]Loading weights:  88%|████████▊ | 257/292 [00:02<00:00, 135.67it/s]Loading weights:  95%|█████████▍| 276/292 [00:02<00:00, 134.20it/s]Loading weights: 100%|██████████| 292/292 [00:02<00:00, 123.83it/s]
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+v1 artifact sha256: 9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc
+v1 re-pinned: hash OK + 10/10 id alignment (v1__<prompt_id>)
+support set: 150 contrast pairs (300 presentations, verbatim EXP077 construction)
+B_agg re-derived deterministically from EXP077 support set; reconstruction sha256: d3556d83751634a2fc5114d56c4ee246bb1b296293d2adcde40a369da1600ae1
+B_agg hash gate PASS (breaking point (b3)): matches EXP131 pins.bagg_reconstruction
+support continuity diagnostic mean_cos_v1=0.7162
+budget B = 0.01 * median||y20|| = 0.50578363  (recorded BEFORE first injection forward)
+budget pin OK: recomputed B matches 0.50578119 within 1e-4 rel (breaking point (d), Amendment C)
+option forwards complete; single-token assert passed on all 20 option texts
+v2 1/10 exp107_flip_exp077_planet_2hop_0: K=40 |v2.v1|=5.588e-09 OK
+v2 2/10 exp107_ctrl_exp077_planet_2hop_1: K=40 |v2.v1|=8.382e-09 OK
+v2 3/10 exp107_flip_exp077_planet_2hop_2: K=40 |v2.v1|=5.588e-09 OK
+v2 4/10 exp107_ctrl_exp077_planet_2hop_3: K=40 |v2.v1|=1.397e-09 OK
+v2 5/10 exp107_flip_exp077_planet_2hop_4: K=40 |v2.v1|=1.048e-08 OK
+v2 6/10 exp107_ctrl_exp077_planet_2hop_5: K=40 |v2.v1|=1.863e-09 OK
+v2 7/10 exp107_flip_exp077_planet_2hop_6: K=40 |v2.v1|=7.916e-09 OK
+v2 8/10 exp107_ctrl_exp077_planet_2hop_7: K=40 |v2.v1|=3.260e-09 OK
+v2 9/10 exp107_ctrl_exp077_planet_2hop_8: K=40 |v2.v1|=0.000e+00 OK
+v2 10/10 exp107_flip_exp077_planet_2hop_9: K=40 |v2.v1|=1.164e-08 OK
+v2 1/10 exp107_flip_exp077_planet_2hop_0: K=40 |v2.v1|=5.588e-09 OK
+v2 2/10 exp107_ctrl_exp077_planet_2hop_1: K=40 |v2.v1|=8.382e-09 OK
+v2 3/10 exp107_flip_exp077_planet_2hop_2: K=40 |v2.v1|=5.588e-09 OK
+v2 4/10 exp107_ctrl_exp077_planet_2hop_3: K=40 |v2.v1|=1.397e-09 OK
+v2 5/10 exp107_flip_exp077_planet_2hop_4: K=40 |v2.v1|=1.048e-08 OK
+v2 6/10 exp107_ctrl_exp077_planet_2hop_5: K=40 |v2.v1|=1.863e-09 OK
+v2 7/10 exp107_flip_exp077_planet_2hop_6: K=40 |v2.v1|=7.916e-09 OK
+v2 8/10 exp107_ctrl_exp077_planet_2hop_7: K=40 |v2.v1|=3.260e-09 OK
+v2 9/10 exp107_ctrl_exp077_planet_2hop_8: K=40 |v2.v1|=0.000e+00 OK
+v2 10/10 exp107_flip_exp077_planet_2hop_9: K=40 |v2.v1|=1.164e-08 OK
+v2 run-twice SHA-256: run1=d633b8979d5f5044120f9912f47f9af1930f4a2053d9f5f33d158e7c76ebf44b
+v2 run-twice SHA-256: run2=d633b8979d5f5044120f9912f47f9af1930f4a2053d9f5f33d158e7c76ebf44b
+v2 run-twice bit-identity PASS
+v2 definitional asserts PASS: ||v2||=1±1e-6, |v2.v1|<1e-6 on all 10 prompts
+sensing-discipline assert PASS: ops=['exact-jvp', 'exact-vjp'] (whitelist: exact JVP/VJP only; blacklist: finite-difference gain ratios)
+walk 1/10 exp107_flip_exp077_planet_2hop_0: x0_norm=50.8248 sum_t=0.505781 sum_dlt=0.505780 c_geo=0.0643 c_oneshot=0.0643 mid=(0.0638,0.0639)
+walk 2/10 exp107_ctrl_exp077_planet_2hop_1: x0_norm=50.2541 sum_t=0.505781 sum_dlt=0.505780 c_geo=0.0503 c_oneshot=0.0503 mid=(0.0498,0.0500)
+walk 3/10 exp107_flip_exp077_planet_2hop_2: x0_norm=50.9734 sum_t=0.505781 sum_dlt=0.505780 c_geo=0.0531 c_oneshot=0.0531 mid=(0.0534,0.0533)
+walk 4/10 exp107_ctrl_exp077_planet_2hop_3: x0_norm=50.4055 sum_t=0.505781 sum_dlt=0.505780 c_geo=0.0121 c_oneshot=0.0121 mid=(0.0119,0.0120)
+walk 5/10 exp107_flip_exp077_planet_2hop_4: x0_norm=51.0525 sum_t=0.505781 sum_dlt=0.505780 c_geo=0.0580 c_oneshot=0.0580 mid=(0.0582,0.0581)
+walk 6/10 exp107_ctrl_exp077_planet_2hop_5: x0_norm=50.7512 sum_t=0.505781 sum_dlt=0.505780 c_geo=0.0263 c_oneshot=0.0263 mid=(0.0268,0.0267)
+walk 7/10 exp107_flip_exp077_planet_2hop_6: x0_norm=51.2477 sum_t=0.505781 sum_dlt=0.505780 c_geo=0.0617 c_oneshot=0.0617 mid=(0.0619,0.0619)
+walk 8/10 exp107_ctrl_exp077_planet_2hop_7: x0_norm=50.3879 sum_t=0.505781 sum_dlt=0.505780 c_geo=0.0264 c_oneshot=0.0264 mid=(0.0269,0.0267)
+walk 9/10 exp107_ctrl_exp077_planet_2hop_8: x0_norm=50.2250 sum_t=0.505781 sum_dlt=0.505780 c_geo=0.0125 c_oneshot=0.0125 mid=(0.0127,0.0126)
+walk 10/10 exp107_flip_exp077_planet_2hop_9: x0_norm=49.8853 sum_t=0.505781 sum_dlt=0.505780 c_geo=0.0089 c_oneshot=0.0089 mid=(0.0086,0.0087)
+endpoint c-hat gate: mean c_geo=0.0374 over 10 prompts (0 exclusions)
+/home/hatch/workspace/SCBI/experiments/runs/EXP133_geosteer_multistep/run_exp133.py:345: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  return float(np.dot(a, v) / (np.linalg.norm(a) * np.linalg.norm(v)))
+item 1/10 exp107_flip_exp077_planet_2hop_0: base=E2 margin=0.0014 | dm: {'oneshot_v1': 0, 'geo_v1': 0, 'geo_v2': 0, 'geo_rand0': 0, 'geo_rand1': 0, 'geo_bagg': 0}
+item 2/10 exp107_ctrl_exp077_planet_2hop_1: base=E1 margin=0.0014 | dm: {'oneshot_v1': 0, 'geo_v1': 0, 'geo_v2': 0, 'geo_rand0': 0, 'geo_rand1': 0, 'geo_bagg': 0}
+item 3/10 exp107_flip_exp077_planet_2hop_2: base=E1 margin=0.0006 | dm: {'oneshot_v1': 0, 'geo_v1': 0, 'geo_v2': 0, 'geo_rand0': 0, 'geo_rand1': 0, 'geo_bagg': 0}
+item 4/10 exp107_ctrl_exp077_planet_2hop_3: base=E2 margin=0.0006 | dm: {'oneshot_v1': 0, 'geo_v1': 0, 'geo_v2': 0, 'geo_rand0': 0, 'geo_rand1': 0, 'geo_bagg': 0}
+item 5/10 exp107_flip_exp077_planet_2hop_4: base=E2 margin=0.0006 | dm: {'oneshot_v1': 0, 'geo_v1': 0, 'geo_v2': 0, 'geo_rand0': 0, 'geo_rand1': 0, 'geo_bagg': 0}
+item 6/10 exp107_ctrl_exp077_planet_2hop_5: base=E1 margin=0.0012 | dm: {'oneshot_v1': 0, 'geo_v1': 0, 'geo_v2': 0, 'geo_rand0': 0, 'geo_rand1': 0, 'geo_bagg': 0}
+item 7/10 exp107_flip_exp077_planet_2hop_6: base=E2 margin=0.0005 | dm: {'oneshot_v1': 0, 'geo_v1': 0, 'geo_v2': 0, 'geo_rand0': 0, 'geo_rand1': 0, 'geo_bagg': 0}
+item 8/10 exp107_ctrl_exp077_planet_2hop_7: base=E1 margin=0.0012 | dm: {'oneshot_v1': 0, 'geo_v1': 0, 'geo_v2': 0, 'geo_rand0': 0, 'geo_rand1': 0, 'geo_bagg': 0}
+item 9/10 exp107_ctrl_exp077_planet_2hop_8: base=E2 margin=0.0006 | dm: {'oneshot_v1': 0, 'geo_v1': 0, 'geo_v2': 0, 'geo_rand0': 0, 'geo_rand1': 0, 'geo_bagg': 0}
+item 10/10 exp107_flip_exp077_planet_2hop_9: base=E2 margin=0.0008 | dm: {'oneshot_v1': 0, 'geo_v1': 0, 'geo_v2': 0, 'geo_rand0': 0, 'geo_rand1': 0, 'geo_bagg': 0}
+forward batches complete: 10 prompts x 7 forwards (+1 support pass, option forwards, v2 JVPs, c-hat VJPs)
+norm-budget audit PASS: 250 tangent steps at alpha±1e-6 rel + 10 one-shot arms at B±1e-6 rel
+backbone LOG-331 pin (post): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+raw-record hash-pin: 5078f518bf21cd82c4e194711f35b212e1d64946c7013381e648461b0388442e (minted before any decision statistic)
+metrics: DM_geo=0 DM_oneshot=0 | McNemar(geo,base) (E1->E2 0/0) p_one=1.000000 p_two=1.000000 | McNemar(geo,oneshot) (b,c)=(0,0) p=1.000000
+metrics: rank-trend 10/10 (bar 8) PASS | best-random=geo_rand0 (flips=0) outmoves=False | path_noise=False | pivot_prompts=0 | c_geo_mean=0.0374
+======================================================================
+VERDICT: KILL
+reason: decision-orthogonal geodesic null: DM_geo=0 and mean c_geo=0.0374 < 0.1 (§0 gate, F3 conditional on the endpoint null)
+======================================================================
+report written to out/exp133_report.json
+raw records: out/exp133_records.json (+ .sha256 pin)
