@@ -140,3 +140,24 @@ until the independent review lane binds it.
   sensing anywhere (mechanically asserted whitelist: exact JVP/VJP only).
 - Δθ=0 by construction: no optimizer, no loss, no backward pass into
   weights; eval mode; `requires_grad=False` on all parameters.
+
+---
+
+## 2026-09-30 update — hook-fix amendment (CEO, LOG-4822/4823)
+
+The bundle executor was repaired after LOG-4808/4809 proved the original
+`layers[19]` injection hook blind under transformers 5.17.0 (the readout tap
+measured an un-injected state; EXP131's KILL was suspended to RUN-INVALID,
+LOG-4810). Repair (independently reviewed LOG-4821, CEO-signed LOG-4822):
+`prepend=True` on the injection hook + new breaking point (h) —
+readout-sensitivity positive control (r ∈ [0.99, 1.01], exit 44 on miss)
+running before the first injection forward. CPU smoke: (h) PASS r = 1.0000001.
+
+The signed pre-reg above is byte-identical (its SHA-256 still verifies at
+startup). The repair is documented in `AMENDMENT_HOOKFIX_2026-09-30.md`
+(CEO-signed, narrow apparatus repair — re-clearance was withheld there and
+is granted separately in LOG-4823).
+
+**This run is EXP131 re-execution attempt 2.** The (h) control runs first:
+if it trips, the run voids itself (apparatus-void, exit 44) before any
+decision forward. Upload the whole `exp131_v1inj/` directory as before.

@@ -14926,3 +14926,11 @@ research log is append-only — no stash, move, or rewrite was used at any point
 - **F1 applied:** the clause now reads "the post-hook tap semantics the signed pre-registration assumed [INTERPRETATION — the ≤5.0 version attribution is unverified in this environment; the repair's validity rests on the verified 5.17.0 mechanism + the (h) probe]". Edit by the CEO pre-signature; substance unchanged.
 - **CEO SIGN:** the amendment note is approved as a narrow apparatus repair. It does **not** re-clear EXP131: GPU re-execution requires a fresh CEO clearance decision. The one-shot TGA-v₁ hypothesis remains UNTESTED.
 - **Continuity:** LOG-4821 confirmed max before append; 4821→4822. Uncommitted per convention.
+
+## LOG-4823 — CEO re-clearance: EXP131 re-execution attempt 2 CLEARED for founder GPU (2026-09-30)
+
+- **Basis [FACT]:** the EXP131 GPU bundle is repaired (LOG-4820: `prepend=True` + breaking point (h); diff confined to the two licensed changes) and the hook-fix amendment note is CEO-signed after independent Law #14 review (LOG-4821 SIGN-WITH-FIXES, LOG-4822). CPU smoke: (h) PASS (r = 1.0000001). The signed pre-reg is byte-identical; its startup SHA-256 check still passes.
+- **Worth-it gate:** exact question — does one-shot v₁ injection move decisions with verified delivery? Decision changed — UNTESTED → KILL/CONTINUE per the registered table. Cheapest test — the repaired bundle, minutes on a T4, $0. License — the signed pre-reg + hook-fix amendment. Quantitative prediction — ĉ = 0.0374 (hook-independent) suggests the KILL branch, but ΔM is the registered gate. Breaking point — (h) voids the run if delivery fails; the decision table is unchanged.
+- **CEO re-clearance:** EXP131 re-execution **attempt 2** is CLEARED for the founder's Kaggle T4 under the signed pre-reg + hook-fix amendment. Conditions: (i) the (h) control runs first on GPU and must PASS before injection forwards; (ii) any executor change beyond the two licensed repairs voids this clearance; (iii) the RUNBOOK's upload steps apply verbatim (whole `exp131_v1inj/` directory, T4 accelerator, <1 GPU-hour).
+- **RUNBOOK updated:** dated hook-fix note appended (protocol section untouched).
+- **Continuity:** LOG-4822 confirmed max before append; 4822→4823. Uncommitted per convention.
