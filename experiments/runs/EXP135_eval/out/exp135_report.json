@@ -1,0 +1,340 @@
+{
+ "experiment": "EXP135",
+ "log": "LOG-4843",
+ "n": 60,
+ "excluded": 0,
+ "exclusions": [],
+ "mu_M": 0.6364541816711425,
+ "sigma_M": 0.5115904709555431,
+ "g_control_r": 1.0,
+ "primary": {
+  "rho_bar": -0.004166666666666667,
+  "p": 0.530275,
+  "mcse": 0.001115982581349279,
+  "mean_k": 5.016666666666667
+ },
+ "diag_05": {
+  "rho_bar": 0.10833333333333334,
+  "p": 0.101615,
+  "mcse": 0.0006756085840743884,
+  "mean_k": 4.566666666666666
+ },
+ "diag_09": {
+  "rho_bar": 0.15416666666666667,
+  "p": 0.034135,
+  "mcse": 0.00040601602046594164,
+  "mean_k": 4.383333333333334
+ },
+ "per_item": [
+  {
+   "item": "exp077_planet_2hop_0",
+   "k_primary": 2,
+   "rho_star_primary": 0.75
+  },
+  {
+   "item": "exp077_planet_2hop_1",
+   "k_primary": 3,
+   "rho_star_primary": 0.5
+  },
+  {
+   "item": "exp077_planet_2hop_2",
+   "k_primary": 2,
+   "rho_star_primary": 0.75
+  },
+  {
+   "item": "exp077_planet_2hop_3",
+   "k_primary": 3,
+   "rho_star_primary": 0.5
+  },
+  {
+   "item": "exp077_planet_2hop_4",
+   "k_primary": 8,
+   "rho_star_primary": -0.75
+  },
+  {
+   "item": "exp077_planet_2hop_5",
+   "k_primary": 6,
+   "rho_star_primary": -0.25
+  },
+  {
+   "item": "exp077_planet_2hop_6",
+   "k_primary": 5,
+   "rho_star_primary": 0.0
+  },
+  {
+   "item": "exp077_planet_2hop_7",
+   "k_primary": 8,
+   "rho_star_primary": -0.75
+  },
+  {
+   "item": "exp077_planet_2hop_8",
+   "k_primary": 6,
+   "rho_star_primary": -0.25
+  },
+  {
+   "item": "exp077_planet_2hop_9",
+   "k_primary": 9,
+   "rho_star_primary": -1.0
+  },
+  {
+   "item": "exp077_planet_2hop_10",
+   "k_primary": 3,
+   "rho_star_primary": 0.5
+  },
+  {
+   "item": "exp077_planet_2hop_11",
+   "k_primary": 2,
+   "rho_star_primary": 0.75
+  },
+  {
+   "item": "exp077_planet_2hop_12",
+   "k_primary": 4,
+   "rho_star_primary": 0.25
+  },
+  {
+   "item": "exp077_planet_2hop_13",
+   "k_primary": 7,
+   "rho_star_primary": -0.5
+  },
+  {
+   "item": "exp077_planet_2hop_14",
+   "k_primary": 9,
+   "rho_star_primary": -1.0
+  },
+  {
+   "item": "exp077_planet_3hop_0",
+   "k_primary": 3,
+   "rho_star_primary": 0.5
+  },
+  {
+   "item": "exp077_planet_3hop_1",
+   "k_primary": 4,
+   "rho_star_primary": 0.25
+  },
+  {
+   "item": "exp077_planet_3hop_2",
+   "k_primary": 9,
+   "rho_star_primary": -1.0
+  },
+  {
+   "item": "exp077_planet_3hop_3",
+   "k_primary": 3,
+   "rho_star_primary": 0.5
+  },
+  {
+   "item": "exp077_planet_3hop_4",
+   "k_primary": 8,
+   "rho_star_primary": -0.75
+  },
+  {
+   "item": "exp077_planet_3hop_5",
+   "k_primary": 8,
+   "rho_star_primary": -0.75
+  },
+  {
+   "item": "exp077_planet_3hop_6",
+   "k_primary": 3,
+   "rho_star_primary": 0.5
+  },
+  {
+   "item": "exp077_planet_3hop_7",
+   "k_primary": 9,
+   "rho_star_primary": -1.0
+  },
+  {
+   "item": "exp077_planet_3hop_8",
+   "k_primary": 3,
+   "rho_star_primary": 0.5
+  },
+  {
+   "item": "exp077_planet_3hop_9",
+   "k_primary": 6,
+   "rho_star_primary": -0.25
+  },
+  {
+   "item": "exp077_planet_3hop_10",
+   "k_primary": 4,
+   "rho_star_primary": 0.25
+  },
+  {
+   "item": "exp077_planet_3hop_11",
+   "k_primary": 3,
+   "rho_star_primary": 0.5
+  },
+  {
+   "item": "exp077_planet_3hop_12",
+   "k_primary": 3,
+   "rho_star_primary": 0.5
+  },
+  {
+   "item": "exp077_planet_3hop_13",
+   "k_primary": 7,
+   "rho_star_primary": -0.5
+  },
+  {
+   "item": "exp077_planet_3hop_14",
+   "k_primary": 3,
+   "rho_star_primary": 0.5
+  },
+  {
+   "item": "exp077_element_2hop_0",
+   "k_primary": 5,
+   "rho_star_primary": 0.0
+  },
+  {
+   "item": "exp077_element_2hop_1",
+   "k_primary": 5,
+   "rho_star_primary": 0.0
+  },
+  {
+   "item": "exp077_element_2hop_2",
+   "k_primary": 6,
+   "rho_star_primary": -0.25
+  },
+  {
+   "item": "exp077_element_2hop_3",
+   "k_primary": 9,
+   "rho_star_primary": -1.0
+  },
+  {
+   "item": "exp077_element_2hop_4",
+   "k_primary": 7,
+   "rho_star_primary": -0.5
+  },
+  {
+   "item": "exp077_element_2hop_5",
+   "k_primary": 9,
+   "rho_star_primary": -1.0
+  },
+  {
+   "item": "exp077_element_2hop_6",
+   "k_primary": 5,
+   "rho_star_primary": 0.0
+  },
+  {
+   "item": "exp077_element_2hop_7",
+   "k_primary": 5,
+   "rho_star_primary": 0.0
+  },
+  {
+   "item": "exp077_element_2hop_8",
+   "k_primary": 6,
+   "rho_star_primary": -0.25
+  },
+  {
+   "item": "exp077_element_2hop_9",
+   "k_primary": 6,
+   "rho_star_primary": -0.25
+  },
+  {
+   "item": "exp077_element_2hop_10",
+   "k_primary": 9,
+   "rho_star_primary": -1.0
+  },
+  {
+   "item": "exp077_element_2hop_11",
+   "k_primary": 2,
+   "rho_star_primary": 0.75
+  },
+  {
+   "item": "exp077_element_2hop_12",
+   "k_primary": 5,
+   "rho_star_primary": 0.0
+  },
+  {
+   "item": "exp077_element_2hop_13",
+   "k_primary": 9,
+   "rho_star_primary": -1.0
+  },
+  {
+   "item": "exp077_element_2hop_14",
+   "k_primary": 2,
+   "rho_star_primary": 0.75
+  },
+  {
+   "item": "exp077_element_3hop_0",
+   "k_primary": 1,
+   "rho_star_primary": 1.0
+  },
+  {
+   "item": "exp077_element_3hop_1",
+   "k_primary": 4,
+   "rho_star_primary": 0.25
+  },
+  {
+   "item": "exp077_element_3hop_2",
+   "k_primary": 1,
+   "rho_star_primary": 1.0
+  },
+  {
+   "item": "exp077_element_3hop_3",
+   "k_primary": 5,
+   "rho_star_primary": 0.0
+  },
+  {
+   "item": "exp077_element_3hop_4",
+   "k_primary": 2,
+   "rho_star_primary": 0.75
+  },
+  {
+   "item": "exp077_element_3hop_5",
+   "k_primary": 2,
+   "rho_star_primary": 0.75
+  },
+  {
+   "item": "exp077_element_3hop_6",
+   "k_primary": 3,
+   "rho_star_primary": 0.5
+  },
+  {
+   "item": "exp077_element_3hop_7",
+   "k_primary": 4,
+   "rho_star_primary": 0.25
+  },
+  {
+   "item": "exp077_element_3hop_8",
+   "k_primary": 1,
+   "rho_star_primary": 1.0
+  },
+  {
+   "item": "exp077_element_3hop_9",
+   "k_primary": 4,
+   "rho_star_primary": 0.25
+  },
+  {
+   "item": "exp077_element_3hop_10",
+   "k_primary": 2,
+   "rho_star_primary": 0.75
+  },
+  {
+   "item": "exp077_element_3hop_11",
+   "k_primary": 6,
+   "rho_star_primary": -0.25
+  },
+  {
+   "item": "exp077_element_3hop_12",
+   "k_primary": 9,
+   "rho_star_primary": -1.0
+  },
+  {
+   "item": "exp077_element_3hop_13",
+   "k_primary": 9,
+   "rho_star_primary": -1.0
+  },
+  {
+   "item": "exp077_element_3hop_14",
+   "k_primary": 5,
+   "rho_star_primary": 0.0
+  }
+ ],
+ "forwards": 3751,
+ "budget_expected": 3751,
+ "backbone_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+ "backbone_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+ "bench_sha256": "eb304fa65a60b65ad87767d251084b256d0a79001a16b4fe8ebcd1b1f45589df",
+ "bridge_reconstruction_sha256": "4f4bfeffb856a919fdb5162ed8d0bf1a5e2eb4d2d197e4b09d91dc20699b1f2e",
+ "env": {
+  "torch": "2.14.0+cpu"
+ },
+ "exit": 0
+}

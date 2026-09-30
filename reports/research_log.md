@@ -15128,3 +15128,17 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Repo verification (founder order):** all key research artifacts confirmed present and committed — README.md (v3.11 state), reports/research_log.md (736 LOG entries), research/benchmarks/FRONTIER_SCOREBOARD.md (v3.11), research/innovation/SPRINT_2026-09-30_POST_TGA.md, research/prereg/EXP135_PREREG_EVAL_2026-09-30.md, both Law #14 reviews. No secrets or weights in the pushed range.
 
 **Not pushed:** `experiments/runs/EXP135_eval/` (untracked — execution lane still running; LOG-4843 will ride the next push). This LOG-4845 record is committed locally and will ride the next push per convention.
+
+## LOG-4843 — EXP135 (B2/EVAL) execution complete: raw results (2026-09-30)
+
+**Execution lane (CEO pre-assigned; single-lane fence: execute only, no verdict).** Protocol: `research/prereg/EXP135_PREREG_EVAL_2026-09-30.md` (as amended LOG-4842). Runner: `experiments/runs/EXP135_eval/run_exp135.py` (sha256 `c91d518fd884f4d58e75d3cea71f7899e7e7134a0cceb6c373b25faba9beadcf`). $0 CPU, 2 threads, torch 2.14.0+cpu / transformers 5.17.0 / numpy 2.5.3. Exit 0, clean completion. One executor defect hit and repaired mid-run: missing `H_ALLOW_FRAC` constant crashed post-processing after all 3,751 forwards (exit 1); constant added (`0.01`), checkpointing added, full deterministic re-run executed — the reported numbers are from the clean re-run.
+
+**Raw endpoint (primary, S_E λ_c=0.7):** ρ̄* = **-0.0042**, one-sided permutation p = **0.530275** (B=200,000, MCSE ≤ 0.0011), mean bridge rank k̄ = 5.02. Pre-registered bars: CONTINUE requires ρ̄* ≥ 0.7 and p < 0.05; KILL at ρ̄* ≤ 0.3. Verdict interpretation reserved for the independent verdict-review lane.
+**Diagnostics:** S_E(0.5): ρ̄* = 0.1083, p = 0.101615. S_E(0.9): ρ̄* = 0.1542, p = 0.034135.
+**Bridge-rank distribution (60 items):** k=1:3, 2:8, 3:11, 4:6, 5:8, 6:7, 7:3, 8:4, 9:10.
+
+**Guards (all PASS):** (a) Δθ=0 backbone hash pre = post = `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed` (matches pin). (b) Bridge re-derived deterministically from the licensed construction (`normalize(E[t]−E[f])`, `' '+entity`, `[0]`, runner ll.725–729 / LOG-128 lineage); α asserted = 0.5. (c) Bench 60/60, sha256 `eb304fa65a60b65ad87767d251084b256d0a79001a16b4fe8ebcd1b1f45589df`. (d) Exclusions 0 (≤6); n=60. (e) Degeneracy 29 items < 30 trip threshold (≥n/2). (f) Forward ledger 3,751 = 3,751 exactly (2,700 intervention + 300 cache + 750 D_sup + 1 control). (g) Readout-sensitivity r = 1.0000000 ∈ [0.99, 1.01]. (h) Inertness: randoms C2–C9 pair-flips vs cached baseline = 2,1,1,2,0,1,1,1 (allow ≤ 3 each). Margin baseline: μ_M = 0.636454, σ_M = 0.511590 (750 D_sup forwards).
+
+**Artifacts** (`experiments/runs/EXP135_eval/out/`): `exp135_report.json` (`9b770386…`), `exp135_records.json` (`b12125af…`, per (candidate,item,view) ŷ+margins + unintervened cache), `exp135_per_item.csv` (`fe88cfb2…`, 60-row per-item k/ρ* table), `exp135_run_log.txt` (`67d21ed1…`), `exp135_checkpoint.json`.
+
+**Continuity:** LOG-4843 was CEO pre-assigned to this lane; appended after 4844/4845 (push records) per the pre-assignment. Uncommitted per convention — CEO commits.
