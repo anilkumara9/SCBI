@@ -1,5 +1,18 @@
 # SCBI Research Log
 
+## LOG-4880 — Erratum: phantom LOG citations in LOG-4525 GPU-queue sequencing (2026-10-03)
+
+**Lane [FACT]:** repo-hygiene lane, LOG-4880 pre-assigned (next free after LOG-4879). $0 compute. No signed artifact modified (experiments/protocols/*, theory/proofs/*, adversarial_audit_exp065_exp066.md, novelty_report.md untouched); append-only prepend to `reports/research_log.md`.
+
+**Incident [FACT]:** LOG-4525's GPU-queue section (research_log.md L10981, L10989, L11001) and `research/strategy/GPU_QUEUE_READINESS_2026-09-29.md` cite LOG-9364, LOG-10260, and LOG-10650 as [FACT] confirming the GPU-queue standing order. Verified this lane: `git log --all --oneline -S "LOG-<n>" -- reports/research_log.md` for each of the three returns ONLY commit `85212d7` (2026-09-29) — the commit that introduced the citations themselves. No such log entries exist anywhere in repo history. The three citations are phantom.
+
+**Wider check [FACT]:** the same LOG-4525 sequencing line also cites LOG-819/833. Verified: no `## LOG-819` or `## LOG-833` section exists in the log; LOG-819 appears only inside LOG-4525's own text (L10989, L10991 — self-citation); LOG-833 has zero hits repo-wide. Neither is a verifiable support either.
+
+**What survives [FACT]:** (a) the EXP087 license chain is intact and unrevoked — all five verified as log sections this lane: LOG-324 (pre-reg SIGNED, 2026-09-24), LOG-340 (Law #14 bundle review SIGN-WITH-FIXES, 2026-09-25), LOG-341 (repair wave, 2026-09-25), LOG-342 (re-verification SIGN, 2026-09-25), LOG-343 (CEO GPU CLEARANCE GRANTED, 2026-09-25); (b) real queue-related entries exist and may be cited instead: LOG-259 (CEO GPU clearance for EXP083, queued behind K2, 2026-09-24), LOG-363 (EXP083 gates 1–3, 2026-09-25), LOG-4315 (EXP084 gates 1–5, 2026-09-25).
+
+**Disposition [FACT]:** the sequencing [FACT] claim in LOG-4525 (L10989) is downgraded to UNVERIFIED-as-cited — its cited supports are phantom or unverifiable; it must be re-grounded on verified entries (e.g. LOG-259/363/4315) before any future GPU-queue statement reuses it. Append-only rule going forward: GPU-queue claims must cite only verified LOG numbers. No verdict, clearance, or experiment license is altered by this erratum.
+**Next free: LOG-4881.
+
 ## LOG-4507 — Push-cycle prep: commit v83-plan review/repair workstream (2026-09-28)
 
 **Commissioning [FACT]:** LOG-4507 pre-assigned. Commit the LOG-4505 independent Law #14 review + LOG-4506 D1-repair workstream. No push (push requires a fresh founder-supplied token; none held by this lane). No PR opened.
@@ -15561,3 +15574,28 @@ research log is append-only — no stash, move, or rewrite was used at any point
 5. **Remote HEAD:** could not be verified anonymously — `git ls-remote` prompts for credentials (repo requires auth; no token on file). The final fast-forward confirmation must happen at push time with the founder's fresh token.
 
 **Verdict:** push-ready pending founder token. Do NOT push without it. The batch is commit-frozen; any further commits before the push must re-run this verification.
+
+## LOG-4879 — 2026-10-02 — Friday cull (acting Research Lead)
+
+**Week under review:** 2026-09-28 → 2026-10-02. Last cull was LOG-4353 (2026-09-25); EXP094's 2026-09-27 burial was already recorded in the graveyard's 2026-09-26→28 section — not double-counted here. Next free: LOG-4880.
+
+**Q1 (LOG-218): did we falsify something?** YES — emphatically. Fourteen binding nulls/kills landed this week: EXP095, EXP096, EXP101, EXP103, EXP105 (static/S6 family closure); EXP107, EXP114, EXP125, EXP126, EXP129 (H-wave); EXP131, EXP133, EXP135, EXP137 (TGA/post-TGA); plus eight PIVOTs (EXP097–100, EXP102; premise/fragility/untestable), one pre-launch REJECT (EXP130), twelve RUN-INVALIDs. The week's signature falsification moment: we voided our OWN binding KILL (EXP131 LOG-4766 → RUN-INVALID LOG-4810) on discovering the blind-tap apparatus defect, fixed the hook, and rehabilitated the KILL on a clean re-execution (LOG-4830–4832). Falsification-first is not a slogan here — we killed our own signed verdict and re-earned it honestly.
+
+**Q2 (LOG-218): did we attempt anything ambitious?** YES. The H-wave (H1–H8: honesty instruments, the label-free head with genuine positive-signal upside, positional-order ensembling, planned test-time scaling, closed-loop sense-act) was the program's first coordinated positive-signal hunt. The TGA program (EXP127→131→133→137→138) was a full paradigm chapter: exists (8.24× amplification) / carries nothing / moves nothing / precision-certified. The G/E/S loop's E-step test (EXP135) was an architecture-level bet — and its KILL retired the selection architecture itself. The J-tier summit candidates (S4-4–S4-7: re-entrant attractors, free-energy selection, metacognitive self-modeling, spectral phase transition) remain queued — the summit bet is still on the table.
+
+**Cull verdict: NOT a failed week.** Falsification happened AND ambitious attempts happened.
+
+**Cull actions:**
+1. **Backlog triage (LOG-219 cut rule):** every row carries a kill criterion, a costed pilot, and a belief-change statement — NO CUTS. S4-8 row updated to CLOSED (executed as EXP104/105 → EXP105 binding KILL → I2′ falsification-terminal). Note for the Lead: S5-2 (power audit) and S5-3 (decode probes) remain QUEUED with Law-#15 packets on record, dispatchable at $0 CPU — licensed idle work, flag for dispatch.
+2. **Deaths-owe-candidates table:** 14 new rows added for this week's deaths. 13 PAID — via born candidates (S6-1–S6-5 sprint LOG-4408; B1–B5 post-TGA sprint LOG-4837), operationalized teachings (template-decorrelated bench discipline; LFH reclassification as domain-set-detector correlations; generation-channel pre-launch gate), room closures (EXP114 POE, EXP129 CLP), terminal closures (EXP105 I2′; EXP137 TGA), and stand-down (S6 wave LOG-4463/4464 — the teaching IS the closure; forcing a candidate would violate the worth-it gate). 1 OPEN: EXP135's death (E-step/G-E/S selection architecture retired) — escalated to the CEO with three options (below).
+3. **Graveyard:** "Week of 2026-09-28 → 2026-10-02" burial section added — 14 burials with honors, each with what died, what it taught, what it rules out.
+4. **Scoreboard (Track 9):** verified v3.15 current — every verdict this week was plotted the same cycle (LOG-4816/4819/4833/4847/4854/4859/4866). No lag, no Track 9 flag. Next literature re-check due 2026-10-23.
+
+**CEO escalation (the one OPEN debt):** EXP135's KILL retired the G/E/S loop's selection architecture as designed — "the summit path needs an architecture rethink." Options: (a) commission a post-E-step selection-architecture innovation sprint (label-free ranking without the E-step — new operator class, Law #15 gated); (b) stand the loop family down and redirect to surviving lines (J-tier summit candidates S4-4–S4-7, S5-2/S5-3 audits, EXP112/136 HELD follow-ups); (c) accept retirement as terminal boundary science and hold the boundary-posture. Recommendation: (a) — the E-step's death is the most architecturally consequential kill of the program; the rethink it demands should be a sprint, not a shrug. CEO decision needed; the row stays OPEN until ruled.
+
+**Compact standup:**
+- **Falsified:** the static-geometry family at every granularity (EXP095/096/097 three-experiment closure; EXP096 the program's first conditional closure); the L11-rescue line (S6 wave, stand-down); the I2′ runner-up-suppression room (EXP105, falsification-terminal); template-artifact label-free reading (EXP107); positional-order ensembling (EXP114); honesty-instrument generality (EXP125); identity-readout interpretation (EXP126); closed-loop sense-act (EXP129); one-shot TGA-v₁ injection (EXP131, rehabilitated); multistep geodesic steering (EXP133); the TGA channel's information content (EXP137); the G/E/S loop's selection architecture (EXP135 — the week's most consequential kill); and our own apparatus discipline (blind-tap self-void).
+- **Attempted:** the H-wave positive-signal hunt (H1–H8); the TGA paradigm chapter (exists/carries-nothing/moves-nothing/precision-certified); the G/E/S architecture bet; v85 paper update (Varshney quantization-trap citation, LOG-4871–4875); the daily frontier sweep (LOG-4870); the Colab "Reproduce the Gap" notebook (LOG-4503).
+- **Died:** 14 hypotheses/rooms — buried with honors in the graveyard.
+- **Born:** S6-1–S6-5 (from EXP095/096's death-debt); the H1–H8 candidate wave; B1–B5 post-TGA bets (B2/B3/B4/B5 executed and verdict-landed within the same week; B1 refused under Law #4); the EXP135 escalation options (awaiting CEO ruling).
+- **Honest answers:** Q1 YES, Q2 YES. Not a failed week.
