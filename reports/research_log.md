@@ -1,5 +1,23 @@
 # SCBI Research Log
 
+## LOG-4884 — Test A micro-analysis: margin calibration FAILS (inverted) (2026-10-03)
+
+**Lane [FACT]:** micro-analysis lane, 2026-10-03. $0 compute, analysis only, zero new forwards. Salvaged Test A from the REJECTED EXP135 sprint design, per the Law #14 review's salvage recommendation (`research/innovation/EXP135_SPRINT_DESIGN_REVIEW_2026-10-03.md` §7). Full record: `research/innovation/TESTA_CALIBRATION_2026-10-03.md`.
+
+**Question [FACT]:** is the frozen model's margin a calibrated confidence proxy on the EXP135 bench — i.e., is P(baseline correct | m⁰) increasing in m⁰?
+
+**Provenance [FACT]:** the design's primary path (recovering the 6 licensed McNemar-b item IDs from `experiments/runs/EXP077_cone_vs_line/exp077_instance_records.json`) is provenance-invalid and was NOT used: the in-repo JSON is the CPU-smoke archive (McNemar b=14, c=0 by direct count), not the official GPU record (LOG-128: b=6, c=0); the 6 official item IDs are unrecoverable from any in-repo artifact. Per the design's pre-registered fallback, Test A ran as a labeled instrument check on the unintervened cache using bench labels. **Law #7 firewall intact [FACT]:** labels touched only instrument validation, never any candidate score or selection.
+
+**Method [FACT]:** bench + views reconstructed deterministically from `experiments/runs/EXP135_eval/run_exp135.py`; rebuilt bench sha256 matches the committed run's `bench_sha256` exactly; 300/300 committed `yhat` values match. Per-item mean unintervened margin m̄⁰ over 5 views (60 values); pre-registered partition wrong = ≤2/5 correct (n=33), right = rest (n=27); one-sided permutation test (100,000 perms, seed 20261003), bar p<0.05.
+
+**Result [FACT]:** calibration FAILS — and inverts. Wrong items mean m̄⁰ = 1.0578 vs right items 0.8627; one-sided permutation p = 0.9906 against bar p<0.05. Robustness checks agree: strict partition p=0.9985, per-view p=0.9678, Spearman(m̄⁰, accuracy) ρ=−0.3958, p=0.0017 — significantly *anti*-calibrated.
+
+**Mechanism [INTERPRETATION, post-hoc]:** position bias. When the correct answer is listed second, accuracy drops to 37.33% (vs 50.00% when first) while mean margin *rises* (1.0338 vs 0.9062). The margin tracks the model's own biased decision policy, not correctness.
+
+**Implication [FACT]:** weakens S4-5's premise for confidence-like signals on this bench family (S4-5's backlog row now carries a pre-registered calibration-check requirement). Would independently have killed the sprint's calibration license. Does not kill S4-5 (free energy over trajectories is a different object) — raises its evidentiary bar.
+
+**Next free: LOG-4885.**
+
 ## LOG-4883 — EXP135 sprint design REJECTED — loop family stood down (2026-10-03)
 
 **Lane [FACT]:** bookkeeping lane, LOG-4883 pre-assigned (next free after LOG-4882). $0 compute. Read-only on all signed artifacts; append-only prepend to `reports/research_log.md`.
