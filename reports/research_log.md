@@ -1,5 +1,15 @@
 # SCBI Research Log
 
+## LOG-4893 — Push-readiness verification: LOG-4879→4892 batch READY (2026-10-03)
+
+**Lane [FACT]:** push-readiness verification, 2026-10-03, mirroring LOG-4878. $0 compute, verification only, no push. Report: `goals/scbi-research-program/hidden_files/push_readiness_LOG4879-4892_2026-10-03.md`.
+
+**Batch [FACT]:** 7 commit-only commits on `sync/2026-09-29-consolidated` (6a8c567 LOG-4880 erratum + cull batch, 92af2d7 LOG-4881→4883 v90 SIGN + EXP135 REJECT, 7a77602 LOG-4884 Test A, 0c84069 LOG-4885/4886 EXP139, eb5412e LOG-4887→4890 EXP140/141, 0d55447 LOG-4891/4892 EXP142, 8d0559b scoreboard v3.17 + backlog row fixes).
+
+**Result [FACT]:** READY — LOG headers 4879–4892 gap-free and monotonic; 45 files, none >5MB, zero weight files, zero credential-pattern additions; linear batch, no merge commits, fast-forward holds against cached remote ref 7f0cc64; working tree clean; the four signed pre-reg drafts were created new in this batch with no post-sign edits; v90 paper sources untouched. Remote freshness UNVERIFIED (git fetch cannot authenticate without the founder's token — re-fetch and re-verify fast-forward at push time). The push itself remains founder-reserved: needs a fresh one-use token, used once transiently, never force-push.
+
+**Next free: LOG-4894.**
+
 ## LOG-4892 — EXP142 Stage-1: C2 guard fired → S4-7 spectral family HELD (2026-10-03)
 
 **Lane [FACT]:** EXP142 Stage-1 CPU observational pilot execution, 2026-10-03, per the signed pre-registration (LOG-4891). $0 compute, CPU only, ~1h. Run record: `experiments/runs/EXP142_stage1/` (run_stage1.py, stage1_records.json, RUN_REPORT.md, stage1_verdict.json).
