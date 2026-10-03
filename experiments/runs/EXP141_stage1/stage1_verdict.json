@@ -1,0 +1,5 @@
+{
+ "verdict": "COMPLETE",
+ "gate_reading": "KILL (self-model): G2 null (p=0.181) \u2014 no correctness information; G1 degenerate (std=0.000045) is the mechanism",
+ "forwards": 60
+}

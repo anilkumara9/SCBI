@@ -1,0 +1,33 @@
+[02:27:50] threads=1
+[02:27:50] loading model EleutherAI/pythia-410m rev 9879c9b5f8bea9051dcb0e68dff21493d67e9d4f (float32, cpu, local_files_only)
+[02:28:01] backbone pre-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[02:28:01] (b) backbone pin PASS
+[02:28:01] (a) bench len=60; bench sha256=eb304fa65a60b65ad87767d251084b256d0a79001a16b4fe8ebcd1b1f45589df
+[02:28:01] (a) bench pin PASS
+[02:28:01] tok1 single-token assertion PASS for all 60 view-0 A/C names
+[02:28:01] branch prompts built (B1 swap verified involutive, premise-unchanged, all 60)
+[02:33:16] items 10/60; gens=40 fwds=40; 315.3s elapsed
+[02:38:43] items 20/60; gens=80 fwds=80; 642.1s elapsed
+[02:44:07] items 30/60; gens=120 fwds=120; 966.8s elapsed
+[02:49:21] items 40/60; gens=160 fwds=160; 1280.6s elapsed
+[02:54:49] items 50/60; gens=200 fwds=200; 1607.9s elapsed
+[03:00:21] items 60/60; gens=240 fwds=240; 1940.0s elapsed
+[03:00:21] generation+scoring complete: gens=240 fwds=240 degenerate_pairs=0
+[03:00:21] pass counts 240/240 PASS
+[03:00:39] (c) determinism spot-check PASS (items 0, 30, 59 byte-identical)
+[03:00:42] backbone post-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[03:00:42] (d) Δθ=0 PASS
+[03:00:42] fully-degenerate items: 0
+[03:00:42] G1: 28/60 items with >=2 distinct answers (bar >=15) -> PASS
+[03:00:42] G2: median F-spread = 1.289890 nats/token (bar >=0.05) -> PASS
+[03:00:42] G3 instrument: n=60 items
+[03:00:42] C1: Spearman(F_bar, acc) rho=0.0798 one-sided p_lic=0.727857 p_inv=0.272143 -> NULL
+[03:00:42] C2 partition: n_wrong=20 (acc<=0.5), n_right=40 (acc>=0.75)
+[03:00:44] C2: D_obs=-0.060352 p_lic=0.826730 p_inv=0.173270 -> NULL
+[03:00:44] G3: C1=NULL C2=NULL -> FAIL-null
+[03:00:45] secondary min-F: rho=0.3241 p_lic=0.994238 | D=-0.185144 p_lic=0.999130 -> min-inverted=True
+[03:00:45] diagnostic acc: B0=0.7000 FE=0.7000 rand=0.7667 SC=0.7167 (n=60)
+[03:00:45] selection frequency per branch: [23, 24, 0, 13]
+[03:00:45] dM_FE=0.0000 dM_rand=0.0667 dM_SC=0.0167 (diagnostic only; Stage-2 bars NOT applied)
+[03:00:45] STAGE-1 GATE READING: HELD (G3 null: C1=null C2=null)
+[03:00:45] records written; DONE

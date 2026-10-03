@@ -1,0 +1,731 @@
+{
+ "experiment": "EXP141",
+ "prereg": "research/prereg/EXP_S46_prereg_DRAFT_2026-10-03.md (SIGNED, LOG-4889)",
+ "pins": {
+  "backbone_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "backbone_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "bench": "eb304fa65a60b65ad87767d251084b256d0a79001a16b4fe8ebcd1b1f45589df",
+  "hf_revision": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+  "model": "EleutherAI/pythia-410m",
+  "dtype": "float32"
+ },
+ "seeds": {
+  "S_PERM_G2": 20261007,
+  "S_PERM_C2": 20261008
+ },
+ "counts": {
+  "forwards": 60,
+  "failed_selfevals": 0
+ },
+ "a_self": [
+  0.0001837021845858544,
+  0.0002256430743727833,
+  0.00027812900952994823,
+  0.00021519442088901997,
+  0.00022358779096975923,
+  0.0003100352478213608,
+  0.00020097242668271065,
+  0.00023642947780899704,
+  0.0002643562329467386,
+  0.0002442901604808867,
+  0.00015140741015784442,
+  0.00019507714023347944,
+  0.00025506250676698983,
+  0.00020810427668038756,
+  0.0001574303605593741,
+  0.00017112302884925157,
+  0.00022776915284339339,
+  0.00024272812879644334,
+  0.0002052404743153602,
+  0.00019713187066372484,
+  0.0001614375360077247,
+  0.00024401783593930304,
+  0.0002292035787831992,
+  0.00017471041064709425,
+  0.00015188325778581202,
+  0.00011767351679736748,
+  0.0002025818539550528,
+  0.0001880380732472986,
+  0.00017357670003548265,
+  0.0001534438197268173,
+  0.00017283842316828668,
+  0.00024480934371240437,
+  0.00024575297720730305,
+  0.00022441578039433807,
+  0.00021436520910356194,
+  0.00033523092861287296,
+  0.00019394789705984294,
+  0.0002506570890545845,
+  0.0002820435038302094,
+  0.0002466163132339716,
+  0.0001431652926839888,
+  0.000197720859432593,
+  0.0002533133083488792,
+  0.0002031825133599341,
+  0.0001631545601412654,
+  0.0001614375360077247,
+  0.00024401783593930304,
+  0.0002292035787831992,
+  0.00021516840206459165,
+  0.00018584603094495833,
+  0.00017112302884925157,
+  0.00022776915284339339,
+  0.0001880380732472986,
+  0.00017357670003548265,
+  0.0001534438197268173,
+  0.00010909458069363609,
+  0.00021465432655531913,
+  0.0001840614713728428,
+  0.00017471041064709425,
+  0.00015188325778581202
+ ],
+ "b0_correct": [
+  1,
+  1,
+  0,
+  1,
+  1,
+  1,
+  1,
+  1,
+  0,
+  1,
+  1,
+  0,
+  0,
+  1,
+  0,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  0,
+  1,
+  1,
+  1,
+  0,
+  1,
+  1,
+  1,
+  0,
+  1,
+  1,
+  1,
+  1,
+  1,
+  0,
+  0,
+  1,
+  1,
+  0,
+  0,
+  0,
+  0,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  0,
+  1,
+  1,
+  0,
+  0,
+  1,
+  0,
+  1
+ ],
+ "b0_answers": [
+  "Alice",
+  "Bob",
+  "Emma",
+  "Alice",
+  "Alice",
+  "Bob",
+  "Alice",
+  "Bob",
+  "Emma",
+  "Alice",
+  "Alice",
+  "David",
+  "Emma",
+  "Alice",
+  "David",
+  "Alice",
+  "Bob",
+  "Alice",
+  "Alice",
+  "Alice",
+  "Alice",
+  "Bob",
+  "Alice",
+  "Emma",
+  "Alice",
+  "Alice",
+  "Bob",
+  "Emma",
+  "Alice",
+  "Alice",
+  "Alice",
+  "David",
+  "Charlie",
+  "Alice",
+  "Alice",
+  "Bob",
+  "Alice",
+  "Emma",
+  "Emma",
+  "Alice",
+  "Alice",
+  "David",
+  "Emma",
+  "Emma",
+  "David",
+  "Alice",
+  "Bob",
+  "Alice",
+  "Alice",
+  "Alice",
+  "Alice",
+  "Bob",
+  "Emma",
+  "Alice",
+  "Alice",
+  "David",
+  "Emma",
+  "Alice",
+  "Emma",
+  "Alice"
+ ],
+ "gates": {
+  "G1": {
+   "std": 4.4539949682914484e-05,
+   "non_constant": true,
+   "bar": 0.01,
+   "pass": false
+  },
+  "G2": {
+   "I_obs_nats": 0.07161133528268993,
+   "perm_p": 0.181,
+   "perms": 100000,
+   "bar": 0.05,
+   "pass": false
+  },
+  "G3": {
+   "C1": {
+    "rho": -0.1260231689689231,
+    "p_licensed": 0.8313387171641592,
+    "p_inv": 0.8313387171641592,
+    "pass": false,
+    "inverted": false
+   },
+   "C2": {
+    "n_wrong": 18,
+    "n_right": 42,
+    "D_obs": 7.191694749053568e-06,
+    "p_licensed": 0.71532,
+    "p_inv": 0.28468,
+    "pass": false,
+    "inverted": false
+   },
+   "reading": "NULL"
+  }
+ },
+ "secondary": {
+  "auc": 0.42063492063492064,
+  "auc_ci95": [
+   0.2500243265884755,
+   0.5912455146813658
+  ]
+ },
+ "gate_reading": "KILL (self-model): G2 null (p=0.181) \u2014 no correctness information; G1 degenerate (std=0.000045) is the mechanism",
+ "items": [
+  {
+   "item": 0,
+   "id": "exp077_planet_2hop_0",
+   "a_self": 0.0001837021845858544,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 1
+  },
+  {
+   "item": 1,
+   "id": "exp077_planet_2hop_1",
+   "a_self": 0.0002256430743727833,
+   "b0_correct": 1,
+   "b0_answer": "Bob",
+   "bin": 2
+  },
+  {
+   "item": 2,
+   "id": "exp077_planet_2hop_2",
+   "a_self": 0.00027812900952994823,
+   "b0_correct": 0,
+   "b0_answer": "Emma",
+   "bin": 3
+  },
+  {
+   "item": 3,
+   "id": "exp077_planet_2hop_3",
+   "a_self": 0.00021519442088901997,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 2
+  },
+  {
+   "item": 4,
+   "id": "exp077_planet_2hop_4",
+   "a_self": 0.00022358779096975923,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 2
+  },
+  {
+   "item": 5,
+   "id": "exp077_planet_2hop_5",
+   "a_self": 0.0003100352478213608,
+   "b0_correct": 1,
+   "b0_answer": "Bob",
+   "bin": 3
+  },
+  {
+   "item": 6,
+   "id": "exp077_planet_2hop_6",
+   "a_self": 0.00020097242668271065,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 1
+  },
+  {
+   "item": 7,
+   "id": "exp077_planet_2hop_7",
+   "a_self": 0.00023642947780899704,
+   "b0_correct": 1,
+   "b0_answer": "Bob",
+   "bin": 2
+  },
+  {
+   "item": 8,
+   "id": "exp077_planet_2hop_8",
+   "a_self": 0.0002643562329467386,
+   "b0_correct": 0,
+   "b0_answer": "Emma",
+   "bin": 3
+  },
+  {
+   "item": 9,
+   "id": "exp077_planet_2hop_9",
+   "a_self": 0.0002442901604808867,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 3
+  },
+  {
+   "item": 10,
+   "id": "exp077_planet_2hop_10",
+   "a_self": 0.00015140741015784442,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 0
+  },
+  {
+   "item": 11,
+   "id": "exp077_planet_2hop_11",
+   "a_self": 0.00019507714023347944,
+   "b0_correct": 0,
+   "b0_answer": "David",
+   "bin": 1
+  },
+  {
+   "item": 12,
+   "id": "exp077_planet_2hop_12",
+   "a_self": 0.00025506250676698983,
+   "b0_correct": 0,
+   "b0_answer": "Emma",
+   "bin": 3
+  },
+  {
+   "item": 13,
+   "id": "exp077_planet_2hop_13",
+   "a_self": 0.00020810427668038756,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 2
+  },
+  {
+   "item": 14,
+   "id": "exp077_planet_2hop_14",
+   "a_self": 0.0001574303605593741,
+   "b0_correct": 0,
+   "b0_answer": "David",
+   "bin": 0
+  },
+  {
+   "item": 15,
+   "id": "exp077_planet_3hop_0",
+   "a_self": 0.00017112302884925157,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 0
+  },
+  {
+   "item": 16,
+   "id": "exp077_planet_3hop_1",
+   "a_self": 0.00022776915284339339,
+   "b0_correct": 1,
+   "b0_answer": "Bob",
+   "bin": 2
+  },
+  {
+   "item": 17,
+   "id": "exp077_planet_3hop_2",
+   "a_self": 0.00024272812879644334,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 3
+  },
+  {
+   "item": 18,
+   "id": "exp077_planet_3hop_3",
+   "a_self": 0.0002052404743153602,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 2
+  },
+  {
+   "item": 19,
+   "id": "exp077_planet_3hop_4",
+   "a_self": 0.00019713187066372484,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 1
+  },
+  {
+   "item": 20,
+   "id": "exp077_planet_3hop_5",
+   "a_self": 0.0001614375360077247,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 0
+  },
+  {
+   "item": 21,
+   "id": "exp077_planet_3hop_6",
+   "a_self": 0.00024401783593930304,
+   "b0_correct": 1,
+   "b0_answer": "Bob",
+   "bin": 3
+  },
+  {
+   "item": 22,
+   "id": "exp077_planet_3hop_7",
+   "a_self": 0.0002292035787831992,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 2
+  },
+  {
+   "item": 23,
+   "id": "exp077_planet_3hop_8",
+   "a_self": 0.00017471041064709425,
+   "b0_correct": 0,
+   "b0_answer": "Emma",
+   "bin": 1
+  },
+  {
+   "item": 24,
+   "id": "exp077_planet_3hop_9",
+   "a_self": 0.00015188325778581202,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 0
+  },
+  {
+   "item": 25,
+   "id": "exp077_planet_3hop_10",
+   "a_self": 0.00011767351679736748,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 0
+  },
+  {
+   "item": 26,
+   "id": "exp077_planet_3hop_11",
+   "a_self": 0.0002025818539550528,
+   "b0_correct": 1,
+   "b0_answer": "Bob",
+   "bin": 1
+  },
+  {
+   "item": 27,
+   "id": "exp077_planet_3hop_12",
+   "a_self": 0.0001880380732472986,
+   "b0_correct": 0,
+   "b0_answer": "Emma",
+   "bin": 1
+  },
+  {
+   "item": 28,
+   "id": "exp077_planet_3hop_13",
+   "a_self": 0.00017357670003548265,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 1
+  },
+  {
+   "item": 29,
+   "id": "exp077_planet_3hop_14",
+   "a_self": 0.0001534438197268173,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 0
+  },
+  {
+   "item": 30,
+   "id": "exp077_element_2hop_0",
+   "a_self": 0.00017283842316828668,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 0
+  },
+  {
+   "item": 31,
+   "id": "exp077_element_2hop_1",
+   "a_self": 0.00024480934371240437,
+   "b0_correct": 0,
+   "b0_answer": "David",
+   "bin": 3
+  },
+  {
+   "item": 32,
+   "id": "exp077_element_2hop_2",
+   "a_self": 0.00024575297720730305,
+   "b0_correct": 1,
+   "b0_answer": "Charlie",
+   "bin": 3
+  },
+  {
+   "item": 33,
+   "id": "exp077_element_2hop_3",
+   "a_self": 0.00022441578039433807,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 2
+  },
+  {
+   "item": 34,
+   "id": "exp077_element_2hop_4",
+   "a_self": 0.00021436520910356194,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 2
+  },
+  {
+   "item": 35,
+   "id": "exp077_element_2hop_5",
+   "a_self": 0.00033523092861287296,
+   "b0_correct": 1,
+   "b0_answer": "Bob",
+   "bin": 3
+  },
+  {
+   "item": 36,
+   "id": "exp077_element_2hop_6",
+   "a_self": 0.00019394789705984294,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 1
+  },
+  {
+   "item": 37,
+   "id": "exp077_element_2hop_7",
+   "a_self": 0.0002506570890545845,
+   "b0_correct": 0,
+   "b0_answer": "Emma",
+   "bin": 3
+  },
+  {
+   "item": 38,
+   "id": "exp077_element_2hop_8",
+   "a_self": 0.0002820435038302094,
+   "b0_correct": 0,
+   "b0_answer": "Emma",
+   "bin": 3
+  },
+  {
+   "item": 39,
+   "id": "exp077_element_2hop_9",
+   "a_self": 0.0002466163132339716,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 3
+  },
+  {
+   "item": 40,
+   "id": "exp077_element_2hop_10",
+   "a_self": 0.0001431652926839888,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 0
+  },
+  {
+   "item": 41,
+   "id": "exp077_element_2hop_11",
+   "a_self": 0.000197720859432593,
+   "b0_correct": 0,
+   "b0_answer": "David",
+   "bin": 1
+  },
+  {
+   "item": 42,
+   "id": "exp077_element_2hop_12",
+   "a_self": 0.0002533133083488792,
+   "b0_correct": 0,
+   "b0_answer": "Emma",
+   "bin": 3
+  },
+  {
+   "item": 43,
+   "id": "exp077_element_2hop_13",
+   "a_self": 0.0002031825133599341,
+   "b0_correct": 0,
+   "b0_answer": "Emma",
+   "bin": 2
+  },
+  {
+   "item": 44,
+   "id": "exp077_element_2hop_14",
+   "a_self": 0.0001631545601412654,
+   "b0_correct": 0,
+   "b0_answer": "David",
+   "bin": 0
+  },
+  {
+   "item": 45,
+   "id": "exp077_element_3hop_0",
+   "a_self": 0.0001614375360077247,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 0
+  },
+  {
+   "item": 46,
+   "id": "exp077_element_3hop_1",
+   "a_self": 0.00024401783593930304,
+   "b0_correct": 1,
+   "b0_answer": "Bob",
+   "bin": 3
+  },
+  {
+   "item": 47,
+   "id": "exp077_element_3hop_2",
+   "a_self": 0.0002292035787831992,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 2
+  },
+  {
+   "item": 48,
+   "id": "exp077_element_3hop_3",
+   "a_self": 0.00021516840206459165,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 2
+  },
+  {
+   "item": 49,
+   "id": "exp077_element_3hop_4",
+   "a_self": 0.00018584603094495833,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 1
+  },
+  {
+   "item": 50,
+   "id": "exp077_element_3hop_5",
+   "a_self": 0.00017112302884925157,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 0
+  },
+  {
+   "item": 51,
+   "id": "exp077_element_3hop_6",
+   "a_self": 0.00022776915284339339,
+   "b0_correct": 1,
+   "b0_answer": "Bob",
+   "bin": 2
+  },
+  {
+   "item": 52,
+   "id": "exp077_element_3hop_7",
+   "a_self": 0.0001880380732472986,
+   "b0_correct": 0,
+   "b0_answer": "Emma",
+   "bin": 1
+  },
+  {
+   "item": 53,
+   "id": "exp077_element_3hop_8",
+   "a_self": 0.00017357670003548265,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 1
+  },
+  {
+   "item": 54,
+   "id": "exp077_element_3hop_9",
+   "a_self": 0.0001534438197268173,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 0
+  },
+  {
+   "item": 55,
+   "id": "exp077_element_3hop_10",
+   "a_self": 0.00010909458069363609,
+   "b0_correct": 0,
+   "b0_answer": "David",
+   "bin": 0
+  },
+  {
+   "item": 56,
+   "id": "exp077_element_3hop_11",
+   "a_self": 0.00021465432655531913,
+   "b0_correct": 0,
+   "b0_answer": "Emma",
+   "bin": 2
+  },
+  {
+   "item": 57,
+   "id": "exp077_element_3hop_12",
+   "a_self": 0.0001840614713728428,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 1
+  },
+  {
+   "item": 58,
+   "id": "exp077_element_3hop_13",
+   "a_self": 0.00017471041064709425,
+   "b0_correct": 0,
+   "b0_answer": "Emma",
+   "bin": 1
+  },
+  {
+   "item": 59,
+   "id": "exp077_element_3hop_14",
+   "a_self": 0.00015188325778581202,
+   "b0_correct": 1,
+   "b0_answer": "Alice",
+   "bin": 0
+  }
+ ],
+ "precedence_note": "Pre-reg \u00a75 precedence KILL (any) > PIVOT > CONTINUE > HELD: G2-null triggers KILL (self-model), outranking HELD (a). The G1 degeneracy (Xu self-bias confound) is the mechanism of the kill, not an apparatus failure: a vacuous signal carries no information, and G2-null confirms it."
+}

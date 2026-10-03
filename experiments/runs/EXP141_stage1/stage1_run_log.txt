@@ -1,0 +1,27 @@
+[03:36:31] threads=1
+[03:36:31] loading tokenizer + model (float32, cpu, local_files_only)...
+[03:36:53] model loaded
+[03:36:57] backbone pre-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[03:36:57] (b) backbone pin PASS
+[03:36:58] token 'A' id=34 (single) PASS
+[03:36:58] (a) bench len=60; bench sha256=eb304fa65a60b65ad87767d251084b256d0a79001a16b4fe8ebcd1b1f45589df
+[03:36:58] (a) bench pin PASS
+[03:36:58] (c) EXP140 record id alignment 60/60 PASS
+[03:36:58] (c) B0 answers re-read from committed records (no regeneration) PASS
+[03:36:58] B0 baseline accuracy: 0.7000
+[03:37:16] self-eval 15/60 (18.4s)
+[03:37:32] self-eval 30/60 (34.0s)
+[03:37:46] self-eval 45/60 (48.6s)
+[03:38:02] self-eval 60/60 (64.5s)
+[03:38:02] self-eval passes done: 60 forwards, 0 failed
+[03:38:05] backbone post-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[03:38:05] (d) Δθ=0 PASS
+[03:38:05] ALL VALIDITY GATES PASS; forwards=60
+[03:38:05] G1: std(a_self)=0.000045 (bar >0.01), non-constant=True -> FAIL
+[03:38:16] G2: I_obs=0.071611 nats (MM-corrected), perm p=0.18100 (bar <0.05) -> NULL -> KILL SELF-MODEL FAMILY
+[03:38:16] C1: Spearman rho=-0.1260, one-sided p(licensed,+)=0.83134 -> null
+[03:38:18] C2: n_wrong=18 n_right=42 D_obs=0.000007, one-sided p(licensed)=0.71532 -> null
+[03:38:18] G3 reading: NULL
+[03:38:18] AUC(a_self -> correctness)=0.4206 [0.2500, 0.5912]
+[03:38:18] STAGE-1 READING: HELD (a): G1 fails — signal degenerate
+[03:38:18] records written; DONE

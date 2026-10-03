@@ -1,5 +1,53 @@
 # SCBI Research Log
 
+## LOG-4890 — EXP141 Stage-1: G2 I-screen NULL → metacognitive family KILLED (2026-10-03)
+
+**Lane [FACT]:** EXP141 Stage-1 CPU pilot execution, 2026-10-03, per the signed pre-registration (LOG-4889). $0 compute, CPU only, ~30 min. Run record: `experiments/runs/EXP141_stage1/` (run_stage1.py, stage1_records.json, RUN_REPORT.md, stage1_verdict.json). Baseline answers reused from committed EXP140 B0 records (60/60 id-aligned, re-read without regeneration; Law #7 firewall intact).
+
+**Validity gates [FACT]:** all PASS — bench sha256 `eb304fa6…45589df` ✓, backbone pre/post hash `ec276abe…38e0ed` ✓ (Δθ=0), token "A" single id=34, 60/60 self-eval forwards, 0 failed.
+
+**Gates [FACT]:** G1 signal-variance FAIL — std(â_self) = 0.000045 (bar > 0.01). The self-model signal is degenerate: near-constant P("True") across all 60 items — the Xu et al. self-bias confound confirmed empirically. G2 I-screen NULL — Î = 0.0716 nats (Miller-Madow), 100k-permutation p = 0.181 (bar < 0.05). G3 calibration NULL (not inverted): C1 Spearman ρ = −0.126, one-sided p = 0.831; C2 D ≈ 0.000007, p = 0.716. Secondary: AUC(â_self→correctness) = 0.4206, DeLong 95% CI [0.25, 0.59] — below chance but not significantly inverted.
+
+**Verdict [FACT]:** **KILL (self-model).** Per the binding precedence KILL (any) > PIVOT > CONTINUE > HELD, the G2-null triggers the kill, outranking HELD (a): the G1 degeneracy is the *mechanism* of the kill (a vacuous signal carries no information), not an apparatus failure — the lane corrected the script's initial HELD (a) emission and documented the correction in RUN_REPORT. The S4-6/J2 metacognitive self-modeling family dies at Stage 1: the frozen model carries no correctness information about its own answers at inference time — self-bias in its purest form (uniform self-rating). No revision stage, no Stage-2 GPU. The honest LOW prior is confirmed.
+
+**Next [FACT]:** S4-6 is stood down, killed. The J-tier queue (S4-7) remains; next dispatch per the keeper. No founder action required on this verdict.
+
+**Next free: LOG-4891.**
+
+## LOG-4889 — S4-6 (J2) pre-reg SIGNED (EXP141); Stage-1 CPU pilot venue-approved (2026-10-03)
+
+**Decision [FACT]:** the Law #14 review of the S4-6 (J2 metacognitive self-modeling) pre-registration draft returned **SIGN** — clean, no mechanical fixes. All three conditions from the design review (APPROVE-WITH-CONDITIONS) verified closed: C1 EXP125 characterization corrected (first-token logit-readout honesty self-report, fidelity 28/60, LOG-4680, bench-specific; "verbalized vs distributional" framing absent; non-resurrection rests on the four correct grounds); C2 revision decode pinned GREEDY with trigger-rate floor 15/60 (<15 → VOID → HELD); C3 Kamoi (2024.tacl-1.78) and Xu (2024.acl-long.826) confirmed real via ACL Anthology (reviewer venue/title-level; drafting lane's full-text reads stand). The §1 mechanical clarification (baseline-wrong/right adaptation of "majority-wrong/right") CONFIRMED as preserving the statistical form and licensed direction. Bar fidelity verified identical to the signed design; falsification tree jointly non-vacuous; all pins/seeds verified against committed EXP140 records (Law #13 clean); Law #7 firewall airtight; no invented numbers or citations. Review records: `research/prereg/EXP_S46_prereg_REVIEW_2026-10-03.md`; design records: `research/innovation/S46_DESIGN_2026-10-03.md`, `research/innovation/S46_DESIGN_REVIEW_2026-10-03.md`.
+
+**Pre-registration [FACT]:** the S4-6 pre-registration (`research/prereg/EXP_S46_prereg_DRAFT_2026-10-03.md`, filename retains DRAFT; this entry promotes it) is now SIGNED and binding, minting **EXP141**. Stage-1: CPU pilot — 60 P(True) self-eval passes reusing committed EXP140 B0 records (~15–30 min CPU, $0). Binding gates G1 (signal variance std > 0.01, non-constant), G2 (I-screen: 4-bin MI + Miller-Madow + 100k permutations, null → KILL before revision), G3 (TESTA-mirrored calibration — null → stands down, inverted → KILL family). Stage-2 (GPU revision test, 180 passes, <0.01 T4-h) is licensed only if G1–G3 all pass in the licensed direction, under this signed pre-reg plus CEO GPU clearance plus the founder's Kaggle slot. Honest prior recorded: LOW (the modal outcome is a G2-null kill at $0 — the summit-relevant falsification of the metacognitive family).
+
+**Venue [FACT]:** CEO venue approval GRANTED for the EXP141 Stage-1 CPU screen (~30 min CPU, $0, this machine) per LOG-4408. This approval covers Stage-1 ONLY. Stage-2 remains founder-GPU-gated and is not approved.
+
+**Next free: LOG-4890.**
+
+## LOG-4888 — EXP140 Stage-1: G3 calibration NULL — free-energy-selector family stands down (2026-10-03)
+
+**Lane [FACT]:** EXP140 Stage-1 CPU pilot execution, 2026-10-03, per the signed pre-registration (LOG-4887). $0 compute, CPU only. Run record: `experiments/runs/EXP140_stage1/` (run_stage1.py, stage1_records.json, RUN_REPORT.md, stage1_verdict.json).
+
+**Validity gates [FACT]:** all PASS — bench sha256 `eb304fa6…45589df` ✓, backbone pre/post hash `ec276abe…38e0ed` ✓ (Δθ=0), determinism spot-check byte-identical, 240/240 passes, 0 degenerate branches.
+
+**Gates [FACT]:** G1 diversity PASS (28/60 items with ≥2 distinct answers, bar ≥15); G2 variance PASS (median F-spread 1.29 nats/token, bar ≥0.05); **G3 calibration NULL** — C1 Spearman(F̄, accuracy) ρ=0.08, one-sided p=0.73; C2 D=−0.06, p=0.83. Neither inverted, neither passing. Mean-F shows no calibration signal; the free-energy signal does not predict correctness on this bench. Secondary min-F diagnostic inverted (ρ=0.32) while mean-F null — C5 consequence not triggered (requires a mean pass); recorded.
+
+**Verdict [FACT]:** per the signed pre-reg, G3-null → **HELD** — the free-energy-selector family stands down (signal absent, not anti-informative). Stage-2 gate does NOT open; no GPU. Diagnostic accuracies: B0=70.0%, min-F selection=70.0% (ΔM_FE=0.00), random-branch=76.7%, SC=71.7% — selection adds nothing; random beats it. Selection frequency: B0=23, B1=24, B2=0, B3=13 — B2 never selected (temperature vacuity as predicted; selector collapses to deterministic branches).
+
+**Next [FACT]:** S4-5 is stood down at Stage 1. Stage-2 would have required G1–G3 all passing in the licensed direction — not met. The J-tier queue (S4-6, S4-7) remains; next dispatch per the keeper. No founder action required on this verdict.
+
+**Next free: LOG-4889.**
+
+## LOG-4887 — S4-5 (J4) pre-reg SIGNED (EXP140); Stage-1 CPU pilot venue-approved (2026-10-03)
+
+**Decision [FACT]:** the Law #14 review of the S4-5 (J4 free-energy branch selection) pre-registration draft returned SIGN-WITH-FIXES (3 mechanical fixes: F1 PIVOT demotion to annotated KILL-selector sub-reading, F2 HELD(c) gap closure, F3 citation-verification limitation note). A repair lane applied all three; the CEO verified by reading the draft: precedence chain now matches the reviewer's exact instruction (KILL > PIVOT > CONTINUE > HELD, PIVOT demoted to sub-reading), HELD(c) covers "positive ΔM_FE failing either the Newcombe magnitude bar or the paired-significance bar," the C2-direction ruling (CONFIRM the draft: the design's literal `<` was a transcription slip against its own stated licensed direction "lower F ↔ higher accuracy") is recorded with the review citation. Bar fidelity verified identical to the signed design; pins verified against the committed EXP139 Stage-1 records (backbone `ec276abe…38e0ed`, bench `eb304fa6…45589df`); Law #7 firewall airtight; seeds pinned (S_B2=20261004, S_B3=20261005, S_PERM_C2=20261006, S_RANDOM=20261003); R_max=48; three non-FREIA prior-art citations abstract-level-verified with full-text flagged as follow-up. Review records: `research/prereg/EXP_S45_prereg_REVIEW_2026-10-03.md`; design records: `research/innovation/S45_DESIGN_2026-10-03.md`, `research/innovation/S45_DESIGN_REVIEW_2026-10-03.md` (APPROVE-WITH-CONDITIONS, all 5 closed).
+
+**Pre-registration [FACT]:** the S4-5 pre-registration (`research/prereg/EXP_S45_prereg_DRAFT_2026-10-03.md`, filename retains DRAFT; this entry promotes it) is now SIGNED and binding, minting **EXP140**. Stage-1: CPU pilot — 240 generations (4 branches × 60 items, rationale ≤48 tokens) + 240 combined teacher-forced scoring passes, Pythia-410m float32, single-token inputs_embeds, Δθ=0. Binding gates G1 (≥2 distinct answers on ≥15/60 items), G2 (median F-spread ≥ 0.05 nats/token), G3 (Spearman + TESTA-style partition both pass in the licensed direction; either-null → no GPU; either-inverted → KILL the selector family). Stage-2 (GPU selection test, <0.01 T4-h) is licensed only if G1–G3 all pass in the licensed direction, under this signed pre-reg plus CEO GPU clearance plus the founder's Kaggle slot.
+
+**Venue [FACT]:** CEO venue approval GRANTED for the EXP140 Stage-1 CPU screen (~1h CPU, $0, this machine) per LOG-4408. This approval covers Stage-1 ONLY. Stage-2 remains founder-GPU-gated and is not approved.
+
+**Next free: LOG-4888.**
+
 ## LOG-4886 — S4-4 design review recorded; EXP139 Stage-1: contraction license SURVIVES (2026-10-03)
 
 **Design review record [FACT]:** the S4-4 (J1 re-entrant attractor dynamics) design (`research/innovation/S44_DESIGN_2026-10-03.md`) was independently reviewed under Law #14 (reviewer: Independent Scientific Mentor & Adversarial Reviewer, no hand in the design; record `research/innovation/S44_DESIGN_REVIEW_2026-10-03.md`) with verdict **APPROVE-WITH-CONDITIONS** — 5 conditions C1–C5 (re-entrant input construction, verdict-gap closure, Stage-1b venue rule, Blayney et al. 2026 verification, expectation calibration), all closed in the EXP139 pre-reg draft per LOG-4885. Verified findings: the design's Π=W_EᵀW_U dimensional correction is right (the S4 doc's "Π = W_E W_Uᵀ" is V×V, wrong; W_EᵀW_U ∈ ℝ^{1024×1024}, valid); prior art arXiv:2602.14759 "Inner Loop Inference" and arXiv:2605.12466 "Solve the Loop" verified real with accurate characterization (N1 novelty read honest; Blayney et al. 2026 was UNCHECKED → C4); non-resurrection audit clean; LOG-4408 watchlist routing correct.
