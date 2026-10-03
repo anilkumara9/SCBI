@@ -1,5 +1,16 @@
 # SCBI Research Log
 
+## LOG-4901 — Erratum follow-up: second phantom citation pair in LOG-4525 (2026-10-04)
+
+**Lane [FACT]:** repo-hygiene lane, LOG-4901 (next free after LOG-4900). $0 compute. Append-only prepend to `reports/research_log.md`; no signed artifact modified.
+
+**Incident [FACT]:** LOG-4525's "Named blockers" section (research_log.md L11252) cites "(LOG-4963/5463 wording)" as [FACT] support for the free-GPU account-actions blocker list (Colab GPU enablement, Lightning AI signup, HF verification). Verified this lane: repo-wide grep for `## LOG-4963` and `## LOG-5463` headers returns zero hits; the strings "LOG-4963" and "LOG-5463" each occur exactly once in the entire repo — both inside LOG-4525's own text at L11252. Both citations are phantom, same class as the LOG-9364/10260/10650 phantoms corrected by LOG-4880; LOG-4880's sweep missed this pair.
+
+**What survives [FACT]:** the blocker substance is independently recorded and current (free-GPU account actions remain founder-pending per every lane-keeper run through 2026-10-04, and the three items match the standing commitments log) — only the cited supports are phantom, not the claim itself.
+
+**Disposition [FACT]:** the [FACT] tag on the "(LOG-4963/5463 wording)" clause is downgraded to UNVERIFIED-as-cited, consistent with LOG-4880's disposition. LOG-4880's going-forward rule stands reinforced: GPU-queue / account-action claims must cite only verified LOG numbers. No verdict, clearance, or experiment license is altered by this erratum.
+**Next free: LOG-4902.
+
 ## LOG-4900 — Daily frontier sweep (2026-10-04)
 
 **Lane [FACT]:** daily frontier sweep, 2026-10-04 (LOG-4900 pre-assigned by the CEO). $0 compute, web research only. Sweep file: `research/frontier/SWEEP_2026-10-04.md`. All three 10-03 queued follow-ups resolved.
