@@ -1,5 +1,29 @@
 # SCBI Research Log
 
+## LOG-4892 — EXP142 Stage-1: C2 guard fired → S4-7 spectral family HELD (2026-10-03)
+
+**Lane [FACT]:** EXP142 Stage-1 CPU observational pilot execution, 2026-10-03, per the signed pre-registration (LOG-4891). $0 compute, CPU only, ~1h. Run record: `experiments/runs/EXP142_stage1/` (run_stage1.py, stage1_records.json, RUN_REPORT.md, stage1_verdict.json).
+
+**Validity gates [FACT]:** all PASS — bench sha256 `eb304fa6…45589df` ✓, backbone pre/post hash `ec276abe…38e0ed` ✓ (Δθ=0), 60/60 passes, determinism spot-check 3/3 byte-identical.
+
+**Guard [FACT]:** the C2 measurement-validity guard fired — n_i median 32, IQR [29,35], range [29,35]; all 60 items below the N_MIN = 40 floor, so 0/60 items kept (<30). The design's "n_i ≈ 100 typical" pricing was factually wrong — actual bench prompts are ~30 tokens. The bulk-fit diagnostic confirms the guard's firing is measurement-justified (median KS = 0.4108, FLAGGED — the MP fit is poor at n_i ~ 30). Primary test VOID (not run); s_i distribution not computed; l_c diagnostic VOID.
+
+**Verdict [FACT]:** **HELD** — the S4-7 spectral question cannot be answered on this bench as specified; the family is held, not killed. Intervention never attempted (pre-registered sequencing). Design defect recorded: the C2 floor was priced without measuring n_i. A future re-scoping (longer sequences or a different n_i construction) is a new design, not licensed here.
+
+**Next [FACT]:** S4-7 is held. The J-tier queue is now exhausted (J1/J4/J2/J3 all landed). No founder action required on this verdict.
+
+**Next free: LOG-4893.**
+
+## LOG-4891 — S4-7 (J3) pre-reg SIGNED (EXP142); Stage-1 CPU pilot venue-approved (2026-10-03)
+
+**Decision [FACT]:** the Law #14 review of the S4-7 (J3 spectral phase transition, RMT lens) pre-registration draft returned **SIGN** — clean, no mechanical fixes. All five conditions from the design review (APPROVE-WITH-CONDITIONS) verified closed: C1 σ̂² estimator pinned (bulk-median fit against the theoretical MP median at γ_i; reviewer independently checked the mathematics — median equation, density, and bulk-edge formulas are the standard forms); C2 N_MIN = 40 with <30 remaining → HELD with reason, never KILL; C3 all four prior-art citations verified real via arXiv API including Ettori (2026) UIC thesis (arXiv:2601.17357v1, EigenTrack real-time hallucination/OOD detection via spectral features — the design's honest negative correctly superseded; distinctions hold; novelty read N1 remains valid); C4 validity gates complete; C5 Friday-cull citation corrected to LOG-4879. Bar fidelity verified identical to the signed design (KILL > CONTINUE > HELD, Δ_s ≥ 2 verbatim); falsification tree jointly non-vacuous; all pins/seeds verified against committed EXP141 records (Law #13 clean); Law #7 firewall airtight; no invented numbers or citations. Review records: `research/prereg/EXP_S47_prereg_REVIEW_2026-10-03.md`; design records: `research/innovation/S47_DESIGN_2026-10-03.md`, `research/innovation/S47_DESIGN_REVIEW_2026-10-03.md`.
+
+**Pre-registration [FACT]:** the S4-7 pre-registration (`research/prereg/EXP_S47_prereg_DRAFT_2026-10-03.md`, filename retains DRAFT; this entry promotes it) is now SIGNED and binding, minting **EXP142**. Stage-1: CPU observational pilot — 60 passes capturing per-layer hidden states + 1440 Gram eigendecompositions (~1h CPU, ~590MB, $0). Binding bars: KILL (p ≥ 0.05, intervention never attempted), CONTINUE (p < 0.05 ∧ Δ_s ≥ 2 — licenses only a NEW worth-it gate for spectral intervention, not a capability claim), HELD (below-magnitude, guard fires, or VOID). One-sided permutation (S_PERM = 20261010): wrong-direction significance → p ≈ 1 → KILL. Honest prior recorded: LOW (four internal-signal failures); the observable is a genuinely different family and the test is $0.
+
+**Venue [FACT]:** CEO venue approval GRANTED for the EXP142 Stage-1 CPU screen (~1h CPU, $0, this machine) per LOG-4408. This approval covers Stage-1 ONLY. Any spectral intervention needs its own worth-it gate + Law #14-signed pre-registration + CEO GPU clearance + founder Kaggle slot — nothing pre-licensed here.
+
+**Next free: LOG-4892.**
+
 ## LOG-4890 — EXP141 Stage-1: G2 I-screen NULL → metacognitive family KILLED (2026-10-03)
 
 **Lane [FACT]:** EXP141 Stage-1 CPU pilot execution, 2026-10-03, per the signed pre-registration (LOG-4889). $0 compute, CPU only, ~30 min. Run record: `experiments/runs/EXP141_stage1/` (run_stage1.py, stage1_records.json, RUN_REPORT.md, stage1_verdict.json). Baseline answers reused from committed EXP140 B0 records (60/60 id-aligned, re-read without regeneration; Law #7 firewall intact).
