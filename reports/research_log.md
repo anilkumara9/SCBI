@@ -1,5 +1,19 @@
 # SCBI Research Log
 
+## LOG-4895 — Law #14 review: XiaomiMiMo/verl guidance brief SIGN-WITH-FIXES (2026-10-03)
+
+**Lane [FACT]:** Independent Scientific Mentor & Adversarial Reviewer lane, 2026-10-03. Binding verdict on `research/frontier/XIAOMIMIMO_VERL_GUIDANCE_2026-10-03.md`. $0 compute; no git branch/checkout/push; brief not modified — fixes listed for a separate repair step. Review: `research/frontier/XIAOMIMIMO_VERL_GUIDANCE_REVIEW_2026-10-03.md`.
+
+**Method [FACT]:** fresh shallow clone of `github.com/XiaomiMiMo/verl` @ `a2ad9f6` to `/tmp` (never in the workspace); read every cited file; cross-checked all Section 7 numbers against the MiMo-V2.6 report PDF, recovering Tables 5–7 via `pdftotext -layout` after the plain extraction dropped Table 5's rows.
+
+**Spot-check [FACT]:** every substantive code observation verified at the pinned commit — two-gate music scorer (`extract_abc` → `abc2midi` → `baselines/ref_full4k.json`; `Abc2MidiMissing` docstring verbatim), `run_music.sh` refuse-to-launch, `_mask` → `(0.0, …, REWARD_TESTBED_CORRUPTED)` on bad reward JSON, typed rubric metadata (`VERIFIER_FILES` manifest; method/weight/gate/dim join), `pull_post_state` two-tarballs docstring quoted verbatim, agent-loop two seams + three "breaking any of these breaks the bridge" contracts, incremental token buffering ("never re-render an assistant turn"), the two Qwen3-family template traps, all six infra categories verbatim, `INVALID_REWARD_VALUE = -999.0`, INVALID → group-mean replacement with the GRPO justification, measured-config quotes (0.56 vs 0.26–0.36) verbatim, four mini-harnesses + seed 20260911, all Section 7 numbers (SFT 77.4B/27.2B tokens, SWE-bench Pro 32.0→44.6, AutomationBench 5.0%→30.3%, all eight RL eval rows, 21 dataset–harness pairs, +1.8–9.3pp, Table 5 scales 3k/1k/1k/2k + ~1k music). No invented files, paths, functions, or numbers — Law #2/#3 clean.
+
+**Judgments [INTERPRETATION]:** evidence labels PASS (Xiaomi's numbers fenced as self-reports; no laundering); transferability judgment SOUND (RL algorithms transfer nothing to Δθ=0; verifier/failure-taxonomy/token-exactness engineering does); all four worth-it-gated next steps name the exact decision they change — PASS; non-transferable list complete — PASS.
+
+**Verdict [FACT]:** **SIGN-WITH-FIXES** — five required fixes, none changing the bottom line: F1 full repo-relative paths (the general-arm claims live in `recipes/general/general_agent/environment.py`, not a top-level `environment.py`); F2 soften the token-exactness universality claim (defect demonstrated on Qwen3-family templates; position-dependent, not universal); F3 correct the `<think></think>` gloss (position-conditioned injection, not stripping); F4 note `probe_tool_call_format.py` is docstring-attested only (file not found in the clone); F5 cite Table 5 of the MiMo-V2.6 report as the source of the §1 scale column. After mechanical repair the brief may be treated as signed; no re-review required unless substance changes.
+
+**Next free: LOG-4896.**
+
 ## LOG-4894 — Daily frontier sweep (2026-10-03)
 
 **Lane [FACT]:** standing daily frontier sweep, 2026-10-03, $0 CPU, web research only. Deliverable: `research/frontier/SWEEP_2026-10-03.md` (committed in 92af2d7; this LOG entry closes the record gap flagged by the lane-keeper). Evidence labels preserved: VERIFIED (primary fetched) / REPORTED (secondary/wire) / UNVERIFIED (vendor claim only).
