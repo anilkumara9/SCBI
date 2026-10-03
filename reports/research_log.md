@@ -1,5 +1,25 @@
 # SCBI Research Log
 
+## LOG-4886 — S4-4 design review recorded; EXP139 Stage-1: contraction license SURVIVES (2026-10-03)
+
+**Design review record [FACT]:** the S4-4 (J1 re-entrant attractor dynamics) design (`research/innovation/S44_DESIGN_2026-10-03.md`) was independently reviewed under Law #14 (reviewer: Independent Scientific Mentor & Adversarial Reviewer, no hand in the design; record `research/innovation/S44_DESIGN_REVIEW_2026-10-03.md`) with verdict **APPROVE-WITH-CONDITIONS** — 5 conditions C1–C5 (re-entrant input construction, verdict-gap closure, Stage-1b venue rule, Blayney et al. 2026 verification, expectation calibration), all closed in the EXP139 pre-reg draft per LOG-4885. Verified findings: the design's Π=W_EᵀW_U dimensional correction is right (the S4 doc's "Π = W_E W_Uᵀ" is V×V, wrong; W_EᵀW_U ∈ ℝ^{1024×1024}, valid); prior art arXiv:2602.14759 "Inner Loop Inference" and arXiv:2605.12466 "Solve the Loop" verified real with accurate characterization (N1 novelty read honest; Blayney et al. 2026 was UNCHECKED → C4); non-resurrection audit clean; LOG-4408 watchlist routing correct.
+
+**Stage-1 result [FACT]:** the EXP139 Stage-1 κ̂ contraction screen ran to clean completion on CPU ($0): 60/60 forward passes (20 baseline + 40 R-evaluation). Validity gates all PASS — bench sha256 `eb304fa65a60b65ad87767d251084b256d0a79001a16b4fe8ebcd1b1f45589df`, backbone pre-hash `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed` with matching post-hash (Δθ=0 post PASS), baseline yhat fidelity 20/20. **κ̂ = 0.955971 < 1** (max of 20 local + 190 cross ratios; median 0.734152, IQR [0.685572, 0.783381]). Per the binding bars: not KILL — the contraction license SURVIVES the screen (the honest prior was κ̂≥1, so this is the surprising direction; the screen is one-sided — survival, never proof). Trajectory diagnostic not applicable at Stage-1 (pre-reg defines it as a Stage-2 measurement; correctly not improvised). Run record: `experiments/runs/EXP139_stage1/` (stage1_records.json, RUN_REPORT.md).
+
+**Next [FACT]:** the Stage-2 gate OPENS on κ̂<1, but Stage-2 execution is NOT licensed here — it needs CEO venue approval plus the founder's GPU (founder-gated). Stage-1b was not approved in this lane (its venue rule is evaluated post-hoc).
+
+**Next free: LOG-4887.**
+
+## LOG-4885 — EXP139 pre-reg SIGNED; Stage-1 CPU screen venue-approved (2026-10-03)
+
+**Decision [FACT]:** the Law #14 review of the EXP139 (S4-4/J1 re-entrant attractor dynamics) pre-registration draft returned SIGN-WITH-FIXES (5 mechanical fixes F1–F5: new HELD(e) branch, F2 verdict reclassification reverted to the design's HELD, LCI-straddle clarification, full bench_sha256, corrected pass counts). A repair lane applied all five; the CEO verified by diff (6 HELD rows a–f, "six" count correct, no stale pass counts remain). Review record: `research/prereg/EXP139_S44_prereg_REVIEW_2026-10-03.md`.
+
+**Pre-registration [FACT]:** the EXP139 pre-registration (`research/prereg/EXP139_S44_prereg_DRAFT_2026-10-03.md`, filename retains DRAFT; this entry promotes it) is now SIGNED and binding. Stage-1: κ̂ contraction screen, 60 forward passes, items 0–19 view 0, Π=W_EᵀW_U re-entrant operator, float32, BACKBONE_PIN `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed`. Binding bars: KILL = κ̂≥1 and Stage-1b ΔM_bounded ≤ 0; PIVOT = bounded gain without convergence license; CONTINUE = κ̂<1 + trajectory diagnostic passes + ΔM_attractor ≥ +8pp with paired Newcombe LCI > 0.05 (licensed positive only; any follow-on needs a new experiment number). Honest prior recorded: κ̂≥1 (transformer blocks generically expansive).
+
+**Venue [FACT]:** CEO venue approval GRANTED for the Stage-1 CPU screen (60 passes, $0, this machine) per LOG-4408. This approval covers Stage-1 ONLY. Stage-1b venue is decided post-hoc by the pre-registered pilot rule; Stage-2 remains founder-GPU-gated and is not approved.
+
+**Next free: LOG-4886.**
+
 ## LOG-4884 — Test A micro-analysis: margin calibration FAILS (inverted) (2026-10-03)
 
 **Lane [FACT]:** micro-analysis lane, 2026-10-03. $0 compute, analysis only, zero new forwards. Salvaged Test A from the REJECTED EXP135 sprint design, per the Law #14 review's salvage recommendation (`research/innovation/EXP135_SPRINT_DESIGN_REVIEW_2026-10-03.md` §7). Full record: `research/innovation/TESTA_CALIBRATION_2026-10-03.md`.
