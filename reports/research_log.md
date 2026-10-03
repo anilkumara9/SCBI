@@ -1,5 +1,21 @@
 # SCBI Research Log
 
+## LOG-4900 — Daily frontier sweep (2026-10-04)
+
+**Lane [FACT]:** daily frontier sweep, 2026-10-04 (LOG-4900 pre-assigned by the CEO). $0 compute, web research only. Sweep file: `research/frontier/SWEEP_2026-10-04.md`. All three 10-03 queued follow-ups resolved.
+
+**Headline [FACT]:** zero positive autonomous-steering signals in the strict SCBI sense — no new frozen-model steering-capability result, no superhuman-cognition mechanism, nothing that threatens current SCBI claims. The RSI/automation axis heated up: the 22-author "intelligence explosion" white paper VERIFIED at its primary CASP page (abstract: AI systems now write most lab code; most AI R&D automated within a few years, "possibly all of it"; an explosion "could" happen with "much uncertainty"); Alibaba's Qwen3.8-Max 33-cycle RSI disclosure corroborated via the company's own newswire release, plus a new chip-design data point (60+ hours, 10,000+ EDA tool calls, −42% bus area, no performance regression). These are automation-*of*-R&D signals, not autonomous-steering-*of*-cognition signals.
+
+**Corrections to 10-03 [FACT]:** (1) Qwen 3.5 was released **Feb 16, 2026** — the "this week" report was stale undated aggregator recirculation; closed as a non-event. (2) The Apsara Conference was **Sept 22**, not Oct 2. (3) arXiv:2609.35618's primary abstract does NOT contain the 0.397/0.005 posterior numbers (secondary-summary-only; the abstract's own illustrative range is "below 0.01 to roughly 0.8"); the "DeepMind" affiliation tag is dropped (not evident from the author list).
+
+**High-watch [INTERPRETATION]:** (a) intelligence-explosion white paper — VERIFIED primary abstract; the 26% autonomous-R&D / 80% AI-written-code figures are REPORTED (multi-outlet consistent, not primary-verified); strongest external RSI evidence to date; (b) Alibaba RSI + EDA run — vendor-claimed, multi-outlet consistent; the EDA artifact is the more scrutable of the two claims; (c) Thore Graepel's "LLMs don't reason" (REPORTED, MIT TR) — the insider-skeptic voice now co-authors both the consciousness framework and the explosion paper; (d) GPT-6.1 "Astra" cancellation — now three secondary sources, still no primary; (e) DeepSeek V4 preview tailored to Huawei Ascend 950 PR (REPORTED) — China-stack decoupling accelerating.
+
+**Nulls [FACT]:** no new activation-steering / representation-engineering breakthrough in-window (recent field is refinement: INNSTEER, PCS, RankSteer — finer control, no capability claims); no new credible consciousness or superhuman-cognition claim; no new frozen-model capability result.
+
+**Next sweep due: 2026-10-05.**
+
+**Next free: LOG-4901.**
+
 ## LOG-4899 — Push-readiness verification: LOG-4893→4898 batch READY (2026-10-03)
 
 **Lane [FACT]:** push-readiness verification, 2026-10-03, mirroring LOG-4893 (per the 11:59 IST lane-keeper recommendation). $0 compute, verification only, no push. This entry covers the batch; the push itself remains founder-reserved (fresh one-use token, used once transiently, never force-push).
