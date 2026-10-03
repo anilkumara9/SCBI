@@ -1,5 +1,15 @@
 # SCBI Research Log
 
+## LOG-4898 — XiaomiMiMo/verl guidance brief: F1–F5 repair complete, brief SIGNED (2026-10-03)
+
+**Lane [FACT]:** mechanical repair lane for the LOG-4895 SIGN-WITH-FIXES verdict on `research/frontier/XIAOMIMIMO_VERL_GUIDANCE_2026-10-03.md`. $0 compute. No new research, no substance changes; the review file untouched.
+
+**Fixes [FACT]:** F1 — full repo-relative paths (`recipes/general/general_agent/environment.py`); F2 — token-exactness claim softened ("will" → "can", Qwen3-family, position-dependent); F3 — `<think></think>` gloss corrected (position-conditioned injection, not stripping); F4 — `probe_tool_call_format.py` noted as docstring-attested only; F5 — §1 scale column sourced to Table 5 of the MiMo-V2.6 report. All five verified present by grep; zero residual old wording. Per the LOG-4895 verdict (no re-review required for mechanical repair), the brief is now SIGNED. Committed in `3675c4d` with the review file.
+
+**Note:** this entry closes the record gap the 11:44 IST lane-keeper run missed (its log-based staleness guard could not see the repair, which had been recorded only in the commit message) — the F1–F5 repair it re-recommended was already complete.
+
+**Next free: LOG-4899.**
+
 ## LOG-4897 — EXP139 Stage-2 bundle repair applied; Law #14 follow-up verification SIGN-WITH-FIXES (2026-10-03)
 
 **Lane [FACT]:** repair lane applied the LOG-4896 required fixes (F1–F4 + m1–m3) to `experiments/bundles/EXP139_stage2/` (mechanical only — no protocol changes, nothing signed modified; no LOG entry written by that lane, this entry covers it). Follow-up Law #14 verification by the Independent Scientific Mentor & Adversarial Reviewer (binding). $0 compute, zero GPU contact, no weight downloads, no git branch/checkout/push; bundle and signed pre-registration not modified by the reviewer — the verification addendum (`experiments/bundles/EXP139_stage2/APPARATUS_VERIFICATION_2026-10-03.md`) and this entry are the only writes.
