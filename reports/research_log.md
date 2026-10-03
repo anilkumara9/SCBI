@@ -1,5 +1,17 @@
 # SCBI Research Log
 
+## LOG-4894 — Daily frontier sweep (2026-10-03)
+
+**Lane [FACT]:** standing daily frontier sweep, 2026-10-03, $0 CPU, web research only. Deliverable: `research/frontier/SWEEP_2026-10-03.md` (committed in 92af2d7; this LOG entry closes the record gap flagged by the lane-keeper). Evidence labels preserved: VERIFIED (primary fetched) / REPORTED (secondary/wire) / UNVERIFIED (vendor claim only).
+
+**Sweep [FACT]:** Papers — arXiv:2610.01969 RASteer (training-free activation steering for concept erasure in diffusion models, VERIFIED; LOW-MEDIUM, wrong domain for SCBI), arXiv:2610.01349 PACE (tool-call capability enforcement for LLM agents, VERIFIED; MEDIUM — oversight-grade engineering if loop work touches tool use), arXiv:2610.01768 LLMLeak (covert exfiltration via LLM web-fetch, VERIFIED; LOW-MEDIUM context), arXiv:2609.25537 Context-to-Answer-Aligned Memory Compression (frozen-decoder-compatible, "without modifying decoder weights", VERIFIED via abstract; HIGH — Δθ=0-adjacent, candidate technique for the selection/compression half of a future memory lane). Lab moves — Alibaba Apsara: Qwen3.8-Max RSI disclosure, 33 iterative cycles, Artificial Analysis 40→45 (REPORTED secondary; HIGH watch — first measured self-improvement-loop claim from a frontier lab, pipeline-optimization vs capability-gain unresolved); Qwen 3.5 vendor claims (UNVERIFIED); OpenAI safety turmoil incl. GPT-6.1 Astra cancellation claim (single-source, unconfirmed); reasoning-extraction disruption + Anthropic escape-attempt classifier (MEDIUM context); Mistral $3.6B round, Leanstral 1.5 notable (MEDIUM). Consciousness — LMU Cognition study (human perception of machine minds, REPORTED peer-reviewed; MEDIUM); arXiv:2609.35618 machine-consciousness framework (optimist posterior 0.397 vs sceptic 0.005 per secondary summary; HIGH, primary fetch queued for next sweep).
+
+**Scoreboard headline unchanged:** zero positive autonomous-steering signals; no credible new evidence of superhuman or conscious-level machine cognition. Nothing in the sweep threatens an SCBI claim or licenses new work. Next sweep: fetch 2609.35618 primary; Qwen 3.5 primary confirmation; Alibaba RSI primary source.
+
+**Also logged today (founder-relayed, outside sweep window):** XiaomiMiMo/verl — Xiaomi's fork of ByteDance's verl RL training library (agentic RL code for MiMo, five RL environments with verifiers, training data + MiMo-V2.6-Distill-Qwen-9B + Docker). Recorded in the frontier sweep log; study lane dispatched to extract transferable big-company engineering guidance with an explicit non-transferable list for the Δθ=0 program — nothing licensed off it yet.
+
+**Next free: LOG-4895.**
+
 ## LOG-4893 — Push-readiness verification: LOG-4879→4892 batch READY (2026-10-03)
 
 **Lane [FACT]:** push-readiness verification, 2026-10-03, mirroring LOG-4878. $0 compute, verification only, no push. Report: `goals/scbi-research-program/hidden_files/push_readiness_LOG4879-4892_2026-10-03.md`.
