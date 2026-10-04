@@ -1,5 +1,16 @@
 # SCBI Research Log
 
+## LOG-4906 — Push-readiness re-verification: LOG-4899→4905 + CEO correction batch READY (2026-10-04)
+
+**Lane [FACT]:** push-readiness re-verification lane, LOG-4906, covering the substantive CEO-correction commit 652cb1b (campaign-log note: R1 residual already satisfied at bundle creation, no R1 wave). $0 compute, verification only; no push (founder-reserved).
+
+**Batch [FACT]:** one new commit since the LOG-4905 boundary (21a416b): 652cb1b (CEO correction, campaign log only). HEAD 652cb1b, working tree clean.
+
+**Checks [FACT]:** (1) LOG-header continuity: 4899→4905 present newest-first, gap-free, no duplicates. (2) Linearity: zero merge commits in 21a416b..HEAD. (3) Credential scan: zero hits. (4) Size scan: only `research/CAMPAIGN_30DAY_LOG.md` (+43 lines); no weights, no oversized blobs. (5) Signed artifacts untouched: zero changes under `experiments/bundles/`, theory, or paper paths.
+
+**Disposition [FACT]:** batch READY for push — new stable verification boundary at 652cb1b. This verification-record commit does not itself re-trigger verification (LOG-4904 ruling). Unchanged push-time requirements: re-fetch remote and re-verify fast-forward at actual push time; never force-push; fresh founder-supplied one-use token, used transiently and discarded. Push itself remains founder-reserved.
+**Next free: LOG-4907.
+
 ## LOG-4905 — Push-readiness re-verification: LOG-4899→4904 batch READY (2026-10-04)
 
 **Lane [FACT]:** final push-readiness re-verification lane, LOG-4905, closing the LOG-4899→4904 batch including the LOG-4904 CEO clarification. $0 compute, verification only; no push (founder-reserved).
