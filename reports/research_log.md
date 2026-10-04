@@ -1,5 +1,27 @@
 # SCBI Research Log
 
+## LOG-4909 — v98 paper build COMPLETE and SIGNED (2026-10-05)
+
+**Lane [FACT]:** v98 build lane closed 2026-10-05 ~02:45 IST. Forensic-audit fix wave complete: 9 subagent lanes (3 figure redesigns, voice-edit, figure repair, adversarial review, 2× Law #14 review, final SIGN review), all $0 compute, no GPU contact, v97 signed sources untouched.
+
+**Artifact [FACT]:** `~/workspace/scbi-paper/v98/paper.pdf` — 27 pages, MD5 `42204f9257accb374ee77caa77970c83`, tectonic exit 0, zero errors/undefined refs. Delivered: `~/workspace/your_files/SCBI_Boundary_Paper_v98_SIGNED.pdf` (MD5 match verified). Sign record: `~/workspace/scbi-paper/v98_plan/V98_SIGN_2026-10-05.md`.
+
+**Changes vs v97 [FACT]:** Phase 1 — 5 phantom citations added to refs.bib (all web-verified), Fig. 1 rings 8→10 + Bonferroni bar, Table 2→Appendix A (overflow fixed). Phase 2 — abstract rewritten (410m anchoring), related work→standalone §2 (42 refs), §4.5 halved, §7+§8 merged to ≤1-page Future work, voice purge (slogans/changelog/jargon). Phase 3 — Figs. 7/8/9 redesigned per audit. Review-driven: Fig. 2 UB→0.625%, Fig. 5 verdict corrections (6 true KILLs, EXP078 removed), 1/60 fence, Fig. 3 bleed fix.
+
+**Reviews [FACT]:** adversarial FAIL→all 6 fixed; Law #14 REJECT→SIGN-WITH-FIXES→**SIGN (binding)** on the exact MD5. Gates: number-vs-figure checklist PASS, citation-resolution grep PASS (41/41). Frozen numbers, banned-word list, falsification discipline verified intact.
+
+**Not done [FACT]:** GitHub push of SCBI-paper needs a fresh founder one-use token — pending. External publication reserved for founder.
+
+**Next free: LOG-4910.
+
+## LOG-4908 — v98 paper build STARTED: forensic-audit fix plan (2026-10-05)
+
+**Lane [FACT]:** paper v98 build lane started 2026-10-05 ~00:02 IST, licensed by the founder's 2026-10-04 improvement-wave order ("substantially improve Figures 7, 8, and 9, and audit the whole paper page-by-page, section-by-section, line-by-line against top research papers") plus the forensic audit fix plan `scbi-paper/v97_plan/V97_FORENSIC_AUDIT_2026-10-04.md` (CEO-reviewed). $0 compute; no GPU contact; no signed-artifact modification (v97 signed sources immutable).
+
+**Scope [FACT]:** v98 built as full copy of v97 sources in `~/workspace/scbi-paper/v98/`; all edits in v98 only. Phases per audit: (1) integrity — Fig. 1 ring count 8→10 + Bonferroni bar, phantom citations → refs.bib, Table 2 margin overflow; (2) voice edit — academic prose, related work → §2 with CCS (Burns et al.) + expanded refs, §4.5 cut, §7–§8 merged, Table 2 → Appendix A; (3) Fig. 7/8/9 redesigns; (4) polish nits. Frozen: all v97 scientific numbers, banned words, unpinned 1/60 fact exclusion. Gates before sign-off: adversarial review PASS, independent Law #14 review SIGN on the exact final PDF (with number-vs-figure checklist + citation-resolution grep), full-page CEO QA. No GitHub push (founder token pending).
+
+**Next free: LOG-4909.
+
 ## LOG-4907 — Push-readiness re-verification: batch through CEO diary commit READY (2026-10-04)
 
 **Lane [FACT]:** push-readiness re-verification lane, LOG-4907, covering the substantive CEO-diary commit de35bc5 (2026-10-04 daily health-check note, +2 lines). $0 compute, verification only; no push (founder-reserved).
