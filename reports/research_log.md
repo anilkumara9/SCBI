@@ -1,5 +1,16 @@
 # SCBI Research Log
 
+## LOG-4905 — Push-readiness re-verification: LOG-4899→4904 batch READY (2026-10-04)
+
+**Lane [FACT]:** final push-readiness re-verification lane, LOG-4905, closing the LOG-4899→4904 batch including the LOG-4904 CEO clarification. $0 compute, verification only; no push (founder-reserved).
+
+**Batch [FACT]:** six commits on `sync/2026-09-29-consolidated` since the LOG-4899 verification boundary (8a86db8): 296eeea (LOG-4899), 147b8ef (LOG-4900 sweep), de29653 (LOG-4901 erratum), daa673f (LOG-4902 verification), f317200 (LOG-4903 re-verification), dac3697 (LOG-4904 CEO clarification). HEAD dac3697, working tree clean.
+
+**Checks [FACT]:** (1) LOG-header continuity: 4899→4904 present newest-first, gap-free, no duplicates. (2) Linearity: zero merge commits. (3) Credential scan: zero hits. (4) Size scan: only `reports/research_log.md` (+64 lines) and the new `research/frontier/SWEEP_2026-10-04.md` (62 lines); no weights, no oversized blobs. (5) Signed artifacts untouched: zero changes under `experiments/bundles/`, theory, or paper paths.
+
+**Disposition [FACT]:** batch READY for push — this is the new stable verification boundary. Per the LOG-4904 CEO ruling, this verification-record commit (and any future verification-record-only commits) does not invalidate the READY verdict and does not license a further verification lane. Unchanged push-time requirements: re-fetch remote and re-verify fast-forward at actual push time; never force-push; fresh founder-supplied one-use token, used transiently and discarded. Push itself remains founder-reserved.
+**Next free: LOG-4906.
+
 ## LOG-4904 — CEO clarification: verification-record commits do not re-trigger push verification (2026-10-04)
 
 **[CEO]:** clarification of the LOG-4878 standing rule ("any further commits before the push must re-run this verification"). LOG-4902 and LOG-4903 exposed a recursion: each verification-record commit changes HEAD, which mechanically re-triggers another verification lane, producing unbounded verification-of-verification log entries. **Ruling:** the re-verification requirement applies to substantive commits only. A verification-record commit — one whose only change is a push-readiness verification log entry — does not invalidate a READY verdict and does not license a new verification lane. The keeper's instructions have been updated with this exemption. The LOG-4899→4902 batch remains READY; no re-verification is owed for the LOG-4902/4903 record commits themselves. Any future substantive commit before the push re-triggers verification as before.
