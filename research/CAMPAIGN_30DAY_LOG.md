@@ -305,3 +305,46 @@ Kill-first logic preserved; cost posture more honest (480→780 passes), not sof
 
 ### Charter-note
 - `research/CAMPAIGN_30DAY.md` still absent (first noted 2026-10-02); this log remains the strategy record. CEO: either restore the charter or ratify the log as the charter.
+
+## 2026-10-04 — Daily strategy review (07:40 IST)
+
+### Yesterday's movement (2026-10-03 review → 2026-10-04 07:40 IST, LOG-4888→4905, 18 entries)
+- **LOG-4888 — EXP140 Stage-1 verdict: HELD.** S4-5/J4 free-energy branch selection: G1/G2 passed (diversity, variance), **G3 calibration NULL** (Spearman ρ=0.08, p=0.73). Free-energy signal carries no correctness information; selection adds nothing (ΔM_FE=0.00; random beats it). Stage-2 gate does NOT open; family stands down.
+- **LOG-4889/4890 — EXP141 pre-reg SIGNED → verdict: KILL (self-model).** S4-6/J2 metacognitive self-modeling: G1 signal variance degenerate (std=0.000045, near-constant P("True")), G2 I-screen NULL (Î=0.0716 nats, p=0.181). Frozen model carries no correctness information about its own answers — self-bias in purest form. Honest LOW prior confirmed.
+- **LOG-4891/4892 — EXP142 pre-reg SIGNED → verdict: HELD.** S4-7/J3 spectral phase transition: C2 measurement-validity guard fired — n_i median 32 (all 60 below the N_MIN=40 floor); design's "n_i ≈ 100 typical" pricing was factually wrong, actual bench prompts ~30 tokens. Primary test VOID; family held, not killed.
+- **J-tier summit queue is EXHAUSTED at Stage 1:** J1/EXP139 contraction license survived (κ̂=0.955971; Stage-2 founder-GPU-gated) — the lone live signal; J4/EXP140 HELD; J2/EXP141 KILLED; J3/EXP142 HELD.
+- **LOG-4896/4897 — EXP139 Stage-2 Kaggle bundle: apparatus review SIGN-WITH-FIXES → repairs verified (67/67 CPU tests PASS).** Review found a CRITICAL non-functionality (executor IndexError on first attractor decode); fixed and re-verified, incl. binding AMBIGUITY-4 adjudication (κ̂<1 ∧ ΔM≤0 → HELD(f)). **Residual R1:** README status line must be replaced verbatim — founder GPU contact NOT licensed until R1 is applied. This is the single outstanding mechanical item on the only GPU-ready lane.
+- **LOG-4895/4898 — verl guidance brief: SIGN-WITH-FIXES → F1–F5 repairs complete → SIGNED.** Transferable big-company engineering guidance extracted (verifiers, failure taxonomies, token-exactness); RL algorithms correctly fenced non-transferable for Δθ=0.
+- **Frontier sweeps (LOG-4894/4900):** 10-04 sweep verified the CASP "intelligence explosion" white paper at primary (automation-of-R&D signals, not steering signals); corrected 10-03 items — Qwen 3.5 released Feb 16 2026 (stale recirculation, non-event), Apsara Sept 22, 2609.35618 primary abstract lacks the secondary-reported posterior numbers. Zero positive autonomous-steering signals; scoreboard headline unchanged.
+- **LOG-4901 — erratum:** second phantom citation pair (LOG-4963/5463) in LOG-4525, same class as LOG-4880's; [FACT] downgraded. Blocker substance survives (free-GPU account actions still founder-pending).
+- **Push chain (LOG-4893/4899/4902/4903/4904/4905):** verification-recursion closed — LOG-4904 CEO ruling: verification-record commits do not re-trigger push verification. New stable boundary at dac3697 (LOG-4899→4904 batch), READY; push still founder-reserved (fresh one-use token).
+
+### Lanes assessment
+- **Moved:** everything licensed. Three binding Stage-1 verdicts (1 KILL, 2 HELD) landed in one day; the EXP139 Stage-2 bundle is repair-complete modulo R1; the verl brief is signed; the sweep pipeline self-corrected (three stale items closed).
+- **Active:** NONE. subagent.list: zero active/zero recent; active_lanes.txt: zero lines (CEO-maintained; untouched by this run). The lab is legitimately at rest — not negligence.
+- **Stalled:** GPU queue — unchanged shape. EXP139 Stage-2 bundle needs R1 then founder GPU slot; EXP139 Stage-2/EXP140 Stage-2 both founder-GPU-gated; push needs founder token; the three free-GPU account actions (incl. the Modal token-secret half) remain founder-only.
+- **Busywork check:** the push-verification recursion (4902→4905) was verification-theater-adjacent; the LOG-4904 ruling closed it structurally. Everything else is verdicts, reviews, repairs, errata — no theater.
+- **Zombie check:** none. J-tier families landed at Stage 1 with binding outcomes; G/E/S stood down (LOG-4883); static-snapshot STOP-listed; TGA closed at three levels. The backlog holds no row without kill criteria + costed pilot.
+- **Strategic pivot: YES — the CPU summit queue is empty.** J1–J4 all landed; the program's only live falsification signal is EXP139 Stage-2, which is founder-GPU-gated. The next phase needs either (a) a fresh worth-it-gated CPU idea (innovation sprint), or (b) GPU resurrection. No CPU lane can honestly advance the current protocol set.
+
+### Today's priorities (falsification value per $0, summit-filtered)
+1. **R1 mechanical residual (CEO, licensed):** apply the LOG-4897-required verbatim README status-line replacement on `experiments/bundles/EXP139_stage2/`, diff-confirm only that line changed. Minutes, $0 CPU — per the LOG-4895 review precedent this flips the bundle to signed with no re-review, unblocking the only GPU-ready lane. This is the highest falsification value per dollar on the table.
+2. **Founder-gated items — flag only:** (a) one-use GitHub token to push the READY stack (boundary dac3697); (b) EXP139 Stage-2 GPU clearance (post-R1, needs founder Kaggle slot); (c) arXiv endorsement address re-verify + resend (bounced 550, open since 2026-09-27); (d) v90 publish decisions (TAAI/arXiv — signed, immutable); (e) Modal token-secret half + three free-GPU account actions.
+3. **Standing:** daily frontier sweep 2026-10-05 due tomorrow; scoreboard v3.17 current; next Friday cull 2026-10-09.
+
+### Kills
+- **KILL (binding):** EXP141 / S4-6 — metacognitive self-modeling family (G1 degenerate, G2 I-screen null; self-bias confirmed).
+- **HELD (family stood down):** EXP140 / S4-5 — free-energy selector (G3 calibration null).
+- **HELD (unanswerable on this bench):** EXP142 / S4-7 — spectral phase transition (C2 guard: n_i≈30 << N_MIN=40; design pricing defect recorded).
+
+### Dispatch record
+- 2026-10-04 (07:40 IST review): recommend-only per the LOG-4791 standing correction. No subagent spawned, no inline work wave, no LOG entries written, no active_lanes.txt touched, no LOG numbers self-assigned. This entry is the only file written by this run. [FACT]
+- **Recommended wave (exactly one): R1 README residual on the EXP139 Stage-2 bundle.** Worth-it gate: Q — is EXP139 Stage-2 founder-GPU execution fully licensed? D — the signed apparatus review (LOG-4896/4897) already gates on R1; applying the verbatim line flips the bundle to signed with no re-review per the LOG-4895 precedent, after which the CEO's only remaining decision is GPU clearance + founder slot. Cost: minutes, $0 CPU. Break point: diff must show ONLY the README line changed; any other delta → back to Law #14 review. Math license: none needed (mechanical residual). If the CEO dispatches nothing else, the no-idle rule is satisfied — R1 is the last licensed CPU work item in the queue; after it, the queue is honestly empty and founder-gated.
+
+### Charter-note
+- `research/CAMPAIGN_30DAY.md` still absent (first noted 2026-10-02; log header carries the standing note). This log remains the strategy record.
+
+### CEO correction (2026-10-04 ~07:45 IST) — R1 recommendation is stale, no wave needed
+- The 07:40 strategy review recommended an "R1 README residual" wave as the sole licensed CPU task. Verified against the tree: R1 was already satisfied at bundle creation. Commit aaa3dc1 (LOG-4896/4897, Oct 3 11:41 IST) created `experiments/bundles/EXP139_stage2/README.md` with the required verbatim status line already in place ("...founder GPU execution licensed."). In-tree README §1 status line matches the LOG-4897 §8 required replacement verbatim. The lane-keeper independently verified this at 06:14 IST today.
+- Per the LOG-4895 mechanical-residual precedent, the EXP139 Stage-2 bundle is therefore FULLY SIGNED with no residual; founder GPU execution is licensed. No R1 wave is dispatched; there is nothing to apply.
+- Net effect: the licensed CPU queue is honestly EMPTY. The program's only live signal (EXP139 Stage-2) awaits the founder's GPU slot; push awaits the founder's token. This matches the lane-keeper's step-7 terminal-state finding.
