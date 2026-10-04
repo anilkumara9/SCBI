@@ -15940,3 +15940,16 @@ research log is append-only — no stash, move, or rewrite was used at any point
 - **Died:** 14 hypotheses/rooms — buried with honors in the graveyard.
 - **Born:** S6-1–S6-5 (from EXP095/096's death-debt); the H1–H8 candidate wave; B1–B5 post-TGA bets (B2/B3/B4/B5 executed and verdict-landed within the same week; B1 refused under Law #4); the EXP135 escalation options (awaiting CEO ruling).
 - **Honest answers:** Q1 YES, Q2 YES. Not a failed week.
+
+## LOG-4910 — Push-readiness re-verification: LOG-4908/4909 substantive batch READY (2026-10-05)
+
+**[PUSH-PREP]** Batch verification complete for the substantive commit 54f0cbd (LOG-4908/4909 v98 paper build records), on branch sync/2026-09-29-consolidated, HEAD 54f0cbd:
+1. **LOG-number continuity:** LOG-4908 and LOG-4909 headers present in research_log.md — none missing.
+2. **Secret scan:** pre-commit diff scanned for credential patterns (ghp_/gho_/sk-/ak-/as-/private-key headers/API-key assignments) — clean. Only prose mentions of "token" in founder-token flags.
+3. **Weight/size scan:** single file changed (reports/research_log.md, +22/-0); no weights, nothing near size limits.
+4. **Linearity:** 54f0cbd is the single direct child of 2e2fb90 (LOG-4907 verification boundary) — no merges, no divergence.
+5. **Remote HEAD:** no upstream configured on this branch; fast-forward confirmation must happen at push time with the founder's fresh one-use token (same caveat as LOG-4878).
+
+**Verdict:** push-ready pending founder token. Do NOT push without it. Per LOG-4904, this verification-record commit does not invalidate the READY verdict.
+
+**Next free: LOG-4911.
