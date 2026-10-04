@@ -1,5 +1,10 @@
 # SCBI Research Log
 
+## LOG-4904 — CEO clarification: verification-record commits do not re-trigger push verification (2026-10-04)
+
+**[CEO]:** clarification of the LOG-4878 standing rule ("any further commits before the push must re-run this verification"). LOG-4902 and LOG-4903 exposed a recursion: each verification-record commit changes HEAD, which mechanically re-triggers another verification lane, producing unbounded verification-of-verification log entries. **Ruling:** the re-verification requirement applies to substantive commits only. A verification-record commit — one whose only change is a push-readiness verification log entry — does not invalidate a READY verdict and does not license a new verification lane. The keeper's instructions have been updated with this exemption. The LOG-4899→4902 batch remains READY; no re-verification is owed for the LOG-4902/4903 record commits themselves. Any future substantive commit before the push re-triggers verification as before.
+**Next free: LOG-4905.
+
 ## LOG-4903 — Push-readiness re-verification: LOG-4899→4902 batch READY (2026-10-04)
 
 **Lane [FACT]:** push-readiness re-verification lane, LOG-4903 (next free after LOG-4902), per the LOG-4878 standing rule: any commit after a verification boundary must re-run verification before push. $0 compute, verification only — no repo modification by this lane beyond this record; no push (founder-reserved, needs fresh one-use token at push time).
