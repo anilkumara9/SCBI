@@ -1,0 +1,7 @@
+{
+ "experiment": "EXP146",
+ "verdict": "KILL",
+ "verdict_cell": "powered null both arms; \u226510pp excluded; (h) PASS",
+ "records_sha256": "af4ee512470d64de1d3164aec5519516811aa28eeabb9c2edbcacd2d525c4baa",
+ "exit_code": 0
+}

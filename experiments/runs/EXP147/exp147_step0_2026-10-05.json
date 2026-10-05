@@ -1,0 +1,24 @@
+{
+ "guards": {
+  "b_revision_match": true,
+  "a_prehash_match": true,
+  "h_compute_feasible": true,
+  "c_bench_pin_match": true
+ },
+ "model_revision_actual": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+ "model_revision_expected": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+ "torch": "2.14.1+cpu",
+ "transformers": "5.17.0",
+ "numpy": "1.26.4",
+ "threads": 2,
+ "backbone_pre_hash": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+ "throughput_probe": {
+  "dummy_new_tokens": 50,
+  "seconds": 6.62,
+  "tok_per_s": 7.55,
+  "projected_seconds_47k": 6225.1,
+  "projected_hours_47k": 1.73
+ },
+ "bench_pin_recomputed": "2b055b53127a241b72338a82373c3efc7b666256e25d8c584d45989278c14dcf",
+ "outcome": "STEP0_PASS"
+}

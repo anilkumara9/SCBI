@@ -1,0 +1,37 @@
+[08:21:21] torch 2.14.1+cpu | transformers 5.17.0 | numpy 1.26.4 | threads=2 | seed=136013
+[08:21:26] loading model EleutherAI/pythia-410m rev 9879c9b5f8bea9051dcb0e68dff21493d67e9d4f (eager)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<00:30,  9.57it/s]Loading weights:  19%|█▉        | 56/292 [00:00<00:00, 269.44it/s]Loading weights:  28%|██▊       | 81/292 [00:00<00:00, 229.56it/s]Loading weights:  38%|███▊      | 110/292 [00:00<00:00, 249.37it/s]Loading weights:  56%|█████▌    | 164/292 [00:00<00:00, 335.55it/s]Loading weights:  75%|███████▍  | 218/292 [00:00<00:00, 394.24it/s]Loading weights:  91%|█████████ | 266/292 [00:00<00:00, 412.93it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 351.16it/s]
+[08:21:30] backbone pre-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[08:21:30] (a) Δθ=0 pre-hash PASS
+[08:21:30] L20 attention module: GPTNeoXAttention
+[08:21:30] (c) Bench1 sha256=83af7daa5596f351f0412ab4938ec4d3eb70477aad12915de6b7851b73a05eb5
+[08:21:30] (c) Bench1 pin PASS
+[08:21:30] (c) Bench2 sha256=c7d280ebc9a0eb6d6c761b91557570159671a842754792355b013ec0f695048b
+[08:21:30] (c) Bench2 pin PASS
+[08:21:30] span derivation: excluded=0 pooled
+[08:21:30] n1=60 (Bench1) n2=60 (Bench2) pooled n=120
+[08:21:30] eager_attention_forward patched (module-global default path)
+[08:21:30] B pass Bench1: 60 items (eager, no hook)
+[08:21:31] captured w_base/o_base on Bench1 item 0 (q=28)
+[08:22:12] B pass Bench2: 60 items (eager, no hook)
+[08:23:02] (b) B-decision archive recorded (120 items); non-degeneracy PASS (A=59 C=61 pooled)
+[08:23:04] (h) Phase 1: T2 span-ablate hook delivery (Bench1 item 0)
+[08:23:05] (h) Phase 1 PASS: spanmass=0.00e+00 renorm=1.79e-07 L1=0.1550 dOut=1.70e+00
+[08:23:05] (h) Phase 2: T1 span-boost hook delivery (Bench1 item 0)
+[08:23:05] (h) Phase 2 PASS: L1=0.1545 spanmass 0.1547>0.0775 floor-ok renorm=1.19e-07 dOut=1.85e+00
+[08:23:05] (h) hook-delivery PASS on both hooks
+[08:23:05] T1 pass Bench1: 60 items
+[08:24:00] T2 pass Bench1: 60 items
+[08:24:50] C pass Bench1: 60 items
+[08:25:49] T1 pass Bench2: 60 items
+[08:26:38] T2 pass Bench2: 60 items
+[08:27:22] C pass Bench2: 60 items
+[08:28:07] backbone post-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[08:28:07] (f) budget audit PASS: 482 forwards = 4*120 + 2
+[08:28:07] T1 pooled n=120: flips=3 ΔM=0.0250 b=3 c=0 p_dir=0.125000 p_2s=0.250000 CI_up=0.0529 [b1=1 c1=0 p1=0.5000 | b2=2 c2=0 p2=0.2500] repl=True
+[08:28:07] T2 pooled n=120: flips=10 ΔM=0.0833 b=4 c=6 p_dir=0.376953 p_2s=0.753906 CI_up=0.0682 [b1=1 c1=4 p1=0.1875 | b2=3 c2=2 p2=0.8125] repl=False
+[08:28:07] C pooled n=120: flips=10 ΔM=0.0833 b=3 c=7 p_dir=0.343750 p_2s=0.343750 CI_up=0.0180 [b1=1 c1=4 p1=0.3750 | b2=2 c2=3 p2=1.0000] repl=None
+[08:28:07] VERDICT per §4: KILL — powered null both arms; ≥10pp excluded; (h) PASS
+[08:28:07] records sha256: af4ee512470d64de1d3164aec5519516811aa28eeabb9c2edbcacd2d525c4baa
+[08:28:07] EXP146 execution complete: exit 0

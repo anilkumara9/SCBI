@@ -1,0 +1,17 @@
+{
+ "seed": 7101,
+ "n": 180,
+ "strata": {
+  "transitive-2hop": 45,
+  "transitive-3hop": 45,
+  "compositional-2hop": 45,
+  "compositional-3hop": 45
+ },
+ "pin": "2b055b53127a241b72338a82373c3efc7b666256e25d8c584d45989278c14dcf",
+ "bench_path": "S7-1_BENCH_2026-10-05.json",
+ "entity_pool_size": 40,
+ "exemplar_entities_disjoint": true,
+ "gold_min_count": 2,
+ "single_token_entities_verified": true,
+ "g0d_note": "single entity NAME per gold (plan's own examples Fweep/Zorp are multi-BPE-token); membership in closed pool is the operative check"
+}

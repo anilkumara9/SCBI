@@ -1,0 +1,26 @@
+{
+ "experiment": "EXP144",
+ "repo_id": "gpt2",
+ "resolved_repo_id": "openai-community/gpt2",
+ "model_revision_40hex": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+ "bench_pin": "9be8162633fe19aa2a924440d8ba158c1cc4e734c1f2a554a01a27e459f47fc4",
+ "bench_g0": {
+  "n": 60,
+  "unique_tuples": 60,
+  "strata": {
+   "Planetary/A-first": 16,
+   "Planetary/C-first": 14,
+   "Elemental/C-first": 16,
+   "Elemental/A-first": 14
+  }
+ },
+ "g2": {
+  "oracle_accuracy": 0.06071548821548822,
+  "permutation_p": 0.5312468753124687,
+  "gate": "PASS"
+ },
+ "g1prime": "FAIL (bench non-portable)",
+ "tokenizer_files_dir": "/home/hatch/workspace/SCBI/experiments/runs/EXP144/hf_cache/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e",
+ "g1prime_failure": "G1' FAIL: 8 A/C occurrence(s) not covered by exactly one token (e.g. exp092_planetary_2hop_3/target/Triton@(59, 65)\u2192['\u0120T', 'rit', 'on']; exp092_planetary_2hop_3/target/Triton@(108, 114)\u2192['\u0120T', 'rit', 'on']; exp092_planetary_3hop_7/target/Triton@(81, 87)\u2192['\u0120T', 'rit', 'on']; exp092_planetary_3hop_7/target/Triton@(133, 139)\u2192['\u0120T', 'rit', 'on']; exp092_planetary_3hop_11/foil/Triton@(9, 15)\u2192['\u0120T', 'rit', 'on']; exp092_planetary_3hop_11/foil/Triton@(129, 135)\u2192['\u0120T', 'rit', 'on']; exp092_planetary_3ho",
+ "disposition": "INCONCLUSIVE (bench non-portable) per S7-2 \u00a73.2 G1' \u2014 no weights downloaded"
+}

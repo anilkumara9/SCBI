@@ -1,0 +1,15 @@
+[decode] layer  0: acc=0.2000 p=0.01299 q95=0.1500 effect=+0.0500
+[decode] layer  1: acc=0.2000 p=0.005994 q95=0.1500 effect=+0.0500
+[decode] layer  2: acc=0.1667 p=0.02597 q95=0.1333 effect=+0.0333
+[decode] layer  3: acc=0.1667 p=0.02597 q95=0.1500 effect=+0.0167
+[decode] layer  4: acc=0.2000 p=0.002997 q95=0.1333 effect=+0.0667
+[decode] layer  5: acc=0.1500 p=0.05195 q95=0.1500 effect=+0.0000
+[decode] layer  6: acc=0.2000 p=0.003996 q95=0.1342 effect=+0.0658
+[decode] layer  7: acc=0.2000 p=0.005994 q95=0.1500 effect=+0.0500
+[decode] layer  8: acc=0.2833 p=0.000999 q95=0.1500 effect=+0.1333
+[decode] layer  9: acc=0.2333 p=0.001998 q95=0.1500 effect=+0.0833
+[decode] layer 10: acc=0.2500 p=0.000999 q95=0.1500 effect=+0.1000
+[decode] layer 11: acc=0.1167 p=0.1628 q95=0.1342 effect=-0.0175
+[decode] D1 (≥1 layer p<0.004167 & effect≥0.10): PASS; l*=8; passing=[8, 10]
+[decode] S2: acc=0.4833 (29/60); mean raw-logit margin=-0.447473
+[decode] wrote /home/hatch/workspace/SCBI/experiments/runs/EXP145/exp145_decode_report.json

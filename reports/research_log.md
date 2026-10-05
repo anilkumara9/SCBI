@@ -1,3 +1,371 @@
+## LOG-4949 — Push-prep lane dispatched (commit-only + push-readiness verification, LOG-4911→4948 batch) — 2026-10-05
+
+All four S7 items closed; active_lanes.txt empty. Next licensed task per the standing queue: commit-only push preparation + push-readiness verification over the complete substantive batch (LOG-4911→4948 — the last committed READY boundary is LOG-4910 / `ebde1a0`). Push-prep lane dispatched: inventory uncommitted work, commit the batch on `sync/2026-09-29-consolidated` (no secrets, no weights, no force-push), rerun push-readiness verification over LOG-4911→4948, report READY/NOT-READY. **Push itself is NOT licensed** — it needs a fresh founder-supplied token; the lane must not push and must not ask for a token.
+
+## LOG-4948 — Frontier scoreboard v3.22: EXP147 plotted — 2026-10-05
+
+Frontier scoreboard bumped v3.21 → v3.22 (`research/benchmarks/FRONTIER_SCOREBOARD.md`). Two changes, nothing else touched (10 insertions, 0 deletions): (1) new EXP147 row in §3.1 — HELD (bound, ADOPTED): S7-1 J7 in-context writable memory; B accuracy 0/180 = 0.0000 → guard (d) tripped; C/S never ran; first-token == gold 119/180 = 0.661 (descriptive, fenced); ~2,700 forwards, $0 CPU, Δθ=0. (2) changelog v3.22 line — day's tally now **thirteen KILLs**, twelve RUN-INVALIDs, **five HELDs**, four CONTINUEs + one apparatus CONTINUE, two precision certifications, one INCONCLUSIVE. Paper marker unchanged (v102 SIGNED, LOG-4933, MD5 `e747a951b3cc11af440ce25ee4752017`); capability column stays at zero (HELD is not a capability entry).
+
+**S7-1 cycle fully closed:** drafted → independent Law #14 review (SIGN-WITH-FIXES) → repair (3 fixes + 2 advisories + nit) → independent fix-verification re-review (PASS) → SIGN (CEO approved n=180 over the backlog's n=60) → EXP147 minted → executed → HELD verdict → independent verdict review (ADOPT) → scoreboard v3.22. **All four S7 items now CLOSED** (S7-1 HELD, S7-2 KILL/PIVOT, S7-3 CONTINUE→overturned by EXP143, S7-4 KILL). **Next licensed:** commit-only push preparation + push-readiness verification over the complete substantive batch (LOG-4911→4948).
+
+## LOG-4947 — EXP147 verdict review: ADOPT — HELD stands — 2026-10-05
+
+Independent verdict review of EXP147 returned binding **ADOPT** — the HELD stands as recorded. Verified from the raw records (`exp147_per_item.jsonl`, 180 records; step-0/run/summary JSONs; bench file); every number independently recomputed:
+
+- **Guard-(d) trip CONFIRMED:** independent implementation of the registered §5.3 scoring gives 0/180 = 0.0000, identical to the record field; 0.0000 ∉ [0.2, 0.8] → guard (d) trips. Robust to any reasonable normalization variant (generations are rambling prompt-continuations, never bare answers). No other guard tripped; (e)/(f)/(f′) correctly not reached.
+- **Precedence CONFIRMED:** guard (d) trips → HELD per the signed §4 table (bench degenerate *for this measurement*, not apparatus failure); C and S correctly not run.
+- **Descriptive diagnosis CONFIRMED:** first-token == gold 119/180 = 0.6611; per-stratum 0.9778/0.9556/0.2667/0.4444; short generations 0/180 — all match exactly. Fenced as descriptive, not re-barring (Law #9); no post-hoc re-barring.
+- **Scope discipline CONFIRMED:** verdict licenses nothing about J7/scratchpad/test-time compute; correctly identifies the failure as the measurement apparatus (the bench elicits the target reasoning — 96–98% leading-token accuracy on compositional strata). The one licensed forward claim (a future proposal must fix the baseline measurement, as a *new* proposal) is correctly scoped.
+- **Integrity CONFIRMED:** Δθ=0; model revision 40-hex matches; bench pin character-identical by recompute; only B arm run (2,700 ≪ 50k cap); $0 CPU.
+
+**The pre-registered machinery worked exactly as designed** — it caught the unmeasurable baseline before wasting compute on C and S. The J7 hypothesis is untested, not answered. **Next:** frontier scoreboard v3.22 (EXP147 plotted).
+
+## LOG-4946 — EXP147 execution complete: HELD (guard (d) tripped — baseline unmeasurable) — 2026-10-05
+
+EXP147 (S7-1, J7 in-context writable memory; signed plan LOG-4945) closed with **HELD**. Guard (d) tripped: B-arm accuracy = 0/180 = 0.0000 under the registered scoring (full-generation exact match), outside the [0.2, 0.8] calibration band. Arms C and S were not run — per the plan, no compute wasted (~2,700 forwards only, $0 CPU).
+
+**The diagnosis [OBSERVATION]:** this is a format-compliance floor, not a capability floor. Pythia-410m (base, non-instruct) does not follow the 'Answer with the name only' format — it emits a candidate name first, then rambles. Descriptive first-token analysis: first normalized token == gold on **119/180 = 0.661** (compositional-2hop 0.978, compositional-3hop 0.956, transitive-2hop 0.267, transitive-3hop 0.444); 0/180 generations were short. The bench is not too hard — the measurement apparatus is. The plan's material uncertainty #2 (base-LM instruction-following) is the realized failure mode, arriving through guard (d) instead of guard (e).
+
+**Integrity [FACT]:** Δθ=0 (pre==post==`ec276abe…38e0ed`); model revision `9879c9b5…9d4f`; bench pin `2b055b53…14dcf` (64/64 character-identical at Step 0); guards (a)/(b)/(c)/(h) PASS; (h) projected 1.73h, well under the 72h cap. **Interpretation:** the J7 hypothesis is untested, not answered. This HELD licenses exactly one thing: a future proposal must fix the baseline measurement (first-token scoring, a stop sequence, or an instruct-tuned model) — a new proposal, not a repair of this verdict. **Next:** independent verdict review (standard) → scoreboard sync.
+
+## LOG-4945 — S7-1 fix-verification re-review: PASS → SIGNED; EXP147 minted and dispatched — 2026-10-05
+
+Independent Law #14 fix-verification re-review of the S7-1 pre-registration returned binding **PASS** — all three required fixes, both advisories, and the nit verified in the draft (character-exact matching against the required conditions):
+
+- **Fix (a) budget-matching fence VERIFIED:** guard (f′) `mean_tokens(S)/mean_tokens(C) ∈ [2/3, 3/2]` → HELD exists in §5.4 (band as [ASSUMPTION]); §1.5(d) attribution claim consistent; §4 requires (e) AND (f′) PASS for KILL, routes (f′) trips → HELD; §0/§1 point-2 consistent.
+- **Fix (b) regex VERIFIED:** §5.4(e) registers `r'WRITE\(fact\d+,'` character-exactly; 'well-formed' precisely defined.
+- **Fix (c) strata VERIFIED:** §5.1 operational definitions (transitive vs compositional; question names the chain start, never an intermediate); corrected 2-hop compositional example; G0 'strata exact' well-defined.
+- Advisories both applied; nit applied; nothing beyond fixes changed (§2 power numbers match the original reviewer's independently-verified values); blind-spot additions re-run (40-hex model pin character-identical across draft/EXP146 verdict/log; in-principle variability confirmed).
+
+**No further review needed before SIGN** — the re-review satisfies the original review's re-review requirement. **S7-1 plan SIGNED** (status header updated); **CEO ruling on the §2.4 budget delta:** the backlog's n=60 is underpowered for the registered +10pp scale (MDE80 ≈ +17pp; KILL fires <40% under null) — per the S7-4 precedent the CEO approves the draft's recommended n=180 (≈46k forwards, $0 CPU, wall-time gated by guard (h)); the n=60 verdict run is not licensed. **EXP147 minted** (highest prior: EXP146) and the execution lane dispatched: frozen Pythia-410m, 3 arms (baseline / budget-matched CoT / structured scratchpad), n=180 multi-hop items, greedy decoding, Δθ=0, all §5.4 guards (incl. (f′) budget-match comparability and (h) compute gate); frozen KILL/CONTINUE/PIVOT bars (§4). Verdict review at close.
+
+## LOG-4944 — S7-1 pre-reg repair complete (3 Law #14 fixes applied); fix-verification re-review dispatched — 2026-10-05
+
+S7-1 pre-registration repair lane completed — all three required fixes plus both advisories and the nit applied to `research/analysis_plans/S7-1_PREREG_DRAFT_2026-10-05.md` (edited in place; hypothesis, arms, §2 power analysis, and all non-fix content untouched):
+
+**Fix 1 [SUBSTANTIVE]:** budget-matching fence repaired — new guard (f′) in §5.4: `mean_tokens(S)/mean_tokens(C) ∈ [2/3, 3/2]` → else HELD (attribution compromised, not apparatus failure), band as registered [ASSUMPTION]; §1.5(d) attribution claim now consistent (the 'budget-matched' label is earned only if (f′) holds); §4 decision table updated (KILL requires (e) AND (f′) PASS; (f′) trips → HELD).
+
+**Fix 2 [MECHANICAL]:** guard (e) regex registered character-exactly — `r'WRITE\(fact\d+,'`; 'well-formed' defined (closing paren not required, content after comma not inspected, regex on raw generation text pre-normalization).
+
+**Fix 3 [DEFINITIONAL]:** transitive vs compositional operationally defined (compositional: chain of entity→entity relations, question names the START, never an intermediate); corrected 2-hop example ('Who is Blip's friend's pet?' → Fweep); G0 'strata exact' now well-defined.
+
+**Advisories:** (i) WRITE-only checking documented as deliberate (delivery vs efficacy separation); (ii) descriptive B-arm format-compliance report added (not a guard). Nit: §1.5(a) relabeled [FACT]→[CONJECTURE]. **Next:** independent fix-verification re-review dispatched — only then may SIGN be considered. No experiment number, $0 CPU.
+
+## LOG-4943 — S7-1 Law #14 review: SIGN-WITH-FIXES (re-review required) — 2026-10-05
+
+Independent Law #14 review of `research/analysis_plans/S7-1_PREREG_DRAFT_2026-10-05.md` returned binding **SIGN-WITH-FIXES** (re-review required before SIGN). 9/10 checks verified clean: thresholds fixed and falsifiable; power arithmetic reproduced exactly (all 25 cells ≤0.001); hex pin character-identical; in-principle variability; scope discipline; compute feasibility (guard (h) real, no GPU escalation); nothing beyond proposal; budget delta honestly flagged; Law #7.
+
+**Three required fixes:** (1) [SUBSTANTIVE] the budget-matching fence — T=120 is a cap, not a guarantee of equal usage; guard (f) verifies both arms exceed 2×B tokens but not that C and S use comparable tokens; a CONTINUE could be confounded by compute. Required: register comparability guard (f′) — `mean_tokens(S)/mean_tokens(C) ∈ [2/3, 3/2]` → else HELD (attribution compromised), band as registered [ASSUMPTION]; or soften the §1.5(d) attribution claim. (2) [MECHANICAL] guard (e) regex not character-exact — register the exact pattern (e.g. `r'WRITE\(fact\d+,'`) and define 'well-formed'. (3) [DEFINITIONAL] the §5.1 'compositional' example is 1-hop lookup + distractor, not 2-hop compositional — G0's 'strata exact' is ill-defined until transitive vs compositional are operationally defined with correct 2-hop examples.
+
+Advisories: (i) guard (e) checks WRITE but not READ (document why WRITE-only suffices or add READ check); (ii) B-arm lacks format-compliance reporting (verbose B could spuriously fire PIVOT). Nit: §1.5(a) [FACT] on induction-head lookup is closer to [CONJECTURE]. Repair lane dispatched.
+
+## LOG-4942 — S7-1 pre-registration drafted (J7: in-context writable memory); dispatched for independent Law #14 review — 2026-10-05
+
+S7-1 pre-registration drafting lane completed. Draft: `research/analysis_plans/S7-1_PREREG_DRAFT_2026-10-05.md` (184 lines, $0 CPU, paper only — no runs, no experiment number). Design: can a standard frozen transformer simulate writable key–value memory in context (explicit WRITE/READ prompting discipline) and grow multi-hop capability without new architecture? Three arms (baseline / budget-matched CoT / structured scratchpad), powered design n=180, frozen Pythia-410m, Δθ=0. Frozen bars: CONTINUE (scratchpad beats budget-matched CoT, one-sided McNemar p<0.05, net ≥+10pp → the program's first capability entry); KILL (no advantage, p≥0.1, CI excludes +10pp, discipline verified delivered → the missing ingredient is architectural, not disciplinary); PIVOT (beats baseline but not matched CoT → test-time-compute account). A positive would be the program's first capability entry; a clean null sharpens Spotlight's architectural claim into a testable boundary. Dispatched for independent Law #14 review.
+
+## LOG-4941 — S7-1 pre-registration drafting dispatched (J7: in-context writable memory) — 2026-10-05
+
+S7-4 cycle fully closed; active_lanes.txt empty. Next licensed item from CANDIDATE_BACKLOG.md:32 — **S7-1 / J7: In-context writable memory (scratchpad-as-memory at Δθ=0)**, PROPOSAL born LOG-4911, never started. Question: can a STANDARD frozen transformer simulate writable key–value memory in context (explicit WRITE/READ discipline) and grow multi-step capability without new architecture? A positive would be the program's first capability entry; a clean null sharpens Spotlight's architectural claim into a testable boundary. Drafting lane dispatched: full pre-registration (`research/analysis_plans/S7-1_PREREG_DRAFT_2026-10-05.md`) with worth-it gate, 3 arms (baseline / budget-matched CoT / structured scratchpad), frozen KILL/PIVOT bars, power analysis, Step-0 guards, $0 CPU paper only — no runs, no experiment number. S7-2/S7-3/S7-4 all confirmed CLOSED (backlog rows stale; log shows completion).
+
+## LOG-4940 — Frontier scoreboard v3.21: EXP146 plotted — 2026-10-05
+
+Frontier scoreboard bumped v3.20 → v3.21 (`research/benchmarks/FRONTIER_SCOREBOARD.md`). Two changes, nothing else touched: (1) new EXP146 row in §3.1 — KILL (bound, ADOPTED): S7-4 powered follow-up to EXP136's HELD attention-routing intervention; T1 b=3/c=0, p=0.125; T2 b=4/c=6, p=0.377; C p=0.344; 482 forwards, $0 CPU, Δθ=0; routing-around closed as a ≥10pp steering path. (2) changelog v3.21 line — day's tally now **thirteen KILLs**, twelve RUN-INVALIDs, four HELDs, four CONTINUEs + one apparatus CONTINUE, two precision certifications, one INCONCLUSIVE. Paper marker unchanged (v102 SIGNED, LOG-4933, MD5 `e747a951b3cc11af440ce25ee4752017`); capability column stays at zero.
+
+**S7-4 cycle fully closed:** drafted → independent Law #14 review (SIGN-WITH-FIXES) → repair (3 fixes + 2 advisories) → independent fix-verification re-review (PASS) → SIGN → EXP146 minted → executed → KILL verdict → independent verdict review (ADOPT) → scoreboard v3.21. **Next licensed:** the next innovation-sprint item from CANDIDATE_BACKLOG.md.
+
+## LOG-4939 — EXP146 verdict review: ADOPT — KILL stands — 2026-10-05
+
+Independent verdict review of EXP146 returned binding **ADOPT** — the KILL stands as recorded. Verified from the raw per-item records (`exp146_per_item.jsonl`, 120 items × 4 phases), not the execution lane's prose; every number recomputed with exact binomial arithmetic:
+
+- **Number provenance CONFIRMED:** T1 b=3/c=0, p_dir=0.125000, p_2s=0.250000, CI upper 0.0529; T2 b=4/c=6, p_dir=0.376953, p_2s=0.753906, CI upper 0.0682; C b=3/c=7, p_2s=0.343750 — all identical to full precision; per-bench splits and SE values reproduce exactly.
+- **Verdict application CONFIRMED:** KILL conjunction complete (directional one-sided p ≥ 0.1 both arms, two-sided p ≥ 0.1, CI uppers < 0.10, (h) PASS both phases, no qualitative heterogeneity); CONTINUE correctly does not fire; C null; §4 precedence correctly applied; Law #9 (no post-hoc re-barring) honored.
+- **Scope discipline CONFIRMED:** verdict stays within ≥10pp; sub-10pp explicitly out of scope; no overreach; T1's 3 same-direction flips handled honestly.
+- **Integrity CONFIRMED** with one non-material observation: run used numpy 1.26.4 vs plan's 2.5.3 (minor-series, disclosed; affects only auxiliary statistics, all reproduce to full precision); torch patch-level drift, transformers exact. Does not affect the verdict.
+
+**The routing-around hypothesis is dead as a ≥10pp steering path; EXP136's HELD is resolved as a powered null, not hidden signal.** **Next:** frontier scoreboard v3.21 (EXP146 plotted).
+
+## LOG-4938 — EXP146 execution complete: KILL — the routing-around hypothesis is dead — 2026-10-05
+
+EXP146 (S7-4, powered follow-up to EXP136's HELD attention-routing result; signed plan LOG-4937) closed with binding **KILL**. Identical EXP136 protocol (frozen Pythia-410m, L20 post-softmax reweighting T1 span-boost / T2 span-ablate / C uniform) on two fresh 60-item benches (pins `83af7daa…05eb5`, `c7d280eb…048b`), pooled n=120, 482 forwards, $0 CPU, model revision `9879c9b5f8bea9051dcb0e68dff21493d67e9d4f`, Δθ=0.
+
+**Numbers [FACT]:** T1 (span-boost, one-sided b>c): flips=3/120, ΔM=0.0250, b=3/c=0, one-sided p=0.125000, two-sided p=0.250000, 95% Wald CI upper=+0.0529. T2 (span-ablate, one-sided c>b): flips=10/120, ΔM=0.0833, b=4/c=6, one-sided p=0.376953, two-sided p=0.753906, CI upper=+0.0682. C (uniform, two-sided): flips=10/120, b=3/c=7, p=0.343750 — null control as required.
+
+**Verdict application (§4):** CONTINUE does not fire (neither arm p<0.05). KILL fires on each routing arm — pooled directional one-sided p ≥ 0.1, two-sided p ≥ 0.1, 95% CI upper < 0.10, (h) PASS both hooks, C null. **Interpretation:** EXP136's HELD is resolved — it was not underpowering hiding a ≥10pp directional effect; at n=120 the powered null fired cleanly. The routing-around account of the boundary nulls is closed as a ≥10pp steering path (sub-10pp out of scope, not ruled out); routing-aware G/E/S designs are not licensed by this line.
+
+Deliverables: `research/analysis_plans/EXP146_VERDICT_2026-10-05.md`, `EXP146_RESULTS_2026-10-05.json`, `experiments/runs/EXP146/`. **Next:** independent verdict review (standard) → frontier scoreboard v3.21.
+
+## LOG-4937 — S7-4 fix-verification re-review: PASS → SIGNED; EXP146 minted and dispatched — 2026-10-05
+
+Independent Law #14 fix-verification re-review of the S7-4 pre-registration returned binding **PASS** — all three required fixes and both advisories verified from independent recomputation (not the repair lane's prose):
+
+- **Fix (c) pins VERIFIED:** both bench pins recomputed character-identical from the built JSONs via the committed canonical serialization; G0 PASS both; freshness independently confirmed (B1∩B2=∅, both disjoint from EXP092-B); each pin appears exactly 2× in the draft, all matching.
+- **Fix (b) joint probabilities VERIFIED:** §1.5/§1.7/§2.3/§2.4 report joint two-arm KILL probabilities (73–92%) with per-arm marginals labeled; cross-arm correlation caveat with correct direction; no remaining occurrence presents a per-arm number as the bar's firing probability.
+- **Fix (a) contradiction VERIFIED:** Bench 1 is a fresh 60-item draw (seed 7401); 'direct reproducibility' framing retired with explicit 'no EXP136 data reused or pooled'; guard (b) retired/replaced; §4 CONTINUE clause satisfiable for T1 and T2; §2 power analysis consistent with fresh+fresh (§2.1 independently reproduced to ±0.0004; Monte Carlo P(CONTINUE)=0.94 at 9pp plausible vs independent 0.914).
+- Advisories both applied cleanly; nothing beyond fixes + advisories changed; Law #14 checklist additions re-run (pins character-verified; no degenerate-by-construction signals). Non-material observation: independent CONTINUE-bar Monte Carlo gives 0.914 vs draft's 0.94 at 9pp (C-arm modeling detail) — all load-bearing conclusions reproduced, no correction required.
+
+**No further review needed before SIGN** — the re-review satisfies the original review's re-review requirement. **S7-4 plan SIGNED** (status header updated); **EXP146 minted** (highest prior: EXP145; new protocol = new number) and the execution lane dispatched: identical EXP136 protocol on two fresh 60-item benches (pins `83af7daa…05eb5`, `c7d280eb…048b`), ≈480 CPU forwards, $0, frozen backbone Δθ=0; frozen KILL/CONTINUE bars (§3). Verdict review at close.
+
+## LOG-4936 — S7-4 pre-reg repair complete (3 Law #14 fixes applied); fix-verification re-review dispatched — 2026-10-05
+
+S7-4 pre-registration repair lane completed — all three required fixes plus both advisories applied to `research/analysis_plans/S7-4_PREREG_DRAFT_2026-10-05.md` (edited in place; hypothesis, arms, §2.1 table, and all non-fix content untouched):
+
+**Fix 1 [SUBSTANTIVE]:** Bench-1-fixed vs replication-clause contradiction resolved via option (a) — BOTH benches are now fresh 60-item draws (Bench 1 seed `random.Random(7401)`); the 'direct reproducibility of EXP136' framing explicitly retired; guard (b)'s EXP094-B agreement check retired (only meaningful for a fixed bench), replaced with B-decision archive + non-degeneracy check; §4 CONTINUE clause now satisfiable for T1 and T2 on both arms; §2 redone for fresh+fresh (Monte Carlo, seed 20261005, 80k reps): P(CONTINUE)=0.94 at true 9pp both arms, 0.32 at 3pp, false-CONTINUE 0.03–0.05 under null.
+
+**Fix 2 [LOAD-BEARING NUMBERS]:** joint two-arm KILL probabilities now reported — null symmetric 2%: 0.92 joint (0.959 per-arm); 3%: 0.88 (0.937); 6%: 0.73 (0.855); true 8pp: 0.008 (0.089); true 3pp: 0.41 (0.642). Joint = per-arm² under cross-arm independence, validated by direct joint Monte Carlo; cross-arm correlation caveat stated (product is conservative). All '86–96%' occurrences updated to 73–92% joint.
+
+**Fix 3 [PROCEDURAL]:** both benches built via the committed EXP092 machinery with documented seeded tuple draws (S7-2b precedent; committed `build_bench()` is deterministic so verbatim reuse cannot yield fresh draws), pinned and character-verified: Bench 1 `83af7daa…05eb5`, Bench 2 `c7d280eb…048b`; G0 PASS both; tuple sets mutually disjoint and disjoint from EXP092-B. Artifacts: `S7-4_build_benches_2026-10-05.py`, `S7-4_BENCH1/2_2026-10-05.json`, `S7-4_BENCH_MANIFEST_2026-10-05.json`.
+
+**Advisories applied:** (i) §3 NOTE '(0.56²)' replaced with exact joint ~16% (method labeled); (ii) §2.3 rows clarified as both-arms effects. Caveats for re-review: HF Hub unreachable from the repair environment so the tokenizer span pre-check is execution-time with guard (c) as backstop (EXP136 design, 0 exclusions); repair-lane McNemar reproduces §2.1 to ±0.007 (method variant), §2.1 untouched.
+
+**Next:** independent fix-verification re-review dispatched (must confirm: (a) contradiction resolved with consistent design + power analysis, (b) joint probabilities reported, (c) Bench-2 pin filled and character-verified) — only then may SIGN be considered. No experiment number minted, $0 CPU.
+
+## LOG-4935 — S7-4 pre-registration drafted (EXP136 HELD powered follow-up); power math: N≈120 sufficient; dispatched for independent Law #14 review — 2026-10-05
+
+S7-4 (J10 — EXP136 HELD powered follow-up, attention-routing) pre-registration drafted: `research/analysis_plans/S7-4_PREREG_DRAFT_2026-10-05.md` (DRAFT, $0 CPU, paper only; no experiment number minted).
+
+**Power-math conclusion: N≈120 IS sufficient for the registered bars** (exact binomial McNemar, first principles): EXP136 (n=60) had only ~40% power for an 8pp true effect — the underpowering question is real. At n=120: 78–79% power at 8–9pp; MDE80 ≈ 9–10pp; effective full CONTINUE-bar power ≈ 65–70% at 9pp. KILL bar fires with 86–96% probability under null-like symmetric noise; false-KILL only 9% under a true 8pp effect. Blind spot plainly stated: 3–6pp effects not reliably separable; KILL verdict explicitly scoped to ≥10pp (sub-10pp out-of-scope, not ruled out); N≈270 would be needed for 6pp MDE80.
+
+**Frozen bars (§3, backlog row :35 verbatim):** 'McNemar p ≥ 0.1 with CI excluding ≥10pp → KILL the routing-around hypothesis; directional flips replicating across two benches p < 0.05 → CONTINUE' — with explicit operational definitions (pooled n=120; Wald 95% CI; replication = directional agreement on both benches). Reviewer decision points flagged: (1) directional-agreement vs per-bench-significance; (2) 5-part KILL conjunction; (3) Bench 2 pin TBD, pre-registered before SIGN; (4) 'ΔM=0 alone is NOT a KILL condition' (Law #4). All pins character-verified against EXP136 records. AGENTS.md §5 labels throughout.
+
+**Next:** draft dispatched for independent Law #14 review (new experiment number minted only on SIGN).
+
+## LOG-4934 — Frontier scoreboard v3.20: paper marker updated v101 → v102 SIGNED — 2026-10-05
+
+Scoreboard micro-sync lane completed: `research/benchmarks/FRONTIER_SCOREBOARD.md` bumped v3.19 → **v3.20**. Paper marker now reads **v102 SIGNED** (LOG-4933, 29 pp, MD5 `e747a951b3cc11af440ce25ee4752017`, verified character-identical against the delivered copy); v101 marked withdrawn from current use (v98/v99/v100 already withdrawn). v3.19 bullet untouched (append-only history). $0.
+
+## LOG-4933 — v102 paper SIGNED: legibility-first rebuild, independent Law #14 SIGN (clean, zero fixes) — 2026-10-05
+
+The v102 rebuild coordinator completed. **v102 SIGNED** — independent Law #14 review (separate agent from the builders) returned a CLEAN SIGN with zero fixes required, no re-review. The review included the new mandatory phone-scale legibility check: all 9 figures + all tables PASS at ~400px; the v101 cramping defect class is gone.
+
+**Deliverable:** `~/workspace/scbi-paper/v102/paper.pdf` — 29 pages, MD5 `e747a951b3cc11af440ce25ee4752017`; sign record `~/workspace/scbi-paper/v102_plan/V102_SIGN_2026-10-05.md`; delivered copy `~/workspace/your_files/SCBI_Boundary_Paper_v102_SIGNED.pdf` (MD5 verified identical).
+
+**What changed vs v101 (legibility-first):** figures rebuilt to hard rules (nothing below \small, main labels \normalsize+, generous whitespace, one message per figure, mandatory ~400px phone-scale render check) — Fig 1: squeezed bar chart → two stacked airy panels with \huge 33.33% headline; Fig 6: three mutually-touching micro-type panels → ONE panel, one message ('it reads, but it does not steer'); Fig 5: 5 cramped cards → vertical stack; Fig 8: dashed zoom connectors removed; all panels separated with real air. Tables reformatted: no \small bodies, \tabcolsep ≥6pt, \arraystretch ≥1.15–1.3, kill-ledger longtable → stacked full-width cards. Captions/prose: 12 surgical anti-committee edits. Fig 4 kept as the approved v98 restoration (byte-identical); Fig 8 stays removed. Frozen numbers verbatim, 41/41 citations, 57 labels zero duplicates, fences intact, zero compile errors.
+
+CEO firsthand verification: rendered v102 pages and confirmed the decompression (Fig 1 airy stacked panels, Fig 6 single clear panel, Table 1 clean booktabs at readable size) before delivery. v98/v99/v100/v101 records immutable and withdrawn. No science changes. GitHub push and arXiv remain founder-reserved. User acceptance of v102 pending.
+
+## LOG-4932 — v101 withdrawn from current use (user: figures cramped/unclear/compressed, tables badly formatted); v102 launched — legibility-first rebuild — 2026-10-05
+
+The user reviewed v101 (on screen) and rejected it: 'most of the fig unclear and messed up, attached each other, compressed, bad look, not informative and understandable'; 'tables are not formatted and understandable'; ordered a full-paper check fixing all issues.
+
+**Defect class (confirmed firsthand by rendering v101 pages):** the figures are structurally CRAMPED — tiny type, elements touching/overlapping, compressed multi-panel layouts illegible at phone-reading scale (seen directly: Fig 1 hero's squeezed bar chart + tiny labels; Fig 6 rig's three mutually-touching panels with micro-type). The builders' 'reading-scale inspection' did not match how the founder actually reads (phone screen). Tables: the kill-ledger summary table is set in \small with narrow p-columns — dense and hard to parse.
+
+**Disposition:** v101's signed record stays immutable (`~/workspace/scbi-paper/v101/`, sign record `v101_plan/V101_SIGN_2026-10-05.md`, MD5 `6e5e5fb9e8a07b36712b8c7aa4ada1c5`) but is WITHDRAWN from current use — never defended. v102 is a new immutable directory: a LEGIBILITY-FIRST rebuild — figures decompressed (large type, generous whitespace, nothing touching, simplified compositions, phone-screen legible, one message per figure; overstuffed multi-panel figures split or radically simplified); tables reformatted (readable type size, clear headers, generous spacing, restructured where needed); full page-by-page check of format/content/words fixing all issues. Fig 4 keeps the restored v98 version (user-approved); Fig 8 stays removed; frozen numbers, fences, and 41/41 citations intact; no science changes.
+
+**Next:** v102 coordinator dispatched; build with the pinned tectonic toolchain; independent Law #14 review of the exact final PDF (with explicit phone-scale legibility check), then SIGN.
+
+## LOG-4931 — Frontier scoreboard v3.19: paper marker updated v100 → v101 SIGNED — 2026-10-05
+
+Scoreboard micro-sync lane completed: `research/benchmarks/FRONTIER_SCOREBOARD.md` bumped v3.18 → **v3.19**. Paper marker now reads **v101 SIGNED** (LOG-4930, 27 pp, MD5 `6e5e5fb9e8a07b36712b8c7aa4ada1c5`, verified character-identical against the delivered copy); v100 marked withdrawn from current use (v98/v99 already withdrawn). v3.18 bullet untouched (append-only history). $0.
+
+## LOG-4930 — v101 paper SIGNED: Fig 4 restored to v98, 8 figures polished, tables/math verified, prose humanized — 2026-10-05
+
+The v101 rebuild coordinator completed. **v101 SIGNED** — independent Law #14 review (separate agent from the builders) returned SIGN-WITH-FIXES (4 fixes: Fig 5 sub-label collisions, Fig 6 panel-B box overlap, Fig 8 '0/60' glyph overlap, Table 2 'Transient-growth dynamics' row misstating EXP137/138); all 4 fixes + 1 advisory applied, compile-checked, visually verified; focused re-review of the fixed spots → binding SIGN (one sub-mm cosmetic graze noted at 300 dpi only, not a defect).
+
+**Deliverable:** `~/workspace/scbi-paper/v101/paper.pdf` — 27 pages, MD5 `6e5e5fb9e8a07b36712b8c7aa4ada1c5`; sign record `~/workspace/scbi-paper/v101_plan/V101_SIGN_2026-10-05.md`; delivered copy `~/workspace/your_files/SCBI_Boundary_Paper_v101_SIGNED.pdf` (MD5 verified identical).
+
+**What changed vs v100:** (1) **Fig 4 RESTORED** — the rejected flat-2D-schematic redesign replaced by v98's `fig4_retraction.tikz` byte-identical (MD5-verified) with its v98 caption character-identical; off-limits to all redesign lanes. (2) **Figs 1–3, 5–9 redesigned** to the polished vibrant infographic bar (distill.pub/top-ML-paper polish): rich curated palettes, tasteful gradients, clear focal points, strong hierarchy — instantly understandable at reading scale, zero collisions; also fixed 2 real v100 defects (item-33 label collision, clipped verdict line). (3) **Tables verified** — all 5 tabular environments checked against frozen numbers and the research log (McNemar p-values and Wilson CI recomputed, ledger rows cross-checked): zero value errors; one notation fix ($\Delta\theta$ → $\Delta\btheta$ in the anatomy caption). (4) **Math verified** — all equations re-derived/checked: zero errors; 23/23 equation environments balanced. (5) **Prose humanized + formatting cleaned** — 12 surgical sentence-level edits killing remaining committee/AI tics; widow/orphan penalties; consistent em-dashes/quotes/lists; NeurIPS checklist item 6 clarified.
+
+v98/v99/v100 signed records immutable and withdrawn from current use. Fig 8 stays removed. No science changes, no new results, all frozen numbers verbatim, 41/41 citations, fences intact. GitHub push and arXiv remain founder-reserved. User acceptance of v101 pending.
+
+## LOG-4929 — Frontier scoreboard synced to v3.18 (EXP143 KILL, EXP144 INCONCLUSIVE, EXP145 KILL/PIVOT ADOPTED, v100 paper marker) — 2026-10-05
+
+Frontier scoreboard/benchmark sync lane completed. `research/benchmarks/FRONTIER_SCOREBOARD.md` bumped v3.17 → **v3.18**; `PROGRESS_ANALYSIS.md` gained the 2026-10-05 synthesis paragraph.
+
+Three new bound rows in §3.1 (after EXP142): **EXP143 — KILL** (S5-inverted held-out: ρ=+0.1156, p=0.8103; discovery was winner's curse; label-free line closed); **EXP144 — INCONCLUSIVE** (G1′ 232/240 on GPT-2 BPE, Triton 0/8; zero forwards; cross-family untested, not falsified); **EXP145 — KILL/PIVOT (ADOPTED)** (D1 pass layers 8/10, D2 fail cosine −0.4587; Gap fenced to Pythia scale). Honest tally: twelve KILLs, twelve RUN-INVALIDs, four HELDs, four CONTINUEs + one apparatus CONTINUE, two precision certifications, one INCONCLUSIVE. Paper marker: v100 SIGNED (LOG-4927, MD5 `7ea5a49347bdbc17529d9e4c088aefc1`); v98/v99 withdrawn. Capability column stays at zero; SCBI's lead remains boundary science. All numbers verified against machine-readable artifacts. $0.
+
+## LOG-4928 — v100 withdrawn from current use (user: Fig 4 messed up → restore old; other figures need better UI design/attractive colors; tables/math/content/humanize/format pass); v101 launched — 2026-10-05
+
+The user reviewed v100 and ordered another revision, with specific direction this time:
+
+1. **Fig 4 messed up — restore the old one.** The v99/v100 flat-2D-schematic redesign of Fig 4 (retraction) is rejected; restore v98's `figs/fig4_retraction.tikz` verbatim (data left panel + schematic right panel, slope lines, legend) with its v98 caption, adjusting only for any v99/v100 text-reference changes.
+2. **Other 8 figures: better UI design, attractive colors** — the user explicitly wants the polished, vibrant aesthetic of diffusion-model-generated diagrams: rich professional infographic quality, attractive color palettes, clear focal points and visual hierarchy — while staying visually understandable and avoiding cluttered AI-slop.
+3. **Tables: check content. Math: check.** Full verification pass over every table and every equation.
+4. **Humanize everything, clean formatting** — another prose/format pass over the full paper.
+
+**Disposition:** v100's signed record stays immutable (`~/workspace/scbi-paper/v100/`, sign record `v100_plan/V100_SIGN_2026-10-05.md`, MD5 `7ea5a49347bdbc17529d9e4c088aefc1`) but is WITHDRAWN from current use — never defended. v101 is a new immutable directory: Fig 4 restored to the v98 version; figures 1–3, 5–9 redesigned with the attractive polished aesthetic; tables/math/content verified; prose humanized and formatting cleaned; Fig 8 stays removed; no science changes, no new results, all frozen numbers verbatim.
+
+**Next:** v101 coordinator dispatched; build with the pinned tectonic toolchain; independent Law #14 review of the exact final PDF, then SIGN.
+
+## LOG-4927 — v100 paper SIGNED: clean minimal figure redesign, independent Law #14 SIGN — 2026-10-05
+
+The v100 rebuild coordinator completed. **v100 SIGNED** — independent Law #14 review (separate agent from the builders) returned SIGN-WITH-FIXES on the exact pre-fix PDF (7 mechanical label/box fixes), all applied, one extra genuine collision fixed in verification ('+16.67 pp' vs hatched box), every touched figure re-rendered at 150–300 dpi with zero text/arrow/box collisions, re-review waived per the reviewer's binding terms → binding SIGN on the final PDF.
+
+**Deliverable:** `~/workspace/scbi-paper/v100/paper.pdf` — 26 pages, MD5 `7ea5a49347bdbc17529d9e4c088aefc1`; sign record `~/workspace/scbi-paper/v100_plan/V100_SIGN_2026-10-05.md`; delivered copy `~/workspace/your_files/SCBI_Boundary_Paper_v100_SIGNED.pdf` (MD5 verified identical).
+
+**What changed vs v99 (figures only):** all 9 TikZ figures rewritten to top-journal restraint — flat white canvas, near-monochrome with one accent color per figure, all decorative backgrounds/gradients/glows stripped, the anti-AI-generated checklist applied per figure (no decorative background shapes, no gradient fills, no drop shadows/glows, no stock icons, restrained type, no rainbow palettes). Text verified byte-identical to v99 except one licensed caption line (hero null band 'shaded' → 'dotted', matching the redrawn figure). Fig 8 stays removed. No science changes, no new results, all frozen numbers verbatim, 41/41 citations, zero dangling refs, fences intact.
+
+v99 untouched and withdrawn from current use. GitHub push and arXiv remain founder-reserved. User acceptance of v100 pending.
+
+## LOG-4926 — EXP145 verdict review: ADOPT-WITH-CORRECTIONS → 1 factual correction applied → ADOPTED — 2026-10-05
+
+Independent exact-version verdict review of EXP145 (binding) returned **ADOPT-WITH-CORRECTIONS**. The reviewer verified every material claim from the machine-readable records (not the execution lane's prose):
+
+- **D1 CONFIRMED** (independently recomputed): passing layers [8, 10] under p < 0.05/12 AND (acc−q95) ≥ 0.10; l\*=8 (acc=0.2833, p=0.000999, effect +0.1333); layer 10 boundary-inclusive at +0.1000; D1 robust independent of the layer-10 boundary call.
+- **D2 CONFIRMED FAIL**: mean cosine −0.4587 (bar 0.70); instrument non-degenerate (min ‖r_i‖ = 6.576, 60/60 > 1e-9, unit-norm corrections, non-zero null-spread every layer) — genuine absence of a coherent shared direction, not measurement failure.
+- **Verdict logic CORRECT**: decode+ = D1 AND D2 = FALSE → decode−; intervention arm correctly not run (zero injection/decision output records, steer JSON null); KILL/PIVOT is the correct frozen-table cell per the signed plan §5; the §3 caveat correctly stated.
+- **Integrity CONFIRMED**: bench pin character-identical across S0.1 log, extraction meta, results JSON, and plan; S0.1a cross-check PASS; model revision resolved programmatically; G0/G2/G1′(240/240) PASS; Δθ=0 pre/post hashes match; perm seed 20261007, B=1000, 12 layers, 60 items as registered.
+- **Law #11**: one factual overstatement found — verdict-report §4 claimed Δθ=0 evidenced 'in both the extraction and decision-loop phases', but the decision loop never ran (template boilerplate).
+
+**Required correction (1, applied verbatim):** §4 now reads 'Δθ=0 asserted by pre/post state-dict hash in the extraction phase (the decision loop did not run — intervention arm not licensed)'. Optional notes (skipped §2 numbering; 'decode− / steer−' label with the '(intervention arm not licensed)' parenthetical) do not affect the verdict and were left as-is.
+
+**EXP145 verdict ADOPTED: KILL/PIVOT.** The cross-family generality claim is killed/bounded with the recorded caveat; the Gap remains a Pythia-scale boundary result; the dissociation is untested in the GPT-2 family.
+
+## LOG-4925 — EXP145 verdict: KILL/PIVOT (cross-family Gap does not replicate in GPT-2-small) — 2026-10-05
+
+EXP145 (S7-2b, signed plan LOG-4921) executed on GPT-2-small, $0 CPU, frozen backbone Δθ=0 (pre/post state-dict hash). Step 0 fully passed — G1′ re-fired 240/240 on the Neptune bench (the exact gate that killed EXP144); bench pin `b9eac389…e56545`; model revision `607a30d7…` pinned at download. Two infrastructure issues resolved without protocol changes: a runtime user-confirmation gate on the HF weights download (user approved), and an HF Hub XET-protocol 404 fixed with `HF_HUB_DISABLE_XET=1` (environment plumbing, like EXP144's no_proxy sanitation).
+
+**Verdict: KILL/PIVOT** — frozen four-cell table, cell `decode− / steer− (intervention arm not licensed)`. D1 PASS: layers 8 and 10 decode-significant (l\*=8: acc=0.2833, p=0.000999, effect +0.1333; layer 10 at the bar, +0.1000). D2 FAIL: mean shared-direction cosine = −0.4587 (bar 0.70) — the LOO per-item corrections do not cohere into a shared direction in GPT-2-small (direction instrument non-degenerate, R4/S0.4 green, so this reads as genuine absence, not measurement failure). decode+ = D1 AND D2 = FALSE → intervention arm not licensed; no flips, no McNemar. S2 LM log-prob baseline (non-binding): 0.4833.
+
+**Reading:** the generality claim is killed/bounded with the recorded caveat — the Gap's precondition (decodability with a coherent shared direction) is absent in GPT-2-small; this outcome cannot separate an architecture effect from scale/bench-fit (the §1 steelman). The dissociation itself is untested in this family. The Decodability Gap remains a Pythia-scale boundary result.
+
+**Deliverables:** `research/analysis_plans/EXP145_VERDICT_2026-10-05.md`, `EXP145_RESULTS_2026-10-05.json`; run records `experiments/runs/EXP145/`. Independent exact-version verdict review dispatched (per the signed plan's close-out requirement).
+
+## LOG-4924 — v99 withdrawn from current use (user: figure backgrounds look AI-generated, cluttered, not visually clear); v100 launched — clean minimal figure redesign — 2026-10-05
+
+The user rejected v99's figures: the decorative figure backgrounds ('warm editorial', 'deep-space night', etc.) look 100% AI-generated; the figures are cluttered, unattractive, and not visually understandable at a glance.
+
+**Defect class (plainly):** over-designed figures — decorative backgrounds and heavy styling that read as AI-generated chartjunk, hurting visual hierarchy and instant comprehension. The v99 text rewrite drew no complaint; the defect is in the figures' visual design, not the prose.
+
+**Disposition:** v99's signed record stays immutable (`~/workspace/scbi-paper/v99/`, sign record `v99_plan/V99_SIGN_2026-10-05.md`, MD5 `eabd9e5bb0af74d5a46018c7ddd56ac0`) but is WITHDRAWN from current use — never defended. v100 is a new immutable directory: v99's TEXT kept byte-identical; all 9 figures redesigned clean and minimal — decorative backgrounds removed entirely, flat restrained palette, generous whitespace, one clear message per figure, thick labeled arrows, instantly understandable at reading scale (top-journal restraint: high data-ink ratio, no chartjunk). Captions may be tightened only where the figure's message changed in simplification; no science changes, no new results, frozen numbers intact.
+
+**Next:** v100 coordinator dispatched; build with the pinned tectonic toolchain; independent Law #14 review of the exact final PDF, then SIGN.
+
+## LOG-4923 — v99 paper SIGNED: Fig 8 removed, full quality rebuild, independent Law #14 SIGN — 2026-10-05
+
+The v99 rebuild coordinator completed. **v99 SIGNED** — independent Law #14 review returned SIGN-WITH-FIXES on the draft PDF, all three mechanical fixes applied (hero I/II/III→A/B/C labels, anatomy 1/2/3→A/B/C labels, margins subtitle un-clipped), visually confirmed on re-rendered pages, re-review waived per the reviewer's terms → binding SIGN on the exact final PDF.
+
+**Deliverable:** `~/workspace/scbi-paper/v99/paper.pdf` — 27 pages, MD5 `eabd9e5bb0af74d5a46018c7ddd56ac0`; sign record `~/workspace/scbi-paper/v99_plan/V99_SIGN_2026-10-05.md`; delivered copy `~/workspace/your_files/SCBI_Boundary_Paper_v99_SIGNED.pdf` (MD5 verified identical).
+
+**What changed vs v98:** (1) Fig 8 (`fig:field` field-cartography figure) removed entirely; sec:field prose reworked keeping the fenced claim and `tab:frontier` ledger; zero dangling references; figures renumbered 1–9. (2) Full quality rebuild — every section rewritten to top-paper register: humanized voice, committee/AI-generated tone killed (formulaic transitions, slogan refrains, changelog tone, over-parallel structure), narrative arc with airy paragraphs; honest nulls/kills kept; same science, no new results. (3) All 9 figures redesigned with distinct design languages (warm editorial, deep-space night, duotone line-art, evidence dossier, transit map, blueprint, topographic map, oscilloscope trace, sketchbook pinboard); zero-overlap gate; reading-scale inspected. (4) Science-neutral table alignment: item-33 margin `1.013` → `1.0133` (frozen verbatim). Gates: frozen numbers verbatim everywhere, 41 citation keys (identical set to v98, no phantoms), fences intact, 23/23 equations byte-identical to v98.
+
+v98 untouched and withdrawn from current use. GitHub push and arXiv remain founder-reserved. User acceptance of v99 pending.
+
+## LOG-4922 — v98 withdrawn from current use (user: remove Fig 8, full quality rebuild); v99 launched — 2026-10-05
+
+The user reviewed the signed v98 paper and ordered: remove Fig 8, and a full quality rebuild — 'most of the things are low level. AI generated. fix all those issues.'
+
+**Defect class (plainly):** v98 is correct but reads below the user's top-paper bar — sentence-level AI/committee-generated feel and low-level (implementation-detail-dense, flat) presentation throughout. Fig 8 (the benchmark cartography figure, `fig:field` / figs/figN2_cartography.tikz — 'The boundary on the field's map: cartography, not competition') is removed outright per the user's order.
+
+**Disposition:** v98's signed record stays immutable (`~/workspace/scbi-paper/v98/`, sign record `v98_plan/V98_SIGN_2026-10-05.md`, MD5 `42204f9257accb374ee77caa77970c83`) but is WITHDRAWN from current use — never defended, per the standing rule. v99 is a new immutable directory: same science as v98, Fig 8 removed (figure environment + the figure-dependent sentences in sec:field reworked; Table tab:frontier ledger stays; all other refs use \\ref so renumbering is automatic), full page-by-page/section-by-section/line-by-line pass on format/content/words, humanized voice, elevated from low-level to top-paper register, remaining 9 figures kept distinct (no same-y designs), zero-overlap gate, frozen numbers intact, honest nulls/kills tone kept. No new results added (EXP143/EXP145 are separate lines).
+
+**Next:** v99 coordinator dispatched; build with the pinned tectonic toolchain; independent Law #14 review of the exact final PDF, then SIGN.
+
+## LOG-4921 — S7-2b Law #14 SIGN-WITH-FIXES → 3 fixes applied verbatim → SIGNED; EXP145 minted and dispatched — 2026-10-05
+
+Independent Law #14 review of the S7-2b delta pre-registration returned **SIGN-WITH-FIXES**. The reviewer independently verified every verifiable claim (new-bench pin character-identical by recompute from the committed JSON; zero 'Triton' remains, 60 items; balance 20×3, Neptune 3×, 30/30 phrasing; 5/60 surface diffs each = committed prompt with Triton→Neptune; G0 PASS; G1′ 240/240 with Neptune=26461 (`ĠNeptune`) on the pinned-revision tokenizer; G2 bit-identical to the committed diagnostic 0.060715/0.531247; frozen bars and four-cell table verbatim; degeneracy review — no S2/S3-class degenerate-by-construction signals; worth-it license check passes).
+
+**3 required fixes (mechanical, documentation-only — no threshold/bar/decision-logic/verdict-cell change):** (1) §2 §3.6 row status corrected from 'Inherited verbatim, pin updated' to state the bench source changed from procedural rebuild to pinned-JSON load (S5-INV precedent); (2) §4 S0.1 clarified that the pin recomputes over the loaded pinned bench JSON; (3) new S0.1a hardening: at Step 0, re-run the committed derivation procedure and require its pin to equal the loaded JSON's pin, else RUN-INVALID. Reviewer's judgment call: pinned-JSON load is the binding primary; the S0.1a cross-check is required hardening ($0 CPU, deterministic). Re-review not required per the reviewer's binding terms.
+
+**SIGNED** — all three fixes applied verbatim to `S7-2b_PREREG_DRAFT_2026-10-05.md`; status line updated; the 2026-10-05 Law #14 blind-spot additions (hex-pin character check; in-principle variability) were both exercised.
+
+**EXP145 minted** (highest prior experiment: EXP144; protocol modification = new number per the single-lane fence) and the execution lane dispatched: run the signed S7-2b plan on GPT-2-small, reusing the staged EXP144 bundle verbatim with the pinned bench JSON + S0.1/S0.1a asserts; G1′ re-fires live at Step 0 (must read 240/240 before any weight access); one-time free HF model download permitted with the 40-hex revision pinned at execution; $0, CPU only, frozen backbone Δθ=0; four-cell verdict table frozen. Verdict review at close.
+
+## LOG-4920 — S7-2b delta pre-registration drafted: Triton→Neptune swap (G1′ 240/240), dispatched for independent Law #14 review — 2026-10-05
+
+Following EXP144's INCONCLUSIVE (bench non-portable; G1′ 232/240 — Triton 0/8 single-token under GPT-2 BPE; LOG-4919), the S7-2b delta drafting lane completed.
+
+**Single delta:** entity "Triton" → "Neptune" (1:1 swap at fixed indices). Neptune is single-token under GPT-2 BPE: token id 26461 (`ĠNeptune`), verified with the exact offset-mapping cover logic G1′ used. Alternatives screened and rejected as multi-token: Uranus, Eris, Haumea, Makemake, Callisto, Ganymede, Enceladus, Rhea, Dione, Iapetus, Oberon, Umbriel, Charon, Phobos, Deimos, Nereid, Proteus. Also single-token but rejected on thematic grounds: Pluto, Ceres, Ariel. Triton→Neptune is thematically coherent (Triton is Neptune's moon).
+
+**New bench pin:** `b9eac3893ddfbc67400a5d2b5cbb694ba81308471caf4a150476227065e56545` (character-verified by independent recompute from the written JSON).
+
+**Verification (all CPU-only, string ops + tokenizer encode; zero model forwards; $0):** G1′ 240/240 (passes, failing entities: none); G0 PASS (60 items, 60/60 unique, strata match); balance preserved (20 entities × 3, Neptune 3× where Triton was, 30/30 A-first/C-first); G2 oracle 0.060715/p=0.531247 — bit-identical to committed EXP092 diagnostic; surface-diff audit: 5/60 prompts change, every delta prompt = committed prompt with "Triton"→"Neptune", zero "Triton" remains.
+
+**Artifacts:** `research/analysis_plans/S7-2b_PREREG_DRAFT_2026-10-05.md` (DRAFT, 106 lines); `S7-2b_BENCH_2026-10-05.json` (pinned 60-item bench); `S7-2b_BENCH_MANIFEST_2026-10-05.json`; `S7-2b_build_bench_2026-10-05.py` (derivation script; read-only import of committed EXP092 builder, never modified). Everything else from the signed S7-2 plan inherited verbatim (12-row inheritance audit in the draft); G1′ re-fires live at Step 0 of execution. Protocol modification = NEW experiment number at execution (not minted here); staged EXP144 bundle reused verbatim.
+
+**Open question flagged for the reviewer:** the draft loads the pinned bench JSON at execution (S5-INV precedent) with the derivation script as procedural audit trail; the reviewer may opine on whether execution should also cross-check a procedural rebuild.
+
+**Next:** draft dispatched for independent Law #14 review (new experiment number minted only on SIGN).
+
+## LOG-4919 — EXP144: INCONCLUSIVE (bench non-portable) — S7-2 G1′ fired at Step 0 on GPT-2 BPE (2026-10-05)
+
+**Step 0 [OBSERVATION]:** EXP144 execution ran the signed plan's Step-0 sequence and aborted before any weight access. Model revision resolved and pinned programmatically: `607a30d783dfa663caf39e06633721c8d4cfcd7e` (40-hex, S0.2, never transcribed — the S7-3 lesson). Bench rebuilt via the committed EXP092 builder: G0 pass, pin `9be8162633fe19aa…` (identical to EXP092's committed pin, confirming procedural identity), 60/60 unique tuples, strata match. G2 oracle diagnostic re-verified and bound to the pin (oracle=0.0607, p=0.5312 ≥ 0.05). G1′ then executed the real GPT-2 BPE tokenizer over all 60 prompts and FAILED: 232/240 in-prompt A/C occurrences single-token (bar 240/240) → INCONCLUSIVE per S7-2 §3.2 G1′. Zero forward passes; weights never downloaded.
+
+**Mismatch [OBSERVATION]:** confined to one entity — **Triton** (0/8 occurrences single-token; GPT-2 BPE segments it as `ĠT`+`rit`+`on`, 3 tokens — an intrinsic vocabulary fact, no prompt rephrasing fixes it). The other 19 entities pass 232/232. Full per-entity table: `experiments/runs/EXP144/exp144_g1prime_mismatch.json`.
+
+**No substitution [FACT]:** the plan forbids silent entity substitution; swapping Triton changes the committed builder (new bench, new pin, new target balance) = a protocol modification the execution lane is not licensed to make. Per the single-lane fence (EXP093 precedent), the executor stopped at its lane and reported back rather than self-repairing. Δθ=0 holds trivially.
+
+**Verdict [INTERPRETATION]:** INCONCLUSIVE (bench non-portable) — no §4 cell reached, the Decodability Gap itself untested in GPT-2-small, the cross-family question still open. The only licensed claim: the EXP092-B bench is not portable to GPT-2's BPE as designed. Recommended CEO follow-ups: (a) new pre-registration replacing Triton (the only failing entity) with a BPE-single-token planet, as a new experiment number; (b) a different cross-family model whose tokenizer covers all 20 entities. The staged execution bundle (`experiments/runs/EXP144/`, incl. the run report and environment manifest) is preserved for the re-registered follow-up; forward budget consumed 0/1,000, $0 CPU.
+
+**Artifacts [FACT]:** `research/analysis_plans/EXP144_VERDICT_2026-10-05.md`, `research/analysis_plans/EXP144_RESULTS_2026-10-05.json`, run records `experiments/runs/EXP144/` (manifest with G1′ FAIL disposition, Step-0 log, G1′ mismatch table, run report, staged-but-unexecuted execution bundle; tokenizer/config files at the pinned revision only, no weights).
+
+**Next free: LOG-4920.
+## LOG-4918 — S7-2 pre-reg: Law #14 SIGN-WITH-FIXES → 3 fixes applied → SIGN, EXP144 minted (2026-10-05)
+
+**Review [FACT]:** independent Law #14 review of `research/analysis_plans/S7-2_PREREG_DRAFT_2026-10-05.md` (cross-family Decodability Gap replication, GPT-2-small) returned **SIGN-WITH-FIXES**. Three required fixes, no structural flaws; reviewer cleared the plan to SIGN on the fixes with no re-review.
+
+**Defects fixed [FACT]:** (1) §2 [FACT] said "8 layers significant {1,11,12,13,14,15,17,18}" — wrong; independently recomputed from the committed `exp092_report.json`: **10** Bonferroni-significant layers {0,1,2,11,12,13,14,15,17,18} (same stale 8-vs-10 the v98 audit corrected in Fig. 1). Corrected. (2) §3.4 never pinned how the 60 clean-run residual norms aggregate into α — inserted: α = 0.047 × mean_i‖h_i‖ with the ±0.01 assert, else recalibrate-once-or-INCONCLUSIVE. (3) §3.1 promised seeds without values — inserted pre-registered stratified-permutation seed `20261007`.
+
+**Review notes [FACT]:** four-cell verdict table honest (decode− tests generality only, not the dissociation); decode+/steer+ → KILL correctly PIVOTs to Pythia scope; G1′ re-fires under GPT-2 BPE before weight access; S7-3 lessons are real Step-0 abort gates; prediction genuinely risky.
+
+**Authorization [FACT]:** CEO mints **EXP144** and dispatches execution against the signed plan: procedural GPT-2-small bench (~240–1,000 CPU forwards, $0; one-time ~548MB HF `gpt2` download, 40-hex revision pinned at build time), frozen backbone Δθ=0. Verdict per frozen table: decode+/steer− → CONTINUE; decode+/steer+ → KILL (PIVOT to Pythia scope); decode− → KILL/PIVOT generality; decode−/steer+ → PIVOT-anomalous.
+
+**Next free: LOG-4919.
+## LOG-4917 — EXP143 verdict: KILL — S5 anti-calibration does not replicate on held-out items (2026-10-05)
+
+**Result [OBSERVATION]:** EXP143 (S5-inverted selector held-out validation, 60 view-1 items × 4 branches, 240 gens + 240 scoring fwds, CPU $0) returned **KILL** per the frozen §6 decision table. Primary: Spearman(spread, mean branch correctness) ρ = **+0.1156** (wrong direction), one-sided p = 0.8103 (H1: ρ<0, 100k perms, seed 20261006), two-sided p = 0.377, 95% CI [−0.1426, +0.3590] — FAIL (bar: ρ ≤ −0.3 AND p < 0.025). Secondary: median-split gain Δ = −0.0417, p = 0.7075 — FAIL (the low-spread selector would have hurt accuracy). MDE80 = 0.3549 (pre-registered).
+
+**Integrity [FACT]:** all Step-0 aborts passed — held-out bench pin (full 64-hex, canonical recipe), backbone pre/post hash Δθ=0, tok1 single-token ×60, prompt recipe 240/240, determinism spot-check byte-identical, degeneracy pre-check (std=0.382, median=1.446 ≥ 0.05), 0 missing items, Law #7 partition-before-targets. Clean re-run: first attempt killed 05:24 UTC by VM restart drain at 40/60 items (no records persisted); deterministic protocol re-ran from scratch with incremental per-item checkpointing.
+
+**Reading [INTERPRETATION]:** the discovery anti-calibration (ρ=−0.4899, p=6e-5) did not replicate; the CI includes 0 and excludes the discovery estimate — consistent with the pre-registered winner's-curse pre-mortem. S7-3's CONTINUE is overturned for the S5-inverted candidate. The label-free selection line on this bench family now has no surviving candidate (S1/S4 failed bars; S2/S3/S6 degenerate; S5 killed held-out). The pre-registration machinery worked as designed: the held-out gate caught a non-replicating discovery before any selection experiment was built on it.
+
+**Artifacts [FACT]:** `research/analysis_plans/EXP143_VERDICT_2026-10-05.md`, `research/analysis_plans/EXP143_RESULTS_2026-10-05.json`, run records `experiments/runs/EXP143/` (60-item records, incremental JSONL, run log, verdict JSON; first-attempt logs preserved).
+
+**Next free: LOG-4918.
+## LOG-4916 — S5-INV pre-reg: Law #14 SIGN (clean), EXP143 minted, validation dispatched (2026-10-05)
+
+**Review [FACT]:** independent Law #14 review of `research/analysis_plans/S5-INV_PREREG_DRAFT_2026-10-05.md` returned **SIGN** — no material defects, no fixes required. All 8 checks passed: held-out integrity adequate and honest (V1/V2 name sets disjoint, zero prompt overlap proven, (spread, correctness) pairs don't exist yet — rule frozen before they exist); thresholds fixed and falsifiable (primary ρ ≤ −0.3 AND one-sided p < 0.025, fresh seed 20261006; secondary hierarchical, can never rescue a primary FAIL); selector rule airtight (Law #7); degeneracy pre-check is a real Step-0.4 abort gate (S7-3 lesson applied); power arithmetic independently recomputed and matched (0.98/0.96/0.89/0.79/0.65 at |ρ|=0.49/0.45/0.40/0.35/0.30; MDE ≈ 0.355); all hex pins verified character-by-character (tonight's lesson applied); no wiggle room; scope discipline holds (instrumental-only reading of τ=0.7 caveat).
+
+**Polish [FACT]:** reviewer recommended two optional, non-required items (R1: print full 64-hex pin in Step 0.1; R2: state canonical sha recipe) — no re-review needed. Passed to the executor as implementation guidance; signed plan body untouched.
+
+**Authorization [FACT]:** CEO mints **EXP143** for the S5-inverted selector held-out validation and dispatches execution against the signed plan: 60 held-out items × 4 branches, verbatim Stage-1 protocol, 240 generations + 240 scoring forwards, CPU ($0, Stage-1 precedent proves feasibility), frozen backbone Δθ=0, Step-0 aborts armed. GPU only if the CEO re-licenses the vehicle. Verdict per the frozen decision table: CONTINUE (SELECTION-READY) / CONTINUE (SIGNAL-ONLY) / KILL / INCONCLUSIVE.
+
+**Next free: LOG-4917.
+## LOG-4915 — S7-3 verdict: CONTINUE — S5 free-energy spread anti-calibrated, |ρ|=0.49, p=6e-5 (2026-10-05)
+
+**Verdict [INTERPRETATION]:** CONTINUE per the signed plan's §5 decision rule. S5 (free-energy spread, EXP140_stage1) clears the pre-registered bar: Spearman ρ=−0.4899, two-sided permutation p=0.000060 (100k perms, seed 20261005) < 0.008333, |ρ|≥0.3. 95% CI [−0.6615, −0.2695]. Negative ρ → licenses only an **inverted** selector candidate (prefer LOW spread), flagged as bench-inversion evidence. A full fresh pre-registration with held-out validation is required before any selection experiment; this verdict mints no experiment number.
+
+**Full battery [OBSERVATION]:** S1 margin dispersion ρ=−0.1925, p=0.141 (fail); S2 cross-view agreement DEGENERATE (constant 0.2); S3 cross-condition agreement DEGENERATE (constant 0.2); S4 intervention-mean margin ρ=−0.2873, p=0.026 (fail — same inverted direction as TESTA's ρ=−0.3958, as the plan's breaking point predicted); S5 PASS (above); S6 degenerate-branch fraction DEGENERATE (constant 0.0 — zero degenerate branches in all 60×4). MDE at 80% power = 0.4308 < |ρ_S5| — the hit is above the power floor, not an underpowered fluke.
+
+**Design lesson [FACT]:** S2/S3 are degenerate *by construction* — the 5 cache views use disjoint support vocabularies, so raw-`yhat` modal agreement is identically 1/5 for every item; the plan defined agreement on raw token ids, which is semantically empty on this bench. Law #14 review verified computability but missed this. A view-normalized (A-vs-C choice) variant would be a new, un-pre-registered signal — not smuggled into this verdict.
+
+**No double-dipping [FACT]:** S5 tests spread *calibration* (correlation with correctness); EXP140 G3 tested *selection by* min_F/F_bar (decision rule) — different estimands, plan distinguished them in §2, Law #14 confirmed.
+
+**Execution [FACT]:** second attempt after the LOG-4914 erratum fixed the one-hex bench-pin typo; all Step-0 asserts PASS (bench sha, D1/D2 structure, 3000 yhat membership, 0 missing). Zero new forward passes, archives read-only. Executor `research/analysis_plans/s73_execute_20261005.py`; results `S7-3_RESULTS_2026-10-05.json`; verdict memo `S7-3_VERDICT_2026-10-05_v2.md` (abort report kept as `_2026-10-05.md`).
+
+**Next free: LOG-4916.
+## LOG-4914 — S7-3 erratum: one-hex bench-pin typo fixed, execution re-authorized (2026-10-05)
+
+**Abort [FACT]:** S7-3 execution aborted at the pre-registered Step 0.3 bench-sha256 assert (exit 44). Zero analysis executed, no numbers computed, archives untouched. Verdict report: `research/analysis_plans/S7-3_VERDICT_2026-10-05.md`; diagnostic JSON + reusable executor `s73_execute_20261005.py` saved; LOG-4913 recorded by the executor.
+
+**Root cause [FACT]:** transcription typo in the signed plan's bench pin — plan pinned `…b55a…` at hex position 14; the committed EXP135 run's own `exp135_report.json` (`bench_sha256`) and an independent verbatim `build_bench` replication both give `…b65a…`. The Law #14 review never re-checked the full 64-hex pin against the committed report — review-process gap, now recorded: future reviews verify long hex pins character-by-character.
+
+**Remediation [FACT]:** append-only ERRATUM prepended to the plan (signed body byte-unchanged) correcting the pin to `eb304fa65a60b65ad87767d251084b256d0a79001a16b4fe8ebcd1b1f45589df`. Typo fix to a data pin only — thresholds, signals, seeds, screening targets, §5 decision rule unchanged; Law #14 SIGN stands without re-review.
+
+**Authorization [FACT]:** CEO re-dispatches S7-3 execution against the plan + erratum (still $0 CPU, zero forward passes, read-only archives, no experiment number). Verdict KILL/CONTINUE/INCONCLUSIVE expected on the six (ρ, p, CI) pairs.
+
+**Next free: LOG-4915.
+## LOG-4913 — S7-3 execution ABORTED at Step 0.3: plan's pinned bench sha has a one-hex-digit transcription error (2026-10-05)
+
+**Lane [FACT]:** S7-3 analysis execution lane ran the signed plan's Step 0 integrity checks (executor `research/analysis_plans/s73_execute_20261005.py`; toy-vector spearmanr pin PASS; D1/D2 structural asserts PASS; bench reconstructed verbatim from `run_exp135.py::build_bench`). The Step 0.3 bench-sha256 assert TRIPPED as pre-registered → exit 44, verdict INCONCLUSIVE, no analysis executed, zero forward passes, archives untouched.
+
+**Diagnosis [FACT]:** the abort fired on a typo, not an integrity failure. Rebuilt sha256 = `eb304fa65a60b65ad87767d251084b256d0a79001a16b4fe8ebcd1b1f45589df`; the plan pins `eb304fa65a60b55ad87767d251084b256d0a79001a16b4fe8ebcd1b1f45589df` (differ at hex position 14: `b65a` vs `b55a`). The committed EXP135 run's own record (`experiments/runs/EXP135_eval/out/exp135_report.json`, field `bench_sha256`, written by the runner itself) is `eb304fa65a60b65a…` — identical to the independent replication. Bench identity is therefore VERIFIED; the plan's constant is mis-transcribed by one hex digit. The Law #14 review (LOG-4912) did not re-check the full 64-hex sha against the committed report.
+
+**What this is not [INTERPRETATION]:** not a data-integrity problem, not a bench-identity problem, not a reason to distrust D1/D2. The abort condition did exactly what it was designed to do — it caught a wrong pin before any number was computed.
+
+**Recommended repair [OPEN]:** CEO erratum correcting the pinned sha in the signed plan (one hex digit, against the committed ground truth), then re-dispatch execution. Thresholds, signals, decision rule, and seeds are unaffected; no re-review of substance needed. Diagnostic record: `research/analysis_plans/S7-3_RESULTS_2026-10-05.json`.
+
+**Next free: LOG-4914.
+## LOG-4912 — S7-3 pre-reg plan: Law #14 SIGN-WITH-FIXES → fixes applied → SIGN (2026-10-05)
+
+**Lane [FACT]:** independent Law #14 review of `research/analysis_plans/S7-3_PREREG_DRAFT_2026-10-05.md` (S7-3 label-free signal inventory, LOG-4911 lane). Reviewer independent of the drafter; verdict **SIGN-WITH-FIXES** on the exact document.
+
+**Review [FACT]:** thresholds quantitative, pre-fixed, falsifiable (permutation p<0.008333 + |ρ|≥0.3; KILL = all six signals fail; backdoors closed in §5). All six signals verified computable from cited archives on disk (D1: 10 conditions × 60 items × 5 views, all {yhat, margin}, zero NaN; D2: 60 items × 4 branches, spread/acc/correct/degenerate all present). No double-dipping (grandfathered priors genuinely untouched by new estimands). Law #7 firewall airtight (labels touch screening targets only). Epistemological labeling correct per AGENTS.md §5. No wiggle room (seeds, tie-breaks, abort conditions pinned).
+
+**Defect found and fixed [FACT]:** the plan's power claim ("|ρ|≥0.3 bar ~55–60% powered at n=60, α=0.00833") was wrong — reviewer computed ≈35–40% (Fisher-z ≈ 0.38 at true |ρ|=0.3, Spearman slightly lower). Corrected in §1 steelman and §7 self-check item 1; zero occurrences of the old figure remain. Reviewer cleared the plan to **SIGN** on the two line edits with no re-review required. Honesty mechanisms (pre-registered 95% CIs, Step 3.4 MDE report, KILL worded as "no signal ≥0.3 detectable at n=60") were intact throughout.
+
+**Status [FACT]:** S7-3 plan is now SIGNED and cleared for execution against the frozen plan. No experiment number minted (analysis, not experiment). Next licensed step: execute the six-signal battery per the signed plan.
+
+**Next free: LOG-4913.
 # SCBI Research Log
 
 ## LOG-4909 — v98 paper build COMPLETE and SIGNED (2026-10-05)
@@ -15953,3 +16321,27 @@ research log is append-only — no stash, move, or rewrite was used at any point
 **Verdict:** push-ready pending founder token. Do NOT push without it. Per LOG-4904, this verification-record commit does not invalidate the READY verdict.
 
 **Next free: LOG-4911.
+
+## LOG-4911 — Monday idea-generation session (2026-10-05)
+
+**Read:** `research/RESEARCH_OPERATING_SYSTEM.md` (§2 weekly machine, §8 Law #15, §9 double bar, §10 campaign mode), `research/innovation/CANDIDATE_BACKLOG.md` (full), `reports/research_log.md` (tail ~20), `research/CEO_DIARY.md` (tail through 2026-10-05 health check).
+
+**Corpus-duplicate check:** keyword grep across `research/`, `reports/`, `theory/`, `experiments/` for *scratchpad*, *writable memory*, *peer-verification*, *cross-model replication*, *signal inventory*, *self-repair*. Findings: *scratchpad* — zero hits (new); *writable memory* — appears only in the REJECTED EXP135 sprint design context and the founder's Spotlight literature briefing (literature, never a live candidate); *peer-verification* — zero hits; *cross-model/cross-architecture* — only EXP026 (an early entity-competition transfer study, different question and mechanism, not the Decodability Gap); *signal inventory* — zero hits as a candidate; *self-repair* — S6-3 family only (dynamic attention-gated injections, different mechanism). All four S7 ideas clear the duplicate bar.
+
+**Ideas proposed (S7 family). All four passed the AMBITION × RIGOR double bar — none sent back for a bigger swing.**
+
+1. **S7-1 / J7 — In-context writable memory (scratchpad-as-memory at Δθ=0).** *Question:* Can a STANDARD frozen transformer simulate writable key–value memory in context (explicit WRITE/READ discipline) and grow multi-step capability without new architecture? *Why it matters:* the 2026-10-03 Spotlight briefing is the first published existence proof of Δθ=0 capability growth — but via a custom writable-memory architecture. Our kills say static geometric injection doesn't steer standard frozen transformers; the open question is whether the missing ingredient is architectural or disciplinary. A positive would be the program's first capability entry; a clean null sharpens Spotlight's architectural claim into a testable boundary. *Cheapest falsifying experiment:* $0 CPU generation bench — 60 multi-hop items × 3 arms (baseline / CoT / structured scratchpad with explicit WRITE/READ ops); token-budget-matched CoT control fences the compute confound. *Kill criterion:* ΔM_scratchpad ≤ ΔM_budget-matched-CoT → KILL; > baseline but ≤ matched CoT → PIVOT to test-time-compute account. *Free-tier cost:* ≈27k autoregressive forwards CPU, $0 (30-item pilot ≈ 13.5k). *Law #15 sketch:* (1) Does explicit in-context read/write discipline beat budget-matched CoT at Δθ=0? (2) Decision: KILL/PIVOT the writable-memory-in-context line. (3) CPU-first, no training, no new architecture — cheapest possible. (4) License: [CONJECTURE] — if attention implements content-addressable lookup over the scratchpad span (induction-head-like circuits), explicit addressing reduces hop-degradation; breaking point: if binding degradation (S4-2 premise) dominates, addressing discipline can't help → ΔM ≈ 0 predicted. *Steelman:* scratchpad discipline may be test-time compute with extra steps — the budget-matched control could absorb the entire effect. *LOG-218 belief-change:* Belief — "Δθ=0 capability growth needs NEW architecture (Spotlight-style writable memory); a standard frozen transformer can't grow capabilities in context." Overturning observation — structured scratchpad discipline beats budget-matched CoT by ≥+10pp on multi-hop items.
+2. **S7-2 / J8 — Cross-family replication of the Decodability Gap.** *Question:* Does the headline boundary result (high-cosine decodability, zero causal transfer) replicate in a non-Pythia architecture (GPT-2-small), or is it a Pythia/GPT-NeoX artifact? *Why it matters:* the paper's #1 claim rests on one model family; a cross-family replication converts it from a model-specific observation to a boundary law — or kills its generality. The cheapest high-leverage generalizability upgrade available. *Cheapest falsifying experiment:* $0 CPU — copy the licensed EXP092 decode protocol + EXP093 injection protocol exactly onto GPT-2-small. *Kill criterion:* GPT-2-small fails the 0.7-cosine decode bar, OR its decodable direction moves decisions (≥6 flips, McNemar p<0.05) → KILL/PIVOT the generality claim. *Free-tier cost:* ≈1k forwards CPU, $0. *Law #15 sketch:* (1) Does the gap replicate across families? (2) Decision: KILL/PIVOT the boundary claim's generality; downstream: the paper's generality language. (3) CPU, single small HF model, licensed protocols copied exactly. (4) License: the readout-misalignment account (G1's death) predicts architecture-independence only if misalignment is transformer-general; breaking point: GPT-2's sequential blocks vs GPT-NeoX parallel residuals may differ → ΔM>0 or decode≈chance. *Steelman:* GPT-2-small is 3× smaller with different tokenization — a difference may reflect scale/bench-fit, not architecture; one model doesn't make a law either way. *LOG-218 belief-change:* Belief — "The Decodability Gap is a transformer-general boundary law." Overturning observation — in GPT-2-small, either nothing is decodable at 0.7 cosine or the decodable direction moves decisions.
+3. **S7-3 / J9 — Label-free signal inventory (selection-bottleneck screen).** *Question:* After EXP135 (E-step dead), EXP140 (free-energy dead), EXP141 (self-model dead), and TESTA (margin ANTI-calibrated, ρ=−0.3958): does ANY cheap label-free signal correlate with correctness on this bench family? *Why it matters:* the label-free selection program — the only honest race left, tied at zero — has never run the inventory. A null kills the program's founding bet on this bench family at zero cost; a hit becomes the next licensed selector. *Cheapest falsifying experiment:* $0 CPU, ZERO new forwards — pre-registered battery over archived per-item records (EXP077/094/135/140 CSVs); labels used label-informed for screening only, never to train the selector (Law #7). *Kill criterion:* all signals null after Bonferroni → KILL the premise; any signal |ρ|≥0.3, p<0.05/6 → CONTINUE as the next licensed candidate. *Free-tier cost:* 0 forwards, $0 — the cheapest decision in the program's queue. *Law #15 sketch:* (1) Is there any label-free correctness signal on the bench family? (2) Decision: KILL/CONTINUE the selection-program premise. (3) Zero forwards — nothing cheaper exists. (4) License: [CONJECTURE] — the killed selectors aren't exhaustive; breaking point: TESTA's anti-calibration suggests the bench's position-bias structure may invert every scalar signal. *Steelman:* the bench family is narrow; a null kills the premise here, not selection in general. *LOG-218 belief-change:* Belief — "Some label-free signal of correctness must exist in frozen-model outputs — the selection program's founding bet." Overturning observation — a pre-registered six-signal battery, all null after correction.
+4. **S7-4 / J10 — EXP136 HELD powered follow-up (attention-routing).** *Question:* EXP136 HELD sub-significant (symmetric noise, b=3/c=4) — underpowered for a small real effect? *Why it matters:* the attention-weight operator class is the one intervention family whose honest reading was "inconclusive, not dead"; a powered verdict either closes it or continues it. Licensed HELD follow-up per the Friday-cull surviving lines. *Cheapest falsifying experiment:* $0 CPU — identical EXP136 protocol, N≈120 (two benches), ≈480 passes. *Kill criterion:* McNemar p ≥ 0.1 with CI excluding ≥10pp → KILL the routing-around hypothesis; directional flips replicating across both benches (p<0.05) → CONTINUE. *Law #15 sketch:* (1) Does attention-routing move decisions at powered N? (2) Decision: KILL/CONTINUE the routing-around hypothesis. (3) CPU, protocol already signed and debugged. (4) License: none beyond the HELD reading — explicit license-free follow-up, admitted. *Steelman:* EXP136's honest reading was symmetric noise, not a near-miss; re-testing noise is process, not ambition — flagged as the lowest-ambition item, kept because the backlog rule licenses HELD follow-ups. *LOG-218 belief-change:* Belief — "Attention-routing interventions are symmetric noise." Overturning observation — directional flips replicating across two powered benches.
+
+**Backlog review (stale flags, promotions, priority notes):**
+1. S3-2 (LOM) flagged **GPU-BLOCKED** — K1 landed but K2's battery is GPU-dark ~12 days; re-queue only when founder GPU moves.
+2. S4-2 / S4-3 flagged **STALE-DEPENDENCY** — both inherited "after I2's verdict" orderings; I2′ is falsification-terminal (EXP105, LOG-4492), so no I2-resistant items exist. Both need fresh Law-#15 packets before any dispatch; the old dependency chain is dead.
+3. S3-1 / S3-3 Stage-0b pilots and S3-4 / S3-9 remain GPU-clearance-gated — unchanged, still queued behind the ~12-day founder-GPU blocker.
+4. Promotions: S4-4 (EXP139) Stage-1 CONTINUE already recorded — Stage-2 stays founder-GPU-gated, no action this session. S4-7 (EXP142) HELD — still needs the n_i re-priced design (CPU lane, unlicensed). S5-2/S5-3 COMPLETE — closed.
+5. This week's verdicts (v98 paper wave, push-readiness LOG-4910, EXP135 post-mortem) imply NO priority change: surviving lines are S4-4 Stage-2 (GPU), S4-7 re-price (CPU), EXP112/136 HELD follow-ups (S7-4 covers EXP136), and the new CPU-licensed S7-1/S7-2/S7-3. The GPU queue (EXP139 Stage-2 + S3/S3-9 pilots) is now ~12 days old — two days from the 14-day formal escalation per the CEO diary.
+
+**Compact standup:** Four ideas passed AMBITION × RIGOR — none failed the double bar, so no quiet-Monday honesty line is owed. (1) **S7-1 writable memory in context:** if true, a standard frozen transformer grows multi-step capability at Δθ=0 without new architecture — the program's first capability entry and a direct test of the Spotlight architectural claim. (2) **S7-2 cross-family Gap replication:** if true, the paper's headline graduates from a Pythia observation to a transformer boundary law; either outcome rewrites the paper's generality language. (3) **S7-3 signal inventory:** if the battery is all-null, the selection program's founding bet dies on this bench family at zero forwards — the label-free race is tied at zero because there is nothing to select with. (4) **S7-4 EXP136 follow-up:** if directional, the attention-routing family — the only intervention class left inconclusive — becomes the live line. Cheapest dispatch order: S7-3 (0 forwards) → S7-2 (≈1k) → S7-4 (≈480) → S7-1 (≈13.5–27k) — all $0 CPU, all needing Law-#14-signed plans before execution. No GPU clearance issued from this session. No experiment numbers minted.
+
+**Next free: LOG-4912.**

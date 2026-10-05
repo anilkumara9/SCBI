@@ -1,0 +1,11 @@
+[step0] S0.2 pass: resolved gpt2 -> revision 607a30d783dfa663caf39e06633721c8d4cfcd7e (character-identical to plan pin)
+[step0] S0.1 pin pass: b9eac3893ddfbc67… character-identical to plan pin (recomputed over the loaded pinned bench JSON)
+[step0] S0.1a pass: procedural pin b9eac3893ddfbc67… == loaded JSON pin
+[step0] G0 pass: bench pin b9eac3893ddfbc67…, 60/60 unique, strata {('Planetary', 'A-first'): 16, ('Planetary', 'C-first'): 14, ('Elemental', 'C-first'): 16, ('Elemental', 'A-first'): 14}
+[step0] G2 pass: oracle=0.0607, p=0.5312 (derivation diagnostic re-bound to the new pin)
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 13 files:   8%|▊         | 1/13 [00:01<00:12,  1.07s/it]Fetching 13 files:  15%|█▌        | 2/13 [00:01<00:07,  1.48it/s]Fetching 13 files:  46%|████▌     | 6/13 [00:01<00:01,  4.89it/s]Fetching 13 files:  62%|██████▏   | 8/13 [00:01<00:00,  6.36it/s]Fetching 13 files:  77%|███████▋  | 10/13 [00:02<00:00,  4.39it/s]Fetching 13 files:  85%|████████▍ | 11/13 [00:02<00:00,  4.54it/s]Fetching 13 files:  92%|█████████▏| 12/13 [00:03<00:00,  4.32it/s]Fetching 13 files: 100%|██████████| 13/13 [00:03<00:00,  3.51it/s]Fetching 13 files: 100%|██████████| 13/13 [00:03<00:00,  3.69it/s]
+[step0] tokenizer files downloaded (weights NOT downloaded)
+[step0] S0.2 pin recorded: 607a30d783dfa663caf39e06633721c8d4cfcd7e
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[step0] G1' PASS: 240/240 A/C occurrences single-token under GPT-2 BPE (real tokenizer, offset-mapping cover).

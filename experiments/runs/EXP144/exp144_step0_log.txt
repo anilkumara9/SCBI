@@ -1,0 +1,10 @@
+[step0] resolved gpt2 -> revision 607a30d783dfa663caf39e06633721c8d4cfcd7e
+[step0] G0 pass: bench pin 9be8162633fe19aa…, 60/60 unique, strata {('Planetary', 'A-first'): 16, ('Planetary', 'C-first'): 14, ('Elemental', 'C-first'): 16, ('Elemental', 'A-first'): 14}
+[step0] G2 pass: oracle=0.0607, p=0.5312
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files: 100%|██████████| 13/13 [00:00<00:00, 1646.56it/s]
+[step0] tokenizer files downloaded (weights NOT downloaded)
+[step0] S0.2 pin recorded: 607a30d783dfa663caf39e06633721c8d4cfcd7e
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+INCONCLUSIVE: G1' FAIL: 8 A/C occurrence(s) not covered by exactly one token (e.g. exp092_planetary_2hop_3/target/Triton@(59, 65)→['ĠT', 'rit', 'on']; exp092_planetary_2hop_3/target/Triton@(108, 114)→['ĠT', 'rit', 'on']; exp092_planetary_3hop_7/target/Triton@(81, 87)→['ĠT', 'rit', 'on']; exp092_planetary_3hop_7/target/Triton@(133, 139)→['ĠT', 'rit', 'on']; exp092_planetary_3hop_11/foil/Triton@(9, 15)→['ĠT', 'rit', 'on']; exp092_planetary_3hop_11/foil/Triton@(129, 135)→['ĠT', 'rit', 'on']; exp092_planetary_3hop_12/target/Triton@(9, 15)→['ĠT', 'rit', 'on']; exp092_planetary_3hop_12/target/Triton@(114, 120)→['ĠT', 'rit', 'on']) — RUN-INVALID (items are NOT silently dropped).
+[step0] G1' FAIL — bench non-portable to GPT-2 BPE; the run is INCONCLUSIVE per S7-2 §3.2 G1'. Weights never downloaded.
+EXIT: 1

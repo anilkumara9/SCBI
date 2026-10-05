@@ -1,0 +1,30 @@
+[05:27:09] threads=1 numpy=2.5.3 scipy=?
+[05:27:09] scipy=1.18.1
+[05:27:09] loading model EleutherAI/pythia-410m rev 9879c9b5f8bea9051dcb0e68dff21493d67e9d4f (float32, cpu, local_files_only)
+[05:27:16] backbone pre-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[05:27:16] Step 0.2 backbone pre-hash PASS (Δθ=0 pre)
+[05:27:16] Step 0.1 held-out bench sha256 (full 64-hex): 779202d6f8297e70319c7e18e0ccf190c70488ef5c2082501cfb727dc91d1e55
+[05:27:16] Step 0.1 held-out pin PASS (recomputed == stored == plan pin; derived_from == corrected discovery pin)
+[05:27:16] tok1 single-token assertion PASS for all 60 view-1 A/C names
+[05:27:16] branch prompts built (B1 swap verified involutive, premise-unchanged, all 60)
+[05:27:16] Step 0.3 prompt byte-for-byte recipe PASS (240/240)
+[05:31:15] items 10/60; gens=40 fwds=40; 239.1s elapsed
+[05:35:13] items 20/60; gens=80 fwds=80; 477.9s elapsed
+[05:39:24] items 30/60; gens=120 fwds=120; 728.3s elapsed
+[05:43:34] items 40/60; gens=160 fwds=160; 978.9s elapsed
+[05:47:37] items 50/60; gens=200 fwds=200; 1221.8s elapsed
+[05:51:42] items 60/60; gens=240 fwds=240; 1466.9s elapsed
+[05:51:42] generation+scoring complete: gens=240 fwds=240 degenerate_pairs=0
+[05:51:42] Step 0.3 pass counts 240/240 PASS
+[05:51:57] Step 0 determinism spot-check PASS (items 0, 30, 59 byte-identical)
+[05:52:00] backbone post-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[05:52:00] Step 0.2 Δθ=0 PASS
+[05:52:00] Step 0.5 missing-data PASS (0 fully-degenerate items)
+[05:52:00] Step 1: n=60 usable items with spread
+[05:52:00] Step 0.4 degeneracy pre-check PASS (std=0.381925 > 0, median=1.446472 >= 0.05)
+[05:52:00] Step 2: targets built (mean branch correctness varies: std=0.3490)
+[05:52:00] SELECT/UNSELECT partition frozen from spreads alone (30/30, Law #7)
+[05:52:02] PRIMARY: Spearman(spread, ybar) rho=0.115555 one-sided p=0.81026190 (n_le=81026) two-sided p=0.37699623 95%CI=[-0.1426, 0.3590] MDE80=0.3549 -> FAIL
+[05:52:04] SECONDARY: Delta=-0.041667 one-sided p=0.70754292 (n_ge=70754) -> FAIL (hierarchical: recorded only)
+[05:52:04] STEP 4 VERDICT: KILL
+[05:52:04] records written; DONE
