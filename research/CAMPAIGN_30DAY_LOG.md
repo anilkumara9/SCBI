@@ -378,3 +378,45 @@ Kill-first logic preserved; cost posture more honest (480→780 passes), not sof
 
 ### Charter-note
 - `research/CAMPAIGN_30DAY.md` still absent (first noted 2026-10-02); this log remains the strategy record. CEO: either restore the charter or ratify the log as the charter.
+
+## 2026-10-06 — Daily strategy review (07:40 IST)
+
+### Yesterday's movement (2026-10-05 review → 2026-10-06 07:40 IST, LOG-4911→4952, 42 entries)
+- **S7 wave CLOSED — all four items landed binding verdicts (LOG-4912→4948, $0 CPU):**
+  - **EXP143 — KILL (LOG-4917):** S5-inverted selector discovery anti-calibration (ρ=−0.4899) did not replicate on held-out items (ρ=+0.1156 wrong direction, p=0.8103). S7-3's CONTINUE overturned for the S5 candidate; the label-free selection line has no surviving candidate on this bench family.
+  - **EXP144 — INCONCLUSIVE (LOG-4919):** G1′ fired at Step 0 — Triton is 3-token under GPT-2 BPE, EXP092-B bench non-portable; zero forwards. Executor honored the single-lane fence (stopped, reported, no self-repair).
+  - **EXP145 — KILL/PIVOT ADOPTED (LOG-4925/4926):** cross-family replication dead in GPT-2-small (D1 pass layers 8/10, D2 fail cosine −0.4587) — Gap fenced to Pythia scale, with the architecture-vs-scale caveat on record.
+  - **EXP146 — KILL ADOPTED (LOG-4938/4939):** attention-routing (S7-4) dead as a ≥10pp steering path at n=120; EXP136's HELD resolved as powered null.
+  - **EXP147 — HELD ADOPTED (LOG-4946/4947):** guard (d) tripped — baseline unmeasurable (0/180 exact-match; first-token==gold 119/180=0.661). Format-compliance floor, not capability floor; J7 untested, not answered. Review confirmed the pre-registered machinery caught the unmeasurable baseline before C/S wasted compute.
+- **Paper arc v99→v100→v101→v102 (LOG-4922→4933):** user rejected v99 (AI-generated backgrounds), v100 (Fig 4 messed up), v101 (cramped figures/tables); v102 rebuilt legibility-first, independent Law #14 SIGN clean (zero fixes), MD5 `e747a951b3cc11af440ce25ee4752017`. User QA bar met; signature stands.
+- **Frontier scoreboard v3.18→v3.22 (LOG-4929/4940/4948):** tally now 13 KILLs, 12 RUN-INVALIDs, 5 HELDs, 4 CONTINUEs + 1 apparatus CONTINUE, 2 precision certs, 1 INCONCLUSIVE. Capability column stays at zero.
+- **Daily frontier sweep 2026-10-06 (LOG-4951):** covered the 10-05 gap honestly. Weco AIDE² VERIFIED at primary (arXiv:2609.26457) — harness-layer RSI, ignition NOT claimed; OpenAI DevDay + DNS-escape training pause; AutoTTS claimed −69.5% tokens (primary not yet fetched, watch queued). Zero positive autonomous-steering signals; scoreboard headline unchanged.
+- **Push chain (LOG-4949/4950/4952):** commit-only 99ad27c (LOG-4911→4948 batch) + c6368a1 (LOG-4951 sweep batch), both READY, both founder-token-gated. No recursion theater — LOG-4904 ruling held.
+
+### Lanes assessment
+- **Moved:** everything licensed. The entire S7 idea family (born LOG-4911) closed in one cycle: 3 binding verdicts + 1 HELD, 4 independent verdict reviews, 4 scoreboard plots. The paper reached v102 SIGN under the user's visual bar. The sweep self-covered a 2-day gap.
+- **Active:** NONE. subagent.list: zero active/zero recent; active_lanes.txt: zero lines (CEO-maintained; untouched by this run). Lab legitimately at rest.
+- **Stalled:** GPU queue — same shape, one day from the 14-day formal escalation (per CEO diary 2026-10-05: 12 days; **tomorrow 2026-10-07 the escalation fires** if the queue is still dark). EXP139 Stage-2 bundle fully signed, awaiting founder Kaggle slot; Modal token-secret half still founder-pending; both repo pushes token-gated. Flag only — no dispatch from here.
+- **Busywork check:** none. Three user paper rejections were QA calibration, not theater; the push chain added no new verification loop this cycle.
+- **Zombie check — one stale line found:** EXP144's licensed follow-up (a) Triton→BPE-single-token swap as a new experiment number is **superseded** — EXP145 independently KILL/PIVOT'd the cross-family question on the Neptune bench (Gap fenced to Pythia scale). Re-running the fixed EXP092-B bench would re-answer an answered question at zero marginal information. Not dispatched; the question stands answered unless a NEW cross-family license arrives. (b) different-model route remains unlicensed.
+- **Strategic pivot: NO — but the shape is hardening.** All licensed CPU verdicts are landed. The queue is honestly empty except proposal-drafting licenses. The live CPU frontier is now exactly ONE proposal lane wide.
+
+### Today's priorities (falsification value per $0, summit-filtered)
+1. **Commit-only hygiene (CEO, licensed):** commit the LOG-4952 push-prep entry (currently `M reports/research_log.md` in the working tree; per the LOG-4904 recursion ruling a verification-record commit does not invalidate the READY verdict). EXP144/EXP145 `hf_cache/` dirs stay untracked (weights, correctly excluded). No token — no push.
+2. **Founder-gated items — flag only:** (a) one-use GitHub tokens for the SCBI stack (c6368a1) and the SCBI-paper repo (v102 signed PDF); (b) EXP139 Stage-2 GPU clearance — bundle signed, needs the founder's Kaggle slot; (c) Modal token-secret half + other free-GPU account actions; (d) arXiv endorsement address re-verify + resend (bounced 550, open since 2026-09-27); (e) v102 publication decisions (TAAI/arXiv — signed, immutable, founder-reserved); **(f) 14-day GPU-blocker escalation fires 2026-10-07** — CEO should prepare the founder brief.
+3. **Standing:** daily frontier sweep due 2026-10-07 (AutoTTS primary watch queued); Friday cull 2026-10-09.
+
+### Kills
+- **KILL (binding):** EXP143 / S5-inverted — held-out validation (discovery anti-calibration was winner's curse).
+- **KILL/PIVOT (binding, ADOPTED):** EXP145 / S7-2 — cross-family Gap does not replicate in GPT-2-small (decode−).
+- **KILL (binding, ADOPTED):** EXP146 / S7-4 — attention-routing dead as ≥10pp steering path; EXP136's HELD resolved as powered null.
+- **HELD (binding, ADOPTED):** EXP147 / S7-1 — baseline unmeasurable (guard (d)); J7 untested, measurement apparatus dead.
+- **INCONCLUSIVE (binding):** EXP144 — bench non-portable to GPT-2 BPE.
+- **SIGN (not a kill):** paper v102 — immutable.
+
+### Dispatch record
+- 2026-10-06 (07:40 IST review): recommend-only per the LOG-4791 standing correction. No subagent spawned, no inline work wave, no LOG entries written, no active_lanes.txt touched, no LOG numbers self-assigned. This entry is the only file written by this run. [FACT]
+- **Recommended wave (exactly one): EXP147 measurement-fix PROPOSAL drafting lane (J7 follow-up).** Worth-it gate — Q: can the base-LM format-compliance floor (guard (d) 0/180, first-token==gold 0.661) be fixed cheaply (first-token scoring, stop sequence, or instruct-tuned model) so the J7 scratchpad hypothesis becomes measurable at Δθ=0 on Pythia-410m? D: the HELD license (LOG-4946/4947) authorizes exactly ONE thing — a NEW proposal, never a repair of the EXP147 verdict; the lane must produce either a Law #14-signable pre-reg for a new experiment number, or J7 stands down as unmeasurable on this vehicle. Cost: $0 CPU design lane. Break point: a 20-item dry-run calibration must lift the baseline into the registered [0.2,0.8] band — if guard (d) re-trips on the dry run, the proposal dies at design cost before any bench run. Math license: none needed (measurement fix); J7's substantive license stays [CONJECTURE] until tested. If the CEO dispatches nothing else, the no-idle rule is satisfied by this being the only licensed CPU opening; after it closes, the queue is again honestly empty and founder-gated.
+
+### Charter-note
+- `research/CAMPAIGN_30DAY.md` still absent (first noted 2026-10-02); this log remains the strategy record. CEO: either restore the charter or ratify the log as the charter.

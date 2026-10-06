@@ -1,3 +1,121 @@
+## LOG-4960 — Frontier scoreboard v3.23: EXP148 plotted as the program's FIRST capability entry — 2026-10-06
+
+Scoreboard-sync lane (LOG-4960 pre-assigned by the CEO). Artifact: `research/benchmarks/FRONTIER_SCOREBOARD.md` → v3.23.
+
+**Plotted: EXP148 — binding CONTINUE (capability), ADOPTED** (LOG-4958 execution; independent verdict review LOG-4959 — b=52/c=12 recomputed from the raw records, 540/540 scoring fidelity): S vs C b=52, c=12, net **+0.2222 (+22.2pp)**, one-sided McNemar p=**2.3e-07**, 95% Wald CI (0.1414, 0.3031) — entirely above +0.10. Pooled: B=0.6611, C=0.1889, S=0.4111. **This is the program's first capability entry: every prior entry was boundary science (kills/holds); EXP148 is the first positive capability result.** §3.1 row added (bound, capability); v3.23 changelog entry written.
+
+**Honest caveat carried on the board:** C-arm absolute 0.1889 — the licensed claim is "discipline beats budget-matched CoT," NOT "beats the best baseline" (S vs B net −0.2500; B=0.6611 stands). Boundary/capability split kept crisp; the label-free autonomous-steering axis stays tied at zero (EXP148 is reasoning capability via prompting discipline, not steering).
+
+**Tally v3.23:** thirteen KILLs, twelve RUN-INVALIDs, five HELDs, four CONTINUEs + one apparatus CONTINUE, **one capability CONTINUE (EXP148 — the first)**, two precision certifications, one INCONCLUSIVE (EXP144).
+
+**Paper marker:** v102 SIGNED (LOG-4933, 29 pp, MD5 e747a951b3cc11af440ce25ee4752017 — unchanged) — **v102's "zero capability entries" claim is now STALE** (superseded by this binding CONTINUE); flagged for the next paper version. Paper NOT edited here. No other entries modified; all frozen numbers unchanged. $0 CPU.
+
+## LOG-4959 — Independent verdict review of EXP148: ADOPT (CONTINUE stands) — 2026-10-06
+
+Independent verdict review lane (LOG-4959 pre-assigned by the CEO; reviewer independent of the EXP148 execution lane; verdict binding). Artifact: `research/analysis_plans/EXP148_VERDICT_2026-10-06.md`.
+
+**Verdict on the verdict: ADOPT** — the CONTINUE stands as reported.
+
+**Verified [FACT]:** recomputed independently from the 540 per-item records — S vs C b=52/c=12 reconstructed exactly; one-sided McNemar p=2.2833e-07 (reported 2.283e-07 ✓); net +0.22222 ✓; 95% Wald CI (0.14139, 0.30306) ✓. Decision-table application exact: no guard trips → not RUN-INVALID/HELD; KILL's conjunction fails on all three prongs; CONTINUE's bars (p<0.05 ✓, net≥+0.10 ✓) fire. Scoring fidelity: `correct == (first_token == normalized gold)` on 540/540 records, zero mismatches; all C/S generations contain `ANSWER:` (no fallback rescues). Guards spot-checked: WRITE rate 180/180, tokens B=15/C=120/S=120, strata 45⁴. The report's C-arm caveat (C=0.19 absolute; S beats C, not B) is honest and correctly scopes the licensed claim. Stratum breakdowns labeled descriptive (Law #9 clean). Signals vary in principle across items.
+
+**Deliverable:** `research/analysis_plans/EXP148_VERDICT_REVIEW_2026-10-06.md`. No forwards run; $0. EXP148 CONTINUE is now ADOPTED — the program's first capability entry is binding.
+
+## LOG-4958 — EXP148 full run COMPLETE: verdict CONTINUE (+22.2pp S vs C, p=2.3e-07) — program's first capability entry — 2026-10-06
+
+Full-execution lane (LOG-4958 pre-assigned by the CEO; Step-0 dry-run PASS LOG-4957 licensed this run; pre-reg verification SIGN LOG-4956). Followed `research/analysis_plans/EXP148_PREREG_2026-10-06.md` exactly; no deviations.
+
+**Verdict: CONTINUE** — J7 lives. S (WRITE/READ scratchpad) vs C (budget-matched CoT): b=52, c=12, net **+0.2222 (+22.2pp)**, one-sided McNemar p=**2.3e-07**, 95% CI (0.1414, 0.3031). Bars met: p<0.05 ✓, net≥+0.10 ✓, guards (e)+(f′) PASS. KILL does not fire. Pooled accuracies (first-token): B=0.6611, C=0.1889, S=0.4111. S vs B net −0.2500 (p=1.0) — discipline beats reasoning-heavy CoT, not the direct-answer baseline. Effect directionally consistent across all 4 strata.
+
+**Guards all PASS [FACT]:** (u0) 9/9; (a) Δθ=0 pre/post match; (b) revision match; (c) bench pin 64/64; (d) B=0.6611∈[0.2,0.8]; (e) WRITE rate 1.0000; (f) C,S>2×B; (f′) S/C=1.0000; (g) 45,900≤50k forwards; Law #7 PASS. $0 CPU, 2.08h.
+
+**Deliverables:** `research/analysis_plans/EXP148_VERDICT_2026-10-06.md`, `research/analysis_plans/EXP148_RESULTS_2026-10-06.json`, `experiments/runs/EXP148/` (540 per-item records). Note: v102 paper's "zero capability entries" claim is now stale — flagged for next paper version.
+
+## LOG-4957 — EXP148 Step-0 dry-run gate: PASS (14/20 = 0.7000) — full run licensable, execution NOT run here — 2026-10-06
+
+Step-0 dry-run execution lane (LOG-4957 pre-assigned by the CEO; CEO execution authorization for Step-0 only, per LOG-4956 verification SIGN). Followed `research/analysis_plans/EXP148_PREREG_2026-10-06.md` §5.4 exactly; no deviations.
+
+**Outcome: DRYRUN_PASS** — B first-token accuracy **14/20 = 0.7000**, inside the [0.2, 0.8] calibration band. The first-token scoring repair holds on fresh items. Per the binding gate: **full EXP148 run is licensable** — execution NOT run by this lane; awaits CEO execution authorization as a separate lane.
+
+**Guards (all PASS) [FACT]:** (u0) scoring-pipeline unit test 9/9 synthetic cases, zero forwards; (b) model revision `9879c9b5f8bea9051dcb0e68dff21493d67e9d4f` resolved programmatically, match; (a) Δθ=0 pre/post state-dict hash `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed`, match/match; (h) 7.46 tok/s → 46k projected 1.71h (cap 72h), feasible; (c) bench pin `2b055b53127a241b72338a82373c3efc7b666256e25d8c584d45989278c14dcf` recomputed 64/64; Law #7 exemplar/bench entity disjointness re-asserted PASS; (d) 0.7000 ∈ [0.2, 0.8].
+
+**Execution record [FACT]:** subset seed 148000 (registered at execution, ≠ 7101); torch seed 148001; greedy; 20 fresh items (S71-165, S71-085, S71-090, S71-170, S71-083, S71-020, S71-163, S71-069, S71-161, S71-140, S71-019, S71-022, S71-082, S71-077, S71-094, S71-157, S71-016, S71-178, S71-127, S71-025); B arm only, T_B=15; 300 generation forwards + 50-step probe = ~350 total; 67.9s wall; $0 CPU. Environment re-recorded: torch 2.14.0+cpu, transformers 5.17.0, numpy 2.5.3, 2 threads, eager, fp32. Exemplars reused from EXP147's `S7-1_PROMPTS_2026-10-05.json` byte-identical.
+
+**Descriptive (not a guard):** per-stratum first-token accuracy — compositional-2hop 2/2, compositional-3hop 7/7, transitive-2hop 0/5, transitive-3hop 5/6 — mirrors EXP147's descriptive pattern (compositional near-ceiling, transitive lower).
+
+**Deliverables:** `experiments/runs/EXP148/` — `exp148_step0_dryrun.py`, `exp148_step0_dryrun_2026-10-06.json`, `exp148_step0_dryrun_2026-10-06.log`, `exp148_dryrun_per_item.jsonl` (20 records), `EXP148_DRYRUN_REPORT_2026-10-06.md`.
+
+**Consequence:** full EXP148 run (n=180 × 3 arms, ≈46k forwards) licensable on CEO execution authorization — separate lane, not this one.
+
+## LOG-4956 — Independent pre-registration verification of EXP148: SIGN — 2026-10-06
+
+Independent verification lane (LOG-4956 pre-assigned by the CEO; verifier independent of the LOG-4955 drafter; verdict binding). Artifact: `research/analysis_plans/EXP148_PREREG_2026-10-06.md` (FINAL, sign-ready).
+
+**Verdict: SIGN** — the pre-registration is sound. Execution of the Step-0 dry run may proceed on CEO authorization; full-run execution remains gated on the dry run passing.
+
+**Verified [FACT]:** (1) all three long pins character-identical to committed EXP147 sources via scripted exact-substring comparison — bench `2b055b53127a241b72338a82373c3efc7b666256e25d8c584d45989278c14dcf` (64/64), model `9879c9b5f8bea9051dcb0e68dff21493d67e9d4f` (40/40), Δθ=0 `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed` (64/64); (2) all three LOG-4954 advisories concretely addressed — §5.4(u0) C/S `ANSWER:`-parsing unit test (5 synthetic cases, zero forwards), §5.2 exemplar reuse-or-rebuild rule, §2.3 power-as-upper-bounds caveat; (3) worth-it gate complete, decision bars match S7-1 verbatim (two-sided clause already in S7-1 §3; dry-run addition is the licensed delta, not drift); (4) Step-0 gate binding — 20 fresh items, seed ≠ 7101, B-only, pass [0.2,0.8], fail → STOP at ~300 forwards, no verdict; (5) Law #9 clean — primary/secondaries pre-registered, C/S arms never ran in EXP147 (nothing to peek at); (6) guards (a)–(h)+(u0) all computable, guard (d) correctly adapted to first-token scoring; (7) no degenerate-by-construction signals (2026-10-05 lesson applied); (8) scope fence present — Pythia-410m only, EXP145 cross-family bound respected.
+
+**Deliverable:** `research/analysis_plans/EXP148_PREREG_VERIFICATION_2026-10-06.md`. No forwards run; $0. Next (CEO-gated, not licensed here): CEO sign + Step-0 dry-run execution authorization.
+
+## LOG-4955 — EXP148 pre-registration FINALIZED (J7 first-token scoring repair): sign-ready, verification + execution still gated — 2026-10-06
+
+Pre-registration finalization lane (LOG-4955 pre-assigned by the CEO). **Experiment number EXP148 minted by the CEO** at this lane's dispatch — new operationalization = new number per the single-lane fence; EXP147's HELD verdict stands untouched.
+
+**Deliverable:** `research/analysis_plans/EXP148_PREREG_2026-10-06.md` — FINAL, sign-ready. Formalizes the SIGNED J7 proposal (LOG-4953; independent Law #14 review SIGN, LOG-4954). **NOT SIGNED. NOT EXECUTED.** Awaits independent pre-registration verification + CEO sign + execution authorization. No forwards run; $0.
+
+**Design (single substantive delta vs signed S7-1):** first-token scoring — B: first normalized token of the generation vs gold; C/S: first normalized token after the last `ANSWER:` vs gold; no `ANSWER:` → 0. Everything else carried: bench reused byte-identical (pin `2b055b53127a241b72338a82373c3efc7b666256e25d8c584d45989278c14dcf`, verified character-identical), frozen Pythia-410m (`9879c9b5f8bea9051dcb0e68dff21493d67e9d4f`), n=180 × 3 arms, greedy, Δθ=0 (program pin `ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed`), decision bars verbatim, guards (a)–(h) with (d) adapted to repaired scoring.
+
+**Step-0 dry-run gate (binding):** fresh 20-item subset (seed registered at execution, ≠ 7101), B arm only, first-token scoring. Pass (B ∈ [0.2, 0.8]) → full run licensable; fail → EXP148 STOPS at design cost (~300 forwards), no verdict. False-fail ≈ 5.5% (exact binomial, independently recomputed LOG-4954).
+
+**LOG-4954 advisories addressed:** (i) §5.4(u0) zero-forward unit test for the C/S `ANSWER:`-parsing path (5 synthetic cases); (ii) §5.2 exemplar rule — reuse EXP147's Step-0 exemplars byte-identical, else rebuild by S7-1 §5.2 and record new pin; (iii) §2.3 — power figures are upper bounds if compositional strata contribute ~0 discordant pairs (design fails safe toward HELD).
+
+**Scope fence:** J7 (discipline vs architecture) at Pythia-410m only; no cross-scale or cross-family claims.
+
+**Next (not licensed here):** independent pre-registration verification → CEO sign → execution authorization (dry run first). Execution NOT licensed by this lane.
+
+## LOG-4954 — Independent Law #14 review of J7 proposal draft: SIGN — 2026-10-06
+
+Independent review lane (LOG-4954 pre-assigned by the CEO; reviewer independent of the LOG-4953 drafter; verdict binding). Artifact: `research/analysis_plans/J7_PROPOSAL_DRAFT_2026-10-06.md`.
+
+**Verdict: SIGN** — the proposal may proceed to the CEO for the minting decision (new experiment number), final pre-registration, and execution authorization. None of those are licensed by this review.
+
+**Verified [FACT]:** every quantitative claim in the draft checked against committed EXP147 artifacts — first-token B 119/180 = 0.6611, per-stratum 0.9778/0.9556/0.2667/0.4444, registered B 0/180, bench pin `2b055b53127a241b72338a82373c3efc7b666256e25d8c584d45989278c14dcf` character-identical, guard (d) band [0.2, 0.8] tripped, model revision `9879c9b5f8bea9051dcb0e68dff21493d67e9d4f`. Dry-run false-fail rate independently recomputed: X ~ Bin(20, 0.6611), P(X≤3) ≈ 3.7e-6, P(X≥17) ≈ 0.0546, total ≈ 5.5% — draft's figure correct. No invented numbers, no transcription errors (Law #2).
+
+**Hardest challenge — does first-token scoring change what "beating CoT" means?** Finding: no. J7 is about reasoning capability; S7-1's registered scoring conflated reasoning with format compliance, and EXP147 proved format compliance fails independently on base Pythia. First-token scoring isolates the reasoning outcome — a cleaner operationalization, not a different hypothesis. Symmetric across arms (each scored on its first committed answer token); C/S reasoning happens before `ANSWER:`, so the scored token is post-reasoning in all arms.
+
+**Power license:** transfers on scoring-agnostic discordant-pair parameters (q, r, d); draft honestly spans d ∈ [0.20, 0.35] rather than assuming. Compositional-stratum ceiling (0.96–0.98) disclosed; pooled primary kept (Law #9). Reviewer notes the ceiling makes the design conservative (bias toward HELD, not false verdicts) — acceptable.
+
+**Law #9:** repaired scoring registered before any new output; EXP147 descriptive numbers labeled as prior observations; C/S arms never ran in EXP147 (confirmed `arms_not_run`) — nothing to peek at.
+
+**Advisories (non-blocking):** (i) harden the C/S `ANSWER:`-parsing path with a Step-0 unit test (the B-only dry run doesn't exercise it); (ii) clarify exemplar reuse ("reuse EXP147's Step-0 exemplars byte-identical") vs rebuild; (iii) note at pre-registration that power figures are upper bounds if compositional strata contribute ~0 discordant pairs.
+
+**Deliverable:** `research/analysis_plans/J7_PROPOSAL_REVIEW_2026-10-06.md` (binding SIGN).
+
+**Next (CEO-gated, not licensed here):** experiment-number minting, final pre-registration, execution authorization.
+
+## LOG-4953 — J7 follow-up PROPOSAL DRAFT (first-token scoring repair): draft written, no review/number/execution licensed — 2026-10-06
+
+Proposal-drafting lane (LOG-4953 pre-assigned by the CEO; licensed by EXP147's HELD verdict LOG-4946/4947, which explicitly authorizes "a new proposal and experiment number using a repaired baseline measurement"). **PROPOSAL ONLY** — draft is not signed, not pre-registered; no Law #14 review commissioned; no experiment number minted; no execution licensed. $0 CPU (no forwards run).
+
+**Deliverable:** `research/analysis_plans/J7_PROPOSAL_DRAFT_2026-10-06.md` (DRAFT).
+
+**Recommended repair: (a) first-token scoring** — B arm: first normalized token of the generation vs gold; C/S arms: first normalized token after the last `ANSWER:` vs gold. Grounded in EXP147's own descriptive data: first-token B accuracy = 119/180 = 0.6611, inside the [0.2, 0.8] calibration band (compositional 2-hop 0.9778 / 3-hop 0.9556; transitive 2-hop 0.2667 / 3-hop 0.4444). Rejected: (b) stop-sequence/truncation (strictly dominated — fragile on base LMs; 1-token truncation *is* first-token scoring); (c) instruct-tuned model (deferred — heavier; breaks the comparability chain; becomes the next candidate proposal only if (a) fails the dry run).
+
+**Worth-it gate (Law #15, in the draft):** J7 question unchanged (WRITE/READ discipline vs budget-matched CoT at Δθ=0); KILL/CONTINUE/PIVOT bars inherited verbatim from S7-1; power license transfers (MDE80 ≈ +10pp at n=180, scoring-agnostic discordant-pair parameters); breaking point = S7-1 KILL conjunction **plus** a 20-item dry-run gate — the dry run must lift repaired B accuracy into [0.2, 0.8] or the proposal dies at design cost (~300 forwards). False-fail rate ≈5.5% under the n=180 point estimate (exact binomial). Honest caveat carried: compositional strata near ceiling (0.96–0.98) under first-token scoring — pooled primary stands (Law #9).
+
+**Design delta vs signed S7-1 plan:** exactly one substantive change (the scoring function). Bench (pin `2b055b53127a241b72338a82373c3efc7b666256e25d8c584d45989278c14dcf`), arms, prompts, budgets (T_B=15, T=120), all eight guards, decision table, and cost envelope (≈46k forwards, $0) carried forward unchanged.
+
+**Next (not licensed by this lane):** Law #14 review of the final pre-registration, experiment-number minting, and execution authorization remain CEO-gated.
+
+## LOG-4952 — Push-prep complete: commit c6368a1 (LOG-4951 sweep batch), push-readiness READY (push founder-gated) — 2026-10-06
+
+Push-prep lane (LOG-4952 pre-assigned by the CEO; precedent LOG-4949/4950). Commit-only — **push NOT attempted** (founder-gated; needs a fresh founder-supplied one-use token).
+
+**Commit `c6368a1`** (`c6368a1fbb63be75e2873bf58e0adcf4a7c5af0b`) on `sync/2026-09-29-consolidated` — direct child of `99ad27c`, clean linear history. Message: 'LOG-4951: daily frontier sweep 2026-10-06 — Weco AIDE², OpenAI DevDay, AutoTTS (commit-only, no push)'. Scope: 2 files, 90 insertions — `reports/research_log.md` (+18 lines, LOG-4951 entry) and new `research/frontier/SWEEP_2026-10-06.md` (72 lines, 15,790 bytes). Correctly excluded: EXP144/EXP145 `hf_cache/` weight dirs (untracked, ~5.3GB).
+
+**Checks [FACT]:** (1) LOG-header continuity: `## LOG-4951` … `## LOG-4944` present newest-first, gap-free, no duplicates. (2) Linearity: `git log --merges ebde1a0..HEAD` returns zero — the new commit is a regular single-parent commit; the 5 merge commits in deeper history predate `ebde1a0` and are outside the sync branch's linear range. (3) Credential scan: staged diff grepped for token/key/secret/password/bearer/gh*_ patterns — 11 raw hits, all false positives (the word "token" in sweep prose meaning LLM tokens: "token price", "token usage", "token generation"; plus LOG-4950's own "secret scan clean" line). Zero real credentials. (4) Size scan: only the two intended paths; no weights, no oversized blobs. (5) Signed artifacts untouched: zero changes under `experiments/bundles/`, `experiments/runs/`, theory, paper, or signed plan/verdict paths.
+
+**Push-readiness verdict: READY.** Live-remote fast-forward status unverified (no GitHub credentials available); local history linear from `ebde1a0`. Recursion-rule note (LOG-4878/4902–4904): this LOG-4952 entry is a verification-record only — it does not invalidate the READY verdict and does not trigger a new verification lane. READY stands until a substantive commit lands.
+
 ## LOG-4951 — Daily frontier sweep 2026-10-06: Weco AIDE² VERIFIED, OpenAI DevDay + DNS-escape pause, AutoTTS — 2026-10-06
 
 Standing daily frontier sweep lane (LOG-4951 pre-assigned by the CEO; precedents LOG-4894/4900). $0 compute, web research only. Sweep file: `research/frontier/SWEEP_2026-10-06.md`. **Gap note:** no sweep ran on 2026-10-05 — this file covers the two-day window since the 10-04 sweep.

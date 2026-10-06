@@ -1,0 +1,24 @@
+[run] (u0) unit test: 9/9 cases pass
+[run] (u0) PASS
+[run] (b) revision actual=9879c9b5f8bea9051dcb0e68dff21493d67e9d4f match=True
+[run] loading tokenizer + model (eager, fp32, cpu)
+[run] (u0) unit test: 9/9 cases pass
+[run] (u0) PASS
+[run] (b) revision actual=9879c9b5f8bea9051dcb0e68dff21493d67e9d4f match=True
+[run] loading tokenizer + model (eager, fp32, cpu)
+[run] (a) pre-hash match: True
+[run] (c) bench pin match: True (180 items)
+[run] exemplars reused byte-identical (sha256=e46211620ffaa496...)
+[run] Law #7 disjointness: True
+[run] resuming: 0 (item, arm) pairs already done
+[run] arm B complete (180 items, ~2700 new tokens this session)
+[run] guard (d): B first-token accuracy = 0.6611 (bar [0.2, 0.8])
+[run] arm C complete (180 items, ~21600 new tokens this session)
+[run] arm S complete (180 items, ~21600 new tokens this session)
+[run] mean new tokens: {'B': 15.0, 'C': 120.0, 'S': 120.0}
+[run] guard (e): WRITE-span rate = 1.0000 (bar >= 0.5)
+[run] guard (f): C>2xB and S>2xB -> True
+[run] guard (f'): S/C token ratio = 1.0000 (bar [0.667, 1.5]) -> True
+[run] guard (g): 45900 generation forwards (cap 50000)
+[run] (a) post-hash match: True
+[run] run complete: outcome=PROCEED_TO_VERDICT elapsed=2.08h forwards=45900
