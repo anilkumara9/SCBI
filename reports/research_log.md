@@ -1,3 +1,35 @@
+## LOG-4962 — Wednesday adversarial-review session (2026-10-07): nominal — zero pending items
+
+Acting Research Lead, Law #14 always. Scope per the §10 Wednesday cadence: every draft, spec, proof, and pre-registration under `research/analysis_plans/`, `research/synthesis/`, `experiments/protocols/` newer than its last Law #14 review.
+
+**Scan result: NOTHING UNSIGNED, NOTHING PAST-DUE. Zero reviewers dispatched.**
+
+Review coverage verified item-by-item against this log's SIGN/SIGN-WITH-FIXES entries:
+- S7-1 pre-reg: Law #14 SIGN-WITH-FIXES (LOG-4943) → 3 fixes applied (LOG-4944) → independent fix-verification PASS → SIGNED (LOG-4945); EXP147 minted.
+- S7-4 pre-reg: drafted (LOG-4935) → fix-verification re-review PASS → SIGNED (LOG-4937); EXP146 minted.
+- S7-2b delta pre-reg: SIGN-WITH-FIXES → 3 fixes verbatim → SIGNED (LOG-4921); EXP145 minted.
+- J7 proposal draft: independent Law #14 review SIGN (LOG-4954); three advisories recorded, all later addressed.
+- EXP148 pre-reg FINAL: independent pre-registration verification SIGN (LOG-4956) — all three long pins character-identical via scripted comparison, all LOG-4954 advisories concretely addressed, Law #9 clean.
+- Verdicts: EXP143 KILL (LOG-4917), EXP144 INCONCLUSIVE (LOG-4919), EXP145 KILL/PIVOT ADOPT-WITH-CORRECTIONS → ADOPTED (LOG-4926), EXP146 KILL ADOPT (LOG-4939), EXP147 HELD ADOPT (LOG-4947), EXP148 CONTINUE ADOPT (LOG-4959) — the program's first capability entry, plotted on scoreboard v3.23 (LOG-4960).
+- `research/synthesis/`: newest file 2026-09-23; REV2 synthesis adopted (LOG-195) — no new synthesis since.
+- `experiments/protocols/`: newest items 2026-09-26; REVIEWS subdir reviews (S6-3/S6-3b/S6-3c/S6-3d/S6-4, EXP087) all signed Sep 28–29 — nothing newer than its last review.
+
+**Fixes:** none pending — every SIGN-WITH-FIXES cycle is closed by its fix-verification re-review. **Escalations:** none. **Stuck-check:** `active_lanes.txt` empty — no dispatched lane awaiting handoff; EXP148 wave fully committed (commit `0a82aab`, LOG-4961); push founder-gated on a fresh one-use token (founder-side, not lab-stuck); v106 paper QA is founder-side and paper sources sit outside this session's three-dir scope.
+
+**Cleared for execution:** everything previously cleared remains cleared; no new licenses issued this session. Next free: LOG-4963.
+
+## LOG-4961 — Push-prep complete: commit 0a82aab (LOG-4953→4960 J7/EXP148 wave batch), push-readiness READY (push founder-gated) — 2026-10-06
+
+Push-prep lane (LOG-4961 pre-assigned by the CEO; precedent LOG-4949/4950/4952). Commit-only — **push NOT attempted** (founder-gated; needs a fresh founder-supplied one-use token).
+
+**Commit:** `0a82aab049234834e7f506ef0a1f3bb8aa7e5318` on `sync/2026-09-29-consolidated` (single parent `c6368a1`, linear, zero merge commits). **Scope:** 20 files, 2,312 insertions, 0 deletions — LOG-4953 (J7 proposal draft) → LOG-4960 (scoreboard v3.23): proposal, Law #14 review SIGN, pre-reg FINAL, verification SIGN, dry-run PASS, full execution CONTINUE (+22.2pp, ADOPTED), scoreboard v3.23 with first capability entry; `experiments/runs/EXP148/` run records; CAMPAIGN_30DAY_LOG.md strategy entry.
+
+**Checks [FACT]:** (1) LOG-header continuity: LOG-4953→4960 present newest-first, gap-free, no duplicates. (2) Linearity: single-parent commit on c6368a1, zero merge commits. (3) Credential scan: zero real hits (only prose "token" = one-use GitHub token / LLM tokens — false positives). (4) Size scan: no files >10MB; EXP148/ dir 312K; `__pycache__/` (24K) excluded from commit. (5) Signed artifacts untouched: zero changes under `experiments/bundles/`, no paper files.
+
+**Intentionally excluded (out of lane scope):** `research/CEO_DIARY.md` (M, 2026-10-06 CEO health-check entry — CEO's living document, separate process); EXP144/EXP145 `hf_cache/` weight dirs (untracked, never commit).
+
+**Push-readiness verdict: READY.** Live-remote fast-forward status unverified (no GitHub credentials available); local history linear from `ebde1a0`. This is a SUBSTANTIVE batch (new experiment + verdict + files) — the LOG-4878/4902–4904 recursion rule does not apply. Push awaits a fresh founder-supplied one-use token; never force-push.
+
 ## LOG-4960 — Frontier scoreboard v3.23: EXP148 plotted as the program's FIRST capability entry — 2026-10-06
 
 Scoreboard-sync lane (LOG-4960 pre-assigned by the CEO). Artifact: `research/benchmarks/FRONTIER_SCOREBOARD.md` → v3.23.

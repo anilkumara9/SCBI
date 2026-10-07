@@ -420,3 +420,35 @@ Kill-first logic preserved; cost posture more honest (480→780 passes), not sof
 
 ### Charter-note
 - `research/CAMPAIGN_30DAY.md` still absent (first noted 2026-10-02); this log remains the strategy record. CEO: either restore the charter or ratify the log as the charter.
+
+## 2026-10-07 — Daily strategy review (07:40 IST)
+
+### Yesterday's movement (2026-10-06 07:40 IST → 2026-10-07 07:40 IST, LOG-4953→4961, 9 entries)
+- **J7 wave CLOSED — the 10-06 review's recommended wave was dispatched by the CEO and landed the program's FIRST capability entry (LOG-4953→4960, $0 CPU, single-lane discipline):**
+  - **EXP148 — CONTINUE (binding, ADOPTED, LOG-4958/4959):** S (WRITE/READ scratchpad discipline) vs C (budget-matched CoT): b=52, c=12, net **+22.2pp**, one-sided McNemar p=2.28e-07, 95% Wald CI (0.1414, 0.3031) entirely above +0.10. All guards PASS (guard (d) repaired via first-token scoring — the exact measurement fix the proposal lane licensed); independently recomputed from 540 per-item records (540/540 scoring fidelity). Licensed claim scoped honestly: discipline beats budget-matched CoT (S vs B net −0.2500; B=0.6611 stands), reasoning capability via prompting discipline — NOT steering.
+  - Pre-gate chain: proposal draft → Law #14 review SIGN → prereg FINAL → independent verification SIGN → Step-0 dry-run PASS (14/20=0.7000) — every gate signed before execution; the execution lane could not self-clear its verdict. The worth-it gate and the lane fence operated exactly as chartered.
+- **Scoreboard v3.23 (LOG-4960):** EXP148 plotted as the first capability entry. Tally: 13 KILLs, 12 RUN-INVALIDs, 5 HELDs, 4 CONTINUEs + 1 apparatus CONTINUE, **1 capability CONTINUE (first)**, 2 precision certs, 1 INCONCLUSIVE. v102's "zero capability entries" claim now STALE — flagged for the next paper version (noted, not edited).
+- **Push-prep (LOG-4961, uncommitted in working tree):** commit 0a82aab (LOG-4953→4960 J7/EXP148 batch, 20 files, 2,312 insertions) verified READY — push founder-token-gated. LOG-4950/4952 precedents honored; no recursion theater (LOG-4904 ruling held). Nothing dated 2026-10-07.
+
+### Lanes assessment
+- **Moved:** the full J7 arc — born from EXP147's HELD as a scored-repair proposal, closed with a binding capability verdict in one night. The 10-06 recommendation→dispatch→closure loop worked: recommend-only from this review, CEO dispatch, independent review, verdict, plot.
+- **Active:** NONE. subagent.list: zero active/zero recent; active_lanes.txt: zero lines (CEO-maintained; untouched by this run). Lab legitimately at rest.
+- **Stalled:** GPU queue — exp067/exp070 verified today: bundles only, no results.json, no vectors. ~14 days old — **the 14-day formal escalation promised by the CEO diary fires TODAY.** Flagged as the founder alert below; this is the program's standing strategic pivot trigger.
+- **Busywork check:** none. Push-prep chain is lean verification with no recursion; the J7 wave was all falsification/capability output.
+- **Zombie check:** none. All licensed CPU lines carry terminal outcomes. The GPU-blocked rows (EXP139 Stage-2, S3/S3-9 pilots) are founder-blocked, not CPU zombies — they consume zero compute waiting.
+
+### Today's priorities (falsification value per $0, summit-filtered)
+1. **Daily frontier sweep 2026-10-07 (licensed, standing):** the one recurring CPU task. Follow up the AutoTTS primary-watch queue from LOG-4951; verify any steering-signal claims at primary; keep the scoreboard unchanged unless primary-sourced evidence moves it.
+2. **Commit-only hygiene (CEO, licensed):** commit the uncommitted LOG-4961 push-prep entry + the 2026-10-06 CEO diary health-check note. EXP144/145 `hf_cache/` weight dirs stay untracked (correctly excluded). No token — no push.
+3. **Founder-gated items — flag only:** (a) one-use GitHub tokens for the SCBI stack (0a82aab) and the SCBI-paper repo (v106 UNSIGNED, awaiting founder QA, 10 decision items logged per MEMORY); (b) EXP139 Stage-2 GPU clearance — bundle signed, needs the founder's Kaggle slot; (c) Modal token-secret half + other free-GPU account actions; (d) arXiv endorsement address re-verify + resend (bounced 550, open since 2026-09-27); (e) **the 14-day GPU-blocker formal escalation fires today — CEO's promised founder brief.**
+4. **Standing:** Friday cull 2026-10-09; scoreboard current at v3.23.
+
+### Kills
+- None new today. EXP148 was a CONTINUE, not a kill.
+
+### Dispatch record
+- 2026-10-07 (07:40 IST review): recommend-only per the LOG-4791 standing correction. No subagent spawned, no inline work wave, no LOG entries written, no active_lanes.txt touched, no LOG numbers self-assigned. This entry is the only file written by this run. [FACT]
+- **Recommended wave (exactly one): daily frontier sweep 2026-10-07.** Worth-it gate — Q: does any new field development carry autonomous-steering evidence that moves the scoreboard or re-opens a HELD family? D: the sweep's standing charter resolves this daily with kill/continue implications for blocked CPU lanes. Cost: $0 CPU, web research only, ~1 lane. Break point: zero primary-sourced steering signals → "no change" logged, lane closes. If the CEO dispatches it, the no-idle rule is satisfied; after it closes, the licensed CPU queue is again honestly empty and founder-gated.
+
+### Charter-note
+- `research/CAMPAIGN_30DAY.md` still absent (first noted 2026-10-02); this log remains the strategy record. CEO: either restore the charter or ratify the log as the charter.
