@@ -1,3 +1,17 @@
+## LOG-4963 — Push-readiness verification: commit 1b437a6 (frontier sweep 2026-10-08) — READY (push founder-gated) — 2026-10-08
+
+Push-readiness verification lane per LOG-4878 standing rule (new substantive commit `1b437a6`). Commit-only — **push NOT attempted** (founder-gated; needs a fresh founder-supplied one-use token).
+
+**Commit:** `1b437a62601a29d75a122e6550e5f137eecdc433` on `sync/2026-09-29-consolidated` (single parent `2fb29919eea9f8fe3291b594a1f7dda51cac71ab`; linear chain `0a82aab` → `2fb2991` → `1b437a6`; zero merge commits, no rebasing).
+
+**Checks [FACT]:** (1) Diff content: 1 file changed, 28 insertions — `research/frontier/SWEEP_2026-10-08.md` only (daily frontier sweep report, window Oct 7–8). (2) Parent chain: exactly the two expected commits since `0a82aab`; single-parent commits; `git rev-list --merges 0a82aab..HEAD` = 0. (3) Credential scan: zero real hits — matches were false positives ("token" = LLM tokens/pricing prose; the `hf_` pattern fired only on the untracked `hf_cache/` directory name). No API keys, secrets, or weight binaries in the diff. (4) Exclusions: `experiments/runs/EXP144/hf_cache/` and `EXP145/hf_cache/` remain untracked and outside the commit. (5) Size: one 28-line markdown file; no large files.
+
+**Limitation:** live-remote fast-forward status unverified — no GitHub credentials in this session (remote operation deliberately not attempted), and the local remote-tracking ref `origin/sync/2026-09-29-consolidated` is stale (`7f0cc64`, predates `0a82aab`), so it is not a usable fast-forward anchor. Fast-forward MUST be re-verified at push time before pushing; never force-push.
+
+**Push-readiness verdict: READY.** LOG-4878 satisfied for commit `1b437a6`. Push awaits a fresh founder-supplied one-use token.
+
+Next free: LOG-4964.
+
 ## LOG-4962 — Wednesday adversarial-review session (2026-10-07): nominal — zero pending items
 
 Acting Research Lead, Law #14 always. Scope per the §10 Wednesday cadence: every draft, spec, proof, and pre-registration under `research/analysis_plans/`, `research/synthesis/`, `experiments/protocols/` newer than its last Law #14 review.
