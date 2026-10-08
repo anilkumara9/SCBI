@@ -452,3 +452,34 @@ Kill-first logic preserved; cost posture more honest (480→780 passes), not sof
 
 ### Charter-note
 - `research/CAMPAIGN_30DAY.md` still absent (first noted 2026-10-02); this log remains the strategy record. CEO: either restore the charter or ratify the log as the charter.
+
+## 2026-10-08 — Daily strategy review (07:40 IST)
+
+### Yesterday's movement (2026-10-07 07:40 IST → 2026-10-08 07:40 IST, LOG-4961→4963, 3 entries)
+- **LOG-4961 — Push-prep: commit 0a82aab (LOG-4953→4960 J7/EXP148 wave batch) — READY, commit-only.** 20 files, 2,312 insertions; push founder-token-gated.
+- **LOG-4962 — Wednesday adversarial-review session: nominal, zero pending items, zero reviewers dispatched.** Full Law #14 coverage verified item-by-item: S7-1/S7-4/S7-2b/J7 pre-regs all SIGNED (fixes closed), EXP143 KILL / EXP144 INCONCLUSIVE / EXP145 KILL/PIVOT-ADOPTED / EXP146 KILL-ADOPTED / EXP147 HELD-ADOPTED / EXP148 CONTINUE-ADOPTED, scoreboard v3.23. No new licenses issued.
+- **LOG-4963 — Push-readiness verification of 1b437a6 (frontier sweep 2026-10-08) — READY, commit-only.** Diff: one file (`research/frontier/SWEEP_2026-10-08.md`); linear chain; credential/size scans clean; `hf_cache/` dirs correctly untracked. Push founder-token-gated; remote fast-forward must be re-verified at push time (remote-tracking ref stale).
+- **Daily frontier sweep 2026-10-08 (recommended 10-07, dispatched by CEO, landed as 1b437a6):** Microsoft Oct 7 event outcome CONFIRMED (Surface Laptop Ultra + RTX Spark, 120B models locally — MEDIUM-HIGH, frozen-model economics datum); Claude Haiku 5.5 (LOW); Musubi PolicyLM-1.7B (MEDIUM, decision-model wave); KANSteer arXiv:2610.06945 (HIGH-adjacent: concept traversal is a CURVE not a line — design input for any revived steering lane; vision modality); "Before It Fades" arXiv:2610.01595 (HIGH-adjacent: Temporal Activation Injection, per-input extraction + ArrowRL-orthogonality test — steal); Pachocki/Clark/Horvitz/Song/Hinton/Bengio autonomous-R&D policy paper (HIGH context, RSI numbers); consciousness-framework paper arXiv:2609.35618 (HIGH framing, 151-page primary still pending — steering-detection confound our lanes never controlled for; fetch primary before citing). **Zero scoreboard-moving steering signals.**
+- **CEO diary 2026-10-07: the 14-day GPU formal escalation FIRED** (queue now 15 days dark: EXP139 Stage-2 bundle signed and waiting, S3-1/S3-3/S3-9 pilots, standing GPU-dark family). exp067/exp070 still bundles-only; nothing new under `experiments/runs/` since 2026-10-07. This escalation is now founder-side and 1 day unanswered.
+
+### Lanes assessment
+- **Moved:** the 10-07 sweep ran cleanly — recommendation→dispatch→commit→push-verification in one cycle, with primary-verified entries and honest UNVERIFIED tags throughout. LOG-4962's adversarial session was a lean nominal scan (no recursion theater). The push chain stays verified-READY at every step.
+- **Active:** NONE. subagent.list: zero active/zero recent; active_lanes.txt: zero lines (CEO-maintained; untouched by this run). Lab legitimately at rest.
+- **Stalled:** GPU queue — 15 days dark, formal escalation fired yesterday, founder-side. Push-token queue (oldest infrastructure blocker). Paper v106 UNSIGNED, founder QA + 10 decision items pending (founder-side). Modal token-secret half + free-GPU account actions (founder-reserved). arXiv endorsement resend (bounced 550, open since 2026-09-27).
+- **Busywork check:** none. LOG-4962 dispatched zero reviewers rather than inventing review work; LOG-4963's verification is the standing LOG-4878 rule operating once per commit.
+- **Zombie check:** none. All licensed CPU lines carry terminal outcomes. The two HIGH-adjacent sweep papers are literature/design inputs, not resurrected lanes — neither licenses a steering revival by itself.
+
+### Today's priorities (falsification value per $0, summit-filtered)
+1. **Daily frontier sweep 2026-10-09 (licensed, standing):** the one recurring CPU task. Queued follow-ups from SWEEP_2026-10-08: fetch arXiv:2609.35618 primary (steering-detection confound must be assessed before any future steering lane cites or controls for it); CITA arXiv ID; Qwen 3.5 primary; Microsoft on-device coding-model identity; Beam/Mistral Large 4 weight-drop watch.
+2. **Standing:** Friday cull 2026-10-09 (tomorrow) — weekly dead-line sweep; nothing to add today.
+3. **Founder-gated items — flag only:** (a) one-use GitHub tokens for the SCBI stack (adba987/1b437a6 on `sync/2026-09-29-consolidated`) and the SCBI-paper repo; (b) v106 founder QA + 10 decision items (founder-selected items already logged); (c) EXP139 Stage-2 GPU clearance — bundle signed, needs the founder's Kaggle slot; (d) Modal token-secret half + Colab/Lightning/HF account actions; (e) arXiv endorsement address re-verify + resend; (f) **the 14-day GPU formal escalation is 1 day unanswered — it stands as the program's standing founder alert.**
+
+### Kills
+- None new today. No verdicts, no blocks beyond the standing founder-side items.
+
+### Dispatch record
+- 2026-10-08 (07:40 IST review): recommend-only per the LOG-4791 standing correction. No subagent spawned, no inline work wave, no LOG entries written, no active_lanes.txt touched, no LOG numbers self-assigned. This entry is the only file written by this run. [FACT]
+- **Recommended wave (exactly one): daily frontier sweep 2026-10-09.** Worth-it gate — Q: does any new field development carry autonomous-steering evidence that moves the scoreboard, re-opens a HELD family, or supplies the arXiv:2609.35618 primary whose steering-detection confound our steering lanes never controlled for? D: the sweep's standing charter resolves this daily with kill/continue implications for blocked CPU lanes. Cost: $0 CPU, web research only, ~1 lane. Break point: zero primary-sourced steering signals → "no change" logged, lane closes. If the CEO dispatches it, the no-idle rule is satisfied; after it closes, the licensed CPU queue is again honestly empty and founder-gated.
+
+### Charter-note
+- `research/CAMPAIGN_30DAY.md` still absent (first noted 2026-10-02); this log remains the strategy record. CEO: either restore the charter or ratify the log as the charter.
