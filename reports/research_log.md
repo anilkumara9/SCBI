@@ -1,3 +1,17 @@
+## LOG-4964 — Push-readiness verification: commit 2da3c72 (living-doc updates 2026-10-08) — READY (push founder-gated) — 2026-10-08
+
+Push-readiness verification lane per LOG-4878 standing rule (new substantive commit `2da3c72`). Commit-only — **push NOT attempted** (founder-gated; needs a fresh founder-supplied one-use token).
+
+**Commit:** `2da3c722432aedbeb95b002a1e0f665595725a66` on `sync/2026-09-29-consolidated` (single parent `adba987af110881d96c3f76fa5f79afb7d38ab0a`; linear chain `0a82aab` → `2fb2991` → `1b437a6` → `adba987` → `2da3c72`; zero merge commits, no rebasing).
+
+**Checks [FACT]:** (1) Diff content: 2 files changed, 33 insertions — `research/CAMPAIGN_30DAY_LOG.md` (+31: 2026-10-08 daily strategy review entry) and `research/CEO_DIARY.md` (+2: 2026-10-08 daily health-check entry). Text appends only; no research code, experiment records, signed protocols, or weights. (2) Parent chain: exactly the expected four commits since `0a82aab`; `git rev-list --merges 0a82aab..HEAD` = 0. (3) Credential scan: zero real hits — tight scan for `ghp_`/`gsk_`/`sk-ant-`/`AKIA`/private-key blocks returned nothing; earlier `sk-` matches were false positives inside words (\"task-direction\"). No API keys, secrets, or weight binaries. (4) Exclusions: `experiments/runs/EXP144/hf_cache/` and `EXP145/hf_cache/` remain untracked and outside all commits. (5) Size: two text files; no large files.
+
+**Limitation:** live-remote fast-forward status unverified — no GitHub credentials in this session (remote operation deliberately not attempted); remote-tracking ref `origin/sync/2026-09-29-consolidated` remains stale (`7f0cc64`). Fast-forward MUST be re-verified at push time before pushing; never force-push.
+
+**Push-readiness verdict: READY.** LOG-4878 satisfied for commit `2da3c72`. Push awaits a fresh founder-supplied one-use token.
+
+Next free: LOG-4965.
+
 ## LOG-4963 — Push-readiness verification: commit 1b437a6 (frontier sweep 2026-10-08) — READY (push founder-gated) — 2026-10-08
 
 Push-readiness verification lane per LOG-4878 standing rule (new substantive commit `1b437a6`). Commit-only — **push NOT attempted** (founder-gated; needs a fresh founder-supplied one-use token).
