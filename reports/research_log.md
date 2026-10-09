@@ -1,3 +1,13 @@
+## LOG-4970 — Push-readiness verification: commit c01cd9b (EXP149 batch) — READY (push founder-gated) — 2026-10-09
+
+Push-readiness verification lane per LOG-4878 standing rule (new substantive commit `c01cd9b`: 23 files of real EXP149 work — mint LOG-4967, design/prereg drafts, Law #14 review, repairs, CEO sign LOG-4968, execution HELD LOG-4969 — so earlier READY verdicts do not extend to it). Commit-only — **push NOT attempted** (founder-gated; needs a fresh founder-supplied one-use token, used once transiently, never stored).
+
+**Commit:** `c01cd9b` on `sync/2026-09-29-consolidated` (single parent `b98d1a3`; linear chain, no merges). **Boundary verified:** `b98d1a3..c01cd9b` — exactly 23 files, all additions (+12663/−0): `reports/research_log.md` (+24/−0), `research/CEO_DIARY.md` (+2/−0), three `research/analysis_plans/` drafts (design, pre-reg, Law #14 review), 18 files under `experiments/runs/EXP149/` (bench JSONs + manifests, build/run scripts, logs, summaries, pilot state, diagnostic jsonl). research_log.md diff: LOG-4967/4968/4969 prepended at top, zero deleted or modified lines from earlier LOGs — append-only integrity holds. **Must-never-push scan:** grepped the full staged diff for secret/token/credential patterns (`ghp_|gsk_|sk-ant-|AKIA|as-|ak-|password|api_key|private_key`) — zero real hits (only benign prose like "push tokens", "Modal secret", "one-use token"). No weights, no binaries, no executables, no `__pycache__`, no hf_cache content — `experiments/runs/EXP144/hf_cache/` and `EXP145/hf_cache/` remain untracked and were never staged. Working tree otherwise clean.
+
+**Remote safety:** no push, no fetch, no remote contact of any kind in this lane. Push-anchor rule recorded: at push time the live remote must be fetched fresh and fast-forward verified before pushing; never force-push.
+
+**Push-readiness verdict: READY.** LOG-4878 satisfied for commit `c01cd9b`. Push awaits a fresh founder-supplied one-use token. Next free: LOG-4971.
+
 ## LOG-4969 — EXP149 execution: both studies HELD at Step-0 gates (no verdicts; apparatus boundaries) — 2026-10-09
 
 **EXP149 overall: HELD.** Both death-debt candidates stopped at registered Step-0 gates — no full runs, no verdicts, nothing renegotiated. EXP148's CONTINUE stands untouched (a HELD scopes nothing and overturns nothing). All apparatus guards that ran passed; both stops are the pre-reg's registered measurement boundaries, not findings about the hypotheses.
