@@ -1,3 +1,33 @@
+## LOG-4965 — Friday cull 2026-10-09: weekly falsification-ledger review — three room-closures, zero zombies — 2026-10-09
+
+Acting Research Lead, standing §2 weekly machine (single-lane review/analysis, CPU-only $0). Scope: this week's falsification ledger, backlog triage, stale-language check. No commits, no pushes, no lane writes, no self-advance.
+
+**Falsification ledger (every verdict re-verified against this log):**
+- S7-1 (J7 in-context writable memory): pre-reg SIGNED LOG-4945 → EXP147 HELD ADOPT (LOG-4946/4947; guard (d) tripped — baseline unmeasurable) → J7 follow-up minted EXP148 (LOG-4955) → pre-reg verification SIGN LOG-4956 → dry-run PASS LOG-4957 → **CONTINUE ADOPTED** (LOG-4958/4959): S vs budget-matched CoT b=52, c=12, net +0.2222 (+22.2pp), one-sided McNemar p=2.2833e-07 — **the program's FIRST capability entry** (scoreboard v3.23, LOG-4960). Mandatory caveats carried: S vs B net −0.2500 (B=0.6611 stands); reasoning capability via prompting discipline, NOT autonomous steering; single model, single bench family.
+- S7-2 (J8 cross-family replication): pre-reg SIGNED LOG-4918 → EXP144 **INCONCLUSIVE** (LOG-4919; bench non-portable — G1′ fired 232/240 on GPT-2 BPE, Triton 0/8 single-token; zero forwards) → S7-2b delta pre-reg (Triton→Neptune) SIGNED LOG-4921 → EXP145 **KILL/PIVOT ADOPTED** (LOG-4925/4926; D2 mean shared-direction cosine −0.4587 vs 0.70 bar; cross-family generality killed/bounded).
+- S7-3 (J9 label-free signal inventory): pre-reg SIGNED LOG-4912 → screen CONTINUE (|ρ|=0.49, p=6e-5, LOG-4915) → S5-INV validation EXP143 **KILL** (LOG-4917; held-out ρ=+0.1156, one-sided p=0.8103 — winner's curse).
+- S7-4 (J10 EXP136 powered follow-up): pre-reg SIGNED LOG-4937 → EXP146 **KILL ADOPTED** (LOG-4938/4939; routing-around dead — symmetric noise confirmed).
+- Wednesday adversarial-review session (LOG-4962): nominal — zero pending items; all pre-regs SIGNED, all verdicts ADOPTED, scoreboard v3.23; zero reviewers dispatched.
+- Push-readiness chain: LOG-4961 (commit 0a82aab, READY) → LOG-4963 (1b437a6, READY) → LOG-4964 (2da3c72, READY) → HEAD 735837f; pushes founder-token-gated, never attempted, never force-pushed.
+- Frontier sweeps: 2026-10-08 (SWEEP_2026-10-08.md, LOG-4951/4963) — zero scoreboard-moving steering signals; Oct-8 queued follow-ups (arXiv:2609.35618 primary, CITA ID, Qwen 3.5, MS on-device coding model, Beam/Mistral watches) discharged/rolled into the 2026-10-09 sweep (`frontier_sweep_log.md` §2026-10-09): Anthropic model-cruelty policy clause, Liquid d1 zero-output-token decision models, consciousness-framework v2 (arXiv:2609.35618), CITA (arXiv:2610.02330), Mistral Large 4 Oct 27 / Step 5 Oct 15 / Reflection Beam watch — **zero scoreboard movers; summit direction remains technically uncrowded.**
+
+**Backlog triage (`research/innovation/CANDIDATE_BACKLOG.md`):** every open row carries a current disposition. The S7-1..S7-4 rows were stale ("PROPOSAL" though all four were executed and verdicts landed) — now **EXECUTED & CLOSED** with full verdict references. GPU-gated rows (S3-2; S3-1/S3-3 Stage-0b pilots; S3-9; S4-4 Stage-2) stay gated — untouched, no GPU contact, queue ~16 days dark. STALE-DEPENDENCY (S4-2, S4-3), KILLED (S4-6), STOOD DOWN (S4-5), CLOSED (S4-8/S4-9), EXECUTED/COMPLETE (S5-1..S5-4) rows all verified current.
+
+**Room-closures formalized this cull (binding verdicts from the week; no new experiment verdicts minted here):**
+- EXP143: label-free selection line on this bench family closed as boundary science — PAID-by-room-closure.
+- EXP145: cross-family Gap-generality room closed — PAID-by-room-closure (caveat carried: precondition absent, cannot separate architecture from scale/bench-fit).
+- EXP146: attention-routing family closed as boundary science — PAID-by-room-closure.
+- Burial bookkeeping: three death rows appended to the deaths table; new Graveyard section "Week of 2026-10-03 → 2026-10-09" added.
+- Death-debt OPEN: EXP148's CONTINUE owes follow-up candidates (pre-reg-licensed: hop dose-response; cross-family generality within the EXP145 bound) — **new experiment number by CEO mint only**; not self-minted (single-lane fence).
+
+**Stale-language fixes (living docs only):** `research/benchmarks/PROGRESS_ANALYSIS.md` — retired the standing "Zero capability results" headline and the "SCBI has no entry" gap paragraph; added the EXP148 Update 2026-10-06 block with mandatory caveats; header bumped to updated 2026-10-09. Dated records (sweep files, dated summaries, strategy gates, pre-regs, experiment reports), all signed artifacts (v93/v97/v104 PDFs, signed records), and v106 (awaiting founder QA) untouched. Steering-axis-qualified phrasing ("zero positive signals for autonomous steering") remains TRUE and stands. v102 paper's "zero capability entries" claim stays STALE — flagged for the next paper version; paper not edited here (founder-side).
+
+**Zombie check:** none. No duplicated lanes, no stale un-dispensed items. EXP139 Stage-2 bundle signed and waiting is GPU-gated, not a zombie — NOT dispatched.
+
+**Founder-side (flagged only):** push tokens (SCBI stack + SCBI-paper repo); v106 QA + 10 decision items; EXP139 Stage-2 GPU clearance; Modal secret + account actions; arXiv endorsement resend; the 14-day GPU formal escalation is 2 days unanswered — standing founder alert, recorded not re-escalated.
+
+$0 CPU. No commits/branches/pushes made — working-tree changes left for the push-prep lane. Next free: LOG-4966.
+
 ## LOG-4964 — Push-readiness verification: commit 2da3c72 (living-doc updates 2026-10-08) — READY (push founder-gated) — 2026-10-08
 
 Push-readiness verification lane per LOG-4878 standing rule (new substantive commit `2da3c72`). Commit-only — **push NOT attempted** (founder-gated; needs a fresh founder-supplied one-use token).

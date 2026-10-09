@@ -1,4 +1,4 @@
-# Progress Analysis — where SCBI stands vs the frontier (standing; updated 2026-10-03)
+# Progress Analysis — where SCBI stands vs the frontier (standing; updated 2026-10-09)
 
 *Standing Benchmark Analyst. One page. No softening. Supersedes the
 2026-09-23 snapshot (`PROGRESS_ANALYSIS_2026-09-23.md`, preserved as
@@ -15,7 +15,8 @@ Activation-LQR (closed-loop LQR steering with tracking-error bounds),
 NoisyCoconut (<15% error via selective abstention). The bar for
 "inference-time compute does something" is high, published, and rising.
 
-**SCBI, summarized.** Zero capability results. The EXP094–103 wave is now
+**SCBI, summarized.** One capability result (EXP148, 2026-10-06 — see the
+update block below). The EXP094–103 wave is now
 complete and reads as the boundary map: per-item static L11 geometry
 refuted by pure inertness (EXP094: 0 flips across 120 injection arms);
 the α grid inert at every ratio (EXP095); movement that exists but is not
@@ -45,8 +46,12 @@ survive adversarial testing — and its honesty test passed alongside it:
 the same kill-test discipline that executed EXP106.
 
 **The gap.** Not a margin — an absence. On accuracy-at-matched-compute and
-on compute-saved, SCBI has no entry while the frontier has six systems
-plus the 2026 occupants (SVF, A-LQR, LTPO, LatentMAS). Our lead is
+on compute-saved against the frontier's six systems plus the 2026 occupants
+(SVF, A-LQR, LTPO, LatentMAS), SCBI holds exactly one entry (EXP148 —
+discipline beats budget-matched CoT at matched compute, not the best
+baseline) and no frontier-beating claim: the §D2 bar (powered N≈100+,
+transfer-validated, matched-compute wins over the pinned comparators)
+is unmet. Our lead is
 boundary science: the static + per-item + externally-gated rescue
 program — every tested rescue dead, untestable, or uninterpretable — is
 now a *map*, not a single null. That is real and publishable as a
@@ -353,6 +358,24 @@ produce on $0 CPU did not replicate.
 **Update 2026-10-03:** EXP140 (S4-5/J4) — **HELD (G3-null)** — the free-energy-selector family stands down. Stage-1 CPU pilot ($0, 240 generations + 240 scoring passes, all validity gates PASS, Δθ=0): G1 diversity PASS (28/60 items, bar ≥15), G2 variance PASS (median F-spread 1.29 nats/token, bar ≥0.05), **G3 calibration NULL** — C1 Spearman(F̄, accuracy) ρ=0.08, one-sided p=0.73; C2 D=−0.06, p=0.83. The free-energy signal does not predict correctness — signal absent, not inverted. Diagnostic accuracies: B0=70.0%, min-F selection=70.0%, random-branch=76.7% — selection adds nothing; the stochastic branches were almost never selected (temperature vacuity, as predicted). Stage-2 gate does not open; no GPU. The program's only remaining training-free, target-free evaluator candidate is closed at $0. **Update 2026-10-03:** EXP141 (S4-6/J2) — **KILL** — the metacognitive self-modeling family is dead at Stage 1. 60 P(True) self-eval passes on the committed EXP140 baseline records ($0, all validity gates PASS, Δθ=0): G1 FAIL — std(â_self)=0.000045 (bar >0.01), near-constant P("True") across all 60 items; G2 I-screen NULL — Î=0.0716 nats, 100k-permutation p=0.181; G3 NULL (not inverted). The frozen model carries no correctness information about its own answers — self-bias in its purest form (uniform self-rating), the Xu et al. confound confirmed empirically. No revision stage, no Stage-2 GPU. The honest LOW prior is confirmed; the summit-relevant boundary is established: self-modeling, a consciousness prerequisite, is absent in this frozen model at inference time. **Update 2026-10-03:** EXP139 (S4-4/J1) Stage-1 — contraction license **SURVIVES** (κ̂=0.955971<1, 60/60 CPU passes, all gates PASS; LOG-4886) against the explicit honest prior κ̂≥1 — the J-tier's one surviving positive direction. Stage-2 (520 GPU passes) remains founder-gated and unrun. **Update 2026-10-03:** EXP142 (S4-7/J3) — **HELD (C2 guard fired)** — the spectral phase transition question cannot be answered on this bench as specified. Stage-1 CPU observational pilot ($0, 60 passes + 1440 Gram eigendecompositions, all validity gates PASS, Δθ=0): n_i median 32 (IQR [29,35], range [29,35]) — all 60 items below the N_MIN=40 floor → 0/60 kept → primary test VOID → HELD with reason ("insufficient positions for stable spectra"), never KILL. The design's "n_i ≈ 100 typical" pricing was factually wrong — actual bench prompts are ~30 tokens; the bulk-fit diagnostic (median KS=0.4108, FLAGGED) confirms the guard's firing is measurement-justified. The family is held, not killed; the spectral intervention is never attempted (pre-registered sequencing). **Frontier watch 2026-10-03:** Alibaba's RSI disclosure (Qwen3.8-Max, 33 cycles, 40→45), DeepMind's consciousness-assessment framework (arXiv:2609.35618), frozen-decoder memory compression (arXiv:2609.25537), and Percepta Spotlight (Δθ=0 writable-memory architecture) — all logged; none changes the capability column, which stays at zero. **The tally: ten KILLs, twelve RUN-INVALIDs, four HELDs, four CONTINUEs + one apparatus CONTINUE, two precision certifications.** The capability column stays at zero.
 
 **Update 2026-10-05:** the S7 morning wave closed two lines and fenced a third. **EXP143 (S5-INV) — KILL** (LOG-4917): the S5 free-energy-spread anti-calibration (discovery ρ=−0.4899, p=6e-5) did not replicate on 60 held-out items — primary ρ=+0.1156, one-sided p=0.8103, 95% CI [−0.1426, +0.3590]; secondary selector gain Δ=−0.0417, p=0.7075 — the discovery was winner's curse, and the label-free selection line now has no surviving candidate on this bench family. **EXP144 — INCONCLUSIVE** (LOG-4919): the GPT-2-small cross-family replication aborted at Step 0 — G1′ fired 232/240 on GPT-2 BPE (Triton 0/8 single-token, an intrinsic vocabulary fact); zero forwards, weights never downloaded; the cross-family question untested, not falsified. **EXP145 (S7-2b, Triton→Neptune bench) — KILL/PIVOT** (LOG-4925; independent verdict review LOG-4926 — ADOPTED): D1 passed (layers 8, 10 decode-significant; l\*=8 acc=0.2833, p=0.000999, effect +0.1333) but D2 failed cleanly (mean shared-direction cosine −0.4587 vs 0.70 bar, instrument non-degenerate) — decode+ = FALSE, intervention not licensed; the Decodability Gap's cross-family generality is killed/bounded with the recorded caveat (precondition absent; cannot separate architecture from scale/bench-fit); the Gap remains a Pythia-scale boundary result and the dissociation itself is untested in the GPT-2 family. **Paper: v100 SIGNED** (LOG-4927, 26 pp, MD5 7ea5a49347bdbc17529d9e4c088aefc1) — Fig 8 removed, clean minimal figures; v98/v99 withdrawn from current use after the user's QA rejections; user acceptance pending. **The tally: twelve KILLs, twelve RUN-INVALIDs, four HELDs, four CONTINUEs + one apparatus CONTINUE, two precision certifications, one INCONCLUSIVE.** The capability column stays at zero — SCBI's lead remains boundary science: the 0.7-cosine zero-causal-transfer dissociation with the retraction on record, now joined by a fenced cross-family non-replication and a closed label-free selection line.
+
+**Update 2026-10-06:** EXP148 (S7-1/J7, first-token scoring repair) —
+**the program's first capability entry.** S (WRITE/READ scratchpad) vs
+budget-matched C (CoT): b=52, c=12, net **+0.2222 (+22.2pp)**, one-sided
+McNemar p=**2.2833e-07**, 95% Wald CI (0.1414, 0.3031) → CONTINUE,
+independently verdict-reviewed **ADOPTED** (LOG-4958 execution;
+LOG-4959 review; scoreboard v3.23, LOG-4960). **The zero-capability
+headline that stood in every earlier update block is retired with this
+entry** — this is the first positive capability result in the program's
+history. Mandatory caveats, carried: C-arm absolute 0.1889 — the licensed
+claim is "discipline beats budget-matched CoT," NOT "beats the best
+baseline" (S vs B net −0.2500; B=0.6611 stands); this is reasoning
+capability via prompting discipline, NOT autonomous steering (the
+label-free steering axis stays tied at zero); single model
+(Pythia-410m), single bench family. **The tally: twelve KILLs, twelve
+RUN-INVALIDs, five HELDs, four CONTINUEs + one apparatus CONTINUE, one
+capability CONTINUE (EXP148), two precision certifications, one
+INCONCLUSIVE (EXP144).**
 
 **What closes it.** The §D2 six-condition bar: per-instance construction,
 transfer-validated evaluator, matched-compute wins over ∇-Reasoner /
