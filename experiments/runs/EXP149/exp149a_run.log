@@ -1,0 +1,12 @@
+[run-a] (u0) unit test: 9/9 pass
+[run-a] (u0) PASS
+[run-a] (b) revision match: True
+[run-a] loading Pythia-410m tokenizer + model (eager, fp32, cpu, local snapshot)
+[run-a] (a) pre-hash match: True
+[run-a] (c) bench pin match: True (760 items)
+[run-a] Law #7 disjointness: True
+[run-a] (h) probe: 0.169s/tok; 2-level design projects 9.12h (cap 72h) -> PASS
+[run-a] 4-hop trigger: (h)≤48h=True; (g) headroom=False -> NOT BUILT (omission logged)
+[run-a] 4-hop NOT built: admitting it would breach guard (g) ≤ 200k (registered cap outranks the exploratory trigger)
+[run-a] (d) dry run B accuracy = 0.9000 (bar [0.2,0.8]) -> STOP
+[run-a] HELD: dry-run gate

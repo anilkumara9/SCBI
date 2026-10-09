@@ -1,0 +1,7982 @@
+[
+ {
+  "id": "E149a-0001",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Lomit is shorter than Jurb.",
+   "Jurb is shorter than Sarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E149a-0002",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Lomit is shorter than Yent.",
+   "Yent is shorter than Slun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0003",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Krad is shorter than Miv.",
+   "Miv is shorter than Ulf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0004",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quix is taller than Blip.",
+   "Blip is taller than Prub."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0005",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Plix is shorter than Klap.",
+   "Klap is shorter than Yub."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0006",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Grax is shorter than Zorp.",
+   "Zorp is shorter than Jalp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0007",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Plix is shorter than Crun.",
+   "Crun is shorter than Ralv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0008",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Stov is taller than Nox.",
+   "Nox is taller than Ralv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0009",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Slun is taller than Fweep.",
+   "Fweep is taller than Blix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E149a-0010",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Pruv is shorter than Tunk.",
+   "Tunk is shorter than Grax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0011",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Miv is taller than Jurb.",
+   "Jurb is taller than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0012",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Slun is shorter than Fweep.",
+   "Fweep is shorter than Nox."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0013",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jalp is shorter than Stov.",
+   "Stov is shorter than Vorn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0014",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Klap is shorter than Trun.",
+   "Trun is shorter than Qel."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0015",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blip is shorter than Wex.",
+   "Wex is shorter than Drup."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0016",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is shorter than Jurb.",
+   "Jurb is shorter than Blix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0017",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Prub is taller than Fweep.",
+   "Fweep is taller than Zarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0018",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Klap is shorter than Tiv.",
+   "Tiv is shorter than Flib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0019",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vorn is shorter than Tunk.",
+   "Tunk is shorter than Grax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0020",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Nax is taller than Blip.",
+   "Blip is taller than Miv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0021",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Plix is shorter than Vorn.",
+   "Vorn is shorter than Zorp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0022",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quib is taller than Jurb.",
+   "Jurb is taller than Yent."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0023",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Sarn is shorter than Crun.",
+   "Crun is shorter than Jalp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0024",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Sarn is shorter than Jalp.",
+   "Jalp is shorter than Xob."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0025",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zorp is taller than Hont.",
+   "Hont is taller than Trun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0026",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Xob is taller than Nox.",
+   "Nox is taller than Pruv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0027",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Plix is taller than Stov.",
+   "Stov is taller than Jalp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0028",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Rint is taller than Jalp.",
+   "Jalp is taller than Klap."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0029",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is taller than Lomit.",
+   "Lomit is taller than Sarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0030",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is shorter than Vorn.",
+   "Vorn is shorter than Stov."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0031",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Qel is taller than Trun.",
+   "Trun is taller than Plix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0032",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Miv is taller than Yub.",
+   "Yub is taller than Yent."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0033",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blip is shorter than Krad.",
+   "Krad is shorter than Wex."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0034",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is taller than Trun.",
+   "Trun is taller than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0035",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is shorter than Flib.",
+   "Flib is shorter than Wex."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0036",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is taller than Olp.",
+   "Olp is taller than Blix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E149a-0037",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Crun is taller than Quib.",
+   "Quib is taller than Blip."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0038",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yent is taller than Klap.",
+   "Klap is taller than Vram."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0039",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zorp is shorter than Tunk.",
+   "Tunk is shorter than Slun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0040",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is taller than Tiv.",
+   "Tiv is taller than Sarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0041",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Stov is shorter than Sarn.",
+   "Sarn is shorter than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0042",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Plix is taller than Krad.",
+   "Krad is taller than Blix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0043",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Stov is taller than Fweep.",
+   "Fweep is taller than Quib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0044",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vram is shorter than Tiv.",
+   "Tiv is shorter than Plix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0045",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quix is taller than Crun.",
+   "Crun is taller than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0046",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Hont is taller than Sarn.",
+   "Sarn is taller than Fweep."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0047",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Stov is shorter than Tiv.",
+   "Tiv is shorter than Rint."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0048",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Wex is taller than Sarn.",
+   "Sarn is taller than Miv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0049",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Nox is taller than Jurb.",
+   "Jurb is taller than Zarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0050",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is shorter than Tunk.",
+   "Tunk is shorter than Quix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0051",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ulf is shorter than Yub.",
+   "Yub is shorter than Fweep."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0052",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Plix is shorter than Blip.",
+   "Blip is shorter than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0053",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quix is taller than Drup.",
+   "Drup is taller than Ralv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0054",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Flib is shorter than Jurb.",
+   "Jurb is shorter than Tunk."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0055",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quib is taller than Zarn.",
+   "Zarn is taller than Sarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0056",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quix is taller than Yub.",
+   "Yub is taller than Tiv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0057",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Klap is taller than Lomit.",
+   "Lomit is taller than Vorn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0058",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Lomit is taller than Olp.",
+   "Olp is taller than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E149a-0059",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Prub is taller than Tiv.",
+   "Tiv is taller than Blip."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0060",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Hont is shorter than Miv.",
+   "Miv is shorter than Sarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0061",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yent is shorter than Fweep.",
+   "Fweep is shorter than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0062",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tiv is taller than Blix.",
+   "Blix is taller than Slun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0063",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Olp is taller than Nax.",
+   "Nax is taller than Vorn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0064",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Xob is taller than Pruv.",
+   "Pruv is taller than Qel."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0065",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Trun is shorter than Vram.",
+   "Vram is shorter than Crun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0066",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Pruv is taller than Plix.",
+   "Plix is taller than Wex."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0067",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yub is shorter than Slun.",
+   "Slun is shorter than Tiv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0068",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is shorter than Pruv.",
+   "Pruv is shorter than Krad."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0069",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blip is taller than Vorn.",
+   "Vorn is taller than Lomit."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E149a-0070",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is shorter than Yub.",
+   "Yub is shorter than Quix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0071",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zarn is shorter than Tunk.",
+   "Tunk is shorter than Vram."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0072",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Nax is shorter than Ralv.",
+   "Ralv is shorter than Olp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0073",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tiv is taller than Fweep.",
+   "Fweep is taller than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0074",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Olp is taller than Jurb.",
+   "Jurb is taller than Pruv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0075",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quib is taller than Wex.",
+   "Wex is taller than Vorn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0076",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vram is shorter than Slun.",
+   "Slun is shorter than Fweep."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0077",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Sarn is taller than Xob.",
+   "Xob is taller than Quix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0078",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is shorter than Rint.",
+   "Rint is shorter than Tiv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0079",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Miv is shorter than Tunk.",
+   "Tunk is shorter than Zarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0080",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Drup is taller than Blip.",
+   "Blip is taller than Nox."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0081",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Nax is shorter than Quix.",
+   "Quix is shorter than Wex."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0082",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Rint is taller than Wex.",
+   "Wex is taller than Krad."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0083",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vram is taller than Quix.",
+   "Quix is taller than Nax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0084",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Plix is shorter than Stov.",
+   "Stov is shorter than Quib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0085",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tiv is taller than Vram.",
+   "Vram is taller than Quix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0086",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Qel is taller than Sarn.",
+   "Sarn is taller than Pruv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0087",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Sarn is taller than Hont.",
+   "Hont is taller than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0088",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Qel is taller than Plix.",
+   "Plix is taller than Tiv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0089",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yent is shorter than Vorn.",
+   "Vorn is shorter than Jurb."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0090",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Sarn is taller than Yub.",
+   "Yub is taller than Grax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0091",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is taller than Nax.",
+   "Nax is taller than Quix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0092",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vorn is taller than Prub.",
+   "Prub is taller than Nax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0093",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Hont is taller than Xob.",
+   "Xob is taller than Plix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0094",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Olp is shorter than Drup.",
+   "Drup is shorter than Nax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0095",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Xob is taller than Nox.",
+   "Nox is taller than Ralv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0096",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Hont is taller than Quix.",
+   "Quix is taller than Quib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0097",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Sarn is shorter than Rint.",
+   "Rint is shorter than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0098",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quib is shorter than Lomit.",
+   "Lomit is shorter than Tiv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0099",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is shorter than Zarn.",
+   "Zarn is shorter than Grax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0100",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Olp is shorter than Nox.",
+   "Nox is shorter than Fweep."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0101",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Pruv is shorter than Xob.",
+   "Xob is shorter than Plix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0102",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Qel is taller than Grax.",
+   "Grax is taller than Prub."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0103",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Drup is shorter than Lomit.",
+   "Lomit is shorter than Quib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0104",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is taller than Nax.",
+   "Nax is taller than Pruv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0105",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Nox is taller than Ulf.",
+   "Ulf is taller than Tunk."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0106",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zarn is shorter than Drup.",
+   "Drup is shorter than Rint."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0107",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quix is shorter than Prub.",
+   "Prub is shorter than Tiv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0108",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Rint is shorter than Blip.",
+   "Blip is shorter than Tunk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0109",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Grax is shorter than Pruv.",
+   "Pruv is shorter than Nax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0110",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jalp is shorter than Trun.",
+   "Trun is shorter than Ralv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0111",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Grax is taller than Tunk.",
+   "Tunk is taller than Jalp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0112",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Rint is shorter than Grax.",
+   "Grax is shorter than Blix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0113",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Nax is shorter than Lomit.",
+   "Lomit is shorter than Quib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0114",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Flib is shorter than Miv.",
+   "Miv is shorter than Yent."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0115",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Olp is taller than Jalp.",
+   "Jalp is taller than Sarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0116",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tunk is shorter than Blix.",
+   "Blix is shorter than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0117",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blix is taller than Plix.",
+   "Plix is taller than Jurb."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0118",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tunk is shorter than Ralv.",
+   "Ralv is shorter than Tiv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0119",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ulf is taller than Tunk.",
+   "Tunk is taller than Miv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0120",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tiv is taller than Slun.",
+   "Slun is taller than Ulf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0121",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jalp is shorter than Quix.",
+   "Quix is shorter than Quib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0122",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zarn is shorter than Plix.",
+   "Plix is shorter than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0123",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Rint is taller than Tunk.",
+   "Tunk is taller than Quix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0124",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Stov is taller than Prub.",
+   "Prub is taller than Olp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0125",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Grax is taller than Quix.",
+   "Quix is taller than Vorn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0126",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Wex is shorter than Jurb.",
+   "Jurb is shorter than Blip."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0127",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zorp is taller than Pruv.",
+   "Pruv is taller than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0128",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yub is shorter than Slun.",
+   "Slun is shorter than Flib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0129",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tunk is shorter than Wex.",
+   "Wex is shorter than Olp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0130",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Xob is taller than Vram.",
+   "Vram is taller than Fweep."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0131",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tunk is taller than Hont.",
+   "Hont is taller than Krad."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0132",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Olp is taller than Flib.",
+   "Flib is taller than Jalp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0133",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vorn is taller than Jalp.",
+   "Jalp is taller than Miv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0134",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quib is shorter than Ralv.",
+   "Ralv is shorter than Krad."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0135",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Pruv is taller than Fweep.",
+   "Fweep is taller than Ralv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0136",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quib is taller than Sarn.",
+   "Sarn is taller than Klap."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0137",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tunk is shorter than Olp.",
+   "Olp is shorter than Zarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0138",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Prub is taller than Ulf.",
+   "Ulf is taller than Plix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0139",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Olp is shorter than Hont.",
+   "Hont is shorter than Vram."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0140",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is shorter than Rint.",
+   "Rint is shorter than Blip."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0141",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Drup is taller than Vram.",
+   "Vram is taller than Blix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E149a-0142",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Prub is taller than Jurb.",
+   "Jurb is taller than Flib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0143",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Trun is taller than Vorn.",
+   "Vorn is taller than Drup."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0144",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yub is taller than Grax.",
+   "Grax is taller than Nox."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0145",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Lomit is shorter than Klap.",
+   "Klap is shorter than Zarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0146",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Nox is taller than Jurb.",
+   "Jurb is taller than Flib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0147",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Stov is shorter than Grax.",
+   "Grax is shorter than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0148",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is shorter than Krad.",
+   "Krad is shorter than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0149",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zarn is shorter than Quib.",
+   "Quib is shorter than Flib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0150",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quib is shorter than Wex.",
+   "Wex is shorter than Sarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0151",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zarn is shorter than Nox.",
+   "Nox is shorter than Yub."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0152",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Trun is shorter than Fweep.",
+   "Fweep is shorter than Xob."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0153",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quib is taller than Drup.",
+   "Drup is taller than Blix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0154",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Grax is taller than Plix.",
+   "Plix is taller than Blix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0155",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vram is taller than Krad.",
+   "Krad is taller than Ulf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0156",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jalp is shorter than Sarn.",
+   "Sarn is shorter than Nax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0157",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blip is taller than Xob.",
+   "Xob is taller than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0158",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Klap is taller than Qel.",
+   "Qel is taller than Jurb."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0159",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yent is taller than Wex.",
+   "Wex is taller than Crun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0160",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Flib is taller than Ralv.",
+   "Ralv is taller than Drup."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0161",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Plix is taller than Quib.",
+   "Quib is taller than Trun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E149a-0162",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Plix is shorter than Stov.",
+   "Stov is shorter than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0163",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Prub is shorter than Fweep.",
+   "Fweep is shorter than Jalp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0164",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ulf is shorter than Drup.",
+   "Drup is shorter than Sarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0165",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zorp is taller than Qel.",
+   "Qel is taller than Flib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0166",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tunk is taller than Hont.",
+   "Hont is taller than Plix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0167",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jalp is shorter than Olp.",
+   "Olp is shorter than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0168",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blip is taller than Yub.",
+   "Yub is taller than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0169",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Slun is taller than Blix.",
+   "Blix is taller than Xob."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0170",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Crun is shorter than Ralv.",
+   "Ralv is shorter than Prub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0171",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Lomit is taller than Jalp.",
+   "Jalp is taller than Flib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0172",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tunk is shorter than Slun.",
+   "Slun is shorter than Xob."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0173",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Qel is shorter than Quib.",
+   "Quib is shorter than Quix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0174",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tunk is shorter than Rint.",
+   "Rint is shorter than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0175",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is shorter than Hont.",
+   "Hont is shorter than Prub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0176",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Hont is taller than Vram.",
+   "Vram is taller than Krad."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0177",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Grax is taller than Slun.",
+   "Slun is taller than Stov."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0178",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Rint is shorter than Nox.",
+   "Nox is shorter than Zarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0179",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yent is taller than Vram.",
+   "Vram is taller than Plix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0180",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tunk is shorter than Quib.",
+   "Quib is shorter than Olp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0181",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yub is taller than Flib.",
+   "Flib is taller than Krad."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0182",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vram is shorter than Blix.",
+   "Blix is shorter than Plix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0183",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Klap is taller than Hont.",
+   "Hont is taller than Fweep."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0184",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Krad is shorter than Lomit.",
+   "Lomit is shorter than Prub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0185",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jurb is shorter than Lomit.",
+   "Lomit is shorter than Zarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0186",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Slun is shorter than Ulf.",
+   "Ulf is shorter than Stov."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0187",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Xob is taller than Ulf.",
+   "Ulf is taller than Vram."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0188",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jurb is taller than Plix.",
+   "Plix is taller than Prub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0189",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zarn is taller than Pruv.",
+   "Pruv is taller than Tunk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0190",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Flib is shorter than Quib.",
+   "Quib is shorter than Crun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0191",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Miv is taller than Blip.",
+   "Blip is taller than Olp.",
+   "Olp is taller than Vorn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0192",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is taller than Klap.",
+   "Klap is taller than Tiv.",
+   "Tiv is taller than Nox."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0193",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Hont is taller than Quix.",
+   "Quix is taller than Qel.",
+   "Qel is taller than Trun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0194",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is shorter than Zarn.",
+   "Zarn is shorter than Hont.",
+   "Hont is shorter than Pruv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0195",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Drup is taller than Vorn.",
+   "Vorn is taller than Krad.",
+   "Krad is taller than Rint."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0196",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is taller than Slun.",
+   "Slun is taller than Stov.",
+   "Stov is taller than Quix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0197",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is taller than Sarn.",
+   "Sarn is taller than Yub.",
+   "Yub is taller than Tunk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0198",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is taller than Rint.",
+   "Rint is taller than Miv.",
+   "Miv is taller than Zarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0199",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blip is taller than Drup.",
+   "Drup is taller than Sarn.",
+   "Sarn is taller than Qel."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0200",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is shorter than Blip.",
+   "Blip is shorter than Jurb.",
+   "Jurb is shorter than Blix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0201",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quib is taller than Wex.",
+   "Wex is taller than Blip.",
+   "Blip is taller than Vorn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0202",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nox is taller than Xob.",
+   "Xob is taller than Ulf.",
+   "Ulf is taller than Quix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0203",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Prub is shorter than Fweep.",
+   "Fweep is shorter than Vram.",
+   "Vram is shorter than Trun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0204",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nox is taller than Olp.",
+   "Olp is taller than Rint.",
+   "Rint is taller than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0205",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quix is shorter than Zorp.",
+   "Zorp is shorter than Prub.",
+   "Prub is shorter than Xob."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0206",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Olp is taller than Stov.",
+   "Stov is taller than Fweep.",
+   "Fweep is taller than Plix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0207",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nax is taller than Qel.",
+   "Qel is taller than Rint.",
+   "Rint is taller than Xob."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0208",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Olp is shorter than Drup.",
+   "Drup is shorter than Quib.",
+   "Quib is shorter than Yub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0209",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Prub is shorter than Flib.",
+   "Flib is shorter than Pruv.",
+   "Pruv is shorter than Wex."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0210",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nax is taller than Slun.",
+   "Slun is taller than Vorn.",
+   "Vorn is taller than Prub."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0211",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Miv is taller than Zorp.",
+   "Zorp is taller than Flib.",
+   "Flib is taller than Xob."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0212",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vram is shorter than Krad.",
+   "Krad is shorter than Tunk.",
+   "Tunk is shorter than Plix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0213",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Flib is shorter than Fweep.",
+   "Fweep is shorter than Nox.",
+   "Nox is shorter than Qel."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0214",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Pruv is shorter than Fweep.",
+   "Fweep is shorter than Nox.",
+   "Nox is shorter than Zarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0215",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is taller than Crun.",
+   "Crun is taller than Quib.",
+   "Quib is taller than Tunk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0216",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jalp is shorter than Slun.",
+   "Slun is shorter than Jurb.",
+   "Jurb is shorter than Ulf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0217",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is shorter than Vram.",
+   "Vram is shorter than Nox.",
+   "Nox is shorter than Quix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0218",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Pruv is shorter than Jurb.",
+   "Jurb is shorter than Wex.",
+   "Wex is shorter than Fweep."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0219",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Slun is shorter than Rint.",
+   "Rint is shorter than Sarn.",
+   "Sarn is shorter than Plix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0220",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is taller than Wex.",
+   "Wex is taller than Jurb.",
+   "Jurb is taller than Zorp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0221",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Trun is taller than Miv.",
+   "Miv is taller than Jurb.",
+   "Jurb is taller than Quix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0222",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Qel is taller than Pruv.",
+   "Pruv is taller than Flib.",
+   "Flib is taller than Zorp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0223",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Sarn is taller than Drup.",
+   "Drup is taller than Jurb.",
+   "Jurb is taller than Quix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0224",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Rint is shorter than Drup.",
+   "Drup is shorter than Tiv.",
+   "Tiv is shorter than Qel."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0225",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quib is taller than Fweep.",
+   "Fweep is taller than Ulf.",
+   "Ulf is taller than Blip."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0226",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zorp is shorter than Ulf.",
+   "Ulf is shorter than Blip.",
+   "Blip is shorter than Stov."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0227",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ralv is shorter than Drup.",
+   "Drup is shorter than Blix.",
+   "Blix is shorter than Yub."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0228",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Fweep is shorter than Quib.",
+   "Quib is shorter than Plix.",
+   "Plix is shorter than Krad."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0229",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Flib is taller than Wex.",
+   "Wex is taller than Crun.",
+   "Crun is taller than Tiv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0230",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Miv is shorter than Klap.",
+   "Klap is shorter than Ulf.",
+   "Ulf is shorter than Flib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0231",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Rint is shorter than Blix.",
+   "Blix is shorter than Stov.",
+   "Stov is shorter than Slun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0232",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is shorter than Nax.",
+   "Nax is shorter than Plix.",
+   "Plix is shorter than Tunk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0233",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Tiv is taller than Zorp.",
+   "Zorp is taller than Drup.",
+   "Drup is taller than Trun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E149a-0234",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is shorter than Blix.",
+   "Blix is shorter than Blip.",
+   "Blip is shorter than Nox."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0235",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Qel is taller than Grax.",
+   "Grax is taller than Krad.",
+   "Krad is taller than Sarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0236",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Qel is shorter than Sarn.",
+   "Sarn is shorter than Tunk.",
+   "Tunk is shorter than Plix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0237",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Wex is shorter than Sarn.",
+   "Sarn is shorter than Rint.",
+   "Rint is shorter than Tiv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0238",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ulf is taller than Drup.",
+   "Drup is taller than Rint.",
+   "Rint is taller than Pruv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0239",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Hont is taller than Yub.",
+   "Yub is taller than Stov.",
+   "Stov is taller than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0240",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jurb is shorter than Yent.",
+   "Yent is shorter than Flib.",
+   "Flib is shorter than Blix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E149a-0241",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ralv is shorter than Lomit.",
+   "Lomit is shorter than Zarn.",
+   "Zarn is shorter than Qel."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0242",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Flib is shorter than Pruv.",
+   "Pruv is shorter than Yub.",
+   "Yub is shorter than Slun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0243",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quix is taller than Drup.",
+   "Drup is taller than Zorp.",
+   "Zorp is taller than Yent."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0244",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zorp is shorter than Vram.",
+   "Vram is shorter than Ralv.",
+   "Ralv is shorter than Jalp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0245",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is shorter than Olp.",
+   "Olp is shorter than Jurb.",
+   "Jurb is shorter than Flib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0246",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Slun is shorter than Miv.",
+   "Miv is shorter than Krad.",
+   "Krad is shorter than Wex."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E149a-0247",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ulf is taller than Jurb.",
+   "Jurb is taller than Zorp.",
+   "Zorp is taller than Flib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0248",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is shorter than Drup.",
+   "Drup is shorter than Yub.",
+   "Yub is shorter than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0249",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Sarn is shorter than Tunk.",
+   "Tunk is shorter than Jurb.",
+   "Jurb is shorter than Krad."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0250",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Tiv is shorter than Plix.",
+   "Plix is shorter than Wex.",
+   "Wex is shorter than Nax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0251",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is taller than Flib.",
+   "Flib is taller than Qel.",
+   "Qel is taller than Trun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0252",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Plix is shorter than Olp.",
+   "Olp is shorter than Flib.",
+   "Flib is shorter than Xob."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0253",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Slun is taller than Crun.",
+   "Crun is taller than Pruv.",
+   "Pruv is taller than Qel."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0254",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Klap is taller than Blix.",
+   "Blix is taller than Quix.",
+   "Quix is taller than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0255",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yent is shorter than Hont.",
+   "Hont is shorter than Plix.",
+   "Plix is shorter than Tiv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0256",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Fweep is taller than Nax.",
+   "Nax is taller than Rint.",
+   "Rint is taller than Flib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0257",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Fweep is taller than Rint.",
+   "Rint is taller than Sarn.",
+   "Sarn is taller than Nox."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0258",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Wex is shorter than Slun.",
+   "Slun is shorter than Vram.",
+   "Vram is shorter than Crun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E149a-0259",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Klap is taller than Pruv.",
+   "Pruv is taller than Fweep.",
+   "Fweep is taller than Prub."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0260",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Pruv is taller than Blip.",
+   "Blip is taller than Klap.",
+   "Klap is taller than Qel."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0261",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Sarn is taller than Drup.",
+   "Drup is taller than Crun.",
+   "Crun is taller than Xob."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0262",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Flib is shorter than Grax.",
+   "Grax is shorter than Klap.",
+   "Klap is shorter than Jurb."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0263",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is taller than Nax.",
+   "Nax is taller than Tiv.",
+   "Tiv is taller than Blix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0264",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jalp is taller than Crun.",
+   "Crun is taller than Vorn.",
+   "Vorn is taller than Flib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0265",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Olp is shorter than Klap.",
+   "Klap is shorter than Vorn.",
+   "Vorn is shorter than Wex."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0266",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ralv is taller than Klap.",
+   "Klap is taller than Trun.",
+   "Trun is taller than Tiv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0267",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Olp is taller than Trun.",
+   "Trun is taller than Slun.",
+   "Slun is taller than Yub."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0268",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is shorter than Zarn.",
+   "Zarn is shorter than Miv.",
+   "Miv is shorter than Klap."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0269",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Prub is taller than Sarn.",
+   "Sarn is taller than Yub.",
+   "Yub is taller than Slun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0270",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Flib is taller than Zorp.",
+   "Zorp is taller than Hont.",
+   "Hont is taller than Vram."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0271",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Flib is shorter than Crun.",
+   "Crun is shorter than Fweep.",
+   "Fweep is shorter than Ralv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0272",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is shorter than Quib.",
+   "Quib is shorter than Pruv.",
+   "Pruv is shorter than Crun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0273",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Tunk is shorter than Quib.",
+   "Quib is shorter than Nax.",
+   "Nax is shorter than Nox."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0274",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blip is shorter than Vorn.",
+   "Vorn is shorter than Drup.",
+   "Drup is shorter than Krad."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0275",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Wex is shorter than Slun.",
+   "Slun is shorter than Sarn.",
+   "Sarn is shorter than Jurb."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E149a-0276",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is shorter than Nox.",
+   "Nox is shorter than Jalp.",
+   "Jalp is shorter than Tunk."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0277",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is taller than Tunk.",
+   "Tunk is taller than Xob.",
+   "Xob is taller than Klap."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0278",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is shorter than Yent.",
+   "Yent is shorter than Ulf.",
+   "Ulf is shorter than Ralv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0279",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Olp is shorter than Ulf.",
+   "Ulf is shorter than Sarn.",
+   "Sarn is shorter than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0280",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quix is taller than Stov.",
+   "Stov is taller than Pruv.",
+   "Pruv is taller than Zorp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0281",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is taller than Quib.",
+   "Quib is taller than Ulf.",
+   "Ulf is taller than Lomit."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E149a-0282",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Pruv is taller than Zarn.",
+   "Zarn is taller than Fweep.",
+   "Fweep is taller than Sarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0283",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is taller than Yent.",
+   "Yent is taller than Stov.",
+   "Stov is taller than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0284",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Sarn is taller than Crun.",
+   "Crun is taller than Nox.",
+   "Nox is taller than Tiv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0285",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is taller than Nax.",
+   "Nax is taller than Zarn.",
+   "Zarn is taller than Flib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0286",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yent is shorter than Sarn.",
+   "Sarn is shorter than Vram.",
+   "Vram is shorter than Flib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0287",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is shorter than Blix.",
+   "Blix is shorter than Quib.",
+   "Quib is shorter than Klap."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0288",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is taller than Drup.",
+   "Drup is taller than Trun.",
+   "Trun is taller than Nax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0289",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ralv is shorter than Lomit.",
+   "Lomit is shorter than Wex.",
+   "Wex is shorter than Slun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0290",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Slun is taller than Quix.",
+   "Quix is taller than Yent.",
+   "Yent is taller than Flib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0291",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is taller than Tunk.",
+   "Tunk is taller than Pruv.",
+   "Pruv is taller than Miv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0292",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yent is shorter than Vram.",
+   "Vram is shorter than Krad.",
+   "Krad is shorter than Quix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0293",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nax is shorter than Prub.",
+   "Prub is shorter than Stov.",
+   "Stov is shorter than Tunk."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0294",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Stov is shorter than Drup.",
+   "Drup is shorter than Jurb.",
+   "Jurb is shorter than Trun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0295",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zorp is shorter than Qel.",
+   "Qel is shorter than Sarn.",
+   "Sarn is shorter than Vram."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0296",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Hont is shorter than Vorn.",
+   "Vorn is shorter than Zarn.",
+   "Zarn is shorter than Tunk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0297",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jurb is taller than Plix.",
+   "Plix is taller than Qel.",
+   "Qel is taller than Rint."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0298",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ralv is shorter than Miv.",
+   "Miv is shorter than Stov.",
+   "Stov is shorter than Rint."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0299",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zorp is shorter than Fweep.",
+   "Fweep is shorter than Hont.",
+   "Hont is shorter than Pruv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0300",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Fweep is shorter than Miv.",
+   "Miv is shorter than Blix.",
+   "Blix is shorter than Drup."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0301",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vram is shorter than Zorp.",
+   "Zorp is shorter than Blix.",
+   "Blix is shorter than Drup."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0302",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Slun is taller than Vram.",
+   "Vram is taller than Xob.",
+   "Xob is taller than Yub."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0303",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Miv is shorter than Blix.",
+   "Blix is shorter than Sarn.",
+   "Sarn is shorter than Ralv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0304",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Olp is taller than Yub.",
+   "Yub is taller than Slun.",
+   "Slun is taller than Jalp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0305",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Grax is taller than Vram.",
+   "Vram is taller than Ulf.",
+   "Ulf is taller than Zorp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0306",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Qel is taller than Plix.",
+   "Plix is taller than Zorp.",
+   "Zorp is taller than Stov."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0307",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Klap is taller than Nox.",
+   "Nox is taller than Nax.",
+   "Nax is taller than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0308",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Trun is shorter than Fweep.",
+   "Fweep is shorter than Jurb.",
+   "Jurb is shorter than Slun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0309",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Prub is taller than Qel.",
+   "Qel is taller than Stov.",
+   "Stov is taller than Yub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0310",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yub is taller than Quix.",
+   "Quix is taller than Yent.",
+   "Yent is taller than Tiv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0311",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Grax is shorter than Stov.",
+   "Stov is shorter than Tunk.",
+   "Tunk is shorter than Sarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0312",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Stov is shorter than Miv.",
+   "Miv is shorter than Ralv.",
+   "Ralv is shorter than Jalp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0313",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is shorter than Wex.",
+   "Wex is shorter than Quib.",
+   "Quib is shorter than Blip."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0314",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Tiv is shorter than Blix.",
+   "Blix is shorter than Ralv.",
+   "Ralv is shorter than Blip."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0315",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Flib is taller than Prub.",
+   "Prub is taller than Blip.",
+   "Blip is taller than Fweep."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0316",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zorp is shorter than Grax.",
+   "Grax is shorter than Krad.",
+   "Krad is shorter than Klap."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0317",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Olp is shorter than Xob.",
+   "Xob is shorter than Grax.",
+   "Grax is shorter than Ulf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0318",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is taller than Pruv.",
+   "Pruv is taller than Krad.",
+   "Krad is taller than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0319",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is taller than Sarn.",
+   "Sarn is taller than Flib.",
+   "Flib is taller than Grax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0320",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Rint is shorter than Zarn.",
+   "Zarn is shorter than Vram.",
+   "Vram is shorter than Blix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E149a-0321",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vram is taller than Sarn.",
+   "Sarn is taller than Hont.",
+   "Hont is taller than Klap."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0322",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blip is taller than Qel.",
+   "Qel is taller than Ulf.",
+   "Ulf is taller than Slun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0323",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nox is taller than Quix.",
+   "Quix is taller than Qel.",
+   "Qel is taller than Ralv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0324",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zorp is shorter than Olp.",
+   "Olp is shorter than Prub.",
+   "Prub is shorter than Klap."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0325",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nox is shorter than Jurb.",
+   "Jurb is shorter than Olp.",
+   "Olp is shorter than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0326",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is shorter than Vram.",
+   "Vram is shorter than Yent.",
+   "Yent is shorter than Olp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0327",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Stov is shorter than Zarn.",
+   "Zarn is shorter than Nax.",
+   "Nax is shorter than Plix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0328",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is taller than Klap.",
+   "Klap is taller than Ralv.",
+   "Ralv is taller than Blix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E149a-0329",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ralv is taller than Prub.",
+   "Prub is taller than Yent.",
+   "Yent is taller than Olp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0330",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yub is shorter than Quib.",
+   "Quib is shorter than Jurb.",
+   "Jurb is shorter than Jalp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0331",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Krad is taller than Grax.",
+   "Grax is taller than Blix.",
+   "Blix is taller than Zorp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0332",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Wex is taller than Yent.",
+   "Yent is taller than Grax.",
+   "Grax is taller than Nox."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E149a-0333",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Tiv is taller than Blip.",
+   "Blip is taller than Miv.",
+   "Miv is taller than Prub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0334",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jalp is shorter than Grax.",
+   "Grax is shorter than Rint.",
+   "Rint is shorter than Xob."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0335",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is taller than Nox.",
+   "Nox is taller than Fweep.",
+   "Fweep is taller than Rint."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0336",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Hont is taller than Klap.",
+   "Klap is taller than Ralv.",
+   "Ralv is taller than Fweep."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0337",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blix is shorter than Crun.",
+   "Crun is shorter than Tiv.",
+   "Tiv is shorter than Drup."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E149a-0338",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Qel is taller than Yub.",
+   "Yub is taller than Zarn.",
+   "Zarn is taller than Stov."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0339",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Hont is shorter than Yent.",
+   "Yent is shorter than Ulf.",
+   "Ulf is shorter than Tiv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0340",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Trun is taller than Xob.",
+   "Xob is taller than Lomit.",
+   "Lomit is taller than Klap."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0341",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Stov is taller than Prub.",
+   "Prub is taller than Grax.",
+   "Grax is taller than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0342",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is shorter than Hont.",
+   "Hont is shorter than Klap.",
+   "Klap is shorter than Zarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0343",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Slun is taller than Nox.",
+   "Nox is taller than Rint.",
+   "Rint is taller than Lomit."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E149a-0344",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Sarn is taller than Ulf.",
+   "Ulf is taller than Blip.",
+   "Blip is taller than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0345",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Krad is shorter than Yub.",
+   "Yub is shorter than Miv.",
+   "Miv is shorter than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0346",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ulf is shorter than Vorn.",
+   "Vorn is shorter than Flib.",
+   "Flib is shorter than Miv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0347",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is taller than Grax.",
+   "Grax is taller than Quib.",
+   "Quib is taller than Nax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0348",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is taller than Grax.",
+   "Grax is taller than Krad.",
+   "Krad is taller than Yub."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0349",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Krad is taller than Ulf.",
+   "Ulf is taller than Yent.",
+   "Yent is taller than Drup."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0350",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quib is taller than Rint.",
+   "Rint is taller than Fweep.",
+   "Fweep is taller than Xob."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0351",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quib is taller than Nox.",
+   "Nox is taller than Miv.",
+   "Miv is taller than Sarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0352",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Sarn is taller than Grax.",
+   "Grax is taller than Tiv.",
+   "Tiv is taller than Vorn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0353",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blix is shorter than Flib.",
+   "Flib is shorter than Quix.",
+   "Quix is shorter than Fweep."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0354",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is taller than Ralv.",
+   "Ralv is taller than Yub.",
+   "Yub is taller than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0355",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is shorter than Hont.",
+   "Hont is shorter than Yent.",
+   "Yent is shorter than Tunk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0356",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Drup is shorter than Sarn.",
+   "Sarn is shorter than Lomit.",
+   "Lomit is shorter than Ulf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0357",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Lomit is shorter than Blix.",
+   "Blix is shorter than Trun.",
+   "Trun is shorter than Krad."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E149a-0358",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Rint is shorter than Grax.",
+   "Grax is shorter than Ulf.",
+   "Ulf is shorter than Nox."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0359",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Pruv is shorter than Tunk.",
+   "Tunk is shorter than Xob.",
+   "Xob is shorter than Yent."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0360",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quix is shorter than Wex.",
+   "Wex is shorter than Fweep.",
+   "Fweep is shorter than Zarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0361",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Lomit is taller than Pruv.",
+   "Pruv is taller than Blix.",
+   "Blix is taller than Crun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E149a-0362",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jalp is taller than Yub.",
+   "Yub is taller than Vorn.",
+   "Vorn is taller than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0363",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is shorter than Slun.",
+   "Slun is shorter than Nax.",
+   "Nax is shorter than Krad."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0364",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nax is taller than Slun.",
+   "Slun is taller than Wex.",
+   "Wex is taller than Ulf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0365",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Slun is shorter than Stov.",
+   "Stov is shorter than Prub.",
+   "Prub is shorter than Pruv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0366",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Miv is shorter than Sarn.",
+   "Sarn is shorter than Yub.",
+   "Yub is shorter than Zarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0367",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Olp is taller than Qel.",
+   "Qel is taller than Quix.",
+   "Quix is taller than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0368",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Lomit is shorter than Miv.",
+   "Miv is shorter than Hont.",
+   "Hont is shorter than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E149a-0369",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blip is shorter than Nox.",
+   "Nox is shorter than Prub.",
+   "Prub is shorter than Sarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0370",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blix is shorter than Sarn.",
+   "Sarn is shorter than Lomit.",
+   "Lomit is shorter than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0371",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Krad is shorter than Trun.",
+   "Trun is shorter than Ulf.",
+   "Ulf is shorter than Stov."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0372",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Tunk is taller than Prub.",
+   "Prub is taller than Sarn.",
+   "Sarn is taller than Tiv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0373",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Olp is taller than Yent.",
+   "Yent is taller than Yub.",
+   "Yub is taller than Miv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0374",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Klap is shorter than Quix.",
+   "Quix is shorter than Zorp.",
+   "Zorp is shorter than Lomit."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0375",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Qel is shorter than Prub.",
+   "Prub is shorter than Tiv.",
+   "Tiv is shorter than Ulf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0376",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Qel is taller than Wex.",
+   "Wex is taller than Xob.",
+   "Xob is taller than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0377",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Sarn is shorter than Drup.",
+   "Drup is shorter than Yent.",
+   "Yent is shorter than Olp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0378",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ralv is shorter than Blip.",
+   "Blip is shorter than Jurb.",
+   "Jurb is shorter than Zorp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0379",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Pruv is taller than Ralv.",
+   "Ralv is taller than Krad.",
+   "Krad is taller than Tunk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0380",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blip is taller than Fweep.",
+   "Fweep is taller than Blix.",
+   "Blix is taller than Xob."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0381",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Crun's hat is Blix.",
+   "Blix's friend is Krad."
+  ],
+  "question": "Who is Crun's hat's friend?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0382",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Jurb's friend is Quib.",
+   "Quib's hat is Tiv."
+  ],
+  "question": "Who is Jurb's friend's hat?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0383",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Pruv's pet is Grax.",
+   "Grax's hat is Olp."
+  ],
+  "question": "Who is Pruv's pet's hat?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0384",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Blix's pet is Krad.",
+   "Krad's book is Vram."
+  ],
+  "question": "Who is Blix's pet's book?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0385",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Yub's book is Xob.",
+   "Xob's toy is Sarn."
+  ],
+  "question": "Who is Yub's book's toy?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0386",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Klap's hat is Tunk.",
+   "Tunk's book is Xob."
+  ],
+  "question": "Who is Klap's hat's book?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0387",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tiv's book is Olp.",
+   "Olp's car is Sarn."
+  ],
+  "question": "Who is Tiv's book's car?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0388",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Jalp's book is Stov.",
+   "Stov's friend is Tunk."
+  ],
+  "question": "Who is Jalp's book's friend?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0389",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Grax's toy is Sarn.",
+   "Sarn's car is Slun."
+  ],
+  "question": "Who is Grax's toy's car?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0390",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Blip's toy is Plix.",
+   "Plix's pet is Rint."
+  ],
+  "question": "Who is Blip's toy's pet?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0391",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Blip's hat is Trun.",
+   "Trun's friend is Hont."
+  ],
+  "question": "Who is Blip's hat's friend?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0392",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Blip's book is Vram.",
+   "Vram's friend is Yent."
+  ],
+  "question": "Who is Blip's book's friend?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0393",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Vram's friend is Yub.",
+   "Yub's toy is Zorp."
+  ],
+  "question": "Who is Vram's friend's toy?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0394",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ulf's friend is Nax.",
+   "Nax's book is Fweep."
+  ],
+  "question": "Who is Ulf's friend's book?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0395",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Lomit's car is Tiv.",
+   "Tiv's hat is Quix."
+  ],
+  "question": "Who is Lomit's car's hat?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0396",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Nax's toy is Lomit.",
+   "Lomit's hat is Yub."
+  ],
+  "question": "Who is Nax's toy's hat?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0397",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Zorp's hat is Ulf.",
+   "Ulf's toy is Prub."
+  ],
+  "question": "Who is Zorp's hat's toy?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0398",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tiv's toy is Wex.",
+   "Wex's hat is Prub."
+  ],
+  "question": "Who is Tiv's toy's hat?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0399",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tiv's toy is Plix.",
+   "Plix's car is Yent."
+  ],
+  "question": "Who is Tiv's toy's car?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0400",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Wex's toy is Qel.",
+   "Qel's friend is Plix."
+  ],
+  "question": "Who is Wex's toy's friend?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0401",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Miv's hat is Lomit.",
+   "Lomit's pet is Vorn."
+  ],
+  "question": "Who is Miv's hat's pet?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0402",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Vram's friend is Hont.",
+   "Hont's pet is Nax."
+  ],
+  "question": "Who is Vram's friend's pet?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0403",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Yent's friend is Stov.",
+   "Stov's toy is Qel."
+  ],
+  "question": "Who is Yent's friend's toy?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0404",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Vram's pet is Rint.",
+   "Rint's hat is Pruv."
+  ],
+  "question": "Who is Vram's pet's hat?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0405",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Stov's pet is Jalp.",
+   "Jalp's friend is Drup."
+  ],
+  "question": "Who is Stov's pet's friend?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0406",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ulf's book is Stov.",
+   "Stov's pet is Quib."
+  ],
+  "question": "Who is Ulf's book's pet?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0407",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Quix's toy is Quib.",
+   "Quib's book is Ralv."
+  ],
+  "question": "Who is Quix's toy's book?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0408",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Zorp's hat is Fweep.",
+   "Fweep's pet is Sarn."
+  ],
+  "question": "Who is Zorp's hat's pet?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0409",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Fweep's pet is Jalp.",
+   "Jalp's book is Quib."
+  ],
+  "question": "Who is Fweep's pet's book?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0410",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ralv's book is Zarn.",
+   "Zarn's hat is Plix."
+  ],
+  "question": "Who is Ralv's book's hat?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0411",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tunk's friend is Yub.",
+   "Yub's hat is Blip."
+  ],
+  "question": "Who is Tunk's friend's hat?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0412",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Zarn's toy is Quix.",
+   "Quix's car is Plix."
+  ],
+  "question": "Who is Zarn's toy's car?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0413",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Vorn's pet is Ralv.",
+   "Ralv's hat is Slun."
+  ],
+  "question": "Who is Vorn's pet's hat?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0414",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Drup's car is Vorn.",
+   "Vorn's hat is Tiv."
+  ],
+  "question": "Who is Drup's car's hat?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0415",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Wex's pet is Tiv.",
+   "Tiv's car is Fweep."
+  ],
+  "question": "Who is Wex's pet's car?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0416",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Sarn's friend is Vram.",
+   "Vram's pet is Rint."
+  ],
+  "question": "Who is Sarn's friend's pet?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0417",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Klap's pet is Vorn.",
+   "Vorn's car is Plix."
+  ],
+  "question": "Who is Klap's pet's car?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0418",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Prub's car is Qel.",
+   "Qel's friend is Blix."
+  ],
+  "question": "Who is Prub's car's friend?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E149a-0419",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ralv's hat is Xob.",
+   "Xob's friend is Trun."
+  ],
+  "question": "Who is Ralv's hat's friend?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E149a-0420",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ulf's car is Qel.",
+   "Qel's friend is Nox."
+  ],
+  "question": "Who is Ulf's car's friend?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0421",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Pruv's hat is Quib.",
+   "Quib's book is Rint."
+  ],
+  "question": "Who is Pruv's hat's book?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0422",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Blip's hat is Zarn.",
+   "Zarn's car is Nox."
+  ],
+  "question": "Who is Blip's hat's car?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0423",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tiv's toy is Grax.",
+   "Grax's car is Blip."
+  ],
+  "question": "Who is Tiv's toy's car?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0424",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Olp's car is Flib.",
+   "Flib's toy is Jalp."
+  ],
+  "question": "Who is Olp's car's toy?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0425",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Xob's pet is Rint.",
+   "Rint's car is Prub."
+  ],
+  "question": "Who is Xob's pet's car?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0426",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Stov's car is Jurb.",
+   "Jurb's friend is Tunk."
+  ],
+  "question": "Who is Stov's car's friend?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0427",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Blip's hat is Klap.",
+   "Klap's book is Quib."
+  ],
+  "question": "Who is Blip's hat's book?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0428",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Jurb's hat is Vram.",
+   "Vram's friend is Trun."
+  ],
+  "question": "Who is Jurb's hat's friend?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E149a-0429",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Klap's hat is Olp.",
+   "Olp's car is Krad."
+  ],
+  "question": "Who is Klap's hat's car?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0430",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ralv's hat is Vram.",
+   "Vram's friend is Nox."
+  ],
+  "question": "Who is Ralv's hat's friend?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0431",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Zorp's book is Zarn.",
+   "Zarn's pet is Fweep."
+  ],
+  "question": "Who is Zorp's book's pet?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0432",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Blix's pet is Qel.",
+   "Qel's book is Crun."
+  ],
+  "question": "Who is Blix's pet's book?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0433",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ulf's toy is Drup.",
+   "Drup's book is Vram."
+  ],
+  "question": "Who is Ulf's toy's book?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0434",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Trun's hat is Nox.",
+   "Nox's toy is Grax."
+  ],
+  "question": "Who is Trun's hat's toy?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0435",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Yent's hat is Vram.",
+   "Vram's toy is Yub."
+  ],
+  "question": "Who is Yent's hat's toy?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0436",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Miv's car is Flib.",
+   "Flib's hat is Grax."
+  ],
+  "question": "Who is Miv's car's hat?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0437",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Pruv's hat is Quib.",
+   "Quib's toy is Vram."
+  ],
+  "question": "Who is Pruv's hat's toy?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0438",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Nax's car is Flib.",
+   "Flib's hat is Jurb."
+  ],
+  "question": "Who is Nax's car's hat?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0439",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tiv's friend is Zarn.",
+   "Zarn's hat is Stov."
+  ],
+  "question": "Who is Tiv's friend's hat?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0440",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Wex's friend is Nax.",
+   "Nax's toy is Yub."
+  ],
+  "question": "Who is Wex's friend's toy?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0441",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Jurb's book is Miv.",
+   "Miv's pet is Vorn."
+  ],
+  "question": "Who is Jurb's book's pet?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0442",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Yent's car is Xob.",
+   "Xob's friend is Miv."
+  ],
+  "question": "Who is Yent's car's friend?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0443",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Qel's book is Klap.",
+   "Klap's friend is Jalp."
+  ],
+  "question": "Who is Qel's book's friend?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0444",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Yub's toy is Quix.",
+   "Quix's hat is Vram."
+  ],
+  "question": "Who is Yub's toy's hat?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0445",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Vorn's book is Blip.",
+   "Blip's pet is Olp."
+  ],
+  "question": "Who is Vorn's book's pet?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0446",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Trun's pet is Drup.",
+   "Drup's hat is Qel."
+  ],
+  "question": "Who is Trun's pet's hat?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0447",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Drup's friend is Ulf.",
+   "Ulf's car is Blip."
+  ],
+  "question": "Who is Drup's friend's car?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0448",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Fweep's toy is Prub.",
+   "Prub's hat is Klap."
+  ],
+  "question": "Who is Fweep's toy's hat?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0449",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Pruv's car is Blip.",
+   "Blip's pet is Qel."
+  ],
+  "question": "Who is Pruv's car's pet?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0450",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Vorn's pet is Rint.",
+   "Rint's friend is Sarn."
+  ],
+  "question": "Who is Vorn's pet's friend?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0451",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Yent's car is Yub.",
+   "Yub's hat is Flib."
+  ],
+  "question": "Who is Yent's car's hat?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0452",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Rint's pet is Grax.",
+   "Grax's friend is Fweep."
+  ],
+  "question": "Who is Rint's pet's friend?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0453",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Fweep's hat is Klap.",
+   "Klap's pet is Miv."
+  ],
+  "question": "Who is Fweep's hat's pet?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0454",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ulf's friend is Olp.",
+   "Olp's book is Prub."
+  ],
+  "question": "Who is Ulf's friend's book?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0455",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Crun's toy is Stov.",
+   "Stov's pet is Pruv."
+  ],
+  "question": "Who is Crun's toy's pet?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0456",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Wex's toy is Quib.",
+   "Quib's hat is Ralv."
+  ],
+  "question": "Who is Wex's toy's hat?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0457",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Blix's book is Rint.",
+   "Rint's friend is Quib."
+  ],
+  "question": "Who is Blix's book's friend?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0458",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Yent's hat is Qel.",
+   "Qel's pet is Nox."
+  ],
+  "question": "Who is Yent's hat's pet?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0459",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Wex's book is Krad.",
+   "Krad's friend is Zorp."
+  ],
+  "question": "Who is Wex's book's friend?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0460",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Zorp's toy is Jurb.",
+   "Jurb's book is Slun."
+  ],
+  "question": "Who is Zorp's toy's book?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0461",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Quib's car is Hont.",
+   "Hont's pet is Trun."
+  ],
+  "question": "Who is Quib's car's pet?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E149a-0462",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Pruv's pet is Jalp.",
+   "Jalp's book is Yub."
+  ],
+  "question": "Who is Pruv's pet's book?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0463",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Drup's hat is Vorn.",
+   "Vorn's book is Nax."
+  ],
+  "question": "Who is Drup's hat's book?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0464",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Rint's book is Jurb.",
+   "Jurb's friend is Trun."
+  ],
+  "question": "Who is Rint's book's friend?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E149a-0465",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Xob's car is Vram.",
+   "Vram's pet is Vorn."
+  ],
+  "question": "Who is Xob's car's pet?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0466",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Hont's book is Grax.",
+   "Grax's toy is Ulf."
+  ],
+  "question": "Who is Hont's book's toy?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0467",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Klap's car is Olp.",
+   "Olp's friend is Lomit."
+  ],
+  "question": "Who is Klap's car's friend?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E149a-0468",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Quix's friend is Yub.",
+   "Yub's pet is Hont."
+  ],
+  "question": "Who is Quix's friend's pet?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0469",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Drup's hat is Blix.",
+   "Blix's book is Pruv."
+  ],
+  "question": "Who is Drup's hat's book?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0470",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Nox's friend is Rint.",
+   "Rint's toy is Yent."
+  ],
+  "question": "Who is Nox's friend's toy?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0471",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Blix's toy is Prub.",
+   "Prub's book is Wex."
+  ],
+  "question": "Who is Blix's toy's book?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E149a-0472",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Stov's pet is Quix.",
+   "Quix's book is Crun."
+  ],
+  "question": "Who is Stov's pet's book?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0473",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ralv's book is Nax.",
+   "Nax's hat is Trun."
+  ],
+  "question": "Who is Ralv's book's hat?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E149a-0474",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Plix's pet is Slun.",
+   "Slun's toy is Tunk."
+  ],
+  "question": "Who is Plix's pet's toy?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0475",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Nox's friend is Plix.",
+   "Plix's toy is Slun."
+  ],
+  "question": "Who is Nox's friend's toy?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0476",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Quib's toy is Prub.",
+   "Prub's friend is Wex."
+  ],
+  "question": "Who is Quib's toy's friend?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E149a-0477",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Slun's car is Lomit.",
+   "Lomit's book is Jalp."
+  ],
+  "question": "Who is Slun's car's book?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0478",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Flib's friend is Prub.",
+   "Prub's pet is Krad."
+  ],
+  "question": "Who is Flib's friend's pet?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0479",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Jalp's pet is Blip.",
+   "Blip's friend is Trun."
+  ],
+  "question": "Who is Jalp's pet's friend?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E149a-0480",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Fweep's friend is Jurb.",
+   "Jurb's car is Nox."
+  ],
+  "question": "Who is Fweep's friend's car?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0481",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Pruv's pet is Ralv.",
+   "Ralv's friend is Vorn."
+  ],
+  "question": "Who is Pruv's pet's friend?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0482",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Zorp's pet is Crun.",
+   "Crun's hat is Stov."
+  ],
+  "question": "Who is Zorp's pet's hat?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0483",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Prub's hat is Grax.",
+   "Grax's friend is Tiv."
+  ],
+  "question": "Who is Prub's hat's friend?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0484",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tunk's pet is Slun.",
+   "Slun's toy is Miv."
+  ],
+  "question": "Who is Tunk's pet's toy?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0485",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Plix's book is Zorp.",
+   "Zorp's hat is Yub."
+  ],
+  "question": "Who is Plix's book's hat?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0486",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ulf's pet is Trun.",
+   "Trun's book is Plix."
+  ],
+  "question": "Who is Ulf's pet's book?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0487",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Crun's hat is Olp.",
+   "Olp's book is Qel."
+  ],
+  "question": "Who is Crun's hat's book?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0488",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Quib's book is Hont.",
+   "Hont's friend is Pruv."
+  ],
+  "question": "Who is Quib's book's friend?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0489",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ralv's pet is Flib.",
+   "Flib's hat is Krad."
+  ],
+  "question": "Who is Ralv's pet's hat?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0490",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ulf's book is Jurb.",
+   "Jurb's toy is Flib."
+  ],
+  "question": "Who is Ulf's book's toy?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0491",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Jalp's car is Tiv.",
+   "Tiv's hat is Hont."
+  ],
+  "question": "Who is Jalp's car's hat?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0492",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Prub's book is Qel.",
+   "Qel's friend is Jurb."
+  ],
+  "question": "Who is Prub's book's friend?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0493",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ulf's book is Quib.",
+   "Quib's hat is Tiv."
+  ],
+  "question": "Who is Ulf's book's hat?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0494",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Jalp's book is Prub.",
+   "Prub's toy is Yent."
+  ],
+  "question": "Who is Jalp's book's toy?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0495",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Crun's pet is Nax.",
+   "Nax's toy is Quix."
+  ],
+  "question": "Who is Crun's pet's toy?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0496",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Nox's hat is Tiv.",
+   "Tiv's friend is Jalp."
+  ],
+  "question": "Who is Nox's hat's friend?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0497",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Grax's hat is Qel.",
+   "Qel's toy is Krad."
+  ],
+  "question": "Who is Grax's hat's toy?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0498",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Olp's friend is Nax.",
+   "Nax's hat is Klap."
+  ],
+  "question": "Who is Olp's friend's hat?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0499",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Stov's pet is Quib.",
+   "Quib's book is Tiv."
+  ],
+  "question": "Who is Stov's pet's book?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0500",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Vram's car is Fweep.",
+   "Fweep's hat is Crun."
+  ],
+  "question": "Who is Vram's car's hat?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0501",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Jurb's hat is Hont.",
+   "Hont's friend is Ulf."
+  ],
+  "question": "Who is Jurb's hat's friend?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0502",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Vram's toy is Plix.",
+   "Plix's friend is Crun."
+  ],
+  "question": "Who is Vram's toy's friend?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0503",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Sarn's book is Klap.",
+   "Klap's toy is Quib."
+  ],
+  "question": "Who is Sarn's book's toy?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0504",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Zorp's car is Fweep.",
+   "Fweep's hat is Slun."
+  ],
+  "question": "Who is Zorp's car's hat?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0505",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Jalp's hat is Prub.",
+   "Prub's car is Miv."
+  ],
+  "question": "Who is Jalp's hat's car?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0506",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Drup's pet is Ulf.",
+   "Ulf's hat is Trun."
+  ],
+  "question": "Who is Drup's pet's hat?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E149a-0507",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Yub's pet is Klap.",
+   "Klap's car is Nox."
+  ],
+  "question": "Who is Yub's pet's car?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0508",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Quix's car is Blip.",
+   "Blip's friend is Nox."
+  ],
+  "question": "Who is Quix's car's friend?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0509",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Quib's hat is Wex.",
+   "Wex's car is Xob."
+  ],
+  "question": "Who is Quib's hat's car?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0510",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Jalp's car is Olp.",
+   "Olp's friend is Pruv."
+  ],
+  "question": "Who is Jalp's car's friend?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0511",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tiv's book is Pruv.",
+   "Pruv's hat is Xob."
+  ],
+  "question": "Who is Tiv's book's hat?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0512",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Grax's car is Zarn.",
+   "Zarn's pet is Flib."
+  ],
+  "question": "Who is Grax's car's pet?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0513",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Blip's hat is Rint.",
+   "Rint's book is Yub."
+  ],
+  "question": "Who is Blip's hat's book?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0514",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Jurb's hat is Crun.",
+   "Crun's friend is Krad."
+  ],
+  "question": "Who is Jurb's hat's friend?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0515",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Blix's hat is Slun.",
+   "Slun's friend is Stov."
+  ],
+  "question": "Who is Blix's hat's friend?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0516",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Slun's friend is Ulf.",
+   "Ulf's book is Klap."
+  ],
+  "question": "Who is Slun's friend's book?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0517",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Prub's friend is Jalp.",
+   "Jalp's toy is Miv."
+  ],
+  "question": "Who is Prub's friend's toy?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0518",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tunk's friend is Blix.",
+   "Blix's pet is Sarn."
+  ],
+  "question": "Who is Tunk's friend's pet?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0519",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Blix's book is Ulf.",
+   "Ulf's friend is Grax."
+  ],
+  "question": "Who is Blix's book's friend?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0520",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Wex's pet is Plix.",
+   "Plix's book is Sarn."
+  ],
+  "question": "Who is Wex's pet's book?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0521",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Lomit's car is Klap.",
+   "Klap's toy is Quix."
+  ],
+  "question": "Who is Lomit's car's toy?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0522",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Grax's friend is Zarn.",
+   "Zarn's pet is Crun."
+  ],
+  "question": "Who is Grax's friend's pet?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0523",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Olp's pet is Jurb.",
+   "Jurb's friend is Tunk."
+  ],
+  "question": "Who is Olp's pet's friend?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0524",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Hont's toy is Blip.",
+   "Blip's pet is Stov."
+  ],
+  "question": "Who is Hont's toy's pet?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0525",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Crun's pet is Stov.",
+   "Stov's book is Krad."
+  ],
+  "question": "Who is Crun's pet's book?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0526",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Grax's toy is Hont.",
+   "Hont's friend is Vram."
+  ],
+  "question": "Who is Grax's toy's friend?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0527",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Xob's book is Crun.",
+   "Crun's friend is Tiv."
+  ],
+  "question": "Who is Xob's book's friend?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0528",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Qel's pet is Zorp.",
+   "Zorp's book is Tunk."
+  ],
+  "question": "Who is Qel's pet's book?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0529",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Nax's toy is Crun.",
+   "Crun's hat is Quib."
+  ],
+  "question": "Who is Nax's toy's hat?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0530",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Qel's toy is Slun.",
+   "Slun's hat is Quix."
+  ],
+  "question": "Who is Qel's toy's hat?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0531",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tiv's friend is Yub.",
+   "Yub's book is Vorn."
+  ],
+  "question": "Who is Tiv's friend's book?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0532",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Qel's car is Blip.",
+   "Blip's pet is Xob."
+  ],
+  "question": "Who is Qel's car's pet?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0533",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tiv's friend is Klap.",
+   "Klap's toy is Nox."
+  ],
+  "question": "Who is Tiv's friend's toy?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0534",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tiv's book is Miv.",
+   "Miv's friend is Crun."
+  ],
+  "question": "Who is Tiv's book's friend?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0535",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Lomit's toy is Ulf.",
+   "Ulf's pet is Zorp."
+  ],
+  "question": "Who is Lomit's toy's pet?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0536",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Quib's friend is Ralv.",
+   "Ralv's hat is Plix."
+  ],
+  "question": "Who is Quib's friend's hat?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0537",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Slun's hat is Sarn.",
+   "Sarn's book is Jalp."
+  ],
+  "question": "Who is Slun's hat's book?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0538",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Yent's hat is Drup.",
+   "Drup's pet is Quix."
+  ],
+  "question": "Who is Yent's hat's pet?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0539",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Fweep's pet is Pruv.",
+   "Pruv's book is Vorn."
+  ],
+  "question": "Who is Fweep's pet's book?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0540",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ralv's friend is Plix.",
+   "Plix's hat is Miv."
+  ],
+  "question": "Who is Ralv's friend's hat?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0541",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Fweep's pet is Vram.",
+   "Vram's car is Jalp."
+  ],
+  "question": "Who is Fweep's pet's car?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0542",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Yub's book is Wex.",
+   "Wex's toy is Sarn."
+  ],
+  "question": "Who is Yub's book's toy?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0543",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ulf's toy is Olp.",
+   "Olp's car is Ralv."
+  ],
+  "question": "Who is Ulf's toy's car?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0544",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Quib's car is Prub.",
+   "Prub's friend is Jurb."
+  ],
+  "question": "Who is Quib's car's friend?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0545",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Rint's book is Yent.",
+   "Yent's pet is Hont."
+  ],
+  "question": "Who is Rint's book's pet?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0546",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Crun's hat is Nax.",
+   "Nax's pet is Quix."
+  ],
+  "question": "Who is Crun's hat's pet?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0547",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Miv's friend is Slun.",
+   "Slun's pet is Sarn."
+  ],
+  "question": "Who is Miv's friend's pet?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0548",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ralv's pet is Flib.",
+   "Flib's toy is Yub."
+  ],
+  "question": "Who is Ralv's pet's toy?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0549",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Vram's car is Qel.",
+   "Qel's friend is Wex."
+  ],
+  "question": "Who is Vram's car's friend?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E149a-0550",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Vorn's car is Ulf.",
+   "Ulf's book is Rint."
+  ],
+  "question": "Who is Vorn's car's book?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0551",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Vorn's car is Quix.",
+   "Quix's hat is Quib."
+  ],
+  "question": "Who is Vorn's car's hat?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0552",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Drup's hat is Yent.",
+   "Yent's car is Fweep."
+  ],
+  "question": "Who is Drup's hat's car?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0553",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Grax's toy is Miv.",
+   "Miv's book is Yub."
+  ],
+  "question": "Who is Grax's toy's book?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0554",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Ulf's car is Blip.",
+   "Blip's pet is Zarn."
+  ],
+  "question": "Who is Ulf's car's pet?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0555",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Xob's book is Drup.",
+   "Drup's friend is Ulf."
+  ],
+  "question": "Who is Xob's book's friend?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0556",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Blix's hat is Hont.",
+   "Hont's toy is Yub."
+  ],
+  "question": "Who is Blix's hat's toy?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0557",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Vram's toy is Wex.",
+   "Wex's hat is Trun."
+  ],
+  "question": "Who is Vram's toy's hat?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E149a-0558",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tunk's car is Stov.",
+   "Stov's pet is Olp."
+  ],
+  "question": "Who is Tunk's car's pet?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0559",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Nox's book is Pruv.",
+   "Pruv's pet is Klap."
+  ],
+  "question": "Who is Nox's book's pet?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0560",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Olp's book is Yent.",
+   "Yent's friend is Zarn."
+  ],
+  "question": "Who is Olp's book's friend?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0561",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Yub's pet is Vram.",
+   "Vram's toy is Stov."
+  ],
+  "question": "Who is Yub's pet's toy?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0562",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Rint's toy is Zarn.",
+   "Zarn's friend is Lomit."
+  ],
+  "question": "Who is Rint's toy's friend?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E149a-0563",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Nox's friend is Zorp.",
+   "Zorp's hat is Fweep."
+  ],
+  "question": "Who is Nox's friend's hat?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0564",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Hont's toy is Jurb.",
+   "Jurb's friend is Sarn."
+  ],
+  "question": "Who is Hont's toy's friend?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0565",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Zorp's book is Zarn.",
+   "Zarn's car is Grax."
+  ],
+  "question": "Who is Zorp's book's car?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0566",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Sarn's pet is Tiv.",
+   "Tiv's book is Ralv."
+  ],
+  "question": "Who is Sarn's pet's book?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0567",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Lomit's pet is Hont.",
+   "Hont's book is Krad."
+  ],
+  "question": "Who is Lomit's pet's book?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0568",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Lomit's friend is Quib.",
+   "Quib's toy is Slun."
+  ],
+  "question": "Who is Lomit's friend's toy?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0569",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Prub's hat is Xob.",
+   "Xob's toy is Nox."
+  ],
+  "question": "Who is Prub's hat's toy?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0570",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "Tiv's car is Prub.",
+   "Prub's toy is Stov."
+  ],
+  "question": "Who is Tiv's car's toy?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0571",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Blip's book is Yent.",
+   "Yent's car is Yub.",
+   "Yub's friend is Vram."
+  ],
+  "question": "Who is Blip's book's car's friend?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0572",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Ralv's pet is Xob.",
+   "Xob's car is Jurb.",
+   "Jurb's book is Flib."
+  ],
+  "question": "Who is Ralv's pet's car's book?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0573",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Grax's hat is Vram.",
+   "Vram's book is Ralv.",
+   "Ralv's pet is Wex."
+  ],
+  "question": "Who is Grax's hat's book's pet?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E149a-0574",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jurb's hat is Grax.",
+   "Grax's toy is Drup.",
+   "Drup's pet is Sarn."
+  ],
+  "question": "Who is Jurb's hat's toy's pet?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0575",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Prub's pet is Crun.",
+   "Crun's car is Yub.",
+   "Yub's book is Jalp."
+  ],
+  "question": "Who is Prub's pet's car's book?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E149a-0576",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Slun's car is Klap.",
+   "Klap's pet is Blip.",
+   "Blip's friend is Blix."
+  ],
+  "question": "Who is Slun's car's pet's friend?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E149a-0577",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Prub's hat is Trun.",
+   "Trun's pet is Stov.",
+   "Stov's car is Qel."
+  ],
+  "question": "Who is Prub's hat's pet's car?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0578",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Slun's hat is Vorn.",
+   "Vorn's toy is Yent.",
+   "Yent's friend is Fweep."
+  ],
+  "question": "Who is Slun's hat's toy's friend?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0579",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Hont's friend is Klap.",
+   "Klap's hat is Fweep.",
+   "Fweep's book is Stov."
+  ],
+  "question": "Who is Hont's friend's hat's book?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0580",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Hont's pet is Krad.",
+   "Krad's friend is Zorp.",
+   "Zorp's car is Ralv."
+  ],
+  "question": "Who is Hont's pet's friend's car?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0581",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Tiv's car is Grax.",
+   "Grax's pet is Trun.",
+   "Trun's toy is Xob."
+  ],
+  "question": "Who is Tiv's car's pet's toy?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0582",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Miv's pet is Blip.",
+   "Blip's hat is Grax.",
+   "Grax's friend is Ulf."
+  ],
+  "question": "Who is Miv's pet's hat's friend?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0583",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jalp's book is Yub.",
+   "Yub's toy is Olp.",
+   "Olp's car is Krad."
+  ],
+  "question": "Who is Jalp's book's toy's car?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0584",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Yub's car is Tunk.",
+   "Tunk's toy is Jalp.",
+   "Jalp's hat is Stov."
+  ],
+  "question": "Who is Yub's car's toy's hat?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0585",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Yub's friend is Lomit.",
+   "Lomit's pet is Klap.",
+   "Klap's book is Nax."
+  ],
+  "question": "Who is Yub's friend's pet's book?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0586",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Sarn's friend is Lomit.",
+   "Lomit's car is Olp.",
+   "Olp's pet is Vram."
+  ],
+  "question": "Who is Sarn's friend's car's pet?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0587",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Lomit's toy is Zarn.",
+   "Zarn's friend is Hont.",
+   "Hont's book is Sarn."
+  ],
+  "question": "Who is Lomit's toy's friend's book?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0588",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Vorn's book is Blip.",
+   "Blip's car is Blix.",
+   "Blix's hat is Nax."
+  ],
+  "question": "Who is Vorn's book's car's hat?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0589",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Plix's car is Flib.",
+   "Flib's toy is Nox.",
+   "Nox's pet is Krad."
+  ],
+  "question": "Who is Plix's car's toy's pet?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0590",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Rint's friend is Wex.",
+   "Wex's pet is Sarn.",
+   "Sarn's book is Plix."
+  ],
+  "question": "Who is Rint's friend's pet's book?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0591",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Tunk's car is Yub.",
+   "Yub's toy is Zarn.",
+   "Zarn's book is Yent."
+  ],
+  "question": "Who is Tunk's car's toy's book?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0592",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Vram's friend is Xob.",
+   "Xob's pet is Qel.",
+   "Qel's toy is Blip."
+  ],
+  "question": "Who is Vram's friend's pet's toy?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0593",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Flib's hat is Ulf.",
+   "Ulf's friend is Fweep.",
+   "Fweep's book is Crun."
+  ],
+  "question": "Who is Flib's hat's friend's book?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0594",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Zarn's friend is Blix.",
+   "Blix's car is Nox.",
+   "Nox's hat is Jurb."
+  ],
+  "question": "Who is Zarn's friend's car's hat?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0595",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Fweep's book is Miv.",
+   "Miv's pet is Tiv.",
+   "Tiv's hat is Klap."
+  ],
+  "question": "Who is Fweep's book's pet's hat?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0596",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Slun's hat is Jalp.",
+   "Jalp's toy is Wex.",
+   "Wex's pet is Zarn."
+  ],
+  "question": "Who is Slun's hat's toy's pet?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0597",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Yub's pet is Ralv.",
+   "Ralv's book is Xob.",
+   "Xob's hat is Crun."
+  ],
+  "question": "Who is Yub's pet's book's hat?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0598",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Nax's hat is Hont.",
+   "Hont's book is Trun.",
+   "Trun's friend is Miv."
+  ],
+  "question": "Who is Nax's hat's book's friend?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0599",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Rint's hat is Nox.",
+   "Nox's pet is Drup.",
+   "Drup's car is Xob."
+  ],
+  "question": "Who is Rint's hat's pet's car?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0600",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Klap's pet is Krad.",
+   "Krad's toy is Tunk.",
+   "Tunk's book is Yent."
+  ],
+  "question": "Who is Klap's pet's toy's book?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0601",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Nax's car is Tunk.",
+   "Tunk's hat is Krad.",
+   "Krad's book is Ralv."
+  ],
+  "question": "Who is Nax's car's hat's book?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0602",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Tiv's hat is Blix.",
+   "Blix's friend is Rint.",
+   "Rint's car is Flib."
+  ],
+  "question": "Who is Tiv's hat's friend's car?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0603",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Pruv's pet is Crun.",
+   "Crun's book is Klap.",
+   "Klap's toy is Krad."
+  ],
+  "question": "Who is Pruv's pet's book's toy?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0604",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Prub's book is Vram.",
+   "Vram's toy is Stov.",
+   "Stov's pet is Drup."
+  ],
+  "question": "Who is Prub's book's toy's pet?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0605",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Rint's friend is Quib.",
+   "Quib's book is Prub.",
+   "Prub's pet is Olp."
+  ],
+  "question": "Who is Rint's friend's book's pet?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0606",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Blip's car is Stov.",
+   "Stov's book is Tiv.",
+   "Tiv's pet is Ulf."
+  ],
+  "question": "Who is Blip's car's book's pet?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0607",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Qel's friend is Xob.",
+   "Xob's car is Trun.",
+   "Trun's book is Wex."
+  ],
+  "question": "Who is Qel's friend's car's book?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E149a-0608",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Fweep's friend is Sarn.",
+   "Sarn's pet is Krad.",
+   "Krad's hat is Miv."
+  ],
+  "question": "Who is Fweep's friend's pet's hat?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0609",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Vram's toy is Tiv.",
+   "Tiv's car is Hont.",
+   "Hont's friend is Qel."
+  ],
+  "question": "Who is Vram's toy's car's friend?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0610",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Nax's hat is Krad.",
+   "Krad's pet is Klap.",
+   "Klap's toy is Jurb."
+  ],
+  "question": "Who is Nax's hat's pet's toy?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0611",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Klap's pet is Zorp.",
+   "Zorp's hat is Flib.",
+   "Flib's friend is Stov."
+  ],
+  "question": "Who is Klap's pet's hat's friend?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0612",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jalp's book is Pruv.",
+   "Pruv's toy is Prub.",
+   "Prub's car is Zorp."
+  ],
+  "question": "Who is Jalp's book's toy's car?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0613",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Crun's toy is Drup.",
+   "Drup's hat is Blix.",
+   "Blix's pet is Nox."
+  ],
+  "question": "Who is Crun's toy's hat's pet?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0614",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Grax's book is Fweep.",
+   "Fweep's friend is Jurb.",
+   "Jurb's toy is Blix."
+  ],
+  "question": "Who is Grax's book's friend's toy?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E149a-0615",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Rint's book is Olp.",
+   "Olp's friend is Jalp.",
+   "Jalp's toy is Vorn."
+  ],
+  "question": "Who is Rint's book's friend's toy?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0616",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Lomit's book is Yent.",
+   "Yent's friend is Wex.",
+   "Wex's toy is Vorn."
+  ],
+  "question": "Who is Lomit's book's friend's toy?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0617",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Ulf's toy is Miv.",
+   "Miv's pet is Krad.",
+   "Krad's car is Rint."
+  ],
+  "question": "Who is Ulf's toy's pet's car?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0618",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jalp's car is Crun.",
+   "Crun's pet is Zorp.",
+   "Zorp's book is Nax."
+  ],
+  "question": "Who is Jalp's car's pet's book?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0619",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Blix's friend is Ulf.",
+   "Ulf's book is Xob.",
+   "Xob's pet is Plix."
+  ],
+  "question": "Who is Blix's friend's book's pet?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0620",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Nox's hat is Nax.",
+   "Nax's car is Zarn.",
+   "Zarn's pet is Drup."
+  ],
+  "question": "Who is Nox's hat's car's pet?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0621",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Quib's pet is Drup.",
+   "Drup's toy is Blix.",
+   "Blix's friend is Rint."
+  ],
+  "question": "Who is Quib's pet's toy's friend?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0622",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Vorn's car is Klap.",
+   "Klap's hat is Hont.",
+   "Hont's friend is Quix."
+  ],
+  "question": "Who is Vorn's car's hat's friend?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0623",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Slun's hat is Drup.",
+   "Drup's pet is Plix.",
+   "Plix's car is Olp."
+  ],
+  "question": "Who is Slun's hat's pet's car?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0624",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Olp's friend is Hont.",
+   "Hont's toy is Pruv.",
+   "Pruv's pet is Blip."
+  ],
+  "question": "Who is Olp's friend's toy's pet?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0625",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Nox's book is Hont.",
+   "Hont's pet is Qel.",
+   "Qel's hat is Plix."
+  ],
+  "question": "Who is Nox's book's pet's hat?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0626",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Tunk's hat is Drup.",
+   "Drup's car is Zarn.",
+   "Zarn's friend is Fweep."
+  ],
+  "question": "Who is Tunk's hat's car's friend?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0627",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Rint's pet is Stov.",
+   "Stov's friend is Vorn.",
+   "Vorn's car is Quib."
+  ],
+  "question": "Who is Rint's pet's friend's car?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0628",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Plix's toy is Blix.",
+   "Blix's pet is Nax.",
+   "Nax's hat is Nox."
+  ],
+  "question": "Who is Plix's toy's pet's hat?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0629",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Drup's pet is Blip.",
+   "Blip's hat is Grax.",
+   "Grax's friend is Lomit."
+  ],
+  "question": "Who is Drup's pet's hat's friend?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E149a-0630",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Vram's friend is Olp.",
+   "Olp's book is Zorp.",
+   "Zorp's pet is Nax."
+  ],
+  "question": "Who is Vram's friend's book's pet?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0631",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Yub's toy is Miv.",
+   "Miv's friend is Vram.",
+   "Vram's hat is Rint."
+  ],
+  "question": "Who is Yub's toy's friend's hat?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0632",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Wex's hat is Quix.",
+   "Quix's toy is Nax.",
+   "Nax's book is Hont."
+  ],
+  "question": "Who is Wex's hat's toy's book?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0633",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Zarn's pet is Qel.",
+   "Qel's hat is Grax.",
+   "Grax's friend is Xob."
+  ],
+  "question": "Who is Zarn's pet's hat's friend?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0634",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Klap's book is Tiv.",
+   "Tiv's friend is Nax.",
+   "Nax's toy is Grax."
+  ],
+  "question": "Who is Klap's book's friend's toy?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0635",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jalp's toy is Quib.",
+   "Quib's car is Hont.",
+   "Hont's hat is Trun."
+  ],
+  "question": "Who is Jalp's toy's car's hat?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E149a-0636",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Tunk's friend is Quix.",
+   "Quix's book is Nax.",
+   "Nax's toy is Yent."
+  ],
+  "question": "Who is Tunk's friend's book's toy?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0637",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Flib's car is Slun.",
+   "Slun's toy is Qel.",
+   "Qel's hat is Ralv."
+  ],
+  "question": "Who is Flib's car's toy's hat?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0638",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Nox's car is Wex.",
+   "Wex's friend is Jalp.",
+   "Jalp's book is Miv."
+  ],
+  "question": "Who is Nox's car's friend's book?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0639",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Xob's friend is Wex.",
+   "Wex's book is Lomit.",
+   "Lomit's pet is Miv."
+  ],
+  "question": "Who is Xob's friend's book's pet?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0640",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Rint's book is Tunk.",
+   "Tunk's friend is Xob.",
+   "Xob's toy is Olp."
+  ],
+  "question": "Who is Rint's book's friend's toy?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0641",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Klap's pet is Wex.",
+   "Wex's toy is Nox.",
+   "Nox's hat is Quib."
+  ],
+  "question": "Who is Klap's pet's toy's hat?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0642",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Miv's hat is Vorn.",
+   "Vorn's car is Nax.",
+   "Nax's pet is Wex."
+  ],
+  "question": "Who is Miv's hat's car's pet?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E149a-0643",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Ulf's friend is Xob.",
+   "Xob's toy is Quix.",
+   "Quix's pet is Krad."
+  ],
+  "question": "Who is Ulf's friend's toy's pet?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0644",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Tunk's hat is Slun.",
+   "Slun's book is Wex.",
+   "Wex's car is Crun."
+  ],
+  "question": "Who is Tunk's hat's book's car?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0645",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Blix's pet is Stov.",
+   "Stov's car is Fweep.",
+   "Fweep's friend is Jurb."
+  ],
+  "question": "Who is Blix's pet's car's friend?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0646",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Blix's hat is Miv.",
+   "Miv's friend is Crun.",
+   "Crun's pet is Zarn."
+  ],
+  "question": "Who is Blix's hat's friend's pet?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0647",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Sarn's car is Slun.",
+   "Slun's book is Flib.",
+   "Flib's pet is Trun."
+  ],
+  "question": "Who is Sarn's car's book's pet?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E149a-0648",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Lomit's book is Quix.",
+   "Quix's friend is Jurb.",
+   "Jurb's hat is Grax."
+  ],
+  "question": "Who is Lomit's book's friend's hat?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0649",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Quib's friend is Nax.",
+   "Nax's toy is Trun.",
+   "Trun's hat is Slun."
+  ],
+  "question": "Who is Quib's friend's toy's hat?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0650",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Trun's hat is Jurb.",
+   "Jurb's friend is Stov.",
+   "Stov's pet is Hont."
+  ],
+  "question": "Who is Trun's hat's friend's pet?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0651",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Qel's book is Xob.",
+   "Xob's toy is Yub.",
+   "Yub's car is Hont."
+  ],
+  "question": "Who is Qel's book's toy's car?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0652",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Blix's toy is Stov.",
+   "Stov's friend is Drup.",
+   "Drup's car is Xob."
+  ],
+  "question": "Who is Blix's toy's friend's car?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0653",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Blip's friend is Miv.",
+   "Miv's book is Slun.",
+   "Slun's pet is Pruv."
+  ],
+  "question": "Who is Blip's friend's book's pet?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0654",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jurb's friend is Slun.",
+   "Slun's book is Nox.",
+   "Nox's hat is Quix."
+  ],
+  "question": "Who is Jurb's friend's book's hat?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E149a-0655",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Yent's toy is Olp.",
+   "Olp's pet is Nax.",
+   "Nax's friend is Nox."
+  ],
+  "question": "Who is Yent's toy's pet's friend?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0656",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Nax's car is Stov.",
+   "Stov's friend is Tiv.",
+   "Tiv's pet is Plix."
+  ],
+  "question": "Who is Nax's car's friend's pet?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0657",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Grax's friend is Quib.",
+   "Quib's book is Sarn.",
+   "Sarn's car is Yub."
+  ],
+  "question": "Who is Grax's friend's book's car?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0658",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Nox's pet is Zarn.",
+   "Zarn's hat is Jalp.",
+   "Jalp's friend is Yent."
+  ],
+  "question": "Who is Nox's pet's hat's friend?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0659",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Ulf's book is Slun.",
+   "Slun's toy is Zarn.",
+   "Zarn's hat is Trun."
+  ],
+  "question": "Who is Ulf's book's toy's hat?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E149a-0660",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Ralv's toy is Flib.",
+   "Flib's friend is Yub.",
+   "Yub's car is Pruv."
+  ],
+  "question": "Who is Ralv's toy's friend's car?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0661",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Trun's friend is Vorn.",
+   "Vorn's pet is Tunk.",
+   "Tunk's toy is Slun."
+  ],
+  "question": "Who is Trun's friend's pet's toy?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0662",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Vorn's toy is Blix.",
+   "Blix's friend is Zorp.",
+   "Zorp's pet is Ulf."
+  ],
+  "question": "Who is Vorn's toy's friend's pet?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0663",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Drup's friend is Klap.",
+   "Klap's car is Ralv.",
+   "Ralv's hat is Vram."
+  ],
+  "question": "Who is Drup's friend's car's hat?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0664",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Drup's pet is Crun.",
+   "Crun's friend is Jalp.",
+   "Jalp's toy is Zorp."
+  ],
+  "question": "Who is Drup's pet's friend's toy?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0665",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Flib's book is Olp.",
+   "Olp's pet is Qel.",
+   "Qel's toy is Zarn."
+  ],
+  "question": "Who is Flib's book's pet's toy?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0666",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Hont's toy is Crun.",
+   "Crun's hat is Prub.",
+   "Prub's book is Krad."
+  ],
+  "question": "Who is Hont's toy's hat's book?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0667",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Yent's pet is Hont.",
+   "Hont's car is Trun.",
+   "Trun's friend is Vram."
+  ],
+  "question": "Who is Yent's pet's car's friend?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0668",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Quix's book is Jalp.",
+   "Jalp's car is Nax.",
+   "Nax's pet is Olp."
+  ],
+  "question": "Who is Quix's book's car's pet?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0669",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jalp's book is Quib.",
+   "Quib's hat is Hont.",
+   "Hont's friend is Ralv."
+  ],
+  "question": "Who is Jalp's book's hat's friend?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0670",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Sarn's toy is Xob.",
+   "Xob's friend is Blip.",
+   "Blip's hat is Quib."
+  ],
+  "question": "Who is Sarn's toy's friend's hat?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E149a-0671",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Wex's car is Nax.",
+   "Nax's friend is Hont.",
+   "Hont's hat is Miv."
+  ],
+  "question": "Who is Wex's car's friend's hat?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E149a-0672",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Zorp's hat is Vorn.",
+   "Vorn's pet is Hont.",
+   "Hont's toy is Drup."
+  ],
+  "question": "Who is Zorp's hat's pet's toy?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0673",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Fweep's car is Quib.",
+   "Quib's hat is Zarn.",
+   "Zarn's pet is Sarn."
+  ],
+  "question": "Who is Fweep's car's hat's pet?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E149a-0674",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Trun's car is Rint.",
+   "Rint's hat is Tiv.",
+   "Tiv's pet is Zarn."
+  ],
+  "question": "Who is Trun's car's hat's pet?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0675",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Rint's pet is Flib.",
+   "Flib's car is Qel.",
+   "Qel's hat is Pruv."
+  ],
+  "question": "Who is Rint's pet's car's hat?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0676",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Grax's hat is Tunk.",
+   "Tunk's car is Wex.",
+   "Wex's pet is Qel."
+  ],
+  "question": "Who is Grax's hat's car's pet?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0677",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Lomit's pet is Rint.",
+   "Rint's car is Xob.",
+   "Xob's book is Vram."
+  ],
+  "question": "Who is Lomit's pet's car's book?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0678",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Krad's friend is Prub.",
+   "Prub's toy is Blip.",
+   "Blip's car is Xob."
+  ],
+  "question": "Who is Krad's friend's toy's car?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0679",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Yub's car is Hont.",
+   "Hont's friend is Ralv.",
+   "Ralv's toy is Qel."
+  ],
+  "question": "Who is Yub's car's friend's toy?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0680",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Qel's friend is Slun.",
+   "Slun's car is Flib.",
+   "Flib's book is Lomit."
+  ],
+  "question": "Who is Qel's friend's car's book?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E149a-0681",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Miv's car is Quix.",
+   "Quix's toy is Jurb.",
+   "Jurb's book is Pruv."
+  ],
+  "question": "Who is Miv's car's toy's book?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0682",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Tunk's friend is Slun.",
+   "Slun's pet is Jurb.",
+   "Jurb's toy is Pruv."
+  ],
+  "question": "Who is Tunk's friend's pet's toy?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0683",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Nax's book is Qel.",
+   "Qel's car is Quix.",
+   "Quix's pet is Vorn."
+  ],
+  "question": "Who is Nax's book's car's pet?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0684",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Nax's friend is Krad.",
+   "Krad's hat is Pruv.",
+   "Pruv's pet is Zarn."
+  ],
+  "question": "Who is Nax's friend's hat's pet?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0685",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Quix's hat is Ulf.",
+   "Ulf's toy is Yent.",
+   "Yent's pet is Crun."
+  ],
+  "question": "Who is Quix's hat's toy's pet?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0686",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Qel's book is Sarn.",
+   "Sarn's friend is Prub.",
+   "Prub's pet is Krad."
+  ],
+  "question": "Who is Qel's book's friend's pet?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0687",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Grax's toy is Stov.",
+   "Stov's friend is Olp.",
+   "Olp's car is Jurb."
+  ],
+  "question": "Who is Grax's toy's friend's car?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0688",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Drup's book is Olp.",
+   "Olp's toy is Lomit.",
+   "Lomit's friend is Prub."
+  ],
+  "question": "Who is Drup's book's toy's friend?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0689",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Klap's book is Zarn.",
+   "Zarn's friend is Lomit.",
+   "Lomit's pet is Nax."
+  ],
+  "question": "Who is Klap's book's friend's pet?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0690",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Tunk's hat is Ralv.",
+   "Ralv's book is Trun.",
+   "Trun's car is Prub."
+  ],
+  "question": "Who is Tunk's hat's book's car?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0691",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Tunk's hat is Drup.",
+   "Drup's pet is Ulf.",
+   "Ulf's book is Grax."
+  ],
+  "question": "Who is Tunk's hat's pet's book?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0692",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Blip's hat is Tiv.",
+   "Tiv's book is Stov.",
+   "Stov's car is Qel."
+  ],
+  "question": "Who is Blip's hat's book's car?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0693",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Vram's pet is Klap.",
+   "Klap's hat is Slun.",
+   "Slun's friend is Yub."
+  ],
+  "question": "Who is Vram's pet's hat's friend?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0694",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Miv's car is Prub.",
+   "Prub's book is Drup.",
+   "Drup's pet is Tunk."
+  ],
+  "question": "Who is Miv's car's book's pet?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E149a-0695",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Sarn's hat is Olp.",
+   "Olp's friend is Yent.",
+   "Yent's toy is Yub."
+  ],
+  "question": "Who is Sarn's hat's friend's toy?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E149a-0696",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Yub's friend is Flib.",
+   "Flib's book is Zarn.",
+   "Zarn's hat is Qel."
+  ],
+  "question": "Who is Yub's friend's book's hat?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E149a-0697",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Xob's friend is Tiv.",
+   "Tiv's hat is Grax.",
+   "Grax's toy is Klap."
+  ],
+  "question": "Who is Xob's friend's hat's toy?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0698",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Drup's friend is Pruv.",
+   "Pruv's pet is Trun.",
+   "Trun's book is Ralv."
+  ],
+  "question": "Who is Drup's friend's pet's book?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0699",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Quib's car is Lomit.",
+   "Lomit's book is Vorn.",
+   "Vorn's pet is Flib."
+  ],
+  "question": "Who is Quib's car's book's pet?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E149a-0700",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Blix's hat is Vorn.",
+   "Vorn's toy is Pruv.",
+   "Pruv's friend is Yent."
+  ],
+  "question": "Who is Blix's hat's toy's friend?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0701",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Vorn's hat is Pruv.",
+   "Pruv's car is Quib.",
+   "Quib's toy is Fweep."
+  ],
+  "question": "Who is Vorn's hat's car's toy?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0702",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Olp's car is Wex.",
+   "Wex's hat is Yent.",
+   "Yent's friend is Nox."
+  ],
+  "question": "Who is Olp's car's hat's friend?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0703",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Grax's car is Lomit.",
+   "Lomit's book is Blix.",
+   "Blix's friend is Zarn."
+  ],
+  "question": "Who is Grax's car's book's friend?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0704",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Quix's hat is Miv.",
+   "Miv's car is Vram.",
+   "Vram's friend is Hont."
+  ],
+  "question": "Who is Quix's hat's car's friend?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E149a-0705",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Zarn's hat is Drup.",
+   "Drup's toy is Crun.",
+   "Crun's car is Yent."
+  ],
+  "question": "Who is Zarn's hat's toy's car?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0706",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Ralv's pet is Ulf.",
+   "Ulf's book is Quib.",
+   "Quib's car is Yent."
+  ],
+  "question": "Who is Ralv's pet's book's car?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0707",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Quib's car is Vram.",
+   "Vram's friend is Zarn.",
+   "Zarn's pet is Fweep."
+  ],
+  "question": "Who is Quib's car's friend's pet?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0708",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Miv's toy is Zarn.",
+   "Zarn's car is Slun.",
+   "Slun's friend is Nox."
+  ],
+  "question": "Who is Miv's toy's car's friend?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0709",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Zarn's toy is Nox.",
+   "Nox's pet is Nax.",
+   "Nax's car is Yent."
+  ],
+  "question": "Who is Zarn's toy's pet's car?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0710",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Yub's car is Krad.",
+   "Krad's hat is Miv.",
+   "Miv's friend is Zorp."
+  ],
+  "question": "Who is Yub's car's hat's friend?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0711",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Flib's toy is Wex.",
+   "Wex's book is Blix.",
+   "Blix's friend is Klap."
+  ],
+  "question": "Who is Flib's toy's book's friend?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E149a-0712",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Miv's book is Stov.",
+   "Stov's pet is Klap.",
+   "Klap's car is Drup."
+  ],
+  "question": "Who is Miv's book's pet's car?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0713",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Rint's friend is Prub.",
+   "Prub's car is Vram.",
+   "Vram's toy is Nox."
+  ],
+  "question": "Who is Rint's friend's car's toy?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0714",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Vram's book is Zarn.",
+   "Zarn's friend is Stov.",
+   "Stov's toy is Nax."
+  ],
+  "question": "Who is Vram's book's friend's toy?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0715",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Blip's book is Flib.",
+   "Flib's car is Crun.",
+   "Crun's pet is Nax."
+  ],
+  "question": "Who is Blip's book's car's pet?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E149a-0716",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Flib's car is Quib.",
+   "Quib's pet is Yent.",
+   "Yent's book is Wex."
+  ],
+  "question": "Who is Flib's car's pet's book?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E149a-0717",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Crun's toy is Ralv.",
+   "Ralv's car is Pruv.",
+   "Pruv's hat is Yent."
+  ],
+  "question": "Who is Crun's toy's car's hat?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E149a-0718",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Miv's car is Yub.",
+   "Yub's friend is Drup.",
+   "Drup's pet is Plix."
+  ],
+  "question": "Who is Miv's car's friend's pet?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0719",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jalp's friend is Vorn.",
+   "Vorn's hat is Jurb.",
+   "Jurb's toy is Fweep."
+  ],
+  "question": "Who is Jalp's friend's hat's toy?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0720",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Lomit's car is Qel.",
+   "Qel's pet is Yub.",
+   "Yub's toy is Jurb."
+  ],
+  "question": "Who is Lomit's car's pet's toy?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E149a-0721",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Grax's hat is Lomit.",
+   "Lomit's pet is Slun.",
+   "Slun's book is Blip."
+  ],
+  "question": "Who is Grax's hat's pet's book?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0722",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Stov's car is Wex.",
+   "Wex's toy is Slun.",
+   "Slun's friend is Blip."
+  ],
+  "question": "Who is Stov's car's toy's friend?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0723",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Qel's car is Hont.",
+   "Hont's book is Blip.",
+   "Blip's friend is Slun."
+  ],
+  "question": "Who is Qel's car's book's friend?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E149a-0724",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jurb's hat is Tunk.",
+   "Tunk's book is Miv.",
+   "Miv's pet is Nox."
+  ],
+  "question": "Who is Jurb's hat's book's pet?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0725",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Sarn's pet is Slun.",
+   "Slun's hat is Zarn.",
+   "Zarn's book is Vorn."
+  ],
+  "question": "Who is Sarn's pet's hat's book?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0726",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Plix's car is Tiv.",
+   "Tiv's hat is Flib.",
+   "Flib's friend is Xob."
+  ],
+  "question": "Who is Plix's car's hat's friend?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0727",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Trun's friend is Rint.",
+   "Rint's toy is Qel.",
+   "Qel's hat is Plix."
+  ],
+  "question": "Who is Trun's friend's toy's hat?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E149a-0728",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jurb's book is Sarn.",
+   "Sarn's friend is Hont.",
+   "Hont's car is Drup."
+  ],
+  "question": "Who is Jurb's book's friend's car?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0729",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Blix's toy is Trun.",
+   "Trun's pet is Slun.",
+   "Slun's car is Vram."
+  ],
+  "question": "Who is Blix's toy's pet's car?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E149a-0730",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Ulf's toy is Ralv.",
+   "Ralv's car is Zarn.",
+   "Zarn's friend is Crun."
+  ],
+  "question": "Who is Ulf's toy's car's friend?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0731",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Yub's car is Pruv.",
+   "Pruv's hat is Zarn.",
+   "Zarn's toy is Tiv."
+  ],
+  "question": "Who is Yub's car's hat's toy?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0732",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Zorp's toy is Ralv.",
+   "Ralv's car is Blip.",
+   "Blip's pet is Fweep."
+  ],
+  "question": "Who is Zorp's toy's car's pet?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E149a-0733",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jurb's hat is Vorn.",
+   "Vorn's car is Grax.",
+   "Grax's friend is Zarn."
+  ],
+  "question": "Who is Jurb's hat's car's friend?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E149a-0734",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Plix's pet is Yent.",
+   "Yent's hat is Jurb.",
+   "Jurb's friend is Zorp."
+  ],
+  "question": "Who is Plix's pet's hat's friend?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E149a-0735",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Yub's pet is Zorp.",
+   "Zorp's friend is Vorn.",
+   "Vorn's car is Drup."
+  ],
+  "question": "Who is Yub's pet's friend's car?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E149a-0736",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Zarn's hat is Tiv.",
+   "Tiv's toy is Olp.",
+   "Olp's car is Wex."
+  ],
+  "question": "Who is Zarn's hat's toy's car?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E149a-0737",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Quix's friend is Drup.",
+   "Drup's toy is Sarn.",
+   "Sarn's book is Olp."
+  ],
+  "question": "Who is Quix's friend's toy's book?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0738",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Quix's friend is Fweep.",
+   "Fweep's car is Ralv.",
+   "Ralv's hat is Ulf."
+  ],
+  "question": "Who is Quix's friend's car's hat?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0739",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Ralv's hat is Crun.",
+   "Crun's car is Yub.",
+   "Yub's toy is Olp."
+  ],
+  "question": "Who is Ralv's hat's car's toy?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0740",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Lomit's hat is Nax.",
+   "Nax's toy is Crun.",
+   "Crun's car is Ulf."
+  ],
+  "question": "Who is Lomit's hat's toy's car?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E149a-0741",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jalp's car is Slun.",
+   "Slun's toy is Vram.",
+   "Vram's pet is Nox."
+  ],
+  "question": "Who is Jalp's car's toy's pet?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E149a-0742",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Fweep's book is Pruv.",
+   "Pruv's pet is Klap.",
+   "Klap's toy is Prub."
+  ],
+  "question": "Who is Fweep's book's pet's toy?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0743",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Fweep's friend is Xob.",
+   "Xob's pet is Hont.",
+   "Hont's book is Vorn."
+  ],
+  "question": "Who is Fweep's friend's pet's book?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E149a-0744",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Vram's book is Krad.",
+   "Krad's pet is Rint.",
+   "Rint's hat is Olp."
+  ],
+  "question": "Who is Vram's book's pet's hat?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0745",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Vram's hat is Miv.",
+   "Miv's car is Yub.",
+   "Yub's toy is Tiv."
+  ],
+  "question": "Who is Vram's hat's car's toy?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E149a-0746",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Crun's pet is Zarn.",
+   "Zarn's car is Miv.",
+   "Miv's book is Pruv."
+  ],
+  "question": "Who is Crun's pet's car's book?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E149a-0747",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Plix's hat is Klap.",
+   "Klap's friend is Prub.",
+   "Prub's pet is Blip."
+  ],
+  "question": "Who is Plix's hat's friend's pet?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0748",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Sarn's car is Grax.",
+   "Grax's pet is Stov.",
+   "Stov's friend is Ralv."
+  ],
+  "question": "Who is Sarn's car's pet's friend?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0749",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Quix's pet is Olp.",
+   "Olp's car is Slun.",
+   "Slun's book is Xob."
+  ],
+  "question": "Who is Quix's pet's car's book?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E149a-0750",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jalp's car is Ulf.",
+   "Ulf's pet is Tiv.",
+   "Tiv's hat is Prub."
+  ],
+  "question": "Who is Jalp's car's pet's hat?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E149a-0751",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Blix's pet is Tiv.",
+   "Tiv's book is Crun.",
+   "Crun's toy is Rint."
+  ],
+  "question": "Who is Blix's pet's book's toy?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E149a-0752",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Olp's hat is Crun.",
+   "Crun's toy is Fweep.",
+   "Fweep's book is Blip."
+  ],
+  "question": "Who is Olp's hat's toy's book?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E149a-0753",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Sarn's toy is Lomit.",
+   "Lomit's book is Miv.",
+   "Miv's friend is Grax."
+  ],
+  "question": "Who is Sarn's toy's book's friend?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E149a-0754",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Jurb's car is Stov.",
+   "Stov's pet is Blix.",
+   "Blix's friend is Krad."
+  ],
+  "question": "Who is Jurb's car's pet's friend?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E149a-0755",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Yub's pet is Blip.",
+   "Blip's book is Sarn.",
+   "Sarn's friend is Olp."
+  ],
+  "question": "Who is Yub's pet's book's friend?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E149a-0756",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Crun's pet is Sarn.",
+   "Sarn's book is Vram.",
+   "Vram's friend is Blix."
+  ],
+  "question": "Who is Crun's pet's book's friend?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E149a-0757",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Yent's hat is Vorn.",
+   "Vorn's pet is Trun.",
+   "Trun's car is Ralv."
+  ],
+  "question": "Who is Yent's hat's pet's car?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E149a-0758",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Slun's hat is Lomit.",
+   "Lomit's pet is Zarn.",
+   "Zarn's friend is Stov."
+  ],
+  "question": "Who is Slun's hat's pet's friend?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E149a-0759",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Ulf's friend is Prub.",
+   "Prub's car is Pruv.",
+   "Pruv's toy is Crun."
+  ],
+  "question": "Who is Ulf's friend's car's toy?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E149a-0760",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "Blip's hat is Olp.",
+   "Olp's car is Nax.",
+   "Nax's pet is Wex."
+  ],
+  "question": "Who is Blip's hat's car's pet?",
+  "gold": "Wex"
+ }
+]

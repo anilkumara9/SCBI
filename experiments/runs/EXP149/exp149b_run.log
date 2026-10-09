@@ -1,0 +1,20 @@
+[run-b] (u0) unit test: 9/9 pass
+[run-b] (u0) PASS
+[run-b] (b) revision actual=607a30d783dfa663caf39e06633721c8d4cfcd7e match=True
+[run-b] loading GPT-2 tokenizer + model (eager, fp32, cpu, local_files_only)
+[run-b] (a) pre-hash recorded: d48f4310e3f0177c...
+[run-b] (c) bench pin match: True (180 items)
+[run-b] Law #7 disjointness: True
+[run-b] (p2) B accuracy on 20-item subset = 0.1500 (bar [0.2,0.8]) -> STOP/HELD
+[run-b] (u0) unit test: 9/9 pass
+[run-b] (u0) PASS
+[run-b] (b) revision actual=607a30d783dfa663caf39e06633721c8d4cfcd7e match=True
+[run-b] loading GPT-2 tokenizer + model (eager, fp32, cpu, local_files_only)
+[run-b] (a) pre-hash recorded: d48f4310e3f0177c...
+[run-b] (c) bench pin match: True (180 items)
+[run-b] Law #7 disjointness: True
+[run-b] (p2) resumed from pilot state: acc=0.1500
+[run-b] (p2) B accuracy on 20-item subset = 0.1500 (bar [0.2,0.8]) -> STOP/HELD
+[run-b] (p3) WRITE-span rate on 20-item S pilot = 1.0000 (bar >= 0.50) -> PASS
+[run-b] portability pilot forwards: 2700 (design ~2,700)
+[run-b] HELD: portability gate — STOP at design cost
