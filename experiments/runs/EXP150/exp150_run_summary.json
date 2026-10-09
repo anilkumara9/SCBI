@@ -1,0 +1,64 @@
+{
+ "experiment": "EXP150",
+ "log": "LOG-4972",
+ "torch_seed": 150031,
+ "guards": {
+  "u0_scoring_pipeline": true,
+  "b_revision_match": true,
+  "a_prehash_match": true,
+  "c_bench_pin_match": true,
+  "law7_disjoint": true,
+  "h_compute_gate": true,
+  "g_design_assert": true,
+  "ds_stratified_gate": true
+ },
+ "dryrun_seeds": {
+  "transitive-2hop": 150011,
+  "transitive-3hop": 150012
+ },
+ "pilot_seed": 150021,
+ "bench": "transitive-only (hardened secondary NOT built; registered fallback \u2014 see manifest)",
+ "env": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "threads": 2
+ },
+ "bench_pin": "e930948be61748f26f8fc87166fc4c75a93241a6ae1f90e5ae5705565b345430",
+ "prompts_sha256": "e46211620ffaa49684c19f256d21db8b221be019ec992ac1c4d4fc003c94bb67",
+ "throughput_probe": {
+  "sec_per_token": 0.1476,
+  "projected_design_hours": 4.19,
+  "design_forwards": 102300
+ },
+ "dryrun": {
+  "b_accuracy": {
+   "transitive-2hop": 0.3,
+   "transitive-3hop": 0.3
+  },
+  "forwards": 600
+ },
+ "pilot": {
+  "d_pilot": 0.3,
+  "discordant": "6/20",
+  "forwards": 4800
+ },
+ "power_rule": {
+  "d_src": 0.3,
+  "power": 0.5655,
+  "se_theta": 0.0553,
+  "n_per_level": 190,
+  "band_floor": 0.53
+ },
+ "block_keying": {
+  "transitive-2hop": 0.4
+ },
+ "outcome": "HELD",
+ "reason": "d_block1 keying: registered power 0.466 < 0.53 (band floor) \u2014 STOP the full run at this point (computation, not choice)",
+ "elapsed_hours": 0.61,
+ "verdict": {
+  "table": "\u00a74 (binding)",
+  "outcome": "HELD",
+  "reason": "run stopped before the verdict phase: d_block1 keying: registered power 0.466 < 0.53 (band floor) \u2014 STOP the full run at this point (computation, not choice) \u2014 the \u00a74 decision table is moot; no verdict is licensed."
+ }
+}

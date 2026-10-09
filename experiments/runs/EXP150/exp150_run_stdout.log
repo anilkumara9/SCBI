@@ -1,0 +1,21 @@
+[run-150] (u0) unit test: 9/9 pass
+[run-150] (u0) PASS
+[run-150] (b) revision match: True
+[run-150] loading Pythia-410m tokenizer + model (eager, fp32, cpu, local snapshot)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<03:24,  1.42it/s]Loading weights:   3%|▎         | 8/292 [00:00<00:23, 12.02it/s]Loading weights:   7%|▋         | 20/292 [00:00<00:08, 31.63it/s]Loading weights:   9%|▉         | 27/292 [00:01<00:07, 37.66it/s]Loading weights:  13%|█▎        | 37/292 [00:01<00:05, 49.83it/s]Loading weights:  16%|█▋        | 48/292 [00:01<00:04, 58.23it/s]Loading weights:  21%|██        | 62/292 [00:01<00:03, 72.60it/s]Loading weights:  27%|██▋       | 80/292 [00:01<00:02, 88.62it/s]Loading weights:  33%|███▎      | 96/292 [00:01<00:01, 101.31it/s]Loading weights:  37%|███▋      | 108/292 [00:01<00:01, 101.29it/s]Loading weights:  42%|████▏     | 122/292 [00:01<00:01, 100.36it/s]Loading weights:  46%|████▌     | 134/292 [00:02<00:01, 101.43it/s]Loading weights:  52%|█████▏    | 152/292 [00:02<00:01, 115.76it/s]Loading weights:  56%|█████▌    | 164/292 [00:02<00:01, 112.27it/s]Loading weights:  60%|██████    | 176/292 [00:02<00:01, 111.79it/s]Loading weights:  66%|██████▌   | 192/292 [00:02<00:00, 109.10it/s]Loading weights:  71%|███████   | 206/292 [00:02<00:00, 104.98it/s]Loading weights:  78%|███████▊  | 228/292 [00:02<00:00, 117.62it/s]Loading weights:  86%|████████▋ | 252/292 [00:02<00:00, 145.58it/s]Loading weights:  92%|█████████▏| 268/292 [00:03<00:00, 136.35it/s]Loading weights:  97%|█████████▋| 283/292 [00:03<00:00, 137.51it/s]Loading weights: 100%|██████████| 292/292 [00:03<00:00, 89.66it/s] 
+[run-150] (a) pre-hash match: True
+[run-150] (c) bench pin match: True (380 items)
+[run-150] Law #7 disjointness: True
+[run-150] (h) probe: 0.148s/tok; transitive-only design 102300 forwards projects 4.19h (cap 72h) -> PASS; (g) design 102300 ≤ 200000 -> PASS
+[run-150] (d) dry-run transitive-2hop: B accuracy = 0.3000 (bar [0.2,0.8])
+[run-150] (d) dry-run transitive-3hop: B accuracy = 0.3000 (bar [0.2,0.8])
+[run-150] (d_s) stratified dry-run gate PASS (both transitive strata)
+[run-150] C+S pilot: d_pilot = 0.3000 (discordant 6/20)
+[run-150] Step-0 power: Φ(0.10/0.0553 − 1.645) = 0.566 (band [0.53, 0.64], floor 0.53)
+[run-150] Step-0 power rule PASS — proceeding to full run
+[run-150] resuming: 226 (item, arm) pairs already done
+[run-150] B arm complete for transitive-2hop (190 items)
+[run-150] B arm complete for transitive-3hop (190 items)
+[run-150] d_block1[transitive-2hop] = 0.4000; combined d_src = 0.4000 -> power 0.466
+[run-150] HELD: d_block1 keying

@@ -1,0 +1,19 @@
+{
+ "experiment": "EXP150",
+ "construction_seed": 150001,
+ "n": 380,
+ "n_per_stratum": 190,
+ "strata": {
+  "transitive-2hop": 190,
+  "transitive-3hop": 190
+ },
+ "pin": "e930948be61748f26f8fc87166fc4c75a93241a6ae1f90e5ae5705565b345430",
+ "bench_path": "EXP150_BENCH_2026-10-09.json",
+ "entity_pool_size": 40,
+ "exemplar_entities_disjoint": true,
+ "gold_min_count": 4,
+ "v2_check": "0/40 single-token (' '+word, Pythia BPE, offline); example ' Zorp' -> ['\u0120Z', 'orp']",
+ "hardened_secondary": "NOT BUILT (registered fallback): (v2)-literal fails (all 40 pool entities 2 BPE tokens) and (v4) pins the closed 40-entity pool - jointly unsatisfiable on Pythia-410m; transitive-only per execution brief; build_hardened() retained as the registered-but-not-built procedure",
+ "hardened_dropped": true,
+ "gold_note": "single entity NAME per gold (EXP148 \u00a75.1 recipe, v4)"
+}

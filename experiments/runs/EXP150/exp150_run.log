@@ -1,0 +1,35 @@
+[run-150] (u0) unit test: 9/9 pass
+[run-150] (u0) PASS
+[run-150] (b) revision match: True
+[run-150] loading Pythia-410m tokenizer + model (eager, fp32, cpu, local snapshot)
+[run-150] (a) pre-hash match: True
+[run-150] (c) bench pin match: True (380 items)
+[run-150] Law #7 disjointness: True
+[run-150] (h) probe: 0.183s/tok; transitive-only design 102300 forwards projects 5.19h (cap 72h) -> PASS; (g) design 102300 ≤ 200000 -> PASS
+[run-150] (d) dry-run transitive-2hop: B accuracy = 0.3000 (bar [0.2,0.8])
+[run-150] (d) dry-run transitive-3hop: B accuracy = 0.3000 (bar [0.2,0.8])
+[run-150] (d_s) stratified dry-run gate PASS (both transitive strata)
+[run-150] C+S pilot: d_pilot = 0.3000 (discordant 6/20)
+[run-150] Step-0 power: Φ(0.10/0.0553 − 1.645) = 0.566 (band [0.53, 0.64], floor 0.53)
+[run-150] Step-0 power rule PASS — proceeding to full run
+[run-150] resuming: 0 (item, arm) pairs already done
+[run-150] B arm complete for transitive-2hop (190 items)
+[run-150] (u0) unit test: 9/9 pass
+[run-150] (u0) PASS
+[run-150] (b) revision match: True
+[run-150] loading Pythia-410m tokenizer + model (eager, fp32, cpu, local snapshot)
+[run-150] (a) pre-hash match: True
+[run-150] (c) bench pin match: True (380 items)
+[run-150] Law #7 disjointness: True
+[run-150] (h) probe: 0.148s/tok; transitive-only design 102300 forwards projects 4.19h (cap 72h) -> PASS; (g) design 102300 ≤ 200000 -> PASS
+[run-150] (d) dry-run transitive-2hop: B accuracy = 0.3000 (bar [0.2,0.8])
+[run-150] (d) dry-run transitive-3hop: B accuracy = 0.3000 (bar [0.2,0.8])
+[run-150] (d_s) stratified dry-run gate PASS (both transitive strata)
+[run-150] C+S pilot: d_pilot = 0.3000 (discordant 6/20)
+[run-150] Step-0 power: Φ(0.10/0.0553 − 1.645) = 0.566 (band [0.53, 0.64], floor 0.53)
+[run-150] Step-0 power rule PASS — proceeding to full run
+[run-150] resuming: 226 (item, arm) pairs already done
+[run-150] B arm complete for transitive-2hop (190 items)
+[run-150] B arm complete for transitive-3hop (190 items)
+[run-150] d_block1[transitive-2hop] = 0.4000; combined d_src = 0.4000 -> power 0.466
+[run-150] HELD: d_block1 keying
