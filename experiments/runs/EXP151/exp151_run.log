@@ -1,0 +1,76 @@
+[run-151] (u0) unit test: 9/9 pass
+[run-151] (u0) PASS
+[run-151] (b) revision match: True
+[run-151] loading Pythia-410m tokenizer + model (eager, fp32, cpu, local snapshot)
+[run-151] (a) pre-hash match: True
+[run-151] (c) bench pin match: True (760 items)
+[run-151] Law #7 disjointness: True
+[run-151] (h) probe: 0.158s/tok; transitive-only design 199200 forwards projects 8.75h (cap 72h) -> PASS; (g) design 199200 ≤ 200000 -> PASS
+[run-151] (d) dry-run transitive-2hop: B accuracy = 0.3500 (bar [0.2,0.8])
+[run-151] (d) dry-run transitive-3hop: B accuracy = 0.3500 (bar [0.2,0.8])
+[run-151] (d_s) stratified dry-run gate PASS (both transitive strata)
+[run-151] C+S pilot: d_pilot = 0.2500 (discordant 5/20)
+[run-151] Step-0 power: Φ(0.10/0.0355 − 1.645) = 0.879 (band [0.74, 0.88], floor 0.74)
+[run-151] Step-0 power rule PASS — proceeding to full run
+[run-151] resuming: 0 (item, arm) pairs already done
+[run-151] B arm complete for transitive-2hop (380 items)
+[run-151] B arm complete for transitive-3hop (380 items)
+[run-151] RESUME lane: VM reboot ~13:36 UTC interrupted original run; 781/781 records validated intact (B 380+380, C 11, S 10); resuming via script resume
+[run-151] RESUME lane (execution lane): VM reboot ~13:36 UTC killed the original run process; 781/781 records validated intact (B 760, C 11, S 10, zero partial lines); relaunching with venv python via setsid
+[run-151] (u0) unit test: 9/9 pass
+[run-151] (u0) PASS
+[run-151] (b) revision match: True
+[run-151] loading Pythia-410m tokenizer + model (eager, fp32, cpu, local snapshot)
+[run-151] (a) pre-hash match: True
+[run-151] (c) bench pin match: True (760 items)
+[run-151] Law #7 disjointness: True
+[run-151] (h) probe: 0.158s/tok; transitive-only design 199200 forwards projects 8.72h (cap 72h) -> PASS; (g) design 199200 ≤ 200000 -> PASS
+[run-151] (d) dry-run transitive-2hop: B accuracy = 0.3500 (bar [0.2,0.8])
+[run-151] (d) dry-run transitive-3hop: B accuracy = 0.3500 (bar [0.2,0.8])
+[run-151] (d_s) stratified dry-run gate PASS (both transitive strata)
+[run-151] C+S pilot: d_pilot = 0.2500 (discordant 5/20)
+[run-151] Step-0 power: Φ(0.10/0.0355 − 1.645) = 0.879 (band [0.74, 0.88], floor 0.74)
+[run-151] Step-0 power rule PASS — proceeding to full run
+[run-151] resuming: 781 (item, arm) pairs already done
+[run-151] B arm complete for transitive-2hop (380 items)
+[run-151] B arm complete for transitive-3hop (380 items)
+[run-151] d_block1[transitive-2hop] = 0.2000; combined d_src = 0.2000 -> power 0.935
+[run-151] (u0) unit test: 9/9 pass
+[run-151] (u0) PASS
+[run-151] (b) revision match: True
+[run-151] loading Pythia-410m tokenizer + model (eager, fp32, cpu, local snapshot)
+[run-151] (a) pre-hash match: True
+[run-151] (c) bench pin match: True (760 items)
+[run-151] Law #7 disjointness: True
+[run-151] (h) probe: 0.157s/tok; transitive-only design 199200 forwards projects 8.70h (cap 72h) -> PASS; (g) design 199200 ≤ 200000 -> PASS
+[run-151] (d) dry-run transitive-2hop: B accuracy = 0.3500 (bar [0.2,0.8])
+[run-151] (d) dry-run transitive-3hop: B accuracy = 0.3500 (bar [0.2,0.8])
+[run-151] (d_s) stratified dry-run gate PASS (both transitive strata)
+[run-151] C+S pilot: d_pilot = 0.2500 (discordant 5/20)
+[run-151] Step-0 power: Φ(0.10/0.0355 − 1.645) = 0.879 (band [0.74, 0.88], floor 0.74)
+[run-151] Step-0 power rule PASS — proceeding to full run
+[run-151] resuming: 1429 (item, arm) pairs already done
+[run-151] B arm complete for transitive-2hop (380 items)
+[run-151] B arm complete for transitive-3hop (380 items)
+[run-151] d_block1[transitive-2hop] = 0.2000; combined d_src = 0.2000 -> power 0.935
+[run-151] C/S complete for transitive-2hop (380 items)
+[run-151] (u0) unit test: 9/9 pass
+[run-151] (u0) PASS
+[run-151] (b) revision match: True
+[run-151] loading Pythia-410m tokenizer + model (eager, fp32, cpu, local snapshot)
+[run-151] (a) pre-hash match: True
+[run-151] (c) bench pin match: True (760 items)
+[run-151] Law #7 disjointness: True
+[run-151] (h) probe: 0.245s/tok; transitive-only design 199200 forwards projects 13.56h (cap 72h) -> PASS; (g) design 199200 ≤ 200000 -> PASS
+[run-151] (d) dry-run transitive-2hop: B accuracy = 0.3500 (bar [0.2,0.8])
+[run-151] (d) dry-run transitive-3hop: B accuracy = 0.3500 (bar [0.2,0.8])
+[run-151] (d_s) stratified dry-run gate PASS (both transitive strata)
+[run-151] C+S pilot: d_pilot = 0.2500 (discordant 5/20)
+[run-151] Step-0 power: Φ(0.10/0.0355 − 1.645) = 0.879 (band [0.74, 0.88], floor 0.74)
+[run-151] Step-0 power rule PASS — proceeding to full run
+[run-151] resuming: 1524 (item, arm) pairs already done
+[run-151] B arm complete for transitive-2hop (380 items)
+[run-151] B arm complete for transitive-3hop (380 items)
+[run-151] d_block1[transitive-2hop] = 0.2000; combined d_src = 0.2000 -> power 0.935
+[run-151] C/S complete for transitive-2hop (380 items)
+[run-151] d_block1[transitive-3hop] = 0.0500; combined d_src = 0.2000 -> power 0.935
