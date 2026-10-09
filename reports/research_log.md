@@ -1,3 +1,13 @@
+## LOG-4966 — Push-readiness verification: commit 56250da (Friday cull LOG-4965) — READY (push founder-gated) — 2026-10-09
+
+Push-readiness verification lane per LOG-4878 standing rule (new substantive commit `56250da`; the earlier READY chain for 0a82aab/2da3c72/1b437a6 does not extend across the substantive cull commit). Commit-only — **push NOT attempted** (founder-gated; needs a fresh founder-supplied one-use token, used once transiently, never stored).
+
+**Verdict: READY.** Boundary verified: `735837f..56250da` on branch `sync/2026-09-29-consolidated`. HEAD is `56250da` ("Friday cull 2026-10-09 (LOG-4965): falsification ledger, backlog triage, stale-language retirement"), parent `735837f` — chain order confirmed. Working tree clean: `git status --short` shows only policy-excluded untracked `hf_cache/` dirs (EXP144, EXP145) — nothing uncommitted. Diff is exactly the four cull living-doc files and nothing else: `reports/research_log.md` (+30/−0), `research/CAMPAIGN_30DAY_LOG.md` (+30/−0), `research/benchmarks/PROGRESS_ANALYSIS.md` (+27/−4, stale-language retirement), `research/innovation/CANDIDATE_BACKLOG.md` (+15/−4, S7-1..S7-4 PROPOSAL → EXECUTED & CLOSED). research_log.md diff: LOG-4965 prepended at top, zero deleted/modified lines from earlier LOGs — append-only integrity holds. Deleted lines in the other two files are exactly the retired stale text (expected; no other removals).
+
+**Must-never-push scan:** grepped the full diff for secret/token/credential patterns (`ghp_|ak-|as-|password|secret|token|api_key|private_key|credentials`) — all hits benign prose ("push tokens", "Modal secret", "single-token" vocabulary facts); no credential values, no Bearer strings. Zero binary diffs, no executables, no weights, no hf_cache content. File sizes trivial (text only, 177 diff lines).
+
+**Remote safety:** no push, no fetch, no remote writes made in this lane. Push-anchor rule recorded: the local remote-tracking ref is stale and must NOT be used as the push anchor; at push time the live remote must be fetched fresh and fast-forward verified before pushing. Never force-push. Push remains founder-token-gated — next free: LOG-4967.
+
 ## LOG-4965 — Friday cull 2026-10-09: weekly falsification-ledger review — three room-closures, zero zombies — 2026-10-09
 
 Acting Research Lead, standing §2 weekly machine (single-lane review/analysis, CPU-only $0). Scope: this week's falsification ledger, backlog triage, stale-language check. No commits, no pushes, no lane writes, no self-advance.
