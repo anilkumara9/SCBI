@@ -1,0 +1,23 @@
+{
+  "n_items": 60,
+  "coverage": 0.0,
+  "n_fired": 0,
+  "gated_T_flips_vs_B": 0,
+  "gated_T_flip_ids": [],
+  "gated_R_flips_vs_B": 0,
+  "gated_R_flip_ids": [],
+  "sanity": {
+    "gated-T": {
+      "ties": 0,
+      "ties_over_60": 0.0,
+      "run_invalid_ties": false,
+      "zero_variance": false
+    },
+    "gated-R": {
+      "ties": 0,
+      "ties_over_60": 0.0,
+      "run_invalid_ties": false,
+      "zero_variance": false
+    }
+  }
+}

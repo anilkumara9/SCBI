@@ -1,0 +1,42 @@
+[16:30:22] == EXP128 (DSF) execution lane LOG-4706 ==
+[16:30:22] protocol sha256: c1f5212651fc8d2ca2eefd6e4bebfc9580dc7a85f958bd19f48f8b73263f683b
+[16:30:22] protocol pin OK (post-fix LOG-4705 revision)
+[16:30:22] prompts: canonical-order first 10 of verbatim EXP107 bench; ids + text match EXP127 decision set
+[16:30:22] torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | sklearn N/A (no fit) | threads=2 (read back)
+[16:30:27] == EXP128 (DSF) execution lane LOG-4706 ==
+[16:30:27] protocol sha256: c1f5212651fc8d2ca2eefd6e4bebfc9580dc7a85f958bd19f48f8b73263f683b
+[16:30:27] protocol pin OK (post-fix LOG-4705 revision)
+[16:30:27] prompts: canonical-order first 10 of verbatim EXP107 bench; ids + text match EXP127 decision set
+[16:30:27] torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | sklearn N/A (no fit) | threads=2 (read back)
+[16:30:41] backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[16:30:41] backbone pin OK. Delta-theta guard armed.
+[16:30:47] base pass complete: 10/10 readouts (1 forward per item)
+[16:30:47] APPARATUS-VOID: delta budget violated at (i=0,l=0,d=0): ||delta||=0.0010000000474974513
+[16:31:16] == EXP128 (DSF) execution lane LOG-4706 ==
+[16:31:16] protocol sha256: c1f5212651fc8d2ca2eefd6e4bebfc9580dc7a85f958bd19f48f8b73263f683b
+[16:31:16] protocol pin OK (post-fix LOG-4705 revision)
+[16:31:16] prompts: canonical-order first 10 of verbatim EXP107 bench; ids + text match EXP127 decision set
+[16:31:16] torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | sklearn N/A (no fit) | threads=2 (read back)
+[16:31:29] backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[16:31:29] backbone pin OK. Delta-theta guard armed.
+[16:31:36] base pass complete: 10/10 readouts (1 forward per item)
+[16:34:04] field forwards: 240/960 (2.5 min elapsed)
+[16:36:29] field forwards: 480/960 (4.9 min elapsed)
+[16:39:16] field forwards: 720/960 (7.7 min elapsed)
+[16:41:53] field forwards: 960/960 (10.3 min elapsed)
+[16:41:53] field batch complete: base=10 perturbed=960 (protocol formula: 10*24*4*2=1920)
+[16:42:24] check batch complete: 48 eps/2 forwards (expected 3*4*4=48)
+[16:42:24] linearity check: 1/12 within 25% (bar: >= 10/12)
+[16:42:24]   item 0 layer L5: S(eps)=9.4964 S(eps/2)=21.1816 rel=1.23 FAIL
+[16:42:24]   item 0 layer L11: S(eps)=10.8147 S(eps/2)=18.9249 rel=0.7499 FAIL
+[16:42:24]   item 0 layer L17: S(eps)=10.8375 S(eps/2)=21.3019 rel=0.9656 FAIL
+[16:42:24]   item 0 layer L23: S(eps)=7.38359 S(eps/2)=9.11771 rel=0.2349 PASS
+[16:42:24]   item 4 layer L5: S(eps)=8.44262 S(eps/2)=15.7927 rel=0.8706 FAIL
+[16:42:24]   item 4 layer L11: S(eps)=8.93842 S(eps/2)=17.7076 rel=0.9811 FAIL
+[16:42:24]   item 4 layer L17: S(eps)=7.77752 S(eps/2)=18.3736 rel=1.362 FAIL
+[16:42:24]   item 4 layer L23: S(eps)=3.91339 S(eps/2)=7.16379 rel=0.8306 FAIL
+[16:42:24]   item 9 layer L5: S(eps)=8.3498 S(eps/2)=15.5471 rel=0.862 FAIL
+[16:42:24]   item 9 layer L11: S(eps)=7.83391 S(eps/2)=15.5642 rel=0.9868 FAIL
+[16:42:24]   item 9 layer L17: S(eps)=7.96442 S(eps/2)=16.2509 rel=1.04 FAIL
+[16:42:24]   item 9 layer L23: S(eps)=3.04035 S(eps/2)=4.65474 rel=0.531 FAIL
+[16:42:24] APPARATUS-VOID: linearity check failed (1/12 < 10/12). No field minted.

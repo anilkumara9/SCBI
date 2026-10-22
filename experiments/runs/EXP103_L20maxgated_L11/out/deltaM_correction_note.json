@@ -1,0 +1,22 @@
+{
+ "protocol": "S6-3d v2 \u00a75 item 7 / EXP093 paired-logit-margin convention: m(h)=logit(target)-logit(foil); DeltaM=mean_i(m_arm(i)-m_B(i)) over all 60 items",
+ "correction": "the `delta_M` fields in mechanical_readout.json and exp103_report.json are ACCURACY deltas (same labeling defect as EXP101 LOG-4447); the values below are the protocol-definition DeltaM",
+ "DeltaM_paired_logit_margin": {
+  "gated-T_vs_B": {
+   "mean": -0.012874078751666669,
+   "std": 0.35924076290210644,
+   "n": 60
+  },
+  "gated-R_vs_B": {
+   "mean": -0.029963366186666653,
+   "std": 0.3304853435546237,
+   "n": 60
+  },
+  "gated-T_vs_gated-R": {
+   "mean": 0.017089287434999975,
+   "std": 0.526876972308373,
+   "n": 60
+  }
+ },
+ "gate": "|DeltaM|<0.10 flatness check for gated-R-vs-B: PASS either way"
+}

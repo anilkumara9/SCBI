@@ -1,0 +1,30 @@
+{
+ "experiment": "EXP149",
+ "study": "b",
+ "log": "LOG-4968",
+ "torch_seed": 149007,
+ "guards": {
+  "u0_scoring_pipeline": true,
+  "b_revision_match": true,
+  "c_bench_pin_match": true,
+  "law7_disjoint": true,
+  "p2_calibration": 0.15,
+  "p2_pass": false,
+  "p3_delivery": 1.0,
+  "p3_pass": true,
+  "a_posthash_match": true
+ },
+ "env": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "threads": 2
+ },
+ "pre_hash": "d48f4310e3f0177ce783ad6533a2f0c65240bb9c30b1b38c585d724147584c40",
+ "bench_pin": "a3e6f63229ae9cf727ce289abdcd890de48b97c98c0c828fe7ca87981eddd99e",
+ "prompts_sha256": "e46211620ffaa49684c19f256d21db8b221be019ec992ac1c4d4fc003c94bb67",
+ "portability_pilot_forwards": 2700,
+ "outcome": "HELD",
+ "reason": "portability gate trip (p2=False, p3=True) \u2014 measurement boundary, licenses nothing, kills nothing (Law #4)",
+ "elapsed_hours": 0.05
+}

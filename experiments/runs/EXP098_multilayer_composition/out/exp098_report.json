@@ -1,0 +1,52 @@
+{
+  "experiment": "EXP098",
+  "mode": "real",
+  "layers": [
+    11,
+    20
+  ],
+  "ratio": 0.38,
+  "exclusions": {
+    "(11,L11)": [],
+    "(20,L20)": [],
+    "(11,J)": [],
+    "(20,J)": [],
+    "(11,W)": [],
+    "(20,W)": []
+  },
+  "routing": "LIVE",
+  "guards": {
+    "G0": "pass (bench pin)",
+    "G1'": "pass (real-tokenizer cover re-executed)",
+    "\u0394\u03b8=0": "pass (pre/post LOG-331 hash)",
+    "G7": "pass (constructor 5e03f206dd907b52\u2026, audit PASS)",
+    "G5-L11": "pass (frozen verify_g5 core, d_0^(11) execution probe)",
+    "G5-L20": "pass (frozen verify_g5 core, d_0^(20) execution probe)",
+    "STEP-0": "pass (60/60 B agreement; L11 sanity OK)",
+    "STEP-1": "360/360 in band",
+    "STEP-2": "L20 mean|cos|=0.6639 (bar 0.95)",
+    "norm_ties": "120/120",
+    "thread_pin": 2,
+    "F5": "single environment (no mid-run rebuild)"
+  },
+  "run_meta": {
+    "torch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "numpy": "2.5.3",
+    "python": "3.12.3",
+    "thread_pin": 2,
+    "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+    "weights_pin": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "weights_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "weights_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "bench_pin": "9be8162633fe19aa2a924440d8ba158c1cc4e734c1f2a554a01a27e459f47fc4",
+    "seeds": {
+      "R_SEED": 94094,
+      "G5_probe_seed": 31337
+    },
+    "single_environment_F5": "all passes in this environment; no mid-run rebuild",
+    "n_passes": 368,
+    "expected_passes": 368,
+    "hard_cap": 500
+  }
+}

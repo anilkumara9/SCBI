@@ -1,0 +1,270 @@
+[
+ {
+  "step": 0,
+  "condition": "foundation gates",
+  "evidence": {
+   "constructor_rehash": "match frozen pin",
+   "G5_layer_11": "PASS (frozen verify_g5 core, d_0^(11) probe)",
+   "B_agreement": "60/60 per-item vs archived EXP094 baseline",
+   "B_accuracy": 36,
+   "L11_degeneracy_signature": "0.7923 vs 0.7923 (tol 0.05) \u2014 PASS",
+   "attention_math_validation": "max abs diff 0.00e+00 <= 1e-05 \u2014 PASS (L20 math)",
+   "E_over_N": "60/60 <= 0.5"
+  },
+  "walk": "VERDICT-LANE EVALUATION: PASS (proceed to step 1). Independently verified from primaries: constructor re-hash 5e03f206dd907b52...917f361 matches the frozen pin; per-item B decisions 60/60 vs the archived EXP094 B vector (recomputed from the EXP094 archive by this lane; B accuracy 36/60); E_i/N_i <= 0.5 on 60/60 rows; L11 degeneracy signature 0.7923 (exact, per run log); delta_theta=0 (weights_pre == weights_post == LOG-331 pin ec276abe3902fab0...). No HOLD fires."
+ },
+ {
+  "step": 1,
+  "condition": "delivery (fired rows in band)",
+  "evidence": {
+   "n_fired_cell_rows": 110,
+   "in_band": 110,
+   "out_of_band": 0,
+   "exclusions": {
+    "gated-T": [],
+    "gated-R": []
+   },
+   "zero_norm_directions": 0
+  },
+  "walk": "VERDICT-LANE EVALUATION: PASS (proceed to step 2). 110/110 fired cell-rows in band [0.285, 0.475]; 0 out of band; no exclusions on either arm; perturbation_ratio range [0.38, 0.38] for fired rows, 'undefined' for all 60 unfired rows (never probed). Realized N = 60. No HOLD."
+ },
+ {
+  "step": "2a",
+  "condition": "gate integrity",
+  "evidence": {
+   "gate_source": "B_pass_only",
+   "gate_rule": "L20-max>=tau (mass_i^{L20,max} = max_h span-sum at L20; read-only block-input pre-hook on the B pass)",
+   "n_block_input_captures": 60,
+   "capture_arm_tags": [
+    "B"
+   ],
+   "pre_hook_readonly": true,
+   "coverage": 0.9166666666666666,
+   "n_fired": 55,
+   "mass_L20_max_range": [
+    0.17544696666300297,
+    0.9999254442838662
+   ],
+   "tau_range": [
+    0.22857142857142856,
+    0.27586206896551724
+   ],
+   "audit_fired_iff_L20max_ge_tau": "60/60",
+   "audit_note": "F2-class fence: NO non-gate attention columns are persisted \u2014 the gate's own mass_i^{L20,max} only (\u00a75 item 2; \u00a74.3). No verdict, worksheet cell, or report may cite any non-gate attention quantity.",
+   "step_0iii": {
+    "E_over_N_le_0.5": "60/60",
+    "one_le_E_lt_N": "60/60",
+    "final_token_outside_span": "60/60",
+    "tau_in_(0,1]": "60/60"
+   },
+   "step_2a": "firing vector derived from B-pass captures only; injection-pass data never entered the gate computation",
+   "attention_backend": "sdpa (default; B pass bit-identical code path to EXP094-099)",
+   "attention_math_validation": {
+    "method": "WITHIN-backend eager ground truth: the eager model's own captured block-20 input through its own submodules vs its own output_attentions[20] weights (separate model instance, output_attentions=True)",
+    "n_items": 3,
+    "max_abs_diff": 0.0,
+    "tol": 1e-05,
+    "pass": true
+   },
+   "backend_divergence_diagnostic": {
+    "note": "EXP101 HOLD diagnosis (2026-09-28): cross-backend comparison is invalid \u2014 SDPA-vs-eager block-20 inputs already differ ~1e-5 from layers-0-19 backend divergence; logged, not gated",
+    "sdpa_vs_eager_block20_input_max_abs_diff_3_items": 0.0010471343994140625
+   }
+  },
+  "walk": "VERDICT-LANE EVALUATION: PASS (proceed to step 2b). Independently verified from primaries: gate_source = B_pass on all 60 gate rows; fired <=> mass_i^{L20,max} >= tau_i on 60/60 rows (recomputed by this lane; zero violations); step-0iii 60/60; L20 attention-math within-backend bit-exactness 0.00e+00 <= 1e-05 (pre-run, persisted in gate_integrity.json). F2-class fence verified by this lane: the ONLY attention-derived column persisted anywhere in the bundle is the gate's own mass_L20_max (per_item_gate.csv); per_item_records.csv and per_item_delivery.csv carry no attention columns. No injection-pass data entered the gate."
+ },
+ {
+  "step": "2b",
+  "condition": "coverage tripwire",
+  "evidence": {
+   "coverage": 0.9166666666666666,
+   "n_fired": 55,
+   "floor": 0.1,
+   "tripwire_fired": false,
+   "vacuous_gate": false
+  },
+  "walk": "VERDICT-LANE EVALUATION: TRIPWIRE DOES NOT FIRE. Coverage 55/60 = 91.67% >= 10% (recomputed from per_item_gate.csv). No PIVOT (untestable); proceed to step 2c."
+ },
+ {
+  "step": "2c",
+  "condition": "vacuous-gate flag",
+  "evidence": {
+   "vacuous_gate": false,
+   "required_verbatim_caveat": "CONTINUE (directional signal at ratio 0.38; gating unattributed \u2014 the gate was vacuous)."
+  },
+  "walk": "VERDICT-LANE EVALUATION: VACUOUS-GATE FLAG DOES NOT ATTACH. Coverage = 91.67%, not 100%. The F7 verbatim caveat ('gating unattributed -- the gate was vacuous') is not required. Proceed to step 3."
+ },
+ {
+  "step": 3,
+  "condition": "regime routing (machine-written)",
+  "evidence": {
+   "routing": "LIVE",
+   "routing_reason": "(gated-T=3 >= 1) OR (gated-R=1 >= 1)",
+   "coverage": 0.9166666666666666,
+   "n_fired": 55,
+   "evidence": {
+    "gated_T_flips_vs_B": 3,
+    "gated_R_flips_vs_B": 1,
+    "delivery_confirmed": true,
+    "sanity": {
+     "gated-T": {
+      "ties": 0,
+      "ties_over_60": 0.0,
+      "run_invalid_ties": false,
+      "zero_variance": false
+     },
+     "gated-R": {
+      "ties": 0,
+      "ties_over_60": 0.0,
+      "run_invalid_ties": false,
+      "zero_variance": false
+     }
+    }
+   },
+   "note": "machine-written before the table walk; per-arm RUN-INVALID routed where sanity gates fire; steps 2b, 4-8 are the verdict lane's"
+  },
+  "walk": "VERDICT-LANE EVALUATION: LIVE. gated-T-vs-B flips = 3 >= 1 (machine-written regime routing confirmed by this lane from primaries). Coverage 91.67% >= 10%, so the FROZEN branch is inapplicable. Sanity gates: ties 0/60, no zero-variance on either arm -- no RUN-INVALID. Proceed to step 4."
+ },
+ {
+  "step": "F1",
+  "condition": "decision-proxy audit (descriptive ONLY; no routing, bar, or verdict consequence \u2014 \u00a74.3)",
+  "evidence": {
+   "B_accuracy_fired": 34,
+   "B_accuracy_unfired": 2,
+   "n_fired": 55,
+   "n_unfired": 5,
+   "note": "descriptive only \u2014 the verdict lane may state whether the gate behaved as a near-decision proxy; it alters no step"
+  },
+  "walk": "DESCRIPTIVE ONLY (no routing, bar, or verdict consequence -- binding per LOG-4457 risk-#2 ruling). Independently recomputed from primaries: B accuracy 34/55 on fired items vs 2/5 on unfired items. Interpretation in the licensed vocabulary: the L20-max gate fired on 55/60 items (91.67%) across the full B-accuracy spectrum -- 21 of the 55 fired items were B-wrong -- so the gate did not behave as a near-decision proxy in this run; the audit adds descriptive color only and alters no step's routing."
+ },
+ {
+  "step": 4,
+  "condition": "fragility PIVOT (matched random, \u00a73 step 4)",
+  "evidence": {
+   "aggregate_contrasts": {
+    "gated-T_vs_B": {
+     "n": 60,
+     "delta": -0.016666666666666666,
+     "b": 1,
+     "c": 2,
+     "p": 1.0
+    },
+    "gated-R_vs_B": {
+     "n": 60,
+     "delta": 0.016666666666666666,
+     "b": 1,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+     "n": 60,
+     "delta": -0.03333333333333333,
+     "b": 1,
+     "c": 3,
+     "p": 0.625
+    }
+   },
+   "gated_R_flips_vs_B": 1,
+   "note": "fragility routes before directionality; verdict lane applies the first-match rule"
+  },
+  "walk": "VERDICT-LANE EVALUATION: NEITHER DISJUNCT FIRES. Disjunct (a) requires gated-T >= 6 AND gated-R >= 6 (actual: 3 and 1). Disjunct (b) requires gated-T < 6 AND gated-R >= 6 (actual gated-R: 1 < 6). No matched-control fragility, no control-outmoves-task. Proceed to step 5."
+ },
+ {
+  "step": 5,
+  "condition": "licensed positive (gated-T, \u00a73 step 5)",
+  "evidence": {
+   "aggregate_contrasts": {
+    "gated-T_vs_B": {
+     "n": 60,
+     "delta": -0.016666666666666666,
+     "b": 1,
+     "c": 2,
+     "p": 1.0
+    },
+    "gated-R_vs_B": {
+     "n": 60,
+     "delta": 0.016666666666666666,
+     "b": 1,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+     "n": 60,
+     "delta": -0.03333333333333333,
+     "b": 1,
+     "c": 3,
+     "p": 0.625
+    }
+   },
+   "stratum_cells": "stratum_table.json",
+   "sensitivity_floor_8_over_N_realized": 0.13333333333333333,
+   "sensitivity_floor_8_over_F": 0.14545454545454545,
+   "note": "full conjunction evaluated by the verdict lane"
+  },
+  "walk": "VERDICT-LANE EVALUATION: DOES NOT FIRE. gated-T-vs-B flips = 3 < 6 (recomputed by this lane: b=1, c=2, McNemar-exact doubling p=1.0; flip IDs: exp092_planetary_2hop_2 wrong->right A-first, exp092_planetary_3hop_7 right->wrong C-first, exp092_elemental_2hop_0 right->wrong C-first). The licensed positive requires >= 6 flips with p < 0.01. Proceed to step 6."
+ },
+ {
+  "step": 6,
+  "condition": "gated KILL (\u00a73 step 6)",
+  "evidence": {
+   "routing": "LIVE",
+   "coverage": 0.9166666666666666,
+   "n_fired": 55,
+   "aggregate_contrasts": {
+    "gated-T_vs_B": {
+     "n": 60,
+     "delta": -0.016666666666666666,
+     "b": 1,
+     "c": 2,
+     "p": 1.0
+    },
+    "gated-R_vs_B": {
+     "n": 60,
+     "delta": 0.016666666666666666,
+     "b": 1,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+     "n": 60,
+     "delta": -0.03333333333333333,
+     "b": 1,
+     "c": 3,
+     "p": 0.625
+    }
+   },
+   "note": "verdict lane evaluates the step-6 conjunction (LIVE, coverage\u226510%, gated-T<6, gated-R sub-threshold)"
+  },
+  "walk": "VERDICT-LANE EVALUATION: FIRES -- FIRST MATCH. All four conjuncts verified from primaries: regime LIVE (step 3); coverage 55/60 = 91.67% >= 10%; gated-T flips = 3 < 6 (b=1, c=2, McNemar-exact doubling p=1.0, mixed directionality: 1 wrong->right, 2 right->wrong); gated-R sub-threshold = 1 flip < 6 (b=1, c=0, p=1.0) -- the >= 6 gated-R world is claimed by step 4, which did not fire. Protocol-defined DeltaM (paired logit-margin, recomputed by this lane from per_item_records.csv): gated-T-vs-B -0.012874, gated-R-vs-B -0.029963 -- both |DeltaM| < 0.10 (flat). Evidential weight scoped to the 55 fired items: 1 directional-positive (wrong->right) flip among 55 fired => one-sided 95% upper bound 5.3% on the gated-conditional directional flip rate; the single positive flip is offset by 2 negative flips (p=1.0, non-significant). BINDING VERDICT: Refuted -- later-layer max-gated relevance does not rescue the L11 direction. Fenced to L20-max-gated per-item L11 injection at ratio 0.38 on EXP092-B -- never to 'all dynamic mechanisms,' 'all layers,' or 'self-computed gates.'"
+ },
+ {
+  "step": 7,
+  "condition": "otherwise -> PIVOT (named sub-cases)",
+  "evidence": {
+   "aggregate_contrasts": {
+    "gated-T_vs_B": {
+     "n": 60,
+     "delta": -0.016666666666666666,
+     "b": 1,
+     "c": 2,
+     "p": 1.0
+    },
+    "gated-R_vs_B": {
+     "n": 60,
+     "delta": 0.016666666666666666,
+     "b": 1,
+     "c": 0,
+     "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+     "n": 60,
+     "delta": -0.03333333333333333,
+     "b": 1,
+     "c": 3,
+     "p": 0.625
+    }
+   }
+  },
+  "walk": "PREEMPTED -- step 6 fired first (first-match-wins). No sub-case evaluated."
+ }
+]

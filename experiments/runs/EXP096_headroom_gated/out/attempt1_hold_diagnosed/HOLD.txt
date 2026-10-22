@@ -1,0 +1,1 @@
+STEP-1 HOLD: 21 gated rows out of band (>2) — common-cause suspected — HOLD + diagnose.

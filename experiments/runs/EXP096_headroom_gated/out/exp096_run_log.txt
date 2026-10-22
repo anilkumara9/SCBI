@@ -1,0 +1,21 @@
+[g7] G7.1 pass: constructor 5e03f206dd907b52… frozen, audit PASS.
+[g0] gate-manifest pass: recomputed G == Appendix A (21/21, member-for-member); archive hash matches frozen pin.
+[g0] G0 pass: bench pin 9be8162633fe19aa…, 60 items.
+[run] torch intra-op threads pinned: 2
+[run] G1' pass: 240/240 in-prompt occurrences single-token.
+[run] gated set: 21 items (Appendix A order); A-first=13, C-first=8.
+[run] Δθ=0 pre-run hash OK: ec276abe3902fab0…
+[run] B arm complete: 60 passes; B accuracy 36/60.
+[run] reference passes complete: 60 passes.
+[run] construction complete: 60 d_i at alpha=8.0, 60 g_i (R seed 94094).
+[run] norm-tie check: ||B_wrong_i|| == ||T(8.0)_i|| on all 21 gated items.
+[run] degeneracy: mean|cos|=0.7923 (sanity vs 0.7923 OK; bar 0.95).
+[run] STEP-0 B agreement: 60/60 per-item decisions match the archived EXP094 baseline.
+[run] STEP-1 delivery: 42/42 ratios computed; 42/42 in [0.2844, 0.474].
+[run] sweep T(8.0): 21/21 gated passes complete.
+[run] sweep B_wrong(8.0): 21/21 gated passes complete.
+[run] sweep complete. Total passes: 162 (expected 162, cap 400).
+[run] reach verification: realized max|shift(8.0)|=0.8621 vs under-trip 1.125 (ok) / over-trip 0.45 (ok).
+[run] Δθ=0 post-run hash OK (Δθ=0 verified).
+[run] scoring complete: 27 cells; ties=0/42 (rate 0.000).
+[run] per-item CSV written: out/per_item_records.csv (102 rows).

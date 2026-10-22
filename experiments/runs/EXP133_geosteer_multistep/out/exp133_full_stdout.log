@@ -1,0 +1,22 @@
+== EXP133 (GEOSTEER geodesic multistep, K=5) execution lane ==
+mode: FULL (10 prompts, K=2 random paths)
+protocol sha256: ad2158bbdec7e86bd925031fad94fa3ce6a12dc5debe86d49edeec05a25ac8a3
+amendment sha256: e4a7633584b76fc8274d13935f980010e3a2cd91db814a682c7f4707796c58ef
+protocol + amendment pins OK (signed pre-reg LOG-4798 as amended LOG-4801/4802)
+bench sha256: e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5
+prompts: canonical-order first 10 of verbatim EXP107 bench
+env: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "device": "cpu", "cuda": null, "smoke": false}
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] The following generation flags are not valid and may be ignored: ['output_hidden_states']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<02:03,  2.35it/s]Loading weights:   4%|▍         | 12/292 [00:00<00:09, 28.01it/s]Loading weights:   9%|▉         | 26/292 [00:00<00:04, 53.65it/s]Loading weights:  16%|█▋        | 48/292 [00:00<00:02, 94.70it/s]Loading weights:  25%|██▌       | 74/292 [00:00<00:01, 134.16it/s]Loading weights:  34%|███▎      | 98/292 [00:00<00:01, 159.42it/s]Loading weights:  41%|████      | 120/292 [00:01<00:01, 165.54it/s]Loading weights:  48%|████▊     | 139/292 [00:01<00:00, 158.53it/s]Loading weights:  54%|█████▍    | 157/292 [00:01<00:00, 150.20it/s]Loading weights:  61%|██████▏   | 179/292 [00:01<00:00, 160.13it/s]Loading weights:  67%|██████▋   | 196/292 [00:01<00:00, 143.29it/s]Loading weights:  73%|███████▎  | 212/292 [00:01<00:00, 123.49it/s]Loading weights:  79%|███████▉  | 230/292 [00:01<00:00, 132.96it/s]Loading weights:  86%|████████▋ | 252/292 [00:02<00:00, 149.00it/s]Loading weights:  93%|█████████▎| 272/292 [00:02<00:00, 150.82it/s]Loading weights:  99%|█████████▉| 290/292 [00:02<00:00, 154.45it/s]Loading weights: 100%|██████████| 292/292 [00:02<00:00, 127.09it/s]
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+v1 artifact sha256: 9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc
+v1 re-pinned: hash OK + 10/10 id alignment (v1__<prompt_id>)
+support set: 150 contrast pairs (300 presentations, verbatim EXP077 construction)
+B_agg re-derived deterministically from EXP077 support set; reconstruction sha256: d3556d83751634a2fc5114d56c4ee246bb1b296293d2adcde40a369da1600ae1
+B_agg hash gate PASS (breaking point (b3)): matches EXP131 pins.bagg_reconstruction
+support continuity diagnostic mean_cos_v1=0.7162
+budget B = 0.01 * median||y20|| = 0.50578363  (recorded BEFORE first injection forward)
+apparatus-void: recomputed B=0.50578363 != verbatim 0.50578119 (rel 4.832e-06) — bench/backbone drift.
+EXIT:44

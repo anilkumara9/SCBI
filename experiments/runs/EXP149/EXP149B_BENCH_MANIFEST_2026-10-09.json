@@ -1,0 +1,19 @@
+{
+ "experiment": "EXP149",
+ "study": "b (cross-family GPT-2-small)",
+ "branch": "(p1)-fail rebuild (parent bench 0/180 single-token)",
+ "construction_seed": 149008,
+ "n": 180,
+ "n_per_stratum": 45,
+ "strata": {
+  "transitive-2hop": 45,
+  "transitive-3hop": 45,
+  "compositional-2hop": 45,
+  "compositional-3hop": 45
+ },
+ "pin": "a3e6f63229ae9cf727ce289abdcd890de48b97c98c0c828fe7ca87981eddd99e",
+ "bench_path": "EXP149B_BENCH_2026-10-09.json",
+ "entity_pool": "40 GPT-2-BPE-safe real words, single-token by construction",
+ "exemplar_entities_disjoint": true,
+ "gold_min_count": 2
+}

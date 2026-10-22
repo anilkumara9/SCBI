@@ -1,0 +1,10 @@
+{
+ "b_accuracy": 0.0,
+ "guards": {
+  "d_calibration": false,
+  "a_posthash_match": true
+ },
+ "outcome": "HELD",
+ "reason": "guard (d): B accuracy 0.0000 outside [0.2,0.8]",
+ "backbone_post_hash": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed"
+}

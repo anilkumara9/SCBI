@@ -1,0 +1,27 @@
+{
+  "step": 4,
+  "expected_set": [
+    "exp092_elemental_2hop_0",
+    "exp092_elemental_2hop_10",
+    "exp092_elemental_3hop_1",
+    "exp092_planetary_2hop_11",
+    "exp092_planetary_2hop_5",
+    "exp092_planetary_2hop_7"
+  ],
+  "expected_count": 6,
+  "expected_b": 0,
+  "expected_c": 6,
+  "observed_count": 6,
+  "observed_b": 0,
+  "observed_c": 6,
+  "note": "setup validation, not a verdict step",
+  "observed_set": [
+    "exp092_elemental_2hop_0",
+    "exp092_elemental_2hop_10",
+    "exp092_elemental_3hop_1",
+    "exp092_planetary_2hop_11",
+    "exp092_planetary_2hop_5",
+    "exp092_planetary_2hop_7"
+  ],
+  "set_equality": true
+}

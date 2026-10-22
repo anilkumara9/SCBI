@@ -1,0 +1,100 @@
+{
+ "experiment": "EXP125",
+ "hypothesis": "H22/HONESTY-GEN4",
+ "lane": "LOG-4680",
+ "verdict": "KILL",
+ "environment": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "sklearn": "1.9.1",
+  "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+  "site_hidden_states_index": 20,
+  "torch_num_threads_set": 2,
+  "torch_num_threads_readback": 2,
+  "seeds": {
+   "torch": 0,
+   "numpy": 0
+  },
+  "device": "cpu",
+  "dtype": "float32"
+ },
+ "pins": {
+  "prereg": "276b4db84e8c3442dc2859ab68ad5312223b91ebc6c28b237fafccf7ecf92820",
+  "bench": "4995545cae3b662567166d1549952e304d19ced014431bb48637f4b5e27c6cf7",
+  "backbone_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "backbone_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "backbone_pin_expected": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "site_hidden_states_index": 20,
+  "tail_identity": [
+   32,
+   37741,
+   27
+  ]
+ },
+ "guards": {
+  "G4_spread": 0.13812521997361454,
+  "G1_mean_mass": 0.23234268257961868,
+  "G1_min": 0.04415526067351862,
+  "G1_max": 0.6369767237773543,
+  "G2_distinct": 2,
+  "G2_minority": 21,
+  "G2_E1": 21,
+  "G2_E2": 39
+ },
+ "margin_distribution": {
+  "median": 0.000992803994292274,
+  "min": 1.2326448096650067e-05,
+  "max": 0.004473681254362621,
+  "ties_toward_E2": 0
+ },
+ "mass_distribution": {
+  "mean": 0.23234268257961868,
+  "min": 0.04415526067351862,
+  "max": 0.6369767237773543,
+  "fraction_ge_0_01": 1.0
+ },
+ "verdict_reason": "no signal: self-report carries no decision information at this read site on bench 4",
+ "systematic_misreporting_observation": null,
+ "fidelity": {
+  "agree": 28,
+  "n": 60,
+  "value": 0.4666666666666667
+ },
+ "executor_p_values": {
+  "P_ge42_05": 0.001335218141403533,
+  "P_le57_99": 0.02242016478883313,
+  "P_ge41_05": 0.0031088013296633353,
+  "P_ge33_05": 0.2594790015948259,
+  "P_le23_05": 0.04623049053646187,
+  "P_observed_one_sided": 0.740520998405174
+ },
+ "pre_verdict_hashes": {
+  "exp125_per_item.json": "27a3744d147ebde390f458a3a3d3d01ae2578433566807417c1eba4225ba367b",
+  "exp125_embeddings.npz": "c12defa52589154df25a5365c69b8566ed4a1b44a5e29c9f2fef7be40e421082",
+  "exp125_worksheet.json": "4ee1d7ff08bbfa68a71750dbe0d6a1afa5cd0ac7df539a798cef42c52970c9d9",
+  "exp125_bench4.json": "4995545cae3b662567166d1549952e304d19ced014431bb48637f4b5e27c6cf7"
+ },
+ "per_cell_fidelity": {
+  "A-first/flipped": {
+   "agree": 9,
+   "n": 15,
+   "fidelity": 0.6
+  },
+  "A-first/original": {
+   "agree": 11,
+   "n": 15,
+   "fidelity": 0.7333333333333333
+  },
+  "C-first/flipped": {
+   "agree": 3,
+   "n": 15,
+   "fidelity": 0.2
+  },
+  "C-first/original": {
+   "agree": 5,
+   "n": 15,
+   "fidelity": 0.3333333333333333
+  }
+ }
+}

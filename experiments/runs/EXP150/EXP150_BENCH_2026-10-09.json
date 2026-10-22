@@ -1,0 +1,3992 @@
+[
+ {
+  "id": "E150-0001",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Pruv is taller than Flib.",
+   "Flib is taller than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0002",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Miv is shorter than Blix.",
+   "Blix is shorter than Prub."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E150-0003",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Wex is shorter than Plix.",
+   "Plix is shorter than Ralv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0004",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Qel is shorter than Vorn.",
+   "Vorn is shorter than Jurb."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0005",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yub is taller than Rint.",
+   "Rint is taller than Krad."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E150-0006",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jurb is shorter than Xob.",
+   "Xob is shorter than Miv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E150-0007",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Stov is shorter than Klap.",
+   "Klap is shorter than Slun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E150-0008",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Lomit is shorter than Fweep.",
+   "Fweep is shorter than Stov."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E150-0009",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zorp is shorter than Quix.",
+   "Quix is shorter than Fweep."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E150-0010",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is taller than Klap.",
+   "Klap is taller than Blix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0011",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is shorter than Nox.",
+   "Nox is shorter than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E150-0012",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is shorter than Rint.",
+   "Rint is shorter than Tiv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0013",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Crun is taller than Nox.",
+   "Nox is taller than Grax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E150-0014",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blix is shorter than Trun.",
+   "Trun is shorter than Lomit."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0015",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vorn is shorter than Ralv.",
+   "Ralv is shorter than Zarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E150-0016",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vorn is shorter than Yub.",
+   "Yub is shorter than Pruv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E150-0017",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zarn is shorter than Prub.",
+   "Prub is shorter than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E150-0018",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Crun is shorter than Blip.",
+   "Blip is shorter than Tunk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E150-0019",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tunk is taller than Zarn.",
+   "Zarn is taller than Zorp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E150-0020",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Xob is shorter than Nax.",
+   "Nax is shorter than Lomit."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E150-0021",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jurb is taller than Trun.",
+   "Trun is taller than Nax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E150-0022",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zorp is shorter than Nox.",
+   "Nox is shorter than Tiv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E150-0023",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is shorter than Olp.",
+   "Olp is shorter than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E150-0024",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Crun is shorter than Nax.",
+   "Nax is shorter than Quib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E150-0025",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quib is shorter than Olp.",
+   "Olp is shorter than Vram."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E150-0026",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ulf is taller than Yent.",
+   "Yent is taller than Plix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E150-0027",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quix is shorter than Tunk.",
+   "Tunk is shorter than Sarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0028",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is shorter than Wex.",
+   "Wex is shorter than Nox."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0029",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ulf is shorter than Nax.",
+   "Nax is shorter than Rint."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E150-0030",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Qel is shorter than Klap.",
+   "Klap is shorter than Drup."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0031",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zorp is taller than Qel.",
+   "Qel is taller than Jalp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E150-0032",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jurb is shorter than Jalp.",
+   "Jalp is shorter than Lomit."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0033",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Drup is shorter than Jalp.",
+   "Jalp is shorter than Nox."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0034",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Trun is taller than Zarn.",
+   "Zarn is taller than Crun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E150-0035",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quix is taller than Prub.",
+   "Prub is taller than Yent."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0036",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zorp is taller than Hont.",
+   "Hont is taller than Nax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E150-0037",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vorn is shorter than Pruv.",
+   "Pruv is shorter than Plix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E150-0038",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Xob is taller than Blip.",
+   "Blip is taller than Tunk."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E150-0039",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Drup is shorter than Jalp.",
+   "Jalp is shorter than Lomit."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0040",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Wex is shorter than Pruv.",
+   "Pruv is shorter than Tunk."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E150-0041",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Rint is taller than Hont.",
+   "Hont is taller than Quib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E150-0042",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zorp is taller than Ralv.",
+   "Ralv is taller than Nox."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E150-0043",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yent is taller than Jalp.",
+   "Jalp is taller than Rint."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0044",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quib is shorter than Sarn.",
+   "Sarn is shorter than Xob."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E150-0045",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quix is shorter than Klap.",
+   "Klap is shorter than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0046",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Lomit is shorter than Klap.",
+   "Klap is shorter than Rint."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0047",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jurb is taller than Blix.",
+   "Blix is taller than Trun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E150-0048",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Trun is shorter than Pruv.",
+   "Pruv is shorter than Zarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E150-0049",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Prub is shorter than Tiv.",
+   "Tiv is shorter than Stov."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E150-0050",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zarn is shorter than Blip.",
+   "Blip is shorter than Lomit."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E150-0051",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Nax is taller than Quix.",
+   "Quix is taller than Blix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E150-0052",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Drup is taller than Miv.",
+   "Miv is taller than Slun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0053",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Wex is taller than Miv.",
+   "Miv is taller than Ralv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E150-0054",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Rint is shorter than Drup.",
+   "Drup is shorter than Ralv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E150-0055",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Hont is taller than Olp.",
+   "Olp is taller than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E150-0056",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blip is taller than Stov.",
+   "Stov is taller than Vorn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E150-0057",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blip is shorter than Quib.",
+   "Quib is shorter than Fweep."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E150-0058",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vram is shorter than Yub.",
+   "Yub is shorter than Stov."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E150-0059",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yent is shorter than Plix.",
+   "Plix is shorter than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0060",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tiv is taller than Nox.",
+   "Nox is taller than Stov."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E150-0061",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Flib is shorter than Grax.",
+   "Grax is shorter than Quix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0062",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Grax is taller than Wex.",
+   "Wex is taller than Rint."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E150-0063",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jurb is taller than Zarn.",
+   "Zarn is taller than Lomit."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0064",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Krad is taller than Zorp.",
+   "Zorp is taller than Quix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0065",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yub is shorter than Jalp.",
+   "Jalp is shorter than Ulf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E150-0066",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Flib is taller than Pruv.",
+   "Pruv is taller than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E150-0067",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tiv is shorter than Nox.",
+   "Nox is shorter than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E150-0068",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Slun is shorter than Yub.",
+   "Yub is shorter than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0069",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Krad is taller than Zorp.",
+   "Zorp is taller than Klap."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E150-0070",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is shorter than Tiv.",
+   "Tiv is shorter than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0071",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zorp is shorter than Flib.",
+   "Flib is shorter than Nax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E150-0072",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quix is taller than Zarn.",
+   "Zarn is taller than Tiv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E150-0073",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Flib is taller than Blip.",
+   "Blip is taller than Klap."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E150-0074",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quix is shorter than Rint.",
+   "Rint is shorter than Klap."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E150-0075",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Grax is shorter than Vorn.",
+   "Vorn is shorter than Tunk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E150-0076",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Hont is taller than Yent.",
+   "Yent is taller than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E150-0077",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zorp is taller than Ralv.",
+   "Ralv is taller than Prub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E150-0078",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Prub is shorter than Quib.",
+   "Quib is shorter than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E150-0079",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zarn is taller than Yent.",
+   "Yent is taller than Crun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E150-0080",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yent is shorter than Slun.",
+   "Slun is shorter than Tiv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0081",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Sarn is taller than Trun.",
+   "Trun is taller than Drup."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0082",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Plix is shorter than Quix.",
+   "Quix is shorter than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E150-0083",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tiv is taller than Pruv.",
+   "Pruv is taller than Slun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0084",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is shorter than Yent.",
+   "Yent is shorter than Sarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E150-0085",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Sarn is shorter than Miv.",
+   "Miv is shorter than Jalp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E150-0086",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Miv is shorter than Quix.",
+   "Quix is shorter than Xob."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E150-0087",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Trun is shorter than Hont.",
+   "Hont is shorter than Ralv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E150-0088",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quib is taller than Slun.",
+   "Slun is taller than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E150-0089",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Stov is shorter than Crun.",
+   "Crun is shorter than Grax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E150-0090",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Grax is taller than Tunk.",
+   "Tunk is taller than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0091",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is taller than Jurb.",
+   "Jurb is taller than Qel."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0092",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is taller than Zorp.",
+   "Zorp is taller than Nax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E150-0093",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Slun is taller than Krad.",
+   "Krad is taller than Jalp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0094",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jurb is shorter than Sarn.",
+   "Sarn is shorter than Stov."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E150-0095",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jurb is taller than Nox.",
+   "Nox is taller than Zarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E150-0096",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blix is shorter than Xob.",
+   "Xob is shorter than Yent."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0097",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Sarn is taller than Flib.",
+   "Flib is taller than Plix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E150-0098",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Slun is taller than Jalp.",
+   "Jalp is taller than Sarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E150-0099",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Stov is taller than Yent.",
+   "Yent is taller than Drup."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E150-0100",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Stov is taller than Blip.",
+   "Blip is taller than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E150-0101",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vram is taller than Grax.",
+   "Grax is taller than Plix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E150-0102",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Nox is taller than Vorn.",
+   "Vorn is taller than Rint."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E150-0103",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Drup is shorter than Vorn.",
+   "Vorn is shorter than Blix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E150-0104",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zorp is taller than Ulf.",
+   "Ulf is taller than Slun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0105",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Slun is shorter than Wex.",
+   "Wex is shorter than Flib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0106",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Xob is shorter than Stov.",
+   "Stov is shorter than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E150-0107",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Slun is taller than Vram.",
+   "Vram is taller than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0108",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is taller than Olp.",
+   "Olp is taller than Klap."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0109",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Trun is taller than Wex.",
+   "Wex is taller than Vram."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E150-0110",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quib is taller than Vorn.",
+   "Vorn is taller than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E150-0111",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Drup is shorter than Miv.",
+   "Miv is shorter than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0112",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Prub is shorter than Blip.",
+   "Blip is shorter than Rint."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E150-0113",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Qel is shorter than Blix.",
+   "Blix is shorter than Jurb."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0114",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Crun is shorter than Xob.",
+   "Xob is shorter than Quix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E150-0115",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quix is taller than Sarn.",
+   "Sarn is taller than Drup."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0116",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Flib is taller than Quix.",
+   "Quix is taller than Vorn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E150-0117",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Grax is taller than Nax.",
+   "Nax is taller than Blix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E150-0118",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yent is shorter than Slun.",
+   "Slun is shorter than Blip."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0119",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quib is taller than Drup.",
+   "Drup is taller than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E150-0120",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Plix is taller than Tiv.",
+   "Tiv is taller than Qel."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0121",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tunk is taller than Krad.",
+   "Krad is taller than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E150-0122",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Crun is shorter than Grax.",
+   "Grax is shorter than Tunk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E150-0123",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ulf is shorter than Slun.",
+   "Slun is shorter than Qel."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0124",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Ralv is taller than Quib.",
+   "Quib is taller than Klap."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0125",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Pruv is shorter than Miv.",
+   "Miv is shorter than Nax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E150-0126",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vram is taller than Grax.",
+   "Grax is taller than Quix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0127",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blip is taller than Grax.",
+   "Grax is taller than Wex."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E150-0128",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tunk is taller than Qel.",
+   "Qel is taller than Klap."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E150-0129",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Hont is taller than Tiv.",
+   "Tiv is taller than Rint."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E150-0130",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yent is taller than Vram.",
+   "Vram is taller than Blip."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0131",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vram is taller than Grax.",
+   "Grax is taller than Fweep."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E150-0132",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Miv is shorter than Quib.",
+   "Quib is shorter than Sarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E150-0133",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Stov is shorter than Prub.",
+   "Prub is shorter than Ralv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0134",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Crun is taller than Olp.",
+   "Olp is taller than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E150-0135",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yub is shorter than Crun.",
+   "Crun is shorter than Quib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E150-0136",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Krad is shorter than Plix.",
+   "Plix is shorter than Miv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E150-0137",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Plix is shorter than Blip.",
+   "Blip is shorter than Ralv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0138",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Vram is taller than Xob.",
+   "Xob is taller than Yub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E150-0139",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Pruv is shorter than Jurb.",
+   "Jurb is shorter than Blip."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E150-0140",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Nox is taller than Krad.",
+   "Krad is taller than Olp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E150-0141",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yub is taller than Blip.",
+   "Blip is taller than Flib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E150-0142",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Qel is taller than Crun.",
+   "Crun is taller than Vram."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0143",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yent is shorter than Ralv.",
+   "Ralv is shorter than Hont."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E150-0144",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Zarn is taller than Prub.",
+   "Prub is taller than Vorn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E150-0145",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Grax is taller than Slun.",
+   "Slun is taller than Yub."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E150-0146",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Drup is taller than Vorn.",
+   "Vorn is taller than Miv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0147",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Trun is taller than Vorn.",
+   "Vorn is taller than Slun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0148",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Sarn is taller than Ulf.",
+   "Ulf is taller than Blip."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E150-0149",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Olp is shorter than Vorn.",
+   "Vorn is shorter than Rint."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E150-0150",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Pruv is taller than Blix.",
+   "Blix is taller than Drup."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E150-0151",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Crun is shorter than Olp.",
+   "Olp is shorter than Rint."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E150-0152",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Slun is shorter than Klap.",
+   "Klap is shorter than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0153",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blip is taller than Hont.",
+   "Hont is taller than Prub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E150-0154",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Rint is shorter than Quib.",
+   "Quib is shorter than Pruv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E150-0155",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Crun is taller than Nox.",
+   "Nox is taller than Zarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E150-0156",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Jalp is taller than Tiv.",
+   "Tiv is taller than Tunk."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E150-0157",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Pruv is shorter than Klap.",
+   "Klap is shorter than Flib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E150-0158",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Olp is taller than Pruv.",
+   "Pruv is taller than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E150-0159",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Sarn is taller than Stov.",
+   "Stov is taller than Blix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E150-0160",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Slun is shorter than Yub.",
+   "Yub is shorter than Drup."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0161",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Rint is taller than Quib.",
+   "Quib is taller than Xob."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E150-0162",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Rint is taller than Quib.",
+   "Quib is taller than Drup."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E150-0163",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Wex is taller than Krad.",
+   "Krad is taller than Quix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E150-0164",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Grax is shorter than Trun.",
+   "Trun is shorter than Xob."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E150-0165",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Xob is taller than Flib.",
+   "Flib is taller than Vram."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E150-0166",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Rint is taller than Jalp.",
+   "Jalp is taller than Blix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E150-0167",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Qel is taller than Prub.",
+   "Prub is taller than Flib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E150-0168",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Klap is shorter than Nox.",
+   "Nox is shorter than Lomit."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E150-0169",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Crun is shorter than Yent.",
+   "Yent is shorter than Rint."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E150-0170",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Yent is taller than Vram.",
+   "Vram is taller than Ralv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0171",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blix is taller than Xob.",
+   "Xob is taller than Krad."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E150-0172",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quix is taller than Fweep.",
+   "Fweep is taller than Vram."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0173",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tiv is shorter than Ulf.",
+   "Ulf is shorter than Blip."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E150-0174",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Krad is taller than Klap.",
+   "Klap is taller than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E150-0175",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Tunk is taller than Lomit.",
+   "Lomit is taller than Klap."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E150-0176",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Krad is taller than Hont.",
+   "Hont is taller than Quib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E150-0177",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blip is shorter than Stov.",
+   "Stov is shorter than Hont."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E150-0178",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Grax is taller than Hont.",
+   "Hont is taller than Flib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E150-0179",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Lomit is shorter than Trun.",
+   "Trun is shorter than Tunk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0180",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Lomit is taller than Qel.",
+   "Qel is taller than Sarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E150-0181",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Pruv is shorter than Blip.",
+   "Blip is shorter than Stov."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E150-0182",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Klap is shorter than Stov.",
+   "Stov is shorter than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E150-0183",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Trun is taller than Qel.",
+   "Qel is taller than Plix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E150-0184",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Lomit is taller than Nax.",
+   "Nax is taller than Quix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0185",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Fweep is taller than Pruv.",
+   "Pruv is taller than Nax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E150-0186",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Quix is taller than Flib.",
+   "Flib is taller than Fweep."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E150-0187",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Pruv is shorter than Xob.",
+   "Xob is shorter than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E150-0188",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blip is shorter than Sarn.",
+   "Sarn is shorter than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E150-0189",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Lomit is shorter than Xob.",
+   "Xob is shorter than Vram."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0190",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "Blip is taller than Crun.",
+   "Crun is taller than Stov."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E150-0191",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Rint is shorter than Quib.",
+   "Quib is shorter than Blip.",
+   "Blip is shorter than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E150-0192",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Plix is taller than Quix.",
+   "Quix is taller than Yub.",
+   "Yub is taller than Tiv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E150-0193",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Grax is taller than Drup.",
+   "Drup is taller than Hont.",
+   "Hont is taller than Trun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E150-0194",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is shorter than Trun.",
+   "Trun is shorter than Plix.",
+   "Plix is shorter than Pruv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E150-0195",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Miv is taller than Tiv.",
+   "Tiv is taller than Qel.",
+   "Qel is taller than Fweep."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E150-0196",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Prub is shorter than Tunk.",
+   "Tunk is shorter than Blip.",
+   "Blip is shorter than Flib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E150-0197",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jurb is taller than Tiv.",
+   "Tiv is taller than Tunk.",
+   "Tunk is taller than Quix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0198",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blip is shorter than Xob.",
+   "Xob is shorter than Tunk.",
+   "Tunk is shorter than Drup."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0199",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is shorter than Klap.",
+   "Klap is shorter than Grax.",
+   "Grax is shorter than Olp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E150-0200",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jurb is shorter than Rint.",
+   "Rint is shorter than Lomit.",
+   "Lomit is shorter than Plix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E150-0201",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ulf is shorter than Jurb.",
+   "Jurb is shorter than Sarn.",
+   "Sarn is shorter than Stov."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E150-0202",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Miv is shorter than Slun.",
+   "Slun is shorter than Tunk.",
+   "Tunk is shorter than Rint."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E150-0203",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Klap is taller than Pruv.",
+   "Pruv is taller than Nax.",
+   "Nax is taller than Yub."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E150-0204",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Hont is taller than Lomit.",
+   "Lomit is taller than Fweep.",
+   "Fweep is taller than Vram."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E150-0205",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is shorter than Miv.",
+   "Miv is shorter than Olp.",
+   "Olp is shorter than Lomit."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E150-0206",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Rint is taller than Fweep.",
+   "Fweep is taller than Yent.",
+   "Yent is taller than Nox."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E150-0207",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is shorter than Jurb.",
+   "Jurb is shorter than Blix.",
+   "Blix is shorter than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E150-0208",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Fweep is shorter than Prub.",
+   "Prub is shorter than Miv.",
+   "Miv is shorter than Nox."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E150-0209",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Slun is shorter than Grax.",
+   "Grax is shorter than Quix.",
+   "Quix is shorter than Zarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0210",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Plix is taller than Sarn.",
+   "Sarn is taller than Nox.",
+   "Nox is taller than Tiv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E150-0211",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Trun is taller than Pruv.",
+   "Pruv is taller than Stov.",
+   "Stov is taller than Blip."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E150-0212",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Hont is taller than Nox.",
+   "Nox is taller than Miv.",
+   "Miv is taller than Qel."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0213",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Pruv is shorter than Wex.",
+   "Wex is shorter than Stov.",
+   "Stov is shorter than Miv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E150-0214",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is shorter than Jalp.",
+   "Jalp is shorter than Drup.",
+   "Drup is shorter than Yub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E150-0215",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zorp is taller than Miv.",
+   "Miv is taller than Rint.",
+   "Rint is taller than Krad."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E150-0216",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ralv is shorter than Grax.",
+   "Grax is shorter than Stov.",
+   "Stov is shorter than Jalp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E150-0217",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Rint is shorter than Vram.",
+   "Vram is shorter than Blip.",
+   "Blip is shorter than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E150-0218",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zorp is taller than Quib.",
+   "Quib is taller than Plix.",
+   "Plix is taller than Slun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E150-0219",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Drup is shorter than Flib.",
+   "Flib is shorter than Nox.",
+   "Nox is shorter than Quib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E150-0220",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Grax is taller than Quix.",
+   "Quix is taller than Trun.",
+   "Trun is taller than Slun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E150-0221",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Wex is taller than Nax.",
+   "Nax is taller than Quib.",
+   "Quib is taller than Quix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E150-0222",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Krad is shorter than Ralv.",
+   "Ralv is shorter than Olp.",
+   "Olp is shorter than Crun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E150-0223",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Lomit is shorter than Drup.",
+   "Drup is shorter than Qel.",
+   "Qel is shorter than Fweep."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0224",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blix is shorter than Trun.",
+   "Trun is shorter than Miv.",
+   "Miv is shorter than Crun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E150-0225",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Tunk is taller than Trun.",
+   "Trun is taller than Miv.",
+   "Miv is taller than Blip."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E150-0226",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Grax is taller than Zarn.",
+   "Zarn is taller than Ralv.",
+   "Ralv is taller than Vorn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E150-0227",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ralv is taller than Hont.",
+   "Hont is taller than Tunk.",
+   "Tunk is taller than Ulf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E150-0228",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Rint is shorter than Hont.",
+   "Hont is shorter than Qel.",
+   "Qel is shorter than Plix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E150-0229",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is shorter than Nax.",
+   "Nax is shorter than Ulf.",
+   "Ulf is shorter than Grax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E150-0230",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jurb is taller than Pruv.",
+   "Pruv is taller than Fweep.",
+   "Fweep is taller than Ulf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E150-0231",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Pruv is shorter than Zarn.",
+   "Zarn is shorter than Klap.",
+   "Klap is shorter than Rint."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E150-0232",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Qel is shorter than Quix.",
+   "Quix is shorter than Trun.",
+   "Trun is shorter than Vorn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0233",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Plix is shorter than Tiv.",
+   "Tiv is shorter than Fweep.",
+   "Fweep is shorter than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E150-0234",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nox is taller than Sarn.",
+   "Sarn is taller than Ralv.",
+   "Ralv is taller than Yub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E150-0235",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Hont is shorter than Quib.",
+   "Quib is shorter than Crun.",
+   "Crun is shorter than Slun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E150-0236",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Trun is taller than Vram.",
+   "Vram is taller than Grax.",
+   "Grax is taller than Blip."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E150-0237",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Drup is shorter than Nax.",
+   "Nax is shorter than Slun.",
+   "Slun is shorter than Vram."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0238",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is taller than Flib.",
+   "Flib is taller than Blip.",
+   "Blip is taller than Plix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E150-0239",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Fweep is shorter than Klap.",
+   "Klap is shorter than Crun.",
+   "Crun is shorter than Zarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E150-0240",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is shorter than Nax.",
+   "Nax is shorter than Quib.",
+   "Quib is shorter than Miv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E150-0241",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Krad is taller than Rint.",
+   "Rint is taller than Fweep.",
+   "Fweep is taller than Flib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E150-0242",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yent is taller than Fweep.",
+   "Fweep is taller than Klap.",
+   "Klap is taller than Jalp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E150-0243",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Klap is shorter than Stov.",
+   "Stov is shorter than Trun.",
+   "Trun is shorter than Prub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E150-0244",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nox is taller than Grax.",
+   "Grax is taller than Jurb.",
+   "Jurb is taller than Qel."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E150-0245",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Lomit is taller than Blip.",
+   "Blip is taller than Quix.",
+   "Quix is taller than Pruv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E150-0246",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Pruv is taller than Blip.",
+   "Blip is taller than Plix.",
+   "Plix is taller than Yub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E150-0247",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Stov is shorter than Qel.",
+   "Qel is shorter than Nox.",
+   "Nox is shorter than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E150-0248",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Sarn is shorter than Lomit.",
+   "Lomit is shorter than Quib.",
+   "Quib is shorter than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Sarn"
+ },
+ {
+  "id": "E150-0249",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is taller than Drup.",
+   "Drup is taller than Grax.",
+   "Grax is taller than Ralv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0250",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Sarn is shorter than Jurb.",
+   "Jurb is shorter than Tunk.",
+   "Tunk is shorter than Tiv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tiv"
+ },
+ {
+  "id": "E150-0251",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vram is shorter than Trun.",
+   "Trun is shorter than Tunk.",
+   "Tunk is shorter than Flib."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E150-0252",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Drup is taller than Yub.",
+   "Yub is taller than Yent.",
+   "Yent is taller than Fweep."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0253",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Stov is shorter than Slun.",
+   "Slun is shorter than Krad.",
+   "Krad is shorter than Qel."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0254",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Qel is taller than Quib.",
+   "Quib is taller than Yent.",
+   "Yent is taller than Vorn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0255",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Stov is shorter than Rint.",
+   "Rint is shorter than Ulf.",
+   "Ulf is shorter than Drup."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0256",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Slun is taller than Pruv.",
+   "Pruv is taller than Fweep.",
+   "Fweep is taller than Zarn."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E150-0257",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Pruv is shorter than Slun.",
+   "Slun is shorter than Stov.",
+   "Stov is shorter than Vram."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E150-0258",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Klap is taller than Nax.",
+   "Nax is taller than Slun.",
+   "Slun is taller than Ralv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E150-0259",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blip is shorter than Prub.",
+   "Prub is shorter than Olp.",
+   "Olp is shorter than Quib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E150-0260",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Plix is shorter than Ulf.",
+   "Ulf is shorter than Quix.",
+   "Quix is shorter than Klap."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E150-0261",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Flib is shorter than Jurb.",
+   "Jurb is shorter than Grax.",
+   "Grax is shorter than Yent."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0262",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ralv is taller than Blix.",
+   "Blix is taller than Vorn.",
+   "Vorn is taller than Yent."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0263",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blip is taller than Grax.",
+   "Grax is taller than Trun.",
+   "Trun is taller than Plix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E150-0264",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is shorter than Vram.",
+   "Vram is shorter than Wex.",
+   "Wex is shorter than Blix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E150-0265",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blix is shorter than Olp.",
+   "Olp is shorter than Vorn.",
+   "Vorn is shorter than Lomit."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0266",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yent is shorter than Hont.",
+   "Hont is shorter than Vorn.",
+   "Vorn is shorter than Slun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0267",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zorp is taller than Slun.",
+   "Slun is taller than Blix.",
+   "Blix is taller than Stov."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E150-0268",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Klap is taller than Tunk.",
+   "Tunk is taller than Sarn.",
+   "Sarn is taller than Lomit."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E150-0269",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Krad is shorter than Fweep.",
+   "Fweep is shorter than Qel.",
+   "Qel is shorter than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E150-0270",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Fweep is taller than Jurb.",
+   "Jurb is taller than Qel.",
+   "Qel is taller than Blix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E150-0271",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quix is shorter than Jurb.",
+   "Jurb is shorter than Olp.",
+   "Olp is shorter than Crun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0272",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is shorter than Zarn.",
+   "Zarn is shorter than Tunk.",
+   "Tunk is shorter than Nax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E150-0273",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Flib is taller than Jalp.",
+   "Jalp is taller than Plix.",
+   "Plix is taller than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E150-0274",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Stov is shorter than Jalp.",
+   "Jalp is shorter than Hont.",
+   "Hont is shorter than Olp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Stov"
+ },
+ {
+  "id": "E150-0275",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Klap is taller than Krad.",
+   "Krad is taller than Quix.",
+   "Quix is taller than Rint."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Rint"
+ },
+ {
+  "id": "E150-0276",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Lomit is taller than Grax.",
+   "Grax is taller than Fweep.",
+   "Fweep is taller than Olp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E150-0277",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is shorter than Ralv.",
+   "Ralv is shorter than Quib.",
+   "Quib is shorter than Plix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E150-0278",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nox is shorter than Qel.",
+   "Qel is shorter than Stov.",
+   "Stov is shorter than Blip."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E150-0279",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is shorter than Plix.",
+   "Plix is shorter than Lomit.",
+   "Lomit is shorter than Blix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E150-0280",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zorp is shorter than Olp.",
+   "Olp is shorter than Hont.",
+   "Hont is shorter than Pruv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E150-0281",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Rint is shorter than Olp.",
+   "Olp is shorter than Fweep.",
+   "Fweep is shorter than Quix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0282",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Stov is taller than Xob.",
+   "Xob is taller than Ulf.",
+   "Ulf is taller than Ralv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0283",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jurb is shorter than Slun.",
+   "Slun is shorter than Tiv.",
+   "Tiv is shorter than Pruv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Pruv"
+ },
+ {
+  "id": "E150-0284",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Tunk is taller than Slun.",
+   "Slun is taller than Fweep.",
+   "Fweep is taller than Pruv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E150-0285",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is taller than Miv.",
+   "Miv is taller than Qel.",
+   "Qel is taller than Tiv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E150-0286",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quib is shorter than Crun.",
+   "Crun is shorter than Pruv.",
+   "Pruv is shorter than Zorp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E150-0287",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Rint is shorter than Crun.",
+   "Crun is shorter than Slun.",
+   "Slun is shorter than Klap."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E150-0288",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ralv is taller than Zarn.",
+   "Zarn is taller than Blip.",
+   "Blip is taller than Qel."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0289",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yent is taller than Ralv.",
+   "Ralv is taller than Klap.",
+   "Klap is taller than Nox."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0290",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Wex is shorter than Klap.",
+   "Klap is shorter than Krad.",
+   "Krad is shorter than Fweep."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E150-0291",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yub is shorter than Yent.",
+   "Yent is shorter than Nax.",
+   "Nax is shorter than Qel."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0292",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quix is taller than Plix.",
+   "Plix is taller than Olp.",
+   "Olp is taller than Zarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0293",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yub is shorter than Jalp.",
+   "Jalp is shorter than Plix.",
+   "Plix is shorter than Ralv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0294",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Lomit is taller than Blix.",
+   "Blix is taller than Tunk.",
+   "Tunk is taller than Hont."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E150-0295",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Trun is shorter than Blip.",
+   "Blip is shorter than Pruv.",
+   "Pruv is shorter than Miv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E150-0296",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is shorter than Ralv.",
+   "Ralv is shorter than Quix.",
+   "Quix is shorter than Trun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E150-0297",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jurb is taller than Vorn.",
+   "Vorn is taller than Blip.",
+   "Blip is taller than Crun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Crun"
+ },
+ {
+  "id": "E150-0298",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Drup is taller than Flib.",
+   "Flib is taller than Olp.",
+   "Olp is taller than Vorn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0299",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Hont is taller than Quix.",
+   "Quix is taller than Vorn.",
+   "Vorn is taller than Olp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Hont"
+ },
+ {
+  "id": "E150-0300",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yub is taller than Miv.",
+   "Miv is taller than Sarn.",
+   "Sarn is taller than Zarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E150-0301",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blix is shorter than Plix.",
+   "Plix is shorter than Pruv.",
+   "Pruv is shorter than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Blix"
+ },
+ {
+  "id": "E150-0302",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Flib is taller than Trun.",
+   "Trun is taller than Stov.",
+   "Stov is taller than Crun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E150-0303",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ulf is taller than Tiv.",
+   "Tiv is taller than Trun.",
+   "Trun is taller than Jalp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E150-0304",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Tunk is shorter than Tiv.",
+   "Tiv is shorter than Flib.",
+   "Flib is shorter than Krad."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E150-0305",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Prub is shorter than Sarn.",
+   "Sarn is shorter than Yub.",
+   "Yub is shorter than Zorp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zorp"
+ },
+ {
+  "id": "E150-0306",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Krad is taller than Nax.",
+   "Nax is taller than Olp.",
+   "Olp is taller than Zarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E150-0307",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nox is shorter than Qel.",
+   "Qel is shorter than Zarn.",
+   "Zarn is shorter than Ulf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Nox"
+ },
+ {
+  "id": "E150-0308",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Lomit is taller than Blip.",
+   "Blip is taller than Sarn.",
+   "Sarn is taller than Klap."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E150-0309",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is taller than Sarn.",
+   "Sarn is taller than Tiv.",
+   "Tiv is taller than Klap."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E150-0310",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jurb is taller than Vram.",
+   "Vram is taller than Pruv.",
+   "Pruv is taller than Tunk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Tunk"
+ },
+ {
+  "id": "E150-0311",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Grax is taller than Hont.",
+   "Hont is taller than Slun.",
+   "Slun is taller than Quix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0312",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Klap is taller than Tunk.",
+   "Tunk is taller than Ulf.",
+   "Ulf is taller than Drup."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0313",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blip is shorter than Rint.",
+   "Rint is shorter than Fweep.",
+   "Fweep is shorter than Qel."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0314",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Prub is shorter than Quib.",
+   "Quib is shorter than Ulf.",
+   "Ulf is shorter than Slun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E150-0315",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Drup is shorter than Sarn.",
+   "Sarn is shorter than Trun.",
+   "Trun is shorter than Krad."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0316",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quix is shorter than Stov.",
+   "Stov is shorter than Fweep.",
+   "Fweep is shorter than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E150-0317",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Wex is taller than Ralv.",
+   "Ralv is taller than Zarn.",
+   "Zarn is taller than Pruv."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E150-0318",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is taller than Rint.",
+   "Rint is taller than Fweep.",
+   "Fweep is taller than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E150-0319",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yent is taller than Zarn.",
+   "Zarn is taller than Wex.",
+   "Wex is taller than Drup."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0320",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Drup is shorter than Vorn.",
+   "Vorn is shorter than Tiv.",
+   "Tiv is shorter than Grax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0321",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jurb is taller than Ulf.",
+   "Ulf is taller than Quix.",
+   "Quix is taller than Wex."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E150-0322",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Trun is shorter than Nox.",
+   "Nox is shorter than Pruv.",
+   "Pruv is shorter than Stov."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E150-0323",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quib is taller than Vram.",
+   "Vram is taller than Qel.",
+   "Qel is taller than Klap."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Klap"
+ },
+ {
+  "id": "E150-0324",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Slun is taller than Krad.",
+   "Krad is taller than Nox.",
+   "Nox is taller than Wex."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E150-0325",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Klap is taller than Trun.",
+   "Trun is taller than Tunk.",
+   "Tunk is taller than Miv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Miv"
+ },
+ {
+  "id": "E150-0326",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is shorter than Crun.",
+   "Crun is shorter than Sarn.",
+   "Sarn is shorter than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E150-0327",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nox is shorter than Crun.",
+   "Crun is shorter than Drup.",
+   "Drup is shorter than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jurb"
+ },
+ {
+  "id": "E150-0328",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Fweep is shorter than Pruv.",
+   "Pruv is shorter than Quib.",
+   "Quib is shorter than Nax."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Fweep"
+ },
+ {
+  "id": "E150-0329",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is shorter than Drup.",
+   "Drup is shorter than Zarn.",
+   "Zarn is shorter than Krad."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Krad"
+ },
+ {
+  "id": "E150-0330",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Miv is shorter than Trun.",
+   "Trun is shorter than Olp.",
+   "Olp is shorter than Lomit."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0331",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Nax is taller than Prub.",
+   "Prub is taller than Blix.",
+   "Blix is taller than Olp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Nax"
+ },
+ {
+  "id": "E150-0332",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Olp is shorter than Blix.",
+   "Blix is shorter than Jurb.",
+   "Jurb is shorter than Pruv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E150-0333",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jurb is taller than Crun.",
+   "Crun is taller than Trun.",
+   "Trun is taller than Ulf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E150-0334",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Qel is taller than Klap.",
+   "Klap is taller than Prub.",
+   "Prub is taller than Vorn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0335",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yent is taller than Slun.",
+   "Slun is taller than Nox.",
+   "Nox is taller than Rint."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0336",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blip is shorter than Vorn.",
+   "Vorn is shorter than Plix.",
+   "Plix is shorter than Krad."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Blip"
+ },
+ {
+  "id": "E150-0337",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Tiv is shorter than Lomit.",
+   "Lomit is shorter than Hont.",
+   "Hont is shorter than Qel."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0338",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is taller than Yub.",
+   "Yub is taller than Plix.",
+   "Plix is taller than Sarn."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E150-0339",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Prub is taller than Stov.",
+   "Stov is taller than Quib.",
+   "Quib is taller than Rint."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E150-0340",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Lomit is shorter than Zorp.",
+   "Zorp is shorter than Tunk.",
+   "Tunk is shorter than Nox."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0341",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Grax is taller than Tiv.",
+   "Tiv is taller than Nox.",
+   "Nox is taller than Ulf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Grax"
+ },
+ {
+  "id": "E150-0342",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Slun is taller than Stov.",
+   "Stov is taller than Flib.",
+   "Flib is taller than Crun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0343",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Fweep is shorter than Pruv.",
+   "Pruv is shorter than Ulf.",
+   "Ulf is shorter than Quib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quib"
+ },
+ {
+  "id": "E150-0344",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Drup is taller than Stov.",
+   "Stov is taller than Slun.",
+   "Slun is taller than Trun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E150-0345",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is taller than Ulf.",
+   "Ulf is taller than Olp.",
+   "Olp is taller than Jalp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E150-0346",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is shorter than Sarn.",
+   "Sarn is shorter than Yub.",
+   "Yub is shorter than Slun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0347",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Jalp is shorter than Miv.",
+   "Miv is shorter than Yub.",
+   "Yub is shorter than Drup."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E150-0348",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blip is taller than Klap.",
+   "Klap is taller than Quib.",
+   "Quib is taller than Olp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E150-0349",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Crun is taller than Krad.",
+   "Krad is taller than Qel.",
+   "Qel is taller than Vram."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E150-0350",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yent is taller than Qel.",
+   "Qel is taller than Tunk.",
+   "Tunk is taller than Slun."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Slun"
+ },
+ {
+  "id": "E150-0351",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Lomit is shorter than Quib.",
+   "Quib is shorter than Jurb.",
+   "Jurb is shorter than Jalp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0352",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vorn is taller than Olp.",
+   "Olp is taller than Grax.",
+   "Grax is taller than Prub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vorn"
+ },
+ {
+  "id": "E150-0353",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blix is shorter than Nax.",
+   "Nax is shorter than Lomit.",
+   "Lomit is shorter than Yub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E150-0354",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Pruv is taller than Yent.",
+   "Yent is taller than Blix.",
+   "Blix is taller than Olp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E150-0355",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yub is shorter than Slun.",
+   "Slun is shorter than Xob.",
+   "Xob is shorter than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E150-0356",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Wex is taller than Qel.",
+   "Qel is taller than Xob.",
+   "Xob is taller than Jurb."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E150-0357",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Drup is shorter than Grax.",
+   "Grax is shorter than Qel.",
+   "Qel is shorter than Plix."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Drup"
+ },
+ {
+  "id": "E150-0358",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Drup is shorter than Krad.",
+   "Krad is shorter than Prub.",
+   "Prub is shorter than Yub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yub"
+ },
+ {
+  "id": "E150-0359",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Lomit is shorter than Vram.",
+   "Vram is shorter than Vorn.",
+   "Vorn is shorter than Jurb."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0360",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blip is shorter than Nox.",
+   "Nox is shorter than Fweep.",
+   "Fweep is shorter than Wex."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E150-0361",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Flib is shorter than Plix.",
+   "Plix is shorter than Quix.",
+   "Quix is shorter than Blip."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Flib"
+ },
+ {
+  "id": "E150-0362",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Prub is taller than Klap.",
+   "Klap is taller than Fweep.",
+   "Fweep is taller than Olp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Olp"
+ },
+ {
+  "id": "E150-0363",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Plix is shorter than Ralv.",
+   "Ralv is shorter than Klap.",
+   "Klap is shorter than Stov."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Plix"
+ },
+ {
+  "id": "E150-0364",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Yent is taller than Sarn.",
+   "Sarn is taller than Ulf.",
+   "Ulf is taller than Nax."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0365",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Ulf is shorter than Pruv.",
+   "Pruv is shorter than Krad.",
+   "Krad is shorter than Vram."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ulf"
+ },
+ {
+  "id": "E150-0366",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Xob is shorter than Slun.",
+   "Slun is shorter than Fweep.",
+   "Fweep is shorter than Olp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Xob"
+ },
+ {
+  "id": "E150-0367",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Wex is shorter than Jurb.",
+   "Jurb is shorter than Nax.",
+   "Nax is shorter than Ralv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E150-0368",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quix is taller than Pruv.",
+   "Pruv is taller than Vram.",
+   "Vram is taller than Blix."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Quix"
+ },
+ {
+  "id": "E150-0369",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Wex is taller than Quix.",
+   "Quix is taller than Zorp.",
+   "Zorp is taller than Stov."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Wex"
+ },
+ {
+  "id": "E150-0370",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Zarn is taller than Sarn.",
+   "Sarn is taller than Ulf.",
+   "Ulf is taller than Flib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Zarn"
+ },
+ {
+  "id": "E150-0371",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Fweep is shorter than Yent.",
+   "Yent is shorter than Ralv.",
+   "Ralv is shorter than Jalp."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Jalp"
+ },
+ {
+  "id": "E150-0372",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Prub is shorter than Nax.",
+   "Nax is shorter than Nox.",
+   "Nox is shorter than Lomit."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E150-0373",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Lomit is taller than Stov.",
+   "Stov is taller than Yub.",
+   "Yub is taller than Quib."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Lomit"
+ },
+ {
+  "id": "E150-0374",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Vram is taller than Stov.",
+   "Stov is taller than Jurb.",
+   "Jurb is taller than Blip."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Vram"
+ },
+ {
+  "id": "E150-0375",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Blip is shorter than Flib.",
+   "Flib is shorter than Drup.",
+   "Drup is shorter than Prub."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Prub"
+ },
+ {
+  "id": "E150-0376",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Slun is taller than Quix.",
+   "Quix is taller than Nox.",
+   "Nox is taller than Yent."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Yent"
+ },
+ {
+  "id": "E150-0377",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Quib is taller than Prub.",
+   "Prub is taller than Blix.",
+   "Blix is taller than Ralv."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Ralv"
+ },
+ {
+  "id": "E150-0378",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Trun is taller than Grax.",
+   "Grax is taller than Tunk.",
+   "Tunk is taller than Vram."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Trun"
+ },
+ {
+  "id": "E150-0379",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Qel is taller than Jurb.",
+   "Jurb is taller than Miv.",
+   "Miv is taller than Crun."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "Qel"
+ },
+ {
+  "id": "E150-0380",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "Krad is taller than Nax.",
+   "Nax is taller than Quix.",
+   "Quix is taller than Zorp."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "Zorp"
+ }
+]

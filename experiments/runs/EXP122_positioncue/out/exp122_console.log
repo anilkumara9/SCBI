@@ -1,0 +1,35 @@
+ENV torch=2.14.0+cpu transformers=5.17.0 sklearn=1.9.1 numpy=2.5.3
+threads set=2 read_back=2
+STAGE A: bench-3 construction gates
+design-time assertions OK: n=60 pin=2b65f01e25c824606c5b7f52b1de7f54562dd3138d0b704acc8b8877e8b165ca
+G-C1 pure-template detector: 32/60 pass=True
+position-scramble gate: 30/60 pass=True
+G-C2 entity-rank correlation: -0.0322 (|.|=0.0322) pass=True
+G-C3 decomposition pin: suffix_byte_exact=True deterministic=True pass=True
+bench-3 canonical pin 2b65f01e25c824606c5b7f52b1de7f54562dd3138d0b704acc8b8877e8b165ca persisted; re-parse x2 byte-identical
+loading tokenizer + frozen model...
+device_map='cpu' accepted
+backbone pre-extraction hash: ec276abe3902fab0... match=True
+extracting bench-3 (60 passes, premise-only, hidden_states[20])...
+  20/60
+  40/60
+  60/60
+backbone post-extraction hash: ec276abe3902fab0... match=True (Δθ=0)
+npz ids byte-match per-item records (60/60)
+split: train n=30 test n=30 overlap=0; per-cell test counts={np.str_('target-first_False'): 8, np.str_('target-first_True'): 7, np.str_('target-last_False'): 7, np.str_('target-last_True'): 8}; N_F=15 N_T=15
+determinism re-fit pass: byte-identical test predictions
+head weight hash: 5ac7b477cf20aa4b... norm=1.555946
+artifact builder_script: present 642ee7819ea3dc68...
+artifact canonical_json: present 2b65f01e25c82460...
+artifact per_item_json: present 1c5bac0692f36bb5...
+artifact embeddings_npz: present 8ca33897eefdd47f...
+artifact train_ids: present 65fd7d45976c5ee6...
+artifact test_ids: present c500590303c11ca1...
+artifact head_params: present 56f984024648b277...
+test: 27/30 = 0.9000; acc(F)=0.8667 (N_F=15); acc(T)=0.9333 (N_T=15); G=-0.0667
+executor-computed p: one-sided=0.0000042 two-sided=0.0000084
+per-cell (descriptive): {'target-first_False': 0.75, 'target-first_True': 1.0, 'target-last_False': 1.0, 'target-last_True': 0.875}; train acc (sanity): 1.0000
+VERDICT: CONTINUE
+branch: overall >= 20/30 with G < 0.30 → identity readout survives position decorrelation (decodability only, pre-reg section 7)
+saved exp122_result.json (worksheet: all raw records above)
+wall 40.6s; $0 CPU; no generation; no signed artifact modified

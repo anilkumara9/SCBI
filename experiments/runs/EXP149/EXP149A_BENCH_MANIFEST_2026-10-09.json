@@ -1,0 +1,19 @@
+{
+ "experiment": "EXP149",
+ "study": "a (hop dose-response)",
+ "construction_seed": 149001,
+ "n": 760,
+ "n_per_stratum": 190,
+ "strata": {
+  "transitive-2hop": 190,
+  "transitive-3hop": 190,
+  "compositional-2hop": 190,
+  "compositional-3hop": 190
+ },
+ "pin": "a4275c8c7996006096c715c5399d0019844ded8aaff663c0359ead202bc27f67",
+ "bench_path": "EXP149A_BENCH_2026-10-09.json",
+ "entity_pool_size": 40,
+ "exemplar_entities_disjoint": true,
+ "gold_min_count": 11,
+ "g0d_note": "single entity NAME per gold (EXP148 \u00a75.1 recipe)"
+}

@@ -1,0 +1,18 @@
+{
+ "mode": "real",
+ "experiment": "EXP145",
+ "n": 60,
+ "n_layers": 12,
+ "dim": 768,
+ "model_revision_40hex": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+ "bench_pin": "b9eac3893ddfbc67400a5d2b5cbb694ba81308471caf4a150476227065e56545",
+ "G0": "pass (pin b9eac3893ddfbc67\u2026)",
+ "G1": "pass (pre/post hash d48f4310e3f0177c\u2026, \u0394\u03b8=0 verified)",
+ "G1_pre_hash": "d48f4310e3f0177ce783ad6533a2f0c65240bb9c30b1b38c585d724147584c40",
+ "G1'": "pass (240/240, real GPT-2 BPE, before weight access)",
+ "G2": "pass (oracle=0.0607, p=0.5312, bound to pin)",
+ "G3": "pass (30/30)",
+ "S0.2": "pass (revision 607a30d783dfa663\u2026 character-identical)",
+ "S0.3": "pass (per-layer std > 0, no NaN/Inf)",
+ "embeddings": "exp145_embeddings.npz"
+}

@@ -1,0 +1,30 @@
+[06:28:19] ENV: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "sklearn": "1.9.1", "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m", "site_hidden_states_index": 20, "torch_num_threads_set": 2, "torch_num_threads_readback": 2, "seeds": {"torch": 0, "numpy": 0}, "device": "cpu", "dtype": "float32"}
+[06:28:19] checking npz archive pins...
+[06:28:19] npz pins OK: embeddings (60, 1024) float32, ids (60,)
+[06:28:19] bench pin OK: 60 items, canonical-JSON sha256 matches
+[06:28:19] bench ids == npz ids: 60/60
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] The following generation flags are not valid and may be ignored: ['output_hidden_states']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<03:01,  1.61it/s]Loading weights:   8%|▊         | 24/292 [00:00<00:06, 42.94it/s]Loading weights:  12%|█▏        | 36/292 [00:00<00:04, 56.10it/s]Loading weights:  17%|█▋        | 50/292 [00:00<00:03, 72.21it/s]Loading weights:  23%|██▎       | 68/292 [00:01<00:02, 91.58it/s]Loading weights:  28%|██▊       | 81/292 [00:01<00:02, 94.47it/s]Loading weights:  33%|███▎      | 96/292 [00:01<00:01, 98.08it/s]Loading weights:  37%|███▋      | 108/292 [00:01<00:02, 87.10it/s]Loading weights:  41%|████      | 120/292 [00:01<00:01, 90.98it/s]Loading weights:  46%|████▌     | 134/292 [00:01<00:01, 96.15it/s]Loading weights:  50%|████▉     | 145/292 [00:01<00:01, 89.18it/s]Loading weights:  53%|█████▎    | 155/292 [00:02<00:01, 89.72it/s]Loading weights:  58%|█████▊    | 168/292 [00:02<00:01, 93.08it/s]Loading weights:  62%|██████▏   | 180/292 [00:02<00:01, 92.87it/s]Loading weights:  68%|██████▊   | 200/292 [00:02<00:00, 108.46it/s]Loading weights:  72%|███████▏  | 211/292 [00:02<00:00, 102.34it/s]Loading weights:  76%|███████▌  | 222/292 [00:02<00:00, 86.02it/s] Loading weights:  79%|███████▉  | 231/292 [00:02<00:00, 79.92it/s]Loading weights:  82%|████████▏ | 240/292 [00:03<00:00, 81.82it/s]Loading weights:  85%|████████▌ | 249/292 [00:03<00:00, 71.23it/s]Loading weights:  89%|████████▉ | 261/292 [00:03<00:00, 77.72it/s]Loading weights:  95%|█████████▍| 276/292 [00:03<00:00, 89.76it/s]Loading weights:  99%|█████████▊| 288/292 [00:03<00:00, 73.10it/s]Loading weights: 100%|██████████| 292/292 [00:03<00:00, 79.30it/s]
+[06:28:30] backbone hash BEFORE forwards: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[06:28:30] backbone pin OK (LOG-331)
+[06:28:30] single-token BPE assertion: 120/120 option texts exactly one token
+[06:28:30] running 120 option-embedding forwards...
+[06:28:49] option forwards complete
+[06:28:49] G4 instrument-health: cosine spread (max-min over 120) = 0.085052; margin median=0.0008 min=0.000018 max=0.0018; ties=0
+[06:28:49] G4 passed: instrument not deaf
+[06:28:49] running 60 self-report logit-readout forwards...
+[06:29:27] self-report forwards complete
+[06:29:30] backbone hash AFTER forwards: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[06:29:30] backbone pin still OK after forwards (Delta theta = 0)
+[06:29:30] G1 mass guard: mean(p_E1+p_E2) = 0.301075; min=0.068492 max=0.567745; fraction of items with mass >= 0.01: 1.0000
+[06:29:30] G2 variation guard: readout balance E1=27/60 E2=33/60; distinct=2; minority=27
+[06:29:30] G1 and G2 passed: channel non-degenerate. Metric may now be read.
+[06:29:30] fidelity = 41/60 = 0.6833
+[06:29:30] VERDICT: HELD — weak signal, below the decisive bar; licenses nothing, retires nothing
+[06:29:30] cell A-first/flipped: fidelity 12/15 = 0.8000
+[06:29:30] cell A-first/original: fidelity 8/15 = 0.5333
+[06:29:30] cell C-first/flipped: fidelity 12/15 = 0.8000
+[06:29:30] cell C-first/original: fidelity 9/15 = 0.6000
+[06:29:30] artifacts written: exp112_per_item.json, exp112_worksheet.json
+[06:29:30] FINAL VERDICT: HELD (fidelity 41/60)

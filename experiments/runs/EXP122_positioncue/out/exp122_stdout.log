@@ -1,0 +1,42 @@
+ENV torch=2.14.0+cpu transformers=5.17.0 sklearn=1.9.1 numpy=2.5.3
+threads set=2 read_back=2
+STAGE A: bench-3 construction gates
+design-time assertions OK: n=60 pin=2b65f01e25c824606c5b7f52b1de7f54562dd3138d0b704acc8b8877e8b165ca
+G-C1 pure-template detector: 32/60 pass=True
+position-scramble gate: 30/60 pass=True
+G-C2 entity-rank correlation: -0.0322 (|.|=0.0322) pass=True
+G-C3 decomposition pin: suffix_byte_exact=True deterministic=True pass=True
+bench-3 canonical pin 2b65f01e25c824606c5b7f52b1de7f54562dd3138d0b704acc8b8877e8b165ca persisted; re-parse x2 byte-identical
+loading tokenizer + frozen model...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<01:48,  2.67it/s]Loading weights:   8%|▊         | 24/292 [00:00<00:04, 64.29it/s]Loading weights:  13%|█▎        | 37/292 [00:00<00:03, 68.37it/s]Loading weights:  17%|█▋        | 50/292 [00:00<00:03, 78.37it/s]Loading weights:  21%|██        | 62/292 [00:00<00:02, 81.43it/s]Loading weights:  27%|██▋       | 80/292 [00:01<00:02, 102.05it/s]Loading weights:  34%|███▎      | 98/292 [00:01<00:01, 121.44it/s]Loading weights:  42%|████▏     | 122/292 [00:01<00:01, 138.40it/s]Loading weights:  48%|████▊     | 140/292 [00:01<00:01, 143.63it/s]Loading weights:  55%|█████▌    | 162/292 [00:01<00:00, 159.81it/s]Loading weights:  61%|██████▏   | 179/292 [00:01<00:00, 162.35it/s]Loading weights:  67%|██████▋   | 196/292 [00:01<00:00, 154.78it/s]Loading weights:  73%|███████▎  | 212/292 [00:01<00:00, 145.97it/s]Loading weights:  78%|███████▊  | 228/292 [00:01<00:00, 148.92it/s]Loading weights:  84%|████████▎ | 244/292 [00:02<00:00, 146.31it/s]Loading weights:  89%|████████▊ | 259/292 [00:02<00:00, 133.76it/s]Loading weights:  93%|█████████▎| 273/292 [00:02<00:00, 117.79it/s]Loading weights:  99%|█████████▊| 288/292 [00:02<00:00, 119.36it/s]Loading weights: 100%|██████████| 292/292 [00:02<00:00, 115.23it/s]
+device_map='cpu' accepted
+backbone pre-extraction hash: ec276abe3902fab0... match=True
+extracting bench-3 (60 passes, premise-only, hidden_states[20])...
+  20/60
+  40/60
+  60/60
+backbone post-extraction hash: ec276abe3902fab0... match=True (Δθ=0)
+npz ids byte-match per-item records (60/60)
+split: train n=30 test n=30 overlap=0; per-cell test counts={np.str_('target-first_False'): 8, np.str_('target-first_True'): 7, np.str_('target-last_False'): 7, np.str_('target-last_True'): 8}; N_F=15 N_T=15
+/home/hatch/workspace/.venv-exp077/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1381: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/hatch/workspace/.venv-exp077/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1381: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+determinism re-fit pass: byte-identical test predictions
+head weight hash: 5ac7b477cf20aa4b... norm=1.555946
+artifact builder_script: present 642ee7819ea3dc68...
+artifact canonical_json: present 2b65f01e25c82460...
+artifact per_item_json: present 1c5bac0692f36bb5...
+artifact embeddings_npz: present 8ca33897eefdd47f...
+artifact train_ids: present 65fd7d45976c5ee6...
+artifact test_ids: present c500590303c11ca1...
+artifact head_params: present 56f984024648b277...
+test: 27/30 = 0.9000; acc(F)=0.8667 (N_F=15); acc(T)=0.9333 (N_T=15); G=-0.0667
+executor-computed p: one-sided=0.0000042 two-sided=0.0000084
+per-cell (descriptive): {'target-first_False': 0.75, 'target-first_True': 1.0, 'target-last_False': 1.0, 'target-last_True': 0.875}; train acc (sanity): 1.0000
+VERDICT: CONTINUE
+branch: overall >= 20/30 with G < 0.30 → identity readout survives position decorrelation (decodability only, pre-reg section 7)
+saved exp122_result.json (worksheet: all raw records above)
+wall 40.6s; $0 CPU; no generation; no signed artifact modified
+EXIT:0

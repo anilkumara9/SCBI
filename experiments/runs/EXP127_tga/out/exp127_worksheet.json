@@ -1,0 +1,83 @@
+{
+ "experiment": "EXP127_TGA",
+ "log": "LOG-4698",
+ "protocol_sha256": "5dea0d419794fe6aa1fce056b9225625aa6ec3b55c57fab39bb7cb9e7d6e2882",
+ "weights_snap": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+ "backbone_pin_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+ "prompt_ids": [
+  "exp107_flip_exp077_planet_2hop_0",
+  "exp107_ctrl_exp077_planet_2hop_1",
+  "exp107_flip_exp077_planet_2hop_2",
+  "exp107_ctrl_exp077_planet_2hop_3",
+  "exp107_flip_exp077_planet_2hop_4",
+  "exp107_ctrl_exp077_planet_2hop_5",
+  "exp107_flip_exp077_planet_2hop_6",
+  "exp107_ctrl_exp077_planet_2hop_7",
+  "exp107_ctrl_exp077_planet_2hop_8",
+  "exp107_flip_exp077_planet_2hop_9"
+ ],
+ "seeds": [
+  20260929,
+  20260930,
+  20260931,
+  20260932,
+  20260933,
+  20260934,
+  20260935,
+  20260936,
+  20260937,
+  20260938
+ ],
+ "env": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "threads": 2,
+  "dtype": "float32",
+  "device": "cpu",
+  "model": "pythia-410m-local"
+ },
+ "budget_cap_per_prompt": 700,
+ "arms": {
+  "sigma1": "power iteration 1e-6/5it/>=20",
+  "sigma2": "deflated power iteration 1e-4/5it/>=10",
+  "hutchinson": "K=64 Rademacher",
+  "direct": "K=64 isotropic median"
+ },
+ "final": {
+  "verdict": "CONTINUE",
+  "n_d": 10,
+  "median_R": 8.240639788909625,
+  "median_sigma1_over_sigma2": 1.5576886916821469,
+  "Rs_sorted": [
+   8.001946436754913,
+   8.012309331264136,
+   8.01701512360444,
+   8.073521646014042,
+   8.18584714672189,
+   8.295432431097362,
+   8.329915267260512,
+   8.335868781643821,
+   8.43275805428441,
+   8.529369897557219
+  ],
+  "ratios_sorted": [
+   1.530234902240712,
+   1.5407542952698488,
+   1.5528877553750797,
+   1.552948962566633,
+   1.5563046000046057,
+   1.559072783359688,
+   1.5634196534161118,
+   1.5645646892183611,
+   1.5810806492303937,
+   1.5880930965039595
+  ],
+  "backbone_pin_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "artifact_pins": {
+   "/home/hatch/workspace/SCBI/experiments/runs/EXP127_tga/out/exp127_per_prompt.json": "66f028ba1fb786a71cc1b5956924ce1bc42ffa0612eac877f951224e85e8bc13",
+   "/home/hatch/workspace/SCBI/experiments/runs/EXP127_tga/out/exp127_vectors.npz": "9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc",
+   "/home/hatch/workspace/SCBI/experiments/runs/EXP127_tga/out/exp127_worksheet.json": "0c0df797769258e404196f8ae62d563e94c35adb2ef72b8894c39f9629bd3a1e"
+  }
+ }
+}

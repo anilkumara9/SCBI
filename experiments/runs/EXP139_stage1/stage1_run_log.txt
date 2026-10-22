@@ -1,0 +1,24 @@
+[00:18:00] threads=1
+[00:18:00] loading model EleutherAI/pythia-410m rev 9879c9b5f8bea9051dcb0e68dff21493d67e9d4f (float32, cpu, local_files_only)
+[00:18:10] backbone pre-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[00:18:10] (b) backbone pin PASS
+[00:18:10] (a) bench len=60; bench sha256=eb304fa65a60b65ad87767d251084b256d0a79001a16b4fe8ebcd1b1f45589df
+[00:18:10] (a) bench pin PASS
+[00:18:10] Stage-1: 20 baseline + 40 R-evaluation passes
+[00:18:16]   baseline 5/20; forwards=5
+[00:18:20]   baseline 10/20; forwards=10
+[00:18:23]   baseline 15/20; forwards=15
+[00:18:27]   baseline 20/20; forwards=20
+[00:18:27] (c) baseline yhat match: 20/20
+[00:18:27] (c) yhat fidelity PASS
+[00:18:29]   R-eval 5/20; forwards=30
+[00:18:30]   R-eval 10/20; forwards=40
+[00:18:31]   R-eval 15/20; forwards=50
+[00:18:32]   R-eval 20/20; forwards=60
+[00:18:32] forwards total=60 (expected 60)
+[00:18:32] kappa_hat(max)=0.955971 median=0.734152 IQR=[0.685572, 0.783381]
+[00:18:32] local ratios: min=0.334814 max=0.955971
+[00:18:32] cross ratios: min=0.570595 max=0.932439
+[00:18:35] backbone post-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[00:18:35] Δθ=0 post PASS
+[00:18:35] CLEAN COMPLETION exit 0

@@ -1,0 +1,133 @@
+== EXP138 (B5/TGA-INT8) execution lane ==
+mode: SMOKE (1 prompt, K=1 random)
+pre-reg sha256: 60b1dbc7f603924329fbfadbbac351411f7b22087e809f1614ad5c4d07fddb37
+bench sha256: e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5
+prompts: canonical-order first 1 of verbatim EXP107 bench
+env: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "device": "cpu", "threads": 2, "smoke": true, "presentation_mechanism": "in-memory state_dict transform (no saved model dir)"}
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+v1 artifact sha256: 9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc
+v1 re-pinned: hash OK + 1/1 id alignment (v1__<prompt_id>)
+FP32 phase: base forwards (baseline reference)...
+FP32 base forwards complete.
+B_agg re-derived on FP32; reconstruction sha256: d3556d83751634a2fc5114d56c4ee246bb1b296293d2adcde40a369da1600ae1
+B_agg pin OK (matches EXP131).
+FP32 phase: v2 deflated power iteration (K=40, seed 20260929_4714)...
+v2 1/1 exp107_flip_exp077_planet_2hop_0: K=40 |v2.v1|=5.588e-09 OK
+sensing-discipline assert PASS: ops=['exact-jvp', 'exact-vjp']
+quantization: per-output-channel symmetric INT8 fake-quant on every nn.Linear...
+linear layers quantized: 97
+quantized copy sha256: ed919d476819051e2ac7f16461bb07a0befa8886bb0c9f9ed28e14f20cab9c33
+quantized copy differs from FP32 pin (expected). Presentation: in-memory state_dict transform.
+quantized phase: base forwards...
+budget B_q = 0.01 * median||y20_q|| = 0.50797630 (quantized regime)
+Q6/(h) [oneshot arm]: r_q = 1.0000001 (must be in [0.99, 1.01])
+Q6/(h) [geodesic arm]: r_q = 1.0000001 (must be in [0.99, 1.01])
+Q6 PASS: injection reaches the readout tap under quantization on both arms.
+quantized option forwards complete; single-token assert passed on all 2 option texts
+Q1: quantized c-hat mean=0.06645 over 1 prompts (0 exclusions) -> PASS
+oneshot 1/1 exp107_flip_exp077_planet_2hop_0: base=E2 margin=0.0013 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'bagg': 0}
+norm-budget audit PASS: all 4 one-shot arms within 1e-6 rel of B_q
+Q2: quantized one-shot DM_v1=0/110 -> PASS
+Q5 PASS: B_agg dead control holds under quantization (DM_Bagg=0).
+Q4: McNemar (b,c)=(0,0) n=0 p=1.000000 vs best-random j0 -> PASS
+geodesic 1/1 exp107_flip_exp077_planet_2hop_0: base=E2 | dm: {'geo_v1': 0, 'geo_bagg': 0}
+Q3: quantized geodesic DM_geo=0/10 (B_agg-path flips=0) -> PASS
+quantized copy sha256 (post): ed919d476819051e2ac7f16461bb07a0befa8886bb0c9f9ed28e14f20cab9c33
+quantized-copy integrity PASS (breaking point (h)).
+FP32 reference pin (post): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+Delta-theta guard PASS: FP32 reference unmodified.
+baseline shift: 0/1 quantized alpha=0 decisions differ from FP32 (common readout)
+======================================================================
+TIERS (raw, execution only — verdict belongs to the independent review lane):
+  Q1_pass = True
+  Q2_pass = True
+  Q3_pass = True
+  Q4_pass = True
+  Q5_pass = True
+  Q6_pass = True
+  c_hat_q=0.06645 dm_v1_q=0 dm_geo_q=0 p_q=1.000000 baseline_shifts=0/1
+  elapsed: 4.1 min
+======================================================================
+raw-record hash-pin: c64914d05b9a23a108ec62cd42516580a9e85f339a312f4a278f8e56f8f8fff5
+report written. Execution complete — NO verdict (independent review lane decides).
+== EXP138 (B5/TGA-INT8) execution lane ==
+mode: FULL (10 prompts, K=8 randoms)
+pre-reg sha256: 60b1dbc7f603924329fbfadbbac351411f7b22087e809f1614ad5c4d07fddb37
+bench sha256: e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5
+prompts: canonical-order first 10 of verbatim EXP107 bench
+env: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "device": "cpu", "threads": 2, "smoke": false, "presentation_mechanism": "in-memory state_dict transform (no saved model dir)"}
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+v1 artifact sha256: 9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc
+v1 re-pinned: hash OK + 10/10 id alignment (v1__<prompt_id>)
+FP32 phase: base forwards (baseline reference)...
+FP32 base forwards complete.
+B_agg re-derived on FP32; reconstruction sha256: d3556d83751634a2fc5114d56c4ee246bb1b296293d2adcde40a369da1600ae1
+B_agg pin OK (matches EXP131).
+FP32 phase: v2 deflated power iteration (K=40, seed 20260929_4714)...
+v2 1/10 exp107_flip_exp077_planet_2hop_0: K=40 |v2.v1|=5.588e-09 OK
+v2 2/10 exp107_ctrl_exp077_planet_2hop_1: K=40 |v2.v1|=8.382e-09 OK
+v2 3/10 exp107_flip_exp077_planet_2hop_2: K=40 |v2.v1|=5.588e-09 OK
+v2 4/10 exp107_ctrl_exp077_planet_2hop_3: K=40 |v2.v1|=1.397e-09 OK
+v2 5/10 exp107_flip_exp077_planet_2hop_4: K=40 |v2.v1|=1.048e-08 OK
+v2 6/10 exp107_ctrl_exp077_planet_2hop_5: K=40 |v2.v1|=1.863e-09 OK
+v2 7/10 exp107_flip_exp077_planet_2hop_6: K=40 |v2.v1|=7.916e-09 OK
+v2 8/10 exp107_ctrl_exp077_planet_2hop_7: K=40 |v2.v1|=3.260e-09 OK
+v2 9/10 exp107_ctrl_exp077_planet_2hop_8: K=40 |v2.v1|=0.000e+00 OK
+v2 10/10 exp107_flip_exp077_planet_2hop_9: K=40 |v2.v1|=1.164e-08 OK
+sensing-discipline assert PASS: ops=['exact-jvp', 'exact-vjp']
+quantization: per-output-channel symmetric INT8 fake-quant on every nn.Linear...
+linear layers quantized: 97
+quantized copy sha256: ed919d476819051e2ac7f16461bb07a0befa8886bb0c9f9ed28e14f20cab9c33
+quantized copy differs from FP32 pin (expected). Presentation: in-memory state_dict transform.
+quantized phase: base forwards...
+budget B_q = 0.01 * median||y20_q|| = 0.50449286 (quantized regime)
+Q6/(h) [oneshot arm]: r_q = 1.0000001 (must be in [0.99, 1.01])
+Q6/(h) [geodesic arm]: r_q = 1.0000001 (must be in [0.99, 1.01])
+Q6 PASS: injection reaches the readout tap under quantization on both arms.
+quantized option forwards complete; single-token assert passed on all 20 option texts
+Q1: quantized c-hat mean=0.03747 over 10 prompts (0 exclusions) -> PASS
+oneshot 1/10 exp107_flip_exp077_planet_2hop_0: base=E2 margin=0.0013 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+oneshot 2/10 exp107_ctrl_exp077_planet_2hop_1: base=E1 margin=0.0014 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+oneshot 3/10 exp107_flip_exp077_planet_2hop_2: base=E1 margin=0.0005 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+oneshot 4/10 exp107_ctrl_exp077_planet_2hop_3: base=E2 margin=0.0006 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+oneshot 5/10 exp107_flip_exp077_planet_2hop_4: base=E2 margin=0.0006 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+oneshot 6/10 exp107_ctrl_exp077_planet_2hop_5: base=E1 margin=0.0012 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+oneshot 7/10 exp107_flip_exp077_planet_2hop_6: base=E2 margin=0.0005 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+oneshot 8/10 exp107_ctrl_exp077_planet_2hop_7: base=E1 margin=0.0012 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+oneshot 9/10 exp107_ctrl_exp077_planet_2hop_8: base=E2 margin=0.0006 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+oneshot 10/10 exp107_flip_exp077_planet_2hop_9: base=E2 margin=0.0008 | dm: {'v1': 0, 'v2': 0, 'rand0': 0, 'rand1': 0, 'rand2': 0, 'rand3': 0, 'rand4': 0, 'rand5': 0, 'rand6': 0, 'rand7': 0, 'bagg': 0}
+norm-budget audit PASS: all 110 one-shot arms within 1e-6 rel of B_q
+Q2: quantized one-shot DM_v1=0/110 -> PASS
+Q5 PASS: B_agg dead control holds under quantization (DM_Bagg=0).
+Q4: McNemar (b,c)=(0,0) n=0 p=1.000000 vs best-random j0 -> PASS
+geodesic 1/10 exp107_flip_exp077_planet_2hop_0: base=E2 | dm: {'geo_v1': 0, 'geo_bagg': 0}
+geodesic 2/10 exp107_ctrl_exp077_planet_2hop_1: base=E1 | dm: {'geo_v1': 0, 'geo_bagg': 0}
+geodesic 3/10 exp107_flip_exp077_planet_2hop_2: base=E1 | dm: {'geo_v1': 0, 'geo_bagg': 0}
+geodesic 4/10 exp107_ctrl_exp077_planet_2hop_3: base=E2 | dm: {'geo_v1': 0, 'geo_bagg': 0}
+geodesic 5/10 exp107_flip_exp077_planet_2hop_4: base=E2 | dm: {'geo_v1': 0, 'geo_bagg': 0}
+geodesic 6/10 exp107_ctrl_exp077_planet_2hop_5: base=E1 | dm: {'geo_v1': 0, 'geo_bagg': 0}
+geodesic 7/10 exp107_flip_exp077_planet_2hop_6: base=E2 | dm: {'geo_v1': 0, 'geo_bagg': 0}
+geodesic 8/10 exp107_ctrl_exp077_planet_2hop_7: base=E1 | dm: {'geo_v1': 0, 'geo_bagg': 0}
+geodesic 9/10 exp107_ctrl_exp077_planet_2hop_8: base=E2 | dm: {'geo_v1': 0, 'geo_bagg': 0}
+geodesic 10/10 exp107_flip_exp077_planet_2hop_9: base=E2 | dm: {'geo_v1': 0, 'geo_bagg': 0}
+Q3: quantized geodesic DM_geo=0/10 (B_agg-path flips=0) -> PASS
+quantized copy sha256 (post): ed919d476819051e2ac7f16461bb07a0befa8886bb0c9f9ed28e14f20cab9c33
+quantized-copy integrity PASS (breaking point (h)).
+FP32 reference pin (post): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+Delta-theta guard PASS: FP32 reference unmodified.
+baseline shift: 0/10 quantized alpha=0 decisions differ from FP32 (common readout)
+======================================================================
+TIERS (raw, execution only — verdict belongs to the independent review lane):
+  Q1_pass = True
+  Q2_pass = True
+  Q3_pass = True
+  Q4_pass = True
+  Q5_pass = True
+  Q6_pass = True
+  c_hat_q=0.03747 dm_v1_q=0 dm_geo_q=0 p_q=1.000000 baseline_shifts=0/10
+  elapsed: 6.1 min
+======================================================================
+raw-record hash-pin: 58182baa22bb91739a37d3a5f3e0590e676709ab52ac6a6332c1531c044c735c
+report written. Execution complete — NO verdict (independent review lane decides).

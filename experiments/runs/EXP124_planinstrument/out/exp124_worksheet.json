@@ -1,0 +1,41 @@
+{
+ "experiment": "EXP124",
+ "hypothesis": "H21/PLAN-INSTRUMENT",
+ "lane": "LOG-4670",
+ "prereg": "research/prereg/EXP_PREREG_H21_PLANINSTRUMENT_2026-09-29.md (LOG-4668 SIGN-WITH-FIXES, LOG-4669 FIX-1/2/3 byte-verified)",
+ "environment": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "sklearn": "1.9.1",
+  "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+  "torch_num_threads_set": 2,
+  "torch_num_threads_readback": 2,
+  "seeds": {
+   "torch": 0,
+   "numpy": 0,
+   "random_arm_rng": 20260929
+  },
+  "device": "cpu",
+  "dtype": "float32",
+  "device_map": "cpu",
+  "generation": {
+   "do_sample": false,
+   "max_new_tokens": 160
+  }
+ },
+ "pins": {
+  "npz": "6cf4a8a726a2b6e4623f57d0287d95879866f77e789bcc3789fb693cf2af6a76",
+  "embeddings_bytes": "9b6e8afb091ba1edbb0311ba1d3414d34a65942c3fdecb4533b69720f2a99123",
+  "ids_bytes": "3669e102222719d66f61daca46ae1ac34e844e398ae433743a5b37bfc5075cb9",
+  "bench": "e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5",
+  "backbone_pin_expected": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "question_suffix_tail_tokens": [
+   32,
+   37741,
+   27
+  ],
+  "backbone_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed"
+ },
+ "planner_prompt_byte_identity_mismatches": 0
+}

@@ -1,0 +1,12 @@
+[step0] (b) revision actual=9879c9b5f8bea9051dcb0e68dff21493d67e9d4f expected=9879c9b5f8bea9051dcb0e68dff21493d67e9d4f match=True
+[step0] loading tokenizer + model (eager, fp32, cpu)
+[step0] (a) pre-hash=ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed match=True
+[step0] (h) probe: 50 toks in 7.2s = 6.95 tok/s; 47k projected 1.88h (cap 72h) feasible=True
+[step0] (c) bench pin recomputed=2b055b53127a241b72338a82373c3efc7b666256e25d8c584d45989278c14dcf match=False
+[step0] RUN-INVALID: guard (c)
+[step0] (b) revision actual=9879c9b5f8bea9051dcb0e68dff21493d67e9d4f expected=9879c9b5f8bea9051dcb0e68dff21493d67e9d4f match=True
+[step0] loading tokenizer + model (eager, fp32, cpu)
+[step0] (a) pre-hash=ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed match=True
+[step0] (h) probe: 50 toks in 6.6s = 7.55 tok/s; 47k projected 1.73h (cap 72h) feasible=True
+[step0] (c) bench pin recomputed=2b055b53127a241b72338a82373c3efc7b666256e25d8c584d45989278c14dcf match=True
+[step0] STEP0_PASS — all of (a),(b),(c),(h) PASS

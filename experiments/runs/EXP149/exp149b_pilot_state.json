@@ -1,0 +1,13 @@
+{
+ "p2": {
+  "acc": 0.15,
+  "tok": 300,
+  "seed": 149005,
+  "note": "measured 2026-10-09 before process died; tok=design cost 20x15 (actual unrecoverable)"
+ },
+ "p3": {
+  "rate": 1.0,
+  "tok": 2400,
+  "seed": 149006
+ }
+}

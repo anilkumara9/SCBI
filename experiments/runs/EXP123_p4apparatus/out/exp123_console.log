@@ -1,0 +1,31 @@
+[13:49:04] npz pins OK
+[13:49:04] bench pin OK: 60 items; schema + decomposition assertion pass (§3.1)
+[13:49:20] backbone hash BEFORE: ec276abe3902fab0... (expect ec276abe3902fab0...)
+[13:49:20] token pin re-asserted: all 10 entities single-token with leading space (§3.5 diagnostic)
+[13:49:20] P4 hyperparameters asserted byte-identical to §3.3: {'repetition_penalty': 1.2, 'no_repeat_ngram_size': 3, 'do_sample': False, 'max_new_tokens': 4}
+[13:49:20] starting full run: 60 greedy P4 generations (pass A — primary)
+[13:49:32] pass A: 10/60 generations complete (exceptions so far: 0)
+[13:49:43] pass A: 20/60 generations complete (exceptions so far: 0)
+[13:49:55] pass A: 30/60 generations complete (exceptions so far: 0)
+[13:50:05] pass A: 40/60 generations complete (exceptions so far: 0)
+[13:50:15] pass A: 50/60 generations complete (exceptions so far: 0)
+[13:50:29] pass A: 60/60 generations complete (exceptions so far: 0)
+[13:50:29] pass A complete: exceptions=0
+[13:50:29] starting deterministic rerun (pass B — reproduction)
+[13:50:39] pass B: 10/60 generations complete (exceptions so far: 0)
+[13:50:49] pass B: 20/60 generations complete (exceptions so far: 0)
+[13:51:01] pass B: 30/60 generations complete (exceptions so far: 0)
+[13:51:12] pass B: 40/60 generations complete (exceptions so far: 0)
+[13:51:22] pass B: 50/60 generations complete (exceptions so far: 0)
+[13:51:32] pass B: 60/60 generations complete (exceptions so far: 0)
+[13:51:32] deterministic rerun byte-identical: True
+[13:51:32] exception gate: 0/60 (bar: >6 -> RUN-INVALID)
+[13:51:34] backbone hash AFTER: ec276abe3902fab0... (expect ec276abe3902fab0...)
+[13:51:34] raw records persisted: /home/hatch/workspace/SCBI/experiments/runs/EXP123_p4apparatus/out/exp123_generations.json sha256=662b9feb0cbe7e458eae5b4d4542e7c7495bacaa5fef72ae5331013784f513c6
+[13:51:34] exception log persisted: /home/hatch/workspace/SCBI/experiments/runs/EXP123_p4apparatus/out/exp123_exceptions.json
+[13:51:34] re-parse x2 byte-identical: True
+[13:51:34] parse table persisted: /home/hatch/workspace/SCBI/experiments/runs/EXP123_p4apparatus/out/exp123_parse_table.json
+[13:51:34] parseability: n_parseable=0, n_unparseable=60, n_exceptions=0
+[13:51:34] correctness diagnostic (decision-silent): names-e1=0, names-e2=0 of 0 parseable
+[13:51:34] VERDICT: RUN-INVALID, TERMINAL (elicitation-failure gate: n_unparseable=60 >= 7 on the full 60; entity-name generation channel dead on all EXP113-cleared protocols; honesty-instrument line closes permanently on this shape)
+[13:51:34] result persisted; sha256=3dc49c821fed8fc114167c63ad1680cd4fe3c0025a4e15d4783409064972873d

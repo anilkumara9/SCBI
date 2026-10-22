@@ -1,0 +1,10 @@
+{
+ "experiment": "EXP140",
+ "gate_reading": "HELD (G3 null: C1=null C2=null)",
+ "G1": true,
+ "G2": true,
+ "G3": false,
+ "G3_inverted": false,
+ "forwards": 240,
+ "generations": 246
+}

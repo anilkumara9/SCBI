@@ -1,0 +1,70 @@
+{
+ "experiment": "EXP136",
+ "design": "B4/ARI attention-routing intervention",
+ "prereg": "research/prereg/EXP136_PREREG_ARI_2026-09-30.md",
+ "n": 60,
+ "excluded": [],
+ "backbone_pin": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+ "pre_hash": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+ "post_hash": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+ "bench_pin": "9be8162633fe19aa2a924440d8ba158c1cc4e734c1f2a554a01a27e459f47fc4",
+ "hf_revision": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+ "env": {
+  "torch": "2.14.0+cpu",
+  "numpy": "2.5.3",
+  "transformers": "5.17.0",
+  "threads": 2,
+  "seed": 136013,
+  "attn": "eager",
+  "device": "cpu",
+  "dtype": "float32"
+ },
+ "arms": {
+  "T1": {
+   "arm": "T1",
+   "n": 60,
+   "b": 0,
+   "c": 1,
+   "flips": 1,
+   "deltaM": 0.016666666666666666,
+   "p": 1.0,
+   "alternative": "greater",
+   "acc_arm": 35,
+   "acc_base": 36
+  },
+  "T2": {
+   "arm": "T2",
+   "n": 60,
+   "b": 3,
+   "c": 4,
+   "flips": 7,
+   "deltaM": 0.11666666666666667,
+   "p": 0.5,
+   "alternative": "less",
+   "acc_arm": 35,
+   "acc_base": 36
+  },
+  "C": {
+   "arm": "C",
+   "n": 60,
+   "b": 1,
+   "c": 4,
+   "flips": 5,
+   "deltaM": 0.08333333333333333,
+   "p": 0.375,
+   "alternative": "two-sided",
+   "acc_arm": 33,
+   "acc_base": 36
+  }
+ },
+ "forwards": 242,
+ "guards": {
+  "a_dtheta": "PASS",
+  "b_agreement": "PASS 60/60",
+  "c_bench_span": "PASS",
+  "d_hook_delivery": "PASS (2 phases)",
+  "e_renorm": "PASS (per-forward)",
+  "f_budget": "PASS"
+ },
+ "verdict": "RAW RESULTS ONLY \u2014 no interpretation (independent review lane decides)"
+}

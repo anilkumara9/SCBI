@@ -1,0 +1,10 @@
+# EXP139 Stage-2 bundle — pinned environment (founder's Kaggle GPU, Tesla T4)
+# Pin basis [FACT]: EXP131's GPU execution record used torch 2.10.0+cu128 +
+# transformers 5.17.0 on a Tesla T4 with this exact backbone pin.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.10.0+cu128
+transformers==5.17.0
+numpy>=2.0
+# Note: the runtime validity gates (backbone sha256, bench sha256, 60/60 yhat
+# fidelity) are authoritative for reproducibility; these pins hold the
+# environment that produced the LOG-331 backbone pin on a T4.

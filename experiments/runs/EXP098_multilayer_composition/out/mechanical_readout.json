@@ -1,0 +1,210 @@
+{
+  "status": "UNINTERPRETED_MECHANICAL_READOUT",
+  "experiment": "EXP098",
+  "routing": "LIVE",
+  "n_correct": {
+    "B": 36,
+    "L11": 35,
+    "L20": 30,
+    "J": 29,
+    "W": 30
+  },
+  "flips_vs_B": {
+    "L11": 3,
+    "L20": 6,
+    "J": 7,
+    "W": 12
+  },
+  "flips_J_vs_W": 13,
+  "delta_M": {
+    "JB": -0.11666666666666667,
+    "L11B": -0.016666666666666666,
+    "L20B": -0.1,
+    "WB": -0.1,
+    "JW": -0.016666666666666666
+  },
+  "mcnemar": {
+    "JB": {
+      "b": 0,
+      "c": 7,
+      "p": 0.015625
+    },
+    "L11B": {
+      "b": 1,
+      "c": 2,
+      "p": 1.0
+    },
+    "L20B": {
+      "b": 0,
+      "c": 6,
+      "p": 0.03125
+    },
+    "WB": {
+      "b": 3,
+      "c": 9,
+      "p": 0.14599609375
+    },
+    "JW": {
+      "b": 6,
+      "c": 7,
+      "p": 1.0
+    }
+  },
+  "strata": {
+    "agg": {
+      "JB": {
+        "delta": -0.11666666666666667,
+        "b": 0,
+        "c": 7,
+        "p": 0.015625
+      },
+      "L11B": {
+        "delta": -0.016666666666666666,
+        "b": 1,
+        "c": 2,
+        "p": 1.0
+      },
+      "L20B": {
+        "delta": -0.1,
+        "b": 0,
+        "c": 6,
+        "p": 0.03125
+      },
+      "WB": {
+        "delta": -0.1,
+        "b": 3,
+        "c": 9,
+        "p": 0.14599609375
+      }
+    },
+    "A": {
+      "JB": {
+        "delta": -0.03333333333333333,
+        "b": 0,
+        "c": 1,
+        "p": 1.0
+      },
+      "L11B": {
+        "delta": 0.03333333333333333,
+        "b": 1,
+        "c": 0,
+        "p": 1.0
+      },
+      "L20B": {
+        "delta": -0.03333333333333333,
+        "b": 0,
+        "c": 1,
+        "p": 1.0
+      },
+      "WB": {
+        "delta": -0.23333333333333334,
+        "b": 0,
+        "c": 7,
+        "p": 0.015625
+      }
+    },
+    "C": {
+      "JB": {
+        "delta": -0.2,
+        "b": 0,
+        "c": 6,
+        "p": 0.03125
+      },
+      "L11B": {
+        "delta": -0.06666666666666667,
+        "b": 0,
+        "c": 2,
+        "p": 0.5
+      },
+      "L20B": {
+        "delta": -0.16666666666666666,
+        "b": 0,
+        "c": 5,
+        "p": 0.0625
+      },
+      "WB": {
+        "delta": 0.03333333333333333,
+        "b": 3,
+        "c": 2,
+        "p": 1.0
+      }
+    }
+  },
+  "decision_worksheet_steps_0_2": [
+    {
+      "step": 0,
+      "condition": "foundation gates",
+      "evidence": {
+        "constructor_rehash": "match frozen pin",
+        "G5_layer_11": "PASS (frozen verify_g5 core, d_0^(11) probe)",
+        "G5_layer_20": "PASS (frozen verify_g5 core, d_0^(20) probe)",
+        "B_agreement": "60/60 per-item vs archived EXP094 baseline",
+        "L11_degeneracy_sanity": "within 0.05 of 0.7923"
+      }
+    },
+    {
+      "step": 1,
+      "condition": "delivery (360 cell-rows in band)",
+      "evidence": {
+        "in_band": 360,
+        "exclusions": {
+          "(11,L11)": [],
+          "(20,L20)": [],
+          "(11,J)": [],
+          "(20,J)": [],
+          "(11,W)": [],
+          "(20,W)": []
+        }
+      }
+    },
+    {
+      "step": 2,
+      "condition": "degeneracy gate input (L20)",
+      "evidence": {
+        "mean_abs_cosine_20": 0.6638734927007373,
+        "bar": 0.95,
+        "gate_fired": false
+      }
+    },
+    {
+      "step": 3,
+      "condition": "regime routing (machine-written)",
+      "evidence": {
+        "routing": "LIVE",
+        "routing_reason": "W-joint flips = 12 >= 1",
+        "evidence": {
+          "W_joint_flips_vs_B": 12,
+          "joint_flips_vs_B": 7,
+          "delivery_confirmed": true,
+          "tie_counts": {
+            "L11": 0,
+            "L20": 0,
+            "J": 0,
+            "W": 0,
+            "B": 0
+          },
+          "tie_gate_arms": [],
+          "zero_variance": {
+            "L11": false,
+            "L20": false,
+            "J": false,
+            "W": false,
+            "B": false
+          },
+          "coherence_arms": [],
+          "n_included": {
+            "L11": 60,
+            "L20": 60,
+            "J": 60,
+            "W": 60
+          }
+        }
+      }
+    },
+    {
+      "step": "4-8",
+      "condition": "VERDICT LANE (not executor)",
+      "evidence": "contrast statistics in stratum_table.json; decomposition inputs in margin_shift_ledger.json"
+    }
+  ]
+}

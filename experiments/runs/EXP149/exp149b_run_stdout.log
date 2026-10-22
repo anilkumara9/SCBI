@@ -1,0 +1,14 @@
+[run-b] (u0) unit test: 9/9 pass
+[run-b] (u0) PASS
+[run-b] (b) revision actual=607a30d783dfa663caf39e06633721c8d4cfcd7e match=True
+[run-b] loading GPT-2 tokenizer + model (eager, fp32, cpu, local_files_only)
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   2%|▏         | 3/148 [00:00<00:07, 18.77it/s]Loading weights:  10%|█         | 15/148 [00:00<00:02, 57.44it/s]Loading weights:  15%|█▍        | 22/148 [00:00<00:02, 52.55it/s]Loading weights:  19%|█▉        | 28/148 [00:00<00:02, 54.06it/s]Loading weights:  32%|███▏      | 47/148 [00:00<00:01, 89.78it/s]Loading weights:  39%|███▊      | 57/148 [00:00<00:01, 82.61it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 164.57it/s]
+[run-b] (a) pre-hash recorded: d48f4310e3f0177c...
+[run-b] (c) bench pin match: True (180 items)
+[run-b] Law #7 disjointness: True
+[run-b] (p2) resumed from pilot state: acc=0.1500
+[run-b] (p2) B accuracy on 20-item subset = 0.1500 (bar [0.2,0.8]) -> STOP/HELD
+[run-b] (p3) WRITE-span rate on 20-item S pilot = 1.0000 (bar >= 0.50) -> PASS
+[run-b] portability pilot forwards: 2700 (design ~2,700)
+[run-b] HELD: portability gate — STOP at design cost

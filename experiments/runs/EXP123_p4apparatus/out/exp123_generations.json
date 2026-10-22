@@ -1,0 +1,482 @@
+[
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_2hop_0",
+  "item_idx": 0,
+  "new_token_count": 4,
+  "output": " Mercury, Moon and",
+  "prompt_sha256": "2f34cdc81957de7b5936a07d54fd8c6bad88a1a24c20ac70c740919a27a24f8e"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_2hop_1",
+  "item_idx": 1,
+  "new_token_count": 4,
+  "output": " Mercury, the planet",
+  "prompt_sha256": "9207575c4ffc4716493dd44f8c00a915ecdd6bd9e9d6061f625a4fe75ebabbe4"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_2hop_2",
+  "item_idx": 2,
+  "new_token_count": 4,
+  "output": " The Moon, the",
+  "prompt_sha256": "a532a6442e8c7615b84f7fee41d58702fe6453e851a3c920ed88ad1321e3f935"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_2hop_3",
+  "item_idx": 3,
+  "new_token_count": 4,
+  "output": " The Sun, the",
+  "prompt_sha256": "2ba4fbf1f26252ba47756d8ab2ab6d78cd44ca142d1d7f8a6a2d776a9191efd1"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_2hop_4",
+  "item_idx": 4,
+  "new_token_count": 4,
+  "output": " Jupiter, Mercury and",
+  "prompt_sha256": "be03f4dd978194d60cbc775f043eb0cff49ee507115794538a169c1f7cee2ef2"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_2hop_5",
+  "item_idx": 5,
+  "new_token_count": 4,
+  "output": " Jupiter, the planet",
+  "prompt_sha256": "62527bb759c92a0a9fa452ac8921b0a5b54d02f17296fde0b770cb39c697b0ed"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_2hop_6",
+  "item_idx": 6,
+  "new_token_count": 4,
+  "output": " The Sun, Moon",
+  "prompt_sha256": "fdc86914902121765a9abe371381012fdff74a03aad6b67f1c5ec6200b15749b"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_2hop_7",
+  "item_idx": 7,
+  "new_token_count": 4,
+  "output": " The Sun, the",
+  "prompt_sha256": "1514a65062e49e7d5bd6ef7150fd057c9065c32bd523f2e7f51662fe11daf2fa"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_2hop_8",
+  "item_idx": 8,
+  "new_token_count": 4,
+  "output": " Jupiter, which has",
+  "prompt_sha256": "77e542175234f94a610783693ce91f3487ce3d04d1118437dc3efeac90a6ddc4"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_2hop_9",
+  "item_idx": 9,
+  "new_token_count": 4,
+  "output": " Jupiter, Saturn and",
+  "prompt_sha256": "3e2a7cb114034703b7bd8e68301267bee9543ffbba6c7ae8a087e46f21dc0cb4"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_2hop_10",
+  "item_idx": 10,
+  "new_token_count": 4,
+  "output": " Mercury, the planet",
+  "prompt_sha256": "e5a90a0e46fbbc9b5521d82e7c9b1d4be8d871e7f998d3bd7558382b4b31e3dc"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_2hop_11",
+  "item_idx": 11,
+  "new_token_count": 4,
+  "output": " Mercury, Moon and",
+  "prompt_sha256": "86b54e891ae36b14c2a0b869f77e4382d5eefd6dd34e882ec798457b88c3ddd3"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_2hop_12",
+  "item_idx": 12,
+  "new_token_count": 4,
+  "output": " The Sun, the",
+  "prompt_sha256": "598af9695a0d0b5412226dd1335c135ea9c8d177bde2b77cc923a7147b990e12"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_2hop_13",
+  "item_idx": 13,
+  "new_token_count": 4,
+  "output": " Saturn, which has",
+  "prompt_sha256": "854791f60f62366f1d118f96aa83c41a7aaecbe4348cb5d9ee5e78d03b141516"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_2hop_14",
+  "item_idx": 14,
+  "new_token_count": 4,
+  "output": " Jupiter, Mercury and",
+  "prompt_sha256": "cce37e749fa7294f5a33c9facd4c5ec5ca0e32246b71ea2ec162243ba65844e5"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_3hop_0",
+  "item_idx": 15,
+  "new_token_count": 4,
+  "output": " Mercury, Moon and",
+  "prompt_sha256": "7f1b628d10607a7bc00e7ba86350c985daaffb894927efbfc03708ce9398b1fb"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_3hop_1",
+  "item_idx": 16,
+  "new_token_count": 4,
+  "output": " Mars, because he",
+  "prompt_sha256": "371f1bc4fadf21de54c3d8dedb940f575a38d5e83edf2bc626f085364337f0f3"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_3hop_2",
+  "item_idx": 17,
+  "new_token_count": 4,
+  "output": " Jupiter, the Sun",
+  "prompt_sha256": "ed79489a3f5393982f4cdedc17d3e8aedd76a3e9667f2e29a246331b79008d73"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_3hop_3",
+  "item_idx": 18,
+  "new_token_count": 4,
+  "output": " The Sun, the",
+  "prompt_sha256": "aee1359cb9b6f3235374d29e287339780850466d56e0b2b4eee74653db240ee4"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_3hop_4",
+  "item_idx": 19,
+  "new_token_count": 4,
+  "output": " Saturn, which has",
+  "prompt_sha256": "f0584c59e9ca3ccb57d6f09f29e70f9a447698081852d66195fd0405bf13157a"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_3hop_5",
+  "item_idx": 20,
+  "new_token_count": 4,
+  "output": " Mercury, the planet",
+  "prompt_sha256": "0738c4a46877b25cab48dee57dd830f44593b782509b679ae5f79e3b01d96efd"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_3hop_6",
+  "item_idx": 21,
+  "new_token_count": 4,
+  "output": " The Sun, Moon",
+  "prompt_sha256": "21c7d219a575175067a4c69448873fb5c212b36d44b1b5cccaac7f9385ca1f2c"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_3hop_7",
+  "item_idx": 22,
+  "new_token_count": 4,
+  "output": " Jupiter, the planet",
+  "prompt_sha256": "f3c539a4f540cb073ccd878b187a217232a6dacb8014dfdddd7fe1fb3421bad0"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_3hop_8",
+  "item_idx": 23,
+  "new_token_count": 4,
+  "output": " The Sun, the",
+  "prompt_sha256": "a61b19a49bee0bd2d7427e1481425cbe5d23bb972f22ff2eda5a49da4f87e60c"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_3hop_9",
+  "item_idx": 24,
+  "new_token_count": 4,
+  "output": " Saturn, which has",
+  "prompt_sha256": "5c97aed18f183ec6e09d6d2f884b0fcd9ed0a8d0968ea3c7b95dbaba0ca98e8d"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_3hop_10",
+  "item_idx": 25,
+  "new_token_count": 4,
+  "output": " Mercury, Moon and",
+  "prompt_sha256": "3fa24c1d7cbf6a8b991694027c1fad04698220817f99bd1d992c100501d129cb"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_3hop_11",
+  "item_idx": 26,
+  "new_token_count": 4,
+  "output": " The Sun, the",
+  "prompt_sha256": "37e133838606319218109d1a4670fe5c667781175c68c8af12ae1ec3459421ce"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_3hop_12",
+  "item_idx": 27,
+  "new_token_count": 4,
+  "output": " Jupiter, the Sun",
+  "prompt_sha256": "a33ddf8703818bf2aac5d2dd44ec2e05e0af6bd0bed6df17e3fe7d345e478e15"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_planet_3hop_13",
+  "item_idx": 28,
+  "new_token_count": 4,
+  "output": " The Sun, the",
+  "prompt_sha256": "a61b19a49bee0bd2d7427e1481425cbe5d23bb972f22ff2eda5a49da4f87e60c"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_planet_3hop_14",
+  "item_idx": 29,
+  "new_token_count": 4,
+  "output": " Saturn, which has",
+  "prompt_sha256": "5c97aed18f183ec6e09d6d2f884b0fcd9ed0a8d0968ea3c7b95dbaba0ca98e8d"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_2hop_0",
+  "item_idx": 30,
+  "new_token_count": 4,
+  "output": " The highest ranked person",
+  "prompt_sha256": "0eea3a9339089d0d82dcdd04d4f2eca1ba8269713e136ff43f94b4e5b5cf4f1b"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_2hop_1",
+  "item_idx": 31,
+  "new_token_count": 4,
+  "output": " The one who has",
+  "prompt_sha256": "46bb1789ac9bdc564bd452979ffc9edfe84bbee0348d56a1a9412d13a5afe46e"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_2hop_2",
+  "item_idx": 32,
+  "new_token_count": 4,
+  "output": " Gold, Silver and",
+  "prompt_sha256": "05147f02acf3d0d982dd0d41792327bcbd40bf7af6a68625d6c396b99863d9c9"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_2hop_3",
+  "item_idx": 33,
+  "new_token_count": 4,
+  "output": " The one who has",
+  "prompt_sha256": "b134379853100debd5192b813cef7b3d6550b332ddcdf11bf457e727ac19107e"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_2hop_4",
+  "item_idx": 34,
+  "new_token_count": 4,
+  "output": " The highest ranked person",
+  "prompt_sha256": "05b15db63176f4defe1095964f91d054269271915a0518f7d6400b49ac835ab1"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_2hop_5",
+  "item_idx": 35,
+  "new_token_count": 4,
+  "output": " Silver, Bronze and",
+  "prompt_sha256": "e901aecb2e215102636f69f1efb24d0955527bc67519ff729c4ff93523afca54"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_2hop_6",
+  "item_idx": 36,
+  "new_token_count": 4,
+  "output": " Gold, Silver and",
+  "prompt_sha256": "94de3545f974efc3c6d911ff2d870f3ecadfea1d2b29c160debf978d0a7c3b1e"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_2hop_7",
+  "item_idx": 37,
+  "new_token_count": 4,
+  "output": " The highest ranking person",
+  "prompt_sha256": "f857a8914d074956ecf93aa07db7cb40e053ce7895dc0e723d208c64b53b02a0"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_2hop_8",
+  "item_idx": 38,
+  "new_token_count": 4,
+  "output": " The one who has",
+  "prompt_sha256": "35dd9a9b998033a873a22d21800560a6c1107a981775f2aba96da90206042112"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_2hop_9",
+  "item_idx": 39,
+  "new_token_count": 4,
+  "output": " The one who has",
+  "prompt_sha256": "e37465a7c905360f6bbbb557a432213eef4acac380b43da1f370a7af62596591"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_2hop_10",
+  "item_idx": 40,
+  "new_token_count": 4,
+  "output": " The one who has",
+  "prompt_sha256": "78240b25c0ab9ccfa4d9658dbb712addebbcf6007b507626602d6332bbdcb72e"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_2hop_11",
+  "item_idx": 41,
+  "new_token_count": 4,
+  "output": " Bronze, Silver and",
+  "prompt_sha256": "5a153d7301f6cf1ed3d147acf121266da819fdae983bf9b23e5a7a01e908060f"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_2hop_12",
+  "item_idx": 42,
+  "new_token_count": 4,
+  "output": " Gold, Silver and",
+  "prompt_sha256": "dfccf27c13db8fa723001e31dc2390e4a4b12f90837ff34c5fb35cf72998459a"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_2hop_13",
+  "item_idx": 43,
+  "new_token_count": 4,
+  "output": " The highest ranked person",
+  "prompt_sha256": "2efe2deb4d2fefe9da9365a43800e80d89222fab7d1f4b4ecaa1a9e7b3983a65"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_2hop_14",
+  "item_idx": 44,
+  "new_token_count": 4,
+  "output": " The one who has",
+  "prompt_sha256": "d8af7d4184e2dfd9776e8306098953d225456ba416f5b2361df9f6503de215c3"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_3hop_0",
+  "item_idx": 45,
+  "new_token_count": 4,
+  "output": " The one who has",
+  "prompt_sha256": "1266265c1c5215cf384a93e9916cf297262e6c3fc93e844b5e8bf575f0257c7c"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_3hop_1",
+  "item_idx": 46,
+  "new_token_count": 4,
+  "output": " The highest ranking person",
+  "prompt_sha256": "135f9c996e8b09bfb8dd30edd107f3e1ad1c2320d4f27c24fb1ceed9334e028e"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_3hop_2",
+  "item_idx": 47,
+  "new_token_count": 4,
+  "output": " The one who has",
+  "prompt_sha256": "a9c3927edd5b312c839aee6a0d81a2cea809dc5d66f1b80273fa695eba0a8459"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_3hop_3",
+  "item_idx": 48,
+  "new_token_count": 4,
+  "output": " Gold, Silver and",
+  "prompt_sha256": "f531b437b80e57db9836315815320ea0546f7270fde74de0cfcc2a726386aaf3"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_3hop_4",
+  "item_idx": 49,
+  "new_token_count": 4,
+  "output": " The one who has",
+  "prompt_sha256": "179b1ad08986d9f99f4a8e77f6dad4f0037a19dc983d66e3c7781bfda68efb09"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_3hop_5",
+  "item_idx": 50,
+  "new_token_count": 4,
+  "output": " The highest ranked person",
+  "prompt_sha256": "e6ce894d1981d0cde8bca2726c69117469c2cea3bee4dfa53ee2a6e425556df2"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_3hop_6",
+  "item_idx": 51,
+  "new_token_count": 4,
+  "output": " The one who has",
+  "prompt_sha256": "fde8e925efb35c9fbe1fabf216cbc21b1e507e585eacef650dc7c6ac8a1510c8"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_3hop_7",
+  "item_idx": 52,
+  "new_token_count": 4,
+  "output": " The highest ranking person",
+  "prompt_sha256": "f814fd77c7179ea65fc710c3614c469feb4cf2e41b8781b0425260e8bd3c1b20"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_3hop_8",
+  "item_idx": 53,
+  "new_token_count": 4,
+  "output": " Gold, Silver and",
+  "prompt_sha256": "55d359cfeb5f9352aead5408597467e9eb662f0b0a8b61167fc0affef483aa83"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_3hop_9",
+  "item_idx": 54,
+  "new_token_count": 4,
+  "output": " The highest ranking person",
+  "prompt_sha256": "3e5ed1839c82233c54705dec1610ca6fcf7c69ff43842072b7f81f0d859c0fac"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_3hop_10",
+  "item_idx": 55,
+  "new_token_count": 4,
+  "output": " The one who has",
+  "prompt_sha256": "db43306cf716b56703e96b985528365167172f28362cc93ee505f5ba91f38607"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_3hop_11",
+  "item_idx": 56,
+  "new_token_count": 4,
+  "output": " The highest ranking person",
+  "prompt_sha256": "132824f069f45d9c44f8acc8a2181773346f21de188b6878b5aeacf64cac3d4c"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_3hop_12",
+  "item_idx": 57,
+  "new_token_count": 4,
+  "output": " Silver, Bronze and",
+  "prompt_sha256": "aa070e7e16a138600b28afb90a89cfc503789485d99faac451f4f60f4d47bf56"
+ },
+ {
+  "exception": null,
+  "id": "exp107_ctrl_exp077_element_3hop_13",
+  "item_idx": 58,
+  "new_token_count": 4,
+  "output": " The highest ranked person",
+  "prompt_sha256": "a63c59d9cc38d717e46fe24f6bbedfd55f9c1dc8ae804f2a177d6646f65cdba6"
+ },
+ {
+  "exception": null,
+  "id": "exp107_flip_exp077_element_3hop_14",
+  "item_idx": 59,
+  "new_token_count": 4,
+  "output": " The one who has",
+  "prompt_sha256": "77041825a62c01ece4a11496078d8844ff0f4d788d0fca52b0019a4f020dac7d"
+ }
+]

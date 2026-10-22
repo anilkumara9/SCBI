@@ -1,0 +1,22 @@
+ENV sklearn=1.9.1 numpy=2.5.3
+hash npz: 6cf4a8a726a2b6e4623f57d0287d95879866f77e789bcc3789fb693cf2af6a76 OK
+hash embeddings: 9b6e8afb091ba1edbb0311ba1d3414d34a65942c3fdecb4533b69720f2a99123 OK
+hash ids: 3669e102222719d66f61daca46ae1ac34e844e398ae433743a5b37bfc5075cb9 OK
+embeddings shape=(60, 1024) dtype=float32; ids shape=(60,)
+metadata joined: 60 items; y=1 count=30
+train n=30, test n=30, ID overlap=0
+test per-cell counts: {np.str_('A-first_False'): 8, np.str_('A-first_True'): 7, np.str_('C-first_False'): 7, np.str_('C-first_True'): 8}
+train per-cell counts: {np.str_('A-first_False'): 7, np.str_('A-first_True'): 8, np.str_('C-first_False'): 8, np.str_('C-first_True'): 7}
+N_F (flipped=False test)=15, N_T (flipped=True test)=15
+determinism pass: byte-identical predictions=True
+head weight hash: 483a91a887b6b876505bf688f558531751337fcd6fba3be5f95652c6afdf9f28
+head weight norm (L2 of coef): 1.880708
+train accuracy (sanity): 1.0000
+test accuracy: 24/30 = 0.8000
+acc(flipped=False, N_F=15): 0.8000; acc(flipped=True, N_T=15): 0.8000
+G = 0.0000 (threshold 0.30)
+  cell A-first_False: 0.8750 (7/8)
+  cell A-first_True: 0.8571 (6/7)
+  cell C-first_False: 0.7143 (5/7)
+  cell C-first_True: 0.7500 (6/8)
+VERDICT: CONTINUE (autonomous output-side transfer; re-licenses GPU head-training under decorrelated-bench discipline; secondary per-layer analysis licensed)

@@ -1,0 +1,68 @@
+loading /home/hatch/workspace/SCBI/experiments/runs/EXP110_qbr/out/quantized_model ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<00:36,  7.98it/s]Loading weights:  23%|██▎       | 66/292 [00:00<00:00, 327.56it/s]Loading weights:  73%|███████▎  | 214/292 [00:00<00:00, 739.26it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 797.26it/s]
+G1 gate: 60/60 items passed single-token attestation
+exp104_t0_00 rank=1 top1=France 1.1s
+exp104_t0_01 rank=1 top1=Germany 1.2s
+exp104_t0_02 rank=3 top1=Greece 1.2s
+exp104_t0_03 rank=1 top1=Greece 1.3s
+exp104_t0_04 rank=1 top1=Russia 1.1s
+exp104_t0_05 rank=1 top1=Denmark 0.7s
+exp104_t0_06 rank=3 top1=China 0.6s
+exp104_t0_07 rank=3 top1=Germany 0.5s
+exp104_t0_08 rank=4 top1=Germany 0.5s
+exp104_t0_09 rank=1 top1=Sweden 1.2s
+exp104_t0_10 rank=1 top1=Germany 0.8s
+exp104_t0_11 rank=2 top1=France 0.8s
+exp104_t0_12 rank=8 top1=China 1.1s
+exp104_t0_13 rank=1 top1=France 1.6s
+exp104_t0_14 rank=5 top1=France 0.9s
+exp104_t0_15 rank=2 top1=Spain 0.5s
+exp104_t0_16 rank=4 top1=China 0.8s
+exp104_t0_17 rank=1 top1=Brazil 0.9s
+exp104_t0_18 rank=1 top1=France 0.3s
+exp104_t0_19 rank=2 top1=Greece 0.6s
+exp104_t0_20 rank=1 top1=Germany 1.1s
+exp104_t0_21 rank=1 top1=Spain 0.8s
+exp104_t0_22 rank=1 top1=Russia 0.8s
+exp104_t0_23 rank=1 top1=Ireland 1.0s
+exp104_t0_24 rank=1 top1=Paris 0.6s
+exp104_t0_25 rank=1 top1=Madrid 0.5s
+exp104_t0_26 rank=5 top1=London 0.8s
+exp104_t0_27 rank=7 top1=Athens 0.6s
+exp104_t0_28 rank=6 top1=Paris 0.6s
+exp104_t0_29 rank=2 top1=Rome 0.8s
+exp104_t0_30 rank=8 top1=Mexico 0.9s
+exp104_t0_31 rank=3 top1=Pakistan 0.6s
+exp104_t0_32 rank=1 top1=Japan 0.5s
+exp104_t0_33 rank=3 top1=Mexico 0.7s
+exp104_t0_34 rank=1 top1=Nigeria 1.4s
+exp104_t0_35 rank=3 top1=France 1.6s
+exp104_t0_36 rank=4 top1=California 0.5s
+exp104_t0_37 rank=1 top1=California 0.5s
+exp104_t0_38 rank=5 top1=Texas 0.6s
+exp104_t0_39 rank=1 top1=Michigan 0.5s
+exp104_t0_40 rank=6 top1=California 0.7s
+exp104_t0_41 rank=8 top1=Virginia 0.6s
+exp104_t0_42 rank=1 top1=Brazil 1.8s
+exp104_t0_43 rank=1 top1=Russia 1.3s
+exp104_t0_44 rank=1 top1=Qatar 0.9s
+exp104_t0_45 rank=1 top1=China 0.7s
+exp104_t0_46 rank=3 top1=China 0.8s
+exp104_t0_47 rank=1 top1=France 0.5s
+exp104_t0_48 rank=1 top1=France 0.6s
+exp104_t0_49 rank=1 top1=Spain 0.6s
+exp104_t0_50 rank=4 top1=Belgium 0.6s
+exp104_t0_51 rank=1 top1=Austria 0.5s
+exp104_t0_52 rank=1 top1=Italy 0.9s
+exp104_t0_53 rank=1 top1=Portugal 0.5s
+exp104_t0_54 rank=1 top1=France 0.7s
+exp104_t0_55 rank=1 top1=Spain 0.6s
+exp104_t0_56 rank=3 top1=France 0.6s
+exp104_t0_57 rank=8 top1=France 0.6s
+exp104_t0_58 rank=5 top1=Germany 0.5s
+exp104_t0_59 rank=6 top1=France 0.7s
+Delta-theta=0 guard: weight hash identical pre/post
+
+TIER-0 VERDICT: TIER-0 PASSED  (acc=0.5333, failed=28, tie_rate=0.000)
+wrote /home/hatch/workspace/SCBI/experiments/runs/EXP110_qbr/out/tier0_quantized.json

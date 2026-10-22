@@ -1,0 +1,41 @@
+{
+ "experiment": "EXP149",
+ "study": "a",
+ "log": "LOG-4968",
+ "torch_seed": 149004,
+ "guards": {
+  "u0_scoring_pipeline": true,
+  "b_revision_match": true,
+  "a_prehash_match": true,
+  "c_bench_pin_match": true,
+  "law7_disjoint": true,
+  "h_compute_gate": true,
+  "d_dryrun_pass": false
+ },
+ "dryrun_seed": 149002,
+ "pilot_seed": 149003,
+ "env": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "threads": 2
+ },
+ "bench_pin": "a4275c8c7996006096c715c5399d0019844ded8aaff663c0359ead202bc27f67",
+ "prompts_sha256": "e46211620ffaa49684c19f256d21db8b221be019ec992ac1c4d4fc003c94bb67",
+ "throughput_probe": {
+  "sec_per_token": 0.1694,
+  "projected_design_hours": 9.12
+ },
+ "fourhop_trigger": {
+  "h48_pass": true,
+  "g_headroom_pass": false,
+  "admitted": false
+ },
+ "dryrun": {
+  "b_accuracy": 0.9,
+  "forwards": 300
+ },
+ "outcome": "HELD",
+ "reason": "dry-run gate (d): B accuracy 0.9000",
+ "elapsed_hours": 0.02
+}

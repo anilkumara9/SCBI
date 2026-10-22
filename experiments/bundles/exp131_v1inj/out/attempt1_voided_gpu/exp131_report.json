@@ -1,0 +1,35 @@
+{
+ "experiment": "EXP131",
+ "verdict": "KILL",
+ "reason": "decision-orthogonal amplifier: c_hat=0.0634 < 0.1",
+ "metrics": {
+  "median_r": 1.0,
+  "r_per_item": [
+   1.0
+  ],
+  "dm_v1": 0,
+  "best_random_arm": 0,
+  "random_flips": {
+   "0": 0
+  },
+  "mcnemar_b": 0,
+  "mcnemar_c": 0,
+  "mcnemar_n": 0,
+  "mcnemar_p_onesided": 1.0,
+  "rank_trend_hits": 0,
+  "rank_trend": false,
+  "c_hat_mean": 0.06340583465941697,
+  "c_hat_exclusions": [],
+  "dm_bagg": 0,
+  "budget_B": 0.5082483291625977
+ },
+ "records_pin": "63c952ae0a7cd231cc69f2ba96f783e9e3a1010a74bf378b2d3ee7a6a52542ef",
+ "env": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "device": "cpu",
+  "cuda": null,
+  "smoke": true
+ }
+}

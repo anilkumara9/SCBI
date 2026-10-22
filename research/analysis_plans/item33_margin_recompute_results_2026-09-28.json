@@ -1,0 +1,40 @@
+{
+  "item33_index": 33,
+  "item33_id": "exp092_elemental_2hop_3",
+  "layer": 11,
+  "item33_margin": 1.013298582467447,
+  "item33_same_class_min_dist": 2.1059299406037417,
+  "item33_diff_class_min_dist": 3.1192285230711887,
+  "item33_rank_of_60": 2,
+  "top5": [
+    [
+      31,
+      1.1548801185151403
+    ],
+    [
+      33,
+      1.013298582467447
+    ],
+    [
+      56,
+      0.9870714234092723
+    ],
+    [
+      48,
+      0.893205638090314
+    ],
+    [
+      41,
+      0.8405261754637607
+    ]
+  ],
+  "v82_L391_claim": "1.013; same-class 2.106 vs. different-class 3.119; 2nd of 60",
+  "match": true,
+  "provenance": {
+    "primaries": "/home/hatch/workspace/SCBI/experiments/runs/EXP092_ibl/out/exp092_embeddings.npz",
+    "npz_sha256": "9219bd0dd961524e26a7bb570cbc1e67e7fb245f58271415c5cf174dceb95fae",
+    "script": "research/analysis_plans/item33_margin_recompute_2026-09-28.py",
+    "exp093_injection_shifts_recoverable": false,
+    "exp093_reason": "run_exp093.py computed per-item margin arrays mB/mP/mN in memory but persisted only aggregates (exp093_report.json secondaries: mean_margin_shift_P=0.005951849619547526, mean_margin_shift_N=-0.007636133829752604). No per-item margin CSV/NPZ/JSON exists anywhere in the EXP093 bundle or repo. Recovery requires a 180-pass model re-run (new experiment, GPU)."
+  }
+}

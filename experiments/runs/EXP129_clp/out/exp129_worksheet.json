@@ -1,0 +1,110 @@
+{
+ "experiment": "EXP129_CLP",
+ "log": "LOG-4715",
+ "protocol_sha256": "8eea9f0d659501885cbe7e30657824a372495fda9ecc130c8cc4a0cabeee5ba7",
+ "weights_snap": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+ "backbone_pin_pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+ "backbone_pin_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+ "v1_artifact_sha256": "9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc",
+ "v2_derivation": {
+  "seed": 202609294714,
+  "K": 40,
+  "recurrence": "q_{k+1} ~ (I - v1 v1^T) M^T M q_k",
+  "orthogonality_assert": "|v2.v1| < 1e-6"
+ },
+ "prompt_ids": [
+  "exp107_flip_exp077_planet_2hop_0",
+  "exp107_ctrl_exp077_planet_2hop_1",
+  "exp107_flip_exp077_planet_2hop_2",
+  "exp107_ctrl_exp077_planet_2hop_3",
+  "exp107_flip_exp077_planet_2hop_4",
+  "exp107_ctrl_exp077_planet_2hop_5",
+  "exp107_flip_exp077_planet_2hop_6",
+  "exp107_ctrl_exp077_planet_2hop_7",
+  "exp107_ctrl_exp077_planet_2hop_8",
+  "exp107_flip_exp077_planet_2hop_9"
+ ],
+ "budget_B": 0.505783634185791,
+ "budget_rule": "B = 0.01 * median||y20_last||",
+ "y20_norms": [
+  50.824832916259766,
+  50.25412368774414,
+  50.9734001159668,
+  50.40554428100586,
+  51.05250930786133,
+  50.751182556152344,
+  51.24768829345703,
+  50.38786315917969,
+  50.224998474121094,
+  49.88530731201172
+ ],
+ "component_tolerance_rel": 1e-05,
+ "sensing_ops": [
+  "exact-jvp",
+  "exact-vjp"
+ ],
+ "correction_rule": "w_hat = M^T d1_hat / ||M^T d1_hat|| (frozen, identical all items)",
+ "readout_site": "block-23 output (pre-final-LayerNorm), final token (EXP127 propagator map; \u00a73.1 parenthetical disclosed in report)",
+ "flips_observation": "not measured \u2014 no licensed decision-readout channel (logits barred \u00a76; generation/probe/head barred \u00a73.7)",
+ "env": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "threads": 2,
+  "dtype": "float32",
+  "device": "cpu",
+  "model": "pythia-410m-local"
+ },
+ "forwards": 50,
+ "final": {
+  "verdict": "KILL",
+  "reason": "median r = 1.000005 <= 1.2 \u2014 the loop adds nothing the push didn't already do; the adaptive-pursuit premise on $0 is dead",
+  "median_r": 1.0000048288402206,
+  "median_saturation": 1.013390064239502,
+  "median_dose_ratio": 1.6523812231656738,
+  "median_loop_beats_single": 1.0000048288402206,
+  "r_sorted": [
+   0.999764383378723,
+   0.9997878504370924,
+   0.9998917954527664,
+   0.999938674941993,
+   0.9999803387410222,
+   1.0000293189394192,
+   1.0000545409789672,
+   1.000079372776091,
+   1.000106653527162,
+   1.000224190327137
+  ],
+  "saturation_sorted": [
+   0.9674490094184875,
+   0.9749594330787659,
+   1.010339617729187,
+   1.0130387544631958,
+   1.0131666660308838,
+   1.0136134624481201,
+   1.0140149593353271,
+   1.0142971277236938,
+   1.0154986381530762,
+   1.0159975290298462
+  ],
+  "dose_sorted": [
+   1.638111204210341,
+   1.6393637704438522,
+   1.643113123711135,
+   1.6482423761276819,
+   1.651539547055812,
+   1.6532228992755356,
+   1.6622218724503814,
+   1.66391054819555,
+   1.7040014392515759,
+   1.704832103289522
+  ],
+  "backbone_pin_post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "artifact_pins": {
+   "/home/hatch/workspace/SCBI/experiments/runs/EXP129_clp/out/exp129_per_item.json": "14a566ced435e4fbab1b9190bf4380d34c90db7a9bb65771374fc67845083fee",
+   "/home/hatch/workspace/SCBI/experiments/runs/EXP129_clp/out/exp129_vectors.npz": "e3d869aff941cb2d499c504a5e27b804d51019b5aef70bf8f48377b43813773e",
+   "/home/hatch/workspace/SCBI/experiments/runs/EXP129_clp/out/exp129_worksheet.json": "ec3b68d23cb84547eb0251ba1e87b6ccffd45bd1618c53a63daddf3506673c0a",
+   "/home/hatch/workspace/SCBI/experiments/runs/EXP129_clp/out/exp129_console.log": "7022273b38d5985a9482154fc97a1b35893871ff82814f580d471ed05d7d5470"
+  }
+ }
+}

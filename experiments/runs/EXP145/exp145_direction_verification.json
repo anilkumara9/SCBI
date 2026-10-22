@@ -1,0 +1,19 @@
+{
+ "experiment": "EXP145",
+ "guard": "G2/S0.4/D2",
+ "l_star": 8,
+ "construction": "LOO maximum-average-cosine shared correction (v0.2, verbatim port)",
+ "min_r_norm": 6.576237857774222,
+ "r_assert": "60/60 ||r_i|| > 1e-09",
+ "mean_pairwise_cosine_u": -0.01609565219214711,
+ "prenorm_norm_range": [
+  0.023755203168064645,
+  0.04245542264222536
+ ],
+ "max_pairwise_cosine_v": 0.9821400199650574,
+ "all_v_unit_norm": true,
+ "r4_not_bit_identical": true,
+ "D2_mean_cosine": -0.45866710407469674,
+ "D2_bar": 0.7,
+ "D2": "FAIL"
+}

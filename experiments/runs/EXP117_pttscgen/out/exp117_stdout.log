@@ -1,0 +1,11 @@
+[09:51:17] bench provenance sha256: 47281cd3dc243369... (expect 47281cd3dc243369...)
+[09:51:17] bench built: len=60
+[09:51:17] loading tokenizer + model from /home/hatch/workspace/.exp086_weights/pythia-410m
+[09:51:31] backbone hash BEFORE: ec276abe3902fab0... (expect ec276abe3902fab0...)
+[09:51:31] planner prompt byte-identity vs EXP113 T2-P2 reference: 0/60 mismatches
+[09:51:31] Phase 0a: recitation check on 10 probe items
+[09:56:38] Phase 0a: recited items (literal §3.7 definition) = 0/10 (gate: >=6 -> RUN-INVALID); diag mean max overlap = 0.7054
+[09:56:38] Phase 0a DIAGNOSTIC: items with >=2 content-level verbatim recitations = 10/10 (does NOT fire the gate; reports the marker-strip blind spot)
+[09:56:38] Phase 0b: decision-channel mini-gate on 10 probe items
+[09:57:07] Phase 0b: parseable = 0/10 (gate: <8 -> RUN-INVALID); distinct=0, minority=0 (gate: <2 distinct or minority<2 -> RUN-INVALID)
+[09:57:07] FINAL VERDICT: RUN-INVALID (Phase 0b: no generation decision channel on this bench/shape)

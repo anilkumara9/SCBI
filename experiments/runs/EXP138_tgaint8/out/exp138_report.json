@@ -1,0 +1,38 @@
+{
+ "experiment": "EXP138",
+ "tiers": {
+  "Q1_c_hat_q": 0.03747117504915649,
+  "Q1_pass": true,
+  "Q2_dm_v1_q": 0,
+  "Q2_pass": true,
+  "Q3_dm_geo_q": 0,
+  "Q3_dm_geo_bagg_q": 0,
+  "Q3_pass": true,
+  "Q4_mcnemar_b": 0,
+  "Q4_mcnemar_c": 0,
+  "Q4_mcnemar_n": 0,
+  "Q4_p": 1.0,
+  "Q4_pass": true,
+  "Q5_dm_bagg_q": 0,
+  "Q5_pass": true,
+  "Q6_r_probes": {
+   "oneshot": 1.0000000596046483,
+   "geodesic": 1.0000000596046483
+  },
+  "Q6_pass": true,
+  "baseline_shifts": 0,
+  "budget_B_q": 0.5044928550720215,
+  "c_hat_exclusions": []
+ },
+ "records_pin": "58182baa22bb91739a37d3a5f3e0590e676709ab52ac6a6332c1531c044c735c",
+ "env": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "device": "cpu",
+  "threads": 2,
+  "smoke": false,
+  "presentation_mechanism": "in-memory state_dict transform (no saved model dir)"
+ },
+ "elapsed_min": 6.056095389525096
+}

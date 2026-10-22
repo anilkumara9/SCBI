@@ -1,0 +1,31 @@
+[04:15:30] threads=1
+[04:15:30] loading tokenizer + model (float32, cpu, local_files_only)...
+[04:15:37] model loaded
+[04:15:50] backbone pre-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[04:15:50] (b) backbone pin PASS
+[04:15:50] (a) bench len=60; bench sha256=eb304fa65a60b65ad87767d251084b256d0a79001a16b4fe8ebcd1b1f45589df
+[04:15:50] (a) bench pin PASS
+[04:15:50] (c) EXP140 record id alignment 60/60 PASS
+[04:15:50] B0 baseline accuracy: 0.7000
+[04:15:57] passes 10/60 (7.1s)
+[04:16:04] passes 20/60 (14.1s)
+[04:16:11] passes 30/60 (21.4s)
+[04:16:17] passes 40/60 (27.6s)
+[04:16:24] passes 50/60 (34.7s)
+[04:16:32] passes 60/60 (42.4s)
+[04:16:32] (d) 60/60 passes complete PASS (42.4s)
+[04:16:34] (e) determinism spot-check 3/3 byte-identical PASS
+[04:16:34] note: 3 determinism re-run forwards excluded from the 60-pass count
+[04:16:37] backbone post-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[04:16:37] (c) Delta theta = 0 PASS
+[04:16:37] n_i distribution: median=32.0 IQR=[29.0,35.0] range=[29,35] below-floor(40)=60
+[04:16:37] items kept after C2 guard: 0/60
+[04:16:37] s_correct: n=0 median=nan | s_failed: n=0 median=nan | Delta_s_obs=nan
+[04:16:40] permutation test: 100000 perms, seed=20261010, p=0.00000
+[04:16:40] bulk-fit diagnostic: median KS=0.4108 (flag threshold 0.15) -> POOR-FIT FLAGGED
+[04:16:40] l_c: present on 0/0 items
+[04:16:56] per-layer test (20k perms): significant layers (p<0.05): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+[04:16:58] mean-difference version: Delta_mean=nan p=0.00000
+[04:16:58] VERDICT: HELD - C2 guard fired: 0 items with n_i>=40 (<30) - insufficient positions for stable spectra
+[04:16:58] records written
+[04:16:58] RUN_REPORT.md written

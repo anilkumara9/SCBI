@@ -1,0 +1,152 @@
+[
+ {
+  "item_id": "exp104_t0_00",
+  "question": "The Latin word Hydrargyrum gives the chemical symbol of which element?",
+  "options": [
+   "Silicon",
+   "Silver",
+   "Mercury",
+   "Lead",
+   "Gold",
+   "Iron",
+   "Tin",
+   "Carbon"
+  ],
+  "option_token_ids": [
+   34413,
+   16309,
+   36091,
+   12151,
+   7284,
+   17826,
+   46487,
+   32676
+  ],
+  "correct_option": "Mercury",
+  "correct_position": 2,
+  "structural_foil": "Silver",
+  "foil_rationale": "Liquid/shiny-metal confusable",
+  "prompt": "Q: The Latin word Hydrargyrum gives the chemical symbol of which element?\nA) Silicon\nB) Silver\nC) Mercury\nD) Lead\nE) Gold\nF) Iron\nG) Tin\nH) Carbon\nAnswer:",
+  "readout_index": 53
+ },
+ {
+  "item_id": "exp104_t0_01",
+  "question": "The company that makes the Corolla car is headquartered in which country?",
+  "options": [
+   "Korea",
+   "France",
+   "Italy",
+   "Japan",
+   "Canada",
+   "China",
+   "Sweden",
+   "Germany"
+  ],
+  "option_token_ids": [
+   9733,
+   6181,
+   9972,
+   4047,
+   6144,
+   4135,
+   16842,
+   6176
+  ],
+  "correct_option": "Japan",
+  "correct_position": 3,
+  "structural_foil": "Korea",
+  "foil_rationale": "Asian carmaker confusable",
+  "prompt": "Q: The company that makes the Corolla car is headquartered in which country?\nA) Korea\nB) France\nC) Italy\nD) Japan\nE) Canada\nF) China\nG) Sweden\nH) Germany\nAnswer:",
+  "readout_index": 53
+ },
+ {
+  "item_id": "exp104_t0_02",
+  "question": "The novel 1984 was written by an author born in which country?",
+  "options": [
+   "India",
+   "France",
+   "England",
+   "Germany",
+   "Ireland",
+   "Pakistan",
+   "Bangladesh",
+   "Russia"
+  ],
+  "option_token_ids": [
+   5427,
+   6181,
+   5854,
+   6176,
+   11011,
+   13115,
+   29310,
+   7422
+  ],
+  "correct_option": "India",
+  "correct_position": 0,
+  "structural_foil": "England",
+  "foil_rationale": "Orwell is associated with England; a strong student may answer it",
+  "prompt": "Q: The novel 1984 was written by an author born in which country?\nA) India\nB) France\nC) England\nD) Germany\nE) Ireland\nF) Pakistan\nG) Bangladesh\nH) Russia\nAnswer:",
+  "readout_index": 50
+ },
+ {
+  "item_id": "exp104_t0_03",
+  "question": "The film Spirited Away was directed by a person born in which country?",
+  "options": [
+   "Thailand",
+   "China",
+   "Taiwan",
+   "Philippines",
+   "Japan",
+   "Korea",
+   "Vietnam",
+   "Indonesia"
+  ],
+  "option_token_ids": [
+   23174,
+   4135,
+   17975,
+   22075,
+   4047,
+   9733,
+   15732,
+   23340
+  ],
+  "correct_option": "Japan",
+  "correct_position": 4,
+  "structural_foil": "China",
+  "foil_rationale": "Asian-animation confusable",
+  "prompt": "Q: The film Spirited Away was directed by a person born in which country?\nA) Thailand\nB) China\nC) Taiwan\nD) Philippines\nE) Japan\nF) Korea\nG) Vietnam\nH) Indonesia\nAnswer:",
+  "readout_index": 53
+ },
+ {
+  "item_id": "exp104_t0_04",
+  "question": "The Tower of London stands in the capital of which country?",
+  "options": [
+   "Netherlands",
+   "France",
+   "England",
+   "Ireland",
+   "Germany",
+   "Belgium",
+   "Scotland",
+   "Wales"
+  ],
+  "option_token_ids": [
+   16333,
+   6181,
+   5854,
+   11011,
+   6176,
+   22785,
+   13944,
+   15420
+  ],
+  "correct_option": "England",
+  "correct_position": 2,
+  "structural_foil": "Scotland",
+  "foil_rationale": "UK-nation confusable",
+  "prompt": "Q: The Tower of London stands in the capital of which country?\nA) Netherlands\nB) France\nC) England\nD) Ireland\nE) Germany\nF) Belgium\nG) Scotland\nH) Wales\nAnswer:",
+  "readout_index": 49
+ }
+]

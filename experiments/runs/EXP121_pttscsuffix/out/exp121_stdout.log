@@ -1,0 +1,31 @@
+[12:38:59] ENV: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "sklearn": "1.9.1", "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m", "torch_num_threads_set": 2, "torch_num_threads_readback": 2, "seeds": {"torch": 0, "numpy": 0}, "device": "cpu", "dtype": "float32", "device_map": "cpu", "generation": {"do_sample": false, "max_new_tokens": 160}}
+[12:38:59] npz pins OK
+[12:38:59] bench pin OK: 60 items; schema + decomposition assertion pass (§3.1/§3.4)
+[12:38:59] archived EXP112 readout column loaded: 60 records
+[12:39:04] BPE single-token re-assertion: 120/120; token ids match EXP112 worksheet pins
+[12:39:04] Phase 0-pre: tokenizer-only [-3:] identity pre-check on 60 items (no model contact)
+[12:39:04] Phase 0-pre: [-3:] identity holds on 60/60 items; composition licensed (mechanical pin)
+[12:39:11] backbone hash BEFORE: ec276abe3902fab0... (expect ec276abe3902fab0...)
+[12:39:11] planner prompt byte-identity vs EXP113 T2-P2 reference: 0/60 mismatches
+[12:39:11] Phase 0a: planner bench-transfer check on 10 probe items
+[12:43:22] Phase 0a: planner-valid = 10/10 (gate: <8 -> RUN-INVALID)
+[12:43:22] Phase 0a DIAGNOSTIC (not a gate): items with >=2 content-level recitations = 10/10
+[12:43:22] Phase 0b: logit slot with plan insertion on 10 probe items
+[12:43:54] Phase 0b: valid = 10/10 (gate: <8 -> RUN-INVALID)
+[12:43:54] Phase 0 passed; full run on 60 items (fresh records)
+[12:48:02] full run: 10/60 planner generations complete
+[12:52:09] full run: 20/60 planner generations complete
+[12:56:20] full run: 30/60 planner generations complete
+[13:00:27] full run: 40/60 planner generations complete
+[13:04:34] full run: 50/60 planner generations complete
+[13:08:43] full run: 60/60 planner generations complete
+[13:10:01] full run: 20/60 item forwards complete
+[13:11:14] full run: 40/60 item forwards complete
+[13:12:24] full run: 60/60 item forwards complete
+[13:12:24] full run: 60 planner gens + 120 forwards; exceptions=0
+[13:12:26] backbone hash AFTER: ec276abe3902fab0... (expect ec276abe3902fab0...)
+[13:12:26] Delta theta = 0 confirmed
+[13:12:26] baseline reproduction vs EXP112 archived readout: 0/60 mismatches
+[13:12:26] deterministic re-read x2 byte-identical: True
+[13:12:26] baseline-arm variation: distinct=2 minority=27 (gate: <2 distinct or minority<3 -> RUN-INVALID)
+[13:12:26] n_valid = 38/60 (gate: <48 -> RUN-INVALID)

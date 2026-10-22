@@ -1,0 +1,314 @@
+[
+  {
+    "step": 0,
+    "condition": "foundation gates",
+    "evidence": {
+      "constructor_rehash": "match frozen pin",
+      "G5_layer_11": "PASS (frozen verify_g5 core, d_0^(11) probe)",
+      "B_agreement": "60/60 per-item vs archived EXP094 baseline",
+      "B_accuracy": 36,
+      "L11_degeneracy_signature": "0.7923 vs 0.7923 (tol 0.05) \u2014 PASS",
+      "attention_math_validation": "max abs diff 0.00e+00 <= 1e-05 \u2014 PASS (L20 math)",
+      "E_over_N": "60/60 <= 0.5"
+    },
+    "walk": "BLANK \u2014 verdict lane",
+    "verdict_lane_walk": {
+      "verdict_lane": "PASS",
+      "note": "constructor re-hash matches 5e03f206...917f361 (live=pinned); B agreement 60/60 vs archived EXP094 B vector (recomputed by verdict lane; 36/60 accuracy); 60/60 E_i/N_i<=0.5, 1<=E_i<N_i, final token outside span; L11 degeneracy recomputed 0.79226063 vs 0.7923 (|diff|<0.05); dtheta pre==post==LOG-331 pin ec276abe...0ed"
+    }
+  },
+  {
+    "step": 1,
+    "condition": "delivery (fired rows in band)",
+    "evidence": {
+      "n_fired_cell_rows": 2,
+      "in_band": 2,
+      "out_of_band": 0,
+      "exclusions": {
+        "gated-T": [],
+        "gated-R": []
+      },
+      "zero_norm_directions": 0
+    },
+    "walk": "BLANK \u2014 verdict lane",
+    "verdict_lane_walk": {
+      "verdict_lane": "PASS",
+      "note": "2 fired cell-rows (1 item x 2 arms); perturbation_ratio 0.38 on both, 0 OOB in [0.285,0.475]; 118 undefined rows per spec; norm ties 60/60; ties 0/60; no zero-variance"
+    }
+  },
+  {
+    "step": "2a",
+    "condition": "gate integrity",
+    "evidence": {
+      "gate_source": "B_pass_only",
+      "gate_rule": "L20-mean>=tau (mass_i^{L20,mean} = mean_h span-sum at L20; read-only block-input pre-hook on the B pass)",
+      "n_block_input_captures": 60,
+      "capture_arm_tags": [
+        "B"
+      ],
+      "pre_hook_readonly": true,
+      "coverage": 0.016666666666666666,
+      "n_fired": 1,
+      "mass_L20_mean_range": [
+        0.03455800307167534,
+        0.23302621504958265
+      ],
+      "tau_range": [
+        0.22857142857142856,
+        0.27586206896551724
+      ],
+      "audit_fired_iff_L20mean_ge_tau": "60/60",
+      "audit_note": "F2-class fence: NO non-gate attention columns are persisted \u2014 the gate's own mass_i^{L20,mean} only (\u00a75 item 2; \u00a74.3). No verdict, worksheet cell, or report may cite any non-gate attention quantity.",
+      "step_0iii": {
+        "E_over_N_le_0.5": "60/60",
+        "one_le_E_lt_N": "60/60",
+        "final_token_outside_span": "60/60",
+        "tau_in_(0,1]": "60/60"
+      },
+      "step_2a": "firing vector derived from B-pass captures only; injection-pass data never entered the gate computation",
+      "attention_backend": "sdpa (default; B pass bit-identical code path to EXP094-099)",
+      "attention_math_validation": {
+        "method": "WITHIN-backend eager ground truth: the eager model's own captured block-20 input through its own submodules vs its own output_attentions[20] weights (separate model instance, output_attentions=True)",
+        "n_items": 3,
+        "max_abs_diff": 0.0,
+        "tol": 1e-05,
+        "pass": true
+      },
+      "backend_divergence_diagnostic": {
+        "note": "EXP101 HOLD diagnosis (2026-09-28): cross-backend comparison is invalid \u2014 SDPA-vs-eager block-20 inputs already differ ~1e-5 from layers-0-19 backend divergence; logged, not gated",
+        "sdpa_vs_eager_block20_input_max_abs_diff_3_items": 0.0010471343994140625
+      }
+    },
+    "walk": "BLANK \u2014 verdict lane",
+    "verdict_lane_walk": {
+      "verdict_lane": "PASS",
+      "note": "firing vector from B-pass captures only (60/60 rows gate_source=B_pass); fired<=>mass^{L20,mean}>=tau 60/60; deterministic-copy for 59 unfired asserted"
+    }
+  },
+  {
+    "step": "2b",
+    "condition": "coverage tripwire",
+    "evidence": {
+      "coverage": 0.016666666666666666,
+      "n_fired": 1,
+      "floor": 0.1,
+      "tripwire_fired": true,
+      "vacuous_gate": false
+    },
+    "walk": "BLANK \u2014 verdict lane",
+    "verdict_lane_walk": {
+      "verdict_lane": "FIRED -> PIVOT (untestable)",
+      "note": "coverage 1/60 = 1.67% < 10%. First match in \u00a73 order. The L20 mean-gate is too selective; the later-layer-relevance mechanism is untestable in this form. A KILL is never manufactured from a gate that fires nowhere."
+    }
+  },
+  {
+    "step": "2c",
+    "condition": "vacuous-gate flag",
+    "evidence": {
+      "vacuous_gate": false,
+      "required_verbatim_caveat": "CONTINUE (directional signal at ratio 0.38; gating unattributed \u2014 the gate was vacuous)."
+    },
+    "walk": "BLANK \u2014 verdict lane",
+    "verdict_lane_walk": {
+      "verdict_lane": "PREEMPTED",
+      "note": "coverage 1.67% != 100%; vacuous-gate flag does not attach"
+    }
+  },
+  {
+    "step": 3,
+    "condition": "regime routing (machine-written)",
+    "evidence": {
+      "routing": "PREEMPTED_BY_STEP_2B",
+      "routing_reason": "gated-T = 0 and gated-R = 0 with coverage 0.017 < 0.1 (step-2b tripwire; verdict lane rules PIVOT)",
+      "coverage": 0.016666666666666666,
+      "n_fired": 1,
+      "evidence": {
+        "gated_T_flips_vs_B": 0,
+        "gated_R_flips_vs_B": 0,
+        "delivery_confirmed": true,
+        "sanity": {
+          "gated-T": {
+            "ties": 0,
+            "ties_over_60": 0.0,
+            "run_invalid_ties": false,
+            "zero_variance": false
+          },
+          "gated-R": {
+            "ties": 0,
+            "ties_over_60": 0.0,
+            "run_invalid_ties": false,
+            "zero_variance": false
+          }
+        }
+      },
+      "note": "machine-written before the table walk; per-arm RUN-INVALID routed where sanity gates fire; steps 2b, 4-8 are the verdict lane's"
+    },
+    "walk": "BLANK \u2014 verdict lane",
+    "verdict_lane_walk": {
+      "verdict_lane": "PREEMPTED",
+      "note": "step 2b earned first; regime routing not evaluated"
+    }
+  },
+  {
+    "step": "F1",
+    "condition": "decision-proxy audit (descriptive ONLY; no routing, bar, or verdict consequence \u2014 \u00a74.3)",
+    "evidence": {
+      "B_accuracy_fired": 1,
+      "B_accuracy_unfired": 35,
+      "n_fired": 1,
+      "n_unfired": 59,
+      "note": "descriptive only \u2014 the verdict lane may state whether the gate behaved as a near-decision proxy; it alters no step"
+    },
+    "walk": "BLANK \u2014 verdict lane (informational)",
+    "verdict_lane_walk": {
+      "verdict_lane": "REPORTED (descriptive only)",
+      "note": "B accuracy fired 1/1 vs unfired 35/59. No routing, bar, or verdict consequence (F1, \u00a74.3). Descriptive vocabulary: the single fired item was B-correct; with n=1 fired this is uninformative about the Law #7 decision-proxy question."
+    }
+  },
+  {
+    "step": 4,
+    "condition": "fragility PIVOT (matched random, \u00a73 step 4)",
+    "evidence": {
+      "aggregate_contrasts": {
+        "gated-T_vs_B": {
+          "n": 60,
+          "delta": 0.0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        },
+        "gated-R_vs_B": {
+          "n": 60,
+          "delta": 0.0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        },
+        "gated-T_vs_gated-R": {
+          "n": 60,
+          "delta": 0.0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        }
+      },
+      "gated_R_flips_vs_B": 0,
+      "note": "fragility routes before directionality; verdict lane applies the first-match rule"
+    },
+    "walk": "BLANK \u2014 verdict lane",
+    "verdict_lane_walk": {
+      "verdict_lane": "PREEMPTED",
+      "note": "fragility disjuncts not evaluated (step 2b earned)"
+    }
+  },
+  {
+    "step": 5,
+    "condition": "licensed positive (gated-T, \u00a73 step 5)",
+    "evidence": {
+      "aggregate_contrasts": {
+        "gated-T_vs_B": {
+          "n": 60,
+          "delta": 0.0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        },
+        "gated-R_vs_B": {
+          "n": 60,
+          "delta": 0.0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        },
+        "gated-T_vs_gated-R": {
+          "n": 60,
+          "delta": 0.0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        }
+      },
+      "stratum_cells": "stratum_table.json",
+      "sensitivity_floor_8_over_N_realized": 0.13333333333333333,
+      "sensitivity_floor_8_over_F": 8.0,
+      "note": "full conjunction evaluated by the verdict lane"
+    },
+    "walk": "BLANK \u2014 verdict lane",
+    "verdict_lane_walk": {
+      "verdict_lane": "PREEMPTED",
+      "note": "licensed-positive conjunction not evaluated (step 2b earned)"
+    }
+  },
+  {
+    "step": 6,
+    "condition": "gated KILL (\u00a73 step 6)",
+    "evidence": {
+      "routing": "PREEMPTED_BY_STEP_2B",
+      "coverage": 0.016666666666666666,
+      "n_fired": 1,
+      "aggregate_contrasts": {
+        "gated-T_vs_B": {
+          "n": 60,
+          "delta": 0.0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        },
+        "gated-R_vs_B": {
+          "n": 60,
+          "delta": 0.0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        },
+        "gated-T_vs_gated-R": {
+          "n": 60,
+          "delta": 0.0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        }
+      },
+      "note": "verdict lane evaluates the step-6 conjunction (LIVE, coverage\u226510%, gated-T<6, gated-R sub-threshold)"
+    },
+    "walk": "BLANK \u2014 verdict lane",
+    "verdict_lane_walk": {
+      "verdict_lane": "PREEMPTED",
+      "note": "Gated KILL not reachable: step 2b short-circuits before step 6"
+    }
+  },
+  {
+    "step": 7,
+    "condition": "otherwise -> PIVOT (named sub-cases)",
+    "evidence": {
+      "aggregate_contrasts": {
+        "gated-T_vs_B": {
+          "n": 60,
+          "delta": 0.0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        },
+        "gated-R_vs_B": {
+          "n": 60,
+          "delta": 0.0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        },
+        "gated-T_vs_gated-R": {
+          "n": 60,
+          "delta": 0.0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        }
+      }
+    },
+    "walk": "BLANK \u2014 verdict lane",
+    "verdict_lane_walk": {
+      "verdict_lane": "PREEMPTED",
+      "note": "otherwise->PIVOT not reached: step 2b is the earned step"
+    }
+  }
+]

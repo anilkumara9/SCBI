@@ -1,0 +1,189 @@
+{
+ "n_occurrences": 240,
+ "n_single_token": 232,
+ "expected": 240,
+ "per_entity": {
+  "Bronze": {
+   "occurrences": 6,
+   "single_token": 6,
+   "token_ids": [
+    19461
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Carbon": {
+   "occurrences": 14,
+   "single_token": 14,
+   "token_ids": [
+    23699
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Crystal": {
+   "occurrences": 8,
+   "single_token": 8,
+   "token_ids": [
+    12969
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Europa": {
+   "occurrences": 12,
+   "single_token": 12,
+   "token_ids": [
+    29890
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Gold": {
+   "occurrences": 8,
+   "single_token": 8,
+   "token_ids": [
+    3561
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Io": {
+   "occurrences": 10,
+   "single_token": 10,
+   "token_ids": [
+    27853
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Iron": {
+   "occurrences": 8,
+   "single_token": 8,
+   "token_ids": [
+    7931
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Jupiter": {
+   "occurrences": 10,
+   "single_token": 10,
+   "token_ids": [
+    22721
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Lead": {
+   "occurrences": 16,
+   "single_token": 16,
+   "token_ids": [
+    20116
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Mars": {
+   "occurrences": 16,
+   "single_token": 16,
+   "token_ids": [
+    8706
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Mercury": {
+   "occurrences": 16,
+   "single_token": 16,
+   "token_ids": [
+    21673
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Miranda": {
+   "occurrences": 14,
+   "single_token": 14,
+   "token_ids": [
+    29575
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Saturn": {
+   "occurrences": 10,
+   "single_token": 10,
+   "token_ids": [
+    23135
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Silicon": {
+   "occurrences": 10,
+   "single_token": 10,
+   "token_ids": [
+    18210
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Silver": {
+   "occurrences": 16,
+   "single_token": 16,
+   "token_ids": [
+    7698
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Steel": {
+   "occurrences": 18,
+   "single_token": 18,
+   "token_ids": [
+    7851
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Tin": {
+   "occurrences": 16,
+   "single_token": 16,
+   "token_ids": [
+    22894
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Titan": {
+   "occurrences": 16,
+   "single_token": 16,
+   "token_ids": [
+    11977
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  },
+  "Triton": {
+   "occurrences": 8,
+   "single_token": 0,
+   "token_ids": [],
+   "n_failing_items": 4,
+   "example_covering": [
+    "\u0120T",
+    "rit",
+    "on"
+   ]
+  },
+  "Venus": {
+   "occurrences": 8,
+   "single_token": 8,
+   "token_ids": [
+    21094
+   ],
+   "n_failing_items": 0,
+   "example_covering": null
+  }
+ }
+}

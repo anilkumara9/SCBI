@@ -1,0 +1,47 @@
+{
+ "experiment": "EXP148",
+ "log": "LOG-4958",
+ "torch_seed": 148002,
+ "guards": {
+  "u0_scoring_pipeline": true,
+  "b_revision_match": true,
+  "a_prehash_match": true,
+  "c_bench_pin_match": true,
+  "law7_disjoint": true,
+  "d_calibration": true,
+  "e_discipline_rate": 1.0,
+  "e_discipline_pass": true,
+  "f_compute_delivered": true,
+  "fp_comparability": true,
+  "g_budget": true,
+  "a_posthash_match": true
+ },
+ "env": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "threads": 2
+ },
+ "prompts_sha256": "e46211620ffaa49684c19f256d21db8b221be019ec992ac1c4d4fc003c94bb67",
+ "b_first_token_accuracy": 0.6611,
+ "mean_tokens": {
+  "B": 15.0,
+  "C": 120.0,
+  "S": 120.0
+ },
+ "token_ratio_S_C": 1.0,
+ "total_generation_forwards": 45900,
+ "total_prompt_encodings": 540,
+ "b_format_compliance": {
+  "fraction_short": 0.0,
+  "mean_new_tokens": 15.0
+ },
+ "b_stratum_accuracy": {
+  "compositional-2hop": 0.9778,
+  "compositional-3hop": 0.9556,
+  "transitive-2hop": 0.2667,
+  "transitive-3hop": 0.4444
+ },
+ "elapsed_hours": 2.08,
+ "outcome": "PROCEED_TO_VERDICT"
+}

@@ -1,0 +1,9 @@
+{
+ "verdict": "HELD",
+ "reason": "C2 guard fired: 0 items with n_i>=40 (<30) - insufficient positions for stable spectra",
+ "delta_s": null,
+ "p_value": null,
+ "forwards": 63,
+ "primary_test": "VOID - C2 guard fired (0 items kept); not run",
+ "note": "p_value/delta_s from empty-set computation are void artifacts, not results"
+}

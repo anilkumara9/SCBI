@@ -150,7 +150,7 @@ scbi/
 
 **Era 2 — EXP067 onward: the adaptive-loop era.** The G/E/S loop, pre-registered protocols, independent review, boundary science. The question moved from "which direction works?" to "can the model invent directions?" — from static geometry to inference-time cognition.
 
-## 8. Experiment registry (79 run directories, 97 protocols, 9 signed)
+## 8. Experiment registry (119 run directories, 101 protocols, 9 signed)
 
 | Experiment | Question | Verdict |
 |---|---|---|
@@ -160,12 +160,22 @@ scbi/
 | EXP082 | Foil-suppression tilt | **KILL** upheld |
 | EXP091 | Layer-20 cosine readout | **KILL** — 31/60 = 51.67%, p = 0.449 |
 | EXP092 | Information-bottleneck localization (all 24 layers) | **CONTINUE** — layer 11: 33.3% vs 5% chance, p = 0.000999, +20pp over null |
-| EXP093 | Layer-11 causal transfer (±v + placebo) | In review — G5 probe defect found, repaired (4.3e-07 ≤ 1e-6), re-verification running |
+| EXP093 | Shared layer-11 task-direction injection (±v + placebo) | **KILL UPHELD** (LOG-4352) — Δ = 0.0000, McNemar b = c = 0 → p = 1.0 in all six tests; perturbation real (4.7% of residual norm, G5 rel_err 4.3e-07) but flipped zero decisions |
+| EXP094 | Per-item layer-11 task-direction injection | **KILL** (LOG-4376/4377) — refuted by pure inertness: 0 flips across 120 injection item-arms (B=T=R=36/60, p=1.0) despite confirmed delivery |
+| EXP095 | α-sweep dose-response on per-item L11 (S5-1) | **KILL** (LOG-4400) — α-grid inert: the kill is a curve, not a point |
+| EXP096 | Headroom-gated per-item L11 injection (S5-4) | **KILL** (LOG-4407) — the last licensed static variant dead |
+| EXP105 | I2′ intervention battery (cloze Tier-0) | **KILL** at step 9 (LOG-4491) — ΔM_T = +0.2381 (5/21 rescues) vs ΔM_R = 0.0000; McNemar p = 0.0625 ≥ 0.05, missed by exactly one flip |
+| EXP106/107 | Trained output-side head transfer (H3/LFH) | **KILL** (LOG-4540) — the 60/60 disjoint-bench transfer reading was a template artifact (34/60 on the decorrelated bench, p=0.1831) |
+| EXP110 | INT8 fake-quantization boundary check (H2/QBR) | **CERTIFIED-WITH-NOTE** (LOG-4558) — EXP105's KILL precision-certified under weight-only INT8 fake-quantization (6/7 tiers) |
+| EXP127 | Transient-growth amplification measurement (TGA) | **CONTINUE** (LOG-4699) — dynamics measurement, not steering: the frozen L20→L24 propagator has a distinguished leading singular direction v̂₁ (median amplification 8.24×) |
+| EXP129 | Closed-loop adaptive pursuit (CLP) | **KILL** (LOG-4716) |
+| EXP131 | One-shot TGA-v̂₁ injection | **KILL — binding** (LOG-4832) — ĉ = 0.03742 < 0.1, ΔM_v1 = 0 over 110 arm-pairs, median ratio 0.5592, McNemar p = 1.0; the attempt-1 GPU KILL was voided (blind readout tap, LOG-4810) and rehabilitated on CPU with verified delivery |
+| EXP133 | Geodesic multistep steering (GEOSTEER) | **KILL — binding** (LOG-4818) — ΔM_geo = 0, ĉ_geo = 0.0374, McNemar p = 1.0, verified delivery; the GEOSTEER escalation branch is retired |
 | G1 | QK/OV null-space mechanism audit | **KILL** — theorem false as stated (inverted QK-visibility) |
 | K1 | Readout-tilt falsification | Null — 0/180 reached the 0.9 bar |
 | K2 → EXP083 → EXP084 → EXP086-B → EXP088 | GPU queue (relational amplification, Newton duel, dynamical amplifier, recirculation) | Signed, queued on free-tier hardware |
 
-The complete record — 250+ LOG entries, every kill, halt, retraction, and RUN-INVALID preserved — is `reports/research_log.md`.
+The complete record — 730+ LOG entries, every kill, halt, retraction, and RUN-INVALID preserved — is `reports/research_log.md`.
 
 ## 9. Key results, exactly as licensed
 
@@ -173,7 +183,11 @@ The complete record — 250+ LOG entries, every kill, halt, retraction, and RUN-
 
 **Finding 2 — localization.** Frozen Pythia-410m layer 11 carries significant task information: 33.33% (20/60) vs 5% chance, permutation $p = 0.000999$ < Bonferroni $0.00208$, +20pp above the null ceiling. Eight layers significant: {1, 11–15, 17, 18}. Layer 20 — previously inspected — correctly excluded (15%, p ≈ 0.066). Caveat: phrasing-sensitive (A-first 53.3% vs C-first 13.3%).
 
-**Finding 3 — falsified mechanisms.** Static cones, layer-20 readouts, and the QK null-space theorem are dead — preserved as permanent "do not dig here" markers.
+**Finding 3 — falsified mechanisms.** Static cones, layer-20 readouts, per-item L11 geometry, dose sweeps, headroom-gated injection, and the QK null-space theorem are dead — preserved as permanent "do not dig here" markers.
+
+**Finding 4 — the dynamics' leading direction steers nothing.** EXP127 measured real transient-growth amplification on the frozen L20→L24 propagator (leading singular direction v̂₁, median 8.24× over random directions) — a genuine dynamics signal, CONTINUE as measurement. But injecting along v̂₁ moves zero decisions: one-shot (EXP131, binding KILL — ĉ = 0.03742 < 0.1, ΔM_v1 = 0 over 110 arm-pairs, McNemar p = 1.0) and geodesic multistep (EXP133, binding KILL — ΔM_geo = 0, ĉ_geo = 0.0374, McNemar p = 1.0), both with verified injection delivery. Even the dynamics' own maximally-amplified direction is decision-orthogonal at the injection scale.
+
+**Finding 5 — the blind-tap lesson.** Our own binding KILL (EXP131's GPU run) was voided when independent review proved the injection hook never reached the readout — the "zero flips" had measured an un-injected state. We suspended the verdict, fixed the apparatus (one keyword: hook ordering), added a delivery positive control, and re-ran: the KILL stands, this time real. Falsification applies to our own licenses first.
 
 **Novelty position: N1 (Known Combination).** The tested static mechanism is operator-equivalent to prior art. The program's one genuine lead is boundary science — and the one axis where nobody, including the frontier, has a result: **label-free autonomous steering**. That is the race.
 
@@ -191,15 +205,15 @@ flowchart TD
     classDef next fill:#9a6700,stroke:#6b4a00,color:#fff,stroke-width:2px
     classDef future fill:#8957e5,stroke:#5a2ea6,color:#fff,stroke-width:2px
     classDef summit fill:#1f6feb,stroke:#0d419d,color:#fff,stroke-width:3px
-    class P1 done
-    class P2 next
-    class P3,P4 future
+    class P1,P2 done
+    class P3 next
+    class P4 future
     class S summit
 ```
 
 **Phase 1 — SEE (established).** Layer-11 localization. *Unlocks: we know where to intervene.*
 
-**Phase 2 — TOUCH (decisive test).** Inject the layer-11 direction with sign-flip placebo. KILL is the registered prior; CONTINUE would prove label-informed steerability. *Unlocks: proof that frozen decisions can be steered by discovered directions.*
+**Phase 2 — TOUCH (answered).** Seven binding kills: injected directions — static, per-item, dose-varied, headroom-gated, dynamics-matched (one-shot and multistep-geodesic) — don't move frozen decisions at the tested scales, all with verified delivery. *Unlocks: the boundary is mapped; the question is now what (if anything) CAN move a frozen decision.*
 
 **Phase 3 — UNDERSTAND (mechanism).** The transfer operator: which geometries move decisions and why. *Unlocks: a predictive theory of what to inject.*
 
@@ -219,9 +233,11 @@ Each phase is gated by pre-registered statistics and binding independent review.
 
 ---
 
-# Part VII — The honest scoreboard
+# Part VII — The honest scoreboard (v3.15, 2026-09-30)
 
-We track SCBI against the industry frontier on the same axes (`research/benchmarks/FRONTIER_SCOREBOARD.md`). The frontier holds verified numbers — ∇-Reasoner 80.4% on MATH-500, Meta-Reasoner +9–12% at −28–35% inference time, LatentMAS +14.6%, ToT 4%→74%, Self-consistency +17.9pp, ITI +32.6pp. **SCBI holds zero capability entries.** Our lead is boundary science, and the only axis where the frontier is also at zero — label-free autonomous steering — is the one race we can still win. The board says so openly; beating it requires powered N≈100+ evidence, an order of magnitude beyond anything produced to date.
+We track SCBI against the industry frontier on the same axes (`research/benchmarks/FRONTIER_SCOREBOARD.md`). The frontier holds verified numbers — ∇-Reasoner 80.4% on MATH-500, Meta-Reasoner +9–12% at −28–35% inference time, LatentMAS +14.6%, ToT 4%→74%, Self-consistency +17.9pp, ITI +32.6pp. **SCBI holds zero capability entries.** Our lead is boundary science, and the only axis where the frontier is also at zero — label-free autonomous steering — is the one race we can still win.
+
+The current tally: **nine binding KILLs** (EXP107, EXP114, EXP125, EXP126, EXP129, EXP131, EXP133, EXP135, EXP137), **four CONTINUEs** (EXP111, EXP120, EXP122, EXP127 — the three-bench decodability CONTINUEs reclassified as domain-set-detector correlations) plus **one apparatus CONTINUE** (EXP113), **two HELDs** (EXP112, EXP136), **one pre-launch REJECT** (EXP130), **twelve RUN-INVALIDs**, and **two precision certifications** (EXP110, EXP138), zero in flight. The sprint's four new verdicts: EXP135 KILLed the G/E/S selection architecture (label-free evaluator ranks the known-causal bridge at chance, ρ̄\* = −0.0042); EXP136 HELD on attention-routing intervention (symmetric noise — nothing moved); EXP137 KILLed TGA decodability (1-NN 2/60 = 3.33% vs 5% chance); EXP138 precision-certified the TGA nulls under weight-only INT8 fake-quantization (all six tiers PASS, 0/10 α=0 baseline shifts). The TGA story now reads: exists (EXP127) / carries nothing (EXP137) / moves nothing (EXP131+133) / precision-certified (EXP138). Both the one-shot and the multistep steering branches remain closed with delivery-verified nulls — the GEOSTEER escalation branch is retired. The board says so openly; beating it requires powered N≈100+ evidence, an order of magnitude beyond anything produced to date.
 
 ---
 
@@ -252,13 +268,13 @@ SCBI/
 │   ├── GIT_WORKFLOW.md       # Lab git discipline
 │   └── CAMPAIGN_30DAY.md     # Campaign charter
 ├── experiments/
-│   ├── protocols/            # 97 pre-registrations (9 SIGNED — immutable)
+│   ├── protocols/            # 101 pre-registrations (9 SIGNED — immutable)
 │   │   ├── REVIEWS/          # Binding independent reviews
 │   │   └── ERRATUM_*.md      # Append-only corrections
-│   └── runs/                # 79 run directories: bundle + report + artifacts
+│   └── runs/                # 119 run directories: bundle + report + artifacts
 ├── evaluation/              # Metrics, statistical tests, ablations, failure analysis
 ├── reports/
-│   ├── research_log.md      # 250+ LOG entries — every verdict preserved
+│   ├── research_log.md      # 730+ LOG entries — every verdict preserved
 │   └── paper_draft.md       # Boundary/negative-result workshop paper
 ├── scbi/                    # Implementation: frozen runtime, G/E/S engine, guards
 ├── scripts/  tests/         # Tooling and test suites

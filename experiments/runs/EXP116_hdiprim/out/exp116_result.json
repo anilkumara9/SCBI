@@ -1,0 +1,120 @@
+{
+ "experiment": "EXP116_HDI-PRIM",
+ "lane": "LOG-4602",
+ "pins": {
+  "bench": "e91b302f41f641c74e56957e526efcd4866bac62d134e157defe0a4cdd49e4f5",
+  "decisions": "f8133f1f4dc6f302cb7fdbe4dee248f9eb5ab97afab00c7fbc7b331e1a804625",
+  "backbone_before": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "backbone_after": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+  "delta_theta": 0
+ },
+ "env": {
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0",
+  "numpy": "2.5.3",
+  "accelerate": "unavailable",
+  "device_map": "default-cpu",
+  "threads_set": 2,
+  "threads_read": 2,
+  "seed_torch": 0,
+  "seed_numpy": 0,
+  "device": "cpu",
+  "dtype": "float32",
+  "decoding": "greedy",
+  "max_new_tokens": 8,
+  "priming_tail": "The entity higher in rank is:"
+ },
+ "gates": {
+  "G1_n_unparseable_60": 37,
+  "G2_distinct": 2,
+  "G2_minority": 10
+ },
+ "exceptions": 0,
+ "fidelity_result": null,
+ "verdict": "RUN-INVALID",
+ "verdict_reason": "G1 elicitation-failure gate fired",
+ "per_cell": {
+  "A-first|flipped": {
+   "n": 15,
+   "matches": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "A-first|original": {
+   "n": 15,
+   "matches": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "C-first|original": {
+   "n": 15,
+   "matches": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "C-first|flipped": {
+   "n": 15,
+   "matches": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ },
+ "systematic_misreporting_signature": false,
+ "elapsed_min": 2.0837989926338194
+}

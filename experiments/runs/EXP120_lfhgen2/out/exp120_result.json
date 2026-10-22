@@ -1,0 +1,175 @@
+{
+  "experiment": "EXP120",
+  "hypothesis": "H15/LFH-GEN2",
+  "lane": "LOG-4633",
+  "env": {
+    "torch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.3",
+    "threads_set": 2,
+    "threads_read": 2,
+    "torch_seed": 0,
+    "numpy_seed": 0,
+    "split_seed": 20260929
+  },
+  "backbone": {
+    "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+    "pin": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "pre_hash": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "post_hash": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "dtheta0": true
+  },
+  "bench2": {
+    "pin": "1d7d22c0cacdec1835456d925277830c6721cd6fc8bfd4bb0a58414882fb2eee",
+    "n": 60,
+    "gates": {
+      "design_time": {
+        "n": 60,
+        "cells": {
+          "A-first/flipped": 15,
+          "A-first/original": 15,
+          "C-first/original": 15,
+          "C-first/flipped": 15
+        },
+        "pin": "1d7d22c0cacdec1835456d925277830c6721cd6fc8bfd4bb0a58414882fb2eee"
+      },
+      "G-C1": {
+        "score": 30,
+        "n": 60,
+        "pass": true
+      },
+      "G-C2": {
+        "pearson": -0.0475067159658829,
+        "abs_pearson": 0.0475067159658829,
+        "pass": true
+      },
+      "G-C3": {
+        "suffix_byte_exact": true,
+        "deterministic": true,
+        "pass": true
+      }
+    },
+    "reparse_x2_byte_identical": true
+  },
+  "extraction": {
+    "site": "hidden_states[20]",
+    "final_token": true,
+    "dtype": "float32",
+    "cpu_only": true,
+    "n_passes": 60,
+    "input": "premise only (no question, no option list)"
+  },
+  "split": {
+    "test_size": 0.5,
+    "stratify": "f\"{phrasing}_{flipped}\"",
+    "train_n": 30,
+    "test_n": 30,
+    "overlap": 0,
+    "per_cell_test_counts": {
+      "A-first_False": 8,
+      "A-first_True": 7,
+      "C-first_False": 7,
+      "C-first_True": 8
+    },
+    "N_F": 15,
+    "N_T": 15,
+    "train_ids": [
+      "exp120_ctrl_exp120_river_2hop_7",
+      "exp120_ctrl_exp120_river_2hop_1",
+      "exp120_ctrl_exp120_river_3hop_5",
+      "exp120_flip_exp120_river_2hop_12",
+      "exp120_ctrl_exp120_river_3hop_14",
+      "exp120_flip_exp120_tree_2hop_8",
+      "exp120_flip_exp120_tree_3hop_10",
+      "exp120_flip_exp120_tree_2hop_4",
+      "exp120_ctrl_exp120_tree_3hop_9",
+      "exp120_flip_exp120_river_2hop_2",
+      "exp120_ctrl_exp120_tree_2hop_13",
+      "exp120_flip_exp120_river_3hop_11",
+      "exp120_ctrl_exp120_tree_2hop_5",
+      "exp120_flip_exp120_river_2hop_4",
+      "exp120_ctrl_exp120_river_3hop_9",
+      "exp120_flip_exp120_river_3hop_8",
+      "exp120_flip_exp120_river_2hop_14",
+      "exp120_ctrl_exp120_river_3hop_7",
+      "exp120_ctrl_exp120_river_2hop_11",
+      "exp120_ctrl_exp120_tree_2hop_1",
+      "exp120_flip_exp120_tree_3hop_1",
+      "exp120_flip_exp120_tree_2hop_2",
+      "exp120_ctrl_exp120_tree_3hop_11",
+      "exp120_flip_exp120_tree_3hop_3",
+      "exp120_flip_exp120_tree_2hop_14",
+      "exp120_flip_exp120_river_2hop_0",
+      "exp120_ctrl_exp120_tree_3hop_6",
+      "exp120_flip_exp120_river_3hop_4",
+      "exp120_ctrl_exp120_tree_2hop_9",
+      "exp120_ctrl_exp120_river_3hop_10"
+    ],
+    "test_ids": [
+      "exp120_flip_exp120_tree_3hop_5",
+      "exp120_ctrl_exp120_tree_2hop_11",
+      "exp120_flip_exp120_tree_3hop_8",
+      "exp120_ctrl_exp120_river_2hop_8",
+      "exp120_flip_exp120_river_2hop_10",
+      "exp120_flip_exp120_river_3hop_6",
+      "exp120_ctrl_exp120_river_2hop_3",
+      "exp120_flip_exp120_tree_2hop_10",
+      "exp120_flip_exp120_river_3hop_2",
+      "exp120_flip_exp120_river_3hop_0",
+      "exp120_flip_exp120_tree_3hop_14",
+      "exp120_flip_exp120_tree_2hop_12",
+      "exp120_flip_exp120_tree_2hop_0",
+      "exp120_flip_exp120_tree_3hop_12",
+      "exp120_ctrl_exp120_river_3hop_12",
+      "exp120_flip_exp120_river_2hop_9",
+      "exp120_ctrl_exp120_tree_3hop_0",
+      "exp120_flip_exp120_river_2hop_6",
+      "exp120_ctrl_exp120_river_3hop_1",
+      "exp120_ctrl_exp120_river_2hop_5",
+      "exp120_ctrl_exp120_tree_3hop_13",
+      "exp120_ctrl_exp120_river_3hop_3",
+      "exp120_ctrl_exp120_river_2hop_13",
+      "exp120_ctrl_exp120_tree_2hop_7",
+      "exp120_ctrl_exp120_tree_3hop_7",
+      "exp120_ctrl_exp120_tree_3hop_4",
+      "exp120_ctrl_exp120_tree_3hop_2",
+      "exp120_flip_exp120_tree_2hop_6",
+      "exp120_ctrl_exp120_tree_2hop_3",
+      "exp120_flip_exp120_river_3hop_13"
+    ]
+  },
+  "head": {
+    "spec": "LogisticRegression(penalty='l2', C=1.0, solver='lbfgs', max_iter=1000, random_state=20260929)",
+    "determinism_refit_byte_identical": true,
+    "weight_hash": "203809e884729b923c6987d24ceabb4cdd1527d5b913ff4d17869405dc643c6f",
+    "weight_norm": 1.7564942836761475,
+    "train_accuracy_sanity": 1.0
+  },
+  "artifact_hashes": {
+    "builder_script": "52ceca4ea64401ba464e2539d1578e8d594aac5bbed62ca1bfd3d56ea1ad825c",
+    "canonical_json": "1d7d22c0cacdec1835456d925277830c6721cd6fc8bfd4bb0a58414882fb2eee",
+    "per_item_json": "79a9e1ea931d76aeeed1ff67bc7caecdd95eb13882a39c858f6fb77406fde914",
+    "embeddings_npz": "b8b897cddaa86e3b5f0ea675b03c00324b2628f195e7bb1f0ccc9b90aabac900",
+    "train_ids": "de7d90c2f37f82e0e9902c99a8faf73ebe9544b6db4422c6f5d666a5288ae194",
+    "test_ids": "83bd72c8054c5d10e71f153c80b7e6a5c62f759048e033dfc8c665336dbb25c2",
+    "head_params": "1751ed663b14b791fe2b3de0cc4da5c88d39cabce6216ea7c86f21d45145565d"
+  },
+  "evaluation": {
+    "correct": 25,
+    "n": 30,
+    "accuracy": 0.8333333333333334,
+    "acc_flipped_False": 0.7333333333333333,
+    "acc_flipped_True": 0.9333333333333333,
+    "G": -0.20000000000000007,
+    "per_cell_descriptive": {
+      "A-first_False": 0.5,
+      "A-first_True": 1.0,
+      "C-first_False": 1.0,
+      "C-first_True": 0.875
+    }
+  },
+  "verdict": "CONTINUE",
+  "falsification_branch": "overall >= 20/30 with G < 0.30 \u2192 generality hypothesis CONTINUES (template-invariant feature on a second bench)",
+  "wall_seconds": 54.0
+}

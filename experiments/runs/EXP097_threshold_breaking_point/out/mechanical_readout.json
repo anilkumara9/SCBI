@@ -1,0 +1,246 @@
+{
+  "status": "UNINTERPRETED_MECHANICAL_READOUT",
+  "experiment": "EXP097",
+  "ratios": {
+    "1.5": {
+      "routing": "LIVE",
+      "n_correct": {
+        "B": 36,
+        "T": 31,
+        "B_wrong": 33
+      },
+      "flips_vs_B": {
+        "T": 7,
+        "B_wrong": 11
+      },
+      "delta_M": {
+        "T": -0.08333333333333333,
+        "B_wrong": -0.05
+      },
+      "mcnemar_T_vs_B": {
+        "b": 1,
+        "c": 6,
+        "p": 0.125
+      },
+      "mcnemar_W_vs_B": {
+        "b": 4,
+        "c": 7,
+        "p": 0.548828125
+      },
+      "flip_ledger_TB": {
+        "x_to_right": [
+          2
+        ],
+        "x_to_wrong": [
+          5,
+          11,
+          22,
+          30,
+          40,
+          45
+        ]
+      },
+      "flip_ledger_WB": {
+        "x_to_right": [
+          2,
+          20,
+          51,
+          55
+        ],
+        "x_to_wrong": [
+          0,
+          15,
+          22,
+          30,
+          39,
+          40,
+          41
+        ]
+      },
+      "ties": 0,
+      "strata": {
+        "agg": {
+          "T_delta": -0.08333333333333333,
+          "T_b": 1,
+          "T_c": 6,
+          "T_p": 0.125,
+          "W_delta": -0.05
+        },
+        "A": {
+          "T_delta": 0.03333333333333333,
+          "T_b": 1,
+          "T_c": 0,
+          "T_p": 1.0,
+          "W_delta": -0.1
+        },
+        "C": {
+          "T_delta": -0.2,
+          "T_b": 0,
+          "T_c": 6,
+          "T_p": 0.03125,
+          "W_delta": 0.0
+        }
+      }
+    },
+    "3.0": {
+      "routing": "LIVE",
+      "n_correct": {
+        "B": 36,
+        "T": 30,
+        "B_wrong": 35
+      },
+      "flips_vs_B": {
+        "T": 10,
+        "B_wrong": 15
+      },
+      "delta_M": {
+        "T": -0.1,
+        "B_wrong": -0.016666666666666666
+      },
+      "mcnemar_T_vs_B": {
+        "b": 2,
+        "c": 8,
+        "p": 0.109375
+      },
+      "mcnemar_W_vs_B": {
+        "b": 7,
+        "c": 8,
+        "p": 1.0
+      },
+      "flip_ledger_TB": {
+        "x_to_right": [
+          2,
+          51
+        ],
+        "x_to_wrong": [
+          5,
+          7,
+          11,
+          22,
+          30,
+          40,
+          45,
+          46
+        ]
+      },
+      "flip_ledger_WB": {
+        "x_to_right": [
+          2,
+          20,
+          26,
+          32,
+          36,
+          51,
+          55
+        ],
+        "x_to_wrong": [
+          0,
+          15,
+          17,
+          19,
+          22,
+          25,
+          30,
+          40
+        ]
+      },
+      "ties": 0,
+      "strata": {
+        "agg": {
+          "T_delta": -0.1,
+          "T_b": 2,
+          "T_c": 8,
+          "T_p": 0.109375,
+          "W_delta": -0.016666666666666666
+        },
+        "A": {
+          "T_delta": 0.0,
+          "T_b": 1,
+          "T_c": 1,
+          "T_p": 1.0,
+          "W_delta": -0.13333333333333333
+        },
+        "C": {
+          "T_delta": -0.2,
+          "T_b": 1,
+          "T_c": 7,
+          "T_p": 0.0703125,
+          "W_delta": 0.1
+        }
+      }
+    }
+  },
+  "decision_worksheet_steps_0_2": [
+    {
+      "step": 0,
+      "condition": "foundation gates",
+      "evidence": {
+        "constructor_rehash": "match frozen pin",
+        "B_agreement": "60/60 per-item vs archived EXP094 baseline",
+        "degeneracy_sanity": "within 0.05 of 0.7923"
+      }
+    },
+    {
+      "step": 1,
+      "condition": "delivery (240 injection rows in band)",
+      "evidence": {
+        "in_band": 240,
+        "exclusions": {
+          "1.5/T": [],
+          "1.5/W": [],
+          "3.0/T": [],
+          "3.0/W": []
+        }
+      }
+    },
+    {
+      "step": 2,
+      "condition": "degeneracy gate input",
+      "evidence": {
+        "mean_abs_cosine": 0.7922606322936264,
+        "bar": 0.95
+      }
+    },
+    {
+      "step": "routing",
+      "condition": "per-ratio regime routing",
+      "evidence": {
+        "1.5": {
+          "routing": "LIVE",
+          "routing_reason": "B_wrong>=1 flip",
+          "evidence": {
+            "tie_rate": 0.0,
+            "tie_count": 0,
+            "zero_variance_T": false,
+            "zero_variance_W": false,
+            "flips_T_vs_B": 7,
+            "flips_W_vs_B": 11,
+            "delivery_confirmed": true,
+            "n_included_T": 60,
+            "n_included_W": 60
+          }
+        },
+        "3.0": {
+          "routing": "LIVE",
+          "routing_reason": "B_wrong>=1 flip",
+          "evidence": {
+            "tie_rate": 0.0,
+            "tie_count": 0,
+            "zero_variance_T": false,
+            "zero_variance_W": false,
+            "flips_T_vs_B": 10,
+            "flips_W_vs_B": 15,
+            "delivery_confirmed": true,
+            "n_included_T": 60,
+            "n_included_W": 60
+          }
+        }
+      }
+    },
+    {
+      "step": "3-7",
+      "condition": "VERDICT LANE (not executor)",
+      "evidence": "per-ratio contrast statistics in stratum_table_54.json"
+    }
+  ]
+}

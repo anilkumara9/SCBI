@@ -1,0 +1,11 @@
+[10:22:26] ENV: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "sklearn": "1.9.1", "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m", "torch_num_threads_set": 2, "torch_num_threads_readback": 2, "seeds": {"torch": 0, "numpy": 0}, "device": "cpu", "dtype": "float32", "device_map": "cpu", "generation": {"do_sample": false, "max_new_tokens": 160}}
+[10:22:26] npz pins OK
+[10:22:26] bench pin OK: 60 items; schema + decomposition assertion pass (§3.1/§3.4)
+[10:22:26] archived EXP112 readout column loaded: 60 records
+[10:22:29] BPE single-token re-assertion: 120/120; token ids match EXP112 worksheet pins
+[10:22:36] backbone hash BEFORE: ec276abe3902fab0... (expect ec276abe3902fab0...)
+[10:22:36] planner prompt byte-identity vs EXP113 T2-P2 reference: 0/60 mismatches
+[10:22:36] Phase 0a: planner bench-transfer check on 10 probe items
+[10:28:16] Phase 0a: planner-valid = 10/10 (gate: <8 -> RUN-INVALID)
+[10:28:16] Phase 0a DIAGNOSTIC (not a gate): items with >=2 content-level recitations = 10/10
+[10:28:16] Phase 0b: logit slot with plan prefix on 10 probe items

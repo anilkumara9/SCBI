@@ -1,0 +1,183 @@
+{
+  "experiment": "EXP122",
+  "hypothesis": "H16/POSITION-CUE",
+  "lane": "LOG-4653",
+  "env": {
+    "torch": "2.14.0+cpu",
+    "transformers": "5.17.0",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.3",
+    "threads_set": 2,
+    "threads_read": 2,
+    "torch_seed": 0,
+    "numpy_seed": 0,
+    "split_seed": 20260929
+  },
+  "backbone": {
+    "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m",
+    "pin": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "pre_hash": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "post_hash": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "dtheta0": true
+  },
+  "bench3": {
+    "pin": "2b65f01e25c824606c5b7f52b1de7f54562dd3138d0b704acc8b8877e8b165ca",
+    "n": 60,
+    "gates": {
+      "design_time": {
+        "n": 60,
+        "cells": {
+          "target-first/flipped": 15,
+          "target-first/original": 15,
+          "target-last/flipped": 15,
+          "target-last/original": 15
+        },
+        "pin": "2b65f01e25c824606c5b7f52b1de7f54562dd3138d0b704acc8b8877e8b165ca"
+      },
+      "G-C1": {
+        "score": 32,
+        "n": 60,
+        "pass": true
+      },
+      "position_scramble": {
+        "score": 30,
+        "n": 60,
+        "pass": true
+      },
+      "G-C2": {
+        "pearson": -0.0321897913270129,
+        "abs_pearson": 0.0321897913270129,
+        "pass": true
+      },
+      "G-C3": {
+        "suffix_byte_exact": true,
+        "deterministic": true,
+        "pass": true
+      }
+    },
+    "reparse_x2_byte_identical": true
+  },
+  "extraction": {
+    "site": "hidden_states[20]",
+    "final_token": true,
+    "dtype": "float32",
+    "cpu_only": true,
+    "n_passes": 60,
+    "input": "premise only (no question, no option list)"
+  },
+  "split": {
+    "test_size": 0.5,
+    "stratify": "f\"{phrasing}_{flipped}\"",
+    "train_n": 30,
+    "test_n": 30,
+    "overlap": 0,
+    "per_cell_test_counts": {
+      "target-first_False": 8,
+      "target-first_True": 7,
+      "target-last_False": 7,
+      "target-last_True": 8
+    },
+    "N_F": 15,
+    "N_T": 15,
+    "train_ids": [
+      "exp122_ctrl_exp122_b3_tf_p07",
+      "exp122_ctrl_exp122_b3_tf_p01",
+      "exp122_ctrl_exp122_b3_tf_p13",
+      "exp122_flip_exp122_b3_tl_p04",
+      "exp122_ctrl_exp122_b3_tl_p13",
+      "exp122_flip_exp122_b3_tl_p14",
+      "exp122_flip_exp122_b3_tl_p24",
+      "exp122_flip_exp122_b3_tf_p20",
+      "exp122_ctrl_exp122_b3_tl_p25",
+      "exp122_flip_exp122_b3_tf_p02",
+      "exp122_ctrl_exp122_b3_tl_p21",
+      "exp122_flip_exp122_b3_tl_p10",
+      "exp122_ctrl_exp122_b3_tf_p21",
+      "exp122_flip_exp122_b3_tf_p04",
+      "exp122_ctrl_exp122_b3_tl_p07",
+      "exp122_flip_exp122_b3_tl_p08",
+      "exp122_flip_exp122_b3_tl_p06",
+      "exp122_ctrl_exp122_b3_tf_p15",
+      "exp122_ctrl_exp122_b3_tl_p03",
+      "exp122_ctrl_exp122_b3_tf_p17",
+      "exp122_flip_exp122_b3_tf_p24",
+      "exp122_flip_exp122_b3_tf_p18",
+      "exp122_ctrl_exp122_b3_tl_p27",
+      "exp122_flip_exp122_b3_tf_p26",
+      "exp122_flip_exp122_b3_tl_p20",
+      "exp122_flip_exp122_b3_tf_p00",
+      "exp122_ctrl_exp122_b3_tf_p29",
+      "exp122_flip_exp122_b3_tf_p12",
+      "exp122_ctrl_exp122_b3_tl_p17",
+      "exp122_ctrl_exp122_b3_tl_p09"
+    ],
+    "test_ids": [
+      "exp122_flip_exp122_b3_tf_p28",
+      "exp122_ctrl_exp122_b3_tl_p19",
+      "exp122_flip_exp122_b3_tl_p22",
+      "exp122_ctrl_exp122_b3_tl_p01",
+      "exp122_flip_exp122_b3_tl_p02",
+      "exp122_flip_exp122_b3_tf_p14",
+      "exp122_ctrl_exp122_b3_tf_p03",
+      "exp122_flip_exp122_b3_tl_p16",
+      "exp122_flip_exp122_b3_tf_p10",
+      "exp122_flip_exp122_b3_tf_p08",
+      "exp122_flip_exp122_b3_tl_p28",
+      "exp122_flip_exp122_b3_tl_p18",
+      "exp122_flip_exp122_b3_tf_p16",
+      "exp122_flip_exp122_b3_tl_p26",
+      "exp122_ctrl_exp122_b3_tl_p11",
+      "exp122_flip_exp122_b3_tl_p00",
+      "exp122_ctrl_exp122_b3_tf_p23",
+      "exp122_flip_exp122_b3_tf_p06",
+      "exp122_ctrl_exp122_b3_tf_p09",
+      "exp122_ctrl_exp122_b3_tf_p05",
+      "exp122_ctrl_exp122_b3_tl_p29",
+      "exp122_ctrl_exp122_b3_tf_p11",
+      "exp122_ctrl_exp122_b3_tl_p05",
+      "exp122_ctrl_exp122_b3_tl_p15",
+      "exp122_ctrl_exp122_b3_tl_p23",
+      "exp122_ctrl_exp122_b3_tf_p27",
+      "exp122_ctrl_exp122_b3_tf_p25",
+      "exp122_flip_exp122_b3_tf_p22",
+      "exp122_ctrl_exp122_b3_tf_p19",
+      "exp122_flip_exp122_b3_tl_p12"
+    ]
+  },
+  "head": {
+    "spec": "LogisticRegression(penalty='l2', C=1.0, solver='lbfgs', max_iter=1000, random_state=20260929)",
+    "determinism_refit_byte_identical": true,
+    "weight_hash": "5ac7b477cf20aa4b0a34dc917a549f7e1e28c0b20217b28f84d91e708c4a93d4",
+    "weight_norm": 1.5559462308883667,
+    "train_accuracy_sanity": 1.0
+  },
+  "artifact_hashes": {
+    "builder_script": "642ee7819ea3dc686a5bfa4801d592bf15302c7434fe95fa4a1320ff149167f2",
+    "canonical_json": "2b65f01e25c824606c5b7f52b1de7f54562dd3138d0b704acc8b8877e8b165ca",
+    "per_item_json": "1c5bac0692f36bb50be156dbf644a4aeca2488b7ca45fe8e4fc70e5a23fea316",
+    "embeddings_npz": "8ca33897eefdd47fbc7dd14ef10cd7a57b479281d6c506178dc07a27b058f528",
+    "train_ids": "65fd7d45976c5ee606f8c1d95c6776be155798b1442987848a483ebd7d3e0070",
+    "test_ids": "c500590303c11ca1132baf39b924196b9d4ee2f4089b06519b102e808aefc505",
+    "head_params": "56f984024648b277501e5c20a8786a22763715bbad6ba64bc736e045aba14b8c"
+  },
+  "evaluation": {
+    "correct": 27,
+    "n": 30,
+    "accuracy": 0.9,
+    "acc_flipped_False": 0.8666666666666667,
+    "acc_flipped_True": 0.9333333333333333,
+    "G": -0.06666666666666665,
+    "per_cell_descriptive": {
+      "target-first_False": 0.75,
+      "target-first_True": 1.0,
+      "target-last_False": 1.0,
+      "target-last_True": 0.875
+    },
+    "p_one_sided_exact": 4.215165972709656e-06,
+    "p_two_sided_exact": 8.430331945419312e-06,
+    "p_computed_by": "executor (math.comb)"
+  },
+  "verdict": "CONTINUE",
+  "falsification_branch": "overall >= 20/30 with G < 0.30 \u2192 identity readout survives position decorrelation (decodability only, pre-reg section 7)",
+  "wall_seconds": 40.5
+}

@@ -1,0 +1,37 @@
+{
+  "seed_bench1": 7401,
+  "seed_bench2": 7402,
+  "bench1_pin": "83af7daa5596f351f0412ab4938ec4d3eb70477aad12915de6b7851b73a05eb5",
+  "bench2_pin": "c7d280ebc9a0eb6d6c761b91557570159671a842754792355b013ec0f695048b",
+  "bench1_path": "S7-4_BENCH1_2026-10-05.json",
+  "bench2_path": "S7-4_BENCH2_2026-10-05.json",
+  "freshness": {
+    "b1_b2_disjoint": true,
+    "b1_committed_disjoint": true,
+    "b2_committed_disjoint": true,
+    "surface_diff_audit": "pass (all 120 prompts pairwise distinct and distinct from all 60 EXP092-B prompts)"
+  },
+  "g0_bench1": {
+    "n": 60,
+    "unique_tuples": 60,
+    "strata": {
+      "Planetary/A-first": 16,
+      "Planetary/C-first": 14,
+      "Elemental/C-first": 16,
+      "Elemental/A-first": 14
+    },
+    "pin": "83af7daa5596f351f0412ab4938ec4d3eb70477aad12915de6b7851b73a05eb5"
+  },
+  "g0_bench2": {
+    "n": 60,
+    "unique_tuples": 60,
+    "strata": {
+      "Planetary/A-first": 16,
+      "Planetary/C-first": 14,
+      "Elemental/C-first": 16,
+      "Elemental/A-first": 14
+    },
+    "pin": "c7d280ebc9a0eb6d6c761b91557570159671a842754792355b013ec0f695048b"
+  },
+  "method": "see S7-4_build_benches_2026-10-05.py docstring"
+}

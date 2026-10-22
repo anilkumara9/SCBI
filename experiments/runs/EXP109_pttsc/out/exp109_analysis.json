@@ -1,0 +1,16 @@
+{
+ "gates": {
+  "n_valid": 0,
+  "items_invalid": 20,
+  "exec_unparseable": [
+   8,
+   8
+  ],
+  "base_unparseable": [
+   80,
+   80
+  ],
+  "unparseable_fraction": 1.0
+ },
+ "run_invalid": "RUN-INVALID: elicitation failure \u2014 20\u2212n_valid=20 \u2265 3"
+}

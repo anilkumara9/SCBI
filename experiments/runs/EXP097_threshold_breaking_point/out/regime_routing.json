@@ -1,0 +1,32 @@
+{
+  "1.5": {
+    "routing": "LIVE",
+    "routing_reason": "B_wrong>=1 flip",
+    "evidence": {
+      "tie_rate": 0.0,
+      "tie_count": 0,
+      "zero_variance_T": false,
+      "zero_variance_W": false,
+      "flips_T_vs_B": 7,
+      "flips_W_vs_B": 11,
+      "delivery_confirmed": true,
+      "n_included_T": 60,
+      "n_included_W": 60
+    }
+  },
+  "3.0": {
+    "routing": "LIVE",
+    "routing_reason": "B_wrong>=1 flip",
+    "evidence": {
+      "tie_rate": 0.0,
+      "tie_count": 0,
+      "zero_variance_T": false,
+      "zero_variance_W": false,
+      "flips_T_vs_B": 10,
+      "flips_W_vs_B": 15,
+      "delivery_confirmed": true,
+      "n_included_T": 60,
+      "n_included_W": 60
+    }
+  }
+}

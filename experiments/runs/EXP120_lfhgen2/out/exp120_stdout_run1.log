@@ -1,0 +1,55 @@
+ENV torch=2.14.0+cpu transformers=5.17.0 sklearn=1.9.1 numpy=2.5.3
+threads set=2 read_back=2
+STAGE A: bench-2 construction gates
+design-time assertions OK: n=60 pin=1d7d22c0cacdec1835456d925277830c6721cd6fc8bfd4bb0a58414882fb2eee
+G-C1 pure-template detector: 30/60 pass=True
+G-C2 entity-rank correlation: -0.0475 (|.|=0.0475) pass=True
+G-C3 decomposition pin: suffix_byte_exact=True deterministic=True pass=True
+bench-2 canonical pin 1d7d22c0cacdec1835456d925277830c6721cd6fc8bfd4bb0a58414882fb2eee persisted; re-parse x2 byte-identical
+loading tokenizer + frozen model...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<02:11,  2.21it/s]Loading weights:   5%|▍         | 14/292 [00:00<00:08, 31.40it/s]Loading weights:  11%|█         | 32/292 [00:00<00:04, 64.53it/s]Loading weights:  15%|█▌        | 44/292 [00:00<00:03, 75.77it/s]Loading weights:  21%|██        | 60/292 [00:00<00:02, 82.51it/s]Loading weights:  27%|██▋       | 78/292 [00:01<00:02, 103.67it/s]Loading weights:  33%|███▎      | 96/292 [00:01<00:01, 122.11it/s]Loading weights:  38%|███▊      | 111/292 [00:01<00:01, 120.15it/s]Loading weights:  43%|████▎     | 125/292 [00:01<00:01, 118.49it/s]Loading weights:  48%|████▊     | 140/292 [00:01<00:01, 125.94it/s]Loading weights:  53%|█████▎    | 154/292 [00:01<00:01, 118.54it/s]Loading weights:  58%|█████▊    | 170/292 [00:01<00:01, 110.33it/s]Loading weights:  62%|██████▏   | 182/292 [00:01<00:01, 102.69it/s]Loading weights:  66%|██████▌   | 193/292 [00:02<00:00, 100.76it/s]Loading weights:  70%|██████▉   | 204/292 [00:02<00:00, 98.07it/s] Loading weights:  75%|███████▍  | 218/292 [00:02<00:00, 101.39it/s]Loading weights:  79%|███████▉  | 230/292 [00:02<00:00, 93.41it/s] Loading weights:  82%|████████▏ | 240/292 [00:02<00:00, 82.78it/s]Loading weights:  85%|████████▌ | 249/292 [00:02<00:00, 80.83it/s]Loading weights:  89%|████████▉ | 260/292 [00:02<00:00, 81.01it/s]Loading weights:  92%|█████████▏| 269/292 [00:03<00:00, 80.80it/s]Loading weights:  95%|█████████▌| 278/292 [00:03<00:00, 72.61it/s]Loading weights: 100%|██████████| 292/292 [00:03<00:00, 89.37it/s]
+device_map='cpu' accepted
+backbone pre-extraction hash: ec276abe3902fab0... match=True
+extracting bench-2 (60 passes, premise-only, hidden_states[20])...
+  20/60
+  40/60
+  60/60
+backbone post-extraction hash: ec276abe3902fab0... match=True (Δθ=0)
+npz ids byte-match per-item records (60/60)
+split: train n=30 test n=30 overlap=0; per-cell test counts={np.str_('A-first_False'): 8, np.str_('A-first_True'): 7, np.str_('C-first_False'): 7, np.str_('C-first_True'): 8}; N_F=15 N_T=15
+/home/hatch/workspace/.venv-exp111/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1381: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+/home/hatch/workspace/.venv-exp111/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1381: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+determinism re-fit pass: byte-identical test predictions
+head weight hash: 203809e884729b92... norm=1.756494
+artifact builder_script: present 52ceca4ea64401ba...
+artifact canonical_json: present 1d7d22c0cacdec18...
+artifact per_item_json: present 79a9e1ea931d76ae...
+artifact embeddings_npz: present b8b897cddaa86e3b...
+artifact train_ids: present de7d90c2f37f82e0...
+artifact test_ids: present 83bd72c8054c5d10...
+artifact head_params: present 1751ed663b14b791...
+test: 25/30 = 0.8333; acc(F)=0.7333 (N_F=15); acc(T)=0.9333 (N_T=15); G=-0.2000
+per-cell (descriptive): {np.str_('A-first_False'): 0.5, np.str_('A-first_True'): 1.0, np.str_('C-first_False'): 1.0, np.str_('C-first_True'): 0.875}; train acc (sanity): 1.0000
+VERDICT: CONTINUE
+branch: overall >= 20/30 with G < 0.30 → generality hypothesis CONTINUES (template-invariant feature on a second bench)
+Traceback (most recent call last):
+  File "/home/hatch/workspace/SCBI/experiments/runs/EXP120_lfhgen2/exp120_execute.py", line 269, in <module>
+    json.dump(result, f, indent=2)
+  File "/usr/lib/python3.12/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  [Previous line repeated 1 more time]
+  File "/usr/lib/python3.12/json/encoder.py", line 377, in _iterencode_dict
+    raise TypeError(f'keys must be str, int, float, bool or None, '
+TypeError: keys must be str, int, float, bool or None, not tuple
+EXIT=1

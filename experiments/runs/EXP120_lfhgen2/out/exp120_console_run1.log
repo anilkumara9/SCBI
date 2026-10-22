@@ -1,0 +1,31 @@
+ENV torch=2.14.0+cpu transformers=5.17.0 sklearn=1.9.1 numpy=2.5.3
+threads set=2 read_back=2
+STAGE A: bench-2 construction gates
+design-time assertions OK: n=60 pin=1d7d22c0cacdec1835456d925277830c6721cd6fc8bfd4bb0a58414882fb2eee
+G-C1 pure-template detector: 30/60 pass=True
+G-C2 entity-rank correlation: -0.0475 (|.|=0.0475) pass=True
+G-C3 decomposition pin: suffix_byte_exact=True deterministic=True pass=True
+bench-2 canonical pin 1d7d22c0cacdec1835456d925277830c6721cd6fc8bfd4bb0a58414882fb2eee persisted; re-parse x2 byte-identical
+loading tokenizer + frozen model...
+device_map='cpu' accepted
+backbone pre-extraction hash: ec276abe3902fab0... match=True
+extracting bench-2 (60 passes, premise-only, hidden_states[20])...
+  20/60
+  40/60
+  60/60
+backbone post-extraction hash: ec276abe3902fab0... match=True (Δθ=0)
+npz ids byte-match per-item records (60/60)
+split: train n=30 test n=30 overlap=0; per-cell test counts={np.str_('A-first_False'): 8, np.str_('A-first_True'): 7, np.str_('C-first_False'): 7, np.str_('C-first_True'): 8}; N_F=15 N_T=15
+determinism re-fit pass: byte-identical test predictions
+head weight hash: 203809e884729b92... norm=1.756494
+artifact builder_script: present 52ceca4ea64401ba...
+artifact canonical_json: present 1d7d22c0cacdec18...
+artifact per_item_json: present 79a9e1ea931d76ae...
+artifact embeddings_npz: present b8b897cddaa86e3b...
+artifact train_ids: present de7d90c2f37f82e0...
+artifact test_ids: present 83bd72c8054c5d10...
+artifact head_params: present 1751ed663b14b791...
+test: 25/30 = 0.8333; acc(F)=0.7333 (N_F=15); acc(T)=0.9333 (N_T=15); G=-0.2000
+per-cell (descriptive): {np.str_('A-first_False'): 0.5, np.str_('A-first_True'): 1.0, np.str_('C-first_False'): 1.0, np.str_('C-first_True'): 0.875}; train acc (sanity): 1.0000
+VERDICT: CONTINUE
+branch: overall >= 20/30 with G < 0.30 → generality hypothesis CONTINUES (template-invariant feature on a second bench)

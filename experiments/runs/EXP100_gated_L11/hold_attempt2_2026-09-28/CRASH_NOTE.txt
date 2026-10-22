@@ -1,0 +1,14 @@
+ATTEMPT 2 — crash (mechanical executor bugs, diagnosed, fixed; NOT a design issue).
+
+1. UnboundLocalError: 'prompts' referenced in the (new) within-backend
+   attention-validation block before its definition line (the validation
+   block was moved earlier without moving the prompts/p0_ids definitions).
+   Fix: prompts/p0_ids now defined immediately before the validation block.
+2. AttributeError: main() caught score100.RunInvalid but score_exp100.py
+   defined no RunInvalid (it raised RuntimeError). Fix: added
+   class RunInvalid(Exception) to score_exp100.py; empty-contrast now
+   raises RunInvalid.
+
+No experimental data was produced (crash before any artifact write; out/
+was empty). The within-backend validation logic itself was proven bit-exact
+(0.00e+00) in the standalone diagnostic before attempt 2.

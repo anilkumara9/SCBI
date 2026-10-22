@@ -1,0 +1,608 @@
+{
+ "bench": [
+  {
+   "id": "s5inv_held_00",
+   "src_id": "exp077_planet_2hop_0",
+   "prompt": "Premise: Aaron outranks Joel. Joel outranks Gideon. Question: Who is higher in rank, Gideon or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Gideon",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_01",
+   "src_id": "exp077_planet_2hop_1",
+   "prompt": "Premise: Joel outranks Gideon. Gideon outranks Ruth. Question: Who is higher in rank, Joel or Ruth? Answer:",
+   "A": "Joel",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_02",
+   "src_id": "exp077_planet_2hop_2",
+   "prompt": "Premise: Gideon outranks Ruth. Ruth outranks Abel. Question: Who is higher in rank, Abel or Gideon? Answer:",
+   "A": "Gideon",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_03",
+   "src_id": "exp077_planet_2hop_3",
+   "prompt": "Premise: Aaron outranks Gideon. Gideon outranks Abel. Question: Who is higher in rank, Aaron or Abel? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_04",
+   "src_id": "exp077_planet_2hop_4",
+   "prompt": "Premise: Aaron outranks Joel. Joel outranks Ruth. Question: Who is higher in rank, Ruth or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_05",
+   "src_id": "exp077_planet_2hop_5",
+   "prompt": "Premise: Joel outranks Ruth. Ruth outranks Abel. Question: Who is higher in rank, Joel or Abel? Answer:",
+   "A": "Joel",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_06",
+   "src_id": "exp077_planet_2hop_6",
+   "prompt": "Premise: Aaron outranks Gideon. Gideon outranks Ruth. Question: Who is higher in rank, Ruth or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_07",
+   "src_id": "exp077_planet_2hop_7",
+   "prompt": "Premise: Joel outranks Gideon. Gideon outranks Abel. Question: Who is higher in rank, Joel or Abel? Answer:",
+   "A": "Joel",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_08",
+   "src_id": "exp077_planet_2hop_8",
+   "prompt": "Premise: Abel is lower than Ruth. Ruth is lower than Aaron. Question: Who is higher in rank, Abel or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_09",
+   "src_id": "exp077_planet_2hop_9",
+   "prompt": "Premise: Abel is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Aaron or Abel? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_10",
+   "src_id": "exp077_planet_2hop_10",
+   "prompt": "Premise: Gideon is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Gideon or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Gideon",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_11",
+   "src_id": "exp077_planet_2hop_11",
+   "prompt": "Premise: Ruth is lower than Gideon. Gideon is lower than Joel. Question: Who is higher in rank, Joel or Ruth? Answer:",
+   "A": "Joel",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_12",
+   "src_id": "exp077_planet_2hop_12",
+   "prompt": "Premise: Abel is lower than Ruth. Ruth is lower than Gideon. Question: Who is higher in rank, Abel or Gideon? Answer:",
+   "A": "Gideon",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_13",
+   "src_id": "exp077_planet_2hop_13",
+   "prompt": "Premise: Abel is lower than Gideon. Gideon is lower than Aaron. Question: Who is higher in rank, Aaron or Abel? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_14",
+   "src_id": "exp077_planet_2hop_14",
+   "prompt": "Premise: Ruth is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Ruth or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_15",
+   "src_id": "exp077_planet_3hop_0",
+   "prompt": "Premise: Aaron outranks Joel. Joel outranks Gideon. Gideon outranks Ruth. Question: Who is higher in rank, Ruth or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_16",
+   "src_id": "exp077_planet_3hop_1",
+   "prompt": "Premise: Joel outranks Gideon. Gideon outranks Ruth. Ruth outranks Abel. Question: Who is higher in rank, Joel or Abel? Answer:",
+   "A": "Joel",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_17",
+   "src_id": "exp077_planet_3hop_2",
+   "prompt": "Premise: Aaron outranks Joel. Joel outranks Ruth. Ruth outranks Abel. Question: Who is higher in rank, Abel or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_18",
+   "src_id": "exp077_planet_3hop_3",
+   "prompt": "Premise: Aaron outranks Gideon. Gideon outranks Ruth. Ruth outranks Abel. Question: Who is higher in rank, Aaron or Abel? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_19",
+   "src_id": "exp077_planet_3hop_4",
+   "prompt": "Premise: Aaron outranks Joel. Joel outranks Gideon. Gideon outranks Abel. Question: Who is higher in rank, Abel or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_20",
+   "src_id": "exp077_planet_3hop_5",
+   "prompt": "Premise: Aaron outranks Joel. Joel outranks Gideon. Gideon outranks Ruth. Question: Who is higher in rank, Aaron or Ruth? Answer:",
+   "A": "Aaron",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_21",
+   "src_id": "exp077_planet_3hop_6",
+   "prompt": "Premise: Joel outranks Gideon. Gideon outranks Ruth. Ruth outranks Abel. Question: Who is higher in rank, Abel or Joel? Answer:",
+   "A": "Joel",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_22",
+   "src_id": "exp077_planet_3hop_7",
+   "prompt": "Premise: Aaron outranks Joel. Joel outranks Ruth. Ruth outranks Abel. Question: Who is higher in rank, Aaron or Abel? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_23",
+   "src_id": "exp077_planet_3hop_8",
+   "prompt": "Premise: Abel is lower than Ruth. Ruth is lower than Gideon. Gideon is lower than Aaron. Question: Who is higher in rank, Abel or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_24",
+   "src_id": "exp077_planet_3hop_9",
+   "prompt": "Premise: Abel is lower than Gideon. Gideon is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Aaron or Abel? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_25",
+   "src_id": "exp077_planet_3hop_10",
+   "prompt": "Premise: Ruth is lower than Gideon. Gideon is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Ruth or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_26",
+   "src_id": "exp077_planet_3hop_11",
+   "prompt": "Premise: Abel is lower than Ruth. Ruth is lower than Gideon. Gideon is lower than Joel. Question: Who is higher in rank, Joel or Abel? Answer:",
+   "A": "Joel",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_27",
+   "src_id": "exp077_planet_3hop_12",
+   "prompt": "Premise: Abel is lower than Ruth. Ruth is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Abel or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_28",
+   "src_id": "exp077_planet_3hop_13",
+   "prompt": "Premise: Abel is lower than Ruth. Ruth is lower than Gideon. Gideon is lower than Aaron. Question: Who is higher in rank, Aaron or Abel? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_29",
+   "src_id": "exp077_planet_3hop_14",
+   "prompt": "Premise: Abel is lower than Gideon. Gideon is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Abel or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "planet",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_30",
+   "src_id": "exp077_element_2hop_0",
+   "prompt": "Premise: Aaron outranks Joel. Joel outranks Gideon. Question: Who is higher in rank, Aaron or Gideon? Answer:",
+   "A": "Aaron",
+   "C": "Gideon",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_31",
+   "src_id": "exp077_element_2hop_1",
+   "prompt": "Premise: Joel outranks Gideon. Gideon outranks Ruth. Question: Who is higher in rank, Ruth or Joel? Answer:",
+   "A": "Joel",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_32",
+   "src_id": "exp077_element_2hop_2",
+   "prompt": "Premise: Gideon outranks Ruth. Ruth outranks Abel. Question: Who is higher in rank, Gideon or Abel? Answer:",
+   "A": "Gideon",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_33",
+   "src_id": "exp077_element_2hop_3",
+   "prompt": "Premise: Aaron outranks Gideon. Gideon outranks Abel. Question: Who is higher in rank, Abel or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_34",
+   "src_id": "exp077_element_2hop_4",
+   "prompt": "Premise: Aaron outranks Joel. Joel outranks Ruth. Question: Who is higher in rank, Aaron or Ruth? Answer:",
+   "A": "Aaron",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_35",
+   "src_id": "exp077_element_2hop_5",
+   "prompt": "Premise: Joel outranks Ruth. Ruth outranks Abel. Question: Who is higher in rank, Abel or Joel? Answer:",
+   "A": "Joel",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_36",
+   "src_id": "exp077_element_2hop_6",
+   "prompt": "Premise: Aaron outranks Gideon. Gideon outranks Ruth. Question: Who is higher in rank, Aaron or Ruth? Answer:",
+   "A": "Aaron",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_37",
+   "src_id": "exp077_element_2hop_7",
+   "prompt": "Premise: Abel is lower than Gideon. Gideon is lower than Joel. Question: Who is higher in rank, Abel or Joel? Answer:",
+   "A": "Joel",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_38",
+   "src_id": "exp077_element_2hop_8",
+   "prompt": "Premise: Abel is lower than Ruth. Ruth is lower than Aaron. Question: Who is higher in rank, Aaron or Abel? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_39",
+   "src_id": "exp077_element_2hop_9",
+   "prompt": "Premise: Abel is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Abel or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_40",
+   "src_id": "exp077_element_2hop_10",
+   "prompt": "Premise: Gideon is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Aaron or Gideon? Answer:",
+   "A": "Aaron",
+   "C": "Gideon",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_41",
+   "src_id": "exp077_element_2hop_11",
+   "prompt": "Premise: Ruth is lower than Gideon. Gideon is lower than Joel. Question: Who is higher in rank, Ruth or Joel? Answer:",
+   "A": "Joel",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_42",
+   "src_id": "exp077_element_2hop_12",
+   "prompt": "Premise: Abel is lower than Ruth. Ruth is lower than Gideon. Question: Who is higher in rank, Gideon or Abel? Answer:",
+   "A": "Gideon",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_43",
+   "src_id": "exp077_element_2hop_13",
+   "prompt": "Premise: Abel is lower than Gideon. Gideon is lower than Aaron. Question: Who is higher in rank, Abel or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_44",
+   "src_id": "exp077_element_2hop_14",
+   "prompt": "Premise: Ruth is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Aaron or Ruth? Answer:",
+   "A": "Aaron",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 2
+  },
+  {
+   "id": "s5inv_held_45",
+   "src_id": "exp077_element_3hop_0",
+   "prompt": "Premise: Aaron outranks Joel. Joel outranks Gideon. Gideon outranks Ruth. Question: Who is higher in rank, Aaron or Ruth? Answer:",
+   "A": "Aaron",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_46",
+   "src_id": "exp077_element_3hop_1",
+   "prompt": "Premise: Joel outranks Gideon. Gideon outranks Ruth. Ruth outranks Abel. Question: Who is higher in rank, Abel or Joel? Answer:",
+   "A": "Joel",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_47",
+   "src_id": "exp077_element_3hop_2",
+   "prompt": "Premise: Aaron outranks Joel. Joel outranks Ruth. Ruth outranks Abel. Question: Who is higher in rank, Aaron or Abel? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_48",
+   "src_id": "exp077_element_3hop_3",
+   "prompt": "Premise: Aaron outranks Gideon. Gideon outranks Ruth. Ruth outranks Abel. Question: Who is higher in rank, Abel or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_49",
+   "src_id": "exp077_element_3hop_4",
+   "prompt": "Premise: Aaron outranks Joel. Joel outranks Gideon. Gideon outranks Abel. Question: Who is higher in rank, Aaron or Abel? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_50",
+   "src_id": "exp077_element_3hop_5",
+   "prompt": "Premise: Aaron outranks Joel. Joel outranks Gideon. Gideon outranks Ruth. Question: Who is higher in rank, Ruth or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_51",
+   "src_id": "exp077_element_3hop_6",
+   "prompt": "Premise: Joel outranks Gideon. Gideon outranks Ruth. Ruth outranks Abel. Question: Who is higher in rank, Joel or Abel? Answer:",
+   "A": "Joel",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_52",
+   "src_id": "exp077_element_3hop_7",
+   "prompt": "Premise: Abel is lower than Ruth. Ruth is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Abel or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_53",
+   "src_id": "exp077_element_3hop_8",
+   "prompt": "Premise: Abel is lower than Ruth. Ruth is lower than Gideon. Gideon is lower than Aaron. Question: Who is higher in rank, Aaron or Abel? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_54",
+   "src_id": "exp077_element_3hop_9",
+   "prompt": "Premise: Abel is lower than Gideon. Gideon is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Abel or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_55",
+   "src_id": "exp077_element_3hop_10",
+   "prompt": "Premise: Ruth is lower than Gideon. Gideon is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Aaron or Ruth? Answer:",
+   "A": "Aaron",
+   "C": "Ruth",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_56",
+   "src_id": "exp077_element_3hop_11",
+   "prompt": "Premise: Abel is lower than Ruth. Ruth is lower than Gideon. Gideon is lower than Joel. Question: Who is higher in rank, Abel or Joel? Answer:",
+   "A": "Joel",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_57",
+   "src_id": "exp077_element_3hop_12",
+   "prompt": "Premise: Abel is lower than Ruth. Ruth is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Aaron or Abel? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_58",
+   "src_id": "exp077_element_3hop_13",
+   "prompt": "Premise: Abel is lower than Ruth. Ruth is lower than Gideon. Gideon is lower than Aaron. Question: Who is higher in rank, Abel or Aaron? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  },
+  {
+   "id": "s5inv_held_59",
+   "src_id": "exp077_element_3hop_14",
+   "prompt": "Premise: Abel is lower than Gideon. Gideon is lower than Joel. Joel is lower than Aaron. Question: Who is higher in rank, Aaron or Abel? Answer:",
+   "A": "Aaron",
+   "C": "Abel",
+   "vk": "V2_Biblical",
+   "typ": "element",
+   "hop": 3
+  }
+ ],
+ "sha256": "779202d6f8297e70319c7e18e0ccf190c70488ef5c2082501cfb727dc91d1e55",
+ "view": "V2_Biblical",
+ "view_index": 1,
+ "derived_from_bench_sha": "eb304fa65a60b65ad87767d251084b256d0a79001a16b4fe8ebcd1b1f45589df"
+}

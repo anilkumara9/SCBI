@@ -1,0 +1,11 @@
+loading EleutherAI/pythia-410m (float32) ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<00:34,  8.43it/s]Loading weights:  11%|█         | 32/292 [00:00<00:01, 169.29it/s]Loading weights:  32%|███▏      | 92/292 [00:00<00:00, 349.95it/s]Loading weights:  54%|█████▍    | 158/292 [00:00<00:00, 463.97it/s]Loading weights:  71%|███████   | 206/292 [00:00<00:00, 340.59it/s]Loading weights:  84%|████████▍ | 245/292 [00:00<00:00, 277.73it/s]Loading weights:  95%|█████████▌| 278/292 [00:00<00:00, 287.89it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 300.41it/s]
+FP32 backbone hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+FP32 pin verified against LOG-331 (licensed frozen backbone).
+fake-quantized 97 Linear layers, 271488 rows (0 exact-zero rows -> 0)
+quantized copy hash: ed919d476819051e2ac7f16461bb07a0befa8886bb0c9f9ed28e14f20cab9c33
+hash differs from pin: True (expected)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:10<00:00, 10.24s/it]Writing model shards: 100%|██████████| 1/1 [00:10<00:00, 10.24s/it]
+wrote /home/hatch/workspace/SCBI/experiments/runs/EXP110_qbr/out/fakequant_manifest.json
+saved quantized model to /home/hatch/workspace/SCBI/experiments/runs/EXP110_qbr/out/quantized_model

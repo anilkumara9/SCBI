@@ -1,0 +1,430 @@
+{
+ "experiment": "EXP139",
+ "stage": 2,
+ "view": 0,
+ "source": "experiments/runs/EXP135_eval/out/exp135_records.json (cache_unintervened, view 0)",
+ "extracted_utc": "2026-10-03",
+ "n_items": 60,
+ "items": [
+  {
+   "id": "exp077_planet_2hop_0",
+   "index": 0,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 1.3575801849365234
+  },
+  {
+   "id": "exp077_planet_2hop_1",
+   "index": 1,
+   "view": 0,
+   "committed_yhat": 8679,
+   "committed_margin": 0.6257801055908203
+  },
+  {
+   "id": "exp077_planet_2hop_2",
+   "index": 2,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.48301219940185547
+  },
+  {
+   "id": "exp077_planet_2hop_3",
+   "index": 3,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 1.1966829299926758
+  },
+  {
+   "id": "exp077_planet_2hop_4",
+   "index": 4,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.7170276641845703
+  },
+  {
+   "id": "exp077_planet_2hop_5",
+   "index": 5,
+   "view": 0,
+   "committed_yhat": 8679,
+   "committed_margin": 0.7749443054199219
+  },
+  {
+   "id": "exp077_planet_2hop_6",
+   "index": 6,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.5757694244384766
+  },
+  {
+   "id": "exp077_planet_2hop_7",
+   "index": 7,
+   "view": 0,
+   "committed_yhat": 8679,
+   "committed_margin": 1.1251020431518555
+  },
+  {
+   "id": "exp077_planet_2hop_8",
+   "index": 8,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.2370290756225586
+  },
+  {
+   "id": "exp077_planet_2hop_9",
+   "index": 9,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.7177028656005859
+  },
+  {
+   "id": "exp077_planet_2hop_10",
+   "index": 10,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.3691120147705078
+  },
+  {
+   "id": "exp077_planet_2hop_11",
+   "index": 11,
+   "view": 0,
+   "committed_yhat": 5119,
+   "committed_margin": 0.6415462493896484
+  },
+  {
+   "id": "exp077_planet_2hop_12",
+   "index": 12,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.8146562576293945
+  },
+  {
+   "id": "exp077_planet_2hop_13",
+   "index": 13,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.3692502975463867
+  },
+  {
+   "id": "exp077_planet_2hop_14",
+   "index": 14,
+   "view": 0,
+   "committed_yhat": 5119,
+   "committed_margin": 0.2891550064086914
+  },
+  {
+   "id": "exp077_planet_3hop_0",
+   "index": 15,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.8584699630737305
+  },
+  {
+   "id": "exp077_planet_3hop_1",
+   "index": 16,
+   "view": 0,
+   "committed_yhat": 8679,
+   "committed_margin": 1.8149480819702148
+  },
+  {
+   "id": "exp077_planet_3hop_2",
+   "index": 17,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 1.4685125350952148
+  },
+  {
+   "id": "exp077_planet_3hop_3",
+   "index": 18,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 1.5603971481323242
+  },
+  {
+   "id": "exp077_planet_3hop_4",
+   "index": 19,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 1.0017271041870117
+  },
+  {
+   "id": "exp077_planet_3hop_5",
+   "index": 20,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 1.019521713256836
+  },
+  {
+   "id": "exp077_planet_3hop_6",
+   "index": 21,
+   "view": 0,
+   "committed_yhat": 8679,
+   "committed_margin": 1.6983442306518555
+  },
+  {
+   "id": "exp077_planet_3hop_7",
+   "index": 22,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 1.4180965423583984
+  },
+  {
+   "id": "exp077_planet_3hop_8",
+   "index": 23,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.4809913635253906
+  },
+  {
+   "id": "exp077_planet_3hop_9",
+   "index": 24,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.050690650939941406
+  },
+  {
+   "id": "exp077_planet_3hop_10",
+   "index": 25,
+   "view": 0,
+   "committed_yhat": 5119,
+   "committed_margin": 0.6707248687744141
+  },
+  {
+   "id": "exp077_planet_3hop_11",
+   "index": 26,
+   "view": 0,
+   "committed_yhat": 8679,
+   "committed_margin": 0.5648374557495117
+  },
+  {
+   "id": "exp077_planet_3hop_12",
+   "index": 27,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.26233863830566406
+  },
+  {
+   "id": "exp077_planet_3hop_13",
+   "index": 28,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.10879039764404297
+  },
+  {
+   "id": "exp077_planet_3hop_14",
+   "index": 29,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.40756702423095703
+  },
+  {
+   "id": "exp077_element_2hop_0",
+   "index": 30,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 1.4231042861938477
+  },
+  {
+   "id": "exp077_element_2hop_1",
+   "index": 31,
+   "view": 0,
+   "committed_yhat": 8679,
+   "committed_margin": 0.1758880615234375
+  },
+  {
+   "id": "exp077_element_2hop_2",
+   "index": 32,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.042987823486328125
+  },
+  {
+   "id": "exp077_element_2hop_3",
+   "index": 33,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.9343929290771484
+  },
+  {
+   "id": "exp077_element_2hop_4",
+   "index": 34,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.7172908782958984
+  },
+  {
+   "id": "exp077_element_2hop_5",
+   "index": 35,
+   "view": 0,
+   "committed_yhat": 8679,
+   "committed_margin": 0.4662494659423828
+  },
+  {
+   "id": "exp077_element_2hop_6",
+   "index": 36,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.9322671890258789
+  },
+  {
+   "id": "exp077_element_2hop_7",
+   "index": 37,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.04268074035644531
+  },
+  {
+   "id": "exp077_element_2hop_8",
+   "index": 38,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.36441707611083984
+  },
+  {
+   "id": "exp077_element_2hop_9",
+   "index": 39,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.6628408432006836
+  },
+  {
+   "id": "exp077_element_2hop_10",
+   "index": 40,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.07105636596679688
+  },
+  {
+   "id": "exp077_element_2hop_11",
+   "index": 41,
+   "view": 0,
+   "committed_yhat": 5119,
+   "committed_margin": 1.0479450225830078
+  },
+  {
+   "id": "exp077_element_2hop_12",
+   "index": 42,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.25266456604003906
+  },
+  {
+   "id": "exp077_element_2hop_13",
+   "index": 43,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.36962318420410156
+  },
+  {
+   "id": "exp077_element_2hop_14",
+   "index": 44,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.039226531982421875
+  },
+  {
+   "id": "exp077_element_3hop_0",
+   "index": 45,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 1.019521713256836
+  },
+  {
+   "id": "exp077_element_3hop_1",
+   "index": 46,
+   "view": 0,
+   "committed_yhat": 8679,
+   "committed_margin": 1.6983442306518555
+  },
+  {
+   "id": "exp077_element_3hop_2",
+   "index": 47,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 1.4180965423583984
+  },
+  {
+   "id": "exp077_element_3hop_3",
+   "index": 48,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 1.4432096481323242
+  },
+  {
+   "id": "exp077_element_3hop_4",
+   "index": 49,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 1.5374250411987305
+  },
+  {
+   "id": "exp077_element_3hop_5",
+   "index": 50,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.8584699630737305
+  },
+  {
+   "id": "exp077_element_3hop_6",
+   "index": 51,
+   "view": 0,
+   "committed_yhat": 8679,
+   "committed_margin": 1.8149480819702148
+  },
+  {
+   "id": "exp077_element_3hop_7",
+   "index": 52,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.26233863830566406
+  },
+  {
+   "id": "exp077_element_3hop_8",
+   "index": 53,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.10879039764404297
+  },
+  {
+   "id": "exp077_element_3hop_9",
+   "index": 54,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.40756702423095703
+  },
+  {
+   "id": "exp077_element_3hop_10",
+   "index": 55,
+   "view": 0,
+   "committed_yhat": 5119,
+   "committed_margin": 0.2297687530517578
+  },
+  {
+   "id": "exp077_element_3hop_11",
+   "index": 56,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.0931386947631836
+  },
+  {
+   "id": "exp077_element_3hop_12",
+   "index": 57,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.16461944580078125
+  },
+  {
+   "id": "exp077_element_3hop_13",
+   "index": 58,
+   "view": 0,
+   "committed_yhat": 25975,
+   "committed_margin": 0.4809913635253906
+  },
+  {
+   "id": "exp077_element_3hop_14",
+   "index": 59,
+   "view": 0,
+   "committed_yhat": 16922,
+   "committed_margin": 0.050690650939941406
+  }
+ ]
+}

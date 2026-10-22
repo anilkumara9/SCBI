@@ -1,0 +1,1892 @@
+[
+ {
+  "id": "E149b-001",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The girl is taller than the wolf.",
+   "The wolf is taller than the mouse."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "girl"
+ },
+ {
+  "id": "E149b-002",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The cow is taller than the tiger.",
+   "The tiger is taller than the king."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "king"
+ },
+ {
+  "id": "E149b-003",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The hen is taller than the sheep.",
+   "The sheep is taller than the cow."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "cow"
+ },
+ {
+  "id": "E149b-004",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The sheep is shorter than the goat.",
+   "The goat is shorter than the shark."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "shark"
+ },
+ {
+  "id": "E149b-005",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The crab is shorter than the dog.",
+   "The dog is shorter than the pilot."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "crab"
+ },
+ {
+  "id": "E149b-006",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The shark is shorter than the bear.",
+   "The bear is shorter than the ape."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "ape"
+ },
+ {
+  "id": "E149b-007",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The pig is taller than the fox.",
+   "The fox is taller than the hen."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "pig"
+ },
+ {
+  "id": "E149b-008",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The frog is shorter than the ape.",
+   "The ape is shorter than the crab."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "frog"
+ },
+ {
+  "id": "E149b-009",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The hen is shorter than the boy.",
+   "The boy is shorter than the lion."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "lion"
+ },
+ {
+  "id": "E149b-010",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The lion is taller than the tiger.",
+   "The tiger is taller than the rat."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "rat"
+ },
+ {
+  "id": "E149b-011",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The queen is taller than the rat.",
+   "The rat is taller than the bear."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "bear"
+ },
+ {
+  "id": "E149b-012",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The deer is taller than the rat.",
+   "The rat is taller than the bat."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "bat"
+ },
+ {
+  "id": "E149b-013",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The dog is shorter than the queen.",
+   "The queen is shorter than the sheep."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "dog"
+ },
+ {
+  "id": "E149b-014",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The goat is shorter than the duck.",
+   "The duck is shorter than the cat."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "goat"
+ },
+ {
+  "id": "E149b-015",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The bird is taller than the dog.",
+   "The dog is taller than the eagle."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "eagle"
+ },
+ {
+  "id": "E149b-016",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The bat is shorter than the queen.",
+   "The queen is shorter than the dog."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "bat"
+ },
+ {
+  "id": "E149b-017",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The whale is shorter than the rat.",
+   "The rat is shorter than the pig."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "whale"
+ },
+ {
+  "id": "E149b-018",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The king is taller than the horse.",
+   "The horse is taller than the bee."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "bee"
+ },
+ {
+  "id": "E149b-019",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The dog is shorter than the wolf.",
+   "The wolf is shorter than the deer."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "deer"
+ },
+ {
+  "id": "E149b-020",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The whale is taller than the bat.",
+   "The bat is taller than the bear."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "whale"
+ },
+ {
+  "id": "E149b-021",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The lion is taller than the bat.",
+   "The bat is taller than the ape."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "ape"
+ },
+ {
+  "id": "E149b-022",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The king is taller than the dog.",
+   "The dog is taller than the fish."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "fish"
+ },
+ {
+  "id": "E149b-023",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The pig is shorter than the ant.",
+   "The ant is shorter than the mouse."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "mouse"
+ },
+ {
+  "id": "E149b-024",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The rat is shorter than the cow.",
+   "The cow is shorter than the mouse."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "rat"
+ },
+ {
+  "id": "E149b-025",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The cat is taller than the pilot.",
+   "The pilot is taller than the horse."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "horse"
+ },
+ {
+  "id": "E149b-026",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The mouse is taller than the ape.",
+   "The ape is taller than the goat."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "goat"
+ },
+ {
+  "id": "E149b-027",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The queen is taller than the hen.",
+   "The hen is taller than the bee."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "queen"
+ },
+ {
+  "id": "E149b-028",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The eagle is shorter than the sheep.",
+   "The sheep is shorter than the clown."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "clown"
+ },
+ {
+  "id": "E149b-029",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The horse is shorter than the fox.",
+   "The fox is shorter than the whale."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "whale"
+ },
+ {
+  "id": "E149b-030",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The shark is shorter than the owl.",
+   "The owl is shorter than the bee."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "shark"
+ },
+ {
+  "id": "E149b-031",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The bee is taller than the crab.",
+   "The crab is taller than the hen."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "hen"
+ },
+ {
+  "id": "E149b-032",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The girl is taller than the snake.",
+   "The snake is taller than the bird."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "bird"
+ },
+ {
+  "id": "E149b-033",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The ape is shorter than the deer.",
+   "The deer is shorter than the whale."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "ape"
+ },
+ {
+  "id": "E149b-034",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The fox is taller than the dog.",
+   "The dog is taller than the monk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "monk"
+ },
+ {
+  "id": "E149b-035",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The horse is shorter than the clown.",
+   "The clown is shorter than the bear."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "bear"
+ },
+ {
+  "id": "E149b-036",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The boy is shorter than the cat.",
+   "The cat is shorter than the bird."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "bird"
+ },
+ {
+  "id": "E149b-037",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The fish is taller than the cow.",
+   "The cow is taller than the bat."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "fish"
+ },
+ {
+  "id": "E149b-038",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The bear is taller than the crab.",
+   "The crab is taller than the cow."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "bear"
+ },
+ {
+  "id": "E149b-039",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The bear is taller than the cow.",
+   "The cow is taller than the rat."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "rat"
+ },
+ {
+  "id": "E149b-040",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The fish is shorter than the duck.",
+   "The duck is shorter than the crab."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "fish"
+ },
+ {
+  "id": "E149b-041",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The snake is shorter than the goat.",
+   "The goat is shorter than the eagle."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "eagle"
+ },
+ {
+  "id": "E149b-042",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The dog is taller than the bat.",
+   "The bat is taller than the bear."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "dog"
+ },
+ {
+  "id": "E149b-043",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The cow is taller than the king.",
+   "The king is taller than the fish."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "fish"
+ },
+ {
+  "id": "E149b-044",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The cat is shorter than the bird.",
+   "The bird is shorter than the owl."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "cat"
+ },
+ {
+  "id": "E149b-045",
+  "stratum": "transitive-2hop",
+  "facts": [
+   "The boy is shorter than the whale.",
+   "The whale is shorter than the bat."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "boy"
+ },
+ {
+  "id": "E149b-046",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The crab is shorter than the bee.",
+   "The bee is shorter than the clown.",
+   "The clown is shorter than the king."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "crab"
+ },
+ {
+  "id": "E149b-047",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The shark is taller than the queen.",
+   "The queen is taller than the horse.",
+   "The horse is taller than the tiger."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "shark"
+ },
+ {
+  "id": "E149b-048",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The king is shorter than the snake.",
+   "The snake is shorter than the deer.",
+   "The deer is shorter than the eagle."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "eagle"
+ },
+ {
+  "id": "E149b-049",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The bee is taller than the sheep.",
+   "The sheep is taller than the eagle.",
+   "The eagle is taller than the shark."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "shark"
+ },
+ {
+  "id": "E149b-050",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The bee is taller than the duck.",
+   "The duck is taller than the dog.",
+   "The dog is taller than the goat."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "goat"
+ },
+ {
+  "id": "E149b-051",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The pilot is taller than the frog.",
+   "The frog is taller than the bat.",
+   "The bat is taller than the monk."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "pilot"
+ },
+ {
+  "id": "E149b-052",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The duck is shorter than the king.",
+   "The king is shorter than the owl.",
+   "The owl is shorter than the man."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "man"
+ },
+ {
+  "id": "E149b-053",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The queen is shorter than the boy.",
+   "The boy is shorter than the pilot.",
+   "The pilot is shorter than the mouse."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "queen"
+ },
+ {
+  "id": "E149b-054",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The eagle is taller than the bird.",
+   "The bird is taller than the whale.",
+   "The whale is taller than the cat."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "eagle"
+ },
+ {
+  "id": "E149b-055",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The whale is taller than the girl.",
+   "The girl is taller than the cow.",
+   "The cow is taller than the bat."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "whale"
+ },
+ {
+  "id": "E149b-056",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The duck is taller than the deer.",
+   "The deer is taller than the crab.",
+   "The crab is taller than the queen."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "duck"
+ },
+ {
+  "id": "E149b-057",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The cow is taller than the cat.",
+   "The cat is taller than the clown.",
+   "The clown is taller than the wolf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "cow"
+ },
+ {
+  "id": "E149b-058",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The deer is taller than the bird.",
+   "The bird is taller than the rat.",
+   "The rat is taller than the nurse."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "deer"
+ },
+ {
+  "id": "E149b-059",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The dog is shorter than the clown.",
+   "The clown is shorter than the queen.",
+   "The queen is shorter than the sheep."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "sheep"
+ },
+ {
+  "id": "E149b-060",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The man is shorter than the ape.",
+   "The ape is shorter than the horse.",
+   "The horse is shorter than the sheep."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "man"
+ },
+ {
+  "id": "E149b-061",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The nurse is shorter than the duck.",
+   "The duck is shorter than the eagle.",
+   "The eagle is shorter than the ant."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "ant"
+ },
+ {
+  "id": "E149b-062",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The ape is shorter than the dog.",
+   "The dog is shorter than the monk.",
+   "The monk is shorter than the pilot."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "pilot"
+ },
+ {
+  "id": "E149b-063",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The crab is taller than the ape.",
+   "The ape is taller than the duck.",
+   "The duck is taller than the dog."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "dog"
+ },
+ {
+  "id": "E149b-064",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The sheep is shorter than the clown.",
+   "The clown is shorter than the queen.",
+   "The queen is shorter than the crab."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "sheep"
+ },
+ {
+  "id": "E149b-065",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The ant is shorter than the king.",
+   "The king is shorter than the mouse.",
+   "The mouse is shorter than the pig."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "ant"
+ },
+ {
+  "id": "E149b-066",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The ant is shorter than the pilot.",
+   "The pilot is shorter than the eagle.",
+   "The eagle is shorter than the duck."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "ant"
+ },
+ {
+  "id": "E149b-067",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The owl is shorter than the cat.",
+   "The cat is shorter than the fish.",
+   "The fish is shorter than the snake."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "owl"
+ },
+ {
+  "id": "E149b-068",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The cat is shorter than the boy.",
+   "The boy is shorter than the clown.",
+   "The clown is shorter than the cow."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "cat"
+ },
+ {
+  "id": "E149b-069",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The pig is taller than the fish.",
+   "The fish is taller than the deer.",
+   "The deer is taller than the sheep."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "sheep"
+ },
+ {
+  "id": "E149b-070",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The queen is shorter than the cat.",
+   "The cat is shorter than the boy.",
+   "The boy is shorter than the wolf."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "wolf"
+ },
+ {
+  "id": "E149b-071",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The bird is taller than the ant.",
+   "The ant is taller than the king.",
+   "The king is taller than the fox."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "fox"
+ },
+ {
+  "id": "E149b-072",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The clown is shorter than the bear.",
+   "The bear is shorter than the cat.",
+   "The cat is shorter than the cow."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "clown"
+ },
+ {
+  "id": "E149b-073",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The boy is shorter than the wolf.",
+   "The wolf is shorter than the pilot.",
+   "The pilot is shorter than the dog."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "dog"
+ },
+ {
+  "id": "E149b-074",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The boy is shorter than the shark.",
+   "The shark is shorter than the owl.",
+   "The owl is shorter than the man."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "man"
+ },
+ {
+  "id": "E149b-075",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The mouse is taller than the sheep.",
+   "The sheep is taller than the goat.",
+   "The goat is taller than the owl."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "owl"
+ },
+ {
+  "id": "E149b-076",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The lion is shorter than the cat.",
+   "The cat is shorter than the sheep.",
+   "The sheep is shorter than the bat."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "lion"
+ },
+ {
+  "id": "E149b-077",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The wolf is shorter than the bee.",
+   "The bee is shorter than the frog.",
+   "The frog is shorter than the monk."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "wolf"
+ },
+ {
+  "id": "E149b-078",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The shark is taller than the man.",
+   "The man is taller than the whale.",
+   "The whale is taller than the wolf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "wolf"
+ },
+ {
+  "id": "E149b-079",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The ape is shorter than the cow.",
+   "The cow is shorter than the boy.",
+   "The boy is shorter than the girl."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "girl"
+ },
+ {
+  "id": "E149b-080",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The sheep is taller than the wolf.",
+   "The wolf is taller than the tiger.",
+   "The tiger is taller than the man."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "sheep"
+ },
+ {
+  "id": "E149b-081",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The deer is taller than the girl.",
+   "The girl is taller than the monk.",
+   "The monk is taller than the hen."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "deer"
+ },
+ {
+  "id": "E149b-082",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The monk is taller than the sheep.",
+   "The sheep is taller than the girl.",
+   "The girl is taller than the bat."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "monk"
+ },
+ {
+  "id": "E149b-083",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The girl is shorter than the owl.",
+   "The owl is shorter than the bird.",
+   "The bird is shorter than the frog."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "girl"
+ },
+ {
+  "id": "E149b-084",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The hen is shorter than the lion.",
+   "The lion is shorter than the ant.",
+   "The ant is shorter than the wolf."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "hen"
+ },
+ {
+  "id": "E149b-085",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The cat is shorter than the queen.",
+   "The queen is shorter than the deer.",
+   "The deer is shorter than the eagle."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "cat"
+ },
+ {
+  "id": "E149b-086",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The man is shorter than the lion.",
+   "The lion is shorter than the owl.",
+   "The owl is shorter than the pig."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "pig"
+ },
+ {
+  "id": "E149b-087",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The hen is shorter than the duck.",
+   "The duck is shorter than the fish.",
+   "The fish is shorter than the horse."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "horse"
+ },
+ {
+  "id": "E149b-088",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The goat is taller than the wolf.",
+   "The wolf is taller than the king.",
+   "The king is taller than the snake."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "goat"
+ },
+ {
+  "id": "E149b-089",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The snake is taller than the bee.",
+   "The bee is taller than the cow.",
+   "The cow is taller than the man."
+  ],
+  "question": "Who is the tallest?",
+  "gold": "snake"
+ },
+ {
+  "id": "E149b-090",
+  "stratum": "transitive-3hop",
+  "facts": [
+   "The clown is taller than the chef.",
+   "The chef is taller than the whale.",
+   "The whale is taller than the nurse."
+  ],
+  "question": "Who is the shortest?",
+  "gold": "nurse"
+ },
+ {
+  "id": "E149b-091",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The eagle's pet is the mouse.",
+   "The mouse's friend is the chef."
+  ],
+  "question": "Who is the eagle's pet's friend?",
+  "gold": "chef"
+ },
+ {
+  "id": "E149b-092",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The frog's friend is the king.",
+   "The king's car is the nurse."
+  ],
+  "question": "Who is the frog's friend's car?",
+  "gold": "nurse"
+ },
+ {
+  "id": "E149b-093",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The wolf's car is the girl.",
+   "The girl's hat is the pilot."
+  ],
+  "question": "Who is the wolf's car's hat?",
+  "gold": "pilot"
+ },
+ {
+  "id": "E149b-094",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The dog's toy is the chef.",
+   "The chef's car is the whale."
+  ],
+  "question": "Who is the dog's toy's car?",
+  "gold": "whale"
+ },
+ {
+  "id": "E149b-095",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The nurse's toy is the frog.",
+   "The frog's car is the ape."
+  ],
+  "question": "Who is the nurse's toy's car?",
+  "gold": "ape"
+ },
+ {
+  "id": "E149b-096",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The whale's friend is the bird.",
+   "The bird's book is the snake."
+  ],
+  "question": "Who is the whale's friend's book?",
+  "gold": "snake"
+ },
+ {
+  "id": "E149b-097",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The owl's book is the wolf.",
+   "The wolf's friend is the frog."
+  ],
+  "question": "Who is the owl's book's friend?",
+  "gold": "frog"
+ },
+ {
+  "id": "E149b-098",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The goat's car is the ant.",
+   "The ant's toy is the cat."
+  ],
+  "question": "Who is the goat's car's toy?",
+  "gold": "cat"
+ },
+ {
+  "id": "E149b-099",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The bird's pet is the ant.",
+   "The ant's hat is the cat."
+  ],
+  "question": "Who is the bird's pet's hat?",
+  "gold": "cat"
+ },
+ {
+  "id": "E149b-100",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The fish's pet is the whale.",
+   "The whale's book is the snake."
+  ],
+  "question": "Who is the fish's pet's book?",
+  "gold": "snake"
+ },
+ {
+  "id": "E149b-101",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The owl's friend is the queen.",
+   "The queen's car is the cow."
+  ],
+  "question": "Who is the owl's friend's car?",
+  "gold": "cow"
+ },
+ {
+  "id": "E149b-102",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The ant's book is the queen.",
+   "The queen's friend is the sheep."
+  ],
+  "question": "Who is the ant's book's friend?",
+  "gold": "sheep"
+ },
+ {
+  "id": "E149b-103",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The fox's pet is the pig.",
+   "The pig's toy is the sheep."
+  ],
+  "question": "Who is the fox's pet's toy?",
+  "gold": "sheep"
+ },
+ {
+  "id": "E149b-104",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The pilot's toy is the goat.",
+   "The goat's friend is the deer."
+  ],
+  "question": "Who is the pilot's toy's friend?",
+  "gold": "deer"
+ },
+ {
+  "id": "E149b-105",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The mouse's friend is the monk.",
+   "The monk's pet is the fox."
+  ],
+  "question": "Who is the mouse's friend's pet?",
+  "gold": "fox"
+ },
+ {
+  "id": "E149b-106",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The chef's pet is the ant.",
+   "The ant's car is the mouse."
+  ],
+  "question": "Who is the chef's pet's car?",
+  "gold": "mouse"
+ },
+ {
+  "id": "E149b-107",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The ape's toy is the bat.",
+   "The bat's hat is the fish."
+  ],
+  "question": "Who is the ape's toy's hat?",
+  "gold": "fish"
+ },
+ {
+  "id": "E149b-108",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The girl's friend is the horse.",
+   "The horse's pet is the fox."
+  ],
+  "question": "Who is the girl's friend's pet?",
+  "gold": "fox"
+ },
+ {
+  "id": "E149b-109",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The hen's friend is the whale.",
+   "The whale's car is the horse."
+  ],
+  "question": "Who is the hen's friend's car?",
+  "gold": "horse"
+ },
+ {
+  "id": "E149b-110",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The hen's friend is the queen.",
+   "The queen's hat is the crab."
+  ],
+  "question": "Who is the hen's friend's hat?",
+  "gold": "crab"
+ },
+ {
+  "id": "E149b-111",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The shark's book is the nurse.",
+   "The nurse's toy is the wolf."
+  ],
+  "question": "Who is the shark's book's toy?",
+  "gold": "wolf"
+ },
+ {
+  "id": "E149b-112",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The sheep's car is the bird.",
+   "The bird's toy is the pig."
+  ],
+  "question": "Who is the sheep's car's toy?",
+  "gold": "pig"
+ },
+ {
+  "id": "E149b-113",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The king's friend is the horse.",
+   "The horse's toy is the goat."
+  ],
+  "question": "Who is the king's friend's toy?",
+  "gold": "goat"
+ },
+ {
+  "id": "E149b-114",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The bee's pet is the ape.",
+   "The ape's car is the chef."
+  ],
+  "question": "Who is the bee's pet's car?",
+  "gold": "chef"
+ },
+ {
+  "id": "E149b-115",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The mouse's toy is the pilot.",
+   "The pilot's friend is the crab."
+  ],
+  "question": "Who is the mouse's toy's friend?",
+  "gold": "crab"
+ },
+ {
+  "id": "E149b-116",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The bat's book is the tiger.",
+   "The tiger's hat is the ape."
+  ],
+  "question": "Who is the bat's book's hat?",
+  "gold": "ape"
+ },
+ {
+  "id": "E149b-117",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The sheep's car is the fish.",
+   "The fish's toy is the man."
+  ],
+  "question": "Who is the sheep's car's toy?",
+  "gold": "man"
+ },
+ {
+  "id": "E149b-118",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The bee's toy is the deer.",
+   "The deer's hat is the eagle."
+  ],
+  "question": "Who is the bee's toy's hat?",
+  "gold": "eagle"
+ },
+ {
+  "id": "E149b-119",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The horse's book is the sheep.",
+   "The sheep's toy is the deer."
+  ],
+  "question": "Who is the horse's book's toy?",
+  "gold": "deer"
+ },
+ {
+  "id": "E149b-120",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The monk's book is the cow.",
+   "The cow's toy is the hen."
+  ],
+  "question": "Who is the monk's book's toy?",
+  "gold": "hen"
+ },
+ {
+  "id": "E149b-121",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The tiger's book is the bat.",
+   "The bat's hat is the shark."
+  ],
+  "question": "Who is the tiger's book's hat?",
+  "gold": "shark"
+ },
+ {
+  "id": "E149b-122",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The owl's pet is the chef.",
+   "The chef's friend is the boy."
+  ],
+  "question": "Who is the owl's pet's friend?",
+  "gold": "boy"
+ },
+ {
+  "id": "E149b-123",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The queen's pet is the man.",
+   "The man's book is the cat."
+  ],
+  "question": "Who is the queen's pet's book?",
+  "gold": "cat"
+ },
+ {
+  "id": "E149b-124",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The girl's book is the man.",
+   "The man's friend is the snake."
+  ],
+  "question": "Who is the girl's book's friend?",
+  "gold": "snake"
+ },
+ {
+  "id": "E149b-125",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The deer's car is the duck.",
+   "The duck's friend is the cat."
+  ],
+  "question": "Who is the deer's car's friend?",
+  "gold": "cat"
+ },
+ {
+  "id": "E149b-126",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The girl's pet is the crab.",
+   "The crab's friend is the goat."
+  ],
+  "question": "Who is the girl's pet's friend?",
+  "gold": "goat"
+ },
+ {
+  "id": "E149b-127",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The cow's friend is the ant.",
+   "The ant's toy is the bird."
+  ],
+  "question": "Who is the cow's friend's toy?",
+  "gold": "bird"
+ },
+ {
+  "id": "E149b-128",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The lion's book is the wolf.",
+   "The wolf's car is the deer."
+  ],
+  "question": "Who is the lion's book's car?",
+  "gold": "deer"
+ },
+ {
+  "id": "E149b-129",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The cow's car is the duck.",
+   "The duck's toy is the rat."
+  ],
+  "question": "Who is the cow's car's toy?",
+  "gold": "rat"
+ },
+ {
+  "id": "E149b-130",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The eagle's hat is the ant.",
+   "The ant's book is the whale."
+  ],
+  "question": "Who is the eagle's hat's book?",
+  "gold": "whale"
+ },
+ {
+  "id": "E149b-131",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The horse's toy is the wolf.",
+   "The wolf's pet is the bear."
+  ],
+  "question": "Who is the horse's toy's pet?",
+  "gold": "bear"
+ },
+ {
+  "id": "E149b-132",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The whale's car is the eagle.",
+   "The eagle's hat is the bat."
+  ],
+  "question": "Who is the whale's car's hat?",
+  "gold": "bat"
+ },
+ {
+  "id": "E149b-133",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The whale's friend is the owl.",
+   "The owl's hat is the nurse."
+  ],
+  "question": "Who is the whale's friend's hat?",
+  "gold": "nurse"
+ },
+ {
+  "id": "E149b-134",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The clown's book is the duck.",
+   "The duck's car is the sheep."
+  ],
+  "question": "Who is the clown's book's car?",
+  "gold": "sheep"
+ },
+ {
+  "id": "E149b-135",
+  "stratum": "compositional-2hop",
+  "facts": [
+   "The queen's car is the shark.",
+   "The shark's hat is the goat."
+  ],
+  "question": "Who is the queen's car's hat?",
+  "gold": "goat"
+ },
+ {
+  "id": "E149b-136",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The queen's pet is the bird.",
+   "The bird's car is the bear.",
+   "The bear's book is the mouse."
+  ],
+  "question": "Who is the queen's pet's car's book?",
+  "gold": "mouse"
+ },
+ {
+  "id": "E149b-137",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The chef's car is the lion.",
+   "The lion's friend is the eagle.",
+   "The eagle's hat is the clown."
+  ],
+  "question": "Who is the chef's car's friend's hat?",
+  "gold": "clown"
+ },
+ {
+  "id": "E149b-138",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The whale's pet is the fish.",
+   "The fish's car is the lion.",
+   "The lion's book is the deer."
+  ],
+  "question": "Who is the whale's pet's car's book?",
+  "gold": "deer"
+ },
+ {
+  "id": "E149b-139",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The man's hat is the boy.",
+   "The boy's pet is the bird.",
+   "The bird's book is the king."
+  ],
+  "question": "Who is the man's hat's pet's book?",
+  "gold": "king"
+ },
+ {
+  "id": "E149b-140",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The owl's pet is the mouse.",
+   "The mouse's friend is the horse.",
+   "The horse's hat is the king."
+  ],
+  "question": "Who is the owl's pet's friend's hat?",
+  "gold": "king"
+ },
+ {
+  "id": "E149b-141",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The ape's hat is the queen.",
+   "The queen's friend is the whale.",
+   "The whale's toy is the shark."
+  ],
+  "question": "Who is the ape's hat's friend's toy?",
+  "gold": "shark"
+ },
+ {
+  "id": "E149b-142",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The lion's toy is the fox.",
+   "The fox's book is the boy.",
+   "The boy's car is the king."
+  ],
+  "question": "Who is the lion's toy's book's car?",
+  "gold": "king"
+ },
+ {
+  "id": "E149b-143",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The cow's book is the nurse.",
+   "The nurse's pet is the duck.",
+   "The duck's toy is the rat."
+  ],
+  "question": "Who is the cow's book's pet's toy?",
+  "gold": "rat"
+ },
+ {
+  "id": "E149b-144",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The ant's friend is the girl.",
+   "The girl's pet is the boy.",
+   "The boy's hat is the snake."
+  ],
+  "question": "Who is the ant's friend's pet's hat?",
+  "gold": "snake"
+ },
+ {
+  "id": "E149b-145",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The shark's toy is the eagle.",
+   "The eagle's car is the bee.",
+   "The bee's pet is the whale."
+  ],
+  "question": "Who is the shark's toy's car's pet?",
+  "gold": "whale"
+ },
+ {
+  "id": "E149b-146",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The mouse's pet is the dog.",
+   "The dog's hat is the lion.",
+   "The lion's book is the nurse."
+  ],
+  "question": "Who is the mouse's pet's hat's book?",
+  "gold": "nurse"
+ },
+ {
+  "id": "E149b-147",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The fox's book is the man.",
+   "The man's friend is the king.",
+   "The king's hat is the whale."
+  ],
+  "question": "Who is the fox's book's friend's hat?",
+  "gold": "whale"
+ },
+ {
+  "id": "E149b-148",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The ant's friend is the bear.",
+   "The bear's pet is the duck.",
+   "The duck's car is the king."
+  ],
+  "question": "Who is the ant's friend's pet's car?",
+  "gold": "king"
+ },
+ {
+  "id": "E149b-149",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The king's hat is the cow.",
+   "The cow's pet is the monk.",
+   "The monk's car is the bird."
+  ],
+  "question": "Who is the king's hat's pet's car?",
+  "gold": "bird"
+ },
+ {
+  "id": "E149b-150",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The ant's book is the ape.",
+   "The ape's car is the cat.",
+   "The cat's pet is the goat."
+  ],
+  "question": "Who is the ant's book's car's pet?",
+  "gold": "goat"
+ },
+ {
+  "id": "E149b-151",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The cow's friend is the cat.",
+   "The cat's toy is the chef.",
+   "The chef's hat is the deer."
+  ],
+  "question": "Who is the cow's friend's toy's hat?",
+  "gold": "deer"
+ },
+ {
+  "id": "E149b-152",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The snake's hat is the ant.",
+   "The ant's toy is the hen.",
+   "The hen's book is the bee."
+  ],
+  "question": "Who is the snake's hat's toy's book?",
+  "gold": "bee"
+ },
+ {
+  "id": "E149b-153",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The hen's toy is the duck.",
+   "The duck's car is the queen.",
+   "The queen's hat is the ape."
+  ],
+  "question": "Who is the hen's toy's car's hat?",
+  "gold": "ape"
+ },
+ {
+  "id": "E149b-154",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The clown's hat is the goat.",
+   "The goat's friend is the king.",
+   "The king's book is the wolf."
+  ],
+  "question": "Who is the clown's hat's friend's book?",
+  "gold": "wolf"
+ },
+ {
+  "id": "E149b-155",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The cat's friend is the deer.",
+   "The deer's car is the ant.",
+   "The ant's toy is the lion."
+  ],
+  "question": "Who is the cat's friend's car's toy?",
+  "gold": "lion"
+ },
+ {
+  "id": "E149b-156",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The horse's toy is the cat.",
+   "The cat's friend is the crab.",
+   "The crab's hat is the snake."
+  ],
+  "question": "Who is the horse's toy's friend's hat?",
+  "gold": "snake"
+ },
+ {
+  "id": "E149b-157",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The eagle's friend is the lion.",
+   "The lion's car is the nurse.",
+   "The nurse's hat is the duck."
+  ],
+  "question": "Who is the eagle's friend's car's hat?",
+  "gold": "duck"
+ },
+ {
+  "id": "E149b-158",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The cat's toy is the deer.",
+   "The deer's book is the eagle.",
+   "The eagle's friend is the crab."
+  ],
+  "question": "Who is the cat's toy's book's friend?",
+  "gold": "crab"
+ },
+ {
+  "id": "E149b-159",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The cow's car is the goat.",
+   "The goat's friend is the snake.",
+   "The snake's toy is the cat."
+  ],
+  "question": "Who is the cow's car's friend's toy?",
+  "gold": "cat"
+ },
+ {
+  "id": "E149b-160",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The bee's pet is the clown.",
+   "The clown's toy is the girl.",
+   "The girl's friend is the eagle."
+  ],
+  "question": "Who is the bee's pet's toy's friend?",
+  "gold": "eagle"
+ },
+ {
+  "id": "E149b-161",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The cow's pet is the queen.",
+   "The queen's car is the bee.",
+   "The bee's friend is the pilot."
+  ],
+  "question": "Who is the cow's pet's car's friend?",
+  "gold": "pilot"
+ },
+ {
+  "id": "E149b-162",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The frog's pet is the queen.",
+   "The queen's hat is the owl.",
+   "The owl's book is the duck."
+  ],
+  "question": "Who is the frog's pet's hat's book?",
+  "gold": "duck"
+ },
+ {
+  "id": "E149b-163",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The rat's pet is the deer.",
+   "The deer's toy is the queen.",
+   "The queen's book is the ape."
+  ],
+  "question": "Who is the rat's pet's toy's book?",
+  "gold": "ape"
+ },
+ {
+  "id": "E149b-164",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The deer's car is the bat.",
+   "The bat's pet is the lion.",
+   "The lion's hat is the eagle."
+  ],
+  "question": "Who is the deer's car's pet's hat?",
+  "gold": "eagle"
+ },
+ {
+  "id": "E149b-165",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The bat's book is the pig.",
+   "The pig's friend is the whale.",
+   "The whale's pet is the mouse."
+  ],
+  "question": "Who is the bat's book's friend's pet?",
+  "gold": "mouse"
+ },
+ {
+  "id": "E149b-166",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The shark's toy is the duck.",
+   "The duck's hat is the hen.",
+   "The hen's car is the bear."
+  ],
+  "question": "Who is the shark's toy's hat's car?",
+  "gold": "bear"
+ },
+ {
+  "id": "E149b-167",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The cow's friend is the sheep.",
+   "The sheep's toy is the pilot.",
+   "The pilot's car is the mouse."
+  ],
+  "question": "Who is the cow's friend's toy's car?",
+  "gold": "mouse"
+ },
+ {
+  "id": "E149b-168",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The lion's friend is the bird.",
+   "The bird's pet is the man.",
+   "The man's book is the dog."
+  ],
+  "question": "Who is the lion's friend's pet's book?",
+  "gold": "dog"
+ },
+ {
+  "id": "E149b-169",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The fox's friend is the tiger.",
+   "The tiger's hat is the bat.",
+   "The bat's book is the owl."
+  ],
+  "question": "Who is the fox's friend's hat's book?",
+  "gold": "owl"
+ },
+ {
+  "id": "E149b-170",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The wolf's car is the deer.",
+   "The deer's friend is the queen.",
+   "The queen's toy is the nurse."
+  ],
+  "question": "Who is the wolf's car's friend's toy?",
+  "gold": "nurse"
+ },
+ {
+  "id": "E149b-171",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The boy's pet is the nurse.",
+   "The nurse's friend is the lion.",
+   "The lion's toy is the bird."
+  ],
+  "question": "Who is the boy's pet's friend's toy?",
+  "gold": "bird"
+ },
+ {
+  "id": "E149b-172",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The queen's friend is the eagle.",
+   "The eagle's book is the monk.",
+   "The monk's pet is the duck."
+  ],
+  "question": "Who is the queen's friend's book's pet?",
+  "gold": "duck"
+ },
+ {
+  "id": "E149b-173",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The clown's hat is the bee.",
+   "The bee's toy is the man.",
+   "The man's book is the queen."
+  ],
+  "question": "Who is the clown's hat's toy's book?",
+  "gold": "queen"
+ },
+ {
+  "id": "E149b-174",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The bear's toy is the dog.",
+   "The dog's book is the nurse.",
+   "The nurse's car is the boy."
+  ],
+  "question": "Who is the bear's toy's book's car?",
+  "gold": "boy"
+ },
+ {
+  "id": "E149b-175",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The bee's hat is the boy.",
+   "The boy's pet is the monk.",
+   "The monk's car is the cat."
+  ],
+  "question": "Who is the bee's hat's pet's car?",
+  "gold": "cat"
+ },
+ {
+  "id": "E149b-176",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The sheep's pet is the hen.",
+   "The hen's hat is the pig.",
+   "The pig's book is the king."
+  ],
+  "question": "Who is the sheep's pet's hat's book?",
+  "gold": "king"
+ },
+ {
+  "id": "E149b-177",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The bear's car is the goat.",
+   "The goat's friend is the lion.",
+   "The lion's pet is the bird."
+  ],
+  "question": "Who is the bear's car's friend's pet?",
+  "gold": "bird"
+ },
+ {
+  "id": "E149b-178",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The hen's friend is the ant.",
+   "The ant's hat is the clown.",
+   "The clown's car is the sheep."
+  ],
+  "question": "Who is the hen's friend's hat's car?",
+  "gold": "sheep"
+ },
+ {
+  "id": "E149b-179",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The nurse's hat is the mouse.",
+   "The mouse's toy is the ape.",
+   "The ape's friend is the man."
+  ],
+  "question": "Who is the nurse's hat's toy's friend?",
+  "gold": "man"
+ },
+ {
+  "id": "E149b-180",
+  "stratum": "compositional-3hop",
+  "facts": [
+   "The whale's toy is the shark.",
+   "The shark's pet is the tiger.",
+   "The tiger's friend is the crab."
+  ],
+  "question": "Who is the whale's toy's pet's friend?",
+  "gold": "crab"
+ }
+]

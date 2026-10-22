@@ -1,0 +1,22 @@
+[g7] G7.1 pass: constructor 5e03f206dd907b52… frozen, audit PASS.
+[g0] G0 pass: bench pin 9be8162633fe19aa…, 60 items.
+[run] torch intra-op threads pinned: 2
+[run] G1' pass: 240/240 in-prompt occurrences single-token.
+[run] Δθ=0 pre-run hash OK: ec276abe3902fab0…
+[run] B arm complete: 60 passes; B accuracy 36/60.
+[run] reference passes complete: 60 passes.
+[run] construction complete: 60 d_i at ratio 1.5, 60 at 3.0; 60 g_i unit directions (R seed 94094), scaled per ratio.
+[run] norm-tie check: ||B_wrong_i(r)|| == ||T_i(r)|| on all 60 items x 2 ratios.
+[run] degeneracy: mean|cos|=0.7923 (sanity vs 0.7923 OK; bar 0.95).
+[run] STEP-0 B agreement: 60/60 per-item decisions match the archived EXP094 baseline (determinism self-check OK).
+[run] STEP-1 delivery: 240/240 ratios computed; 240/240 in band; exclusions per (ratio, arm): ('1.5', 'T')=0, ('1.5', 'W')=0, ('3.0', 'T')=0, ('3.0', 'W')=0.
+[run] sweep T(1.5): 60/60 passes complete.
+[run] sweep B_wrong(1.5): 60/60 passes complete.
+[run] sweep T(3.0): 60/60 passes complete.
+[run] sweep B_wrong(3.0): 60/60 passes complete.
+[run] sweep complete. Total passes: 360 (planned 360, expected 390, cap 600).
+[run] Δθ=0 post-run hash OK (Δθ=0 verified).
+[run] routing ratio 1.5: LIVE (B_wrong>=1 flip); ties=0/180; flips T=7, W=11.
+[run] routing ratio 3.0: LIVE (B_wrong>=1 flip); ties=0/180; flips T=10, W=15.
+[run] scoring complete: 18 stratum cells (protocol '54 cells' = 18 contrast cells x 3 stats).
+[run] per-item CSV written: out/per_item_records.csv (300 rows).

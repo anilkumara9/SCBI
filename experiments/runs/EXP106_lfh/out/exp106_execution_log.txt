@@ -1,0 +1,23 @@
+[2026-09-29T04:46:16] ENV: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "sklearn": "1.9.1", "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m", "site_hidden_states_index": 20, "head": "LogisticRegression(penalty='l2', C=1.0) [all other params default]", "date": "2026-09-29"}
+[2026-09-29T04:46:16] G0 bench pin OK: 9be8162633fe19aa... (60 items)
+[2026-09-29T04:46:16] y_train: A-first(1)=30, C-first(0)=30
+[2026-09-29T04:46:16] test archive: X_test (60, 1024) float32; A-first(1)=30, C-first(0)=30
+[2026-09-29T04:46:16] OVERLAP TRIPWIRE: 0 shared item IDs
+[2026-09-29T04:46:16] loading tokenizer + frozen model...
+[2026-09-29T04:46:24] G1 pre hash: ec276abe3902fab0... match=True
+[2026-09-29T04:46:24] extracting train embeddings (60 passes, premise-only, hidden_states[20])...
+[2026-09-29T04:46:55] X_train (60, 1024), std per-dim mean=1.6312
+[2026-09-29T04:46:58] G1 post hash: ec276abe3902fab0... match=True (Δθ=0)
+[2026-09-29T04:46:58] head fit: n_iter=[18], coef shape=(1, 1024)
+[2026-09-29T04:46:58] train accuracy (secondary, non-binding): 1.0000 (60/60)
+[2026-09-29T04:46:58] TEST SCORE: 60/60 = 1.0000
+[2026-09-29T04:46:58] one-sided binomial p (vs 0.5): 0.000000
+[2026-09-29T04:46:58] test-bench reconstruction verified: 60/60 ids + phrasing match archive
+[2026-09-29T04:46:58] block-off: fresh backbone-only extraction, pass 1...
+[2026-09-29T04:47:29] block-off: fresh backbone-only extraction, pass 2...
+[2026-09-29T04:48:01] determinism pass1==pass2: True
+[2026-09-29T04:48:01] byte-identity fresh==archive: True
+[2026-09-29T04:48:01] sha archive=fe01b33d742be8ce fresh1=fe01b33d742be8ce fresh2=fe01b33d742be8ce
+[2026-09-29T04:48:01] BLOCK-OFF: PASS
+[2026-09-29T04:48:04] G1 final hash: ec276abe3902fab0... match=True
+[2026-09-29T04:48:04] RESULT: {"x": 60, "n": 60, "acc": 1.0, "p_one_sided_vs_chance": 8.673617379884035e-19, "train_acc": 1.0, "overlap": [], "blockoff_pass": true, "determinism_pass1_eq_pass2": true, "final_hash_ok": true}

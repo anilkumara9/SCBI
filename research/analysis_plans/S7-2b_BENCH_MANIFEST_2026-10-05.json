@@ -1,0 +1,27 @@
+{
+ "bench_sha256": "b9eac3893ddfbc67400a5d2b5cbb694ba81308471caf4a150476227065e56545",
+ "date": "2026-10-05",
+ "delta_vs_committed": "PLANET_VOCAB[8]: 'Triton' -> 'Neptune' (single documented change)",
+ "derivation": "S7-2b_build_bench_2026-10-05.py",
+ "derived_from_committed_pin": "9be8162633fe19aa2a924440d8ba158c1cc4e734c1f2a554a01a27e459f47fc4",
+ "g0": {
+  "n": 60,
+  "pin": "b9eac3893ddfbc67400a5d2b5cbb694ba81308471caf4a150476227065e56545",
+  "strata": {
+   "Elemental/A-first": 14,
+   "Elemental/C-first": 16,
+   "Planetary/A-first": 16,
+   "Planetary/C-first": 14
+  },
+  "unique_tuples": 60
+ },
+ "g1prime": "240/240",
+ "g2_oracle_accuracy": 0.06071548821548822,
+ "g2_permutation_p": 0.5312468753124687,
+ "n_items": 60,
+ "replacement": "Neptune",
+ "replacement_token_ids_gpt2_bpe": [
+  26461
+ ],
+ "tokenizer": "gpt2 @ 607a30d783dfa663caf39e06633721c8d4cfcd7e (tokenizer files only; no weights)"
+}

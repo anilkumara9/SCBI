@@ -1,0 +1,112 @@
+{
+  "verdict": "RUN-INVALID (Phase 0b: no generation decision channel on this bench/shape)",
+  "gates": {},
+  "phases": {
+    "phase0a": {
+      "recited_items": 0,
+      "denominator": 10,
+      "details": [
+        {
+          "item": 0,
+          "n_outlines": 4,
+          "n_recited_literal": 0,
+          "n_recited_content_diagnostic": 3,
+          "recited": false
+        },
+        {
+          "item": 1,
+          "n_outlines": 4,
+          "n_recited_literal": 0,
+          "n_recited_content_diagnostic": 3,
+          "recited": false
+        },
+        {
+          "item": 2,
+          "n_outlines": 4,
+          "n_recited_literal": 0,
+          "n_recited_content_diagnostic": 3,
+          "recited": false
+        },
+        {
+          "item": 5,
+          "n_outlines": 4,
+          "n_recited_literal": 0,
+          "n_recited_content_diagnostic": 3,
+          "recited": false
+        },
+        {
+          "item": 6,
+          "n_outlines": 4,
+          "n_recited_literal": 0,
+          "n_recited_content_diagnostic": 3,
+          "recited": false
+        },
+        {
+          "item": 7,
+          "n_outlines": 4,
+          "n_recited_literal": 0,
+          "n_recited_content_diagnostic": 3,
+          "recited": false
+        },
+        {
+          "item": 8,
+          "n_outlines": 4,
+          "n_recited_literal": 0,
+          "n_recited_content_diagnostic": 3,
+          "recited": false
+        },
+        {
+          "item": 9,
+          "n_outlines": 4,
+          "n_recited_literal": 0,
+          "n_recited_content_diagnostic": 3,
+          "recited": false
+        },
+        {
+          "item": 10,
+          "n_outlines": 4,
+          "n_recited_literal": 0,
+          "n_recited_content_diagnostic": 3,
+          "recited": false
+        },
+        {
+          "item": 11,
+          "n_outlines": 4,
+          "n_recited_literal": 0,
+          "n_recited_content_diagnostic": 3,
+          "recited": false
+        }
+      ],
+      "diagnostic_mean_max_token_overlap": 0.7054129853522436,
+      "content_recited_items_diagnostic": 10
+    },
+    "phase0b": {
+      "parseable": 0,
+      "denominator": 10,
+      "distinct": 0,
+      "minority": 0
+    }
+  },
+  "items": [],
+  "exceptions_total_note": "see generations records",
+  "worksheet": {
+    "env": {
+      "torch": "2.14.0+cpu",
+      "transformers": "5.17.0",
+      "numpy": "2.5.3",
+      "accelerate": "1.15.0"
+    },
+    "threads": 2,
+    "seeds": {
+      "torch": 0,
+      "numpy": 0
+    },
+    "pins": {
+      "bench_provenance": "47281cd3dc243369be0aa5be2345663b752cdb4a329a16a37f08da5717230585",
+      "backbone": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed"
+    },
+    "device_map": "cpu",
+    "planner_prompt_byte_identity_mismatches": 0
+  },
+  "completed_utc": "2026-09-29T09:57:07Z"
+}

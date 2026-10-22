@@ -1,0 +1,10 @@
+{
+ "experiment": "EXP143",
+ "verdict": "KILL",
+ "primary_rho": 0.11555504539675365,
+ "primary_p": 0.8102618973810262,
+ "secondary_delta": -0.04166666666666663,
+ "secondary_p": 0.7075429245707543,
+ "forwards": 240,
+ "generations": 246
+}

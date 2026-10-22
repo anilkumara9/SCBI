@@ -1,0 +1,10 @@
+{
+ "addendum_to": "checker_verification.json",
+ "date": "2026-09-28",
+ "author": "EXP104 Tier-0 execution lane",
+ "change": "primary:exp104_t0_06 (PlayStation->Japan, FLAGGED: SIE HQ is San Mateo USA, ambiguous) replaced by backup:exp104_t0_01 (Corolla->Japan, checker-VERIFIED). Sunflowers backup (FLAGGED: non-unique Amsterdam/London) removed.",
+ "final_bench": "60 items = 59 checker-VERIFIED primaries + 1 checker-VERIFIED promoted backup",
+ "bench_accepted_final": true,
+ "g1_reprobe": "0 failures on final 60 items / 480 options (g1_probe.json)",
+ "manifest": "bench_manifest.json rebuilt 2026-09-28 (same shuffle seed; items 0-5,7-59 shuffles unchanged)"
+}

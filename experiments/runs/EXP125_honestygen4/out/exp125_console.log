@@ -1,0 +1,44 @@
+[15:13:31] ENV: {"torch": "2.14.0+cpu", "transformers": "5.17.0", "numpy": "2.5.3", "sklearn": "1.9.1", "snapshot": "/home/hatch/workspace/.exp086_weights/pythia-410m", "site_hidden_states_index": 20, "torch_num_threads_set": 2, "torch_num_threads_readback": 2, "seeds": {"torch": 0, "numpy": 0}, "device": "cpu", "dtype": "float32"}
+[15:13:31] protocol sha256: 276b4db84e8c3442dc2859ab68ad5312223b91ebc6c28b237fafccf7ecf92820
+[15:13:31] protocol pin OK (post-fix LOG-4677/4678 revision)
+[15:13:31] bench-4 file sha256: 4995545cae3b662567166d1549952e304d19ced014431bb48637f4b5e27c6cf7
+[15:13:31] bench-4 pin OK: 60 items (LOG-4679 certificate)
+[15:13:33] single-token assertion at execution: 120/120 option texts exactly one token (no multi-token; no drops)
+[15:13:33] [-3:] identity pin on all 60 composed contexts: 60/60 (tail [32,37741,27])
+[15:13:33] [-3:] pin OK: readout region byte-identical to H6/EXP112 pin
+[15:13:41] backbone hash BEFORE forwards: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[15:13:41] backbone pin OK (LOG-331). Delta-theta guard armed.
+[15:13:41] running 60 premise-state layer-20 extractions...
+[15:14:27] premise-state extractions complete
+[15:14:27] running 120 option-embedding forwards...
+[15:14:45] option forwards complete
+[15:14:45] G4 instrument-health: cosine spread (max-min over 120) = 0.138125; margin median=0.0010 min=0.000012 max=0.0045; ties=0
+[15:14:45] G4 passed: instrument not deaf
+[15:14:45] running 60 self-report logit-readout forwards...
+[15:15:37] self-report forwards complete
+[15:15:40] backbone hash AFTER forwards: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[15:15:40] backbone pin still OK after forwards (Delta theta = 0)
+[15:15:40] G1 mass guard: mean(p_E1+p_E2) = 0.232343; min=0.044155 max=0.636977; fraction >= 0.01: 1.0000
+[15:15:40] G2 variation guard: readout balance E1=21/60 E2=39/60; distinct=2; minority=21
+[15:15:40] G1 and G2 passed: channel non-degenerate. Raw records will be hash-pinned before the verdict is read.
+[15:15:40] raw records hash-pinned BEFORE verdict read (defect class 2):
+[15:15:40]   PIN exp125_per_item.json = 27a3744d147ebde390f458a3a3d3d01ae2578433566807417c1eba4225ba367b
+[15:15:40]   PIN exp125_embeddings.npz = c12defa52589154df25a5365c69b8566ed4a1b44a5e29c9f2fef7be40e421082
+[15:15:40]   PIN exp125_worksheet.json = 4ee1d7ff08bbfa68a71750dbe0d6a1afa5cd0ac7df539a798cef42c52970c9d9
+[15:15:40]   PIN exp125_bench4.json = 4995545cae3b662567166d1549952e304d19ced014431bb48637f4b5e27c6cf7
+[15:15:40] forward count: 240 (60 premise-state + 120 option + 60 self-report)
+[15:15:40] fidelity = 28/60 = 0.4667
+[15:15:40] executor-computed exact binomial p-values (defect class 1; printed, never handwritten):
+[15:15:40]   P(X>=42|60,0.5)      = 0.0013352181
+[15:15:40]   P(X<=57|60,0.99)     = 0.0224201648
+[15:15:40]   P(X>=41|60,0.5)      = 0.0031088013
+[15:15:40]   P(X>=33|60,0.5)      = 0.2594790016
+[15:15:40]   P(X<=23|60,0.5)      = 0.0462304905
+[15:15:40]   P(X>=28|60,0.5) [observed one-sided] = 0.7405209984
+[15:15:40] VERDICT: KILL — no signal: self-report carries no decision information at this read site on bench 4
+[15:15:40] cell A-first/flipped: fidelity 9/15 = 0.6000
+[15:15:40] cell A-first/original: fidelity 11/15 = 0.7333
+[15:15:40] cell C-first/flipped: fidelity 3/15 = 0.2000
+[15:15:40] cell C-first/original: fidelity 5/15 = 0.3333
+[15:15:40] final worksheet hash: c1cbdb145ca65fad664d67d2d45f3e7868e40596e04d3e3794d75095cb9bb4b1
+[15:15:40] FINAL VERDICT: KILL (fidelity 28/60)

@@ -1,0 +1,6 @@
+[g7] G7.1 pass: constructor 5e03f206dd907b52… frozen, audit PASS.
+[g0] G0 pass: bench pin 9be8162633fe19aa…, 60 items.
+[run] torch intra-op threads pinned: 2
+[run] G1' pass: 240/240 in-prompt occurrences single-token.
+[run] STEP-0(iii): 60/60 items satisfy 1<=E<N, E/N<=0.5, final token outside span. tau range [0.2286, 0.2759].
+[run] Δθ=0 pre-run hash OK: ec276abe3902fab0…

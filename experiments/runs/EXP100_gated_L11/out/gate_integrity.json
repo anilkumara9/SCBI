@@ -1,0 +1,27 @@
+{
+  "gate_source": "B_pass_only",
+  "n_block_input_captures": 60,
+  "capture_arm_tags": [
+    "B"
+  ],
+  "pre_hook_readonly": true,
+  "step_0iii": {
+    "E_over_N_le_0.5": "60/60",
+    "one_le_E_lt_N": "60/60",
+    "final_token_outside_span": "60/60",
+    "tau_in_(0,1]": "60/60"
+  },
+  "step_2a": "firing vector derived from B-pass captures only; injection-pass data never entered the gate computation",
+  "attention_backend": "sdpa (default; B pass bit-identical code path to EXP094-099)",
+  "attention_math_validation": {
+    "method": "WITHIN-backend eager ground truth: the eager model's own captured block-11 input through its own submodules vs its own output_attentions weights (separate model instance, output_attentions=True)",
+    "n_items": 3,
+    "max_abs_diff": 0.0,
+    "tol": 1e-05,
+    "pass": true
+  },
+  "backend_divergence_diagnostic": {
+    "note": "attempt-1 HOLD diagnosis (2026-09-28): cross-backend comparison is invalid \u2014 SDPA-vs-eager block-11 inputs already differ ~1e-5 from layers-0-10 backend divergence; logged, not gated",
+    "sdpa_vs_eager_block11_input_max_abs_diff_3_items": 8.58306884765625e-06
+  }
+}

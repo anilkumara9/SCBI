@@ -1,0 +1,6067 @@
+{
+  "rows": [
+    {
+      "item_id": "exp092_planetary_2hop_0",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 15.933974266052246
+        },
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 15.696517944335938
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 15.118949890136719
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.001709938049316
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.891870498657227
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_1",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 14.812408447265625
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 14.613391876220703
+        },
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 14.439698219299316
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.2539701461792
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 14.148568153381348
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_2",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 15.072192192077637
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 14.94408130645752
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.494637489318848
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 13.327311515808105
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.085653305053711
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_3",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 16.075786590576172
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 15.458707809448242
+        },
+        {
+          "id": 39776,
+          "str": " Triton",
+          "logit": 14.701038360595703
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.360832214355469
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.266012191772461
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_4",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 16.010766983032227
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 15.24461555480957
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 14.909858703613281
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.287939071655273
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 14.252337455749512
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_5",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.856307983398438
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 15.581138610839844
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.081700325012207
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.054580688476562
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 13.979931831359863
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_6",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 16.21051025390625
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 15.043965339660645
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.993033409118652
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.383641242980957
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 13.94260025024414
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_7",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.611854553222656
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 15.17768669128418
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 15.094217300415039
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.700272560119629
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.6688232421875
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_8",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 16.072633743286133
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.582399368286133
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.924980163574219
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.806187629699707
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.662626266479492
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_9",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 15.886697769165039
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 15.730921745300293
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.439666748046875
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.022834777832031
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.96695327758789
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_10",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 16.60570526123047
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.15414047241211
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 15.518826484680176
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.727982521057129
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 14.259350776672363
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_11",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.944914817810059
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 14.876272201538086
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 14.055244445800781
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.623859405517578
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.499160766601562
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_12",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 15.630842208862305
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 15.191943168640137
+        },
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 15.100855827331543
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.756172180175781
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.170392036437988
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_13",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.738508224487305
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.890181541442871
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 14.282440185546875
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.039981842041016
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.003783226013184
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_14",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 16.129457473754883
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 15.085237503051758
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 14.544363021850586
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.713561058044434
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.29761791229248
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_0",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 17.728057861328125
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.990434646606445
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.562657356262207
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.48036003112793
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 14.441193580627441
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_1",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 16.82781219482422
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 14.051841735839844
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 13.8840970993042
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.703720092773438
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.537036895751953
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_2",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 18.372310638427734
+        },
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 16.28167152404785
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 14.526190757751465
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.484872817993164
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 14.25875473022461
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_3",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 17.147050857543945
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.268224716186523
+        },
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 14.965361595153809
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.155071258544922
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.929303169250488
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_4",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 16.05632209777832
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 15.068906784057617
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 14.791664123535156
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.650835037231445
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.748053550720215
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_5",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 16.534692764282227
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 15.040663719177246
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.825002670288086
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.780054092407227
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 13.733757972717285
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_6",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 16.572900772094727
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 14.971053123474121
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 14.689577102661133
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.830300331115723
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 13.369294166564941
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_7",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 39776,
+          "str": " Triton",
+          "logit": 15.59357738494873
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 15.529093742370605
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.60322093963623
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.05950927734375
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.766499519348145
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_8",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 16.537382125854492
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 14.919514656066895
+        },
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 13.937448501586914
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.74832820892334
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 13.560518264770508
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_9",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 16.370630264282227
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.395171165466309
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.355445861816406
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 14.203107833862305
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.133252143859863
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_10",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 16.47103500366211
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 15.580636978149414
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.24178409576416
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.510818481445312
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.179821014404297
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_11",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 39776,
+          "str": " Triton",
+          "logit": 16.945634841918945
+        },
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 14.304179191589355
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.307706832885742
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 13.174040794372559
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 13.032232284545898
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_12",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 39776,
+          "str": " Triton",
+          "logit": 16.256284713745117
+        },
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 14.944745063781738
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.935005187988281
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 14.873144149780273
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.842145919799805
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_13",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 16.310626983642578
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 15.13625717163086
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.302258491516113
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.01471996307373
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 12.909510612487793
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_14",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.80190086364746
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 16.716670989990234
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.450705528259277
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.66112995147705
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 14.325199127197266
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_0",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 16.893095016479492
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 16.230260848999023
+        },
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 14.258405685424805
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.17521858215332
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 13.892974853515625
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_1",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 15.062825202941895
+        },
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 14.74930477142334
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.660353660583496
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.523856163024902
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.386704444885254
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_2",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 15.653648376464844
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.914761543273926
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.92963981628418
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.637261390686035
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.39479923248291
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_3",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 15.760342597961426
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 15.6206636428833
+        },
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 13.692700386047363
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.353466987609863
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.249462127685547
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_4",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.850072860717773
+        },
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 15.64629077911377
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 15.119384765625
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.733216285705566
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.504308700561523
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_5",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 16.765411376953125
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 16.39887809753418
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 16.37374496459961
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.251514434814453
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.22432804107666
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_6",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 18.464529037475586
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 14.658663749694824
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.55204963684082
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.667016983032227
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.3859281539917
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_7",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.561925888061523
+        },
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 14.983824729919434
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 14.941975593566895
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.159469604492188
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.156250953674316
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_8",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 15.76798152923584
+        },
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 13.911787986755371
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 13.814008712768555
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.75865364074707
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.648893356323242
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_9",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 15.0266695022583
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 15.011300086975098
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 14.864425659179688
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.787997245788574
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.531112670898438
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_10",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 14.968063354492188
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 14.272047996520996
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.600508689880371
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.458629608154297
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.3023099899292
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_11",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 16.850055694580078
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.251745223999023
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 15.278755187988281
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.156612396240234
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.47854232788086
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_12",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 16.32964515686035
+        },
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 14.54343318939209
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.730531692504883
+        },
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 13.655858039855957
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.55063247680664
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_13",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 15.702707290649414
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.946489334106445
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.840018272399902
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.503724098205566
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.423650741577148
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_14",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 15.863682746887207
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.727629661560059
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.673718452453613
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 13.307905197143555
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.307159423828125
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_0",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 17.056987762451172
+        },
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 16.246353149414062
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 13.871455192565918
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.583568572998047
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.428201675415039
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_1",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 15.49535846710205
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 15.05238151550293
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.705896377563477
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.48523998260498
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.33329963684082
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_2",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 16.37175941467285
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 14.701403617858887
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.961114883422852
+        },
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 13.947630882263184
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 13.77956485748291
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_3",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 16.085121154785156
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 15.75770092010498
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 14.441253662109375
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.87060260772705
+        },
+        {
+          "id": 309,
+          "str": " I",
+          "logit": 13.506135940551758
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_4",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.68683433532715
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 15.674116134643555
+        },
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 14.598457336425781
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.345061302185059
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.067831993103027
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_5",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 19.06464958190918
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.911446571350098
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.889326095581055
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.863306045532227
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.805587768554688
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_6",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 16.25450897216797
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 14.892512321472168
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.844452857971191
+        },
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 13.59868049621582
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.417917251586914
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_7",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 17.014225006103516
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 15.960068702697754
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 15.088196754455566
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 14.012524604797363
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.469889640808105
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_8",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 18.262348175048828
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 14.822224617004395
+        },
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 14.056536674499512
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.343997955322266
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.300984382629395
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_9",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 16.117294311523438
+        },
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 15.306476593017578
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 14.893830299377441
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 14.21882152557373
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.011946678161621
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_10",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 15.724291801452637
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.120382308959961
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.68425464630127
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.533884048461914
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 13.276216506958008
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_11",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 16.21692657470703
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 15.6868896484375
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 15.651792526245117
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.909004211425781
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.585076332092285
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_12",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 15.55186653137207
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.721774101257324
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.569510459899902
+        },
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 13.296303749084473
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.276673316955566
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_13",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 17.086524963378906
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 16.585241317749023
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.18964958190918
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.86428165435791
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 14.810323715209961
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_14",
+      "arm": "B",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 15.867502212524414
+        },
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 14.503912925720215
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.07240104675293
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.023042678833008
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.315484046936035
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_0",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 15.844252586364746
+        },
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 15.122352600097656
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 14.828070640563965
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 13.832265853881836
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.577281951904297
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_0",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 15.296808242797852
+        },
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 15.113153457641602
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 14.882878303527832
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.980802536010742
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 13.935673713684082
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_1",
+      "arm": "gated-T",
+      "source": "deterministic_copy",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 14.812408447265625
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 14.613391876220703
+        },
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 14.439698219299316
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.2539701461792
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 14.148568153381348
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_1",
+      "arm": "gated-R",
+      "source": "deterministic_copy",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 14.812408447265625
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 14.613391876220703
+        },
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 14.439698219299316
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.2539701461792
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 14.148568153381348
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_2",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 13.98117446899414
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 13.960731506347656
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.299590110778809
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 12.929606437683105
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 12.841058731079102
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_2",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 15.060267448425293
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 14.362916946411133
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.218718528747559
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.13399600982666
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 12.941656112670898
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_3",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 15.652711868286133
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 15.033478736877441
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.591992378234863
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.156268119812012
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 14.11276912689209
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_3",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 16.056062698364258
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 15.158585548400879
+        },
+        {
+          "id": 39776,
+          "str": " Triton",
+          "logit": 14.389570236206055
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.211206436157227
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 14.1174898147583
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_4",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 15.9155912399292
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.685786247253418
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 14.078470230102539
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.971424102783203
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.908458709716797
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_4",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 16.577848434448242
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 15.551006317138672
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 15.440223693847656
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.521390914916992
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.39342212677002
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_5",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 15.792986869812012
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 15.183914184570312
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.099286079406738
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.633098602294922
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 13.335049629211426
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_5",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 17.22734260559082
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 15.839705467224121
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 14.595747947692871
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.952775955200195
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.84787654876709
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_6",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 16.035137176513672
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.196954727172852
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.902902603149414
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 13.761565208435059
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 13.54451847076416
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_6",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 15.877022743225098
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.748820304870605
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 14.670687675476074
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.215564727783203
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.130836486816406
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_7",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.051166534423828
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 14.646934509277344
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 14.532692909240723
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.941567420959473
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.673358917236328
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_7",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.72310447692871
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 14.856435775756836
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 14.775834083557129
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.205448150634766
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.112287521362305
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_8",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 15.734500885009766
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.013948440551758
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.154000282287598
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.623132705688477
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.424182891845703
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_8",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 16.268613815307617
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.826338768005371
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.868340492248535
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.516788482666016
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.358409881591797
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_9",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 15.599735260009766
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 15.307286262512207
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.062898635864258
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.880030632019043
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.815813064575195
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_9",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 15.872509002685547
+        },
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 15.7866849899292
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.405377388000488
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.153600692749023
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.100467681884766
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_10",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 16.078475952148438
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 15.52583122253418
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 15.292832374572754
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.33922290802002
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.950528144836426
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_10",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 16.012794494628906
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 15.5198392868042
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 15.347502708435059
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.962565422058105
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 14.397345542907715
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_11",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.461175918579102
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 14.631343841552734
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.013423919677734
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 13.860126495361328
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.519599914550781
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_11",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.485222816467285
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 14.4048490524292
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 13.965941429138184
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.683788299560547
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.515715599060059
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_12",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 15.056495666503906
+        },
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 14.30295467376709
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 14.071614265441895
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.523595809936523
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.509422302246094
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_12",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 15.353259086608887
+        },
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 15.03338623046875
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 15.00700855255127
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.473594665527344
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.017115592956543
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_13",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.38646697998047
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.189860343933105
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 14.024118423461914
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.97443675994873
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.74347972869873
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_13",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 17.07526206970215
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.97160816192627
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.198564529418945
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.859565734863281
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.666946411132812
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_14",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 15.70602798461914
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 14.512894630432129
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 14.26533031463623
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.57585620880127
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.114898681640625
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_2hop_14",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 16.20685577392578
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 14.75086498260498
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 14.60603141784668
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.01063060760498
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.130537033081055
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_0",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 17.402009963989258
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.111452102661133
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 15.000502586364746
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 14.614972114562988
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.10981273651123
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_0",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 17.03969383239746
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.937076568603516
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.278520584106445
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 14.20995807647705
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.825222969055176
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_1",
+      "arm": "gated-T",
+      "source": "deterministic_copy",
+      "top5": [
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 16.82781219482422
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 14.051841735839844
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 13.8840970993042
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.703720092773438
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.537036895751953
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_1",
+      "arm": "gated-R",
+      "source": "deterministic_copy",
+      "top5": [
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 16.82781219482422
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 14.051841735839844
+        },
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 13.8840970993042
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.703720092773438
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.537036895751953
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_2",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 17.37680435180664
+        },
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 15.672799110412598
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.112503051757812
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.837562561035156
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.78303337097168
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_2",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 18.279104232788086
+        },
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 16.11491584777832
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.71720027923584
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 14.532488822937012
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.97426986694336
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_3",
+      "arm": "gated-T",
+      "source": "deterministic_copy",
+      "top5": [
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 17.147050857543945
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.268224716186523
+        },
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 14.965361595153809
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.155071258544922
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.929303169250488
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_3",
+      "arm": "gated-R",
+      "source": "deterministic_copy",
+      "top5": [
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 17.147050857543945
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.268224716186523
+        },
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 14.965361595153809
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.155071258544922
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.929303169250488
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_4",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 15.471489906311035
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 14.85617733001709
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.098187446594238
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 14.08554744720459
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.951123237609863
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_4",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 16.17890167236328
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.73765754699707
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 14.712544441223145
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 14.474535942077637
+        },
+        {
+          "id": 11777,
+          "str": " Mir",
+          "logit": 13.623491287231445
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_5",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 15.834726333618164
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.544748306274414
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.94072437286377
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.674555778503418
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 13.506484985351562
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_5",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 17.03497314453125
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.573761940002441
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 14.294472694396973
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.630170822143555
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.363814353942871
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_6",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 16.05954933166504
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 14.139602661132812
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 14.053675651550293
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.568065643310547
+        },
+        {
+          "id": 1422,
+          "str": " You",
+          "logit": 12.958521842956543
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_6",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 17.025943756103516
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 14.740472793579102
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 14.44879150390625
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.644349098205566
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 13.421401023864746
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_7",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 15.025689125061035
+        },
+        {
+          "id": 39776,
+          "str": " Triton",
+          "logit": 14.657010078430176
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.20771598815918
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.909445762634277
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.797021865844727
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_7",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 39776,
+          "str": " Triton",
+          "logit": 15.7180757522583
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 14.979784965515137
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.252181053161621
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.809083938598633
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.80739688873291
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_8",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 15.798548698425293
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 14.331440925598145
+        },
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 13.529072761535645
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.486690521240234
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 13.330177307128906
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_8",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 16.007198333740234
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 14.895484924316406
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.467972755432129
+        },
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 13.079462051391602
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 12.959334373474121
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_9",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 16.086132049560547
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.274510383605957
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.08981990814209
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 14.027547836303711
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.966678619384766
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_9",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 13648,
+          "str": " Mars",
+          "logit": 16.424530029296875
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 14.369153022766113
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.31464958190918
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 14.269790649414062
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 14.234796524047852
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_10",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 16.30012321472168
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 14.960931777954102
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.850822448730469
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 14.671573638916016
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.903217315673828
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_10",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 15.836149215698242
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 15.655484199523926
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.25621223449707
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 14.717782020568848
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.3445463180542
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_11",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 39776,
+          "str": " Triton",
+          "logit": 16.305639266967773
+        },
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 13.637075424194336
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 13.172754287719727
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 13.112275123596191
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 12.994837760925293
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_11",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 39776,
+          "str": " Triton",
+          "logit": 16.696062088012695
+        },
+        {
+          "id": 26810,
+          "str": " Io",
+          "logit": 14.125054359436035
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.381987571716309
+        },
+        {
+          "id": 36091,
+          "str": " Mercury",
+          "logit": 13.365878105163574
+        },
+        {
+          "id": 309,
+          "str": " I",
+          "logit": 12.962260246276855
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_12",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 39776,
+          "str": " Triton",
+          "logit": 15.937410354614258
+        },
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 14.712037086486816
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 14.568429946899414
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.508602142333984
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.96930980682373
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_12",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 39776,
+          "str": " Triton",
+          "logit": 15.744572639465332
+        },
+        {
+          "id": 38876,
+          "str": " Saturn",
+          "logit": 14.609535217285156
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 14.60171127319336
+        },
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 14.481794357299805
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.814492225646973
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_13",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 16.008119583129883
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 14.521459579467773
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 13.31171703338623
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.162901878356934
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.006203651428223
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_13",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 31916,
+          "str": " Titan",
+          "logit": 15.926719665527344
+        },
+        {
+          "id": 30140,
+          "str": " Miranda",
+          "logit": 15.222786903381348
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 13.582579612731934
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.16396713256836
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 12.574257850646973
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_14",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 16.601633071899414
+        },
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 15.999333381652832
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.201563835144043
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.32279109954834
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.94564151763916
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_planetary_3hop_14",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34434,
+          "str": " Jupiter",
+          "logit": 16.30373764038086
+        },
+        {
+          "id": 36210,
+          "str": " Venus",
+          "logit": 16.189043045043945
+        },
+        {
+          "id": 19930,
+          "str": " Europa",
+          "logit": 15.177906036376953
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.609163284301758
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.488819122314453
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_0",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 15.731430053710938
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 15.530229568481445
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.060367584228516
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.828006744384766
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 13.447737693786621
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_0",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 17.117656707763672
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 16.461639404296875
+        },
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 14.086965560913086
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.066549301147461
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 13.857064247131348
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_1",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 14.1981201171875
+        },
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 14.070852279663086
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.647745132446289
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.473406791687012
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.36996841430664
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_1",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 14.821359634399414
+        },
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 14.696188926696777
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.559951782226562
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.473060607910156
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.37529182434082
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_2",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 15.308277130126953
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.524332046508789
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.173705101013184
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.488404273986816
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.2920503616333
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_2",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 15.870955467224121
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.616432189941406
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.788722038269043
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.546521186828613
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.164761543273926
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_3",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 15.132898330688477
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 14.874979019165039
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.287710189819336
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.063680648803711
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 12.969940185546875
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_3",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 16.004648208618164
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 15.275030136108398
+        },
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 14.131281852722168
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.491689682006836
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.399439811706543
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_4",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.208354949951172
+        },
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 14.517965316772461
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 14.492206573486328
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.411991119384766
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.34749984741211
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_4",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.470703125
+        },
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 15.26287841796875
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 14.429184913635254
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.67586612701416
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.568077087402344
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_5",
+      "arm": "gated-T",
+      "source": "deterministic_copy",
+      "top5": [
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 16.765411376953125
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 16.39887809753418
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 16.37374496459961
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.251514434814453
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.22432804107666
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_5",
+      "arm": "gated-R",
+      "source": "deterministic_copy",
+      "top5": [
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 16.765411376953125
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 16.39887809753418
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 16.37374496459961
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.251514434814453
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.22432804107666
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_6",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 17.904930114746094
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 14.386311531066895
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 13.710071563720703
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.470748901367188
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.437806129455566
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_6",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 18.299728393554688
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 15.007673263549805
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.767072677612305
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.902729034423828
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.696198463439941
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_7",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 15.876225471496582
+        },
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 14.172310829162598
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 14.164360046386719
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.116204261779785
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 12.94134521484375
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_7",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.43465805053711
+        },
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 15.303890228271484
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 15.05518913269043
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.304436683654785
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.11492919921875
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_8",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 15.463462829589844
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.740509033203125
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.521355628967285
+        },
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 12.996624946594238
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 12.864680290222168
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_8",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 15.747611045837402
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 14.039892196655273
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.583133697509766
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 13.49737548828125
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.280517578125
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_9",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 14.417744636535645
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 14.316843032836914
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 14.195365905761719
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.546395301818848
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.325879096984863
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_9",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 15.503792762756348
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 15.40333080291748
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 15.36430549621582
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.115667343139648
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.902544975280762
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_10",
+      "arm": "gated-T",
+      "source": "deterministic_copy",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 14.968063354492188
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 14.272047996520996
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.600508689880371
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.458629608154297
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.3023099899292
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_10",
+      "arm": "gated-R",
+      "source": "deterministic_copy",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 14.968063354492188
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 14.272047996520996
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.600508689880371
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.458629608154297
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.3023099899292
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_11",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 15.963873863220215
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 15.557071685791016
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 14.941213607788086
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.760019302368164
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.592856407165527
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_11",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 17.052473068237305
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.361440658569336
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 15.373525619506836
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.16120433807373
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.41259479522705
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_12",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 15.996862411499023
+        },
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 14.229479789733887
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.559536933898926
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.413172721862793
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 12.927630424499512
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_12",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 16.333890914916992
+        },
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 14.637743949890137
+        },
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 13.981988906860352
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.865341186523438
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.3037691116333
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_13",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 15.195892333984375
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.706351280212402
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.557977676391602
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.443181991577148
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.246357917785645
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_13",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 15.339425086975098
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.878347396850586
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.421208381652832
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 13.072244644165039
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.016597747802734
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_14",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 15.300372123718262
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.52772331237793
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.454290390014648
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.101665496826172
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 12.94763469696045
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_2hop_14",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 15.458473205566406
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.903815269470215
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.59163761138916
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.590290069580078
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.340522766113281
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_0",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.386016845703125
+        },
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 15.632020950317383
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.057838439941406
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 13.578452110290527
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.578362464904785
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_0",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.84891700744629
+        },
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 16.146127700805664
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 13.99189281463623
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.390519142150879
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.369711875915527
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_1",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 14.897675514221191
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 14.752387046813965
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.126350402832031
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.44334888458252
+        },
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 13.068358421325684
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_1",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 15.820146560668945
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 15.231660842895508
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.435396194458008
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.449028015136719
+        },
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 13.380098342895508
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_2",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 15.583916664123535
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 13.941483497619629
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.817617416381836
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.499357223510742
+        },
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 13.132728576660156
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_2",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 15.787179946899414
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 15.344743728637695
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.022274017333984
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.740811347961426
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 13.392904281616211
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_3",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 15.101842880249023
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 14.974212646484375
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 14.13083267211914
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.568706512451172
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.270520210266113
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_3",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 15.481219291687012
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 15.066644668579102
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 14.40257453918457
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.885372161865234
+        },
+        {
+          "id": 309,
+          "str": " I",
+          "logit": 13.262541770935059
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_4",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.114126205444336
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 14.899362564086914
+        },
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 14.070914268493652
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 12.93978500366211
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 12.792745590209961
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_4",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.92152976989746
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 15.581388473510742
+        },
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 14.453404426574707
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.377605438232422
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.256632804870605
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_5",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 18.172561645507812
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.069744110107422
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.00990104675293
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.592269897460938
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.520450592041016
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_5",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 18.61871337890625
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.619384765625
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.359112739562988
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.330060005187988
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.94456958770752
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_6",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 15.800649642944336
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 14.57546329498291
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.713841438293457
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.623523712158203
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.379138946533203
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_6",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 16.044021606445312
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 14.497100830078125
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.890043258666992
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.631590843200684
+        },
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 13.475188255310059
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_7",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 16.384550094604492
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 15.268021583557129
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.466476440429688
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 14.050882339477539
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.316743850708008
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_7",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 16.590892791748047
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 15.921134948730469
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.862739562988281
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 14.060729026794434
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.554678916931152
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_8",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 17.47163963317871
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 14.370362281799316
+        },
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 13.616847038269043
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.134231567382812
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.131280899047852
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_8",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 18.210412979125977
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 14.818906784057617
+        },
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 13.980454444885254
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.36551570892334
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.120622634887695
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_9",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 15.415159225463867
+        },
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 14.66188907623291
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 14.64136791229248
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.933792114257812
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.733183860778809
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_9",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 16.090503692626953
+        },
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 15.546308517456055
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 15.125062942504883
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.437149047851562
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.374773979187012
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_10",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 15.388221740722656
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 13.599405288696289
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.507023811340332
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.223004341125488
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.222702980041504
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_10",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 16.09552764892578
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.461902618408203
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.361817359924316
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.818262100219727
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.44743537902832
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_11",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 15.34126091003418
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 15.229777336120605
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 14.57114315032959
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.54240894317627
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.532869338989258
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_11",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 16.126420974731445
+        },
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 15.446690559387207
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 14.837876319885254
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.702170372009277
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.500594139099121
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_12",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 14.993307113647461
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.504203796386719
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 13.490486145019531
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.435709953308105
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.145081520080566
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_12",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 29509,
+          "str": " Crystal",
+          "logit": 15.224967002868652
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 13.540973663330078
+        },
+        {
+          "id": 34413,
+          "str": " Silicon",
+          "logit": 12.985523223876953
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 12.81314468383789
+        },
+        {
+          "id": 19727,
+          "str": " Steel",
+          "logit": 12.810998916625977
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_13",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 16.230255126953125
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 15.989338874816895
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 15.605331420898438
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 14.606069564819336
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.408766746520996
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_13",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 46487,
+          "str": " Tin",
+          "logit": 16.91727638244629
+        },
+        {
+          "id": 16309,
+          "str": " Silver",
+          "logit": 16.75063705444336
+        },
+        {
+          "id": 12151,
+          "str": " Lead",
+          "logit": 16.19682502746582
+        },
+        {
+          "id": 49134,
+          "str": " Bronze",
+          "logit": 14.68189525604248
+        },
+        {
+          "id": 7284,
+          "str": " Gold",
+          "logit": 14.579492568969727
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_14",
+      "arm": "gated-T",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 14.73763656616211
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.218936920166016
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 13.784379005432129
+        },
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 13.46545696258545
+        },
+        {
+          "id": 733,
+          "str": " It",
+          "logit": 13.238256454467773
+        }
+      ]
+    },
+    {
+      "item_id": "exp092_elemental_3hop_14",
+      "arm": "gated-R",
+      "source": "executed",
+      "top5": [
+        {
+          "id": 17826,
+          "str": " Iron",
+          "logit": 16.042339324951172
+        },
+        {
+          "id": 8452,
+          "str": " Who",
+          "logit": 14.544092178344727
+        },
+        {
+          "id": 32676,
+          "str": " Carbon",
+          "logit": 14.538985252380371
+        },
+        {
+          "id": 380,
+          "str": " The",
+          "logit": 14.283583641052246
+        },
+        {
+          "id": 6295,
+          "str": " Both",
+          "logit": 13.57873249053955
+        }
+      ]
+    }
+  ],
+  "baseline_top1": [
+    {
+      "item_id": "exp092_planetary_2hop_0",
+      "top1_id": 36210,
+      "top1_str": " Venus"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_1",
+      "top1_id": 13648,
+      "top1_str": " Mars"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_2",
+      "top1_id": 31916,
+      "top1_str": " Titan"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_3",
+      "top1_id": 13648,
+      "top1_str": " Mars"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_4",
+      "top1_id": 38876,
+      "top1_str": " Saturn"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_5",
+      "top1_id": 34434,
+      "top1_str": " Jupiter"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_6",
+      "top1_id": 38876,
+      "top1_str": " Saturn"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_7",
+      "top1_id": 34434,
+      "top1_str": " Jupiter"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_8",
+      "top1_id": 31916,
+      "top1_str": " Titan"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_9",
+      "top1_id": 26810,
+      "top1_str": " Io"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_10",
+      "top1_id": 13648,
+      "top1_str": " Mars"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_11",
+      "top1_id": 19930,
+      "top1_str": " Europa"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_12",
+      "top1_id": 30140,
+      "top1_str": " Miranda"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_13",
+      "top1_id": 34434,
+      "top1_str": " Jupiter"
+    },
+    {
+      "item_id": "exp092_planetary_2hop_14",
+      "top1_id": 36091,
+      "top1_str": " Mercury"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_0",
+      "top1_id": 19930,
+      "top1_str": " Europa"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_1",
+      "top1_id": 31916,
+      "top1_str": " Titan"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_2",
+      "top1_id": 34434,
+      "top1_str": " Jupiter"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_3",
+      "top1_id": 36091,
+      "top1_str": " Mercury"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_4",
+      "top1_id": 30140,
+      "top1_str": " Miranda"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_5",
+      "top1_id": 13648,
+      "top1_str": " Mars"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_6",
+      "top1_id": 36210,
+      "top1_str": " Venus"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_7",
+      "top1_id": 39776,
+      "top1_str": " Triton"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_8",
+      "top1_id": 36091,
+      "top1_str": " Mercury"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_9",
+      "top1_id": 13648,
+      "top1_str": " Mars"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_10",
+      "top1_id": 26810,
+      "top1_str": " Io"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_11",
+      "top1_id": 39776,
+      "top1_str": " Triton"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_12",
+      "top1_id": 39776,
+      "top1_str": " Triton"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_13",
+      "top1_id": 31916,
+      "top1_str": " Titan"
+    },
+    {
+      "item_id": "exp092_planetary_3hop_14",
+      "top1_id": 34434,
+      "top1_str": " Jupiter"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_0",
+      "top1_id": 46487,
+      "top1_str": " Tin"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_1",
+      "top1_id": 34413,
+      "top1_str": " Silicon"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_2",
+      "top1_id": 34413,
+      "top1_str": " Silicon"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_3",
+      "top1_id": 29509,
+      "top1_str": " Crystal"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_4",
+      "top1_id": 12151,
+      "top1_str": " Lead"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_5",
+      "top1_id": 16309,
+      "top1_str": " Silver"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_6",
+      "top1_id": 46487,
+      "top1_str": " Tin"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_7",
+      "top1_id": 12151,
+      "top1_str": " Lead"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_8",
+      "top1_id": 16309,
+      "top1_str": " Silver"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_9",
+      "top1_id": 46487,
+      "top1_str": " Tin"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_10",
+      "top1_id": 46487,
+      "top1_str": " Tin"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_11",
+      "top1_id": 17826,
+      "top1_str": " Iron"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_12",
+      "top1_id": 16309,
+      "top1_str": " Silver"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_13",
+      "top1_id": 34413,
+      "top1_str": " Silicon"
+    },
+    {
+      "item_id": "exp092_elemental_2hop_14",
+      "top1_id": 7284,
+      "top1_str": " Gold"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_0",
+      "top1_id": 12151,
+      "top1_str": " Lead"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_1",
+      "top1_id": 19727,
+      "top1_str": " Steel"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_2",
+      "top1_id": 32676,
+      "top1_str": " Carbon"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_3",
+      "top1_id": 17826,
+      "top1_str": " Iron"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_4",
+      "top1_id": 12151,
+      "top1_str": " Lead"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_5",
+      "top1_id": 46487,
+      "top1_str": " Tin"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_6",
+      "top1_id": 19727,
+      "top1_str": " Steel"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_7",
+      "top1_id": 49134,
+      "top1_str": " Bronze"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_8",
+      "top1_id": 46487,
+      "top1_str": " Tin"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_9",
+      "top1_id": 16309,
+      "top1_str": " Silver"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_10",
+      "top1_id": 19727,
+      "top1_str": " Steel"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_11",
+      "top1_id": 17826,
+      "top1_str": " Iron"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_12",
+      "top1_id": 29509,
+      "top1_str": " Crystal"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_13",
+      "top1_id": 46487,
+      "top1_str": " Tin"
+    },
+    {
+      "item_id": "exp092_elemental_3hop_14",
+      "top1_id": 17826,
+      "top1_str": " Iron"
+    }
+  ],
+  "note": "rider only (LOG-4408 watchlist); deterministic_copy rows reuse the B pass top-5; no analysis pre-registered"
+}

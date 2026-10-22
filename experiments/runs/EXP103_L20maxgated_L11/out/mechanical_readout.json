@@ -1,0 +1,192 @@
+{
+  "status": "UNINTERPRETED_MECHANICAL_READOUT",
+  "experiment": "EXP103",
+  "routing": "LIVE",
+  "routing_reason": "(gated-T=3 >= 1) OR (gated-R=1 >= 1)",
+  "coverage": 0.9166666666666666,
+  "n_fired": 55,
+  "mass_L20_max_range": [
+    0.17544696666300297,
+    0.9999254442838662
+  ],
+  "tau_range": [
+    0.22857142857142856,
+    0.27586206896551724
+  ],
+  "gate_integrity_audit": {
+    "fired_iff_L20max_ge_tau": "60/60"
+  },
+  "decision_proxy_audit": {
+    "B_accuracy_fired": 34,
+    "B_accuracy_unfired": 2,
+    "n_fired": 55,
+    "n_unfired": 5,
+    "note": "descriptive only (F1); no routing consequence"
+  },
+  "n_correct": {
+    "B": 36,
+    "gated-T": 35,
+    "gated-R": 37
+  },
+  "n_included": {
+    "gated-T": 60,
+    "gated-R": 60
+  },
+  "flips_vs_B": {
+    "gated-T": 3,
+    "gated-R": 1
+  },
+  "flip_ids_vs_B": {
+    "gated-T": [
+      "exp092_planetary_2hop_2",
+      "exp092_planetary_3hop_7",
+      "exp092_elemental_2hop_0"
+    ],
+    "gated-R": [
+      "exp092_planetary_2hop_9"
+    ]
+  },
+  "delta_M": {
+    "gated-T_vs_B": -0.016666666666666666,
+    "gated-R_vs_B": 0.016666666666666666,
+    "gated-T_vs_gated-R": -0.03333333333333333
+  },
+  "mcnemar": {
+    "gated-T_vs_B": {
+      "b": 1,
+      "c": 2,
+      "p": 1.0
+    },
+    "gated-R_vs_B": {
+      "b": 1,
+      "c": 0,
+      "p": 1.0
+    },
+    "gated-T_vs_gated-R": {
+      "b": 1,
+      "c": 3,
+      "p": 0.625
+    }
+  },
+  "strata": {
+    "agg": {
+      "gated-T_vs_B": {
+        "n": 60,
+        "delta": -0.016666666666666666,
+        "b": 1,
+        "c": 2,
+        "p": 1.0
+      },
+      "gated-R_vs_B": {
+        "n": 60,
+        "delta": 0.016666666666666666,
+        "b": 1,
+        "c": 0,
+        "p": 1.0
+      },
+      "gated-T_vs_gated-R": {
+        "n": 60,
+        "delta": -0.03333333333333333,
+        "b": 1,
+        "c": 3,
+        "p": 0.625
+      }
+    },
+    "a_first": {
+      "gated-T_vs_B": {
+        "n": 30,
+        "delta": 0.03333333333333333,
+        "b": 1,
+        "c": 0,
+        "p": 1.0
+      },
+      "gated-R_vs_B": {
+        "n": 30,
+        "delta": 0.0,
+        "b": 0,
+        "c": 0,
+        "p": 1.0
+      },
+      "gated-T_vs_gated-R": {
+        "n": 30,
+        "delta": 0.03333333333333333,
+        "b": 1,
+        "c": 0,
+        "p": 1.0
+      }
+    },
+    "c_first": {
+      "gated-T_vs_B": {
+        "n": 30,
+        "delta": -0.06666666666666667,
+        "b": 0,
+        "c": 2,
+        "p": 0.5
+      },
+      "gated-R_vs_B": {
+        "n": 30,
+        "delta": 0.03333333333333333,
+        "b": 1,
+        "c": 0,
+        "p": 1.0
+      },
+      "gated-T_vs_gated-R": {
+        "n": 30,
+        "delta": -0.1,
+        "b": 0,
+        "c": 3,
+        "p": 0.25
+      }
+    }
+  },
+  "margin_shift_descriptive": {
+    "gated-T": {
+      "mean": -0.012874078750610352,
+      "std": 0.35924076289371326,
+      "min": -0.8640346527099609,
+      "max": 1.1070270538330078,
+      "n_nonzero": 55
+    },
+    "gated-R": {
+      "mean": -0.029963366190592446,
+      "std": 0.3304853435484894,
+      "min": -0.7509002685546875,
+      "max": 0.6938285827636719,
+      "n_nonzero": 55
+    }
+  },
+  "delivery": {
+    "fired_cell_rows": 110,
+    "in_band": 110,
+    "out_of_band": 0,
+    "exclusions": {
+      "gated-T": [],
+      "gated-R": []
+    }
+  },
+  "delta_theta": {
+    "pre": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "post": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "pin": "ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed",
+    "verified": true
+  },
+  "passes": {
+    "total": 237,
+    "expected_max": 247,
+    "hard_cap": 500
+  },
+  "sanity_gates": {
+    "gated-T": {
+      "ties": 0,
+      "ties_over_60": 0.0,
+      "run_invalid_ties": false,
+      "zero_variance": false
+    },
+    "gated-R": {
+      "ties": 0,
+      "ties_over_60": 0.0,
+      "run_invalid_ties": false,
+      "zero_variance": false
+    }
+  }
+}

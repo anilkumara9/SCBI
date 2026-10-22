@@ -1,0 +1,906 @@
+{
+  "placeholder_plan_block": "Plan:\n1. Placeholder outline one.\n2. Placeholder outline two.\n3. Placeholder outline three.",
+  "details": [
+    {
+      "item": 0,
+      "id": "exp107_flip_exp077_planet_2hop_0",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 1,
+      "id": "exp107_ctrl_exp077_planet_2hop_1",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 2,
+      "id": "exp107_flip_exp077_planet_2hop_2",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 3,
+      "id": "exp107_ctrl_exp077_planet_2hop_3",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 4,
+      "id": "exp107_flip_exp077_planet_2hop_4",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 5,
+      "id": "exp107_ctrl_exp077_planet_2hop_5",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 6,
+      "id": "exp107_flip_exp077_planet_2hop_6",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 7,
+      "id": "exp107_ctrl_exp077_planet_2hop_7",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 8,
+      "id": "exp107_ctrl_exp077_planet_2hop_8",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 9,
+      "id": "exp107_flip_exp077_planet_2hop_9",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 10,
+      "id": "exp107_flip_exp077_planet_2hop_10",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 11,
+      "id": "exp107_ctrl_exp077_planet_2hop_11",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 12,
+      "id": "exp107_flip_exp077_planet_2hop_12",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 13,
+      "id": "exp107_ctrl_exp077_planet_2hop_13",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 14,
+      "id": "exp107_flip_exp077_planet_2hop_14",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 15,
+      "id": "exp107_flip_exp077_planet_3hop_0",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 16,
+      "id": "exp107_ctrl_exp077_planet_3hop_1",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 17,
+      "id": "exp107_flip_exp077_planet_3hop_2",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 18,
+      "id": "exp107_ctrl_exp077_planet_3hop_3",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 19,
+      "id": "exp107_flip_exp077_planet_3hop_4",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 20,
+      "id": "exp107_ctrl_exp077_planet_3hop_5",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 21,
+      "id": "exp107_flip_exp077_planet_3hop_6",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 22,
+      "id": "exp107_ctrl_exp077_planet_3hop_7",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 23,
+      "id": "exp107_flip_exp077_planet_3hop_8",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 24,
+      "id": "exp107_ctrl_exp077_planet_3hop_9",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 25,
+      "id": "exp107_ctrl_exp077_planet_3hop_10",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 26,
+      "id": "exp107_flip_exp077_planet_3hop_11",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 27,
+      "id": "exp107_ctrl_exp077_planet_3hop_12",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 28,
+      "id": "exp107_flip_exp077_planet_3hop_13",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 29,
+      "id": "exp107_ctrl_exp077_planet_3hop_14",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 30,
+      "id": "exp107_flip_exp077_element_2hop_0",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 31,
+      "id": "exp107_ctrl_exp077_element_2hop_1",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 32,
+      "id": "exp107_flip_exp077_element_2hop_2",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 33,
+      "id": "exp107_ctrl_exp077_element_2hop_3",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 34,
+      "id": "exp107_flip_exp077_element_2hop_4",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 35,
+      "id": "exp107_ctrl_exp077_element_2hop_5",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 36,
+      "id": "exp107_flip_exp077_element_2hop_6",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 37,
+      "id": "exp107_ctrl_exp077_element_2hop_7",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 38,
+      "id": "exp107_flip_exp077_element_2hop_8",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 39,
+      "id": "exp107_ctrl_exp077_element_2hop_9",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 40,
+      "id": "exp107_flip_exp077_element_2hop_10",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 41,
+      "id": "exp107_ctrl_exp077_element_2hop_11",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 42,
+      "id": "exp107_flip_exp077_element_2hop_12",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 43,
+      "id": "exp107_ctrl_exp077_element_2hop_13",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 44,
+      "id": "exp107_flip_exp077_element_2hop_14",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 45,
+      "id": "exp107_ctrl_exp077_element_3hop_0",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 46,
+      "id": "exp107_flip_exp077_element_3hop_1",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 47,
+      "id": "exp107_ctrl_exp077_element_3hop_2",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 48,
+      "id": "exp107_flip_exp077_element_3hop_3",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 49,
+      "id": "exp107_ctrl_exp077_element_3hop_4",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 50,
+      "id": "exp107_flip_exp077_element_3hop_5",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 51,
+      "id": "exp107_ctrl_exp077_element_3hop_6",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 52,
+      "id": "exp107_ctrl_exp077_element_3hop_7",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 53,
+      "id": "exp107_flip_exp077_element_3hop_8",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 54,
+      "id": "exp107_ctrl_exp077_element_3hop_9",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 55,
+      "id": "exp107_flip_exp077_element_3hop_10",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 56,
+      "id": "exp107_ctrl_exp077_element_3hop_11",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 57,
+      "id": "exp107_flip_exp077_element_3hop_12",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 58,
+      "id": "exp107_ctrl_exp077_element_3hop_13",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    },
+    {
+      "item": 59,
+      "id": "exp107_flip_exp077_element_3hop_14",
+      "tail_plan": [
+        32,
+        37741,
+        27
+      ],
+      "tail_base": [
+        32,
+        37741,
+        27
+      ],
+      "identity": true
+    }
+  ],
+  "identity_count": 60
+}

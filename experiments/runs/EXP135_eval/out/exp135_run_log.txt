@@ -1,0 +1,48 @@
+[08:08:25] threads=2
+[08:08:25] loading model EleutherAI/pythia-410m rev 9879c9b5f8bea9051dcb0e68dff21493d67e9d4f
+[08:08:33] backbone pre-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[08:08:33] (a) Δθ=0 pre-hash PASS
+[08:08:33] (c) bench len=60 PASS; bench sha256=eb304fa65a60b65ad87767d251084b256d0a79001a16b4fe8ebcd1b1f45589df
+[08:08:33] view-precondition: excluded=0
+[08:08:33] n = 60 included items
+[08:08:33] view check: item0 V1 prompt head: Premise: Alice outranks Bob. Bob outranks Charlie. Question: Who is higher in ra
+[08:08:33] D_sup: 150 support presentations
+[08:08:33] unintervened cache: 60 items x 5 views
+[08:12:33] cache done; forwards=300
+[08:12:33] D_sup baseline: 150 items x 5 views
+[08:20:32] mu_M=0.636454 sigma_M=0.511590 (n=750)
+[08:20:33] (g) readout-sensitivity r = 1.0000000 (band [0.99, 1.01])
+[08:20:33] (g) PASS
+[08:20:33] (b) bridge re-derived deterministically; construction = licensed recipe (normalize(E[t]-E[f]), ' '+entity, [0]); alpha asserted = 0.5
+[08:20:33] (b) alpha=0.5 PASS
+[08:20:33] randoms drawn; mean|cos| with bridge[0] = 0.0215 (null expects <0.1)
+[08:20:33] interventions: 9 x 60 x 5
+[08:25:48]   item 10/60; forwards=1501
+[08:30:53]   item 20/60; forwards=1951
+[08:36:24]   item 30/60; forwards=2401
+[08:41:36]   item 40/60; forwards=2851
+[08:46:41]   item 50/60; forwards=3301
+[08:52:08]   item 60/60; forwards=3751
+[08:52:08] interventions done; forwards=3751
+[08:52:08] checkpoint written
+[08:52:08] (h) C2 pair-flips=2 (allow<=3)
+[08:52:08] (h) C3 pair-flips=1 (allow<=3)
+[08:52:08] (h) C4 pair-flips=1 (allow<=3)
+[08:52:08] (h) C5 pair-flips=2 (allow<=3)
+[08:52:08] (h) C6 pair-flips=0 (allow<=3)
+[08:52:08] (h) C7 pair-flips=1 (allow<=3)
+[08:52:08] (h) C8 pair-flips=1 (allow<=3)
+[08:52:08] (h) C9 pair-flips=1 (allow<=3)
+[08:52:08] (h) inertness gate PASS
+[08:52:08] (e) S_E_0.7 degenerate items: 29 (trip at >=30)
+[08:52:09] (e) S_E_0.5 degenerate items: 29 (trip at >=30)
+[08:52:09] (e) S_E_0.9 degenerate items: 29 (trip at >=30)
+[08:52:09] (e) degeneracy PASS
+[08:52:14] PRIMARY S_E(0.7): rho*_bar=-0.0042 p=0.530275 (MCSE<=0.0011) mean_k=5.02
+[08:52:19] DIAG S_E(0.5): rho*_bar=0.1083 p=0.101615 (MCSE<=0.0007) mean_k=4.57
+[08:52:23] DIAG S_E(0.9): rho*_bar=0.1542 p=0.034135 (MCSE<=0.0004) mean_k=4.38
+[08:52:26] backbone post-hash: ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+[08:52:26] (a) Δθ=0 post-hash PASS
+[08:52:26] (f) budget: forwards=3751 expected=3751
+[08:52:26] (f) budget PASS
+[08:52:26] artifacts written; CLEAN COMPLETION exit 0

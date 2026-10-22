@@ -1,0 +1,8 @@
+[run] loading model
+[run] (a) pre-hash PASS
+[run] (c) bench pin PASS (180 items)
+[run] Law #7 exemplar/bench entity disjointness PASS
+[run] resuming: 0 (item, arm) pairs already done
+[run] arm B complete (180 items)
+[run] guard (d): B accuracy = 0.0000 (bar [0.2, 0.8])
+[run] HELD: guard (d) — B accuracy 0.0000

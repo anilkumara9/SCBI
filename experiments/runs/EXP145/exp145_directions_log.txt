@@ -1,0 +1,3 @@
+[directions] l*=8: min||r_i||=6.5762, mean_cos_u=-0.0161, prenorm=[0.0238,0.0425], max_cos_v=0.9821
+[directions] D2 mean_i cos(v^(-i),u_i) = -0.4587 (bar 0.7) → FAIL
+[directions] wrote /home/hatch/workspace/SCBI/experiments/runs/EXP145/exp145_directions.npz + /home/hatch/workspace/SCBI/experiments/runs/EXP145/exp145_direction_verification.json

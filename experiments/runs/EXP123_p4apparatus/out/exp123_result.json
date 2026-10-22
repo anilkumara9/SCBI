@@ -1,0 +1,73 @@
+{
+ "counts": {
+  "n_exceptions": 0,
+  "n_items": 60,
+  "n_parseable": 0,
+  "n_unparseable": 60
+ },
+ "diagnostic_correctness": {
+  "names_e1": 0,
+  "names_e2": 0,
+  "of_parseable": 0
+ },
+ "environment": {
+  "numpy": "2.5.3",
+  "seeds": {
+   "numpy": 0,
+   "torch": 0
+  },
+  "threads": 2,
+  "torch": "2.14.0+cpu",
+  "transformers": "5.17.0"
+ },
+ "experiment": "EXP123",
+ "gates": {
+  "backbone_post": {
+   "ok": true
+  },
+  "backbone_pre": {
+   "ok": true
+  },
+  "bench_pin": {
+   "ok": true,
+   "pin": "e91b302f41f641c7..."
+  },
+  "deterministic_rerun": {
+   "ok": true
+  },
+  "exception_gate": {
+   "n_exceptions": 0,
+   "ok": true
+  },
+  "p4_hyperparameters": {
+   "ok": true
+  },
+  "raw_records": {
+   "generations_sha256": "662b9feb0cbe7e458eae5b4d4542e7c7495bacaa5fef72ae5331013784f513c6",
+   "ok": true
+  },
+  "reparse_x2": {
+   "ok": true
+  },
+  "token_pin_diagnostic": {
+   "entities": [
+    "Mars",
+    "Venus",
+    "Jupiter",
+    "Saturn",
+    "Mercury",
+    "Iron",
+    "Gold",
+    "Silver",
+    "Bronze",
+    "Steel"
+   ],
+   "ok": true
+  }
+ },
+ "hypothesis": "H20",
+ "log": "LOG-4661",
+ "phases": {},
+ "protocol": "EXP_PREREG_H20_P4APPARATUS_2026-09-29.md",
+ "verdict": "RUN-INVALID, TERMINAL (elicitation-failure gate: n_unparseable=60 >= 7 on the full 60; entity-name generation channel dead on all EXP113-cleared protocols; honesty-instrument line closes permanently on this shape)"
+}

@@ -1,0 +1,313 @@
+== EXP127 (TGA) execution lane LOG-4698 ==
+protocol sha256: 5dea0d419794fe6aa1fce056b9225625aa6ec3b55c57fab39bb7cb9e7d6e2882
+protocol pin OK (post-fix LOG-4697 revision)
+prompts: canonical-order first 10 of verbatim EXP107 bench
+  [0] exp107_flip_exp077_planet_2hop_0
+  [1] exp107_ctrl_exp077_planet_2hop_1
+  [2] exp107_flip_exp077_planet_2hop_2
+  [3] exp107_ctrl_exp077_planet_2hop_3
+  [4] exp107_flip_exp077_planet_2hop_4
+  [5] exp107_ctrl_exp077_planet_2hop_5
+  [6] exp107_flip_exp077_planet_2hop_6
+  [7] exp107_ctrl_exp077_planet_2hop_7
+  [8] exp107_ctrl_exp077_planet_2hop_8
+  [9] exp107_flip_exp077_planet_2hop_9
+torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | threads=2 (read back)
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+model: H=1024 NH=16 HD=64 rotary_ndims=16 parallel_residual=True ln_eps=1e-05
+== EXP127 (TGA) execution lane LOG-4698 ==
+protocol sha256: 5dea0d419794fe6aa1fce056b9225625aa6ec3b55c57fab39bb7cb9e7d6e2882
+protocol pin OK (post-fix LOG-4697 revision)
+prompts: canonical-order first 10 of verbatim EXP107 bench
+  [0] exp107_flip_exp077_planet_2hop_0
+  [1] exp107_ctrl_exp077_planet_2hop_1
+  [2] exp107_flip_exp077_planet_2hop_2
+  [3] exp107_ctrl_exp077_planet_2hop_3
+  [4] exp107_flip_exp077_planet_2hop_4
+  [5] exp107_ctrl_exp077_planet_2hop_5
+  [6] exp107_flip_exp077_planet_2hop_6
+  [7] exp107_ctrl_exp077_planet_2hop_7
+  [8] exp107_ctrl_exp077_planet_2hop_8
+  [9] exp107_flip_exp077_planet_2hop_9
+torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | threads=2 (read back)
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+model: H=1024 NH=16 HD=64 rotary_ndims=16 parallel_residual=True ln_eps=1e-05
+weight views gathered for layers 20-23; attention scale=0.125
+per-head q/k/v views built (interleaved layout verified against module)
+executor defined; entering per-prompt measurement
+!! SMOKE MODE: machinery validation only — no numbers minted, no verdict !!
+--- prompt 1/1: exp107_flip_exp077_planet_2hop_0
+== EXP127 (TGA) execution lane LOG-4698 ==
+protocol sha256: 5dea0d419794fe6aa1fce056b9225625aa6ec3b55c57fab39bb7cb9e7d6e2882
+protocol pin OK (post-fix LOG-4697 revision)
+prompts: canonical-order first 10 of verbatim EXP107 bench
+  [0] exp107_flip_exp077_planet_2hop_0
+  [1] exp107_ctrl_exp077_planet_2hop_1
+  [2] exp107_flip_exp077_planet_2hop_2
+  [3] exp107_ctrl_exp077_planet_2hop_3
+  [4] exp107_flip_exp077_planet_2hop_4
+  [5] exp107_ctrl_exp077_planet_2hop_5
+  [6] exp107_flip_exp077_planet_2hop_6
+  [7] exp107_ctrl_exp077_planet_2hop_7
+  [8] exp107_ctrl_exp077_planet_2hop_8
+  [9] exp107_flip_exp077_planet_2hop_9
+torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | threads=2 (read back)
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+model: H=1024 NH=16 HD=64 rotary_ndims=16 parallel_residual=True ln_eps=1e-05
+weight views gathered for layers 20-23; attention scale=0.125
+per-head q/k/v views built (interleaved layout verified against module)
+executor defined; entering per-prompt measurement
+!! SMOKE MODE: machinery validation only — no numbers minted, no verdict !!
+--- prompt 1/1: exp107_flip_exp077_planet_2hop_0
+== EXP127 (TGA) execution lane LOG-4698 ==
+protocol sha256: 5dea0d419794fe6aa1fce056b9225625aa6ec3b55c57fab39bb7cb9e7d6e2882
+protocol pin OK (post-fix LOG-4697 revision)
+prompts: canonical-order first 10 of verbatim EXP107 bench
+  [0] exp107_flip_exp077_planet_2hop_0
+  [1] exp107_ctrl_exp077_planet_2hop_1
+  [2] exp107_flip_exp077_planet_2hop_2
+  [3] exp107_ctrl_exp077_planet_2hop_3
+  [4] exp107_flip_exp077_planet_2hop_4
+  [5] exp107_ctrl_exp077_planet_2hop_5
+  [6] exp107_flip_exp077_planet_2hop_6
+  [7] exp107_ctrl_exp077_planet_2hop_7
+  [8] exp107_ctrl_exp077_planet_2hop_8
+  [9] exp107_flip_exp077_planet_2hop_9
+torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | threads=2 (read back)
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+model: H=1024 NH=16 HD=64 rotary_ndims=16 parallel_residual=True ln_eps=1e-05
+weight views gathered for layers 20-23; attention scale=0.125
+per-head q/k/v views built (interleaved layout verified against module)
+executor defined; entering per-prompt measurement
+!! SMOKE MODE: machinery validation only — no numbers minted, no verdict !!
+--- prompt 1/1: exp107_flip_exp077_planet_2hop_0
+== EXP127 (TGA) execution lane LOG-4698 ==
+protocol sha256: 5dea0d419794fe6aa1fce056b9225625aa6ec3b55c57fab39bb7cb9e7d6e2882
+protocol pin OK (post-fix LOG-4697 revision)
+prompts: canonical-order first 10 of verbatim EXP107 bench
+  [0] exp107_flip_exp077_planet_2hop_0
+  [1] exp107_ctrl_exp077_planet_2hop_1
+  [2] exp107_flip_exp077_planet_2hop_2
+  [3] exp107_ctrl_exp077_planet_2hop_3
+  [4] exp107_flip_exp077_planet_2hop_4
+  [5] exp107_ctrl_exp077_planet_2hop_5
+  [6] exp107_flip_exp077_planet_2hop_6
+  [7] exp107_ctrl_exp077_planet_2hop_7
+  [8] exp107_ctrl_exp077_planet_2hop_8
+  [9] exp107_flip_exp077_planet_2hop_9
+torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | threads=2 (read back)
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+model: H=1024 NH=16 HD=64 rotary_ndims=16 parallel_residual=True ln_eps=1e-05
+weight views gathered for layers 20-23; attention scale=0.125
+per-head q/k/v views built (interleaved layout verified against module)
+executor defined; entering per-prompt measurement
+!! SMOKE MODE: machinery validation only — no numbers minted, no verdict !!
+--- prompt 1/1: exp107_flip_exp077_planet_2hop_0
+  T=25 | sanity max|f(z0)-x24_base| = 1.585e+01
+== EXP127 (TGA) execution lane LOG-4698 ==
+protocol sha256: 5dea0d419794fe6aa1fce056b9225625aa6ec3b55c57fab39bb7cb9e7d6e2882
+protocol pin OK (post-fix LOG-4697 revision)
+prompts: canonical-order first 10 of verbatim EXP107 bench
+  [0] exp107_flip_exp077_planet_2hop_0
+  [1] exp107_ctrl_exp077_planet_2hop_1
+  [2] exp107_flip_exp077_planet_2hop_2
+  [3] exp107_ctrl_exp077_planet_2hop_3
+  [4] exp107_flip_exp077_planet_2hop_4
+  [5] exp107_ctrl_exp077_planet_2hop_5
+  [6] exp107_flip_exp077_planet_2hop_6
+  [7] exp107_ctrl_exp077_planet_2hop_7
+  [8] exp107_ctrl_exp077_planet_2hop_8
+  [9] exp107_flip_exp077_planet_2hop_9
+torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | threads=2 (read back)
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+model: H=1024 NH=16 HD=64 rotary_ndims=16 parallel_residual=True ln_eps=1e-05
+weight views gathered for layers 20-23; attention scale=0.125
+per-head q/k/v views built (interleaved layout verified against module)
+executor defined; entering per-prompt measurement
+== EXP127 (TGA) execution lane LOG-4698 ==
+protocol sha256: 5dea0d419794fe6aa1fce056b9225625aa6ec3b55c57fab39bb7cb9e7d6e2882
+protocol pin OK (post-fix LOG-4697 revision)
+prompts: canonical-order first 10 of verbatim EXP107 bench
+  [0] exp107_flip_exp077_planet_2hop_0
+  [1] exp107_ctrl_exp077_planet_2hop_1
+  [2] exp107_flip_exp077_planet_2hop_2
+  [3] exp107_ctrl_exp077_planet_2hop_3
+  [4] exp107_flip_exp077_planet_2hop_4
+  [5] exp107_ctrl_exp077_planet_2hop_5
+  [6] exp107_flip_exp077_planet_2hop_6
+  [7] exp107_ctrl_exp077_planet_2hop_7
+  [8] exp107_ctrl_exp077_planet_2hop_8
+  [9] exp107_flip_exp077_planet_2hop_9
+torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | threads=2 (read back)
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+model: H=1024 NH=16 HD=64 rotary_ndims=16 parallel_residual=True ln_eps=1e-05
+weight views gathered for layers 20-23; attention scale=0.125
+per-head q/k/v views built (interleaved layout verified against module)
+executor defined; entering per-prompt measurement
+== EXP127 (TGA) execution lane LOG-4698 ==
+protocol sha256: 5dea0d419794fe6aa1fce056b9225625aa6ec3b55c57fab39bb7cb9e7d6e2882
+protocol pin OK (post-fix LOG-4697 revision)
+prompts: canonical-order first 10 of verbatim EXP107 bench
+  [0] exp107_flip_exp077_planet_2hop_0
+  [1] exp107_ctrl_exp077_planet_2hop_1
+  [2] exp107_flip_exp077_planet_2hop_2
+  [3] exp107_ctrl_exp077_planet_2hop_3
+  [4] exp107_flip_exp077_planet_2hop_4
+  [5] exp107_ctrl_exp077_planet_2hop_5
+  [6] exp107_flip_exp077_planet_2hop_6
+  [7] exp107_ctrl_exp077_planet_2hop_7
+  [8] exp107_ctrl_exp077_planet_2hop_8
+  [9] exp107_flip_exp077_planet_2hop_9
+torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | threads=2 (read back)
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+model: H=1024 NH=16 HD=64 rotary_ndims=16 parallel_residual=True ln_eps=1e-05
+weight views gathered for layers 20-23; attention scale=0.125
+per-head q/k/v views built (interleaved layout verified against module)
+executor defined; entering per-prompt measurement
+== EXP127 (TGA) execution lane LOG-4698 ==
+protocol sha256: 5dea0d419794fe6aa1fce056b9225625aa6ec3b55c57fab39bb7cb9e7d6e2882
+protocol pin OK (post-fix LOG-4697 revision)
+prompts: canonical-order first 10 of verbatim EXP107 bench
+  [0] exp107_flip_exp077_planet_2hop_0
+  [1] exp107_ctrl_exp077_planet_2hop_1
+  [2] exp107_flip_exp077_planet_2hop_2
+  [3] exp107_ctrl_exp077_planet_2hop_3
+  [4] exp107_flip_exp077_planet_2hop_4
+  [5] exp107_ctrl_exp077_planet_2hop_5
+  [6] exp107_flip_exp077_planet_2hop_6
+  [7] exp107_ctrl_exp077_planet_2hop_7
+  [8] exp107_ctrl_exp077_planet_2hop_8
+  [9] exp107_flip_exp077_planet_2hop_9
+torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | threads=2 (read back)
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+model: H=1024 NH=16 HD=64 rotary_ndims=16 parallel_residual=True ln_eps=1e-05
+weight views gathered for layers 20-23; attention scale=0.125
+per-head q/k/v views built (interleaved layout verified against module)
+executor defined; entering per-prompt measurement
+!! SMOKE MODE: machinery validation only — no numbers minted, no verdict !!
+--- prompt 1/1: exp107_flip_exp077_planet_2hop_0
+  T=25 | sanity max|f(z0)-x24_base| = 8.202e-04
+  sigma1=9.425760 iters=20 converged=True products=40
+  SMOKE: extra JVP/VJP ok | ||Mv1||=9.425760 ||Mt||=88.844986
+  SMOKE complete — exiting before any verdict machinery
+== EXP127 (TGA) execution lane LOG-4698 ==
+protocol sha256: 5dea0d419794fe6aa1fce056b9225625aa6ec3b55c57fab39bb7cb9e7d6e2882
+protocol pin OK (post-fix LOG-4697 revision)
+prompts: canonical-order first 10 of verbatim EXP107 bench
+  [0] exp107_flip_exp077_planet_2hop_0
+  [1] exp107_ctrl_exp077_planet_2hop_1
+  [2] exp107_flip_exp077_planet_2hop_2
+  [3] exp107_ctrl_exp077_planet_2hop_3
+  [4] exp107_flip_exp077_planet_2hop_4
+  [5] exp107_ctrl_exp077_planet_2hop_5
+  [6] exp107_flip_exp077_planet_2hop_6
+  [7] exp107_ctrl_exp077_planet_2hop_7
+  [8] exp107_ctrl_exp077_planet_2hop_8
+  [9] exp107_flip_exp077_planet_2hop_9
+torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | threads=2 (read back)
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+model: H=1024 NH=16 HD=64 rotary_ndims=16 parallel_residual=True ln_eps=1e-05
+weight views gathered for layers 20-23; attention scale=0.125
+per-head q/k/v views built (interleaved layout verified against module)
+executor defined; entering per-prompt measurement
+--- prompt 1/10: exp107_flip_exp077_planet_2hop_0
+  T=25 | sanity max|f(z0)-x24_base| = 8.202e-04
+  sigma1=9.425760 iters=20 converged=True products=40
+  sigma2=6.159682 iters=20 converged=True products=40 | s1/s2=1.5302
+  hutchinson: Tr(MTM)=1417.154875 sigma_bar=1.176410 products=128
+  direct: median||Mu||=1.156906 products=64
+  products total=272 (cap 700)
+  direct-vs-hutchinson agreement trip: |med-sbar|/sbar = 0.0166 (diagnostic, <=0.15)
+--- prompt 2/10: exp107_ctrl_exp077_planet_2hop_1
+  T=25 | sanity max|f(z0)-x24_base| = 5.894e-04
+  sigma1=10.113924 iters=24 converged=True products=48
+  sigma2=6.464369 iters=12 converged=True products=24 | s1/s2=1.5646
+  hutchinson: Tr(MTM)=1472.990839 sigma_bar=1.199361 products=128
+  direct: median||Mu||=1.169343 products=64
+  products total=264 (cap 700)
+  direct-vs-hutchinson agreement trip: |med-sbar|/sbar = 0.0250 (diagnostic, <=0.15)
+--- prompt 3/10: exp107_flip_exp077_planet_2hop_2
+  T=25 | sanity max|f(z0)-x24_base| = 2.651e-04
+  sigma1=9.499111 iters=20 converged=True products=40
+  sigma2=6.103632 iters=24 converged=True products=48 | s1/s2=1.5563
+  hutchinson: Tr(MTM)=1417.554890 sigma_bar=1.176576 products=128
+  direct: median||Mu||=1.155254 products=64
+  products total=280 (cap 700)
+  direct-vs-hutchinson agreement trip: |med-sbar|/sbar = 0.0181 (diagnostic, <=0.15)
+--- prompt 4/10: exp107_ctrl_exp077_planet_2hop_3
+  T=25 | sanity max|f(z0)-x24_base| = 4.139e-04
+  sigma1=9.781565 iters=20 converged=True products=40
+  sigma2=6.273963 iters=18 converged=True products=36 | s1/s2=1.5591
+  hutchinson: Tr(MTM)=1412.002466 sigma_bar=1.174269 products=128
+  direct: median||Mu||=1.166431 products=64
+  products total=268 (cap 700)
+  direct-vs-hutchinson agreement trip: |med-sbar|/sbar = 0.0067 (diagnostic, <=0.15)
+--- prompt 5/10: exp107_flip_exp077_planet_2hop_4
+  T=25 | sanity max|f(z0)-x24_base| = 2.202e-04
+  sigma1=9.386295 iters=20 converged=True products=40
+  sigma2=6.044413 iters=19 converged=True products=38 | s1/s2=1.5529
+  hutchinson: Tr(MTM)=1403.663399 sigma_bar=1.170797 products=128
+  direct: median||Mu||=1.168225 products=64
+  products total=270 (cap 700)
+  direct-vs-hutchinson agreement trip: |med-sbar|/sbar = 0.0022 (diagnostic, <=0.15)
+--- prompt 6/10: exp107_ctrl_exp077_planet_2hop_5
+  T=25 | sanity max|f(z0)-x24_base| = 5.264e-04
+  sigma1=10.066886 iters=20 converged=True products=40
+  sigma2=6.338977 iters=19 converged=True products=38 | s1/s2=1.5881
+  hutchinson: Tr(MTM)=1426.449362 sigma_bar=1.180261 products=128
+  direct: median||Mu||=1.170584 products=64
+  products total=270 (cap 700)
+  direct-vs-hutchinson agreement trip: |med-sbar|/sbar = 0.0082 (diagnostic, <=0.15)
+--- prompt 7/10: exp107_flip_exp077_planet_2hop_6
+  T=25 | sanity max|f(z0)-x24_base| = 2.661e-04
+  sigma1=9.266260 iters=27 converged=True products=54
+  sigma2=6.014106 iters=36 converged=True products=72 | s1/s2=1.5408
+  hutchinson: Tr(MTM)=1373.148993 sigma_bar=1.158001 products=128
+  direct: median||Mu||=1.143730 products=64
+  products total=318 (cap 700)
+  direct-vs-hutchinson agreement trip: |med-sbar|/sbar = 0.0123 (diagnostic, <=0.15)
+--- prompt 8/10: exp107_ctrl_exp077_planet_2hop_7
+  T=25 | sanity max|f(z0)-x24_base| = 2.402e-04
+  sigma1=10.036403 iters=22 converged=True products=44
+  sigma2=6.419519 iters=20 converged=True products=40 | s1/s2=1.5634
+  hutchinson: Tr(MTM)=1484.411699 sigma_bar=1.204002 products=128
+  direct: median||Mu||=1.172357 products=64
+  products total=276 (cap 700)
+  direct-vs-hutchinson agreement trip: |med-sbar|/sbar = 0.0263 (diagnostic, <=0.15)
+--- prompt 9/10: exp107_ctrl_exp077_planet_2hop_8
+  T=25 | sanity max|f(z0)-x24_base| = 4.691e-04
+  sigma1=9.542901 iters=24 converged=True products=48
+  sigma2=6.145019 iters=19 converged=True products=38 | s1/s2=1.5529
+  hutchinson: Tr(MTM)=1391.661297 sigma_bar=1.165781 products=128
+  direct: median||Mu||=1.175495 products=64
+  products total=278 (cap 700)
+  direct-vs-hutchinson agreement trip: |med-sbar|/sbar = 0.0083 (diagnostic, <=0.15)
+--- prompt 10/10: exp107_flip_exp077_planet_2hop_9
+  T=25 | sanity max|f(z0)-x24_base| = 3.490e-04
+  sigma1=9.904121 iters=26 converged=True products=52
+  sigma2=6.264147 iters=23 converged=True products=46 | s1/s2=1.5811
+  hutchinson: Tr(MTM)=1459.667067 sigma_bar=1.193925 products=128
+  direct: median||Mu||=1.178761 products=64
+  products total=290 (cap 700)
+  direct-vs-hutchinson agreement trip: |med-sbar|/sbar = 0.0127 (diagnostic, <=0.15)
+== hash-pinning raw records (Law #9: before R is read) ==
+pinned: per_prompt=66f028ba1fb786a71cc1b5956924ce1bc42ffa0612eac877f951224e85e8bc13
+pinned: vectors   =9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc
+pinned: worksheet =0c0df797769258e404196f8ae62d563e94c35adb2ef72b8894c39f9629bd3a1e
+backbone LOG-331 pin (post): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin identical after all JVPs: Delta theta = 0
+decision set: 10/10 prompts (both sigma1 and sigma2 converged)
+median R = 8.240640 | median sigma1/sigma2 = 1.557689
+VERDICT: CONTINUE
+worksheet finalized and re-validated
+== EXP127 execution complete: CONTINUE ==

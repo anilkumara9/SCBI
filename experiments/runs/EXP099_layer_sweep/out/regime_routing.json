@@ -1,0 +1,35 @@
+{
+  "routing": "LIVE",
+  "routing_reason": "(W20=7 >= 1) OR (W8=1 >= 1)",
+  "anchor_count_verified": 6,
+  "evidence": {
+    "L20_flips_vs_B": 6,
+    "L8_flips_vs_B": 4,
+    "W20_flips_vs_B": 7,
+    "W8_flips_vs_B": 1,
+    "delivery_confirmed": true,
+    "tie_counts": {
+      "L20": 0,
+      "L8": 0,
+      "W20": 0,
+      "W8": 0,
+      "B": 0
+    },
+    "tie_gate_arms": [],
+    "zero_variance": {
+      "L20": false,
+      "L8": false,
+      "W20": false,
+      "W8": false,
+      "B": false
+    },
+    "coherence_arms": [],
+    "n_included": {
+      "L20": 60,
+      "L8": 60,
+      "W20": 60,
+      "W8": 60
+    }
+  },
+  "note": "machine-written before the table walk; per-arm RUN-INVALID routed where sanity gates fire"
+}

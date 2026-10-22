@@ -1,0 +1,15 @@
+[step0] (u0) unit test: 9/9 cases pass
+[step0] (u0) PASS — scoring pipeline sound, proceeding
+[step0] (b) revision actual=9879c9b5f8bea9051dcb0e68dff21493d67e9d4f match=True
+[step0] loading tokenizer + model (eager, fp32, cpu)
+[step0] env: torch=2.14.0+cpu transformers=5.17.0 numpy=2.5.3 threads=2
+[step0] (a) pre-hash=ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed match=True
+[step0] (h) probe: 50 toks in 6.7s = 7.46 tok/s; 46k projected 1.71h (cap 72h) feasible=True
+[step0] (c) bench pin recomputed=2b055b53127a241b72338a82373c3efc7b666256e25d8c584d45989278c14dcf match=True
+[step0] exemplars: reusing /home/hatch/workspace/SCBI/experiments/runs/EXP147/S7-1_PROMPTS_2026-10-05.json (sha256=e46211620ffaa496...)
+[step0] Law #7 exemplar/bench entity disjointness PASS
+[step0] dry-run subset: seed=148000, n=20, ids=['S71-165', 'S71-085', 'S71-090', 'S71-170', 'S71-083', 'S71-020', 'S71-163', 'S71-069', 'S71-161', 'S71-140', 'S71-019', 'S71-022', 'S71-082', 'S71-077', 'S71-094', 'S71-157', 'S71-016', 'S71-178', 'S71-127', 'S71-025']
+[step0] dry-run: 20 B-arm items complete, 300 generation forwards in 67.9s
+[step0] guard (d): B first-token accuracy = 14/20 = 0.7000 (bar [0.2, 0.8]) -> PASS
+[step0] (a) post-hash match: True
+[step0] dry-run complete: outcome=DRYRUN_PASS accuracy=0.7000 forwards~350

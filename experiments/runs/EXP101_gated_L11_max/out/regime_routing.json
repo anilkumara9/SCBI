@@ -1,0 +1,26 @@
+{
+  "routing": "LIVE",
+  "routing_reason": "(gated-T=1 >= 1) OR (gated-R=0 >= 1)",
+  "coverage": 0.26666666666666666,
+  "n_fired": 16,
+  "evidence": {
+    "gated_T_flips_vs_B": 1,
+    "gated_R_flips_vs_B": 0,
+    "delivery_confirmed": true,
+    "sanity": {
+      "gated-T": {
+        "ties": 0,
+        "ties_over_60": 0.0,
+        "run_invalid_ties": false,
+        "zero_variance": false
+      },
+      "gated-R": {
+        "ties": 0,
+        "ties_over_60": 0.0,
+        "run_invalid_ties": false,
+        "zero_variance": false
+      }
+    }
+  },
+  "note": "machine-written before the table walk; per-arm RUN-INVALID routed where sanity gates fire; steps 2b, 4-8 are the verdict lane's"
+}

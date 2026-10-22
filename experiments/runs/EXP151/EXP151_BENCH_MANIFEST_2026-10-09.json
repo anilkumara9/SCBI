@@ -1,0 +1,20 @@
+{
+ "experiment": "EXP151",
+ "construction_seed": 151001,
+ "dryrun_subset_seed": 151012,
+ "pilot_subset_seed": 151023,
+ "n": 760,
+ "n_per_stratum": 380,
+ "strata": {
+  "transitive-2hop": 380,
+  "transitive-3hop": 380
+ },
+ "pin": "643622d5a4c79675a764ef25098fff4f10a46a849c142206e78bbf7c1f80bd17",
+ "bench_path": "EXP151_BENCH_2026-10-09.json",
+ "entity_pool_size": 40,
+ "exemplar_entities_disjoint": true,
+ "gold_min_count": 11,
+ "tokenizability_audit": "0/40 single-token (' '+word, Pythia BPE, offline); example ' Zorp' -> ['\u0120Z', 'orp'] \u2014 metadata only, not a gate",
+ "hardened_compositional": "EXCLUDED by design-record (LOG-4973): (v2)-literal and (v4) jointly unsatisfiable on Pythia-410m; reconciliation is a deferred, unlicensed lane",
+ "gold_note": "single entity NAME per gold (EXP148 \u00a75.1 recipe)"
+}

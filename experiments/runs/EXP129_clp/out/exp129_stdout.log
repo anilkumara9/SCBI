@@ -1,0 +1,55 @@
+== EXP129 (CLP) execution lane LOG-4715 ==
+protocol sha256: 8eea9f0d659501885cbe7e30657824a372495fda9ecc130c8cc4a0cabeee5ba7
+protocol pin OK (post-erratum LOG-4714 revision)
+prompts: canonical-order first 10 of verbatim EXP107 bench (ids pinned)
+torch 2.14.0+cpu | transformers 5.17.0 | numpy 2.5.3 | threads=2 (read back)
+backbone LOG-331 pin (pre): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin OK. Delta-theta guard armed.
+v1 artifact sha256: 9b527c026d0ee307192725429f655e628f403505343dc018de3cfe15db6113dc
+v1 re-pinned: hash OK + all 10 decision-set ids aligned (v1__<prompt_id>)
+base 1/10 exp107_flip_exp077_planet_2hop_0: T=25 ||y20||=50.8248 sanity max|f(z0)-x24|=8.202e-04
+base 2/10 exp107_ctrl_exp077_planet_2hop_1: T=25 ||y20||=50.2541 sanity max|f(z0)-x24|=5.894e-04
+base 3/10 exp107_flip_exp077_planet_2hop_2: T=25 ||y20||=50.9734 sanity max|f(z0)-x24|=2.651e-04
+base 4/10 exp107_ctrl_exp077_planet_2hop_3: T=25 ||y20||=50.4055 sanity max|f(z0)-x24|=4.139e-04
+base 5/10 exp107_flip_exp077_planet_2hop_4: T=25 ||y20||=51.0525 sanity max|f(z0)-x24|=2.202e-04
+base 6/10 exp107_ctrl_exp077_planet_2hop_5: T=25 ||y20||=50.7512 sanity max|f(z0)-x24|=5.264e-04
+base 7/10 exp107_flip_exp077_planet_2hop_6: T=25 ||y20||=51.2477 sanity max|f(z0)-x24|=2.661e-04
+base 8/10 exp107_ctrl_exp077_planet_2hop_7: T=25 ||y20||=50.3879 sanity max|f(z0)-x24|=2.402e-04
+base 9/10 exp107_ctrl_exp077_planet_2hop_8: T=25 ||y20||=50.2250 sanity max|f(z0)-x24|=4.691e-04
+base 10/10 exp107_flip_exp077_planet_2hop_9: T=25 ||y20||=49.8853 sanity max|f(z0)-x24|=3.490e-04
+budget B = 0.01 * median||y20|| = 0.50578363  (recorded BEFORE first perturbed forward)
+v2 1/10 exp107_flip_exp077_planet_2hop_0: K=40 |v2|=1.000000 |v2.v1|=5.588e-09 OK
+v2 2/10 exp107_ctrl_exp077_planet_2hop_1: K=40 |v2|=1.000000 |v2.v1|=8.382e-09 OK
+v2 3/10 exp107_flip_exp077_planet_2hop_2: K=40 |v2|=1.000000 |v2.v1|=5.588e-09 OK
+v2 4/10 exp107_ctrl_exp077_planet_2hop_3: K=40 |v2|=1.000000 |v2.v1|=1.397e-09 OK
+v2 5/10 exp107_flip_exp077_planet_2hop_4: K=40 |v2|=1.000000 |v2.v1|=1.048e-08 OK
+v2 6/10 exp107_ctrl_exp077_planet_2hop_5: K=40 |v2|=1.000000 |v2.v1|=1.863e-09 OK
+v2 7/10 exp107_flip_exp077_planet_2hop_6: K=40 |v2|=1.000000 |v2.v1|=7.916e-09 OK
+v2 8/10 exp107_ctrl_exp077_planet_2hop_7: K=40 |v2|=1.000000 |v2.v1|=3.260e-09 OK
+v2 9/10 exp107_ctrl_exp077_planet_2hop_8: K=40 |v2|=1.000000 |v2.v1|=0.000e+00 OK
+v2 10/10 exp107_flip_exp077_planet_2hop_9: K=40 |v2|=1.000000 |v2.v1|=1.164e-08 OK
+v2 derived for all 10 prompts (seed 20260929_4714, K=40, exact JVP/VJP)
+item 1/10 exp107_flip_exp077_planet_2hop_0: ||d1||=2.4477 ||d2||=4.9268 ||d_sum||=3.0053 ||d_single||=4.9279 r=0.9998 sat=1.0132 dose=1.6394 beat1=0.9998 (2.8s)
+item 2/10 exp107_ctrl_exp077_planet_2hop_1: ||d1||=2.6239 ||d2||=5.2809 ||d_sum||=3.1976 ||d_single||=5.2806 r=1.0001 sat=1.0130 dose=1.6515 beat1=1.0001 (2.5s)
+item 3/10 exp107_flip_exp077_planet_2hop_2: ||d1||=2.4216 ||d2||=4.7817 ||d_sum||=2.9101 ||d_single||=4.7820 r=0.9999 sat=0.9750 dose=1.6431 beat1=0.9999 (2.5s)
+item 4/10 exp107_ctrl_exp077_planet_2hop_3: ||d1||=2.5338 ||d2||=5.0930 ||d_sum||=2.9874 ||d_single||=5.0931 r=1.0000 sat=1.0103 dose=1.7048 beat1=1.0000 (2.7s)
+item 5/10 exp107_flip_exp077_planet_2hop_4: ||d1||=2.4351 ||d2||=4.9026 ||d_sum||=2.8771 ||d_single||=4.9022 r=1.0001 sat=1.0136 dose=1.7040 beat1=1.0001 (3.0s)
+item 6/10 exp107_ctrl_exp077_planet_2hop_5: ||d1||=2.6155 ||d2||=5.2674 ||d_sum||=3.1689 ||d_single||=5.2685 r=0.9998 sat=1.0143 dose=1.6622 beat1=0.9998 (2.5s)
+item 7/10 exp107_flip_exp077_planet_2hop_6: ||d1||=2.4046 ||d2||=4.8470 ||d_sum||=2.9407 ||d_single||=4.8465 r=1.0001 sat=1.0160 dose=1.6482 beat1=1.0001 (2.4s)
+item 8/10 exp107_ctrl_exp077_planet_2hop_7: ||d1||=2.6064 ||d2||=5.2483 ||d_sum||=3.1746 ||d_single||=5.2471 r=1.0002 sat=1.0140 dose=1.6532 beat1=1.0002 (2.4s)
+item 9/10 exp107_ctrl_exp077_planet_2hop_8: ||d1||=2.4215 ||d2||=4.7632 ||d_sum||=2.9078 ||d_single||=4.7638 r=0.9999 sat=0.9674 dose=1.6381 beat1=0.9999 (2.4s)
+item 10/10 exp107_flip_exp077_planet_2hop_9: ||d1||=2.5747 ||d2||=5.1883 ||d_sum||=3.1181 ||d_single||=5.1881 r=1.0000 sat=1.0155 dose=1.6639 beat1=1.0000 (2.4s)
+forward batches DONE: 50 forwards (10 base + 40 arm)
+sensing-discipline assert PASS: ops=['exact-jvp', 'exact-vjp'] (whitelist: exact JVP/VJP only; blacklist: finite-difference gain ratios)
+correction-rule pin PASS: single frozen §3.5 rule for all 10 items (breaking point (d))
+backbone LOG-331 pin (post): ec276abe3902fab0166ce56c00de84c2c737c80af4f9c41a9cbe94e4ec38e0ed
+backbone pin identical after all forwards/JVPs: Delta theta = 0
+hash-pinned (before any decision statistic exists):
+  exp129_per_item.json -> 14a566ced435e4fbab1b9190bf4380d34c90db7a9bb65771374fc67845083fee
+  exp129_vectors.npz -> e3d869aff941cb2d499c504a5e27b804d51019b5aef70bf8f48377b43813773e
+  exp129_worksheet.json -> ec3b68d23cb84547eb0251ba1e87b6ccffd45bd1618c53a63daddf3506673c0a
+  exp129_console.log -> 7022273b38d5985a9482154fc97a1b35893871ff82814f580d471ed05d7d5470
+median r = 1.000005 | median saturation = 1.013390 | median dose = 1.652381 | median loop/single = 1.000005
+VERDICT: KILL — median r = 1.000005 <= 1.2 — the loop adds nothing the push didn't already do; the adaptive-pursuit premise on $0 is dead
+worksheet finalized and re-validated
+== EXP129 execution complete: KILL ==

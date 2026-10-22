@@ -1,0 +1,542 @@
+[
+ {
+  "id": "exp107_flip_exp077_planet_2hop_0",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_2hop_0",
+  "y": 1,
+  "pred": 0,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_2hop_1",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_2hop_1",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_planet_2hop_2",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_2hop_2",
+  "y": 1,
+  "pred": 0,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_2hop_3",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_2hop_3",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_planet_2hop_4",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_2hop_4",
+  "y": 1,
+  "pred": 0,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_2hop_5",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_2hop_5",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_planet_2hop_6",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_2hop_6",
+  "y": 1,
+  "pred": 0,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_2hop_7",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_2hop_7",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_2hop_8",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_2hop_8",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_planet_2hop_9",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_2hop_9",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_flip_exp077_planet_2hop_10",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_2hop_10",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_2hop_11",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_2hop_11",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_planet_2hop_12",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_2hop_12",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_2hop_13",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_2hop_13",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_planet_2hop_14",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_2hop_14",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_flip_exp077_planet_3hop_0",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_3hop_0",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_3hop_1",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_3hop_1",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_planet_3hop_2",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_3hop_2",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_3hop_3",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_3hop_3",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_planet_3hop_4",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_3hop_4",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_3hop_5",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_3hop_5",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_planet_3hop_6",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_3hop_6",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_3hop_7",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_3hop_7",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_planet_3hop_8",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_3hop_8",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_3hop_9",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_3hop_9",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_3hop_10",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_3hop_10",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_planet_3hop_11",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_3hop_11",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_3hop_12",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_3hop_12",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_planet_3hop_13",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_planet_3hop_13",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_planet_3hop_14",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_planet_3hop_14",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_2hop_0",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_element_2hop_0",
+  "y": 1,
+  "pred": 0,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_2hop_1",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_element_2hop_1",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_2hop_2",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_element_2hop_2",
+  "y": 1,
+  "pred": 0,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_2hop_3",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_element_2hop_3",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_2hop_4",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_element_2hop_4",
+  "y": 1,
+  "pred": 0,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_2hop_5",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_element_2hop_5",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_2hop_6",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_element_2hop_6",
+  "y": 1,
+  "pred": 0,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_2hop_7",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_element_2hop_7",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_2hop_8",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_element_2hop_8",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_2hop_9",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_element_2hop_9",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_2hop_10",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_element_2hop_10",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_2hop_11",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_element_2hop_11",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_2hop_12",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_element_2hop_12",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_2hop_13",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_element_2hop_13",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_2hop_14",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_element_2hop_14",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_3hop_0",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_element_3hop_0",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_3hop_1",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_element_3hop_1",
+  "y": 1,
+  "pred": 0,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_3hop_2",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_element_3hop_2",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_3hop_3",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_element_3hop_3",
+  "y": 1,
+  "pred": 0,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_3hop_4",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_element_3hop_4",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_3hop_5",
+  "phrasing": "A-first",
+  "flipped": true,
+  "derived_from": "exp077_element_3hop_5",
+  "y": 1,
+  "pred": 0,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_3hop_6",
+  "phrasing": "A-first",
+  "flipped": false,
+  "derived_from": "exp077_element_3hop_6",
+  "y": 1,
+  "pred": 1,
+  "correct": true
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_3hop_7",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_element_3hop_7",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_3hop_8",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_element_3hop_8",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_3hop_9",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_element_3hop_9",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_3hop_10",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_element_3hop_10",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_3hop_11",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_element_3hop_11",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_3hop_12",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_element_3hop_12",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ },
+ {
+  "id": "exp107_ctrl_exp077_element_3hop_13",
+  "phrasing": "C-first",
+  "flipped": false,
+  "derived_from": "exp077_element_3hop_13",
+  "y": 0,
+  "pred": 0,
+  "correct": true
+ },
+ {
+  "id": "exp107_flip_exp077_element_3hop_14",
+  "phrasing": "C-first",
+  "flipped": true,
+  "derived_from": "exp077_element_3hop_14",
+  "y": 0,
+  "pred": 1,
+  "correct": false
+ }
+]
